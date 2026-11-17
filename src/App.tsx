@@ -21,6 +21,27 @@ function isSectionHash(hash: string): boolean {
   return SECTION_IDS.some((id) => hash === `#${id}`);
 }
 
+/**
+ * Desktop always shows the map pane. On mobile it is one of two exploration
+ * panes, so the provider must not mount into a hidden zero-height container.
+ * Without `matchMedia` (test environment) assume the wide layout.
+ */
+function useWideLayout(): boolean {
+  const query = '(min-width: 768px)';
+  const [wide, setWide] = useState(() => window.matchMedia?.(query)?.matches ?? true);
+
+  useEffect(() => {
+    const media = window.matchMedia?.(query);
+    if (!media) return;
+    const update = () => setWide(media.matches);
+    update();
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
+
+  return wide;
+}
+
 export default function App() {
   const dataset = getDataset();
   const report = getValidationReport();
@@ -31,6 +52,8 @@ export default function App() {
   const [mobilePane, setMobilePane] = useState<'list' | 'map'>('list');
   /** Mobile: a record opened full width. Ignored by CSS above 768px. */
   const [detailOpen, setDetailOpen] = useState(() => readObjectIdFromHash() !== null);
+  const wideLayout = useWideLayout();
+  const mapActive = wideLayout || (!detailOpen && mobilePane === 'map');
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -202,7 +225,7 @@ export default function App() {
           />
         </section>
 
-        <MapPanel markers={markers} objects={filtered} onOpenObject={selectObject} />
+        <MapPanel markers={markers} objects={filtered} onOpenObject={selectObject} active={mapActive} />
 
         <section
           className="pane pane--detail"

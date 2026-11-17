@@ -23,9 +23,14 @@ interface MapPanelProps {
   /** Records matching the current search. The panel never reads the full corpus. */
   objects: ObjectRecord[];
   onOpenObject: (id: string) => void;
+  /**
+   * False while the mobile pane is hidden. The provider must not mount into a
+   * container with no layout box, so the adapter is created only when shown.
+   */
+  active?: boolean;
 }
 
-export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
+export function MapPanel({ markers, objects, onOpenObject, active = true }: MapPanelProps) {
   const [status, setStatus] = useState<Status>(mapIsConfigured ? 'loading' : 'unconfigured');
   const [failure, setFailure] = useState<MapFailure | null>(null);
   const [attempt, setAttempt] = useState(0);
@@ -82,6 +87,12 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
       setStatus('unconfigured');
       return;
     }
+    if (!active) {
+      // The previous effect run already destroyed its adapter and container
+      // children. Mounting now would measure a display:none box.
+      setStatus('loading');
+      return;
+    }
     const container = containerRef.current;
     if (!container) return;
 
@@ -109,7 +120,7 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
       adapter.destroy();
       adapterRef.current = null;
     };
-  }, [markerSignature, attempt]);
+  }, [markerSignature, attempt, active]);
 
   // The popover is derived from the same filtered records as the list, so a
   // search cannot leave an institution from another record on screen.

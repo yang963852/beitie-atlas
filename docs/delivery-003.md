@@ -123,7 +123,9 @@ before view was not re-captured; it is the previous delivery's own evidence at t
   not be read as a claim about map rendering.
 - **Two-pane mounting on mobile.** Both exploration panes stay mounted and are
   hidden with `display: none`, so search text and scroll state survive switching.
-  Hidden panes are removed from the accessibility tree by the browser.
+  Hidden panes are removed from the accessibility tree by the browser. The map
+  adapter itself mounts only while its pane is visible, so the provider never
+  measures a zero-height container; that branch is unexercised without a key.
 - **Fixed-height desktop panes.** Panes use `100dvh` with independent scrolling.
   On very short viewports the map keeps a 460 px minimum and the page scrolls;
   this is intentional rather than clipping content.
