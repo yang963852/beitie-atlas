@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "src-dpm-yan-qinli-rubbing",
+      "title": "颜勤礼碑（民国拓本，文物号 新00045406）",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/collection/impres/234175.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-17",
+      "locator": "Object record, 简介 section; contributor 秦明",
+      "note": "The object catalogued on this page is a Republican-era rubbing (31.8×37.7 cm), not the stone. Its 简介 also states where the stone was unearthed and where it is held."
+    },
+    {
+      "id": "src-beilin-article-2007",
+      "title": "颜勤礼碑再造了一个“碑林”",
+      "publisher": "西安碑林博物馆 Xi'an Beilin Museum",
+      "url": "https://www.beilin-museum.com/index.php?a=index&aid=2440&c=View&m=home",
+      "publicationDate": "2007-08-07",
+      "accessedAt": "2026-11-17",
+      "locator": "Article body, four paragraphs on 1922, 1927-1928 and 1948",
+      "note": "A museum web article published in 2007. It documents historical movements; it does not verify present-day storage or display."
+    },
+    {
+      "id": "src-wikidata-beilin-museum",
+      "title": "Wikidata item Q10519071 — 西安碑林博物馆 (Xi'an Beilin Museum)",
+      "publisher": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q10519071",
+      "publicationDate": null,
+      "accessedAt": "2026-11-17",
+      "locator": "Property P625 (coordinate location)",
+      "note": "Crowd-sourced secondary data. The coordinate statement carries no cited reference, so it is recorded as unverified and institution-level only."
+    },
+    {
+      "id": "src-wikidata-palace-museum",
+      "title": "Wikidata item Q2047427 — 故宫博物院 (The Palace Museum)",
+      "publisher": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q2047427",
+      "publicationDate": null,
+      "accessedAt": "2026-11-17",
+      "locator": "Property P625 (coordinate location)",
+      "note": "Crowd-sourced secondary data, institution-level only. It locates the museum as a whole, not a storage room or gallery."
+    }
+  ]
+}

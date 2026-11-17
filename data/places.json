@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "id": "place-xian-beilin-museum",
+      "names": {
+        "zh": "西安碑林博物馆",
+        "en": "Xi'an Beilin Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": {
+        "longitude": 108.948333,
+        "latitude": 34.255,
+        "crs": "WGS84",
+        "precision": "institution",
+        "sourceRefs": ["src-wikidata-beilin-museum"],
+        "method": "secondary-database",
+        "verification": "unverified",
+        "note": "Wikidata P625 value with a stated precision of about 0.00028° (roughly 30 m). The statement has no cited reference and the museum has not confirmed it. Treat it as an indicative institution point, not as the object's storage location."
+      },
+      "sourceRefs": ["src-wikidata-beilin-museum", "src-dpm-yan-qinli-rubbing"],
+      "notes": [
+        "The institution is named by the Palace Museum catalogue entry as the stone's holding museum; that entry gives no street address or coordinates."
+      ]
+    },
+    {
+      "id": "place-palace-museum",
+      "names": {
+        "zh": "故宫博物院",
+        "en": "The Palace Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": {
+        "longitude": 116.39083333,
+        "latitude": 39.91555556,
+        "crs": "WGS84",
+        "precision": "institution",
+        "sourceRefs": ["src-wikidata-palace-museum"],
+        "method": "secondary-database",
+        "verification": "unverified",
+        "note": "Wikidata P625 value for the museum as an institution. It is not a gallery, vault, or storage location, and the catalogue entry does not state where the rubbing is kept."
+      },
+      "sourceRefs": ["src-wikidata-palace-museum", "src-dpm-yan-qinli-rubbing"],
+      "notes": []
+    },
+    {
+      "id": "place-shaanxi-governor-compound",
+      "names": {
+        "zh": "陕西省长公署（旧址）",
+        "en": "Shaanxi provincial governor's compound (former site)"
+      },
+      "historicalName": "省长公署",
+      "kind": "historical-site",
+      "coordinates": null,
+      "sourceRefs": ["src-beilin-article-2007"],
+      "notes": [
+        "The 2007 museum article locates the compound only as 'the area east and north-east of today's Xi'an Drum Tower'. No point is asserted here, because a named area is not a surveyed coordinate."
+      ]
+    },
+    {
+      "id": "place-xincheng-xian",
+      "names": {
+        "zh": "新城（西安）",
+        "en": "Xincheng (Xi'an)"
+      },
+      "historicalName": null,
+      "kind": "district",
+      "coordinates": null,
+      "sourceRefs": ["src-beilin-article-2007"],
+      "notes": [
+        "Named as the 1928 destination ('新城大楼北东侧'). The source gives no coordinates and the historical layout is not established in this record."
+      ]
+    },
+    {
+      "id": "place-xian-beilin-1948",
+      "names": {
+        "zh": "西安碑林",
+        "en": "Xi'an Beilin"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": ["src-beilin-article-2007"],
+      "notes": [
+        "The 1948 destination as named in the source. This record does not assert that the 1948 institution is identical to today's Xi'an Beilin Museum; the museum is recorded as a separate place with its own source."
+      ]
+    }
+  ]
+}

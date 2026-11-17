@@ -1,0 +1,46 @@
+{
+  "id": "dpm-rubbing-xin00045406",
+  "workId": "yan-qinli-bei",
+  "objectType": "rubbing",
+  "titles": {
+    "zh": "颜勤礼碑（民国拓本）",
+    "en": "Yan Qinli Stele, Republican-era rubbing"
+  },
+  "productionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "民国",
+    "original": "民国拓本",
+    "certainty": "documented",
+    "note": "The catalogue gives only the era label. The year the rubbing was taken is not recorded, so no year is stored."
+  },
+  "catalogNumber": "新00045406",
+  "dimensions": {
+    "raw": "31.8×37.7厘米",
+    "note": "Axis order is not stated in the catalogue entry."
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-palace-museum",
+    "sourceRefs": ["src-dpm-yan-qinli-rubbing"],
+    "sourceAccessedAt": "2026-11-17",
+    "assertionAsOf": null,
+    "note": "Published in the Palace Museum's online collection catalogue under museum object number 新00045406. The entry does not state a storage room, gallery, or exhibition status, and it gives no date for the holding."
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft record. The collection assertion comes from the publishing museum's own catalogue entry but has not been independently reviewed."
+  },
+  "notes": [
+    "No custody events are recorded for this rubbing yet. The original stone's documented 1922–1948 movements are not copied into this record.",
+    "The catalogue quotes an entry in 《欧斋藏碑帖目录》 that lists the item with mounting details and purchase prices. That entry has not been analysed as provenance evidence and is not used here to assert a chain of custody.",
+    "The catalogue does not state that this rubbing was taken from the stone recovered in 1922, so no rubbing-of relation is asserted between the two objects.",
+    "Neither the rubbing year nor any intermediate owner is documented in the sources audited for this task."
+  ]
+}

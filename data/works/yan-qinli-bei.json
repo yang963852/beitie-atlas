@@ -1,0 +1,40 @@
+{
+  "id": "yan-qinli-bei",
+  "titles": {
+    "zh": "颜勤礼碑",
+    "en": "Stele of Yan Qinli"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "author-and-calligrapher",
+      "name": "颜真卿",
+      "nameEn": "Yan Zhenqing",
+      "certainty": "documented",
+      "sourceRefs": ["src-dpm-yan-qinli-rubbing"]
+    }
+  ],
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 779,
+    "startMonth": null,
+    "endYear": 779,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐大历十四年（779年）",
+    "certainty": "documented",
+    "note": "Date as given in the Palace Museum catalogue entry for the rubbing."
+  },
+  "script": null,
+  "background": "A Tang inscription dated to 779 in the Palace Museum's catalogue entry, which names 颜真卿 (Yan Zhenqing) as both author and calligrapher. The stone was unearthed in 1922 during repair work at the former provincial governor's compound in Chang'an (Xi'an), and the same entry describes it as held at the Xi'an Beilin Museum. A Republican-era rubbing in the Palace Museum is catalogued as a separate physical object.",
+  "sourceRefs": ["src-dpm-yan-qinli-rubbing", "src-beilin-article-2007"],
+  "review": {
+    "state": "draft",
+    "note": "Work-level summary drafted from two audited sources. Not publication-approved; aliases and script classification still need sourced support."
+  },
+  "notes": [
+    "The English title is a project translation for navigation. The cited sources use the Chinese title only.",
+    "No aliases are recorded yet: the inscription's other titles have not been source-audited.",
+    "The script classification is not stated in the cited sources, so the field is left empty rather than filled from general knowledge."
+  ]
+}
