@@ -2,7 +2,8 @@
 
 Task ID: 003 — Refine the visual hierarchy
 Date: 2026-11-17
-Implementation branch and commit, if any: `task/003-visual-refinement`, based on `d015e1d`; implementation `555ff18`.
+Implementation branch and commit, if any: `task/003-visual-refinement`, based on `d015e1d`;
+interface commit `555ff18`, map-mount fix `9d2f9be`, delivery docs `0806360`.
 
 ## Result
 
@@ -102,7 +103,7 @@ before view was not re-captured; it is the previous delivery's own evidence at t
 | Type check | Passed | `npm run typecheck` inside `npm run check` |
 | Data validation | Passed | `npm run check:data`; corpus untouched |
 | Automated tests | Passed | 63 tests in 7 files; 2 added, 2 copy assertions updated |
-| Preview build | Passed | `vite build`, 17.7 kB CSS / 278 kB JS |
+| Preview build | Passed | `vite build`, 17.7 kB CSS / 278.5 kB JS |
 | Desktop 1440×900 | Passed visually | `docs/screenshots/003-desktop-1440.png`; no horizontal overflow |
 | Tablet 768×1024 | Passed visually | `docs/screenshots/003-tablet-768.png`; two columns, record below map |
 | Mobile 390×844 | Passed visually | `docs/screenshots/003-mobile-390.png`; List/Map switch visible |
