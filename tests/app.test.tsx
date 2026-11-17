@@ -119,6 +119,7 @@ describe('application shell', () => {
 
     expect(window.location.hash).toBe('#/object/dpm-rubbing-xin00045406');
     expect(screen.getByRole('heading', { name: '颜勤礼碑（民国拓本）' })).toBeInTheDocument();
+    expect(document.activeElement).toBe(document.getElementById('map'));
   });
 
   it('does not let a section hash erase the selected record', () => {
