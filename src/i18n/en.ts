@@ -9,6 +9,7 @@ export const strings = {
   siteTitleEn: 'Between Steles',
   tagline: 'An atlas of Chinese calligraphic steles and selected rubbings',
   statusBadge: 'Foundation preview',
+  statusBadgeRelease: 'Release build',
   draftNotice:
     'Draft records only. Nothing here is publication-approved, and every claim links to the source it came from.',
   dataStatusOk: (objects: number, events: number) =>
@@ -72,7 +73,7 @@ export const strings = {
   mapUnconfiguredBody:
     'No Tianditu key was supplied at build time, so no map is requested and nothing is sent to the provider. The list and object records work without it.',
   mapUnconfiguredAction:
-    'To enable the map, the project owner needs a Tianditu developer key; see docs/map-pilot.md for the exact steps.',
+    'To enable the map, the project owner needs a Tianditu developer key. Setup steps are in docs/map-setup.md.',
   mapErrorTitle: 'The map could not load',
   mapErrorBody:
     'The provider script did not load. Reading, searching, and source links are unaffected.',
@@ -81,12 +82,20 @@ export const strings = {
   mapAttributionText:
     'Map service: 天地图 (National Platform for Common Geospatial Information Services). Displayed under the provider’s terms; approval label shown by the provider.',
   mapFrameNote:
-    'Markers use WGS84 coordinates from the records. The provider renders in CGCS2000; the two frames differ by centimetres, well below the institution-level precision recorded here.',
+    'Marker positions are the stored WGS84 values passed to the provider without a datum transformation. The provider’s basemap uses CGCS2000; the record’s coordinates are unverified institution-level points, so treat the marker as indicative, not as a surveyed position.',
 
   locationsHeading: 'Locations without the map',
   locationsIntro:
-    'Every documented place in the corpus, with the coordinate source and its review state. This list is the keyboard-accessible equivalent of the map.',
-  locationsUnmappedHeading: 'Records with no map point',
+    'Every documented current place in the current results, with the coordinate source and its review state. This list is the keyboard-accessible equivalent of the map.',
+  locationsWithoutPointHeading: 'Records without a current map point',
+  locationsWithoutPointIntro:
+    'These records stay readable here. A last-known location is a historical claim, not a present-day collection point, so it is never plotted as a marker.',
+  placeNotRecorded: 'Place not recorded',
+  unmappedReasons: {
+    historical: 'Not a current collection point',
+    unknown: 'Location unknown',
+    'no-point': 'No coordinates recorded',
+  } as const,
   locationsEmpty: 'No object has a verified point yet.',
   coordinateLabel: 'Coordinate',
   precisionLabel: 'Precision',

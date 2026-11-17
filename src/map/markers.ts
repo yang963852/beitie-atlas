@@ -1,4 +1,4 @@
-import { groupByPlace } from '../domain/data';
+import { groupCurrentLocationsByPlace } from '../domain/data';
 import type { ObjectRecord, Place } from '../domain/types';
 import type { MapMarker } from './types';
 
@@ -13,11 +13,15 @@ export interface MarkerBuild {
 }
 
 /**
- * Builds one marker per documented collection place, never one per object.
- * A place without defensible coordinates stays in the list and produces no marker.
+ * Builds one marker per documented *current* collection place, never one per
+ * object and never for a historical last-known location. A place without
+ * defensible coordinates stays in the list and produces no marker.
+ *
+ * The grouping itself lives in `src/domain/collection.ts` so the list, the
+ * popover, and the map share one rule.
  */
 export function buildMarkers(places: Place[], objects: ObjectRecord[]): MarkerBuild {
-  const groups = groupByPlace(objects);
+  const groups = groupCurrentLocationsByPlace(objects);
   const markers: MapMarker[] = [];
   const skipped: SkippedPlace[] = [];
 

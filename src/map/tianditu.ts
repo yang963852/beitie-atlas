@@ -17,17 +17,21 @@ interface TiandituMarker {
   addEventListener: (type: string, handler: () => void) => void;
 }
 
-interface TiandituNamespace {
+export interface TiandituNamespace {
   Map: new (container: HTMLElement | string) => TiandituMap;
   LngLat: new (longitude: number, latitude: number) => unknown;
   Marker: new (lnglat: unknown) => TiandituMarker;
 }
+
+export type TiandituSdkLoader = () => Promise<TiandituNamespace>;
 
 declare global {
   interface Window {
     T?: TiandituNamespace;
   }
 }
+
+const SCRIPT_SELECTOR = 'script[data-map-provider="tianditu"]';
 
 export class MapLoadError extends Error {
   readonly code: MapFailureCode;
@@ -50,69 +54,118 @@ export function toMapFailure(error: unknown): MapFailure {
 }
 
 /**
- * The canonical record is WGS84. The provider renders CGCS2000. They are
- * different named frames, so the adapter converts explicitly here instead of
- * relabelling the stored data; the difference is centimetric, far below the
- * recorded institution precision.
+ * Provider view of a stored coordinate.
+ *
+ * No datum transformation is applied: the recorded WGS84 value is passed to the
+ * provider unchanged. CGCS2000 and WGS84 are compatible at centimetre level
+ * only under specific epoch and realisation conditions, which a secondary
+ * source does not state, so this function must not claim a conversion. See
+ * `docs/map-pilot.md` §"Coordinate treatment" for the sources and the limits.
  */
-export function toProviderCoordinate(longitude: number, latitude: number): {
-  longitude: number;
-  latitude: number;
-  frame: 'CGCS2000';
-} {
-  return { longitude, latitude, frame: 'CGCS2000' };
+export function toProviderPosition(
+  longitude: number,
+  latitude: number,
+): { longitude: number; latitude: number } {
+  return { longitude, latitude };
 }
 
-let sdkPromise: Promise<TiandituNamespace> | null = null;
+let nextAttemptId = 1;
+let activeAttemptId = 0;
+let activePromise: Promise<TiandituNamespace> | null = null;
 
-/** Loads the official API script once per page session. */
+/** Removes provider scripts left behind by a failed attempt. */
+function removeStaleScripts(): void {
+  for (const node of Array.from(document.querySelectorAll<HTMLScriptElement>(SCRIPT_SELECTOR))) {
+    node.remove();
+  }
+}
+
+/**
+ * Loads the official API script once per page session.
+ *
+ * A failed or timed-out attempt removes its script element, listeners, and
+ * timer before rejecting, so a retry always creates a genuinely new request
+ * rather than reusing a dead `<script>`. Callbacks from an earlier attempt
+ * cannot settle a later promise: `settled` and the attempt id guard both.
+ */
 export function loadTiandituSdk(): Promise<TiandituNamespace> {
-  if (typeof window === 'undefined') {
-    return Promise.reject(new MapLoadError('sdk-error', 'No browser window is available.'));
+  if (typeof window === 'undefined' || typeof document === 'undefined') {
+    return Promise.reject(new MapLoadError('sdk-error', 'No browser document is available.'));
   }
   if (window.T) return Promise.resolve(window.T);
-  if (sdkPromise) return sdkPromise;
+  if (activePromise) return activePromise;
 
-  sdkPromise = new Promise<TiandituNamespace>((resolve, reject) => {
-    const settle = (fn: () => void) => {
-      window.clearTimeout(timer);
-      fn();
+  removeStaleScripts();
+
+  const attemptId = nextAttemptId++;
+
+  const promise = new Promise<TiandituNamespace>((resolve, reject) => {
+    let script: HTMLScriptElement | null = null;
+    let timer: number | undefined;
+    let settled = false;
+
+    const settle = (error: MapLoadError | null) => {
+      if (settled) return;
+      settled = true;
+
+      if (timer !== undefined) {
+        window.clearTimeout(timer);
+        timer = undefined;
+      }
+      if (script) {
+        script.removeEventListener('load', handleLoad);
+        script.removeEventListener('error', handleError);
+        if (error) script.remove();
+        script = null;
+      }
+      if (activeAttemptId === attemptId) {
+        activeAttemptId = 0;
+        activePromise = null;
+      }
+
+      if (error) {
+        reject(error);
+      } else {
+        resolve(window.T as TiandituNamespace);
+      }
     };
 
-    const timer = window.setTimeout(() => {
-      sdkPromise = null;
-      reject(new MapLoadError('timeout', `No response from the map provider within ${LOAD_TIMEOUT_MS / 1000}s.`));
+    const handleLoad = () => {
+      if (!window.T) {
+        settle(new MapLoadError('sdk-error', 'The provider script loaded but exposed no map API.'));
+        return;
+      }
+      settle(null);
+    };
+
+    const handleError = () => {
+      settle(new MapLoadError('script-error', 'The provider script could not be fetched.'));
+    };
+
+    timer = window.setTimeout(() => {
+      settle(
+        new MapLoadError(
+          'timeout',
+          `No response from the map provider within ${LOAD_TIMEOUT_MS / 1000}s.`,
+        ),
+      );
     }, LOAD_TIMEOUT_MS);
 
-    const existing = document.querySelector<HTMLScriptElement>('script[data-map-provider="tianditu"]');
-    const script = existing ?? document.createElement('script');
-
-    script.addEventListener('load', () => {
-      if (window.T) {
-        settle(() => resolve(window.T as TiandituNamespace));
-      } else {
-        sdkPromise = null;
-        settle(() => reject(new MapLoadError('sdk-error', 'The provider script loaded but exposed no map API.')));
-      }
-    });
-
-    script.addEventListener('error', () => {
-      sdkPromise = null;
-      settle(() => reject(new MapLoadError('script-error', 'The provider script could not be fetched.')));
-    });
-
-    if (!existing) {
-      script.src = TIANDITU_SCRIPT_URL;
-      script.async = true;
-      script.dataset.mapProvider = 'tianditu';
-      document.head.appendChild(script);
-    }
+    script = document.createElement('script');
+    script.src = TIANDITU_SCRIPT_URL;
+    script.async = true;
+    script.dataset.mapProvider = 'tianditu';
+    script.addEventListener('load', handleLoad);
+    script.addEventListener('error', handleError);
+    document.head.appendChild(script);
   });
 
-  return sdkPromise;
+  activeAttemptId = attemptId;
+  activePromise = promise;
+  return promise;
 }
 
-export function createTiandituAdapter(): MapAdapter {
+export function createTiandituAdapter(loadSdk: TiandituSdkLoader = loadTiandituSdk): MapAdapter {
   let sdk: TiandituNamespace | null = null;
   let map: TiandituMap | null = null;
   let destroyed = false;
@@ -120,7 +173,8 @@ export function createTiandituAdapter(): MapAdapter {
 
   return {
     async mount(container: HTMLElement, list: MapMarker[], callbacks: MapCallbacks) {
-      const loaded = await loadTiandituSdk();
+      const loaded = await loadSdk();
+      // An unmount during loading must not create a map on a dead container.
       if (destroyed) return;
       sdk = loaded;
 
@@ -128,13 +182,16 @@ export function createTiandituAdapter(): MapAdapter {
 
       const first = list[0];
       const view = first
-        ? { ...toProviderCoordinate(first.longitude, first.latitude), zoom: list.length === 1 ? 12 : 5 }
+        ? {
+            ...toProviderPosition(first.longitude, first.latitude),
+            zoom: list.length === 1 ? 12 : 5,
+          }
         : DEFAULT_VIEW;
 
       map.centerAndZoom(new sdk.LngLat(view.longitude, view.latitude), view.zoom);
 
       for (const item of list) {
-        const point = toProviderCoordinate(item.longitude, item.latitude);
+        const point = toProviderPosition(item.longitude, item.latitude);
         const lnglat = new sdk.LngLat(point.longitude, point.latitude);
         const marker = new sdk.Marker(lnglat);
         marker.addEventListener('click', () => callbacks.onMarkerClick(item.placeId));

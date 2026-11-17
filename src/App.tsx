@@ -2,16 +2,37 @@ import { useEffect, useMemo, useState } from 'react';
 import { MapPanel } from './components/MapPanel';
 import { ObjectDetail } from './components/ObjectDetail';
 import { ResultsList } from './components/ResultsList';
+import { isReleaseBuild } from './domain/build';
 import { getDataset, getObject, getValidationReport } from './domain/data';
 import { filterObjects } from './domain/search';
 import { strings } from './i18n/en';
 import { buildMarkers } from './map/markers';
 
-const HASH_PATTERN = /^#\/object\/([a-z0-9-]+)$/;
+const OBJECT_HASH_PATTERN = /^#\/object\/([a-z0-9-]+)$/;
+
+const SECTION_IDS = ['results', 'map', 'detail'] as const;
+type SectionId = (typeof SECTION_IDS)[number];
 
 function readObjectIdFromHash(): string | null {
-  const match = HASH_PATTERN.exec(window.location.hash);
-  return match?.[1] ?? null;
+  return OBJECT_HASH_PATTERN.exec(window.location.hash)?.[1] ?? null;
+}
+
+function isSectionHash(hash: string): boolean {
+  return SECTION_IDS.some((id) => hash === `#${id}`);
+}
+
+/**
+ * Section links move focus and scroll without touching the URL hash. The hash
+ * belongs to `#/object/<id>` routing; changing it here would clear the parsed
+ * object on the next hashchange and break Back.
+ */
+function revealSection(id: SectionId): void {
+  const node = document.getElementById(id);
+  if (!node) return;
+  const reduceMotion =
+    window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
+  node.scrollIntoView?.({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+  node.focus({ preventScroll: true });
 }
 
 export default function App() {
@@ -22,12 +43,14 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(() => readObjectIdFromHash());
 
   useEffect(() => {
-    const handleHashChange = () => setSelectedId(readObjectIdFromHash());
+    const handleHashChange = () => {
+      // A manually typed section hash must not erase an explicit selection.
+      if (isSectionHash(window.location.hash)) return;
+      setSelectedId(readObjectIdFromHash());
+    };
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
-
-  const activeObject = selectedId ? getObject(selectedId) : dataset.objects[0];
 
   const selectObject = (id: string) => {
     setSelectedId(id);
@@ -37,12 +60,37 @@ export default function App() {
     }
   };
 
+  // One filtered selection drives the list, the markers, the place rows, and
+  // the counts. Nothing outside this memo reads the unfiltered corpus.
   const filtered = useMemo(() => filterObjects(dataset.objects, query), [dataset, query]);
-  const markers = useMemo(() => buildMarkers(dataset.places, dataset.objects).markers, [dataset]);
+  const markers = useMemo(() => buildMarkers(dataset.places, filtered).markers, [dataset, filtered]);
+
+  const activeObject = selectedId
+    ? (getObject(selectedId) ?? filtered[0] ?? null)
+    : (filtered[0] ?? null);
+
+  const sectionLink = (id: SectionId, label: string) => (
+    <a
+      href={`#${id}`}
+      onClick={(event) => {
+        event.preventDefault();
+        revealSection(id);
+      }}
+    >
+      {label}
+    </a>
+  );
 
   return (
     <div className="app">
-      <a className="skip-link" href="#results">
+      <a
+        className="skip-link"
+        href="#results"
+        onClick={(event) => {
+          event.preventDefault();
+          revealSection('results');
+        }}
+      >
         {strings.skipToResults}
       </a>
 
@@ -52,16 +100,18 @@ export default function App() {
             {strings.siteTitleZh}
           </p>
           <h1 className="masthead__title">{strings.siteTitleEn}</h1>
-          <span className="badge badge--draft">{strings.statusBadge}</span>
+          <span className={isReleaseBuild ? 'badge badge--ok' : 'badge badge--draft'}>
+            {isReleaseBuild ? strings.statusBadgeRelease : strings.statusBadge}
+          </span>
         </div>
         <p className="masthead__tagline">{strings.tagline}</p>
-        <p className="masthead__notice">{strings.draftNotice}</p>
+        {isReleaseBuild ? null : <p className="masthead__notice">{strings.draftNotice}</p>}
       </header>
 
       <nav className="toolbar" aria-label="Sections">
-        <a href="#results">{strings.resultsHeading}</a>
-        <a href="#map">{strings.mapHeading}</a>
-        <a href="#detail">{strings.detailHeading}</a>
+        {sectionLink('results', strings.resultsHeading)}
+        {sectionLink('map', strings.mapHeading)}
+        {sectionLink('detail', strings.detailHeading)}
         <span className="toolbar__data">
           {strings.dataStatusOk(report.counts.objects, report.counts.events)}
         </span>
@@ -82,7 +132,12 @@ export default function App() {
       )}
 
       <main className="layout">
-        <section className="panel panel--results" id="results" aria-label={strings.resultsHeading}>
+        <section
+          className="panel panel--results"
+          id="results"
+          aria-label={strings.resultsHeading}
+          tabIndex={-1}
+        >
           <ResultsList
             objects={filtered}
             total={dataset.objects.length}
@@ -93,9 +148,14 @@ export default function App() {
           />
         </section>
 
-        <MapPanel markers={markers} objects={dataset.objects} onOpenObject={selectObject} />
+        <MapPanel markers={markers} objects={filtered} onOpenObject={selectObject} />
 
-        <section className="panel panel--detail" id="detail" aria-label={strings.detailHeading}>
+        <section
+          className="panel panel--detail"
+          id="detail"
+          aria-label={strings.detailHeading}
+          tabIndex={-1}
+        >
           {activeObject ? (
             <ObjectDetail object={activeObject} />
           ) : (

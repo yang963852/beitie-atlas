@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { formatCoordinate } from '../domain/coordinates';
-import { getObjectsForPlace, getPlace, groupByPlace } from '../domain/data';
+import { getDataset, getPlace, objectsAtCurrentPlace, partitionByLocation } from '../domain/data';
 import type { ObjectRecord, Place } from '../domain/types';
 import { strings } from '../i18n/en';
 import { mapIsConfigured } from '../map/config';
@@ -10,15 +10,19 @@ import { SourceList } from './SourceList';
 
 type Status = 'unconfigured' | 'loading' | 'ready' | 'error';
 
-interface MapPanelProps {
-  markers: MapMarker[];
-  objects: ObjectRecord[];
-  onOpenObject: (id: string) => void;
+type UnmappedReason = 'historical' | 'unknown' | 'no-point';
+
+interface UnmappedRow {
+  object: ObjectRecord;
+  place: Place | undefined;
+  reason: UnmappedReason;
 }
 
-interface PlaceRow {
-  place: Place;
+interface MapPanelProps {
+  markers: MapMarker[];
+  /** Records matching the current search. The panel never reads the full corpus. */
   objects: ObjectRecord[];
+  onOpenObject: (id: string) => void;
 }
 
 export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
@@ -30,22 +34,48 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const adapterRef = useRef<MapAdapter | null>(null);
 
-  const placeRows = useMemo<PlaceRow[]>(() => {
-    const groups = groupByPlace(objects);
-    return Array.from(groups.entries())
-      .map(([placeId, list]) => ({ place: getPlace(placeId), objects: list }))
-      .filter((row): row is PlaceRow => Boolean(row.place))
-      .sort((a, b) => a.place.id.localeCompare(b.place.id));
-  }, [objects]);
-
-  const withoutPoint = useMemo(
-    () =>
-      objects.filter((object) => {
-        const place = getPlace(object.currentCollection.placeId);
-        return !place || !place.coordinates;
-      }),
+  const partition = useMemo(
+    () => partitionByLocation(objects, getDataset().places),
     [objects],
   );
+
+  const placeRows = useMemo(
+    () =>
+      Array.from(partition.byPlace.entries())
+        .map(([placeId, list]) => ({ place: requirePlace(placeId), objects: list }))
+        .sort((a, b) => a.place.id.localeCompare(b.place.id)),
+    [partition],
+  );
+
+  const unmappedRows = useMemo<UnmappedRow[]>(() => {
+    const rows: UnmappedRow[] = [];
+    for (const object of partition.lastKnown) {
+      rows.push({
+        object,
+        place: getPlace(object.currentCollection.placeId),
+        reason: 'historical',
+      });
+    }
+    for (const object of partition.currentWithoutPoint) {
+      rows.push({
+        object,
+        place: getPlace(object.currentCollection.placeId),
+        reason: 'no-point',
+      });
+    }
+    for (const object of partition.unknown) {
+      rows.push({ object, place: undefined, reason: 'unknown' });
+    }
+    return rows;
+  }, [partition]);
+
+  // The map is rebuilt only when the set of points changes, not on every
+  // keystroke that leaves the same markers visible.
+  const markerSignature = markers
+    .map((marker) => `${marker.placeId}:${marker.objectIds.join(',')}`)
+    .join('|');
+  const markersRef = useRef(markers);
+  markersRef.current = markers;
 
   useEffect(() => {
     if (!mapIsConfigured) {
@@ -64,7 +94,7 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
     adapterRef.current = adapter;
 
     adapter
-      .mount(container, markers, { onMarkerClick: (placeId) => setActivePlaceId(placeId) })
+      .mount(container, markersRef.current, { onMarkerClick: (placeId) => setActivePlaceId(placeId) })
       .then(() => {
         if (!cancelled) setStatus('ready');
       })
@@ -79,13 +109,19 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
       adapter.destroy();
       adapterRef.current = null;
     };
-  }, [markers, attempt]);
+  }, [markerSignature, attempt]);
 
-  const activePlace = getPlace(activePlaceId);
-  const activeObjects = activePlaceId ? getObjectsForPlace(activePlaceId) : [];
+  // The popover is derived from the same filtered records as the list, so a
+  // search cannot leave an institution from another record on screen.
+  const activeObjects = useMemo(
+    () => (activePlaceId ? objectsAtCurrentPlace(objects, activePlaceId) : []),
+    [objects, activePlaceId],
+  );
+  const activePlace =
+    activeObjects.length > 0 && activePlaceId ? requirePlace(activePlaceId) : undefined;
 
   return (
-    <section className="panel panel--map" id="map" aria-labelledby="map-heading">
+    <section className="panel panel--map" id="map" aria-labelledby="map-heading" tabIndex={-1}>
       <div className="panel__head">
         <h2 id="map-heading" className="panel__heading">
           {strings.mapHeading}
@@ -226,11 +262,12 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
           })}
         </ul>
 
-        {withoutPoint.length > 0 ? (
+        {unmappedRows.length > 0 ? (
           <>
-            <h3 className="location-list__heading">{strings.locationsUnmappedHeading}</h3>
+            <h3 className="location-list__heading">{strings.locationsWithoutPointHeading}</h3>
+            <p className="meta-line">{strings.locationsWithoutPointIntro}</p>
             <ul className="location-list location-list--plain">
-              {withoutPoint.map((object) => (
+              {unmappedRows.map(({ object, place, reason }) => (
                 <li key={object.id}>
                   <button
                     type="button"
@@ -239,7 +276,13 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
                   >
                     <span lang="zh-Hans">{object.titles.zh}</span> · {object.titles.en}
                   </button>
-                  <span className="location__count">{strings.noCoordinates}</span>
+                  <p className="location__meta">
+                    <span className="tag">
+                      {strings.locationKindLabels[object.currentCollection.locationKind]}
+                    </span>
+                    <span>{place ? place.names.en : strings.placeNotRecorded}</span>
+                    <span className="location__count">{strings.unmappedReasons[reason]}</span>
+                  </p>
                 </li>
               ))}
             </ul>
@@ -248,4 +291,15 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
       </details>
     </section>
   );
+}
+
+/**
+ * `byPlace` keys only contain places that resolved during partitioning, so this
+ * is a lookup rather than a fallback. Throwing keeps a broken corpus visible
+ * instead of silently hiding a record.
+ */
+function requirePlace(placeId: string): Place {
+  const place = getPlace(placeId);
+  if (!place) throw new Error(`Place "${placeId}" is missing from the corpus.`);
+  return place;
 }

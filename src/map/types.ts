@@ -1,6 +1,10 @@
 /**
  * The map boundary. The rest of the application knows nothing about the
  * provider; swapping or removing the map must not affect the corpus.
+ *
+ * Marker positions are the record's stored WGS84 values. The adapter passes
+ * them to the provider unchanged; no datum transformation is applied or
+ * claimed. See `docs/map-pilot.md` §3.
  */
 
 export interface MapMarker {

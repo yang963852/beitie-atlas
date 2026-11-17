@@ -1,43 +1,15 @@
 /**
- * Command-line data check: `npm run check:data`.
+ * Preview data check: `npm run check:data`.
  *
  * Reads the same JSON the application bundles, runs the shared validator, and
- * exits non-zero on any error so a broken record cannot reach a build.
+ * exits non-zero on any error so a broken record cannot reach a preview build.
+ * Drafts are allowed here; `npm run release` is the strict gate.
  */
 
-import { readdirSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
 import { formatReport, validateDataset } from '../src/domain/validate';
+import { loadDatasetFromDisk } from './lib/dataset';
 
-const root = process.cwd();
-
-function readJson(relativePath: string): unknown {
-  return JSON.parse(readFileSync(join(root, relativePath), 'utf8'));
-}
-
-function readRecordDirectory(relativeDir: string): unknown[] {
-  const directory = join(root, relativeDir);
-  return readdirSync(directory)
-    .filter((file) => file.endsWith('.json'))
-    .sort()
-    .map((file) => readJson(join(relativeDir, file)));
-}
-
-function readCollection(relativePath: string): unknown[] {
-  const parsed = readJson(relativePath);
-  if (typeof parsed !== 'object' || parsed === null || !Array.isArray((parsed as { items?: unknown }).items)) {
-    throw new Error(`${relativePath} must contain an "items" array.`);
-  }
-  return (parsed as { items: unknown[] }).items;
-}
-
-const dataset = {
-  works: readRecordDirectory('data/works'),
-  objects: readRecordDirectory('data/objects'),
-  places: readCollection('data/places.json'),
-  sources: readCollection('data/sources.json'),
-  media: readCollection('data/media.json'),
-};
+const dataset = loadDatasetFromDisk();
 
 const releaseMode = process.env.RELEASE_MODE === '1' || process.env.VITE_RELEASE_MODE === '1';
 const report = validateDataset(dataset, { releaseMode });

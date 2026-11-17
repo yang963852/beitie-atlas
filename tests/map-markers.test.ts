@@ -1,4 +1,6 @@
 import { describe, expect, it } from 'vitest';
+import { currentPlaceId, isCurrentLocationKind } from '../src/domain/collection';
+import { objectsAtCurrentPlace, partitionByLocation } from '../src/domain/data';
 import type { ObjectRecord, Place } from '../src/domain/types';
 import { buildMarkers } from '../src/map/markers';
 import { MapLoadError, toMapFailure } from '../src/map/tianditu';
@@ -26,12 +28,32 @@ function place(id: string, withCoordinates: boolean): Place {
   };
 }
 
-function object(id: string, placeId: string | null, locationKind = 'collection-institution'): ObjectRecord {
+function object(
+  id: string,
+  placeId: string | null,
+  locationKind: ObjectRecord['currentCollection']['locationKind'] = 'collection-institution',
+): ObjectRecord {
   return {
     id,
     currentCollection: { placeId, locationKind },
   } as unknown as ObjectRecord;
 }
+
+describe('current location rule', () => {
+  it('accepts only present-day collection and in-situ assertions', () => {
+    expect(isCurrentLocationKind('collection-institution')).toBe(true);
+    expect(isCurrentLocationKind('in-situ')).toBe(true);
+    expect(isCurrentLocationKind('last-known')).toBe(false);
+    expect(isCurrentLocationKind('unknown')).toBe(false);
+  });
+
+  it('returns no current place for a last-known or unknown claim', () => {
+    expect(currentPlaceId(object('o1', 'place-a', 'collection-institution'))).toBe('place-a');
+    expect(currentPlaceId(object('o2', 'place-a', 'in-situ'))).toBe('place-a');
+    expect(currentPlaceId(object('o3', 'place-a', 'last-known'))).toBeNull();
+    expect(currentPlaceId(object('o4', 'place-a', 'unknown'))).toBeNull();
+  });
+});
 
 describe('marker building', () => {
   it('creates one marker per institution and keeps both objects on it', () => {
@@ -61,6 +83,44 @@ describe('marker building', () => {
 
     expect(result.markers).toHaveLength(0);
     expect(result.skipped).toHaveLength(0);
+  });
+
+  it('never turns a last-known location into a current collection marker', () => {
+    const objects = [object('object-5', 'place-c', 'last-known')];
+    const result = buildMarkers([place('place-c', true)], objects);
+    const partition = partitionByLocation(objects, [place('place-c', true)]);
+
+    expect(result.markers).toHaveLength(0);
+    expect(objectsAtCurrentPlace(objects, 'place-c')).toEqual([]);
+    expect(partition.lastKnown.map((entry) => entry.id)).toEqual(['object-5']);
+    expect(partition.byPlace.size).toBe(0);
+  });
+
+  it('keeps a current claim without coordinates readable but unplotted', () => {
+    const objects = [object('object-6', 'place-d')];
+    const result = buildMarkers([place('place-d', false)], objects);
+    const partition = partitionByLocation(objects, [place('place-d', false)]);
+
+    expect(result.markers).toHaveLength(0);
+    expect(result.skipped[0]?.reason).toBe('no-coordinates');
+    expect(partition.currentWithoutPoint.map((entry) => entry.id)).toEqual(['object-6']);
+  });
+
+  it('separates current, last-known, unknown, and missing-place records', () => {
+    const objects = [
+      object('current', 'place-a'),
+      object('historical', 'place-a', 'last-known'),
+      object('unknown', null, 'unknown'),
+      object('no-place', null, 'collection-institution'),
+    ];
+    const partition = partitionByLocation(objects, [place('place-a', true)]);
+
+    expect(Array.from(partition.byPlace.keys())).toEqual(['place-a']);
+    expect(partition.byPlace.get('place-a')?.map((entry) => entry.id)).toEqual(['current']);
+    expect(partition.lastKnown.map((entry) => entry.id)).toEqual(['historical']);
+    expect(partition.unknown.map((entry) => entry.id)).toEqual(['unknown']);
+    expect(partition.currentWithoutPoint.map((entry) => entry.id)).toEqual(['no-place']);
+    expect(objectsAtCurrentPlace(objects, 'place-a').map((entry) => entry.id)).toEqual(['current']);
   });
 });
 

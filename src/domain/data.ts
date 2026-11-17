@@ -9,6 +9,8 @@
 import mediaFile from '../../data/media.json';
 import placesFile from '../../data/places.json';
 import sourcesFile from '../../data/sources.json';
+import { currentPlaceId, isCurrentLocation } from './collection';
+import { isReleaseBuild } from './build';
 import type { Dataset, MediaItem, ObjectRecord, ObjectType, Place, Source, Work } from './types';
 import { validateDataset, type ValidationReport } from './validate';
 
@@ -60,8 +62,7 @@ export function getDataset(): Dataset {
 
 /** The same validator the command-line check runs, evaluated once for the UI. */
 export function getValidationReport(): ValidationReport {
-  const releaseMode = import.meta.env.VITE_RELEASE_MODE === '1';
-  return validateDataset(getDataset(), { releaseMode });
+  return validateDataset(getDataset(), { releaseMode: isReleaseBuild });
 }
 
 export function getWork(id: string): Work | undefined {
@@ -82,24 +83,71 @@ export function getObject(id: string | null): ObjectRecord | undefined {
   return getDataset().objects.find((object) => object.id === id);
 }
 
-export function getObjectsForPlace(placeId: string): ObjectRecord[] {
-  return getDataset().objects.filter(
-    (object) =>
-      object.currentCollection.placeId === placeId &&
-      object.currentCollection.locationKind !== 'unknown',
-  );
+/** Objects whose documented current collection is this place. */
+export function objectsAtCurrentPlace(objects: ObjectRecord[], placeId: string): ObjectRecord[] {
+  return objects.filter((object) => currentPlaceId(object) === placeId);
 }
 
-/** Objects grouped by documented collection place, used for one marker per institution. */
-export function groupByPlace(objects: ObjectRecord[]): Map<string, ObjectRecord[]> {
+/** Objects grouped by a current collection place, used for one marker per institution. */
+export function groupCurrentLocationsByPlace(objects: ObjectRecord[]): Map<string, ObjectRecord[]> {
   const groups = new Map<string, ObjectRecord[]>();
   for (const object of objects) {
-    const placeId = object.currentCollection.placeId;
+    const placeId = currentPlaceId(object);
     if (!placeId) continue;
-    if (object.currentCollection.locationKind === 'unknown') continue;
     const list = groups.get(placeId) ?? [];
     list.push(object);
     groups.set(placeId, list);
   }
   return groups;
+}
+
+export interface LocationPartition {
+  /** Current collection places that can carry a map marker. */
+  byPlace: Map<string, ObjectRecord[]>;
+  /** Historical "was there at some date" claims: readable, never a current marker. */
+  lastKnown: ObjectRecord[];
+  /** No location claim at all. */
+  unknown: ObjectRecord[];
+  /** A current claim whose place is missing from the corpus or has no coordinates. */
+  currentWithoutPoint: ObjectRecord[];
+}
+
+/**
+ * Splits records by what their location assertion actually says, so that the
+ * map, the location list, and the record list cannot disagree about which
+ * objects are at a place today.
+ *
+ * `places` is passed in rather than read from the module cache so the rule can
+ * be tested against a controlled corpus.
+ */
+export function partitionByLocation(
+  objects: ObjectRecord[],
+  places: Place[],
+): LocationPartition {
+  const byPlace = new Map<string, ObjectRecord[]>();
+  const lastKnown: ObjectRecord[] = [];
+  const unknown: ObjectRecord[] = [];
+  const currentWithoutPoint: ObjectRecord[] = [];
+  const placesById = new Map(places.map((place) => [place.id, place]));
+
+  for (const object of objects) {
+    const collection = object.currentCollection;
+    if (!isCurrentLocation(collection)) {
+      if (collection.locationKind === 'last-known') lastKnown.push(object);
+      else unknown.push(object);
+      continue;
+    }
+
+    const place = collection.placeId ? placesById.get(collection.placeId) : undefined;
+    if (!place || !place.coordinates) {
+      currentWithoutPoint.push(object);
+      continue;
+    }
+
+    const list = byPlace.get(place.id) ?? [];
+    list.push(object);
+    byPlace.set(place.id, list);
+  }
+
+  return { byPlace, lastKnown, unknown, currentWithoutPoint };
 }
