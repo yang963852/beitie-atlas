@@ -33,6 +33,9 @@ CGCS2000 basemap, and a documented browser key flow.
   tier.
 - Live rendering, tile quality, mainland latency, and the exact attribution label the
   provider requires a third-party page to display.
+- Whether the provider applies any internal transformation between WGS84 input and its
+  CGCS2000 basemap. The documentation read here does not state it, so §3 describes only what
+  this project does (nothing) and what the sources establish.
 - The console page itself could not be read without logging in; it is recorded as
   “open in a browser after registration”.
 
@@ -41,7 +44,7 @@ CGCS2000 basemap, and a documented browser key flow.
 | File | Role |
 | --- | --- |
 | `src/map/config.ts` | Reads `VITE_TIANDITU_KEY` at build time, builds the official script URL, holds the fallback view and timeout. |
-| `src/map/tianditu.ts` | Loads the official script once, creates the map and one marker per place, converts WGS84 to the provider frame explicitly, and cleans up on unmount. |
+| `src/map/tianditu.ts` | Loads the official script once per session, creates the map and one marker per place, passes the stored WGS84 value through **without** a datum transformation, and removes failed scripts before a retry. |
 | `src/map/markers.ts` | Builds markers from places that have coordinates and at least one object; places without coordinates are reported, not approximated. |
 | `src/map/types.ts` | The adapter boundary. No provider type escapes this folder. |
 | `src/components/MapPanel.tsx` | Loading, unconfigured, error, retry, place card, attribution, and a keyboard-accessible location list that always works. |
@@ -52,10 +55,9 @@ Design decisions:
   become one marker with a list, so counts stay consistent between map and list.
 - **No coordinate, no marker.** Historical places without a surveyed point (the governor's
   compound, Xincheng, the 1948 Beilin) stay in the list and produce no marker.
-- **Explicit frame conversion.** Records are WGS84. The adapter passes coordinates to a
-  CGCS2000 service through `toProviderCoordinate()`, which returns the frame name, instead
-  of relabelling stored data. The difference is centimetric, far below the recorded
-  institution precision (~30 m).
+- **No invented transformation.** Records stay WGS84. The adapter passes the numbers to
+  `T.LngLat` unchanged and does not relabel them as CGCS2000. Any datum question is described
+  in §3 rather than hidden in a function name.
 - **No key, no request.** When `VITE_TIANDITU_KEY` is empty the component never injects a
   script and never contacts the provider.
 - **Failure is visible, never fatal.** A timeout (15 s), a blocked script, or an SDK error
@@ -63,7 +65,41 @@ Design decisions:
 - **No reverse-engineered tile URLs, no tile-URL swapping.** Only the documented JS API is
   used, so the provider's own labels and attribution stay in place.
 
-## 3. Credential model
+## 3. Coordinate treatment
+
+The records store WGS84 longitude/latitude and keep the source that supplied each point. The
+adapter passes those numbers to `T.LngLat` **unchanged**. It applies no datum transformation
+and does not label the stored value as CGCS2000. Nothing in the code claims an accuracy that
+the sources do not support.
+
+What is documented, and by whom:
+
+| Claim | Source | Status |
+| --- | --- | --- |
+| Tianditu's map services are catalogued with 坐标系 CGCS2000, in geographic and Web Mercator variants. | Entry for 天地图 in the national catalogue, published by 国家基础地理信息中心: <https://www.webmap.cn/commres.do?method=tianMap&typeId=14> | Official catalogue, read 2026-11-17 |
+| JavaScript API 4.0 `MapOptions.projection` defaults to `EPSG:900913` and also supports `EPSG:4326` (大地平面投影). | Official class reference <https://lbs.tianditu.gov.cn/api/js4.0/class.html> | Official documentation; the page is script-rendered, so the property text was read from its search description, not from a live map |
+| CGCS2000 is implemented by the 2000 National GPS Geodetic Network at epoch 2000.0, aligned with ITRF97 at that epoch. | 深圳市规划和自然资源局, 2021-11-11: <https://www.sz.gov.cn/hdjl/ywzsk/ghj/zrzyl/content/post_9358232.html> | Government explainer |
+| The CGCS2000 frame is defined with zero translation, rotation, and scale relative to ITRF1997 at epoch 2000.0. | UNOOSA/ICG “China Terrestrial Reference Frame 2000” template, submitted by the Chinese geodetic authority: <https://www.unoosa.org/pdf/icg/2012/template/CTRF2000.pdf> | International submission describing the national frame |
+
+What follows, and what does not:
+
+- CGCS2000 and WGS84 share an Earth-centred definition and a nearly identical ellipsoid. At the
+  same epoch and realisation the difference is negligible at institution scale.
+- They are not interchangeable statements. WGS84 coordinates are normally given at an
+  observation epoch, while CGCS2000 is realised at 2000.0. Crustal motion means the difference
+  grows with time. A Chinese professional-society review gives about 3 cm per year in its
+  example (roughly 0.6 m across 19+ years): <https://mp.weixin.qq.com/s?__biz=Mzg5MzU0Njg1Ng==&mid=2247485595&idx=1&sn=dff31600bd7229afb519788457fa845f>.
+  That article is secondary evidence for an order of magnitude, not a standard.
+- Both institution points come from Wikidata P625 with no cited reference and no stated epoch.
+  The Beilin point is recorded at institution precision (about 30 m). The datum question is
+  well below that uncertainty, but it is not resolved by this project.
+
+**Conclusion recorded in the data and interface:** the marker is an indicative institution
+point, not a surveyed or converted position. Precision is never inferred from the number of
+decimal places. If a key is supplied, the live check in §6 can show whether the two points land
+on the museums; that observation tests the whole chain, not a datum transformation.
+
+## 4. Credential model
 
 A browser key is **public by construction**: whatever `.env` says, `VITE_*` values are
 compiled into `dist/assets/*.js`. It is not a secret and must not be handled like one.
@@ -73,13 +109,14 @@ compiled into `dist/assets/*.js`. It is not a secret and must not be handled lik
 - A server-side proxy is only needed if a future provider requires a server key. This task
   adds no backend and no proxy.
 
-## 4. One precise owner action (to enable the map)
+## 5. One precise owner action (to enable the map)
 
-The owner needs a Tianditu developer account and one browser key. Exact steps are in
-`docs/delivery-001.md` §“开启地图（需要你做一步）”. No key is required for anything else in
-this task.
+The owner needs a Tianditu developer account and one browser key. The beginner-facing steps,
+the exact file to create, what not to send in chat, and the console details that still need
+verification are in **[docs/map-setup.md](map-setup.md)**. No key is required for anything else
+in this task.
 
-## 5. Test plan once a key exists
+## 6. Test plan once a key exists
 
 1. Put the key in `.env.local`, run `npm run build`, then `npm run preview`.
 2. Confirm the map renders and two institution markers appear (Xi'an Beilin Museum, Palace
@@ -98,7 +135,7 @@ this task.
 Mainland desktop and mobile testing is a separate gate and requires a deployed build; a
 localhost screenshot does not satisfy it.
 
-## 6. Alternatives
+## 7. Alternatives
 
 | Option | Position |
 | --- | --- |
@@ -106,7 +143,7 @@ localhost screenshot does not satisfy it.
 | Leaflet + OSM tiles | Not chosen. OSM's tile policy is intended for small-scale use, in-browser tile URLs must not be swapped between providers, and mainland reachability is unproven. No Leaflet dependency was added. |
 | Static image or hand-drawn map | Rejected as the primary pilot: it cannot demonstrate a real provider integration. |
 
-## 7. Deployment prerequisites (unchanged by this task)
+## 8. Deployment prerequisites (unchanged by this task)
 
 - A static host serving `dist/` at a known base path. Vite's `base` is configurable; a
   sub-path build was produced and inspected (see the delivery report).

@@ -1,8 +1,17 @@
 # 碑帖之间 · Between Steles
 
+## Current development guidance
+
+Before implementation read [agent rules](AGENTS.md), [contribution workflow](CONTRIBUTING.md),
+[design system](docs/design-system.md), and [iteration board](docs/iteration-board.md).
+Task 001 passed local checks but required changes; see [review](docs/review-001.md).
+Task 002 closes those findings and is delivered for review; see
+[delivery 002](docs/delivery-002.md). Next: [task 003 — visual refinement](tasks/003-design-refinement.md).
+The preview CI workflow is prepared locally; it has not run on GitHub and does not deploy.
+
 An open-source atlas of Chinese calligraphic inscriptions and selected rubbings: what survives, where it is documented today, and how its history connects places.
 
-**Status: local foundation, 2026-11-17. Task 001 is implemented and checked on one local Windows machine. It is not deployed, not reviewed by Codex, and not verified on mainland public networks.**
+**Status: local foundation plus review fixes, 2026-11-17. Task 002 is implemented and checked on one local Windows machine and awaits Codex review. Nothing is deployed, no live map key exists, and mainland public-network access has not been tested.**
 
 The Chinese project name is final. `Between Steles` is a working English title and `beitie-atlas` is the proposed GitHub repository name; name availability has not been checked.
 
@@ -20,8 +29,11 @@ The Chinese project name is final. `Between Steles` is a working English title a
 - [Engineering plan](docs/engineering-plan.md): scope, data model, architecture, and acceptance gates.
 - [Source audit](docs/source-audit.md): researched sources, supported claims, and known gaps.
 - [WorkBuddy task 001](tasks/001-foundation.md): first implementation brief, ready to copy into WorkBuddy.
-- [Map pilot](docs/map-pilot.md): provider evaluation, credential model, and the remaining test plan.
+- [Map pilot](docs/map-pilot.md): provider evaluation, coordinate treatment, credential model, and the remaining test plan.
+- [Map setup for the owner](docs/map-setup.md): the beginner-facing steps to enable the map (Chinese).
+- [Release runbook](docs/release.md): the only permitted publishing command and the artifact it must produce.
 - [Delivery report 001](docs/delivery-001.md): what was built, how it was checked, and what is still open.
+- [Delivery report 002](docs/delivery-002.md): review fixes, the strict release gate, and what remains unverified.
 - [Delivery report template](templates/delivery-report.md): the evidence required for review.
 
 ## Essential distinctions
@@ -39,16 +51,23 @@ accounts, write API, or runtime AI generation is involved.
 ```bash
 npm install          # once, from the project folder
 npm run dev          # development server (prints its own address)
-npm run check        # type check + data validation + tests + production build
-npm run build        # type check + production build into dist/
+npm run check        # type check + data validation + tests + preview build
+npm run build        # type check + preview build into dist/ — never publish this
 npm run preview      # serve the built site locally
+npm run release      # the only publishable build; fails on draft/invalid data
+npm run check:release # strict data gate only, no build
 ```
+
+`npm run release` deletes any previous `dist/` first, refuses to build while records are drafts,
+and writes a `release` marker plus `dist/release-manifest.json`. A failure leaves no artifact
+that could be uploaded by mistake. See [docs/release.md](docs/release.md).
 
 The map is optional and needs a public Tianditu browser key at build time. Without one the
 site shows an explanatory panel and remains fully readable. A browser key is public after
-building; `.env` cannot hide it. GitHub source hosting and public website hosting are separate
-decisions, and the map provider plus host must pass a mainland-network pilot before they are
-finalized. Mainland public access has not been tested.
+building; `.env` cannot hide it. Owner steps are in [docs/map-setup.md](docs/map-setup.md).
+GitHub source hosting and public website hosting are separate decisions, and the map provider
+plus host must pass a mainland-network pilot before they are finalized. Mainland public access
+has not been tested.
 
 ## Open-source direction
 
