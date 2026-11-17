@@ -5,8 +5,8 @@ Updated: 2026-11-17. One active implementation task at a time.
 | Task | Outcome | State | Exit evidence |
 | --- | --- | --- | --- |
 | 001 | Foundation preview | Changes required; local checks pass | See review-001.md; live map and public-network verification pending |
-| 002 | Close review defects and establish release gate | Delivered 2026-11-17 — awaiting review | 61 tests in 7 files; `npm run release` rejects 3 drafts and removes `dist/`; isolated reviewed-copy run exits 0 with a verified release artifact; `docs/delivery-002.md` |
-| 003 | Apple-inspired visual hierarchy and usability | Queued after 002 | Responsive screenshots, keyboard/zoom checks, no loss of core functions |
+| 002 | Close review defects and establish release gate | Accepted locally 2026-11-17 | Independent 61-test check and strict rejection of 3 drafts; see review-002.md; live/external gates remain pending |
+| 003 | Apple-inspired visual hierarchy and usability | Ready | Responsive screenshots, keyboard/zoom checks, no loss of core functions |
 | 004 | Real map and network pilot | Pending owner key and test host | Actual provider markers, recovery, attribution, mainland desktop/mobile results |
 | 005 | Three reviewed physical objects | Queued | Sources reviewed, coordinate basis checked, missing data handled |
 | 006 | First public corpus and release | Queued | Rights, contribution docs, strict release checks, host tests, rollback revision |

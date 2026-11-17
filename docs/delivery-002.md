@@ -145,5 +145,6 @@ Environment: Windows, Node v22.22.2, npm 10.9.7, Chrome via Playwright 1.56.0.
 
 ## Reviewer outcome
 
-_For Codex to fill: accepted / changes required / partially verified. Include actionable findings
-with reproduction steps and expected behaviour._
+Accepted for local engineering scope by Codex, 2026-11-17. Independent checks passed
+61 tests and strict publication validation rejected the three drafts as expected.
+See [review-002.md](review-002.md) for inspection scope and unverified external gates.

@@ -4,7 +4,7 @@ Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, a
 
 ## Roles and scope
 
-- The owner chooses product direction. Codex designs and independently reviews; WorkBuddy/DeepSeek implements assigned tasks. One implementation writer at a time.
+- The owner chooses product direction. Codex normally designs/reviews and WorkBuddy implements; the owner may assign implementation directly to Codex, a human, or another AI. Follow the same checks and handoff regardless of tool. One implementation writer at a time.
 - Finish the current task and its blocking findings before starting another. Do not rewrite the application or introduce a backend, framework, provider, or dependency without a concrete need recorded in the decision log.
 - Use English in implementation and technical documents; explain progress to the owner in Chinese. Preserve Chinese names and original source wording.
 - Inspect `git status` first. Preserve others' changes. Work inside this repository, never stage the parent workspace or personal documents.

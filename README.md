@@ -1,17 +1,21 @@
 # 碑帖之间 · Between Steles
 
+**Initial collaborative source: v0.1.0-alpha.1.** Start with the
+[maintainer/AI handoff](docs/START-HERE.md) to understand and modify the project
+without the original conversation. [Changelog](CHANGELOG.md) · [License](LICENSE) · [Rights](NOTICE.md).
+
 ## Current development guidance
 
 Before implementation read [agent rules](AGENTS.md), [contribution workflow](CONTRIBUTING.md),
 [design system](docs/design-system.md), and [iteration board](docs/iteration-board.md).
 Task 001 passed local checks but required changes; see [review](docs/review-001.md).
-Task 002 closes those findings and is delivered for review; see
-[delivery 002](docs/delivery-002.md). Next: [task 003 — visual refinement](tasks/003-design-refinement.md).
+Task 002 passed independent local review; see [review 002](docs/review-002.md)
+and [delivery 002](docs/delivery-002.md). Next: [task 003 — visual refinement](tasks/003-design-refinement.md).
 The preview CI workflow is prepared locally; it has not run on GitHub and does not deploy.
 
 An open-source atlas of Chinese calligraphic inscriptions and selected rubbings: what survives, where it is documented today, and how its history connects places.
 
-**Status: local foundation plus review fixes, 2026-11-17. Task 002 is implemented and checked on one local Windows machine and awaits Codex review. Nothing is deployed, no live map key exists, and mainland public-network access has not been tested.**
+**Status: local foundation plus reviewed fixes, 2026-11-17. Independent local checks pass (61 tests). No production website is deployed, no live map has been verified, and mainland public-network access has not been tested.**
 
 The Chinese project name is final. `Between Steles` is a working English title and `beitie-atlas` is the proposed GitHub repository name; name availability has not been checked.
 
@@ -49,7 +53,7 @@ was used for the recorded checks; `package.json` requires `>=22.12.0`. No runtim
 accounts, write API, or runtime AI generation is involved.
 
 ```bash
-npm install          # once, from the project folder
+npm ci               # reproducible install from the committed lockfile
 npm run dev          # development server (prints its own address)
 npm run check        # type check + data validation + tests + preview build
 npm run build        # type check + preview build into dist/ — never publish this
@@ -71,6 +75,6 @@ has not been tested.
 
 ## Open-source direction
 
-The project is intended for public reuse. The recommended policy is MIT for independently written application code, a separate policy for original editorial data, and item-specific rights for third-party images. These licenses must be recorded before the first public release; this planning package does not grant rights to referenced third-party material.
+Original code, documentation and original editorial contributions are available under [MIT](LICENSE). Third-party material is excluded; read [NOTICE.md](NOTICE.md). Public source availability is separate from editorial approval of a production website. All current work/object records remain drafts.
 
 Inspired by [jiangshan-map](https://github.com/DeanChensj/jiangshan-map). That repository uses [GPL-3.0](https://github.com/DeanChensj/jiangshan-map/blob/main/LICENSE). This project currently references its interaction ideas and does not include copied source code, maps, or artwork.
