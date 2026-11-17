@@ -152,5 +152,9 @@ The default build was then restored (`/assets/...`).
 
 ## Reviewer outcome
 
-_For Codex to fill: accepted / changes required / partially verified. Include actionable findings
-with reproduction steps and expected behaviour._
+**Changes required — Codex, 2026-11-17.** Independently reran all local checks: 36 tests,
+data validation, type check, and build pass. Review found release-gate bypass, SDK retry,
+location semantics/navigation, coordinate-description, and setup-guide issues. See
+[independent review](review-001.md) for evidence and [task 002](../tasks/002-review-fixes.md)
+for fixes. Live provider and public-network acceptance remain pending. This outcome does
+not change the implementer's historical observations above.
