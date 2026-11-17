@@ -1,5 +1,7 @@
 # 碑帖之间 · Between Steles
 
+**English** | [简体中文](README.zh-CN.md)
+
 **Initial collaborative source: v0.1.0-alpha.1.** Start with the
 [maintainer/AI handoff](docs/START-HERE.md) to understand and modify the project
 without the original conversation. [Changelog](CHANGELOG.md) · [License](LICENSE) · [Rights](NOTICE.md).
@@ -11,13 +13,13 @@ Before implementation read [agent rules](AGENTS.md), [contribution workflow](CON
 Task 001 passed local checks but required changes; see [review](docs/review-001.md).
 Task 002 passed independent local review; see [review 002](docs/review-002.md)
 and [delivery 002](docs/delivery-002.md). Next: [task 003 — visual refinement](tasks/003-design-refinement.md).
-The preview CI workflow is prepared locally; it has not run on GitHub and does not deploy.
+The [initial snapshot's CI checks passed on GitHub](https://github.com/yang963852/beitie-atlas/actions/runs/44102927813). CI validates previews and does not deploy.
 
 An open-source atlas of Chinese calligraphic inscriptions and selected rubbings: what survives, where it is documented today, and how its history connects places.
 
 **Status: local foundation plus reviewed fixes, 2026-11-17. Independent local checks pass (61 tests). No production website is deployed, no live map has been verified, and mainland public-network access has not been tested.**
 
-The Chinese project name is final. `Between Steles` is a working English title and `beitie-atlas` is the proposed GitHub repository name; name availability has not been checked.
+The Chinese project name is final. `Between Steles` is a working English title. The public repository is [yang963852/beitie-atlas](https://github.com/yang963852/beitie-atlas).
 
 ## Confirmed direction
 

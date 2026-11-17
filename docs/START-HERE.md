@@ -71,7 +71,9 @@ Task 002's local fixes passed independent checks; see review-002.md. Next is tas
 003: Apple-inspired visual refinement. Map activation/network testing and editorial
 review are separate tasks. Current UI is still the foundation design. True browser
 200% zoom, full keyboard traversal, live maps, mainland/overseas deployment, and
-hosted CI have not been independently verified in this baseline review.
+hosted deployment have not been independently verified in this baseline review.
+The initial source snapshot's GitHub CI subsequently passed:
+https://github.com/yang963852/beitie-atlas/actions/runs/44102927813.
 
 Historical planning and delivery reports remain evidence of earlier states; when
 they conflict with current status, follow this handoff and the iteration board.
