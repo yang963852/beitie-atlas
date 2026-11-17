@@ -65,7 +65,7 @@ describe('application shell', () => {
   it('keeps list and detail usable when the map has no configuration', () => {
     renderApp();
 
-    expect(screen.getByText('Map not configured in this build')).toBeInTheDocument();
+    expect(screen.getByText('Map unavailable')).toBeInTheDocument();
     expect(within(resultsList()).getAllByRole('link')).toHaveLength(2);
     expect(screen.getByRole('heading', { name: '颜勤礼碑（原石）' })).toBeInTheDocument();
 
@@ -82,6 +82,36 @@ describe('application shell', () => {
     expect(screen.getByText('新00045406')).toBeInTheDocument();
   });
 
+  it('opens the record view for a shared link and returns to the list on Back', () => {
+    window.location.hash = '#/object/yan-qinli-original-stele';
+    const { container } = renderApp();
+    const workspace = container.querySelector('.workspace');
+
+    expect(workspace).toHaveAttribute('data-mobile-view', 'detail');
+
+    fireEvent.click(screen.getByRole('button', { name: /back to records/i }));
+
+    expect(workspace).toHaveAttribute('data-mobile-view', 'list');
+    expect(window.location.hash).toBe('#/object/yan-qinli-original-stele');
+  });
+
+  it('switches the mobile pane without losing the selection', () => {
+    const { container } = renderApp();
+    const workspace = container.querySelector('.workspace');
+
+    fireEvent.click(within(resultsList()).getByText('颜勤礼碑（民国拓本）'));
+    fireEvent.click(screen.getByRole('button', { name: /back to records/i }));
+
+    fireEvent.click(screen.getByRole('button', { name: 'Map' }));
+    expect(workspace).toHaveAttribute('data-mobile-view', 'map');
+
+    fireEvent.click(screen.getByRole('button', { name: 'List' }));
+    expect(workspace).toHaveAttribute('data-mobile-view', 'list');
+
+    fireEvent.change(screen.getByLabelText(/search records/i), { target: { value: '故宫' } });
+    expect(within(resultsList()).getByText('颜勤礼碑（民国拓本）')).toBeInTheDocument();
+  });
+
   it('filters the list, the map panel, and the detail together', () => {
     renderApp();
     const search = screen.getByLabelText(/search records/i);
@@ -92,7 +122,7 @@ describe('application shell', () => {
     expect(screen.getByText('1 of 2')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '颜勤礼碑（民国拓本）' })).toBeInTheDocument();
 
-    const mapPanel = screen.getByRole('region', { name: 'Map pilot' });
+    const mapPanel = screen.getByRole('region', { name: 'Map' });
     expect(within(mapPanel).queryByText('西安碑林博物馆')).not.toBeInTheDocument();
     expect(within(mapPanel).getAllByText('故宫博物院').length).toBeGreaterThan(0);
     expect(screen.getByText(/Locations without the map/)).toHaveTextContent('(1)');
@@ -115,7 +145,7 @@ describe('application shell', () => {
     fireEvent.click(within(resultsList()).getByText('颜勤礼碑（民国拓本）'));
     expect(window.location.hash).toBe('#/object/dpm-rubbing-xin00045406');
 
-    fireEvent.click(screen.getByRole('link', { name: 'Map pilot' }));
+    fireEvent.click(screen.getByRole('link', { name: 'Map' }));
 
     expect(window.location.hash).toBe('#/object/dpm-rubbing-xin00045406');
     expect(screen.getByRole('heading', { name: '颜勤礼碑（民国拓本）' })).toBeInTheDocument();

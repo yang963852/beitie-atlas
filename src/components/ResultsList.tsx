@@ -22,7 +22,7 @@ export function ResultsList({
   return (
     <div className="results">
       <div className="results__head">
-        <h2 id="results-heading" className="panel__heading">
+        <h2 id="results-heading" className="pane__title">
           {strings.resultsHeading}
         </h2>
         <span className="results__count">{strings.resultsCount(objects.length, total)}</span>
@@ -43,7 +43,7 @@ export function ResultsList({
             autoComplete="off"
           />
           {query ? (
-            <button type="button" className="button button--quiet" onClick={() => onQueryChange('')}>
+            <button type="button" className="button button--ghost" onClick={() => onQueryChange('')}>
               {strings.clearSearch}
             </button>
           ) : null}
@@ -51,7 +51,14 @@ export function ResultsList({
       </div>
 
       {objects.length === 0 ? (
-        <p className="empty">{total === 0 ? strings.emptyCorpus : strings.noResults}</p>
+        <div className="results__empty">
+          <p className="muted">{total === 0 ? strings.emptyCorpus : strings.noResults}</p>
+          {query ? (
+            <button type="button" className="button" onClick={() => onQueryChange('')}>
+              {strings.clearSearch}
+            </button>
+          ) : null}
+        </div>
       ) : (
         <ul className="results__list" aria-labelledby="results-heading">
           {objects.map((object) => {

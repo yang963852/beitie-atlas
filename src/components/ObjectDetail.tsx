@@ -24,14 +24,20 @@ function DateLine({ date }: { date: HistoricalDate }) {
 
 function Fact({ term, children }: { term: string; children: ReactNode }) {
   return (
-    <>
-      <dt>{term}</dt>
-      <dd>{children}</dd>
-    </>
+    <div className="fact">
+      <dt className="fact__term">{term}</dt>
+      <dd className="fact__value">{children}</dd>
+    </div>
   );
 }
 
-export function ObjectDetail({ object }: { object: ObjectRecord }) {
+interface ObjectDetailProps {
+  object: ObjectRecord;
+  /** Mobile only: returns to the list. Hidden at wider widths by CSS. */
+  onBack?: () => void;
+}
+
+export function ObjectDetail({ object, onBack }: ObjectDetailProps) {
   const work = getWork(object.workId);
   const place = getPlace(object.currentCollection.placeId);
   const collection = object.currentCollection;
@@ -49,24 +55,32 @@ export function ObjectDetail({ object }: { object: ObjectRecord }) {
 
   return (
     <article className="detail" aria-labelledby="detail-title">
-      <div className="detail__badges">
-        <span className="badge">{strings.objectTypeLabels[object.objectType]}</span>
-        <span className={object.review.state === 'draft' ? 'badge badge--draft' : 'badge badge--ok'}>
+      {onBack ? (
+        <button type="button" className="backlink" onClick={onBack}>
+          <span aria-hidden="true">←</span> {strings.backToRecords}
+        </button>
+      ) : null}
+
+      <p className="detail__eyebrow">
+        <span>{strings.objectTypeLabels[object.objectType]}</span>
+        <span aria-hidden="true">·</span>
+        <span className={object.review.state === 'draft' ? 'state state--draft' : 'state state--ok'}>
           {object.review.state === 'draft' ? strings.reviewDraft : strings.reviewReviewed}
         </span>
-      </div>
+      </p>
 
-      <h2 id="detail-title" className="detail__title-zh" lang="zh-Hans">
+      <h2 id="detail-title" className="detail__title" lang="zh-Hans">
         {object.titles.zh}
       </h2>
-      <p className="detail__title-en">{object.titles.en}</p>
+      <p className="detail__subtitle">{object.titles.en}</p>
 
       {work ? (
         <p className="detail__work">
-          {strings.workLabel}: <span lang="zh-Hans">{work.titles.zh}</span> · {work.titles.en}
+          <span className="detail__work-label">{strings.workLabel}</span>
+          <span lang="zh-Hans">{work.titles.zh}</span>
+          <span className="detail__work-en">· {work.titles.en}</span>
           {work.attribution.length > 0 ? (
             <span className="detail__attribution">
-              {' '}
               · {work.attribution.map((entry) => entry.name).join('、')}
             </span>
           ) : null}
@@ -93,68 +107,72 @@ export function ObjectDetail({ object }: { object: ObjectRecord }) {
             {object.dimensions.note ? <span className="fact__note">{object.dimensions.note}</span> : null}
           </Fact>
         ) : null}
-        <Fact term={strings.survivalLabel}>
-          {strings.survivalLabels[object.survivalStatus]}
-        </Fact>
+        <Fact term={strings.survivalLabel}>{strings.survivalLabels[object.survivalStatus]}</Fact>
       </dl>
 
-      <section className="section" aria-labelledby="collection-heading">
-        <h3 id="collection-heading" className="section__heading">
+      <section className="block" aria-labelledby="collection-heading">
+        <h3 id="collection-heading" className="block__title">
           {strings.collectionHeading}
         </h3>
-        <p className="collection__kind">{strings.locationKindLabels[collection.locationKind]}</p>
+        <p className="block__meta">{strings.locationKindLabels[collection.locationKind]}</p>
         {place ? (
-          <p className="collection__place">
-            <span lang="zh-Hans">{place.names.zh}</span>
-            <span className="collection__place-en">{place.names.en}</span>
+          <p className="place">
+            <span className="place__zh" lang="zh-Hans">
+              {place.names.zh}
+            </span>
+            <span className="place__en">{place.names.en}</span>
           </p>
         ) : (
-          <p className="empty">{strings.collectionNotStated}</p>
+          <p className="muted">{strings.collectionNotStated}</p>
         )}
-        {collection.note ? <p className="note">{collection.note}</p> : null}
-        <p className="meta-line">{strings.collectionChecked(collection.sourceAccessedAt)}</p>
-        {collection.assertionAsOf ? (
-          <p className="meta-line">{strings.collectionAssertionAsOf(collection.assertionAsOf)}</p>
-        ) : null}
+        {collection.note ? <p className="block__note">{collection.note}</p> : null}
+        <p className="block__foot">
+          {strings.collectionChecked(collection.sourceAccessedAt)}
+          {collection.assertionAsOf
+            ? ` · ${strings.collectionAssertionAsOf(collection.assertionAsOf)}`
+            : ''}
+        </p>
 
         {place?.coordinates ? (
-          <div className="coord">
-            <p className="coord__value">
-              <span className="coord__label">{strings.coordinateLabel}</span>{' '}
-              <span className="mono">
-                {formatCoordinate(place.coordinates.longitude, place.coordinates.latitude)}
-              </span>
-              <span className="tag">{place.coordinates.precision}</span>
-              <span
-                className={
-                  place.coordinates.verification === 'verified' ? 'tag tag--ok' : 'tag tag--warn'
-                }
-              >
-                {place.coordinates.verification === 'verified'
-                  ? strings.coordinateVerified
-                  : strings.coordinateUnverified}
-              </span>
-            </p>
-            {place.coordinates.note ? <p className="note">{place.coordinates.note}</p> : null}
-            <SourceList
-              ids={place.coordinates.sourceRefs}
-              label={strings.coordinateSourceLabel}
-              compact
-            />
-          </div>
+          <details className="disclosure">
+            <summary className="disclosure__summary">{strings.coordinateDetails}</summary>
+            <div className="disclosure__body">
+              <p className="coord">
+                <span className="mono">
+                  {formatCoordinate(place.coordinates.longitude, place.coordinates.latitude)}
+                </span>
+                <span className="tag">{place.coordinates.precision}</span>
+                <span
+                  className={
+                    place.coordinates.verification === 'verified' ? 'tag tag--ok' : 'tag tag--warn'
+                  }
+                >
+                  {place.coordinates.verification === 'verified'
+                    ? strings.coordinateVerified
+                    : strings.coordinateUnverified}
+                </span>
+              </p>
+              {place.coordinates.note ? <p className="block__note">{place.coordinates.note}</p> : null}
+              <SourceList
+                ids={place.coordinates.sourceRefs}
+                label={strings.coordinateSourceLabel}
+                compact
+              />
+            </div>
+          </details>
         ) : null}
 
-        <SourceList ids={collection.sourceRefs} />
+        <SourceList ids={collection.sourceRefs} compact />
       </section>
 
-      <section className="section" aria-labelledby="provenance-heading">
-        <h3 id="provenance-heading" className="section__heading">
+      <section className="block" aria-labelledby="provenance-heading">
+        <h3 id="provenance-heading" className="block__title">
           {strings.provenanceHeading}
         </h3>
-        <p className="meta-line">{strings.provenanceIntro}</p>
+        <p className="block__meta">{strings.provenanceIntro}</p>
 
         {events.length === 0 ? (
-          <p className="empty">{strings.provenanceEmpty}</p>
+          <p className="muted">{strings.provenanceEmpty}</p>
         ) : (
           <ol className="timeline">
             {events.map((event) => {
@@ -162,15 +180,15 @@ export function ObjectDetail({ object }: { object: ObjectRecord }) {
               return (
                 <li key={event.id} className="timeline__item">
                   <div className="timeline__marker" aria-hidden="true" />
-                  <div className="timeline__date">
-                    <span className="timeline__date-main">{formatDate(event.date)}</span>
-                    {event.date.original ? (
-                      <span className="timeline__date-original" lang="zh-Hans">
-                        {event.date.original}
-                      </span>
-                    ) : null}
-                  </div>
                   <div className="timeline__body">
+                    <div className="timeline__date">
+                      <span className="timeline__date-main">{formatDate(event.date)}</span>
+                      {event.date.original ? (
+                        <span className="timeline__date-original" lang="zh-Hans">
+                          {event.date.original}
+                        </span>
+                      ) : null}
+                    </div>
                     <p className="timeline__type">
                       {strings.eventTypeLabels[event.type]}
                       <span className="tag">{strings.certaintyLabels[event.certainty]}</span>
@@ -188,11 +206,7 @@ export function ObjectDetail({ object }: { object: ObjectRecord }) {
                       ) : null}
                       {!event.placeWording && !eventPlace ? strings.eventPlaceUnknown : null}
                     </p>
-                    <SourceList
-                      ids={event.sourceRefs}
-                      label={strings.eventSourcesLabel}
-                      compact
-                    />
+                    <SourceList ids={event.sourceRefs} compact />
                   </div>
                 </li>
               );
@@ -202,8 +216,8 @@ export function ObjectDetail({ object }: { object: ObjectRecord }) {
       </section>
 
       {object.notes.length > 0 ? (
-        <section className="section" aria-labelledby="notes-heading">
-          <h3 id="notes-heading" className="section__heading">
+        <section className="block" aria-labelledby="notes-heading">
+          <h3 id="notes-heading" className="block__title">
             {strings.notesHeading}
           </h3>
           <ul className="notes">
@@ -214,11 +228,11 @@ export function ObjectDetail({ object }: { object: ObjectRecord }) {
         </section>
       ) : null}
 
-      <section className="section" aria-labelledby="sources-heading">
-        <h3 id="sources-heading" className="section__heading">
+      <section className="block" aria-labelledby="sources-heading">
+        <h3 id="sources-heading" className="block__title">
           {strings.sourcesHeading}
         </h3>
-        <SourceList ids={sourceIds} />
+        <SourceList ids={sourceIds} plain />
       </section>
 
       {object.review.note ? (

@@ -21,32 +21,24 @@ function isSectionHash(hash: string): boolean {
   return SECTION_IDS.some((id) => hash === `#${id}`);
 }
 
-/**
- * Section links move focus and scroll without touching the URL hash. The hash
- * belongs to `#/object/<id>` routing; changing it here would clear the parsed
- * object on the next hashchange and break Back.
- */
-function revealSection(id: SectionId): void {
-  const node = document.getElementById(id);
-  if (!node) return;
-  const reduceMotion =
-    window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
-  node.scrollIntoView?.({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
-  node.focus({ preventScroll: true });
-}
-
 export default function App() {
   const dataset = getDataset();
   const report = getValidationReport();
 
   const [query, setQuery] = useState('');
   const [selectedId, setSelectedId] = useState<string | null>(() => readObjectIdFromHash());
+  /** Mobile: which of the two exploration panes is visible. Ignored by CSS above 768px. */
+  const [mobilePane, setMobilePane] = useState<'list' | 'map'>('list');
+  /** Mobile: a record opened full width. Ignored by CSS above 768px. */
+  const [detailOpen, setDetailOpen] = useState(() => readObjectIdFromHash() !== null);
 
   useEffect(() => {
     const handleHashChange = () => {
       // A manually typed section hash must not erase an explicit selection.
       if (isSectionHash(window.location.hash)) return;
-      setSelectedId(readObjectIdFromHash());
+      const id = readObjectIdFromHash();
+      setSelectedId(id);
+      setDetailOpen(id !== null);
     };
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
@@ -54,10 +46,44 @@ export default function App() {
 
   const selectObject = (id: string) => {
     setSelectedId(id);
+    setDetailOpen(true);
     const next = `#/object/${id}`;
     if (window.location.hash !== next) {
       window.location.hash = next;
     }
+  };
+
+  /**
+   * Section links move focus and scroll without touching the URL hash. The hash
+   * belongs to `#/object/<id>` routing; changing it here would clear the parsed
+   * object on the next hashchange and break Back.
+   */
+  const goToSection = (id: SectionId) => {
+    if (id === 'detail') {
+      setDetailOpen(true);
+    } else {
+      setDetailOpen(false);
+      setMobilePane(id === 'map' ? 'map' : 'list');
+    }
+
+    const node = document.getElementById(id);
+    if (!node) return;
+    const reduceMotion =
+      window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
+    node.scrollIntoView?.({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    node.focus({ preventScroll: true });
+    // A pane that was hidden by the mobile switch becomes focusable only after
+    // the state change renders; retry once without changing the outcome.
+    window.requestAnimationFrame?.(() => {
+      if (document.activeElement !== node) node.focus({ preventScroll: true });
+    });
+  };
+
+  const handleQueryChange = (value: string) => {
+    setQuery(value);
+    // Searching is a list activity; on mobile return to the list instead of
+    // leaving a stale record covering the results.
+    setDetailOpen(false);
   };
 
   // One filtered selection drives the list, the markers, the place rows, and
@@ -74,7 +100,7 @@ export default function App() {
       href={`#${id}`}
       onClick={(event) => {
         event.preventDefault();
-        revealSection(id);
+        goToSection(id);
       }}
     >
       {label}
@@ -88,34 +114,37 @@ export default function App() {
         href="#results"
         onClick={(event) => {
           event.preventDefault();
-          revealSection('results');
+          goToSection('results');
         }}
       >
         {strings.skipToResults}
       </a>
 
-      <header className="masthead">
-        <div className="masthead__top">
-          <p className="masthead__zh" lang="zh-Hans">
-            {strings.siteTitleZh}
-          </p>
-          <h1 className="masthead__title">{strings.siteTitleEn}</h1>
-          <span className={isReleaseBuild ? 'badge badge--ok' : 'badge badge--draft'}>
+      <header className="topbar">
+        <div className="topbar__inner">
+          <h1 className="brand">
+            <span className="brand__zh" lang="zh-Hans">
+              {strings.siteTitleZh}
+            </span>
+            <span className="brand__en">{strings.siteTitleEn}</span>
+          </h1>
+
+          <nav className="topnav" aria-label={strings.sectionsLabel}>
+            {sectionLink('results', strings.resultsHeading)}
+            {sectionLink('map', strings.mapHeading)}
+            {sectionLink('detail', strings.detailHeading)}
+          </nav>
+
+          <span className={isReleaseBuild ? 'chip chip--ok' : 'chip'}>
             {isReleaseBuild ? strings.statusBadgeRelease : strings.statusBadge}
           </span>
         </div>
-        <p className="masthead__tagline">{strings.tagline}</p>
-        {isReleaseBuild ? null : <p className="masthead__notice">{strings.draftNotice}</p>}
       </header>
 
-      <nav className="toolbar" aria-label="Sections">
-        {sectionLink('results', strings.resultsHeading)}
-        {sectionLink('map', strings.mapHeading)}
-        {sectionLink('detail', strings.detailHeading)}
-        <span className="toolbar__data">
-          {strings.dataStatusOk(report.counts.objects, report.counts.events)}
-        </span>
-      </nav>
+      <div className="intro">
+        <p className="intro__lede">{strings.tagline}</p>
+        {isReleaseBuild ? null : <p className="intro__notice">{strings.draftNotice}</p>}
+      </div>
 
       {report.ok ? null : (
         <div className="alert" role="alert">
@@ -131,9 +160,34 @@ export default function App() {
         </div>
       )}
 
-      <main className="layout">
+      <div className="viewswitch" role="group" aria-label={strings.mobileViewLabel}>
+        <button
+          type="button"
+          className="viewswitch__button"
+          aria-pressed={!detailOpen && mobilePane === 'list'}
+          onClick={() => {
+            setMobilePane('list');
+            setDetailOpen(false);
+          }}
+        >
+          {strings.mobileListView}
+        </button>
+        <button
+          type="button"
+          className="viewswitch__button"
+          aria-pressed={!detailOpen && mobilePane === 'map'}
+          onClick={() => {
+            setMobilePane('map');
+            setDetailOpen(false);
+          }}
+        >
+          {strings.mobileMapView}
+        </button>
+      </div>
+
+      <main className="workspace" data-mobile-view={detailOpen ? 'detail' : mobilePane}>
         <section
-          className="panel panel--results"
+          className="pane pane--results"
           id="results"
           aria-label={strings.resultsHeading}
           tabIndex={-1}
@@ -143,7 +197,7 @@ export default function App() {
             total={dataset.objects.length}
             selectedId={activeObject?.id ?? null}
             query={query}
-            onQueryChange={setQuery}
+            onQueryChange={handleQueryChange}
             onSelect={selectObject}
           />
         </section>
@@ -151,28 +205,34 @@ export default function App() {
         <MapPanel markers={markers} objects={filtered} onOpenObject={selectObject} />
 
         <section
-          className="panel panel--detail"
+          className="pane pane--detail"
           id="detail"
           aria-label={strings.detailHeading}
           tabIndex={-1}
         >
           {activeObject ? (
-            <ObjectDetail object={activeObject} />
+            <ObjectDetail object={activeObject} onBack={() => setDetailOpen(false)} />
           ) : (
-            <div className="empty-state">
-              <h2 className="panel__heading">{strings.detailEmptyTitle}</h2>
-              <p>{strings.detailEmptyBody}</p>
+            <div className="detail-empty">
+              <h2 className="detail-empty__title">{strings.detailEmptyTitle}</h2>
+              <p className="muted">{strings.detailEmptyBody}</p>
             </div>
           )}
         </section>
       </main>
 
       <footer className="footer">
-        <p>{strings.footerNote}</p>
-        <p className="footer__meta">
-          {strings.dataStatusOk(report.counts.objects, report.counts.events)}
-          {report.warnings.length > 0 ? ` · ${report.warnings.length} validator warnings` : ''}
-        </p>
+        <p className="footer__note">{strings.footerNote}</p>
+        <details className="footer__details">
+          <summary>{strings.buildInfoLabel}</summary>
+          <p>
+            {strings.buildInfoOk(
+              report.counts.objects,
+              report.counts.events,
+              report.warnings.length,
+            )}
+          </p>
+        </details>
       </footer>
     </div>
   );

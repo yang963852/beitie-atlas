@@ -121,15 +121,15 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
     activeObjects.length > 0 && activePlaceId ? requirePlace(activePlaceId) : undefined;
 
   return (
-    <section className="panel panel--map" id="map" aria-labelledby="map-heading" tabIndex={-1}>
-      <div className="panel__head">
-        <h2 id="map-heading" className="panel__heading">
+    <section className="pane pane--map" id="map" aria-labelledby="map-heading" tabIndex={-1}>
+      <div className="map__head">
+        <h2 id="map-heading" className="pane__title">
           {strings.mapHeading}
         </h2>
-        <p className="panel__sub">{strings.mapSubheading}</p>
+        <p className="pane__sub">{strings.mapSubheading}</p>
       </div>
 
-      <div className="map">
+      <div className={status === 'ready' ? 'map map--live' : 'map map--fallback'}>
         <div ref={containerRef} className="map__canvas" aria-hidden="true" />
 
         {status !== 'ready' ? (
@@ -148,9 +148,12 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
 
             {status === 'unconfigured' ? (
               <>
-                <p className="map__overlay-title">{strings.mapUnconfiguredTitle}</p>
-                <p className="map__overlay-body">{strings.mapUnconfiguredBody}</p>
-                <p className="map__overlay-action">{strings.mapUnconfiguredAction}</p>
+                <p className="map__overlay-title">{strings.mapUnavailableTitle}</p>
+                <p className="map__overlay-body">{strings.mapUnavailableBody}</p>
+                <details className="devnote">
+                  <summary>{strings.mapDeveloperDetails}</summary>
+                  <p>{strings.mapUnconfiguredDevNote}</p>
+                </details>
               </>
             ) : null}
 
@@ -158,57 +161,69 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
               <>
                 <p className="map__overlay-title">{strings.mapErrorTitle}</p>
                 <p className="map__overlay-body">{strings.mapErrorBody}</p>
-                {failure ? (
-                  <p className="map__overlay-detail">
-                    {failure.code}: {failure.message}
-                  </p>
-                ) : null}
-                <button type="button" className="button" onClick={() => setAttempt((value) => value + 1)}>
+                <button
+                  type="button"
+                  className="button button--primary"
+                  onClick={() => setAttempt((value) => value + 1)}
+                >
                   {strings.mapRetry}
                 </button>
+                {failure ? (
+                  <details className="devnote">
+                    <summary>{strings.mapDeveloperDetails}</summary>
+                    <p className="mono">{strings.mapFailureDevNote(failure.code, failure.message)}</p>
+                  </details>
+                ) : null}
               </>
             ) : null}
+          </div>
+        ) : null}
+
+        {activePlace ? (
+          <div className="place-card" role="group" aria-label={strings.placeCardLabel}>
+            <div className="place-card__head">
+              <p className="place-card__name">
+                <span lang="zh-Hans">{activePlace.names.zh}</span>
+                <span className="place-card__en">{activePlace.names.en}</span>
+              </p>
+              <button
+                type="button"
+                className="icon-button"
+                aria-label={strings.closePlaceCard}
+                onClick={() => setActivePlaceId(null)}
+              >
+                ×
+              </button>
+            </div>
+            <p className="place-card__count">{strings.objectsAtPlace(activeObjects.length)}</p>
+            <ul className="place-card__list">
+              {activeObjects.map((object) => (
+                <li key={object.id}>
+                  <button type="button" className="link-button" onClick={() => onOpenObject(object.id)}>
+                    <span lang="zh-Hans">{object.titles.zh}</span>
+                    <span className="place-card__list-en">{object.titles.en}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
         ) : null}
       </div>
 
       {status === 'ready' ? (
-        <>
-          <p className="map__attribution">
+        <div className="map__caption">
+          <p>
             <strong>{strings.mapAttributionLabel}:</strong> {strings.mapAttributionText}
           </p>
-          <p className="map__frame-note">{strings.mapFrameNote}</p>
-        </>
-      ) : null}
-
-      {activePlace ? (
-        <div className="place-card">
-          <p className="place-card__name">
-            <span lang="zh-Hans">{activePlace.names.zh}</span>
-            <span className="place-card__en">{activePlace.names.en}</span>
-          </p>
-          <p className="meta-line">{strings.objectsAtPlace(activeObjects.length)}</p>
-          <ul className="place-card__list">
-            {activeObjects.map((object) => (
-              <li key={object.id}>
-                <button
-                  type="button"
-                  className="button button--quiet"
-                  onClick={() => onOpenObject(object.id)}
-                >
-                  <span lang="zh-Hans">{object.titles.zh}</span> · {object.titles.en}
-                </button>
-              </li>
-            ))}
-          </ul>
+          <p>{strings.mapFrameNote}</p>
         </div>
       ) : null}
 
-      <details className="map__locations" open>
-        <summary>
+      <details className="locations" open={status !== 'ready'}>
+        <summary className="locations__summary">
           {strings.locationsHeading} ({placeRows.length})
         </summary>
-        <p className="meta-line">{strings.locationsIntro}</p>
+        <p className="block__meta">{strings.locationsIntro}</p>
         <ul className="location-list">
           {placeRows.map(({ place, objects: list }) => {
             const coordinates = place.coordinates;
@@ -226,7 +241,9 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
                   </span>
                   {coordinates ? (
                     <>
-                      <span className="tag">{strings.precisionLabel}: {coordinates.precision}</span>
+                      <span className="tag">
+                        {strings.precisionLabel}: {coordinates.precision}
+                      </span>
                       <span
                         className={
                           coordinates.verification === 'verified' ? 'tag tag--ok' : 'tag tag--warn'
@@ -248,7 +265,7 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
                 {coordinates && status === 'ready' ? (
                   <button
                     type="button"
-                    className="button button--quiet"
+                    className="link-button"
                     onClick={() => {
                       adapterRef.current?.focus(place.id);
                       setActivePlaceId(place.id);
@@ -265,16 +282,13 @@ export function MapPanel({ markers, objects, onOpenObject }: MapPanelProps) {
         {unmappedRows.length > 0 ? (
           <>
             <h3 className="location-list__heading">{strings.locationsWithoutPointHeading}</h3>
-            <p className="meta-line">{strings.locationsWithoutPointIntro}</p>
+            <p className="block__meta">{strings.locationsWithoutPointIntro}</p>
             <ul className="location-list location-list--plain">
               {unmappedRows.map(({ object, place, reason }) => (
                 <li key={object.id}>
-                  <button
-                    type="button"
-                    className="button button--quiet"
-                    onClick={() => onOpenObject(object.id)}
-                  >
-                    <span lang="zh-Hans">{object.titles.zh}</span> · {object.titles.en}
+                  <button type="button" className="link-button" onClick={() => onOpenObject(object.id)}>
+                    <span lang="zh-Hans">{object.titles.zh}</span>
+                    <span className="place-card__list-en">{object.titles.en}</span>
                   </button>
                   <p className="location__meta">
                     <span className="tag">
