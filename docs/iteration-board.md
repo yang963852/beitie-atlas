@@ -6,7 +6,7 @@ Updated: 2026-11-17. One active implementation task at a time.
 | --- | --- | --- | --- |
 | 001 | Foundation preview | Changes required; local checks pass | See review-001.md; live map and public-network verification pending |
 | 002 | Close review defects and establish release gate | Accepted locally 2026-11-17 | Independent 61-test check and strict rejection of 3 drafts; see review-002.md; live/external gates remain pending |
-| 003 | Apple-inspired visual hierarchy and usability | Ready | Responsive screenshots, keyboard/zoom checks, no loss of core functions |
+| 003 | Apple-inspired visual hierarchy and usability | Delivered 2026-11-17; awaiting independent review | 63 tests; 390/768/1440 screenshots plus 720 px zoom equivalent; live map unverified; see delivery-003.md |
 | 004 | Real map and network pilot | Pending owner key and test host | Actual provider markers, recovery, attribution, mainland desktop/mobile results |
 | 005 | Three reviewed physical objects | Queued | Sources reviewed, coordinate basis checked, missing data handled |
 | 006 | First public corpus and release | Queued | Rights, contribution docs, strict release checks, host tests, rollback revision |
@@ -30,3 +30,4 @@ Before a new iteration record its base revision; after acceptance record its acc
 - 2026-11-17: Publishing command is `npm run release`; `npm run build` stays preview-only. Release artifacts carry a `beitie-build-mode=release` meta tag and a counts manifest, and a failed release deletes `dist/`.
 - 2026-11-17: Current map points require a `collection-institution` or `in-situ` assertion. `last-known` and `unknown` records remain readable but are never plotted as current markers.
 - 2026-11-17: No datum transformation is applied to coordinates. The stored WGS84 values pass through unchanged; `docs/map-pilot.md` §3 records what official sources establish and what remains unresolved.
+- 2026-11-17: Task 003 implemented on `task/003-visual-refinement` from `d015e1d` (implementation `555ff18`). The neutral map-led layout, mobile List/Map flow, progressive source and coordinate disclosures, and reader-facing map fallback replace the foundation screen. Two copy-driven test assertions changed with the visible labels; no functional assertion was removed. Live map rendering remains unverified.

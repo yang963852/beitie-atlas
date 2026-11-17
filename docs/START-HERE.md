@@ -67,11 +67,12 @@ requirement. The owner can explicitly assign implementation to Codex.
 
 ## Next work and known limitations
 
-Task 002's local fixes passed independent checks; see review-002.md. Next is task
-003: Apple-inspired visual refinement. Map activation/network testing and editorial
-review are separate tasks. Current UI is still the foundation design. True browser
-200% zoom, full keyboard traversal, live maps, mainland/overseas deployment, and
-hosted deployment have not been independently verified in this baseline review.
+Task 002's local fixes passed independent checks; see review-002.md. Task 003 replaced the
+foundation screen with the neutral map-led interface and mobile List/Map flow; see
+delivery-003.md. It awaits independent review. Next is task 004: activating the real map and
+testing the provider on a network. Editorial review is a separate task. Browser 200% zoom,
+screen-reader output, live maps, mainland/overseas deployment, and hosted deployment have not
+been independently verified.
 The initial source snapshot's GitHub CI subsequently passed:
 https://github.com/yang963852/beitie-atlas/actions/runs/44102927813.
 
