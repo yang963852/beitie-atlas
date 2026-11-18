@@ -30,7 +30,7 @@ When two citable pages disagree — the year of a stele, the height of a stone, 
 ## GitHub Pages preview
 
 1. In GitHub repository **Settings → Pages**, set the publishing source to **GitHub Actions**. [The Pages workflow](../.github/workflows/pages.yml) runs on changes to `main` or by manual dispatch from `main`.
-2. The workflow uses the host's project base path and always builds the labelled preview after checks. It publishes only `dist/` as an Actions artifact; it does not commit binaries to Git or bundle a map key. The coordinate grid and location list remain usable without basemap tiles.
+2. The workflow uses the host's project base path, runs keyless checks, then builds the labelled preview with the repository Actions secret `TIANDITU_BROWSER_KEY` when set. It publishes only `dist/` as an Actions artifact. The browser key is visible in the resulting bundle; restrict it to the authorized host and quota. Never commit the key or build output. The coordinate grid and location list remain usable without basemap tiles.
 3. Verify the deployment's revision and URL, refresh an object permalink, and open a source from an object's timeline. Record the result and any mainland reachability gap. Do not report a queued or failed workflow as a public deployment.
 
 ## Codex Sites preview
