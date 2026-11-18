@@ -16,6 +16,5 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
-      - run: npm run build:overview
-# These checks do not deploy either artifact. The interactive atlas release
-# still requires the strict gate described in docs/release.md.
+# These checks do not deploy. The formal atlas release still requires the
+# strict gate described in docs/release.md.

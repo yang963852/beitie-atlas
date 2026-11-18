@@ -1,6 +1,6 @@
 # 碑帖之间 · Between Steles
 
-[项目介绍 · Codex Sites](https://beitie-atlas.partedlute2.chatgpt.site/)
+[三栏图鉴预览 · Codex Sites](https://beitie-atlas.partedlute2.chatgpt.site/)
 
 [English](README.md) | **简体中文**
 

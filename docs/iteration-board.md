@@ -18,6 +18,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 012 | Publish the GitHub Pages project overview | Superseded by 014 | See [task 012](../tasks/012-github-pages-overview.md) and [delivery 012](delivery-012.md). |
 | 013 | Audit the corpus for public atlas publication | Evidence review in progress | See [task 013](../tasks/013-public-corpus-audit.md) and [delivery 013](delivery-013.md). |
 | 014 | Move the public overview to Codex Sites | Delivered for review | See [task 014](../tasks/014-sites-public-overview.md) and [delivery 014](delivery-014.md). |
+| 015 | Restore the interactive atlas on Codex Sites | Live basemap authorization pending | See [task 015](../tasks/015-restore-atlas-site.md) and [delivery 015](delivery-015.md). |
 
 ## Iteration loop
 
@@ -30,6 +31,8 @@ P1: material correctness/release blocker. P2: fix within its assigned iteration.
 Before a new iteration record its base revision; after acceptance record its accepted commit. Do not overwrite evidence from previous rounds. Roll back by selecting a known accepted revision or reverting the specific change, never by deleting unexplained work.
 
 ## Decisions
+
+- 2026-11-18: The owner reinstated the three-column atlas on the existing public Codex Site and authorized the 36-record preview with a visible draft notice. The strict release gate still governs the formal atlas release.
 
 - 2026-11-18: The owner selected Codex Sites as the public website and GitHub as the source host. The public Site serves the static overview while corpus review continues. Its `build/` deployment output is separate from the atlas output in `dist/`.
 
