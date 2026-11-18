@@ -1,8 +1,9 @@
 # Maintainer and AI handoff
 
 This repository is the source of truth. You do not need access to the original
-chat or WorkBuddy session to contribute. Read this page, README.md, AGENTS.md,
-and the iteration board before editing.
+chat or WorkBuddy session to contribute. Read this page, the [Chinese README](../README.md)
+or [English README](../README.en.md), [AGENTS.md](../AGENTS.md), and the
+[iteration board](iteration-board.md) before editing.
 
 ## Baseline: v0.1.0-alpha.1
 
@@ -20,8 +21,9 @@ falls back to the recorded language rather than translating at run time.
 The Tianditu adapter is covered with mocks, and since 2026-11-18 a real browser key has
 rendered the base map locally (24 tiles in a 569×734 column at 1440 px, two markers); the key
 lives in `.env.local` and is never committed. Mainland network behaviour is still untested.
-This is source ready for collaboration, not an approved public historical atlas. Publishing
-source does not bypass the strict website-release gate.
+The [public Codex Sites preview](https://beitie-atlas.partedlute2.chatgpt.site/) serves the
+three-column interface and includes the Tianditu build. Hosted browser rendering and mainland
+public-network access remain unverified. The independent editorial gate applies to formal releases.
 
 ## Setup and commands
 

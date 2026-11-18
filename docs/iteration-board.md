@@ -19,6 +19,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 013 | Audit the corpus for public atlas publication | Evidence review in progress | See [task 013](../tasks/013-public-corpus-audit.md) and [delivery 013](delivery-013.md). |
 | 014 | Move the public overview to Codex Sites | Delivered for review | See [task 014](../tasks/014-sites-public-overview.md) and [delivery 014](delivery-014.md). |
 | 015 | Restore the interactive atlas on Codex Sites | Tianditu build deployed, rendering verification pending | See [task 015](../tasks/015-restore-atlas-site.md) and [delivery 015](delivery-015.md). |
+| 016 | Organize the GitHub project home | Delivered for review | See [task 016](../tasks/016-github-project-home.md) and [delivery 016](delivery-016.md). |
 
 ## Iteration loop
 
