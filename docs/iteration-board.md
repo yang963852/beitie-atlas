@@ -20,7 +20,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 014 | Move the public overview to Codex Sites | Accepted — merged by the owner in PR #3 after a clean review; that review was Codex reviewing Codex, so an independent review of this change is still open | See [task 014](../tasks/014-sites-public-overview.md) and [delivery 014](delivery-014.md). |
 | 015 | Restore the interactive atlas on Codex Sites | Delivered — Tianditu build deployed as Site version 4; rendered-tile inspection still pending | See [task 015](../tasks/015-restore-atlas-site.md) and [delivery 015](delivery-015.md). |
 | 016 | Organize the GitHub project home | Accepted — documentation merged by the owner at `b85c0f4`; no code changed | See [task 016](../tasks/016-github-project-home.md) and [delivery 016](delivery-016.md). |
-| 017 | Close the technical review's defects and codify synchronization | Delivered — awaiting independent review | 103 tests; work-level notes now render; bilingual note rule added; board check and CI hardening in place; see [task 017](../tasks/017-defect-fixes-and-governance.md) and [delivery 017](delivery-017.md). |
+| 017 | Close the technical review's defects and codify synchronization | Accepted — merged by owner decision without an independent review; CI "Preview quality checks" passed on the branch head | 103 tests; 26 invisible notes now render; bilingual note rule added; board check and CI hardening in place; see [task 017](../tasks/017-defect-fixes-and-governance.md) and [delivery 017](delivery-017.md). |
 
 ## Iteration loop
 
