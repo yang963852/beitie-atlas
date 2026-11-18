@@ -1,0 +1,99 @@
+{
+  "id": "stele-beibi-stone",
+  "workId": "beibi-stone",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "北陛石（刻石）",
+    "en": "Northern Stair Stone, inscribed stone"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": -149,
+    "startMonth": null,
+    "endYear": -149,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "西汉景帝中元元年（鲁恭王6年，前149年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": {
+    "raw": "长95厘米，宽42厘米，高19.5厘米",
+    "note": null
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-qufu-hanwei-gallery",
+    "sourceRefs": [
+      "src-qufu-beibi"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The gallery records the transfer of the stone to its collection in 1998.",
+    "noteZh": "陈列馆著录此石于 1998 年移入该馆。"
+  },
+  "provenanceEvents": [
+    {
+      "id": "evt-beibi-stone-1980-move",
+      "objectId": "stele-beibi-stone",
+      "type": "relocation",
+      "date": {
+        "kind": "single",
+        "startYear": 1980,
+        "startMonth": null,
+        "endYear": 1980,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "1980年",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": "曲阜孔庙东庑",
+      "summary": "Transferred to the eastern wing of the Confucius Temple.",
+      "summaryZh": "移存曲阜孔庙东庑。",
+      "sourceRefs": [
+        "src-qufu-beibi"
+      ],
+      "certainty": "documented"
+    },
+    {
+      "id": "evt-beibi-stone-1998-move",
+      "objectId": "stele-beibi-stone",
+      "type": "relocation",
+      "date": {
+        "kind": "single",
+        "startYear": 1998,
+        "startMonth": null,
+        "endYear": 1998,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "1998年",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": "place-qufu-hanwei-gallery",
+      "placeWording": "曲阜汉魏碑刻陈列馆",
+      "summary": "Transferred to the Han and Wei Stele Gallery.",
+      "summaryZh": "移入曲阜汉魏碑刻陈列馆。",
+      "sourceRefs": [
+        "src-qufu-beibi"
+      ],
+      "certainty": "documented"
+    }
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": [
+    "The catalogue does not identify a storage room or establish current display status."
+  ],
+  "notesZh": [
+    "所引条目没有给出库房位置，也未核实目前的展出状态。"
+  ]
+}

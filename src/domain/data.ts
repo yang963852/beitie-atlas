@@ -11,6 +11,7 @@ import placesFile from '../../data/places.json';
 import sourcesFile from '../../data/sources.json';
 import { currentPlaceId, isCurrentLocation } from './collection';
 import { isReleaseBuild } from './build';
+import { type Dynasty, dynastyOrder, findDynasty } from './dynasties';
 import type { Dataset, MediaItem, ObjectRecord, ObjectType, Place, Source, Work } from './types';
 import { validateDataset, type ValidationReport } from './validate';
 
@@ -37,8 +38,23 @@ function moduleValues<T>(modules: Record<string, unknown>): T[] {
     .map((key) => modules[key] as T);
 }
 
-function sortObjects(objects: ObjectRecord[]): ObjectRecord[] {
+function sortObjects(objects: ObjectRecord[], works: Work[]): ObjectRecord[] {
+  const worksById = new Map(works.map((work) => [work.id, work]));
+
   return [...objects].sort((a, b) => {
+    // Reading order is the dynasty of the stone, not the date of the paper. A
+    // Republican rubbing of a Tang stele therefore sits with its own stele
+    // instead of jumping to the end of the atlas.
+    const workA = worksById.get(a.workId);
+    const workB = worksById.get(b.workId);
+    const orderA = dynastyOrder(workA?.dynastyId);
+    const orderB = dynastyOrder(workB?.dynastyId);
+    if (orderA !== orderB) return orderA < orderB ? -1 : 1;
+
+    const yearA = workA?.compositionDate.startYear ?? Number.POSITIVE_INFINITY;
+    const yearB = workB?.compositionDate.startYear ?? Number.POSITIVE_INFINITY;
+    if (yearA !== yearB) return yearA < yearB ? -1 : 1;
+
     const typeDiff =
       OBJECT_TYPE_ORDER.indexOf(a.objectType) - OBJECT_TYPE_ORDER.indexOf(b.objectType);
     if (typeDiff !== 0) return typeDiff;
@@ -50,9 +66,10 @@ let cached: Dataset | null = null;
 
 export function getDataset(): Dataset {
   if (cached) return cached;
+  const works = moduleValues<Work>(workModules);
   cached = {
-    works: moduleValues<Work>(workModules),
-    objects: sortObjects(moduleValues<ObjectRecord>(objectModules)),
+    works,
+    objects: sortObjects(moduleValues<ObjectRecord>(objectModules), works),
     places: placesFile.items as unknown as Place[],
     sources: sourcesFile.items as unknown as Source[],
     media: mediaFile.items as unknown as MediaItem[],
@@ -72,6 +89,42 @@ export function getWork(id: string): Work | undefined {
 export function getPlace(id: string | null): Place | undefined {
   if (!id) return undefined;
   return getDataset().places.find((place) => place.id === id);
+}
+
+/** The period a work is filed under, for headers and facts. */
+export function getWorkDynasty(work: Work | undefined): Dynasty | undefined {
+  return work ? findDynasty(work.dynastyId) : undefined;
+}
+
+export interface DynastyGroup {
+  /** Null only if a record points at an unknown or missing work. */
+  dynasty: Dynasty | null;
+  objects: ObjectRecord[];
+}
+
+/**
+ * Consecutive groups in reading order. The input is already sorted by dynasty,
+ * so this only has to split runs; records with no resolvable period fall into a
+ * final group with a null dynasty rather than being dropped.
+ */
+export function groupObjectsByDynasty(objects: ObjectRecord[]): DynastyGroup[] {
+  const groups: DynastyGroup[] = [];
+  const byKey = new Map<string, DynastyGroup>();
+
+  for (const object of objects) {
+    const work = getWork(object.workId);
+    const dynasty = getWorkDynasty(work);
+    const key = dynasty?.id ?? '__unknown__';
+    let group = byKey.get(key);
+    if (!group) {
+      group = { dynasty: dynasty ?? null, objects: [] };
+      byKey.set(key, group);
+      groups.push(group);
+    }
+    group.objects.push(object);
+  }
+
+  return groups;
 }
 
 export function getSource(id: string): Source | undefined {

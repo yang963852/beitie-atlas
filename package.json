@@ -15,6 +15,7 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "check:data": "tsx scripts/check-data.ts",
+    "check:map-key": "tsx scripts/check-map-key.ts",
     "test": "vitest run",
     "check": "npm run typecheck && npm run check:data && npm run test && vite build"
   },

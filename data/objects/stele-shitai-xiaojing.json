@@ -1,0 +1,56 @@
+{
+  "id": "stele-shitai-xiaojing",
+  "workId": "shitai-xiaojing",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "石台孝经（原石）",
+    "en": "Stone Terrace Classic of Filial Piety, original stone"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 745,
+    "startMonth": null,
+    "endYear": 745,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐天宝四年（745）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": {
+    "raw": "碑身四石各高 590 厘米、宽 120 厘米；碑首、碑身、碑座共 35 石",
+    "note": "Museum figures for the blocks, not a measured total height."
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-xian-beilin-museum",
+    "sourceRefs": [
+      "src-beilin-shitai"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The museum page describes the stele in its collection; it does not state its position in the building.",
+    "noteZh": "馆方页面介绍该碑藏品，但没有说明其在馆内的具体位置。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft object record from the museum page. The block count and the heading’s attribution have not been checked against the stone.",
+    "noteZh": "依据馆方页面整理的草稿；石数与碑额归属尚未与实物核对。"
+  },
+  "notes": [
+    "The page gives block dimensions and counts but no weight, accession number, or condition report.",
+    "The page does not say when or from where the stele came into the Beilin.",
+    "No coordinate is recorded.",
+    "The claim that the seal-script heading is by Li Heng rests on this page alone."
+  ],
+  "notesZh": [
+    "页面给出各石尺寸与石数，但没有重量、入藏编号或保存状况报告。",
+    "页面没有说明此碑何时、自何处入藏碑林。",
+    "未记录坐标。",
+    "碑额篆书出自李亨之说，仅见于该页面。"
+  ]
+}

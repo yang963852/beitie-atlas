@@ -1,0 +1,56 @@
+{
+  "id": "shen-ce-jun-bei",
+  "titles": {
+    "zh": "神策军碑",
+    "en": "Stele of the Shence Army"
+  },
+  "aliases": [
+    "皇帝巡幸左神策军纪圣德碑"
+  ],
+  "attribution": [
+    {
+      "role": "author",
+      "name": "崔铉",
+      "nameEn": "Cui Xuan",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-ccdy-shence"
+      ]
+    },
+    {
+      "role": "calligrapher",
+      "name": "柳公权",
+      "nameEn": "Liu Gongquan",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-ccdy-shence"
+      ]
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 843,
+    "startMonth": null,
+    "endYear": 843,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐会昌三年（843）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "楷书",
+  "background": "A stele erected inside the palace compound to commemorate an imperial visit to the left Shence Army. Because the site was closed, few rubbings were ever taken; the stone is lost and one volume of a Song mounting survives.",
+  "sourceRefs": [
+    "src-ccdy-shence"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record from a newspaper article by a library staff member. The 843 date refers to the lost stone, not to the surviving rubbing.",
+    "noteZh": "依据图书馆员撰写的报纸文章整理的草稿；843 年为已佚原石之刻立年，不是存世拓本年代。"
+  },
+  "notes": [
+    "The article does not describe the missing lower volume beyond noting that it is lost."
+  ]
+}

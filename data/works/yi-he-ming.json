@@ -1,0 +1,48 @@
+{
+  "id": "yi-he-ming",
+  "titles": {
+    "zh": "瘗鹤铭",
+    "en": "Elegy for a Crane"
+  },
+  "aliases": [
+    "大字之祖"
+  ],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "陶弘景（传）",
+      "nameEn": "Tao Hongjing (traditional attribution)",
+      "certainty": "disputed",
+      "sourceRefs": [
+        "src-cyol-yihe"
+      ]
+    }
+  ],
+  "dynastyId": "northern-and-southern",
+  "dynastyQualifier": "南朝梁",
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 514,
+    "startMonth": null,
+    "endYear": 514,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "南朝梁天监十三年（514），传",
+    "certainty": "disputed",
+    "note": "The date is traditional; the inscription itself carries a cyclical year but no reign title or name."
+  },
+  "script": "楷书",
+  "background": "A cliff elegy for a crane, signed with a sobriquet rather than a name, and dated by a cyclical year. It fell into the Yangtze, was recovered in fragments, and became the model for large-character calligraphy.",
+  "sourceRefs": [
+    "src-cyol-yihe",
+    "src-jiangsu-yihe"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record. Both the date and the attribution are disputed in the cited sources; the record preserves the dispute.",
+    "noteZh": "草稿记录。所引材料对年代与书者均有异说，本条保留争议。"
+  },
+  "notes": [
+    "The cited sources list several candidate authors (王羲之, 陶弘景, 顾况, 王瓒) without settling the question."
+  ]
+}

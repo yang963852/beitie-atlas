@@ -1,0 +1,47 @@
+{
+  "id": "wen-quan-ming",
+  "titles": {
+    "zh": "温泉铭",
+    "en": "Inscription on the Hot Spring"
+  },
+  "aliases": [
+    "温泉碑"
+  ],
+  "attribution": [
+    {
+      "role": "author-and-calligrapher",
+      "name": "李世民（唐太宗）",
+      "nameEn": "Li Shimin (Emperor Taizong of Tang)",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-thepaper-wenquanming"
+      ]
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 648,
+    "startMonth": null,
+    "endYear": 648,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐贞观二十二年（648）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "行书",
+  "background": "The emperor’s inscription on the hot spring at Lishan, carved a year before his death. The stone is lost; a Tang rubbing recovered from the Dunhuang library cave is described as the earliest surviving rubbing of any Chinese inscription.",
+  "sourceRefs": [
+    "src-thepaper-wenquanming"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record from a news report. The report identifies the rubbing but does not describe the lost stone.",
+    "noteZh": "依据新闻报道整理的草稿；报道确认拓本，但未描述已佚原石。"
+  },
+  "notes": [
+    "The cited report gives neither the rubbing’s measurements nor its condition."
+  ]
+}

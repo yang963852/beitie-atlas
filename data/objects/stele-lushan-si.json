@@ -1,0 +1,81 @@
+{
+  "id": "stele-lushan-si",
+  "workId": "lushan-si-bei",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "麓山寺碑（原石）",
+    "en": "Stele of Lushan Temple, original stone"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 730,
+    "startMonth": null,
+    "endYear": 730,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐开元十八年（730）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": {
+    "raw": "高 272 厘米，宽 133 厘米，圆顶",
+    "note": "28 lines of 56 characters; about 1400 characters originally."
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-yuelu-academy",
+    "sourceRefs": [
+      "src-csjypt-lushan"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "Stands in the protective pavilion at Yuelu Academy; the pavilion was built in 1962 according to the same page.",
+    "noteZh": "立于岳麓书院护碑亭内；该页称护碑亭建于 1962 年。"
+  },
+  "provenanceEvents": [
+    {
+      "id": "evt-lushan-1080-mifu",
+      "objectId": "stele-lushan-si",
+      "type": "other",
+      "date": {
+        "kind": "single",
+        "startYear": 1080,
+        "startMonth": null,
+        "endYear": 1080,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "北宋元丰三年（1080）",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": "岳麓",
+      "summary": "Mi Fu visited to study the stele and left a sixteen-character inscription on its reverse.",
+      "summaryZh": "米芾前来临习，并在碑阴留下十六字题名。",
+      "sourceRefs": [
+        "src-csjypt-lushan"
+      ],
+      "certainty": "documented"
+    }
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft object record from a local-history page. The fracture history is summarized in one clause.",
+    "noteZh": "依据地方志平台页面整理的草稿；断裂经过仅一句带过。"
+  },
+  "notes": [
+    "The page gives dimensions, line count, and an approximate surviving character count, but no condition survey.",
+    "The page states that the stone cracked and lost text, without dating the damage.",
+    "The cutter is named as 黄仙鹤, whom scholars suspect to be the author’s alias; no separate cutter is asserted.",
+    "No coordinate is recorded."
+  ],
+  "notesZh": [
+    "页面给出尺寸、行款与约略存字，但没有保存状况调查。",
+    "页面称碑石断裂、文字残损，但没有说明损坏年代。",
+    "刻者署「黄仙鹤」，学界疑为撰书者化名，故不单列刻者。",
+    "未记录坐标。"
+  ]
+}

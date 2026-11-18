@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { MapPanel } from './components/MapPanel';
 import { ObjectDetail } from './components/ObjectDetail';
 import { ResultsList } from './components/ResultsList';
 import { isReleaseBuild } from './domain/build';
-import { getDataset, getObject, getValidationReport } from './domain/data';
+import { getDataset, getValidationReport } from './domain/data';
 import { filterObjects } from './domain/search';
-import { strings } from './i18n/en';
+import { LocaleProvider, useLocale, type Locale } from './i18n';
 import { buildMarkers } from './map/markers';
 
 const OBJECT_HASH_PATTERN = /^#\/object\/([a-z0-9-]+)$/;
@@ -42,9 +42,10 @@ function useWideLayout(): boolean {
   return wide;
 }
 
-export default function App() {
+function AppShell() {
   const dataset = getDataset();
   const report = getValidationReport();
+  const { locale, strings, setLocale } = useLocale();
 
   const [query, setQuery] = useState('');
   const [selectedId, setSelectedId] = useState<string | null>(() => readObjectIdFromHash());
@@ -52,8 +53,24 @@ export default function App() {
   const [mobilePane, setMobilePane] = useState<'list' | 'map'>('list');
   /** Mobile: a record opened full width. Ignored by CSS above 768px. */
   const [detailOpen, setDetailOpen] = useState(() => readObjectIdFromHash() !== null);
+
   const wideLayout = useWideLayout();
   const mapActive = wideLayout || (!detailOpen && mobilePane === 'map');
+  const returnFocus = useRef<HTMLElement | null>(null);
+  const pendingFocus = useRef<'detail' | 'return' | null>(null);
+
+  useEffect(() => {
+    const target = pendingFocus.current;
+    pendingFocus.current = null;
+    if (wideLayout || !target) return;
+    if (target === 'detail') {
+      document.getElementById('detail')?.focus();
+    } else if (returnFocus.current?.getClientRects().length) {
+      returnFocus.current.focus();
+    } else {
+      document.getElementById(mobilePane === 'map' ? 'map' : 'results')?.focus();
+    }
+  }, [detailOpen, mobilePane, wideLayout]);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -69,11 +86,19 @@ export default function App() {
 
   const selectObject = (id: string) => {
     setSelectedId(id);
-    setDetailOpen(true);
     const next = `#/object/${id}`;
     if (window.location.hash !== next) {
-      window.location.hash = next;
+      // Preserve the share link and Back history without firing the handler
+      // that opens detail for external hash navigation.
+      window.history.pushState(null, '', next);
     }
+  };
+
+  const openObject = (id: string) => {
+    returnFocus.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    pendingFocus.current = 'detail';
+    selectObject(id);
+    setDetailOpen(true);
   };
 
   /**
@@ -93,13 +118,13 @@ export default function App() {
     if (!node) return;
     const reduceMotion =
       window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
-    node.scrollIntoView?.({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
-    node.focus({ preventScroll: true });
-    // A pane that was hidden by the mobile switch becomes focusable only after
-    // the state change renders; retry once without changing the outcome.
-    window.requestAnimationFrame?.(() => {
-      if (document.activeElement !== node) node.focus({ preventScroll: true });
-    });
+    const reveal = () => {
+      node.scrollIntoView?.({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      node.focus({ preventScroll: true });
+    };
+    // The mobile pane can be hidden until the navigation update commits.
+    if (wideLayout) reveal();
+    else window.requestAnimationFrame(reveal);
   };
 
   const handleQueryChange = (value: string) => {
@@ -112,14 +137,21 @@ export default function App() {
   // One filtered selection drives the list, the markers, the place rows, and
   // the counts. Nothing outside this memo reads the unfiltered corpus.
   const filtered = useMemo(() => filterObjects(dataset.objects, query), [dataset, query]);
-  const markers = useMemo(() => buildMarkers(dataset.places, filtered).markers, [dataset, filtered]);
+  const markers = useMemo(
+    () => buildMarkers(dataset.places, filtered, locale).markers,
+    [dataset, filtered, locale],
+  );
 
   const activeObject = selectedId
-    ? (getObject(selectedId) ?? filtered[0] ?? null)
+    ? (filtered.find((object) => object.id === selectedId) ?? filtered[0] ?? null)
     : (filtered[0] ?? null);
+  const selectedPlaceId = selectedId && activeObject?.id === selectedId
+    ? markers.find((marker) => marker.objectIds.includes(selectedId))?.placeId
+    : undefined;
 
   const sectionLink = (id: SectionId, label: string) => (
     <a
+      className="topnav__link"
       href={`#${id}`}
       onClick={(event) => {
         event.preventDefault();
@@ -128,6 +160,17 @@ export default function App() {
     >
       {label}
     </a>
+  );
+
+  const localeButton = (value: Locale, label: string) => (
+    <button
+      type="button"
+      className="langswitch__button"
+      aria-pressed={locale === value}
+      onClick={() => setLocale(value)}
+    >
+      {label}
+    </button>
   );
 
   return (
@@ -149,7 +192,9 @@ export default function App() {
             <span className="brand__zh" lang="zh-Hans">
               {strings.siteTitleZh}
             </span>
-            <span className="brand__en">{strings.siteTitleEn}</span>
+            <span className="brand__en" lang="en">
+              {strings.siteTitleEn}
+            </span>
           </h1>
 
           <nav className="topnav" aria-label={strings.sectionsLabel}>
@@ -158,14 +203,21 @@ export default function App() {
             {sectionLink('detail', strings.detailHeading)}
           </nav>
 
-          <span className={isReleaseBuild ? 'chip chip--ok' : 'chip'}>
-            {isReleaseBuild ? strings.statusBadgeRelease : strings.statusBadge}
-          </span>
+          <div className="topbar__actions">
+            <div className="langswitch" role="group" aria-label={strings.languageLabel}>
+              {localeButton('zh', strings.languageZh)}
+              {localeButton('en', strings.languageEn)}
+            </div>
+            <span className={isReleaseBuild ? 'chip chip--ok' : 'chip'}>
+              {isReleaseBuild ? strings.statusBadgeRelease : strings.statusBadge}
+            </span>
+          </div>
         </div>
       </header>
 
       <div className="intro">
         <p className="intro__lede">{strings.tagline}</p>
+        <p className="intro__detail">{strings.taglineDetail}</p>
         {isReleaseBuild ? null : <p className="intro__notice">{strings.draftNotice}</p>}
       </div>
 
@@ -183,30 +235,34 @@ export default function App() {
         </div>
       )}
 
-      <div className="viewswitch" role="group" aria-label={strings.mobileViewLabel}>
-        <button
-          type="button"
-          className="viewswitch__button"
-          aria-pressed={!detailOpen && mobilePane === 'list'}
-          onClick={() => {
-            setMobilePane('list');
-            setDetailOpen(false);
-          }}
-        >
-          {strings.mobileListView}
-        </button>
-        <button
-          type="button"
-          className="viewswitch__button"
-          aria-pressed={!detailOpen && mobilePane === 'map'}
-          onClick={() => {
-            setMobilePane('map');
-            setDetailOpen(false);
-          }}
-        >
-          {strings.mobileMapView}
-        </button>
-      </div>
+      {/* A record is a pushed view on mobile: the list/map switch belongs to the
+          exploration level, and "Back to records" is the way out. */}
+      {detailOpen ? null : (
+        <div className="viewswitch" role="group" aria-label={strings.mobileViewLabel}>
+          <button
+            type="button"
+            className="viewswitch__button"
+            aria-pressed={mobilePane === 'list'}
+            onClick={() => {
+              setMobilePane('list');
+              setDetailOpen(false);
+            }}
+          >
+            {strings.mobileListView}
+          </button>
+          <button
+            type="button"
+            className="viewswitch__button"
+            aria-pressed={mobilePane === 'map'}
+            onClick={() => {
+              setMobilePane('map');
+              setDetailOpen(false);
+            }}
+          >
+            {strings.mobileMapView}
+          </button>
+        </div>
+      )}
 
       <main className="workspace" data-mobile-view={detailOpen ? 'detail' : mobilePane}>
         <section
@@ -221,11 +277,17 @@ export default function App() {
             selectedId={activeObject?.id ?? null}
             query={query}
             onQueryChange={handleQueryChange}
-            onSelect={selectObject}
+            onSelect={openObject}
           />
         </section>
 
-        <MapPanel markers={markers} objects={filtered} onOpenObject={selectObject} active={mapActive} />
+        <MapPanel
+          markers={markers}
+          objects={filtered}
+          onOpenObject={openObject}
+          active={mapActive}
+          selectedPlaceId={selectedPlaceId}
+        />
 
         <section
           className="pane pane--detail"
@@ -234,11 +296,23 @@ export default function App() {
           tabIndex={-1}
         >
           {activeObject ? (
-            <ObjectDetail object={activeObject} onBack={() => setDetailOpen(false)} />
+            <ObjectDetail
+              object={activeObject}
+              onBack={() => {
+                pendingFocus.current = 'return';
+                setDetailOpen(false);
+              }}
+              onShowMap={markers.some((marker) => marker.objectIds.includes(activeObject.id))
+                ? () => {
+                  selectObject(activeObject.id);
+                  goToSection('map');
+                }
+                : undefined}
+            />
           ) : (
             <div className="detail-empty">
               <h2 className="detail-empty__title">{strings.detailEmptyTitle}</h2>
-              <p className="muted">{strings.detailEmptyBody}</p>
+              <p className="detail-empty__body">{strings.detailEmptyBody}</p>
             </div>
           )}
         </section>
@@ -258,5 +332,13 @@ export default function App() {
         </details>
       </footer>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <LocaleProvider>
+      <AppShell />
+    </LocaleProvider>
   );
 }

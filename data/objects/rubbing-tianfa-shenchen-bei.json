@@ -1,0 +1,47 @@
+{
+  "id": "rubbing-tianfa-shenchen-bei",
+  "workId": "tianfa-shenchen-bei",
+  "objectType": "rubbing",
+  "titles": {
+    "zh": "天发神谶碑（北宋拓本）",
+    "en": "Stele of the Heavenly Omen, Northern Song rubbing"
+  },
+  "productionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "北宋",
+    "original": "北宋拓本",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": "新00046692",
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-palace-museum",
+    "sourceRefs": [
+      "src-dpm-tianfa"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The Palace Museum catalogues this album as a Northern Song rubbing. Its exact year of production is unavailable.",
+    "noteZh": "故宫著录此册为北宋拓本，未给出具体拓年。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": [
+    "The catalogue does not identify a storage room or establish current display status."
+  ],
+  "notesZh": [
+    "所引条目没有给出库房位置，也未核实目前的展出状态。"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "wufeng-inscription",
+  "titles": {
+    "zh": "五凤刻石",
+    "en": "Wufeng Inscription"
+  },
+  "aliases": [
+    "鲁孝王泮池刻石",
+    "鲁孝王刻石"
+  ],
+  "attribution": [
+    {
+      "role": "unknown",
+      "name": "署名未详",
+      "nameEn": "Maker unrecorded",
+      "certainty": "unknown",
+      "sourceRefs": [
+        "src-qufu-wufeng"
+      ],
+      "note": "The cited catalogue does not identify the writer or calligrapher.",
+      "noteZh": "所引条目未给出撰文者或书丹者。"
+    }
+  ],
+  "dynastyId": "western-han",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": -56,
+    "startMonth": null,
+    "endYear": -56,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "西汉宣帝五凤二年（即公元前56年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": null,
+  "background": "An inscribed limestone dated to the second year of Wufeng in the gallery catalogue.",
+  "sourceRefs": [
+    "src-qufu-wufeng"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": []
+}

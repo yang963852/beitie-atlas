@@ -1,0 +1,43 @@
+{
+  "id": "yishan-inscription",
+  "titles": {
+    "zh": "峄山刻石",
+    "en": "Mount Yi Inscription"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "李斯",
+      "nameEn": "Li Si",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-yishan"
+      ]
+    }
+  ],
+  "dynastyId": "qin",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": -219,
+    "startMonth": null,
+    "endYear": -219,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "公元前219年",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "小篆",
+  "background": "The Qin inscription commemorates the First Emperor’s visit to Mount Yi.",
+  "sourceRefs": [
+    "src-beilin-yishan"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": []
+}

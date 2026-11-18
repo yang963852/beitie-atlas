@@ -1,0 +1,58 @@
+{
+  "id": "cao-quan-bei",
+  "titles": {
+    "zh": "曹全碑",
+    "en": "Stele of Cao Quan"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "unknown",
+      "name": "未署名",
+      "nameEn": "Unrecorded",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-xuexi-caoquan"
+      ],
+      "note": "No writer or calligrapher is named on the stone.",
+      "noteZh": "碑上未署撰文者与书丹者姓名。"
+    },
+    {
+      "role": "sponsor",
+      "name": "王敞、王毕等",
+      "nameEn": "Wang Chang, Wang Bi and others",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-dpm-caoquan"
+      ],
+      "note": "Subordinate officials who paid for and erected the stone; not its authors.",
+      "noteZh": "碑阴所列捐资立碑的属吏，不是撰文或书丹者。"
+    }
+  ],
+  "dynastyId": "eastern-han",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 185,
+    "startMonth": null,
+    "endYear": 185,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "东汉中平二年（185年）",
+    "certainty": "disputed",
+    "note": null
+  },
+  "script": "隶书",
+  "background": "An Eastern Han stele for the official Cao Quan, held at the Xi’an Beilin Museum. No scribe is recorded on the stone.",
+  "sourceRefs": [
+    "src-beilin-caoquan"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
+    "noteZh": "2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+  },
+  "notes": [
+    "The English title is a project rendering for navigation, not a title used by the source."
+  ]
+}

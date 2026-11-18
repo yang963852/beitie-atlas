@@ -12,6 +12,13 @@ export interface MarkerBuild {
   skipped: SkippedPlace[];
 }
 
+export type MarkerLocale = 'zh' | 'en';
+
+const PRECISION_LABEL: Record<MarkerLocale, Record<MapMarker['precision'], string>> = {
+  en: { site: 'site', institution: 'institution', city: 'city', region: 'region' },
+  zh: { site: '具体地点', institution: '机构', city: '城市', region: '区域' },
+};
+
 /**
  * Builds one marker per documented *current* collection place, never one per
  * object and never for a historical last-known location. A place without
@@ -20,7 +27,11 @@ export interface MarkerBuild {
  * The grouping itself lives in `src/domain/collection.ts` so the list, the
  * popover, and the map share one rule.
  */
-export function buildMarkers(places: Place[], objects: ObjectRecord[]): MarkerBuild {
+export function buildMarkers(
+  places: Place[],
+  objects: ObjectRecord[],
+  locale: MarkerLocale = 'en',
+): MarkerBuild {
   const groups = groupCurrentLocationsByPlace(objects);
   const markers: MapMarker[] = [];
   const skipped: SkippedPlace[] = [];
@@ -44,8 +55,11 @@ export function buildMarkers(places: Place[], objects: ObjectRecord[]): MarkerBu
       placeId: place.id,
       longitude: coordinates.longitude,
       latitude: coordinates.latitude,
-      label: place.names.en,
-      sublabel: `${count} record${count === 1 ? '' : 's'} · ${coordinates.precision} precision`,
+      label: locale === 'zh' ? place.names.zh : place.names.en,
+      sublabel:
+        locale === 'zh'
+          ? `${count} 条记录 · ${PRECISION_LABEL.zh[coordinates.precision]}`
+          : `${count} record${count === 1 ? '' : 's'} · ${PRECISION_LABEL.en[coordinates.precision]} precision`,
       objectIds: objectsHere.map((object) => object.id),
       provisional: coordinates.verification === 'unverified',
       precision: coordinates.precision,

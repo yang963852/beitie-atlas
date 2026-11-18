@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { getDataset } from '../src/domain/data';
+import { dynastyOrder } from '../src/domain/dynasties';
 
 describe('seed records', () => {
   const dataset = getDataset();
@@ -62,5 +63,57 @@ describe('seed records', () => {
       expect(source.url.startsWith('https://')).toBe(true);
       expect(source.accessedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     }
+  });
+
+  it('states in both languages what each record does not know', () => {
+    for (const object of dataset.objects) {
+      // An empty gap list would present a draft as if it were complete.
+      expect(object.notes.length).toBeGreaterThan(0);
+      expect(object.notesZh?.length).toBe(object.notes.length);
+    }
+  });
+
+  it('never plots a place without a cited coordinate source', () => {
+    for (const place of dataset.places) {
+      if (!place.coordinates) continue;
+      expect(place.coordinates.sourceRefs.length).toBeGreaterThan(0);
+      expect(place.coordinates.verification).toBe('unverified');
+    }
+  });
+
+  it('files every work under a period and states who is credited', () => {
+    for (const work of dataset.works) {
+      expect(work.dynastyId.length).toBeGreaterThan(0);
+      // An empty list would read as "nobody knows"; an explicit unknown entry
+      // is the only acceptable way to say that the stone names no one.
+      expect(work.attribution.length).toBeGreaterThan(0);
+
+      for (const entry of work.attribution) {
+        expect(entry.sourceRefs.length).toBeGreaterThan(0);
+        if (entry.role === 'unknown') {
+          expect(entry.noteZh?.length ?? 0).toBeGreaterThan(0);
+          expect(entry.note?.length ?? 0).toBeGreaterThan(0);
+        }
+      }
+    }
+  });
+
+  it('orders the records by period, not by the date of each rubbing', () => {
+    const order = new Map<string, number>();
+    for (const work of dataset.works) order.set(work.id, dynastyOrder(work.dynastyId));
+
+    let previous = Number.NEGATIVE_INFINITY;
+    for (const object of dataset.objects) {
+      const current = order.get(object.workId) ?? Number.POSITIVE_INFINITY;
+      expect(current).toBeGreaterThanOrEqual(previous);
+      previous = current;
+    }
+
+    // The Republican rubbing sits with its Tang stele rather than at the end.
+    const ids = dataset.objects.map((object) => object.id);
+    const rubbing = ids.indexOf('dpm-rubbing-xin00045406');
+    const stone = ids.indexOf('yan-qinli-original-stele');
+    expect(rubbing).toBeGreaterThan(stone);
+    expect(rubbing - stone).toBeLessThanOrEqual(2);
   });
 });

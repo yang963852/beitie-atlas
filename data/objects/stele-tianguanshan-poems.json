@@ -1,0 +1,47 @@
+{
+  "id": "stele-tianguanshan-poems",
+  "workId": "tianguanshan-poems",
+  "objectType": "recarving",
+  "titles": {
+    "zh": "赵子昂游天冠山诗碑（清刻）",
+    "en": "Mount Tianguan Poems, Qing carving"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 1682,
+    "startMonth": null,
+    "endYear": 1682,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "清康熙二十一年（1682）十一月十五日",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-xian-beilin-museum",
+    "sourceRefs": [
+      "src-beilin-tianguanshan"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The museum identifies the Qing stone as carved by Bu Shi after a manuscript model.",
+    "noteZh": "馆方著录这方清代石刻由卜世据墨本刻石。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": [
+    "The catalogue does not identify a storage room or establish current display status."
+  ],
+  "notesZh": [
+    "所引条目没有给出库房位置，也未核实目前的展出状态。"
+  ]
+}

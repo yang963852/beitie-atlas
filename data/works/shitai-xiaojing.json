@@ -1,0 +1,58 @@
+{
+  "id": "shitai-xiaojing",
+  "titles": {
+    "zh": "石台孝经",
+    "en": "Stone Terrace Classic of Filial Piety"
+  },
+  "aliases": [
+    "孝经碑"
+  ],
+  "attribution": [
+    {
+      "role": "author-and-calligrapher",
+      "name": "李隆基（唐玄宗）",
+      "nameEn": "Li Longji (Emperor Xuanzong of Tang)",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-shitai"
+      ]
+    },
+    {
+      "role": "title-writer",
+      "name": "李亨",
+      "nameEn": "Li Heng",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-cupl-shitai"
+      ],
+      "note": "The crown prince, later Emperor Suzong, wrote the seal-script heading.",
+      "noteZh": "时为太子的李亨（后为唐肃宗）篆额。"
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 745,
+    "startMonth": null,
+    "endYear": 745,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐天宝四年（745）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "隶书（八分）",
+  "background": "The emperor’s own preface, commentary, and clerical-script text of the Classic of Filial Piety, assembled from 35 blocks into a stele with a three-tiered base. The heading in seal script is by Li Heng (Emperor Suzong).",
+  "sourceRefs": [
+    "src-beilin-shitai"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record from the museum page. The attribution of the seal-script heading rests on the same page.",
+    "noteZh": "依据馆方页面整理的草稿；碑额篆书归属同样仅据该页面。"
+  },
+  "notes": [
+    "The page does not state the number of characters or the condition of the carving today."
+  ]
+}

@@ -13,12 +13,18 @@
         "latitude": 34.255,
         "crs": "WGS84",
         "precision": "institution",
-        "sourceRefs": ["src-wikidata-beilin-museum"],
+        "sourceRefs": [
+          "src-wikidata-beilin-museum"
+        ],
         "method": "secondary-database",
         "verification": "unverified",
-        "note": "Wikidata P625 value with a stated precision of about 0.00028° (roughly 30 m). The statement has no cited reference and the museum has not confirmed it. Treat it as an indicative institution point, not as the object's storage location."
+        "note": "Wikidata P625 value with a stated precision of about 0.00028° (roughly 30 m). The statement has no cited reference and the museum has not confirmed it. Treat it as an indicative institution point, not as the object's storage location.",
+        "noteZh": "维基数据 P625 数值，标注精度约为 0.00028°（约 30 米）。该陈述没有引用来源，馆方也未确认。只作机构示意点，不是实物的存放位置。"
       },
-      "sourceRefs": ["src-wikidata-beilin-museum", "src-dpm-yan-qinli-rubbing"],
+      "sourceRefs": [
+        "src-wikidata-beilin-museum",
+        "src-dpm-yan-qinli-rubbing"
+      ],
       "notes": [
         "The institution is named by the Palace Museum catalogue entry as the stone's holding museum; that entry gives no street address or coordinates."
       ]
@@ -36,12 +42,18 @@
         "latitude": 39.91555556,
         "crs": "WGS84",
         "precision": "institution",
-        "sourceRefs": ["src-wikidata-palace-museum"],
+        "sourceRefs": [
+          "src-wikidata-palace-museum"
+        ],
         "method": "secondary-database",
         "verification": "unverified",
-        "note": "Wikidata P625 value for the museum as an institution. It is not a gallery, vault, or storage location, and the catalogue entry does not state where the rubbing is kept."
+        "note": "Wikidata P625 value for the museum as an institution. It is not a gallery, vault, or storage location, and the catalogue entry does not state where the rubbing is kept.",
+        "noteZh": "维基数据 P625 数值，指博物院这一机构。它不是某个展厅、库房或存放点；目录条目也没有说明拓本存放何处。"
       },
-      "sourceRefs": ["src-wikidata-palace-museum", "src-dpm-yan-qinli-rubbing"],
+      "sourceRefs": [
+        "src-wikidata-palace-museum",
+        "src-dpm-yan-qinli-rubbing"
+      ],
       "notes": []
     },
     {
@@ -53,7 +65,9 @@
       "historicalName": "省长公署",
       "kind": "historical-site",
       "coordinates": null,
-      "sourceRefs": ["src-beilin-article-2007"],
+      "sourceRefs": [
+        "src-beilin-article-2007"
+      ],
       "notes": [
         "The 2007 museum article locates the compound only as 'the area east and north-east of today's Xi'an Drum Tower'. No point is asserted here, because a named area is not a surveyed coordinate."
       ]
@@ -67,7 +81,9 @@
       "historicalName": null,
       "kind": "district",
       "coordinates": null,
-      "sourceRefs": ["src-beilin-article-2007"],
+      "sourceRefs": [
+        "src-beilin-article-2007"
+      ],
       "notes": [
         "Named as the 1928 destination ('新城大楼北东侧'). The source gives no coordinates and the historical layout is not established in this record."
       ]
@@ -81,9 +97,232 @@
       "historicalName": null,
       "kind": "institution",
       "coordinates": null,
-      "sourceRefs": ["src-beilin-article-2007"],
+      "sourceRefs": [
+        "src-beilin-article-2007"
+      ],
       "notes": [
         "The 1948 destination as named in the source. This record does not assert that the 1948 institution is identical to today's Xi'an Beilin Museum; the museum is recorded as a separate place with its own source."
+      ]
+    },
+    {
+      "id": "place-qufu-hanwei-gallery",
+      "names": {
+        "zh": "曲阜汉魏碑刻陈列馆",
+        "en": "Qufu Han–Wei Stele Gallery"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-confuciusmuseum-binke",
+        "src-sdxc-kongmiao-sanbei"
+      ],
+      "notes": [
+        "A gallery north of the Confucius Temple, completed in 1998, holding steles moved from the temple, the Kong family mansion, and nearby sites.",
+        "No coordinate is recorded: the cited pages name the gallery but give no surveyed point."
+      ],
+      "notesZh": [
+        "位于孔庙北侧的陈列馆，1998 年建成，汇集自孔庙、孔府及附近各处移来的碑刻。",
+        "未记录坐标：所引页面只给出馆名，没有实测点位。"
+      ]
+    },
+    {
+      "id": "place-hanzhong-museum",
+      "names": {
+        "zh": "汉中市博物馆",
+        "en": "Hanzhong Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-cssn-shaanxi-beike"
+      ],
+      "notes": [
+        "Formed from the 古汉台, 拜将坛 and 饮马池 sites. The 石门十三品 are displayed in a dedicated room.",
+        "No coordinate is recorded: the cited report describes the museum but gives no surveyed point."
+      ],
+      "notesZh": [
+        "由古汉台、拜将坛、饮马池三处遗址组成，石门十三品在专室陈列。",
+        "未记录坐标：所引报道介绍博物馆，但没有实测点位。"
+      ]
+    },
+    {
+      "id": "place-taian-daimiao",
+      "names": {
+        "zh": "泰安岱庙",
+        "en": "Dai Temple, Tai’an"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": {
+        "longitude": 117.125,
+        "latitude": 36.195,
+        "crs": "WGS84",
+        "precision": "institution",
+        "sourceRefs": [
+          "src-wikidata-dai-temple"
+        ],
+        "method": "secondary-database",
+        "verification": "unverified",
+        "note": "Representative coordinate for the Dai Temple complex; the object’s position was not surveyed.",
+        "noteZh": "此点代表岱庙院落范围，未经实地核对，不对应实物的具体位置。"
+      },
+      "sourceRefs": [
+        "src-ltfc-zhuyunge"
+      ],
+      "notes": [
+        "Only a secondary album note places the 张迁碑 in the 岱庙 stele corridor; no temple or museum page was audited for this record.",
+        "No coordinate is recorded."
+      ],
+      "notesZh": [
+        "目前只有一则二手图录说明称《张迁碑》原石在岱庙碑廊；本轮没有核查到岱庙或泰安市博物馆的官方页面。",
+        "未记录坐标。"
+      ]
+    },
+    {
+      "id": "place-jiuchenggong-site",
+      "names": {
+        "zh": "隋仁寿宫·唐九成宫遗址",
+        "en": "Sui Renshou Palace–Tang Jiucheng Palace site"
+      },
+      "historicalName": null,
+      "kind": "historical-site",
+      "coordinates": null,
+      "sourceRefs": [],
+      "notes": [
+        "In Linyou County, Baoji. The 九成宫醴泉铭 and 万年宫铭 stones stand within the protected site.",
+        "No coordinate is recorded: the cited reply describes the site but gives no surveyed point."
+      ],
+      "notesZh": [
+        "位于宝鸡市麟游县。《九成宫醴泉铭》与《万年宫铭》两碑都还在遗址保护范围内。",
+        "未记录坐标：所引答复函描述遗址范围，但没有实测点位。"
+      ]
+    },
+    {
+      "id": "place-jinci-museum",
+      "names": {
+        "zh": "晋祠博物馆",
+        "en": "Jinci Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": {
+        "longitude": 112.43579,
+        "latitude": 37.708318,
+        "crs": "WGS84",
+        "precision": "institution",
+        "sourceRefs": [
+          "src-wikidata-jinci-site"
+        ],
+        "method": "secondary-database",
+        "verification": "unverified",
+        "note": "Representative coordinate for the Jinci complex; the object’s position was not surveyed.",
+        "noteZh": "此点代表晋祠院落范围，未经实地核对，不对应实物的具体位置。"
+      },
+      "sourceRefs": [],
+      "notes": [
+        "The 唐碑亭 (贞观宝翰亭) inside the shrine holds the 646 original and a 1772 recarving side by side.",
+        "No coordinate is recorded in this round; the cited interview gives no point."
+      ],
+      "notesZh": [
+        "祠内唐碑亭（贞观宝翰亭）并立唐贞观原碑与清乾隆三十七年摹刻。",
+        "本轮未记录坐标：所引访谈没有给出点位。"
+      ]
+    },
+    {
+      "id": "place-yuelu-academy",
+      "names": {
+        "zh": "岳麓书院",
+        "en": "Yuelu Academy"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [],
+      "notes": [
+        "The 麓山寺碑 stands in a protective pavilion (护碑亭) on the academy grounds.",
+        "No coordinate is recorded in this round."
+      ],
+      "notesZh": [
+        "《麓山寺碑》立于书院内的护碑亭中。",
+        "本轮未记录坐标。"
+      ]
+    },
+    {
+      "id": "place-wuxi-cliff",
+      "names": {
+        "zh": "浯溪摩崖石刻",
+        "en": "Wuxi cliff inscriptions"
+      },
+      "historicalName": null,
+      "kind": "historical-site",
+      "coordinates": null,
+      "sourceRefs": [],
+      "notes": [
+        "Cliff face on the Xiang River at Qiyang, Yongzhou. The 大唐中兴颂 is cut into the 峿台 rock.",
+        "No coordinate is recorded: the cited pages describe the site but give no surveyed point."
+      ],
+      "notesZh": [
+        "位于永州祁阳湘江之畔，颂文刻在峿台崖壁上。",
+        "未记录坐标：所引页面描述崖壁位置，但没有实测点位。"
+      ]
+    },
+    {
+      "id": "place-jiaoshan-beilin",
+      "names": {
+        "zh": "焦山碑林",
+        "en": "Jiaoshan Stele Forest"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [],
+      "notes": [
+        "On Jiaoshan island in the Yangtze at Zhenjiang. The five 瘗鹤铭 fragments are displayed here.",
+        "No coordinate is recorded: the island is named, not a surveyed point for the gallery building."
+      ],
+      "notesZh": [
+        "位于镇江长江中的焦山岛上，五方《瘗鹤铭》残石在此陈列。",
+        "未记录坐标：所引材料只给出岛名，没有碑林建筑的实测点位。"
+      ]
+    },
+    {
+      "id": "place-nlc",
+      "names": {
+        "zh": "中国国家图书馆",
+        "en": "National Library of China"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [],
+      "notes": [
+        "Holds the only surviving volume of the 神策军碑 rubbing, acquired in 1965.",
+        "No coordinate is recorded in this round."
+      ],
+      "notesZh": [
+        "藏《神策军碑》宋拓孤本一册，1965 年购回入藏。",
+        "本轮未记录坐标。"
+      ]
+    },
+    {
+      "id": "place-bnf",
+      "names": {
+        "zh": "法国国家图书馆",
+        "en": "Bibliothèque nationale de France"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [],
+      "notes": [
+        "Holds the Dunhuang rubbing of the 温泉铭 as Pelliot chinois 4508.",
+        "No coordinate is recorded in this round."
+      ],
+      "notesZh": [
+        "藏敦煌本《温泉铭》残卷，编号 Pelliot chinois 4508。",
+        "本轮未记录坐标。"
       ]
     }
   ]

@@ -8,6 +8,7 @@
  * impossible dates, and draft records leaking into a release build.
  */
 
+import { DYNASTIES, isDynastyId, yearInDynasty } from './dynasties';
 import type { Dataset } from './types';
 
 export interface ValidationIssue {
@@ -55,6 +56,18 @@ const VERIFICATIONS = new Set(['verified', 'unverified']);
 const RELATIONSHIP_TYPES = new Set(['rubbing-of', 'recarving-of', 'fragment-of']);
 const REVIEW_STATES = new Set(['draft', 'reviewed']);
 const SURVIVAL = new Set(['surviving', 'lost', 'unknown']);
+const ATTRIBUTION_ROLES = new Set([
+  'author-and-calligrapher',
+  'author',
+  'calligrapher',
+  'engraver',
+  'title-writer',
+  'compiler',
+  'sponsor',
+  'unknown',
+]);
+/** Ranges that overlap are expected; this only guards against typos in the table. */
+const DYNASTY_IDS = DYNASTIES.map((dynasty) => dynasty.id);
 
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -359,7 +372,49 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
       error('MISSING_FIELD', `${path}.aliases`, 'aliases must be an array of strings (may be empty).');
     }
     checkDate(entry.compositionDate, `${path}.compositionDate`, true);
+
+    if (!isDynastyId(entry.dynastyId)) {
+      error(
+        'DYNASTY',
+        `${path}.dynastyId`,
+        `dynastyId must be one of: ${DYNASTY_IDS.join(', ')}.`,
+      );
+    } else {
+      const composition = entry.compositionDate;
+      const year =
+        isRecord(composition) && typeof composition.startYear === 'number'
+          ? composition.startYear
+          : null;
+      if (year !== null && !yearInDynasty(year, entry.dynastyId)) {
+        warn(
+          'DYNASTY_DATE_MISMATCH',
+          `${path}.dynastyId`,
+          `Composition year ${year} falls outside the ${entry.dynastyId} range; check the filing.`,
+        );
+      }
+    }
+    if (
+      entry.dynastyQualifier !== null &&
+      entry.dynastyQualifier !== undefined &&
+      typeof entry.dynastyQualifier !== 'string'
+    ) {
+      error(
+        'DYNASTY_QUALIFIER',
+        `${path}.dynastyQualifier`,
+        'dynastyQualifier must be a string or null.',
+      );
+    }
+
     if (Array.isArray(entry.attribution)) {
+      // An empty list would silently read as "nobody knows". A work whose maker
+      // is unrecorded must say so with an explicit unknown entry instead.
+      if (entry.attribution.length === 0) {
+        error(
+          'ATTRIBUTION_GAP',
+          `${path}.attribution`,
+          'Work must list credited persons or one explicit unknown entry.',
+        );
+      }
       entry.attribution.forEach((item, aIndex) => {
         const aPath = `${path}.attribution[${aIndex}]`;
         if (!isRecord(item)) {
@@ -367,7 +422,20 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
           return;
         }
         if (!isNonEmptyString(item.name)) error('MISSING_FIELD', `${aPath}.name`, 'Attribution needs a name.');
-        if (!isNonEmptyString(item.role)) error('MISSING_FIELD', `${aPath}.role`, 'Attribution needs a role.');
+        if (!isNonEmptyString(item.role)) {
+          error('MISSING_FIELD', `${aPath}.role`, 'Attribution needs a role.');
+        } else if (!ATTRIBUTION_ROLES.has(item.role)) {
+          error('ATTRIBUTION_ROLE', `${aPath}.role`, `Unknown attribution role "${item.role}".`);
+        }
+        if (typeof item.certainty !== 'string' || !CERTAINTIES.has(item.certainty)) {
+          error('ATTRIBUTION_CERTAINTY', `${aPath}.certainty`, 'Attribution needs a certainty value.');
+        }
+        if (item.note !== undefined && item.note !== null && typeof item.note !== 'string') {
+          error('ATTRIBUTION_NOTE', `${aPath}.note`, 'Attribution note must be a string or null.');
+        }
+        if (item.noteZh !== undefined && item.noteZh !== null && typeof item.noteZh !== 'string') {
+          error('ATTRIBUTION_NOTE', `${aPath}.noteZh`, 'Attribution noteZh must be a string or null.');
+        }
         checkSourceRefs(item.sourceRefs, `${aPath}.sourceRefs`, item.certainty !== 'unknown');
       });
     } else {
@@ -381,6 +449,12 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
   });
 
   // ---------------------------------------------------------------- objects
+  // Relationships may point at an object that is read later in the glob order,
+  // so every object id is registered before any relationship is checked.
+  for (const entry of objects) {
+    if (isRecord(entry) && isNonEmptyString(entry.id)) objectIds.add(entry.id);
+  }
+
   objects.forEach((entry, index) => {
     const path = `$.objects[${index}]`;
     if (!isRecord(entry)) {

@@ -1,9 +1,14 @@
 import { getSource } from '../domain/data';
 import type { Source } from '../domain/types';
-import { strings } from '../i18n/en';
+import { useStrings } from '../i18n';
 
 function resolveSources(ids: string[]): Source[] {
+  // The same source can support a collection assertion and an event; render it
+  // once. Duplicate React keys here would drop a citation silently.
+  const seen = new Set<string>();
   return ids.flatMap((id) => {
+    if (seen.has(id)) return [];
+    seen.add(id);
     const source = getSource(id);
     return source ? [source] : [];
   });
@@ -27,10 +32,11 @@ interface SourceListProps {
  * away without crowding the record; the bibliography renders the list directly.
  */
 export function SourceList({ ids, label, compact = false, plain = false, open = false }: SourceListProps) {
+  const strings = useStrings();
   const sources = resolveSources(ids);
   if (sources.length === 0) return null;
 
-  const heading = label ? `${label} (${sources.length})` : strings.sourcesControl(sources.length);
+  const heading = label ? `${label}（${sources.length}）` : strings.sourcesControl(sources.length);
   const className = compact ? 'sources sources--compact' : 'sources';
 
   const list = (

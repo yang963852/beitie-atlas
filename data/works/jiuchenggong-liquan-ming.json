@@ -1,0 +1,57 @@
+{
+  "id": "jiuchenggong-liquan-ming",
+  "titles": {
+    "zh": "九成宫醴泉铭",
+    "en": "Sweet Spring at Jiucheng Palace"
+  },
+  "aliases": [
+    "九成宫碑",
+    "醴泉铭"
+  ],
+  "attribution": [
+    {
+      "role": "author",
+      "name": "魏徵",
+      "nameEn": "Wei Zheng",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-baoji-jiuchenggong"
+      ]
+    },
+    {
+      "role": "calligrapher",
+      "name": "欧阳询",
+      "nameEn": "Ouyang Xun",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-baoji-jiuchenggong"
+      ]
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 632,
+    "startMonth": null,
+    "endYear": 632,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐贞观六年（632）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "楷书",
+  "background": "Wei Zheng’s remonstrance, written at the emperor’s summer palace and transcribed by Ouyang Xun. The stone still stands inside the protected palace site; the bureau lists it among the site’s surviving monuments.",
+  "sourceRefs": [
+    "src-baoji-jiuchenggong"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record from an official reply that names the stele but does not describe it in detail.",
+    "noteZh": "依据文物局答复函整理的草稿；该函只提及碑名与所在遗址，未详述碑况。"
+  },
+  "notes": [
+    "The cited reply gives no date, dimensions, or condition for the stone; the composition year is not stated there."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "stele-zhang-menglong-bei",
+  "workId": "zhang-menglong-bei",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "张猛龙碑（原石）",
+    "en": "Stele of Zhang Menglong, original stone"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 522,
+    "startMonth": null,
+    "endYear": 522,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "北魏正光三年（522年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-qufu-hanwei-gallery",
+    "sourceRefs": [
+      "src-qufu-zhang-menglong"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The gallery’s object entry reports transfer to its collection in 1998.",
+    "noteZh": "陈列馆藏品条目载原石于 1998 年移入该馆。"
+  },
+  "provenanceEvents": [
+    {
+      "id": "evt-zhang-menglong-bei-1978-move",
+      "objectId": "stele-zhang-menglong-bei",
+      "type": "relocation",
+      "date": {
+        "kind": "single",
+        "startYear": 1978,
+        "startMonth": null,
+        "endYear": 1978,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "1978年",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": "曲阜孔庙东庑",
+      "summary": "Transferred to the eastern wing of the Confucius Temple.",
+      "summaryZh": "移入曲阜孔庙东庑。",
+      "sourceRefs": [
+        "src-qufu-zhang-menglong"
+      ],
+      "certainty": "documented"
+    },
+    {
+      "id": "evt-zhang-menglong-bei-1998-move",
+      "objectId": "stele-zhang-menglong-bei",
+      "type": "relocation",
+      "date": {
+        "kind": "single",
+        "startYear": 1998,
+        "startMonth": null,
+        "endYear": 1998,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "1998年",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": "place-qufu-hanwei-gallery",
+      "placeWording": "曲阜汉魏碑刻陈列馆",
+      "summary": "Transferred to the Han and Wei Stele Gallery.",
+      "summaryZh": "移入汉魏碑刻陈列馆。",
+      "sourceRefs": [
+        "src-qufu-zhang-menglong"
+      ],
+      "certainty": "documented"
+    }
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": [
+    "The catalogue does not identify a storage room or establish current display status."
+  ],
+  "notesZh": [
+    "所引条目没有给出库房位置，也未核实目前的展出状态。"
+  ]
+}

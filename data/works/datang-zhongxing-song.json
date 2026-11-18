@@ -1,0 +1,58 @@
+{
+  "id": "datang-zhongxing-song",
+  "titles": {
+    "zh": "大唐中兴颂",
+    "en": "Eulogy of the Tang Restoration"
+  },
+  "aliases": [
+    "中兴颂",
+    "摩崖三绝"
+  ],
+  "attribution": [
+    {
+      "role": "author",
+      "name": "元结",
+      "nameEn": "Yuan Jie",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-hunan-wuxi"
+      ]
+    },
+    {
+      "role": "calligrapher",
+      "name": "颜真卿",
+      "nameEn": "Yan Zhenqing",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-hunan-wuxi"
+      ]
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 771,
+    "startMonth": null,
+    "endYear": 771,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐大历六年（771）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "楷书",
+  "background": "Yuan Jie’s poem on the suppression of the An Lushan rebellion, cut into a cliff at Wuxi and written out by Yan Zhenqing at 63. The provincial page calls it the foremost of the surviving “three excellences” inscriptions.",
+  "sourceRefs": [
+    "src-hunan-wuxi",
+    "src-yz-wuxi"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record from two government pages. Their character counts disagree, so the count is recorded as disputed rather than chosen.",
+    "noteZh": "依据两份政府页面整理的草稿；两处字数记载不一致，故记为有争议而非择一。"
+  },
+  "notes": [
+    "The Hunan page and the Yongzhou page disagree on the character count (242 vs 332)."
+  ]
+}

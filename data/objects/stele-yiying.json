@@ -1,0 +1,54 @@
+{
+  "id": "stele-yiying",
+  "workId": "yiying-bei",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "乙瑛碑（原石）",
+    "en": "Stele of Yi Ying, original stone"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 153,
+    "startMonth": null,
+    "endYear": 153,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "东汉永兴元年（153年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-qufu-hanwei-gallery",
+    "sourceRefs": [
+      "src-confuciusmuseum-binke",
+      "src-sdxc-kongmiao-sanbei"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The museum article gives 18 lines of 40 characters but no dimensions. The stone does not name a scribe.",
+    "noteZh": "馆方文章记碑文 18 行、满行 40 字，但没有尺寸。碑上未署书者。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
+    "noteZh": "草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+  },
+  "notes": [
+    "The cited page states the date, the scribe where one is recorded, and the holding institution.",
+    "Excavation, accession, and present display status are not stated in the audited source and are left blank.",
+    "No coordinate is recorded: the source names an institution, not a surveyed point.",
+    "Dimensions, excavation, and the move into the gallery are not stated in the museum article."
+  ],
+  "notesZh": [
+    "所引页面记载了刻立年代、可考的书者与现藏机构。",
+    "出土、入藏与今日陈列状态在所核来源中没有记载，留空。",
+    "未记录坐标：来源给出的是机构名称，不是实测点位。",
+    "尺寸、出土经过与移入陈列馆的时间，馆方文章均未记载。"
+  ]
+}

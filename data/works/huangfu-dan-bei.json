@@ -1,0 +1,54 @@
+{
+  "id": "huangfu-dan-bei",
+  "titles": {
+    "zh": "皇甫诞碑",
+    "en": "Stele of Huangfu Dan"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "author",
+      "name": "于志宁",
+      "nameEn": "Yu Zhining",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-huangfudan"
+      ]
+    },
+    {
+      "role": "calligrapher",
+      "name": "欧阳询",
+      "nameEn": "Ouyang Xun",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-huangfudan"
+      ]
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "unknown",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": null,
+    "certainty": "unknown",
+    "note": "No carving year is stated in the audited museum entry."
+  },
+  "script": "楷书",
+  "background": "A Tang stele written by Ouyang Xun for Huangfu Dan. The museum entry used here gives its original find area but no carving year.",
+  "sourceRefs": [
+    "src-beilin-huangfudan"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
+    "noteZh": "2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+  },
+  "notes": [
+    "The English title is a project rendering for navigation, not a title used by the source."
+  ]
+}

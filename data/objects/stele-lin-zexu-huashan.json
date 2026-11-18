@@ -1,0 +1,47 @@
+{
+  "id": "stele-lin-zexu-huashan",
+  "workId": "lin-zexu-huashan",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "林则徐游华山诗并序（刻石）",
+    "en": "Lin Zexu’s Mount Hua Poem and Preface, stone"
+  },
+  "productionDate": {
+    "kind": "unknown",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": null,
+    "certainty": "unknown",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-xian-beilin-museum",
+    "sourceRefs": [
+      "src-beilin-lin-zexu"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The museum dates the writing to 1842. A separate date for cutting this stone is unavailable.",
+    "noteZh": "馆方将撰书时间记为 1842 年，未单列这方石刻的刊刻日期。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": [
+    "The catalogue does not identify a storage room or establish current display status."
+  ],
+  "notesZh": [
+    "所引条目没有给出库房位置，也未核实目前的展出状态。"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "stele-meixuexuan-buziqi",
+  "workId": "meixuexuan-buziqi",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "梅雪轩书晦翁不自弃文（刻石）",
+    "en": "Meixuexuan Inscription of Huiweng’s Essay, stone"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 1606,
+    "startMonth": null,
+    "endYear": 1606,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "明万历三十四年（1606）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-xian-beilin-museum",
+    "sourceRefs": [
+      "src-beilin-meixuexuan"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The museum lists this object in its stele catalogue.",
+    "noteZh": "西安碑林博物馆在碑刻目录中著录此件。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": [
+    "The catalogue does not identify a storage room or establish current display status."
+  ],
+  "notesZh": [
+    "所引条目没有给出库房位置，也未核实目前的展出状态。"
+  ]
+}

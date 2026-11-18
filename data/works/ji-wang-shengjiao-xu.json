@@ -1,0 +1,45 @@
+{
+  "id": "ji-wang-shengjiao-xu",
+  "titles": {
+    "zh": "大唐三藏圣教序碑",
+    "en": "Preface to the Sacred Teaching, assembled from Wang Xizhi"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "compiler",
+      "name": "怀仁",
+      "nameEn": "Huai Ren",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-shengjiaoxu"
+      ]
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 672,
+    "startMonth": null,
+    "endYear": 672,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐咸亨三年（672年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "行书（集字）",
+  "background": "A Tang stele of 672 whose characters were assembled from Wang Xizhi’s calligraphy by the monk Huai Ren, carrying the preface by Taizong and the record by Gaozong.",
+  "sourceRefs": [
+    "src-beilin-shengjiaoxu"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
+    "noteZh": "2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+  },
+  "notes": [
+    "The English title is a project rendering for navigation, not a title used by the source."
+  ]
+}
