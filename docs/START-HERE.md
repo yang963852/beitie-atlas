@@ -94,8 +94,8 @@ not been independently verified.
 Eleven of the fifteen places are recorded without coordinates, so some objects deliberately
 have no map point; supplying a point needs a source that also states its precision. The browser
 key cannot call the geocoding service, so that work needs a server key or per-place sources.
-See [the atlas workflow](atlas-workflow.md) for GitHub synchronization and the owner-only
-Codex Sites preview. Sites can render the coordinate grid without a basemap key.
+See [the atlas workflow](atlas-workflow.md) for GitHub synchronization, the public Codex Sites
+overview, and owner-only previews. The coordinate grids work without a basemap key.
 The initial source snapshot's GitHub CI subsequently passed:
 https://github.com/yang963852/beitie-atlas/actions/runs/44102927813.
 

@@ -52,6 +52,45 @@ h1 { font-size: clamp(2.9rem, 7vw, 5.5rem); line-height: 1.18; margin-block: .25
 
 .section { border-top: 1px solid var(--line); padding-block: 2.25rem; scroll-margin-top: 1rem; }
 h2 { font-size: clamp(1.55rem, 3vw, 2.15rem); line-height: 1.25; margin-bottom: 1.1rem; }
+.originals-map__grid {
+  position: relative;
+  min-height: 220px;
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  background-color: var(--tint);
+  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 12.5% 25%;
+}
+.originals-map__north { position: absolute; inset: .65rem auto auto .85rem; color: var(--muted); }
+.originals-map__pin {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -100%);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 .7rem;
+  border-radius: .45rem;
+  background: var(--accent);
+  color: var(--white);
+  white-space: nowrap;
+}
+.originals-map__pin::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.originals-map figcaption { margin-top: .5rem; color: var(--muted); font-size: .9rem; }
+.originals-map__holdings { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem; margin-top: 1rem; }
+.originals-map__holdings article:target { outline: 2px solid var(--accent); }
+.originals-map__holdings ul { margin-block: .45rem; padding-inline-start: 1.3rem; }
 .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
 article { border: 1px solid var(--line); background: var(--white); border-radius: .65rem; padding: 1.15rem; }
 h3 { margin-bottom: .38rem; font-size: 1.04rem; }
@@ -64,6 +103,6 @@ dd span { display: block; margin-top: .2rem; }
 
 @media (max-width: 44rem) {
   .shell { width: min(100% - 2rem, 68rem); }
-  .hero, .feature-grid { grid-template-columns: 1fr; }
+  .hero, .feature-grid, .originals-map__holdings { grid-template-columns: 1fr; }
   dl > div { grid-template-columns: 1fr; }
 }

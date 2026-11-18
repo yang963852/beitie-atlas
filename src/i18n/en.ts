@@ -82,6 +82,7 @@ export const enStrings = {
   reviewNoteLabel: 'Review note',
 
   mapHeading: 'Map',
+  mapOriginalsOnly: 'Surviving originals only',
   mapSubheading:
     'Explore the documented institutions and sites that hold these objects.',
   coordinateOverview: 'Location overview · basemap unavailable',

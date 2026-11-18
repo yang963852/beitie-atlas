@@ -7,7 +7,8 @@ Task 002 introduced a strict release gate. This page records the public release 
 | Command | Purpose | Drafts allowed | Artifact |
 | --- | --- | --- | --- |
 | `npm run build` | Local or owner-only preview | Yes, clearly labelled | `dist/` marked `preview` in `index.html` |
-| `npm run release` | Public release | No, a draft or invalid record fails the build | `dist/` marked `release`, with `dist/release-manifest.json` |
+| `npm run release` | Public interactive atlas | No, a draft or invalid record fails the build | `dist/` marked `release`, with `dist/release-manifest.json` |
+| `npm run build:overview` | Public project introduction | No corpus is bundled | `build/` marked `overview`, with HTML and CSS only |
 | `npm run check:release` | Review the gate without building | No | Nothing written; exit code only |
 
 `npm run check` (CI) runs type check, the preview data check, tests, and a preview build. It
@@ -66,7 +67,7 @@ not a release artifact.
 ## CI and deployment
 
 `.github/workflows/check.yml` runs preview checks only. It has no deployment step and no
-secrets. Public deployment requires a release artifact produced by `npm run release` and a separate
+secrets. Public deployment of the interactive atlas requires a release artifact produced by `npm run release` and a separate
 host/mainland-network decision recorded in `docs/iteration-board.md`.
 
 ## Rolling back

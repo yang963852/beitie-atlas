@@ -1,6 +1,6 @@
 # 碑帖之间 · Between Steles
 
-[Project website](https://yang963852.github.io/beitie-atlas/)
+[Project website on Codex Sites](https://beitie-atlas.partedlute2.chatgpt.site/)
 
 **English** | [简体中文](README.zh-CN.md)
 
@@ -58,7 +58,7 @@ not committed. Mainland public-network and mobile-network behaviour are still un
 - [Map pilot](docs/map-pilot.md): provider evaluation, coordinate treatment, credential model, and the remaining test plan.
 - [Map setup for the owner](docs/map-setup.md): the beginner-facing steps to enable the map (Chinese).
 - [Release runbook](docs/release.md): the only permitted publishing command and the artifact it must produce.
-- [Atlas workflow](docs/atlas-workflow.md): source evidence, GitHub and the owner-only Codex Sites preview.
+- [Atlas workflow](docs/atlas-workflow.md): source evidence, GitHub and Codex Sites publication.
 - [Delivery report 001](docs/delivery-001.md): what was built, how it was checked, and what is still open.
 - [Delivery report 002](docs/delivery-002.md): review fixes, the strict release gate, and what remains unverified.
 - [Delivery report 003](docs/delivery-003.md): the map-led redesign, mobile flow, and the checks still pending.

@@ -76,6 +76,7 @@ export const zhStrings: Strings = {
   reviewNoteLabel: '审核说明',
 
   mapHeading: '地图',
+  mapOriginalsOnly: '仅显示存世原件',
   mapSubheading: '查看碑刻与拓本有据可查的收藏机构和原址。',
   coordinateOverview: '经纬度点位示意 · 无底图',
   noMapPoints: '当前结果暂无有据可查的坐标。',
