@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "src-dpm-stone-drums-transmission",
+      "kind": "web",
+      "title": "第一百一十三讲：石鼓文及其拓本",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/gugongforum/detail/245912.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "Lecture description on the Daguan transfer and the 1933 evacuation",
+      "note": null
+    },
+    {
+      "id": "src-beilin-xuanmi-move",
+      "kind": "web",
+      "title": "玄秘塔碑",
+      "publisher": "西安碑林博物馆",
+      "url": "https://www.beilin-museum.com/index.php?a=index&aid=2998&c=View&lang=en&m=home",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "Opening paragraph on Anguo Temple and the Yuanyou transfer",
+      "note": null
+    },
+    {
+      "id": "src-dpm-boyuan-return",
+      "kind": "web",
+      "title": "流失国宝重返故宫",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/topic/party_building/north/detail/255754.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "Paragraph on the formal accession of 伯远帖 and 中秋帖",
+      "note": null
+    },
+    {
+      "id": "src-npm-kuaixue-yuan",
+      "kind": "web",
+      "title": "王義之《快雪時晴帖》在元代的接受與認識",
+      "publisher": "國立故宮博物院《故宮學術季刊》",
+      "url": "https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3907",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "Abstract, p. 169: the imperial album and the distinct Zhang Yu copy",
+      "note": null
+    },
+    {
+      "id": "src-npm-hanshi-wang",
+      "kind": "web",
+      "title": "王世杰先生與《寒食帖》",
+      "publisher": "國立故宮博物院《故宮文物月刊》",
+      "url": "https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3990",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "Liu Meng’s article on Wang’s purchase of the scroll from Japan",
+      "note": null
+    },
+    {
       "id": "src-dpm-yan-qinli-rubbing",
       "title": "颜勤礼碑（民国拓本，文物号 新00045406）",
       "publisher": "故宫博物院 The Palace Museum",
@@ -57,7 +112,7 @@
       "url": "https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147",
       "publicationDate": null,
       "accessedAt": "2026-11-18",
-      "locator": "Entry text: dimensions, line count, 唐玄宗 period",
+      "locator": "Entry text: dimensions and the paragraph dating the transfer to 北宋崇宁二年",
       "note": "Museum collection page. The shelfmark and accession history are not given."
     },
     {
@@ -768,7 +823,7 @@
       "url": "https://www.dpm.org.cn/collection/handwriting/228279.html",
       "publicationDate": null,
       "accessedAt": "2026-11-18",
-      "locator": "藏品题名及作品说明",
+      "locator": "藏品题名及作品说明，尤其「其流传经过」段",
       "note": null
     },
     {
@@ -779,7 +834,7 @@
       "url": "https://www.dpm.org.cn/collection/handwriting/228199.html",
       "publicationDate": null,
       "accessedAt": "2026-11-18",
-      "locator": "藏品题名及作品说明",
+      "locator": "藏品题名及乾隆十一年入内府、三希堂合藏一段",
       "note": null
     },
     {
@@ -845,7 +900,7 @@
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P",
       "publicationDate": null,
       "accessedAt": "2026-11-18",
-      "locator": "藏品题名及作品说明",
+      "locator": "藏品题名；拖尾题跋中鲜于枢的两则题记与王顼龄雍正二年跋",
       "note": null
     },
     {
@@ -867,7 +922,7 @@
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14714?dep=P",
       "publicationDate": null,
       "accessedAt": "2026-11-18",
-      "locator": "藏品题名及作品说明",
+      "locator": "藏品题名；作品说明中颜韵伯售予菊池惺堂一段",
       "note": null
     },
     {
@@ -878,7 +933,7 @@
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/43?dep=P",
       "publicationDate": null,
       "accessedAt": "2026-11-18",
-      "locator": "藏品题名及作品说明",
+      "locator": "藏品题名；收传印记及鉴藏宝玺栏",
       "note": null
     },
     {

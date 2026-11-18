@@ -12,13 +12,13 @@
 export const enStrings = {
   siteTitleZh: '碑帖之间',
   siteTitleEn: 'Between Steles',
-  tagline: 'Where is the work you practise from today?',
+  taglineLead: 'The work you practise from:',
+  tagline: 'where is it kept today?',
+  enterCatalogue: 'Open the catalogue',
   taglineDetail:
     'Trace calligraphy through the Qing dynasty. Find the stone, manuscript, rubbing or copy on the map and follow its recorded journey.',
   studyFilter: 'Filter by work category',
   studyLabels: { all: 'All', bei: 'Inscriptions', tie: 'Modelbooks' },
-  statusBadge: 'Preview',
-  statusBadgeRelease: 'Release',
   draftNotice:
     'This preview may include drafts awaiting editorial review. Check each record’s review status and sources.',
 

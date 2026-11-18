@@ -41,7 +41,7 @@ Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, a
 
 ## GitHub synchronization
 
-- The GitHub repository is the only canonical source. A task is not finished while its commits exist only on the local machine: push the task branch to `origin` before reporting completion and record the branch and head revision in the delivery report.
+- The GitHub repository is the only canonical source. For every project change, push one checked task branch, open a PR, and merge into `main` once the applicable checks pass and blocking findings are resolved. The owner provides standing authorization for these source merges; record self-review as self-review. A failing or blocked check is not authorization to bypass repository protection. Record the branch, revision, PR and merge result in the delivery report.
 - After a merge, `main` must match `origin/main`. A local-only commit is an unsynchronized change, not a delivery.
 - Do not force-push a branch that another person or tool may have based work on, and do not rewrite pushed history.
 - Report a blocked push exactly: the command, the error, and what remains unpushed. Never describe unpushed work as delivered.
@@ -50,7 +50,7 @@ Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, a
 
 ## Repository and preview workflow
 
-- Use the GitHub repository as the canonical source. Start from the recorded base revision on one task branch. A request to sync source authorizes pushing that task branch; merging into `main` additionally requires the recorded review outcome.
+- Start from the synchronized `origin/main` on one task branch. Record the review outcome before merging. A source merge does not constitute formal editorial approval.
 - Apply the evidence checklist in [the atlas workflow](docs/atlas-workflow.md) to additions and coordinate changes. Sort the left column by the represented inscription's period, then date. Keep the production date of each copy visible in its own detail.
-- Codex Sites is the public host by owner decision (2026-11-18); a measured mainland reachability limit is recorded as a limitation, not worked around by quietly moving the site. The tracked hosting manifest and the same React build are used for preview and release. Keep local map keys, private notes, and build output out of both source remotes.
+- Codex Sites remains a public host. GitHub Pages is an additional public, labelled preview of checked `main`, not a formal edition or proof of mainland access. Keep local map keys, private notes and build output out of both source remotes.
 - A formal public release requires `npm run release`, a verified release manifest, editorial approval, and host checks. Task 015 records owner authorization for the clearly labelled public draft preview of the existing 36 physical records. Changing a private Site's audience is a separate action.

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { ContributionPanel } from './components/ContributionPanel';
 import { MapPanel } from './components/MapPanel';
 import { ObjectDetail } from './components/ObjectDetail';
@@ -15,12 +15,19 @@ const OBJECT_HASH_PATTERN = /^#\/object\/([a-z0-9-]+)$/;
 const SECTION_IDS = ['results', 'map', 'detail'] as const;
 type SectionId = (typeof SECTION_IDS)[number];
 
+function revealSection(id: string, animate: boolean) {
+  const section = document.getElementById(id);
+  const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+  section?.scrollIntoView?.({ behavior: animate && !reduceMotion ? 'smooth' : 'instant', block: 'start' });
+  section?.focus({ preventScroll: true });
+}
+
 function readObjectIdFromHash(): string | null {
   return OBJECT_HASH_PATTERN.exec(window.location.hash)?.[1] ?? null;
 }
 
 function isSectionHash(hash: string): boolean {
-  return SECTION_IDS.some((id) => hash === `#${id}`);
+  return hash === '#catalogue' || SECTION_IDS.some((id) => hash === `#${id}`);
 }
 
 /**
@@ -67,6 +74,11 @@ function AppShell() {
   const mapActive = wideLayout || (!detailOpen && mobilePane === 'map');
   const returnFocus = useRef<HTMLElement | null>(null);
   const pendingFocus = useRef<'detail' | 'return' | null>(null);
+
+  useLayoutEffect(() => {
+    const id = readObjectIdFromHash();
+    if (id && getObject(id)) revealSection('detail', false);
+  }, []);
 
   useEffect(() => {
     const target = pendingFocus.current;
@@ -127,14 +139,7 @@ function AppShell() {
       setMobilePane(id === 'map' ? 'map' : 'list');
     }
 
-    const node = document.getElementById(id);
-    if (!node) return;
-    const reduceMotion =
-      window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
-    const reveal = () => {
-      node.scrollIntoView?.({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
-      node.focus({ preventScroll: true });
-    };
+    const reveal = () => revealSection(id, true);
     // The mobile pane can be hidden until the navigation update commits.
     if (wideLayout) reveal();
     else window.requestAnimationFrame(reveal);
@@ -212,14 +217,14 @@ function AppShell() {
 
       <header className="topbar">
         <div className="topbar__inner">
-          <h1 className="brand">
+          <div className="brand">
             <span className="brand__zh" lang="zh-Hans">
               {strings.siteTitleZh}
             </span>
             <span className="brand__en" lang="en">
               {strings.siteTitleEn}
             </span>
-          </h1>
+          </div>
 
           <nav className="topnav" aria-label={strings.sectionsLabel}>
             {sectionLink('results', strings.resultsHeading)}
@@ -232,18 +237,24 @@ function AppShell() {
               {localeButton('zh', strings.languageZh)}
               {localeButton('en', strings.languageEn)}
             </div>
-            <span className={isReleaseBuild ? 'chip chip--ok' : 'chip'}>
-              {isReleaseBuild ? strings.statusBadgeRelease : strings.statusBadge}
-            </span>
           </div>
         </div>
       </header>
 
-      <div className="intro">
-        <p className="intro__lede">{strings.tagline}</p>
-        <p className="intro__detail">{strings.taglineDetail}</p>
-        {isReleaseBuild ? null : <p className="intro__notice">{strings.draftNotice}</p>}
-      </div>
+      <section className="intro" aria-labelledby="opening-title">
+        <div className="intro__leaf">
+          <h1 id="opening-title" className="intro__lede">
+            <span>{strings.taglineLead}</span>{' '}<span>{strings.tagline}</span>
+          </h1>
+          <p className="intro__detail">{strings.taglineDetail}</p>
+          <a className="intro__enter" href="#catalogue" onClick={(event) => {
+            event.preventDefault();
+            revealSection('catalogue', true);
+          }}>
+            {strings.enterCatalogue}<span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
 
       {report.ok ? null : (
         <div className="alert" role="alert">
@@ -259,6 +270,7 @@ function AppShell() {
         </div>
       )}
 
+      <div id="catalogue" tabIndex={-1}>
       {/* A record is a pushed view on mobile: the list/map switch belongs to the
           exploration level, and "Back to records" is the way out. */}
       {detailOpen ? null : (
@@ -353,6 +365,7 @@ function AppShell() {
           )}
         </section>
       </main>
+      </div>
 
       {contribute.open ? <ContributionPanel
         key={contribute.objectId ?? 'general'}
@@ -361,6 +374,7 @@ function AppShell() {
       /> : null}
 
       <footer className="footer">
+        {isReleaseBuild ? null : <p className="footer__note">{strings.draftNotice}</p>}
         <p className="footer__note">{strings.footerNote}</p>
         <button
           type="button"

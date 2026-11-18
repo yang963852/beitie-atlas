@@ -10,13 +10,13 @@ import type { Strings } from './en';
 export const zhStrings: Strings = {
   siteTitleZh: '碑帖之间',
   siteTitleEn: 'Between Steles',
-  tagline: '案头所临，如今藏在何处？',
+  taglineLead: '案头所临，',
+  tagline: '如今藏在何处？',
+  enterCatalogue: '打开碑帖图录',
   taglineDetail:
     '循地图访清代及以前的传世碑帖，辨原石、墨迹、拓本与摹本，读一件书迹辗转至今的故事。',
   studyFilter: '按作品类别筛选',
   studyLabels: { all: '全部', bei: '碑', tie: '帖' },
-  statusBadge: '预览版',
-  statusBadgeRelease: '正式版',
   draftNotice: '此预览版可能包含仍待审核的草稿。请以每条记录的审核状态与引证为准。',
 
   languageLabel: '语言',

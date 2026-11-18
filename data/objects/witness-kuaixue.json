@@ -32,7 +32,56 @@
     "note": null,
     "noteZh": null
   },
-  "provenanceEvents": [],
+  "provenanceEvents": [
+    {
+      "id": "witness-kuaixue-yuan-colophons",
+      "objectId": "witness-kuaixue",
+      "type": "documented",
+      "date": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "元仁宗朝",
+        "original": null,
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "A study identifies colophons commissioned by the Yuan emperor Renzong, including one by Zhao Mengfu, on the surviving imperial album copy. It distinguishes this copy from other versions.",
+      "summaryZh": "研究指出，现存内府册页本后副叶有赵孟頫等奉元仁宗命所写的题跋；这一线索只对应此册页本。",
+      "sourceRefs": [
+        "src-npm-kuaixue-yuan"
+      ],
+      "certainty": "documented"
+    },
+    {
+      "id": "witness-kuaixue-qing-court",
+      "objectId": "witness-kuaixue",
+      "type": "custody",
+      "date": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "乾隆朝",
+        "original": null,
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "This album copy was among the works kept by the Qianlong emperor in the Hall of the Three Rarities.",
+      "summaryZh": "此册页本曾为清高宗三希堂所藏。",
+      "sourceRefs": [
+        "src-npm-kuaixue-yuan"
+      ],
+      "certainty": "documented"
+    }
+  ],
   "review": {
     "state": "draft",
     "note": "Catalogue identification awaits editorial review.",

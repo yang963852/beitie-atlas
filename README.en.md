@@ -2,15 +2,15 @@
 
 [简体中文](README.md) · **English**
 
-**[Open the online atlas](https://beitie-atlas.partedlute2.chatgpt.site/)** · [Report an issue or suggest a source](https://github.com/yang963852/beitie-atlas/issues)
+**[Atlas on Codex Sites](https://beitie-atlas.partedlute2.chatgpt.site/)** · [GitHub Pages preview](https://yang963852.github.io/beitie-atlas/) · [Report an issue or suggest a source](https://github.com/yang963852/beitie-atlas/issues)
 
 Between Steles is a companion for calligraphy practice. The stone of the Xuanmi Pagoda Stele is in Xi’an, while an early Ming rubbing is in Beijing. Follow the work you copy to its surviving witnesses, find their documented holdings on the map and read how each passed from hand to hand.
 
 Browse All, Inscriptions or Modelbooks and search by calligrapher. Rubbings follow the category of the represented work. Each witness keeps its own date, holding and history.
 
-![Desktop catalogue filtered to modelbooks](docs/screenshots/026-1440.png)
+![Between Steles opening on desktop](docs/screenshots/027-1440.png)
 
-Task 026 desktop preview. [Versions and handoff](docs/START-HERE.md) · [Editorial review](docs/editorial-review-025.md)
+Task 027 opening. [Versions and handoff](docs/START-HERE.md) · [Editorial review](docs/editorial-review-025.md)
 
 ## Run locally
 
@@ -27,7 +27,7 @@ On Windows, `npm.cmd` also works. The corpus is readable without a map key. See 
 
 ## Stack and project documentation
 
-React, TypeScript and Vite build the static app. JSON stores works, physical objects and sources. Tianditu supplies the basemap. Vitest and GitHub Actions run checks, and Codex Sites serves the public preview.
+React, TypeScript and Vite build the static app. JSON stores works, physical objects and sources. Tianditu supplies the basemap. Vitest and GitHub Actions run checks. Codex Sites and GitHub Pages host separate public previews.
 
 | Goal | Start here |
 | --- | --- |

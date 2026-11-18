@@ -35,11 +35,36 @@
     "note": "The museum entry describes the stele and its inscription. It does not state when the stone entered the Beilin or whether it is on display.",
     "noteZh": "馆方条目描述了碑石形制与碑文，但没有说明何时入藏碑林、今日是否展出。"
   },
-  "provenanceEvents": [],
+  "provenanceEvents": [
+    {
+      "id": "stele-xuanmi-ta-move-beilin",
+      "objectId": "stele-xuanmi-ta",
+      "type": "relocation",
+      "date": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "元祐年间",
+        "original": null,
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "The Xi’an Beilin Museum records that the original stone stood at Anguo Temple in Tang Chang’an and moved to the Beilin in the Yuanyou era.",
+      "summaryZh": "西安碑林博物馆记原碑起初立于唐长安安国寺，宋元祐年间移入碑林。",
+      "sourceRefs": [
+        "src-beilin-xuanmi-move"
+      ],
+      "certainty": "documented"
+    }
+  ],
   "review": {
-    "state": "reviewed",
-    "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
-    "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+    "state": "draft",
+    "note": "The earlier collection record was owner-approved on 2026-11-18. The new provenance lead awaits editorial review.",
+    "noteZh": "此前的馆藏记录于 2026-11-18 经负责人批准；本次新增的递藏线索尚待编辑核实。"
   },
   "notes": [
     "The cited page states the date, the scribe where one is recorded, and the holding institution.",
