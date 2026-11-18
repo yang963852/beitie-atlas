@@ -94,6 +94,8 @@ export const zhStrings: Strings = {
   mapErrorTitle: '地图加载失败',
   mapErrorBody: '阅读、搜索与出处链接不受影响。可以重试，也可以使用下方的地点列表。',
   mapRetry: '重试',
+  mapTilesBlocked:
+    '底图未能加载，通常是密钥或域名白名单限制。点位、地点列表与全部资料仍可正常使用。',
   mapFitAll: '显示全部点位',
   mapDeveloperDetails: '开发者信息',
   mapUnconfiguredDevNote:

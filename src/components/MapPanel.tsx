@@ -5,6 +5,7 @@ import type { ObjectRecord, Place } from '../domain/types';
 import { pickText } from '../domain/text';
 import { useLocale } from '../i18n';
 import { mapIsConfigured } from '../map/config';
+import { watchTiles } from '../map/tiles';
 import { createTiandituAdapter, toMapFailure } from '../map/tianditu';
 import type { MapAdapter, MapFailure, MapMarker } from '../map/types';
 import { LocationOverview } from './LocationOverview';
@@ -41,6 +42,8 @@ export function MapPanel({
   const { locale, strings } = useLocale();
   const [status, setStatus] = useState<Status>(mapIsConfigured ? 'loading' : 'unconfigured');
   const [failure, setFailure] = useState<MapFailure | null>(null);
+  /** The script loaded but the tiles did not: key refused, quota gone, origin blocked. */
+  const [tilesBlocked, setTilesBlocked] = useState(false);
   const [attempt, setAttempt] = useState(0);
   const [activePlaceId, setActivePlaceId] = useState<string | null>(null);
 
@@ -107,7 +110,14 @@ export function MapPanel({
     let cancelled = false;
     setStatus('loading');
     setFailure(null);
+    setTilesBlocked(false);
     container.replaceChildren();
+
+    // Started before the provider mounts: the first tiles request immediately,
+    // and the watcher listens on the container, not on the provider's internals.
+    const stopWatchingTiles = watchTiles(container, () => {
+      if (!cancelled) setTilesBlocked(true);
+    });
 
     const adapter = createTiandituAdapter();
     adapterRef.current = adapter;
@@ -125,6 +135,7 @@ export function MapPanel({
 
     return () => {
       cancelled = true;
+      stopWatchingTiles();
       adapter.destroy();
       adapterRef.current = null;
     };
@@ -154,6 +165,7 @@ export function MapPanel({
       aria-labelledby="map-heading"
       tabIndex={-1}
       data-map-state={status === 'ready' ? 'live' : 'fallback'}
+      data-map-tiles={tilesBlocked ? 'blocked' : 'ok'}
     >
       <div className="map__head">
         <div className="map__headings">
@@ -181,13 +193,32 @@ export function MapPanel({
         ) : null}
       </div>
 
+      {/* A map whose tiles are refused looks identical to a map that is still
+          loading, forever. Say so, and keep the markers and the place list —
+          the coordinates are still readable without a basemap. */}
+      {status === 'ready' && tilesBlocked ? (
+        <p className="map__notice" role="status">
+          <span>{strings.mapTilesBlocked}</span>
+          <button
+            type="button"
+            className="button button--quiet"
+            onClick={() => setAttempt((count) => count + 1)}
+          >
+            {strings.mapRetry}
+          </button>
+        </p>
+      ) : null}
+
       {/* The fallback box is short by design, so the provider must never be
           mounted into it: the SDK measures the container once and would keep
           loading tiles for a 210 px box after the panel grows. Only the
           unconfigured state uses the short geometry. */}
       <div className={status === 'unconfigured' ? 'map map--fallback' : 'map map--live'}>
         <div ref={containerRef} className="map__canvas" aria-hidden="true" />
-        {status === 'unconfigured' || status === 'error' ? (
+        {/* Without tiles the provider canvas is a grid of broken images, which
+            looks like a bug in this site. The schematic says the same thing
+            without pretending to be a basemap. */}
+        {status === 'unconfigured' || status === 'error' || tilesBlocked ? (
           <LocationOverview markers={markers} activePlaceId={activePlaceId} onSelect={setActivePlaceId} />
         ) : null}
 

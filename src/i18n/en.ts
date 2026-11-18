@@ -102,6 +102,8 @@ export const enStrings = {
   mapErrorBody:
     'Reading, searching, and source links still work. Retry, or use the location list below.',
   mapRetry: 'Try again',
+  mapTilesBlocked:
+    'The basemap did not load, usually a key or domain-whitelist restriction. Markers, the place list and every record still work.',
   mapFitAll: 'Show all points',
   mapDeveloperDetails: 'Developer details',
   mapUnconfiguredDevNote:

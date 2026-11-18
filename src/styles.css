@@ -746,6 +746,28 @@ a {
 
 /* --------------------------------------------------------------------- map */
 
+/* Says the basemap failed while leaving the map, the markers and the place
+   list usable. Draft colours, because it is a warning, not an error state. */
+.map__notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--draft-line);
+  border-radius: 10px;
+  background: var(--draft-wash);
+  color: var(--draft);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.map__notice .button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
 .map__head {
   display: flex;
   align-items: flex-start;
