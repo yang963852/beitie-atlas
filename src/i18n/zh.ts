@@ -15,7 +15,7 @@ export const zhStrings: Strings = {
     '同一件作品可能留下多处实物，分藏各地。每件实物各自记录现藏依据与有据可查的流转，互不借用。',
   statusBadge: '预览版',
   statusBadgeRelease: '正式版',
-  draftNotice: '目前仅收录草稿记录。每条结论都附有它出自的来源，未经编辑审核的内容不作为定论。',
+  draftNotice: '此预览版可能包含仍待审核的草稿。请以每条记录的审核状态与引证为准。',
 
   languageLabel: '语言',
   languageZh: '中文',

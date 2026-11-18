@@ -18,7 +18,7 @@ export const enStrings = {
   statusBadge: 'Preview',
   statusBadgeRelease: 'Release',
   draftNotice:
-    'Draft records only. Every claim links to the source it came from; nothing here is publication-approved.',
+    'This preview may include drafts awaiting editorial review. Check each record’s review status and sources.',
 
   languageLabel: 'Language',
   languageZh: '中文',
