@@ -113,11 +113,7 @@ export function MapPanel({
     setTilesBlocked(false);
     container.replaceChildren();
 
-    // Started before the provider mounts: the first tiles request immediately,
-    // and the watcher listens on the container, not on the provider's internals.
-    const stopWatchingTiles = watchTiles(container, () => {
-      if (!cancelled) setTilesBlocked(true);
-    });
+    const tileWatch = watchTiles(container, setTilesBlocked);
 
     const adapter = createTiandituAdapter();
     adapterRef.current = adapter;
@@ -125,7 +121,10 @@ export function MapPanel({
     adapter
       .mount(container, markersRef.current, { onMarkerClick: (placeId) => setActivePlaceId(placeId) })
       .then(() => {
-        if (!cancelled) setStatus('ready');
+        if (!cancelled) {
+          setStatus('ready');
+          tileWatch.start();
+        }
       })
       .catch((error: unknown) => {
         if (cancelled) return;
@@ -135,7 +134,7 @@ export function MapPanel({
 
     return () => {
       cancelled = true;
-      stopWatchingTiles();
+      tileWatch.stop();
       adapter.destroy();
       adapterRef.current = null;
     };

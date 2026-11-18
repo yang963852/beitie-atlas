@@ -1,88 +1,83 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { watchTiles } from '../src/map/tiles';
 
-/**
- * The provider gives no signal when tiles are refused. These tests pin the
- * behaviour of the watcher that stands in for that signal, including the case
- * where the browser fires nothing at all.
- */
-function makeContainer(tiles: number): { container: HTMLDivElement; images: HTMLImageElement[] } {
-  const container = document.createElement('div');
-  const images = Array.from({ length: tiles }, () => {
-    const image = document.createElement('img');
-    container.appendChild(image);
-    return image;
-  });
-  document.body.appendChild(container);
-  return { container, images };
+const tileUrl = 'https://t0.tianditu.gov.cn/vec_w/wmts?SERVICE=WMTS&REQUEST=GetTile';
+
+function addImage(container: HTMLElement, src = tileUrl) {
+  const image = document.createElement('img');
+  image.src = src;
+  return container.appendChild(image);
 }
 
-beforeEach(() => {
-  vi.useFakeTimers();
-});
-
-afterEach(() => {
-  vi.useRealTimers();
-  document.body.replaceChildren();
-});
+beforeEach(() => vi.useFakeTimers());
+afterEach(() => vi.useRealTimers());
 
 describe('tile watcher', () => {
-  it('reports as soon as a tile fails before any has loaded', () => {
-    const { container, images } = makeContainer(2);
-    const onFailure = vi.fn();
+  it('does not report a failure when another tile succeeds within the grace period', () => {
+    const container = document.createElement('div');
+    const onBlockedChange = vi.fn();
+    const watch = watchTiles(container, onBlockedChange);
+    watch.start();
 
-    watchTiles(container, onFailure);
-    images[0].dispatchEvent(new Event('error'));
+    addImage(container).dispatchEvent(new Event('error'));
+    addImage(container).dispatchEvent(new Event('load'));
+    vi.advanceTimersByTime(4000);
 
-    expect(onFailure).toHaveBeenCalledTimes(1);
+    expect(onBlockedChange).not.toHaveBeenCalled();
+    watch.stop();
   });
 
-  it('stays quiet when a tile loads', () => {
-    const { container, images } = makeContainer(2);
-    const onFailure = vi.fn();
-
-    watchTiles(container, onFailure);
-    images[0].dispatchEvent(new Event('load'));
-    images[1].dispatchEvent(new Event('error'));
-    vi.advanceTimersByTime(20_000);
-
-    expect(onFailure).not.toHaveBeenCalled();
-  });
-
-  it('reports when images are present but nothing arrives and nothing fails', () => {
-    const { container } = makeContainer(1);
-    const onFailure = vi.fn();
-
-    watchTiles(container, onFailure, { timeoutMs: 5000 });
-    vi.advanceTimersByTime(4999);
-    expect(onFailure).not.toHaveBeenCalled();
-
-    vi.advanceTimersByTime(1);
-    expect(onFailure).toHaveBeenCalledTimes(1);
-  });
-
-  it('does not report when the provider renders no images at all', () => {
-    const { container } = makeContainer(0);
-    const onFailure = vi.fn();
-
-    watchTiles(container, onFailure, { timeoutMs: 5000 });
+  it('starts the deadline after SDK mount, then recovers when a late tile succeeds', () => {
+    const container = document.createElement('div');
+    const onBlockedChange = vi.fn();
+    const watch = watchTiles(container, onBlockedChange);
     vi.advanceTimersByTime(10_000);
+    expect(onBlockedChange).not.toHaveBeenCalled();
 
-    expect(onFailure).not.toHaveBeenCalled();
+    watch.start();
+    const tile = addImage(container);
+    vi.advanceTimersByTime(3999);
+    expect(onBlockedChange).not.toHaveBeenCalled();
+    vi.advanceTimersByTime(1);
+    tile.dispatchEvent(new Event('load'));
+
+    expect(onBlockedChange.mock.calls).toEqual([[true], [false]]);
+    watch.stop();
   });
 
-  it('reports at most once and stops listening after cleanup', () => {
-    const { container, images } = makeContainer(2);
-    const onFailure = vi.fn();
+  it('does not count marker icons or map annotations as a working basemap', () => {
+    const container = document.createElement('div');
+    const onBlockedChange = vi.fn();
+    const watch = watchTiles(container, onBlockedChange);
+    watch.start();
+    addImage(container, 'https://api.tianditu.gov.cn/img/marker.png').dispatchEvent(new Event('load'));
+    addImage(container, tileUrl.replace('vec_w', 'cva_w')).dispatchEvent(new Event('load'));
+    vi.advanceTimersByTime(4000);
 
-    const stop = watchTiles(container, onFailure);
-    images[0].dispatchEvent(new Event('error'));
-    images[1].dispatchEvent(new Event('error'));
-    expect(onFailure).toHaveBeenCalledTimes(1);
+    expect(onBlockedChange.mock.calls).toEqual([[true]]);
+    watch.stop();
+  });
 
-    stop();
-    images[0].dispatchEvent(new Event('error'));
-    vi.advanceTimersByTime(20_000);
-    expect(onFailure).toHaveBeenCalledTimes(1);
+  it('clears a pending deadline on cleanup', () => {
+    const container = document.createElement('div');
+    const onBlockedChange = vi.fn();
+    const watch = watchTiles(container, onBlockedChange);
+    watch.start();
+    watch.stop();
+    vi.advanceTimersByTime(4000);
+
+    expect(onBlockedChange).not.toHaveBeenCalled();
+  });
+
+  it('detaches the recovery listener on cleanup', () => {
+    const container = document.createElement('div');
+    const onBlockedChange = vi.fn();
+    const watch = watchTiles(container, onBlockedChange);
+    watch.start();
+    vi.advanceTimersByTime(4000);
+    watch.stop();
+    addImage(container).dispatchEvent(new Event('load'));
+
+    expect(onBlockedChange.mock.calls).toEqual([[true]]);
   });
 });

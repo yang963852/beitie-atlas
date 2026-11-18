@@ -48,13 +48,15 @@ jobs:
 
       - name: Resolve inputs
         id: inputs
+        env:
+          BASE_PATH: ${{ inputs.base_path }}
         run: |
-          base_path="${{ inputs.base_path }}"
-          case "$base_path" in
-            /*) ;;
-            *) echo "base_path must start with / — got '$base_path'"; exit 1 ;;
-          esac
-          echo "base_path=$base_path" >> "$GITHUB_OUTPUT"
+          if [[ ! "$BASE_PATH" =~ ^/([A-Za-z0-9_-]+/)*[A-Za-z0-9_-]*$ ]]; then
+            echo "base_path must be / or a slash-separated path using letters, digits, underscores and hyphens."
+            exit 1
+          fi
+          base_path="${BASE_PATH%/}/"
+          printf 'base_path=%s\n' "$base_path" >> "$GITHUB_OUTPUT"
           echo "revision=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           echo "short=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
 
@@ -70,6 +72,8 @@ jobs:
 
       - name: Build (release, strict gate)
         if: inputs.mode == 'release'
+        env:
+          VITE_BASE_PATH: ${{ steps.inputs.outputs.base_path }}
         run: npm run release
 
       - name: Verify the artifact says what it is
@@ -101,17 +105,22 @@ jobs:
           NODE
 
       - name: Summarize
+        env:
+          BASE_PATH: ${{ steps.inputs.outputs.base_path }}
+          MODE: ${{ inputs.mode }}
+          REVISION: ${{ steps.inputs.outputs.revision }}
+          SHORT_REVISION: ${{ steps.inputs.outputs.short }}
         run: |
           {
             echo "### Site artifact"
             echo ""
             echo "| Field | Value |"
             echo "| --- | --- |"
-            echo "| Revision | \`${{ steps.inputs.outputs.revision }}\` |"
-            echo "| Mode | \`${{ inputs.mode }}\` |"
-            echo "| Base path | \`${{ steps.inputs.outputs.base_path }}\` |"
-            echo "| Artifact | \`beitie-${{ inputs.mode }}-${{ steps.inputs.outputs.short }}\` |"
-            echo "| Source manifest | \`.openai/hosting.json\` -> \`build/\` stays the overview; this workflow stages the atlas |"
+            printf '| Revision | `%s` |\n' "$REVISION"
+            printf '| Mode | `%s` |\n' "$MODE"
+            printf '| Base path | `%s` |\n' "$BASE_PATH"
+            printf '| Artifact | `beitie-%s-%s` |\n' "$MODE" "$SHORT_REVISION"
+            echo '| Source manifest | `.openai/hosting.json` points to `dist/` |'
             echo ""
             echo "The Sites upload itself is an owner-authorized step. Record this revision and"
             echo "the Site version together in the delivery report."

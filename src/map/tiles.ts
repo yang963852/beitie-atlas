@@ -1,69 +1,45 @@
-/**
- * Detects a basemap that loads its script but no tiles.
- *
- * The provider reports nothing in this case. A browser key restricted to another
- * origin returns 403 for every tile image, the SDK stays quiet, and the reader
- * gets markers floating over an empty box with no explanation. Watching the
- * container's images catches it without depending on provider internals, so the
- * same check works for any tile-based SDK.
- */
-
-export interface TileWatchOptions {
-  /**
-   * How long to wait for a first successful tile before calling it blocked.
-   * Four seconds: tiles either arrive quickly or they are refused; a longer wait
-   * only prolongs the blank grid the notice exists to explain.
-   */
-  timeoutMs?: number;
+function isTiandituTile(image: HTMLImageElement): boolean {
+  const source = image.currentSrc || image.src;
+  if (!source) return false;
+  const url = new URL(source);
+  return /^t[0-7]\.tianditu\.gov\.cn$/.test(url.hostname) && /^\/vec_[cw]\/wmts\/?$/i.test(url.pathname);
 }
 
-/**
- * Calls `onTileFailure` at most once per mount when images are present but none
- * loads, or when at least one fails before any succeeds.
- *
- * Returns a cleanup function; call it when the map is destroyed, otherwise the
- * listeners outlive the container.
- */
 export function watchTiles(
   container: HTMLElement,
-  onTileFailure: () => void,
-  { timeoutMs = 4000 }: TileWatchOptions = {},
-): () => void {
-  let loaded = 0;
-  let failed = 0;
-  let reported = false;
-
-  const report = () => {
-    if (reported) return;
-    reported = true;
-    onTileFailure();
-  };
+  onBlockedChange: (blocked: boolean) => void,
+  timeoutMs = 4000,
+): { start: () => void; stop: () => void } {
+  let loaded = false;
+  let blocked = false;
+  let timer: ReturnType<typeof setTimeout> | undefined;
 
   const handleLoad = (event: Event) => {
-    if (!(event.target instanceof HTMLImageElement)) return;
-    loaded += 1;
+    if (!(event.target instanceof HTMLImageElement) || !isTiandituTile(event.target)) return;
+    loaded = true;
+    if (blocked) {
+      blocked = false;
+      onBlockedChange(false);
+    }
   };
 
-  const handleError = (event: Event) => {
-    if (!(event.target instanceof HTMLImageElement)) return;
-    failed += 1;
-    if (loaded === 0) report();
-  };
-
-  // Capture phase: image load events do not bubble, so a listener on the
-  // container only sees them when it listens during capture.
   container.addEventListener('load', handleLoad, true);
-  container.addEventListener('error', handleError, true);
 
-  // A silent 403 with no error event would otherwise leave the notice missing.
-  const timer = globalThis.setTimeout(() => {
-    if (loaded === 0 && failed > 0) report();
-    else if (loaded === 0 && container.querySelectorAll('img').length > 0) report();
-  }, timeoutMs);
-
-  return () => {
-    globalThis.clearTimeout(timer);
-    container.removeEventListener('load', handleLoad, true);
-    container.removeEventListener('error', handleError, true);
+  return {
+    start() {
+      timer = setTimeout(() => {
+        const hasDecodedTile = Array.from(container.querySelectorAll('img')).some(
+          (image) => image.complete && image.naturalWidth > 0 && isTiandituTile(image),
+        );
+        if (!loaded && !hasDecodedTile) {
+          blocked = true;
+          onBlockedChange(true);
+        }
+      }, timeoutMs);
+    },
+    stop() {
+      clearTimeout(timer);
+      container.removeEventListener('load', handleLoad, true);
+    },
   };
 }

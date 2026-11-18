@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { act, render, screen } from '@testing-library/react';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { LocaleProvider } from '../src/i18n';
 import type { MapMarker } from '../src/map/types';
 
@@ -21,8 +21,8 @@ vi.mock('../src/map/config', () => ({
 vi.mock('../src/map/tianditu', () => ({
   createTiandituAdapter: () => ({
     mount: async (container: HTMLElement) => {
-      // One tile image that the browser would fail to decode after a 403.
       const tile = document.createElement('img');
+      tile.src = 'https://t0.tianditu.gov.cn/vec_w/wmts?SERVICE=WMTS&REQUEST=GetTile';
       container.appendChild(tile);
       queueMicrotask(() => tile.dispatchEvent(new Event('error')));
     },
@@ -48,13 +48,16 @@ const markers: MapMarker[] = [
 
 beforeEach(() => {
   window.history.replaceState(null, '', window.location.pathname);
+  vi.useFakeTimers();
 });
+
+afterEach(() => vi.useRealTimers());
 
 describe('map panel with a refused basemap', () => {
   it('tells the reader the tiles did not load and keeps the schematic', async () => {
     const { MapPanel } = await import('../src/components/MapPanel');
 
-    render(
+    const { container } = render(
       <LocaleProvider>
         <MapPanel
           markers={markers}
@@ -66,9 +69,16 @@ describe('map panel with a refused basemap', () => {
       </LocaleProvider>,
     );
 
-    expect(await screen.findByText(/底图未能加载/)).toBeInTheDocument();
+    await act(async () => {});
+    act(() => vi.advanceTimersByTime(4000));
+    expect(screen.getByText(/底图未能加载/)).toBeInTheDocument();
     // The schematic replaces the provider canvas, so no broken image icons.
     expect(document.querySelector('.map-overview')).not.toBeNull();
     expect(document.querySelector('#map')?.getAttribute('data-map-tiles')).toBe('blocked');
+
+    const tile = container.querySelector('.map__canvas img');
+    act(() => { tile?.dispatchEvent(new Event('load')); });
+    expect(screen.queryByText(/底图未能加载/)).not.toBeInTheDocument();
+    expect(container.querySelector('.map-overview')).toBeNull();
   });
 });
