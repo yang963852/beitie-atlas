@@ -4,6 +4,12 @@ Branch `codex/026-study-catalogue`, based on `9e419d5d686d33d1a4a0bf00c69988a01e
 
 Seven works and eight witnesses from Palace Museum object entries bring the preview to 71 works and 77 objects. Three works have explicit transmission events. The two differently filed rubbings of the Xuanmi stele and the Mochitang modelbook exercise the distinction between work category and material type. No new coordinates or image rights were assumed. All new work and object records remain drafts.
 
+## Public preview v8
+
+The existing [public catalogue](https://beitie-atlas.partedlute2.chatgpt.site/) deployed Sites v8 successfully. The owner-authorized source merge includes tasks 025 and 026. GitHub source `8f7c4d3858b4f4550736f01d6e7f2c800896364e` passed [GitHub CI](https://github.com/yang963852/beitie-atlas/actions/runs/44301268318). Sites source `6eb3328f5bdbd7e5edb58649d07d9b91ba459921` has the same tracked tree. The verified static archive contained five files including the hosting manifest. The immediate rollback is v7.
+
+A fresh Windows Edge session on the public URL used Enter to switch between 53 inscription witnesses, 24 modelbook/manuscript witnesses and all 77 records. The [Zhang Han permalink](https://beitie-atlas.partedlute2.chatgpt.site/#/object/dpm-zhanghan-026) restored the Tang tracing after refresh with HTTP 200. The browser decoded 18 map tile-sized images. This is a desktop observation on the test connection.
+
 ## Implementation and self-review
 
 Every work has a validated study category. Both the results list and map use the intersection of category and search. Keyboard controls exposed 53 inscription witnesses, 24 modelbook/manuscript witnesses and 77 overall. The Chinese reading text includes 32 newly edited background paragraphs alongside the original English and seven new work entries. The introductory copy, bilingual READMEs and engineering contract describe the learning purpose.
