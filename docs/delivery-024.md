@@ -1,5 +1,7 @@
 # Delivery 024 | Calligraphy through the Qing
 
+Sites version 7 deployed successfully to the [public catalogue](https://beitie-atlas.partedlute2.chatgpt.site/). GitHub revision `6b15362f397049934dde6c928d07f77cd2b4433a` and Sites revision `1336a4d768d8db81afd4842489d587bd08689d71` share the same tracked tree. The upload used the locally tested preview artifact. Version 6 is the rollback point. The strict gate rejected 58 draft records.
+
 Branch `codex/024-bei-tie-catalogue`, base `79386874b3047b74cf3a9126274c54bf8b13f05e`.
 
 The catalogue adds twenty draft works and twenty witnesses from the Palace Museum and National Palace Museum catalogues, with twenty source records and one institution. The 1929 小碑林记 record is retained in the historical archive. Later rubbings of earlier compositions remain eligible. The resulting preview contains 64 works, 69 objects, 22 places and 94 sources.
