@@ -15,9 +15,10 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "check:data": "tsx scripts/check-data.ts",
+    "check:docs": "node scripts/check-board.mjs",
     "check:map-key": "tsx scripts/check-map-key.ts",
     "test": "vitest run",
-    "check": "npm run typecheck && npm run check:data && npm run test && vite build"
+    "check": "npm run typecheck && npm run check:data && npm run check:docs && npm run test && vite build"
   },
   "dependencies": {
     "react": "19.3.1",

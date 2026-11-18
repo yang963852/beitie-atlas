@@ -4,22 +4,23 @@ Updated: 2026-11-18. One active implementation task at a time.
 
 | Task | Outcome | State | Exit evidence |
 | --- | --- | --- | --- |
-| 001 | Foundation preview | Changes required; local checks pass | See review-001.md; live map and public-network verification pending |
-| 002 | Close review defects and establish release gate | Accepted locally 2026-11-17 | Independent 61-test check and strict rejection of 3 drafts; see review-002.md; live/external gates remain pending |
-| 003 | Apple-inspired visual hierarchy and usability | Delivered 2026-11-17; awaiting independent review | 63 tests; 390/768/1440 screenshots plus 720 px zoom equivalent; live map unverified; see delivery-003.md |
-| 004 | Real map verification | Live locally 2026-11-18; awaiting independent review; mainland network untested | 96 tests; 24 tiles fill a 569×734 column at 1440 and 12 tiles a 356×454 column at 390; 2 markers; mount-sizing, test-isolation and mobile-button defects fixed; see delivery-004.md |
-| 005 | Reviewed physical objects | Partly superseded by 007; review still queued | Sources reviewed, coordinate basis checked, missing data handled |
+| 001 | Foundation preview | Changes required — local checks pass; live map and public-network verification pending | See review-001.md; live map and public-network verification pending |
+| 002 | Close review defects and establish release gate | Accepted — locally 2026-11-17; external gates still open | Independent 61-test check and strict rejection of 3 drafts; see review-002.md; live/external gates remain pending |
+| 003 | Apple-inspired visual hierarchy and usability | Delivered — 2026-11-17; awaiting independent review | 63 tests; 390/768/1440 screenshots plus 720 px zoom equivalent; live map unverified; see delivery-003.md |
+| 004 | Real map verification | Delivered — live locally 2026-11-18; awaiting independent review; mainland network untested | 96 tests; 24 tiles fill a 569×734 column at 1440 and 12 tiles a 356×454 column at 390; 2 markers; mount-sizing, test-isolation and mobile-button defects fixed; see delivery-004.md |
+| 005 | Reviewed physical objects | Queued — partly superseded by 007; review still queued | Sources reviewed, coordinate basis checked, missing data handled |
 | 006 | First public corpus and release | Queued | Rights, contribution docs, strict release checks, host tests, rollback revision |
-| 007 | Chinese-first interface, blue visual pass, corpus expansion | Delivered 2026-11-18; awaiting independent review | 75 tests; 12 objects from institutional sources; 390/768/1440 evidence; live map still needs a key; see delivery-007.md |
-| 008 | Extant steles and unique rubbings | Delivered 2026-11-18; awaiting independent review | 76 tests; 24 objects from 22 works; 12 new records, all draft; coordinates still limited to 2 places; see delivery-008.md |
-| 009 | Period ordering and credited hands | Delivered 2026-11-18; awaiting independent review | 83 tests; 22 works filed under 3 periods; 37 attribution entries incl. 5 explicit 未署名; map options in map-options.md; live map still needs a key; see delivery-009.md |
-| 010 | Tianditu key self-check and setup runbook | Delivered 2026-11-18; awaiting independent review | 94 tests; `npm run check:map-key` classifies 301001 / 301013 / gateway codes without printing the key; whitelist format corrected; live rendering still needs an owner key; see map-setup.md |
-| 011 | Expand period coverage and connect the atlas to Codex Sites | Owner-only preview deployed 2026-11-18; two P2 review findings addressed | 36 objects across 12 periods, 4 points for 22 objects. See [PR #1](https://github.com/yang963852/beitie-atlas/pull/1) for the independent review, checks, and merge, and [delivery 011](delivery-011.md) for browser verification. |
-| 012 | Publish the GitHub Pages project overview | Superseded by 014 | See [task 012](../tasks/012-github-pages-overview.md) and [delivery 012](delivery-012.md). |
-| 013 | Audit the corpus for public atlas publication | Evidence review in progress | See [task 013](../tasks/013-public-corpus-audit.md) and [delivery 013](delivery-013.md). |
-| 014 | Move the public overview to Codex Sites | Delivered for review | See [task 014](../tasks/014-sites-public-overview.md) and [delivery 014](delivery-014.md). |
-| 015 | Restore the interactive atlas on Codex Sites | Tianditu build deployed, rendering verification pending | See [task 015](../tasks/015-restore-atlas-site.md) and [delivery 015](delivery-015.md). |
-| 016 | Organize the GitHub project home | Delivered for review | See [task 016](../tasks/016-github-project-home.md) and [delivery 016](delivery-016.md). |
+| 007 | Chinese-first interface, blue visual pass, corpus expansion | Delivered — 2026-11-18; awaiting independent review | 75 tests; 12 objects from institutional sources; 390/768/1440 evidence; live map still needs a key; see delivery-007.md |
+| 008 | Extant steles and unique rubbings | Delivered — 2026-11-18; awaiting independent review | 76 tests; 24 objects from 22 works; 12 new records, all draft; coordinates still limited to 2 places; see delivery-008.md |
+| 009 | Period ordering and credited hands | Delivered — 2026-11-18; awaiting independent review | 83 tests; 22 works filed under 3 periods; 37 attribution entries incl. 5 explicit 未署名; map options in map-options.md; live map still needs a key; see delivery-009.md |
+| 010 | Tianditu key self-check and setup runbook | Delivered — 2026-11-18; awaiting independent review | 94 tests; `npm run check:map-key` classifies 301001 / 301013 / gateway codes without printing the key; whitelist format corrected; live rendering still needs an owner key; see map-setup.md |
+| 011 | Expand period coverage and connect the atlas to Codex Sites | Accepted — preview deployed 2026-11-18; two P2 findings addressed; merged in PR #1 | 36 objects across 12 periods, 4 points for 22 objects. See [PR #1](https://github.com/yang963852/beitie-atlas/pull/1) for the independent review, checks, and merge, and [delivery 011](delivery-011.md) for browser verification. |
+| 012 | Publish the GitHub Pages project overview | Superseded — by 014 | See [task 012](../tasks/012-github-pages-overview.md) and [delivery 012](delivery-012.md). |
+| 013 | Audit the corpus for public atlas publication | In progress — evidence review; 69 records still draft | See [task 013](../tasks/013-public-corpus-audit.md) and [delivery 013](delivery-013.md). |
+| 014 | Move the public overview to Codex Sites | Accepted — merged by the owner in PR #3 after a clean review; that review was Codex reviewing Codex, so an independent review of this change is still open | See [task 014](../tasks/014-sites-public-overview.md) and [delivery 014](delivery-014.md). |
+| 015 | Restore the interactive atlas on Codex Sites | Delivered — Tianditu build deployed as Site version 4; rendered-tile inspection still pending | See [task 015](../tasks/015-restore-atlas-site.md) and [delivery 015](delivery-015.md). |
+| 016 | Organize the GitHub project home | Accepted — documentation merged by the owner at `b85c0f4`; no code changed | See [task 016](../tasks/016-github-project-home.md) and [delivery 016](delivery-016.md). |
+| 017 | Close the technical review's defects and codify synchronization | Delivered — awaiting independent review | 103 tests; work-level notes now render; bilingual note rule added; board check and CI hardening in place; see [task 017](../tasks/017-defect-fixes-and-governance.md) and [delivery 017](delivery-017.md). |
 
 ## Iteration loop
 
@@ -27,11 +28,19 @@ Ready → in progress → delivered → reviewed → fixing (if necessary) → a
 
 Each task specifies goal, allowed scope, exclusions, input evidence, and observable acceptance. The implementer writes a delivery report; Codex writes the independent outcome. Record blocked portions separately and continue independent work. Local engineering, editorial approval, live provider behavior, and public network access are four distinct gates.
 
+The state column opens with one canonical keyword — `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted`, `Superseded` — followed by an em dash and any detail. `npm run check:docs` enforces that vocabulary, requires every task file and delivery report to have a row, and rejects evidence links that do not resolve. Prose after the dash is free text; the keyword is not.
+
 P1: material correctness/release blocker. P2: fix within its assigned iteration. P3: optional polish. Fix demonstrated risks first; do not postpone usable improvements for stylistic perfection. No automatic infinite review loop: new requests enter the backlog unless they affect current acceptance.
 
 Before a new iteration record its base revision; after acceptance record its accepted commit. Do not overwrite evidence from previous rounds. Roll back by selecting a known accepted revision or reverting the specific change, never by deleting unexplained work.
 
 ## Decisions
+
+- 2026-11-18: The public host stays Codex Sites. The owner decided this explicitly after the review measured a Cloudflare 403 from a mainland network; the reachability limit is recorded in [delivery 017](delivery-017.md) as a known limitation, not as a migration plan. Any future change of host is a separate owner decision.
+
+- 2026-11-18: A review by the implementer's own tooling is a self-review. It can clear findings, but the board records that distinction and acceptance requires either an independent reviewer or the owner's decision at merge.
+
+- 2026-11-18: Work-level and place-level editorial notes are reader-facing, not private scaffolding. They render in the detail view's editorial section with an explicit language attribute. A note that no view shows is a defect, not tolerated data; the 26 English-only notes (22 works, 4 places) stay visible until translated rather than being deleted.
 
 - 2026-11-18: The national Tianditu console rejected a URL with a scheme and trailing slash. Its field examples use bare hostnames separated by ASCII commas. The older regional-console instructions do not apply to this form.
 

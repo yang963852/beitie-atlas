@@ -1,5 +1,26 @@
 # Changelog
 
+## Unreleased — task 017 defects and synchronization (2026-11-18)
+
+Editorial notes that live on a work or a place are now shown, not hidden: 26 records carried
+notes that no view rendered, 22 of them on works. They appear in the same "editorial notes and
+gaps" section as object notes, and each one declares the language it is written in, so a Chinese
+reader sees English marked as English rather than silently unlabelled.
+
+The validator learned the rule that a translation and its source keep the same count and order:
+a misaligned `notesZh` is now an error, and a missing translation is reported once as a backlog
+instead of once per record.
+
+`index.html` declares `zh-Hans` instead of `en`, matching the interface default and what a
+crawler or a reader without JavaScript sees. The validation report is memoised, so a keystroke no
+longer re-validates all 69 records.
+
+Workflow: `npm run check` now runs `check:docs`, which fails when a task file or delivery report
+has no board row, when a state does not open with a canonical keyword, or when an evidence link
+does not resolve. CI gained concurrency cancellation, a timeout, commit-pinned actions, the
+`.nvmrc` version, and a whitespace check; a manual `site-artifact` workflow builds and verifies
+the directory the Sites upload consumes without holding Site credentials. 103 tests pass.
+
 ## Unreleased — public atlas preview and Chinese-first repository (2026-11-18)
 
 - The public Codex Site serves the interactive atlas with a visible draft notice, a Tianditu basemap configuration and an originals-only map filter. See [deployment evidence](docs/delivery-015.md).
