@@ -1,0 +1,69 @@
+:root {
+  color-scheme: light;
+  --paper: #f8f7f3;
+  --white: #fff;
+  --ink: #1e2b2a;
+  --muted: #4d615d;
+  --line: #cfd8d2;
+  --accent: #175b4c;
+  --tint: #e8f0ea;
+  font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+h1, h2, h3, p, figure { margin: 0; }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.shell { width: min(100% - 3rem, 68rem); margin-inline: auto; }
+.skip { position: absolute; top: .5rem; left: .5rem; padding: .65rem; background: var(--white); transform: translateY(-160%); }
+.skip:focus { transform: none; }
+
+header { background: var(--white); border-bottom: 1px solid var(--line); }
+.topbar, .footer { display: flex; align-items: center; justify-content: space-between; gap: .5rem 1.5rem; flex-wrap: wrap; }
+.topbar { padding-block: .5rem; }
+.wordmark { font-weight: 750; color: var(--ink); text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: .25rem 1rem; }
+nav a, .wordmark { display: inline-flex; align-items: center; min-height: 44px; }
+nav a { font-size: .9rem; }
+
+.hero { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: clamp(2rem, 6vw, 5rem); padding-block: clamp(3rem, 8vw, 6rem); }
+.english { color: var(--accent); font-size: .95rem; font-weight: 700; letter-spacing: .035em; }
+h1 { font-size: clamp(2.9rem, 7vw, 5.5rem); line-height: 1.18; margin-block: .25rem .75rem; }
+.lead { font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 650; }
+.description { max-width: 34rem; margin-top: .65rem; color: var(--muted); }
+.actions { display: flex; gap: .65rem; flex-wrap: wrap; margin-top: 1.45rem; }
+.button { display: inline-flex; align-items: center; min-height: 44px; padding: .5rem .9rem; border: 1px solid var(--accent); border-radius: .45rem; text-decoration: none; font-weight: 650; }
+.primary { color: var(--white); background: var(--accent); }
+.button:hover { text-decoration: underline; }
+.preview-note { color: var(--muted); font-size: .82rem; margin-top: .55rem; }
+
+.diagram { padding: clamp(1rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: .9rem; background: var(--tint); text-align: center; }
+.diagram figcaption { font-weight: 650; color: var(--muted); margin-bottom: 1.35rem; }
+.diagram-root { width: fit-content; margin-inline: auto; padding: .35rem 1.2rem; color: var(--white); background: var(--accent); border-radius: .35rem; }
+.diagram-objects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; position: relative; padding-top: 1.5rem; }
+.diagram-objects::before { content: ""; position: absolute; top: 0; left: 50%; height: 1.5rem; border-left: 1px solid var(--accent); }
+.diagram-objects::after { content: ""; position: absolute; top: .75rem; left: 16%; right: 16%; height: .75rem; border: 1px solid var(--accent); border-bottom: 0; }
+.diagram-objects div { position: relative; background: var(--white); padding: .5rem .2rem; border: 1px solid var(--line); border-radius: .35rem; }
+.diagram-evidence { margin-top: 1rem; color: var(--muted); font-size: .9rem; }
+
+.section { border-top: 1px solid var(--line); padding-block: 2.25rem; scroll-margin-top: 1rem; }
+h2 { font-size: clamp(1.55rem, 3vw, 2.15rem); line-height: 1.25; margin-bottom: 1.1rem; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
+article { border: 1px solid var(--line); background: var(--white); border-radius: .65rem; padding: 1.15rem; }
+h3 { margin-bottom: .38rem; font-size: 1.04rem; }
+article p, dd span { color: var(--muted); }
+dl, dd { margin: 0; }
+dl > div { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: .25rem 1rem; border-bottom: 1px solid var(--line); padding: .85rem 0; }
+dt { color: var(--muted); }
+dd span { display: block; margin-top: .2rem; }
+.footer { padding-bottom: 2.25rem; font-size: .92rem; color: var(--muted); }
+
+@media (max-width: 44rem) {
+  .shell { width: min(100% - 2rem, 68rem); }
+  .hero, .feature-grid { grid-template-columns: 1fr; }
+  dl > div { grid-template-columns: 1fr; }
+}
