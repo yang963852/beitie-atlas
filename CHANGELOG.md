@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — public atlas preview and Chinese-first repository (2026-11-18)
+
+- The public Codex Site serves the interactive atlas with a visible draft notice, a Tianditu basemap configuration and an originals-only map filter. See [deployment evidence](docs/delivery-015.md).
+- The corpus covers 33 works and 36 physical objects across 12 periods, with 54 sources. See [the first source audit](docs/delivery-013.md).
+- The GitHub homepage uses a concise Chinese README with a companion English version. Repository metadata points to the public atlas.
+
 ## Unreleased — task 004 live map verification (2026-11-18)
 
 The Tianditu base map now renders with an owner-supplied browser key: 24 tiles fill a 569×734
