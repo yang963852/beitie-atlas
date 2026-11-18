@@ -4,7 +4,7 @@
 
 **[Open the online atlas](https://beitie-atlas.partedlute2.chatgpt.site/)** · [Report an issue or suggest a source](https://github.com/yang963852/beitie-atlas/issues)
 
-An interactive atlas of Chinese stone inscriptions and rubbings. Browse and search by historical period, locate documented holdings on the map, and open an object to read its provenance and references. Original stones, recarvings, and rubbings each have their own records. The map can filter for surviving originals.
+An interactive atlas of Chinese stone inscriptions and rubbings. Browse by historical period or search by name or catalogue number. Locate documented holdings on the map and open an object to read its provenance and references. Original stones, recarvings, and rubbings each have their own records. The map can filter for surviving originals.
 
 The public preview contains **33 works, 36 physical objects, 15 places, and 54 sources**. Four mapped places account for 22 objects. Pins represent reference locations for institutions or sites. The records are marked as drafts pending editorial review for formal publication.
 
