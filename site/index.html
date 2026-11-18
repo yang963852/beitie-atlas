@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="《碑帖之间》按朝代整理中国碑刻与拓本，用地图连接存世实物、收藏地点和史料出处。">
+    <title>碑帖之间 · Between Steles</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到主要内容</a>
+    <header>
+      <div class="shell topbar">
+        <a class="wordmark" href="./">碑帖之间</a>
+        <nav aria-label="页面导航">
+          <a href="#features">项目功能</a>
+          <a href="#technology">技术栈</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="shell">
+      <section class="hero" aria-labelledby="title">
+        <div class="hero-copy">
+          <p class="english" lang="en">Between Steles</p>
+          <h1 id="title">碑帖之间</h1>
+          <p class="lead">一份关于中国碑刻与拓本的互动图鉴</p>
+          <p class="description">从朝代与作品出发，查找存世实物、记录其收藏地点，并沿着出处了解它的流转。</p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/yang963852/beitie-atlas">查看源码 ↗</a>
+            <a class="button" href="https://beitie-atlas.partedlute2.chatgpt.site/">私有演示 ↗</a>
+          </div>
+          <p class="preview-note">演示仅向站点所有者开放。</p>
+        </div>
+        <figure class="diagram">
+          <figcaption>一件碑帖怎样被记录</figcaption>
+          <div class="diagram-root">作品</div>
+          <div class="diagram-objects">
+            <div>原石</div>
+            <div>翻刻</div>
+            <div>拓本</div>
+          </div>
+          <div class="diagram-evidence">各有收藏地点、流转记录与出处</div>
+        </figure>
+      </section>
+
+      <section class="section" id="features" aria-labelledby="features-title">
+        <h2 id="features-title">项目功能</h2>
+        <div class="feature-grid">
+          <article>
+            <h3>按朝代找碑帖</h3>
+            <p>从秦到民国浏览作品，按名称、别名、馆藏号或收藏机构搜索。</p>
+          </article>
+          <article>
+            <h3>在地图上看现藏地点</h3>
+            <p>点击收藏地点查看关联实物。缺少坐标的记录仍可从地点列表查看。</p>
+          </article>
+          <article>
+            <h3>沿出处查流转</h3>
+            <p>查看每件实物的年代、收藏依据和流转记录，并通过链接分享详情。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section technology" id="technology" aria-labelledby="tech-title">
+        <h2 id="tech-title">技术栈</h2>
+        <dl>
+          <div><dt>界面与构建</dt><dd><strong>React、TypeScript、Vite</strong><span>构建中英双语的响应式应用，生成静态网页。</span></dd></div>
+          <div><dt>资料与地图</dt><dd><strong>版本化 JSON、天地图</strong><span>为作品、实物及证据分别建档。底图不可用时可用经纬度示意。</span></dd></div>
+          <div><dt>测试与协作</dt><dd><strong>Vitest、GitHub Actions、Codex</strong><span>自动检查数据和交互，使用 Pull Request 审查改动。</span></dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="shell footer">
+      <p>馆藏资料仍为草稿，待独立编辑审核。</p>
+      <a href="https://github.com/yang963852/beitie-atlas/blob/main/README.zh-CN.md">中文项目文档 ↗</a>
+    </footer>
+  </body>
+</html>

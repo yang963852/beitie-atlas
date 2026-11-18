@@ -20,4 +20,6 @@ GitHub is the canonical source. Codex Sites hosts the owner preview of the same 
 
 ## Public release
 
+The [GitHub Pages project overview](https://yang963852.github.io/beitie-atlas/) describes the application. The Pages workflow copies only `site/index.html` and `site/styles.css` into its deployment artifact. Merge reviewed overview changes to `main` to update the page.
+
 Review the release corpus independently, then run `npm run release` and verify its marker and manifest. Check the actual host over HTTPS, mainland desktop and mobile networks, and the map provider's attribution and terms. Record the accepted revision, access decision and rollback version before broadening the Site audience. Follow [the release runbook](release.md).
