@@ -2,6 +2,22 @@
 
 GitHub is the canonical source. Codex Sites hosts the interactive atlas preview. Its project identity and static output directory are recorded in `.openai/hosting.json`.
 
+## What counts as a source
+
+Three kinds of material show up when looking for a stele, and they are not interchangeable.
+
+| Material | Citable? | How to record it |
+| --- | --- | --- |
+| Museum, library, cultural-heritage or government page | Yes | `kind: "web"` with the URL, access date and a locator that says which paragraph carries the claim |
+| Printed catalogue, rubbing collection, excavation report | Yes, if you actually have the volume | `kind: "book"` with publisher, year and a page or entry locator. No URL is required and none may be invented |
+| An app that collects inscriptions (掌上碑帖, 以观书法 and similar), a forum post, an encyclopedia entry | No | Use it as a lead. It tells you which stele to look up; it does not support a claim about that stele |
+
+The distinction is not snobbery about apps. A work page in an app usually has no stable per-object address, no stated editorial method, and no way to tell whether its date came from the stone, a rubbing or another website. A claim needs a reader to be able to open the same evidence and see the same sentence.
+
+What an app is genuinely good for: discovering which inscriptions exist, learning the conventional titles and aliases, and noticing that a stele you had never heard of is worth researching. Take the name from the app, then find a museum or government page, or the printed catalogue, that actually states the fact.
+
+When two citable pages disagree — the year of a stele, the height of a stone, the number of characters — record both readings in the notes and leave the structured field empty. Do not average, and do not pick the figure that looks tidier. `docs/delivery-018.md` has four worked examples from this pass.
+
 ## From a source to a record
 
 1. Record the task, base revision, acceptance checks, and implementer on the iteration board. Use one task branch and one implementation writer.

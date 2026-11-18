@@ -1,5 +1,24 @@
 # Changelog
 
+## Unreleased — task 018 simpler lookups, wider corpus, citable sources (2026-11-18)
+
+Id lookups go through maps built once with the dataset instead of a linear `find` per row, and
+`pickText` moved out of the detail view into `domain/text.ts` so the map panel no longer imports
+from an unrelated component.
+
+A source may now be a printed catalogue: `kind: "book"`, publisher, year and a page locator, with
+`url: null`. Requiring a URL from a book either blocked citable evidence or invited an invented
+link. A printed source renders as text rather than as a link that goes nowhere.
+
+`docs/atlas-workflow.md` states what may be cited: museum, library, heritage and government pages,
+and printed catalogues; inscription-collecting apps are leads, not evidence.
+
+The corpus grows to 37 works, 40 objects, 19 places, 62 sources and 25 events. New: 爨宝子碑
+(东晋 405, an empty period until now), 爨龙颜碑 (南朝宋 458), 鲜于璜碑 (东汉 165) and 龙藏寺碑
+(隋 586), all draft, all from institutional pages. Four published conflicts are recorded in the
+notes instead of being resolved by picking a tidier number. The editorial notes section is now
+grouped by the record it describes. 106 tests pass.
+
 ## Unreleased — task 017 defects and synchronization (2026-11-18)
 
 Editorial notes that live on a work or a place are now shown, not hidden: 26 records carried

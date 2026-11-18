@@ -21,6 +21,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 015 | Restore the interactive atlas on Codex Sites | Delivered — Tianditu build deployed as Site version 4; rendered-tile inspection still pending | See [task 015](../tasks/015-restore-atlas-site.md) and [delivery 015](delivery-015.md). |
 | 016 | Organize the GitHub project home | Accepted — documentation merged by the owner at `b85c0f4`; no code changed | See [task 016](../tasks/016-github-project-home.md) and [delivery 016](delivery-016.md). |
 | 017 | Close the technical review's defects and codify synchronization | Accepted — merged by owner decision without an independent review; CI "Preview quality checks" passed on the branch head | 103 tests; 26 invisible notes now render; bilingual note rule added; board check and CI hardening in place; see [task 017](../tasks/017-defect-fixes-and-governance.md) and [delivery 017](delivery-017.md). |
+| 018 | Simplify lookups, widen the corpus, define citable sources | Delivered — awaiting independent review | 106 tests; 37 works / 40 objects / 19 places / 62 sources; four new steles from institutional pages; printed sources allowed; apps defined as leads; see [task 018](../tasks/018-simplify-and-widen-corpus.md) and [delivery 018](delivery-018.md). |
 
 ## Iteration loop
 
@@ -41,6 +42,8 @@ Before a new iteration record its base revision; after acceptance record its acc
 - 2026-11-18: A review by the implementer's own tooling is a self-review. It can clear findings, but the board records that distinction and acceptance requires either an independent reviewer or the owner's decision at merge.
 
 - 2026-11-18: Work-level and place-level editorial notes are reader-facing, not private scaffolding. They render in the detail view's editorial section with an explicit language attribute. A note that no view shows is a defect, not tolerated data; the 26 English-only notes (22 works, 4 places) stay visible until translated rather than being deleted.
+
+- 2026-11-18: A source is citable when a reader can open the same evidence and see the same sentence: a museum, library, heritage or government page, or a printed catalogue cited by publisher, year and page. An inscription app (掌上碑帖, 以观书法 and similar) is a lead, never evidence. A book source carries no URL, and none may be invented for it.
 
 - 2026-11-18: The national Tianditu console rejected a URL with a scheme and trailing slash. Its field examples use bare hostnames separated by ASCII commas. The older regional-console instructions do not apply to this form.
 
