@@ -77,9 +77,20 @@ export function getDataset(): Dataset {
   return cached;
 }
 
-/** The same validator the command-line check runs, evaluated once for the UI. */
+/**
+ * The same validator the command-line check runs, evaluated once for the UI.
+ *
+ * Validation walks every record, so it is memoised like the dataset: the result
+ * only changes when the bundled JSON changes, which cannot happen at runtime.
+ * Calling it from a component body would otherwise re-validate the whole corpus
+ * on every keystroke.
+ */
+let cachedReport: ValidationReport | null = null;
+
 export function getValidationReport(): ValidationReport {
-  return validateDataset(getDataset(), { releaseMode: isReleaseBuild });
+  if (cachedReport) return cachedReport;
+  cachedReport = validateDataset(getDataset(), { releaseMode: isReleaseBuild });
+  return cachedReport;
 }
 
 export function getWork(id: string): Work | undefined {

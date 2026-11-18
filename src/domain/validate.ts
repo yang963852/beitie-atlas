@@ -199,6 +199,39 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
     return value;
   };
 
+  /**
+   * Editorial notes travel in pairs: `notes` holds the recorded wording and
+   * `notesZh` its Chinese translation, with the same count and the same order.
+   * A translation that is present but misaligned would silently put the wrong
+   * sentence next to a note, so that is an error. A missing translation is
+   * counted once and reported as a single warning, because the reader then sees
+   * the recorded language instead of a generated one.
+   */
+  let untranslatedNoteRecords = 0;
+  const checkNotes = (value: unknown, zhValue: unknown, path: string) => {
+    const hasNotes = Array.isArray(value) ? value.length > 0 : value !== undefined && value !== null;
+    if (value !== undefined && value !== null && !isStringArray(value)) {
+      error('INVALID_NOTES', path, 'notes must be an array of strings.');
+      return;
+    }
+    if (zhValue === undefined || zhValue === null) {
+      if (hasNotes) untranslatedNoteRecords += 1;
+      return;
+    }
+    if (!isStringArray(zhValue)) {
+      error('INVALID_NOTES', `${path}Zh`, 'notesZh must be an array of strings.');
+      return;
+    }
+    const noteCount = Array.isArray(value) ? value.length : 0;
+    if (zhValue.length !== noteCount) {
+      error(
+        'NOTES_LOCALE_LENGTH',
+        `${path}Zh`,
+        `notesZh has ${zhValue.length} entries but notes has ${noteCount}; a translation must keep the same count and order.`,
+      );
+    }
+  };
+
   const checkDate = (value: unknown, path: string, required: boolean) => {
     if (!isRecord(value)) {
       if (required) error('INVALID_DATE', path, 'A date object is required.');
@@ -307,6 +340,7 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
       error('MISSING_FIELD', `${path}.names`, 'Place needs zh and en names.');
     }
     checkSourceRefs(entry.sourceRefs, `${path}.sourceRefs`, false);
+    checkNotes(entry.notes, entry.notesZh, `${path}.notes`);
 
     const coordinates = entry.coordinates;
     if (coordinates === null || coordinates === undefined) {
@@ -445,6 +479,7 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
       error('MISSING_FIELD', `${path}.background`, 'Work needs a short background text.');
     }
     checkSourceRefs(entry.sourceRefs, `${path}.sourceRefs`, true);
+    checkNotes(entry.notes, entry.notesZh, `${path}.notes`);
     checkReview(entry.review, `${path}.review`, 'Work');
   });
 
@@ -479,6 +514,7 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
       error('MISSING_FIELD', `${path}.survivalStatus`, 'survivalStatus must be surviving/lost/unknown.');
     }
     checkReview(entry.review, `${path}.review`, 'Object');
+    checkNotes(entry.notes, entry.notesZh, `${path}.notes`);
 
     // Collection assertion: a claim always carries evidence.
     const collection = entry.currentCollection;
@@ -601,6 +637,17 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
     if (isRecord(entry) && Array.isArray(entry.provenanceEvents)) {
       eventCount += entry.provenanceEvents.length;
     }
+  }
+
+  // One aggregated warning rather than one per record: the point is that the
+  // translation backlog exists and is visible, not that a reader should scroll
+  // through 22 near-identical lines.
+  if (untranslatedNoteRecords > 0) {
+    warn(
+      'NOTES_NOT_TRANSLATED',
+      '$[*].notes',
+      `${untranslatedNoteRecords} record(s) carry editorial notes without a Chinese counterpart; the interface shows the recorded wording until the translation is added.`,
+    );
   }
 
   return {

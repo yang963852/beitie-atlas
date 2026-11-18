@@ -112,6 +112,13 @@ export interface Work {
   sourceRefs: string[];
   review: Review;
   notes: string[];
+  /**
+   * Chinese wording of the work notes, same count and order as `notes`.
+   * Optional because the translation backlog is real: a record without it shows
+   * the recorded English wording rather than a generated translation. The
+   * validator reports the backlog as one aggregated warning.
+   */
+  notesZh?: string[];
 }
 
 export type ObjectType =

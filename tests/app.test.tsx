@@ -67,6 +67,21 @@ describe('application shell', () => {
     expect(within(detail).getByText('邵建和、邵建初')).toBeInTheDocument();
   });
 
+  it('shows work-level and place-level editorial notes and marks their language', () => {
+    renderApp();
+
+    fireEvent.click(within(resultsList()).getByText('颜勤礼碑（原石）'));
+
+    const detail = screen.getByRole('article');
+    // These notes live on the work and on the place, not on the object; none of
+    // them used to be rendered anywhere.
+    const workNote = within(detail).getByText(/The English title is a project translation/);
+    expect(workNote).toHaveAttribute('lang', 'en');
+
+    const placeNote = within(detail).getByText(/gives no street address or coordinates/);
+    expect(placeNote).toHaveAttribute('lang', 'en');
+  });
+
   it('shows the rubbing’s own catalogue number and no copied provenance', () => {
     renderApp();
 

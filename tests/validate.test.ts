@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getDataset } from '../src/domain/data';
+import { getDataset, getValidationReport } from '../src/domain/data';
 import { validateDataset } from '../src/domain/validate';
 
 type Mutable = {
@@ -273,5 +273,40 @@ describe('data validation', () => {
       acquiredAt: '2026-11-17',
     });
     expect(codes(dataset)).toContain('MEDIA_WITHOUT_RIGHTS');
+  });
+
+  it('rejects a translation array that does not line up with its notes', () => {
+    const dataset = baseDataset();
+    dataset.works[0].notes = ['First note.', 'Second note.', 'Third note.'];
+    dataset.works[0].notesZh = ['第一条。', '第二条。'];
+
+    const report = validateDataset(dataset);
+    expect(report.errors.map((issue) => issue.code)).toContain('NOTES_LOCALE_LENGTH');
+  });
+
+  it('accepts aligned translations and reports no translation backlog', () => {
+    const dataset = baseDataset();
+    dataset.works[0].notes = ['First note.'];
+    dataset.works[0].notesZh = ['第一条。'];
+
+    const report = validateDataset(dataset);
+    expect(report.errors).toEqual([]);
+    expect(report.warnings.map((issue) => issue.code)).not.toContain('NOTES_NOT_TRANSLATED');
+  });
+
+  it('reports the untranslated note backlog once, not once per record', () => {
+    const dataset = baseDataset();
+    dataset.works[0].notes = ['First note.'];
+    dataset.objects[0].notes = ['Object note.'];
+
+    const backlog = validateDataset(dataset).warnings.filter(
+      (issue) => issue.code === 'NOTES_NOT_TRANSLATED',
+    );
+    expect(backlog).toHaveLength(1);
+    expect(backlog[0].message).toContain('2 record(s)');
+  });
+
+  it('walks the bundled corpus once and reuses that report', () => {
+    expect(getValidationReport()).toBe(getValidationReport());
   });
 });

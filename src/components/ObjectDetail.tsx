@@ -4,7 +4,7 @@ import { formatCoordinate } from '../domain/coordinates';
 import { getPlace, getWork } from '../domain/data';
 import { compareDates, formatDate } from '../domain/dates';
 import { dynastyLabel } from '../domain/dynasties';
-import type { HistoricalDate, ObjectRecord } from '../domain/types';
+import type { HistoricalDate, ObjectRecord, Place, Work } from '../domain/types';
 import { useLocale } from '../i18n';
 import { SourceList } from './SourceList';
 
@@ -20,6 +20,47 @@ export function pickText(
 ): string | null {
   if (locale === 'zh' && zh) return zh;
   return en ?? zh ?? null;
+}
+
+interface EditorialNote {
+  text: string;
+  /** The language the sentence is written in, for `lang` and screen readers. */
+  lang: 'zh-Hans' | 'en';
+}
+
+/**
+ * Object, work and place notes belong in the same editorial section: all three
+ * state what a record does not establish, and hiding any of them lets the corpus
+ * look more complete than it is.
+ *
+ * A note is paired with its translation only when the two arrays line up. A
+ * half-finished translation therefore falls back to the recorded wording
+ * instead of attaching the wrong sentence to a note.
+ */
+function editorialNotes(
+  locale: 'zh' | 'en',
+  object: ObjectRecord,
+  work: Work | undefined,
+  place: Place | undefined,
+): EditorialNote[] {
+  const rows: EditorialNote[] = [];
+
+  const append = (notes: string[] | undefined, notesZh: string[] | undefined) => {
+    if (!notes || notes.length === 0) return;
+    const aligned = notesZh && notesZh.length === notes.length ? notesZh : null;
+    notes.forEach((note, index) => {
+      const translated = aligned?.[index];
+      if (locale === 'zh' && translated) rows.push({ text: translated, lang: 'zh-Hans' });
+      else rows.push({ text: note, lang: 'en' });
+    });
+  };
+
+  append(object.notes, object.notesZh);
+  append(work?.notes, work?.notesZh);
+  // The place record carries its own caveats, usually about a missing point or
+  // an unresolved identity; they were invisible before this task.
+  append(place?.notes, place?.notesZh);
+  return rows;
 }
 
 function DateLine({ date, locale }: { date: HistoricalDate; locale: 'zh' | 'en' }) {
@@ -62,7 +103,7 @@ export function ObjectDetail({ object, onBack, onShowMap }: ObjectDetailProps) {
   const collection = object.currentCollection;
 
   const events = [...object.provenanceEvents].sort((a, b) => compareDates(a.date, b.date));
-  const notes = locale === 'zh' && object.notesZh?.length ? object.notesZh : object.notes;
+  const notes = editorialNotes(locale, object, work, place);
 
   const sourceIds = Array.from(
     new Set([
@@ -302,8 +343,10 @@ export function ObjectDetail({ object, onBack, onShowMap }: ObjectDetailProps) {
             {strings.notesHeading}
           </h3>
           <ul className="notes">
-            {notes.map((note) => (
-              <li key={note}>{note}</li>
+            {notes.map((note, index) => (
+              <li key={`${index}-${note.lang}`} lang={note.lang}>
+                {note.text}
+              </li>
             ))}
           </ul>
         </section>
