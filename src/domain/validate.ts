@@ -163,14 +163,39 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
     if (registerId(entry.id, `${path}.id`, 'Source') && isNonEmptyString(entry.id)) {
       sourceIds.add(entry.id);
     }
-    for (const field of ['title', 'publisher', 'url'] as const) {
+    for (const field of ['title', 'publisher'] as const) {
       if (!isNonEmptyString(entry[field])) {
         error('MISSING_FIELD', `${path}.${field}`, `Source "${String(entry.id)}" needs ${field}.`);
       }
     }
-    if (isNonEmptyString(entry.url) && !/^https?:\/\//i.test(entry.url)) {
-      error('INVALID_URL', `${path}.url`, `Source URL must be http(s): ${entry.url}`);
+
+    // A web source is identified by its URL. A printed catalogue is identified
+    // by publisher, year and page locator instead — demanding a URL from a book
+    // would either block citable evidence or invite an invented link.
+    const hasUrl = isNonEmptyString(entry.url);
+    if (entry.url !== null && entry.url !== undefined && !hasUrl) {
+      error('INVALID_URL', `${path}.url`, 'Source url must be an http(s) string or null.');
+    } else if (hasUrl && !/^https?:\/\//i.test(entry.url as string)) {
+      error('INVALID_URL', `${path}.url`, `Source URL must be http(s): ${String(entry.url)}`);
     }
+    if (entry.kind !== undefined && entry.kind !== null) {
+      if (entry.kind !== 'web' && entry.kind !== 'book') {
+        error('SOURCE_KIND', `${path}.kind`, 'Source kind must be web or book.');
+      } else if (entry.kind === 'book' && hasUrl) {
+        error('SOURCE_KIND', `${path}.kind`, 'A book source cites a printed locator, not a page URL.');
+      } else if (entry.kind === 'web' && !hasUrl) {
+        error('SOURCE_KIND', `${path}.url`, 'A web source needs an http(s) URL.');
+      }
+    }
+    if (!hasUrl) {
+      if (!isNonEmptyString(entry.publicationDate)) {
+        error('MISSING_FIELD', `${path}.publicationDate`, 'A printed source needs its publication year.');
+      }
+      if (!isNonEmptyString(entry.locator)) {
+        error('MISSING_FIELD', `${path}.locator`, 'A printed source needs a page or entry locator.');
+      }
+    }
+
     if (!isIsoDate(entry.accessedAt)) {
       error('INVALID_ACCESS_DATE', `${path}.accessedAt`, 'Source needs an ISO access date (YYYY-MM-DD).');
     }

@@ -249,9 +249,16 @@ export interface Place {
 
 export interface Source {
   id: string;
+  /**
+   * Where the evidence was published. `web` needs an URL; `book` needs a
+   * publisher, a year and a page or entry locator instead, because a printed
+   * catalogue is citable without pretending it has a link.
+   */
+  kind?: 'web' | 'book';
   title: string;
   publisher: string;
-  url: string;
+  /** Null only for a printed source. */
+  url: string | null;
   publicationDate: string | null;
   accessedAt: string;
   locator: string | null;

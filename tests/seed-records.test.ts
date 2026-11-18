@@ -55,9 +55,16 @@ describe('seed records', () => {
     }
   });
 
-  it('uses https for every external source', () => {
+  it('uses https for every web source and a locator for every printed one', () => {
     for (const source of dataset.sources) {
-      expect(source.url.startsWith('https://')).toBe(true);
+      if (source.url) {
+        expect(source.url.startsWith('https://')).toBe(true);
+      } else {
+        // A printed catalogue is identified by publisher, year and page; if it
+        // carried neither a URL nor a locator it would not be checkable at all.
+        expect(source.locator?.length ?? 0).toBeGreaterThan(0);
+        expect(source.publicationDate?.length ?? 0).toBeGreaterThan(0);
+      }
       expect(source.accessedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     }
   });

@@ -309,4 +309,32 @@ describe('data validation', () => {
   it('walks the bundled corpus once and reuses that report', () => {
     expect(getValidationReport()).toBe(getValidationReport());
   });
+
+  it('accepts a printed catalogue cited by page instead of by URL', () => {
+    const dataset = baseDataset();
+    dataset.sources[0] = {
+      ...dataset.sources[0],
+      kind: 'book',
+      url: null,
+      publicationDate: '1989',
+      locator: 'vol. 3, p. 118',
+    };
+
+    const report = validateDataset(dataset);
+    expect(report.errors).toEqual([]);
+  });
+
+  it('rejects a printed source with no page locator', () => {
+    const dataset = baseDataset();
+    dataset.sources[0] = { ...dataset.sources[0], url: null, publicationDate: '1989', locator: null };
+
+    expect(codes(dataset)).toContain('MISSING_FIELD');
+  });
+
+  it('rejects a source that claims to be both printed and a web page', () => {
+    const dataset = baseDataset();
+    dataset.sources[0] = { ...dataset.sources[0], kind: 'book' };
+
+    expect(codes(dataset)).toContain('SOURCE_KIND');
+  });
 });

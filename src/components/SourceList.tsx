@@ -43,9 +43,15 @@ export function SourceList({ ids, label, compact = false, plain = false, open = 
     <ul className="sources__list">
       {sources.map((source) => (
         <li key={source.id} className="sources__item">
-          <a className="sources__link" href={source.url} target="_blank" rel="noreferrer noopener">
-            {source.title}
-          </a>
+          {source.url ? (
+            <a className="sources__link" href={source.url} target="_blank" rel="noreferrer noopener">
+              {source.title}
+            </a>
+          ) : (
+            // A printed catalogue has no page to open; showing it as a link
+            // would promise a destination that does not exist.
+            <span className="sources__title">{source.title}</span>
+          )}
           <span className="sources__meta">
             {' '}
             — {source.publisher}

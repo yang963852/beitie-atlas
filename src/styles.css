@@ -1482,6 +1482,13 @@ a {
   text-decoration: underline;
 }
 
+/* A printed catalogue: same weight as a link, no accent, because there is
+   nothing to open. */
+.sources__title {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
 .sources__meta {
   color: var(--ink-4);
 }
@@ -1572,8 +1579,24 @@ a {
 
 .notes {
   display: grid;
-  gap: 8px;
+  gap: 14px;
   margin: 10px 0 0;
+}
+
+/* Each layer of the record states its own gaps; without the label a repeated
+   sentence reads like a mistake rather than two different records talking. */
+.notes__scope {
+  margin: 0;
+  color: var(--ink-4);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.notes__list {
+  display: grid;
+  gap: 8px;
+  margin: 4px 0 0;
   padding-left: 18px;
   color: var(--ink-2);
   font-size: 13.5px;
