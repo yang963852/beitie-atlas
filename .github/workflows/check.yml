@@ -1,20 +1,56 @@
 name: Preview quality checks
+
+# Runs on every pull request and on task branches. This workflow checks; it does
+# not deploy and it does not approve publication of draft data. The strict gate
+# is `npm run check:release`, and publishing stays with the owner.
+
 on:
   pull_request:
   push:
     branches: [main, 'task/**', 'codex/**']
+
 permissions:
   contents: read
+
+# A newer push supersedes an in-flight run on the same ref: a stale green check
+# must not be read as the current state of the branch.
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      # Pinned to a commit, not a tag: a moved tag would silently change what CI
+      # runs. Comments record the release each commit belongs to.
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.3.1
         with:
-          node-version: '24'
+          persist-credentials: false
+          # The whitespace check below compares against the base revision, so
+          # the history has to be present.
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
           cache: npm
       - run: npm ci
+      # Trailing whitespace and conflict markers are cheap to catch here and
+      # invisible in a green test run.
+      - name: Check the changed range for whitespace errors and conflict markers
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ -z "$BASE_SHA" ] || ! git rev-parse --verify --quiet "$BASE_SHA^{commit}" >/dev/null; then
+            echo "No comparable base revision for this run; checking the working tree only."
+            git diff --check
+          else
+            git diff --check "$BASE_SHA" HEAD
+          fi
       - run: npm run check
-# These checks do not deploy. The formal atlas release still requires the
-# strict gate described in docs/release.md.
+      # Informational. The strict gate is expected to reject the draft corpus
+      # today, so its exit code is printed rather than used to fail the run.
+      - name: Report the strict release gate
+        if: always()
+        run: npm run check:release || echo "Release gate rejected the corpus (expected while records are drafts)."

@@ -1,0 +1,44 @@
+# Dependency and action updates.
+#
+# Actions are pinned to commits in the workflows, so a Dependabot pull request
+# that changes one has to change the SHA and its comment together — that review
+# is the point.
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 3
+    groups:
+      # React and its types move together; separate pull requests would not
+      # install cleanly on their own.
+      react:
+        patterns:
+          - react
+          - react-dom
+          - '@types/react'
+          - '@types/react-dom'
+      test-and-build:
+        patterns:
+          - vitest
+          - '@vitest/*'
+          - vite
+          - '@vitejs/*'
+          - typescript
+          - tsx
+          - jsdom
+          - '@testing-library/*'
+    ignore:
+      # Node 22 is the floor in package.json and .nvmrc pins 24; majors that
+      # need a newer runtime are an owner decision, not a routine bump.
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
+
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3
