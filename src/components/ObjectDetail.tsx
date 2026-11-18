@@ -5,33 +5,30 @@ import { getPlace, getWork } from '../domain/data';
 import { compareDates, formatDate } from '../domain/dates';
 import { dynastyLabel } from '../domain/dynasties';
 import type { HistoricalDate, ObjectRecord, Place, Work } from '../domain/types';
+import { pickText } from '../domain/text';
 import { useLocale } from '../i18n';
 import { SourceList } from './SourceList';
 
-/**
- * Picks the reader's language when the record carries it, otherwise the
- * language it was written in. Editorial prose is never machine-generated at
- * render time: a missing translation shows the recorded wording instead.
- */
-export function pickText(
-  locale: 'zh' | 'en',
-  zh: string | null | undefined,
-  en: string | null | undefined,
-): string | null {
-  if (locale === 'zh' && zh) return zh;
-  return en ?? zh ?? null;
-}
+type NoteScope = 'object' | 'work' | 'place';
 
 interface EditorialNote {
   text: string;
   /** The language the sentence is written in, for `lang` and screen readers. */
   lang: 'zh-Hans' | 'en';
+  /** Which record the sentence belongs to, so a repeated gap is explicable. */
+  scope: NoteScope;
+}
+
+interface NoteGroup {
+  scope: NoteScope;
+  rows: EditorialNote[];
 }
 
 /**
  * Object, work and place notes belong in the same editorial section: all three
  * state what a record does not establish, and hiding any of them lets the corpus
- * look more complete than it is.
+ * look more complete than it is. They stay grouped by the record they describe —
+ * otherwise a reader cannot tell why two layers both say "no coordinate".
  *
  * A note is paired with its translation only when the two arrays line up. A
  * half-finished translation therefore falls back to the recorded wording
@@ -42,25 +39,33 @@ function editorialNotes(
   object: ObjectRecord,
   work: Work | undefined,
   place: Place | undefined,
-): EditorialNote[] {
-  const rows: EditorialNote[] = [];
+): NoteGroup[] {
+  const groups: NoteGroup[] = [];
 
-  const append = (notes: string[] | undefined, notesZh: string[] | undefined) => {
+  const append = (
+    scope: NoteScope,
+    notes: string[] | undefined,
+    notesZh: string[] | undefined,
+  ) => {
     if (!notes || notes.length === 0) return;
     const aligned = notesZh && notesZh.length === notes.length ? notesZh : null;
-    notes.forEach((note, index) => {
-      const translated = aligned?.[index];
-      if (locale === 'zh' && translated) rows.push({ text: translated, lang: 'zh-Hans' });
-      else rows.push({ text: note, lang: 'en' });
+    groups.push({
+      scope,
+      rows: notes.map((note, index) => {
+        const translated = aligned?.[index];
+        return locale === 'zh' && translated
+          ? { text: translated, lang: 'zh-Hans' as const, scope }
+          : { text: note, lang: 'en' as const, scope };
+      }),
     });
   };
 
-  append(object.notes, object.notesZh);
-  append(work?.notes, work?.notesZh);
+  append('object', object.notes, object.notesZh);
+  append('work', work?.notes, work?.notesZh);
   // The place record carries its own caveats, usually about a missing point or
-  // an unresolved identity; they were invisible before this task.
-  append(place?.notes, place?.notesZh);
-  return rows;
+  // an unresolved identity; they were invisible before this was added.
+  append('place', place?.notes, place?.notesZh);
+  return groups;
 }
 
 function DateLine({ date, locale }: { date: HistoricalDate; locale: 'zh' | 'en' }) {
@@ -342,13 +347,20 @@ export function ObjectDetail({ object, onBack, onShowMap }: ObjectDetailProps) {
           <h3 id="notes-heading" className="section__heading">
             {strings.notesHeading}
           </h3>
-          <ul className="notes">
-            {notes.map((note, index) => (
-              <li key={`${index}-${note.lang}`} lang={note.lang}>
-                {note.text}
-              </li>
+          <div className="notes">
+            {notes.map((group) => (
+              <div key={group.scope} className="notes__group">
+                <p className="notes__scope">{strings.notesScopes[group.scope]}</p>
+                <ul className="notes__list">
+                  {group.rows.map((note, index) => (
+                    <li key={`${index}-${note.lang}`} lang={note.lang}>
+                      {note.text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
       ) : null}
 

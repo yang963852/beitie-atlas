@@ -43,7 +43,7 @@ describe('application shell', () => {
     renderApp();
     const list = resultsList();
     const periods = within(list).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim().split(/\s*\d/)[0]);
-    expect(periods).toEqual(['秦', '西汉', '东汉', '三国', '南北朝', '隋', '唐', '北宋', '元', '明', '清', '民国']);
+    expect(periods).toEqual(['秦', '西汉', '东汉', '三国', '东晋', '南北朝', '隋', '唐', '北宋', '元', '明', '清', '民国']);
 
     expect(within(list).getByRole('heading', { name: /东汉/ })).toBeInTheDocument();
     expect(within(list).getByRole('heading', { name: /南北朝/ })).toBeInTheDocument();
@@ -80,6 +80,13 @@ describe('application shell', () => {
 
     const placeNote = within(detail).getByText(/gives no street address or coordinates/);
     expect(placeNote).toHaveAttribute('lang', 'en');
+
+    // Notes are grouped by the record they describe, so a gap stated at two
+    // levels reads as two records rather than as a duplicate.
+    const scopes = Array.from(detail.querySelectorAll('.notes__scope')).map(
+      (node) => node.textContent,
+    );
+    expect(scopes).toEqual(['本条实物', '所属作品', '收藏地点']);
   });
 
   it('shows the rubbing’s own catalogue number and no copied provenance', () => {

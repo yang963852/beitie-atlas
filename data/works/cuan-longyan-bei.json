@@ -1,0 +1,56 @@
+{
+  "id": "cuan-longyan-bei",
+  "titles": {
+    "zh": "爨龙颜碑",
+    "en": "Stele of Cuan Longyan"
+  },
+  "aliases": [
+    "大爨碑",
+    "宋故龙骧将军护镇蛮校尉宁州刺史邛都县侯爨使君之碑"
+  ],
+  "attribution": [
+    {
+      "role": "unknown",
+      "name": "未署名",
+      "nameEn": "Unrecorded",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-yn-dct-cuan"
+      ],
+      "note": "The cited provincial page records the inscription and its titles but names no writer or calligrapher, so this record asserts no hand.",
+      "noteZh": "所引省级页面记载碑文与题衔，但未记撰文者或书丹者，故不主张作者。"
+    }
+  ],
+  "dynastyId": "northern-and-southern",
+  "dynastyQualifier": "南朝宋",
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 458,
+    "startMonth": null,
+    "endYear": 458,
+    "endMonth": null,
+    "eraLabel": "南朝宋孝武帝大明二年",
+    "original": "大明二年（458年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "楷书",
+  "background": "刻于南朝宋大明二年（458），立于宁州（今云南陆良一带），碑体高大，碑阳正文二十四行，碑阴列职官题名。1961 年与爨宝子碑同列首批全国重点文物保护单位，二者合称「二爨」，是研究南朝边疆与隶楷之变的重要实物。",
+  "sourceRefs": [
+    "src-yn-dct-cuan",
+    "src-ynxc-cuan"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft record. Date, dimensions and character counts come from the provincial culture department page read on 2026-11-18; the stone was not examined and its present shelter was not confirmed.",
+    "noteZh": "草稿记录。年代、尺寸与字数取自 2026-11-18 阅读的省文旅厅页面；未核对原石，也未确认现有保护建筑。"
+  },
+  "notes": [
+    "The provincial page gives a total height of 3.38 m, widths of 1.35 m at the top and 1.46 m at the bottom, and 1217 characters across the two faces.",
+    "Later literature names 爨道庆 as the writer; the cited pages do not, so this record does not assert it."
+  ],
+  "notesZh": [
+    "省文旅厅页面记通高 3.38 米，上宽 1.35 米、下宽 1.46 米，两面合计 1217 字。",
+    "后世文献称爨道庆撰文，所引页面未载，故本记录不主张此说。"
+  ]
+}

@@ -70,6 +70,12 @@ export const enStrings = {
   eventSourcesLabel: 'Sources',
 
   notesHeading: 'Editorial notes and gaps',
+  /** Which record the following notes belong to; a physical object, its work, or its place. */
+  notesScopes: {
+    object: 'This object',
+    work: 'Its work',
+    place: 'Its holding place',
+  },
   sourcesHeading: 'Sources cited by this record',
   sourcesControl: (count: number) => `Sources (${count})`,
   sourceAccessed: (date: string) => `accessed ${date}`,

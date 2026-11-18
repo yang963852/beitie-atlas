@@ -64,6 +64,12 @@ export const zhStrings: Strings = {
   eventSourcesLabel: '出处',
 
   notesHeading: '编辑说明与待补',
+  /** Which record the following notes belong to; a physical object, its work, or its place. */
+  notesScopes: {
+    object: '本条实物',
+    work: '所属作品',
+    place: '收藏地点',
+  },
   sourcesHeading: '本记录引用的出处',
   sourcesControl: (count: number) => `出处（${count}）`,
   sourceAccessed: (date: string) => `查阅于 ${date}`,

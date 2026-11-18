@@ -324,6 +324,89 @@
         "藏敦煌本《温泉铭》残卷，编号 Pelliot chinois 4508。",
         "本轮未记录坐标。"
       ]
-    }
+    },
+    {
+        "id": "place-qujing-cuan-museum",
+        "names": {
+          "zh": "曲靖爨文化博物馆",
+          "en": "Cuan Culture Museum, Qujing"
+        },
+        "historicalName": "爨碑亭",
+        "kind": "institution",
+        "coordinates": null,
+        "sourceRefs": [
+          "src-qjgov-cuan-museum"
+        ],
+        "notes": [
+          "The museum stands inside the old campus of 曲靖一中 and grew out of the 1937 stele pavilion; two steles are kept separately in a two-mu protected area.",
+          "No coordinate is recorded: the page names the campus, not a surveyed point."
+        ],
+        "notesZh": [
+          "博物馆位于曲靖一中老校区院内，由 1937 年的爨碑亭发展而来；两碑分置，保护区约二亩。",
+          "未记录坐标：页面给出的是校园，不是实测点位。"
+        ]
+      },
+    {
+        "id": "place-luliang-xueguanbao",
+        "names": {
+          "zh": "陆良薛官堡",
+          "en": "Xueguanbao, Luliang"
+        },
+        "historicalName": "贞元堡",
+        "kind": "historical-site",
+        "coordinates": null,
+        "sourceRefs": [
+          "src-ynxc-cuan"
+        ],
+        "notes": [
+          "The stele is recorded at 斗阁寺 in 薛官堡, where a protective hall was built for it in 1827.",
+          "No coordinate is recorded: a village is named, not a surveyed point, so this is not plotted."
+        ],
+        "notesZh": [
+          "碑记在薛官堡斗阁寺，1827 年为其建护碑建筑。",
+          "未记录坐标：只给出村名，不是实测点位，因此不上图。"
+        ]
+      },
+    {
+        "id": "place-tianjin-museum",
+        "names": {
+          "zh": "天津博物馆",
+          "en": "Tianjin Museum"
+        },
+        "historicalName": null,
+        "kind": "institution",
+        "coordinates": null,
+        "sourceRefs": [
+          "src-tjbwg-xianyu-2"
+        ],
+        "notes": [
+          "The museum states that it holds the 鲜于璜碑; no gallery, address or coordinate is given on the pages read."
+        ],
+        "notesZh": [
+          "馆方页面说明藏有鲜于璜碑；所读页面未给展厅、地址或坐标。"
+        ]
+      },
+    {
+        "id": "place-zhengding-longxing-si",
+        "names": {
+          "zh": "正定隆兴寺",
+          "en": "Longxing Temple, Zhengding"
+        },
+        "historicalName": "龙藏寺",
+        "kind": "institution",
+        "coordinates": null,
+        "sourceRefs": [
+          "src-people-longzang",
+          "src-sjzgov-longzang"
+        ],
+        "notes": [
+          "The temple was built in 586 and the stele commemorates its foundation; the stone remains in a pavilion on the site.",
+          "No coordinate is recorded: the temple is named without a surveyed point."
+        ],
+        "notesZh": [
+          "寺院建于 586 年，此碑即记建寺始末；原石仍在寺内碑亭中。",
+          "未记录坐标：仅有寺院名称，无实测点位。"
+        ]
+      }
   ]
 }

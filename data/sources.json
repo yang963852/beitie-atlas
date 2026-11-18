@@ -539,6 +539,94 @@
       "accessedAt": "2026-11-18",
       "locator": "Discovery and transfer paragraph",
       "note": "Gives a discovery year of 1623 in the west of Xi’an and records transfer to Beilin in 1907."
-    }
+    },
+    {
+        "id": "src-yn-dct-cuan",
+        "title": "关于省政协十三届二次会议第360号提案会办意见的函",
+        "publisher": "云南省文化和旅游厅",
+        "kind": "web",
+        "url": "https://dct.yn.gov.cn/zfxxgk/fdzdgknr/qtgk/zxtablqk/202404/t20240410_2381763.html",
+        "publicationDate": "2024-04-10",
+        "accessedAt": "2026-11-18",
+        "locator": "一、持续推进「二爨碑」文物本体保护管理，第 1 段",
+        "note": "Gives 405 for the 爨宝子碑 and the dimensions and character counts of both 爨 steles. It states that both were listed as national protected sites in 1961."
+      },
+    {
+        "id": "src-qjgov-cuan-museum",
+        "title": "爨文化博物馆",
+        "publisher": "曲靖市人民政府门户网",
+        "kind": "web",
+        "url": "https://www.qj.gov.cn/html/2020/csmp_0417/83745.html",
+        "publicationDate": "2020-04-17",
+        "accessedAt": "2026-11-18",
+        "locator": "「爨文化博物馆」与「《爨宝子碑》」两段",
+        "note": "Records the 1778 find and loss, the 1852 move to 武侯祠, the 1937 pavilion on the school campus, and the 2015 opening of the museum."
+      },
+    {
+        "id": "src-ynkg-cuanbaozi",
+        "title": "曲靖一中爨文化园建筑设计工程",
+        "publisher": "云南省文物考古研究所",
+        "kind": "web",
+        "url": "https://www.ynkgs.cn/view/ynkgPC/1/248/view/1514.html",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "爨碑亭段落",
+        "note": "Gives 404 rather than 405 for the same year, and a width of 0.68 m. Kept as the source of the competing date reading."
+      },
+    {
+        "id": "src-ynxc-cuan",
+        "title": "读懂「二爨碑」 领略爨文化",
+        "publisher": "云南宣传网",
+        "kind": "web",
+        "url": "https://www.ynxc.gov.cn/html/2024/whxdfocus_0709/3013517.html",
+        "publicationDate": "2024-07-09",
+        "accessedAt": "2026-11-18",
+        "locator": "「一」节中两碑叙述",
+        "note": "Gives 405 and a width of 0.86 m for 宝子碑, and records the 1827 protective building ordered for 龙颜碑."
+      },
+    {
+        "id": "src-tjbwg-xianyu-1",
+        "title": "「博物馆奇妙夜——我为国宝发声」活动即将启动啦！",
+        "publisher": "天津博物馆",
+        "kind": "web",
+        "url": "https://www.tjbwg.cn/cn/NewsInfo.aspx?id=16511",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "汉 6. 鲜于璜碑（拓片）条",
+        "note": "Gives a rubbing size of 242 × 83 cm and the May 1973 excavation at 武清高村. It quotes a rubbing, not the stone."
+      },
+    {
+        "id": "src-tjbwg-xianyu-2",
+        "title": "「文物会说话」有声海报｜这些「第一」，鉴证何以中国",
+        "publisher": "天津博物馆",
+        "kind": "web",
+        "url": "https://www.tjbwg.cn/cn/NewsInfo.aspx?id=20860",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "东汉鲜于璜碑条",
+        "note": "States that the stone is held by 天津博物馆 and gives 827 characters across the two faces."
+      },
+    {
+        "id": "src-people-longzang",
+        "title": "正定大佛寺存宋代转轮藏 仍能正常转动",
+        "publisher": "人民网文化频道",
+        "kind": "web",
+        "url": "https://culture.people.com.cn/BIG5/n/2014/0813/c22219-25458469.html",
+        "publicationDate": "2014-08-13",
+        "accessedAt": "2026-11-18",
+        "locator": "「隋碑第一 开启唐楷先河」节",
+        "note": "Gives 586, a face of 1.56 m × 0.89 m in 30 lines of 50 characters, a 0.42 m heading with six dragons, and quotes 欧阳修 and 康有为. The page is in traditional characters."
+      },
+    {
+        "id": "src-sjzgov-longzang",
+        "title": "正定：往事与美，可寻可看",
+        "publisher": "石家庄市投资促进局",
+        "kind": "web",
+        "url": "https://tzcjj.sjz.gov.cn/columns/66c7ea0c-6942-4c45-ac98-a23f17b523bf/202311/18/ad85a0d9-f42f-4733-a321-e556f7619bff.html",
+        "publicationDate": "2023-11-18",
+        "accessedAt": "2026-11-18",
+        "locator": "第 4 段，龙藏寺碑叙述",
+        "note": "Gives an overall height of 3.24 m, 586, and 张公礼 as the writer of the text."
+      }
   ]
 }
