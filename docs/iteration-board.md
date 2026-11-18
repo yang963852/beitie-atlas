@@ -32,7 +32,9 @@ Updated: 2026-11-18. One active implementation task at a time.
 
 | 023 | Prioritize common inscriptions and fill first gaps | Delivered — merged and deployed as owner-authorized trial preview; editorial review pending | Sites version 6; rollback version 5. See [task 023](../tasks/023-canonical-inscriptions.md), [delivery 023](delivery-023.md), and [coverage matrix](canonical-coverage.md). |
 
-| 024 | Text catalogue of steles and manuscripts through the Qing | Delivered — owner requested merge and trial publication, editorial review pending | See [task 024](../tasks/024-bei-tie-catalogue.md) and [delivery 024](delivery-024.md). |
+| 024 | Text catalogue of steles and manuscripts through the Qing | Delivered — owner requested merge and trial publication, editorial review pending | See [task 024](../tasks/024-bei-tie-catalogue.md) and [delivery 024](delivery-024.md) and the subsequent [reader checks](delivery-025.md). |
+
+| 025 | Review the public catalogue, draft evidence and dependency candidates | Delivered — partially verified; Codex self-review, owner decides acceptance at merge | See [task 025](../tasks/025-catalogue-audit.md), [editorial review](editorial-review-025.md) and [delivery 025](delivery-025.md). |
 
 ## Iteration loop
 
