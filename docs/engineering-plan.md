@@ -141,7 +141,7 @@ M0/M1 local code checks can pass before external access checks. Report these as 
 ## Hosting, rights, and credentials
 
 - GitHub is the planned public source host. Never publish the parent workspace; it contains unrelated personal material.
-- Codex Sites hosts the public overview. Keep the atlas build portable and verify mainland access separately.
+- Codex Sites hosts the owner-authorized interactive draft preview. Keep the atlas build portable and verify mainland access separately.
 - Vite's base URL must match the deployment path. Codex Sites serves the project at the URL root.
 - Browser-embedded configuration is public even when injected from a build environment. `.env` alone cannot hide a frontend secret. Use provider-supported domain restrictions, quotas, and a server-side proxy if required; document added costs.
 - Preserve provider attribution and any required approval number. Do not use undocumented tile endpoints or remove official map annotations. Provider terms and host requirements must be checked for the selected release setup.
