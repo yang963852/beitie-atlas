@@ -156,6 +156,33 @@ Use one task branch per bounded change after Git is initialized. Only one tool w
 
 Reviewer findings should include severity, file/location, reproduction, expected behavior, and a proposed fix direction. Fix findings on the same task before expanding scope. Update a short decision log when a reviewed architecture choice changes.
 
+## Why this stack, and what it can still absorb
+
+Asked plainly: the site is written in JavaScript. TypeScript is JavaScript with types that are erased at build time, React is a component library, Vite is the bundler, and npm installs the packages. There is no other language in the built artifact.
+
+Three properties decided the shape, not fashion:
+
+- **The corpus is files in Git, edited by a person and reviewed before publication.** There is no write path, so there is no session, no database, and nothing to keep alive. A backend would add a service whose only job would be to rewrite JSON that a commit already rewrites.
+- **Everything is static.** The build turns reviewed JSON into one bundle and one HTML file that any host can serve, and the corpus stays readable when every external service is unreachable.
+- **The interface is stateful in one place.** Search filters the list, the place panel and the detail at once; the map has to survive that filtering; a permalink has to survive a refresh. That is why React earns its place here: hand-written DOM code would spread the same state across event handlers and focus management, which is where the bugs in this project actually came from.
+
+**Why not plain HTML and JavaScript.** Possible, and smaller on paper. It becomes expensive exactly where this product is unusual: filtering three views from one query, keeping markers in step with a filtered list, moving focus between mobile panes, and restoring a record from a URL fragment. Those are all implemented once, in React, today.
+
+**Why not a framework with a server (Next.js and similar).** The project needs rendering, not a server. Server rendering would add a runtime, a deploy target and a second data path to solve a problem the corpus does not have. If indexing each record by search engines becomes a requirement, a static prerender step is the cheaper answer, and it does not change the data or the components.
+
+**What happens as the corpus grows.**
+
+| Growth | What changes | What stays |
+| --- | --- | --- |
+| 40 → a few hundred records | Nothing. The bundle is currently ~134 kB gzipped including React and all data | Everything |
+| Past roughly 1 MB of bundled data | `src/domain/data.ts` is the only file that reads the JSON: split it into a fetched corpus or per-period chunks | Every component, all validation, all tests |
+| A different map provider | Implement `MapAdapter` in `src/map/types.ts`: mount, focus, fit, destroy | Markers, filtering, detail view, evidence rules |
+| A third language | Add a dictionary in `src/i18n/` and register it | Components, data, validation |
+| Photographs or IIIF images | `data/media.json` already models rights, credit and licence; a media pipeline and hosting do not exist yet | Records, map, list |
+| Published book sources | Supported since task 018: publisher, year, page locator, no URL | Everything |
+
+**What would force a real rewrite.** Only two things: personalisation that must be computed per reader, or real-time collaborative editing. Neither is on the roadmap, and neither can be added by accident, because both require a backend that the current build deliberately does not have.
+
 ## Primary technical references
 
 - [Vite static deployment](https://vite.dev/guide/static-deploy)

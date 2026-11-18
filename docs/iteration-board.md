@@ -22,6 +22,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 016 | Organize the GitHub project home | Accepted — documentation merged by the owner at `b85c0f4`; no code changed | See [task 016](../tasks/016-github-project-home.md) and [delivery 016](delivery-016.md). |
 | 017 | Close the technical review's defects and codify synchronization | Accepted — merged by owner decision without an independent review; CI "Preview quality checks" passed on the branch head | 103 tests; 26 invisible notes now render; bilingual note rule added; board check and CI hardening in place; see [task 017](../tasks/017-defect-fixes-and-governance.md) and [delivery 017](delivery-017.md). |
 | 018 | Simplify lookups, widen the corpus, define citable sources | Accepted — merged by owner decision without an independent review; CI "Preview quality checks" passed on the branch head | 106 tests; 37 works / 40 objects / 19 places / 62 sources; four new steles from institutional pages; printed sources allowed; apps defined as leads; see [task 018](../tasks/018-simplify-and-widen-corpus.md) and [delivery 018](delivery-018.md). |
+| 019 | Report a refused basemap and answer the stack question | Delivered — awaiting independent review | Refused tiles now produce a notice and the coordinate schematic; major dependency bumps stopped; stack rationale and growth table in the engineering plan; live tile-refusal check not run; see [task 019](../tasks/019-tile-failure-and-stack-rationale.md) and [delivery 019](delivery-019.md). |
 
 ## Iteration loop
 

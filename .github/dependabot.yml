@@ -32,9 +32,11 @@ updates:
           - jsdom
           - '@testing-library/*'
     ignore:
-      # Node 22 is the floor in package.json and .nvmrc pins 24; majors that
-      # need a newer runtime are an owner decision, not a routine bump.
-      - dependency-name: '@types/node'
+      # Major upgrades are an owner decision, not a routine bump: a TypeScript,
+      # Vite or React major changes the build or the runtime contract, and this
+      # project pins versions it has actually run. Minor and patch updates still
+      # arrive weekly.
+      - dependency-name: '*'
         update-types: ['version-update:semver-major']
 
   - package-ecosystem: github-actions

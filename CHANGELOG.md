@@ -1,5 +1,20 @@
 # Changelog
 
+## Unreleased — task 019 refused basemap and stack rationale (2026-11-18)
+
+A map whose tiles are refused now says so. The Tianditu SDK is silent when every tile returns 403,
+which left readers looking at broken image icons under the markers. A watcher on the container's
+images reports the failure once, the panel shows a notice with a retry control, and the coordinate
+schematic replaces the provider canvas so the points and labels stay readable.
+
+Dependabot no longer proposes major upgrades: five open pull requests included TypeScript 7,
+Vite 8 and a React plugin major in one group. Minor and patch updates still arrive weekly.
+
+`docs/engineering-plan.md` now states why the project is written in JavaScript and TypeScript,
+why React earns its place over hand-written DOM code, why a server-rendered framework would add a
+runtime and a second data path for no current benefit, and what changes at each growth step.
+112 tests pass; the live tile-refusal state was exercised through a stub provider only.
+
 ## Unreleased — task 018 simpler lookups, wider corpus, citable sources (2026-11-18)
 
 Id lookups go through maps built once with the dataset instead of a linear `find` per row, and
