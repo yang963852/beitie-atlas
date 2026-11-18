@@ -24,7 +24,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 018 | Simplify lookups, widen the corpus, define citable sources | Accepted — merged by owner decision without an independent review; CI "Preview quality checks" passed on the branch head | 106 tests; 37 works / 40 objects / 19 places / 62 sources; four new steles from institutional pages; printed sources allowed; apps defined as leads; see [task 018](../tasks/018-simplify-and-widen-corpus.md) and [delivery 018](delivery-018.md). |
 | 019 | Report a refused basemap and answer the stack question | Accepted — merged by the owner's standing decision for direct merges, without an independent review | Refused tiles now produce a notice and the coordinate schematic; major dependency bumps stopped; stack rationale and growth table in the engineering plan; live tile-refusal check not run; see [task 019](../tasks/019-tile-failure-and-stack-rationale.md) and [delivery 019](delivery-019.md). |
 
-| 020 | Fix artifact input handling and basemap recovery | Delivered — implementer self-check passed; independent review or owner acceptance at merge pending | 112 tests; subpath preview and draft gate verified locally; live browser and hosted checks pending. See [task 020](../tasks/020-artifact-and-basemap-followup.md) and [delivery 020](delivery-020.md). |
+| 020 | Fix artifact input handling and basemap recovery | Accepted — owner authorized the merge; no independent implementation review | 112 tests; subpath preview and draft gate verified locally; formal release remains separate. See [task 020](../tasks/020-artifact-and-basemap-followup.md) and [delivery 020](delivery-020.md). |
 
 ## Iteration loop
 

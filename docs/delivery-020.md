@@ -2,8 +2,8 @@
 
 - Date: 2026-11-18.
 - Branch: `codex/020-artifact-and-basemap-followup`.
-- Base: `58816a4b3365905085f70112e89543a5cb7cf3c7`; implementation: `0d1ddd9b042317ae23c4d0af70ae0750fefedb71`. The following documentation-only commit is the delivery branch head.
-- Outcome: implementer self-check only. Independent review or owner acceptance at merge remains pending.
+- Base: `58816a4b3365905085f70112e89543a5cb7cf3c7`; implementation: `0d1ddd9b042317ae23c4d0af70ae0750fefedb71`; original delivery: `2ec7a0be9971e1cf0d54a69282e5e7e0745fae4d`.
+- Outcome: implementer self-check, followed by owner authorization to merge on 2026-11-18. This is not independent implementation review or editorial acceptance of the expanded corpus.
 
 ## Changes
 
