@@ -36,6 +36,8 @@ Updated: 2026-11-18. One active implementation task at a time.
 
 | 025 | Review the public catalogue, draft evidence and dependency candidates | Delivered — partially verified; Codex self-review, owner decides acceptance at merge | See [task 025](../tasks/025-catalogue-audit.md), [editorial review](editorial-review-025.md) and [delivery 025](delivery-025.md). |
 
+| 026 | Study by inscription or modelbook and follow the surviving witness | Delivered — self-review complete; owner authorized direct merge and public trial deployment | [Task 026](../tasks/026-study-catalogue.md) and [delivery 026](delivery-026.md). |
+
 ## Iteration loop
 
 Ready → in progress → delivered → reviewed → fixing (if necessary) → accepted.
