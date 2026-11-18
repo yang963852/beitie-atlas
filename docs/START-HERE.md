@@ -8,7 +8,7 @@ and the iteration board before editing.
 
 Initial collaborative development snapshot, 2026-11-17; corpus expanded 2026-11-18.
 React/TypeScript/Vite, thirty-three works, thirty-six distinct physical objects, fifteen
-places, forty-six sources, twenty events. All work/object records remain draft. No image
+places, fifty-four sources, twenty events. All work/object records remain draft. No image
 assets are in the corpus.
 
 The application supports bilingual-name search, linked results/location panels,
@@ -94,8 +94,8 @@ not been independently verified.
 Eleven of the fifteen places are recorded without coordinates, so some objects deliberately
 have no map point; supplying a point needs a source that also states its precision. The browser
 key cannot call the geocoding service, so that work needs a server key or per-place sources.
-See [the atlas workflow](atlas-workflow.md) for GitHub synchronization and the owner-only
-Codex Sites preview. Sites can render the coordinate grid without a basemap key.
+See [the atlas workflow](atlas-workflow.md) for GitHub synchronization, the public Codex Sites
+overview, and owner-only previews. The coordinate grids work without a basemap key.
 The initial source snapshot's GitHub CI subsequently passed:
 https://github.com/yang963852/beitie-atlas/actions/runs/44102927813.
 

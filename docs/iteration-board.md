@@ -15,7 +15,9 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 009 | Period ordering and credited hands | Delivered 2026-11-18; awaiting independent review | 83 tests; 22 works filed under 3 periods; 37 attribution entries incl. 5 explicit 未署名; map options in map-options.md; live map still needs a key; see delivery-009.md |
 | 010 | Tianditu key self-check and setup runbook | Delivered 2026-11-18; awaiting independent review | 94 tests; `npm run check:map-key` classifies 301001 / 301013 / gateway codes without printing the key; whitelist format corrected; live rendering still needs an owner key; see map-setup.md |
 | 011 | Expand period coverage and connect the atlas to Codex Sites | Owner-only preview deployed 2026-11-18; two P2 review findings addressed | 36 objects across 12 periods, 4 points for 22 objects. See [PR #1](https://github.com/yang963852/beitie-atlas/pull/1) for the independent review, checks, and merge, and [delivery 011](delivery-011.md) for browser verification. |
-| 012 | Publish the GitHub Pages project overview | In review 2026-11-18 | See [task 012](../tasks/012-github-pages-overview.md) and [delivery 012](delivery-012.md). |
+| 012 | Publish the GitHub Pages project overview | Superseded by 014 | See [task 012](../tasks/012-github-pages-overview.md) and [delivery 012](delivery-012.md). |
+| 013 | Audit the corpus for public atlas publication | Evidence review in progress | See [task 013](../tasks/013-public-corpus-audit.md) and [delivery 013](delivery-013.md). |
+| 014 | Move the public overview to Codex Sites | Delivered for review | See [task 014](../tasks/014-sites-public-overview.md) and [delivery 014](delivery-014.md). |
 
 ## Iteration loop
 
@@ -28,6 +30,8 @@ P1: material correctness/release blocker. P2: fix within its assigned iteration.
 Before a new iteration record its base revision; after acceptance record its accepted commit. Do not overwrite evidence from previous rounds. Roll back by selecting a known accepted revision or reverting the specific change, never by deleting unexplained work.
 
 ## Decisions
+
+- 2026-11-18: The owner selected Codex Sites as the public website and GitHub as the source host. The public Site serves the static overview while corpus review continues. Its `build/` deployment output is separate from the atlas output in `dist/`.
 
 - 2026-11-18: GitHub remains the canonical source. The owner-only Codex Sites preview uses a preview build with a visible draft notice and a coordinate grid when the basemap is unavailable. Public release continues through the strict build gate.
 

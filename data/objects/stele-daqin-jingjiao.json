@@ -41,24 +41,25 @@
       "objectId": "stele-daqin-jingjiao",
       "type": "discovery",
       "date": {
-        "kind": "single",
-        "startYear": 1625,
+        "kind": "range",
+        "startYear": 1623,
         "startMonth": null,
         "endYear": 1625,
         "endMonth": null,
         "eraLabel": null,
-        "original": "明天启五年（1625）初春",
-        "certainty": "documented",
-        "note": null
+        "original": "明代天启五年（1625）初春",
+        "certainty": "disputed",
+        "note": "The endpoints are two alternative dates in Beilin publications."
       },
       "placeId": null,
-      "placeWording": "西安城西崇仁寺（金胜寺）附近",
-      "summary": "Unearthed near Chongren Temple west of Xi’an, on the site the page identifies with the Tang Daqin monastery.",
-      "summaryZh": "在西安城西崇仁寺（金胜寺）附近出土；馆方页面认为其地即唐大秦寺旧址。",
+      "placeWording": null,
+      "summary": "Two Beilin articles give different find dates and location descriptions. The collection catalogue places the find near Chongren Temple in 1625; the other article gives western Xi’an in 1623.",
+      "summaryZh": "碑林两篇资料的出土时间、地点表述有异：馆藏目录作 1625 年西安城西崇仁寺（金胜寺）附近，另一条目作 1623 年西安西郊。",
       "sourceRefs": [
-        "src-beilin-jingjiao"
+        "src-beilin-jingjiao",
+        "src-beilin-jingjiao-alternate"
       ],
-      "certainty": "documented"
+      "certainty": "disputed"
     },
     {
       "id": "evt-daqin-1907-move",

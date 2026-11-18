@@ -54,9 +54,10 @@
     "note": null
   },
   "script": "隶书",
-  "background": "An Eastern Han stele of 186 for the magistrate Zhang Qian. A secondary album note places the stone in the Dai Temple stele corridor at Tai’an.",
+  "background": "An Eastern Han stele dated to 186 for the magistrate Zhang Qian. A Tai’an Museum activity report identifies the stone among its holdings.",
   "sourceRefs": [
-    "src-ltfc-zhuyunge"
+    "src-ltfc-zhuyunge",
+    "src-taian-zhangqian-holding"
   ],
   "review": {
     "state": "draft",

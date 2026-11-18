@@ -758,6 +758,19 @@ a {
   min-width: 0;
 }
 
+.map__filter {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  min-block-size: 44px;
+}
+
+.map__filter input {
+  inline-size: 1rem;
+  block-size: 1rem;
+  margin: 0;
+}
+
 /* The fit-all control must not shrink into two lines on a 390 px screen. */
 .map__head > .button {
   flex: 0 0 auto;

@@ -48,6 +48,7 @@ function AppShell() {
   const { locale, strings, setLocale } = useLocale();
 
   const [query, setQuery] = useState('');
+  const [originalsOnly, setOriginalsOnly] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(() => readObjectIdFromHash());
   /** Mobile: which of the two exploration panes is visible. Ignored by CSS above 768px. */
   const [mobilePane, setMobilePane] = useState<'list' | 'map'>('list');
@@ -134,12 +135,18 @@ function AppShell() {
     setDetailOpen(false);
   };
 
-  // One filtered selection drives the list, the markers, the place rows, and
-  // the counts. Nothing outside this memo reads the unfiltered corpus.
   const filtered = useMemo(() => filterObjects(dataset.objects, query), [dataset, query]);
+  const mapObjects = useMemo(
+    () => originalsOnly
+      ? filtered.filter(({ objectType, survivalStatus }) =>
+        survivalStatus === 'surviving' &&
+        (objectType === 'original-stele' || objectType === 'cliff-inscription'))
+      : filtered,
+    [filtered, originalsOnly],
+  );
   const markers = useMemo(
-    () => buildMarkers(dataset.places, filtered, locale).markers,
-    [dataset, filtered, locale],
+    () => buildMarkers(dataset.places, mapObjects, locale).markers,
+    [dataset, mapObjects, locale],
   );
 
   const activeObject = selectedId
@@ -283,7 +290,9 @@ function AppShell() {
 
         <MapPanel
           markers={markers}
-          objects={filtered}
+          objects={mapObjects}
+          originalsOnly={originalsOnly}
+          onOriginalsOnlyChange={setOriginalsOnly}
           onOpenObject={openObject}
           active={mapActive}
           selectedPlaceId={selectedPlaceId}

@@ -22,8 +22,10 @@ interface UnmappedRow {
 
 interface MapPanelProps {
   markers: MapMarker[];
-  /** Records matching the current search. The panel never reads the full corpus. */
+  /** Records matching the current search and map filter. */
   objects: ObjectRecord[];
+  originalsOnly: boolean;
+  onOriginalsOnlyChange: (value: boolean) => void;
   onOpenObject: (id: string) => void;
   selectedPlaceId?: string;
   /**
@@ -33,7 +35,9 @@ interface MapPanelProps {
   active?: boolean;
 }
 
-export function MapPanel({ markers, objects, onOpenObject, selectedPlaceId, active = true }: MapPanelProps) {
+export function MapPanel({
+  markers, objects, originalsOnly, onOriginalsOnlyChange, onOpenObject, selectedPlaceId, active = true,
+}: MapPanelProps) {
   const { locale, strings } = useLocale();
   const [status, setStatus] = useState<Status>(mapIsConfigured ? 'loading' : 'unconfigured');
   const [failure, setFailure] = useState<MapFailure | null>(null);
@@ -157,6 +161,14 @@ export function MapPanel({ markers, objects, onOpenObject, selectedPlaceId, acti
             {strings.mapHeading}
           </h2>
           <p className="pane__sub">{strings.mapSubheading}</p>
+          <label className="map__filter">
+            <input
+              type="checkbox"
+              checked={originalsOnly}
+              onChange={(event) => onOriginalsOnlyChange(event.currentTarget.checked)}
+            />
+            {strings.mapOriginalsOnly}
+          </label>
         </div>
         {status === 'ready' ? (
           <button

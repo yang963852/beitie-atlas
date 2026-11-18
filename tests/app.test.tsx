@@ -113,6 +113,23 @@ describe('application shell', () => {
     expect(screen.getByText('新00045406')).toBeInTheDocument();
   });
 
+  it('filters map locations and their objects to surviving originals without changing the record list', () => {
+    renderApp();
+    const map = screen.getByRole('region', { name: '地图' });
+    const filter = within(map).getByRole('checkbox', { name: '仅显示存世原件' });
+    fireEvent.click(filter);
+
+    expect(within(map).queryByRole('button', { name: /^故宫博物院 ·/ })).not.toBeInTheDocument();
+    fireEvent.click(within(map).getByRole('button', { name: /^晋祠博物馆 ·/ }));
+    const selection = within(map).getByRole('group', { name: '选中的地点' });
+    expect(within(selection).getAllByRole('button')).toHaveLength(1);
+    expect(within(selection).getByRole('button').textContent).not.toContain('清乾隆摹刻');
+    expect(within(resultsList()).getAllByRole('link')).toHaveLength(recordCount);
+
+    fireEvent.click(filter);
+    expect(within(map).getByRole('button', { name: /^故宫博物院 ·/ })).toBeInTheDocument();
+  });
+
   it('opens the record view for a shared link and returns to the list on Back', () => {
     window.history.replaceState(null, '', '#/object/yan-qinli-original-stele');
     const { container } = renderApp();

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="《碑帖之间》按朝代整理中国碑刻与拓本，用地图连接存世实物、收藏地点和史料出处。">
+    <meta name="beitie-build-mode" content="overview">
     <title>碑帖之间 · Between Steles</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -13,6 +14,7 @@
       <div class="shell topbar">
         <a class="wordmark" href="./">碑帖之间</a>
         <nav aria-label="页面导航">
+          <a href="#originals-map">原件地图</a>
           <a href="#features">项目功能</a>
           <a href="#technology">技术栈</a>
         </nav>
@@ -28,9 +30,9 @@
           <p class="description">从朝代与作品出发，查找存世实物、记录其收藏地点，并沿着出处了解它的流转。</p>
           <div class="actions">
             <a class="button primary" href="https://github.com/yang963852/beitie-atlas">查看源码 ↗</a>
-            <a class="button" href="https://beitie-atlas.partedlute2.chatgpt.site/">私有演示 ↗</a>
+            <a class="button" href="https://github.com/yang963852/beitie-atlas/blob/main/README.zh-CN.md">阅读项目文档 ↗</a>
           </div>
-          <p class="preview-note">演示仅向站点所有者开放。</p>
+          <p class="preview-note">完整图鉴将在馆藏资料审核通过后开放。</p>
         </div>
         <figure class="diagram">
           <figcaption>一件碑帖怎样被记录</figcaption>
@@ -42,6 +44,37 @@
           </div>
           <div class="diagram-evidence">各有收藏地点、流转记录与出处</div>
         </figure>
+      </section>
+
+      <section class="section" id="originals-map" aria-labelledby="originals-map-title">
+        <h2 id="originals-map-title">碑帖原件在哪里</h2>
+        <figure class="originals-map">
+          <div class="originals-map__grid" role="group" aria-label="按经纬度排列的原件收藏地点">
+            <span class="originals-map__north" aria-hidden="true">↑ 北</span>
+            <!-- Grid bounds: 105–121°E, 32–40°N. Markers represent the institution or complex. -->
+            <a class="originals-map__pin" style="--x: 24.7%; --y: 71.8%" href="#beilin-originals">西安碑林</a>
+            <a class="originals-map__pin" style="--x: 75.8%; --y: 47.6%" href="#dai-temple-originals">泰安岱庙</a>
+          </div>
+          <figcaption>经纬度示意图。点位代表收藏机构或院落，精度限于机构级别。点击地点可查看原件与馆方出处。</figcaption>
+        </figure>
+        <div class="originals-map__holdings">
+          <article id="beilin-originals" tabindex="-1">
+            <h3>西安碑林博物馆</h3>
+            <ul>
+              <li><a href="https://www.beilin-museum.com/index.php?a=index&amp;aid=2582&amp;c=View&amp;m=home">颜勤礼碑原石</a></li>
+              <li><a href="https://beilin-museum.com/index.php?a=index&amp;aid=145&amp;c=View&amp;m=home">曹全碑原石</a></li>
+              <li><a href="https://www.beilin-museum.com/index.php?a=index&amp;aid=2577&amp;c=View&amp;m=home">大秦景教流行中国碑原石</a></li>
+            </ul>
+            <p><a href="https://www.wikidata.org/wiki/Q10519071#P625">机构坐标来源（待核实）</a></p>
+          </article>
+          <article id="dai-temple-originals" tabindex="-1">
+            <h3>泰安市博物馆 · 岱庙</h3>
+            <ul>
+              <li><a href="https://tsgw.taian.gov.cn/art/2025/5/19/art_48253_10316874.html">张迁碑原石</a></li>
+            </ul>
+            <p><a href="https://tsgw.taian.gov.cn/art/2021/6/13/art_363479_10320189.html">馆址来源</a> · <a href="https://www.wikidata.org/wiki/Q569025#P625">院落坐标来源（待核实）</a></p>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="features" aria-labelledby="features-title">
@@ -73,8 +106,8 @@
     </main>
 
     <footer class="shell footer">
-      <p>馆藏资料仍为草稿，待独立编辑审核。</p>
-      <a href="https://github.com/yang963852/beitie-atlas/blob/main/README.zh-CN.md">中文项目文档 ↗</a>
+      <p>碑帖之间 · Between Steles</p>
+      <a href="https://github.com/yang963852/beitie-atlas/blob/main/CONTRIBUTING.md">参与项目 ↗</a>
     </footer>
   </body>
 </html>

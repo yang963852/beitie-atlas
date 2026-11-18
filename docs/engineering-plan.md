@@ -141,8 +141,8 @@ M0/M1 local code checks can pass before external access checks. Report these as 
 ## Hosting, rights, and credentials
 
 - GitHub is the planned public source host. Never publish the parent workspace; it contains unrelated personal material.
-- GitHub Pages is a provisional static-host option, not a promise of mainland reliability. A production main site may use another host; keep build output portable.
-- Vite's base URL must match the deployment path; test `/<repository>/` paths before Pages deployment.
+- Codex Sites hosts the public overview. Keep the atlas build portable and verify mainland access separately.
+- Vite's base URL must match the deployment path. Codex Sites serves the project at the URL root.
 - Browser-embedded configuration is public even when injected from a build environment. `.env` alone cannot hide a frontend secret. Use provider-supported domain restrictions, quotas, and a server-side proxy if required; document added costs.
 - Preserve provider attribution and any required approval number. Do not use undocumented tile endpoints or remove official map annotations. Provider terms and host requirements must be checked for the selected release setup.
 - Original code: MIT recommended. Editorial data: separate license only for material the project can license. Third-party media: per-item rights. Placeholders or links are acceptable when image reuse is not established.
@@ -158,7 +158,6 @@ Reviewer findings should include severity, file/location, reproduction, expected
 
 ## Primary technical references
 
-- [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Vite static deployment](https://vite.dev/guide/static-deploy)
 - [Leaflet stable documentation](https://leafletjs.com/reference-1.9.4.html)
 - [OSM tile policy](https://operations.osmfoundation.org/policies/tiles/)
