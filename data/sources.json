@@ -715,6 +715,50 @@
         "accessedAt": "2026-11-18",
         "locator": "重刻唐《孔子庙堂碑》条目正文",
         "note": "A provincial cultural-heritage compilation. It dates the original to 629–630 and the recut to 961–964, and gives 280 × 110 cm with 34 lines of 65 characters, a 相王李旦 heading, and 安仁祚 as the carver. These figures conflict with the museum page and are kept as a second reading."
-      }
+      },
+    {
+        "id": "src-dpm-stone-drums",
+        "title": "秦石鼓",
+        "publisher": "故宫博物院 The Palace Museum",
+        "kind": "web",
+        "url": "https://www.dpm.org.cn/collection/impres/234438.html",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "故00000991；正文首两段",
+        "note": "Catalogues the ten granite drums and describes competing dates."
+    },
+    {
+        "id": "src-dpm-stone-drums-ming",
+        "title": "明拓战国石鼓文册",
+        "publisher": "故宫博物院 The Palace Museum",
+        "kind": "web",
+        "url": "https://www.dpm.org.cn/collection/impres/228598.html",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "新00045770；正文年代、形制与收藏段",
+        "note": "Identifies the Palace Museum rubbing and explicitly locates the original drums."
+    },
+    {
+        "id": "src-chnmuseum-xiping",
+        "title": "“熹平石经”残石",
+        "publisher": "中国国家博物馆 National Museum of China",
+        "kind": "web",
+        "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202008/t20200824_247256.shtml",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "藏品正文",
+        "note": "Identifies the fragment and the Eastern Han stone canon project."
+    },
+    {
+        "id": "src-chnmuseum-xiping-holding",
+        "title": "朝闻天下：孔子文化展国博启幕",
+        "publisher": "中国国家博物馆 National Museum of China",
+        "kind": "web",
+        "url": "https://www.chnmuseum.cn/sp/xwlb/202001/t20200103_186504.shtml",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "展品介绍",
+        "note": "Explicitly identifies the Eastern Han fragment as a National Museum holding."
+    }
   ]
 }

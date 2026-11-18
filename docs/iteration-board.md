@@ -30,6 +30,8 @@ Updated: 2026-11-18. One active implementation task at a time.
 
 | 022 | Quiet record list, inspectable map points, contribution channel | Accepted — code review findings addressed; owner authorized source merge only | 120 tests; seven new objects remain drafts. Live browser checks and editorial approval remain open. See [task 022](../tasks/022-reading-and-contribution.md), [delivery 022](delivery-022.md), and [review 022](review-022.md). |
 
+| 023 | Prioritize common inscriptions and fill first gaps | Delivered — first draft batch, pending editorial review | Two works and three physical records; see [task 023](../tasks/023-canonical-inscriptions.md), [delivery 023](delivery-023.md), and [coverage matrix](canonical-coverage.md). |
+
 ## Iteration loop
 
 Ready → in progress → delivered → reviewed → fixing (if necessary) → accepted.

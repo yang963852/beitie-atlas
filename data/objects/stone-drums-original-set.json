@@ -1,0 +1,48 @@
+{
+  "id": "stone-drums-original-set",
+  "workId": "stone-drum-inscriptions",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "秦石鼓（原石十件）",
+    "en": "Qin Stone Drums, original set of ten"
+  },
+  "productionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "先秦",
+    "original": "秦国遗物，确切年代未定",
+    "certainty": "disputed",
+    "note": null
+  },
+  "catalogNumber": "故00000991",
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-palace-museum",
+    "sourceRefs": [
+      "src-dpm-stone-drums",
+      "src-dpm-stone-drums-ming"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "Catalogue holding; no current exhibition claim.",
+    "noteZh": "按机构著录记录收藏，不据此判断当前是否展出。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft. One museum catalogue entry covers the set.",
+    "noteZh": "草稿。此条对应馆方整组著录。"
+  },
+  "notes": [
+    "Reported general dimensions are not individual drum measurements."
+  ],
+  "notesZh": [
+    "馆方概述尺寸不作为逐鼓实测值。"
+  ]
+}

@@ -35,7 +35,7 @@ describe('application shell', () => {
     expect(within(resultsList()).getByText('颜勤礼碑（原石）')).toBeInTheDocument();
     expect(within(resultsList()).getByText('颜勤礼碑（民国拓本）')).toBeInTheDocument();
 
-    expect(screen.getByRole('heading', { name: '峄山刻石（北宋长安本）' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '秦石鼓（原石十件）' })).toBeInTheDocument();
     expect(within(resultsList()).getByText('玄秘塔碑（原石）')).toBeInTheDocument();
   });
 
@@ -43,7 +43,7 @@ describe('application shell', () => {
     renderApp();
     const list = resultsList();
     const periods = within(list).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim().split(/\s*\d/)[0]);
-    expect(periods).toEqual(['秦', '西汉', '东汉', '三国', '东晋', '南北朝', '隋', '唐', '北宋', '元', '明', '清', '民国']);
+    expect(periods).toEqual(['先秦', '秦', '西汉', '东汉', '三国', '东晋', '南北朝', '隋', '唐', '北宋', '元', '明', '清', '民国']);
 
     expect(within(list).getByRole('heading', { name: /东汉/ })).toBeInTheDocument();
     expect(within(list).getByRole('heading', { name: /南北朝/ })).toBeInTheDocument();
@@ -148,7 +148,10 @@ describe('application shell', () => {
     const filter = within(map).getByRole('checkbox', { name: '仅显示存世原件' });
     fireEvent.click(filter);
 
-    expect(within(map).queryByRole('button', { name: /^故宫博物院 ·/ })).not.toBeInTheDocument();
+    fireEvent.click(within(map).getByRole('button', { name: /^故宫博物院 ·/ }));
+    const palaceSelection = within(map).getByRole('group', { name: '选中的地点' });
+    expect(within(palaceSelection).getByRole('button', { name: /秦石鼓/ })).toBeInTheDocument();
+    expect(within(palaceSelection).queryByRole('button', { name: /故宫明拓册/ })).not.toBeInTheDocument();
     fireEvent.click(within(map).getByRole('button', { name: /^晋祠博物馆 ·/ }));
     const selection = within(map).getByRole('group', { name: '选中的地点' });
     expect(within(selection).getAllByRole('button')).toHaveLength(1);
@@ -156,7 +159,9 @@ describe('application shell', () => {
     expect(within(resultsList()).getAllByRole('link')).toHaveLength(recordCount);
 
     fireEvent.click(filter);
-    expect(within(map).getByRole('button', { name: /^故宫博物院 ·/ })).toBeInTheDocument();
+    fireEvent.click(within(map).getByRole('button', { name: /^故宫博物院 ·/ }));
+    expect(within(within(map).getByRole('group', { name: '选中的地点' }))
+      .getByRole('button', { name: /故宫明拓册/ })).toBeInTheDocument();
   });
 
   it('opens the record view for a shared link and returns to the list on Back', () => {
@@ -200,9 +205,9 @@ describe('application shell', () => {
       await new Promise((resolve) => setTimeout(resolve, 0));
     });
 
-    expect(window.location.hash).toBe('#/object/stele-yishan-inscription');
+    expect(window.location.hash).toBe('#/object/stone-drums-original-set');
     expect(workspace).toHaveAttribute('data-mobile-view', 'map');
-    expect(screen.getByRole('button', { name: /^西安碑林博物馆 ·/ })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: /^故宫博物院 ·/ })).toHaveAttribute('aria-pressed', 'true');
   });
 
   it('filters the list, the map panel, and the detail together', () => {
@@ -263,7 +268,7 @@ describe('application shell', () => {
 
     goBackTo('#');
 
-    expect(screen.getByRole('heading', { name: '峄山刻石（北宋长安本）' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '秦石鼓（原石十件）' })).toBeInTheDocument();
   });
 
   it('switches the whole interface to English and keeps the selection', () => {
