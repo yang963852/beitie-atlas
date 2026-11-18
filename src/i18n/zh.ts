@@ -91,7 +91,7 @@ export const zhStrings: Strings = {
   contributeSourceLabel: '在哪里可以核对',
   contributeSourcePlaceholder: '博物馆、图书馆、文物或政府部门页面；或注明页码的印刷图录。',
   contributeContactLabel: '如何联系你（可不填）',
-  contributeContactPlaceholder: '邮箱或其他联系方式，只会出现在你的提交里。',
+  contributeContactPlaceholder: '仅填写愿意公开的联系方式，例如 GitHub 用户名。',
   contributeNotice:
     '提交不会自动发布。没有来源的回忆、碑帖应用截图只作线索，不作为收录依据。',
   contributePreviewLabel: '将要提交的文字',
@@ -101,7 +101,7 @@ export const zhStrings: Strings = {
   contributeCopyFailed: '复制失败，请手动选择上面的文字复制。',
   contributeRequired: '请先写下你掌握的信息。',
   contributeChannelNote:
-    '提交页是本项目的公开问题页面，会在新标签页打开；在那边确认提交之前，不会发送任何内容。',
+    '打开提交页会把这段文字传给 GitHub 预填；点击发布后问题将公开。请勿填写隐私信息。',
   contributeClose: '关闭',
   contributeFooterLink: '提交资料',
 

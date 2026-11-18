@@ -9,7 +9,6 @@ import { useLocale } from '../i18n';
 
 interface ContributionPanelProps {
   object: ObjectRecord | null;
-  open: boolean;
   onClose: () => void;
 }
 
@@ -17,7 +16,7 @@ interface ContributionPanelProps {
  * A plain, visible form. It composes text and hands it to a public channel the
  * reader chooses to open; the page itself stores nothing.
  */
-export function ContributionPanel({ object, open, onClose }: ContributionPanelProps) {
+export function ContributionPanel({ object, onClose }: ContributionPanelProps) {
   const { locale, strings } = useLocale();
   const [details, setDetails] = useState('');
   const [source, setSource] = useState('');
@@ -32,7 +31,7 @@ export function ContributionPanel({ object, open, onClose }: ContributionPanelPr
     () => ({
       objectId: object?.id ?? null,
       objectTitle: object?.titles.zh ?? null,
-      pageUrl: objectPageUrl(object?.id ?? null, window.location.origin),
+      pageUrl: objectPageUrl(object?.id ?? null, window.location.href),
       details,
       source,
       contact,
@@ -47,7 +46,7 @@ export function ContributionPanel({ object, open, onClose }: ContributionPanelPr
   // A section that appears below the panes is easy to miss: move focus to its
   // heading so keyboard and screen-reader users land where the form starts.
   useEffect(() => {
-    if (!open) return;
+    const opener = document.activeElement;
     const reduceMotion =
       window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
     headingRef.current?.scrollIntoView?.({
@@ -55,18 +54,18 @@ export function ContributionPanel({ object, open, onClose }: ContributionPanelPr
       block: 'start',
     });
     detailsRef.current?.focus({ preventScroll: true });
-  }, [open]);
+    return () => {
+      if (opener instanceof HTMLElement && opener.isConnected) opener.focus();
+    };
+  }, []);
 
   useEffect(() => {
-    if (!open) return;
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [open, onClose]);
-
-  if (!open) return null;
+  }, [onClose]);
 
   const copy = async () => {
     try {

@@ -8,19 +8,19 @@
   },
   "productionDate": {
     "kind": "single",
-    "startYear": -209,
+    "startYear": -219,
     "startMonth": null,
-    "endYear": -209,
+    "endYear": -219,
     "endMonth": null,
     "eraLabel": null,
-    "original": "秦二世元年（前 209）",
+    "original": "秦始皇二十八年（前 219）",
     "certainty": "documented",
-    "note": "The surviving text is mainly the Second Emperor's edict; two lines of the 219 BCE attendants also remain."
+    "note": "The original stone was erected in 219 BCE. The surviving block preserves text from that carving as well as the 209 BCE addition."
   },
   "catalogNumber": null,
   "dimensions": {
     "raw": "高 132.2 厘米，宽 65.8—71.3 厘米，厚 36.2 厘米",
-    "note": "Measurements of the surviving fragment as published by the museum, not of the original cliff face."
+    "note": "Measurements from the museum's stone and tile catalogue listing, not of the original cliff face."
   },
   "survivalStatus": "surviving",
   "relationships": [],
@@ -28,7 +28,8 @@
     "locationKind": "collection-institution",
     "placeId": "place-national-museum",
     "sourceRefs": [
-      "src-chnmuseum-langya"
+      "src-chnmuseum-langya",
+      "src-chnmuseum-langya-dimensions"
     ],
     "sourceAccessedAt": "2026-11-18",
     "assertionAsOf": null,

@@ -338,11 +338,11 @@ function AppShell() {
         </section>
       </main>
 
-      <ContributionPanel
-        open={contribute.open}
+      {contribute.open ? <ContributionPanel
+        key={contribute.objectId ?? 'general'}
         object={contribute.objectId ? (getObject(contribute.objectId) ?? null) : null}
         onClose={() => setContribute((current) => ({ ...current, open: false }))}
-      />
+      /> : null}
 
       <footer className="footer">
         <p className="footer__note">{strings.footerNote}</p>

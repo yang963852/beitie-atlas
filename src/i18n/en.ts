@@ -99,7 +99,7 @@ export const enStrings = {
   contributeSourcePlaceholder:
     'A museum, library, heritage or government page; or a printed catalogue with page number.',
   contributeContactLabel: 'How may we reach you? (optional)',
-  contributeContactPlaceholder: 'Email or other contact, shown only in your submission.',
+  contributeContactPlaceholder: 'Only include a public contact, such as your GitHub username.',
   contributeNotice:
     'Submissions are not published automatically. Unsourced recollections and app screenshots are treated as leads, not evidence.',
   contributePreviewLabel: 'Text that will be submitted',
@@ -109,7 +109,7 @@ export const enStrings = {
   contributeCopyFailed: 'Copying failed. Select the text above and copy it manually.',
   contributeRequired: 'Describe what you know before submitting.',
   contributeChannelNote:
-    'The submission page is this project’s public issue tracker. It opens in a new tab; nothing is sent until you submit it there.',
+    'Opening the issue page sends this text to GitHub to prefill the form. The issue will be public if you post it. Do not include private information.',
   contributeClose: 'Close',
   contributeFooterLink: 'Submit information',
 

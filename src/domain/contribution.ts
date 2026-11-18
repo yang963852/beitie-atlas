@@ -87,6 +87,9 @@ export function buildContributionUrl(draft: ContributionDraft, locale: 'zh' | 'e
 }
 
 /** The share link a reader came from, without a query or fragment duplication. */
-export function objectPageUrl(objectId: string | null, origin: string): string {
-  return objectId ? `${origin}/#/object/${objectId}` : `${origin}/`;
+export function objectPageUrl(objectId: string | null, pageUrl: string): string {
+  const url = new URL(pageUrl);
+  url.search = '';
+  url.hash = objectId ? `/object/${objectId}` : '';
+  return url.href;
 }

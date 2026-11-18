@@ -333,5 +333,10 @@ describe('application shell', () => {
     const href = link.getAttribute('href') ?? '';
     expect(href).toContain('https://github.com/yang963852/beitie-atlas/issues/new');
     expect(decodeURIComponent(href.replace(/\+/g, ' '))).toContain('民国拓本上有藏印一方。');
+
+    fireEvent.keyDown(window, { key: 'Escape' });
+    fireEvent.click(screen.getByRole('button', { name: '提交资料' }));
+    expect(screen.getByLabelText('你掌握的信息')).toHaveValue('');
+    expect(screen.getByLabelText('将要提交的文字')).not.toHaveValue(expect.stringContaining('颜勤礼碑'));
   });
 });

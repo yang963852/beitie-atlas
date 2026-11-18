@@ -46,4 +46,12 @@ describe('contribution text', () => {
     );
     expect(objectPageUrl(null, 'https://example.org')).toBe('https://example.org/');
   });
+
+  it('keeps the atlas subpath and replaces an existing query and record hash', () => {
+    const page = 'https://example.org/beitie-atlas/?campaign=old#/object/old';
+    expect(objectPageUrl('stele-cao-quan', page)).toBe(
+      'https://example.org/beitie-atlas/#/object/stele-cao-quan',
+    );
+    expect(objectPageUrl(null, page)).toBe('https://example.org/beitie-atlas/');
+  });
 });

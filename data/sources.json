@@ -636,8 +636,19 @@
         "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml",
         "publicationDate": null,
         "accessedAt": "2026-11-18",
-        "locator": "藏品条目正文：尺寸、13 行 87 字、秦篆",
-        "note": "Museum collection page. It identifies the surviving block as the rear half of the 219 BCE stone, gives its measurements, and states that the text is attributed to Li Si."
+        "locator": "藏品条目正文：前219年原石、前209年补刻、13行87字",
+        "note": "Identifies the surviving block as part of the 219 BCE stone and distinguishes the original carving from the 209 BCE addition. Li Si's hand is traditionally attributed."
+      },
+    {
+        "id": "src-chnmuseum-langya-dimensions",
+        "title": "石刻砖瓦",
+        "publisher": "中国国家博物馆 National Museum of China",
+        "kind": "web",
+        "url": "https://m.chnmuseum.cn/zp/zpml/csp/sk/",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "琅琊刻石条目",
+        "note": "Gives the dimensions of the surviving fragment."
       },
     {
         "id": "src-dpm-hengfang",
