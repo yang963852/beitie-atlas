@@ -2,7 +2,7 @@ name: Preview quality checks
 on:
   pull_request:
   push:
-    branches: [main, 'task/**']
+    branches: [main, 'task/**', 'codex/**']
 permissions:
   contents: read
 jobs:
