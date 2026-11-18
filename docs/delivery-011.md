@@ -1,6 +1,6 @@
 # Delivery 011 | Chronological atlas and owner preview
 
-Base revision `123657e089d73318e91671f0e6706b5a2e0e48a8` with the retained task 004 and 007–010 worktree deliveries. Implemented and deployed revision `a6af29c7b4b167f99ab04b8f7bc1ec518b405180`. Integration branch `codex/011-atlas-sites`. Independent review is pending.
+Base revision `123657e089d73318e91671f0e6706b5a2e0e48a8` with the retained task 004 and 007–010 worktree deliveries. The first Sites preview was deployed from `a6af29c7b4b167f99ab04b8f7bc1ec518b405180`. Integration branch `codex/011-atlas-sites`. The [GitHub pull request](https://github.com/yang963852/beitie-atlas/pull/1) records the reviewed revision, CI checks, and merge.
 
 ## Changes
 
@@ -28,3 +28,12 @@ Representative institutional sources include [Mount Yi Inscription](https://www.
 
 - The [GitHub task branch](https://github.com/yang963852/beitie-atlas/tree/codex/011-atlas-sites) contains the implementation and handoff. Task-branch pushes run the preview CI workflow.
 - The [owner-only Codex Sites preview](https://beitie-atlas.partedlute2.chatgpt.site) deployed version 1 successfully from the implementation revision above. The package contained the preview marker and no local map key. Sites ID `appgprj_6afd01e39c948191ac352db900496f1b`, deployment `appgdep_6afd05b6549c8191ac647f6681230b8f`. Hosted browser inspection timed out and a direct request without a signed-in session returned HTTP 403. The share-link test passed locally.
+
+## Codex code review
+
+The [first review](https://github.com/yang963852/beitie-atlas/pull/1#pullrequestreview-5949801970) found two P2 issues on `886b89cc1f7473b731cd95fbb7b1a255117cd255`. The fixes are in the follow-up commit that adds this section.
+
+- Mobile navigation now writes the object permalink separately from showing a section. Edge at 390 CSS px kept focus in the map after opening it from the default detail with the keyboard. Browser Back returned to the previous URL and refreshing the object link reopened the detail. An application regression test covers the asynchronous navigation.
+- On desktop, the fallback place card scrolls its records and keeps the location disclosure accessible. At 1440×768 the Xi’an Beilin card held 16 items in a 215 px scroll area. Its last record was reachable with the keyboard and opened the correct detail. The 768 CSS px layout and the 390 CSS px route were also inspected without horizontal overflow.
+
+The task chat contains the responsive screenshots. The two original findings and the follow-up review are linked from the pull request.

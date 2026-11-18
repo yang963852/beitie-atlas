@@ -85,14 +85,20 @@ function AppShell() {
   }, []);
 
   const selectObject = (id: string) => {
-    returnFocus.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    pendingFocus.current = 'detail';
     setSelectedId(id);
-    setDetailOpen(true);
     const next = `#/object/${id}`;
     if (window.location.hash !== next) {
-      window.location.hash = next;
+      // Preserve the share link and Back history without firing the handler
+      // that opens detail for external hash navigation.
+      window.history.pushState(null, '', next);
     }
+  };
+
+  const openObject = (id: string) => {
+    returnFocus.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    pendingFocus.current = 'detail';
+    selectObject(id);
+    setDetailOpen(true);
   };
 
   /**
@@ -112,13 +118,13 @@ function AppShell() {
     if (!node) return;
     const reduceMotion =
       window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
-    node.scrollIntoView?.({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
-    node.focus({ preventScroll: true });
-    // A pane that was hidden by the mobile switch becomes focusable only after
-    // the state change renders; retry once without changing the outcome.
-    window.requestAnimationFrame?.(() => {
-      if (document.activeElement !== node) node.focus({ preventScroll: true });
-    });
+    const reveal = () => {
+      node.scrollIntoView?.({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      node.focus({ preventScroll: true });
+    };
+    // The mobile pane can be hidden until the navigation update commits.
+    if (wideLayout) reveal();
+    else window.requestAnimationFrame(reveal);
   };
 
   const handleQueryChange = (value: string) => {
@@ -271,14 +277,14 @@ function AppShell() {
             selectedId={activeObject?.id ?? null}
             query={query}
             onQueryChange={handleQueryChange}
-            onSelect={selectObject}
+            onSelect={openObject}
           />
         </section>
 
         <MapPanel
           markers={markers}
           objects={filtered}
-          onOpenObject={selectObject}
+          onOpenObject={openObject}
           active={mapActive}
           selectedPlaceId={selectedPlaceId}
         />
@@ -299,7 +305,6 @@ function AppShell() {
               onShowMap={markers.some((marker) => marker.objectIds.includes(activeObject.id))
                 ? () => {
                   selectObject(activeObject.id);
-                  pendingFocus.current = null;
                   goToSection('map');
                 }
                 : undefined}

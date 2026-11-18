@@ -22,7 +22,7 @@ function goBackTo(hash: string) {
 }
 
 beforeEach(() => {
-  window.location.hash = '';
+  window.history.replaceState(null, '', window.location.pathname);
   window.localStorage.clear();
 });
 
@@ -106,7 +106,7 @@ describe('application shell', () => {
   });
 
   it('opens a record from a hash link', () => {
-    window.location.hash = '#/object/dpm-rubbing-xin00045406';
+    window.history.replaceState(null, '', '#/object/dpm-rubbing-xin00045406');
     renderApp();
 
     expect(screen.getByRole('heading', { name: '颜勤礼碑（民国拓本）' })).toBeInTheDocument();
@@ -114,7 +114,7 @@ describe('application shell', () => {
   });
 
   it('opens the record view for a shared link and returns to the list on Back', () => {
-    window.location.hash = '#/object/yan-qinli-original-stele';
+    window.history.replaceState(null, '', '#/object/yan-qinli-original-stele');
     const { container } = renderApp();
     const workspace = container.querySelector('.workspace');
 
@@ -141,6 +141,22 @@ describe('application shell', () => {
 
     fireEvent.change(screen.getByLabelText(/搜索记录/), { target: { value: '故宫' } });
     expect(within(resultsList()).getByText('颜勤礼碑（民国拓本）')).toBeInTheDocument();
+  });
+
+  it('keeps the map open after showing the default record on the map', async () => {
+    const { container } = renderApp();
+    const workspace = container.querySelector('.workspace');
+    fireEvent.click(screen.getByRole('link', { name: '实物详情' }));
+    expect(window.location.hash).toBe('');
+
+    fireEvent.click(within(screen.getByRole('article')).getByRole('button', { name: '在地图上查看' }));
+    await act(async () => {
+      await new Promise((resolve) => setTimeout(resolve, 0));
+    });
+
+    expect(window.location.hash).toBe('#/object/stele-yishan-inscription');
+    expect(workspace).toHaveAttribute('data-mobile-view', 'map');
+    expect(screen.getByRole('button', { name: /^西安碑林博物馆 ·/ })).toHaveAttribute('aria-pressed', 'true');
   });
 
   it('filters the list, the map panel, and the detail together', () => {

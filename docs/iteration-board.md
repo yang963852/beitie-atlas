@@ -14,7 +14,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 008 | Extant steles and unique rubbings | Delivered 2026-11-18; awaiting independent review | 76 tests; 24 objects from 22 works; 12 new records, all draft; coordinates still limited to 2 places; see delivery-008.md |
 | 009 | Period ordering and credited hands | Delivered 2026-11-18; awaiting independent review | 83 tests; 22 works filed under 3 periods; 37 attribution entries incl. 5 explicit 未署名; map options in map-options.md; live map still needs a key; see delivery-009.md |
 | 010 | Tianditu key self-check and setup runbook | Delivered 2026-11-18; awaiting independent review | 94 tests; `npm run check:map-key` classifies 301001 / 301013 / gateway codes without printing the key; whitelist format corrected; live rendering still needs an owner key; see map-setup.md |
-| 011 | Expand period coverage and connect the atlas to Codex Sites | Owner-only preview deployed 2026-11-18; independent review pending | 36 objects across 12 periods, 4 points for 22 objects, 96 tests, GitHub task branch; see [delivery 011](delivery-011.md) and [atlas workflow](atlas-workflow.md). |
+| 011 | Expand period coverage and connect the atlas to Codex Sites | Owner-only preview deployed 2026-11-18; two P2 review findings addressed | 36 objects across 12 periods, 4 points for 22 objects. See [PR #1](https://github.com/yang963852/beitie-atlas/pull/1) for the independent review, checks, and merge, and [delivery 011](delivery-011.md) for browser verification. |
 
 ## Iteration loop
 

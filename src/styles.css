@@ -1727,15 +1727,21 @@ a {
     min-height: 200px;
   }
 
-  /* Without tiles the map is a status card, so the place list fills the rest of
-     the column and scrolls internally. It reads as one sheet rather than a
-     short card floating above an empty area. */
-  .pane--map[data-map-state='fallback'] .map--fallback {
-    flex: 0 0 auto;
+  /* Keep long institution lists and the location disclosure reachable in
+     shorter viewports. The live SDK canvas retains its original layout. */
+  .pane--map:has(.map-overview) {
+    overflow-y: auto;
   }
 
-  .pane--map[data-map-state='fallback'] .locations {
+  .map-overview__selection .place-card__list {
+    max-height: min(14rem, 28dvh);
+    overflow-y: auto;
+    padding: 4px;
+  }
+
+  .pane--map:has(.map-overview) .locations {
     flex: 1 1 auto;
+    min-height: 5rem;
     max-height: none;
     overflow-y: auto;
   }
