@@ -1,0 +1,46 @@
+{
+  "id": "wen-guiqulai",
+  "titles": {
+    "zh": "楷书归去来兮辞页",
+    "en": "Return Home in Regular Script"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "文徵明",
+      "nameEn": "Wen Zhengming",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-catalogue-wen-guiqulai"
+      ],
+      "note": null,
+      "noteZh": null
+    }
+  ],
+  "dynastyId": "ming",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "明",
+    "original": null,
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "楷书",
+  "background": "明文徵明书《楷书归去来兮辞页》。",
+  "sourceRefs": [
+    "src-catalogue-wen-guiqulai"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [],
+  "notesZh": []
+}

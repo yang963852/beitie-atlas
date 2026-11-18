@@ -1,0 +1,46 @@
+{
+  "id": "boyuan",
+  "titles": {
+    "zh": "伯远帖",
+    "en": "Letter to Boyuan"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "王珣",
+      "nameEn": "Wang Xun",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-catalogue-boyuan"
+      ],
+      "note": null,
+      "noteZh": null
+    }
+  ],
+  "dynastyId": "eastern-jin",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "东晋",
+    "original": null,
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "行书",
+  "background": "东晋王珣书《伯远帖》。",
+  "sourceRefs": [
+    "src-catalogue-boyuan"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [],
+  "notesZh": []
+}

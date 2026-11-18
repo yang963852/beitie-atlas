@@ -12,7 +12,7 @@
 export const enStrings = {
   siteTitleZh: '碑帖之间',
   siteTitleEn: 'Between Steles',
-  tagline: 'An atlas of Chinese calligraphic steles and selected rubbings.',
+  tagline: 'Chinese calligraphy through the Qing dynasty, from stone inscriptions to handwritten letters.',
   taglineDetail:
     'One work may survive as several physical objects in different places. Each object keeps its own collection evidence and its own dated movements.',
   statusBadge: 'Preview',
@@ -198,6 +198,8 @@ export const enStrings = {
   skipToResults: 'Skip to the record list',
 
   objectTypeLabels: {
+    'ink-manuscript': 'Ink manuscript',
+    'manuscript-copy': 'Manuscript copy',
     'original-stele': 'Original stele',
     'cliff-inscription': 'Cliff inscription',
     recarving: 'Recarving',

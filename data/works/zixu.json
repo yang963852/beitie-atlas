@@ -1,0 +1,46 @@
+{
+  "id": "zixu",
+  "titles": {
+    "zh": "自叙帖",
+    "en": "Autobiography"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "怀素",
+      "nameEn": "Huaisu",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-catalogue-zixu"
+      ],
+      "note": null,
+      "noteZh": null
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 777,
+    "startMonth": null,
+    "endYear": 777,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": null,
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "草书",
+  "background": "唐怀素书《自叙帖》。",
+  "sourceRefs": [
+    "src-catalogue-zixu"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [],
+  "notesZh": []
+}

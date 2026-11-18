@@ -1,0 +1,46 @@
+{
+  "id": "zhao-jijiu",
+  "titles": {
+    "zh": "篆书急就章轴",
+    "en": "Jijiu Zhang in Seal Script"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "赵之谦",
+      "nameEn": "Zhao Zhiqian",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-catalogue-zhao-jijiu"
+      ],
+      "note": null,
+      "noteZh": null
+    }
+  ],
+  "dynastyId": "qing",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "清",
+    "original": null,
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "篆书",
+  "background": "清赵之谦书《篆书急就章轴》。",
+  "sourceRefs": [
+    "src-catalogue-zhao-jijiu"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [],
+  "notesZh": []
+}

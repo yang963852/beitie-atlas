@@ -122,6 +122,8 @@ export interface Work {
 }
 
 export type ObjectType =
+  | 'ink-manuscript'
+  | 'manuscript-copy'
   | 'original-stele'
   | 'cliff-inscription'
   | 'recarving'

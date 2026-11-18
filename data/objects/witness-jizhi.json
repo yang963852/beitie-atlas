@@ -1,0 +1,47 @@
+{
+  "id": "witness-jizhi",
+  "workId": "jizhi",
+  "objectType": "ink-manuscript",
+  "titles": {
+    "zh": "颜真卿《祭侄文稿》",
+    "en": "Draft Requiem for a Nephew"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 758,
+    "startMonth": null,
+    "endYear": 758,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": null,
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-taipei-palace",
+    "sourceRefs": [
+      "src-catalogue-jizhi"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": null,
+    "noteZh": null
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [
+    "The current gallery and accession date have not been verified."
+  ],
+  "notesZh": [
+    "展厅与入藏日期待考。"
+  ]
+}

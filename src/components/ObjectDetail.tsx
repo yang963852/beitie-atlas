@@ -152,14 +152,16 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute }: Object
           <p className="detail__work">
             <span className="detail__work-label">{strings.workLabel}</span>
             <span lang="zh-Hans">{work.titles.zh}</span>
-            <span className="detail__attribution">
-              {dynastyLabel(work.dynastyId, locale, work.dynastyQualifier)}
-            </span>
+            <span className="detail__attribution">{work.attribution
+              .filter((entry) => entry.role === 'calligrapher' || entry.role === 'author-and-calligrapher')
+              .map((entry) => attributionName(entry, locale)).join(' · ')}</span>
           </p>
         ) : null}
       </header>
 
       <dl className="facts">
+        <Fact term={locale === 'zh' ? '书体' : 'Script'}>{work?.script ?? (locale === 'zh' ? '未知' : 'Unknown')}</Fact>
+        <Fact term={strings.locationKindLabels[collection.locationKind]}>{place ? pickText(locale, place.names.zh, place.names.en) : strings.collectionNotStated}</Fact>
         <Fact term={strings.objectDateLabel}>
           <DateLine date={object.productionDate} locale={locale} />
         </Fact>
@@ -173,16 +175,12 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute }: Object
             {dynastyLabel(work.dynastyId, locale, work.dynastyQualifier)}
           </Fact>
         ) : null}
-        {object.catalogNumber ? (
           <Fact term={strings.catalogueLabel}>
-            <span className="mono">{object.catalogNumber}</span>
+            <span className="mono">{object.catalogNumber ?? (locale === 'zh' ? '未知' : 'Unknown')}</span>
           </Fact>
-        ) : null}
-        {object.dimensions ? (
           <Fact term={strings.dimensionsLabel}>
-            <span lang="zh-Hans">{object.dimensions.raw}</span>
+            {object.dimensions?.raw ?? (locale === 'zh' ? '未知' : 'Unknown')}
           </Fact>
-        ) : null}
         <Fact term={strings.survivalLabel}>{strings.survivalLabels[object.survivalStatus]}</Fact>
       </dl>
 
@@ -362,10 +360,10 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute }: Object
       </section>
 
       {notes.length > 0 ? (
-        <section className="section" aria-labelledby="notes-heading">
-          <h3 id="notes-heading" className="section__heading">
+        <details className="section detail-fold">
+          <summary className="section__heading">
             {strings.notesHeading}
-          </h3>
+          </summary>
           <div className="notes">
             {notes.map((group) => (
               <div key={group.scope} className="notes__group">
@@ -380,15 +378,15 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute }: Object
               </div>
             ))}
           </div>
-        </section>
+        </details>
       ) : null}
 
-      <section className="section" aria-labelledby="sources-heading">
-        <h3 id="sources-heading" className="section__heading">
+      <details className="section detail-fold">
+        <summary className="section__heading">
           {strings.sourcesHeading}
-        </h3>
+        </summary>
         <SourceList ids={sourceIds} plain />
-      </section>
+      </details>
 
       {onContribute ? (
         <div className="detail__actions">

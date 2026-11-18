@@ -1332,14 +1332,19 @@ a {
 
 .facts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
-  gap: 14px 20px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
   margin: 20px 0 0;
   padding: 16px 0 0;
   border-top: 1px solid var(--line-soft);
 }
 
 .fact {
+  display: grid;
+  grid-template-columns: minmax(5em, 30%) minmax(0, 1fr);
+  gap: 1em;
+  padding-block: .55em;
+  border-bottom: 1px solid var(--line-soft);
   min-width: 0;
 }
 

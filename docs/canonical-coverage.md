@@ -1,5 +1,7 @@
 # Canonical calligraphy coverage
 
+Task 024 brings ink manuscripts and manuscript copies into scope through the Qing. The following table preserves the task 023 inventory. Newly catalogued titles include 兰亭序、伯远帖、快雪时晴帖、董美人墓志、雁塔圣教序、麻姑仙坛记、书谱、祭侄文稿、自叙帖、寒食帖、松风阁诗、蜀素帖、苕溪诗卷、赵孟頫洛神赋 and representative Ming and Qing hands.
+
 The owner's reading list sets priorities. A name in this table is not approval of a date, holding, image right, or attribution. The supplied list mentions a separate debate section that was not supplied.
 
 | Period | Already represented (including drafts) | Next stone, rubbing or modelbook gaps |

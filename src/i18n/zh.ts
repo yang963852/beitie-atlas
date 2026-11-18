@@ -10,7 +10,7 @@ import type { Strings } from './en';
 export const zhStrings: Strings = {
   siteTitleZh: '碑帖之间',
   siteTitleEn: 'Between Steles',
-  tagline: '在地图上寻找现存碑刻与拓本。',
+  tagline: '从石上刻辞到纸上尺牍，读清代及以前的传世书法。',
   taglineDetail:
     '同一件作品可能留下多处实物，分藏各地。每件实物各自记录现藏依据与有据可查的流转，互不借用。',
   statusBadge: '预览版',
@@ -186,6 +186,8 @@ export const zhStrings: Strings = {
   skipToResults: '跳到记录列表',
 
   objectTypeLabels: {
+    'ink-manuscript': '墨迹',
+    'manuscript-copy': '墨迹摹本',
     'original-stele': '原石',
     'cliff-inscription': '摩崖',
     recarving: '翻刻',

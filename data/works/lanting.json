@@ -1,0 +1,46 @@
+{
+  "id": "lanting",
+  "titles": {
+    "zh": "兰亭序",
+    "en": "Preface to the Orchid Pavilion"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "王羲之",
+      "nameEn": "Wang Xizhi",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-catalogue-lanting"
+      ],
+      "note": null,
+      "noteZh": null
+    }
+  ],
+  "dynastyId": "eastern-jin",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 353,
+    "startMonth": null,
+    "endYear": 353,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": null,
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "行书",
+  "background": "东晋王羲之书《兰亭序》。本条收录唐冯承素摹本。",
+  "sourceRefs": [
+    "src-catalogue-lanting"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [],
+  "notesZh": []
+}

@@ -447,6 +447,21 @@
         "notesZh": [
           "县政府页面记摩崖在成县县城以西约 13 公里的鱼窍峡、西狭颂景区内，未给出坐标。"
         ]
-      }
+      },
+    {
+      "id": "place-taipei-palace",
+      "names": {
+        "zh": "台北故宫博物院",
+        "en": "National Palace Museum, Taipei"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-catalogue-shupu"
+      ],
+      "notes": [],
+      "notesZh": []
+    }
   ]
 }

@@ -34,6 +34,8 @@ export interface ValidationReport {
 type Json = Record<string, unknown>;
 
 const OBJECT_TYPES = new Set([
+  'ink-manuscript',
+  'manuscript-copy',
   'original-stele',
   'cliff-inscription',
   'recarving',

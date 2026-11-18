@@ -1,0 +1,46 @@
+{
+  "id": "dong-lunshu",
+  "titles": {
+    "zh": "行书论书卷",
+    "en": "On Calligraphy"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "董其昌",
+      "nameEn": "Dong Qichang",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-catalogue-dong-lunshu"
+      ],
+      "note": null,
+      "noteZh": null
+    }
+  ],
+  "dynastyId": "ming",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "明",
+    "original": null,
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "行书",
+  "background": "明董其昌书《行书论书卷》。",
+  "sourceRefs": [
+    "src-catalogue-dong-lunshu"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [],
+  "notesZh": []
+}

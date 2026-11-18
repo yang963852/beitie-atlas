@@ -1,12 +1,12 @@
 # Engineering plan
 
-Version: 0.1, 2026-11-17. Owner-approved scope: steles first, selected rubbings; mainland China first; English-first implementation.
+Owner direction, 2026-11-18. The catalogue covers calligraphic inscriptions, modelbooks, manuscript copies and ink manuscripts composed through the Qing dynasty. Later witnesses to an eligible work keep their own production dates.
 
 ## Product contract
 
 Visitors can identify a surviving physical object, find its documented collection or in-situ location, read its creation and provenance history, and inspect the evidence. The site does not promise exhaustive coverage, live location, or present-day exhibition availability.
 
-The first complete slice uses three genuine object records. The first release targets approximately ten works and twelve to fifteen objects, contingent on source quality. Non-stone calligraphy is a future extension, not a requirement to finish version 0.1.
+The text record leads with identity, date, script and documented holding. Physical dimensions and catalogue numbers remain unknown until an institution or consulted catalogue supports them.
 
 ## Architecture
 

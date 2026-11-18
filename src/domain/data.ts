@@ -25,6 +25,8 @@ const objectModules = import.meta.glob<unknown>('../../data/objects/*.json', {
 });
 
 const OBJECT_TYPE_ORDER: ObjectType[] = [
+  'ink-manuscript',
+  'manuscript-copy',
   'original-stele',
   'cliff-inscription',
   'recarving',

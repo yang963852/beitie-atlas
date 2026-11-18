@@ -43,7 +43,7 @@ describe('application shell', () => {
     renderApp();
     const list = resultsList();
     const periods = within(list).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim().split(/\s*\d/)[0]);
-    expect(periods).toEqual(['先秦', '秦', '西汉', '东汉', '三国', '东晋', '南北朝', '隋', '唐', '北宋', '元', '明', '清', '民国']);
+    expect(periods).toEqual(['先秦', '秦', '西汉', '东汉', '三国', '东晋', '南北朝', '隋', '唐', '北宋', '元', '明', '清']);
 
     expect(within(list).getByRole('heading', { name: /东汉/ })).toBeInTheDocument();
     expect(within(list).getByRole('heading', { name: /南北朝/ })).toBeInTheDocument();
@@ -66,7 +66,7 @@ describe('application shell', () => {
     expect(within(detail).getByText('朝代')).toBeInTheDocument();
     expect(detail.querySelector('.facts')?.textContent).toContain('唐');
     expect(within(detail).getByText('裴休')).toBeInTheDocument();
-    expect(within(detail).getByText('柳公权')).toBeInTheDocument();
+    expect(within(detail).getAllByText('柳公权')).toHaveLength(2);
     expect(within(detail).getByText('邵建和、邵建初')).toBeInTheDocument();
   });
 
@@ -107,6 +107,10 @@ describe('application shell', () => {
   it('filters by Chinese, English, and collection name', () => {
     renderApp();
     const search = screen.getByLabelText(/搜索记录/);
+
+    fireEvent.change(search, { target: { value: '欧阳询' } });
+    expect(within(resultsList()).getAllByRole('link').length).toBeGreaterThan(0);
+    expect(within(resultsList()).queryByText('秦石鼓（原石十件）')).not.toBeInTheDocument();
 
     fireEvent.change(search, { target: { value: '故宫' } });
     const palaceRows = within(resultsList()).getAllByRole('link');

@@ -1,0 +1,47 @@
+{
+  "id": "witness-boyuan",
+  "workId": "boyuan",
+  "objectType": "ink-manuscript",
+  "titles": {
+    "zh": "王珣《伯远帖》",
+    "en": "Letter to Boyuan"
+  },
+  "productionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "东晋",
+    "original": null,
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-palace-museum",
+    "sourceRefs": [
+      "src-catalogue-boyuan"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": null,
+    "noteZh": null
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [
+    "The current gallery and accession date have not been verified."
+  ],
+  "notesZh": [
+    "展厅与入藏日期待考。"
+  ]
+}

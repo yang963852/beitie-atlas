@@ -2,7 +2,7 @@
   "name": "beitie-atlas",
   "private": true,
   "version": "0.1.0-alpha.2",
-  "description": "碑帖之间 / Between Steles — an atlas of Chinese calligraphic steles and selected rubbings",
+  "description": "碑帖之间 / Between Steles — a textual catalogue of Chinese calligraphic inscriptions and manuscripts through the Qing dynasty",
   "type": "module",
   "engines": {
     "node": ">=22.12.0"

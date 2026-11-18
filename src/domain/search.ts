@@ -30,6 +30,7 @@ export function matchesQuery(object: ObjectRecord, query: string): boolean {
     work?.titles.zh ?? '',
     work?.titles.en ?? '',
     ...(work?.aliases ?? []),
+    ...(work?.attribution.flatMap((entry) => [entry.name, entry.nameEn ?? '']) ?? []),
     place?.names.zh ?? '',
     place?.names.en ?? '',
   ];
