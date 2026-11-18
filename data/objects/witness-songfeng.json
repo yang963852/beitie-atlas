@@ -32,7 +32,32 @@
     "note": null,
     "noteZh": null
   },
-  "provenanceEvents": [],
+  "provenanceEvents": [
+    {
+      "id": "witness-songfeng-seals",
+      "objectId": "witness-songfeng",
+      "type": "documented",
+      "date": {
+        "kind": "unknown",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": null,
+        "certainty": "unknown",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "The museum records seals of Xiang Yuanbian and An Qi, among others, together with Qing imperial seals. The impressions are leads, not dates or locations of transfers.",
+      "summaryZh": "馆方在此卷著录项元汴、安岐等人的收传印，以及清内府鉴藏玺。印记可作为查访线索，不据此断定交接的日期或地点。",
+      "sourceRefs": [
+        "src-catalogue-songfeng"
+      ],
+      "certainty": "unknown"
+    }
+  ],
   "review": {
     "state": "draft",
     "note": "Catalogue identification awaits editorial review.",

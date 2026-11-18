@@ -8,7 +8,7 @@ Write for a reader at the copying desk. Use concrete details from the inscriptio
 
 Show the artifact and its location first. Use strong hierarchy, consistent alignment, whitespace, and progressive disclosure. Keep search, selection, source access, and recovery discoverable. Do not equate simplicity with hiding necessary controls.
 
-The existing parchment-colored three-column audit screen is a foundation preview, not the approved visual direction. Prefer a neutral gallery/map application: compact header, quiet sidebar, generous map, readable detail sheet. Avoid ornamental ink textures, oversized promotional headings, pervasive glass effects, and excessive nested cards.
+The home page opens like the first leaf of a scroll: warm paper, a restrained vermilion mark, local Kai or Song type, and two large lines of the reader’s question. A single entry link and ordinary scrolling lead to the neutral catalogue. A shared object URL lands on the record instead of replaying the opening. Use a short entrance fade with no scroll hijacking; reduced-motion readers should get the final state immediately. Keep a compact header, quiet sidebar, generous map and readable detail sheet in the catalogue. Avoid ornamental ink textures and excessive nested cards.
 
 ## Starting tokens (project decisions)
 

@@ -1,6 +1,6 @@
 # Atlas workflow
 
-GitHub is the canonical source. Codex Sites hosts the interactive atlas preview. Its project identity and static output directory are recorded in `.openai/hosting.json`.
+GitHub is the canonical source. Codex Sites and GitHub Pages are separate public preview channels; source merge and formal editorial approval are separate decisions. The Codex Site's project identity and static output directory are recorded in `.openai/hosting.json`.
 
 ## What counts as a source
 
@@ -25,7 +25,13 @@ When two citable pages disagree — the year of a stele, the height of a stone, 
 3. Enter the work and each physical object separately. Left-column groups follow the period of the represented inscription or calligraphic work. Within a group, known dates go first in chronological order. A later carving or rubbing keeps its own production date and holding.
 4. Check the holding source and the point source separately. Plot only evidenced current collection or in-situ assertions joined to a coordinate for that same institution or site. Preserve the stated coordinate reference, source precision and verification. For missing coordinates, retain the place in the location list. A secondary coordinate supports orientation at institution/site scale and must display its unverified status.
 5. Run `npm run check`. Inspect 390, 768, and 1440 CSS px plus 200% browser zoom for layout changes. Exercise keyboard focus, record and map selection, search, no coordinates, map-provider failure, and share-link refresh as applicable. Record the outcomes in `docs/delivery-NNN.md`.
-6. Push the task branch to GitHub when requested and review it against `main`. Record the outcome and any blocking findings. The independent reviewer checks both source claims and implementation evidence before acceptance.
+6. Push every checked task branch to GitHub and open a PR against `main`. Record the review outcome, distinguish self-review from independent acceptance, and resolve blocking findings. Merge after the applicable GitHub checks pass under the owner's standing source-merge authorization. Sync local `main` back to `origin/main` and record the PR and merged revision. If blocked, preserve and report the unmerged work rather than bypassing checks.
+
+## GitHub Pages preview
+
+1. In GitHub repository **Settings → Pages**, set the publishing source to **GitHub Actions**. [The Pages workflow](../.github/workflows/pages.yml) runs on changes to `main` or by manual dispatch from `main`.
+2. The workflow uses the host's project base path and always builds the labelled preview after checks. It publishes only `dist/` as an Actions artifact; it does not commit binaries to Git or bundle a map key. The coordinate grid and location list remain usable without basemap tiles.
+3. Verify the deployment's revision and URL, refresh an object permalink, and open a source from an object's timeline. Record the result and any mainland reachability gap. Do not report a queued or failed workflow as a public deployment.
 
 ## Codex Sites preview
 

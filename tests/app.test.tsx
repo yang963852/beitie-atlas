@@ -27,6 +27,21 @@ beforeEach(() => {
 });
 
 describe('application shell', () => {
+  it('opens the catalogue from the cover without changing the object route', () => {
+    renderApp();
+    expect(screen.getByRole('heading', { level: 1, name: /案头所临.*如今藏在何处/ })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('link', { name: '打开碑帖图录' }));
+    expect(document.activeElement).toBe(document.getElementById('catalogue'));
+    expect(window.location.hash).toBe('');
+  });
+
+  it('lands an object permalink on its detail instead of the cover', () => {
+    window.history.replaceState(null, '', '#/object/witness-jizhi');
+    renderApp();
+    expect(document.activeElement).toBe(document.getElementById('detail'));
+    expect(within(screen.getByRole('article')).getByText(/一处写至元壬午/)).toBeInTheDocument();
+  });
+
   it('lists every object record and opens the first one', () => {
     renderApp();
 

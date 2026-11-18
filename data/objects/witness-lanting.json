@@ -35,7 +35,56 @@
     "note": null,
     "noteZh": null
   },
-  "provenanceEvents": [],
+  "provenanceEvents": [
+    {
+      "id": "witness-lanting-southern-song",
+      "objectId": "witness-lanting",
+      "type": "custody",
+      "date": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "南宋",
+        "original": null,
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "The Palace Museum’s tentative reconstruction from colophons, seals and catalogues includes the Southern Song imperial collections of Gaozong and Lizong and the collector Yang Zhen.",
+      "summaryZh": "故宫博物院据题跋、印记和著录，将南宋高宗、理宗内府及杨镇列入神龙本的大致递藏脉络。",
+      "sourceRefs": [
+        "src-catalogue-lanting"
+      ],
+      "certainty": "documented"
+    },
+    {
+      "id": "witness-lanting-later-collectors",
+      "objectId": "witness-lanting",
+      "type": "custody",
+      "date": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "元至清",
+        "original": null,
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "The museum’s reconstruction also names Guo Tianxi in the Yuan, the Ming court and Xiang Yuanbian, and Chen Ding among the Qing collectors before the Qianlong court. Not every transfer is dated.",
+      "summaryZh": "馆方的递藏梳理还列有元代郭天锡、明内府及项元汴、清代陈定等，直至乾隆内府；并非每次交接都有确切年代。",
+      "sourceRefs": [
+        "src-catalogue-lanting"
+      ],
+      "certainty": "documented"
+    }
+  ],
   "review": {
     "state": "draft",
     "note": "Catalogue identification awaits editorial review.",
