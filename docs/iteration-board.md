@@ -16,6 +16,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 010 | Tianditu key self-check and setup runbook | Delivered 2026-11-18; awaiting independent review | 94 tests; `npm run check:map-key` classifies 301001 / 301013 / gateway codes without printing the key; whitelist format corrected; live rendering still needs an owner key; see map-setup.md |
 | 011 | Expand period coverage and connect the atlas to Codex Sites | Owner-only preview deployed 2026-11-18; two P2 review findings addressed | 36 objects across 12 periods, 4 points for 22 objects. See [PR #1](https://github.com/yang963852/beitie-atlas/pull/1) for the independent review, checks, and merge, and [delivery 011](delivery-011.md) for browser verification. |
 | 012 | Publish the GitHub Pages project overview | In review 2026-11-18 | See [task 012](../tasks/012-github-pages-overview.md) and [delivery 012](delivery-012.md). |
+| 013 | Audit the corpus for public atlas publication | Evidence review in progress | See [task 013](../tasks/013-public-corpus-audit.md) and [delivery 013](delivery-013.md). |
 
 ## Iteration loop
 

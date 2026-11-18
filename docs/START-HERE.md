@@ -8,7 +8,7 @@ and the iteration board before editing.
 
 Initial collaborative development snapshot, 2026-11-17; corpus expanded 2026-11-18.
 React/TypeScript/Vite, thirty-three works, thirty-six distinct physical objects, fifteen
-places, forty-six sources, twenty events. All work/object records remain draft. No image
+places, fifty-four sources, twenty events. All work/object records remain draft. No image
 assets are in the corpus.
 
 The application supports bilingual-name search, linked results/location panels,

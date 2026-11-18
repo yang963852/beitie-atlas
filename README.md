@@ -27,7 +27,7 @@ The [initial snapshot's CI checks passed on GitHub](https://github.com/yang96385
 
 An open-source atlas of Chinese calligraphic inscriptions and selected rubbings: what survives, where it is documented today, and how its history connects places.
 
-**Preview status, 2026-11-18.** The corpus contains 33 works, 36 physical objects, 15 places and 46 sources. Four mapped locations account for 22 objects. The interactive coordinate overview works without a key. Local Tianditu rendering has been verified with a browser key. Mainland public-network access and independent editorial review remain pending.
+**Preview status, 2026-11-18.** The corpus contains 33 works, 36 physical objects, 15 places and 54 sources. Four mapped locations account for 22 objects. The interactive coordinate overview works without a key. Local Tianditu rendering has been verified with a browser key. Mainland public-network access and independent editorial review remain pending.
 
 The Chinese project name is final. `Between Steles` is a working English title. The public repository is [yang963852/beitie-atlas](https://github.com/yang963852/beitie-atlas).
 

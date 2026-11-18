@@ -15,12 +15,12 @@
     "eraLabel": null,
     "original": "东汉中平二年（185年）",
     "certainty": "disputed",
-    "note": null
+    "note": "The current Beilin entry and Palace Museum agree on 185. An alternate Beilin entry gives 186."
   },
   "catalogNumber": null,
   "dimensions": {
-    "raw": "高272厘米，宽95厘米",
-    "note": "Museum entry; 20 lines of 45 characters."
+    "raw": "高272厘米",
+    "note": "The alternate Beilin entry gives a width of 95 cm; the Palace Museum entry gives 123 cm. The width remains unresolved."
   },
   "survivalStatus": "surviving",
   "relationships": [],
@@ -28,12 +28,13 @@
     "locationKind": "collection-institution",
     "placeId": "place-xian-beilin-museum",
     "sourceRefs": [
-      "src-beilin-caoquan"
+      "src-beilin-caoquan",
+      "src-dpm-caoquan"
     ],
     "sourceAccessedAt": "2026-11-18",
     "assertionAsOf": null,
-    "note": "The museum excerpt gives 中平三年 (186); common catalogues give 中平二年 (185). The record keeps 185 and marks the year disputed rather than choosing silently.",
-    "noteZh": "馆方页面摘录作中平三年（186），通行著录多作中平二年（185）。本条保留 185 年并标注「有争议」，不静默取一。"
+    "note": "Xi’an Beilin lists the original stone and records its transfer in 1956. The Palace Museum catalogues a distinct early Ming rubbing and names Beilin as the stone’s holding institution.",
+    "noteZh": "西安碑林著录原石，并记载于 1956 年移存。故宫另有明初拓本，目录同时指出原石藏于西安碑林。"
   },
   "provenanceEvents": [],
   "review": {
@@ -42,17 +43,17 @@
     "noteZh": "草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
   },
   "notes": [
-    "The cited page states the date, the scribe where one is recorded, and the holding institution.",
-    "Excavation, accession, and present display status are not stated in the audited source and are left blank.",
+    "The current Beilin entry and the Palace Museum give 185; a second Beilin entry gives 186.",
+    "The two width readings are 95 cm and 123 cm. The structured dimension states only the common height.",
     "No coordinate is recorded: the source names an institution, not a surveyed point.",
     "The stele does not name a scribe, so no attribution is asserted.",
-    "The inscription’s discovery and move into the Beilin are not described in the audited page."
+    "The Beilin entry records discovery in the Wanli era and transfer in 1956. The current display spot is unverified."
   ],
   "notesZh": [
-    "所引页面记载了刻立年代、可考的书者与现藏机构。",
-    "出土、入藏与今日陈列状态在所核来源中没有记载，留空。",
+    "西安碑林现行中文目录和故宫条目均作 185 年；西安碑林另一条目作 186 年。",
+    "两处著录的碑宽分别是 95 和 123 厘米，尺寸字段仅记一致的碑高。",
     "未记录坐标：来源给出的是机构名称，不是实测点位。",
     "碑上未署书者姓名，因此不主张书写者。",
-    "所核页面没有记述此碑的出土与移入碑林经过。"
+    "碑林条目记载万历年间出土、1956 年移存；未核实当前的展出位置。"
   ]
 }

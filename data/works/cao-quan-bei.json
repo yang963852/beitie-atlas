@@ -12,7 +12,8 @@
       "nameEn": "Unrecorded",
       "certainty": "documented",
       "sourceRefs": [
-        "src-xuexi-caoquan"
+        "src-xuexi-caoquan",
+        "src-beilin-caoquan-alternate"
       ],
       "note": "No writer or calligrapher is named on the stone.",
       "noteZh": "碑上未署撰文者与书丹者姓名。"
@@ -40,12 +41,14 @@
     "eraLabel": null,
     "original": "东汉中平二年（185年）",
     "certainty": "disputed",
-    "note": null
+    "note": "The current Beilin entry and Palace Museum agree on 185. An alternate Beilin entry gives 186."
   },
   "script": "隶书",
   "background": "An Eastern Han stele for the official Cao Quan, held at the Xi’an Beilin Museum. No scribe is recorded on the stone.",
   "sourceRefs": [
-    "src-beilin-caoquan"
+    "src-beilin-caoquan",
+    "src-beilin-caoquan-alternate",
+    "src-dpm-caoquan"
   ],
   "review": {
     "state": "draft",

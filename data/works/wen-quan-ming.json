@@ -14,7 +14,8 @@
       "nameEn": "Li Shimin (Emperor Taizong of Tang)",
       "certainty": "documented",
       "sourceRefs": [
-        "src-thepaper-wenquanming"
+        "src-thepaper-wenquanming",
+        "src-shi-dunhuang-rubbings"
       ]
     }
   ],
@@ -32,9 +33,10 @@
     "note": null
   },
   "script": "行书",
-  "background": "The emperor’s inscription on the hot spring at Lishan, carved a year before his death. The stone is lost; a Tang rubbing recovered from the Dunhuang library cave is described as the earliest surviving rubbing of any Chinese inscription.",
+  "background": "The emperor’s inscription on the hot spring at Lishan. A Tang rubbing from Dunhuang is held in the Bibliothèque nationale de France and catalogued as P.4508.",
   "sourceRefs": [
-    "src-thepaper-wenquanming"
+    "src-thepaper-wenquanming",
+    "src-shi-dunhuang-rubbings"
   ],
   "review": {
     "state": "draft",

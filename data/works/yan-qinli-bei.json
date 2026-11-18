@@ -12,7 +12,8 @@
       "nameEn": "Yan Zhenqing",
       "certainty": "documented",
       "sourceRefs": [
-        "src-dpm-yan-qinli-rubbing"
+        "src-dpm-yan-qinli-rubbing",
+        "src-beilin-yan-qinli-object"
       ]
     }
   ],
@@ -33,7 +34,8 @@
   "background": "A Tang inscription dated to 779 in the Palace Museum's catalogue entry, which names 颜真卿 (Yan Zhenqing) as both author and calligrapher. The stone was unearthed in 1922 during repair work at the former provincial governor's compound in Chang'an (Xi'an), and the same entry describes it as held at the Xi'an Beilin Museum. A Republican-era rubbing in the Palace Museum is catalogued as a separate physical object.",
   "sourceRefs": [
     "src-dpm-yan-qinli-rubbing",
-    "src-beilin-article-2007"
+    "src-beilin-article-2007",
+    "src-beilin-yan-qinli-object"
   ],
   "review": {
     "state": "draft",

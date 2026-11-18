@@ -28,12 +28,13 @@
     "locationKind": "collection-institution",
     "placeId": "place-nlc",
     "sourceRefs": [
+      "src-nlc-shence-museum",
       "src-ccdy-shence"
     ],
     "sourceAccessedAt": "2026-11-18",
     "assertionAsOf": null,
-    "note": "Held by the National Library of China since its return in 1965.",
-    "noteZh": "1965 年购回后入藏中国国家图书馆。"
+    "note": "The National Library’s National Museum of Classic Books lists the surviving rubbing in its collection. The return and accession are recorded separately.",
+    "noteZh": "国家典籍博物馆著录此存世拓本。购回与入藏经过另列流转事件。"
   },
   "provenanceEvents": [
     {

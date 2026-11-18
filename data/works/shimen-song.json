@@ -21,9 +21,9 @@
   "compositionDate": {
     "kind": "single",
     "startYear": 148,
-    "startMonth": 11,
+    "startMonth": null,
     "endYear": 148,
-    "endMonth": 11,
+    "endMonth": null,
     "eraLabel": null,
     "original": "东汉建和二年（148年）",
     "certainty": "documented",
@@ -32,7 +32,8 @@
   "script": "隶书",
   "background": "A Eastern Han cliff inscription of 148 by the Hanzhong governor Wang Sheng, praising Yang Mengwen for opening the Shimen passage. Cut from the cliff and moved into the Hanzhong Museum.",
   "sourceRefs": [
-    "src-cssn-shaanxi-beike"
+    "src-cssn-shaanxi-beike",
+    "src-hantai-shimen-thirteen"
   ],
   "review": {
     "state": "draft",

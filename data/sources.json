@@ -459,6 +459,86 @@
       "accessedAt": "2026-11-18",
       "locator": "P625 (coordinate location), 37°42′29.945″N, 112°26′8.844″E",
       "note": "Secondary coordinate for the named heritage complex. It has no survey or museum verification."
+    },
+    {
+      "id": "src-beilin-yan-qinli-object",
+      "title": "颜勤礼碑",
+      "publisher": "西安碑林博物馆",
+      "url": "https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home",
+      "publicationDate": "2020-08-26",
+      "accessedAt": "2026-11-18",
+      "locator": "Object description and final sentence of the custody paragraph",
+      "note": "The holding museum’s catalogue describes the original stone and records its transfer to Beilin in 1948."
+    },
+    {
+      "id": "src-taian-zhangqian-holding",
+      "title": "泰安市博物馆开展国际博物馆日系列活动",
+      "publisher": "泰山风景名胜区管理委员会",
+      "url": "https://tsgw.taian.gov.cn/art/2025/5/19/art_48253_10316874.html",
+      "publicationDate": "2025-05-19",
+      "accessedAt": "2026-11-18",
+      "locator": "加强馆际联合 section",
+      "note": "Names the Zhang Qian stele as a Tai’an Museum holding. The described exhibition is a panel display."
+    },
+    {
+      "id": "src-taian-dai-museum-site",
+      "title": "岱庙（景点介绍）",
+      "publisher": "泰山风景名胜区管理委员会",
+      "url": "https://tsgw.taian.gov.cn/art/2021/6/13/art_363479_10320189.html",
+      "publicationDate": "2021-06-13",
+      "accessedAt": "2026-11-18",
+      "locator": "First paragraph of the site history",
+      "note": "Identifies Dai Temple as the site of the Tai’an Museum. It gives no object-specific coordinates."
+    },
+    {
+      "id": "src-hantai-shimen-thirteen",
+      "title": "石门十三品摩崖石刻",
+      "publisher": "汉中市汉台区人民政府",
+      "url": "https://www.htq.gov.cn/hzshtqzf/zjht/lswh/201707/312e445fc8eb26fd26e26ed8d7f0edf8.shtml",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "Reservoir relocation paragraph and the fifth item in the inscription list",
+      "note": "Identifies the Shimen Song among the inscriptions removed and moved to Hanzhong Museum in the early 1970s."
+    },
+    {
+      "id": "src-nlc-shence-museum",
+      "title": "神策军碑",
+      "publisher": "中国国家图书馆 · 国家典籍博物馆",
+      "url": "https://www.nlc.cn/nmcb/jpww/gengu/20240904_2641037.shtml",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "Object introduction and linked catalogue",
+      "note": "Institutional entry for the surviving rubbing; cites the author and calligrapher."
+    },
+    {
+      "id": "src-shi-dunhuang-rubbings",
+      "title": "敦煌石室发现的四种碑刻古拓——兼谈中国书籍制度的变迁",
+      "publisher": "施安昌 · 故宫博物院网站所载论文",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1887/T00071_00.pdf",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "Page 71, opening paragraph",
+      "note": "Firsthand comparison of four rubbings held in Paris, including the Hot Spring Inscription (P.4508)."
+    },
+    {
+      "id": "src-beilin-caoquan-alternate",
+      "title": "曹全碑（馆方另一条目）",
+      "publisher": "西安碑林博物馆",
+      "url": "https://www.beilin-museum.com/index.php?a=index&aid=2996&c=View&lang=en&m=home",
+      "publicationDate": "2020-08-27",
+      "accessedAt": "2026-11-18",
+      "locator": "Object description, first paragraph",
+      "note": "Gives 186 and a width of 95 cm. The current Chinese catalogue entry gives 185, and the Palace Museum entry gives a width of 123 cm."
+    },
+    {
+      "id": "src-beilin-jingjiao-alternate",
+      "title": "大秦景教流行中国碑（馆方另一条目）",
+      "publisher": "西安碑林博物馆",
+      "url": "https://www.beilin-museum.com/INDEX.PHP?a=index&aid=2999&c=View&m=home",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "Discovery and transfer paragraph",
+      "note": "Gives a discovery year of 1623 in the west of Xi’an and records transfer to Beilin in 1907."
     }
   ]
 }

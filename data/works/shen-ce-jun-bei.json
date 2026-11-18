@@ -14,7 +14,8 @@
       "nameEn": "Cui Xuan",
       "certainty": "documented",
       "sourceRefs": [
-        "src-ccdy-shence"
+        "src-ccdy-shence",
+        "src-nlc-shence-museum"
       ]
     },
     {
@@ -23,7 +24,8 @@
       "nameEn": "Liu Gongquan",
       "certainty": "documented",
       "sourceRefs": [
-        "src-ccdy-shence"
+        "src-ccdy-shence",
+        "src-nlc-shence-museum"
       ]
     }
   ],
@@ -43,7 +45,8 @@
   "script": "楷书",
   "background": "A stele erected inside the palace compound to commemorate an imperial visit to the left Shence Army. Because the site was closed, few rubbings were ever taken; the stone is lost and one volume of a Song mounting survives.",
   "sourceRefs": [
-    "src-ccdy-shence"
+    "src-ccdy-shence",
+    "src-nlc-shence-museum"
   ],
   "review": {
     "state": "draft",

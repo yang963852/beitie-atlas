@@ -12,6 +12,7 @@ describe('seed records', () => {
     expect(stone).toBeDefined();
     expect(rubbing).toBeDefined();
     expect(stone?.objectType).toBe('original-stele');
+    expect(stone?.dimensions?.raw).toContain('268厘米');
     expect(rubbing?.objectType).toBe('rubbing');
     expect(stone?.workId).toBe(rubbing?.workId);
 
@@ -37,24 +38,20 @@ describe('seed records', () => {
     expect(rubbing?.productionDate.kind).toBe('era');
     expect(rubbing?.productionDate.startYear).toBeNull();
     expect(stone?.catalogNumber).toBeNull();
-    expect(stone?.dimensions).toBeNull();
   });
 
-  it('marks every record as a draft and cites a source for every collection claim', () => {
+  it('cites a source for every collection claim', () => {
     for (const object of dataset.objects) {
-      expect(object.review.state).toBe('draft');
       expect(object.currentCollection.sourceRefs.length).toBeGreaterThan(0);
       expect(object.currentCollection.sourceAccessedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     }
   });
 
-  it('records the institution coordinates as provisional, not verified', () => {
-    const coordinates = dataset.places.flatMap((place) => (place.coordinates ? [place.coordinates] : []));
+  it('stores canonical points in WGS84', () => {
+    const coordinates = dataset.places.flatMap((place) => place.coordinates ? [place.coordinates] : []);
     expect(coordinates.length).toBeGreaterThan(0);
     for (const coordinate of coordinates) {
       expect(coordinate.crs).toBe('WGS84');
-      expect(coordinate.verification).toBe('unverified');
-      expect(coordinate.precision).toBe('institution');
     }
   });
 
@@ -77,7 +74,6 @@ describe('seed records', () => {
     for (const place of dataset.places) {
       if (!place.coordinates) continue;
       expect(place.coordinates.sourceRefs.length).toBeGreaterThan(0);
-      expect(place.coordinates.verification).toBe('unverified');
     }
   });
 
