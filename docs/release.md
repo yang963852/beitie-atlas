@@ -29,7 +29,7 @@ does **not** approve publication and does not deploy.
 Any failure prints the reason, deletes `dist/`, and exits non-zero. A failed release therefore
 leaves nothing that could be uploaded by mistake.
 
-## Commands and expected outcomes today
+## Commands and expected outcomes
 
 ```bash
 npm run check:release   # exits 1 while the corpus contains drafts
@@ -37,6 +37,9 @@ npm run release         # exits 1 at step 2; dist/ is removed
 npm run build           # succeeds; preview artifact only
 npm run preview         # serves the preview build locally
 ```
+
+The founding second edition passed the strict gate and was deployed in [delivery 021](delivery-021.md).
+Future changes that introduce drafts will still block formal publication.
 
 The rejection is the correct behaviour while the records are drafts. Do not mark records
 `reviewed` to get a green build; editorial review is a separate gate.

@@ -26,7 +26,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 
 | 020 | Fix artifact input handling and basemap recovery | Accepted — owner authorized the merge; no independent implementation review | 112 tests; subpath preview and draft gate verified locally; formal release remains separate. See [task 020](../tasks/020-artifact-and-basemap-followup.md) and [delivery 020](delivery-020.md). |
 
-| 021 | Publish the founding second edition | In progress — owner approved the complete corpus; packaging and host verification pending | See [task 021](../tasks/021-founding-second-edition.md) and [delivery 021](delivery-021.md). |
+| 021 | Publish the founding second edition | Delivered — owner-approved corpus; Sites version 5 deployed, mainland access still limited | Formal release validated; 37 works and 40 objects; see [task 021](../tasks/021-founding-second-edition.md) and [delivery 021](delivery-021.md). |
 
 ## Iteration loop
 
