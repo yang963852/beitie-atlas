@@ -7,17 +7,17 @@
     "en": "Wild Goose Pagoda Preface, rubbing"
   },
   "productionDate": {
-    "kind": "unknown",
+    "kind": "era",
     "startYear": null,
     "startMonth": null,
     "endYear": null,
     "endMonth": null,
-    "eraLabel": null,
-    "original": null,
-    "certainty": "unknown",
+    "eraLabel": "明",
+    "original": "明拓本",
+    "certainty": "documented",
     "note": null
   },
-  "catalogNumber": null,
+  "catalogNumber": "新00045571",
   "dimensions": null,
   "survivalStatus": "surviving",
   "relationships": [],

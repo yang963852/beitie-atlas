@@ -17,8 +17,11 @@
     "certainty": "documented",
     "note": null
   },
-  "catalogNumber": null,
-  "dimensions": null,
+  "catalogNumber": "新00068876",
+  "dimensions": {
+    "raw": "纵28厘米，横190厘米",
+    "note": null
+  },
   "survivalStatus": "surviving",
   "relationships": [],
   "currentCollection": {

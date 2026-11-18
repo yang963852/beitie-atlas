@@ -13,12 +13,15 @@
     "endYear": null,
     "endMonth": null,
     "eraLabel": "清",
-    "original": null,
+    "original": "清拓本",
     "certainty": "documented",
     "note": null
   },
   "catalogNumber": "新00046539",
-  "dimensions": null,
+  "dimensions": {
+    "raw": "140.5×72.0厘米",
+    "note": null
+  },
   "survivalStatus": "surviving",
   "relationships": [],
   "currentCollection": {

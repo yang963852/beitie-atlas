@@ -3,8 +3,8 @@
   "workId": "lanting",
   "objectType": "manuscript-copy",
   "titles": {
-    "zh": "兰亭序（唐冯承素摹本）",
-    "en": "Preface to the Orchid Pavilion, manuscript copy"
+    "zh": "兰亭序（唐摹神龙本，传冯承素摹）",
+    "en": "Orchid Pavilion Preface, Tang copy traditionally attributed to Feng Chengsu"
   },
   "productionDate": {
     "kind": "era",
@@ -17,8 +17,11 @@
     "certainty": "documented",
     "note": null
   },
-  "catalogNumber": null,
-  "dimensions": null,
+  "catalogNumber": "故00002597",
+  "dimensions": {
+    "raw": "纵24.5厘米，横69.9厘米",
+    "note": null
+  },
   "survivalStatus": "surviving",
   "relationships": [],
   "currentCollection": {
@@ -39,9 +42,11 @@
     "noteZh": "馆藏著录待编辑复核。"
   },
   "notes": [
-    "The current gallery and accession date have not been verified."
+    "The current gallery and accession date have not been verified.",
+    "The museum questions the traditional attribution to Feng Chengsu and the dating of the Shenlong seal."
   ],
   "notesZh": [
-    "展厅与入藏日期待考。"
+    "展厅与入藏日期待考。",
+    "故宫博物院对冯承素摹的传统归名及卷首神龙印的年代均提出疑问。"
   ]
 }
