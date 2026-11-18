@@ -16,7 +16,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 010 | Tianditu key self-check and setup runbook | Delivered — 2026-11-18; awaiting independent review | 94 tests; `npm run check:map-key` classifies 301001 / 301013 / gateway codes without printing the key; whitelist format corrected; live rendering still needs an owner key; see map-setup.md |
 | 011 | Expand period coverage and connect the atlas to Codex Sites | Accepted — preview deployed 2026-11-18; two P2 findings addressed; merged in PR #1 | 36 objects across 12 periods, 4 points for 22 objects. See [PR #1](https://github.com/yang963852/beitie-atlas/pull/1) for the independent review, checks, and merge, and [delivery 011](delivery-011.md) for browser verification. |
 | 012 | Publish the GitHub Pages project overview | Superseded — by 014 | See [task 012](../tasks/012-github-pages-overview.md) and [delivery 012](delivery-012.md). |
-| 013 | Audit the corpus for public atlas publication | In progress — evidence review; 69 records still draft | See [task 013](../tasks/013-public-corpus-audit.md) and [delivery 013](delivery-013.md). |
+| 013 | Audit the corpus for public atlas publication | Accepted — owner approved the expanded corpus in 021 | See [task 013](../tasks/013-public-corpus-audit.md), [delivery 013](delivery-013.md), and [delivery 021](delivery-021.md). |
 | 014 | Move the public overview to Codex Sites | Accepted — merged by the owner in PR #3 after a clean review; that review was Codex reviewing Codex, so an independent review of this change is still open | See [task 014](../tasks/014-sites-public-overview.md) and [delivery 014](delivery-014.md). |
 | 015 | Restore the interactive atlas on Codex Sites | Delivered — Tianditu build deployed as Site version 4; rendered-tile inspection still pending | See [task 015](../tasks/015-restore-atlas-site.md) and [delivery 015](delivery-015.md). |
 | 016 | Organize the GitHub project home | Accepted — documentation merged by the owner at `b85c0f4`; no code changed | See [task 016](../tasks/016-github-project-home.md) and [delivery 016](delivery-016.md). |
@@ -25,6 +25,8 @@ Updated: 2026-11-18. One active implementation task at a time.
 | 019 | Report a refused basemap and answer the stack question | Accepted — merged by the owner's standing decision for direct merges, without an independent review | Refused tiles now produce a notice and the coordinate schematic; major dependency bumps stopped; stack rationale and growth table in the engineering plan; live tile-refusal check not run; see [task 019](../tasks/019-tile-failure-and-stack-rationale.md) and [delivery 019](delivery-019.md). |
 
 | 020 | Fix artifact input handling and basemap recovery | Accepted — owner authorized the merge; no independent implementation review | 112 tests; subpath preview and draft gate verified locally; formal release remains separate. See [task 020](../tasks/020-artifact-and-basemap-followup.md) and [delivery 020](delivery-020.md). |
+
+| 021 | Publish the founding second edition | In progress — owner approved the complete corpus; packaging and host verification pending | See [task 021](../tasks/021-founding-second-edition.md) and [delivery 021](delivery-021.md). |
 
 ## Iteration loop
 

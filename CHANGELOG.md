@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.0-alpha.2 — Founding second edition (2026-11-18)
+
+The owner approved 37 works and 40 physical objects for publication. The edition retains the documented uncertainties and includes the four additional steles, reliable basemap fallback and recovery, and consistent artifact paths across preview and release builds.
+
 ## Unreleased — task 019 refused basemap and stack rationale (2026-11-18)
 
 A map whose tiles are refused now says so. The Tianditu SDK is silent when every tile returns 403,

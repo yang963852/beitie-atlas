@@ -62,9 +62,9 @@
     }
   ],
   "review": {
-    "state": "draft",
-    "note": "Draft object record from a local-history page. The fracture history is summarized in one clause.",
-    "noteZh": "依据地方志平台页面整理的草稿；断裂经过仅一句带过。"
+    "state": "reviewed",
+    "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from a local-history page. The fracture history is summarized in one clause.",
+    "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据地方志平台页面整理的草稿；断裂经过仅一句带过。"
   },
   "notes": [
     "The page gives dimensions, line count, and an approximate surviving character count, but no condition survey.",
