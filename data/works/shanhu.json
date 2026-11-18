@@ -1,0 +1,47 @@
+{
+  "id": "shanhu",
+  "titles": {
+    "zh": "珊瑚帖",
+    "en": "Coral Letter"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "米芾",
+      "nameEn": "Mi Fu",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-dpm-231255"
+      ],
+      "note": null,
+      "noteZh": null
+    }
+  ],
+  "studyCategory": "tie",
+  "dynastyId": "northern-song",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "北宋",
+    "original": "北宋",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "行书",
+  "background": "米芾与友人谈收藏，写到一枝珊瑚笔架，索性随手画在信里。临到文字与小图相接处，还能看见这封信原是怎样写成的。",
+  "sourceRefs": [
+    "src-dpm-231255"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
+    "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+  },
+  "notes": [],
+  "notesZh": []
+}

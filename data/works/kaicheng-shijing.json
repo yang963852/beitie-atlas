@@ -33,6 +33,7 @@
       "noteZh": "由艾居晦、陈玠、段绛等四人书石；所引页面点名校书者为艾、陈二人。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -47,6 +48,7 @@
     "note": null
   },
   "script": "楷书",
+  "backgroundZh": "唐人将十二部儒家经典刻上石面，共用一百一十四石。经籍于是既可传抄，也可就石校读。西安碑林将这座石上书库收入第一展室。",
   "background": "The surviving Tang stone edition of twelve Confucian classics, carved on 114 stones and kept in the first exhibition room of the Beilin. The museum describes it as the largest surviving stone “library” of its kind.",
   "sourceRefs": [
     "src-beilin-kaicheng"

@@ -19,6 +19,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -33,6 +34,7 @@
     "note": null
   },
   "script": "行书",
+  "backgroundZh": "唐太宗为骊山温泉作铭。敦煌传出的一件唐拓今藏法国国家图书馆，编号P.4508。",
   "background": "The emperor’s inscription on the hot spring at Lishan. A Tang rubbing from Dunhuang is held in the Bibliothèque nationale de France and catalogued as P.4508.",
   "sourceRefs": [
     "src-thepaper-wenquanming",

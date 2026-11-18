@@ -10,9 +10,11 @@ import type { Strings } from './en';
 export const zhStrings: Strings = {
   siteTitleZh: '碑帖之间',
   siteTitleEn: 'Between Steles',
-  tagline: '从石上刻辞到纸上尺牍，读清代及以前的传世书法。',
+  tagline: '案头所临，如今藏在何处？',
   taglineDetail:
-    '同一件作品可能留下多处实物，分藏各地。每件实物各自记录现藏依据与有据可查的流转，互不借用。',
+    '循地图访清代及以前的传世碑帖，辨原石、墨迹、拓本与摹本，读一件书迹辗转至今的故事。',
+  studyFilter: '按作品类别筛选',
+  studyLabels: { all: '全部', bei: '碑', tie: '帖' },
   statusBadge: '预览版',
   statusBadgeRelease: '正式版',
   draftNotice: '此预览版可能包含仍待审核的草稿。请以每条记录的审核状态与引证为准。',
@@ -25,7 +27,7 @@ export const zhStrings: Strings = {
   resultsHeading: '记录',
   resultsCount: (shown: number, total: number) => `${shown} / ${total} 条`,
   searchLabel: '搜索记录',
-  searchPlaceholder: '名称、别名或馆藏编号',
+  searchPlaceholder: '作品、书家或馆藏编号',
   clearSearch: '清除',
   noResults: '没有符合这个条件的记录。',
   emptyCorpus: '暂无可显示的记录。',
@@ -37,7 +39,7 @@ export const zhStrings: Strings = {
   backToRecords: '返回记录',
 
   detailEmptyTitle: '请选择一件实物',
-  detailEmptyBody: '从左侧记录中选择一件实物，查看它的现藏依据、有据可查的流转与出处。',
+  detailEmptyBody: '从左侧记录中选择一件实物，查看它的现藏依据、递藏与流传与出处。',
   detailHeading: '实物详情',
   workLabel: '所属作品',
   catalogueLabel: '馆藏编号',
@@ -49,7 +51,7 @@ export const zhStrings: Strings = {
   collectionHeading: '现藏依据',
   collectionChecked: (date: string) => `来源查阅于 ${date}`,
   collectionAssertionAsOf: (date: string) => `来源所述时间：${date}`,
-  collectionNotStated: '本条记录没有记载现藏信息。',
+  collectionNotStated: '现藏何处，尚待访考。',
   locationKindLabels: {
     'collection-institution': '收藏机构',
     'in-situ': '原址保存',
@@ -57,9 +59,9 @@ export const zhStrings: Strings = {
     unknown: '地点不详',
   },
 
-  provenanceHeading: '有据可查的流转',
-  provenanceIntro: '只列出来源明确记载的移动。中间的保管经过与没有记录的时期保持空白。',
-  provenanceEmpty: '本条记录没有保管事件的记载。它的历史不根据相关实物推断。',
+  provenanceHeading: '递藏与流传',
+  provenanceIntro: '循著录与题跋，看这件实物曾在何人手中、何处停留。其间缺环，留待考证。',
+  provenanceEmpty: '所引资料尚未记下这件实物的递藏经过。',
   eventPlaceUnknown: '地点未记载',
   eventCertaintyLabel: '确定性',
   eventSourcesLabel: '出处',

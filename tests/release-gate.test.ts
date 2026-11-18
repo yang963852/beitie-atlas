@@ -54,6 +54,7 @@ function fixture() {
         },
       ],
       compositionDate: date,
+      studyCategory: 'bei',
       dynastyId: 'tang',
       dynastyQualifier: null,
       script: null,

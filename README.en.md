@@ -4,13 +4,13 @@
 
 **[Open the online atlas](https://beitie-atlas.partedlute2.chatgpt.site/)** · [Report an issue or suggest a source](https://github.com/yang963852/beitie-atlas/issues)
 
-A textual catalogue of Chinese calligraphic inscriptions, modelbooks and ink manuscripts through the Qing dynasty. Browse by period and inspect the date, holding, provenance and sources of each surviving witness.
+Between Steles is a companion for calligraphy practice. The stone of the Xuanmi Pagoda Stele is in Xi’an, while an early Ming rubbing is in Beijing. Follow the work you copy to its surviving witnesses, find their documented holdings on the map and read how each passed from hand to hand.
 
-The cutoff applies to the composition. Later rubbings and copies retain their own production dates. Each record carries its editorial status.
+Browse All, Inscriptions or Modelbooks and search by calligrapher. Rubbings follow the category of the represented work. Each witness keeps its own date, holding and history.
 
-![Physical witness detail in the Orchid Pavilion Preface preview](docs/screenshots/024-detail-1440.png)
+![Desktop catalogue filtered to modelbooks](docs/screenshots/026-1440.png)
 
-Task 024 local preview. Sites v7 is the public preview and v5 is the latest approved edition. [Versions and handoff](docs/START-HERE.md) · [Editorial review](docs/editorial-review-025.md)
+Task 026 desktop preview. [Versions and handoff](docs/START-HERE.md) · [Editorial review](docs/editorial-review-025.md)
 
 ## Run locally
 

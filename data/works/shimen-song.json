@@ -16,6 +16,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "eastern-han",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -30,6 +31,7 @@
     "note": null
   },
   "script": "隶书",
+  "backgroundZh": "东汉建和二年（148），汉中太守王升撰颂，表彰杨孟文开通石门之功。刻辞原在崖壁，后连石凿取，移藏汉中市博物馆。",
   "background": "A Eastern Han cliff inscription of 148 by the Hanzhong governor Wang Sheng, praising Yang Mengwen for opening the Shimen passage. Cut from the cliff and moved into the Hanzhong Museum.",
   "sourceRefs": [
     "src-cssn-shaanxi-beike",

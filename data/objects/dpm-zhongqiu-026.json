@@ -1,0 +1,75 @@
+{
+  "id": "dpm-zhongqiu-026",
+  "workId": "zhongqiu",
+  "objectType": "manuscript-copy",
+  "titles": {
+    "zh": "《中秋帖》（传王献之，后世临本）",
+    "en": "Mid-Autumn Letter, manuscript copy"
+  },
+  "productionDate": {
+    "kind": "unknown",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": null,
+    "certainty": "unknown",
+    "note": null
+  },
+  "catalogNumber": "新00145170",
+  "dimensions": {
+    "raw": "纵27厘米，横11.9厘米",
+    "note": null
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-palace-museum",
+    "sourceRefs": [
+      "src-dpm-228204"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": null,
+    "noteZh": null
+  },
+  "provenanceEvents": [
+    {
+      "id": "event-zhongqiu-1",
+      "objectId": "dpm-zhongqiu-026",
+      "type": "custody",
+      "date": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "清乾隆时期",
+        "original": "清乾隆时期",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "The Qianlong emperor counted the scroll among the Three Rarities.",
+      "summaryZh": "乾隆将此卷与《快雪时晴帖》《伯远帖》并列，合称“三希”。",
+      "sourceRefs": [
+        "src-dpm-228204"
+      ],
+      "certainty": "documented"
+    }
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
+    "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+  },
+  "notes": [
+    "The scroll is unsigned. Its traditional name and suggested Song copyist are distinct attributions."
+  ],
+  "notesZh": [
+    "卷上无署款。旧题王献之，宋人临写之说另有考证，摹者尚难确指。"
+  ]
+}

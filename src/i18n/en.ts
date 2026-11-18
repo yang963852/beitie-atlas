@@ -12,9 +12,11 @@
 export const enStrings = {
   siteTitleZh: '碑帖之间',
   siteTitleEn: 'Between Steles',
-  tagline: 'Chinese calligraphy through the Qing dynasty, from stone inscriptions to handwritten letters.',
+  tagline: 'Where is the work you practise from today?',
   taglineDetail:
-    'One work may survive as several physical objects in different places. Each object keeps its own collection evidence and its own dated movements.',
+    'Trace calligraphy through the Qing dynasty. Find the stone, manuscript, rubbing or copy on the map and follow its recorded journey.',
+  studyFilter: 'Filter by work category',
+  studyLabels: { all: 'All', bei: 'Inscriptions', tie: 'Modelbooks' },
   statusBadge: 'Preview',
   statusBadgeRelease: 'Release',
   draftNotice:

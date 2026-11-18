@@ -4,6 +4,8 @@ Owner direction, 2026-11-18. The catalogue covers calligraphic inscriptions, mod
 
 ## Product contract
 
+The catalogue serves people learning calligraphy by copying historical models. It connects each model to a surviving stone, impression, manuscript or copy, its documented holding and its transmission. Research begins with named hands, then follows institutional catalogues to identifiable witnesses. Work.studyCategory files inscriptions as bei and manuscript traditions or engraved modelbooks as tie. Every physical witness inherits its work’s filing, including rubbings.
+
 Visitors can identify a surviving physical object, find its documented collection or in-situ location, read its creation and provenance history, and inspect the evidence. The site does not promise exhaustive coverage, live location, or present-day exhibition availability.
 
 The text record leads with identity, date, script and documented holding. Physical dimensions and catalogue numbers remain unknown until an institution or consulted catalogue supports them.

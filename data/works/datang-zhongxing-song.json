@@ -28,6 +28,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -42,6 +43,7 @@
     "note": null
   },
   "script": "楷书",
+  "backgroundZh": "元结撰颂，记平定安史之乱；颜真卿六十三岁书之，文字镌在浯溪崖壁。湖南方面的著录推此刻为现存“三绝”碑刻之首。",
   "background": "Yuan Jie’s poem on the suppression of the An Lushan rebellion, cut into a cliff at Wuxi and written out by Yan Zhenqing at 63. The provincial page calls it the foremost of the surviving “three excellences” inscriptions.",
   "sourceRefs": [
     "src-hunan-wuxi",

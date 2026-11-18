@@ -1,5 +1,5 @@
 import { getPlace, getWork } from './data';
-import type { ObjectRecord } from './types';
+import type { ObjectRecord, StudyFilter } from './types';
 
 /** Lowercase, strip diacritics and collapses whitespace. Chinese text is matched as-is. */
 export function normalize(value: string): string {
@@ -38,6 +38,8 @@ export function matchesQuery(object: ObjectRecord, query: string): boolean {
   return haystack.some((value) => normalize(value).includes(needle));
 }
 
-export function filterObjects(objects: ObjectRecord[], query: string): ObjectRecord[] {
-  return objects.filter((object) => matchesQuery(object, query));
+export function filterObjects(objects: ObjectRecord[], query: string, category: StudyFilter = 'all'): ObjectRecord[] {
+  return objects.filter((object) =>
+    (category === 'all' || getWork(object.workId)?.studyCategory === category) && matchesQuery(object, query),
+  );
 }

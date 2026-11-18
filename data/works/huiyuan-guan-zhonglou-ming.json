@@ -25,6 +25,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -39,6 +40,7 @@
     "note": null
   },
   "script": "楷书",
+  "backgroundZh": "这方横石记一座唐代道观的旧事。历代金石书中未见著录，直至1986年才在西安出土。馆方定其为柳公权晚年书迹。",
   "background": "A horizontal slab inscribed with the history of a Tang abbey, unearthed in Xi’an in 1986 and previously unknown to epigraphic catalogues. The museum treats it as a late Liu Gongquan autograph.",
   "sourceRefs": [
     "src-beilin-huiyuan"

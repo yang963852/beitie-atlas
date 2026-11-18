@@ -1,11 +1,13 @@
 import { getPlace, groupObjectsByDynasty } from '../domain/data';
-import type { ObjectRecord } from '../domain/types';
+import type { ObjectRecord, StudyFilter } from '../domain/types';
 import { useLocale, type Strings } from '../i18n';
 
 interface ResultsListProps {
   objects: ObjectRecord[];
   total: number;
   selectedId: string | null;
+  category: StudyFilter;
+  onCategoryChange: (value: StudyFilter) => void;
   query: string;
   onQueryChange: (value: string) => void;
   onSelect: (id: string) => void;
@@ -31,6 +33,8 @@ export function ResultsList({
   selectedId,
   query,
   onQueryChange,
+  category,
+  onCategoryChange,
   onSelect,
 }: ResultsListProps) {
   const { locale, strings } = useLocale();
@@ -42,6 +46,15 @@ export function ResultsList({
           {strings.resultsHeading}
         </h2>
         <span className="results__count">{strings.resultsCount(objects.length, total)}</span>
+      </div>
+
+      <div className="study-filter" role="group" aria-label={strings.studyFilter}>
+        {(['all', 'bei', 'tie'] as const).map((value) => (
+          <button key={value} type="button" aria-pressed={category === value}
+            onClick={() => onCategoryChange(value)}>
+            {strings.studyLabels[value]}
+          </button>
+        ))}
       </div>
 
       <div className="search">

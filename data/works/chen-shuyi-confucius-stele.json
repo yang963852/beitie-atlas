@@ -21,6 +21,7 @@
       "noteZh": "所引条目未给出撰文者或书丹者。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "sui",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -35,6 +36,7 @@
     "note": null
   },
   "script": null,
+  "backgroundZh": "馆方将此碑列入隋代藏石。碑题所记，是修孔庙一事。",
   "background": "The stele is listed in the gallery’s Sui holdings under its temple-repair title.",
   "sourceRefs": [
     "src-qufu-chen-shuyi"

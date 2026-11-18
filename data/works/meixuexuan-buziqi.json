@@ -34,6 +34,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "ming",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -48,6 +49,7 @@
     "note": null
   },
   "script": "草书",
+  "backgroundZh": "明人以草书镌录一篇前人文章。馆方著录将原文归于朱熹，文章与眼前的刻石分属两个时代。",
   "background": "The Ming cursive inscription presents an earlier essay attributed by the museum catalogue to Zhu Xi.",
   "sourceRefs": [
     "src-beilin-meixuexuan"

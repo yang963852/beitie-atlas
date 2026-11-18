@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -31,6 +32,7 @@
     "note": "Date as given in the Palace Museum catalogue entry for the rubbing."
   },
   "script": null,
+  "backgroundZh": "颜真卿为颜勤礼撰文并书，故宫著录系于大历十四年（779）。1922年，西安修缮旧巡抚署时碑石出土，后藏西安碑林。故宫另藏民国拓本一册，入藏与递传须另案考察。",
   "background": "A Tang inscription dated to 779 in the Palace Museum's catalogue entry, which names 颜真卿 (Yan Zhenqing) as both author and calligrapher. The stone was unearthed in 1922 during repair work at the former provincial governor's compound in Chang'an (Xi'an), and the same entry describes it as held at the Xi'an Beilin Museum. A Republican-era rubbing in the Palace Museum is catalogued as a separate physical object.",
   "sourceRefs": [
     "src-dpm-yan-qinli-rubbing",

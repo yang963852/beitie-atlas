@@ -434,6 +434,9 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
     }
     checkDate(entry.compositionDate, `${path}.compositionDate`, true);
 
+    if (entry.studyCategory !== 'bei' && entry.studyCategory !== 'tie') {
+      error('INVALID_STUDY_CATEGORY', `${path}.studyCategory`, 'Classify the represented work as bei or tie.');
+    }
     if (!isDynastyId(entry.dynastyId)) {
       error(
         'DYNASTY',
@@ -501,6 +504,9 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
       });
     } else {
       error('MISSING_FIELD', `${path}.attribution`, 'attribution must be an array.');
+    }
+    if (entry.backgroundZh !== undefined && !isNonEmptyString(entry.backgroundZh)) {
+      error('INVALID_BACKGROUND', `${path}.backgroundZh`, 'Chinese background must contain text.');
     }
     if (!isNonEmptyString(entry.background)) {
       error('MISSING_FIELD', `${path}.background`, 'Work needs a short background text.');

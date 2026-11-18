@@ -19,6 +19,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -33,6 +34,7 @@
     "note": null
   },
   "script": "行书",
+  "backgroundZh": "李邕叙长沙麓山寺自晋至唐的沿革。文、书、刻素有“三绝”之称。元丰三年（1080），米芾来此学书，名字留在了碑阴。",
   "background": "Li Yong’s account of a Changsha monastery from its Jin-dynasty founding to the Tang, praised as a “three excellences” stele for text, calligraphy, and cutting. Mi Fu studied it in 1080 and left his name on the reverse.",
   "sourceRefs": [
     "src-csjypt-lushan"

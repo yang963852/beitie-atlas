@@ -18,6 +18,7 @@
       "noteZh": "故宫条目载相传为皇象书，并指出无确据。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "three-kingdoms",
   "dynastyQualifier": "孙吴",
   "compositionDate": {
@@ -32,6 +33,7 @@
     "note": null
   },
   "script": null,
+  "backgroundZh": "吴人刻石记祥瑞。故宫著录记原石毁于嘉庆十年（1805）；今日读此碑文，须辨传本。",
   "background": "The Wu inscription presents an omen. The Palace Museum records the destruction of the original stone in 1805.",
   "sourceRefs": [
     "src-dpm-tianfa"

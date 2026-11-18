@@ -20,6 +20,7 @@
       "noteZh": "所引条目未给出撰文者或书丹者。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "western-han",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -34,6 +35,7 @@
     "note": null
   },
   "script": "篆书",
+  "backgroundZh": "这方题刻记下营造北阶一事，刻辞留有纪年，与曲阜鲁灵光殿有关。",
   "background": "The dated inscription records the making of the northern stair and is associated with the Lingguang Palace at Qufu.",
   "sourceRefs": [
     "src-qufu-beibi"

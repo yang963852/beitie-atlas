@@ -26,6 +26,7 @@ function baseDataset(): Mutable {
             sourceRefs: ['src-1'],
           },
         ],
+        studyCategory: 'bei',
         dynastyId: 'tang',
         dynastyQualifier: null,
         compositionDate: {

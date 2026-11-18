@@ -40,6 +40,7 @@
       "noteZh": "故吏韦萌等立石，碑阴列捐资题名四十一人。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "eastern-han",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -54,6 +55,7 @@
     "note": null
   },
   "script": "隶书",
+  "backgroundZh": "东汉中平三年（186），为县令张迁立碑。泰安市博物馆的活动记录将原石列于馆藏。",
   "background": "An Eastern Han stele dated to 186 for the magistrate Zhang Qian. A Tai’an Museum activity report identifies the stone among its holdings.",
   "sourceRefs": [
     "src-ltfc-zhuyunge",

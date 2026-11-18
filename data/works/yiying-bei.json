@@ -19,6 +19,7 @@
       "noteZh": "两处所引页面均记此碑无撰书人姓名。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "eastern-han",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -33,6 +34,7 @@
     "note": null
   },
   "script": "隶书",
+  "backgroundZh": "东汉元嘉三年（153），碑记鲁相乙瑛请为孔庙置守庙人之事。原石藏于曲阜汉魏碑刻陈列馆。",
   "background": "An Eastern Han stele of 153 recording the request by the chancellor of Lu, Yi Ying, to appoint a keeper for the Confucius Temple. Held in the Qufu Han–Wei Stele Gallery.",
   "sourceRefs": [
     "src-confuciusmuseum-binke",

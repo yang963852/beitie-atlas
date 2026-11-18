@@ -1,0 +1,50 @@
+{
+  "id": "dpm-mengzhao-026",
+  "workId": "mengzhao",
+  "objectType": "ink-manuscript",
+  "titles": {
+    "zh": "《蒙诏帖》（旧题柳公权）",
+    "en": "Imperial Summons Letter, ink manuscript"
+  },
+  "productionDate": {
+    "kind": "unknown",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": null,
+    "certainty": "unknown",
+    "note": null
+  },
+  "catalogNumber": "故00004528",
+  "dimensions": {
+    "raw": "纵26.8厘米，横57.4厘米",
+    "note": null
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-palace-museum",
+    "sourceRefs": [
+      "src-dpm-231095"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": null,
+    "noteZh": null
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
+    "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+  },
+  "notes": [
+    "The wording differs from the engraved Hanlin Letter. The hand and date of this sheet remain uncertain."
+  ],
+  "notesZh": [
+    "此卷与刻帖所收《翰林帖》文辞有异，执笔者及书写年代均待考。"
+  ]
+}

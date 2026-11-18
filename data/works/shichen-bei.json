@@ -19,6 +19,7 @@
       "noteZh": "两处所引页面均记此碑无撰书人姓名。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "eastern-han",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -33,6 +34,7 @@
     "note": "后碑刻于建宁元年（168）四月，与前碑同石。"
   },
   "script": "隶书",
+  "backgroundZh": "此碑记鲁相史晨祭孔之事。一面刻于建宁二年（169），另一面题建宁元年（168）。两面纪年相映，今石藏曲阜汉魏碑刻陈列馆。",
   "background": "An Eastern Han stele of 169 recording the chancellor Shi Chen’s sacrifices at the Confucius Temple, with a second inscription on the reverse dated 168. Held in the Qufu Han–Wei Stele Gallery.",
   "sourceRefs": [
     "src-confuciusmuseum-binke",

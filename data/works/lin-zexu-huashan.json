@@ -16,6 +16,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "qing",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -30,6 +31,7 @@
     "note": null
   },
   "script": "行书",
+  "backgroundZh": "林则徐赴伊犁途中游华山，作诗并亲书。诗题所记，也是行旅中一段可考的停留。",
   "background": "Lin Zexu composed and wrote the poem during his visit to Mount Hua on the journey to Ili.",
   "sourceRefs": [
     "src-beilin-lin-zexu"

@@ -18,6 +18,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "northern-and-southern",
   "dynastyQualifier": "南朝梁",
   "compositionDate": {
@@ -32,6 +33,7 @@
     "note": "The date is traditional; the inscription itself carries a cyclical year but no reign title or name."
   },
   "script": "楷书",
+  "backgroundZh": "这是一篇刻在崖上的悼鹤铭。作者署别号，年代用干支；石曾坠入长江，后以残块捞起。残字犹存，遂为后世习大字者所重。",
   "background": "A cliff elegy for a crane, signed with a sobriquet rather than a name, and dated by a cyclical year. It fell into the Yangtze, was recovered in fragments, and became the model for large-character calligraphy.",
   "sourceRefs": [
     "src-cyol-yihe",

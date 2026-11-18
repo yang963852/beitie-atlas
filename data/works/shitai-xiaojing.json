@@ -29,6 +29,7 @@
       "noteZh": "时为太子的李亨（后为唐肃宗）篆额。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -43,6 +44,7 @@
     "note": null
   },
   "script": "隶书（八分）",
+  "backgroundZh": "玄宗亲为《孝经》作序、注解并以隶书写经，李亨篆额。三十五方石合为一碑，下承三层石台，故名《石台孝经》。",
   "background": "The emperor’s own preface, commentary, and clerical-script text of the Classic of Filial Piety, assembled from 35 blocks into a stele with a three-tiered base. The heading in seal script is by Li Heng (Emperor Suzong).",
   "sourceRefs": [
     "src-beilin-shitai"

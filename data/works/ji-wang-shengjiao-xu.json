@@ -16,6 +16,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -30,6 +31,7 @@
     "note": null
   },
   "script": "行书（集字）",
+  "backgroundZh": "碑载唐太宗所撰序文与高宗所作记文。怀仁从王羲之书迹中集字成篇，至咸亨三年（672）刻石。今天临写的，是晋人笔迹经唐人选集、布置而成的一通碑。",
   "background": "A Tang stele of 672 whose characters were assembled from Wang Xizhi’s calligraphy by the monk Huai Ren, carrying the preface by Taizong and the record by Gaozong.",
   "sourceRefs": [
     "src-beilin-shengjiaoxu"

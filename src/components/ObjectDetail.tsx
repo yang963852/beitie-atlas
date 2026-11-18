@@ -106,6 +106,7 @@ interface ObjectDetailProps {
 export function ObjectDetail({ object, onBack, onShowMap, onContribute }: ObjectDetailProps) {
   const { locale, strings } = useLocale();
   const work = getWork(object.workId);
+  const background = locale === 'zh' ? work?.backgroundZh ?? work?.background : work?.background;
   const place = getPlace(object.currentCollection.placeId);
   const collection = object.currentCollection;
 
@@ -187,15 +188,15 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute }: Object
       {/* The work record has always carried a background sentence; no view
           rendered it, which made recorded prose dead data. It is shown as
           written, with its own language, rather than translated at render. */}
-      {work ? (
+      {background ? (
         <section className="section" aria-labelledby="background-heading">
           <h3 id="background-heading" className="section__heading">
             {strings.backgroundHeading}
           </h3>
-          <p className="section__prose" lang={detectLang(work.background)}>
-            {work.background}
+          <p className="section__prose" lang={detectLang(background)}>
+            {background}
           </p>
-          {detectLang(work.background) !== (locale === 'zh' ? 'zh-Hans' : 'en') ? (
+          {detectLang(background) !== (locale === 'zh' ? 'zh-Hans' : 'en') ? (
             <p className="section__meta">{strings.backgroundLanguageNote}</p>
           ) : null}
         </section>

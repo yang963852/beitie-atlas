@@ -19,6 +19,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -33,6 +34,7 @@
     "note": null
   },
   "script": "行书",
+  "backgroundZh": "唐太宗自述晋祠掌故与唐室开国之事，以行书入石。碑阳是帝王手笔，碑阴还留有七位随臣的署名。",
   "background": "The emperor’s own account of the Jin shrine and of the Tang founding, carved in running script — an early example of running script on a stele. Seven attending ministers signed the reverse.",
   "sourceRefs": [
     "src-taiyuan-jinci"

@@ -19,6 +19,7 @@
       "noteZh": "两处所引页面均记此碑无撰书人姓名。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "eastern-han",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -33,6 +34,7 @@
     "note": null
   },
   "script": "隶书",
+  "backgroundZh": "东汉永寿二年（156），碑记鲁相韩敕修孔庙、铸礼器之事。石今藏曲阜汉魏碑刻陈列馆。",
   "background": "An Eastern Han stele of 156 recording the chancellor Han Chi’s repair of the Confucius Temple and the casting of ritual vessels. Held in the Qufu Han–Wei Stele Gallery.",
   "sourceRefs": [
     "src-confuciusmuseum-binke",

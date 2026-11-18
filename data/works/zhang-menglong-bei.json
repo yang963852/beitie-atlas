@@ -20,6 +20,7 @@
       "noteZh": "所引条目未给出撰文者或书丹者。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "northern-and-southern",
   "dynastyQualifier": "北魏",
   "compositionDate": {
@@ -34,6 +35,7 @@
     "note": null
   },
   "script": "正书",
+  "backgroundZh": "碑文颂张猛龙治郡之绩，其中尤记兴学之事。",
   "background": "The stele commends Zhang Menglong’s local administration and promotion of education.",
   "sourceRefs": [
     "src-qufu-zhang-menglong"

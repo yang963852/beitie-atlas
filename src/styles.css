@@ -17,7 +17,7 @@
   --ink: #1d1d1f;
   --ink-2: #4b4b4f;
   --ink-3: #6e6e73;
-  --ink-4: #86868b;
+  --ink-4: #68686e;
 
   --line: #d9d9de;
   --line-soft: #ebebef;
@@ -85,22 +85,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* A single soft blue field behind the header; no texture, no decoration that
-   competes with the records. */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0 0 auto 0;
-  height: 420px;
-  background: radial-gradient(
-    130% 100% at 50% 0%,
-    rgba(0, 113, 227, 0.09) 0%,
-    rgba(0, 113, 227, 0.03) 42%,
-    transparent 72%
-  );
-  pointer-events: none;
-  z-index: 0;
-}
 
 a {
   color: var(--accent);
@@ -323,8 +307,9 @@ a {
 
 .intro__notice {
   margin: 6px 0 0;
-  max-width: 92ch;
-  padding: 7px 12px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 10px;
   border: 1px solid var(--draft-line);
   border-radius: var(--radius-sm);
   background: var(--draft-wash);
@@ -379,7 +364,7 @@ a {
   background: var(--surface);
   border: 1px solid rgba(0, 0, 0, 0.055);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
+  box-shadow: none;
 }
 
 .pane:focus-visible {
@@ -441,6 +426,34 @@ a {
   font-size: 12.5px;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
+}
+
+.study-filter {
+  display: flex;
+  margin: 0 14px 10px;
+  padding: 2px;
+  border-radius: var(--radius-sm);
+  background: var(--canvas);
+}
+
+.study-filter button {
+  flex: 1;
+  min-height: 44px;
+  padding: 4px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink-3);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.study-filter button[aria-pressed='true'] {
+  background: var(--surface);
+  color: var(--accent-deep);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 14%);
+  font-weight: 600;
 }
 
 .search {
@@ -543,9 +556,9 @@ a {
   gap: 8px;
   margin: 12px 4px 4px;
   color: var(--ink-4);
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
 }
 
 .results__group:first-child .results__dynasty {
@@ -590,8 +603,8 @@ a {
 }
 
 .result--selected {
-  background: linear-gradient(180deg, #eff6ff 0%, #e8f2fe 100%);
-  box-shadow: inset 0 0 0 1px var(--line-blue);
+  background: #edf4fb;
+  box-shadow: inset 3px 0 var(--accent);
 }
 
 .result__zh {
@@ -2091,7 +2104,8 @@ a {
   }
 
   .intro__detail {
-    display: none;
+    max-width: 38em;
+    line-height: 1.65;
   }
 
   .viewswitch {

@@ -979,6 +979,94 @@
       "accessedAt": "2026-11-18",
       "locator": "藏品题名及作品说明",
       "note": null
+    },
+    {
+      "id": "src-dpm-234567",
+      "kind": "web",
+      "title": "欧阳询行书张翰帖",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/handwriting/234567.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "藏品题名、文物号及简介",
+      "note": null
+    },
+    {
+      "id": "src-dpm-228204",
+      "kind": "web",
+      "title": "王献之行草书中秋帖卷",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228204.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "藏品题名、文物号及简介",
+      "note": null
+    },
+    {
+      "id": "src-dpm-231255",
+      "kind": "web",
+      "title": "米芾行书珊瑚帖页",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/handwriting/231255.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "藏品题名、文物号及简介",
+      "note": null
+    },
+    {
+      "id": "src-dpm-228526",
+      "kind": "web",
+      "title": "蔡襄行书自书诗卷",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228526.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "藏品题名、文物号及简介",
+      "note": null
+    },
+    {
+      "id": "src-dpm-231095",
+      "kind": "web",
+      "title": "柳公权行书蒙诏帖卷",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/handwriting/231095.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "藏品题名、文物号及简介",
+      "note": null
+    },
+    {
+      "id": "src-dpm-234595",
+      "kind": "web",
+      "title": "明拓墨池堂选帖",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/impres/234595.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "藏品题名、文物号及简介",
+      "note": null
+    },
+    {
+      "id": "src-dpm-234182",
+      "kind": "web",
+      "title": "圭峰定慧禅师碑",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/impres/234182.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "藏品题名、文物号及简介",
+      "note": null
+    },
+    {
+      "id": "src-dpm-259370",
+      "kind": "web",
+      "title": "明初拓大达法师玄秘塔碑册",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/impres/259370.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-18",
+      "locator": "藏品题名、文物号及简介",
+      "note": null
     }
   ]
 }

@@ -21,6 +21,7 @@
       "noteZh": "所引条目未给出撰文者或书丹者。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "western-han",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -35,6 +36,7 @@
     "note": null
   },
   "script": null,
+  "backgroundZh": "石质为灰岩，刻辞中留有五凤二年的纪年，馆方据此著录。",
   "background": "An inscribed limestone dated to the second year of Wufeng in the gallery catalogue.",
   "sourceRefs": [
     "src-qufu-wufeng"

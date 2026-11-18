@@ -28,6 +28,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -42,6 +43,7 @@
     "note": null
   },
   "script": "楷书",
+  "backgroundZh": "唐人在长安大秦寺立碑，追记景教使团于贞观九年（635）入唐，继而叙其后一百五十年间的兴替。馆方将此石列为世界著名碑刻之一。",
   "background": "A Tang stele erected at the Daqin monastery in Chang’an, recording the arrival of the Nestorian mission in 635 and its fortunes for the following century and a half. The museum calls it one of the four famous steles of the world.",
   "sourceRefs": [
     "src-beilin-jingjiao"

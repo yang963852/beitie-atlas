@@ -5,6 +5,7 @@ import { ObjectDetail } from './components/ObjectDetail';
 import { ResultsList } from './components/ResultsList';
 import { isReleaseBuild } from './domain/build';
 import { getDataset, getObject, getValidationReport } from './domain/data';
+import type { StudyFilter } from './domain/types';
 import { filterObjects } from './domain/search';
 import { LocaleProvider, useLocale, type Locale } from './i18n';
 import { buildMarkers } from './map/markers';
@@ -49,6 +50,7 @@ function AppShell() {
   const { locale, strings, setLocale } = useLocale();
 
   const [query, setQuery] = useState('');
+  const [category, setCategory] = useState<StudyFilter>('all');
   const [originalsOnly, setOriginalsOnly] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(() => readObjectIdFromHash());
   /** Mobile: which of the two exploration panes is visible. Ignored by CSS above 768px. */
@@ -84,6 +86,10 @@ function AppShell() {
       // A manually typed section hash must not erase an explicit selection.
       if (isSectionHash(window.location.hash)) return;
       const id = readObjectIdFromHash();
+      if (id) {
+        setCategory('all');
+        setQuery('');
+      }
       setSelectedId(id);
       setDetailOpen(id !== null);
     };
@@ -141,7 +147,7 @@ function AppShell() {
     setDetailOpen(false);
   };
 
-  const filtered = useMemo(() => filterObjects(dataset.objects, query), [dataset, query]);
+  const filtered = useMemo(() => filterObjects(dataset.objects, query, category), [dataset, query, category]);
   const mapObjects = useMemo(
     () => originalsOnly
       ? filtered.filter(({ objectType, survivalStatus }) =>
@@ -293,6 +299,15 @@ function AppShell() {
             objects={filtered}
             total={dataset.objects.length}
             selectedId={activeObject?.id ?? null}
+            category={category}
+            onCategoryChange={(value) => {
+              setCategory(value);
+              setDetailOpen(false);
+              if (selectedId && !filterObjects(dataset.objects, query, value).some((object) => object.id === selectedId)) {
+                setSelectedId(null);
+                window.history.replaceState(null, '', window.location.pathname + window.location.search);
+              }
+            }}
             query={query}
             onQueryChange={handleQueryChange}
             onSelect={openObject}

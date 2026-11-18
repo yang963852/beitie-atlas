@@ -99,7 +99,7 @@ describe('application shell', () => {
 
     expect(screen.getByRole('heading', { name: '颜勤礼碑（民国拓本）' })).toBeInTheDocument();
     expect(screen.getByText('新00045406')).toBeInTheDocument();
-    expect(screen.getByText(/本条记录没有保管事件的记载/)).toBeInTheDocument();
+    expect(screen.getByText(/所引资料尚未记下这件实物的递藏经过/)).toBeInTheDocument();
     expect(screen.queryByText(/在地下数米处发现此石/)).not.toBeInTheDocument();
     expect(window.location.hash).toBe('#/object/dpm-rubbing-xin00045406');
   });
@@ -231,6 +231,20 @@ describe('application shell', () => {
     expect(screen.getByText(/^地点列表/)).toHaveTextContent('1');
   });
 
+  it('filters by the represented work when both surviving witnesses are rubbings', () => {
+    renderApp();
+    const group = screen.getByRole('group', { name: '按作品类别筛选' });
+    fireEvent.click(within(group).getByRole('button', { name: '帖' }));
+    expect(within(resultsList()).getByText('《墨池堂选帖》（明拓本）')).toBeInTheDocument();
+    expect(within(resultsList()).queryByText('玄秘塔碑（故宫明初拓册）')).toBeNull();
+    fireEvent.change(screen.getByLabelText(/搜索记录/), { target: { value: '新00072378' } });
+    expect(screen.getByText(/^地点列表/)).toHaveTextContent('0');
+    fireEvent.click(within(group).getByRole('button', { name: '碑' }));
+    expect(within(resultsList()).getAllByRole('link')).toHaveLength(1);
+    expect(screen.getByRole('heading', { name: '玄秘塔碑（故宫明初拓册）' })).toBeInTheDocument();
+    expect(screen.getByText(/^地点列表/)).toHaveTextContent('1');
+  });
+
   it('shows an empty selection and no places when nothing matches', () => {
     renderApp();
     const search = screen.getByLabelText(/搜索记录/);
@@ -314,10 +328,11 @@ describe('application shell', () => {
 
     const detail = screen.getByRole('article');
     expect(within(detail).getByRole('heading', { name: '作品背景' })).toBeInTheDocument();
+    expect(within(detail).getByText(/魏徵在九成宫撰铭/)).toHaveAttribute('lang', 'zh-Hans');
+    fireEvent.click(screen.getByRole('button', { name: 'EN' }));
     const background = within(detail).getByText(/Wei Zheng’s remonstrance/);
     expect(background).toHaveAttribute('lang', 'en');
-    // The recorded language is shown, not a silent machine translation.
-    expect(within(detail).getByText(/按记录语言显示/)).toBeInTheDocument();
+    expect(within(detail).queryByText(/魏徵在九成宫撰铭/)).toBeNull();
   });
 
   it('composes a contribution with its caveat and a prefilled public issue link', () => {

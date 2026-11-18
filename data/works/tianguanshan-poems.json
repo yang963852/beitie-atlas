@@ -18,6 +18,7 @@
       "noteZh": "馆方指出学者对所据墨本的真伪有质疑。"
     }
   ],
+  "studyCategory": "tie",
   "dynastyId": "yuan",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -32,6 +33,7 @@
     "note": null
   },
   "script": null,
+  "backgroundZh": "这组游天冠山诗旧题赵孟頫。馆方指出，据以刻石的墨本真伪尚有异说，书家归属亦须存疑。",
   "background": "The museum identifies a group of poems attributed to Zhao Mengfu and notes doubts over the calligraphic model’s authenticity.",
   "sourceRefs": [
     "src-beilin-tianguanshan"

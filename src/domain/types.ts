@@ -94,7 +94,11 @@ export interface Attribution {
   noteZh?: string | null;
 }
 
+export type StudyCategory = 'bei' | 'tie';
+export type StudyFilter = 'all' | StudyCategory;
+
 export interface Work {
+  studyCategory: StudyCategory;
   id: string;
   titles: BilingualTitle;
   aliases: string[];
@@ -109,6 +113,7 @@ export interface Work {
   compositionDate: HistoricalDate;
   script: string | null;
   background: string;
+  backgroundZh?: string;
   sourceRefs: string[];
   review: Review;
   notes: string[];

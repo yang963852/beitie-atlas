@@ -1,0 +1,60 @@
+{
+  "id": "dpm-xuanmi-ta-bei-026",
+  "workId": "xuanmi-ta-bei",
+  "objectType": "rubbing",
+  "titles": {
+    "zh": "玄秘塔碑（故宫明初拓册）",
+    "en": "Stele of the Xuanmi Pagoda, rubbing"
+  },
+  "productionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "明",
+    "original": "明初拓",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": "新00072378",
+  "dimensions": {
+    "raw": "每页纵27.3厘米，横16.3厘米",
+    "note": null
+  },
+  "survivalStatus": "surviving",
+  "relationships": [
+    {
+      "type": "rubbing-of",
+      "targetObjectId": "stele-xuanmi-ta",
+      "sourceRefs": [
+        "src-dpm-259370",
+        "src-beilin-xuanmita"
+      ],
+      "note": null
+    }
+  ],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-palace-museum",
+    "sourceRefs": [
+      "src-dpm-259370"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": null,
+    "noteZh": null
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
+    "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+  },
+  "notes": [
+    "Each measurement applies to one album leaf. The precise date of this early Ming impression remains unknown."
+  ],
+  "notesZh": [
+    "尺寸为册页每页之数。此册定为明初拓，确切拓年未详。"
+  ]
+}

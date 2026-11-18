@@ -7,7 +7,7 @@ or [English README](../README.en.md), [AGENTS.md](../AGENTS.md), and the
 
 ## Current handoff, 2026-11-18
 
-The [public catalogue](https://beitie-atlas.partedlute2.chatgpt.site/) last deployed as **Sites v7**, a labelled preview of 64 works and 69 physical witnesses. [Delivery 024](delivery-024.md) maps the source revision to that deployment and identifies v6 as its immediate rollback. The last owner-approved formal edition is **Sites v5**, tag [v0.1.0-alpha.2](https://github.com/yang963852/beitie-atlas/tree/v0.1.0-alpha.2), with 37 works and 40 witnesses. Its manifest and approval are recorded in [delivery 021](delivery-021.md).
+The [public catalogue](https://beitie-atlas.partedlute2.chatgpt.site/) publishes labelled trial editions. The current source covers 71 works and 77 physical witnesses. See [delivery 026](delivery-026.md) for the corresponding publication and rollback point. The last owner-approved formal edition is **Sites v5**, tag [v0.1.0-alpha.2](https://github.com/yang963852/beitie-atlas/tree/v0.1.0-alpha.2), with 37 works and 40 witnesses. Its manifest and approval are recorded in [delivery 021](delivery-021.md).
 
 Start with the [draft-by-draft editorial review](editorial-review-025.md) and [reader verification and dependency checks](delivery-025.md). The current catalogue includes 22 places, four with coordinates. Readers can search in Chinese or English, open a physical witness directly, and use the place list when the basemap is unavailable.
 

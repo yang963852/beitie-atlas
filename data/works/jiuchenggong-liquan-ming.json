@@ -28,6 +28,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -42,6 +43,7 @@
     "note": null
   },
   "script": "楷书",
+  "backgroundZh": "魏徵在九成宫撰铭，颂辞中寄有规谏之意，欧阳询为之书丹。今日寻访此碑，仍可在九成宫遗址内见其原石的著录。",
   "background": "Wei Zheng’s remonstrance, written at the emperor’s summer palace and transcribed by Ouyang Xun. The stone still stands inside the protected palace site; the bureau lists it among the site’s surviving monuments.",
   "sourceRefs": [
     "src-baoji-jiuchenggong"

@@ -25,6 +25,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -39,6 +40,7 @@
     "note": "No carving year is stated in the audited museum entry."
   },
   "script": "楷书",
+  "backgroundZh": "欧阳询为皇甫诞书此碑。馆方著录记其出土地望，刻石确年则未详。",
   "background": "A Tang stele written by Ouyang Xun for Huangfu Dan. The museum entry used here gives its original find area but no carving year.",
   "sourceRefs": [
     "src-beilin-huangfudan"

@@ -1,0 +1,50 @@
+{
+  "id": "dpm-mochitang-026",
+  "workId": "mochitang",
+  "objectType": "rubbing",
+  "titles": {
+    "zh": "《墨池堂选帖》（明拓本）",
+    "en": "Mochitang Modelbook, rubbing"
+  },
+  "productionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "明",
+    "original": "明拓",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": "新00082402",
+  "dimensions": {
+    "raw": "每页纵26.9厘米，横13.7厘米",
+    "note": null
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-palace-museum",
+    "sourceRefs": [
+      "src-dpm-234595"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": null,
+    "noteZh": null
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
+    "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+  },
+  "notes": [
+    "The dates of cutting concern the modelbook. The precise date this impression was taken is unknown."
+  ],
+  "notesZh": [
+    "万历年间所记是刻帖始末，这一部拓本究竟拓于何年，尚未详定。"
+  ]
+}

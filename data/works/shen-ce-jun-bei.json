@@ -29,6 +29,7 @@
       ]
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "tang",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -43,6 +44,7 @@
     "note": null
   },
   "script": "楷书",
+  "backgroundZh": "碑为记天子巡幸左神策军而立。原石在禁中，传拓不易，后来石佚。今日所见，是宋装拓本幸存的一卷。",
   "background": "A stele erected inside the palace compound to commemorate an imperial visit to the left Shence Army. Because the site was closed, few rubbings were ever taken; the stone is lost and one volume of a Song mounting survives.",
   "sourceRefs": [
     "src-ccdy-shence",

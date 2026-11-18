@@ -30,6 +30,7 @@
       "noteZh": "碑阴所列捐资立碑的属吏，不是撰文或书丹者。"
     }
   ],
+  "studyCategory": "bei",
   "dynastyId": "eastern-han",
   "dynastyQualifier": null,
   "compositionDate": {
@@ -44,6 +45,7 @@
     "note": "The current Beilin entry and Palace Museum agree on 185. An alternate Beilin entry gives 186."
   },
   "script": "隶书",
+  "backgroundZh": "碑为东汉曹全而立，今藏西安碑林。碑上留下了受颂者的姓名，执笔者却未署名。",
   "background": "An Eastern Han stele for the official Cao Quan, held at the Xi’an Beilin Museum. No scribe is recorded on the stone.",
   "sourceRefs": [
     "src-beilin-caoquan",
