@@ -38,6 +38,7 @@ Updated: 2026-11-18. One active implementation task at a time.
 
 | 026 | Study by inscription or modelbook and follow the surviving witness | Delivered — merged by owner instruction after self-review; public trial v8 deployed; editorial approval pending | [Task 026](../tasks/026-study-catalogue.md) and [delivery 026](delivery-026.md). |
 | 027 | Scroll opening, sourced custody leads, and a second public preview | Delivered — merged under owner authorization after self-review; editorial verification pending | PR #13; Pages and Sites v9 both verified; see [task 027](../tasks/027-opening-and-provenance.md) and [delivery 027](delivery-027.md). |
+| 028 | Enable the GitHub Pages basemap | In progress — owner-authorized configuration and source merge | [Task 028](../tasks/028-pages-basemap.md), [delivery 028](delivery-028.md). |
 
 ## Iteration loop
 
