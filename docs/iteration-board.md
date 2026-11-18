@@ -28,6 +28,8 @@ Updated: 2026-11-18. One active implementation task at a time.
 
 | 021 | Publish the founding second edition | Delivered — owner-approved corpus; Sites version 5 deployed, mainland access still limited | Formal release validated; 37 works and 40 objects; see [task 021](../tasks/021-founding-second-edition.md) and [delivery 021](delivery-021.md). |
 
+| 022 | Quiet record list, inspectable map points, contribution channel | Delivered — local task branch complete; not merged, reviewed, or published | 119 tests, type/data/board checks and preview build passed; quiet rows, clickable point cards on both map states, work background, and a text-only issue channel; six sourced works and seven objects added as drafts. No coordinates or review states changed. See [task 022](../tasks/022-reading-and-contribution.md) and [delivery 022](delivery-022.md). |
+
 ## Iteration loop
 
 Ready → in progress → delivered → reviewed → fixing (if necessary) → accepted.

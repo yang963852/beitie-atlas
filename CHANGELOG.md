@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — task 022 quiet reading, point cards, and contributions (2026-11-18)
+
+The left column now gives one title and one documented place per record, in period order; type, dates, attribution, and badges live in the record pane. Map points — on the live basemap and on the coordinate schematic — list every object held there with its type, and a labelled point index makes the same selection keyboard-accessible. A work's recorded background is finally shown, marked in the language it was written in.
+
+A contribution form composes text from each record (or from the footer) and lets a reader copy it or open the project's pre-filled public issue page. Nothing is posted or stored by the site, and the text says plainly that a submission is a lead, not a verified claim. Six sourced works and seven objects were added as drafts: 泰山刻石, 琅琊台刻石, 衡方碑, 西狭颂, 石门铭, and 孔子庙堂碑. The two new places have no coordinates because their sources give none. 119 tests pass; no review state, coordinate, or published version changed.
+
 ## v0.1.0-alpha.2 — Founding second edition (2026-11-18)
 
 The owner approved 37 works and 40 physical objects for publication. The edition retains the documented uncertainties and includes the four additional steles, reliable basemap fallback and recovery, and consistent artifact paths across preview and release builds.

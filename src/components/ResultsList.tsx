@@ -1,7 +1,6 @@
-import { formatAttribution } from '../domain/attribution';
-import { getPlace, getWork, groupObjectsByDynasty } from '../domain/data';
+import { getPlace, groupObjectsByDynasty } from '../domain/data';
 import type { ObjectRecord } from '../domain/types';
-import { useLocale } from '../i18n';
+import { useLocale, type Strings } from '../i18n';
 
 interface ResultsListProps {
   objects: ObjectRecord[];
@@ -10,6 +9,20 @@ interface ResultsListProps {
   query: string;
   onQueryChange: (value: string) => void;
   onSelect: (id: string) => void;
+}
+
+/**
+ * One row, one object, two facts: what it is called and where the record says
+ * it is. Everything else — type, period, attribution, dates, provenance —
+ * belongs to the record pane, which is one click away.
+ */
+function placeLine(object: ObjectRecord, locale: 'zh' | 'en', strings: Strings) {
+  const place = getPlace(object.currentCollection.placeId);
+  if (!place) return strings.placeNotRecorded;
+  const name = locale === 'zh' ? place.names.zh : place.names.en;
+  return object.currentCollection.locationKind === 'last-known'
+    ? strings.lastKnownPlace(name)
+    : name;
 }
 
 export function ResultsList({
@@ -90,8 +103,6 @@ export function ResultsList({
                 <ul className="results__rows">
                   {group.objects.map((object) => {
                     const selected = object.id === selectedId;
-                    const place = getPlace(object.currentCollection.placeId);
-                    const work = getWork(object.workId);
                     return (
                       <li key={object.id}>
                         <a
@@ -103,37 +114,13 @@ export function ResultsList({
                             onSelect(object.id);
                           }}
                         >
-                          <span className="result__type">
-                            {strings.objectTypeLabels[object.objectType]}
-                            {object.review.state === 'draft' ? (
-                              <span className="result__draft">{strings.reviewDraft}</span>
-                            ) : null}
+                          <span
+                            className="result__zh"
+                            lang={locale === 'zh' ? 'zh-Hans' : 'en'}
+                          >
+                            {locale === 'zh' ? object.titles.zh : object.titles.en}
                           </span>
-                          <span className="result__zh" lang="zh-Hans">
-                            {object.titles.zh}
-                          </span>
-                          <span className="result__en" lang="en">
-                            {object.titles.en}
-                          </span>
-                          {work && work.attribution.length > 0 ? (
-                            <span
-                              className="result__author"
-                              lang={locale === 'zh' ? 'zh-Hans' : undefined}
-                            >
-                              {formatAttribution(
-                                work.attribution,
-                                locale,
-                                strings.attributionRoleShort,
-                              )}
-                            </span>
-                          ) : null}
-                          <span className="result__place">
-                            {place
-                              ? locale === 'zh'
-                                ? place.names.zh
-                                : place.names.en
-                              : strings.noCoordinates}
-                          </span>
+                          <span className="result__place">{placeLine(object, locale, strings)}</span>
                         </a>
                       </li>
                     );

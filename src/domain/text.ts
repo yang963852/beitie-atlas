@@ -20,3 +20,12 @@ export function pickText(
   if (locale === 'zh' && zh) return zh;
   return en ?? zh ?? null;
 }
+
+/**
+ * The language a recorded sentence is written in. Editorial prose is stored as
+ * written, so the view must mark it for screen readers and for the browser's
+ * hyphenation rather than assume the interface language.
+ */
+export function detectLang(value: string): 'zh-Hans' | 'en' {
+  return /[\u3400-\u9fff]/.test(value) ? 'zh-Hans' : 'en';
+}

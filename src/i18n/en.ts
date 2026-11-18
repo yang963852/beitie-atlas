@@ -32,6 +32,7 @@ export const enStrings = {
   clearSearch: 'Clear',
   noResults: 'No record matches this search.',
   emptyCorpus: 'No records are available.',
+  lastKnownPlace: (name: string) => `Last known: ${name}`,
 
   mobileViewLabel: 'Choose view',
   mobileListView: 'List',
@@ -83,6 +84,35 @@ export const enStrings = {
   noSources: 'No sources are attached.',
   editorialDetails: 'Editorial and coordinate details',
 
+  backgroundHeading: 'About this work',
+  backgroundLanguageNote: 'Recorded in the language shown; no translation is generated.',
+
+  contributeAction: 'Add or correct information',
+  contributeTitle: 'Submit information',
+  contributeIntro:
+    'Tell us what you know about this object, its location, or its history. A submission is a lead: it is checked against an openable source before anything is added.',
+  contributeFor: (title: string) => `About: ${title}`,
+  contributeDetailsLabel: 'What do you know?',
+  contributeDetailsPlaceholder:
+    'For example: a dated inventory, a move, an inscription detail, or a correction to this record.',
+  contributeSourceLabel: 'Where can it be checked?',
+  contributeSourcePlaceholder:
+    'A museum, library, heritage or government page; or a printed catalogue with page number.',
+  contributeContactLabel: 'How may we reach you? (optional)',
+  contributeContactPlaceholder: 'Email or other contact, shown only in your submission.',
+  contributeNotice:
+    'Submissions are not published automatically. Unsourced recollections and app screenshots are treated as leads, not evidence.',
+  contributePreviewLabel: 'Text that will be submitted',
+  contributeSubmit: 'Open the submission page',
+  contributeCopy: 'Copy the text',
+  contributeCopied: 'Copied.',
+  contributeCopyFailed: 'Copying failed. Select the text above and copy it manually.',
+  contributeRequired: 'Describe what you know before submitting.',
+  contributeChannelNote:
+    'The submission page is this project’s public issue tracker. It opens in a new tab; nothing is sent until you submit it there.',
+  contributeClose: 'Close',
+  contributeFooterLink: 'Submit information',
+
   reviewDraft: 'Draft',
   reviewReviewed: 'Reviewed',
   reviewNoteLabel: 'Review note',
@@ -91,6 +121,11 @@ export const enStrings = {
   mapOriginalsOnly: 'Surviving originals only',
   mapSubheading:
     'Explore the documented institutions and sites that hold these objects.',
+  mapPointHint:
+    'Select any point to see what is held there — surviving stones and rubbings alike.',
+  mapPointIndexLabel: 'Points on this map',
+  mapPointIndexCount: (count: number) => `${count} record${count === 1 ? '' : 's'}`,
+  mapCoverage: (mapped: number, total: number) => `${mapped} of ${total} places have a documented point`,
   coordinateOverview: 'Location overview · basemap unavailable',
   noMapPoints: 'No documented coordinates for these results.',
   mapLoading: 'Loading the map…',

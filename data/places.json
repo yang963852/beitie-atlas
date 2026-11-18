@@ -407,6 +407,46 @@
           "寺院建于 586 年，此碑即记建寺始末；原石仍在寺内碑亭中。",
           "未记录坐标：仅有寺院名称，无实测点位。"
         ]
+      },
+    {
+        "id": "place-national-museum",
+        "names": {
+          "zh": "中国国家博物馆",
+          "en": "National Museum of China"
+        },
+        "historicalName": null,
+        "kind": "institution",
+        "coordinates": null,
+        "sourceRefs": [
+          "src-chnmuseum-langya"
+        ],
+        "notes": [
+          "The museum's own collection page names it as the holder of the 琅琊刻石 fragment; the page gives no street address or coordinate.",
+          "No coordinate is recorded: an institution name is not a surveyed point."
+        ],
+        "notesZh": [
+          "馆方藏品页记明《琅琊刻石》残石为其所藏，但未给出街道地址或坐标。",
+          "未记录坐标：仅有机构名称，不是实测点位。"
+        ]
+      },
+    {
+        "id": "place-chengxian-xixia",
+        "names": {
+          "zh": "西狭颂摩崖（成县）",
+          "en": "Xixia Song cliff, Cheng County"
+        },
+        "historicalName": null,
+        "kind": "historical-site",
+        "coordinates": null,
+        "sourceRefs": [
+          "src-chengxian-xixia"
+        ],
+        "notes": [
+          "The county page places the cliff in 鱼窍峡, about 13 km west of Cheng County town, inside the Xixia Song scenic area. It gives no coordinate."
+        ],
+        "notesZh": [
+          "县政府页面记摩崖在成县县城以西约 13 公里的鱼窍峡、西狭颂景区内，未给出坐标。"
+        ]
       }
   ]
 }

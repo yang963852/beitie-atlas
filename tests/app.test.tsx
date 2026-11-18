@@ -39,7 +39,7 @@ describe('application shell', () => {
     expect(within(resultsList()).getByText('玄秘塔碑（原石）')).toBeInTheDocument();
   });
 
-  it('groups the list by period and names the credited hands', () => {
+  it('groups the list by period and keeps each row to a name and a place', () => {
     renderApp();
     const list = resultsList();
     const periods = within(list).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim().split(/\s*\d/)[0]);
@@ -49,9 +49,12 @@ describe('application shell', () => {
     expect(within(list).getByRole('heading', { name: /南北朝/ })).toBeInTheDocument();
     expect(within(list).getByRole('heading', { name: /^唐/ })).toBeInTheDocument();
 
-    // A row says who wrote, brushed, and cut the stone, not only where it is.
-    expect(within(list).getByText('撰 岑勋 · 书 颜真卿 · 刻 史华')).toBeInTheDocument();
-    expect(within(list).getAllByText('未署名').length).toBeGreaterThan(0);
+    // The owner asked for one name and one place per row: type, period,
+    // attribution and dates belong to the record pane, one click away.
+    const row = within(list).getByText('颜勤礼碑（原石）').closest('a');
+    expect(row?.textContent).toBe('颜勤礼碑（原石）西安碑林博物馆');
+    expect(row?.textContent).not.toContain('Yan Qinli');
+    expect(row?.querySelector('.result__author')).toBeNull();
   });
 
   it('shows the period and each credited hand in the detail view', () => {
@@ -106,7 +109,11 @@ describe('application shell', () => {
     const search = screen.getByLabelText(/搜索记录/);
 
     fireEvent.change(search, { target: { value: '故宫' } });
-    expect(within(resultsList()).getAllByRole('link')).toHaveLength(3);
+    const palaceRows = within(resultsList()).getAllByRole('link');
+    // Every hit is a Palace Museum holding; the count grows with the corpus, so
+    // the invariant is the place, not a fixed number.
+    expect(palaceRows.length).toBeGreaterThanOrEqual(3);
+    expect(palaceRows.every((row) => row.textContent?.includes('故宫博物院'))).toBe(true);
     expect(within(resultsList()).getByText('颜勤礼碑（民国拓本）')).toBeInTheDocument();
 
     fireEvent.change(search, { target: { value: '00045406' } });
@@ -122,7 +129,7 @@ describe('application shell', () => {
     const overview = screen.getByRole('group', { name: /经纬度点位示意/ });
     fireEvent.click(within(overview).getByRole('button', { name: /晋祠博物馆/ }));
     const selection = screen.getByRole('group', { name: '选中的地点' });
-    fireEvent.click(within(selection).getByRole('button', { name: '晋祠之铭并序（清乾隆摹刻）' }));
+    fireEvent.click(within(selection).getByRole('button', { name: /晋祠之铭并序（清乾隆摹刻）/ }));
     expect(screen.getByRole('heading', { name: '晋祠之铭并序（清乾隆摹刻）' })).toBeInTheDocument();
     expect(screen.getAllByText(/未核实（二手来源）/).length).toBeGreaterThan(0);
   });
@@ -277,5 +284,54 @@ describe('application shell', () => {
     fireEvent.click(screen.getByRole('button', { name: '中文' }));
     expect(screen.getByRole('region', { name: '地图' })).toBeInTheDocument();
     expect(document.documentElement.lang).toBe('zh-Hans');
+  });
+
+  it('names the object type of every record held at a selected point', () => {
+    renderApp();
+    const overview = screen.getByRole('group', { name: /经纬度点位示意/ });
+    fireEvent.click(within(overview).getByRole('button', { name: /晋祠博物馆/ }));
+
+    const selection = screen.getByRole('group', { name: '选中的地点' });
+    // The same place holds a Tang stone and a Qianlong recutting; a reader has
+    // to be able to tell them apart before opening either.
+    expect(within(selection).getByText('原石')).toBeInTheDocument();
+    expect(within(selection).getByText('翻刻')).toBeInTheDocument();
+    expect(within(selection).getByRole('button', { name: /清乾隆摹刻/ })).toBeInTheDocument();
+  });
+
+  it('shows the recorded work background, in the language it was written in', () => {
+    renderApp();
+    fireEvent.click(within(resultsList()).getByText('九成宫醴泉铭（原石）'));
+
+    const detail = screen.getByRole('article');
+    expect(within(detail).getByRole('heading', { name: '作品背景' })).toBeInTheDocument();
+    const background = within(detail).getByText(/Wei Zheng’s remonstrance/);
+    expect(background).toHaveAttribute('lang', 'en');
+    // The recorded language is shown, not a silent machine translation.
+    expect(within(detail).getByText(/按记录语言显示/)).toBeInTheDocument();
+  });
+
+  it('composes a contribution with its caveat and a prefilled public issue link', () => {
+    renderApp();
+    fireEvent.click(within(resultsList()).getByText('颜勤礼碑（原石）'));
+    fireEvent.click(screen.getByRole('button', { name: '补充或纠正这条记录' }));
+
+    const preview = screen.getByLabelText('将要提交的文字') as HTMLTextAreaElement;
+    expect(preview.value).toContain('颜勤礼碑（原石）');
+    expect(preview.value).toContain('#/object/yan-qinli-original-stele');
+    expect(preview.value).toContain('不是已核实的结论');
+
+    // Nothing is submitted until the reader has written something.
+    const blocked = screen.getByRole('button', { name: '打开提交页' });
+    expect(blocked).toHaveAttribute('aria-disabled', 'true');
+
+    fireEvent.change(screen.getByLabelText('你掌握的信息'), {
+      target: { value: '民国拓本上有藏印一方。' },
+    });
+
+    const link = screen.getByRole('link', { name: '打开提交页' });
+    const href = link.getAttribute('href') ?? '';
+    expect(href).toContain('https://github.com/yang963852/beitie-atlas/issues/new');
+    expect(decodeURIComponent(href.replace(/\+/g, ' '))).toContain('民国拓本上有藏印一方。');
   });
 });

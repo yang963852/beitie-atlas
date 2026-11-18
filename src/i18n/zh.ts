@@ -29,6 +29,7 @@ export const zhStrings: Strings = {
   clearSearch: '清除',
   noResults: '没有符合这个条件的记录。',
   emptyCorpus: '暂无可显示的记录。',
+  lastKnownPlace: (name: string) => `最后已知：${name}`,
 
   mobileViewLabel: '切换视图',
   mobileListView: '列表',
@@ -77,6 +78,33 @@ export const zhStrings: Strings = {
   noSources: '暂无出处。',
   editorialDetails: '编辑与坐标信息',
 
+  backgroundHeading: '作品背景',
+  backgroundLanguageNote: '按记录语言显示，不做即时翻译。',
+
+  contributeAction: '补充或纠正这条记录',
+  contributeTitle: '提交资料',
+  contributeIntro:
+    '你可以提供这件实物、它的现藏地点或流转经过。提交只作为线索：须有可核对的来源，并经编辑核实后才可能收入。',
+  contributeFor: (title: string) => `关于：${title}`,
+  contributeDetailsLabel: '你掌握的信息',
+  contributeDetailsPlaceholder: '例如：某次清点的时间、一次迁移、碑文细节，或对本记录的纠正。',
+  contributeSourceLabel: '在哪里可以核对',
+  contributeSourcePlaceholder: '博物馆、图书馆、文物或政府部门页面；或注明页码的印刷图录。',
+  contributeContactLabel: '如何联系你（可不填）',
+  contributeContactPlaceholder: '邮箱或其他联系方式，只会出现在你的提交里。',
+  contributeNotice:
+    '提交不会自动发布。没有来源的回忆、碑帖应用截图只作线索，不作为收录依据。',
+  contributePreviewLabel: '将要提交的文字',
+  contributeSubmit: '打开提交页',
+  contributeCopy: '复制这段文字',
+  contributeCopied: '已复制。',
+  contributeCopyFailed: '复制失败，请手动选择上面的文字复制。',
+  contributeRequired: '请先写下你掌握的信息。',
+  contributeChannelNote:
+    '提交页是本项目的公开问题页面，会在新标签页打开；在那边确认提交之前，不会发送任何内容。',
+  contributeClose: '关闭',
+  contributeFooterLink: '提交资料',
+
   reviewDraft: '草稿',
   reviewReviewed: '已审核',
   reviewNoteLabel: '审核说明',
@@ -84,6 +112,10 @@ export const zhStrings: Strings = {
   mapHeading: '地图',
   mapOriginalsOnly: '仅显示存世原件',
   mapSubheading: '查看碑刻与拓本有据可查的收藏机构和原址。',
+  mapPointHint: '点击任意点位，查看此处收藏的实物——原石与拓本都在内。',
+  mapPointIndexLabel: '本图点位',
+  mapPointIndexCount: (count: number) => `${count} 条记录`,
+  mapCoverage: (mapped: number, total: number) => `${total} 处地点中 ${mapped} 处有坐标记录`,
   coordinateOverview: '经纬度点位示意 · 无底图',
   noMapPoints: '当前结果暂无有据可查的坐标。',
   mapLoading: '正在加载地图…',

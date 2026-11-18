@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { ContributionPanel } from './components/ContributionPanel';
 import { MapPanel } from './components/MapPanel';
 import { ObjectDetail } from './components/ObjectDetail';
 import { ResultsList } from './components/ResultsList';
 import { isReleaseBuild } from './domain/build';
-import { getDataset, getValidationReport } from './domain/data';
+import { getDataset, getObject, getValidationReport } from './domain/data';
 import { filterObjects } from './domain/search';
 import { LocaleProvider, useLocale, type Locale } from './i18n';
 import { buildMarkers } from './map/markers';
@@ -54,6 +55,11 @@ function AppShell() {
   const [mobilePane, setMobilePane] = useState<'list' | 'map'>('list');
   /** Mobile: a record opened full width. Ignored by CSS above 768px. */
   const [detailOpen, setDetailOpen] = useState(() => readObjectIdFromHash() !== null);
+  /** The contribution form is a page-level section; a null id means "not about one record". */
+  const [contribute, setContribute] = useState<{ open: boolean; objectId: string | null }>({
+    open: false,
+    objectId: null,
+  });
 
   const wideLayout = useWideLayout();
   const mapActive = wideLayout || (!detailOpen && mobilePane === 'map');
@@ -140,7 +146,11 @@ function AppShell() {
     () => originalsOnly
       ? filtered.filter(({ objectType, survivalStatus }) =>
         survivalStatus === 'surviving' &&
-        (objectType === 'original-stele' || objectType === 'cliff-inscription'))
+        // A surviving fragment of the original stone is still an original, not
+        // a copy. A recarving is a later stone and stays out of this filter.
+        (objectType === 'original-stele' ||
+          objectType === 'cliff-inscription' ||
+          objectType === 'fragment'))
       : filtered,
     [filtered, originalsOnly],
   );
@@ -317,6 +327,7 @@ function AppShell() {
                   goToSection('map');
                 }
                 : undefined}
+              onContribute={() => setContribute({ open: true, objectId: activeObject.id })}
             />
           ) : (
             <div className="detail-empty">
@@ -327,8 +338,21 @@ function AppShell() {
         </section>
       </main>
 
+      <ContributionPanel
+        open={contribute.open}
+        object={contribute.objectId ? (getObject(contribute.objectId) ?? null) : null}
+        onClose={() => setContribute((current) => ({ ...current, open: false }))}
+      />
+
       <footer className="footer">
         <p className="footer__note">{strings.footerNote}</p>
+        <button
+          type="button"
+          className="footer__link"
+          onClick={() => setContribute({ open: true, objectId: null })}
+        >
+          {strings.contributeFooterLink}
+        </button>
         <details className="footer__details">
           <summary>{strings.buildInfoLabel}</summary>
           <p>

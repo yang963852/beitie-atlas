@@ -627,6 +627,83 @@
         "accessedAt": "2026-11-18",
         "locator": "第 4 段，龙藏寺碑叙述",
         "note": "Gives an overall height of 3.24 m, 586, and 张公礼 as the writer of the text."
+      },
+    {
+        "id": "src-chnmuseum-langya",
+        "title": "琅琊刻石",
+        "publisher": "中国国家博物馆 National Museum of China",
+        "kind": "web",
+        "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "藏品条目正文：尺寸、13 行 87 字、秦篆",
+        "note": "Museum collection page. It identifies the surviving block as the rear half of the 219 BCE stone, gives its measurements, and states that the text is attributed to Li Si."
+      },
+    {
+        "id": "src-dpm-hengfang",
+        "title": "【清拓东汉衡方碑】",
+        "publisher": "故宫博物院 The Palace Museum",
+        "kind": "web",
+        "url": "https://www.dpm.org.cn/collection/impres/228606.html",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "条目正文：建宁元年（168）、拓本尺寸、原址与现存地点",
+        "note": "Catalogue entry for a Qing rubbing, object number 新00046098. It dates the stone to 168, names 朱登 as the writer of the colophon, places the stone at 岱庙炳灵门, and gives the rubbing's size rather than the stone's."
+      },
+    {
+        "id": "src-chengxian-xixia",
+        "title": "【西狭颂】独属于成县的悠久文脉",
+        "publisher": "成县人民政府 Cheng County People's Government",
+        "kind": "web",
+        "url": "https://www.gscx.gov.cn/zfxxgk/public/32128434/147920230.html",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "《西狭颂》摩崖石刻一节",
+        "note": "Government page. It gives the date 171, the cliff's position in 鱼窍峡, 385 characters, the credit to 仇靖, and the national protection status. It states the face is intact but gives no measured dimensions."
+      },
+    {
+        "id": "src-gqb-shimen-thirteen",
+        "title": "东西问｜梁中效：十三方石刻「讲述」的秦蜀古道是怎样的",
+        "publisher": "国务院侨务办公室 Overseas Chinese Affairs Office of the State Council",
+        "kind": "web",
+        "url": "https://www.gqb.gov.cn/news/2023/0829/57663.shtml",
+        "publicationDate": "2023-08-29",
+        "accessedAt": "2026-11-18",
+        "locator": "石门十三品与《石门铭》问答段",
+        "note": "Government interview page. It dates 石门铭 to 509, places it among the 石门十三品, and names 汉中市博物馆 as the holder. It gives no dimensions or accession date."
+      },
+    {
+        "id": "src-cnr-shimen-ming",
+        "title": "感悟魏碑神品《石门铭》",
+        "publisher": "央广网 China National Radio",
+        "kind": "web",
+        "url": "https://www.cnr.cn/hnfw/hnfwsh/20150723/t20150723_519292763.shtml",
+        "publicationDate": "2015-07-23",
+        "accessedAt": "2026-11-18",
+        "locator": "第 1、4 段：王远书、武阿仁凿刻，割移汉中博物馆",
+        "note": "A national broadcaster's cultural feature, used only for the two credited hands and the removal of the cliff face to the museum. It is not an institutional catalogue entry."
+      },
+    {
+        "id": "src-beilin-kongzi-miaotang",
+        "title": "孔子庙堂碑",
+        "publisher": "西安碑林博物馆 Xi'an Beilin Museum",
+        "kind": "web",
+        "url": "https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2596",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "条目正文：西庙堂、191 × 108 厘米、34 行 64 字、王彦超与安祚",
+        "note": "Museum page. It describes the 西庙堂 recut held at the Beilin, its size, line count, and the 王彦超 reconstruction. A provincial heritage summary gives different measurements and a longer carver's name; both readings stay in the record's notes."
+      },
+    {
+        "id": "src-shaanxi-wwz-kongzi",
+        "title": "【陕西·考古】重刻唐《孔子庙堂碑》",
+        "publisher": "陕西省文物局《陕西省志·文物志》，陕西学习平台转载",
+        "kind": "web",
+        "url": "https://sn.xuexi.cn/local/detail.html?6E9D852F0075DEF5A5B44097C3EBECDA=DBF8B0C02F8A1978DB3A263A167C8A61DB743B6F85EFE4A56B01B2A1BA346EC9&AC11F3C9EE565CEDC2B7AA9B8914E5A6=B5113B4EA8358C5990194456332E5FCD0C671022ECBBF2BA947025E6E8AA3FB8",
+        "publicationDate": null,
+        "accessedAt": "2026-11-18",
+        "locator": "重刻唐《孔子庙堂碑》条目正文",
+        "note": "A provincial cultural-heritage compilation. It dates the original to 629–630 and the recut to 961–964, and gives 280 × 110 cm with 34 lines of 65 characters, a 相王李旦 heading, and 安仁祚 as the carver. These figures conflict with the museum page and are kept as a second reading."
       }
   ]
 }

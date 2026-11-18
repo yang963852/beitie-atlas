@@ -63,6 +63,19 @@ export function MapPanel({
     [partition],
   );
 
+  /**
+   * A place without a point is still a documented place. Counting only the
+   * plotted ones made the panel look as if the corpus had four locations.
+   */
+  const documentedPlaceCount = useMemo(() => {
+    const ids = new Set<string>();
+    for (const placeId of partition.byPlace.keys()) ids.add(placeId);
+    for (const object of partition.currentWithoutPoint) {
+      if (object.currentCollection.placeId) ids.add(object.currentCollection.placeId);
+    }
+    return ids.size;
+  }, [partition]);
+
   const unmappedRows = useMemo<UnmappedRow[]>(() => {
     const rows: UnmappedRow[] = [];
     for (const object of partition.lastKnown) {
@@ -172,6 +185,7 @@ export function MapPanel({
             {strings.mapHeading}
           </h2>
           <p className="pane__sub">{strings.mapSubheading}</p>
+          <p className="pane__sub map__hint">{strings.mapPointHint}</p>
           <label className="map__filter">
             <input
               type="checkbox"
@@ -254,7 +268,10 @@ export function MapPanel({
             <ul className="place-card__list">
               {activeObjects.map((object) => (
                 <li key={object.id}>
-                  <button type="button" className="link-button" onClick={() => onOpenObject(object.id)}>
+                  <button type="button" className="link-button link-button--row" onClick={() => onOpenObject(object.id)}>
+                    <span className="place-card__type">
+                      {strings.objectTypeLabels[object.objectType]}
+                    </span>
                     <span lang="zh-Hans">{object.titles.zh}</span>
                     <span className="place-card__list-en" lang="en">
                       {object.titles.en}
@@ -267,13 +284,41 @@ export function MapPanel({
         ) : null}
       </div>
 
+      {/* The pins are small, and a provider pin does not advertise that it is a
+          control. This index names every plotted place, keeps the map usable
+          without a mouse, and says how many records sit behind each point. */}
+      {markers.length > 0 ? (
+        <div className="map__index" role="group" aria-label={strings.mapPointIndexLabel}>
+          {markers.map((marker) => (
+            <button
+              key={marker.placeId}
+              type="button"
+              className="map__index-item"
+              aria-pressed={activePlaceId === marker.placeId}
+              onClick={() => {
+                adapterRef.current?.focus(marker.placeId);
+                setActivePlaceId(marker.placeId);
+              }}
+            >
+              <span className="map__index-name">{marker.label}</span>
+              <span className="map__index-count">
+                {strings.mapPointIndexCount(marker.objectIds.length)}
+              </span>
+            </button>
+          ))}
+        </div>
+      ) : null}
+
       {activePlace && status !== 'ready' ? (
         <div className="map-overview__selection" role="group" aria-label={strings.placeCardLabel}>
           <strong>{pickText(locale, activePlace.names.zh, activePlace.names.en)}</strong>
           <ul className="place-card__list">
             {activeObjects.map((object) => (
               <li key={object.id}>
-                <button type="button" className="link-button" onClick={() => onOpenObject(object.id)}>
+                <button type="button" className="link-button link-button--row" onClick={() => onOpenObject(object.id)}>
+                  <span className="place-card__type">
+                    {strings.objectTypeLabels[object.objectType]}
+                  </span>
                   {pickText(locale, object.titles.zh, object.titles.en)}
                 </button>
               </li>
@@ -309,7 +354,10 @@ export function MapPanel({
       <details className="locations" open={status !== 'ready'}>
         <summary className="locations__summary">
           {strings.locationsHeading}
-          <span className="locations__count">{placeRows.length}</span>
+          <span className="locations__count">{documentedPlaceCount}</span>
+          <span className="locations__coverage">
+            {strings.mapCoverage(markers.length, documentedPlaceCount)}
+          </span>
         </summary>
         <p className="locations__intro">{strings.locationsIntro}</p>
         <ul className="location-list">

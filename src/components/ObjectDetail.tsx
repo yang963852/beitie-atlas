@@ -5,7 +5,7 @@ import { getPlace, getWork } from '../domain/data';
 import { compareDates, formatDate } from '../domain/dates';
 import { dynastyLabel } from '../domain/dynasties';
 import type { HistoricalDate, ObjectRecord, Place, Work } from '../domain/types';
-import { pickText } from '../domain/text';
+import { detectLang, pickText } from '../domain/text';
 import { useLocale } from '../i18n';
 import { SourceList } from './SourceList';
 
@@ -96,12 +96,14 @@ function Fact({ term, children }: { term: string; children: ReactNode }) {
 
 interface ObjectDetailProps {
   onShowMap?: () => void;
+  /** Opens the contribution form, prefilled with this record. */
+  onContribute?: () => void;
   object: ObjectRecord;
   /** Mobile only: returns to the list. Hidden at wider widths by CSS. */
   onBack?: () => void;
 }
 
-export function ObjectDetail({ object, onBack, onShowMap }: ObjectDetailProps) {
+export function ObjectDetail({ object, onBack, onShowMap, onContribute }: ObjectDetailProps) {
   const { locale, strings } = useLocale();
   const work = getWork(object.workId);
   const place = getPlace(object.currentCollection.placeId);
@@ -183,6 +185,23 @@ export function ObjectDetail({ object, onBack, onShowMap }: ObjectDetailProps) {
         ) : null}
         <Fact term={strings.survivalLabel}>{strings.survivalLabels[object.survivalStatus]}</Fact>
       </dl>
+
+      {/* The work record has always carried a background sentence; no view
+          rendered it, which made recorded prose dead data. It is shown as
+          written, with its own language, rather than translated at render. */}
+      {work ? (
+        <section className="section" aria-labelledby="background-heading">
+          <h3 id="background-heading" className="section__heading">
+            {strings.backgroundHeading}
+          </h3>
+          <p className="section__prose" lang={detectLang(work.background)}>
+            {work.background}
+          </p>
+          {detectLang(work.background) !== (locale === 'zh' ? 'zh-Hans' : 'en') ? (
+            <p className="section__meta">{strings.backgroundLanguageNote}</p>
+          ) : null}
+        </section>
+      ) : null}
 
       {work && work.attribution.length > 0 ? (
         <section className="section" aria-labelledby="attribution-heading">
@@ -370,6 +389,14 @@ export function ObjectDetail({ object, onBack, onShowMap }: ObjectDetailProps) {
         </h3>
         <SourceList ids={sourceIds} plain />
       </section>
+
+      {onContribute ? (
+        <div className="detail__actions">
+          <button type="button" className="button" onClick={onContribute}>
+            {strings.contributeAction}
+          </button>
+        </div>
+      ) : null}
 
       {pickText(locale, object.review.noteZh, object.review.note) ? (
         <p className="review-note">
