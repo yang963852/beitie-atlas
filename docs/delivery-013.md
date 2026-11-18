@@ -1,5 +1,9 @@
 # Delivery 013 | First evidence pass for the public atlas
 
+> Note added 2026-11-18, not part of the original report: the GitHub Pages publishing described
+> below was retired in task 014 and the public host is Codex Sites. The evidence audit itself
+> remains open; 69 records are still draft.
+
 Base revision `6f1a3affba3c146e3aaa0bfbaee2569f8ce8d714`. The commit introducing this report identifies the audited revision. Scope is the complete 33-work, 36-object corpus. Status is partially verified. This pass inventories the evidence and makes bounded corrections. All 69 work and object records remain draft pending editorial acceptance.
 
 ## Changes checked against sources

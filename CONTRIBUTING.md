@@ -15,6 +15,18 @@ The [atlas workflow](docs/atlas-workflow.md) covers source evidence, map points,
 
 Use Conventional Commit prefixes. No commit-message tooling or bureaucracy is required. Describe the user-visible result, not just “update files”. A change need not be perfect; it must improve the project without concealing material defects.
 
+## Keep GitHub in step
+
+The repository is the canonical source, so a task is finished on GitHub, not on a laptop.
+
+1. Push the task branch before reporting completion, and name the branch and head revision in the delivery report.
+2. After the merge, `main` must match `origin/main`. A local-only commit is unsynchronized work.
+3. Never force-push a branch someone else may have based work on, and never rewrite pushed history.
+4. If a push is blocked (credentials, network, TLS), report the command and the error. Do not describe unpushed work as delivered.
+5. `dist/`, `build/`, `.env*`, map keys and Site credentials stay out of every remote.
+
+`npm run check` includes `check:docs`, which fails when a task file or delivery report has no board row, when a board state does not open with a canonical keyword, or when an evidence link does not resolve.
+
 ## Reproduce locally
 
 Use a supported Node version satisfying `package.json`; the review ran with Node 24.16.0. With a fresh checkout run `npm ci`, then `npm run check` and `npm run dev`. PowerShell users may use `npm.cmd` for these commands. Never commit `node_modules`, `dist`, or local credentials.
