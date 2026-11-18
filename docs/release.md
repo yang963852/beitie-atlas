@@ -72,6 +72,8 @@ not a release artifact.
 secrets. Formal publication of the interactive atlas requires a release artifact produced by `npm run release` and a separate
 host/mainland-network decision recorded in `docs/iteration-board.md`.
 
+For an authorized Sites upload, run the [Site artifact workflow](../.github/workflows/site-artifact.yml) at the chosen task revision. Record its run URL, full source SHA, mode, artifact name and resulting Sites version together in the delivery report. Check the downloaded HTML mode and referenced assets before upload. The workflow currently builds without a Tianditu key. For a deployment that promises live tiles, verify the actual candidate on the authorized host with its origin-restricted browser configuration before replacing the current Site.
+
 ## Rolling back
 
 Roll back by choosing a previously accepted Git revision and rebuilding it with

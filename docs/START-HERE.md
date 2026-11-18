@@ -5,25 +5,11 @@ chat or WorkBuddy session to contribute. Read this page, the [Chinese README](..
 or [English README](../README.en.md), [AGENTS.md](../AGENTS.md), and the
 [iteration board](iteration-board.md) before editing.
 
-## Baseline: v0.1.0-alpha.1
+## Current handoff, 2026-11-18
 
-Initial collaborative development snapshot, 2026-11-17; corpus expanded 2026-11-18.
-React/TypeScript/Vite, thirty-three works, thirty-six distinct physical objects, fifteen
-places, fifty-four sources, twenty events. All work/object records remain draft. No image
-assets are in the corpus.
+The [public catalogue](https://beitie-atlas.partedlute2.chatgpt.site/) last deployed as **Sites v7**, a labelled preview of 64 works and 69 physical witnesses. [Delivery 024](delivery-024.md) maps the source revision to that deployment and identifies v6 as its immediate rollback. The last owner-approved formal edition is **Sites v5**, tag [v0.1.0-alpha.2](https://github.com/yang963852/beitie-atlas/tree/v0.1.0-alpha.2), with 37 works and 40 witnesses. Its manifest and approval are recorded in [delivery 021](delivery-021.md).
 
-The application supports bilingual-name search, linked results/location panels,
-object detail, source citations, provenance, hash links, and a no-map fallback.
-The interface opens in Chinese and switches to English from the header; every
-string is typed against one `Strings` type in `src/i18n/`, so a missing key fails
-the type check. Records may carry optional Chinese editorial fields and the UI
-falls back to the recorded language rather than translating at run time.
-The Tianditu adapter is covered with mocks, and since 2026-11-18 a real browser key has
-rendered the base map locally (24 tiles in a 569×734 column at 1440 px, two markers); the key
-lives in `.env.local` and is never committed. Mainland network behaviour is still untested.
-The [public Codex Sites preview](https://beitie-atlas.partedlute2.chatgpt.site/) serves the
-three-column interface and includes the Tianditu build. Hosted browser rendering and mainland
-public-network access remain unverified. The independent editorial gate applies to formal releases.
+Start with the [draft-by-draft editorial review](editorial-review-025.md) and [reader verification and dependency checks](delivery-025.md). The current catalogue includes 22 places, four with coordinates. Readers can search in Chinese or English, open a physical witness directly, and use the place list when the basemap is unavailable.
 
 ## Setup and commands
 
@@ -78,28 +64,6 @@ Implementers may be humans, Codex, WorkBuddy or another AI. Read the same rules,
 change one bounded task, and provide real evidence. No agent name is an access
 requirement. The owner can explicitly assign implementation to Codex.
 
-## Next work and known limitations
+## Historical baseline
 
-Task 002's local fixes passed independent checks; see review-002.md. Task 003 replaced the
-foundation screen with the neutral map-led interface and mobile List/Map flow; see
-delivery-003.md. Task 007 added the Chinese-first interface, the blue visual pass, and the
-twelve-object corpus (delivery-007.md). Task 008 doubled the corpus with steles whose original
-stone survives and with two works known only through a single rubbing (delivery-008.md).
-Task 009 files every work under a validated period, groups the list by period, and records the
-credited hands, including five steles that say nobody signed them (delivery-009.md). Task 010
-adds `npm run check:map-key` and rewrites map-setup.md as a five-step runbook with the provider's
-error codes. Task 004 then rendered the real base map locally with an owner key (delivery-004.md)
-and fixed the mount-sizing defect that run exposed. All await independent review. Remaining
-external gates: mainland/overseas network behaviour, a hosted https deployment, and mobile
-carriers. Editorial review is a separate task. Browser 200% zoom and screen-reader output have
-not been independently verified.
-Eleven of the fifteen places are recorded without coordinates, so some objects deliberately
-have no map point; supplying a point needs a source that also states its precision. The browser
-key cannot call the geocoding service, so that work needs a server key or per-place sources.
-See [the atlas workflow](atlas-workflow.md) for GitHub synchronization and the Codex Sites atlas
-preview. The coordinate grid works without a basemap key.
-The initial source snapshot's GitHub CI subsequently passed:
-https://github.com/yang963852/beitie-atlas/actions/runs/44102927813.
-
-Historical planning and delivery reports remain evidence of earlier states; when
-they conflict with current status, follow this handoff and the iteration board.
+The alpha.1 development snapshot and subsequent draft expansions preceded the first approved public edition. The 36-witness preview was authorized in task 015. Use the [iteration board](iteration-board.md) for the chronology, the [atlas workflow](atlas-workflow.md) for evidence requirements, and the [release runbook](release.md) for publication.

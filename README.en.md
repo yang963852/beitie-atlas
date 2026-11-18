@@ -8,9 +8,9 @@ A textual catalogue of Chinese calligraphic inscriptions, modelbooks and ink man
 
 The cutoff applies to the composition. Later rubbings and copies retain their own production dates. Each record carries its editorial status.
 
-![Three-column atlas with a Tianditu basemap](docs/screenshots/011-live-map-1440.png)
+![Physical witness detail in the Orchid Pavilion Preface preview](docs/screenshots/024-detail-1440.png)
 
-*Local preview capture. The hosted atlas uses Tianditu and provides a coordinate grid and place list when the basemap is unavailable.*
+Task 024 local preview. Sites v7 is the public preview and v5 is the latest approved edition. [Versions and handoff](docs/START-HERE.md) · [Editorial review](docs/editorial-review-025.md)
 
 ## Run locally
 
