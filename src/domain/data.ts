@@ -64,6 +64,34 @@ function sortObjects(objects: ObjectRecord[], works: Work[]): ObjectRecord[] {
 
 let cached: Dataset | null = null;
 
+/**
+ * Id lookups run on every row of every render, so they go through a Map built
+ * once with the dataset instead of a linear `find` over an array. The corpus is
+ * small today; this keeps it small in cost when it is not.
+ */
+interface DatasetIndex {
+  works: Map<string, Work>;
+  objects: Map<string, ObjectRecord>;
+  places: Map<string, Place>;
+  sources: Map<string, Source>;
+}
+
+function buildIndex(dataset: Dataset): DatasetIndex {
+  const index: DatasetIndex = {
+    works: new Map(),
+    objects: new Map(),
+    places: new Map(),
+    sources: new Map(),
+  };
+  for (const work of dataset.works) index.works.set(work.id, work);
+  for (const object of dataset.objects) index.objects.set(object.id, object);
+  for (const place of dataset.places) index.places.set(place.id, place);
+  for (const source of dataset.sources) index.sources.set(source.id, source);
+  return index;
+}
+
+let index: DatasetIndex | null = null;
+
 export function getDataset(): Dataset {
   if (cached) return cached;
   const works = moduleValues<Work>(workModules);
@@ -74,7 +102,13 @@ export function getDataset(): Dataset {
     sources: sourcesFile.items as unknown as Source[],
     media: mediaFile.items as unknown as MediaItem[],
   };
+  index = buildIndex(cached);
   return cached;
+}
+
+function getIndex(): DatasetIndex {
+  getDataset();
+  return index as DatasetIndex;
 }
 
 /**
@@ -94,12 +128,12 @@ export function getValidationReport(): ValidationReport {
 }
 
 export function getWork(id: string): Work | undefined {
-  return getDataset().works.find((work) => work.id === id);
+  return getIndex().works.get(id);
 }
 
 export function getPlace(id: string | null): Place | undefined {
   if (!id) return undefined;
-  return getDataset().places.find((place) => place.id === id);
+  return getIndex().places.get(id);
 }
 
 /** The period a work is filed under, for headers and facts. */
@@ -139,12 +173,12 @@ export function groupObjectsByDynasty(objects: ObjectRecord[]): DynastyGroup[] {
 }
 
 export function getSource(id: string): Source | undefined {
-  return getDataset().sources.find((source) => source.id === id);
+  return getIndex().sources.get(id);
 }
 
 export function getObject(id: string | null): ObjectRecord | undefined {
   if (!id) return undefined;
-  return getDataset().objects.find((object) => object.id === id);
+  return getIndex().objects.get(id);
 }
 
 /** Objects whose documented current collection is this place. */

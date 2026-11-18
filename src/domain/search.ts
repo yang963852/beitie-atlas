@@ -1,4 +1,4 @@
-import { getDataset } from './data';
+import { getPlace, getWork } from './data';
 import type { ObjectRecord } from './types';
 
 /** Lowercase, strip diacritics and collapses whitespace. Chinese text is matched as-is. */
@@ -20,9 +20,8 @@ export function matchesQuery(object: ObjectRecord, query: string): boolean {
   const needle = normalize(query);
   if (!needle) return true;
 
-  const dataset = getDataset();
-  const work = dataset.works.find((entry) => entry.id === object.workId);
-  const place = dataset.places.find((entry) => entry.id === object.currentCollection.placeId);
+  const work = getWork(object.workId);
+  const place = getPlace(object.currentCollection.placeId);
 
   const haystack = [
     object.titles.zh,

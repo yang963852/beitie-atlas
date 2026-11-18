@@ -2,11 +2,11 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { formatCoordinate } from '../domain/coordinates';
 import { getDataset, getPlace, objectsAtCurrentPlace, partitionByLocation } from '../domain/data';
 import type { ObjectRecord, Place } from '../domain/types';
+import { pickText } from '../domain/text';
 import { useLocale } from '../i18n';
 import { mapIsConfigured } from '../map/config';
 import { createTiandituAdapter, toMapFailure } from '../map/tianditu';
 import type { MapAdapter, MapFailure, MapMarker } from '../map/types';
-import { pickText } from './ObjectDetail';
 import { LocationOverview } from './LocationOverview';
 import { SourceList } from './SourceList';
 
