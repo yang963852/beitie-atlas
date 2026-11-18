@@ -1,0 +1,52 @@
+{
+  "id": "song-liankui-xiao-beilin",
+  "titles": {
+    "zh": "宋联奎《小碑林记》",
+    "en": "Song Liankui’s Record of the Small Stele Forest"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "author-and-calligrapher",
+      "name": "宋联奎",
+      "nameEn": "Song Liankui",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-xiao-beilin"
+      ]
+    },
+    {
+      "role": "engraver",
+      "name": "王尚玺",
+      "nameEn": "Wang Shangxi",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-xiao-beilin"
+      ]
+    }
+  ],
+  "dynastyId": "republic",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 1929,
+    "startMonth": null,
+    "endYear": 1929,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "民国十八年（1929）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": null,
+  "background": "The inscription records the formation of the Small Stele Forest in Xi’an.",
+  "sourceRefs": [
+    "src-beilin-xiao-beilin"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": []
+}

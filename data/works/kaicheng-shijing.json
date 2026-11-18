@@ -1,0 +1,62 @@
+{
+  "id": "kaicheng-shijing",
+  "titles": {
+    "zh": "开成石经",
+    "en": "Kaicheng Stone Classics"
+  },
+  "aliases": [
+    "唐石经",
+    "石刻十二经"
+  ],
+  "attribution": [
+    {
+      "role": "compiler",
+      "name": "郑覃",
+      "nameEn": "Zheng Tan",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-centv-kaicheng",
+        "src-beilin-kaicheng"
+      ],
+      "note": "Proposed the project in 830 and led the collation of the classics.",
+      "noteZh": "大和四年（830）提议校定六经，奉命主持刻经。"
+    },
+    {
+      "role": "calligrapher",
+      "name": "艾居晦、陈玠、段绛等",
+      "nameEn": "Ai Juhui, Chen Jie, Duan Jiang and others",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-centv-kaicheng"
+      ],
+      "note": "Four officials brushed the text; the page names Ai Juhui and Chen Jie.",
+      "noteZh": "由艾居晦、陈玠、段绛等四人书石；所引页面点名校书者为艾、陈二人。"
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 837,
+    "startMonth": null,
+    "endYear": 837,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐开成二年（837）刻成",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "楷书",
+  "background": "The surviving Tang stone edition of twelve Confucian classics, carved on 114 stones and kept in the first exhibition room of the Beilin. The museum describes it as the largest surviving stone “library” of its kind.",
+  "sourceRefs": [
+    "src-beilin-kaicheng"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record from the museum page. No compiler or scribe is recorded here because the page names none.",
+    "noteZh": "依据馆方页面整理的草稿；页面未记撰书人，故不列属名。"
+  },
+  "notes": [
+    "The page gives the number of stones, faces, and characters but no list of the individual colophons."
+  ]
+}

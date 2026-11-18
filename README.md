@@ -12,33 +12,40 @@ Before implementation read [agent rules](AGENTS.md), [contribution workflow](CON
 [design system](docs/design-system.md), and [iteration board](docs/iteration-board.md).
 Task 001 passed local checks but required changes; see [review](docs/review-001.md).
 Task 002 passed independent local review; see [review 002](docs/review-002.md)
-and [delivery 002](docs/delivery-002.md). Task 003 replaces the foundation screen with the
-neutral map-led interface; see [delivery 003](docs/delivery-003.md). It awaits independent
-review; the next implementation task is the [real map pilot](docs/map-pilot.md).
+and [delivery 002](docs/delivery-002.md). Task 003 replaced the foundation screen with the
+neutral map-led interface ([delivery 003](docs/delivery-003.md)). Task 007 adds the
+Chinese-first interface, the blue visual pass, and a twelve-object corpus
+([delivery 007](docs/delivery-007.md)). Task 008 doubles the corpus with steles whose
+original stone survives and with two works known only through a single rubbing
+([delivery 008](docs/delivery-008.md)). Task 009 files every work under a period and records
+who is credited, including the steles that name nobody ([delivery 009](docs/delivery-009.md)).
+Tasks 007 to 009 await independent review. The next
+implementation task is the [real map pilot](docs/map-pilot.md).
 The [initial snapshot's CI checks passed on GitHub](https://github.com/yang963852/beitie-atlas/actions/runs/44102927813). CI validates previews and does not deploy.
 
 An open-source atlas of Chinese calligraphic inscriptions and selected rubbings: what survives, where it is documented today, and how its history connects places.
 
-**Status: local source with the task 003 interface refinement, 2026-11-17. Local checks pass (63 tests). No production website is deployed, no live map has been verified, and mainland public-network access has not been tested.**
+**Preview status, 2026-11-18.** The corpus contains 33 works, 36 physical objects, 15 places and 46 sources. Four mapped locations account for 22 objects. The interactive coordinate overview works without a key. Local Tianditu rendering has been verified with a browser key. Mainland public-network access and independent editorial review remain pending.
 
 The Chinese project name is final. `Between Steles` is a working English title. The public repository is [yang963852/beitie-atlas](https://github.com/yang963852/beitie-atlas).
 
 ## Interface
 
-![Records list, map column, and record panel at 1440 px](docs/screenshots/003-desktop-1440.png)
+![Live Tianditu base map with two institution markers at 1440 px](docs/screenshots/011-live-map-1440.png)
 
-Captured from the local preview with no map key: the honest fallback panel and the accessible
-location list take the map column, and the right-hand panel shows one draft object. A live map
-screenshot will be added only after task 004 verifies the provider; see
-[delivery 003](docs/delivery-003.md).
+Captured from the local preview with an owner-supplied Tianditu browser key on 2026-11-18: the
+base map fills the column, the two institutions with documented coordinates carry markers, and
+the list stays grouped by period with the credited hands. The key lives in `.env.local` and is
+not committed. Mainland public-network and mobile-network behaviour are still unverified; see
+[delivery 004](docs/delivery-004.md).
 
 ## Confirmed direction
 
 - Start with stone inscriptions and a small number of individually identified rubbings.
 - Prioritize readers in mainland China while supporting an international audience.
-- Use English for implementation, documentation, and the initial interface. Preserve Chinese original titles, aliases, inscriptions, and source references.
+- Use English for implementation and documentation. The interface opens in Chinese with an English switch (owner direction, 2026-11-18). Preserve Chinese original titles, aliases, inscriptions, and source references.
 - The owner sets priorities. Codex designs and reviews. DeepSeek in WorkBuddy implements bounded tasks.
-- Start with three real object records, then grow toward about ten works and twelve to fifteen physical objects when evidence supports them.
+- Browse records by the period of the represented inscription. A rubbing and a recarving retain their own production dates and holdings.
 
 ## Start here
 
@@ -49,9 +56,14 @@ screenshot will be added only after task 004 verifies the provider; see
 - [Map pilot](docs/map-pilot.md): provider evaluation, coordinate treatment, credential model, and the remaining test plan.
 - [Map setup for the owner](docs/map-setup.md): the beginner-facing steps to enable the map (Chinese).
 - [Release runbook](docs/release.md): the only permitted publishing command and the artifact it must produce.
+- [Atlas workflow](docs/atlas-workflow.md): source evidence, GitHub and the owner-only Codex Sites preview.
 - [Delivery report 001](docs/delivery-001.md): what was built, how it was checked, and what is still open.
 - [Delivery report 002](docs/delivery-002.md): review fixes, the strict release gate, and what remains unverified.
 - [Delivery report 003](docs/delivery-003.md): the map-led redesign, mobile flow, and the checks still pending.
+- [Delivery report 007](docs/delivery-007.md): Chinese-first copy, the blue visual pass, the expanded corpus, and what stays unverified.
+- [Delivery report 008](docs/delivery-008.md): twelve extant steles and two rubbing-only works, the conflicting-source policy, and why the map did not grow.
+- [Delivery report 009](docs/delivery-009.md): period ordering, the eight attribution roles, and the five steles that now say “unrecorded”.
+- [Map options](docs/map-options.md): six basemaps compared on keys, datum, compliance and cost, and why coordinate evidence is the real blocker.
 - [Delivery report template](templates/delivery-report.md): the evidence required for review.
 
 ## Essential distinctions

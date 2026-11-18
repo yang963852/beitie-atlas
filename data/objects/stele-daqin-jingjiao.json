@@ -1,0 +1,105 @@
+{
+  "id": "stele-daqin-jingjiao",
+  "workId": "daqin-jingjiao-bei",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "大秦景教流行中国碑（原石）",
+    "en": "Stele of the Diffusion of the Luminous Religion, original stone"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 781,
+    "startMonth": null,
+    "endYear": 781,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐建中二年（781）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": {
+    "raw": "碑身 193 × 96 厘米",
+    "note": "Body only; the museum page gives no total height with the turtle base."
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-xian-beilin-museum",
+    "sourceRefs": [
+      "src-beilin-jingjiao"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The museum page states that the stone was moved into the Beilin in October 1907 and is displayed there.",
+    "noteZh": "馆方页面称此碑于 1907 年 10 月移入碑林并陈列于此。"
+  },
+  "provenanceEvents": [
+    {
+      "id": "evt-daqin-1625-discovery",
+      "objectId": "stele-daqin-jingjiao",
+      "type": "discovery",
+      "date": {
+        "kind": "single",
+        "startYear": 1625,
+        "startMonth": null,
+        "endYear": 1625,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "明天启五年（1625）初春",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": "西安城西崇仁寺（金胜寺）附近",
+      "summary": "Unearthed near Chongren Temple west of Xi’an, on the site the page identifies with the Tang Daqin monastery.",
+      "summaryZh": "在西安城西崇仁寺（金胜寺）附近出土；馆方页面认为其地即唐大秦寺旧址。",
+      "sourceRefs": [
+        "src-beilin-jingjiao"
+      ],
+      "certainty": "documented"
+    },
+    {
+      "id": "evt-daqin-1907-move",
+      "objectId": "stele-daqin-jingjiao",
+      "type": "relocation",
+      "date": {
+        "kind": "single",
+        "startYear": 1907,
+        "startMonth": 10,
+        "endYear": 1907,
+        "endMonth": 10,
+        "eraLabel": null,
+        "original": "1907 年 10 月 2—6 日",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": "place-xian-beilin-museum",
+      "placeWording": "西安碑林",
+      "summary": "Moved into the Beilin after a purchase attempt by the Danish collector Holm was stopped; only his copy left the country.",
+      "summaryZh": "丹麦人何乐模企图购运原石未成，碑身与龟趺于此后数日移入碑林，出国的是复制碑。",
+      "sourceRefs": [
+        "src-beilin-jingjiao"
+      ],
+      "certainty": "documented"
+    }
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft object record from the museum page. The 1907 episode is summarized from that page without checking Holm’s own account.",
+    "noteZh": "依据馆方页面整理的草稿；1907 年一段仅据该页面，未核对何乐模本人记述。"
+  },
+  "notes": [
+    "The museum page states the date, authors, body size, and 1907 move; it does not give the total height, weight, or present display condition.",
+    "No accession number is recorded, and the page does not say whether the stone is on public view today.",
+    "No coordinate is recorded: the page names an institution, not a surveyed point.",
+    "The page calls the stele one of the world’s four famous steles without defining the set."
+  ],
+  "notesZh": [
+    "馆方页面记载了年代、撰书人、碑身尺寸与 1907 年迁移，但没有给出通高、重量与今日保存状况。",
+    "未见入藏编号，也没有说明此碑今日是否公开展陈。",
+    "未记录坐标：页面给出的是机构名称，不是实测点位。",
+    "页面称此碑为「世界四大名碑」之一，但未说明这一名目的具体所指。"
+  ]
+}

@@ -27,7 +27,8 @@
     "sourceRefs": ["src-dpm-yan-qinli-rubbing"],
     "sourceAccessedAt": "2026-11-17",
     "assertionAsOf": null,
-    "note": "The Palace Museum catalogue entry states that the stone is held at the Xi'an Beilin Museum. It gives no date for that statement and says nothing about display, gallery, or storage conditions."
+    "note": "The Palace Museum catalogue entry states that the stone is held at the Xi'an Beilin Museum. It gives no date for that statement and says nothing about display, gallery, or storage conditions.",
+    "noteZh": "故宫博物院的目录条目称此石现藏西安碑林博物馆。该条目没有给出这一说法的时间，也没有说明是否展出、陈列于哪个展厅或如何存放。"
   },
   "provenanceEvents": [
     {
@@ -48,6 +49,7 @@
       "placeId": "place-shaanxi-governor-compound",
       "placeWording": "省长公署（位于今西安鼓楼以东及东北一带）",
       "summary": "Workers demolishing old buildings and repairing foundations found the stone several metres underground. It was broken through the middle but otherwise intact. The article records that people took rubbings at the edge of the pit within days.",
+      "summaryZh": "工人拆除旧屋、修整地基时，在地下数米处发现此石。碑身自中部断裂，其余部分基本完整。文中记载，数日之内便有人在坑边拓取。",
       "sourceRefs": ["src-beilin-article-2007"],
       "certainty": "documented"
     },
@@ -69,6 +71,7 @@
       "placeId": "place-shaanxi-governor-compound",
       "placeWording": "省长公署前院",
       "summary": "The provincial governor 刘镇华 had the stone erected in the front courtyard of the compound. The article notes that the joint of the character 故 was already damaged by this move and could no longer be closed.",
+      "summaryZh": "省长刘镇华将此石立于公署前院。文中指出，「故」字的接缝在这次移动中已经受损，无法再合拢。",
       "sourceRefs": ["src-beilin-article-2007"],
       "certainty": "documented"
     },
@@ -90,6 +93,7 @@
       "placeId": "place-xincheng-xian",
       "placeWording": "新城大楼北东侧",
       "summary": "宋哲元, then provincial chairman, moved the stone to the north-east side of the Xincheng building as the centrepiece of a 'small stele forest' (小碑林), with side galleries and a stele pavilion built beside it. By this move the character 故 had lost most of its strokes.",
+      "summaryZh": "时任省主席宋哲元将此石移至新城大楼东北侧，作为「小碑林」的主体，并在旁边修建侧廊与碑亭。经此次移动，「故」字的笔画已大部残损。",
       "sourceRefs": ["src-beilin-article-2007"],
       "certainty": "documented"
     },
@@ -111,13 +115,15 @@
       "placeId": "place-xian-beilin-1948",
       "placeWording": "西安碑林",
       "summary": "The whole Xincheng 'small stele forest' was moved into the Xi'an Beilin. The article states that by then the character 故 was completely split.",
+      "summaryZh": "新城「小碑林」整体迁入西安碑林。文中称，此时「故」字已完全断裂。",
       "sourceRefs": ["src-beilin-article-2007"],
       "certainty": "documented"
     }
   ],
   "review": {
     "state": "draft",
-    "note": "Draft record assembled from two audited sources. Collection assertion and each event still need independent review before publication."
+    "note": "Draft record assembled from two audited sources. Collection assertion and each event still need independent review before publication.",
+    "noteZh": "草稿记录，依据两份已核查来源整理。现藏依据与每条事件在发布前仍需独立审核。"
   },
   "notes": [
     "The stone's erection place and date before 1922 are not documented in the audited sources and are left unrecorded.",
@@ -125,5 +131,12 @@
     "The find-place is described as 旧藩廨库基 in the Palace Museum entry and as 省长公署 in the museum article. Both wordings are preserved instead of being merged into one normalized address.",
     "No coordinates are recorded for any event: the sources name areas and buildings, not surveyed points.",
     "Present-day display status and the exact storage location are unknown."
+  ],
+  "notesZh": [
+    "1922 年以前此石的立石地点与年代，在所核来源中没有记载，因此留空。",
+    "1922 至 1948 年的序列出自 2007 年发表的一篇博物馆文章。各次移动之间的保管情况没有记载，时间线只列出有据可查的移动。",
+    "出土地点在故宫条目中写作「旧藩廨库基」，在博物馆文章中写作「省长公署」。两种表述都原样保留，不合并成一个规范化地址。",
+    "所有事件都没有坐标记录：来源给出的是区域与建筑名称，不是实测点位。",
+    "今日是否展出、确切存放位置，均不清楚。"
   ]
 }

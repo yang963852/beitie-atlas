@@ -1,0 +1,65 @@
+{
+  "id": "xuanmi-ta-bei",
+  "titles": {
+    "zh": "玄秘塔碑",
+    "en": "Xuanmi Pagoda Stele"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "author",
+      "name": "裴休",
+      "nameEn": "Pei Xiu",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-xuanmita"
+      ]
+    },
+    {
+      "role": "calligrapher",
+      "name": "柳公权",
+      "nameEn": "Liu Gongquan",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-xuanmita"
+      ]
+    },
+    {
+      "role": "engraver",
+      "name": "邵建和、邵建初",
+      "nameEn": "Shao Jianhe, Shao Jianchu",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-xuanmita"
+      ],
+      "note": "Brothers from the Tang court workshop that cut imperial jade tablets.",
+      "noteZh": "兄弟二人为唐中书省玉册官，专办御用刻石。"
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 841,
+    "startMonth": 12,
+    "endYear": 841,
+    "endMonth": 12,
+    "eraLabel": null,
+    "original": "唐会昌元年（841年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "楷书",
+  "background": "A Tang stele of 841, composed by Pei Xiu and written and titled in seal script by Liu Gongquan, held at the Xi’an Beilin Museum.",
+  "sourceRefs": [
+    "src-beilin-xuanmita"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
+    "noteZh": "2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+  },
+  "notes": [
+    "The English title is a project rendering for navigation, not a title used by the source."
+  ]
+}

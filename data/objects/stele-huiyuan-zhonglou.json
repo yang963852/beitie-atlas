@@ -1,0 +1,81 @@
+{
+  "id": "stele-huiyuan-zhonglou",
+  "workId": "huiyuan-guan-zhonglou-ming",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "迴元观钟楼铭（原石）",
+    "en": "Bell Tower Inscription of the Huiyuan Abbey, original slab"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 836,
+    "startMonth": null,
+    "endYear": 836,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐开成元年（836）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": {
+    "raw": "长 123 厘米，高 60 厘米",
+    "note": "Horizontal slab; 41 lines of 20 characters."
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-xian-beilin-museum",
+    "sourceRefs": [
+      "src-beilin-huiyuan"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The museum page presents the slab as part of its collection after the 1986 find.",
+    "noteZh": "馆方页面将该石列为馆藏，并记 1986 年出土。"
+  },
+  "provenanceEvents": [
+    {
+      "id": "evt-huiyuan-1986-discovery",
+      "objectId": "stele-huiyuan-zhonglou",
+      "type": "discovery",
+      "date": {
+        "kind": "single",
+        "startYear": 1986,
+        "startMonth": 11,
+        "endYear": 1986,
+        "endMonth": 11,
+        "eraLabel": null,
+        "original": "1986 年 11 月 15 日",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": "西安市太乙路",
+      "summary": "Found during construction work on Taiyi Road in Xi’an.",
+      "summaryZh": "在西安市太乙路施工中发现。",
+      "sourceRefs": [
+        "src-beilin-huiyuan"
+      ],
+      "certainty": "documented"
+    }
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft object record from the museum page. The find circumstances are summarized from one sentence.",
+    "noteZh": "依据馆方页面整理的草稿；出土经过仅据一句话概括。"
+  },
+  "notes": [
+    "The page gives dimensions and line count but no weight, accession number, or conservation history.",
+    "The page does not state where the slab stood before it was buried.",
+    "No coordinate is recorded.",
+    "The statement that the text was never catalogued or rubbed before 1986 is the museum’s, not an independent bibliography check."
+  ],
+  "notesZh": [
+    "页面给尺寸与行款，但没有重量、入藏编号或保护修复记录。",
+    "页面没有说明此石入土前立于何处。",
+    "未记录坐标。",
+    "「此前未见著录、亦无拓本」为馆方说法，未做独立书目核查。"
+  ]
+}

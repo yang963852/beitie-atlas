@@ -1,5 +1,6 @@
-import { LOAD_TIMEOUT_MS, DEFAULT_VIEW, TIANDITU_SCRIPT_URL } from './config';
+import { LOAD_TIMEOUT_MS, TIANDITU_SCRIPT_URL } from './config';
 import type { MapAdapter, MapCallbacks, MapFailure, MapFailureCode, MapMarker } from './types';
+import { computeView } from './view';
 
 /**
  * Minimal surface of the provider SDK that this adapter uses. Only documented
@@ -10,6 +11,8 @@ interface TiandituMap {
   addOverLay: (overlay: unknown) => void;
   clearOverLays?: () => void;
   panTo?: (lnglat: unknown) => void;
+  /** Recomputed when the container changes size; tiles are otherwise stale. */
+  checkResize?: () => void;
   destroy?: () => void;
 }
 
@@ -168,6 +171,8 @@ export function loadTiandituSdk(): Promise<TiandituNamespace> {
 export function createTiandituAdapter(loadSdk: TiandituSdkLoader = loadTiandituSdk): MapAdapter {
   let sdk: TiandituNamespace | null = null;
   let map: TiandituMap | null = null;
+  let observer: ResizeObserver | null = null;
+  let mounted: MapMarker[] = [];
   let destroyed = false;
   const markers = new Map<string, unknown>();
 
@@ -177,17 +182,12 @@ export function createTiandituAdapter(loadSdk: TiandituSdkLoader = loadTiandituS
       // An unmount during loading must not create a map on a dead container.
       if (destroyed) return;
       sdk = loaded;
+      mounted = list;
 
       map = new sdk.Map(container);
 
-      const first = list[0];
-      const view = first
-        ? {
-            ...toProviderPosition(first.longitude, first.latitude),
-            zoom: list.length === 1 ? 12 : 5,
-          }
-        : DEFAULT_VIEW;
-
+      // Frame every documented place, not whichever marker arrived first.
+      const view = computeView(list);
       map.centerAndZoom(new sdk.LngLat(view.longitude, view.latitude), view.zoom);
 
       for (const item of list) {
@@ -197,6 +197,20 @@ export function createTiandituAdapter(loadSdk: TiandituSdkLoader = loadTiandituS
         marker.addEventListener('click', () => callbacks.onMarkerClick(item.placeId));
         map.addOverLay(marker);
         markers.set(item.placeId, lnglat);
+      }
+
+      // The provider measures its container once. A window resize, a font that
+      // settles late, or a panel that grows would otherwise leave tiles loaded
+      // for the old box. jsdom has no ResizeObserver, so this stays optional.
+      if (typeof ResizeObserver !== 'undefined') {
+        observer = new ResizeObserver(() => {
+          try {
+            map?.checkResize?.();
+          } catch {
+            /* provider resize is best effort */
+          }
+        });
+        observer.observe(container);
       }
     },
 
@@ -210,8 +224,16 @@ export function createTiandituAdapter(loadSdk: TiandituSdkLoader = loadTiandituS
       }
     },
 
+    fit() {
+      if (!map || !sdk) return;
+      const view = computeView(mounted);
+      map.centerAndZoom(new sdk.LngLat(view.longitude, view.latitude), view.zoom);
+    },
+
     destroy() {
       destroyed = true;
+      observer?.disconnect();
+      observer = null;
       try {
         map?.clearOverLays?.();
       } catch {
@@ -224,6 +246,7 @@ export function createTiandituAdapter(loadSdk: TiandituSdkLoader = loadTiandituS
       }
       map = null;
       sdk = null;
+      mounted = [];
       markers.clear();
     },
   };

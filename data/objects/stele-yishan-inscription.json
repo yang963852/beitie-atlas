@@ -1,0 +1,50 @@
+{
+  "id": "stele-yishan-inscription",
+  "workId": "yishan-inscription",
+  "objectType": "recarving",
+  "titles": {
+    "zh": "峄山刻石（北宋长安本）",
+    "en": "Mount Yi Inscription, Northern Song Chang’an recarving"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 993,
+    "startMonth": null,
+    "endYear": 993,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "北宋淳化四年(993)",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": {
+    "raw": "高218厘米，宽84厘米",
+    "note": null
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-xian-beilin-museum",
+    "sourceRefs": [
+      "src-beilin-yishan"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The museum identifies the surviving stone as Zheng Wenbao’s Song recarving from a copy by Xu Xuan.",
+    "noteZh": "馆方著录为郑文宝据徐铉摹本重刻的北宋石刻。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": [
+    "The catalogue does not identify a storage room or establish current display status."
+  ],
+  "notesZh": [
+    "所引条目没有给出库房位置，也未核实目前的展出状态。"
+  ]
+}

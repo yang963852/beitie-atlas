@@ -1,0 +1,47 @@
+{
+  "id": "beibi-stone",
+  "titles": {
+    "zh": "北陛石",
+    "en": "Northern Stair Stone"
+  },
+  "aliases": [
+    "鲁灵光殿址刻石"
+  ],
+  "attribution": [
+    {
+      "role": "unknown",
+      "name": "署名未详",
+      "nameEn": "Maker unrecorded",
+      "certainty": "unknown",
+      "sourceRefs": [
+        "src-qufu-beibi"
+      ],
+      "note": "The cited catalogue does not identify the writer or calligrapher.",
+      "noteZh": "所引条目未给出撰文者或书丹者。"
+    }
+  ],
+  "dynastyId": "western-han",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": -149,
+    "startMonth": null,
+    "endYear": -149,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "西汉景帝中元元年（鲁恭王6年，前149年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "篆书",
+  "background": "The dated inscription records the making of the northern stair and is associated with the Lingguang Palace at Qufu.",
+  "sourceRefs": [
+    "src-qufu-beibi"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": []
+}

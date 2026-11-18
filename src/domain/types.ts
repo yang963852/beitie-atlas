@@ -10,10 +10,39 @@
 
 export type ReviewState = 'draft' | 'reviewed';
 
+/**
+ * Period ids for reading order. The table that defines them, including the
+ * Chinese and English labels, lives in `dynasties.ts`.
+ */
+export type DynastyId =
+  | 'pre-qin'
+  | 'qin'
+  | 'western-han'
+  | 'xin'
+  | 'eastern-han'
+  | 'three-kingdoms'
+  | 'western-jin'
+  | 'eastern-jin'
+  | 'northern-and-southern'
+  | 'sui'
+  | 'tang'
+  | 'five-dynasties'
+  | 'northern-song'
+  | 'liao'
+  | 'southern-song'
+  | 'jin'
+  | 'yuan'
+  | 'ming'
+  | 'qing'
+  | 'republic'
+  | 'prc';
+
 export interface Review {
   state: ReviewState;
   /** Editorial note about what still needs checking before publication. */
   note: string | null;
+  /** Chinese wording of the same note. Optional: the recorded language wins. */
+  noteZh?: string | null;
 }
 
 export interface BilingualTitle {
@@ -43,15 +72,26 @@ export type AttributionRole =
   | 'author-and-calligrapher'
   | 'author'
   | 'calligrapher'
+  | 'engraver'
+  | 'title-writer'
   | 'compiler'
+  | 'sponsor'
   | 'unknown';
 
+/**
+ * One named person or group credited on a work. `sponsor` records who paid for
+ * or erected the stone, which is not authorship: Han steles often name dozens of
+ * donors while leaving the writer and the calligrapher unrecorded.
+ */
 export interface Attribution {
   role: AttributionRole;
   name: string;
   nameEn: string | null;
   certainty: DateCertainty;
   sourceRefs: string[];
+  /** Editorial caveat, such as a name that sources spell differently. */
+  note?: string | null;
+  noteZh?: string | null;
 }
 
 export interface Work {
@@ -59,6 +99,13 @@ export interface Work {
   titles: BilingualTitle;
   aliases: string[];
   attribution: Attribution[];
+  /**
+   * Period used for reading order. A stele is filed under the dynasty that
+   * carved it, not under the date of a later rubbing of it.
+   */
+  dynastyId: DynastyId;
+  /** Narrower label inside the period, e.g. 南朝梁. Null when the period suffices. */
+  dynastyQualifier: string | null;
   compositionDate: HistoricalDate;
   script: string | null;
   background: string;
@@ -105,6 +152,8 @@ export interface CollectionAssertion {
   /** Temporal anchor stated by the source, if any. */
   assertionAsOf: string | null;
   note: string | null;
+  /** Chinese wording of the same editorial note. Never a new claim. */
+  noteZh?: string | null;
 }
 
 export type EventType =
@@ -127,6 +176,8 @@ export interface ProvenanceEvent {
   /** Place wording used by the source, preserved as written. */
   placeWording: string | null;
   summary: string;
+  /** Chinese wording of the same editorial summary. Must not add a claim. */
+  summaryZh?: string | null;
   sourceRefs: string[];
   certainty: DateCertainty;
 }
@@ -145,6 +196,8 @@ export interface ObjectRecord {
   provenanceEvents: ProvenanceEvent[];
   review: Review;
   notes: string[];
+  /** Chinese wording of the editorial notes, same count and order as `notes`. */
+  notesZh?: string[];
 }
 
 export type PlaceKind =
@@ -171,6 +224,8 @@ export interface Coordinates {
   method: CoordinateMethod;
   verification: CoordinateVerification;
   note: string | null;
+  /** Chinese wording of the same coordinate caveat. */
+  noteZh?: string | null;
 }
 
 export interface Place {
@@ -181,6 +236,8 @@ export interface Place {
   coordinates: Coordinates | null;
   sourceRefs: string[];
   notes: string[];
+  /** Chinese wording of the place notes, same count and order as `notes`. */
+  notesZh?: string[];
 }
 
 export interface Source {

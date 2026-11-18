@@ -54,6 +54,8 @@ function fixture() {
         },
       ],
       compositionDate: date,
+      dynastyId: 'tang',
+      dynastyQualifier: null,
       script: null,
       background: 'Synthetic record used only to test the release gate.',
       sourceRefs: ['src-fixture'],

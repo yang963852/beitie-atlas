@@ -2,6 +2,8 @@
 
 Start with [project rules](AGENTS.md), [iteration board](docs/iteration-board.md), and [design system](docs/design-system.md). These are lightweight project-specific adaptations, not copied policy bundles.
 
+The [atlas workflow](docs/atlas-workflow.md) covers source evidence, map points, GitHub synchronization, and the owner-only Codex Sites preview.
+
 ## One small improvement at a time
 
 1. Select one ready task with an observable outcome and acceptance criteria.

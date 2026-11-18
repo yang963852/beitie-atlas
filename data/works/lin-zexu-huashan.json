@@ -1,0 +1,43 @@
+{
+  "id": "lin-zexu-huashan",
+  "titles": {
+    "zh": "林则徐游华山诗并序",
+    "en": "Lin Zexu’s Mount Hua Poem and Preface"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "author-and-calligrapher",
+      "name": "林则徐",
+      "nameEn": "Lin Zexu",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-lin-zexu"
+      ]
+    }
+  ],
+  "dynastyId": "qing",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 1842,
+    "startMonth": null,
+    "endYear": 1842,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "清道光二十二年（1842）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "行书",
+  "background": "Lin Zexu composed and wrote the poem during his visit to Mount Hua on the journey to Ili.",
+  "sourceRefs": [
+    "src-beilin-lin-zexu"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": []
+}

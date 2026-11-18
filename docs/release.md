@@ -1,14 +1,13 @@
 # Build and release runbook
 
-Task 002 introduced a strict release gate. This page records the only permitted publishing
-command and the evidence it leaves behind.
+Task 002 introduced a strict release gate. This page records the public release command and the evidence it leaves behind. The [atlas workflow](atlas-workflow.md) covers the owner-only draft preview.
 
 ## Two builds, two purposes
 
 | Command | Purpose | Drafts allowed | Artifact |
 | --- | --- | --- | --- |
-| `npm run build` | Preview / local inspection | Yes, clearly labelled | `dist/` marked `preview` in `index.html`; **never publish** |
-| `npm run release` | The only publishing path | No: any draft or invalid record is a build error | `dist/` marked `release`, with `dist/release-manifest.json` |
+| `npm run build` | Local or owner-only preview | Yes, clearly labelled | `dist/` marked `preview` in `index.html` |
+| `npm run release` | Public release | No, a draft or invalid record fails the build | `dist/` marked `release`, with `dist/release-manifest.json` |
 | `npm run check:release` | Review the gate without building | No | Nothing written; exit code only |
 
 `npm run check` (CI) runs type check, the preview data check, tests, and a preview build. It
@@ -20,7 +19,7 @@ does **not** approve publication and does not deploy.
 2. Runs strict data validation (`releaseMode: true`). Every work/object must be `reviewed`;
    broken references, missing evidence, and invalid coordinates are errors.
 3. Runs the TypeScript check.
-4. Builds with `VITE_RELEASE_MODE=1`, so Vite writes
+4. Builds with `VITE_RELEASE_MODE=1`. Vite independently runs the strict data gate before it writes
    `<meta name="beitie-build-mode" content="release">`.
 5. Writes `dist/release-manifest.json` with the validated counts, Node version, UTC time, and
    the Git revision when available.
@@ -33,7 +32,7 @@ leaves nothing that could be uploaded by mistake.
 ## Commands and expected outcomes today
 
 ```bash
-npm run check:release   # exits 1: the corpus still contains three draft records
+npm run check:release   # exits 1 while the corpus contains drafts
 npm run release         # exits 1 at step 2; dist/ is removed
 npm run build           # succeeds; preview artifact only
 npm run preview         # serves the preview build locally
@@ -67,7 +66,7 @@ not a release artifact.
 ## CI and deployment
 
 `.github/workflows/check.yml` runs preview checks only. It has no deployment step and no
-secrets. Publishing requires a release artifact produced by `npm run release` and a separate
+secrets. Public deployment requires a release artifact produced by `npm run release` and a separate
 host/mainland-network decision recorded in `docs/iteration-board.md`.
 
 ## Rolling back

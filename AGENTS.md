@@ -34,3 +34,10 @@ Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, a
 - Update the iteration board and write `docs/delivery-NNN.md`: exact revision, changed files, commands/outcomes, screenshots for UI work, source gaps, and limitations.
 - Review outcomes are changes-required / partially-verified / accepted. P1 blocks release; P2 must be fixed in its assigned iteration; P3 is optional polish. Never mark your own work independently accepted.
 - Do not silently change these rules to make a failing check pass.
+
+## Repository and preview workflow
+
+- Use the GitHub repository as the canonical source. Start from the recorded base revision on one task branch. A request to sync source authorizes pushing that task branch. Merge into `main` after independent review.
+- Apply the evidence checklist in [the atlas workflow](docs/atlas-workflow.md) to additions and coordinate changes. Sort the left column by the represented inscription's period, then date. Keep the production date of each copy visible in its own detail.
+- Codex Sites can host a clearly labelled owner-only draft preview using the same React build and the tracked hosting manifest. Use a clean committed snapshot and confirm owner-only access before upload. Keep local map keys, private notes, and build output out of both source remotes.
+- A public website requires `npm run release`, a verified release manifest, editorial approval, and host checks. Changing a private Site's audience is a separate release action.

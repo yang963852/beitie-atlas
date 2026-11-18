@@ -6,15 +6,22 @@ and the iteration board before editing.
 
 ## Baseline: v0.1.0-alpha.1
 
-Initial collaborative development snapshot, 2026-11-17. React/TypeScript/Vite,
-one work, two distinct physical objects, five places, four sources, four events.
-All three work/object records remain draft. No image assets are in the corpus.
+Initial collaborative development snapshot, 2026-11-17; corpus expanded 2026-11-18.
+React/TypeScript/Vite, thirty-three works, thirty-six distinct physical objects, fifteen
+places, forty-six sources, twenty events. All work/object records remain draft. No image
+assets are in the corpus.
 
 The application supports bilingual-name search, linked results/location panels,
 object detail, source citations, provenance, hash links, and a no-map fallback.
-The Tianditu adapter is covered with mocks; a real key/provider session has not
-been verified. This is source ready for collaboration, not an approved public
-historical atlas. Publishing source does not bypass the strict website-release gate.
+The interface opens in Chinese and switches to English from the header; every
+string is typed against one `Strings` type in `src/i18n/`, so a missing key fails
+the type check. Records may carry optional Chinese editorial fields and the UI
+falls back to the recorded language rather than translating at run time.
+The Tianditu adapter is covered with mocks, and since 2026-11-18 a real browser key has
+rendered the base map locally (24 tiles in a 569×734 column at 1440 px, two markers); the key
+lives in `.env.local` and is never committed. Mainland network behaviour is still untested.
+This is source ready for collaboration, not an approved public historical atlas. Publishing
+source does not bypass the strict website-release gate.
 
 ## Setup and commands
 
@@ -25,8 +32,10 @@ No key is necessary to read the corpus. See map-setup.md for optional setup.
 
 `npm run build` builds a preview; `npm run preview` serves it locally.
 `npm run check:release` checks publication eligibility without touching output.
+`npm run check:map-key` probes the Tianditu key once (geocoding, not tiles), prints a masked
+key, and classifies the answer as usable, invalid, or inconclusive; it reads `.env.local`.
 `npm run release` builds an approved website artifact only after strict checks.
-It is expected to fail on today's three draft records. Never change review
+It is expected to fail on today's draft records. Never change review
 states solely to make a release command succeed. See release.md for rollback.
 
 ## Where to make changes
@@ -34,11 +43,13 @@ states solely to make a release command succeed. See release.md for rollback.
 | Goal | Start here | Relevant check |
 | --- | --- | --- |
 | App layout and selection | src/App.tsx, src/components/, src/styles.css | app.test.tsx and actual browser inspection |
-| Look and feel | docs/design-system.md, tasks/003-design-refinement.md | mobile/desktop/zoom/keyboard acceptance |
+| Interface copy or another language | src/i18n/en.ts, src/i18n/zh.ts, src/i18n/index.tsx | typecheck (both dictionaries share `Strings`) |
+| Look and feel | docs/design-system.md, docs/delivery-003.md | mobile/desktop/zoom/keyboard acceptance |
 | Names, dates and histories | data/works/, data/objects/ | check:data, seed-records.test.ts |
 | Places and source records | data/places.json, data/sources.json | validate.test.ts, source review |
 | Model or validation | src/domain/types.ts, validate.ts | validate/date/record tests |
-| Map behavior | src/map/, src/components/MapPanel.tsx | map-sdk and map-markers tests plus live pilot |
+| Map choice | docs/map-options.md: six basemaps, keys, datum, compliance | provider terms review |
+| Map behavior | src/map/, src/components/MapPanel.tsx | map-sdk, map-view and map-markers tests plus live pilot |
 | Publishing | scripts/release.ts, scripts/lib/, docs/release.md | release-gate.test.ts, check:release |
 
 ## Adding a physical object
@@ -69,10 +80,22 @@ requirement. The owner can explicitly assign implementation to Codex.
 
 Task 002's local fixes passed independent checks; see review-002.md. Task 003 replaced the
 foundation screen with the neutral map-led interface and mobile List/Map flow; see
-delivery-003.md. It awaits independent review. Next is task 004: activating the real map and
-testing the provider on a network. Editorial review is a separate task. Browser 200% zoom,
-screen-reader output, live maps, mainland/overseas deployment, and hosted deployment have not
-been independently verified.
+delivery-003.md. Task 007 added the Chinese-first interface, the blue visual pass, and the
+twelve-object corpus (delivery-007.md). Task 008 doubled the corpus with steles whose original
+stone survives and with two works known only through a single rubbing (delivery-008.md).
+Task 009 files every work under a validated period, groups the list by period, and records the
+credited hands, including five steles that say nobody signed them (delivery-009.md). Task 010
+adds `npm run check:map-key` and rewrites map-setup.md as a five-step runbook with the provider's
+error codes. Task 004 then rendered the real base map locally with an owner key (delivery-004.md)
+and fixed the mount-sizing defect that run exposed. All await independent review. Remaining
+external gates: mainland/overseas network behaviour, a hosted https deployment, and mobile
+carriers. Editorial review is a separate task. Browser 200% zoom and screen-reader output have
+not been independently verified.
+Eleven of the fifteen places are recorded without coordinates, so some objects deliberately
+have no map point; supplying a point needs a source that also states its precision. The browser
+key cannot call the geocoding service, so that work needs a server key or per-place sources.
+See [the atlas workflow](atlas-workflow.md) for GitHub synchronization and the owner-only
+Codex Sites preview. Sites can render the coordinate grid without a basemap key.
 The initial source snapshot's GitHub CI subsequently passed:
 https://github.com/yang963852/beitie-atlas/actions/runs/44102927813.
 

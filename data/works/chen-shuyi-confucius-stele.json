@@ -1,0 +1,48 @@
+{
+  "id": "chen-shuyi-confucius-stele",
+  "titles": {
+    "zh": "陈叔毅修孔子庙碑",
+    "en": "Chen Shuyi’s Confucius Temple Repair Stele"
+  },
+  "aliases": [
+    "隋孔子庙碑",
+    "隋陈明府修孔子庙碑"
+  ],
+  "attribution": [
+    {
+      "role": "unknown",
+      "name": "署名未详",
+      "nameEn": "Maker unrecorded",
+      "certainty": "unknown",
+      "sourceRefs": [
+        "src-qufu-chen-shuyi"
+      ],
+      "note": "The cited catalogue does not identify the writer or calligrapher.",
+      "noteZh": "所引条目未给出撰文者或书丹者。"
+    }
+  ],
+  "dynastyId": "sui",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 611,
+    "startMonth": null,
+    "endYear": 611,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "隋大业七年（611年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": null,
+  "background": "The stele is listed in the gallery’s Sui holdings under its temple-repair title.",
+  "sourceRefs": [
+    "src-qufu-chen-shuyi"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": []
+}

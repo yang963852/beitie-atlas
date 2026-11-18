@@ -1,0 +1,78 @@
+{
+  "id": "cliff-shimen-song",
+  "workId": "shimen-song",
+  "objectType": "cliff-inscription",
+  "titles": {
+    "zh": "石门颂（摩崖）",
+    "en": "Eulogy of Shimen, cliff inscription"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 148,
+    "startMonth": 11,
+    "endYear": 148,
+    "endMonth": 11,
+    "eraLabel": null,
+    "original": "东汉建和二年（148年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-hanzhong-museum",
+    "sourceRefs": [
+      "src-cssn-shaanxi-beike"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "Now a free-standing block in the museum rather than a cliff face. The museum report does not give its dimensions.",
+    "noteZh": "现已从崖壁凿离，作为独立石体在馆内陈列，不再是崖面的一部分。所引报道没有给出尺寸。"
+  },
+  "provenanceEvents": [
+    {
+      "id": "ev-cliff-shimen-song-1",
+      "objectId": "cliff-shimen-song",
+      "type": "relocation",
+      "date": {
+        "kind": "approximate",
+        "startYear": 1970,
+        "startMonth": null,
+        "endYear": 1970,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "1970年前后",
+        "certainty": "approximate",
+        "note": "The source gives an approximate period rather than a precise date."
+      },
+      "placeId": "place-hanzhong-museum",
+      "placeWording": "汉中市博物馆（古汉台）",
+      "summary": "Before the Shimen reservoir filled, the selected cliff inscriptions were cut from the rock and moved into the Hanzhong Museum, where the group is displayed.",
+      "summaryZh": "石门水库蓄水前，择要将摩崖石刻从岩壁凿离，迁入汉中市博物馆，此后集中陈列。",
+      "sourceRefs": [
+        "src-cssn-shaanxi-beike"
+      ],
+      "certainty": "documented"
+    }
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
+    "noteZh": "草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+  },
+  "notes": [
+    "The cited page states the date, the scribe where one is recorded, and the holding institution.",
+    "Excavation, accession, and present display status are not stated in the audited source and are left blank.",
+    "No coordinate is recorded: the source names an institution, not a surveyed point.",
+    "The inscription’s condition before the move and the exact cutting date are not stated in the audited pages."
+  ],
+  "notesZh": [
+    "所引页面记载了刻立年代、可考的书者与现藏机构。",
+    "出土、入藏与今日陈列状态在所核来源中没有记载，留空。",
+    "未记录坐标：来源给出的是机构名称，不是实测点位。",
+    "迁移前的石面状况与凿离的确切日期，所核页面均未记载。"
+  ]
+}

@@ -7,6 +7,11 @@ paths; live provider rendering NOT tested, because no Tianditu key exists in thi
 environment.** The page deliberately shows an explanatory panel instead of a map, and the
 list/detail views work without it.
 
+> **Update 2026-11-18 (task 004):** an owner-supplied browser key rendered the real base map
+> locally at 1440 px — 24 tiles filling a 569×734 column, two institution markers. Two defects
+> surfaced and were fixed (mount-sizing, test isolation). Mainland network behaviour is still
+> unverified. See [delivery 004](delivery-004.md) and §7 below.
+
 ## 1. Selected route: official Tianditu (天地图) JavaScript API 4.0
 
 Reasons: mainland-first readership, a national official service with published terms, a
@@ -151,3 +156,35 @@ localhost screenshot does not satisfy it.
 - If a later provider requires a server key, add a documented proxy as its own task.
 - Provider terms, attribution, and any approval label must be rechecked for the actual
   release host before publication.
+
+## 9. Live verification, 2026-11-18
+
+An owner-supplied browser key was written to `.env.local` (gitignored, never committed). The dev
+server was restarted, and a headless Chrome session attached over the DevTools protocol waited
+9 s of real time before capturing the page.
+
+| Check | Result |
+| --- | --- |
+| `data-map-state` | `live` |
+| Map box / canvas at 1440×1000 | 569×734 / 567×732 |
+| Tiles | 24, all at `opacity: 1` |
+| Markers | 2 (西安碑林博物馆, 故宫博物院) |
+| Screenshot | `docs/screenshots/011-live-map-1440.png` |
+
+Two defects were exposed by the live run and fixed:
+
+1. **Mount sizing.** The map was created while the panel still used the 210 px fallback
+   geometry; the SDK measures once, so only 8 tiles loaded for the top third of a 734 px column.
+   The fallback geometry is now used only when no key is configured, and the adapter observes
+   the container and calls the documented `checkResize()`.
+2. **Test isolation.** With `.env.local` present, two tests asserted the unconfigured state and
+   failed. `test.env` now forces an empty key; the adapter keeps its own tests.
+
+The key is a **browser** key: the geocoding service refuses it with `301012` (“Key权限类型为:
+浏览器端，请使用浏览器访问！”). That is the documented behaviour, not a fault. Consequently the
+13 places without coordinates cannot be filled with this key; they need either a second
+server key on the same account or per-institution citable points.
+
+Tiles are requested over `http://` on an `http://localhost` page. The SDK derives the scheme
+from `document.location.protocol` (`T.Protocol` in the served script), so an https deployment
+requests https tiles; that path has not been exercised on a real host yet.

@@ -1,0 +1,48 @@
+{
+  "id": "lushan-si-bei",
+  "titles": {
+    "zh": "麓山寺碑",
+    "en": "Stele of Lushan Temple"
+  },
+  "aliases": [
+    "岳麓寺碑",
+    "北海三绝碑"
+  ],
+  "attribution": [
+    {
+      "role": "author-and-calligrapher",
+      "name": "李邕",
+      "nameEn": "Li Yong",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-csjypt-lushan"
+      ]
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 730,
+    "startMonth": null,
+    "endYear": 730,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐开元十八年（730）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "行书",
+  "background": "Li Yong’s account of a Changsha monastery from its Jin-dynasty founding to the Tang, praised as a “three excellences” stele for text, calligraphy, and cutting. Mi Fu studied it in 1080 and left his name on the reverse.",
+  "sourceRefs": [
+    "src-csjypt-lushan"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record from a local-history page. The cutter’s name is recorded as 黄仙鹤, whom scholars suspect to be Li Yong’s alias; no attribution is asserted for the cutting.",
+    "noteZh": "依据地方志平台页面整理的草稿；刻者署「黄仙鹤」，学界疑为李邕化名，故不主张刻者身份。"
+  },
+  "notes": [
+    "The page gives the surviving character count only approximately (“1000余字”)."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "liqi-bei",
+  "titles": {
+    "zh": "礼器碑",
+    "en": "Stele of the Ritual Vessels"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "unknown",
+      "name": "未署名",
+      "nameEn": "Unrecorded",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-confuciusmuseum-binke",
+        "src-sdxc-kongmiao-sanbei"
+      ],
+      "note": "Both cited pages state that no writer or calligrapher is recorded.",
+      "noteZh": "两处所引页面均记此碑无撰书人姓名。"
+    }
+  ],
+  "dynastyId": "eastern-han",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 156,
+    "startMonth": null,
+    "endYear": 156,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "东汉永寿二年（156年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "隶书",
+  "background": "An Eastern Han stele of 156 recording the chancellor Han Chi’s repair of the Confucius Temple and the casting of ritual vessels. Held in the Qufu Han–Wei Stele Gallery.",
+  "sourceRefs": [
+    "src-confuciusmuseum-binke",
+    "src-sdxc-kongmiao-sanbei"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
+    "noteZh": "2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+  },
+  "notes": [
+    "The English title is a project rendering for navigation, not a title used by the source."
+  ]
+}

@@ -26,6 +26,7 @@ function fakeSdk() {
     addOverLay: vi.fn(),
     clearOverLays: vi.fn(),
     panTo: vi.fn(),
+    checkResize: vi.fn(),
     destroy: vi.fn(),
   };
   const markerInstances: Array<{ addEventListener: ReturnType<typeof vi.fn> }> = [];
@@ -69,6 +70,7 @@ beforeEach(() => {
 
 afterEach(() => {
   vi.useRealTimers();
+  vi.unstubAllGlobals();
   clearProviderScripts();
   delete window.T;
 });
@@ -211,5 +213,34 @@ describe('map adapter lifecycle', () => {
 
     await expect(mounting).resolves.toBeUndefined();
     expect(sdk.MapCtor).not.toHaveBeenCalled();
+  });
+
+  it('asks the provider to re-measure when the container changes size', async () => {
+    const callbacks: Array<() => void> = [];
+    const observe = vi.fn();
+    const disconnect = vi.fn();
+    class FakeResizeObserver {
+      constructor(callback: () => void) {
+        callbacks.push(callback);
+      }
+      observe = observe;
+      disconnect = disconnect;
+    }
+    vi.stubGlobal('ResizeObserver', FakeResizeObserver);
+
+    const sdk = fakeSdk();
+    const adapter = createTiandituAdapter(async () => sdk.namespace);
+    const container = document.createElement('div');
+
+    await adapter.mount(container, [marker], { onMarkerClick: vi.fn() });
+
+    // The SDK measures once at mount; a panel that grows afterwards would keep
+    // tiles for the old box without this observer.
+    expect(observe).toHaveBeenCalledWith(container);
+    callbacks[0]?.();
+    expect(sdk.map.checkResize).toHaveBeenCalledTimes(1);
+
+    adapter.destroy();
+    expect(disconnect).toHaveBeenCalledTimes(1);
   });
 });

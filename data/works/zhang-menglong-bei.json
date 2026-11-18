@@ -1,0 +1,47 @@
+{
+  "id": "zhang-menglong-bei",
+  "titles": {
+    "zh": "张猛龙碑",
+    "en": "Stele of Zhang Menglong"
+  },
+  "aliases": [
+    "魏鲁郡太守张府君清颂之碑"
+  ],
+  "attribution": [
+    {
+      "role": "unknown",
+      "name": "署名未详",
+      "nameEn": "Maker unrecorded",
+      "certainty": "unknown",
+      "sourceRefs": [
+        "src-qufu-zhang-menglong"
+      ],
+      "note": "The cited catalogue does not identify the writer or calligrapher.",
+      "noteZh": "所引条目未给出撰文者或书丹者。"
+    }
+  ],
+  "dynastyId": "northern-and-southern",
+  "dynastyQualifier": "北魏",
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 522,
+    "startMonth": null,
+    "endYear": 522,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "北魏正光三年（522年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "正书",
+  "background": "The stele commends Zhang Menglong’s local administration and promotion of education.",
+  "sourceRefs": [
+    "src-qufu-zhang-menglong"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": []
+}

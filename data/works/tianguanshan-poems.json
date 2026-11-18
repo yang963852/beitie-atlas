@@ -1,0 +1,45 @@
+{
+  "id": "tianguanshan-poems",
+  "titles": {
+    "zh": "赵子昂游天冠山诗",
+    "en": "Poems on Mount Tianguan attributed to Zhao Mengfu"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "author-and-calligrapher",
+      "name": "赵孟頫（传）",
+      "nameEn": "Zhao Mengfu (attributed)",
+      "certainty": "disputed",
+      "sourceRefs": [
+        "src-beilin-tianguanshan"
+      ],
+      "note": "The museum notes scholarly doubts concerning the model’s authenticity.",
+      "noteZh": "馆方指出学者对所据墨本的真伪有质疑。"
+    }
+  ],
+  "dynastyId": "yuan",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "unknown",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": null,
+    "certainty": "unknown",
+    "note": null
+  },
+  "script": null,
+  "background": "The museum identifies a group of poems attributed to Zhao Mengfu and notes doubts over the calligraphic model’s authenticity.",
+  "sourceRefs": [
+    "src-beilin-tianguanshan"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": []
+}

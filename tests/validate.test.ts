@@ -17,7 +17,17 @@ function baseDataset(): Mutable {
         id: 'work-1',
         titles: { zh: '作品', en: 'Work' },
         aliases: [],
-        attribution: [],
+        attribution: [
+          {
+            role: 'calligrapher',
+            name: '颜真卿',
+            nameEn: 'Yan Zhenqing',
+            certainty: 'documented',
+            sourceRefs: ['src-1'],
+          },
+        ],
+        dynastyId: 'tang',
+        dynastyQualifier: null,
         compositionDate: {
           kind: 'single',
           startYear: 779,
@@ -112,10 +122,48 @@ describe('data validation', () => {
     expect(codes(baseDataset())).toEqual([]);
   });
 
+  it('resolves a relationship to an object listed later', () => {
+    const dataset = baseDataset();
+    const target = { ...dataset.objects[0], id: 'object-target', relationships: [] };
+    const first = {
+      ...dataset.objects[0],
+      id: 'object-first',
+      relationships: [
+        { type: 'recarving-of', targetObjectId: 'object-target', sourceRefs: ['src-1'], note: null },
+      ],
+    };
+    // The referring object is read before its target, as happens with file globs.
+    dataset.objects = [first, target, dataset.objects[0]];
+
+    expect(codes(dataset)).toEqual([]);
+  });
+
   it('rejects duplicate ids', () => {
     const dataset = baseDataset();
     dataset.objects.push({ ...dataset.objects[0] });
     expect(codes(dataset)).toContain('DUPLICATE_ID');
+  });
+
+  it('rejects a work with no period or an invented period', () => {
+    const missing = baseDataset();
+    delete missing.works[0].dynastyId;
+    expect(codes(missing)).toContain('DYNASTY');
+
+    const invented = baseDataset();
+    invented.works[0].dynastyId = 'ming-dynasty';
+    expect(codes(invented)).toContain('DYNASTY');
+  });
+
+  it('rejects an empty attribution list instead of reading it as "unknown"', () => {
+    const dataset = baseDataset();
+    dataset.works[0].attribution = [];
+    expect(codes(dataset)).toContain('ATTRIBUTION_GAP');
+  });
+
+  it('rejects an attribution role that the interface cannot label', () => {
+    const dataset = baseDataset();
+    dataset.works[0].attribution[0].role = 'scribe';
+    expect(codes(dataset)).toContain('ATTRIBUTION_ROLE');
   });
 
   it('rejects a reference to a missing source', () => {

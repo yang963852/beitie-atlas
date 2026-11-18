@@ -1,0 +1,50 @@
+{
+  "id": "stele-wufeng-inscription",
+  "workId": "wufeng-inscription",
+  "objectType": "original-stele",
+  "titles": {
+    "zh": "五凤刻石（刻石）",
+    "en": "Wufeng Inscription, inscribed stone"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": -56,
+    "startMonth": null,
+    "endYear": -56,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "西汉宣帝五凤二年（即公元前56年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": {
+    "raw": "长71.5厘米，左高38厘米，右高40厘米，厚43厘米",
+    "note": null
+  },
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-qufu-hanwei-gallery",
+    "sourceRefs": [
+      "src-qufu-wufeng"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "The gallery records this stone in its collection catalogue.",
+    "noteZh": "曲阜汉魏碑刻陈列馆在馆藏目录中著录此石。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": [
+    "The catalogue does not identify a storage room or establish current display status."
+  ],
+  "notesZh": [
+    "所引条目没有给出库房位置，也未核实目前的展出状态。"
+  ]
+}

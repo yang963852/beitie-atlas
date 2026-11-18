@@ -1,0 +1,53 @@
+{
+  "id": "rubbing-wenquan-ming",
+  "workId": "wen-quan-ming",
+  "objectType": "rubbing",
+  "titles": {
+    "zh": "温泉铭（唐拓残卷）",
+    "en": "Inscription on the Hot Spring, Tang rubbing fragment"
+  },
+  "productionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "唐",
+    "original": "唐拓",
+    "certainty": "approximate",
+    "note": null
+  },
+  "catalogNumber": "Pelliot chinois 4508",
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-bnf",
+    "sourceRefs": [
+      "src-thepaper-wenquanming"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "Described as held by the Bibliothèque nationale de France under the Pelliot number.",
+    "noteZh": "来源称该残卷藏于法国国家图书馆，编号 Pelliot chinois 4508。"
+  },
+  "provenanceEvents": [],
+  "review": {
+    "state": "draft",
+    "note": "Draft object record from a news report. The report confirms the holding but not the physical description.",
+    "noteZh": "依据新闻报道整理的草稿；报道确认收藏，但没有实物描述。"
+  },
+  "notes": [
+    "The report calls this the earliest surviving rubbing in existence but gives no measurements or condition.",
+    "The original stone is lost; the record therefore makes no claim about the stone’s location.",
+    "The rubbing’s route from the Dunhuang library cave to Paris is not described in the cited report.",
+    "No coordinate is recorded."
+  ],
+  "notesZh": [
+    "报道称其为存世最早的拓本，但没有尺寸与保存状况。",
+    "原石已佚，故本条不对原石所在作任何主张。",
+    "所引报道没有叙述此卷自敦煌藏经洞到巴黎的经过。",
+    "未记录坐标。"
+  ]
+}

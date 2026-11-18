@@ -1,0 +1,79 @@
+{
+  "id": "fragments-yihe-ming",
+  "workId": "yi-he-ming",
+  "objectType": "fragment",
+  "titles": {
+    "zh": "瘗鹤铭（残石五方）",
+    "en": "Elegy for a Crane, five surviving fragments"
+  },
+  "productionDate": {
+    "kind": "single",
+    "startYear": 514,
+    "startMonth": null,
+    "endYear": 514,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "南朝梁天监十三年（514），传",
+    "certainty": "disputed",
+    "note": "Traditional date; the inscription gives only a cyclical year."
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-jiaoshan-beilin",
+    "sourceRefs": [
+      "src-jiangsu-yihe",
+      "src-cyol-yihe"
+    ],
+    "sourceAccessedAt": "2026-11-18",
+    "assertionAsOf": null,
+    "note": "Five fragments recovered in 1713 are displayed in the Jiaoshan Stele Forest.",
+    "noteZh": "1713 年打捞所得五方残石，现陈列于焦山碑林。"
+  },
+  "provenanceEvents": [
+    {
+      "id": "evt-yihe-1713-recovery",
+      "objectId": "fragments-yihe-ming",
+      "type": "discovery",
+      "date": {
+        "kind": "single",
+        "startYear": 1713,
+        "startMonth": null,
+        "endYear": 1713,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "清康熙五十二年（1713）",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": "焦山下游江中",
+      "summary": "Recovered from the river after a three-month search; the fragments were later set into a temple wall.",
+      "summaryZh": "经三个月搜捞自江中取出，此后一度砌入寺院墙壁。",
+      "sourceRefs": [
+        "src-cyol-yihe"
+      ],
+      "certainty": "documented"
+    }
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft object record. The five fragments are recorded as one object; their individual sizes are not published in the cited pages.",
+    "noteZh": "草稿记录。五方残石合为一条实物；所引页面未公布各石尺寸。"
+  },
+  "notes": [
+    "The pages give 93 surviving characters with 11 incomplete; the original text is given as 178 characters in one source and about 160 in another.",
+    "No fragment-by-fragment measurements, accession numbers, or condition report are given.",
+    "The date and the calligrapher remain disputed; the record does not choose an author.",
+    "No coordinate is recorded."
+  ],
+  "notesZh": [
+    "页面记现存 93 字、其中 11 字不全；原文一说 178 字、一说约 160 字。",
+    "没有逐石尺寸、入藏编号或保存状况报告。",
+    "年代与书者仍有争议，本条不选定作者。",
+    "未记录坐标。"
+  ]
+}

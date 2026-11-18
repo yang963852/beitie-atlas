@@ -1,0 +1,45 @@
+{
+  "id": "tianfa-shenchen-bei",
+  "titles": {
+    "zh": "天发神谶碑",
+    "en": "Stele of the Heavenly Omen"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "皇象（传）",
+      "nameEn": "Huang Xiang (attributed)",
+      "certainty": "disputed",
+      "sourceRefs": [
+        "src-dpm-tianfa"
+      ],
+      "note": "The Palace Museum records a traditional attribution without firm evidence.",
+      "noteZh": "故宫条目载相传为皇象书，并指出无确据。"
+    }
+  ],
+  "dynastyId": "three-kingdoms",
+  "dynastyQualifier": "孙吴",
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 276,
+    "startMonth": null,
+    "endYear": 276,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "吴天玺元年（276年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": null,
+  "background": "The Wu inscription presents an omen. The Palace Museum records the destruction of the original stone in 1805.",
+  "sourceRefs": [
+    "src-dpm-tianfa"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft from the cited collection entry. Independent editorial review remains pending.",
+    "noteZh": "据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+  },
+  "notes": []
+}

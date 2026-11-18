@@ -1,0 +1,57 @@
+{
+  "id": "daqin-jingjiao-bei",
+  "titles": {
+    "zh": "大秦景教流行中国碑",
+    "en": "Stele of the Diffusion of the Luminous Religion in China"
+  },
+  "aliases": [
+    "景教碑",
+    "大秦景教碑"
+  ],
+  "attribution": [
+    {
+      "role": "author",
+      "name": "景净",
+      "nameEn": "Jingjing",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-jingjiao"
+      ]
+    },
+    {
+      "role": "calligrapher",
+      "name": "吕秀岩",
+      "nameEn": "Lü Xiuyan",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-beilin-jingjiao"
+      ]
+    }
+  ],
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 781,
+    "startMonth": null,
+    "endYear": 781,
+    "endMonth": null,
+    "eraLabel": null,
+    "original": "唐建中二年（781）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "楷书",
+  "background": "A Tang stele erected at the Daqin monastery in Chang’an, recording the arrival of the Nestorian mission in 635 and its fortunes for the following century and a half. The museum calls it one of the four famous steles of the world.",
+  "sourceRefs": [
+    "src-beilin-jingjiao"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record from the museum page. The English title is a project rendering, not a title used by the source.",
+    "noteZh": "依据馆方页面整理的草稿；英文题名为本项目译名，非来源用语。"
+  },
+  "notes": [
+    "The source gives the Chinese and Syriac contents but no full transcription or translation."
+  ]
+}

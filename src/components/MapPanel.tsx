@@ -2,10 +2,12 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { formatCoordinate } from '../domain/coordinates';
 import { getDataset, getPlace, objectsAtCurrentPlace, partitionByLocation } from '../domain/data';
 import type { ObjectRecord, Place } from '../domain/types';
-import { strings } from '../i18n/en';
+import { useLocale } from '../i18n';
 import { mapIsConfigured } from '../map/config';
 import { createTiandituAdapter, toMapFailure } from '../map/tianditu';
 import type { MapAdapter, MapFailure, MapMarker } from '../map/types';
+import { pickText } from './ObjectDetail';
+import { LocationOverview } from './LocationOverview';
 import { SourceList } from './SourceList';
 
 type Status = 'unconfigured' | 'loading' | 'ready' | 'error';
@@ -23,6 +25,7 @@ interface MapPanelProps {
   /** Records matching the current search. The panel never reads the full corpus. */
   objects: ObjectRecord[];
   onOpenObject: (id: string) => void;
+  selectedPlaceId?: string;
   /**
    * False while the mobile pane is hidden. The provider must not mount into a
    * container with no layout box, so the adapter is created only when shown.
@@ -30,7 +33,8 @@ interface MapPanelProps {
   active?: boolean;
 }
 
-export function MapPanel({ markers, objects, onOpenObject, active = true }: MapPanelProps) {
+export function MapPanel({ markers, objects, onOpenObject, selectedPlaceId, active = true }: MapPanelProps) {
+  const { locale, strings } = useLocale();
   const [status, setStatus] = useState<Status>(mapIsConfigured ? 'loading' : 'unconfigured');
   const [failure, setFailure] = useState<MapFailure | null>(null);
   const [attempt, setAttempt] = useState(0);
@@ -122,6 +126,14 @@ export function MapPanel({ markers, objects, onOpenObject, active = true }: MapP
     };
   }, [markerSignature, attempt, active]);
 
+  useEffect(() => {
+    setActivePlaceId(selectedPlaceId ?? null);
+  }, [selectedPlaceId]);
+
+  useEffect(() => {
+    if (status === 'ready' && selectedPlaceId) adapterRef.current?.focus(selectedPlaceId);
+  }, [status, selectedPlaceId]);
+
   // The popover is derived from the same filtered records as the list, so a
   // search cannot leave an institution from another record on screen.
   const activeObjects = useMemo(
@@ -132,70 +144,60 @@ export function MapPanel({ markers, objects, onOpenObject, active = true }: MapP
     activeObjects.length > 0 && activePlaceId ? requirePlace(activePlaceId) : undefined;
 
   return (
-    <section className="pane pane--map" id="map" aria-labelledby="map-heading" tabIndex={-1}>
+    <section
+      className="pane pane--map"
+      id="map"
+      aria-labelledby="map-heading"
+      tabIndex={-1}
+      data-map-state={status === 'ready' ? 'live' : 'fallback'}
+    >
       <div className="map__head">
-        <h2 id="map-heading" className="pane__title">
-          {strings.mapHeading}
-        </h2>
-        <p className="pane__sub">{strings.mapSubheading}</p>
+        <div className="map__headings">
+          <h2 id="map-heading" className="pane__title">
+            {strings.mapHeading}
+          </h2>
+          <p className="pane__sub">{strings.mapSubheading}</p>
+        </div>
+        {status === 'ready' ? (
+          <button
+            type="button"
+            className="button button--quiet"
+            onClick={() => adapterRef.current?.fit()}
+          >
+            {strings.mapFitAll}
+          </button>
+        ) : null}
       </div>
 
-      <div className={status === 'ready' ? 'map map--live' : 'map map--fallback'}>
+      {/* The fallback box is short by design, so the provider must never be
+          mounted into it: the SDK measures the container once and would keep
+          loading tiles for a 210 px box after the panel grows. Only the
+          unconfigured state uses the short geometry. */}
+      <div className={status === 'unconfigured' ? 'map map--fallback' : 'map map--live'}>
         <div ref={containerRef} className="map__canvas" aria-hidden="true" />
+        {status === 'unconfigured' || status === 'error' ? (
+          <LocationOverview markers={markers} activePlaceId={activePlaceId} onSelect={setActivePlaceId} />
+        ) : null}
 
-        {status !== 'ready' ? (
+        {status === 'loading' ? (
           <div
             className="map__overlay"
-            role={status === 'error' ? 'alert' : 'status'}
-            aria-live={status === 'error' ? 'assertive' : 'polite'}
+            role="status"
           >
-            {status === 'loading' ? (
-              <>
-                <p className="map__overlay-title">{strings.mapLoading}</p>
-                <p className="map__overlay-body">{strings.mapLoadingHint}</p>
-                <div className="skeleton" aria-hidden="true" />
-              </>
-            ) : null}
-
-            {status === 'unconfigured' ? (
-              <>
-                <p className="map__overlay-title">{strings.mapUnavailableTitle}</p>
-                <p className="map__overlay-body">{strings.mapUnavailableBody}</p>
-                <details className="devnote">
-                  <summary>{strings.mapDeveloperDetails}</summary>
-                  <p>{strings.mapUnconfiguredDevNote}</p>
-                </details>
-              </>
-            ) : null}
-
-            {status === 'error' ? (
-              <>
-                <p className="map__overlay-title">{strings.mapErrorTitle}</p>
-                <p className="map__overlay-body">{strings.mapErrorBody}</p>
-                <button
-                  type="button"
-                  className="button button--primary"
-                  onClick={() => setAttempt((value) => value + 1)}
-                >
-                  {strings.mapRetry}
-                </button>
-                {failure ? (
-                  <details className="devnote">
-                    <summary>{strings.mapDeveloperDetails}</summary>
-                    <p className="mono">{strings.mapFailureDevNote(failure.code, failure.message)}</p>
-                  </details>
-                ) : null}
-              </>
-            ) : null}
+            <p className="map__overlay-title">{strings.mapLoading}</p>
+            <p className="map__overlay-body">{strings.mapLoadingHint}</p>
+            <div className="skeleton" aria-hidden="true" />
           </div>
         ) : null}
 
-        {activePlace ? (
+        {activePlace && status === 'ready' ? (
           <div className="place-card" role="group" aria-label={strings.placeCardLabel}>
             <div className="place-card__head">
               <p className="place-card__name">
                 <span lang="zh-Hans">{activePlace.names.zh}</span>
-                <span className="place-card__en">{activePlace.names.en}</span>
+                <span className="place-card__en" lang="en">
+                  {activePlace.names.en}
+                </span>
               </p>
               <button
                 type="button"
@@ -212,7 +214,9 @@ export function MapPanel({ markers, objects, onOpenObject, active = true }: MapP
                 <li key={object.id}>
                   <button type="button" className="link-button" onClick={() => onOpenObject(object.id)}>
                     <span lang="zh-Hans">{object.titles.zh}</span>
-                    <span className="place-card__list-en">{object.titles.en}</span>
+                    <span className="place-card__list-en" lang="en">
+                      {object.titles.en}
+                    </span>
                   </button>
                 </li>
               ))}
@@ -221,10 +225,40 @@ export function MapPanel({ markers, objects, onOpenObject, active = true }: MapP
         ) : null}
       </div>
 
+      {activePlace && status !== 'ready' ? (
+        <div className="map-overview__selection" role="group" aria-label={strings.placeCardLabel}>
+          <strong>{pickText(locale, activePlace.names.zh, activePlace.names.en)}</strong>
+          <ul className="place-card__list">
+            {activeObjects.map((object) => (
+              <li key={object.id}>
+                <button type="button" className="link-button" onClick={() => onOpenObject(object.id)}>
+                  {pickText(locale, object.titles.zh, object.titles.en)}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+      {status === 'error' ? (
+        <div className="map__caption" role="alert">
+          <p>{strings.mapErrorTitle}</p>
+          <button type="button" className="button button--quiet" onClick={() => setAttempt((value) => value + 1)}>
+            {strings.mapRetry}
+          </button>
+          {failure ? (
+            <details className="devnote">
+              <summary>{strings.mapDeveloperDetails}</summary>
+              <p className="mono">{strings.mapFailureDevNote(failure.code, failure.message)}</p>
+            </details>
+          ) : null}
+        </div>
+      ) : null}
+
       {status === 'ready' ? (
         <div className="map__caption">
           <p>
-            <strong>{strings.mapAttributionLabel}:</strong> {strings.mapAttributionText}
+            <strong>{strings.mapAttributionLabel}</strong> {strings.mapAttributionText}
           </p>
           <p>{strings.mapFrameNote}</p>
         </div>
@@ -232,9 +266,10 @@ export function MapPanel({ markers, objects, onOpenObject, active = true }: MapP
 
       <details className="locations" open={status !== 'ready'}>
         <summary className="locations__summary">
-          {strings.locationsHeading} ({placeRows.length})
+          {strings.locationsHeading}
+          <span className="locations__count">{placeRows.length}</span>
         </summary>
-        <p className="block__meta">{strings.locationsIntro}</p>
+        <p className="locations__intro">{strings.locationsIntro}</p>
         <ul className="location-list">
           {placeRows.map(({ place, objects: list }) => {
             const coordinates = place.coordinates;
@@ -242,7 +277,9 @@ export function MapPanel({ markers, objects, onOpenObject, active = true }: MapP
               <li key={place.id} className="location">
                 <p className="location__name">
                   <span lang="zh-Hans">{place.names.zh}</span>
-                  <span className="location__en">{place.names.en}</span>
+                  <span className="location__en" lang={locale === 'zh' ? 'en' : 'zh-Hans'}>
+                    {locale === 'zh' ? place.names.en : place.names.zh}
+                  </span>
                 </p>
                 <p className="location__meta">
                   <span className="mono">
@@ -253,7 +290,7 @@ export function MapPanel({ markers, objects, onOpenObject, active = true }: MapP
                   {coordinates ? (
                     <>
                       <span className="tag">
-                        {strings.precisionLabel}: {coordinates.precision}
+                        {strings.precisionLabel} {strings.precisionLabels[coordinates.precision]}
                       </span>
                       <span
                         className={
@@ -273,7 +310,7 @@ export function MapPanel({ markers, objects, onOpenObject, active = true }: MapP
                   label={strings.coordinateSourceLabel}
                   compact
                 />
-                {coordinates && status === 'ready' ? (
+                {coordinates ? (
                   <button
                     type="button"
                     className="link-button"
@@ -293,19 +330,25 @@ export function MapPanel({ markers, objects, onOpenObject, active = true }: MapP
         {unmappedRows.length > 0 ? (
           <>
             <h3 className="location-list__heading">{strings.locationsWithoutPointHeading}</h3>
-            <p className="block__meta">{strings.locationsWithoutPointIntro}</p>
+            <p className="locations__intro">{strings.locationsWithoutPointIntro}</p>
             <ul className="location-list location-list--plain">
               {unmappedRows.map(({ object, place, reason }) => (
                 <li key={object.id}>
                   <button type="button" className="link-button" onClick={() => onOpenObject(object.id)}>
                     <span lang="zh-Hans">{object.titles.zh}</span>
-                    <span className="place-card__list-en">{object.titles.en}</span>
+                    <span className="place-card__list-en" lang={locale === 'zh' ? 'en' : 'zh-Hans'}>
+                      {locale === 'zh' ? object.titles.en : object.titles.zh}
+                    </span>
                   </button>
                   <p className="location__meta">
                     <span className="tag">
                       {strings.locationKindLabels[object.currentCollection.locationKind]}
                     </span>
-                    <span>{place ? place.names.en : strings.placeNotRecorded}</span>
+                    <span>
+                      {place
+                        ? pickText(locale, place.names.zh, place.names.en)
+                        : strings.placeNotRecorded}
+                    </span>
                     <span className="location__count">{strings.unmappedReasons[reason]}</span>
                   </p>
                 </li>

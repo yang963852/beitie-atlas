@@ -1,0 +1,45 @@
+{
+  "id": "shimen-song",
+  "titles": {
+    "zh": "石门颂",
+    "en": "Eulogy of Shimen"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "author",
+      "name": "王升",
+      "nameEn": "Wang Sheng",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-cssn-shaanxi-beike"
+      ]
+    }
+  ],
+  "dynastyId": "eastern-han",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "single",
+    "startYear": 148,
+    "startMonth": 11,
+    "endYear": 148,
+    "endMonth": 11,
+    "eraLabel": null,
+    "original": "东汉建和二年（148年）",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "隶书",
+  "background": "A Eastern Han cliff inscription of 148 by the Hanzhong governor Wang Sheng, praising Yang Mengwen for opening the Shimen passage. Cut from the cliff and moved into the Hanzhong Museum.",
+  "sourceRefs": [
+    "src-cssn-shaanxi-beike"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
+    "noteZh": "2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+  },
+  "notes": [
+    "The English title is a project rendering for navigation, not a title used by the source."
+  ]
+}
