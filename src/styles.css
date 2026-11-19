@@ -257,89 +257,6 @@ a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-/* ------------------------------------------------------------------- intro */
-
-.intro {
-  display: grid;
-  align-items: center;
-  min-height: calc(100svh - var(--topbar-height));
-  padding: clamp(40px, 8vh, 112px) max(var(--gutter), 8vw);
-  border-bottom: 1px solid #ded4c2;
-  background: radial-gradient(ellipse at 75% 22%, #fffcf4, transparent 64%), #f3ecde;
-  color: #211d19;
-}
-
-.intro__leaf {
-  width: min(100%, 1120px);
-  margin: 0 auto;
-  animation: opening-leaf 680ms var(--ease) both;
-}
-
-.intro__leaf::before {
-  display: block;
-  width: 44px;
-  height: 3px;
-  margin-bottom: clamp(22px, 4vh, 48px);
-  border-radius: 2px 1px 3px 1px;
-  background: #9b3f31;
-  content: '';
-}
-
-@keyframes opening-leaf {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.intro__lede {
-  margin: 0;
-  font-family: 'Kaiti SC', 'STKaiti', 'KaiTi', var(--font-zh);
-  font-size: clamp(2rem, 8vw, 7.4rem);
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.intro__lede span {
-  display: block;
-}
-
-.intro__lede:lang(en) {
-  font-family: Georgia, serif;
-  font-size: clamp(2rem, 6vw, 6rem);
-}
-
-.intro__detail {
-  max-width: 42em;
-  margin: clamp(18px, 4vh, 40px) 0 0;
-  color: #5e5246;
-  font-size: clamp(1rem, 1.7vw, 1.25rem);
-  line-height: 1.8;
-}
-
-.intro__enter {
-  display: inline-flex;
-  align-items: center;
-  gap: 18px;
-  min-height: 44px;
-  margin-top: clamp(16px, 4vh, 36px);
-  padding: 6px 0;
-  border-bottom: 1px solid currentColor;
-  color: #80362b;
-  text-decoration: none;
-  transition: color 160ms var(--ease);
-}
-
-.intro__enter:hover {
-  color: #4d211a;
-}
-
-.intro__enter span {
-  transition: transform 160ms var(--ease);
-}
-
-.intro__enter:hover span {
-  transform: translateY(3px);
-}
-
 .alert {
   max-width: var(--content-max);
   width: 100%;
@@ -2111,10 +2028,6 @@ a {
     min-height: 40px;
     padding: 6px 10px;
     white-space: nowrap;
-  }
-
-  .intro {
-    min-height: calc(100svh - 86px);
   }
 
   html { scroll-padding-top: 96px; }
