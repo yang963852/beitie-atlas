@@ -7,3 +7,4 @@ Changed: data/yan-qinli-journey.json, JourneyMap, App, MapPanel, ObjectDetail, s
 Local self-review: npm.cmd run check passed type, dataset, board, all 124 tests and the preview build. Existing 40 data warnings and the Vite size warning remain. The tile watcher and its regression test now distinguish loaded base tiles from marker icons. Local Chrome loaded the SDK but received no decoded base tiles on the test port. The geographic landmark grid remained readable, with four events, keyboard selection, collection-map return and direct-link refresh. No mainland network or independent editorial review was performed.
 
 Screenshots: [390 px](screenshots/030-390.png), [768 px](screenshots/030-768.png), [1440 px](screenshots/030-1440.png), [native 200% zoom](screenshots/030-zoom.png). No horizontal overflow.
+Implementation revision 128ce87574272c75e3aa15ce0cc0e849fe09f85f. [PR #18 and source merge result](https://github.com/yang963852/beitie-atlas/pull/18).
