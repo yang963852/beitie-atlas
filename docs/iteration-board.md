@@ -45,6 +45,7 @@ Updated: 2026-11-19. One active implementation task at a time.
 | 032 | Enter the records by touching the paper | Delivered — partially verified by Codex self-review; owner decides acceptance at merge | [Task 032](../tasks/032-ink-entry.md) and [delivery 032](delivery-032.md). |
 
 | 033 | Contain local project artifacts | Delivered — relocation verified by self-review; owner decides acceptance at merge | [Task 033](../tasks/033-workspace-storage.md) and [delivery 033](delivery-033.md). |
+| 034 | Integrate two witness research batches | Delivered — partially verified by self-review; owner decides acceptance at merge | [Task 034](../tasks/034-witness-research.md) and [delivery 034](delivery-034.md). |
 
 ## Iteration loop
 

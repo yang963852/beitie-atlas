@@ -1,0 +1,46 @@
+{
+  "id": "zheng-wengong",
+  "titles": {
+    "zh": "郑文公碑",
+    "en": "Inscriptions for Duke Wen of Zheng"
+  },
+  "aliases": [],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "郑道昭",
+      "nameEn": "Zheng Daozhao",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-yantai-zheng"
+      ]
+    }
+  ],
+  "studyCategory": "bei",
+  "dynastyId": "northern-and-southern",
+  "dynastyQualifier": "北魏",
+  "compositionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "北魏",
+    "original": "北魏",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": null,
+  "background": "Zheng Daozhao commemorated his father in two cliff inscriptions, the upper on Mount Tianzhu and the lower on Mount Yunfeng.",
+  "backgroundZh": "郑道昭为父亲记功，两山各留一刻。上碑在平度天柱山，下碑在莱州云峰山。",
+  "sourceRefs": [
+    "src-yantai-zheng"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [],
+  "notesZh": []
+}

@@ -32,16 +32,41 @@
     "note": null,
     "noteZh": null
   },
-  "provenanceEvents": [],
+  "provenanceEvents": [
+    {
+      "id": "ev-witness-yanta-1",
+      "objectId": "witness-yanta",
+      "type": "accession",
+      "date": {
+        "kind": "unknown",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": null,
+        "certainty": "unknown",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "The Palace Museum credits Zhu Yi’an and his family with the donation. The item record gives no accession year.",
+      "summaryZh": "故宫著录此册由朱翼盦及家属捐赠，单件入藏年份待考。",
+      "sourceRefs": [
+        "src-catalogue-yanta"
+      ],
+      "certainty": "documented"
+    }
+  ],
   "review": {
     "state": "draft",
     "note": "Catalogue identification awaits editorial review.",
     "noteZh": "馆藏著录待编辑复核。"
   },
   "notes": [
-    "The current gallery and accession date have not been verified."
+    "At 灵, look at the returning stroke in the upper right. Zhu Yi’an compared it with another impression to judge their relative age."
   ],
   "notesZh": [
-    "展厅与入藏日期待考。"
+    "临到“灵”字，可以留意右上角的回笔。朱翼盦拿另一册对读，正是从这处辨别两本传拓的早晚。"
   ]
 }

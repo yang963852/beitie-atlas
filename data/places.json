@@ -462,6 +462,53 @@
       ],
       "notes": [],
       "notesZh": []
+    },
+    {
+      "id": "place-zheng-upper",
+      "names": {
+        "zh": "平度天柱山",
+        "en": "Mount Tianzhu, Pingdu"
+      },
+      "historicalName": null,
+      "kind": "historical-site",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-pingdu-tianzhu",
+        "src-yantai-zheng"
+      ],
+      "notes": [],
+      "notesZh": []
+    },
+    {
+      "id": "place-zheng-lower",
+      "names": {
+        "zh": "莱州云峰山",
+        "en": "Mount Yunfeng, Laizhou"
+      },
+      "historicalName": null,
+      "kind": "historical-site",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-laizhou-yunfeng",
+        "src-yantai-zheng"
+      ],
+      "notes": [],
+      "notesZh": []
+    },
+    {
+      "id": "place-shanghai-library",
+      "names": {
+        "zh": "上海图书馆",
+        "en": "Shanghai Library"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-shlibrary-tang"
+      ],
+      "notes": [],
+      "notesZh": []
     }
   ]
 }

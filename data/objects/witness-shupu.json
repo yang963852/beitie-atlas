@@ -13,12 +13,15 @@
     "endYear": 687,
     "endMonth": null,
     "eraLabel": null,
-    "original": "周則天武后萬歲通天垂拱三年（687）",
+    "original": "垂拱三年寫記",
     "certainty": "documented",
     "note": null
   },
   "catalogNumber": "故書000058N000000000",
-  "dimensions": null,
+  "dimensions": {
+    "raw": "本幅 26.5 × 900.8 cm",
+    "note": null
+  },
   "survivalStatus": "surviving",
   "relationships": [],
   "currentCollection": {
@@ -32,16 +35,65 @@
     "note": null,
     "noteZh": null
   },
-  "provenanceEvents": [],
+  "provenanceEvents": [
+    {
+      "id": "ev-witness-shupu-1",
+      "objectId": "witness-shupu",
+      "type": "documented",
+      "date": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "北宋",
+        "original": "北宋",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "The National Palace Museum attributes the regular-script label on the mounting to Emperor Huizong.",
+      "summaryZh": "台北故宫将隔水上的楷书题签归于宋徽宗。",
+      "sourceRefs": [
+        "src-catalogue-shupu"
+      ],
+      "certainty": "documented"
+    },
+    {
+      "id": "ev-witness-shupu-2",
+      "objectId": "witness-shupu",
+      "type": "documented",
+      "date": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "清",
+        "original": "清",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "The museum identifies collectors’ seals of Liang Qingbiao and An Qi. The first Shiqu baoji records the scroll in its Imperial Study section.",
+      "summaryZh": "卷上可见梁清标、安岐等人的鉴藏印。《石渠宝笈初编》御书房卷著录此卷。",
+      "sourceRefs": [
+        "src-catalogue-shupu"
+      ],
+      "certainty": "documented"
+    }
+  ],
   "review": {
     "state": "draft",
     "note": "Catalogue identification awaits editorial review.",
     "noteZh": "馆藏著录待编辑复核。"
   },
   "notes": [
-    "The current gallery and accession date have not been verified."
+    "The manuscript opens with “upper scroll”, while the label on the mounting reads “lower preface”. Compare Sun’s cursive hand with the later regular-script label."
   ],
   "notesZh": [
-    "展厅与入藏日期待考。"
+    "卷首写“书谱卷上”，隔水上的题签却写“序下”。临卷时，可以分别看孙过庭的草书与后人题签的楷书。"
   ]
 }

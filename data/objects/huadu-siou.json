@@ -1,0 +1,97 @@
+{
+  "id": "huadu-siou",
+  "workId": "huadu-si",
+  "objectType": "rubbing",
+  "titles": {
+    "zh": "化度寺塔铭（四欧堂本）",
+    "en": "Huadu Temple inscription, Si’ou Hall album"
+  },
+  "productionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "宋",
+    "original": "宋",
+    "certainty": "documented",
+    "note": null
+  },
+  "catalogNumber": null,
+  "dimensions": null,
+  "survivalStatus": "surviving",
+  "relationships": [],
+  "currentCollection": {
+    "locationKind": "collection-institution",
+    "placeId": "place-shanghai-library",
+    "sourceRefs": [
+      "src-shlibrary-tang",
+      "src-curator-siou"
+    ],
+    "sourceAccessedAt": "2026-11-19",
+    "assertionAsOf": null,
+    "note": null,
+    "noteZh": null
+  },
+  "provenanceEvents": [
+    {
+      "id": "ev-huadu-siou-1915",
+      "objectId": "huadu-siou",
+      "type": "custody",
+      "date": {
+        "kind": "single",
+        "startYear": 1915,
+        "startMonth": null,
+        "endYear": 1915,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "1915年",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "Pan Jingshu brought this album from Pan Zuyin’s collection into the Wu household on her marriage, together with two other Ouyang Xun rubbings.",
+      "summaryZh": "潘静淑出嫁时，将潘祖荫旧藏的这册《化度寺塔铭》与另外两册欧书拓本带入吴家。",
+      "sourceRefs": [
+        "src-curator-siou"
+      ],
+      "certainty": "documented"
+    },
+    {
+      "id": "ev-huadu-siou-1926",
+      "objectId": "huadu-siou",
+      "type": "custody",
+      "date": {
+        "kind": "single",
+        "startYear": 1926,
+        "startMonth": null,
+        "endYear": 1926,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "1926年",
+        "certainty": "documented",
+        "note": null
+      },
+      "placeId": null,
+      "placeWording": null,
+      "summary": "Wu Hufan placed the four Song rubbing albums in one case and named the set Si Ou Bao Ji.",
+      "summaryZh": "吴湖帆把四种欧书宋拓合贮一匣，题为“四欧宝笈”。",
+      "sourceRefs": [
+        "src-curator-siou"
+      ],
+      "certainty": "documented"
+    }
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [
+    "The shelfmark and accession date of this album remain unconfirmed."
+  ],
+  "notesZh": [
+    "这册的馆藏索书号与入藏年月待查。"
+  ]
+}

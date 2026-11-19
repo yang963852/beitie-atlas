@@ -33,9 +33,10 @@
     "note": null
   },
   "script": "行书",
-  "background": "东晋王羲之书《兰亭序》。本条收录唐摹神龙本，摹者归属存疑。",
+  "background": "The Shenlong manuscript copy and the Dingwu rubbing preserve two ways of transmitting Wang Xizhi’s preface.",
   "sourceRefs": [
-    "src-catalogue-lanting"
+    "src-catalogue-lanting",
+    "src-dpm-233468"
   ],
   "review": {
     "state": "draft",
@@ -43,5 +44,6 @@
     "noteZh": "馆藏著录待编辑复核。"
   },
   "notes": [],
-  "notesZh": []
+  "notesZh": [],
+  "backgroundZh": "读王羲之《兰亭序》，可以对看神龙本的摹写与定武本的刻拓。"
 }
