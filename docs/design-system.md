@@ -8,7 +8,7 @@ Write for a reader at the copying desk. Use concrete details from the inscriptio
 
 Show the artifact and its location first. Use strong hierarchy, consistent alignment, whitespace, and progressive disclosure. Keep search, selection, source access, and recovery discoverable. Do not equate simplicity with hiding necessary controls.
 
-The home page opens on a copying desk. A handscroll unfurls and settles onto the wood, the reader’s question appears on the paper, and a spreading ink wash reveals three records. A reader can skip the sequence or enter the full catalogue. Opening records pair a collection map with the specific witness and its evidence in a keyboard-accessible dialog. The desk is contemporary illustrative artwork. Reduced-motion and shared record entries use the settled composition. Preserve ordinary scrolling and the compact catalogue header.
+The copying desk opens with the reader’s question alone on the scroll. The entire sheet links to the catalogue. Pointer input starts a wash at the contact position, keyboard activation starts it at the centre, and the desk fades into the records. Reduced motion enters immediately. Shared links land on the corresponding record or journey.
 
 ## Starting tokens (project decisions)
 

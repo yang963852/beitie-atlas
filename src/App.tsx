@@ -86,6 +86,7 @@ function AppShell() {
 
   useLayoutEffect(() => {
     const id = readObjectIdFromHash();
+    if (window.location.hash === '#catalogue') revealSection('catalogue', false);
     if (id && getObject(id)) revealSection(isJourneyLink() ? 'map' : 'detail', false);
   }, []);
 
@@ -234,6 +235,13 @@ function AppShell() {
         {strings.skipToResults}
       </a>
 
+      <OpeningDesk enter={() => {
+        setDetailOpen(false);
+        setMobilePane('list');
+        if (window.location.hash !== '#catalogue') window.history.pushState(null, '', '#catalogue');
+        revealSection('catalogue', false);
+      }} />
+
       <header className="topbar">
         <div className="topbar__inner">
           <div className="brand">
@@ -259,13 +267,6 @@ function AppShell() {
           </div>
         </div>
       </header>
-
-      <OpeningDesk enter={() => revealSection('catalogue', true)} open={id => {
-        setQuery('');
-        setCategory('all');
-        openObject(id);
-        window.requestAnimationFrame(() => revealSection('detail', false));
-      }} />
 
       {report.ok ? null : (
         <div className="alert" role="alert">

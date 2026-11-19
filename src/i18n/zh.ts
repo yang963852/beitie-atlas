@@ -11,7 +11,7 @@ export const zhStrings: Strings = {
   siteTitleZh: '碑帖之间',
   siteTitleEn: 'Between Steles',
   taglineLead: '案头所临，',
-  tagline: '如今藏在何处？',
+  tagline: '如今藏在何处',
   enterCatalogue: '打开碑帖图录',
   taglineDetail:
     '循地图访清代及以前的传世碑帖，辨原石、墨迹、拓本与摹本，读一件书迹辗转至今的故事。',

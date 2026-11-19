@@ -1,96 +1,54 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { getDataset, getObject, getPlace, getWork } from '../domain/data';
-import { formatDate } from '../domain/dates';
-import type { ObjectRecord } from '../domain/types';
+import { useEffect, useRef, useState, type MouseEvent } from 'react';
 import { useLocale } from '../i18n';
-import { buildMarkers } from '../map/markers';
-import { MapPanel } from './MapPanel';
-import { SourceList } from './SourceList';
 import './opening-desk.css';
 
-const deskRecords = ['stone-drums-original-set', 'witness-lanting', 'yan-qinli-original-stele']
-  .flatMap(id => getObject(id) ?? []);
+export function OpeningDesk({ enter }: { enter: () => void }) {
+  const { strings } = useLocale();
+  const [origin, setOrigin] = useState<{ x: number; y: number } | null>(null);
+  const entering = useRef(false);
+  const finish = () => {
+    if (!entering.current) return;
+    entering.current = false;
+    enter();
+    setOrigin(null);
+  };
 
-function RecordPreview({ object, close, read }: {
-  object: ObjectRecord; close: () => void; read: () => void;
-}) {
-  const dialog = useRef<HTMLDialogElement>(null);
-  const { locale, strings } = useLocale();
-  const work = getWork(object.workId);
-  const collection = object.currentCollection;
-  const place = getPlace(collection.placeId);
-  const { markers } = buildMarkers(getDataset().places, [object], locale);
-  useLayoutEffect(() => {
-    const element = dialog.current;
-    element?.showModal();
-    return () => element?.close();
-  }, []);
-  return (
-    <dialog ref={dialog} className="desk-preview" aria-labelledby="desk-preview-title"
-      onCancel={close} onClick={event => { if (event.target === event.currentTarget) close(); }}>
-      <section className="desk-preview__sheet">
-        <button className="desk-preview__close" type="button" autoFocus onClick={close}
-          aria-label={locale === 'zh' ? '关闭，返回书案' : 'Close and return to the desk'}>×</button>
-        <p className="section__meta">{strings.objectTypeLabels[object.objectType]} · {formatDate(object.productionDate, locale)} · {object.review.state === 'draft' ? strings.reviewDraft : strings.reviewReviewed}</p>
-        <h2 id="desk-preview-title">{object.titles[locale]}</h2>
-        <p>{locale === 'zh' ? work?.backgroundZh ?? work?.background : work?.background}</p>
-        <p><strong>{strings.locationKindLabels[collection.locationKind]}</strong>　{place?.names[locale] ?? strings.collectionNotStated}</p>
-        {markers.length ? <MapPanel compact markers={markers} objects={[object]} originalsOnly={false}
-          onOriginalsOnlyChange={() => {}} onOpenObject={read} /> : <p>{strings.noCoordinates}</p>}
-        <SourceList ids={[...(work?.sourceRefs ?? []), ...collection.sourceRefs, ...(place?.coordinates?.sourceRefs ?? [])]} compact />
-        <a href={'#/object/' + object.id} onClick={event => { event.preventDefault(); read(); }}>
-          {locale === 'zh' ? '读完整记录与流传故事' : 'Read the full record and provenance'} →
-        </a>
-      </section>
-    </dialog>
-  );
-}
-
-export function OpeningDesk({ enter, open }: { enter: () => void; open: (id: string) => void }) {
-  const { locale, strings } = useLocale();
-  const [settled, setSettled] = useState(() => Boolean(window.location.hash) ||
-    Boolean(window.matchMedia?.('(prefers-reduced-motion: reduce)').matches));
-  const [object, setObject] = useState<ObjectRecord | null>(null);
-  const index = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const media = window.matchMedia?.('(prefers-reduced-motion: reduce)');
-    const finish = () => { if (media?.matches) setSettled(true); };
-    media?.addEventListener('change', finish);
-    return () => media?.removeEventListener('change', finish);
-  }, []);
+    if (!origin) return;
+    // Also complete if a browser suppresses the CSS animation while backgrounded.
+    const timer = window.setTimeout(finish, 1250);
+    return () => window.clearTimeout(timer);
+  }, [origin]);
+
+  function open(event: MouseEvent<HTMLAnchorElement>) {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    if (entering.current) return;
+    entering.current = true;
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+      finish();
+      return;
+    }
+    const rect = event.currentTarget.getBoundingClientRect();
+    setOrigin(event.detail === 0 ? { x: 50, y: 50 } : {
+      x: 100 * (event.clientX - rect.left) / rect.width,
+      y: 100 * (event.clientY - rect.top) / rect.height,
+    });
+  }
+
   return (
-    <section className="desk" data-settled={settled} aria-labelledby="opening-title">
-      {!settled && <button className="desk__skip" onClick={() => {
-        setSettled(true);
-        index.current?.querySelector('button')?.focus({ preventScroll: true });
-      }}>{locale === 'zh' ? '跳过动画' : 'Skip animation'}</button>}
+    <section className="desk" data-entering={Boolean(origin)} aria-labelledby="opening-title">
       <div className="desk__scroll">
-        <div className="desk__paper">
-          <div className="desk__ink" aria-hidden="true" />
-          <div className="desk__copy">
-            <h1 id="opening-title"><span>{strings.taglineLead}</span>{' '}<span>{strings.tagline}</span></h1>
-            <p>{strings.taglineDetail}</p>
-          </div>
-          <div className="desk__index" ref={index} onFocus={() => setSettled(true)}
-            onAnimationEnd={event => { if (event.target === event.currentTarget) setSettled(true); }}>
-            <div className="desk__records">
-              {deskRecords.map(record => <button key={record.id} onClick={() => setObject(record)}>
-                <small>{strings.objectTypeLabels[record.objectType]}</small>
-                <strong>{getWork(record.workId)?.titles[locale] ?? record.titles[locale]}</strong>
-                <span aria-hidden="true">↗</span>
-              </button>)}
-            </div>
-            <a href="#catalogue" onClick={event => { event.preventDefault(); enter(); }}>
-              {strings.enterCatalogue}<span aria-hidden="true"> ↓</span>
-            </a>
-          </div>
-        </div>
+        <h1 id="opening-title">
+          <a className="desk__paper" href="#catalogue" onClick={open} aria-label={strings.enterCatalogue}>
+            <span className="desk__words"><span>{strings.taglineLead}</span><span>{strings.tagline}</span></span>
+            {origin && <i className="desk__ink" aria-hidden="true" style={{ left: origin.x + '%', top: origin.y + '%' }} />}
+          </a>
+        </h1>
         <i className="desk__roller desk__roller--left" aria-hidden="true" />
         <i className="desk__roller desk__roller--right" aria-hidden="true" />
       </div>
-      {object && <RecordPreview object={object} close={() => setObject(null)} read={() => {
-        setObject(null); open(object.id);
-      }} />}
+      {origin && <div className="desk__veil" aria-hidden="true" onAnimationEnd={finish} />}
     </section>
   );
 }
