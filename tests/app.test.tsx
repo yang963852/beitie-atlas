@@ -1,5 +1,5 @@
 import { act, fireEvent, render, screen, within } from '@testing-library/react';
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import App from '../src/App';
 import { getDataset } from '../src/domain/data';
 
@@ -27,12 +27,22 @@ beforeEach(() => {
 });
 
 describe('application shell', () => {
-  it('opens the catalogue from the cover without changing the object route', () => {
+  it('waits for paper activation and the ink transition before entering the records', () => {
     renderApp();
-    expect(screen.getByRole('heading', { level: 1, name: /案头所临.*如今藏在何处/ })).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('link', { name: '打开碑帖图录' }));
-    expect(document.activeElement).toBe(document.getElementById('catalogue'));
-    expect(window.location.hash).toBe('');
+    const paper = screen.getByRole('link', { name: '打开碑帖图录' });
+    expect(paper.textContent).toBe('案头所临，如今藏在何处');
+    expect(document.querySelector('.desk__ink')).toBeNull();
+    vi.useFakeTimers();
+    try {
+      fireEvent.click(paper);
+      expect(document.querySelector('.desk__ink')).toHaveStyle({ left: '50%', top: '50%' });
+      expect(window.location.hash).toBe('');
+      act(() => vi.runAllTimers());
+      expect(document.activeElement).toBe(document.getElementById('catalogue'));
+      expect(window.location.hash).toBe('#catalogue');
+    } finally {
+      vi.useRealTimers();
+    }
   });
 
   it('lands an object permalink on its detail instead of the cover', () => {
