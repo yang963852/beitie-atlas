@@ -2250,3 +2250,22 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+.reading-story h3 { font-family: Georgia, "Songti SC", SimSun, serif; font-size: 1.4rem; }
+.reading-story > div { margin-block: 1.25rem; }
+.story-place { margin-block: 1rem; }
+.story-place summary { cursor: pointer; color: var(--accent, #0066cc); }
+.story-place figure { margin: .75rem 0; }
+.story-place figcaption { font-size: .875rem; line-height: 1.6; }
+.story-compass {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  align-items: end;
+  gap: .7rem;
+  padding: 1rem;
+  margin-bottom: .5rem;
+  background: #f4f0e8;
+  color: #433a2f;
+}
+.story-compass strong { padding: .65rem; border: 1px dashed currentColor; font-weight: 500; }
+.story-compass b { grid-column: 1; }

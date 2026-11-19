@@ -7,6 +7,8 @@ import { dynastyLabel } from '../domain/dynasties';
 import type { HistoricalDate, ObjectRecord, Place, Work } from '../domain/types';
 import { detectLang, pickText } from '../domain/text';
 import { useLocale } from '../i18n';
+import { isReleaseBuild } from '../domain/build';
+import { YanQinliStory } from './YanQinliStory';
 import { SourceList } from './SourceList';
 
 type NoteScope = 'object' | 'work' | 'place';
@@ -159,6 +161,8 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute }: Object
           </p>
         ) : null}
       </header>
+
+      {!isReleaseBuild && <YanQinliStory key={object.id} objectId={object.id} />}
 
       <dl className="facts">
         <Fact term={locale === 'zh' ? '书体' : 'Script'}>{work?.script ?? (locale === 'zh' ? '未知' : 'Unknown')}</Fact>
