@@ -214,10 +214,12 @@ export function createTiandituAdapter(loadSdk: TiandituSdkLoader = loadTiandituS
       }
     },
 
-    focus(placeId: string) {
+    focus(placeId: string, zoom?: number) {
       const lnglat = markers.get(placeId);
       if (!map || !lnglat) return;
-      if (map.panTo) {
+      if (zoom !== undefined) {
+        map.centerAndZoom(lnglat, zoom);
+      } else if (map.panTo) {
         map.panTo(lnglat);
       } else {
         map.centerAndZoom(lnglat, 13);

@@ -2269,3 +2269,21 @@ a {
 }
 .story-compass strong { padding: .65rem; border: 1px dashed currentColor; font-weight: 500; }
 .story-compass b { grid-column: 1; }
+
+.pane--map.journey { display: flex; overflow-y: auto; padding: 16px; gap: .8rem; background: white; }
+.workspace[data-mobile-view='detail'] .journey, .workspace[data-mobile-view='list'] .journey { display: none; }
+@media (min-width: 768px) {
+  .workspace[data-mobile-view] .pane--map.journey { display: flex; }
+}
+.journey h2, .journey h3, .journey p { margin: .4em 0; }
+.journey h2 { font: 600 1.4rem Georgia, "Songti SC", SimSun, serif; }
+.journey p { line-height: 1.6; }
+.journey-rail { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 3px; padding: 0; margin: 0; list-style: none; }
+.journey-rail button { height: 100%; width: 100%; padding: .45rem .2rem; background: #f5f4ef; border: 0; border-top: 3px solid #aca69a; color: #403c35; cursor: pointer; }
+.journey-rail button[aria-pressed=true], .journey-grid button[aria-pressed=true] { border-color: #844332; background: #844332; color: white; }
+.journey-rail small,.journey-rail strong { display: block; }
+.journey-map { position: relative; flex: 0 0 auto; height: clamp(180px,32vh,380px); overflow: hidden; border: 1px solid #d2d2d7; }
+.journey-grid { position: absolute; inset: 0; background-color: #f2f1ea; background-image: linear-gradient(#dcdacf 1px, transparent 1px),linear-gradient(90deg,#dcdacf 1px,transparent 1px); background-size: 32px 32px; }
+.journey-grid small { position: absolute; top: 5px; left: 8px; }
+.journey-grid button { position: absolute; transform: translate(-50%,-50%); max-width: 42%; background: white; color: #433a2f; padding: 5px 9px; border: 1px solid #aaa396; border-radius: 5px; cursor: pointer; }
+.journey-stop { border-left: 3px solid #844332; padding-left: .85rem; }

@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { ContributionPanel } from './components/ContributionPanel';
+import { JourneyMap } from './components/JourneyMap';
 import { MapPanel } from './components/MapPanel';
 import { ObjectDetail } from './components/ObjectDetail';
 import { ResultsList } from './components/ResultsList';
@@ -12,6 +13,11 @@ import { buildMarkers } from './map/markers';
 
 const OBJECT_HASH_PATTERN = /^#\/object\/([a-z0-9-]+)$/;
 
+const JOURNEY_HASH = '#/object/yan-qinli-original-stele/journey';
+function isJourneyLink() {
+  return !isReleaseBuild && window.location.hash === JOURNEY_HASH;
+}
+
 const SECTION_IDS = ['results', 'map', 'detail'] as const;
 type SectionId = (typeof SECTION_IDS)[number];
 
@@ -23,6 +29,7 @@ function revealSection(id: string, animate: boolean) {
 }
 
 function readObjectIdFromHash(): string | null {
+  if (isJourneyLink()) return 'yan-qinli-original-stele';
   return OBJECT_HASH_PATTERN.exec(window.location.hash)?.[1] ?? null;
 }
 
@@ -58,12 +65,13 @@ function AppShell() {
 
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<StudyFilter>('all');
+  const [journeyOpen, setJourneyOpen] = useState(isJourneyLink);
   const [originalsOnly, setOriginalsOnly] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(() => readObjectIdFromHash());
   /** Mobile: which of the two exploration panes is visible. Ignored by CSS above 768px. */
-  const [mobilePane, setMobilePane] = useState<'list' | 'map'>('list');
+  const [mobilePane, setMobilePane] = useState<'list' | 'map'>(() => isJourneyLink() ? 'map' : 'list');
   /** Mobile: a record opened full width. Ignored by CSS above 768px. */
-  const [detailOpen, setDetailOpen] = useState(() => readObjectIdFromHash() !== null);
+  const [detailOpen, setDetailOpen] = useState(() => !isJourneyLink() && readObjectIdFromHash() !== null);
   /** The contribution form is a page-level section; a null id means "not about one record". */
   const [contribute, setContribute] = useState<{ open: boolean; objectId: string | null }>({
     open: false,
@@ -77,7 +85,7 @@ function AppShell() {
 
   useLayoutEffect(() => {
     const id = readObjectIdFromHash();
-    if (id && getObject(id)) revealSection('detail', false);
+    if (id && getObject(id)) revealSection(isJourneyLink() ? 'map' : 'detail', false);
   }, []);
 
   useEffect(() => {
@@ -103,7 +111,9 @@ function AppShell() {
         setQuery('');
       }
       setSelectedId(id);
-      setDetailOpen(id !== null);
+      setJourneyOpen(isJourneyLink());
+      if (isJourneyLink()) setMobilePane('map');
+      setDetailOpen(id !== null && !isJourneyLink());
     };
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
@@ -111,6 +121,7 @@ function AppShell() {
 
   const selectObject = (id: string) => {
     setSelectedId(id);
+    setJourneyOpen(false);
     const next = `#/object/${id}`;
     if (window.location.hash !== next) {
       // Preserve the share link and Back history without firing the handler
@@ -174,6 +185,13 @@ function AppShell() {
   const activeObject = selectedId
     ? (filtered.find((object) => object.id === selectedId) ?? filtered[0] ?? null)
     : (filtered[0] ?? null);
+  const canOpenJourney = !isReleaseBuild && activeObject?.id === 'yan-qinli-original-stele';
+  const showJourney = () => {
+    if (window.location.hash !== JOURNEY_HASH) window.history.pushState(null, '', JOURNEY_HASH);
+    setJourneyOpen(true);
+    goToSection('map');
+    window.requestAnimationFrame(() => revealSection('map', false));
+  };
   const selectedPlaceId = selectedId && activeObject?.id === selectedId
     ? markers.find((marker) => marker.objectIds.includes(selectedId))?.placeId
     : undefined;
@@ -326,7 +344,13 @@ function AppShell() {
           />
         </section>
 
-        <MapPanel
+        {journeyOpen && canOpenJourney && activeObject ? (
+          <JourneyMap object={activeObject} active={mapActive} onClose={() => {
+            selectObject(activeObject.id);
+            window.requestAnimationFrame(() => revealSection('map', false));
+          }} />
+        ) : <MapPanel
+          onJourney={canOpenJourney ? showJourney : undefined}
           markers={markers}
           objects={mapObjects}
           originalsOnly={originalsOnly}
@@ -334,7 +358,7 @@ function AppShell() {
           onOpenObject={openObject}
           active={mapActive}
           selectedPlaceId={selectedPlaceId}
-        />
+        />}
 
         <section
           className="pane pane--detail"
@@ -345,12 +369,14 @@ function AppShell() {
           {activeObject ? (
             <ObjectDetail
               object={activeObject}
+              onJourney={canOpenJourney ? showJourney : undefined}
               onBack={() => {
                 pendingFocus.current = 'return';
                 setDetailOpen(false);
               }}
               onShowMap={markers.some((marker) => marker.objectIds.includes(activeObject.id))
                 ? () => {
+                  setJourneyOpen(false);
                   selectObject(activeObject.id);
                   goToSection('map');
                 }

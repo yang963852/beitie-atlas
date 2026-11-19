@@ -22,6 +22,7 @@ interface UnmappedRow {
 }
 
 interface MapPanelProps {
+  onJourney?: () => void;
   markers: MapMarker[];
   /** Records matching the current search and map filter. */
   objects: ObjectRecord[];
@@ -37,7 +38,7 @@ interface MapPanelProps {
 }
 
 export function MapPanel({
-  markers, objects, originalsOnly, onOriginalsOnlyChange, onOpenObject, selectedPlaceId, active = true,
+  onJourney, markers, objects, originalsOnly, onOriginalsOnlyChange, onOpenObject, selectedPlaceId, active = true,
 }: MapPanelProps) {
   const { locale, strings } = useLocale();
   const [status, setStatus] = useState<Status>(mapIsConfigured ? 'loading' : 'unconfigured');
@@ -184,6 +185,7 @@ export function MapPanel({
           <h2 id="map-heading" className="pane__title">
             {strings.mapHeading}
           </h2>
+          {onJourney && <button className="link-button" onClick={onJourney}>{locale === 'zh' ? '查看颜勤礼碑流传时间轴 →' : 'Yan Qinli journey timeline →'}</button>}
           <p className="pane__sub">{strings.mapSubheading}</p>
           <p className="pane__sub map__hint">{strings.mapPointHint}</p>
           <label className="map__filter">

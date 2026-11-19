@@ -58,6 +58,19 @@ describe('tile watcher', () => {
     watch.stop();
   });
 
+  it('reveals the historical basemap only after a base tile loads', () => {
+    const container = document.createElement('div');
+    const firstTile = vi.fn();
+    const watch = watchTiles(container, vi.fn(), 4000, firstTile);
+    watch.start();
+    addImage(container, tileUrl.replace('vec_w', 'cva_w')).dispatchEvent(new Event('load'));
+    expect(firstTile).not.toHaveBeenCalled();
+    addImage(container).dispatchEvent(new Event('load'));
+    addImage(container).dispatchEvent(new Event('load'));
+    expect(firstTile).toHaveBeenCalledTimes(1);
+    watch.stop();
+  });
+
   it('clears a pending deadline on cleanup', () => {
     const container = document.createElement('div');
     const onBlockedChange = vi.fn();

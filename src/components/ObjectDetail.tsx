@@ -97,6 +97,7 @@ function Fact({ term, children }: { term: string; children: ReactNode }) {
 }
 
 interface ObjectDetailProps {
+  onJourney?: () => void;
   onShowMap?: () => void;
   /** Opens the contribution form, prefilled with this record. */
   onContribute?: () => void;
@@ -105,7 +106,7 @@ interface ObjectDetailProps {
   onBack?: () => void;
 }
 
-export function ObjectDetail({ object, onBack, onShowMap, onContribute }: ObjectDetailProps) {
+export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourney }: ObjectDetailProps) {
   const { locale, strings } = useLocale();
   const work = getWork(object.workId);
   const background = locale === 'zh' ? work?.backgroundZh ?? work?.background : work?.background;
@@ -162,6 +163,7 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute }: Object
         ) : null}
       </header>
 
+      {onJourney && <button className="button" onClick={onJourney}>{locale === 'zh' ? '在地图上看原石流传 →' : 'Explore the stone’s journey →'}</button>}
       {!isReleaseBuild && <YanQinliStory key={object.id} objectId={object.id} />}
 
       <dl className="facts">
