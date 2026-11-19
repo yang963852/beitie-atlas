@@ -40,6 +40,7 @@ Updated: 2026-11-19. One active implementation task at a time.
 | 027 | Scroll opening, sourced custody leads, and a second public preview | Delivered — merged under owner authorization after self-review; editorial verification pending | PR #13; Pages and Sites v9 both verified; see [task 027](../tasks/027-opening-and-provenance.md) and [delivery 027](delivery-027.md). |
 | 028 | Enable the GitHub Pages basemap | Delivered — owner-authorized merge after self-review; public tiles verified | [Task 028](../tasks/028-pages-basemap.md), [delivery 028](delivery-028.md). |
 | 029 | Yan Qinli bilingual reading and findspot diagram | Delivered — partially verified by Codex self-review; owner decides acceptance at merge | [Task 029](../tasks/029-yan-qinli-story.md) and [delivery 029](delivery-029.md). |
+| 030 | Read the Yan Qinli timeline on the map | Delivered — partially verified by Codex self-review; owner decides acceptance at merge | [Task 030](../tasks/030-provenance-map.md) and [delivery 030](delivery-030.md). |
 
 ## Iteration loop
 

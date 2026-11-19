@@ -34,7 +34,7 @@ export interface MapCallbacks {
 
 export interface MapAdapter {
   mount(container: HTMLElement, markers: MapMarker[], callbacks: MapCallbacks): Promise<void>;
-  focus: (placeId: string) => void;
+  focus: (placeId: string, zoom?: number) => void;
   /** Frame every mounted marker; used by the "show all points" control. */
   fit: () => void;
   destroy: () => void;

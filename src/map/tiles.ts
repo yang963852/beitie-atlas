@@ -9,6 +9,7 @@ export function watchTiles(
   container: HTMLElement,
   onBlockedChange: (blocked: boolean) => void,
   timeoutMs = 4000,
+  onFirstTile?: () => void,
 ): { start: () => void; stop: () => void } {
   let loaded = false;
   let blocked = false;
@@ -16,6 +17,7 @@ export function watchTiles(
 
   const handleLoad = (event: Event) => {
     if (!(event.target instanceof HTMLImageElement) || !isTiandituTile(event.target)) return;
+    if (!loaded) onFirstTile?.();
     loaded = true;
     if (blocked) {
       blocked = false;
@@ -31,6 +33,10 @@ export function watchTiles(
         const hasDecodedTile = Array.from(container.querySelectorAll('img')).some(
           (image) => image.complete && image.naturalWidth > 0 && isTiandituTile(image),
         );
+        if (!loaded && hasDecodedTile) {
+          loaded = true;
+          onFirstTile?.();
+        }
         if (!loaded && !hasDecodedTile) {
           blocked = true;
           onBlockedChange(true);
