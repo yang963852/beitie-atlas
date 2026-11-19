@@ -1,0 +1,49 @@
+{
+  "id": "huadu-si",
+  "titles": {
+    "zh": "化度寺邕禅师舍利塔铭",
+    "en": "Huadu Temple Stupa Inscription"
+  },
+  "aliases": [
+    "化度寺碑",
+    "化度寺塔铭"
+  ],
+  "attribution": [
+    {
+      "role": "calligrapher",
+      "name": "欧阳询",
+      "nameEn": "Ouyang Xun",
+      "certainty": "documented",
+      "sourceRefs": [
+        "src-curator-siou"
+      ]
+    }
+  ],
+  "studyCategory": "bei",
+  "dynastyId": "tang",
+  "dynastyQualifier": null,
+  "compositionDate": {
+    "kind": "era",
+    "startYear": null,
+    "startMonth": null,
+    "endYear": null,
+    "endMonth": null,
+    "eraLabel": "唐",
+    "original": "唐",
+    "certainty": "documented",
+    "note": null
+  },
+  "script": "楷书",
+  "background": "Ouyang Xun wrote the inscription. This album was among the four Song rubbings of his calligraphy collected by Wu Hufan.",
+  "backgroundZh": "这篇塔铭是欧阳询所书。吴湖帆所藏四种欧书宋拓中，便有这一册。",
+  "sourceRefs": [
+    "src-curator-siou"
+  ],
+  "review": {
+    "state": "draft",
+    "note": "Catalogue identification awaits editorial review.",
+    "noteZh": "馆藏著录待编辑复核。"
+  },
+  "notes": [],
+  "notesZh": []
+}

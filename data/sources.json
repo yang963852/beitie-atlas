@@ -866,7 +866,7 @@
       "publisher": "故宫博物院",
       "url": "https://www.dpm.org.cn/collection/impres/234134.html",
       "publicationDate": null,
-      "accessedAt": "2026-11-18",
+      "accessedAt": "2026-11-19",
       "locator": "藏品题名及作品说明",
       "note": null
     },
@@ -886,10 +886,10 @@
       "kind": "web",
       "title": "书谱",
       "publisher": "國立故宮博物院",
-      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14900?dep=P",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail?dep=P&id=14900",
       "publicationDate": null,
-      "accessedAt": "2026-11-18",
-      "locator": "藏品题名及作品说明",
+      "accessedAt": "2026-11-19",
+      "locator": "卷末自题、题跋、印记及收藏著录",
       "note": null
     },
     {
@@ -1121,6 +1121,94 @@
       "publicationDate": null,
       "accessedAt": "2026-11-18",
       "locator": "藏品题名、文物号及简介",
+      "note": null
+    },
+    {
+      "id": "src-dpm-261938",
+      "kind": "web",
+      "title": "宋拓懋勤殿本淳化阁帖册",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/impres/261938.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-19",
+      "locator": "故00004678-6/10，简介第一、二段",
+      "note": null
+    },
+    {
+      "id": "src-dpm-233468",
+      "kind": "web",
+      "title": "宋拓定武兰亭序",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/impres/233468.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-19",
+      "locator": "新00135367，拓纸、翻刻特征、题跋及木匣",
+      "note": null
+    },
+    {
+      "id": "src-dpm-234635",
+      "kind": "web",
+      "title": "明拓东汉礼器碑",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/impres/234635.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-19",
+      "locator": "新00044512，简介中本拓本一段",
+      "note": null
+    },
+    {
+      "id": "src-yantai-zheng",
+      "kind": "web",
+      "title": "魏碑体鼻祖郑道昭",
+      "publisher": "烟台市情网",
+      "url": "https://dsyjy.yantai.gov.cn/art/2010/11/15/art_1324_377720.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-19",
+      "locator": "郑道昭在光州题刻及上下碑",
+      "note": null
+    },
+    {
+      "id": "src-pingdu-tianzhu",
+      "kind": "web",
+      "title": "天柱山摩崖石刻",
+      "publisher": "平度市博物馆",
+      "url": "https://www.pdsbwg.net/html/quanguozhongdianwenwubaohudanwei/20170724_4731.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-19",
+      "locator": "天柱山方位及郑氏父子石刻",
+      "note": null
+    },
+    {
+      "id": "src-laizhou-yunfeng",
+      "kind": "web",
+      "title": "云峰山摩崖石刻保护工作情况",
+      "publisher": "莱州市政府",
+      "url": "https://www.laizhou.gov.cn/art/2021/11/12/art_23203_2932809.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-19",
+      "locator": "郑文公下碑及碑亭保护设施",
+      "note": null
+    },
+    {
+      "id": "src-shlibrary-tang",
+      "kind": "web",
+      "title": "上海图书馆举办“大唐气象——上海图书馆藏唐碑善本展”",
+      "publisher": "上海图书馆",
+      "url": "https://www.library.sh.cn/article/91186",
+      "publicationDate": null,
+      "accessedAt": "2026-11-19",
+      "locator": "馆藏四欧宝笈参展",
+      "note": null
+    },
+    {
+      "id": "src-curator-siou",
+      "kind": "web",
+      "title": "现场｜传世稀见，“四欧宝笈”领衔唐碑善本大展",
+      "publisher": "澎湃新闻",
+      "url": "https://www.thepaper.cn/newsDetail_forward_15167730",
+      "publicationDate": null,
+      "accessedAt": "2026-11-19",
+      "locator": "策展人仲威介绍四种宋拓、书者及吴湖帆收藏",
       "note": null
     }
   ]
