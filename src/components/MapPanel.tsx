@@ -22,6 +22,7 @@ interface UnmappedRow {
 }
 
 interface MapPanelProps {
+  compact?: boolean;
   onJourney?: () => void;
   markers: MapMarker[];
   /** Records matching the current search and map filter. */
@@ -38,7 +39,7 @@ interface MapPanelProps {
 }
 
 export function MapPanel({
-  onJourney, markers, objects, originalsOnly, onOriginalsOnlyChange, onOpenObject, selectedPlaceId, active = true,
+  compact = false, onJourney, markers, objects, originalsOnly, onOriginalsOnlyChange, onOpenObject, selectedPlaceId, active = true,
 }: MapPanelProps) {
   const { locale, strings } = useLocale();
   const [status, setStatus] = useState<Status>(mapIsConfigured ? 'loading' : 'unconfigured');
@@ -173,14 +174,15 @@ export function MapPanel({
 
   return (
     <section
-      className="pane pane--map"
-      id="map"
-      aria-labelledby="map-heading"
+      className={compact ? "desk-preview__map" : "pane pane--map"}
+      id={compact ? "preview-map" : "map"}
+      aria-label={compact ? strings.mapHeading : undefined}
+      aria-labelledby={compact ? undefined : "map-heading"}
       tabIndex={-1}
       data-map-state={status === 'ready' ? 'live' : 'fallback'}
       data-map-tiles={tilesBlocked ? 'blocked' : 'ok'}
     >
-      <div className="map__head">
+      {!compact && <div className="map__head">
         <div className="map__headings">
           <h2 id="map-heading" className="pane__title">
             {strings.mapHeading}
@@ -206,7 +208,7 @@ export function MapPanel({
             {strings.mapFitAll}
           </button>
         ) : null}
-      </div>
+      </div>}
 
       {/* A map whose tiles are refused looks identical to a map that is still
           loading, forever. Say so, and keep the markers and the place list —
@@ -289,7 +291,7 @@ export function MapPanel({
       {/* The pins are small, and a provider pin does not advertise that it is a
           control. This index names every plotted place, keeps the map usable
           without a mouse, and says how many records sit behind each point. */}
-      {markers.length > 0 ? (
+      {!compact && markers.length > 0 ? (
         <div className="map__index" role="group" aria-label={strings.mapPointIndexLabel}>
           {markers.map((marker) => (
             <button
@@ -353,7 +355,7 @@ export function MapPanel({
         </div>
       ) : null}
 
-      <details className="locations" open={status !== 'ready'}>
+      {!compact && <details className="locations" open={status !== 'ready'}>
         <summary className="locations__summary">
           {strings.locationsHeading}
           <span className="locations__count">{documentedPlaceCount}</span>
@@ -448,7 +450,7 @@ export function MapPanel({
             </ul>
           </>
         ) : null}
-      </details>
+      </details>}
     </section>
   );
 }

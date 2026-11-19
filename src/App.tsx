@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { ContributionPanel } from './components/ContributionPanel';
 import { JourneyMap } from './components/JourneyMap';
+import { OpeningDesk } from './components/OpeningDesk';
 import { MapPanel } from './components/MapPanel';
 import { ObjectDetail } from './components/ObjectDetail';
 import { ResultsList } from './components/ResultsList';
@@ -259,20 +260,12 @@ function AppShell() {
         </div>
       </header>
 
-      <section className="intro" aria-labelledby="opening-title">
-        <div className="intro__leaf">
-          <h1 id="opening-title" className="intro__lede">
-            <span>{strings.taglineLead}</span>{' '}<span>{strings.tagline}</span>
-          </h1>
-          <p className="intro__detail">{strings.taglineDetail}</p>
-          <a className="intro__enter" href="#catalogue" onClick={(event) => {
-            event.preventDefault();
-            revealSection('catalogue', true);
-          }}>
-            {strings.enterCatalogue}<span aria-hidden="true">↓</span>
-          </a>
-        </div>
-      </section>
+      <OpeningDesk enter={() => revealSection('catalogue', true)} open={id => {
+        setQuery('');
+        setCategory('all');
+        openObject(id);
+        window.requestAnimationFrame(() => revealSection('detail', false));
+      }} />
 
       {report.ok ? null : (
         <div className="alert" role="alert">

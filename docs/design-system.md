@@ -8,7 +8,7 @@ Write for a reader at the copying desk. Use concrete details from the inscriptio
 
 Show the artifact and its location first. Use strong hierarchy, consistent alignment, whitespace, and progressive disclosure. Keep search, selection, source access, and recovery discoverable. Do not equate simplicity with hiding necessary controls.
 
-The home page opens like the first leaf of a scroll: warm paper, a restrained vermilion mark, local Kai or Song type, and two large lines of the reader’s question. A single entry link and ordinary scrolling lead to the neutral catalogue. A shared object URL lands on the record instead of replaying the opening. Use a short entrance fade with no scroll hijacking; reduced-motion readers should get the final state immediately. Keep a compact header, quiet sidebar, generous map and readable detail sheet in the catalogue. Avoid ornamental ink textures and excessive nested cards.
+The home page opens on a copying desk. A handscroll unfurls and settles onto the wood, the reader’s question appears on the paper, and a spreading ink wash reveals three records. A reader can skip the sequence or enter the full catalogue. Opening records pair a collection map with the specific witness and its evidence in a keyboard-accessible dialog. The desk is contemporary illustrative artwork. Reduced-motion and shared record entries use the settled composition. Preserve ordinary scrolling and the compact catalogue header.
 
 ## Starting tokens (project decisions)
 
