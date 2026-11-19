@@ -9,6 +9,12 @@ Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, a
 - Use English in implementation and technical documents; explain progress to the owner in Chinese. Preserve Chinese names and original source wording.
 - Inspect `git status` first. Preserve others' changes. Work inside this repository, never stage the parent workspace or personal documents.
 
+## Local artifact storage
+
+- Never create project folders or write project outputs in the parent workspace or beside this repository.
+- Use `.private/tmp/` for temporary files and caches, `.private/browser/` for browser profiles, `.private/sites/` for deployment checkouts and archives, and `.private/workspace-archive/` for retained legacy artifacts. Keep existing `dist/` and `build/` conventions. Never stage `.private/`.
+- Set tool output paths, browser profile paths, and temporary-directory variables explicitly as needed. If a tool cannot keep its output inside the project, report the limitation instead of writing beside the repository. Check for stray project outputs at handoff; leave unrelated folders alone.
+
 ## Evidence and data
 
 - Work and physical object remain separate. Never copy provenance between related objects.

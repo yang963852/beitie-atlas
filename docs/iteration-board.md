@@ -44,6 +44,8 @@ Updated: 2026-11-19. One active implementation task at a time.
 | 031 | Unroll a handscroll onto the copying desk and open record previews | Delivered — partially verified by Codex self-review; owner decides acceptance at merge | [Task 031](../tasks/031-desk-opening.md) and [delivery 031](delivery-031.md). |
 | 032 | Enter the records by touching the paper | Delivered — partially verified by Codex self-review; owner decides acceptance at merge | [Task 032](../tasks/032-ink-entry.md) and [delivery 032](delivery-032.md). |
 
+| 033 | Contain local project artifacts | Delivered — relocation verified by self-review; owner decides acceptance at merge | [Task 033](../tasks/033-workspace-storage.md) and [delivery 033](delivery-033.md). |
+
 ## Iteration loop
 
 Ready → in progress → delivered → reviewed → fixing (if necessary) → accepted.
