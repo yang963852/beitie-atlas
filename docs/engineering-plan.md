@@ -142,9 +142,9 @@ M0/M1 local code checks can pass before external access checks. Report these as 
 
 ## Hosting, rights, and credentials
 
-- GitHub is the planned public source host. Never publish the parent workspace; it contains unrelated personal material.
-- Codex Sites hosts the owner-authorized interactive draft preview. Keep the atlas build portable and verify mainland access separately.
-- Vite's base URL must match the deployment path. Codex Sites serves the project at the URL root.
+- GitHub is the public source host. Never publish the parent workspace; it contains unrelated personal material.
+- GitHub Pages is the sole website host and serves the interactive draft preview. Verify mainland access separately.
+- Vite's base URL must match the deployment path. The Pages workflow reads the project base path from `actions/configure-pages`.
 - Browser-embedded configuration is public even when injected from a build environment. `.env` alone cannot hide a frontend secret. Use provider-supported domain restrictions, quotas, and a server-side proxy if required; document added costs.
 - Preserve provider attribution and any required approval number. Do not use undocumented tile endpoints or remove official map annotations. Provider terms and host requirements must be checked for the selected release setup.
 - Original code: MIT recommended. Editorial data: separate license only for material the project can license. Third-party media: per-item rights. Placeholders or links are acceptable when image reuse is not established.

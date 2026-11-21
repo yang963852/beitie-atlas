@@ -68,15 +68,10 @@ not a release artifact.
 
 ## CI and deployment
 
-`.github/workflows/check.yml` runs preview checks only. It has no deployment step and no
-secrets. Formal publication of the interactive atlas requires a release artifact produced by `npm run release` and a separate
-host/mainland-network decision recorded in `docs/iteration-board.md`.
+[The Pages workflow](../.github/workflows/pages.yml) automatically deploys the labelled preview from `main`. GitHub Pages is the sole website host. The current workflow accepts preview artifacts only.
 
-For an authorized Sites upload, run the [Site artifact workflow](../.github/workflows/site-artifact.yml) at the chosen task revision. Record its run URL, full source SHA, mode, artifact name and resulting Sites version together in the delivery report. Check the downloaded HTML mode and referenced assets before upload. The workflow currently builds without a Tianditu key. For a deployment that promises live tiles, verify the actual candidate on the authorized host with its origin-restricted browser configuration before replacing the current Site.
+For formal publication, obtain editorial approval of the exact source revision and update the Pages workflow in that release task. Have the workflow build with `npm run release` and the Pages base path, verify the release marker and manifest, and deploy the resulting `dist/`. Account for the preview trigger in the same task so a push cannot silently replace the formal edition with a preview. Record the Actions run, full source SHA, manifest and public URL. Verify the hosted permalink, actual map tiles and attribution when configured, and mainland reachability as separate checks.
 
 ## Rolling back
 
-Roll back by choosing a previously accepted Git revision and rebuilding it with
-`npm run release`; do not hand-edit `dist/` and do not delete unexplained work. Because the
-release command removes the output before building, a half-finished deployment directory is
-never a rollback source.
+To roll back the current preview, revert the offending change through a PR so Pages deploys the checked `main` revision. A formal release rollback rebuilds a previously approved revision with `npm run release` and verifies its artifact before publishing it through Pages. Use Git revisions as rollback sources.

@@ -46,13 +46,14 @@
 全国版[天地图应用控制台](https://cloudcenter.tianditu.gov.cn/)的白名单栏填写**纯域名**。本项目的公开站点填：
 
 ```
-beitie-atlas.partedlute2.chatgpt.site
+yang963852.github.io
 ```
 
 要点：
 
 - 域名不带 `https://`、路径或末尾的 `/`。多个域名用英文半角逗号分隔。
 - 用于公开站点的浏览器端 Key 应限制到实际域名，并开启 **JavaScriptApi** 和**瓦片服务**。空白名单允许任意域名调用。
+- GitHub Pages 的构建从仓库的 Actions secret `TIANDITU_BROWSER_KEY` 读取公开站点所用的浏览器端 Key。这个 Key 随网页交付给访问者，域名白名单用于限制它的使用范围。
 - 本地调试可单独使用开发 Key。省级节点的表单格式可能不同，以实际使用的控制台提示为准。
 
 ## 4. 写进项目（不改代码）
