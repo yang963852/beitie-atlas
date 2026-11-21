@@ -1,6 +1,6 @@
 # Iteration board
 
-Updated: 2026-11-19. One active implementation task at a time.
+Updated: 2026-11-21. One active implementation task at a time.
 
 | Task | Outcome | State | Exit evidence |
 | --- | --- | --- | --- |
@@ -46,6 +46,7 @@ Updated: 2026-11-19. One active implementation task at a time.
 
 | 033 | Contain local project artifacts | Delivered — relocation verified by self-review; owner decides acceptance at merge | [Task 033](../tasks/033-workspace-storage.md) and [delivery 033](delivery-033.md). |
 | 034 | Integrate two witness research batches | Delivered — partially verified by self-review; owner decides acceptance at merge | [Task 034](../tasks/034-witness-research.md) and [delivery 034](delivery-034.md). |
+| 035 | Use GitHub Pages as the sole website host | Delivered — hosting cutover verified by self-review; owner decides acceptance at merge | [Task 035](../tasks/035-github-pages-only.md), [delivery 035](delivery-035.md), and [PR #23](https://github.com/yang963852/beitie-atlas/pull/23). |
 
 ## Iteration loop
 
@@ -61,7 +62,9 @@ Before a new iteration record its base revision; after acceptance record its acc
 
 ## Decisions
 
-- 2026-11-18: The public host stays Codex Sites. The owner decided this explicitly after the review measured a Cloudflare 403 from a mainland network; the reachability limit is recorded in [delivery 017](delivery-017.md) as a known limitation, not as a migration plan. Any future change of host is a separate owner decision.
+- 2026-11-21: The owner selected GitHub Pages as the sole website host. The existing Pages workflow continues to deploy the labelled preview from checked `main`. Formal publication on Pages still requires the strict release gate, editorial approval, and deployment verification. See [task 035](../tasks/035-github-pages-only.md).
+
+- 2026-11-18: The owner chose to keep Codex Sites at the time, after the review measured a Cloudflare 403 from a mainland network. [Delivery 017](delivery-017.md) records that measurement. The 2026-11-21 hosting decision supersedes this choice.
 
 - 2026-11-18: A review by the implementer's own tooling is a self-review. It can clear findings, but the board records that distinction and acceptance requires either an independent reviewer or the owner's decision at merge.
 

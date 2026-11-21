@@ -51,12 +51,11 @@ Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, a
 - After a merge, `main` must match `origin/main`. A local-only commit is an unsynchronized change, not a delivery.
 - Do not force-push a branch that another person or tool may have based work on, and do not rewrite pushed history.
 - Report a blocked push exactly: the command, the error, and what remains unpushed. Never describe unpushed work as delivered.
-- `dist/`, `build/`, `.env*`, local map keys, and Site write credentials stay out of both remotes.
-- [The site artifact workflow](../.github/workflows/site-artifact.yml) produces the verified directory for a Sites upload and names its revision. The upload itself remains an owner-authorized step; record the Site version next to the revision.
+- Keep `dist/`, `build/`, local environment files, map keys, and deployment credentials out of the source remote. GitHub Actions uploads the built site as a Pages artifact.
 
 ## Repository and preview workflow
 
 - Start from the synchronized `origin/main` on one task branch. Record the review outcome before merging. A source merge does not constitute formal editorial approval.
 - Apply the evidence checklist in [the atlas workflow](docs/atlas-workflow.md) to additions and coordinate changes. Sort the left column by the represented inscription's period, then date. Keep the production date of each copy visible in its own detail.
-- Codex Sites remains a public host. GitHub Pages is an additional public, labelled preview of checked `main`, not a formal edition or proof of mainland access. Keep local map keys, private notes and build output out of both source remotes.
-- A formal public release requires `npm run release`, a verified release manifest, editorial approval, and host checks. Task 015 records owner authorization for the clearly labelled public draft preview of the existing 36 physical records. Changing a private Site's audience is a separate action.
+- GitHub Pages is the sole website host. [The Pages workflow](.github/workflows/pages.yml) publishes a labelled preview of checked `main`. Record the deployed revision, Actions run, and observed network reachability separately.
+- A formal publication on GitHub Pages requires `npm run release`, a verified release manifest, editorial approval, and host checks. Follow [the release runbook](docs/release.md) before changing the Pages deployment mode.

@@ -1,6 +1,6 @@
 # Atlas workflow
 
-GitHub is the canonical source. Codex Sites and GitHub Pages are separate public preview channels; source merge and formal editorial approval are separate decisions. The Codex Site's project identity and static output directory are recorded in `.openai/hosting.json`.
+GitHub is the canonical source and [GitHub Pages](https://yang963852.github.io/beitie-atlas/) is the sole website host. The Pages workflow publishes a labelled preview. Formal editorial approval is a separate decision from source merge.
 
 ## What counts as a source
 
@@ -32,13 +32,6 @@ When two citable pages disagree — the year of a stele, the height of a stone, 
 1. In GitHub repository **Settings → Pages**, set the publishing source to **GitHub Actions**. [The Pages workflow](../.github/workflows/pages.yml) runs on changes to `main` or by manual dispatch from `main`.
 2. The workflow uses the host's project base path, runs keyless checks, then builds the labelled preview with the repository Actions secret `TIANDITU_BROWSER_KEY` when set. It publishes only `dist/` as an Actions artifact. The browser key is visible in the resulting bundle; restrict it to the authorized host and quota. Never commit the key or build output. The coordinate grid and location list remain usable without basemap tiles.
 3. Verify the deployment's revision and URL, refresh an object permalink, and open a source from an object's timeline. Record the result and any mainland reachability gap. Do not report a queued or failed workflow as a public deployment.
-
-## Codex Sites preview
-
-1. Verify the target audience before publishing a preview. The owner explicitly authorized the 36-record draft preview on the [existing public Site](https://beitie-atlas.partedlute2.chatgpt.site/) in task 015. Keep the draft notice visible.
-2. Build from the selected GitHub revision with `VITE_BASE_PATH=/` and `VITE_RELEASE_MODE=0`. For live tiles use a Tianditu browser key restricted to the exact hosted origin and the provider quota. The browser bundle includes this key by design. Keep environment files, server keys, and Site write credentials out of Git and the archive.
-3. Sync the source, package the matching `dist/`, and confirm that `index.html` has the `preview` marker before deployment. Record the Git revision, Sites version, URL, and actual audience.
-4. Refresh a record permalink on the live hostname. Check the draft notice, place-to-record links, and actual Tianditu tiles and attribution. A keyless or failed map keeps the coordinate grid and place list available.
 
 ## Formal atlas release
 

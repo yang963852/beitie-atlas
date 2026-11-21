@@ -2,7 +2,7 @@
 
 **简体中文** · [English](README.en.md)
 
-**[在线图鉴 · Codex Sites](https://beitie-atlas.partedlute2.chatgpt.site/)** · [GitHub Pages 预览](https://yang963852.github.io/beitie-atlas/) · [反馈问题或补充资料](https://github.com/yang963852/beitie-atlas/issues)
+**[在线图鉴 · GitHub Pages 试览](https://yang963852.github.io/beitie-atlas/)** · [反馈问题或补充资料](https://github.com/yang963852/beitie-atlas/issues)
 
 临帖时，我们面对的是怎样传下来的一行字？《玄秘塔碑》的原石藏在西安，故宫另藏它的明初拓册。同一篇碑文，石与纸各有去处。碑帖之间为书法学习者整理清代及以前的著名碑帖，从案头的一笔一画出发，循地图访其所藏，循著录读其来历。
 
@@ -27,7 +27,7 @@ Windows 可用 `npm.cmd` 替代 `npm`。浏览资料无需地图密钥，接入�
 
 ## 技术与项目文档
 
-React、TypeScript 和 Vite 构建静态应用，JSON 管理作品、实物和出处，天地图提供底图，Vitest 与 GitHub Actions 负责自动检查。Codex Sites 和 GitHub Pages 分别托管公开预览。
+React、TypeScript 和 Vite 构建静态应用，JSON 管理作品、实物和出处，天地图提供底图，Vitest 与 GitHub Actions 负责自动检查。GitHub Pages 是项目唯一的网站托管平台。
 
 | 要做什么 | 从这里开始 |
 | --- | --- |

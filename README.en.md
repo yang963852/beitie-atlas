@@ -2,7 +2,7 @@
 
 [简体中文](README.md) · **English**
 
-**[Atlas on Codex Sites](https://beitie-atlas.partedlute2.chatgpt.site/)** · [GitHub Pages preview](https://yang963852.github.io/beitie-atlas/) · [Report an issue or suggest a source](https://github.com/yang963852/beitie-atlas/issues)
+**[Atlas preview on GitHub Pages](https://yang963852.github.io/beitie-atlas/)** · [Report an issue or suggest a source](https://github.com/yang963852/beitie-atlas/issues)
 
 Between Steles is a companion for calligraphy practice. The stone of the Xuanmi Pagoda Stele is in Xi’an, while an early Ming rubbing is in Beijing. Follow the work you copy to its surviving witnesses, find their documented holdings on the map and read how each passed from hand to hand.
 
@@ -27,7 +27,7 @@ On Windows, `npm.cmd` also works. The corpus is readable without a map key. See 
 
 ## Stack and project documentation
 
-React, TypeScript and Vite build the static app. JSON stores works, physical objects and sources. Tianditu supplies the basemap. Vitest and GitHub Actions run checks. Codex Sites and GitHub Pages host separate public previews.
+React, TypeScript and Vite build the static app. JSON stores works, physical objects and sources. Tianditu supplies the basemap. Vitest and GitHub Actions run checks. GitHub Pages is the sole website host.
 
 | Goal | Start here |
 | --- | --- |
