@@ -46,7 +46,7 @@ Updated: 2026-11-21. One active implementation task at a time.
 
 | 033 | Contain local project artifacts | Delivered — relocation verified by self-review; owner decides acceptance at merge | [Task 033](../tasks/033-workspace-storage.md) and [delivery 033](delivery-033.md). |
 | 034 | Integrate two witness research batches | Delivered — partially verified by self-review; owner decides acceptance at merge | [Task 034](../tasks/034-witness-research.md) and [delivery 034](delivery-034.md). |
-| 035 | Use GitHub Pages as the sole website host | In progress — local changes under self-review; GitHub synchronization and host checks pending | [Task 035](../tasks/035-github-pages-only.md) and [delivery 035](delivery-035.md). |
+| 035 | Use GitHub Pages as the sole website host | Delivered — hosting cutover verified by self-review; owner decides acceptance at merge | [Task 035](../tasks/035-github-pages-only.md), [delivery 035](delivery-035.md), and [PR #23](https://github.com/yang963852/beitie-atlas/pull/23). |
 
 ## Iteration loop
 

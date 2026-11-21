@@ -2,6 +2,8 @@
 
 Branch `codex/035-github-pages-only`, based on `6ef120defcdce550109dbb5abf04891b7b633f38`. Self-review by Codex. The owner decides acceptance at merge.
 
+Implementation revision `697f56b030085510892c37ed4bd3f1d9f8a8f644`. [PR #23](https://github.com/yang963852/beitie-atlas/pull/23) records the final branch checks, resulting merge revision, and post-merge deployment verification. [Pages Actions history](https://github.com/yang963852/beitie-atlas/actions/workflows/pages.yml?query=branch%3Amain) records the deployments of `main`.
+
 Updated the two READMEs, `AGENTS.md`, `CONTRIBUTING.md`, the engineering plan, maintainer handoff, atlas workflow, release runbook, map setup, and iteration board. Removed `.openai/hosting.json` and `.github/workflows/site-artifact.yml`. The existing `.github/workflows/pages.yml` serves the labelled draft preview and the formal release gate still applies. The previous formal edition remains documented in [delivery 021](delivery-021.md).
 
 Before the cutover, the Pages homepage returned HTTP 200 and referred to its bundle under `/beitie-atlas/`. The HTML declared preview mode. [The baseline Pages run](https://github.com/yang963852/beitie-atlas/actions/runs/44497091563) succeeded for the base revision.
