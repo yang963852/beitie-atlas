@@ -2,7 +2,7 @@
 
 The coordinator authorized a publicly accessible **内部测试第一版** on GitHub Pages. This is a labelled preview. The last formally approved edition remains tagged v0.1.0-alpha.2.
 
-Branch `codex/036-internal-beta` starts from `3e0450d559f4c5d3bb39ed9220cd0597670d2a39`. The implementation and review commits, merge and deployment are recorded in the milestone PR. Review outcome is partially verified by Codex self-review. The coordinator authorized the rollout.
+Branch `codex/036-internal-beta` starts from `3e0450d559f4c5d3bb39ed9220cd0597670d2a39`. [PR #24](https://github.com/yang963852/beitie-atlas/pull/24) records the checked branch and merge result. The [beta version record](https://github.com/yang963852/beitie-atlas/releases/tag/v0.2.0-beta.1) links the deployed revision and Pages run. Review outcome is partially verified by Codex self-review. The coordinator authorized the rollout.
 
 ## Reader and contributor paths
 
@@ -22,6 +22,8 @@ Implementation head `f50505a108fb0031ae56fcf1cf53a563ac1e7a07`. The full changed
 The keyless Pages-base configuration passed `npm.cmd run check` (type, data, generated catalogue, board, tests, preview bundle). The corpus comprises 74 structured works, 83 witnesses, 57 events and 119 sources. The beta adds four work guides, three people, two reading notes and one person-to-person relationship. The catalogue generator checked 75 pages. The strict check rejected drafts as expected. The original editorial warnings and Vite chunk-size warning remain.
 
 Headless Edge exercised the keyboard entrance, browser Back, original witness URL refresh, person-to-work navigation, both relationship endpoints, English switching and a post-Qing work without coordinates. Responsive inspection verified [390 px](screenshots/036-390.png), [768 px](screenshots/036-768.png), [1440 px](screenshots/036-1440.png) and [native 200% browser zoom](screenshots/036-zoom.png). The zoom measurement was 705 CSS px at 1440 window width and DPR 2, with no horizontal overflow. No fabricated reader Issues were submitted for testing.
+
+A fresh local clone of revision `65e0538507ee36b3175d14fc14895395cca4aa38` passed `npm ci` and the full keyless `npm run check` with 132 passing tests. All three submission forms passed structure checks. The three repo skills passed format validation. Public posting by a real new member remains for the beta group.
 
 ## Editorial and network limits
 
