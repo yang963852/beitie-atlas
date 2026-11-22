@@ -1,0 +1,29 @@
+name: 内测反馈 · Beta feedback
+description: 反馈阅读、查找、地图或网页操作中的问题。
+title: "[内测] "
+labels: ["beta-feedback"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 哪个页面或条目？
+      description: 请粘贴网址，或写出作品、实物或书家的名称。
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 用什么设备和浏览器？（选填）
+      placeholder: 例如 iPhone 上的 Safari
+  - type: textarea
+    id: actual
+    attributes:
+      label: 做了什么，实际看到了什么？
+      description: 如果不能打开页面，可注明网络类型、报错文字，以及页面或地图哪一部分没有加载。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 原本希望怎样？（选填）
+      description: 也欢迎指出读不懂的一句、找不到的入口或希望保留的体验。

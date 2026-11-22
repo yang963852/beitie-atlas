@@ -1,0 +1,36 @@
+name: 资料投稿或勘误 · Knowledge
+description: 用中文补充碑帖、实物、书家、读帖观察或线索。
+title: "[资料] "
+labels: ["knowledge"]
+body:
+  - type: input
+    id: subject
+    attributes:
+      label: 想补充哪件作品、实物或哪位书家？
+      placeholder: 例如《颜勤礼碑》故宫藏民国拓本，新00045406
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: 想补充或纠正什么？
+      description: 一次写一件事。读帖体会可写明版本、哪一字或哪一行，以及怎样复看。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 在哪里能核对？
+      description: 网页请附链接和段落，书刊请附版本、卷页或图版号。只有线索可写「待查」。
+    validations:
+      required: true
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: 哪些地方仍有疑问？
+      description: 可附其他说法及其出处。
+  - type: textarea
+    id: credit
+    attributes:
+      label: 图片权利与署名（选填）
+      description: 可给馆藏图页链接。如附图，请说明摄影者、来源、许可和署名方式。可用 GitHub 名或笔名。

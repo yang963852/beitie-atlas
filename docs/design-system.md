@@ -10,6 +10,8 @@ Show the artifact and its location first. Use strong hierarchy, consistent align
 
 The copying desk opens with the reader’s question alone on the scroll. The entire sheet links to the catalogue. Pointer input starts a wash at the contact position, keyboard activation starts it at the centre, and the desk fades into the records. Reduced motion enters immediately. Shared links land on the corresponding record or journey.
 
+The knowledge library is a second direct entry. A work or person page leads with its title and authored text. Name the edition and observer for a close reading. Keep source, review state and a route back to the subject visible. Reading and following links must work when the subject has no map point, portrait or surviving witness. Present the beta edition label and a feedback route in the reading experience.
+
 ## Starting tokens (project decisions)
 
 | Token | Initial value/use |

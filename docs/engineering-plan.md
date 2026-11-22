@@ -1,6 +1,6 @@
 # Engineering plan
 
-Owner direction, 2026-11-18. The catalogue covers calligraphic inscriptions, modelbooks, manuscript copies and ink manuscripts composed through the Qing dynasty. Later witnesses to an eligible work keep their own production dates.
+The catalogue covers calligraphic inscriptions, modelbooks, manuscript copies and ink manuscripts from antiquity to the present. Prioritize representative works, documented hands and models with evidence for practice or teaching use. Each physical witness keeps its own production date. The first internal beta pairs Yan Zhenqing and Shen Yinmo as historical and modern entry points.
 
 ## Product contract
 
@@ -15,6 +15,9 @@ The text record leads with identity, date, script and documented holding. Physic
 ```mermaid
 flowchart LR
   A[Sources and owner materials] --> B[Reviewed works, objects, places and events]
+  A --> K[Authored Markdown on works, people and practice]
+  B --> I[Generated readable catalogue in GitHub]
+  K --> C
   B --> C[Data validation and build]
   C --> D[Static web application]
   D --> E[Map adapter]
@@ -23,21 +26,22 @@ flowchart LR
 ```
 
 - Use React + TypeScript + Vite, npm, a committed lockfile, and a documented supported Node version.
-- Keep editorial data in versioned JSON files; no user accounts, business database, runtime AI generation, or write API in v0.1.
+- Keep structured catalogue facts in versioned JSON and original editorial prose in the [Markdown knowledge library](../knowledge/README.md). Build the static site from both. Generated catalogue pages and indexes are readable on GitHub and checked for drift. Ingestion travels through GitHub Issues and PRs.
 - Place provider integration behind a small map component boundary: points, selection, focus, and optional schematic event connections. Do not design a generic GIS framework.
 - M0 first evaluates the official Tianditu integration and its current account conditions. AMap is the fallback candidate. Leaflet stable is suitable if the selected licensed tile integration supports it; do not assume that changing a tile URL makes every provider interchangeable.
 - Pin tested stable versions. The Leaflet documentation homepage currently describes a beta; explicitly use stable documentation if selecting Leaflet.
-- Keep language strings in `src/i18n/en.ts`. Preserve Chinese titles and aliases in data. English UI is not a network-compatibility measure.
+- Keep matching interface dictionaries in `src/i18n/en.ts` and `src/i18n/zh.ts`. Preserve Chinese titles, aliases and authored Chinese prose. Show the source language where a translation is missing.
 - Use ordinary React state initially. Avoid premature state frameworks, CMSs, microservices, and search servers.
 - Preserve canonical records independently of map vendors. A credential proxy, if required by the selected provider, is a separately documented deployment component, not an unnoticed expansion into a full backend.
 
-Suggested implementation layout, to be created by WorkBuddy:
+Implementation layout:
 
 ```text
 src/components/       map, results, detail, timeline, source citation
 src/domain/           types, validation, search, temporal helpers
 src/map/              one selected provider adapter and configuration
-src/i18n/en.ts        UI strings
+src/i18n/             interface dictionaries
+knowledge/            authored Markdown and readable generated catalogue
 data/works/           composition-level records
 data/objects/         physical objects and embedded provenance events
 data/places.json      reusable place records
@@ -111,7 +115,7 @@ Candidate → source collection → draft → fact and rights review → approve
 
 Record sources before writing the narrative. Summarize facts in original prose. AI output is a drafting aid, not evidence. Do not scrape or redistribute an entire museum catalog as a shortcut.
 
-Owners can submit names, links, bibliographic pages, or photos in ordinary formats. Codex and the implementer handle structuring. Source gaps stay visible; a compelling narrative is not a reason to fill them.
+Readers can submit a single source or lead in Chinese using the knowledge Issue form. An editor checks the evidence, normalizes accepted fields, links the original Issue and preserves credit. Members may edit authored Markdown directly in a GitHub browser or local checkout. Source gaps stay visible.
 
 For v0.1, review all publication records, not a random sample. Keep a future maintenance queue for stale links, collection changes, disputed claims, and image permissions. An update to collection data changes its review record, not unrelated dates.
 
@@ -152,20 +156,24 @@ M0/M1 local code checks can pass before external access checks. Report these as 
 
 ## Collaboration
 
-Codex owns requirements and independent review. WorkBuddy/DeepSeek owns the currently assigned implementation task. The user owns priorities, accounts, and experiential approval.
+The coordinator chooses priorities, resolves editorial or technical disagreements, names reviewers and decides merges, or explicitly delegates a specific merge. Members choose their local tools. Assign one lead per bounded task and coordinate overlapping files. Independent tasks can proceed concurrently.
 
-Use one task branch per bounded change after Git is initialized. Only one tool writes the implementation at a time. Deliver changed files, run instructions, actual command outcomes, unresolved problems, and the commit identifier when there is a commit. Unrun checks are “not run”, never “passed”.
+Use one small PR per bounded change. Routine handoff lives in the Issue and PR, with changed subjects or files, actual command outcomes, unresolved questions and the revision tested. Milestones, migrations and releases also retain the numbered task, board row and delivery report. Identify self-review and the owner of the final decision.
 
 Reviewer findings should include severity, file/location, reproduction, expected behavior, and a proposed fix direction. Fix findings on the same task before expanding scope. Update a short decision log when a reviewed architecture choice changes.
 
 ## Why this stack, and what it can still absorb
 
+**Markdown decision (task 036).** One authored Chinese article must be readable and editable on GitHub and render in the React website. Use `react-markdown` to render basic CommonMark paragraphs, headings, lists and links as React elements. Authors can preview this shared subset on GitHub. Keep raw HTML execution disabled. Use standard links for citations and formatting that renders in both readers. A claim requiring an image or extended GitHub-only syntax needs review on both surfaces. This keeps editorial content out of UI strings and supports a static build.
+
+Use the `yaml` development dependency to parse frontmatter at build time with duplicate-key detection. The catalogue generator, validator and Vite integration share that parser, so a contributor editing a title or list of references gets the same result locally and on CI.
+
 Asked plainly: the site is written in JavaScript. TypeScript is JavaScript with types that are erased at build time, React is a component library, Vite is the bundler, and npm installs the packages. There is no other language in the built artifact.
 
 Three properties decided the shape, not fashion:
 
-- **The corpus is files in Git, edited by a person and reviewed before publication.** There is no write path, so there is no session, no database, and nothing to keep alive. A backend would add a service whose only job would be to rewrite JSON that a commit already rewrites.
-- **Everything is static.** The build turns reviewed JSON into one bundle and one HTML file that any host can serve, and the corpus stays readable when every external service is unreachable.
+- **The corpus is files in Git, edited by people and reviewed before publication.** Members submit changes to the repository through Issues or PRs. The published site has no account or write API.
+- **Everything is static.** The build turns catalogue data and library Markdown into static assets, including the reader UI. Map service availability is independent of reading the catalogue.
 - **The interface is stateful in one place.** Search filters the list, the place panel and the detail at once; the map has to survive that filtering; a permalink has to survive a refresh. That is why React earns its place here: hand-written DOM code would spread the same state across event handlers and focus management, which is where the bugs in this project actually came from.
 
 **Why not plain HTML and JavaScript.** Possible, and smaller on paper. It becomes expensive exactly where this product is unusual: filtering three views from one query, keeping markers in step with a filtered list, moving focus between mobile panes, and restoring a record from a URL fragment. Those are all implemented once, in React, today.
@@ -176,8 +184,8 @@ Three properties decided the shape, not fashion:
 
 | Growth | What changes | What stays |
 | --- | --- | --- |
-| 40 → a few hundred records | Nothing. The bundle is currently ~134 kB gzipped including React and all data | Everything |
-| Past roughly 1 MB of bundled data | `src/domain/data.ts` is the only file that reads the JSON: split it into a fetched corpus or per-period chunks | Every component, all validation, all tests |
+| A growing catalogue | Measure compiled asset size and loading time for both knowledge and witness views | Stable IDs, evidence and reader journeys |
+| If the bundled corpus becomes expensive to load | Split the data at the domain boundary into separately loaded chunks, then verify both browser and CLI paths | Public routes and validation rules |
 | A different map provider | Implement `MapAdapter` in `src/map/types.ts`: mount, focus, fit, destroy | Markers, filtering, detail view, evidence rules |
 | A third language | Add a dictionary in `src/i18n/` and register it | Components, data, validation |
 | Photographs or IIIF images | `data/media.json` already models rights, credit and licence; a media pipeline and hosting do not exist yet | Records, map, list |

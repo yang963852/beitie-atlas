@@ -2,37 +2,17 @@
 
 [简体中文](README.md) · **English**
 
-**[Atlas preview on GitHub Pages](https://yang963852.github.io/beitie-atlas/)** · [Report an issue or suggest a source](https://github.com/yang963852/beitie-atlas/issues)
+Between Steles helps learners follow the calligraphy they copy. Read a work in its historical setting, identify the stone or impression on the desk, and trace the evidence for its transmission. The catalogue spans antiquity to the present. A claim about use in teaching today needs a named course, edition or other contemporary source.
 
-Between Steles is a companion for calligraphy practice. The stone of the Xuanmi Pagoda Stele is in Xi’an, while an early Ming rubbing is in Beijing. Follow the work you copy to its surviving witnesses, find their documented holdings on the map and read how each passed from hand to hand.
+**[Open the first internal beta](https://yang963852.github.io/beitie-atlas/)** · [Read the Markdown library](knowledge/README.md) · [Submit a source](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) · [Report beta feedback](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)
 
-Browse All, Inscriptions or Modelbooks and search by calligrapher. Rubbings follow the category of the represented work. Each witness keeps its own date, holding and history.
-
-![Between Steles opening on desktop](docs/screenshots/027-1440.png)
-
-Task 027 opening. [Versions and handoff](docs/START-HERE.md) · [Editorial review](docs/editorial-review-025.md)
-
-## Run locally
-
-Install Git and Node.js 24. Run these commands and open the address printed in the terminal.
-
-```bash
-git clone https://github.com/yang963852/beitie-atlas.git
-cd beitie-atlas
-npm ci
-npm run dev
-```
-
-On Windows, `npm.cmd` also works. The corpus is readable without a map key. See the [Tianditu setup guide](docs/map-setup.md) to enable the basemap. Run `npm run check` before submitting changes.
-
-## Stack and project documentation
-
-React, TypeScript and Vite build the static app. JSON stores works, physical objects and sources. Tianditu supplies the basemap. Vitest and GitHub Actions run checks. GitHub Pages is the sole website host.
-
-| Goal | Start here |
+| Goal | Entry point |
 | --- | --- |
-| Set up the project and find the right files or commands | [Maintainer and AI handoff](docs/START-HERE.md) · [Project rules](AGENTS.md) |
-| Add a source, correct a holding, or submit code | [Contributing](CONTRIBUTING.md) · [Atlas workflow](docs/atlas-workflow.md) |
-| Check progress and release criteria | [Iteration board](docs/iteration-board.md) · [Changelog](CHANGELOG.md) · [Release runbook](docs/release.md) |
+| Read a work or person's page | [Yan Qinli Stele](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei) · [Yan Zhenqing](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing) · [Web library](https://yang963852.github.io/beitie-atlas/#/library) |
+| Contribute evidence in a browser | [Chinese submission guide and example](docs/CONTRIBUTE.zh-CN.md) · [Knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) |
+| Run the app or give a local agent a task | [Setup, skills and handoff](docs/START-HERE.md) · [Contribution workflow](CONTRIBUTING.md) · [Project rules](AGENTS.md) |
+| Coordinate a change | [Open issues](https://github.com/yang963852/beitie-atlas/issues) · [Pending PRs](https://github.com/yang963852/beitie-atlas/pulls) · [Milestone evidence](docs/iteration-board.md) |
 
-Original code, documentation and editorial contributions are available under the [MIT License](LICENSE). Third-party material and map services carry their own terms. [Rights and acknowledgements](NOTICE.md)
+GitHub Pages serves the publicly accessible **内部测试第一版**. Draft claims carry their editorial status. The release runbook records the separate approval and artifact checks for a formal edition. [Release runbook](docs/release.md)
+
+Original code, documentation and original editorial contributions are MIT-licensed. Quotations, images and map services retain their own terms. [License](LICENSE) · [Rights and attribution](NOTICE.md)

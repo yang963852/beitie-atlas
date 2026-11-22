@@ -1,12 +1,12 @@
 # Project rules for every coding agent
 
-Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, and `docs/design-system.md` before changing implementation. This file applies to this project only. Explicit owner instructions take precedence.
+Read the assigned Issue or [task brief](templates/task-brief.md), [iteration board](docs/iteration-board.md), [engineering plan](docs/engineering-plan.md) and [design system](docs/design-system.md) before changing implementation. This file applies to this project only. Explicit owner instructions take precedence. Start a fresh clone at [the member and agent guide](docs/START-HERE.md).
 
 ## Roles and scope
 
-- The owner chooses product direction. Codex normally designs/reviews and WorkBuddy implements; the owner may assign implementation directly to Codex, a human, or another AI. Follow the same checks and handoff regardless of tool. One implementation writer at a time.
-- Finish the current task and its blocking findings before starting another. Do not rewrite the application or introduce a backend, framework, provider, or dependency without a concrete need recorded in the decision log.
-- Use English in implementation and technical documents; explain progress to the owner in Chinese. Preserve Chinese names and original source wording.
+- The coordinator (the project owner) prioritizes Issues, assigns reviews, settles scope and decides merges. A contributor may use their preferred local agent. Work independently on disjoint subjects or files. Assign one lead per task and agree responsibility before editing overlapping files.
+- Resolve blocking findings within the assigned PR. Do not rewrite the application or introduce a backend, framework, provider, or dependency without a concrete need recorded in the decision log.
+- Use English for implementation, technical guidance and skills. Communicate with the coordinator in Chinese. Welcome Chinese-only submissions and preserve original wording and names.
 - Inspect `git status` first. Preserve others' changes. Work inside this repository, never stage the parent workspace or personal documents.
 
 ## Local artifact storage
@@ -17,6 +17,7 @@ Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, a
 
 ## Evidence and data
 
+- Readers enter through the [Markdown library](knowledge/README.md). Author original editorial prose there. Keep normalized witness facts in `data/`; update generated pages from their source. Link drafts to the issue, evidence and relevant stable IDs. Review the [editorial workflow](docs/atlas-workflow.md) before changing historical claims.
 - Work and physical object remain separate. Never copy provenance between related objects.
 - Every collection assertion and history event needs evidence. Unknown values stay unknown. Source access date is not physical verification date.
 - Last-known and unknown locations are not current-location markers. Coordinate display precision is not measurement accuracy.
@@ -30,7 +31,7 @@ Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, a
 - Keep the existing React/TypeScript/Vite stack and npm lockfile. Prefer stable versions and existing dependencies. Separate domain rules, provider code, UI, and editorial data.
 - Follow the design system: content first, progressive disclosure, accessible controls, functional parity across screen sizes.
 - PowerShell 7 is supported. Use `npm.cmd` on Windows when needed; do not rely on Bash environment-variable syntax. Use Node scripts for shared cross-platform commands. Do not change system execution policies to run the project.
-- Run `npm.cmd run check` for implementation changes. It runs the type check, the data check, the board check, the tests, and a preview build. Add focused regression tests for defects, not tests that merely restate a visual choice.
+- Run `npm.cmd run check` for implementation changes. It runs type, data, generated knowledge and board checks, tests and a preview build. Editors run `npm run knowledge:generate` when source or index changes affect a generated page and include the generated diff in the PR. Add focused regression tests for defects, not tests that merely restate a visual choice.
 - Keep `index.html`'s declared `lang` identical to the product's default interface language; JavaScript switches it at runtime, and the first paint, a reader without JavaScript, and a crawler must not disagree.
 - Do not hard-code a test count in reader-facing documents (`README*`, `START-HERE`, the release runbook). The number changes with every task and cannot be checked. Delivery and review reports may state the count of their own revision, because that is dated evidence.
 - Visually inspect changed layouts at 390, 768, and 1440 CSS pixels and at 200% zoom. Exercise keyboard access, missing data, missing key, map failure, and share-link refresh where relevant.
@@ -40,22 +41,23 @@ Read `docs/iteration-board.md`, the assigned task, `docs/engineering-plan.md`, a
 ## Handoff
 
 - Use small commits with `feat:`, `fix:`, `docs:`, `test:`, `ci:`, or `chore:` prefixes; do not rewrite history or push unless the current task calls for it.
-- Update the iteration board and write `docs/delivery-NNN.md`: exact revision, changed files, commands/outcomes, screenshots for UI work, source gaps, and limitations. The board's state cell opens with a canonical keyword — `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted`, or `Superseded` — and `npm run check:docs` enforces that vocabulary together with the row, task-file and evidence-link rules.
+- For a small contribution, keep scope, assignee, evidence, actual checks, limitations and review in the Issue/PR. A contributor may submit either a browser-only source Issue or a Markdown PR. The editor links the two when normalizing a reader's submission.
+- For a milestone, migration or release, update the iteration board and write `docs/delivery-NNN.md` with the exact revision, changed files, commands/outcomes, screenshots for UI work, source gaps and limitations. The board's state cell opens with `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted` or `Superseded`. `npm run check:docs` checks that vocabulary, task rows and evidence links. Retain existing milestone evidence.
 - Review outcomes are changes-required / partially-verified / accepted. P1 blocks release; P2 must be fixed in its assigned iteration; P3 is optional polish. Never mark your own work independently accepted.
-- A review produced by the implementer's own tooling is a self-review. It may clear findings, but record it as self-review and leave the acceptance decision to an independent reviewer or to the owner at merge; say which one in the board row.
+- A review produced by the implementer's own tooling is a self-review. It may clear findings. Record who performed it and who decides acceptance in the PR (and the board row for a milestone).
 - Do not silently change these rules to make a failing check pass.
 
 ## GitHub synchronization
 
-- The GitHub repository is the only canonical source. For every project change, push one checked task branch, open a PR, and merge into `main` once the applicable checks pass and blocking findings are resolved. The owner provides standing authorization for these source merges; record self-review as self-review. A failing or blocked check is not authorization to bypass repository protection. Record the branch, revision, PR and merge result in the delivery report.
-- After a merge, `main` must match `origin/main`. A local-only commit is an unsynchronized change, not a delivery.
+- Submit each change as a checked PR against the canonical GitHub repository. The coordinator decides the merge or explicitly delegates that specific PR. Keep the required CI job and review outcome visible. Resolve blocking findings before merge. Failing checks and repository protection cannot be bypassed. Record the branch, revision, PR and merge result in the milestone report when applicable.
+- After merge synchronize local `main` with the project's `main`. For a direct clone this is `origin/main`; for a contributor fork the project is normally `upstream/main`. A local-only change remains unsubmitted.
 - Do not force-push a branch that another person or tool may have based work on, and do not rewrite pushed history.
 - Report a blocked push exactly: the command, the error, and what remains unpushed. Never describe unpushed work as delivered.
 - Keep `dist/`, `build/`, local environment files, map keys, and deployment credentials out of the source remote. GitHub Actions uploads the built site as a Pages artifact.
 
 ## Repository and preview workflow
 
-- Start from the synchronized `origin/main` on one task branch. Record the review outcome before merging. A source merge does not constitute formal editorial approval.
+- Start a task branch from current project `main`. Record its review outcome before merge. Source merge, labelled preview and formal editorial approval are separate events.
 - Apply the evidence checklist in [the atlas workflow](docs/atlas-workflow.md) to additions and coordinate changes. Sort the left column by the represented inscription's period, then date. Keep the production date of each copy visible in its own detail.
 - GitHub Pages is the sole website host. [The Pages workflow](.github/workflows/pages.yml) publishes a labelled preview of checked `main`. Record the deployed revision, Actions run, and observed network reachability separately.
 - A formal publication on GitHub Pages requires `npm run release`, a verified release manifest, editorial approval, and host checks. Follow [the release runbook](docs/release.md) before changing the Pages deployment mode.

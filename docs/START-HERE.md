@@ -1,69 +1,49 @@
-# Maintainer and AI handoff
+# Member and agent handoff
 
-This repository is the source of truth. You do not need access to the original
-chat or WorkBuddy session to contribute. Read this page, the [Chinese README](../README.md)
-or [English README](../README.en.md), [AGENTS.md](../AGENTS.md), and the
-[iteration board](iteration-board.md) before editing.
+A learner wants to identify the work on their desk, distinguish its surviving versions and learn what to look at in the writing. Follow that reader from a work to a person, a witness and a source. The project covers historical and modern calligraphy. A claim about current teaching use needs evidence for that use.
 
-## Current handoff, 2026-11-21
+[中文资料与试读指南](CONTRIBUTE.zh-CN.md) · [First internal beta on Pages](https://yang963852.github.io/beitie-atlas/) · [Markdown knowledge library](../knowledge/README.md)
 
-The public catalogue is a labelled trial hosted on [GitHub Pages](https://yang963852.github.io/beitie-atlas/). The [Pages workflow](../.github/workflows/pages.yml) publishes checked `main`. The last owner-approved formal edition is preserved at tag [v0.1.0-alpha.2](https://github.com/yang963852/beitie-atlas/tree/v0.1.0-alpha.2), with 37 works and 40 witnesses. Its manifest, approval, and former deployment are recorded in [delivery 021](delivery-021.md).
+## Choose the assignment
 
-Start with the [draft-by-draft editorial review](editorial-review-025.md) and [reader verification and dependency checks](delivery-025.md). Readers can search in Chinese or English, open a physical witness directly, and use the place list when the basemap is unavailable.
-
-## Setup and commands
-
-Use Node 24 LTS and npm; the latest independent check used Node 24.16.0.
-From this directory run `npm ci`, `npm run check`, then `npm run dev`.
-On Windows use `npm.cmd` if shell script resolution causes trouble.
-No key is necessary to read the corpus. See map-setup.md for optional setup.
-
-`npm run build` builds a preview; `npm run preview` serves it locally.
-`npm run check:release` checks publication eligibility without touching output.
-`npm run check:map-key` probes the Tianditu key once (geocoding, not tiles), prints a masked
-key, and classifies the answer as usable, invalid, or inconclusive; it reads `.env.local`.
-`npm run release` builds an approved website artifact only after strict checks.
-It is expected to fail on today's draft records. Never change review
-states solely to make a release command succeed. See release.md for rollback.
-
-## Where to make changes
-
-| Goal | Start here | Relevant check |
+| I am here to… | Read first | Hand off |
 | --- | --- | --- |
-| App layout and selection | src/App.tsx, src/components/, src/styles.css | app.test.tsx and actual browser inspection |
-| Interface copy or another language | src/i18n/en.ts, src/i18n/zh.ts, src/i18n/index.tsx | typecheck (both dictionaries share `Strings`) |
-| Look and feel | docs/design-system.md, docs/delivery-003.md | mobile/desktop/zoom/keyboard acceptance |
-| Names, dates and histories | data/works/, data/objects/ | check:data, seed-records.test.ts |
-| Places and source records | data/places.json, data/sources.json | validate.test.ts, source review |
-| Model or validation | src/domain/types.ts, validate.ts | validate/date/record tests |
-| Map choice | docs/map-options.md: six basemaps, keys, datum, compliance | provider terms review |
-| Map behavior | src/map/, src/components/MapPanel.tsx | map-sdk, map-view and map-markers tests plus live pilot |
-| Publishing | scripts/release.ts, scripts/lib/, docs/release.md | release-gate.test.ts, check:release |
+| Suggest a source using only a browser | [Chinese knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) | A single Issue with source and locator, or an authored Markdown PR |
+| Edit a work, witness, person or reading note | [Research skill](../.agents/skills/research-entry/SKILL.md), [editorial workflow](atlas-workflow.md) | A narrow PR linking the subject, evidence, contributor and open questions |
+| Develop a web feature | [Web skill](../.agents/skills/web-change/SKILL.md), [engineering plan](engineering-plan.md), [design system](design-system.md) | A reproducible reader path and check results in a PR |
+| Review a contribution | [Review skill](../.agents/skills/review-change/SKILL.md), [project rules](../AGENTS.md) | Findings and a review outcome for the coordinator |
+| Coordinate priorities or release | [Open Issues and PRs](../CONTRIBUTING.md#coordinators-queue), [milestone board](iteration-board.md), [release runbook](release.md) | Assignee, reviewer, recorded merge decision and separately authorized release |
 
-## Adding a physical object
+A local agent can read each `SKILL.md` directly from the checkout. Each assignment supplies a reader outcome, subject or files, base revision, evidence, acceptance example and stopping point. Copy the [task card and Chinese prompt](../templates/task-brief.md). GitHub handles repository permissions. A task description or skill provides workflow guidance.
 
-1. Find primary sources and identify the actual physical object, not just a work title.
-2. Add/reuse a source ID with publication/access dates and a locator.
-3. Add/reuse its work record; create a distinct object record with a stable ID.
-4. Add a collection assertion and independent provenance events. Keep missing
-   dates/places null and preserve uncertain or conflicting claims.
-5. Add a place only with justified resolution. Preserve coordinate provenance;
-   unverified coordinates remain labeled. Last-known places are not current markers.
-6. Keep review state draft until independent evidence review; run data checks.
-7. Submit the change with sources, limitations and a reproduction/preview path.
+## Set up a clean workspace
 
-## Collaboration without special tools
+Use Git and Node.js 24 with npm. External members fork [the project](https://github.com/yang963852/beitie-atlas), clone that fork, and add the project remote once.
 
-Anyone may clone/download this source and follow these instructions. For GitHub
-collaboration, fork, create a small branch, make the change, run checks, and submit
-a pull request. Owner invitations can grant direct access later; no collaborator
-permissions have been assigned automatically. GitHub Issues can hold source
-corrections and feature requests. Never post keys in issues or screenshots.
+```sh
+git clone https://github.com/YOUR-ACCOUNT/beitie-atlas.git
+cd beitie-atlas
+git status --short --branch
+git remote add upstream https://github.com/yang963852/beitie-atlas.git
+git fetch upstream
+git switch -c task/your-topic upstream/main
+npm ci
+npm run check
+npm run dev
+```
 
-Implementers may be humans, Codex, WorkBuddy or another AI. Read the same rules,
-change one bounded task, and provide real evidence. No agent name is an access
-requirement. The owner can explicitly assign implementation to Codex.
+Replace `YOUR-ACCOUNT` and `your-topic`. Invited collaborators cloning the project can branch from `origin/main`. Windows PowerShell supports `npm.cmd` in place of `npm`. Use the URL printed by Vite. The corpus and knowledge pages work without a map key. Local basemap setup is optional. [Tianditu setup](map-setup.md)
 
-## Historical baseline
+Run `npm run check` again after implementation. Push the checked branch to the contributor's own remote, open a PR against project `main`, and state the tested revision and unverified paths. On a fork, `git push -u origin task/your-topic` pushes to the fork. The coordinator decides merge or delegates the particular PR. Keep project artifacts in the locations defined by [AGENTS.md](../AGENTS.md).
 
-The alpha.1 development snapshot and subsequent draft expansions preceded the first approved public edition. The 36-witness preview was authorized in task 015. Use the [iteration board](iteration-board.md) for the chronology, the [atlas workflow](atlas-workflow.md) for evidence requirements, and the [release runbook](release.md) for publication.
+## Where a change belongs
+
+| Change | Editable input | How to check |
+| --- | --- | --- |
+| Authored Chinese introductions, people and practice notes | Follow the article links in [knowledge/README.md](../knowledge/README.md) | Inspect GitHub Markdown, website, review status, sources and incoming links |
+| Catalogue, holdings, events, places or bibliographic sources | `data/works/`, `data/objects/`, `data/places.json`, `data/sources.json` | Run `npm run knowledge:generate` when projections change, commit the generated diff and run `npm run check` |
+| UI and navigation | `src/App.tsx`, `src/components/`, `src/styles.css`, `src/i18n/` | Exercise entry, link refresh, keyboard, narrow screen and 200% zoom |
+| Domain model or provider | `src/domain/`, `scripts/lib/`, `src/map/` | Test consumers and the affected failure modes, including a missing map when relevant |
+| Formal publication | `scripts/release.ts`, [release runbook](release.md) | Verify all reviewed inputs, release marker, manifest and host |
+
+The public **内部测试第一版** uses the checked Pages preview. The last owner-approved formal edition is tagged [v0.1.0-alpha.2](https://github.com/yang963852/beitie-atlas/tree/v0.1.0-alpha.2). Its approval and manifest are recorded in [delivery 021](delivery-021.md).

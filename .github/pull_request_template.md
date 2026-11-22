@@ -1,20 +1,13 @@
-## What changes for a reader or maintainer?
+## Reader outcome / 读者能得到什么
 
-## Task / issue and scope
+Link the Issue or name the small change. Credit the original submission or author.
 
-## Evidence
+## Evidence / 如何核对
 
-- Commands run and actual results:
-- UI screenshots/interaction checks, if relevant:
-- Historical sources/rights evidence, if relevant:
-- Checks not run and known limitations:
+- Knowledge: subject or witness, changed claim, source and page/paragraph, uncertainties or rights.
+- Web: page or steps to reproduce, expected result, and relevant interaction or layout evidence.
+- Checks: actual commands/CI results, tested revision and anything unverified.
 
-## Release impact
+## Handoff / 交给谁
 
-State whether this is preview-only, changes data review state, or changes deployment.
-Never include credentials or claim unperformed checks passed.
-
-## Synchronization
-
-- Branch pushed to `origin` and head revision:
-- Board row and delivery report updated (`npm run check:docs` passes):
+Name the reviewer or coordinator. State any change in editorial status or release scope. Label the implementer's own review as self-review. For a milestone, migration or release, link its board row and delivery report.
