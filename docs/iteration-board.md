@@ -1,6 +1,6 @@
 # Iteration board
 
-Updated: 2026-11-21. One active implementation task at a time.
+Updated: 2026-11-22. This board tracks milestones. Independent contributions are coordinated in GitHub Issues and pull requests.
 
 | Task | Outcome | State | Exit evidence |
 | --- | --- | --- | --- |
@@ -48,11 +48,13 @@ Updated: 2026-11-21. One active implementation task at a time.
 | 034 | Integrate two witness research batches | Delivered — partially verified by self-review; owner decides acceptance at merge | [Task 034](../tasks/034-witness-research.md) and [delivery 034](delivery-034.md). |
 | 035 | Use GitHub Pages as the sole website host | Delivered — hosting cutover verified by self-review; owner decides acceptance at merge | [Task 035](../tasks/035-github-pages-only.md), [delivery 035](delivery-035.md), and [PR #23](https://github.com/yang963852/beitie-atlas/pull/23). |
 
+| 036 | First internal beta on public Pages | Delivered — partially verified by Codex self-review; coordinator authorized the beta rollout | [Task 036](../tasks/036-internal-beta.md) and [delivery 036](delivery-036.md). |
+
 ## Iteration loop
 
 Ready → in progress → delivered → reviewed → fixing (if necessary) → accepted.
 
-Each task specifies goal, allowed scope, exclusions, input evidence, and observable acceptance. The implementer writes a delivery report; Codex writes the independent outcome. Record blocked portions separately and continue independent work. Local engineering, editorial approval, live provider behavior, and public network access are four distinct gates.
+Each assignment specifies its scope, evidence and observable acceptance. A routine change records verification in the PR. A milestone also has a delivery report here. A different reviewer or the coordinator decides acceptance. Record local engineering, editorial approval, live provider behavior and observed public reachability separately.
 
 The state column opens with one canonical keyword — `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted`, `Superseded` — followed by an em dash and any detail. `npm run check:docs` enforces that vocabulary, requires every task file and delivery report to have a row, and rejects evidence links that do not resolve. Prose after the dash is free text; the keyword is not.
 
