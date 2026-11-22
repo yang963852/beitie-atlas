@@ -10,6 +10,8 @@ import { existsSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'no
 import { join } from 'node:path';
 import { validateDataset, type ValidationReport } from '../../src/domain/validate';
 import { loadDatasetFromDisk } from './dataset';
+import { readKnowledge } from './knowledge';
+import { knowledgeSourceIds } from '../../src/domain/knowledge-types';
 
 export const OUTPUT_DIR = 'dist';
 export const MANIFEST_FILE = 'release-manifest.json';
@@ -22,11 +24,25 @@ export interface ReleaseManifest {
   generatedAt: string;
   node: string;
   sourceRevision: string | null;
-  counts: ValidationReport['counts'];
+  counts: CorpusReport['counts'];
 }
 
-export function runReleaseGate(root: string = process.cwd()): ValidationReport {
-  return validateDataset(loadDatasetFromDisk(root), { releaseMode: true });
+type CorpusReport = ValidationReport & { counts: ReturnType<typeof readKnowledge>['counts'] };
+
+export function checkCorpus(root: string, releaseMode: boolean): CorpusReport {
+  const dataset = loadDatasetFromDisk(root);
+  const knowledge = readKnowledge(root, dataset, releaseMode);
+  const report = validateDataset(dataset, {
+    releaseMode, knowledgeSources: knowledgeSourceIds(knowledge.articles, knowledge.relations),
+  });
+  return {
+    ...report, ok: report.ok && knowledge.errors.length === 0,
+    errors: [...report.errors, ...knowledge.errors], counts: { ...report.counts, ...knowledge.counts },
+  };
+}
+
+export function runReleaseGate(root: string = process.cwd()): CorpusReport {
+  return checkCorpus(root, true);
 }
 
 /** Removes any previous output. Returns true when something was deleted. */
@@ -39,7 +55,7 @@ export function clearOutput(root: string = process.cwd()): boolean {
 
 export function writeReleaseManifest(
   root: string,
-  report: ValidationReport,
+  report: CorpusReport,
   sourceRevision: string | null,
 ): ReleaseManifest {
   const manifest: ReleaseManifest = {
@@ -71,7 +87,7 @@ export interface ArtifactCheck {
  */
 export function verifyReleaseArtifact(
   root: string,
-  expectedCounts: ValidationReport['counts'],
+  expectedCounts: CorpusReport['counts'],
 ): ArtifactCheck {
   const problems: string[] = [];
   const dist = join(root, OUTPUT_DIR);
@@ -98,7 +114,7 @@ export function verifyReleaseArtifact(
       if (manifest.mode !== 'release' || manifest.releaseMode !== true) {
         problems.push('The release manifest does not describe a release build.');
       }
-      const countKeys = ['works', 'objects', 'places', 'sources', 'media', 'events'] as const;
+      const countKeys = Object.keys(expectedCounts) as Array<keyof CorpusReport['counts']>;
       const mismatched = countKeys.filter(
         (key) => !manifest.counts || manifest.counts[key] !== expectedCounts[key],
       );

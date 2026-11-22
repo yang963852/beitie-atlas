@@ -1,8 +1,8 @@
 {
   "name": "beitie-atlas",
   "private": true,
-  "version": "0.1.0-alpha.2",
-  "description": "碑帖之间 / Between Steles — a textual catalogue of Chinese calligraphic inscriptions and manuscripts through the Qing dynasty",
+  "version": "0.2.0-beta.1",
+  "description": "Between Steles — a learning library of Chinese calligraphy, its makers and surviving witnesses from antiquity to the present",
   "type": "module",
   "engines": {
     "node": ">=22.12.0"
@@ -16,13 +16,16 @@
     "typecheck": "tsc --noEmit",
     "check:data": "tsx scripts/check-data.ts",
     "check:docs": "node scripts/check-board.mjs",
+    "knowledge:generate": "tsx scripts/knowledge-catalogue.ts",
+    "check:knowledge": "tsx scripts/knowledge-catalogue.ts --check",
     "check:map-key": "tsx scripts/check-map-key.ts",
     "test": "vitest run",
-    "check": "npm run typecheck && npm run check:data && npm run check:docs && npm run test && vite build"
+    "check": "npm run typecheck && npm run check:data && npm run check:knowledge && npm run check:docs && npm run test && vite build"
   },
   "dependencies": {
     "react": "19.3.1",
-    "react-dom": "19.3.1"
+    "react-dom": "19.3.1",
+    "react-markdown": "10.1.0"
   },
   "devDependencies": {
     "@testing-library/dom": "10.4.1",
@@ -36,6 +39,7 @@
     "tsx": "4.23.15",
     "typescript": "5.9.3",
     "vite": "7.3.8",
-    "vitest": "5.1.0"
+    "vitest": "5.1.0",
+    "yaml": "2.8.4"
   }
 }

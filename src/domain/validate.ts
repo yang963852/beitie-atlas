@@ -93,7 +93,7 @@ function isMonth(value: unknown): value is number {
   return typeof value === 'number' && Number.isInteger(value) && value >= 1 && value <= 12;
 }
 
-export function validateDataset(raw: unknown, options: { releaseMode?: boolean } = {}): ValidationReport {
+export function validateDataset(raw: unknown, options: { releaseMode?: boolean; knowledgeSources?: string[] } = {}): ValidationReport {
   const errors: ValidationIssue[] = [];
   const warnings: ValidationIssue[] = [];
 
@@ -135,7 +135,7 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean }
   const placeIds = new Set<string>();
   const objectIds = new Set<string>();
   const workIds = new Set<string>();
-  const usedSources = new Set<string>();
+  const usedSources = new Set(options.knowledgeSources ?? []);
   const usedPlaces = new Set<string>();
 
   const registerId = (id: unknown, path: string, kind: string) => {

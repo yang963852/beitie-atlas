@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
 import { loadDatasetFromDisk } from '../scripts/lib/dataset';
 import {
+  checkCorpus,
   clearOutput,
   runReleaseGate,
   verifyReleaseArtifact,
@@ -108,7 +109,9 @@ function fixture() {
 }
 
 function writeFixture(root: string, data = fixture()): void {
+  for (const kind of ['people', 'works', 'notes']) mkdirSync(join(root, 'knowledge', kind), { recursive: true });
   mkdirSync(join(root, 'data/works'), { recursive: true });
+  writeFileSync(join(root, 'data/knowledge-relations.json'), '[]');
   mkdirSync(join(root, 'data/objects'), { recursive: true });
   writeFileSync(join(root, 'data/works/work-fixture.json'), JSON.stringify(data.work));
   writeFileSync(join(root, 'data/objects/object-fixture.json'), JSON.stringify(data.object));
@@ -153,6 +156,55 @@ describe('strict release gate', () => {
     expect(report.errors.map((issue) => issue.code)).toContain('MISSING_WORK');
   });
 
+  it('includes reviewed and draft Markdown and person relations in the release gate and manifest', () => {
+    const root = tempRoot();
+    writeFixture(root);
+    const write = (kind: string, id: string, state: string, refs = '') => writeFileSync(
+      join(root, 'knowledge', kind, id + '.md'),
+      '---\ntitleZh: 测试\ntitleEn: Fixture\nstate: ' + state + '\nsources: src-fixture\n' + refs + '---\n## 中文\n测试正文。\n',
+    );
+    write('people', 'one', 'reviewed', 'works: modern-work\n');
+    write('people', 'two', 'reviewed');
+    write('works', 'modern-work', 'reviewed', 'people: one\n');
+    write('notes', 'study', 'draft', 'works: work-fixture\nobjects: object-fixture\n');
+    const relation = { from: 'one', to: 'two', type: 'poetic-exchange', labelZh: '唱和', labelEn: 'Exchanged poems', sourceRefs: ['src-fixture'], state: 'draft' };
+    const relations = join(root, 'data/knowledge-relations.json');
+    writeFileSync(relations, JSON.stringify([relation]));
+    const report = runReleaseGate(root);
+    expect(report.errors.map(e => e.code)).toEqual(['DRAFT_KNOWLEDGE_IN_RELEASE', 'DRAFT_KNOWLEDGE_IN_RELEASE']);
+    expect(report.counts).toMatchObject({ workArticles: 1, peopleArticles: 2, noteArticles: 1, peopleRelations: 1 });
+
+    write('notes', 'study', 'reviewed', 'works: work-fixture\nobjects: object-fixture\n');
+    writeFileSync(relations, JSON.stringify([{ ...relation, state: 'reviewed' }]));
+    expect(runReleaseGate(root).errors).toEqual([]);
+    writeFileSync(relations, JSON.stringify([relation, { ...relation, to: 'one', from: 'two' }]));
+    write('notes', 'study', 'reviewed', 'works: missing-work\nobjects: missing-object\n');
+    write('works', 'study', 'reviewed');
+    const invalid = runReleaseGate(root).errors.map(e => e.message).join('\n');
+    for (const problem of ['Duplicate relationship', 'Duplicate knowledge ID', 'missing-work', 'missing-object']) {
+      expect(invalid).toContain(problem);
+    }
+  });
+
+  it('resolves same-directory Markdown links against the referring article in normal and strict validation', () => {
+    const root = tempRoot();
+    writeFixture(root);
+    const prefix = '---\ntitleZh: 书家\nstate: reviewed\nsources: src-fixture\n---\n## 中文\n';
+    writeFileSync(join(root, 'knowledge/people/one.md'), prefix
+      + '[已有](two.md) [缺失](missing.md) [已有](./two.md) [缺失](./missing-too.md) '
+      + '[已有](../people/two.md) [缺失](../notes/missing-note.md)');
+    writeFileSync(join(root, 'knowledge/people/two.md'), prefix + '书家资料。');
+    for (const release of [false, true]) {
+      const report = checkCorpus(root, release);
+      const broken = report.errors.map(e => e.message);
+      expect(broken).toEqual([
+        'Broken knowledge page link: missing.md',
+        'Broken knowledge page link: ./missing-too.md',
+        'Broken knowledge page link: ../notes/missing-note.md',
+      ]);
+    }
+  });
+
   it('binds the real corpus to the gate: exactly the draft records are reported', () => {
     const root = process.cwd();
     const dataset = loadDatasetFromDisk(root);
@@ -173,7 +225,7 @@ describe('strict release gate', () => {
       .sort();
 
     expect(flagged).toEqual(drafts);
-    expect(report.ok).toBe(drafts.length === 0);
+    expect(report.ok).toBe(drafts.length === 0 && !report.errors.some(issue => issue.code === 'DRAFT_KNOWLEDGE_IN_RELEASE'));
   });
 });
 
@@ -224,6 +276,7 @@ describe('artifact verification', () => {
 
     expect(check.ok).toBe(false);
     expect(check.problems.join(' ')).toContain('counts do not match');
+    expect(verifyReleaseArtifact(root, { ...report.counts, peopleArticles: 1 }).problems.join(' ')).toContain('peopleArticles');
   });
 
   it('removes a previous output so a failed release cannot reuse it', () => {
