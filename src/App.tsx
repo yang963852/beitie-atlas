@@ -1,4 +1,6 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { KnowledgeLibrary } from './components/KnowledgeLibrary';
+import { isLibraryRoute } from './domain/library';
 import { ContributionPanel } from './components/ContributionPanel';
 import { JourneyMap } from './components/JourneyMap';
 import { OpeningDesk } from './components/OpeningDesk';
@@ -254,6 +256,7 @@ function AppShell() {
           </div>
 
           <nav className="topnav" aria-label={strings.sectionsLabel}>
+            <a className="topnav__link" href="#/library">{locale === 'zh' ? '知识库' : 'Library'}</a>
             {sectionLink('results', strings.resultsHeading)}
             {sectionLink('map', strings.mapHeading)}
             {sectionLink('detail', strings.detailHeading)}
@@ -394,6 +397,8 @@ function AppShell() {
       /> : null}
 
       <footer className="footer">
+        <a href="#/library">{locale === 'zh' ? '作品与书家' : 'Works and calligraphers'}</a>
+        {!isReleaseBuild && <a href="https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml">{locale === 'zh' ? '内部测试第一版 · 提交反馈' : 'Internal beta 1 · Feedback'}</a>}
         {isReleaseBuild ? null : <p className="footer__note">{strings.draftNotice}</p>}
         <p className="footer__note">{strings.footerNote}</p>
         <button
@@ -418,10 +423,20 @@ function AppShell() {
   );
 }
 
+function subscribeRoute(notify: () => void) {
+  window.addEventListener('hashchange', notify);
+  return () => window.removeEventListener('hashchange', notify);
+}
+
+function Reader() {
+  const hash = useSyncExternalStore(subscribeRoute, () => window.location.hash);
+  return isLibraryRoute(hash) ? <KnowledgeLibrary hash={hash} /> : <AppShell />;
+}
+
 export default function App() {
   return (
     <LocaleProvider>
-      <AppShell />
+      <Reader />
     </LocaleProvider>
   );
 }

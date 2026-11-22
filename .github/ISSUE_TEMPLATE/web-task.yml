@@ -1,0 +1,29 @@
+name: 网页任务 · Web change
+description: 为一项网页开发或修复明确读者目标和验收条件。
+title: "[Web] "
+labels: ["web"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Reader outcome / 读者目标
+      description: Give the current steps or reader question and the desired result.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope / 范围
+      description: Page, route, subject ID or module. Note overlapping work if known.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance example / 怎样验收
+      description: Give one observable example. Include affected keyboard, mobile, missing-data or refresh paths.
+    validations:
+      required: true
+  - type: textarea
+    id: handoff
+    attributes:
+      label: Handoff / 协作与交接（选填）
+      description: Name the lead or proposed reviewer if known. The coordinator can assign these during triage.

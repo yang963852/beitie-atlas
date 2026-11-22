@@ -82,7 +82,11 @@ export function buildContributionTitle(draft: ContributionDraft, locale: 'zh' | 
 export function buildContributionUrl(draft: ContributionDraft, locale: 'zh' | 'en'): string {
   const url = new URL(CONTRIBUTION_ISSUE_URL);
   url.searchParams.set('title', buildContributionTitle(draft, locale));
-  url.searchParams.set('body', buildContributionBody(draft, locale));
+  url.searchParams.set('template', 'knowledge.yml');
+  if (draft.objectTitle) url.searchParams.set('subject', draft.objectTitle);
+  url.searchParams.set('claim', filled(draft.details) + '\n\n' + draft.pageUrl);
+  if (filled(draft.source)) url.searchParams.set('evidence', filled(draft.source));
+  if (filled(draft.contact)) url.searchParams.set('credit', filled(draft.contact));
   return url.toString();
 }
 

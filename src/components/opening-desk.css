@@ -15,6 +15,13 @@
   filter: drop-shadow(0 12px 9px #18110963);
   animation: desk-settle 1400ms cubic-bezier(.25,.7,.28,1) both;
 }
+.desk__library {
+  position: absolute; top: max(16px, 4vh); right: max(16px, 5vw);
+  display: flex; gap: .85rem; align-items: center; flex-wrap: wrap;
+  padding: .45rem .8rem; background: #f7f0df; color: #514437;
+  border: 1px solid #b4a68d; font-size: .88rem; z-index: 2;
+}
+.desk__library a { color: #613a29; font-weight: 600; }
 .desk__paper {
   display: grid; align-content: center; min-height: clamp(300px, 60svh, 620px);
   position: relative; overflow: hidden; text-decoration: none; cursor: pointer;

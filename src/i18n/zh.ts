@@ -14,7 +14,7 @@ export const zhStrings: Strings = {
   tagline: '如今藏在何处',
   enterCatalogue: '打开碑帖图录',
   taglineDetail:
-    '循地图访清代及以前的传世碑帖，辨原石、墨迹、拓本与摹本，读一件书迹辗转至今的故事。',
+    '从案头临习的碑帖出发，读历代书家与作品，循著录访原石、墨迹与拓本。',
   studyFilter: '按作品类别筛选',
   studyLabels: { all: '全部', bei: '碑', tie: '帖' },
   draftNotice: '此预览版可能包含仍待审核的草稿。请以每条记录的审核状态与引证为准。',

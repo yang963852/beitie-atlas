@@ -37,7 +37,11 @@ describe('contribution text', () => {
     expect(url.startsWith('https://github.com/yang963852/beitie-atlas/issues/new?')).toBe(true);
     const parsed = new URL(url);
     expect(parsed.searchParams.get('title')).toBe('[资料补充] 开成石经（原石）');
-    expect(parsed.searchParams.get('body')).toContain('第二展室西侧有一方补刻题记。');
+    expect(parsed.searchParams.get('template')).toBe('knowledge.yml');
+    expect(parsed.searchParams.get('subject')).toBe(draft.objectTitle);
+    expect(parsed.searchParams.get('claim')).toContain(draft.pageUrl);
+    expect(parsed.searchParams.get('claim')).toContain('第二展室西侧有一方补刻题记。');
+    expect(parsed.searchParams.get('evidence')).toBe(draft.source);
   });
 
   it('builds a stable share link for a record and for the atlas root', () => {

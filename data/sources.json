@@ -1210,6 +1210,50 @@
       "accessedAt": "2026-11-19",
       "locator": "策展人仲威介绍四种宋拓、书者及吴湖帆收藏",
       "note": null
+    },
+    {
+      "id": "src-chnu-yan-workshop",
+      "kind": "web",
+      "title": "舒柳书画协会开展“翰墨有传承·书香沁人心”书法教学实践活动简报",
+      "publisher": "淮北师范大学美术学院",
+      "url": "https://msxy.chnu.edu.cn/xyxw/content_125348",
+      "publicationDate": "2024-11-23",
+      "accessedAt": "2026-11-22",
+      "locator": "Opening two activity paragraphs: the 2 and 6 November copying sessions and their respective models.",
+      "note": "The report identifies the works, but does not identify the editions used by the students."
+    },
+    {
+      "id": "src-shm-zhao-shen-colophon",
+      "kind": "web",
+      "title": "现代 赵朴初 行书跋沈尹默论书札卷",
+      "publisher": "上海博物馆",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807",
+      "publicationDate": null,
+      "accessedAt": "2026-11-22",
+      "locator": "详细年代, 尺寸 and 简介: separate physical descriptions of Shen's writing and Zhao's colophon, the poetic exchanges, and the 1976 inscription.",
+      "note": "The date of 1976 belongs to Zhao's colophon. The date of Shen's death in the description differs from the Xiling chronology."
+    },
+    {
+      "id": "src-xiling-shen-chronology",
+      "kind": "web",
+      "title": "专题·沈尹默书风研究（年表）",
+      "publisher": "西泠印社",
+      "url": "https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf",
+      "publicationDate": null,
+      "accessedAt": "2026-11-22",
+      "locator": "Chronology, 1962 (youth copybooks, publisher and contemporary press account), 1965 (exchange of poems on the Lanting debate) and 1971 (death).",
+      "note": "A retrospective chronology. Its copybook entry and the press account it quotes do not establish a particular copy's imprint or edition statement."
+    },
+    {
+      "id": "src-pku-shen-teaching",
+      "kind": "web",
+      "title": "姜涛：沈尹默寓居沪渝时期的书风探索",
+      "publisher": "北京大学书法艺术研究所（转载《书法报》）",
+      "url": "https://shufa.pku.edu.cn/whsf/8dc5e55fd0e445a781a861c438b81cf9.htm",
+      "publicationDate": null,
+      "accessedAt": "2026-11-22",
+      "locator": "Section 二、沈尹默晚年居沪时期的书风, paragraph on the 1962 writing in 人民教育 and the two copybooks prepared for young people. The footer identifies the original publication of 11 February 2026.",
+      "note": "Jiang Tao's research on twentieth-century book production; contemporary classroom adoption requires separate evidence."
     }
   ]
 }

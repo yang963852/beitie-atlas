@@ -155,7 +155,7 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
         {work ? (
           <p className="detail__work">
             <span className="detail__work-label">{strings.workLabel}</span>
-            <span lang="zh-Hans">{work.titles.zh}</span>
+            <a href={'#/work/' + work.id} lang="zh-Hans">{work.titles.zh}</a>
             <span className="detail__attribution">{work.attribution
               .filter((entry) => entry.role === 'calligrapher' || entry.role === 'author-and-calligrapher')
               .map((entry) => attributionName(entry, locale)).join(' · ')}</span>

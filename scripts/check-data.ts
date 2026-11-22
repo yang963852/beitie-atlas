@@ -6,19 +6,19 @@
  * Drafts are allowed here; `npm run release` is the strict gate.
  */
 
-import { formatReport, validateDataset } from '../src/domain/validate';
-import { loadDatasetFromDisk } from './lib/dataset';
-
-const dataset = loadDatasetFromDisk();
+import { formatReport } from '../src/domain/validate';
+import { checkCorpus } from './lib/release-gate';
 
 const releaseMode = process.env.RELEASE_MODE === '1' || process.env.VITE_RELEASE_MODE === '1';
-const report = validateDataset(dataset, { releaseMode });
+const report = checkCorpus(process.cwd(), releaseMode);
 
 console.log(`Node ${process.version}`);
 console.log(`Release mode: ${releaseMode ? 'yes (drafts are errors)' : 'no (drafts allowed)'}`);
 console.log(formatReport(report));
+console.log('Knowledge:', report.counts.workArticles, 'work guides,', report.counts.peopleArticles,
+  'people,', report.counts.noteArticles, 'notes,', report.counts.peopleRelations, 'relationships.');
 
-if (dataset.works.length === 0 || dataset.objects.length === 0) {
+if (report.counts.works === 0 || report.counts.objects === 0) {
   console.error('\nData validation FAILED: no works or objects were found in data/.');
   process.exit(1);
 }

@@ -14,6 +14,8 @@ import { isReleaseBuild } from './build';
 import { type Dynasty, dynastyOrder, findDynasty } from './dynasties';
 import type { Dataset, MediaItem, ObjectRecord, ObjectType, Place, Source, Work } from './types';
 import { validateDataset, type ValidationReport } from './validate';
+import { knowledgeArticles, knowledgeRelations } from './knowledge';
+import { knowledgeSourceIds } from './knowledge-types';
 
 const workModules = import.meta.glob<unknown>('../../data/works/*.json', {
   eager: true,
@@ -125,7 +127,10 @@ let cachedReport: ValidationReport | null = null;
 
 export function getValidationReport(): ValidationReport {
   if (cachedReport) return cachedReport;
-  cachedReport = validateDataset(getDataset(), { releaseMode: isReleaseBuild });
+  cachedReport = validateDataset(getDataset(), {
+    releaseMode: isReleaseBuild,
+    knowledgeSources: knowledgeSourceIds(knowledgeArticles, knowledgeRelations),
+  });
   return cachedReport;
 }
 

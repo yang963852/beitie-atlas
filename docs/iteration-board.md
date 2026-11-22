@@ -1,6 +1,6 @@
 # Iteration board
 
-Updated: 2026-11-21. One active implementation task at a time.
+Updated: 2026-11-22. This board tracks milestones. Independent contributions are coordinated in GitHub Issues and pull requests.
 
 | Task | Outcome | State | Exit evidence |
 | --- | --- | --- | --- |
@@ -23,19 +23,12 @@ Updated: 2026-11-21. One active implementation task at a time.
 | 017 | Close the technical review's defects and codify synchronization | Accepted — merged by owner decision without an independent review; CI "Preview quality checks" passed on the branch head | 103 tests; 26 invisible notes now render; bilingual note rule added; board check and CI hardening in place; see [task 017](../tasks/017-defect-fixes-and-governance.md) and [delivery 017](delivery-017.md). |
 | 018 | Simplify lookups, widen the corpus, define citable sources | Accepted — merged by owner decision without an independent review; CI "Preview quality checks" passed on the branch head | 106 tests; 37 works / 40 objects / 19 places / 62 sources; four new steles from institutional pages; printed sources allowed; apps defined as leads; see [task 018](../tasks/018-simplify-and-widen-corpus.md) and [delivery 018](delivery-018.md). |
 | 019 | Report a refused basemap and answer the stack question | Accepted — merged by the owner's standing decision for direct merges, without an independent review | Refused tiles now produce a notice and the coordinate schematic; major dependency bumps stopped; stack rationale and growth table in the engineering plan; live tile-refusal check not run; see [task 019](../tasks/019-tile-failure-and-stack-rationale.md) and [delivery 019](delivery-019.md). |
-
 | 020 | Fix artifact input handling and basemap recovery | Accepted — owner authorized the merge; no independent implementation review | 112 tests; subpath preview and draft gate verified locally; formal release remains separate. See [task 020](../tasks/020-artifact-and-basemap-followup.md) and [delivery 020](delivery-020.md). |
-
 | 021 | Publish the founding second edition | Delivered — owner-approved corpus; Sites version 5 deployed, mainland access still limited | Formal release validated; 37 works and 40 objects; see [task 021](../tasks/021-founding-second-edition.md) and [delivery 021](delivery-021.md). |
-
 | 022 | Quiet record list, inspectable map points, contribution channel | Accepted — code review findings addressed; owner authorized source merge only | 120 tests; seven new objects remain drafts. Live browser checks and editorial approval remain open. See [task 022](../tasks/022-reading-and-contribution.md), [delivery 022](delivery-022.md), and [review 022](review-022.md). |
-
 | 023 | Prioritize common inscriptions and fill first gaps | Delivered — merged and deployed as owner-authorized trial preview; editorial review pending | Sites version 6; rollback version 5. See [task 023](../tasks/023-canonical-inscriptions.md), [delivery 023](delivery-023.md), and [coverage matrix](canonical-coverage.md). |
-
 | 024 | Text catalogue of steles and manuscripts through the Qing | Delivered — owner requested merge and trial publication, editorial review pending | See [task 024](../tasks/024-bei-tie-catalogue.md) and [delivery 024](delivery-024.md) and the subsequent [reader checks](delivery-025.md). |
-
 | 025 | Review the public catalogue, draft evidence and dependency candidates | Delivered — partially verified; Codex self-review, owner decides acceptance at merge | See [task 025](../tasks/025-catalogue-audit.md), [editorial review](editorial-review-025.md) and [delivery 025](delivery-025.md). |
-
 | 026 | Study by inscription or modelbook and follow the surviving witness | Delivered — merged by owner instruction after self-review; public trial v8 deployed; editorial approval pending | [Task 026](../tasks/026-study-catalogue.md) and [delivery 026](delivery-026.md). |
 | 027 | Scroll opening, sourced custody leads, and a second public preview | Delivered — merged under owner authorization after self-review; editorial verification pending | PR #13; Pages and Sites v9 both verified; see [task 027](../tasks/027-opening-and-provenance.md) and [delivery 027](delivery-027.md). |
 | 028 | Enable the GitHub Pages basemap | Delivered — owner-authorized merge after self-review; public tiles verified | [Task 028](../tasks/028-pages-basemap.md), [delivery 028](delivery-028.md). |
@@ -43,16 +36,16 @@ Updated: 2026-11-21. One active implementation task at a time.
 | 030 | Read the Yan Qinli timeline on the map | Delivered — partially verified by Codex self-review; owner decides acceptance at merge | [Task 030](../tasks/030-provenance-map.md) and [delivery 030](delivery-030.md). |
 | 031 | Unroll a handscroll onto the copying desk and open record previews | Delivered — partially verified by Codex self-review; owner decides acceptance at merge | [Task 031](../tasks/031-desk-opening.md) and [delivery 031](delivery-031.md). |
 | 032 | Enter the records by touching the paper | Delivered — partially verified by Codex self-review; owner decides acceptance at merge | [Task 032](../tasks/032-ink-entry.md) and [delivery 032](delivery-032.md). |
-
 | 033 | Contain local project artifacts | Delivered — relocation verified by self-review; owner decides acceptance at merge | [Task 033](../tasks/033-workspace-storage.md) and [delivery 033](delivery-033.md). |
 | 034 | Integrate two witness research batches | Delivered — partially verified by self-review; owner decides acceptance at merge | [Task 034](../tasks/034-witness-research.md) and [delivery 034](delivery-034.md). |
 | 035 | Use GitHub Pages as the sole website host | Delivered — hosting cutover verified by self-review; owner decides acceptance at merge | [Task 035](../tasks/035-github-pages-only.md), [delivery 035](delivery-035.md), and [PR #23](https://github.com/yang963852/beitie-atlas/pull/23). |
+| 036 | First internal beta on public Pages | Delivered — partially verified by Codex self-review; coordinator authorized the beta rollout | [Task 036](../tasks/036-internal-beta.md), [delivery 036](delivery-036.md), [PR #24](https://github.com/yang963852/beitie-atlas/pull/24). |
 
 ## Iteration loop
 
 Ready → in progress → delivered → reviewed → fixing (if necessary) → accepted.
 
-Each task specifies goal, allowed scope, exclusions, input evidence, and observable acceptance. The implementer writes a delivery report; Codex writes the independent outcome. Record blocked portions separately and continue independent work. Local engineering, editorial approval, live provider behavior, and public network access are four distinct gates.
+Each assignment specifies its scope, evidence and observable acceptance. A routine change records verification in the PR. A milestone also has a delivery report here. A different reviewer or the coordinator decides acceptance. Record local engineering, editorial approval, live provider behavior and observed public reachability separately.
 
 The state column opens with one canonical keyword — `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted`, `Superseded` — followed by an em dash and any detail. `npm run check:docs` enforces that vocabulary, requires every task file and delivery report to have a row, and rejects evidence links that do not resolve. Prose after the dash is free text; the keyword is not.
 

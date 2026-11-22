@@ -16,7 +16,7 @@ export const enStrings = {
   tagline: 'where is it kept today?',
   enterCatalogue: 'Open the catalogue',
   taglineDetail:
-    'Trace calligraphy through the Qing dynasty. Find the stone, manuscript, rubbing or copy on the map and follow its recorded journey.',
+    'Explore the calligraphy people practise, the people who wrote it, and the surviving stones, manuscripts and rubbings.',
   studyFilter: 'Filter by work category',
   studyLabels: { all: 'All', bei: 'Inscriptions', tie: 'Modelbooks' },
   draftNotice:

@@ -1,5 +1,9 @@
 # Changelog
 
+## First internal beta · 内部测试第一版 (task 036)
+
+The public Pages preview adds a Markdown knowledge library for readers and contributors, with Yan Zhenqing and Shen Yinmo as the first person-led reading paths. Works and physical witnesses retain distinct identities and sources. Contributors can submit evidence in Chinese directly on GitHub, or claim a small web task and hand it to their local agent. The coordinator decides merges. The beta accepts drafts and has its own feedback form. [Knowledge library](knowledge/README.md) · [Chinese submission and testing guide](docs/CONTRIBUTE.zh-CN.md) · [Milestone task](tasks/036-internal-beta.md)
+
 ## Unreleased — task 022 quiet reading, point cards, and contributions (2026-11-18)
 
 The left column now gives one title and one documented place per record, in period order; type, dates, attribution, and badges live in the record pane. Map points — on the live basemap and on the coordinate schematic — list every object held there with its type, and a labelled point index makes the same selection keyboard-accessible. A work's recorded background is finally shown, marked in the language it was written in.

@@ -2,37 +2,18 @@
 
 **简体中文** · [English](README.en.md)
 
-**[在线图鉴 · GitHub Pages 试览](https://yang963852.github.io/beitie-atlas/)** · [反馈问题或补充资料](https://github.com/yang963852/beitie-atlas/issues)
+临《颜勤礼碑》时，我们看到的是哪一份拓本？碑文写给谁？碑背那个「故」字，在不同版本里还能辨出哪些笔画？碑帖之间为临帖者整理从古至今的作品、书家和实物，让读者循着一次观察找到原始出处。
 
-临帖时，我们面对的是怎样传下来的一行字？《玄秘塔碑》的原石藏在西安，故宫另藏它的明初拓册。同一篇碑文，石与纸各有去处。碑帖之间为书法学习者整理清代及以前的著名碑帖，从案头的一笔一画出发，循地图访其所藏，循著录读其来历。
+**[打开网站 · 内部测试第一版](https://yang963852.github.io/beitie-atlas/)**　[在 GitHub 读知识库](knowledge/README.md)　[补充资料](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)　[反馈内测问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)
 
-按「全部／碑／帖」浏览，亦可按书家检索。「碑」收碑志、摩崖等刻辞，「帖」收尺牍、墨迹及汇刻法帖。拓自哪一类作品，便随哪一类著录。
-
-![碑帖之间卷首](docs/screenshots/027-1440.png)
-
-图为任务 027 的桌面卷首。 [版本与交接](docs/START-HERE.md) · [逐条审核清单](docs/editorial-review-025.md)
-
-## 本地运行
-
-准备 Git 和 Node.js 24，执行以下命令，然后打开终端显示的地址。
-
-```bash
-git clone https://github.com/yang963852/beitie-atlas.git
-cd beitie-atlas
-npm ci
-npm run dev
-```
-
-Windows 可用 `npm.cmd` 替代 `npm`。浏览资料无需地图密钥，接入真实底图见[天地图配置](docs/map-setup.md)。提交改动前运行 `npm run check`。
-
-## 技术与项目文档
-
-React、TypeScript 和 Vite 构建静态应用，JSON 管理作品、实物和出处，天地图提供底图，Vitest 与 GitHub Actions 负责自动检查。GitHub Pages 是项目唯一的网站托管平台。
-
-| 要做什么 | 从这里开始 |
+| 我想做什么 | 从这里开始 |
 | --- | --- |
-| 接手开发、查找目录和命令 | [维护者与 AI 交接](docs/START-HERE.md) · [项目规则](AGENTS.md) |
-| 补充出处、纠正馆藏或提交代码 | [贡献指南](CONTRIBUTING.md) · [资料与协作流程](docs/atlas-workflow.md) |
-| 查看当前进度和发布条件 | [迭代看板](docs/iteration-board.md) · [变更记录](CHANGELOG.md) · [发布手册](docs/release.md) |
+| 读作品、找书家或辨版本 | 从[《颜勤礼碑》](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei)读原石与拓本，也可以从[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)找作品，或进[知识库目录](knowledge/README.md)浏览 Markdown |
+| 加一条馆藏出处、补一段读帖体会 | 填[中文资料投稿表](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)，或在浏览器编辑知识文章。可只用中文，一次选一种方式。[投稿示例与操作](docs/CONTRIBUTE.zh-CN.md) |
+| 测试网站 | [五分钟试读](docs/CONTRIBUTE.zh-CN.md#五分钟试读)。反馈可写网址、设备、看到的现象与预期结果 |
+| 用本地 agent 开发网页、整理资料或复核 | [英文上手与交接](docs/START-HERE.md) · [贡献流程](CONTRIBUTING.md) · [项目规则](AGENTS.md) |
+| 跟进选题、评审和合并 | [待处理议题](https://github.com/yang963852/beitie-atlas/issues) · [待审 PR](https://github.com/yang963852/beitie-atlas/pulls) · [里程碑记录](docs/iteration-board.md) |
 
-原创代码、文档及原创编辑贡献采用 [MIT 许可证](LICENSE)。馆藏图片、引文与地图服务适用各自的使用条款。[权利与致谢说明](NOTICE.md)
+网站通过公开的 GitHub Pages 分发，当前为**内部测试第一版**。读者可浏览草稿和存疑记录，地图只显示有依据的点位。正式版次和出版条件见[发布手册](docs/release.md)。
+
+原创代码、文档和原创编辑内容采用 MIT 许可证。引文、馆藏图片和地图服务的权利依各自依据处理。[许可证](LICENSE) · [权利与致谢](NOTICE.md)

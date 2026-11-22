@@ -1,47 +1,27 @@
-# Contributing
+# Contributing to Between Steles
 
-Start with [project rules](AGENTS.md), [iteration board](docs/iteration-board.md), and [design system](docs/design-system.md). These are lightweight project-specific adaptations, not copied policy bundles.
+[中文投稿与试读指南](docs/CONTRIBUTE.zh-CN.md) · [Knowledge library](knowledge/README.md) · [Member and agent setup](docs/START-HERE.md)
 
-The [atlas workflow](docs/atlas-workflow.md) covers source evidence, map points, GitHub synchronization, and GitHub Pages publication.
+| Contribution | Start | Handoff |
+| --- | --- | --- |
+| Suggest a source, correction, teaching example or close reading | [Knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) or a browser edit to an authored Markdown file in the library | An editor links the submission and credit to the resulting PR or explains the open question in the Issue |
+| Change the website | Claim a [web task](https://github.com/yang963852/beitie-atlas/issues/new?template=web-task.yml) when coordination is useful | Send a small PR with the reproduced reader path, checks and limitations |
+| Report a beta problem | [Beta feedback](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) | Include the page, device or browser, steps, observed and expected behaviour |
 
-## One small improvement at a time
+Chinese-only submissions are welcome. Small, evidenced corrections may go straight to PR. The Issue number or PR preserves attribution. Citing a contribution in the resulting article also preserves the named author's credit for a reading or interpretation.
 
-1. Select one ready task with an observable outcome and acceptance criteria.
-2. Record its base commit and create `task/NNN-short-name` when starting new implementation. Do not discard existing work or switch branches with unresolved changes.
-3. Implement only that scope. Keep data corrections separate from visual refactoring where practical.
-4. Run checks and inspect the changed behavior. Deliver evidence using `templates/delivery-report.md`.
-5. Codex reviews actual files and evidence. Fix blocking findings in the same task. Record accepted limitations explicitly.
-6. After acceptance, merge/checkpoint the work and update the board. Public deployment has its own gate and is never implied by passing local tests.
+## From assignment to merge
 
-Use Conventional Commit prefixes. No commit-message tooling or bureaucracy is required. Describe the user-visible result, not just “update files”. A change need not be perfect; it must improve the project without concealing material defects.
+1. The coordinator prioritizes Issues by reader impact and marks the track (`knowledge`, `web` or `beta-feedback`). Record a lead, scope, acceptance example and reviewer in coordinated work. Use the [task brief](templates/task-brief.md) when several people depend on the outcome. Coordinate overlapping files. Independent tasks can proceed in parallel.
+2. Branch from current project `main`. External contributors push to their own fork (`origin`) and propose changes to the project (`upstream`). Invited contributors may use a project task branch. A browser edit can create the fork and PR directly. For local work see the [setup guide](docs/START-HERE.md).
+3. Put the change, sources or reproduction, checks run and remaining gaps in the PR. Link any Issue, including submissions incorporated by an editor. CI runs the quality check on PRs. For an ordinary contribution the PR is the delivery record. Milestones, bulk migrations and releases also have a numbered task, board row and delivery report.
+4. The assigned editor checks identities, locators, uncertainties and rights. A technical reviewer checks the changed path and its regressions. Describe an author's or their agent's own review as **self-review**. Resolve blocking findings on the same PR. The coordinator decides the merge or explicitly delegates that PR. A contributor agent stops at the assigned handoff.
+5. Sync the local default branch with the project after merge. Pages builds a preview from checked `main`. Formal editorial approval and publication are separate decisions for an exact revision. [Editorial workflow](docs/atlas-workflow.md) · [Release runbook](docs/release.md)
 
-## Keep GitHub in step
+## Coordinator's queue
 
-The repository is the canonical source, so a task is finished on GitHub, not on a laptop.
+Use [knowledge submissions](https://github.com/yang963852/beitie-atlas/issues?q=is%3Aissue%20is%3Aopen%20label%3Aknowledge), [web work](https://github.com/yang963852/beitie-atlas/issues?q=is%3Aissue%20is%3Aopen%20label%3Aweb), [beta feedback](https://github.com/yang963852/beitie-atlas/issues?q=is%3Aissue%20is%3Aopen%20label%3Abeta-feedback) and [open PRs](https://github.com/yang963852/beitie-atlas/pulls). Triage a new submission, name a reviewer, link a PR or record the missing evidence, then return the outcome to the submitter. Use GitHub permissions and branch protection to enforce the PR and required status check. A skill, label or Issue assignment grants no repository access.
 
-1. Push the task branch before reporting completion, and name the branch and head revision in the delivery report.
-2. After the merge, `main` must match `origin/main`. A local-only commit is unsynchronized work.
-3. Never force-push a branch someone else may have based work on, and never rewrite pushed history.
-4. If a push is blocked (credentials, network, TLS), report the command and the error. Do not describe unpushed work as delivered.
-5. `dist/`, `build/`, `.env*`, map keys and Site credentials stay out of every remote.
+On each PR, check the latest revision, review outcome and the required CI job. When the coordinator authored a change, record self-review and the decision explicitly or request a second person to review. Keep secrets, build products and personal profiles out of Git. A failed check or blocked push stays visible until resolved. [Repository rules](AGENTS.md)
 
-`npm run check` includes `check:docs`, which fails when a task file or delivery report has no board row, when a board state does not open with a canonical keyword, or when an evidence link does not resolve.
-
-## Reproduce locally
-
-Use a supported Node version satisfying `package.json`; the review ran with Node 24.16.0. With a fresh checkout run `npm ci`, then `npm run check` and `npm run dev`. PowerShell users may use `npm.cmd` for these commands. Never commit `node_modules`, `dist`, or local credentials.
-
-The CI workflow runs the existing preview checks. It does **not** approve publication of draft data and does not deploy. Production publishing uses `npm run release`, which applies the strict data gate and verifies the artifact; see [docs/release.md](docs/release.md).
-
-## Data and images
-
-Submit a source link or bibliographic page locator with each correction. Explain what the evidence establishes and what remains unknown. Supply image creator, license, source, credit, and rights evidence. Publicly visible media are not automatically reusable. Coordinate and custody claims require their own evidence.
-
-## Sources for these practices
-
-- [Google code review standard](https://google.github.io/eng-practices/review/reviewer/standard.html): evidence-led review and incremental improvement.
-- [Conventional Commits 1.0](https://www.conventionalcommits.org/en/v1.0.0/): readable change history.
-- [Apple HIG layout](https://developer.apple.com/design/human-interface-guidelines/layout): hierarchy and progressive disclosure, adapted for a cross-platform website.
-- [WCAG 2.2](https://www.w3.org/TR/WCAG22/): web accessibility criteria.
-
-These links credit the ideas. Third-party source code/assets are not included by reference and retain their own licenses.
+Project practice draws on [Google's code review standard](https://google.github.io/eng-practices/review/reviewer/standard.html), [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) and the [design system references](docs/design-system.md).

@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import { loadEnv, type Plugin } from 'vite';
 import { defineConfig } from 'vitest/config';
 import { runReleaseGate } from './scripts/lib/release-gate';
+import { knowledgePlugin } from './scripts/lib/knowledge-plugin';
 
 /**
  * Writes the build mode into the served HTML. `scripts/release.ts` checks the
@@ -38,7 +39,7 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     base,
-    plugins: [react(), buildModePlugin(buildMode)],
+    plugins: [react(), knowledgePlugin(process.cwd()), buildModePlugin(buildMode)],
     build: {
       outDir: 'dist',
       sourcemap: true,

@@ -10,6 +10,7 @@ Three kinds of material show up when looking for a stele, and they are not inter
 | --- | --- | --- |
 | Museum, library, cultural-heritage or government page | Yes | `kind: "web"` with the URL, access date and a locator that says which paragraph carries the claim |
 | Printed catalogue, rubbing collection, excavation report | Yes, if you actually have the volume | `kind: "book"` with publisher, year and a page or entry locator. No URL is required and none may be invented |
+| Teaching resource, syllabus, published practice edition or named course | For the use it actually documents | Identify the author or issuing body, edition or course, date and passage. A publication establishes a particular example. Wider use needs evidence at that scale. |
 | An app that collects inscriptions (掌上碑帖, 以观书法 and similar), a forum post, an encyclopedia entry | No | Use it as a lead. It tells you which stele to look up; it does not support a claim about that stele |
 
 The distinction is not snobbery about apps. A work page in an app usually has no stable per-object address, no stated editorial method, and no way to tell whether its date came from the stone, a rubbing or another website. A claim needs a reader to be able to open the same evidence and see the same sentence.
@@ -20,12 +21,20 @@ When two citable pages disagree — the year of a stele, the height of a stone, 
 
 ## From a source to a record
 
-1. Record the task, base revision, acceptance checks, and implementer on the iteration board. Use one task branch and one implementation writer.
+1. Start from a reader's Issue or small PR. Claim a bounded subject, identify its source and agree any overlapping edits. Record scope, lead, expected evidence and review in the Issue/PR. Add numbered board and delivery records for milestones, migrations and releases.
 2. Open the institution's object page, catalogue, or other primary publication. Record its URL, publisher, access date, and claim locator. Cross-check conflicting collection, attribution, or date claims. Keep unknown fields empty and explain disputed evidence.
 3. Enter the work and each physical object separately. Left-column groups follow the period of the represented inscription or calligraphic work. Within a group, known dates go first in chronological order. A later carving or rubbing keeps its own production date and holding.
 4. Check the holding source and the point source separately. Plot only evidenced current collection or in-situ assertions joined to a coordinate for that same institution or site. Preserve the stated coordinate reference, source precision and verification. For missing coordinates, retain the place in the location list. A secondary coordinate supports orientation at institution/site scale and must display its unverified status.
-5. Run `npm run check`. Inspect 390, 768, and 1440 CSS px plus 200% browser zoom for layout changes. Exercise keyboard focus, record and map selection, search, no coordinates, map-provider failure, and share-link refresh as applicable. Record the outcomes in `docs/delivery-NNN.md`.
-6. Push every checked task branch to GitHub and open a PR against `main`. Record the review outcome, distinguish self-review from independent acceptance, and resolve blocking findings. Merge after the applicable GitHub checks pass under the owner's standing source-merge authorization. Sync local `main` back to `origin/main` and record the PR and merged revision. If blocked, preserve and report the unmerged work rather than bypassing checks.
+5. Editors validate changes with `npm run check`. For changed layouts inspect 390, 768 and 1440 CSS px and 200% zoom. Exercise keyboard, selection, missing data, fallback and link refresh as applicable. A browser-only submitter can hand the material to an editor and CI. Link the outcome in the original Issue.
+6. Open the checked PR against project `main`. Record the review outcome and any self-review, then resolve blocking findings. The coordinator decides the merge or explicitly delegates the specific PR. Sync local `main` to the project after merge. Record a blocked push or failed check with its actual result. [Contributing](../CONTRIBUTING.md)
+
+## Authoring a library article
+
+Use [the GitHub library](../knowledge/README.md) to find the correct input. Write the original article once in Markdown. Keep normalized works, witness holdings, events, places and bibliographic records in the catalogue data. Generated reading copies and their indexes are derived from those records. Preserve stable IDs and existing witness share links. On GitHub, an editor can edit an authored Markdown page with the pencil and preview it before submitting a PR.
+
+For a work introduction, cite the writing context and identify the sources for any teaching-use claim. For a person, identify their evidenced role. For a relationship, record both parties, type, direction where meaningful, source and certainty once. For a close reading, name the observer and edition and point to a line, leaf or character another reader can inspect. Keep editorial claims and interpretations attributed. Preserve Chinese source wording and existing aligned translations, including when an article is available only in Chinese. Check review status, rights and links before proposing publication.
+
+When moving an existing narrative, compare its text, language, source links, stable ID and review state before switching consumers. Remove superseded editable copies after parity is established. The website and GitHub should both lead readers to the same evidence.
 
 ## GitHub Pages preview
 
