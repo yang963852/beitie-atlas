@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState, type MouseEvent } from 'react';
 import { useLocale } from '../i18n';
+import { isReleaseBuild } from '../domain/build';
 import './opening-desk.css';
 
 export function OpeningDesk({ enter }: { enter: () => void }) {
-  const { strings } = useLocale();
+  const { strings, locale } = useLocale();
   const [origin, setOrigin] = useState<{ x: number; y: number } | null>(null);
   const entering = useRef(false);
   const finish = () => {
@@ -38,6 +39,10 @@ export function OpeningDesk({ enter }: { enter: () => void }) {
 
   return (
     <section className="desk" data-entering={Boolean(origin)} aria-labelledby="opening-title">
+      <div className="desk__library">
+        {!isReleaseBuild && <span>{locale === 'zh' ? '内部测试第一版' : 'Internal beta 1'}</span>}
+        <a href="#/library">{locale === 'zh' ? '读作品与书家 →' : 'Read works and calligraphers →'}</a>
+      </div>
       <div className="desk__scroll">
         <h1 id="opening-title">
           <a className="desk__paper" href="#catalogue" onClick={open} aria-label={strings.enterCatalogue}>
