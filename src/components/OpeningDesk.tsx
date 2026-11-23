@@ -4,7 +4,7 @@ import { isReleaseBuild } from '../domain/build';
 import type { createClassroom } from './classroom-scene';
 import './opening-desk.css';
 
-export function OpeningDesk({ enter }: { enter: () => void }) {
+export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate: () => void }) {
   const { strings, locale } = useLocale();
   const canvas = useRef<HTMLCanvasElement>(null);
   const scene = useRef<ReturnType<typeof createClassroom> | null>(null);
@@ -76,7 +76,11 @@ export function OpeningDesk({ enter }: { enter: () => void }) {
         {!isReleaseBuild && <span>{locale === 'zh' ? '内部测试第一版' : 'Internal beta 1'}</span>}
         <a href="#/library">{locale === 'zh' ? '读作品与书家 →' : 'Read works and calligraphers →'}</a>
       </div>
-      <a className="desk__credit" href="#/object/witness-lanting">
+      <a className="desk__credit" href="#/object/witness-lanting" onClick={event => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        openPlate();
+      }}>
         {locale === 'zh' ? '帖影 · 兰亭序神龙本（局部）' : 'Plate · Shenlong copy (detail)'}
       </a>
       <h1 id="opening-title">

@@ -237,7 +237,12 @@ function AppShell() {
         {strings.skipToResults}
       </a>
 
-      <OpeningDesk enter={() => {
+      <OpeningDesk openPlate={() => {
+        setCategory('all');
+        setQuery('');
+        openObject('witness-lanting');
+        goToSection('detail');
+      }} enter={() => {
         setDetailOpen(false);
         setMobilePane('list');
         if (window.location.hash !== '#catalogue') window.history.pushState(null, '', '#catalogue');

@@ -45,6 +45,14 @@ describe('application shell', () => {
     }
   });
 
+  it('opens the depicted witness from the desk credit', () => {
+    renderApp();
+    fireEvent.click(screen.getByRole('link', { name: /帖影/ }));
+    expect(window.location.hash).toBe('#/object/witness-lanting');
+    expect(document.activeElement).toBe(document.getElementById('detail'));
+    expect(within(screen.getByRole('article')).getByRole('heading', {name: /神龙本/})).toBeVisible();
+  });
+
   it('lands an object permalink on its detail instead of the cover', () => {
     window.history.replaceState(null, '', '#/object/witness-jizhi');
     renderApp();
