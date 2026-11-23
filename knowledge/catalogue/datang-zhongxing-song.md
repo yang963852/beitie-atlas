@@ -23,7 +23,7 @@ Eulogy of the Tang Restoration
 
 作品待考与说明
 
-- The Hunan page and the Yongzhou page disagree on the character count (242 vs 332).
+- 湖南、永州两处页面所记字数不一致（242 字与 332 字）。
 
 <a name="cliff-datang-zhongxing-song"></a>
 

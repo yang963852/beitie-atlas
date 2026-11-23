@@ -20,7 +20,7 @@ Elegy for a Crane
 
 作品待考与说明
 
-- The cited sources list several candidate authors (王羲之, 陶弘景, 顾况, 王瓒) without settling the question.
+- 所引来源列出王羲之、陶弘景、顾况、王瓒等候选作者，未作定论。
 
 <a name="fragments-yihe-ming"></a>
 

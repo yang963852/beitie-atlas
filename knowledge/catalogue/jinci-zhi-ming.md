@@ -20,7 +20,7 @@ Inscription for the Jin Shrine
 
 作品待考与说明
 
-- The source discusses the text’s political argument but not the calligraphy’s transmission in any detail.
+- 来源讨论碑文的政治主张，未细述其书法流传。
 
 <a name="stele-jinci-ming-1772"></a>
 

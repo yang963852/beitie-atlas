@@ -77,7 +77,7 @@ describe('application shell', () => {
     renderApp();
     const list = resultsList();
     const periods = within(list).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim().split(/\s*\d/)[0]);
-    expect(periods).toEqual(['先秦', '秦', '西汉', '东汉', '三国', '东晋', '南北朝', '隋', '唐', '北宋', '元', '明', '清']);
+    expect(periods).toEqual(['先秦', '秦', '西汉', '东汉', '三国', '西晋', '东晋', '南北朝', '隋', '唐', '北宋', '元', '明', '清']);
 
     expect(within(list).getByRole('heading', { name: /东汉/ })).toBeInTheDocument();
     expect(within(list).getByRole('heading', { name: /南北朝/ })).toBeInTheDocument();
@@ -111,12 +111,13 @@ describe('application shell', () => {
 
     const detail = screen.getByRole('article');
     // These notes live on the work and on the place, not on the object; none of
-    // them used to be rendered anywhere.
-    const workNote = within(detail).getByText(/The English title is a project translation/);
-    expect(workNote).toHaveAttribute('lang', 'en');
+    // them used to be rendered anywhere. Both now carry a Chinese counterpart,
+    // so the Chinese interface shows that wording under its own language tag.
+    const workNote = within(detail).getByText(/英文标题为本项目为检索所译/);
+    expect(workNote).toHaveAttribute('lang', 'zh-Hans');
 
-    const placeNote = within(detail).getByText(/gives no street address or coordinates/);
-    expect(placeNote).toHaveAttribute('lang', 'en');
+    const placeNote = within(detail).getByText(/该条未给门牌地址与坐标/);
+    expect(placeNote).toHaveAttribute('lang', 'zh-Hans');
 
     // Notes are grouped by the record they describe, so a gap stated at two
     // levels reads as two records rather than as a duplicate.
@@ -124,6 +125,15 @@ describe('application shell', () => {
       (node) => node.textContent,
     );
     expect(scopes).toEqual(['本条实物', '所属作品', '收藏地点']);
+
+    // The same notes fall back to the recorded English wording, still tagged,
+    // when the interface is switched to English.
+    fireEvent.click(screen.getByRole('button', { name: 'EN' }));
+    const detailInEnglish = screen.getByRole('article');
+    const englishWorkNote = within(detailInEnglish).getByText(/The English title is a project translation/);
+    expect(englishWorkNote).toHaveAttribute('lang', 'en');
+    const englishPlaceNote = within(detailInEnglish).getByText(/gives no street address or coordinates/);
+    expect(englishPlaceNote).toHaveAttribute('lang', 'en');
   });
 
   it('shows the rubbing’s own catalogue number and no copied provenance', () => {

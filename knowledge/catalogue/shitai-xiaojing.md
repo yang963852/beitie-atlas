@@ -21,7 +21,7 @@ Stone Terrace Classic of Filial Piety
 
 作品待考与说明
 
-- The page does not state the number of characters or the condition of the carving today.
+- 页面未记字数，也未记刻石现状。
 
 <a name="stele-shitai-xiaojing"></a>
 

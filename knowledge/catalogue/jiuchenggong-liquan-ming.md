@@ -21,7 +21,7 @@ Sweet Spring at Jiucheng Palace
 
 作品待考与说明
 
-- The cited reply gives no date, dimensions, or condition for the stone; the composition year is not stated there.
+- 所引答复函未记碑石年代、尺寸与现状；撰书年份该页亦未载。
 
 <a name="stele-jiuchenggong"></a>
 

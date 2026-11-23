@@ -27,6 +27,9 @@
       ],
       "notes": [
         "The institution is named by the Palace Museum catalogue entry as the stone's holding museum; that entry gives no street address or coordinates."
+      ],
+      "notesZh": [
+        "故宫著录以此馆为碑石收藏单位；该条未给门牌地址与坐标。"
       ]
     },
     {
@@ -70,6 +73,9 @@
       ],
       "notes": [
         "The 2007 museum article locates the compound only as 'the area east and north-east of today's Xi'an Drum Tower'. No point is asserted here, because a named area is not a surveyed coordinate."
+      ],
+      "notesZh": [
+        "2007 年馆方文章只称其在「今西安鼓楼东北一带」。此处不设点位：一个地名范围不等于实测坐标。"
       ]
     },
     {
@@ -86,6 +92,9 @@
       ],
       "notes": [
         "Named as the 1928 destination ('新城大楼北东侧'). The source gives no coordinates and the historical layout is not established in this record."
+      ],
+      "notesZh": [
+        "来源记 1928 年迁至「新城大楼北东侧」。该页未给坐标，其历史格局本记录亦未考定。"
       ]
     },
     {
@@ -102,6 +111,9 @@
       ],
       "notes": [
         "The 1948 destination as named in the source. This record does not assert that the 1948 institution is identical to today's Xi'an Beilin Museum; the museum is recorded as a separate place with its own source."
+      ],
+      "notesZh": [
+        "此为来源所记 1948 年所在地。本记录不主张 1948 年的机构与今西安碑林博物馆为同一处；该馆另立一地，各有来源。"
       ]
     },
     {
@@ -509,6 +521,166 @@
       ],
       "notes": [],
       "notesZh": []
+    },
+    {
+      "id": "place-capital-museum",
+      "names": {
+        "zh": "首都博物馆",
+        "en": "Capital Museum, Beijing"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-people-luoshen",
+        "src-cnr-luoshen"
+      ],
+      "notes": [
+        "No coordinate is recorded: neither source states a point or the precision it would support."
+      ],
+      "notesZh": [
+        "未记坐标：两处来源均未给出点位，也未说明其精度。"
+      ]
+    },
+    {
+      "id": "place-ji-an-haotaiwang",
+      "names": {
+        "zh": "集安好太王碑",
+        "en": "Stele of King Gwanggaeto, Ji'an"
+      },
+      "historicalName": "太王乡大碑街",
+      "kind": "historical-site",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-jl-dfz-haotaiwang",
+        "src-jl-dfz-haotaiwang-alt"
+      ],
+      "notes": [
+        "The gazetteer locates the stele east of the tomb in 太王乡大碑街, about 4 km east of Ji'an city; it gives no coordinate.",
+        "The site is recorded as it stands today. The stele has not moved, so no separate findspot is asserted."
+      ],
+      "notesZh": [
+        "方志称碑在集安市区东约 4 公里太王乡大碑街、好太王陵东侧，未给坐标。",
+        "此处按现状记录。碑未移动，故不另立出土地点。"
+      ]
+    },
+    {
+      "id": "place-longmen-grottoes",
+      "names": {
+        "zh": "洛阳龙门石窟",
+        "en": "Longmen Grottoes, Luoyang"
+      },
+      "historicalName": "伊阙",
+      "kind": "historical-site",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-gmw-shipinggong",
+        "src-shanghai-ly-shipinggong"
+      ],
+      "notes": [
+        "The inscriptions sit in 古阳洞 on the west hill. The sources name the cave but give no point, so the place carries no coordinate."
+      ],
+      "notesZh": [
+        "题记位于西山古阳洞。来源只记洞窟，未给点位，故此地不设坐标。"
+      ]
+    },
+    {
+      "id": "place-zhaoling-museum",
+      "names": {
+        "zh": "昭陵博物馆",
+        "en": "Zhaoling Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-dpm-yugong-nansong"
+      ],
+      "notes": [
+        "The Palace Museum record says the stone is now in 昭陵博物馆 in 礼泉, Shaanxi; it gives no coordinate."
+      ],
+      "notesZh": [
+        "故宫著录称原石现存陕西礼泉昭陵博物馆，未给坐标。"
+      ]
+    },
+    {
+      "id": "place-liaoning-museum",
+      "names": {
+        "zh": "辽宁省博物馆",
+        "en": "Liaoning Provincial Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-lnm-wansui",
+        "src-chinanews-wansui"
+      ],
+      "notes": [
+        "No coordinate is recorded: the museum and press pages name the institution without a point."
+      ],
+      "notesZh": [
+        "未记坐标：馆方与媒体报道只称机构，未给点位。"
+      ]
+    },
+    {
+      "id": "place-tokyo-national-museum",
+      "names": {
+        "zh": "东京国立博物馆",
+        "en": "Tokyo National Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-tnm-sanmen",
+        "src-colbase-sanmen"
+      ],
+      "notes": [
+        "The museum's records establish the holding and the object number TB-1461; they give no coordinate."
+      ],
+      "notesZh": [
+        "馆方著录确认收藏与机构管理序号 TB-1461，未给坐标。"
+      ]
+    },
+    {
+      "id": "place-beihai-yuegu",
+      "names": {
+        "zh": "北海公园阅古楼",
+        "en": "Yuegu Lou, Beihai Park"
+      },
+      "historicalName": null,
+      "kind": "historical-site",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-dpm-sanxitang",
+        "src-chinadaily-yuegu"
+      ],
+      "notes": [
+        "The stones are set into the walls of a two-storey semicircular building on the west slope of Qionghua Island. Neither source gives a point."
+      ],
+      "notesZh": [
+        "刻石嵌于琼岛西麓半圆形两层楼阁的壁间。两处来源均未给点位。"
+      ]
+    },
+    {
+      "id": "place-met-museum",
+      "names": {
+        "zh": "大都会艺术博物馆",
+        "en": "The Metropolitan Museum of Art"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-met-shiqi"
+      ],
+      "notes": [
+        "The museum record establishes the accession number 1991.380 and the credit line; it gives no coordinate."
+      ],
+      "notesZh": [
+        "馆方著录确认藏品号 1991.380 与捐赠来源，未给坐标。"
+      ]
     }
   ]
 }

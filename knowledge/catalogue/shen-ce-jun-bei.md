@@ -21,7 +21,7 @@ Stele of the Shence Army
 
 作品待考与说明
 
-- The article does not describe the missing lower volume beyond noting that it is lost.
+- 文章除称下册已佚外，未描述其内容。
 
 <a name="rubbing-shence-jun"></a>
 

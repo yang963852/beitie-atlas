@@ -20,7 +20,7 @@ Inscription on the Hot Spring
 
 作品待考与说明
 
-- The cited report gives neither the rubbing’s measurements nor its condition.
+- 所引报道既未给拓本尺寸，也未记其保存状况。
 
 <a name="rubbing-wenquan-ming"></a>
 

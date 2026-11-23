@@ -21,7 +21,7 @@ Kaicheng Stone Classics
 
 作品待考与说明
 
-- The page gives the number of stones, faces, and characters but no list of the individual colophons.
+- 页面记石数、面数与字数，但未逐一列出各石题记。
 
 <a name="stele-kaicheng-shijing"></a>
 

@@ -21,7 +21,7 @@ Stele of the Diffusion of the Luminous Religion in China
 
 作品待考与说明
 
-- The source gives the Chinese and Syriac contents but no full transcription or translation.
+- 所引来源只述汉文与叙利亚文内容，未提供全文录文或译文。
 
 <a name="stele-daqin-jingjiao"></a>
 

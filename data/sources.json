@@ -1254,6 +1254,248 @@
       "accessedAt": "2026-11-22",
       "locator": "Section 二、沈尹默晚年居沪时期的书风, paragraph on the 1962 writing in 人民教育 and the two copybooks prepared for young people. The footer identifies the original publication of 11 February 2026.",
       "note": "Jiang Tao's research on twentieth-century book production; contemporary classroom adoption requires separate evidence."
+    },
+    {
+      "id": "src-dpm-pingfu",
+      "kind": "web",
+      "title": "陆机草隶书平复帖卷",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/collection/handwriting/234553.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "文物号 新00044430, 尺寸、释文、递藏与陆机小传各段.",
+      "note": "The museum entry gives 9 lines and 86 characters; other accounts give 84. Both readings are recorded in the work notes; neither is averaged."
+    },
+    {
+      "id": "src-thepaper-shiqi",
+      "kind": "web",
+      "title": "故宫藏王羲之拓本首次与绍兴兰亭碑刻相对",
+      "publisher": "澎湃新闻 The Paper",
+      "url": "https://www.thepaper.cn/newsDetail_forward_3271354",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Paragraphs on 宋拓十七帖 quoting 张彦远《法书要录》 for the 107-line, 943-character Tang scroll and the 347–361 writing span.",
+      "note": "An exhibition report quoting a Tang source; the quoted figures are attributed to 《法书要录》, not measured on a surviving object."
+    },
+    {
+      "id": "src-met-shiqi",
+      "kind": "web",
+      "title": "On the Seventeenth Day (十七帖拓本册, 1991.380)",
+      "publisher": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/39899",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Object record: title, date, medium, dimensions, credit line, accession number and public-domain status.",
+      "note": "The object page did not load from this network; its record was read through the museum's public collection API, which returns the same catalogued fields and isPublicDomain=true."
+    },
+    {
+      "id": "src-people-luoshen",
+      "kind": "web",
+      "title": "聚焦汉字文明（玉版十三行）",
+      "publisher": "人民日报海外版 People's Daily Overseas Edition",
+      "url": "https://paper.people.com.cn/rmrbhwb/page/2016-04/19/10/rmrbhwb2016041910.pdf",
+      "publicationDate": "2016-04-19",
+      "accessedAt": "2026-11-23",
+      "locator": "Section 玉版十三行, 其珍比玉昂.",
+      "note": "A newspaper feature; it states the carving history and the present holding, but gives no accession number or stone measurement."
+    },
+    {
+      "id": "src-cnr-luoshen",
+      "kind": "web",
+      "title": "双说顾恺之与王献之的《洛神赋图》",
+      "publisher": "央广网 China National Radio",
+      "url": "https://www.cnr.cn/jx/2011jxfw/gjms/20151113/t20151113_520493084.shtml",
+      "publicationDate": "2015-11-13",
+      "accessedAt": "2026-11-23",
+      "locator": "Paragraphs on the 玉版, its rediscovery at 葛岭, the 1981 purchase and transfer to 首都博物馆.",
+      "note": "Gives the 1981 purchase price and transfer; another account dates the acquisition to 1982. The year is disputed in the record."
+    },
+    {
+      "id": "src-jl-dfz-haotaiwang",
+      "kind": "web",
+      "title": "魏晋南北朝时期的吉林·晋义熙十年（414）·长寿王立好太王碑",
+      "publisher": "吉林省地方志编纂委员会办公室 Jilin Local Chronicles",
+      "url": "https://dfz.jl.gov.cn/zsjl/202512/t20251227_9384136.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Entry for 414: dimensions, four-face inscription, 44 lines and 1,775 characters, and the 1961 designation.",
+      "note": "A provincial gazetteer entry. It gives 1,590 legible characters and the 1961 designation with 洞沟古墓群."
+    },
+    {
+      "id": "src-jl-dfz-haotaiwang-alt",
+      "kind": "web",
+      "title": "好太王碑",
+      "publisher": "吉林省地方志 Jilin Local Chronicles",
+      "url": "https://dfz.jl.gov.cn/ybjl/201106/t20110606_5217085.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Entry headed 好太王碑: material, shape, 44 lines of 41 characters, and the attribution to 长寿王.",
+      "note": "The same gazetteer's older entry; its line count (44 lines, full line 41 characters) and total of 1,775 characters agree with the 414 entry."
+    },
+    {
+      "id": "src-gmw-shipinggong",
+      "kind": "web",
+      "title": "凹凹凹凸凹凹凹，这块题记很特别",
+      "publisher": "光明网（央视新闻《文博日历》，龙门石窟研究院特别鸣谢）Guangming Online",
+      "url": "https://m.gmw.cn/2023-05/27/content_1303386306.htm",
+      "publicationDate": "2023-05-27",
+      "accessedAt": "2026-11-23",
+      "locator": "Sections on the yang-carving, the 2×6-character title, 10 lines of 20 characters, and 古阳洞.",
+      "note": "A museum-supported popular feature. It gives the stone as the only yang-carved inscription at 龙门 and places it in 古阳洞."
+    },
+    {
+      "id": "src-shanghai-ly-shipinggong",
+      "kind": "web",
+      "title": "跨越时空，对话龙门石窟云文博",
+      "publisher": "上海市文化和旅游局 Shanghai Municipal Administration of Culture and Tourism",
+      "url": "https://www.meet-in-shanghai.net/cn/news/%E3%80%90art-forward%E3%80%91across-time-and-space-dialogue-with-longmen-grottoesyunwenbo-717187/",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Entry 始平公造像题记 拓片: 498, 孟达撰文, 朱义章书, 古阳洞北壁, rubbing 89 × 39 cm, 龙门石窟研究院藏.",
+      "note": "An exhibition notice listing 龙门石窟研究院 holdings; the rubbing dimensions are for the museum's rubbing, not the stone face."
+    },
+    {
+      "id": "src-dpm-yugong-song",
+      "kind": "web",
+      "title": "宋拓唐虞恭公温彦博碑",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/collection/impres/228414.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "文物号 新00081431; 23 pages at 18.3 × 9.2 cm; 637, 岑文本撰, 欧阳询书, 36 lines of 77 characters, 篆额 4 lines of 16 characters.",
+      "note": "The museum dates the stone to the tenth month of 637 and places it at 醴泉 in 昭陵."
+    },
+    {
+      "id": "src-dpm-yugong-nansong",
+      "kind": "web",
+      "title": "温彦博碑",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/collection/impres/234129.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "文物号 新00045747; 南宋拓本 27.8 × 28.0 cm; statement that the stone is now in 昭陵博物馆.",
+      "note": "The museum identifies the rubbing as Southern Song by the undamaged 历 and 高 characters; the stone's lower half is described as damaged."
+    },
+    {
+      "id": "src-nlc-shike-xulu-19",
+      "kind": "web",
+      "title": "北京图书馆藏石刻叙录（十九）",
+      "publisher": "中国国家图书馆 National Library of China",
+      "url": "https://www.nlc.cn/upload/attachments/2026-02-14/40e09fcb.pdf",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Entry 温彦博碑: 36 lines of 77 characters, about 2,800 characters, lower half effaced, no complete rubbing.",
+      "note": "A collection survey by the library's own staff. It states that the surviving best rubbings carry only about 800 characters."
+    },
+    {
+      "id": "src-beilin-yanjiamiao",
+      "kind": "web",
+      "title": "颜氏家庙碑",
+      "publisher": "西安碑林博物馆 Xi'an Beilin Museum",
+      "url": "https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2615",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Object entry: 780, 颜真卿撰并书, 李阳冰篆额, 螭首龟趺, 338 cm, 24 lines of 47 characters on both faces, 6 lines of 52 on the sides, 982 re-erection.",
+      "note": "The museum's page did not respond on 2026-11-23 during the check; the wording quoted here was read earlier the same day. The record is flagged draft for that reason."
+    },
+    {
+      "id": "src-lnm-wansui",
+      "kind": "web",
+      "title": "藏品：摹王氏一门书翰卷",
+      "publisher": "辽宁省博物馆 Liaoning Provincial Museum",
+      "url": "https://www.lnmuseum.com.cn/",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Collection highlight entry 摹王氏一门书翰卷: 硬黄纸唐人双钩填墨本, 万岁通天二年王方庆进, 《石渠宝笈》著录.",
+      "note": "The museum's collection page is a single-page application; the entry text is in the 藏品 panel and has no stable per-object address of its own."
+    },
+    {
+      "id": "src-gmw-wansui",
+      "kind": "web",
+      "title": "那些有故事的镇馆之宝（唐摹王羲之一门书翰卷）",
+      "publisher": "光明网博物馆频道 Guangming Online",
+      "url": "https://museum.gmw.cn/2017-12/15/content_27109986_6.htm",
+      "publicationDate": "2017-12-15",
+      "accessedAt": "2026-11-23",
+      "locator": "辽宁 entry: 26.3 × 253.8 cm, seven hands and ten letters, the two fires.",
+      "note": "Gives the physical measurements and the seven named hands; the copyists remain unidentified."
+    },
+    {
+      "id": "src-chinanews-wansui",
+      "kind": "web",
+      "title": "辽宁省博物馆展出展馆之宝王羲之一门《万岁通天帖》",
+      "publisher": "中国新闻网 China News Service",
+      "url": "https://www.chinanews.com/cul/2018/02-13/8448541.shtml",
+      "publicationDate": "2018-02-13",
+      "accessedAt": "2026-11-23",
+      "locator": "Exhibition report: the 697 submission of ten scrolls, the seven surviving hands, the fire damage, and the 1922 removal to 长春.",
+      "note": "A press report of the museum's own exhibition; it does not give an accession number."
+    },
+    {
+      "id": "src-dpm-daba",
+      "kind": "web",
+      "title": "书画交辉——赵孟頫的艺术成就（楷书帝师胆巴碑卷）",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/subject_zhaomengfu/achievement/245821.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Entry 赵孟頫楷书帝师胆巴碑卷: 元, 纸本, 33.6 × 563 cm, 故宫博物院藏, with the full inscription text.",
+      "note": "A thematic page by the museum. The 563 cm figure covers the mounted scroll; accounts of the calligraphy section alone give about 166 cm."
+    },
+    {
+      "id": "src-tnm-sanmen",
+      "kind": "web",
+      "title": "楷书《玄妙观重修三门记》卷",
+      "publisher": "东京国立博物馆 Tokyo National Museum",
+      "url": "https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Collection record TB-1461: 赵孟頫, 元代 14世纪, 东洋书法, with the summary of the 玄妙观 commission.",
+      "note": "The museum's own record; it does not state a writing year and gives no dimensions on the public page."
+    },
+    {
+      "id": "src-colbase-sanmen",
+      "kind": "web",
+      "title": "楷书《玄妙观重修三门记》卷（ColBase）",
+      "publisher": "日本国立文化财机构 National Institutes for Cultural Heritage",
+      "url": "https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Chinese-language record: the 49–56 age inference, the 李邕 basis, and the seal-script heading.",
+      "note": "The aggregated national database record adds the age inference that the museum page omits; it remains an inference from office and text, not a recorded date."
+    },
+    {
+      "id": "src-dpm-sanxitang",
+      "kind": "web",
+      "title": "《三希堂法帖》",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/lemmas/242597.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Lemma entry: 1747, 32 volumes, the three Wang treasures, and the statement that the stones are in 北海阅古楼.",
+      "note": "A museum glossary entry rather than an object record; it gives no stone count."
+    },
+    {
+      "id": "src-dpm-sanxitang-vr",
+      "kind": "web",
+      "title": "清拓三希堂法帖",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/vr/stone-moat/yxg_56.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-23",
+      "locator": "Rubbing entry: 乾隆十二年（1747）上谕, 乾隆十五年（1750）刻跋, 艾叶青石, 金石墨拓装函 order.",
+      "note": "Describes a Qing rubbing in the museum, not the stones; it supplies the 1747–1750 carving span."
+    },
+    {
+      "id": "src-chinadaily-yuegu",
+      "kind": "web",
+      "title": "北京10处新文化空间：去北海公园不只是“荡起双浆”",
+      "publisher": "中国日报网 China Daily",
+      "url": "https://ent.chinadaily.com.cn/a/202103/02/WS603d9885a3101e7ce97419ee.html",
+      "publicationDate": "2021-03-02",
+      "accessedAt": "2026-11-23",
+      "locator": "Paragraph on 阅古楼: built 1753, 495 stone blocks, 135 calligraphers and 340 pieces.",
+      "note": "A press feature. Its 495-block and 340-piece counts are not confirmed by the museum's own entries, which give 32 volumes without a block count."
     }
   ]
 }
