@@ -2,6 +2,7 @@
 titleZh: 行书跋沈尹默论书札卷
 titleEn: Colophon to Shen Yinmo’s Writing on Calligraphy
 state: draft
+timelineYear: 1976
 people: zhao-puchu
 sources: src-shm-zhao-shen-colophon
 ---

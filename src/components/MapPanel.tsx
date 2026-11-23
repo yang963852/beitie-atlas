@@ -27,7 +27,7 @@ interface MapPanelProps {
   /** Records matching the current search and map filter. */
   objects: ObjectRecord[];
   originalsOnly: boolean;
-  onOriginalsOnlyChange: (value: boolean) => void;
+  onOriginalsOnlyChange?: (value: boolean) => void;
   onOpenObject: (id: string) => void;
   selectedPlaceId?: string;
   /**
@@ -188,14 +188,14 @@ export function MapPanel({
           {onJourney && <button className="link-button" onClick={onJourney}>{locale === 'zh' ? '查看颜勤礼碑流传时间轴 →' : 'Yan Qinli journey timeline →'}</button>}
           <p className="pane__sub">{strings.mapSubheading}</p>
           <p className="pane__sub map__hint">{strings.mapPointHint}</p>
-          <label className="map__filter">
+          {onOriginalsOnlyChange && <label className="map__filter">
             <input
               type="checkbox"
               checked={originalsOnly}
               onChange={(event) => onOriginalsOnlyChange(event.currentTarget.checked)}
             />
             {strings.mapOriginalsOnly}
-          </label>
+          </label>}
         </div>
         {status === 'ready' ? (
           <button

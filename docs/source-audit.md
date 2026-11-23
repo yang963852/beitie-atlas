@@ -48,7 +48,8 @@ Research date: 2026-11-17. These are research notes, not a completed release dat
 - [Palace Museum website terms](https://www.dpm.org.cn/bottom/privacy/254.html) and [image authorization page](https://www.dpm.org.cn/bottom/apply_image): do not treat public web display as blanket permission to redistribute museum images in an open repository.
 - [National Palace Museum image/text reuse rules](https://theme.npm.edu.tw/opendata/%E6%95%85%E5%AE%AEOpen%20Data%E5%B0%88%E5%8D%80%E5%9C%96%E5%83%8F%E8%88%87%E6%96%87%E5%AD%97%E6%8E%88%E6%AC%8A%E8%A6%8F%E7%AF%84.pdf): different download variants have different stated licenses. Verify the actual asset and credit before use; a catalog-wide assumption is insufficient.
 - Museum prose is not automatically reusable wholesale. Write concise original factual summaries, preserve bibliographic references, and keep any quotations short and justified.
-- No third-party images have been downloaded or bundled in this project.
+- The opening desk displays a modern study plate cropped from the opening of the Shenlong manuscript (witness-lanting). The source JPEG measures 4513 × 1480. The crop retains columns in their original order and proportions, from x=2590 through the right edge, at full source height. The two static desk posters also depict the crop. [Image and PD-Art declaration](https://commons.wikimedia.org/w/index.php?title=File:LantingXu.jpg&oldid=1087138769).
+- The wood diffuse and OpenGL normal maps are WebP derivatives of Wood Table 001 by Dimitrios Savva and Rico Cilliers. [Poly Haven asset](https://polyhaven.com/a/wood_table_001) and [CC0 license](https://polyhaven.com/license).
 
 ## Evidence to add before M1 is accepted
 

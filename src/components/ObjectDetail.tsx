@@ -2,13 +2,14 @@ import type { ReactNode } from 'react';
 import { attributionName, attributionNote } from '../domain/attribution';
 import { formatCoordinate } from '../domain/coordinates';
 import { getPlace, getWork } from '../domain/data';
-import { compareDates, formatDate } from '../domain/dates';
+import { formatDate } from '../domain/dates';
 import { dynastyLabel } from '../domain/dynasties';
 import type { HistoricalDate, ObjectRecord, Place, Work } from '../domain/types';
 import { detectLang, pickText } from '../domain/text';
 import { useLocale } from '../i18n';
 import { isReleaseBuild } from '../domain/build';
 import { YanQinliStory } from './YanQinliStory';
+import { ProvenanceEvents } from './ProvenanceEvents';
 import { SourceList } from './SourceList';
 
 type NoteScope = 'object' | 'work' | 'place';
@@ -113,7 +114,7 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
   const place = getPlace(object.currentCollection.placeId);
   const collection = object.currentCollection;
 
-  const events = [...object.provenanceEvents].sort((a, b) => compareDates(a.date, b.date));
+
   const notes = editorialNotes(locale, object, work, place);
 
   const sourceIds = Array.from(
@@ -315,56 +316,7 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
         <SourceList ids={collection.sourceRefs} compact />
       </section>
 
-      <section className="section" aria-labelledby="provenance-heading">
-        <h3 id="provenance-heading" className="section__heading">
-          {strings.provenanceHeading}
-        </h3>
-        <p className="section__meta">{strings.provenanceIntro}</p>
-
-        {events.length === 0 ? (
-          <p className="section__empty">{strings.provenanceEmpty}</p>
-        ) : (
-          <ol className="timeline">
-            {events.map((event) => {
-              const eventPlace = getPlace(event.placeId);
-              const summary = pickText(locale, event.summaryZh, event.summary);
-              return (
-                <li key={event.id} className="timeline__item">
-                  <div className="timeline__marker" aria-hidden="true" />
-                  <div className="timeline__body">
-                    <div className="timeline__date">
-                      <span className="timeline__date-main">{formatDate(event.date, locale)}</span>
-                      {event.date.original ? (
-                        <span className="timeline__date-original" lang="zh-Hans">
-                          {event.date.original}
-                        </span>
-                      ) : null}
-                    </div>
-                    <p className="timeline__type">
-                      {strings.eventTypeLabels[event.type]}
-                      <span className="tag">{strings.certaintyLabels[event.certainty]}</span>
-                    </p>
-                    <p className="timeline__summary">{summary}</p>
-                    <p className="timeline__place">
-                      {event.placeWording ? (
-                        <span lang="zh-Hans">{event.placeWording}</span>
-                      ) : null}
-                      {eventPlace ? (
-                        <span className="timeline__place-en">
-                          {event.placeWording ? ' · ' : ''}
-                          {locale === 'zh' ? eventPlace.names.zh : eventPlace.names.en}
-                        </span>
-                      ) : null}
-                      {!event.placeWording && !eventPlace ? strings.eventPlaceUnknown : null}
-                    </p>
-                    <SourceList ids={event.sourceRefs} compact />
-                  </div>
-                </li>
-              );
-            })}
-          </ol>
-        )}
-      </section>
+      <ProvenanceEvents object={object} />
 
       {notes.length > 0 ? (
         <details className="section detail-fold">

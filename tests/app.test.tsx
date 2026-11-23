@@ -5,7 +5,8 @@ import { getDataset } from '../src/domain/data';
 
 const recordCount = getDataset().objects.length;
 
-function renderApp() {
+function renderApp(home = false) {
+  if (!home && !window.location.hash) window.history.replaceState(null, '', '#results');
   return render(<App />);
 }
 
@@ -28,7 +29,7 @@ beforeEach(() => {
 
 describe('application shell', () => {
   it('waits for paper activation and the ink transition before entering the records', () => {
-    renderApp();
+    renderApp(true);
     const paper = screen.getByRole('link', { name: '打开碑帖图录' });
     expect(paper.textContent).toBe('案头所临，如今藏在何处');
     expect(document.querySelector('.desk__ink')).toBeNull();
@@ -43,6 +44,14 @@ describe('application shell', () => {
     } finally {
       vi.useRealTimers();
     }
+  });
+
+  it('opens the depicted witness from the desk credit', () => {
+    renderApp(true);
+    fireEvent.click(screen.getByRole('link', { name: /帖影/ }));
+    expect(window.location.hash).toBe('#/object/witness-lanting');
+    expect(document.activeElement).toBe(document.getElementById('detail'));
+    expect(within(screen.getByRole('article')).getByRole('heading', {name: /神龙本/})).toBeVisible();
   });
 
   it('lands an object permalink on its detail instead of the cover', () => {
@@ -227,7 +236,7 @@ describe('application shell', () => {
     const { container } = renderApp();
     const workspace = container.querySelector('.workspace');
     fireEvent.click(screen.getByRole('link', { name: '实物详情' }));
-    expect(window.location.hash).toBe('');
+    expect(window.location.hash).toBe('#results');
 
     fireEvent.click(within(screen.getByRole('article')).getByRole('button', { name: '在地图上查看' }));
     await act(async () => {
@@ -306,10 +315,11 @@ describe('application shell', () => {
 
   it('restores the previous selection when the user goes back', () => {
     renderApp();
+    fireEvent.click(within(resultsList()).getByText('秦石鼓（原石十件）'));
     fireEvent.click(within(resultsList()).getByText('颜勤礼碑（民国拓本）'));
     expect(screen.getByRole('heading', { name: '颜勤礼碑（民国拓本）' })).toBeInTheDocument();
 
-    goBackTo('#');
+    goBackTo('#/object/stone-drums-original-set');
 
     expect(screen.getByRole('heading', { name: '秦石鼓（原石十件）' })).toBeInTheDocument();
   });
