@@ -34,10 +34,12 @@ export function OpeningDesk({ enter }: { enter: () => void }) {
       if (!visible || loading || failed || entering.current) return;
       loading = true;
       try {
-        const { createClassroom } = await import('./classroom-scene');
+        const { createClassroom, loadDeskImages } = await import('./classroom-scene');
+        if (disposed || motion.matches || !visible || entering.current) return;
+        const images = await loadDeskImages();
         if (disposed || motion.matches || !visible || entering.current) return;
         setPhase('approach');
-        scene.current = createClassroom(element!, () => setPhase('desk'));
+        scene.current = createClassroom(element!, () => setPhase('desk'), images);
       } catch { failed = true; release(); }
       finally { loading = false; }
     }
@@ -55,7 +57,7 @@ export function OpeningDesk({ enter }: { enter: () => void }) {
 
   useEffect(() => {
     if (!origin) return;
-    const timer = window.setTimeout(finish, 1900);
+    const timer = window.setTimeout(finish, 2600);
     return () => window.clearTimeout(timer);
   }, [origin]);
 
@@ -74,13 +76,16 @@ export function OpeningDesk({ enter }: { enter: () => void }) {
         {!isReleaseBuild && <span>{locale === 'zh' ? '内部测试第一版' : 'Internal beta 1'}</span>}
         <a href="#/library">{locale === 'zh' ? '读作品与书家 →' : 'Read works and calligraphers →'}</a>
       </div>
+      <a className="desk__credit" href="#/object/witness-lanting">
+        {locale === 'zh' ? '帖影 · 兰亭序神龙本（局部）' : 'Plate · Shenlong copy (detail)'}
+      </a>
       <h1 id="opening-title">
         <a className="desk__paper" href="#catalogue" onClick={open} aria-label={strings.enterCatalogue}>
           <span className="desk__words"><span>{strings.taglineLead}</span><span>{strings.tagline}</span></span>
         </a>
       </h1>
       {origin && <>
-        <i className="desk__ink" aria-hidden="true" style={{ left: origin.x + '%', top: origin.y + '%' }} />
+        {phase === 'poster' && <i className="desk__ink" aria-hidden="true" style={{ left: origin.x + '%', top: origin.y + '%' }} />}
         <div className="desk__veil" aria-hidden="true" onAnimationEnd={finish} />
       </>}
     </section>

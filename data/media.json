@@ -1,4 +1,17 @@
 {
-  "items": [],
-  "note": "No third-party images are bundled. Any future entry needs an object link, creator, source, license, credit line, rights evidence, and acquisition date. See docs/source-audit.md."
+  "items": [
+    {
+      "id": "media-shenlong-opening",
+      "objectId": "witness-lanting",
+      "assetPathOrUrl": "src/assets/shenlong-opening.webp",
+      "creator": "Tang copy traditionally attributed to Feng Chengsu, after Wang Xizhi",
+      "sourceRefs": [
+        "src-catalogue-lanting"
+      ],
+      "license": "Public Domain Mark 1.0 (PD-Art on Wikimedia Commons)",
+      "credit": "Shenlong copy, Palace Museum. Opening section cropped from LantingXu.jpg, Wikimedia Commons.",
+      "rightsEvidence": "https://commons.wikimedia.org/w/index.php?title=File:LantingXu.jpg&oldid=1087138769",
+      "acquiredAt": "2026-11-23"
+    }
+  ]
 }

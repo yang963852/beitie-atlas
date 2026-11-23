@@ -1,9 +1,23 @@
 import * as T from 'three';
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
+import shenlongUrl from '../assets/shenlong-opening.webp';
+import grainUrl from '../assets/wood-grain.webp';
+import normalUrl from '../assets/wood-normal.webp';
+import { paperInk } from './paper-ink';
 import { deskTexture } from './classroom-textures';
 
 const ease = (n: number) => { const t = T.MathUtils.clamp(n, 0, 1); return t * t * (3 - 2 * t); };
 
-export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void) {
+export async function loadDeskImages() {
+  return Promise.all([shenlongUrl, grainUrl, normalUrl].map(async url => {
+    const image = new Image();
+    image.src = url;
+    await image.decode();
+    return image;
+  }));
+}
+
+export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, images: HTMLImageElement[]) {
   const renderer = new T.WebGLRenderer({ canvas, antialias: true, powerPreference: 'low-power' });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 1.6));
   renderer.shadowMap.enabled = true;
@@ -12,11 +26,28 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void) 
   scene.background = new T.Color('#e0dfcf');
   scene.fog = new T.FogExp2('#e0dfcf', .072);
   const camera = new T.PerspectiveCamera(39, 1, .1, 100);
-  const textures = (['oak', 'felt', 'paper', 'cover'] as const).map(deskTexture);
+  const [facsimile, grain, normal] = images.map(image => {
+    const texture = new T.Texture(image);
+    texture.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
+    texture.needsUpdate = true;
+    return texture;
+  });
+  facsimile.colorSpace = grain.colorSpace = T.SRGBColorSpace;
+  const wool = deskTexture('felt'), fibre = deskTexture('paper');
+  const textures = [facsimile, grain, normal, wool, fibre];
   const pigment = (color: string) => new T.MeshStandardMaterial({ color });
-  const [oak, felt, paper, cover] = textures.map(map => new T.MeshStandardMaterial({ map }));
-  const frame = pigment('#364842'), ivory = pigment('#e7e4d8'), bamboo = pigment('#ab743c');
-  const ink = new T.MeshStandardMaterial({ color: '#151818', roughness: .17 });
+  const oak = new T.MeshStandardMaterial({map:grain, normalMap:normal, normalScale:new T.Vector2(.48,.48), roughness:.62});
+  const felt = new T.MeshStandardMaterial({map:wool,bumpMap:wool,bumpScale:.0016,roughness:1});
+  const paper = new T.MeshStandardMaterial({map:fibre,bumpMap:fibre,bumpScale:.00065,roughness:.96});
+  const frame = pigment('#364842'), ivory = pigment('#dfd3b7');
+  const bamboo = new T.MeshStandardMaterial({color:'#d4ae70',map:grain,roughness:.39});
+  const ink = new T.MeshPhysicalMaterial({color:'#070808',roughness:.095,clearcoat:1,clearcoatRoughness:.05});
+  const studio = new RoomEnvironment();
+  const pmrem = new T.PMREMGenerator(renderer);
+  const reflections = pmrem.fromScene(studio,.04);
+  scene.environment = reflections.texture;
+  scene.environmentIntensity = .42;
+  studio.dispose(); pmrem.dispose();
   const boxShape = new T.BoxGeometry();
   function mesh(parent: T.Object3D, geometry: T.BufferGeometry, material: T.Material | T.Material[], x: number, y: number, z: number) {
     const item = new T.Mesh(geometry, material);
@@ -50,7 +81,7 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void) 
   lettering.fillStyle = '#ded1ac'; lettering.fillRect(0,0,256,768);
   lettering.fillStyle = '#292c26'; lettering.textAlign = 'center';
   lettering.font = '138px KaiTi, serif';
-  [...'ÓÀºÍ¾ÅÄê'].forEach((glyph,i) => lettering.fillText(glyph,128,173+i*145));
+  [...'æ°¸å’Œä¹å¹´'].forEach((glyph,i) => lettering.fillText(glyph,128,173+i*145));
   lettering.fillStyle = '#984f36'; lettering.fillRect(174,657,25,30);
   const hangingMap = new T.CanvasTexture(hanging); hangingMap.colorSpace = T.SRGBColorSpace;
   textures.push(hangingMap);
@@ -85,13 +116,35 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void) 
   for (let i = 0; i < 4; i++) {
     box(sheets, paper, -.31 + i * .014, .059 + .01 * i, -.04, 4.26, .012, 2.86).rotation.y = .0025 * i;
   }
+  // Fine irregularities on the exposed edge of the top sheet catch grazing light.
+  const topSheet = new T.PlaneGeometry(4.26,2.86,180,100);
+  const edge = topSheet.attributes.position;
+  for (let i=0; i<edge.count; i++) {
+    const x=edge.getX(i), y=edge.getY(i);
+    const ripple=.003*Math.sin(x*79+y*91)+.005*Math.sin(x*38-y*27);
+    if (Math.abs(x)>2.12) edge.setX(i,x+ripple);
+    if (Math.abs(y)>1.42) edge.setY(i,y+ripple);
+    edge.setZ(i,.003*Math.sin(x*5+y*2)+.004*Math.cos(x*2-y*3));
+  }
+  topSheet.computeVertexNormals();
+  const top = mesh(sheets,topSheet,paper,-.263,.101,-.04);
+  top.rotation.x=-Math.PI/2;
   const book = new T.Group();
-  book.position.set(-1.54, .104, .24); book.rotation.y = -.16;
+  book.position.set(-1.54, .104, .24); book.rotation.y = -.074;
   scene.add(book);
-  box(book, cover, 0, .017, 0, 1.25, .034, 1.78);
-  box(book, ivory, .01, .068, 0, 1.21, .075, 1.73);
-  box(book, cover, 0, .124, 0, 1.25, .038, 1.78);
-  const glaze = new T.MeshStandardMaterial({ color: '#38423f', roughness: .27 });
+  // Thin mounted reproduction with a slight curl catching the window light.
+  box(book,pigment('#857860'),0,.016,0,2.37,.031,1.86);
+  box(book,ivory,0,.038,0,2.34,.022,1.83);
+  const leaf = new T.PlaneGeometry(2.22,2.22*887/1152,44,28);
+  const vertices = leaf.attributes.position;
+  for (let i=0; i<vertices.count; i++) {
+    const x=vertices.getX(i), y=vertices.getY(i);
+    vertices.setZ(i,.012*Math.sin(3*x+2*y)+.032*Math.pow(Math.abs(x)/1.11,6));
+  }
+  leaf.computeVertexNormals();
+  const plate = mesh(book,leaf,new T.MeshStandardMaterial({map:facsimile,roughness:.92,side:T.DoubleSide}),0,.066,0);
+  plate.rotation.x = -Math.PI/2;
+  const glaze = new T.MeshPhysicalMaterial({color:'#393832',roughness:.27,clearcoat:.82,clearcoatRoughness:.19});
   const bowl = new T.LatheGeometry([[0,0],[.43,0],[.53,.07],[.61,.2],[.61,.235],[.55,.25],[.51,.19],[.44,.09],[0,.08]].map(([x,y])=>new T.Vector2(x,y)), 64);
   const dish = new T.Group();
   scene.add(dish);
@@ -102,20 +155,30 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void) 
   const brush = new T.Group();
   scene.add(brush);
   const hairs = new T.LatheGeometry([[0,0],[.028,.07],[.055,.18],[.067,.28],[.055,.36]].map(([x,y])=>new T.Vector2(x,y)), 32);
-  mesh(brush, hairs, ink, 0, 0, 0);
+  const bristleColors = [];
+  const bristle = new T.Color(), rootColor = new T.Color('#ad976d');
+  for (let i=0; i<hairs.attributes.position.count; i++) {
+    const u=hairs.attributes.uv.getX(i), y=hairs.attributes.position.getY(i);
+    const dry = Math.max(0,(y-.17)/.19);
+    bristle.set('#171814').lerp(rootColor,dry*(.54+.27*Math.sin(87*u)));
+    bristleColors.push(bristle.r,bristle.g,bristle.b);
+  }
+  hairs.setAttribute('color',new T.Float32BufferAttribute(bristleColors,3));
+  mesh(brush,hairs,new T.MeshStandardMaterial({vertexColors:true,roughness:.36}),0,0,0);
   function shaft(y: number, length: number, radius: number, mat: T.Material) {
     mesh(brush, new T.CylinderGeometry(radius * .96, radius, length, 32), mat, 0, y, 0);
   }
   shaft(.42, .14, .065, frame); shaft(1.20, 1.46, .054, bamboo); shaft(1.94, .1, .056, frame);
   for (const y of [.48, .51, 1.85]) shaft(y, .014, .057, ivory);
+  const stain = paperInk(); scene.add(stain.mark);
   const rest = new T.Vector3(1.88, .325, .50);
-  const contact = new T.Vector3(.42, .097, .39);
+  const contact = new T.Vector3(.42, .112, .39);
   const restRotation = new T.Quaternion().setFromUnitVectors(new T.Vector3(0,1,0), new T.Vector3(.49,.03,-.88).normalize());
   const writingRotation = new T.Quaternion().setFromEuler(new T.Euler(-.28, 0, -.29));
   brush.position.copy(rest); brush.quaternion.copy(restRotation);
 
-  scene.add(new T.HemisphereLight('#fff8e6', '#827b69', 1.55));
-  const sun = new T.DirectionalLight('#fff0db', 1.72);
+  scene.add(new T.HemisphereLight('#fff8e6', '#827b69', 1.13));
+  const sun = new T.DirectionalLight('#fff0db', 1.55);
   sun.position.set(-5, 8, -4); sun.castShadow = true;
   Object.assign(sun.shadow.camera, { left: -5, right: 5, top: 5, bottom: -5 });
   sun.shadow.mapSize.set(1024, 1024); sun.shadow.normalBias = .008;
@@ -142,9 +205,12 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void) 
       brush.quaternion.slerpQuaternions(restRotation, writingRotation, lift);
       brush.position.y += .28 * ease((elapsed - .79) / .28);
     }
+    stain.age.value = Math.max(0,elapsed-.73);
+    stain.mark.visible = stain.age.value > 0;
+    stain.mark.position.set(contact.x,contact.y+.003,contact.z);
     renderer.render(scene, camera);
     if (!ready && travel >= 1) { ready = true; onReady(); }
-    if (visible && (travel < 1 || (strike && elapsed < 1.15))) frameId = requestAnimationFrame(draw);
+    if (visible && (travel < 1 || (strike && elapsed < 2.5))) frameId = requestAnimationFrame(draw);
   }
   function resize() {
     const {clientWidth: w, clientHeight: h} = canvas;
@@ -153,10 +219,10 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void) 
     const portrait = camera.aspect < .85;
     table.rotation.y = portrait ? Math.PI / 2 : 0;
     sheets.rotation.y = portrait ? 1.53 : -.043;
-    book.position.set(portrait ? -.82 : -1.54, .104, portrait ? -.94 : .24);
+    book.position.set(portrait ? -.78 : -1.78, .104, portrait ? -1.02 : .10);
     dish.position.set(portrait ? 1.38 : 2.32, 0, portrait ? -1.09 : -.12);
     rest.copy(dish.position).add(new T.Vector3(-.44,.325,.62));
-    contact.set(portrait ? .05 : .42, .097, portrait ? .72 : .39);
+    contact.set(portrait ? .05 : .42, .112, portrait ? .72 : .39);
     if (!strike) brush.position.copy(rest);
     renderer.setSize(w,h,false); draw(performance.now());
   }
@@ -182,7 +248,7 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void) 
         for (const mat of [obj.material].flat()) materials.add(mat);
       }});
       geometries.forEach(g => g.dispose()); materials.forEach(m => m.dispose());
-      textures.forEach(t => t.dispose()); sun.shadow.dispose(); renderer.dispose();
+      reflections.dispose(); textures.forEach(t => t.dispose()); sun.shadow.dispose(); renderer.dispose();
     }
   };
 }
