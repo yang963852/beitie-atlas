@@ -242,6 +242,10 @@ export const zhStrings: Strings = {
     disputed: '有争议',
     unknown: '不详',
   },
+  crashTitle: '页面未能显示',
+  crashBody:
+    '这次渲染在记录显示完成前中断了。数据没有变动，可以返回图录另开一条记录；若反复出现，请把下面的报错附在 issue 里。',
+  crashBack: '返回图录',
   validationErrorTitle: '本地数据检查未通过',
   validationErrorBody: '以下记录仍会显示，以便排查问题；但这次构建是无效的。',
 };

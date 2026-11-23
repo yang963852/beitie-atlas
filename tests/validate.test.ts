@@ -205,6 +205,44 @@ describe('data validation', () => {
     expect(codes(dataset)).toContain('EVENT_OBJECT_MISMATCH');
   });
 
+  /**
+   * MapPanel's `requirePlace` throws on a place that did not resolve, and the
+   * comment there says that is deliberate: a broken corpus should stay visible.
+   * That only holds if validation refuses the dangling reference first, so these
+   * two cases guard the invariant the map panel relies on.
+   */
+  it('rejects a collection place that the corpus does not define', () => {
+    const dataset = baseDataset();
+    dataset.objects[0].currentCollection.placeId = 'place-missing';
+    expect(codes(dataset)).toContain('MISSING_PLACE');
+  });
+
+  it('rejects a provenance place that the corpus does not define', () => {
+    const dataset = baseDataset();
+    dataset.objects[0].provenanceEvents.push({
+      id: 'ev-1',
+      objectId: 'object-1',
+      type: 'relocation',
+      date: {
+        kind: 'single',
+        startYear: 1922,
+        startMonth: null,
+        endYear: 1922,
+        endMonth: null,
+        eraLabel: null,
+        original: '1922年',
+        certainty: 'documented',
+        note: null,
+      },
+      placeId: 'place-missing',
+      placeWording: null,
+      summary: 'Synthetic move.',
+      sourceRefs: ['src-1'],
+      certainty: 'documented',
+    });
+    expect(codes(dataset)).toContain('MISSING_PLACE');
+  });
+
   it('rejects latitude/longitude inversion', () => {
     const dataset = baseDataset();
     dataset.places[0].coordinates = {
