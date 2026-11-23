@@ -57,7 +57,7 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
 
   useEffect(() => {
     if (!origin) return;
-    const timer = window.setTimeout(finish, 2600);
+    const timer = window.setTimeout(finish, 3150);
     return () => window.clearTimeout(timer);
   }, [origin]);
 

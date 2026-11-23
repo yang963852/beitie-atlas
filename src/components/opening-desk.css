@@ -26,9 +26,12 @@
 .desk__ink { position: absolute; width: clamp(64px,12vmin,160px); aspect-ratio: 1; pointer-events: none;
   background: url('../assets/ink-wash.webp') center/contain no-repeat;
   animation: desk-bloom .87s .73s cubic-bezier(.23,.55,.37,1) both; }
-.desk__veil { pointer-events: none; background: var(--canvas); z-index: 4; animation: desk-veil .42s 1.95s both; }
+.desk__veil { pointer-events: none; background: var(--canvas); z-index: 4; animation: desk-veil .43s 2.45s both; }
 @keyframes desk-bloom { from {transform:translate(-50%,-50%) scale(0)} to {transform:translate(-50%,-50%) scale(1)} }
 @keyframes desk-veil { from {opacity:0} to {opacity:1} }
 @media (prefers-reduced-motion:reduce) { .desk *, .desk *::before { transition:none!important; animation:none!important; } }
 @media (max-aspect-ratio: 17/20) { .desk__words { margin: 18% 0 0; font-size: clamp(1.75rem, 6vw, 3.4rem); } .desk__words:lang(en) { font-size: clamp(1.2rem, 4.4vw, 2.6rem); } }
 .desk__credit { position:absolute; z-index:2; bottom:14px; left:clamp(12px,3vw,48px); padding:.45rem .65rem; color:#38372e; background:#f8f2e3ed; font-size:.78rem; }
+
+.desk__veil {background:#f6f6ef;}
+.desk[data-entering="true"] :is(.desk__library,.desk__credit) {opacity:0;pointer-events:none;transition:opacity .3s;}

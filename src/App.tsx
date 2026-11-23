@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { AtlasTimeline } from './components/AtlasTimeline';
 import { KnowledgeLibrary } from './components/KnowledgeLibrary';
 import { isLibraryRoute } from './domain/library';
 import { ContributionPanel } from './components/ContributionPanel';
@@ -88,7 +89,7 @@ function AppShell() {
 
   useLayoutEffect(() => {
     const id = readObjectIdFromHash();
-    if (window.location.hash === '#catalogue') revealSection('catalogue', false);
+    if (SECTION_IDS.some(section => '#' + section === window.location.hash)) revealSection(window.location.hash.slice(1), false);
     if (id && getObject(id)) revealSection(isJourneyLink() ? 'map' : 'detail', false);
   }, []);
 
@@ -237,18 +238,6 @@ function AppShell() {
         {strings.skipToResults}
       </a>
 
-      <OpeningDesk openPlate={() => {
-        setCategory('all');
-        setQuery('');
-        openObject('witness-lanting');
-        goToSection('detail');
-      }} enter={() => {
-        setDetailOpen(false);
-        setMobilePane('list');
-        if (window.location.hash !== '#catalogue') window.history.pushState(null, '', '#catalogue');
-        revealSection('catalogue', false);
-      }} />
-
       <header className="topbar">
         <div className="topbar__inner">
           <div className="brand">
@@ -262,6 +251,7 @@ function AppShell() {
 
           <nav className="topnav" aria-label={strings.sectionsLabel}>
             <a className="topnav__link" href="#/library">{locale === 'zh' ? '知识库' : 'Library'}</a>
+            <a className="topnav__link" href="#catalogue">{locale === 'zh' ? '时间轴' : 'Timeline'}</a>
             {sectionLink('results', strings.resultsHeading)}
             {sectionLink('map', strings.mapHeading)}
             {sectionLink('detail', strings.detailHeading)}
@@ -337,7 +327,7 @@ function AppShell() {
               setDetailOpen(false);
               if (selectedId && !filterObjects(dataset.objects, query, value).some((object) => object.id === selectedId)) {
                 setSelectedId(null);
-                window.history.replaceState(null, '', window.location.pathname + window.location.search);
+                window.history.replaceState(null, '', '#results');
               }
             }}
             query={query}
@@ -434,7 +424,19 @@ function subscribeRoute(notify: () => void) {
 }
 
 function Reader() {
+  const { locale } = useLocale();
   const hash = useSyncExternalStore(subscribeRoute, () => window.location.hash);
+  if (!hash || hash === '#') {
+    function navigate(destination: string) {
+      window.history.pushState(null,'',destination);
+      window.dispatchEvent(new HashChangeEvent('hashchange'));
+    }
+    return <main>
+      <a className="skip-link" href="#catalogue">{locale === 'en' ? 'Skip to the timeline' : '直接进入时间轴'}</a>
+      <OpeningDesk enter={() => navigate('#catalogue')} openPlate={() => navigate('#/object/witness-lanting')} />
+    </main>;
+  }
+  if (hash === '#catalogue' || /^#\/(?:folio|transmission)\//.test(hash)) return <AtlasTimeline hash={hash} />;
   return isLibraryRoute(hash) ? <KnowledgeLibrary hash={hash} /> : <AppShell />;
 }
 

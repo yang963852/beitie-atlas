@@ -7,7 +7,7 @@ import type { RawDataset } from './dataset';
 
 const stableId = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const links = ['people', 'works', 'objects', 'sources'] as const;
-const articleKeys = new Set(['titleZh', 'titleEn', 'state', ...links]);
+const articleKeys = new Set(['titleZh', 'titleEn', 'state', 'timelineYear', ...links]);
 
 function record(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
@@ -48,6 +48,10 @@ export function parseKnowledgeArticle(kind: KnowledgeKind, id: string, markdown:
     if (!articleKeys.has(key)) throw new Error('Unrecognized frontmatter field ' + key);
   }
 
+  const year = fields.timelineYear;
+  if (year != null && (kind !== 'works' || typeof year !== 'string' || !/^-?[1-9]\d{0,3}$/.test(year))) {
+    throw new Error('Expected a nonzero timelineYear on a work guide');
+  }
   const body = input.slice(header[0].length);
   const sections = [...body.matchAll(/^## (中文|English)[ \t]*$/gm)];
   if (sections[0]?.[1] !== '中文' || sections.length > 2 || (sections[1] && sections[1][1] !== 'English')) {
@@ -61,6 +65,7 @@ export function parseKnowledgeArticle(kind: KnowledgeKind, id: string, markdown:
   if (!zh || (sections[1] && !en)) throw new Error('A language heading must have a body');
   const titleZh = textField(fields, 'titleZh');
   return {
+    ...(year == null ? {} : { timelineYear: Number(year) }),
     kind, id, titleZh, titleEn: fields.titleEn == null ? titleZh : textField(fields, 'titleEn'),
     state: reviewState(fields), people: commaIds(fields, 'people'), works: commaIds(fields, 'works'),
     objects: commaIds(fields, 'objects'), sources: commaIds(fields, 'sources'), zh, en,

@@ -2,6 +2,7 @@
 titleZh: 甲种本大楷习字帖
 titleEn: Large Regular-Script Copybook, Edition A
 state: draft
+timelineYear: 1962
 people: shen-yinmo
 sources: src-xiling-shen-chronology, src-pku-shen-teaching
 ---

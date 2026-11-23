@@ -186,6 +186,7 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   let start = performance.now(), strike = 0, strikeIntro = 0, frameId = 0, ready = false;
   let visible = true;
   const duration = 2900;
+  const closeup = new T.Vector3();
   function cameraHeight() {
     const width = camera.aspect < .85 ? 4.45 : 5.9;
     return Math.max(4.5, width / camera.aspect) / (2 * Math.tan(T.MathUtils.degToRad(camera.fov / 2)));
@@ -199,18 +200,21 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
     camera.position.set(T.MathUtils.lerp(3.3, 0, travel), T.MathUtils.lerp(Math.max(9.5,height+2), height, travel), T.MathUtils.lerp(10.8, .72, travel));
     camera.lookAt(0, 0, T.MathUtils.lerp(-4, 0, travel));
     if (strike) {
+      const approach = ease((elapsed - .84) / 1.55);
+      camera.position.lerp(closeup.set(contact.x, .88, contact.z+.09), approach);
+      camera.lookAt(contact.x*approach,contact.y*approach,T.MathUtils.lerp(-4*(1-travel),contact.z,approach));
       const lift = ease(elapsed / .52);
       brush.position.lerpVectors(rest, contact, lift);
       brush.position.y += .86 * Math.sin(Math.PI * lift / 2) * (1 - ease((elapsed - .49) / .24));
       brush.quaternion.slerpQuaternions(restRotation, writingRotation, lift);
-      brush.position.y += .28 * ease((elapsed - .79) / .28);
+      brush.position.y += 1.25 * ease((elapsed - .79) / .88);
     }
     stain.age.value = Math.max(0,elapsed-.73);
     stain.mark.visible = stain.age.value > 0;
     stain.mark.position.set(contact.x,contact.y+.003,contact.z);
     renderer.render(scene, camera);
     if (!ready && travel >= 1) { ready = true; onReady(); }
-    if (visible && (travel < 1 || (strike && elapsed < 2.5))) frameId = requestAnimationFrame(draw);
+    if (visible && (travel < 1 || (strike && elapsed < 2.95))) frameId = requestAnimationFrame(draw);
   }
   function resize() {
     const {clientWidth: w, clientHeight: h} = canvas;

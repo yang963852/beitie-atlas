@@ -8,6 +8,7 @@ export interface KnowledgeArticle {
   id: string;
   titleZh: string;
   titleEn: string;
+  timelineYear?: number;
   state: ReviewState;
   people: string[];
   works: string[];
