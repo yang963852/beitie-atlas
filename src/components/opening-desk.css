@@ -1,70 +1,33 @@
 .desk {
-  position: relative;
-  display: grid;
-  place-items: center;
-  min-height: 100svh;
-  padding: clamp(44px, 7vh, 96px) 8vw;
-  overflow: clip;
-  isolation: isolate;
-  background: #44372d url('../assets/copying-desk.webp') center / cover no-repeat;
+  position: relative; isolation: isolate; overflow: clip; height: 100svh; min-height: 300px;
+  background: #797566 url('../assets/classroom-desk.webp') center / cover no-repeat;
 }
-.desk__scroll {
-  --roller: clamp(12px, 1.7vw, 26px);
-  position: relative;
-  width: min(100%, 1030px);
-  filter: drop-shadow(0 12px 9px #18110963);
-  animation: desk-settle 1400ms cubic-bezier(.25,.7,.28,1) both;
-}
+.desk__scene, .desk__paper, .desk__veil { position: absolute; inset: 0; width: 100%; height: 100%; }
+.desk[data-scene="poster"] .desk__scene { opacity: 0; }
 .desk__library {
-  position: absolute; top: max(16px, 4vh); right: max(16px, 5vw);
-  display: flex; gap: .85rem; align-items: center; flex-wrap: wrap;
-  padding: .45rem .8rem; background: #f7f0df; color: #514437;
-  border: 1px solid #b4a68d; font-size: .88rem; z-index: 2;
+  position: absolute; z-index: 3; right: clamp(12px,4vw,58px); top: clamp(14px,3vh,38px);
+  display: flex; align-items: center; flex-wrap: wrap; gap: .85rem;
+  padding: .35rem .85rem; background: #faf5e6f5; color: #4a493c; font-size: .86rem;
 }
-.desk__library a { color: #613a29; font-weight: 600; }
-.desk__paper {
-  display: grid; align-content: center; min-height: clamp(300px, 60svh, 620px);
-  position: relative; overflow: hidden; text-decoration: none; cursor: pointer;
-  padding: clamp(36px, 5vw, 80px) clamp(30px, 5.5vw, 90px) clamp(24px,3vw,48px);
-  background: linear-gradient(90deg,#d6c8a4,#f4eedf 5%,#faf5e9 48%,#eee4cf 94%,#c9b992);
-  color: #24251f;
-  border-block: 6px double #bcb08d;
-  animation: desk-unroll 1300ms cubic-bezier(.23,.68,.29,1) both;
+.desk__library a { color: #373d34; padding: .5rem 0; }
+.desk h1 { margin: 0; }
+.desk__paper { display: grid; place-items: center; text-decoration: none; color: #292b24; }
+.desk__paper:focus-visible { outline: 4px solid #155db0; outline-offset: -7px; }
+.desk__words {
+  display: block; margin-left: 14%; margin-bottom: 6%;
+  font: 500 clamp(1.6rem,min(4.2vw,6.4vh),4.4rem)/1.5 'Kaiti SC',STKaiti,KaiTi,serif;
+  text-shadow: 0 3px 6px #967b5570; transition: opacity .55s, transform .8s;
 }
-.desk__paper::before { content:''; position:absolute; inset:0; pointer-events:none;
-  background: repeating-linear-gradient(3deg,transparent 0 3px,#90846b0a 3px 4px); }
-.desk__roller {
-  pointer-events:none; position:absolute; top:-2%; bottom:-2%; width:var(--roller);
-  background: linear-gradient(90deg,#413629,#b8a579 18%,#ded3ae 36%,#948663 72%,#564832);
-  border-radius: 25% / 2%; box-shadow: 2px 2px 5px #29201444;
-}
-.desk__roller::before,.desk__roller::after {content:''; position:absolute; left:12%; right:12%; height:.75rem; border-radius:3px;
-  background:linear-gradient(90deg,#28251f,#786853 36%,#312b24 90%);}
-.desk__roller::before {bottom:100%} .desk__roller::after {top:100%}
-.desk__roller--left {left:0; transform:translateX(-50%); animation:desk-left 1300ms cubic-bezier(.23,.68,.29,1) both;}
-.desk__roller--right {right:0; transform:translateX(50%); animation:desk-right 1300ms cubic-bezier(.23,.68,.29,1) both;}
-.desk h1 { margin:0; font:500 clamp(2.25rem,6vw,6rem)/1.26 'Kaiti SC',STKaiti,KaiTi,var(--font-zh); }
-.desk h1:lang(en) {font-family:Georgia,serif;font-size:clamp(1.85rem,4vw,4rem);}
-.desk__words, .desk__words span {display:block;}
-.desk__words {position:relative;animation:desk-writing 650ms 520ms both;}
-.desk__ink { position:absolute; pointer-events:none; width:230%; aspect-ratio:1;
-  background:url('../assets/ink-wash.webp') center/contain no-repeat;
-  transform:translate(-50%,-50%); animation:desk-bloom 900ms cubic-bezier(.18,.54,.33,.95) both; }
-.desk__veil {position:absolute; inset:0; pointer-events:none; background:var(--canvas);
-  animation:desk-veil 360ms 610ms both;}
-@keyframes desk-veil {from {opacity:0} to {opacity:1}}
-@keyframes desk-bloom {from {transform:translate(-50%,-50%) scale(.008)} to {transform:translate(-50%,-50%) scale(1)}}
-#catalogue:target {animation:desk-arrive 320ms ease-out both;}
-@keyframes desk-arrive {from {opacity:.25} to {opacity:1}}
-@keyframes desk-unroll {from {clip-path:inset(0 48.5%)} to {clip-path:inset(0)}}
-@keyframes desk-left {from {left:48.5%} to {left:0}}
-@keyframes desk-right {from {right:48.5%} to {right:0}}
-@keyframes desk-settle {from {transform:perspective(1200px) translateY(-3vh) rotateX(9deg) scale(1.06)} to {transform:none}}
-@keyframes desk-writing {from {opacity:0;filter:blur(4px)} to {opacity:1;filter:blur(0)}}
-@media(max-width:620px) {
-  .desk {padding:34px 6vw;background-position:right center;}
-  .desk__paper {padding:30px 24px;min-height:clamp(270px,52svh,450px);}
-}
-@media(prefers-reduced-motion:reduce) {
-  .desk *, #catalogue:target {animation:none!important;}
-}
+.desk__words span { display: block; }
+.desk__words:lang(en) { font: 500 clamp(1.05rem,min(2.9vw,4.5vh),3rem)/1.4 Georgia,serif; }
+.desk[data-scene="approach"] .desk__words { visibility: hidden; opacity: 0; transform: translateY(9px); }
+@media (max-aspect-ratio: 17/20) { .desk { background-image: url('../assets/classroom-portrait.webp'); } }
+.desk[data-entering="true"] .desk__words { opacity: 0; }
+.desk__ink { position: absolute; width: 260vmax; aspect-ratio: 1; pointer-events: none;
+  background: url('../assets/ink-wash.webp') center/contain no-repeat;
+  animation: desk-bloom .87s .73s cubic-bezier(.23,.55,.37,1) both; }
+.desk__veil { pointer-events: none; background: var(--canvas); z-index: 4; animation: desk-veil .32s 1.37s both; }
+@keyframes desk-bloom { from {transform:translate(-50%,-50%) scale(0)} to {transform:translate(-50%,-50%) scale(1)} }
+@keyframes desk-veil { from {opacity:0} to {opacity:1} }
+@media (prefers-reduced-motion:reduce) { .desk *, .desk *::before { transition:none!important; animation:none!important; } }
+@media (max-aspect-ratio: 17/20) { .desk__words { margin: 18% 0 0; font-size: clamp(1.75rem, 6vw, 3.4rem); } .desk__words:lang(en) { font-size: clamp(1.2rem, 4.4vw, 2.6rem); } }
