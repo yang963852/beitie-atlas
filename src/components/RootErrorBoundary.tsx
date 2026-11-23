@@ -1,4 +1,4 @@
-import { Component, type ErrorInfo, type ReactNode } from 'react';
+import { Component, type ErrorInfo, type MouseEvent, type ReactNode } from 'react';
 import { enStrings } from '../i18n/en';
 import { zhStrings } from '../i18n/zh';
 
@@ -26,6 +26,13 @@ export class RootErrorBoundary extends Component<Props, State> {
     console.error('[beitie] render failed', error, info.componentStack);
   }
 
+  private returnToCatalogue = (event: MouseEvent<HTMLAnchorElement>): void => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button !== 0) return;
+    event.preventDefault();
+    window.location.hash = event.currentTarget.hash;
+    this.setState({ error: null });
+  };
+
   render(): ReactNode {
     const { error } = this.state;
     if (!error) return this.props.children;
@@ -40,7 +47,7 @@ export class RootErrorBoundary extends Component<Props, State> {
           <p>{strings.crashBody}</p>
           <p className="mono">{error.message}</p>
           <p>
-            <a className="topnav__link" href="#/">
+            <a className="topnav__link" href="#catalogue" onClick={this.returnToCatalogue}>
               {strings.crashBack}
             </a>
           </p>

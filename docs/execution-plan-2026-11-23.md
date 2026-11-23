@@ -22,7 +22,7 @@ revision and will drift.
 | `vite build` | not verified here | esbuild temp-file permission failure in this sandbox; CI is the authority |
 
 The release gate treats any draft as a build error (`src/domain/validate.ts`, `DRAFT_IN_RELEASE`).
-With 107 draft records the project cannot produce a formal release today. Everything below is ordered
+With 107 draft works and objects plus 10 draft knowledge records (117 release blockers), the project cannot produce a formal release today. Everything below is ordered
 by how directly it moves that number or protects it.
 
 ## 1a. Progress against this plan
@@ -34,7 +34,7 @@ Execution of 2026-11-23, same day as the baseline:
 | W4 render guard | `src/components/RootErrorBoundary.tsx` added and mounted in `main.tsx`; copy in both dictionaries; two tests |
 | W4 place invariant | two `MISSING_PLACE` cases in `tests/validate.test.ts`; both reverse-checked by deleting the validator branch |
 | Good-first issue 5 (`lang` guard) | `tests/document-language.test.ts`; reverse-checked against a changed `index.html` |
-| W1 batch 1 (9 date warnings) | **blocked** — no outbound network to `dpm.org.cn` or `digitalarchive.npm.gov.tw`, so no source wording can be read or quoted |
+| W1 batch 1 (7 wording checks; 2 production dates deferred to W3) | **blocked** — no outbound network to `dpm.org.cn` or `digitalarchive.npm.gov.tw`, so no source wording can be read or quoted |
 | W2 `README.zh-CN.md` | **withdrawn** — it is a redirect; `README.md` is the full Chinese entry |
 | W2 dependabot, release notes, issues | **blocked** — the GitHub connector is disabled; issue texts are drafted in `.private/tmp/` and unresolved PRs are unchanged |
 
@@ -46,8 +46,7 @@ permission error and is verified by CI only.
 
 1. **Releasability.** Nothing else matters until `npm run release` can run.
 2. **Reviewer independence.** Owner self-approval is currently the only path to `reviewed`.
-3. **Contributor entry cost.** Zero issues and a three-line Chinese README is why the project has no
-   external contributors, not the code.
+3. **Contributor entry cost.** Use the existing Chinese README to direct new contributors to an actionable issue.
 
 Explicit non-goals: no new runtime dependency, no framework change, no backend, no corpus expansion
 until the draft backlog is cleared. A larger corpus with the same review capacity only raises the
@@ -72,15 +71,15 @@ Treat the two differently. Do not open them in the same PR.
 
 Grouping comes from `workId`, so one PR stays reviewable as one subject.
 
-| PR | Work family | Warnings | Files |
+| PR | Work family | W1 wording checks + W3 evidence gaps | Files |
 | --- | --- | --- | --- |
-| 1 | 祭侄文稿 + 伯远帖 | 5 + 4 = 9 | `data/works/jizhi.json`, `data/objects/witness-jizhi.json`, `data/works/boyuan.json`, `data/objects/witness-boyuan.json` |
-| 2 | 兰亭序 + 快雪时晴帖 | 4 + 3 = 7 | `data/works/lanting.json`, `data/objects/witness-lanting.json`, `data/works/kuaixue.json`, `data/objects/witness-kuaixue.json` |
-| 3 | 楷书诗轴 + 行书论书卷 + 楷书归去来兮辞页 + 隶书五字横幅 | 2+2+2+2 = 8 | four work/object pairs |
-| 4 | 篆书急就章轴 + 洛神赋 + 三体杂书诗卷 | 2+2+2 = 6 | three work/object pairs |
-| 5 | 董美人墓志 + 寒食帖 + 麻姑仙坛记 + 松风阁诗 + 雁塔圣教序 + 多宝塔碑 + 玄秘塔碑 + 石鼓文 | 8 × 1 | single-field records |
+| 1 | 祭侄文稿 + 伯远帖 | 7 + 2 | `data/works/jizhi.json`, `data/objects/witness-jizhi.json`, `data/works/boyuan.json`, `data/objects/witness-boyuan.json` |
+| 2 | 兰亭序 + 快雪时晴帖 | 6 + 1 | `data/works/lanting.json`, `data/objects/witness-lanting.json`, `data/works/kuaixue.json`, `data/objects/witness-kuaixue.json` |
+| 3 | 楷书诗轴 + 行书论书卷 + 楷书归去来兮辞页 + 隶书五字横幅 | 4 + 4 | four work/object pairs |
+| 4 | 篆书急就章轴 + 洛神赋 + 三体杂书诗卷 | 3 + 3 | three work/object pairs |
+| 5 | 董美人墓志 + 寒食帖 + 麻姑仙坛记 + 松风阁诗 + 雁塔圣教序 + 多宝塔碑 + 玄秘塔碑 + 石鼓文 | 8 + 0 | single-field records |
 
-PR 1 is the recommended first contribution: nine warnings, three of which (`jizhi`) sit in one file
+PR 1 is the recommended first contribution: seven source-wording checks, three of which (`jizhi`) sit in one file
 and read as one story.
 
 ### 3.3 Rules for every W1 PR
@@ -138,8 +137,7 @@ dependency PR trains readers to ignore CI.
 Open in the repository's own templates (`knowledge.yml`, `web-task.yml`). Each states files, an
 acceptance example, and the check command.
 
-1. **`[资料]` 补 9 条日期原文措辞（祭侄文稿 / 伯远帖族）** — W1 PR 1, files listed, acceptance: those
-   nine `DATE_WITHOUT_ORIGINAL` warnings gone, no year changed.
+1. **`[资料]` 核对 7 条日期原文措辞（祭侄文稿 / 伯远帖族）** — W1 PR 1, files listed, acceptance: record which of the seven fields have verified wording and which remain open; preserve the years. Track both witness production dates in W3.
 2. **`[资料]` 为 10 件实物补 `productionDate` 来源** — W3 evidence gap; acceptance: each record cites a
    catalogue entry that states the production period; `original` filled only where the source gives
    wording.
@@ -170,6 +168,8 @@ Batch in that order, 10–15 records per batch, one batch per review cycle:
 | B3 | Northern Song | 7 | 寒食帖、松风阁 already have sources, only wording missing |
 | B4 | Ming + Qing | 8 | Later hands, thinner catalogues, expect more open questions |
 | B5 | Yuan + Han + Qin + Sui + Pre-Qin + N&S | 13 | Mixed; batch by object family, not by period |
+
+Track the 58 draft physical objects individually alongside their works. Also queue the four work guides, three people, two notes and one relationship for editorial review. Re-run `npm run check:release` to identify remaining records in both categories.
 
 Each record returned for review carries three fields, not a rewritten entry:
 
@@ -215,7 +215,7 @@ What is genuinely missing:
 
 | Week | Deliverable | Exit check |
 | --- | --- | --- |
-| 11/24–11/30 | W1 PR 1–2 merged; dependabot queue empty; README.zh-CN done | `check:data` ≤ 22 warnings; 0 open dependency PRs |
+| 11/24–11/30 | W1 PR 1–2 merged; dependabot queue empty; Chinese README entry path verified | `check:data` ≤ 22 warnings; 0 open dependency PRs |
 | 12/1–12/7 | W1 PR 3–5; five issues open; B1 (Tang, 13) sent for review | warnings = 0 or each has a written exemption; one external PR opened |
 | 12/8–12/14 | B2 review; ErrorBoundary + place-ref tests | a forced render throw shows the fallback |
 | 12/15–12/21 | B3 review; W5 first item | `npm run release` reaches the gate and fails only on remaining drafts |
@@ -237,7 +237,7 @@ What is genuinely missing:
 - [ ] `check:data`: 0 errors, 0 `DATE_WITHOUT_ORIGINAL`, 0 `UNUSED_SOURCE` (or each has a written
       exemption with a reason).
 - [ ] `npm run release` produces a manifest; `check:release` passes before any formal publication.
-- [ ] `README.zh-CN.md` ≥ 60 lines and a new contributor reaches a green `npm run check` from it.
+- [ ] A new contributor can follow the existing Chinese README to the setup guide and run `npm run check`.
 - [ ] Five issues open, each with files, acceptance example and command.
 - [ ] Every `reviewed` record names its reviewer and date.
 - [ ] A forced render throw shows the fallback; a dangling `placeId` fixture fails validation.
