@@ -28,7 +28,7 @@ interface MapPanelProps {
   objects: ObjectRecord[];
   originalsOnly: boolean;
   onOriginalsOnlyChange?: (value: boolean) => void;
-  onOpenObject: (id: string) => void;
+  onOpenObject: (id: string, placeId?: string) => void;
   selectedPlaceId?: string;
   /**
    * False while the mobile pane is hidden. The provider must not mount into a
@@ -270,7 +270,7 @@ export function MapPanel({
             <ul className="place-card__list">
               {activeObjects.map((object) => (
                 <li key={object.id}>
-                  <button type="button" className="link-button link-button--row" onClick={() => onOpenObject(object.id)}>
+                  <button type="button" className="link-button link-button--row" onClick={() => onOpenObject(object.id, activePlaceId ?? undefined)}>
                     <span className="place-card__type">
                       {strings.objectTypeLabels[object.objectType]}
                     </span>
@@ -317,7 +317,7 @@ export function MapPanel({
           <ul className="place-card__list">
             {activeObjects.map((object) => (
               <li key={object.id}>
-                <button type="button" className="link-button link-button--row" onClick={() => onOpenObject(object.id)}>
+                <button type="button" className="link-button link-button--row" onClick={() => onOpenObject(object.id, activePlaceId ?? undefined)}>
                   <span className="place-card__type">
                     {strings.objectTypeLabels[object.objectType]}
                   </span>
@@ -426,7 +426,7 @@ export function MapPanel({
             <ul className="location-list location-list--plain">
               {unmappedRows.map(({ object, place, reason }) => (
                 <li key={object.id}>
-                  <button type="button" className="link-button" onClick={() => onOpenObject(object.id)}>
+                  <button type="button" className="link-button" onClick={() => onOpenObject(object.id, activePlaceId ?? undefined)}>
                     <span lang="zh-Hans">{object.titles.zh}</span>
                     <span className="place-card__list-en" lang={locale === 'zh' ? 'en' : 'zh-Hans'}>
                       {locale === 'zh' ? object.titles.en : object.titles.zh}

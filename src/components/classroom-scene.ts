@@ -3,6 +3,7 @@ import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment
 import shenlongUrl from '../assets/shenlong-opening.webp';
 import grainUrl from '../assets/wood-grain.webp';
 import normalUrl from '../assets/wood-normal.webp';
+import { writingHand } from './classroom-hand';
 import { paperInk } from './paper-ink';
 import { deskTexture } from './classroom-textures';
 
@@ -109,12 +110,11 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   const table = new T.Group();
   scene.add(table);
   desk(0, 0, 7.3, 4.5, table);
-  box(table, felt, 0, .025, .02, 6.27, .05, 3.81);
+  box(table, felt, 0, .025, 0, 7.3, .05, 4.5);
   const sheets = new T.Group();
-  sheets.rotation.y = -.043;
   scene.add(sheets);
   for (let i = 0; i < 4; i++) {
-    box(sheets, paper, -.31 + i * .014, .059 + .01 * i, -.04, 4.26, .012, 2.86).rotation.y = .0025 * i;
+    box(sheets, paper, -.31 + i * .014, .059 + .01 * i, -.04, 4.26, .012, 2.86);
   }
   // Fine irregularities on the exposed edge of the top sheet catch grazing light.
   const topSheet = new T.PlaneGeometry(4.26,2.86,180,100);
@@ -132,17 +132,36 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   const book = new T.Group();
   book.position.set(-1.54, .104, .24); book.rotation.y = -.074;
   scene.add(book);
-  // Thin mounted reproduction with a slight curl catching the window light.
-  box(book,pigment('#857860'),0,.016,0,2.37,.031,1.86);
-  box(book,ivory,0,.038,0,2.34,.022,1.83);
-  const leaf = new T.PlaneGeometry(2.22,2.22*887/1152,44,28);
+  // Six concertina leaves carry contiguous slices of the same credited plate.
+  const board = pigment('#393f39'), pageEdge = pigment('#d9c9a7');
+  box(book,board,-.15,.016,0,2.70,.032,1.84);
+  const titleStrip = document.createElement('canvas');
+  titleStrip.width = 128; titleStrip.height = 512;
+  const label = titleStrip.getContext('2d')!;
+  label.fillStyle = '#424b44'; label.fillRect(0,0,128,512);
+  label.fillStyle = '#e4d6b4'; label.fillRect(38,42,58,241);
+  label.fillStyle = '#332e24'; label.textAlign = 'center';
+  label.font = '49px "Kaiti SC", STKaiti, KaiTi, serif';
+  [...'蘭亭序'].forEach((glyph,i) => label.fillText(glyph,67,106+60*i));
+  const coverTexture = new T.CanvasTexture(titleStrip);
+  coverTexture.colorSpace = T.SRGBColorSpace; textures.push(coverTexture);
+  const cover = mesh(book,new T.PlaneGeometry(.36,1.80),
+    new T.MeshStandardMaterial({map:coverTexture,roughness:.94}),-1.32,.061,0);
+  cover.rotation.x = -Math.PI/2;
+  for (let i=0; i<4; i++) box(book,i%2 ? ivory : pageEdge,0,.04+i*.009,0,2.35,.009,1.80);
+  const bookWidth = 2.28, folds = 6;
+  const leaf = new T.PlaneGeometry(bookWidth,1.76,folds*8,8);
   const vertices = leaf.attributes.position;
   for (let i=0; i<vertices.count; i++) {
-    const x=vertices.getX(i), y=vertices.getY(i);
-    vertices.setZ(i,.012*Math.sin(3*x+2*y)+.032*Math.pow(Math.abs(x)/1.11,6));
+    const u = (vertices.getX(i)/bookWidth+.5)*folds;
+    const ridge = 1 - Math.abs(1 - ((u+2)%2));
+    vertices.setZ(i,.16*ridge+.007*Math.cos(2*Math.PI*u));
   }
-  leaf.computeVertexNormals();
-  const plate = mesh(book,leaf,new T.MeshStandardMaterial({map:facsimile,roughness:.92,side:T.DoubleSide}),0,.066,0);
+  // Unshared normals keep a definite ridge where two folded leaves meet.
+  const creased = leaf.toNonIndexed();
+  leaf.dispose();
+  creased.computeVertexNormals();
+  const plate = mesh(book,creased,new T.MeshStandardMaterial({map:facsimile,roughness:.97,side:T.DoubleSide}),0,.080,0);
   plate.rotation.x = -Math.PI/2;
   const glaze = new T.MeshPhysicalMaterial({color:'#393832',roughness:.27,clearcoat:.82,clearcoatRoughness:.19});
   const bowl = new T.LatheGeometry([[0,0],[.43,0],[.53,.07],[.61,.2],[.61,.235],[.55,.25],[.51,.19],[.44,.09],[0,.08]].map(([x,y])=>new T.Vector2(x,y)), 64);
@@ -170,10 +189,13 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   }
   shaft(.42, .14, .065, frame); shaft(1.20, 1.46, .054, bamboo); shaft(1.94, .1, .056, frame);
   for (const y of [.48, .51, 1.85]) shaft(y, .014, .057, ivory);
+  const hand = writingHand();
+  scene.add(hand);
+  const grip = new T.Vector3(), flyIn = new T.Vector3();
   const stain = paperInk(); scene.add(stain.mark);
   const rest = new T.Vector3(1.88, .325, .50);
   const contact = new T.Vector3(.42, .112, .39);
-  const restRotation = new T.Quaternion().setFromUnitVectors(new T.Vector3(0,1,0), new T.Vector3(.49,.03,-.88).normalize());
+  const restRotation = new T.Quaternion().setFromUnitVectors(new T.Vector3(0,1,0), new T.Vector3(.58,-.125,.80).normalize());
   const writingRotation = new T.Quaternion().setFromEuler(new T.Euler(-.28, 0, -.29));
   brush.position.copy(rest); brush.quaternion.copy(restRotation);
 
@@ -187,6 +209,18 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   let visible = true;
   const duration = 2900;
   const closeup = new T.Vector3();
+  const textAnchor = new T.Vector3();
+  function locateLettering() {
+    camera.updateMatrixWorld();
+    const portrait = camera.aspect < .85;
+    textAnchor.set(portrait ? -.14 : .70, .12, portrait ? .96 : -.20).project(camera);
+    const surface = canvas.parentElement;
+    surface?.style.setProperty('--sheet-x', (50+50*textAnchor.x)+'%');
+    surface?.style.setProperty('--sheet-y', (50-50*textAnchor.y)+'%');
+    const sheetWidth = portrait ? 2.49 : 1.96;
+    const pixels = canvas.clientWidth*sheetWidth/(2*cameraHeight()*Math.tan(T.MathUtils.degToRad(camera.fov/2))*camera.aspect);
+    surface?.style.setProperty('--letter-width', pixels+'px');
+  }
   function cameraHeight() {
     const width = camera.aspect < .85 ? 4.45 : 5.9;
     return Math.max(4.5, width / camera.aspect) / (2 * Math.tan(T.MathUtils.degToRad(camera.fov / 2)));
@@ -200,18 +234,26 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
     camera.position.set(T.MathUtils.lerp(3.3, 0, travel), T.MathUtils.lerp(Math.max(9.5,height+2), height, travel), T.MathUtils.lerp(10.8, .72, travel));
     camera.lookAt(0, 0, T.MathUtils.lerp(-4, 0, travel));
     if (strike) {
-      const approach = ease((elapsed - .84) / 1.55);
-      camera.position.lerp(closeup.set(contact.x, .88, contact.z+.09), approach);
+      const approach = ease((elapsed - 1.29) / 1.32);
+      camera.position.lerp(closeup.set(contact.x, .24, contact.z+.012), approach);
       camera.lookAt(contact.x*approach,contact.y*approach,T.MathUtils.lerp(-4*(1-travel),contact.z,approach));
-      const lift = ease(elapsed / .52);
-      brush.position.lerpVectors(rest, contact, lift);
-      brush.position.y += .86 * Math.sin(Math.PI * lift / 2) * (1 - ease((elapsed - .49) / .24));
-      brush.quaternion.slerpQuaternions(restRotation, writingRotation, lift);
-      brush.position.y += 1.25 * ease((elapsed - .79) / .88);
+      const carry = ease((elapsed-.38)/.65);
+      const lower = ease((elapsed-1.01)/.23);
+      const liftOff = ease((elapsed-1.33)/.48);
+      brush.position.lerpVectors(rest,contact,carry);
+      brush.position.y += .71*Math.sin(Math.PI*carry/2)*(1-lower) + .69*liftOff;
+      brush.position.x += .12*liftOff;
+      brush.quaternion.slerpQuaternions(restRotation,writingRotation,carry);
+      hand.visible = true;
+      grip.set(0,.64,0).applyQuaternion(brush.quaternion).add(brush.position);
+      flyIn.set(2.7,1.20,1.05).multiplyScalar(1-ease(elapsed/.40));
+      hand.position.copy(grip).add(flyIn);
+      hand.rotation.set(-.07+.10*lower,.12-.24*carry,.12-.17*lower);
     }
-    stain.age.value = Math.max(0,elapsed-.73);
+    stain.age.value = Math.max(0,elapsed-1.24);
     stain.mark.visible = stain.age.value > 0;
     stain.mark.position.set(contact.x,contact.y+.003,contact.z);
+    if (!strike && travel >= 1) locateLettering();
     renderer.render(scene, camera);
     if (!ready && travel >= 1) { ready = true; onReady(); }
     if (visible && (travel < 1 || (strike && elapsed < 2.95))) frameId = requestAnimationFrame(draw);
@@ -222,10 +264,10 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
     camera.aspect = w/h; camera.updateProjectionMatrix();
     const portrait = camera.aspect < .85;
     table.rotation.y = portrait ? Math.PI / 2 : 0;
-    sheets.rotation.y = portrait ? 1.53 : -.043;
+    sheets.rotation.y = portrait ? Math.PI / 2 : 0;
     book.position.set(portrait ? -.78 : -1.78, .104, portrait ? -1.02 : .10);
-    dish.position.set(portrait ? 1.38 : 2.32, 0, portrait ? -1.09 : -.12);
-    rest.copy(dish.position).add(new T.Vector3(-.44,.325,.62));
+    dish.position.set(portrait ? 1.40 : 2.34, 0, portrait ? -1.53 : -.87);
+    rest.copy(dish.position).add(new T.Vector3(-.05,.29,.40));
     contact.set(portrait ? .05 : .42, .112, portrait ? .72 : .39);
     if (!strike) brush.position.copy(rest);
     renderer.setSize(w,h,false); draw(performance.now());
@@ -243,7 +285,7 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
       const point = contact.clone().project(endCamera);
       return { x: (point.x+1)*50, y: (1-point.y)*50 };
     },
-    reset() { strike = 0; start = performance.now() - duration; brush.position.copy(rest); brush.quaternion.copy(restRotation); draw(performance.now()); },
+    reset() { hand.visible = false; strike = 0; start = performance.now() - duration; brush.position.copy(rest); brush.quaternion.copy(restRotation); draw(performance.now()); },
     dispose() {
       observer.disconnect(); cancelAnimationFrame(frameId);
       const geometries = new Set<T.BufferGeometry>(), materials = new Set<T.Material>();

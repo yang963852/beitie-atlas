@@ -52,3 +52,22 @@ describe('reading routes', () => {
     }
   });
 });
+
+it('edits the authored document or the canonical work record according to its source', () => {
+  render(<App />);
+  navigate('#/work/yan-qinli-bei');
+  expect(screen.getByRole('link', {name: '编辑条目并提交'})).toHaveAttribute('href',
+    'https://github.com/yang963852/beitie-atlas/edit/main/knowledge/works/yan-qinli-bei.md');
+  navigate('#/work/langya-keshi');
+  expect(screen.getByRole('link', {name: '编辑条目并提交'})).toHaveAttribute('href',
+    'https://github.com/yang963852/beitie-atlas/edit/main/data/works/langya-keshi.json');
+});
+
+it('keeps the recorded polity visible in the period shelf and search results', () => {
+  window.history.replaceState(null, '', '#/library');
+  render(<App />);
+  const row = () => screen.getByRole('link', { name: '好太王碑' }).closest('li');
+  expect(row()).toHaveTextContent('东晋 · 高句丽');
+  fireEvent.change(screen.getByRole('searchbox'), { target: { value: '好太王碑' } });
+  expect(row()).toHaveTextContent('东晋 · 高句丽');
+});

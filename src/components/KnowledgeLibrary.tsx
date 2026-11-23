@@ -32,6 +32,13 @@ function Index({ kind }: { kind: KnowledgeKind }) {
   const [query, setQuery] = useState('');
   const searching = Boolean(query.trim());
   const entries = libraryEntries.filter((entry) => searching ? matchesQuery(entry, query) : entry.kind === kind);
+  const groups = new Map<string, LibraryEntry[]>();
+  for (const entry of entries) {
+    const label = entry.work && !searching ? dynastyLabel(entry.work.dynastyId, locale) : t[entry.kind];
+    const group = groups.get(label) ?? [];
+    group.push(entry);
+    groups.set(label, group);
+  }
   const features = ['yan-qinli-bei', 'shen-yinmo-dakai-jia'].flatMap((id) => {
     const entry = findEntry('works', id);
     return entry?.guide ? [entry] : [];
@@ -46,10 +53,13 @@ function Index({ kind }: { kind: KnowledgeKind }) {
       <nav aria-label={t.library}>{tabs.map((tab) => <a key={tab} href={tabHref(tab)} aria-current={tab === kind ? 'page' : undefined}>{t[tab]}</a>)}</nav>
       <input type="search" aria-label={t.search} placeholder={t.search} value={query} onChange={(event) => setQuery(event.target.value)} />
     </div>
-    <ul className="library-index">{entries.map((entry) => <li key={entry.id}>
-      <EntryLink entry={entry} />
-      <small>{entry.work ? dynastyLabel(entry.work.dynastyId, locale, entry.work.dynastyQualifier) : t[entry.kind]}</small>
-    </li>)}</ul>
+    {Array.from(groups, ([label, group]) => <section className="library-shelf" key={label}>
+      <h2>{label} <small>{group.length}</small></h2>
+      <ul className="library-index">{group.map(entry => <li key={entry.id}>
+        <EntryLink entry={entry} />
+        <small>{entry.work ? dynastyLabel(entry.work.dynastyId, locale, entry.work.dynastyQualifier) : t[entry.kind]}</small>
+      </li>)}</ul>
+    </section>)}
     {!entries.length && <p role="status">{t.empty} <button onClick={() => setQuery('')}>{t.clear}</button></p>}
   </>;
 }
@@ -65,10 +75,12 @@ function Entry({ entry }: { entry: LibraryEntry }) {
   const objectHeading = objects.every(o => o.survivalStatus === 'surviving') ? t.objects : t.collection;
   const sourceIds = [...new Set([...(guide?.sources ?? []), ...(work?.sourceRefs ?? [])])];
   const original = guide ? 'knowledge/' + guide.kind + '/' + guide.id + '.md' : 'knowledge/catalogue/' + entry.id + '.md';
+  const editPath = guide ? original : 'data/works/' + entry.id + '.json';
   return <article>
     <p className="library-kicker">{t[entry.kind]} · {(guide?.state ?? work?.review.state) === 'draft' ? strings.reviewDraft : strings.reviewReviewed}</p>
     <h1>{locale === 'zh' ? entry.titleZh : entry.titleEn || entry.titleZh}</h1>
     {work && <p className="library-byline">{formatDate(work.compositionDate, locale)} · {formatAttribution(work.attribution, locale, strings.attributionRoleShort)}</p>}
+    <a className="library-edit" href={github + '/edit/main/' + editPath}>{locale === 'zh' ? '编辑条目并提交' : 'Edit and submit changes'}</a>
     {guide ? <KnowledgeProse guide={guide} /> : work && <p className="library-intro">{(locale === 'zh' && work.backgroundZh) || work.background}</p>}
     {people.length > 0 && <Section title={t.people}><ul>{people.map((p) => <li key={p.id}><EntryLink entry={p} /></li>)}</ul></Section>}
     {links.length > 0 && tabs.filter((tab) => tab !== 'people').map((tab) => {
@@ -111,10 +123,12 @@ export function KnowledgeLibrary({ hash }: { hash: string }) {
   return <div className="reading-room">
     <header className="reading-top">
       <a className="reading-brand" href="#/library">碑帖之间</a>
-      <a href="#catalogue">{t.collection}</a>
+
       <button type="button" onClick={() => setLocale(locale === 'zh' ? 'en' : 'zh')}>{locale === 'zh' ? 'English' : '简体中文'}</button>
     </header>
     <main className="reading-main" id="reading-main" tabIndex={-1}>
+      <nav className="library-paths" aria-label={t.library}><a href="#catalogue">{locale === 'zh' ? '年代长河' : 'Chronology'}</a>
+        <a href="#/collections">{locale === 'zh' ? '馆藏地图' : 'Collection map'}</a></nav>
       <div className="reading-status">{route === 'library' ? <span>{t.library}</span> : <a href={tabHref(kind)}>← {t.home}</a>}
         {!isReleaseBuild && <a href={github + '/issues/new?template=beta-feedback.yml'}>{t.beta} · {t.feedback}</a>}</div>
       {route === 'library' ? <Index key={indexKind} kind={indexKind} /> : entry ? <Entry entry={entry} /> : <h1>{t.none}</h1>}

@@ -13,25 +13,52 @@
 .desk h1 { margin: 0; }
 .desk__paper { display: grid; place-items: center; text-decoration: none; color: #292b24; }
 .desk__paper:focus-visible { outline: 4px solid #155db0; outline-offset: -7px; }
-.desk__words {
-  display: block; margin-left: 14%; margin-bottom: 6%;
-  font: 500 clamp(1.6rem,min(4.2vw,6.4vh),4.4rem)/1.5 'Kaiti SC',STKaiti,KaiTi,serif;
-  text-shadow: 0 3px 6px #967b5570; transition: opacity .55s, transform .8s;
-}
 .desk__words span { display: block; }
-.desk__words:lang(en) { font: 500 clamp(1.05rem,min(2.9vw,4.5vh),3rem)/1.4 Georgia,serif; }
-.desk[data-scene="approach"] .desk__words { visibility: hidden; opacity: 0; transform: translateY(9px); }
+.desk[data-scene="approach"] .desk__words { visibility: hidden; }
 @media (max-aspect-ratio: 17/20) { .desk { background-image: url('../assets/classroom-portrait.webp'); } }
 .desk[data-entering="true"] .desk__words { opacity: 0; }
 .desk__ink { position: absolute; width: clamp(64px,12vmin,160px); aspect-ratio: 1; pointer-events: none;
   background: url('../assets/ink-wash.webp') center/contain no-repeat;
   animation: desk-bloom .87s .73s cubic-bezier(.23,.55,.37,1) both; }
-.desk__veil { pointer-events: none; background: var(--canvas); z-index: 4; animation: desk-veil .43s 2.45s both; }
 @keyframes desk-bloom { from {transform:translate(-50%,-50%) scale(0)} to {transform:translate(-50%,-50%) scale(1)} }
 @keyframes desk-veil { from {opacity:0} to {opacity:1} }
 @media (prefers-reduced-motion:reduce) { .desk *, .desk *::before { transition:none!important; animation:none!important; } }
-@media (max-aspect-ratio: 17/20) { .desk__words { margin: 18% 0 0; font-size: clamp(1.75rem, 6vw, 3.4rem); } .desk__words:lang(en) { font-size: clamp(1.2rem, 4.4vw, 2.6rem); } }
 .desk__credit { position:absolute; z-index:2; bottom:14px; left:clamp(12px,3vw,48px); padding:.45rem .65rem; color:#38372e; background:#f8f2e3ed; font-size:.78rem; }
 
-.desk__veil {background:#f6f6ef;}
 .desk[data-entering="true"] :is(.desk__library,.desk__credit) {opacity:0;pointer-events:none;transition:opacity .3s;}
+
+.desk {
+  --sheet-x: 60%;
+  --sheet-y: 46%;
+  --letter-width: min(27vw, 39vh);
+}
+.desk__words {
+  position: absolute; left: var(--sheet-x); top: var(--sheet-y);
+  width: var(--letter-width); margin: 0;
+  transform: translate(-50%,-50%);
+  font-family: "Kaiti SC", STKaiti, KaiTi, serif; font-weight: 500;
+  transition: opacity .3s;
+  font-size: clamp(.94rem,calc(var(--letter-width) * .138),4.4rem);
+  line-height: 1.65; letter-spacing: .035em; text-align: left;
+  text-shadow: none;
+}
+.desk__words:lang(en) { font-family: Georgia, serif; font-size: clamp(.87rem,calc(var(--letter-width) * .102),2.6rem); letter-spacing: 0; }
+.desk[data-scene="desk"] .desk__words span {
+  animation: desk-lettering 1.15s ease-out both;
+}
+.desk[data-scene="desk"] .desk__words span + span { animation-delay: .23s; }
+@keyframes desk-lettering {
+  from { opacity: 0; filter: blur(1.7px); color: #9b8165; }
+  48% { opacity: .72; color: #695b46; }
+  to { opacity: 1; filter: blur(0); color: #282920; }
+}
+.desk__veil { z-index: 4; pointer-events: none; background: #080908; animation: desk-veil .49s 2.35s both; }
+.desk__reveal {
+  position: fixed; inset: 0; z-index: 100; pointer-events: none;
+  background: #080908; animation: desk-unveil .56s ease-in-out both;
+}
+@keyframes desk-unveil { to { opacity: 0; } }
+@media (max-aspect-ratio: 17/20) {
+  .desk { --sheet-x: 45%; --sheet-y: 59%; --letter-width: 52vw; }
+}
+@media (prefers-reduced-motion:reduce) { .desk__reveal { display: none; } }
