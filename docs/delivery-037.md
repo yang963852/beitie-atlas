@@ -1,6 +1,6 @@
 # Delivery 037 — Corpus completion and the image-rights gap
 
-Base revision: `1bcd98b` (merge of PR #26, `main`). Implementation revision: `d825f2b`. Documentation revision: `0749b1c`. Branch: `task/037-corpus-completion`.
+Base revision: `1bcd98b` (merge of PR #26, `main`). Implementation revision: `d825f2b`. Documentation revision: `0749b1c`. Branch: `task/037-corpus-completion`. Pull request: [#27](https://github.com/yang963852/beitie-atlas/pull/27), open and awaiting the coordinator's decision.
 
 ## What changed
 
