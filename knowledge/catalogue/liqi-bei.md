@@ -18,7 +18,7 @@ Stele of the Ritual Vessels
 
 作品待考与说明
 
-- The English title is a project rendering for navigation, not a title used by the source.
+- 英文标题为本项目为检索所拟，非来源所用题名。
 
 <a name="liqi-ming-44512"></a>
 

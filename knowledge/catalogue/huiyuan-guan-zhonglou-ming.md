@@ -19,7 +19,7 @@ Bell Tower Inscription of the Huiyuan Abbey
 
 作品待考与说明
 
-- The page does not say how the slab was displayed before it entered the museum.
+- 页面未记此石入馆前如何陈列。
 
 <a name="stele-huiyuan-zhonglou"></a>
 

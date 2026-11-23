@@ -20,7 +20,7 @@ Stele of Lushan Temple
 
 作品待考与说明
 
-- The page gives the surviving character count only approximately (“1000余字”).
+- 页面只约略记存字「1000余字」，非精确统计。
 
 <a name="stele-lushan-si"></a>
 

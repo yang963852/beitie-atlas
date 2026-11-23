@@ -18,9 +18,9 @@ Stele of Yan Qinli
 
 作品待考与说明
 
-- The English title is a project translation for navigation. The cited sources use the Chinese title only.
-- No aliases are recorded yet: the inscription's other titles have not been source-audited.
-- The script classification is not stated in the cited sources, so the field is left empty rather than filled from general knowledge.
+- 英文标题为本项目为检索所译；所引来源只用中文题名。
+- 尚未记录别名：此碑的其他题名未作来源核校。
+- 所引来源未记书体，故该字段从缺，不以常识填补。
 
 <a name="dpm-rubbing-xin00045406"></a>
 
