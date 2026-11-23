@@ -254,6 +254,10 @@ export const enStrings = {
     disputed: 'Disputed',
     unknown: 'Unknown',
   },
+  crashTitle: 'This page could not be displayed',
+  crashBody:
+    'Rendering stopped before this record finished. The data is unchanged; return to the catalogue and open another record. If it happens again, quote the message below in an issue.',
+  crashBack: 'Back to the catalogue',
   validationErrorTitle: 'Local data checks failed',
   validationErrorBody:
     'The records below are shown anyway so the problem can be inspected, but this build is not valid.',
