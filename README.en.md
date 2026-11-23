@@ -6,6 +6,8 @@ Between Steles helps learners follow the calligraphy they copy. Read a work in i
 
 **[Open the first internal beta](https://yang963852.github.io/beitie-atlas/)** · [Read the Markdown library](knowledge/README.md) · [Submit a source](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) · [Report beta feedback](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)
 
+**Submit a pull request directly.** Edit an article on GitHub or send a branch from your fork to this repository’s `main`. An Issue is optional. [@yang963852](https://github.com/yang963852) is the primary reviewer and maintainer. [Contribution guide](CONTRIBUTING.md)
+
 | Goal | Entry point |
 | --- | --- |
 | Read a work or person's page | [Yan Qinli Stele](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei) · [Yan Zhenqing](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing) · [Web library](https://yang963852.github.io/beitie-atlas/#/library) |

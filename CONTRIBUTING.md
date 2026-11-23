@@ -2,6 +2,8 @@
 
 [中文投稿与试读指南](docs/CONTRIBUTE.zh-CN.md) · [Knowledge library](knowledge/README.md) · [Member and agent setup](docs/START-HERE.md)
 
+Send a focused pull request directly to `yang963852/beitie-atlas:main` from your fork. An Issue is optional. GitHub requests review from the primary reviewer and maintainer, [@yang963852](https://github.com/yang963852), when an external contribution is ready for review.
+
 | Contribution | Start | Handoff |
 | --- | --- | --- |
 | Suggest a source, correction, teaching example or close reading | [Knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) or a browser edit to an authored Markdown file in the library | An editor links the submission and credit to the resulting PR or explains the open question in the Issue |

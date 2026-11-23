@@ -1,13 +1,11 @@
-## Reader outcome / 读者能得到什么
+## 改了什么 / What changed
 
-Link the Issue or name the small change. Credit the original submission or author.
+写明改动和受益的读者。已有相关 Issue 时可附链接，引用他人投稿请注明作者。
+Describe the change and credit the original contributor. Link an Issue if relevant.
 
-## Evidence / 如何核对
+## 怎样核对 / How to verify
 
-- Knowledge: subject or witness, changed claim, source and page/paragraph, uncertainties or rights.
-- Web: page or steps to reproduce, expected result, and relevant interaction or layout evidence.
-- Checks: actual commands/CI results, tested revision and anything unverified.
+资料改动请附出处和具体页码或段落；网页改动请写操作步骤。列出做过的检查和待核实之处。
+For research, cite the source and passage. For website changes, give the reader path. List checks run and open questions.
 
-## Handoff / 交给谁
-
-Name the reviewer or coordinator. State any change in editorial status or release scope. Label the implementer's own review as self-review. For a milestone, migration or release, link its board row and delivery report.
+主要审查人和维护人 / Primary reviewer and maintainer: @yang963852

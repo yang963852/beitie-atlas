@@ -46,5 +46,8 @@ it('restores the collection filter and open place after reading a witness', asyn
   await waitFor(() => expect(screen.queryByRole('combobox', { name: '实物类型' })).toBeNull());
   window.history.back();
   await waitFor(() => expect(filter()).toHaveValue('original-stele'));
-  expect(within(index()).getAllByRole('button').find(b => b.textContent === label)).toHaveAttribute('aria-pressed', 'true');
+  await waitFor(() => {
+    const restored = within(index()).getAllByRole('button').find(b => b.textContent === label);
+    expect(restored).toHaveAttribute('aria-pressed', 'true');
+  });
 });
