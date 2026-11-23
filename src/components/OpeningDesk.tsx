@@ -14,6 +14,16 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
   const finish = () => {
     if (!entering.current) return;
     entering.current = false;
+    if (origin && !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+      // Carry the opaque frame across the React route change, then reveal the timeline.
+      const curtain = document.createElement('div');
+      curtain.className = 'desk__reveal';
+      curtain.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(curtain);
+      const remove = () => curtain.remove();
+      curtain.addEventListener('animationend', remove, { once: true });
+      window.setTimeout(remove, 800);
+    }
     enter();
     scene.current?.reset();
     setOrigin(null);
@@ -33,12 +43,12 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
       if (scene.current) { scene.current.visibility(visible); return; }
       if (!visible || loading || failed || entering.current) return;
       loading = true;
+      setPhase('approach');
       try {
         const { createClassroom, loadDeskImages } = await import('./classroom-scene');
         if (disposed || motion.matches || !visible || entering.current) return;
         const images = await loadDeskImages();
         if (disposed || motion.matches || !visible || entering.current) return;
-        setPhase('approach');
         scene.current = createClassroom(element!, () => setPhase('desk'), images);
       } catch { failed = true; release(); }
       finally { loading = false; }
@@ -57,7 +67,7 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
 
   useEffect(() => {
     if (!origin) return;
-    const timer = window.setTimeout(finish, 3150);
+    const timer = window.setTimeout(finish, 3300);
     return () => window.clearTimeout(timer);
   }, [origin]);
 
@@ -74,7 +84,7 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
       <canvas ref={canvas} className="desk__scene" aria-hidden="true" />
       <div className="desk__library">
         {!isReleaseBuild && <span>{locale === 'zh' ? '内部测试第一版' : 'Internal beta 1'}</span>}
-        <a href="#/library">{locale === 'zh' ? '读作品与书家 →' : 'Read works and calligraphers →'}</a>
+        <a href="#/library">{locale === 'zh' ? '读作品与书家' : 'Read works and calligraphers'}</a>
       </div>
       <a className="desk__credit" href="#/object/witness-lanting" onClick={event => {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;

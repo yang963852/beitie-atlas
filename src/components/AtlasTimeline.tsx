@@ -8,6 +8,9 @@ import { formatAttribution } from '../domain/attribution';
 import type { ObjectRecord } from '../domain/types';
 import { useLocale, type Locale } from '../i18n';
 import { buildMarkers } from '../map/markers';
+import { InkRiver } from './InkRiver';
+import { CollectionAtlas } from './CollectionAtlas';
+import { HistoryPoints } from './HistoryPoints';
 import { MapPanel } from './MapPanel';
 import { KnowledgeProse } from './KnowledgeProse';
 import { ProvenanceEvents } from './ProvenanceEvents';
@@ -60,7 +63,6 @@ function WorkFolio({ entry, close }: { entry: LibraryEntry; close: () => void })
   const zh = locale === 'zh';
   const dialog = useRef<HTMLDialogElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
-  const witnessHeading = useRef<HTMLHeadingElement>(null);
   useLayoutEffect(() => {
     const d = dialog.current!;
     d.showModal();
@@ -78,21 +80,21 @@ function WorkFolio({ entry, close }: { entry: LibraryEntry; close: () => void })
         <button ref={closeRef} type="button" onClick={close} aria-label={zh ? '关闭阅读卡片' : 'Close reading card'}>×</button></div>
       <h2 id="folio-title">{title(entry,locale)}</h2>
       <p className="folio__byline">{byline(entry,locale,strings.attributionRoleShort)}</p>
-      {entry.guide && witnesses.length > 0 && <button className="link-button" onClick={() => witnessHeading.current?.focus()}>
-        {zh ? '跳至实物与流传' : 'Jump to witnesses and transmission'}</button>}
       {entry.id === 'lanting' && <figure><img src={shenlong} alt={zh ? '神龙本卷首局部' : 'Opening columns of the Shenlong copy'} /><figcaption>{zh ? '神龙本卷首局部 · 故宫博物院藏' : 'Opening of the Shenlong copy · Palace Museum'}</figcaption></figure>}
-      {entry.guide ? <KnowledgeProse guide={entry.guide} /> : <p className="folio__prose">{zh ? entry.work?.backgroundZh ?? entry.work?.background : entry.work?.background}</p>}
-      <h3 ref={witnessHeading} tabIndex={-1}>{zh ? '实物与流传' : 'Witnesses and transmission'}</h3>
+      <h3>{zh ? '实物与流传' : 'Witnesses and transmission'}</h3>
       {witnesses.length ? <ul className="folio__witnesses">{witnesses.map(o => <li key={o.id}>
-        <div><a href={'#/object/'+o.id}>{o.titles[locale]}</a>
-        <small>{formatDate(o.productionDate,locale)} · {holding(o,locale)}</small></div>
-        <a className="atlas-action" href={'#/transmission/'+o.id} onClick={e => {
+        <a className="folio-witness" href={'#/transmission/'+o.id} onClick={e => {
           if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
           e.preventDefault();
           window.history.pushState({fromFolio:entry.id},'',e.currentTarget.hash);
           window.dispatchEvent(new HashChangeEvent('hashchange'));
-        }} aria-label={(zh ? '流传 · ' : 'Transmission · ') + o.titles[locale]}>{zh ? '流传' : 'Transmission'} <span aria-hidden="true">↗</span></a>
+        }}>
+          <strong>{o.titles[locale]}</strong>
+          <small>{formatDate(o.productionDate,locale)} · {holding(o,locale)}</small>
+          <span>{zh ? '查看地图与流传' : 'Map and transmission'}</span>
+        </a>
       </li>)}</ul> : <p>{zh ? '本项目尚未收录可定位的具体实物。' : 'No physical witness is catalogued for this work yet.'}</p>}
+      {entry.guide ? <KnowledgeProse guide={entry.guide} /> : <p className="folio__prose">{zh ? entry.work?.backgroundZh ?? entry.work?.background : entry.work?.background}</p>}
       <p className="folio__status">{(entry.guide?.state ?? entry.work?.review.state) === 'draft' ? strings.reviewDraft : strings.reviewReviewed}</p>
       <SourceList ids={[...new Set([...(entry.work?.sourceRefs ?? []),...(entry.guide?.sources ?? [])])]} compact />
       <a href={'#/work/'+entry.id}>{zh ? '阅读完整条目' : 'Read the full entry'}</a>
@@ -116,6 +118,7 @@ function Transmission({ object }: { object: ObjectRecord }) {
     <p className="atlas-kicker">{strings.objectTypeLabels[object.objectType]} · {zh ? '流传' : 'Transmission'}</p>
     <h1 ref={heading} tabIndex={-1}>{object.titles[locale]}</h1>
     <p className="atlas-journey__place">{strings.locationKindLabels[object.currentCollection.locationKind]} · {holding(object,locale)}</p>
+    <a href={'#/object/'+object.id}>{zh ? '查看实物档案' : 'Open witness record'}</a>
     <div className="atlas-journey__columns"><div className="atlas-journey__map">
       {markers.length ? <MapPanel markers={markers} objects={objects} originalsOnly={false} selectedPlaceId={markers[0].placeId}
         onOpenObject={id => {window.location.hash='/object/'+id;}} /> :
@@ -123,7 +126,7 @@ function Transmission({ object }: { object: ObjectRecord }) {
           <p>{zh ? '现有记录不足以标注现藏位置。' : 'The record does not establish a mappable current location.'}</p>
           <SourceList ids={object.currentCollection.sourceRefs} compact /></section>}
       {object.id === 'yan-qinli-original-stele' && !isReleaseBuild && <a href="#/object/yan-qinli-original-stele/journey">{zh ? '循西安地标读原石流传 →' : 'Follow the stone through Xi’an →'}</a>}
-    </div><div className="atlas-journey__story"><ProvenanceEvents object={object} /></div></div>
+    </div><div className="atlas-journey__story"><HistoryPoints key={object.id} object={object} /><ProvenanceEvents object={object} /></div></div>
   </main>;
 }
 
@@ -170,16 +173,17 @@ export function AtlasTimeline({ hash }: { hash: string }) {
   }
   return <div className="atlas-reader"><header className="atlas-mast">
     <a href="#" className="atlas-brand">{strings.siteTitleZh}<small>Between Steles</small></a>
-    <nav><a href="#catalogue">{zh ? '时间轴' : 'Timeline'}</a><a href="#/library">{zh ? '知识库' : 'Library'}</a>
-      <a href="#results">{zh ? '实物图录' : 'Object index'}</a>
-      <button type="button" onClick={() => setLocale(zh ? 'en' : 'zh')}>{zh ? 'EN' : '中文'}</button></nav>
+    <button type="button" onClick={() => setLocale(zh ? 'en' : 'zh')}>{zh ? 'EN' : '中文'}</button>
   </header>
-  <main ref={main} id="catalogue" tabIndex={-1} hidden={Boolean(object)} className="atlas-time">
+  <nav className="reader-sections" aria-label={strings.sectionsLabel}>
+    <a href="#catalogue" aria-current={hash !== '#/collections' ? 'page' : undefined}>{zh ? '年代长河' : 'Chronology'}</a>
+    <a href="#/collections" aria-current={hash === '#/collections' ? 'page' : undefined}>{zh ? '馆藏地图' : 'Collection map'}</a>
+    <a href="#/library">{zh ? '知识库' : 'Library'}</a>
+  </nav>
+  {hash === '#/collections' && <CollectionAtlas />}
+  <main ref={main} id="catalogue" tabIndex={-1} hidden={Boolean(object) || hash === '#/collections'} className="atlas-time">
     <div className="atlas-time__intro"><div><h1>{zh ? '碑帖时间轴' : 'A chronology of calligraphy'}</h1>
       <p>{zh ? '循年代展读作品，再随一件原石、拓本或墨迹，读它的流传。' : 'Read works in time, then follow a surviving stone, rubbing or manuscript.'}</p></div>
-      <a className="atlas-frontispiece" href="#/folio/lanting" onClick={openCard}>
-        <img src={shenlong} alt="" /><span>{zh ? '兰亭序 · 神龙本卷首' : 'Lanting Xu · Shenlong copy'}</span>
-      </a>
     </div>
     <div className="atlas-toolbar"><span>{zh ? '收录作品' : 'Works'} <b>{ordered.length}</b></span>
       <div className="atlas-tools"><label>{zh ? '跳至时代' : 'Jump to period'}<select value={jump} onChange={e => goPeriod(e.target.value)}>
@@ -188,19 +192,18 @@ export function AtlasTimeline({ hash }: { hash: string }) {
         <input type="search" aria-label={strings.searchLabel} placeholder={zh ? '搜索作品或书家' : 'Find a work or calligrapher'} value={query} onChange={e => {setQuery(e.target.value);setJump('');rail.current?.scrollTo?.({left:0});}} /></div>
     </div>
     {(selected && !entry || objectId && !object) && <p role="status">{zh ? '未找到这条记录。可从时间轴重新选择。' : 'Record unavailable. Select a work from the timeline.'}</p>}
+    <div className="river-reach">{!!groups.size && hash === '#catalogue' && <InkRiver />}
     <div className="atlas-rail" ref={rail} tabIndex={0} aria-label={zh ? '作品时间轴' : 'Works in chronological order'}>
       {[...groups].map(([id,items]) => <section id={'period-'+id} key={id} className="atlas-period">
         <h2>{period(items[0])?.[locale] ?? strings.dynastyUnknown}</h2>
-        <ul>{items.map(item => <li key={item.id}>
+        <ul>{items.map(item => <li key={item.id} data-bank={ordered.indexOf(item) % 2 ? 'lower' : 'upper'}>
           <a href={'#/folio/'+item.id} className="atlas-card" onClick={openCard}>
             <span className="atlas-date">{dateLine(item,locale)}</span>
             <h3>{title(item,locale)}</h3>
             <span className="atlas-hand">{byline(item,locale,strings.attributionRoleShort)}</span>
-            {item.work?.background && <span className="atlas-card__excerpt">{zh ? item.work.backgroundZh ?? item.work.background : item.work.background}</span>}
-            <span className="atlas-card__foot">{item.work?.script ?? (zh ? '作品导读' : 'Reading guide')}<span aria-hidden="true">↗</span></span>
           </a></li>)}</ul>
       </section>)}
-    </div>
+    </div></div>
     {!groups.size && <p role="status">{strings.noResults} <button onClick={() => setQuery('')}>{strings.clearSearch}</button></p>}
     {!!groups.size && <div className="atlas-controls"><span>{zh ? '由古及今' : 'Earlier to later'}</span>
       <button aria-label={zh ? '向前翻阅' : 'Scroll earlier'} onClick={() => rail.current?.scrollBy({left:-rail.current.clientWidth*.8})}>←</button>

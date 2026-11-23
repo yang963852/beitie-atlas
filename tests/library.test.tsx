@@ -52,3 +52,13 @@ describe('reading routes', () => {
     }
   });
 });
+
+it('edits the authored document or the canonical work record according to its source', () => {
+  render(<App />);
+  navigate('#/work/yan-qinli-bei');
+  expect(screen.getByRole('link', {name: '编辑条目并提交'})).toHaveAttribute('href',
+    'https://github.com/yang963852/beitie-atlas/edit/main/knowledge/works/yan-qinli-bei.md');
+  navigate('#/work/langya-keshi');
+  expect(screen.getByRole('link', {name: '编辑条目并提交'})).toHaveAttribute('href',
+    'https://github.com/yang963852/beitie-atlas/edit/main/data/works/langya-keshi.json');
+});

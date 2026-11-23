@@ -9,8 +9,6 @@
 .atlas-mast a {text-decoration:none;}
 .atlas-brand {font:600 1.35rem var(--book); letter-spacing:.08em;}
 .atlas-brand small {display:inline-block; margin-left:1rem; font:italic .95rem Georgia,serif; letter-spacing:0;}
-.atlas-mast nav {display:flex; flex-wrap:wrap; align-items:center; gap:clamp(.7rem,2.4vw,2.5rem);font-size:.92rem;}
-.atlas-mast nav a,.atlas-mast nav button {padding:.6rem 0;}
 .atlas-mast button {border:0;background:none;color:inherit;cursor:pointer;}
 .atlas-time,.atlas-journey {padding:clamp(2rem,6vh,5rem) clamp(1rem,5vw,5rem) 3.5rem;}
 .atlas-time {scroll-margin-top:5rem;}
@@ -32,8 +30,6 @@
 .atlas-card h3 {font:500 clamp(1.6rem,2.15vw,2.35rem)/1.35 var(--book);margin:1rem 0 .7rem;color:#24332d;overflow-wrap:anywhere;}
 .atlas-date,.atlas-kicker {color:#765841;font-size:.9rem;}
 .atlas-hand {color:var(--muted);font-size:.9rem;line-height:1.6;max-width:30ch;}
-.atlas-card__foot {margin-top:auto;padding-top:1.75rem;display:flex;align-items:end;justify-content:space-between;font-size:.84rem;color:var(--muted);}
-.atlas-card__foot span {font-size:1.12rem;}
 .atlas-controls {display:flex;justify-content:flex-end;align-items:center;gap:.55rem;color:var(--muted);font-size:.84rem;}
 .atlas-controls span {margin-right:.55rem;}
 .atlas-controls button,.folio__bar button {width:44px;height:44px;border:1px solid #b7c0b4;background:#fdfdf8;border-radius:50%;font-size:1.2rem;color:var(--ink);cursor:pointer;}
@@ -50,7 +46,6 @@
 .folio__witnesses {list-style:none;margin:0;padding:0;}
 .folio__witnesses li {display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0;border-top:1px solid var(--rule);}
 .folio__witnesses small {display:block;color:var(--muted);font-size:.85rem;}
-.atlas-action {flex:none;padding:.45rem .7rem;border:1px solid #a7b4a9;border-radius:5px;text-decoration:none;}
 .atlas-kicker {margin:2rem 0 .5rem;}
 .atlas-journey__columns {display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(1rem,3vw,3rem);margin-top:2rem;align-items:start;}
 .atlas-journey__map .pane,.atlas-journey__story,.atlas-no-point {background:#fffef8;border:1px solid var(--rule);border-radius:10px;padding:clamp(1rem,2.2vw,2rem);}
@@ -61,7 +56,6 @@
 @media(max-width:760px){
   .atlas-mast {align-items:flex-start;flex-wrap:wrap;gap:.35rem .8rem;}
   .atlas-brand small {display:none;}
-  .atlas-mast nav {gap:.85rem;}
   .atlas-time__intro {gap:1rem;margin-bottom:1.6rem;}
   .atlas-rail {display:block;overflow:visible;padding-left:.65rem;}
   .atlas-period {border-left:1px solid #89988a;padding:0 0 1.4rem 1.35rem;}
@@ -70,7 +64,6 @@
   .atlas-period ul {display:grid;border:0;padding:0;gap:.65rem;}
   .atlas-card {width:100%;min-height:0;padding:1rem 1.15rem;}
   .atlas-card h3 {margin:.4rem 0;font-size:1.65rem;}
-  .atlas-card__foot {padding-top:.65rem;}
   .atlas-controls {display:none;}
   .atlas-journey__columns {grid-template-columns:1fr;}
   .atlas-tools input {width:min(12rem,100%);}
@@ -79,29 +72,63 @@
 @media(prefers-reduced-motion:reduce){.atlas-reader * {scroll-behavior:auto!important;transition:none!important;}}
 
 .atlas-time__intro {align-items:center;flex-wrap:nowrap;margin-bottom:1.5rem;}
-.atlas-frontispiece {position:relative;display:block;width:clamp(13rem,25vw,26rem);flex:none;padding:.5rem;background:#fdfaf1;border:1px solid #d6cfb9;box-shadow:0 4px 13px #342e2214;transform:rotate(1deg);text-decoration:none;}
-.atlas-frontispiece img {display:block;width:100%;height:clamp(4rem,8vw,8rem);object-fit:cover;object-position:center 30%;}
-.atlas-frontispiece span {display:block;text-align:right;margin:.3rem .2rem 0;font: .8rem var(--book);}
 .atlas-toolbar {display:flex;align-items:end;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:.9rem 0 1.2rem;margin-bottom:1.4rem;border-bottom:1px solid var(--rule);}
 .atlas-toolbar>span {font:1.05rem var(--book);color:var(--muted);}
 .atlas-toolbar b {margin-left:.3em;color:var(--ink);font:1.4rem Georgia,serif;}
-.atlas-card__excerpt {display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-top:.9rem;line-height:1.7;color:#525c54;font-size:.9rem;}
-.atlas-card__foot {padding-top:1.1rem;}
 .atlas-journey {scroll-margin-top:4.5rem;}
 @media(max-width:760px) {
-  .atlas-frontispiece {width:9.4rem;}
-  .atlas-frontispiece img {height:4.7rem;}
   .atlas-time__intro {align-items:flex-start;}
   .atlas-toolbar {align-items:center;}
 }
 @media(max-width:540px) {
-  .atlas-frontispiece {display:none;}
   .atlas-time__intro {margin-bottom:.75rem;}
   .atlas-toolbar {margin-bottom:1rem;padding-top:0;}
-  .atlas-card__excerpt {-webkit-line-clamp:2;}
 }
 
 @media(prefers-reduced-motion:no-preference) {
   .atlas-time {animation:atlas-unfold .36s ease-out both;}
   @keyframes atlas-unfold {from {opacity:.22;transform:translateY(5px);} to {opacity:1;transform:none;}}
 }
+
+.reader-sections {display:flex;gap:1.75rem;align-items:center;margin:0 clamp(1rem,5vw,5rem);border-bottom:1px solid var(--rule);}
+.reader-sections a {text-decoration:none;padding:.9rem 0 .65rem;font:1rem var(--book);}
+.reader-sections [aria-current] {border-bottom:2px solid #904534;color:#7e3729;}
+.river-reach {position:relative;isolation:isolate;}
+.ink-river {position:absolute;top:calc(50% + .5rem);left:0;right:0;height:4rem;transform:translateY(-50%);pointer-events:none;background:linear-gradient(176deg,transparent 43%,#93a69a70 48%,#708e8255 51%,transparent 57%);z-index:-1;}
+.ink-river:has(canvas) {background:none;}
+.atlas-rail {display:flex;overflow-x:auto;overflow-y:hidden;padding:.35rem .2rem .8rem;align-items:stretch;}
+.atlas-period {border:0;padding:0;}
+.atlas-period h2 {font:600 1.1rem var(--book);padding:0 0 .7rem;color:#695342;}
+.atlas-period h2::after {display:none;}
+.atlas-period ul {display:flex;gap:.8rem;padding:0 1.4rem 0 0;border:0;}
+.atlas-period li {width:clamp(11rem,16vw,16rem);display:flex;flex-direction:column;height:22rem;}
+.atlas-period li[data-bank=lower] {justify-content:flex-end;}
+.atlas-card {box-sizing:border-box;width:100%;min-height:0;height:9.1rem;overflow:hidden;padding:.8rem 1rem;border-radius:2px 7px 7px 2px;border-left:3px double #c2af8e;background:linear-gradient(100deg,#f0e9d8,#fffdf5 12%);box-shadow:1px 3px 0 #e0dacb,0 5px 9px #3f362516;}
+.atlas-card h3 {font-size:clamp(1.15rem,1.65vw,1.55rem);line-height:1.32;margin:.4rem 0;overflow:auto;}
+.atlas-date,.atlas-hand {font-size:.86rem;}
+.atlas-hand {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-shrink:0;}
+.atlas-controls {display:flex;}
+.collection-atlas .pane--map {display:block;width:100%;max-width:72rem;margin:auto;}
+.collection-atlas .map--fallback {height:clamp(20rem,48vh,36rem);}
+.history-points {padding-bottom:1rem;margin-bottom:1rem;border-bottom:1px solid var(--rule);}
+.history-points label {display:grid;gap:.4rem;margin-top:.75rem;}
+.history-points select {max-width:100%;font:inherit;padding:.45rem;}
+@media(prefers-reduced-motion:no-preference) {
+  .folio[open] {transform-origin:35% 65%;animation:lift-leaf .38s cubic-bezier(.2,.7,.25,1) both;}
+  @keyframes lift-leaf {from {opacity:0;transform:perspective(950px) rotateY(-32deg) rotateZ(-3deg) translateY(1rem) scale(.91);} to {opacity:1;transform:none;}}
+}
+.atlas-reader .map-overview {background-color:#f4f1e7;background-image:linear-gradient(to right,#a99e802b 1px,transparent 1px),linear-gradient(to bottom,#a99e802b 1px,transparent 1px);}
+.atlas-reader .map-overview__marker {background:#48655b;}
+.atlas-reader .map-overview__marker[aria-pressed=true] {background:#8a4637;outline-color:#8a4637;}
+@media(max-width:540px){
+  .atlas-time,.atlas-journey {padding-top:1.5rem;}
+  .atlas-toolbar {gap:.65rem;}
+  .atlas-tools {display:flex;align-items:end;flex-wrap:nowrap;width:100%;}
+  .atlas-tools input,.atlas-tools label {min-width:0;flex:1;}
+  .atlas-period li {height:20rem;}
+  .atlas-card {height:8.4rem;}
+}
+.folio-witness {width:100%;display:block;text-decoration:none;}
+.folio-witness strong {font:600 1.1rem var(--book);}
+.folio-witness span {font-size:.9rem;color:#784936;text-decoration:underline;text-underline-offset:.25em;}
+.app > .topnav {padding:.4rem clamp(1rem,4vw,4rem);border-bottom:1px solid #d1cdbf;flex-wrap:wrap;}

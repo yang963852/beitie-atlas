@@ -26,3 +26,10 @@ it('keeps the rubbing’s transmission separate from the original stone on a dir
   expect(within(page).getByText(/所引资料尚未记下这件实物/)).toBeVisible();
   expect(within(page).queryByText(/在地下数米处发现此石/)).not.toBeInTheDocument();
 });
+
+it('opens the surviving-witness map directly with a witness type selector', () => {
+  visit('#/collections');
+  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent('传世实物地图');
+  expect(screen.getByRole('combobox', {name: '实物类型'})).toContainElement(screen.getByRole('option', {name: '拓本'}));
+  expect(screen.getByRole('group', {name: '本图点位'})).toBeVisible();
+});

@@ -249,14 +249,6 @@ function AppShell() {
             </span>
           </div>
 
-          <nav className="topnav" aria-label={strings.sectionsLabel}>
-            <a className="topnav__link" href="#/library">{locale === 'zh' ? '知识库' : 'Library'}</a>
-            <a className="topnav__link" href="#catalogue">{locale === 'zh' ? '时间轴' : 'Timeline'}</a>
-            {sectionLink('results', strings.resultsHeading)}
-            {sectionLink('map', strings.mapHeading)}
-            {sectionLink('detail', strings.detailHeading)}
-          </nav>
-
           <div className="topbar__actions">
             <div className="langswitch" role="group" aria-label={strings.languageLabel}>
               {localeButton('zh', strings.languageZh)}
@@ -265,6 +257,15 @@ function AppShell() {
           </div>
         </div>
       </header>
+
+          <nav className="topnav" aria-label={strings.sectionsLabel}>
+            <a className="topnav__link" href="#/library">{locale === 'zh' ? '知识库' : 'Library'}</a>
+            <a className="topnav__link" href="#catalogue">{locale === 'zh' ? '年代长河' : 'Chronology'}</a>
+            <a className="topnav__link" href="#/collections">{locale === 'zh' ? '馆藏地图' : 'Collection map'}</a>
+            {sectionLink('results', strings.resultsHeading)}
+            {sectionLink('map', strings.mapHeading)}
+            {sectionLink('detail', strings.detailHeading)}
+          </nav>
 
       {report.ok ? null : (
         <div className="alert" role="alert">
@@ -436,7 +437,7 @@ function Reader() {
       <OpeningDesk enter={() => navigate('#catalogue')} openPlate={() => navigate('#/object/witness-lanting')} />
     </main>;
   }
-  if (hash === '#catalogue' || /^#\/(?:folio|transmission)\//.test(hash)) return <AtlasTimeline hash={hash} />;
+  if (hash === '#catalogue' || hash === '#/collections' || /^#\/(?:folio|transmission)\//.test(hash)) return <AtlasTimeline hash={hash} />;
   return isLibraryRoute(hash) ? <KnowledgeLibrary hash={hash} /> : <AppShell />;
 }
 

@@ -48,3 +48,10 @@
   .library-tools input { width: 100%; }
   .reading-top { gap: .9rem; }
 }
+.library-paths {display:flex;gap:1.3rem;margin-bottom:1.3rem;}
+.library-shelf {margin:2.1rem 0;}
+.library-shelf h2 {font:600 1.3rem var(--font-zh);border-bottom:1px solid #a99b82;padding-bottom:.65rem;margin-bottom:.2rem;}
+.library-shelf h2 small {margin-left:.5rem;font:normal .95rem Georgia,serif;color:#716755;}
+.library-edit {display:inline-block;padding:.45rem .9rem;border:1px solid #b19b7c;border-radius:3px;text-decoration:none;margin:0 0 1rem;}
+.reading-main article {max-width:42rem;margin-inline:auto;}
+.reading-main .knowledge-prose {line-height:2;}
