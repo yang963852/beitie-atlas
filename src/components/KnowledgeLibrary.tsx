@@ -56,7 +56,8 @@ function Index({ kind }: { kind: KnowledgeKind }) {
     {Array.from(groups, ([label, group]) => <section className="library-shelf" key={label}>
       <h2>{label} <small>{group.length}</small></h2>
       <ul className="library-index">{group.map(entry => <li key={entry.id}>
-        <EntryLink entry={entry} /><small>{t[entry.kind]}</small>
+        <EntryLink entry={entry} />
+        <small>{entry.work ? dynastyLabel(entry.work.dynastyId, locale, entry.work.dynastyQualifier) : t[entry.kind]}</small>
       </li>)}</ul>
     </section>)}
     {!entries.length && <p role="status">{t.empty} <button onClick={() => setQuery('')}>{t.clear}</button></p>}

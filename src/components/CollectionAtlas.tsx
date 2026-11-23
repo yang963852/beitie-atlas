@@ -6,7 +6,8 @@ import { MapPanel } from './MapPanel';
 
 export function CollectionAtlas() {
   const { locale, strings } = useLocale();
-  const [kind, setKind] = useState('');
+  const [saved] = useState(() => window.history.state?.collectionAtlas);
+  const [kind, setKind] = useState<string>(saved?.kind ?? '');
   const data = getDataset();
   const surviving = useMemo(() => data.objects.filter(o => o.survivalStatus === 'surviving'), [data]);
   const kinds = [...new Set(surviving.map(o => o.objectType))];
@@ -20,7 +21,10 @@ export function CollectionAtlas() {
           <option value="">{locale === 'zh' ? '全部类型' : 'All types'}</option>
           {kinds.map(k => <option key={k} value={k}>{strings.objectTypeLabels[k]}</option>)}
         </select></label></div></div>
-    <MapPanel objects={objects} markers={markers} originalsOnly={false}
-      onOpenObject={id => { window.location.hash = '/transmission/' + id; }} />
+    <MapPanel key={kind} selectedPlaceId={kind === saved?.kind ? saved.placeId : undefined} objects={objects} markers={markers} originalsOnly={false}
+      onOpenObject={(id, placeId) => {
+        window.history.replaceState({ ...window.history.state, collectionAtlas: { kind, placeId } }, '');
+        window.location.hash = '/transmission/' + id;
+      }} />
   </main>;
 }

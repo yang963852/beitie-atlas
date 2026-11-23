@@ -16,3 +16,7 @@ Between Steles helps learners follow the calligraphy they copy. Read a work in i
 GitHub Pages serves the publicly accessible **内部测试第一版**. Draft claims carry their editorial status. The release runbook records the separate approval and artifact checks for a formal edition. [Release runbook](docs/release.md)
 
 Original code, documentation and original editorial contributions are MIT-licensed. Quotations, images and map services retain their own terms. [License](LICENSE) · [Rights and attribution](NOTICE.md)
+
+## Contributors
+
+[doublett523](https://github.com/doublett523) designed and implemented the writing-desk opening, ink-river chronology, collection map and library editing links. [Contribution #29](https://github.com/yang963852/beitie-atlas/pull/29)

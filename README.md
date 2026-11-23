@@ -17,3 +17,7 @@
 网站通过公开的 GitHub Pages 分发，当前为**内部测试第一版**。读者可浏览草稿和存疑记录，地图只显示有依据的点位。正式版次和出版条件见[发布手册](docs/release.md)。
 
 原创代码、文档和原创编辑内容采用 MIT 许可证。引文、馆藏图片和地图服务的权利依各自依据处理。[许可证](LICENSE) · [权利与致谢](NOTICE.md)
+
+## 贡献者
+
+[doublett523](https://github.com/doublett523) 设计并实现了案头落墨开场、年代长河、馆藏地图和知识库编辑入口。[贡献记录 #29](https://github.com/yang963852/beitie-atlas/pull/29)

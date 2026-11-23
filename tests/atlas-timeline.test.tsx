@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react';
+import { fireEvent, waitFor, render, screen, within } from '@testing-library/react';
 import { expect, it } from 'vitest';
 import App from '../src/App';
 import { libraryEntries } from '../src/domain/library';
@@ -32,4 +32,19 @@ it('opens the surviving-witness map directly with a witness type selector', () =
   expect(screen.getByRole('heading', {level: 1})).toHaveTextContent('传世实物地图');
   expect(screen.getByRole('combobox', {name: '实物类型'})).toContainElement(screen.getByRole('option', {name: '拓本'}));
   expect(screen.getByRole('group', {name: '本图点位'})).toBeVisible();
+});
+
+it('restores the collection filter and open place after reading a witness', async () => {
+  visit('#/collections');
+  const filter = () => screen.getByRole('combobox', { name: '实物类型' });
+  fireEvent.change(filter(), { target: { value: 'original-stele' } });
+  const index = () => screen.getByRole('group', { name: '本图点位' });
+  const place = within(index()).getAllByRole('button')[0];
+  const label = place.textContent!;
+  fireEvent.click(place);
+  fireEvent.click(document.querySelector<HTMLButtonElement>('.place-card__list button')!);
+  await waitFor(() => expect(screen.queryByRole('combobox', { name: '实物类型' })).toBeNull());
+  window.history.back();
+  await waitFor(() => expect(filter()).toHaveValue('original-stele'));
+  expect(within(index()).getAllByRole('button').find(b => b.textContent === label)).toHaveAttribute('aria-pressed', 'true');
 });
