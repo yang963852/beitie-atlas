@@ -6,6 +6,8 @@
 
 **[打开网站 · 内部测试第一版](https://yang963852.github.io/beitie-atlas/)**　[在 GitHub 读知识库](knowledge/README.md)　[补充资料](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)　[反馈内测问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)
 
+**直接贡献** · 改文章可以在 GitHub 上点铅笔，改代码可以从自己的 Fork 提交 PR 到本仓库的 `main`。欢迎中文说明，无需预先开 Issue。[@yang963852](https://github.com/yang963852) 是主要审查人和维护人，负责审查与合并。[中文操作指南](docs/CONTRIBUTE.zh-CN.md) · [从自己的分支发起 PR](https://github.com/yang963852/beitie-atlas/compare/main...main?expand=1)
+
 | 我想做什么 | 从这里开始 |
 | --- | --- |
 | 读作品、找书家或辨版本 | 从[《颜勤礼碑》](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei)读原石与拓本，也可以从[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)找作品，或进[知识库目录](knowledge/README.md)浏览 Markdown |
