@@ -46,7 +46,7 @@ Assembled Wang Xizhi Sacred Teaching Stele, original stone
 - 出土、入藏与今日陈列状态在所核来源中没有记载，留空。
 - 未记录坐标：来源给出的是机构名称，不是实测点位。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-ji-wang-shengjiao-xu) · [实物数据](../../data/objects/stele-ji-wang-shengjiao-xu.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-ji-wang-shengjiao-xu) · [实物源稿](../../knowledge/objects/stele-ji-wang-shengjiao-xu.md)
 
 ## 据以著录的来源
 
@@ -54,4 +54,4 @@ Assembled Wang Xizhi Sacred Teaching Stele, original stone
 
 1. 西安碑林博物馆 Xi’an Beilin Museum · [国宝名碑 · 三藏圣教序碑（集王圣教序碑）](<https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2579>)。定位：Entry text: dimensions, 30 lines, seven Buddha figures on the head。查阅于 2026-11-18。
 
-[作品数据](../../data/works/ji-wang-shengjiao-xu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/ji-wang-shengjiao-xu.md) · [返回知识总目](../README.md)

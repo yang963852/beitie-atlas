@@ -48,7 +48,7 @@ Bell Tower Inscription of the Huiyuan Abbey, original slab
 - 未记录坐标。
 - 「此前未见著录、亦无拓本」为馆方说法，未做独立书目核查。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-huiyuan-zhonglou) · [实物数据](../../data/objects/stele-huiyuan-zhonglou.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-huiyuan-zhonglou) · [实物源稿](../../knowledge/objects/stele-huiyuan-zhonglou.md)
 
 ## 据以著录的来源
 
@@ -56,4 +56,4 @@ Bell Tower Inscription of the Huiyuan Abbey, original slab
 
 1. 西安碑林博物馆 Xi’an Beilin Museum · [国宝名碑 · 迴元观钟楼铭](<https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2581>)（2020-08-26）。定位：Entry text: 836 date, 令狐楚 and 柳公权, 123 × 60 cm, 41 lines, 1986 discovery on 太乙路。查阅于 2026-11-18。
 
-[作品数据](../../data/works/huiyuan-guan-zhonglou-ming.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/huiyuan-guan-zhonglou-ming.md) · [返回知识总目](../README.md)

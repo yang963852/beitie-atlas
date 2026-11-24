@@ -49,7 +49,7 @@ Yan Qinli Stele, Republican-era rubbing
 - 条目没有说明此拓取自 1922 年出土的那块原石，因此两件实物之间不主张「拓自」关系。
 - 本次核查的来源中，既没有拓制年份，也没有中间收藏者的记载。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-rubbing-xin00045406) · [实物数据](../../data/objects/dpm-rubbing-xin00045406.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-rubbing-xin00045406) · [实物源稿](../../knowledge/objects/dpm-rubbing-xin00045406.md)
 
 <a name="yan-qinli-original-stele"></a>
 
@@ -57,7 +57,7 @@ Yan Qinli Stele, Republican-era rubbing
 
 Yan Qinli Stele, original stone
 
-原石 · 存世 · 已审
+原石 · 存世 · 待审
 
 - 制作年代：唐大历十四年（779年）
 - 著录编号：未记录
@@ -69,10 +69,10 @@ Yan Qinli Stele, original stone
 
 ### 递藏与流传
 
-- 1922年10月 · 出土 · 省长公署（位于今西安鼓楼以东及东北一带）（有明确记载）　工人拆除旧屋、修整地基时，在地下数米处发现此石。碑身自中部断裂，其余部分基本完整。文中记载，数日之内便有人在坑边拓取。 [出处 2](#ref-src-beilin-article-2007)
-- 出土数日后 · 迁移 · 省长公署前院（有明确记载）　省长刘镇华将此石立于公署前院。文中指出，「故」字的接缝在这次移动中已经受损，无法再合拢。 [出处 2](#ref-src-beilin-article-2007)
-- 1928年三四月间 · 迁移 · 新城大楼北东侧（有明确记载）　时任省主席宋哲元将此石移至新城大楼东北侧，作为「小碑林」的主体，并在旁边修建侧廊与碑亭。经此次移动，「故」字的笔画已大部残损。 [出处 2](#ref-src-beilin-article-2007)
-- 1948年 · 迁移 · 西安碑林（有明确记载）　新城「小碑林」整体迁入西安碑林。文中称，此时「故」字已完全断裂。 [出处 2](#ref-src-beilin-article-2007)
+- 1922年10月 · 出土 · 省长公署（位于今西安鼓楼以东及东北一带）（有明确记载）　工人拆除旧屋、修整地基时，在地下数米处发现此石。碑身自中部断裂，其余部分基本完整。文中记载，数日之内便有人在坑边拓取。 [出处 2](#ref-src-beilin-article-2007)　今日参照地标：西安鼓楼（不是事件发生地）
+- 出土数日后 · 迁移 · 省长公署前院（有明确记载）　省长刘镇华将此石立于公署前院。文中指出，「故」字的接缝在这次移动中已经受损，无法再合拢。 [出处 2](#ref-src-beilin-article-2007)　今日参照地标：西安鼓楼（不是事件发生地）
+- 1928年三四月间 · 迁移 · 新城大楼北东侧（有明确记载）　时任省主席宋哲元将此石移至新城大楼东北侧，作为「小碑林」的主体，并在旁边修建侧廊与碑亭。经此次移动，「故」字的笔画已大部残损。 [出处 2](#ref-src-beilin-article-2007)　今日参照地标：新城广场取景处（不是事件发生地）
+- 1948年 · 迁移 · 西安碑林（有明确记载）　新城「小碑林」整体迁入西安碑林。文中称，此时「故」字已完全断裂。 [出处 2](#ref-src-beilin-article-2007)　今日参照地标：西安碑林博物馆（不是事件发生地）
 
 ### 实物待考与说明
 
@@ -82,7 +82,7 @@ Yan Qinli Stele, original stone
 - 所有事件都没有坐标记录：来源给出的是区域与建筑名称，不是实测点位。
 - 今日是否展出、确切存放位置，均不清楚。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/yan-qinli-original-stele) · [实物数据](../../data/objects/yan-qinli-original-stele.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/yan-qinli-original-stele) · [实物源稿](../../knowledge/objects/yan-qinli-original-stele.md)
 
 ## 据以著录的来源
 
@@ -98,4 +98,4 @@ Yan Qinli Stele, original stone
 
 3. 西安碑林博物馆 · [颜勤礼碑](<https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home>)（2020-08-26）。定位：Object description and final sentence of the custody paragraph。查阅于 2026-11-18。
 
-[作品数据](../../data/works/yan-qinli-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/yan-qinli-bei.md) · [返回知识总目](../README.md)

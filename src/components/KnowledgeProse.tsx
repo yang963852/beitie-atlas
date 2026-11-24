@@ -13,6 +13,8 @@ function readingLink(href: string | undefined, guide: KnowledgeArticle) {
   const path = url.href.slice(repository.length).split('#')[0];
   const catalogue = /^knowledge\/catalogue\/([a-z0-9-]+)\.md$/.exec(path);
   if (catalogue) return url.hash ? '#/object/' + url.hash.slice(1) : '#/work/' + catalogue[1];
+  const object = /^knowledge\/objects\/([a-z0-9-]+)\.md$/.exec(path);
+  if (object) return '#/object/' + object[1];
   const article = /^knowledge\/(works|people|notes)\/([a-z0-9-]+)\.md$/.exec(path);
   return article ? libraryHref({ kind: article[1] as KnowledgeKind, id: article[2] }) : url.href;
 }

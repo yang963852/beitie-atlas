@@ -50,7 +50,7 @@ Sweet Spring at Jiucheng Palace, original stone
 - 函中没有说明此碑是否有碑亭遮蔽、是否可供参观。
 - 该函未记刻立年代；作品条中的年份来自通行著录，仍需补一处来源。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-jiuchenggong) · [实物数据](../../data/objects/stele-jiuchenggong.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-jiuchenggong) · [实物源稿](../../knowledge/objects/stele-jiuchenggong.md)
 
 ## 据以著录的来源
 
@@ -58,4 +58,4 @@ Sweet Spring at Jiucheng Palace, original stone
 
 1. 宝鸡市文物局 Baoji Municipal Cultural Heritage Bureau · [对市十六届人民代表大会六次会议第216号建议的答复函](<https://wwj.baoji.gov.cn/col1892/col9955/202608/t20260821_1295837.html>)（2026-08-21）。定位：Section 一、基本情况: 九成宫醴泉铭碑 and 万年宫铭碑 surviving within the 隋仁寿宫·唐九成宫遗址。查阅于 2026-11-18。
 
-[作品数据](../../data/works/jiuchenggong-liquan-ming.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/jiuchenggong-liquan-ming.md) · [返回知识总目](../README.md)

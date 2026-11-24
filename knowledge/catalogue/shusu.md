@@ -38,7 +38,7 @@ Poems on Shu Silk
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-shusu) · [实物数据](../../data/objects/witness-shusu.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-shusu) · [实物源稿](../../knowledge/objects/witness-shusu.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Poems on Shu Silk
 
 1. 國立故宮博物院 · [蜀素帖](<https://digitalarchive.npm.gov.tw/Collection/Detail/912?dep=P>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/shusu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shusu.md) · [返回知识总目](../README.md)

@@ -50,7 +50,7 @@ Carved blocks of the Modelbook of the Three Rarities Hall
 - 不主张石数：报道作四百九十五方，故宫条目未记，故该数字只作为转述留在作品说明中。
 - 帖石嵌于同为文物建筑的楼壁；本记录不主张开放情况或可否摄影。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/sanxitang-stones) · [实物数据](../../data/objects/sanxitang-stones.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/sanxitang-stones) · [实物源稿](../../knowledge/objects/sanxitang-stones.md)
 
 ## 据以著录的来源
 
@@ -66,4 +66,4 @@ Carved blocks of the Modelbook of the Three Rarities Hall
 
 3. 中国日报网 China Daily · [北京10处新文化空间：去北海公园不只是“荡起双浆”](<https://ent.chinadaily.com.cn/a/202103/02/WS603d9885a3101e7ce97419ee.html>)（2021-03-02）。定位：Paragraph on 阅古楼: built 1753, 495 stone blocks, 135 calligraphers and 340 pieces.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/sanxitang-fatie.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/sanxitang-fatie.md) · [返回知识总目](../README.md)

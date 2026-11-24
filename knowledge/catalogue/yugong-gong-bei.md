@@ -52,7 +52,7 @@ Stele of Duke Yugong, Southern Song rubbing
 - 此册为剪裱装，故每页尺寸非石面尺寸。
 - 馆方所引购价出自《欧斋藏碑帖目录》，未必即本册的入藏记录。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-yugong-nansong) · [实物数据](../../data/objects/rubbing-yugong-nansong.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-yugong-nansong) · [实物源稿](../../knowledge/objects/rubbing-yugong-nansong.md)
 
 <a name="stele-yugong"></a>
 
@@ -79,7 +79,7 @@ Stele of Duke Yugong, original stone
 - 碑在陵园之内；本记录不主张其仍立于原墓前位置。
 - 不记尺寸：所引页面只说下半剥泐，未给高宽。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-yugong) · [实物数据](../../data/objects/stele-yugong.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-yugong) · [实物源稿](../../knowledge/objects/stele-yugong.md)
 
 ## 据以著录的来源
 
@@ -95,4 +95,4 @@ Stele of Duke Yugong, original stone
 
 3. 中国国家图书馆 National Library of China · [北京图书馆藏石刻叙录（十九）](<https://www.nlc.cn/upload/attachments/2026-02-14/40e09fcb.pdf>)。定位：Entry 温彦博碑: 36 lines of 77 characters, about 2,800 characters, lower half effaced, no complete rubbing.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/yugong-gong-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/yugong-gong-bei.md) · [返回知识总目](../README.md)

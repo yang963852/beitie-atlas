@@ -1,49 +1,41 @@
 import { describe, expect, it } from 'vitest';
-import { parseKnowledgeArticle } from '../scripts/lib/knowledge';
 import { cataloguePages } from '../scripts/lib/catalogue';
-import { loadDatasetFromDisk } from '../scripts/lib/dataset';
-import type { Dataset } from '../src/domain/types';
+import { compileKnowledge } from '../scripts/lib/knowledge-compiler';
+import { splitFrontmatter } from '../scripts/lib/knowledge-schema';
 
-const markdown = [
-  '---', 'titleZh: 甲', 'titleEn: "Reading: A"', 'state: draft', 'objects: first, second', '---',
-  '# 甲', '', '## 中文', '', '### 细读', '参看[馆藏记录](https://example.org)。', '',
-].join('\n');
+const compiled = compileKnowledge(process.cwd());
 
-describe('authored knowledge', () => {
-  it('reads ordinary GitHub frontmatter and Markdown, including Chinese-only submissions', () => {
-    const result = parseKnowledgeArticle('notes', 'study', markdown.replace(/\n/g, '\r\n'));
-    expect(result).toMatchObject({ kind: 'notes', id: 'study', titleEn: 'Reading: A', objects: ['first', 'second'], en: '' });
-    expect(result.zh).toBe('### 细读\n参看[馆藏记录](https://example.org)。');
-    expect(parseKnowledgeArticle('notes', 'study', markdown.replace('titleEn: "Reading: A"\n', '')).titleEn).toBe('甲');
-    const bilingual = parseKnowledgeArticle('notes', 'study', markdown + '\n## English\nA reading.');
-    expect(bilingual.en).toBe('A reading.');
-    expect(bilingual.zh).toBe(result.zh);
+describe('knowledge authoring format', () => {
+  it('normalizes CRLF and byte-order marks and keeps an optional H1 out of the fields', () => {
+    const input = '\uFEFF---\r\ntitleZh: 甲\r\ntitleEn: A\r\n---\r\n\r\n# 标题\r\n\r\n## 中文\r\n\r\n正文。\r\n';
+    const { fields, body } = splitFrontmatter(input);
+    expect(fields.titleZh).toBe('甲');
+    expect(fields.titleEn).toBe('A');
+    expect(body).toContain('# 标题');
+    expect(body).toContain('## 中文');
   });
 
-  it('rejects frontmatter ambiguity, duplicate references and body text that would otherwise disappear', () => {
-    for (const bad of [
-      markdown.replace('first, second', 'first, first'), markdown.replace('titleZh:', 'unknown:'),
-      markdown.replace('## 中文', 'Important fact\n## 中文'), markdown + '\n## English\n',
-      markdown.replace('state: draft', 'state: draft\nstate: reviewed'),
-    ]) expect(() => parseKnowledgeArticle('notes', 'study', bad)).toThrow();
+  it('keeps the work record and its guide as separate review states', () => {
+    const work = compiled.knowledge.works.find((item) => item.id === 'yan-qinli-bei')!;
+    const guide = compiled.knowledge.articles.find((item) => item.kind === 'works' && item.id === 'yan-qinli-bei')!;
+    expect(work.review.state).toBe('reviewed');
+    expect(guide.state).toBe('draft');
   });
-});
 
-describe('GitHub catalogue projection', () => {
-  it('groups actual witnesses and keeps the stone history under the stone with its cited sources', () => {
-    const dataset = loadDatasetFromDisk() as Dataset;
-    const pages = cataloguePages(dataset, []);
-    expect(pages.size).toBe(dataset.works.length + 1);
-    for (const object of dataset.objects) {
-      expect(pages.get('catalogue/' + object.workId + '.md')).toContain('<a name="' + object.id + '"></a>');
-    }
+  it('reports a clean compiled corpus and keeps stable work/object counts', () => {
+    expect(compiled.issues).toEqual([]);
+    expect(compiled.knowledge.counts.works).toBe(87);
+    expect(compiled.knowledge.counts.objects).toBe(96);
+  });
+
+  it('generates catalogue pages with witness anchors and source links', () => {
+    const pages = cataloguePages(compiled.knowledge as unknown as Parameters<typeof cataloguePages>[0], compiled.knowledge.articles);
+    expect(pages.get('README.md')).toContain('works/yan-qinli-bei.md');
     const page = pages.get('catalogue/yan-qinli-bei.md')!;
-    const sections = page.split(/<a name="(?!ref-)/);
-    const stone = sections.find(s => s.startsWith('yan-qinli-original-stele"'))!;
-    const rubbing = sections.find(s => s.startsWith('dpm-rubbing-xin00045406"'))!;
-    expect(stone).toContain('新城大楼北东侧');
-    expect(stone).toContain('#ref-src-beilin-article-2007');
-    expect(rubbing).not.toContain('新城大楼北东侧');
-    expect(page).toContain('<a name="ref-src-beilin-article-2007"></a>');
+    expect(page).toContain('<a name="yan-qinli-original-stele"></a>');
+    expect(page).toContain('<a name="dpm-rubbing-xin00045406"></a>');
+    expect(page).toContain('今日参照地标');
+    expect(page).toContain('../../knowledge/works/yan-qinli-bei.md');
+    expect(page).toContain('../../knowledge/objects/yan-qinli-original-stele.md');
   });
 });

@@ -13,4 +13,5 @@ test-results/
 Thumbs.db
 .workbuddy/
 .private/
+/public/download/*.zip
 

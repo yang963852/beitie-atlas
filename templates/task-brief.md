@@ -11,7 +11,7 @@ Use this in a coordinated Issue. A small PR may state the applicable items in it
 | Acceptance | Give one observable example, required checks and relevant failure conditions. |
 | Handoff | State whether to return a note, a reviewed diff or a PR. Name the person deciding the merge. |
 
-**Knowledge example.** Verify the production-period wording for the Palace Museum Yan Qinli rubbing 新00045406, citing the catalogue paragraph. Leave an exact year open if the source gives only a period. Submit the single-witness note in Chinese. [Museum entry](https://www.dpm.org.cn/collection/impres/234175.html)
+**Knowledge example.** Verify the production-period wording for the Palace Museum Yan Qinli rubbing 新00045406, citing the catalogue paragraph. Leave an exact year open if the source gives only a period. Edit `knowledge/objects/dpm-rubbing-xin00045406.md`, run `npm run knowledge:compile`, and submit the single-witness note in Chinese. Do not edit the frozen legacy JSON. [Museum entry](https://www.dpm.org.cn/collection/impres/234175.html)
 
 **Web example.** From `#/person/yan-zhenqing`, reach `#/work/yan-qinli-bei`, refresh and follow a return link with the keyboard. Keep the links readable without a map key. Record the result in a PR for the coordinator.
 

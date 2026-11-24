@@ -52,7 +52,7 @@ Stele of Cuan Baozi, original stone
 - 1778 年出土后此碑曾湮没；所引页面未记湮没期间存放何处。
 - 碑上未署撰书者，故不主张作者。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-cuan-baozi) · [实物数据](../../data/objects/stele-cuan-baozi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-cuan-baozi) · [实物源稿](../../knowledge/objects/stele-cuan-baozi.md)
 
 ## 据以著录的来源
 
@@ -68,4 +68,4 @@ Stele of Cuan Baozi, original stone
 
 3. 云南省文物考古研究所 · [曲靖一中爨文化园建筑设计工程](<https://www.ynkgs.cn/view/ynkgPC/1/248/view/1514.html>)。定位：爨碑亭段落。查阅于 2026-11-18。
 
-[作品数据](../../data/works/cuan-baozi-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/cuan-baozi-bei.md) · [返回知识总目](../README.md)

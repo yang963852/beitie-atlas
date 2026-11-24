@@ -1,9 +1,20 @@
 /// <reference types="vitest/config" />
+import { mkdirSync } from 'node:fs';
+import { join } from 'node:path';
 import react from '@vitejs/plugin-react';
 import { loadEnv, type Plugin } from 'vite';
 import { defineConfig } from 'vitest/config';
 import { runReleaseGate } from './scripts/lib/release-gate';
 import { knowledgePlugin } from './scripts/lib/knowledge-plugin';
+
+// Keep esbuild's scratch files inside the project. On Windows a sandboxed or
+// antivirus-locked system temp directory can refuse the delete that esbuild
+// performs after transpiling, which fails the build after a successful bundle.
+const localTemp = join(process.cwd(), '.private', 'tmp');
+mkdirSync(localTemp, { recursive: true });
+process.env.TEMP = localTemp;
+process.env.TMP = localTemp;
+process.env.TMPDIR = localTemp;
 
 /**
  * Writes the build mode into the served HTML. `scripts/release.ts` checks the
@@ -39,6 +50,7 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     base,
+    server: { watch: { ignored: ['**/.private/**'] } },
     plugins: [react(), knowledgePlugin(process.cwd()), buildModePlugin(buildMode)],
     build: {
       outDir: 'dist',

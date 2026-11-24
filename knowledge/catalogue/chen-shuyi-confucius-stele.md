@@ -40,7 +40,7 @@ Chen Shuyi’s Confucius Temple Repair Stele, original stone
 
 - 所引条目没有给出库房位置，也未核实目前的展出状态。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-chen-shuyi-confucius-stele) · [实物数据](../../data/objects/stele-chen-shuyi-confucius-stele.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-chen-shuyi-confucius-stele) · [实物源稿](../../knowledge/objects/stele-chen-shuyi-confucius-stele.md)
 
 ## 据以著录的来源
 
@@ -48,4 +48,4 @@ Chen Shuyi’s Confucius Temple Repair Stele, original stone
 
 1. 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery · [曹魏、北魏、东魏、北齐、隋碑刻：陈叔毅修孔子庙碑](<https://hwbk.qfwbw.cn/wei/>)。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
 
-[作品数据](../../data/works/chen-shuyi-confucius-stele.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/chen-shuyi-confucius-stele.md) · [返回知识总目](../README.md)

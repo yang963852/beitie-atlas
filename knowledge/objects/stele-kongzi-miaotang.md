@@ -1,0 +1,54 @@
+---
+schemaVersion: 1
+work: kongzi-miaotang-bei
+objectType: recarving
+titleZh: 孔子庙堂碑（西庙堂·宋刻）
+titleEn: Stele of the Confucius Temple, Western Hall recut
+date:
+  kind: range
+  start: 961
+  month: null
+  end: 964
+  endMonth: null
+  era: 北宋建隆二年至乾德二年
+  original: 北宋建隆二年至乾德二年（961—964）
+  certainty: documented
+  note: The provincial summary gives the range for Wang Yanchao's recut.
+catalogNumber: null
+dimensions: null
+survival: surviving
+relationships: []
+collection:
+  kind: collection-institution
+  place: place-xian-beilin-museum
+  sources:
+    - src-beilin-kongzi-miaotang
+    - src-shaanxi-wwz-kongzi
+  accessedAt: 2026-11-18
+  asOf: null
+  note: Both pages place the 西庙堂 recut in the Xi'an Beilin Museum. Neither gives a gallery, an accession date, or an exhibition status.
+  noteZh: 两处页面都记西庙堂本藏西安碑林博物馆。均未给出展厅、入藏时间或展出状态。
+events: []
+review:
+  state: draft
+  note: Draft object record. The recut's date and holding are sourced; its measurements, condition and accession are not, and the two pages disagree on size. The stone was not examined.
+  noteZh: 草稿实物记录。重刻年代与收藏机构有来源；尺寸、保存状况与入藏经过没有来源，且两处所记尺寸不同。未核对原石。
+---
+
+# 孔子庙堂碑（西庙堂·宋刻）
+
+## 待考
+
+### 中文
+
+- 实物是北宋重刻的「西庙堂本」，为碑林最早的藏石之一，不是唐代原石。
+- 省志称碑身断为三块，损字颇多，推测为明嘉靖三十四年（1555）关中大地震所致。
+- 尺寸不填入：碑林记碑身 191 × 108 厘米，省志记 280 × 110 厘米。
+- 未记入藏时间，故不主张此石何时进入碑林。
+
+### English
+
+- The object is the Northern Song recut known as 西庙堂, one of the Beilin's earliest stones; it is not the Tang original.
+- The provincial summary says the stele broke into three blocks, probably in the 1555 Guanzhong earthquake, with many characters lost.
+- No dimension is asserted: the museum gives 191 × 108 cm for the stele body, the provincial summary 280 × 110 cm.
+- No accession date is recorded, so the record does not claim when the stone entered the Beilin.

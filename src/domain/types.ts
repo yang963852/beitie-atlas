@@ -54,6 +54,21 @@ export interface BilingualTitle {
 export type DateKind = 'single' | 'range' | 'approximate' | 'era' | 'unknown';
 export type DateCertainty = 'documented' | 'approximate' | 'disputed' | 'unknown';
 
+/**
+ * What the date dates. A work's year may be a composition, a publication or a
+ * later colophon; an object's year may be a production or a discovery. Keeping
+ * the meaning next to the value prevents 1962 and 1976 from being read as the
+ * same kind of event.
+ */
+export type DateMeaning =
+  | 'composition'
+  | 'publication'
+  | 'colophon'
+  | 'production'
+  | 'discovery'
+  | 'accession'
+  | 'other';
+
 export interface HistoricalDate {
   kind: DateKind;
   startYear: number | null;
@@ -65,6 +80,7 @@ export interface HistoricalDate {
   /** Original wording from the source, preserved verbatim. */
   original: string | null;
   certainty: DateCertainty;
+  meaning?: DateMeaning | null;
   note: string | null;
 }
 
@@ -72,6 +88,8 @@ export type AttributionRole =
   | 'author-and-calligrapher'
   | 'author'
   | 'calligrapher'
+  | 'copyist'
+  | 'colophon-author'
   | 'engraver'
   | 'title-writer'
   | 'compiler'
@@ -87,10 +105,46 @@ export interface Attribution {
   role: AttributionRole;
   name: string;
   nameEn: string | null;
+  /** Local person record when the identity is established. Never inferred from a shared name. */
+  personId?: string | null;
   certainty: DateCertainty;
   sourceRefs: string[];
   /** Editorial caveat, such as a name that sources spell differently. */
   note?: string | null;
+  noteZh?: string | null;
+}
+
+export type ClaimKind = 'source-report' | 'scholarly-opinion' | 'editor-interpretation';
+export type ClaimStance = 'supports' | 'questions' | 'neutral';
+
+/**
+ * A dated, attributed statement: who said what, where. A claim is not a fact.
+ * The same object can carry two claims with different values; no preference is
+ * derived by averaging or by model score.
+ */
+export interface Claim {
+  id: string;
+  kind: ClaimKind;
+  predicate: string;
+  value: string;
+  /** Person or source voice that made the claim, preserved as written. */
+  voice: string | null;
+  personId?: string | null;
+  stance: ClaimStance;
+  certainty: DateCertainty;
+  sourceRefs: string[];
+  /** Narrower than the source locator, e.g. a colophon or entry line. */
+  locator: string | null;
+  note: string | null;
+  noteZh?: string | null;
+}
+
+/** A named transmission group, used only when a source names or groups copies. */
+export interface VersionAssertion {
+  label: string;
+  basis: string | null;
+  sourceRefs: string[];
+  note: string | null;
   noteZh?: string | null;
 }
 
@@ -116,6 +170,7 @@ export interface Work {
   backgroundZh?: string;
   sourceRefs: string[];
   review: Review;
+  claims?: Claim[];
   notes: string[];
   /**
    * Chinese wording of the work notes, same count and order as `notes`.
@@ -189,6 +244,16 @@ export interface ProvenanceEvent {
   placeId: string | null;
   /** Place wording used by the source, preserved as written. */
   placeWording: string | null;
+  /**
+   * A modern reference landmark used only for orientation. It is not the
+   * historical find-place or the object's current storage.
+   */
+  referencePlaceId?: string | null;
+  referenceNote?: string | null;
+  referenceNoteZh?: string | null;
+  /** Short wording for a map rail, not a new historical claim. */
+  shortLabel?: string | null;
+  shortLabelZh?: string | null;
   summary: string;
   /** Chinese wording of the same editorial summary. Must not add a claim. */
   summaryZh?: string | null;
@@ -208,7 +273,12 @@ export interface ObjectRecord {
   relationships: ObjectRelationship[];
   currentCollection: CollectionAssertion;
   provenanceEvents: ProvenanceEvent[];
+  /** Credits specific to this physical thing: a copyist, a colophon author, a carver. */
+  attribution?: Attribution[];
+  /** Optional named transmission group; absent when one unique object needs no grouping. */
+  version?: VersionAssertion | null;
   review: Review;
+  claims?: Claim[];
   notes: string[];
   /** Chinese wording of the editorial notes, same count and order as `notes`. */
   notesZh?: string[];

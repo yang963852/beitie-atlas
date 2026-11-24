@@ -51,7 +51,7 @@ Stele of King Gwanggaeto, original stone
 - 碑立于原处，未见迁移记载；本记录不另设出土地点。
 - 方志称部分文字因裂隙与剥落而损，未逐段说明受损位置。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/haotaiwang-stele) · [实物数据](../../data/objects/haotaiwang-stele.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/haotaiwang-stele) · [实物源稿](../../knowledge/objects/haotaiwang-stele.md)
 
 ## 据以著录的来源
 
@@ -63,4 +63,4 @@ Stele of King Gwanggaeto, original stone
 
 2. 吉林省地方志 Jilin Local Chronicles · [好太王碑](<https://dfz.jl.gov.cn/ybjl/201106/t20110606_5217085.html>)。定位：Entry headed 好太王碑: material, shape, 44 lines of 41 characters, and the attribution to 长寿王.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/haotaiwang-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/haotaiwang-bei.md) · [返回知识总目](../README.md)

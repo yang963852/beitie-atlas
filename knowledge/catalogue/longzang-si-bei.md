@@ -50,7 +50,7 @@ Longzang Temple stele, original stone
 - 二十世纪八十年代的维修无确切年份，因此不记带年份的事件。
 - 此碑按原址记录，未移入博物馆。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-longzang-si) · [实物数据](../../data/objects/stele-longzang-si.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-longzang-si) · [实物源稿](../../knowledge/objects/stele-longzang-si.md)
 
 ## 据以著录的来源
 
@@ -62,4 +62,4 @@ Longzang Temple stele, original stone
 
 2. 石家庄市投资促进局 · [正定：往事与美，可寻可看](<https://tzcjj.sjz.gov.cn/columns/66c7ea0c-6942-4c45-ac98-a23f17b523bf/202311/18/ad85a0d9-f42f-4733-a321-e556f7619bff.html>)（2023-11-18）。定位：第 4 段，龙藏寺碑叙述。查阅于 2026-11-18。
 
-[作品数据](../../data/works/longzang-si-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/longzang-si-bei.md) · [返回知识总目](../README.md)

@@ -16,6 +16,8 @@ Stele of the Ritual Vessels
 
 书体：隶书
 
+延伸阅读：[翁方纲](../people/weng-fanggang.md)
+
 作品待考与说明
 
 - 英文标题为本项目为检索所拟，非来源所用题名。
@@ -38,13 +40,11 @@ Ritual Vessels Stele, Ming rubbing with Zhang Boying’s label
 
 所引资料尚未记下这件实物的递藏经过。
 
-拓自：[礼器碑（原石）](liqi-bei.md#stele-liqi) [出处 3](#ref-src-dpm-234635)
-
 ### 实物待考与说明
 
 - 从碑阳读到碑阴、碑侧，这册把四面的字都拓了下来。翻到“绝思”二字，还可以看到石面损处尚未连在一起时的字口。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/liqi-ming-44512) · [实物数据](../../data/objects/liqi-ming-44512.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/liqi-ming-44512) · [实物源稿](../../knowledge/objects/liqi-ming-44512.md)
 
 <a name="stele-liqi"></a>
 
@@ -52,7 +52,7 @@ Ritual Vessels Stele, Ming rubbing with Zhang Boying’s label
 
 Stele of the Ritual Vessels, original stone
 
-原石 · 存世 · 已审
+原石 · 存世 · 待审
 
 - 制作年代：东汉永寿二年（156年）
 - 著录编号：未记录
@@ -73,7 +73,7 @@ Stele of the Ritual Vessels, original stone
 - 未记录坐标：来源给出的是机构名称，不是实测点位。
 - 所核页面没有给出尺寸。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-liqi) · [实物数据](../../data/objects/stele-liqi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-liqi) · [实物源稿](../../knowledge/objects/stele-liqi.md)
 
 ## 据以著录的来源
 
@@ -89,4 +89,4 @@ Stele of the Ritual Vessels, original stone
 
 3. 故宫博物院 · [明拓东汉礼器碑](<https://www.dpm.org.cn/collection/impres/234635.html>)。定位：新00044512，简介中本拓本一段。查阅于 2026-11-19。
 
-[作品数据](../../data/works/liqi-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/liqi-bei.md) · [返回知识总目](../README.md)

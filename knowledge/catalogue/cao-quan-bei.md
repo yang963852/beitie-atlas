@@ -49,7 +49,7 @@ Stele of Cao Quan, original stone
 - 碑上未署书者姓名，因此不主张书写者。
 - 碑林条目记载万历年间出土、1956 年移存；未核实当前的展出位置。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-cao-quan) · [实物数据](../../data/objects/stele-cao-quan.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-cao-quan) · [实物源稿](../../knowledge/objects/stele-cao-quan.md)
 
 ## 据以著录的来源
 
@@ -69,4 +69,4 @@ Stele of Cao Quan, original stone
 
 4. 学习强国（陕西省文物局供稿） · [【陕西文物览】西安碑林——曹全碑](<https://article.xuexi.cn/articles/index.html?art_id=4315005110163964749>)。查阅于 2026-11-18。
 
-[作品数据](../../data/works/cao-quan-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/cao-quan-bei.md) · [返回知识总目](../README.md)

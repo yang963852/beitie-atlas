@@ -9,18 +9,27 @@
   },
   "scripts": {
     "dev": "vite",
+    "predev": "npm run knowledge:compile && npm run knowledge:generate && npm run knowledge:package",
     "build": "npm run typecheck && vite build",
+    "prebuild": "npm run knowledge:compile && npm run knowledge:generate && npm run knowledge:package",
     "release": "tsx scripts/release.ts",
     "check:release": "tsx scripts/release.ts --check",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "check:data": "tsx scripts/check-data.ts",
     "check:docs": "node scripts/check-board.mjs",
+    "knowledge:compile": "tsx scripts/knowledge-compile.ts",
     "knowledge:generate": "tsx scripts/knowledge-catalogue.ts",
     "check:knowledge": "tsx scripts/knowledge-catalogue.ts --check",
+    "check:interface": "tsx scripts/knowledge-compile.ts --check",
+    "check:isolation": "tsx scripts/check-isolation.ts",
+    "check:reproducible": "tsx scripts/check-reproducible.ts",
+    "knowledge:parity": "tsx scripts/knowledge-parity.ts",
+    "knowledge:package": "tsx scripts/knowledge-package.ts",
     "check:map-key": "tsx scripts/check-map-key.ts",
+    "knowledge:inventory": "tsx scripts/knowledge-inventory.ts",
     "test": "vitest run",
-    "check": "npm run typecheck && npm run check:data && npm run check:knowledge && npm run check:docs && npm run test && vite build"
+    "check": "npm run check:interface && npm run typecheck && npm run check:data && npm run check:knowledge && npm run check:isolation && npm run check:reproducible && npm run check:docs && npm run test && npm run knowledge:package && vite build"
   },
   "dependencies": {
     "react": "19.3.1",

@@ -50,7 +50,7 @@ Kaicheng Stone Classics, original stones
 - 未记录坐标：只给出机构名称，不是实测点位。
 - 是否全部公开展陈，页面未作说明。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-kaicheng-shijing) · [实物数据](../../data/objects/stele-kaicheng-shijing.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-kaicheng-shijing) · [实物源稿](../../knowledge/objects/stele-kaicheng-shijing.md)
 
 ## 据以著录的来源
 
@@ -62,4 +62,4 @@ Kaicheng Stone Classics, original stones
 
 2. 中国教育网络电视台（河南博物院供稿） · [博物馆之夜——唐开成石经](<https://www.centv.cn/p/525095.html>)。查阅于 2026-11-18。
 
-[作品数据](../../data/works/kaicheng-shijing.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/kaicheng-shijing.md) · [返回知识总目](../README.md)

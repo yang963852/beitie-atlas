@@ -1,0 +1,54 @@
+---
+schemaVersion: 1
+work: langya-keshi
+objectType: fragment
+titleZh: 琅琊刻石（残石）
+titleEn: Langya Inscription, surviving fragment
+date:
+  kind: single
+  start: -219
+  month: null
+  end: -219
+  endMonth: null
+  era: null
+  original: 秦始皇二十八年（前 219）
+  certainty: documented
+  note: The original stone was erected in 219 BCE. The surviving block preserves text from that carving as well as the 209 BCE addition.
+catalogNumber: null
+dimensions:
+  raw: 高 132.2 厘米，宽 65.8—71.3 厘米，厚 36.2 厘米
+  note: Measurements from the museum's stone and tile catalogue listing, not of the original cliff face.
+survival: surviving
+relationships: []
+collection:
+  kind: collection-institution
+  place: place-national-museum
+  sources:
+    - src-chnmuseum-langya
+    - src-chnmuseum-langya-dimensions
+  accessedAt: 2026-11-18
+  asOf: null
+  note: Listed in the National Museum's online collection catalogue. The page does not state a gallery, storage area, or exhibition status, and gives no accession date.
+  noteZh: 著录于中国国家博物馆线上藏品目录。条目没有说明展厅、库房或展出状态，也没有给出入藏时间。
+events: []
+review:
+  state: draft
+  note: Draft object record built from the museum's collection page read on 2026-11-18. The removal of the stone from the cliff in the Qing dynasty is stated, but no dated event sequence or accession record is given.
+  noteZh: 草稿实物记录，依据 2026-11-18 阅读的馆方藏品页整理。页面提到清代将刻石从山崖凿下，但没有具日期的迁移经过或入藏记录。
+---
+
+# 琅琊刻石（残石）
+
+## 待考
+
+### 中文
+
+- 馆方称此残石为原石后半部；所引页面未记原石前半部仍然存世。
+- 页面没有馆藏编号、出土记录或入藏时间，故均不填写。
+- 残石状况仅以「字已漫漶」概述，未引用保存状况调查。
+
+### English
+
+- The museum describes the block as the rear half of the original stone. The front half is not recorded as extant on the cited page.
+- No catalogue number, excavation record, or accession date is given, so none is stored.
+- The fragment's condition is described only as 字已漫漶 (the characters are worn); no condition survey is cited.

@@ -39,7 +39,7 @@ Cold Food Poems
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-hanshi) · [实物数据](../../data/objects/witness-hanshi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-hanshi) · [实物源稿](../../knowledge/objects/witness-hanshi.md)
 
 ## 据以著录的来源
 
@@ -51,4 +51,4 @@ Cold Food Poems
 
 2. 國立故宮博物院《故宮文物月刊》 · [王世杰先生與《寒食帖》](<https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3990>)。定位：Liu Meng’s article on Wang’s purchase of the scroll from Japan。查阅于 2026-11-18。
 
-[作品数据](../../data/works/hanshi.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/hanshi.md) · [返回知识总目](../README.md)

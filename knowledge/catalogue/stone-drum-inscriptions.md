@@ -48,7 +48,7 @@ Stone Drum Inscriptions, Palace Museum Ming rubbing album
 
 - 馆方说明此册缺第八鼓。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-rubbing-shigu-xin00045770) · [实物数据](../../data/objects/dpm-rubbing-shigu-xin00045770.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-rubbing-shigu-xin00045770) · [实物源稿](../../knowledge/objects/dpm-rubbing-shigu-xin00045770.md)
 
 <a name="stone-drums-original-set"></a>
 
@@ -75,7 +75,7 @@ Qin Stone Drums, original set of ten
 
 - 馆方概述尺寸不作为逐鼓实测值。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stone-drums-original-set) · [实物数据](../../data/objects/stone-drums-original-set.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stone-drums-original-set) · [实物源稿](../../knowledge/objects/stone-drums-original-set.md)
 
 ## 据以著录的来源
 
@@ -91,4 +91,4 @@ Qin Stone Drums, original set of ten
 
 3. 故宫博物院 · [第一百一十三讲：石鼓文及其拓本](<https://www.dpm.org.cn/gugongforum/detail/245912.html>)。定位：Lecture description on the Daguan transfer and the 1933 evacuation。查阅于 2026-11-18。
 
-[作品数据](../../data/works/stone-drum-inscriptions.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/stone-drum-inscriptions.md) · [返回知识总目](../README.md)

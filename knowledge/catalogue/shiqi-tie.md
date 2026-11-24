@@ -49,7 +49,7 @@ Album of rubbings of the Seventeen-Day Letters
 - 未记关系：馆方著录未指明所自拓的刻石或木板，故不设推定的母本。
 - 馆方定为拓本；所读字段未描述纸张、装裱与鉴藏印。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/shiqi-tie-album) · [实物数据](../../data/objects/shiqi-tie-album.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/shiqi-tie-album) · [实物源稿](../../knowledge/objects/shiqi-tie-album.md)
 
 ## 据以著录的来源
 
@@ -61,4 +61,4 @@ Album of rubbings of the Seventeen-Day Letters
 
 2. The Metropolitan Museum of Art · [On the Seventeenth Day (十七帖拓本册, 1991.380)](<https://www.metmuseum.org/art/collection/search/39899>)。定位：Object record: title, date, medium, dimensions, credit line, accession number and public-domain status.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/shiqi-tie.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shiqi-tie.md) · [返回知识总目](../README.md)

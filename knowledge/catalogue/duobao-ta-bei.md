@@ -50,7 +50,7 @@ Duobao Pagoda Stele, original stone
 - 出土、入藏与今日陈列状态在所核来源中没有记载，留空。
 - 未记录坐标：来源给出的是机构名称，不是实测点位。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-duobao-ta) · [实物数据](../../data/objects/stele-duobao-ta.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-duobao-ta) · [实物源稿](../../knowledge/objects/stele-duobao-ta.md)
 
 ## 据以著录的来源
 
@@ -66,4 +66,4 @@ Duobao Pagoda Stele, original stone
 
 3. 中国政法大学法律古籍整理研究所 · [「法度与气象：在碑刻中遇见盛唐」展品简介（六）](<https://flgj.cupl.edu.cn/info/1074/4178.htm>)。查阅于 2026-11-18。
 
-[作品数据](../../data/works/duobao-ta-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/duobao-ta-bei.md) · [返回知识总目](../README.md)

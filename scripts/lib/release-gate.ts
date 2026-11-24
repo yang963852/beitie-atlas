@@ -8,10 +8,8 @@
 
 import { existsSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { validateDataset, type ValidationReport } from '../../src/domain/validate';
-import { loadDatasetFromDisk } from './dataset';
-import { readKnowledge } from './knowledge';
-import { knowledgeSourceIds } from '../../src/domain/knowledge-types';
+import type { ValidationReport } from '../../src/domain/validate';
+import { compileKnowledge } from './knowledge-compiler';
 
 export const OUTPUT_DIR = 'dist';
 export const MANIFEST_FILE = 'release-manifest.json';
@@ -27,17 +25,17 @@ export interface ReleaseManifest {
   counts: CorpusReport['counts'];
 }
 
-type CorpusReport = ValidationReport & { counts: ReturnType<typeof readKnowledge>['counts'] };
+type CorpusReport = ValidationReport & { counts: ReturnType<typeof compileKnowledge>['knowledge']['counts'] };
 
 export function checkCorpus(root: string, releaseMode: boolean): CorpusReport {
-  const dataset = loadDatasetFromDisk(root);
-  const knowledge = readKnowledge(root, dataset, releaseMode);
-  const report = validateDataset(dataset, {
-    releaseMode, knowledgeSources: knowledgeSourceIds(knowledge.articles, knowledge.relations),
-  });
+  const compiled = compileKnowledge(root, { releaseMode });
+  const { knowledge } = compiled;
+  const report = compiled.validation;
   return {
-    ...report, ok: report.ok && knowledge.errors.length === 0,
-    errors: [...report.errors, ...knowledge.errors], counts: { ...report.counts, ...knowledge.counts },
+    ...report,
+    ok: report.ok && compiled.issues.length === 0,
+    errors: compiled.issues,
+    counts: knowledge.counts,
   };
 }
 

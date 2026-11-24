@@ -50,7 +50,7 @@ Inscription for the Jin Shrine, 1772 recarving
 - 摹刻不能作为唐碑原貌的证据，不得据以推断原石字口。
 - 未记录坐标。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-jinci-ming-1772) · [实物数据](../../data/objects/stele-jinci-ming-1772.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-jinci-ming-1772) · [实物源稿](../../knowledge/objects/stele-jinci-ming-1772.md)
 
 <a name="stele-jinci-ming"></a>
 
@@ -79,7 +79,7 @@ Inscription for the Jin Shrine, Tang original
 - 未记录坐标。
 - 来源没有完整列出碑阴七位功臣的题名。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-jinci-ming) · [实物数据](../../data/objects/stele-jinci-ming.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-jinci-ming) · [实物源稿](../../knowledge/objects/stele-jinci-ming.md)
 
 ## 据以著录的来源
 
@@ -87,4 +87,4 @@ Inscription for the Jin Shrine, Tang original
 
 1. 太原市人民政府 Taiyuan Municipal People’s Government · [唐太宗唯一存世石碑蕴藏着何种治国安邦思想](<https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html>)（2025-04-14）。定位：Interview with 晋祠博物馆 curator 郭保平: 646 date, 1.95 × 1.2 × 0.27 m, 1203 characters, 984 relocation hypothesis, condition。查阅于 2026-11-18。
 
-[作品数据](../../data/works/jinci-zhi-ming.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/jinci-zhi-ming.md) · [返回知识总目](../README.md)

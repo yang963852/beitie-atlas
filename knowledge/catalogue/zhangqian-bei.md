@@ -50,7 +50,7 @@ Stele of Zhang Qian, original stone
 - 尺寸、出土地点与移入岱庙的经过，所核来源都没有记载。
 - 出土年代仍据二手图录，只有「明初」的大致说法。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-zhangqian) · [实物数据](../../data/objects/stele-zhangqian.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-zhangqian) · [实物源稿](../../knowledge/objects/stele-zhangqian.md)
 
 ## 据以著录的来源
 
@@ -70,4 +70,4 @@ Stele of Zhang Qian, original stone
 
 4. 泰山风景名胜区管理委员会 · [岱庙（景点介绍）](<https://tsgw.taian.gov.cn/art/2021/6/13/art_363479_10320189.html>)（2021-06-13）。定位：First paragraph of the site history。查阅于 2026-11-18。
 
-[作品数据](../../data/works/zhangqian-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/zhangqian-bei.md) · [返回知识总目](../README.md)

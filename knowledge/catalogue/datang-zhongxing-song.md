@@ -52,7 +52,7 @@ Eulogy of the Tang Restoration, cliff inscription
 - 页面称崖面现状完整，但没有保存状况调查或保护记录。
 - 未记录坐标。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/cliff-datang-zhongxing-song) · [实物数据](../../data/objects/cliff-datang-zhongxing-song.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/cliff-datang-zhongxing-song) · [实物源稿](../../knowledge/objects/cliff-datang-zhongxing-song.md)
 
 ## 据以著录的来源
 
@@ -64,4 +64,4 @@ Eulogy of the Tang Restoration, cliff inscription
 
 2. 永州市人民政府 Yongzhou Municipal People’s Government · [烟雨潇湘·诗画永州 ——摩崖石刻之旅](<https://yzcity.gov.cn/cnyz/cswh/202208/ecf2a276c80a4f2b87aec3e8957f5313.shtml>)（2022-08-01）。定位：浯溪 section: 大唐中兴颂 310 × 320 cm, 21 lines, 332 characters, 15 cm characters。查阅于 2026-11-18。
 
-[作品数据](../../data/works/datang-zhongxing-song.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/datang-zhongxing-song.md) · [返回知识总目](../README.md)

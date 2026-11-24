@@ -40,7 +40,7 @@ Record of the Immortal Altar, rubbing
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-magu) · [实物数据](../../data/objects/witness-magu.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-magu) · [实物源稿](../../knowledge/objects/witness-magu.md)
 
 ## 据以著录的来源
 
@@ -48,4 +48,4 @@ Record of the Immortal Altar, rubbing
 
 1. 故宫博物院 · [麻姑仙坛记（翻刻旧拓）](<https://www.dpm.org.cn/collection/impres/234172.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/magu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/magu.md) · [返回知识总目](../README.md)

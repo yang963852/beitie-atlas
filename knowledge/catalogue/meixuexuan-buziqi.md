@@ -42,7 +42,7 @@ Meixuexuan Inscription of Huiweng’s Essay, stone
 
 - 所引条目没有给出库房位置，也未核实目前的展出状态。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-meixuexuan-buziqi) · [实物数据](../../data/objects/stele-meixuexuan-buziqi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-meixuexuan-buziqi) · [实物源稿](../../knowledge/objects/stele-meixuexuan-buziqi.md)
 
 ## 据以著录的来源
 
@@ -50,4 +50,4 @@ Meixuexuan Inscription of Huiweng’s Essay, stone
 
 1. 西安碑林博物馆 Xi’an Beilin Museum · [梅雪轩书晦翁不自弃文](<https://www.beilin-museum.com/index.php?a=index&aid=4621&c=View&m=home>)（2025-04-28）。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
 
-[作品数据](../../data/works/meixuexuan-buziqi.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/meixuexuan-buziqi.md) · [返回知识总目](../README.md)

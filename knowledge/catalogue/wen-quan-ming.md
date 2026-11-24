@@ -49,7 +49,7 @@ Inscription on the Hot Spring, Tang rubbing fragment
 - 所引报道没有叙述此卷自敦煌藏经洞到巴黎的经过。
 - 未记录坐标。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-wenquan-ming) · [实物数据](../../data/objects/rubbing-wenquan-ming.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-wenquan-ming) · [实物源稿](../../knowledge/objects/rubbing-wenquan-ming.md)
 
 ## 据以著录的来源
 
@@ -61,4 +61,4 @@ Inscription on the Hot Spring, Tang rubbing fragment
 
 2. 施安昌 · 故宫博物院网站所载论文 · [敦煌石室发现的四种碑刻古拓——兼谈中国书籍制度的变迁](<https://www.dpm.org.cn/Uploads/pdf/1887/T00071_00.pdf>)。定位：Page 71, opening paragraph。查阅于 2026-11-18。
 
-[作品数据](../../data/works/wen-quan-ming.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/wen-quan-ming.md) · [返回知识总目](../README.md)

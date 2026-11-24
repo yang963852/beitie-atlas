@@ -53,7 +53,7 @@ Jade-version stone of the Thirteen Lines
 - 来源称其石「似碧玉」，是外观形容，非岩性鉴定，故不主张石种。
 - 1900 年后的流散只有概括表述；清内府至 1981 年之间未记具体藏家。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/luoshen-yuban-stone) · [实物数据](../../data/objects/luoshen-yuban-stone.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/luoshen-yuban-stone) · [实物源稿](../../knowledge/objects/luoshen-yuban-stone.md)
 
 ## 据以著录的来源
 
@@ -65,4 +65,4 @@ Jade-version stone of the Thirteen Lines
 
 2. 央广网 China National Radio · [双说顾恺之与王献之的《洛神赋图》](<https://www.cnr.cn/jx/2011jxfw/gjms/20151113/t20151113_520493084.shtml>)（2015-11-13）。定位：Paragraphs on the 玉版, its rediscovery at 葛岭, the 1981 purchase and transfer to 首都博物馆.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/luoshen-shisanhang.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/luoshen-shisanhang.md) · [返回知识总目](../README.md)

@@ -52,7 +52,7 @@ The Shiping Gong dedication on the north wall of Guyang Cave
 - 阳刻拓本呈黑底白字，与阴刻相反；本记录不复制任何拓片。
 - 不设递藏事件：此刻一直在洞中，所引来源未见移出记载。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/shipinggong-inscription) · [实物数据](../../data/objects/shipinggong-inscription.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/shipinggong-inscription) · [实物源稿](../../knowledge/objects/shipinggong-inscription.md)
 
 ## 据以著录的来源
 
@@ -64,4 +64,4 @@ The Shiping Gong dedication on the north wall of Guyang Cave
 
 2. 上海市文化和旅游局 Shanghai Municipal Administration of Culture and Tourism · [跨越时空，对话龙门石窟云文博](<https://www.meet-in-shanghai.net/cn/news/%E3%80%90art-forward%E3%80%91across-time-and-space-dialogue-with-longmen-grottoesyunwenbo-717187/>)。定位：Entry 始平公造像题记 拓片: 498, 孟达撰文, 朱义章书, 古阳洞北壁, rubbing 89 × 39 cm, 龙门石窟研究院藏.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/shipinggong-zaoxiang-ji.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shipinggong-zaoxiang-ji.md) · [返回知识总目](../README.md)

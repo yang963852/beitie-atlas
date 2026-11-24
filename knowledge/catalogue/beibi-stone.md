@@ -43,7 +43,7 @@ Northern Stair Stone, inscribed stone
 
 - 所引条目没有给出库房位置，也未核实目前的展出状态。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-beibi-stone) · [实物数据](../../data/objects/stele-beibi-stone.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-beibi-stone) · [实物源稿](../../knowledge/objects/stele-beibi-stone.md)
 
 ## 据以著录的来源
 
@@ -51,4 +51,4 @@ Northern Stair Stone, inscribed stone
 
 1. 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery · [西汉•北陛石（鲁灵光殿址刻石）](<https://hwbk.qfwbw.cn/xihan/2017-01-10/3289.html>)。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
 
-[作品数据](../../data/works/beibi-stone.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/beibi-stone.md) · [返回知识总目](../README.md)

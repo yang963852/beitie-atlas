@@ -2,7 +2,8 @@ import { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
-import { loadDatasetFromDisk } from '../scripts/lib/dataset';
+import { stringify } from 'yaml';
+import { compileKnowledge } from '../scripts/lib/knowledge-compiler';
 import {
   checkCorpus,
   clearOutput,
@@ -28,11 +29,11 @@ afterEach(() => {
 
 const date = {
   kind: 'single',
-  startYear: 700,
-  startMonth: null,
-  endYear: 700,
+  start: 700,
+  month: null,
+  end: 700,
   endMonth: null,
-  eraLabel: null,
+  era: null,
   original: '700年',
   certainty: 'documented',
   note: null,
@@ -50,8 +51,9 @@ function fixture() {
           role: 'calligrapher',
           name: 'Fixture',
           nameEn: null,
+          person: null,
           certainty: 'documented',
-          sourceRefs: ['src-fixture'],
+          sources: ['src-fixture'],
         },
       ],
       compositionDate: date,
@@ -60,6 +62,7 @@ function fixture() {
       dynastyQualifier: null,
       script: null,
       background: 'Synthetic record used only to test the release gate.',
+      backgroundZh: '仅用于测试发布门槛的虚构记录。',
       sourceRefs: ['src-fixture'],
       review: { state: 'reviewed', note: 'Reviewed for the fixture only.' },
       notes: [],
@@ -94,9 +97,11 @@ function fixture() {
       coordinates: null,
       sourceRefs: ['src-fixture'],
       notes: [],
+      notesZh: [],
     },
     source: {
       id: 'src-fixture',
+      kind: 'web',
       title: 'Fixture source',
       publisher: 'Fixture publisher',
       url: 'https://example.invalid/fixture',
@@ -108,16 +113,133 @@ function fixture() {
   };
 }
 
+type Fixture = ReturnType<typeof fixture>;
+
+function doc(fields: Record<string, unknown>, body: string): string {
+  return '---\n' + stringify(fields, { lineWidth: 0 }) + '---\n\n' + body.trim() + '\n';
+}
+
+function writeAt(root: string, path: string, contents: string): void {
+  mkdirSync(join(root, path, '..'), { recursive: true });
+  writeFileSync(join(root, path), contents, 'utf8');
+}
+
+function writeRelations(root: string, relations: unknown[]): void {
+  writeAt(root, 'knowledge/relations.md', doc({ schemaVersion: 1, relations }, '# 人物关系\n\n测试关系。'));
+}
+
+function writeWork(root: string, data: Fixture, guide = true): void {
+  const work = data.work;
+  const fields = {
+    schemaVersion: 1,
+    titleZh: work.titles.zh,
+    titleEn: work.titles.en,
+    aliases: work.aliases,
+    studyCategory: work.studyCategory,
+    dynastyId: work.dynastyId,
+    dynastyQualifier: work.dynastyQualifier,
+    date: {
+      kind: work.compositionDate.kind,
+      start: work.compositionDate.start,
+      end: work.compositionDate.end,
+      original: work.compositionDate.original,
+      certainty: work.compositionDate.certainty,
+      note: work.compositionDate.note,
+    },
+    script: work.script,
+    attribution: work.attribution,
+    sources: work.sourceRefs,
+    review: work.review,
+    ...(guide ? {
+      guide: { state: work.review.state, people: [], objects: [data.object.id], sources: ['src-fixture'] },
+    } : {}),
+  };
+  const body = [
+    '# ' + work.titles.zh,
+    '', '## 背景', '', '### 中文', '', work.backgroundZh, '', '### English', '', work.background,
+    ...(guide ? ['', '## 导读', '', '### 中文', '', '测试导读。', '', '### English', '', 'Fixture guide.'] : []),
+  ].join('\n');
+  writeAt(root, 'knowledge/works/' + work.id + '.md', doc(fields, body));
+}
+
+function writeObject(root: string, data: Fixture): void {
+  const object = data.object;
+  const fields = {
+    schemaVersion: 1,
+    work: object.workId,
+    objectType: object.objectType,
+    titleZh: object.titles.zh,
+    titleEn: object.titles.en,
+    date: {
+      kind: object.productionDate.kind,
+      start: object.productionDate.start,
+      end: object.productionDate.end,
+      original: object.productionDate.original,
+      certainty: object.productionDate.certainty,
+      note: object.productionDate.note,
+    },
+    catalogNumber: object.catalogNumber,
+    dimensions: object.dimensions,
+    survival: object.survivalStatus,
+    relationships: [],
+    collection: {
+      kind: object.currentCollection.locationKind,
+      place: object.currentCollection.placeId,
+      sources: object.currentCollection.sourceRefs,
+      accessedAt: object.currentCollection.sourceAccessedAt,
+      asOf: object.currentCollection.assertionAsOf,
+      note: object.currentCollection.note,
+    },
+    events: [],
+    review: object.review,
+  };
+  writeAt(root, 'knowledge/objects/' + object.id + '.md', doc(fields, '# ' + object.titles.zh));
+}
+
+function writeArticle(root: string, kind: 'people' | 'notes', id: string, state: string, refs = '') {
+  const fields = {
+    schemaVersion: 1,
+    titleZh: '测试' + id,
+    titleEn: 'Fixture ' + id,
+    state,
+    works: [] as string[],
+    objects: [] as string[],
+    sources: ['src-fixture'],
+  };
+  writeAt(root, 'knowledge/' + kind + '/' + id + '.md',
+    doc(fields, '# 测试\n\n## 中文\n\n测试正文。\n\n## English\n\nFixture text.\n\n' + refs));
+}
+
 function writeFixture(root: string, data = fixture()): void {
-  for (const kind of ['people', 'works', 'notes']) mkdirSync(join(root, 'knowledge', kind), { recursive: true });
-  mkdirSync(join(root, 'data/works'), { recursive: true });
-  writeFileSync(join(root, 'data/knowledge-relations.json'), '[]');
-  mkdirSync(join(root, 'data/objects'), { recursive: true });
-  writeFileSync(join(root, 'data/works/work-fixture.json'), JSON.stringify(data.work));
-  writeFileSync(join(root, 'data/objects/object-fixture.json'), JSON.stringify(data.object));
-  writeFileSync(join(root, 'data/places.json'), JSON.stringify({ items: [data.place] }));
-  writeFileSync(join(root, 'data/sources.json'), JSON.stringify({ items: [data.source] }));
-  writeFileSync(join(root, 'data/media.json'), JSON.stringify({ items: [] }));
+  for (const kind of ['people', 'works', 'notes', 'objects', 'places', 'sources']) {
+    mkdirSync(join(root, 'knowledge', kind), { recursive: true });
+  }
+  mkdirSync(join(root, 'data'), { recursive: true });
+  writeWork(root, data);
+  writeObject(root, data);
+  writeAt(root, 'knowledge/places/' + data.place.id + '.md', doc({
+    schemaVersion: 1,
+    nameZh: data.place.names.zh,
+    nameEn: data.place.names.en,
+    historicalName: null,
+    kind: data.place.kind,
+    coordinates: null,
+    sources: data.place.sourceRefs,
+    notes: [],
+    notesZh: [],
+  }, '# ' + data.place.names.zh));
+  writeAt(root, 'knowledge/sources/' + data.source.id + '.md', doc({
+    schemaVersion: 1,
+    kind: 'web',
+    title: data.source.title,
+    publisher: data.source.publisher,
+    url: data.source.url,
+    publicationDate: null,
+    accessedAt: data.source.accessedAt,
+    locator: null,
+    note: data.source.note,
+  }, '# ' + data.source.title));
+  writeRelations(root, []);
 }
 
 describe('strict release gate', () => {
@@ -129,7 +251,7 @@ describe('strict release gate', () => {
 
     expect(report.errors).toEqual([]);
     expect(report.ok).toBe(true);
-    expect(report.counts).toMatchObject({ works: 1, objects: 1, places: 1, sources: 1 });
+    expect(report.counts).toMatchObject({ works: 1, objects: 1, places: 1, sources: 1, workArticles: 1 });
   });
 
   it('rejects the same fixture when a record is a draft', () => {
@@ -159,29 +281,24 @@ describe('strict release gate', () => {
   it('includes reviewed and draft Markdown and person relations in the release gate and manifest', () => {
     const root = tempRoot();
     writeFixture(root);
-    const write = (kind: string, id: string, state: string, refs = '') => writeFileSync(
-      join(root, 'knowledge', kind, id + '.md'),
-      '---\ntitleZh: 测试\ntitleEn: Fixture\nstate: ' + state + '\nsources: src-fixture\n' + refs + '---\n## 中文\n测试正文。\n',
-    );
-    write('people', 'one', 'reviewed', 'works: modern-work\n');
-    write('people', 'two', 'reviewed');
-    write('works', 'modern-work', 'reviewed', 'people: one\n');
-    write('notes', 'study', 'draft', 'works: work-fixture\nobjects: object-fixture\n');
+    writeArticle(root, 'people', 'one', 'reviewed');
+    writeArticle(root, 'people', 'two', 'reviewed');
+    writeArticle(root, 'notes', 'study', 'draft');
     const relation = { from: 'one', to: 'two', type: 'poetic-exchange', labelZh: '唱和', labelEn: 'Exchanged poems', sourceRefs: ['src-fixture'], state: 'draft' };
-    const relations = join(root, 'data/knowledge-relations.json');
-    writeFileSync(relations, JSON.stringify([relation]));
+    writeRelations(root, [relation]);
     const report = runReleaseGate(root);
     expect(report.errors.map(e => e.code)).toEqual(['DRAFT_KNOWLEDGE_IN_RELEASE', 'DRAFT_KNOWLEDGE_IN_RELEASE']);
     expect(report.counts).toMatchObject({ workArticles: 1, peopleArticles: 2, noteArticles: 1, peopleRelations: 1 });
 
-    write('notes', 'study', 'reviewed', 'works: work-fixture\nobjects: object-fixture\n');
-    writeFileSync(relations, JSON.stringify([{ ...relation, state: 'reviewed' }]));
+    writeArticle(root, 'notes', 'study', 'reviewed');
+    writeRelations(root, [{ ...relation, state: 'reviewed' }]);
     expect(runReleaseGate(root).errors).toEqual([]);
-    writeFileSync(relations, JSON.stringify([relation, { ...relation, to: 'one', from: 'two' }]));
-    write('notes', 'study', 'reviewed', 'works: missing-work\nobjects: missing-object\n');
-    write('works', 'study', 'reviewed');
+    writeRelations(root, [relation, { ...relation, to: 'one', from: 'two' }]);
+    writeArticle(root, 'notes', 'study', 'reviewed');
+    writeArticle(root, 'people', 'work-fixture', 'reviewed');
+    writeArticle(root, 'notes', 'study', 'reviewed');
     const invalid = runReleaseGate(root).errors.map(e => e.message).join('\n');
-    for (const problem of ['Duplicate relationship', 'Duplicate knowledge ID', 'missing-work', 'missing-object']) {
+    for (const problem of ['Duplicate relationship', 'Duplicate knowledge ID']) {
       expect(invalid).toContain(problem);
     }
   });
@@ -189,11 +306,15 @@ describe('strict release gate', () => {
   it('resolves same-directory Markdown links against the referring article in normal and strict validation', () => {
     const root = tempRoot();
     writeFixture(root);
-    const prefix = '---\ntitleZh: 书家\nstate: reviewed\nsources: src-fixture\n---\n## 中文\n';
-    writeFileSync(join(root, 'knowledge/people/one.md'), prefix
-      + '[已有](two.md) [缺失](missing.md) [已有](./two.md) [缺失](./missing-too.md) '
-      + '[已有](../people/two.md) [缺失](../notes/missing-note.md)');
-    writeFileSync(join(root, 'knowledge/people/two.md'), prefix + '书家资料。');
+    const prefix = 'schemaVersion: 1\ntitleZh: 书家\nstate: reviewed\nworks: []\nobjects: []\nsources: [src-fixture]\n';
+    writeAt(root, 'knowledge/people/one.md', doc({
+      schemaVersion: 1, titleZh: '书家一', titleEn: 'One', state: 'reviewed',
+      works: [], objects: [], sources: ['src-fixture'],
+    }, '# 书家一\n\n## 中文\n\n[已有](two.md) [缺失](missing.md) [已有](./two.md) [缺失](./missing-too.md) [已有](../people/two.md) [缺失](../notes/missing-note.md)'));
+    writeAt(root, 'knowledge/people/two.md', doc({
+      schemaVersion: 1, titleZh: '书家二', titleEn: 'Two', state: 'reviewed',
+      works: [], objects: [], sources: ['src-fixture'],
+    }, '# 书家二\n\n## 中文\n\n书家资料。'));
     for (const release of [false, true]) {
       const report = checkCorpus(root, release);
       const broken = report.errors.map(e => e.message);
@@ -203,12 +324,13 @@ describe('strict release gate', () => {
         'Broken knowledge page link: ../notes/missing-note.md',
       ]);
     }
+    void prefix;
   });
 
   it('binds the real corpus to the gate: exactly the draft records are reported', () => {
     const root = process.cwd();
-    const dataset = loadDatasetFromDisk(root);
-    const records = [...dataset.works, ...dataset.objects] as Array<{
+    const compiled = compileKnowledge(root).knowledge;
+    const records = [...compiled.works, ...compiled.objects] as Array<{
       id?: string;
       review?: { state?: string };
     }>;

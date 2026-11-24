@@ -55,3 +55,16 @@
 .library-edit {display:inline-block;padding:.45rem .9rem;border:1px solid #b19b7c;border-radius:3px;text-decoration:none;margin:0 0 1rem;}
 .reading-main article {max-width:42rem;margin-inline:auto;}
 .reading-main .knowledge-prose {line-height:2;}
+.library-objects {display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.6rem;margin:1rem 0;}
+.library-objects button {text-align:left;background:#fffdf8;border:1px solid #c8bca6;border-radius:4px;padding:.7rem .8rem;cursor:pointer;color:inherit;font:inherit;}
+.library-objects button[aria-pressed="true"] {border-color:var(--binding);box-shadow:0 0 0 2px #7f3a2b33;}
+.library-objects strong, .library-objects small {display:block;}
+.library-objects small {margin-top:.25rem;color:#675d4c;}
+.library-object {border-left:2px solid #cfc5b2;margin:1rem 0;padding-left:1rem;}
+.library-object h3 {font:600 1.15rem/1.6 var(--font-zh);margin:.4rem 0;}
+.library-object > a {display:inline-block;margin:.2rem 1rem .8rem 0;}
+.library-claims {list-style:none;padding:0;margin:0;}
+.library-claims li {border-bottom:1px solid #ddd5c6;padding:.65rem 0;}
+.library-claims p {margin:.3rem 0;}
+.library-claim-voice {color:#675d4c;font-size:.9rem;}
+@media (max-width:620px){.library-objects{grid-template-columns:1fr;}}

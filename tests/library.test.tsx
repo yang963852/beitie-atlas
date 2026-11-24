@@ -22,7 +22,8 @@ describe('reading routes', () => {
     expect(screen.getByRole('link', { name: '甲种本大楷习字帖' })).toHaveAttribute('href', '#/work/shen-yinmo-dakai-jia');
     navigate('#/work/shen-yinmo-dakai-jia');
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('甲种本大楷习字帖');
-    expect(screen.queryByRole('heading', { name: '传世实物' })).not.toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '传世实物' })).toBeInTheDocument();
+    expect(screen.getByText('本项目尚未收录可辨实物。')).toBeVisible();
     expect(screen.getByText(/当代课程书单/)).toBeVisible();
   });
 
@@ -32,8 +33,10 @@ describe('reading routes', () => {
     expect(screen.getAllByRole('link', { name: /颜勤礼碑/ }).some(link => link.getAttribute('href') === '#/work/yan-qinli-bei')).toBe(true);
     navigate('#/work/yan-qinli-bei');
     const witnesses = screen.getByRole('heading', { name: '传世实物' }).closest('section')!;
-    expect(within(witnesses).getByRole('link', { name: /原石/ })).toHaveAttribute('href', '#/object/yan-qinli-original-stele');
-    expect(within(witnesses).getByRole('link', { name: /民国拓本/ })).toHaveAttribute('href', '#/object/dpm-rubbing-xin00045406');
+    fireEvent.click(within(witnesses).getByRole('button', { name: /原石/ }));
+    expect(within(witnesses).getByRole('link', { name: '在地图与完整记录中查看' })).toHaveAttribute('href', '#/object/yan-qinli-original-stele');
+    fireEvent.click(within(witnesses).getByRole('button', { name: /民国拓本/ }));
+    expect(within(witnesses).getByRole('link', { name: '在地图与完整记录中查看' })).toHaveAttribute('href', '#/object/dpm-rubbing-xin00045406');
     navigate('#/object/dpm-rubbing-xin00045406');
     expect(screen.getByRole('heading', { name: '颜勤礼碑（民国拓本）' })).toBeVisible();
     const workLine = within(screen.getByRole('article')).getAllByRole('link', { name: '颜勤礼碑' });
@@ -60,7 +63,7 @@ it('edits the authored document or the canonical work record according to its so
     'https://github.com/yang963852/beitie-atlas/edit/main/knowledge/works/yan-qinli-bei.md');
   navigate('#/work/langya-keshi');
   expect(screen.getByRole('link', {name: '编辑条目并提交'})).toHaveAttribute('href',
-    'https://github.com/yang963852/beitie-atlas/edit/main/data/works/langya-keshi.json');
+    'https://github.com/yang963852/beitie-atlas/edit/main/knowledge/works/langya-keshi.md');
 });
 
 it('keeps the recorded polity visible in the period shelf and search results', () => {

@@ -50,7 +50,7 @@ Stele of the Shence Army, unique Song rubbing
 - 来源没有逐页的保存状况说明。
 - 未记录坐标。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-shence-jun) · [实物数据](../../data/objects/rubbing-shence-jun.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-shence-jun) · [实物源稿](../../knowledge/objects/rubbing-shence-jun.md)
 
 ## 据以著录的来源
 
@@ -62,4 +62,4 @@ Stele of the Shence Army, unique Song rubbing
 
 2. 中国国家图书馆 · 国家典籍博物馆 · [神策军碑](<https://www.nlc.cn/nmcb/jpww/gengu/20240904_2641037.shtml>)。定位：Object introduction and linked catalogue。查阅于 2026-11-18。
 
-[作品数据](../../data/works/shen-ce-jun-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shen-ce-jun-bei.md) · [返回知识总目](../README.md)

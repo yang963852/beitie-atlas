@@ -41,7 +41,7 @@ Huadu Temple inscription, Si’ou Hall album
 
 - 这册的馆藏索书号与入藏年月待查。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/huadu-siou) · [实物数据](../../data/objects/huadu-siou.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/huadu-siou) · [实物源稿](../../knowledge/objects/huadu-siou.md)
 
 ## 据以著录的来源
 
@@ -53,4 +53,4 @@ Huadu Temple inscription, Si’ou Hall album
 
 2. 上海图书馆 · [上海图书馆举办“大唐气象——上海图书馆藏唐碑善本展”](<https://www.library.sh.cn/article/91186>)。定位：馆藏四欧宝笈参展。查阅于 2026-11-19。
 
-[作品数据](../../data/works/huadu-si.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/huadu-si.md) · [返回知识总目](../README.md)

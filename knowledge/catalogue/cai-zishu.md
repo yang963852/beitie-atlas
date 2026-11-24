@@ -38,7 +38,7 @@ Scroll of Poems in the Author’s Hand, ink manuscript
 
 - 诗作缘于皇祐二年的北行，这卷墨迹的书写日期仍待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-cai-zishu-026) · [实物数据](../../data/objects/dpm-cai-zishu-026.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-cai-zishu-026) · [实物源稿](../../knowledge/objects/dpm-cai-zishu-026.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Scroll of Poems in the Author’s Hand, ink manuscript
 
 1. 故宫博物院 · [蔡襄行书自书诗卷](<https://www.dpm.org.cn/collection/handwriting/228526.html>)。定位：藏品题名、文物号及简介。查阅于 2026-11-18。
 
-[作品数据](../../data/works/cai-zishu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/cai-zishu.md) · [返回知识总目](../README.md)

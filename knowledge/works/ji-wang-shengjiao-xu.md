@@ -1,0 +1,55 @@
+---
+schemaVersion: 1
+titleZh: 大唐三藏圣教序碑
+titleEn: Preface to the Sacred Teaching, assembled from Wang Xizhi
+aliases: []
+studyCategory: bei
+dynastyId: tang
+dynastyQualifier: null
+date:
+  kind: single
+  start: 672
+  month: null
+  end: 672
+  endMonth: null
+  era: null
+  original: 唐咸亨三年（672年）
+  certainty: documented
+  note: null
+script: 行书（集字）
+attribution:
+  - role: compiler
+    name: 怀仁
+    nameEn: Huai Ren
+    certainty: documented
+    sources:
+      - src-beilin-shengjiaoxu
+sources:
+  - src-beilin-shengjiaoxu
+review:
+  state: reviewed
+  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited."
+  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。
+---
+
+# 大唐三藏圣教序碑
+
+## 背景
+
+### 中文
+
+碑载唐太宗所撰序文与高宗所作记文。怀仁从王羲之书迹中集字成篇，至咸亨三年（672）刻石。今天临写的，是晋人笔迹经唐人选集、布置而成的一通碑。
+
+### English
+
+A Tang stele of 672 whose characters were assembled from Wang Xizhi’s calligraphy by the monk Huai Ren, carrying the preface by Taizong and the record by Gaozong.
+
+## 待考
+
+### 中文
+
+- 英文标题为本项目为检索所拟，非来源所用题名。
+
+### English
+
+- The English title is a project rendering for navigation, not a title used by the source.
