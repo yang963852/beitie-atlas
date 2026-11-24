@@ -51,3 +51,11 @@ it('restores the collection filter and open place after reading a witness', asyn
     expect(restored).toHaveAttribute('aria-pressed', 'true');
   });
 });
+
+it('shows the editorial inference alongside both colophon dates on transmission links', () => {
+  visit('#/transmission/witness-jizhi');
+  const page = screen.getByRole('main');
+  expect(page).toHaveTextContent('1282');
+  expect(page).toHaveTextContent('1283');
+  expect(page).toHaveTextContent('编辑推定');
+});

@@ -4,12 +4,13 @@ import { formatCoordinate } from '../domain/coordinates';
 import { getPlace, getWork } from '../domain/data';
 import { formatDate } from '../domain/dates';
 import { dynastyLabel } from '../domain/dynasties';
-import type { Claim, HistoricalDate, ObjectRecord, Place, Work } from '../domain/types';
+import type { HistoricalDate, ObjectRecord, Place, Work } from '../domain/types';
 import { detectLang, pickText } from '../domain/text';
 import { useLocale } from '../i18n';
 import { isReleaseBuild } from '../domain/build';
 import { YanQinliStory } from './YanQinliStory';
 import { ProvenanceEvents } from './ProvenanceEvents';
+import { ClaimSection } from './ClaimSection';
 import { SourceList } from './SourceList';
 
 const github = 'https://github.com/yang963852/beitie-atlas';
@@ -98,25 +99,6 @@ function Fact({ term, children }: { term: string; children: ReactNode }) {
       <dd className="fact__value">{children}</dd>
     </div>
   );
-}
-
-function ClaimSection({ claims }: { claims?: Claim[] }) {
-  const { locale, strings } = useLocale();
-  if (!claims?.length) return null;
-  return <section className="section" aria-labelledby="claims-heading">
-    <h3 id="claims-heading" className="section__heading">{strings.claimsHeading}</h3>
-    <ul className="claims">
-      {claims.map((claim) => {
-        const note = locale === 'zh' ? claim.noteZh ?? claim.note : claim.note;
-        return <li key={claim.id}>
-          <p><strong>{claim.value}</strong> <span className="tag">{strings.claimKindLabels[claim.kind]}</span> <span className="tag">{strings.claimStanceLabels[claim.stance]}</span></p>
-          {claim.voice ? <p className="section__meta">{locale === 'zh' ? '说法' : 'Voice'}：{claim.voice}{claim.locator ? ' · ' + claim.locator : ''}</p> : null}
-          {note ? <p className="section__note">{note}</p> : null}
-          <SourceList ids={claim.sourceRefs} compact />
-        </li>;
-      })}
-    </ul>
-  </section>;
 }
 
 interface ObjectDetailProps {

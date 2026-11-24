@@ -8,6 +8,7 @@ import { formatAttribution } from '../domain/attribution';
 import { formatDate } from '../domain/dates';
 import { isReleaseBuild } from '../domain/build';
 import { SourceList } from './SourceList';
+import { ClaimSection } from './ClaimSection';
 import { KnowledgeProse } from './KnowledgeProse';
 import { ProvenanceEvents } from './ProvenanceEvents';
 import './knowledge-library.css';
@@ -66,20 +67,6 @@ function Index({ kind }: { kind: KnowledgeKind }) {
   </>;
 }
 
-function ClaimList({ claims, title }: { claims: NonNullable<LibraryEntry['work']>['claims']; title: string }) {
-  const { locale, strings } = useLocale();
-  if (!claims?.length) return null;
-  return <Section title={title}><ul className="library-claims">{claims.map((claim) => {
-    const note = locale === 'zh' ? claim.noteZh ?? claim.note : claim.note;
-    return <li key={claim.id}>
-      <p><strong>{claim.value}</strong> <span className="tag">{strings.claimKindLabels[claim.kind]}</span> <span className="tag">{strings.claimStanceLabels[claim.stance]}</span></p>
-      {claim.voice ? <p className="library-claim-voice">{locale === 'zh' ? '说法' : 'Voice'}：{claim.voice}{claim.locator ? ' · ' + claim.locator : ''}</p> : null}
-      {note ? <p>{note}</p> : null}
-      <SourceList ids={claim.sourceRefs} compact />
-    </li>;
-  })}</ul></Section>;
-}
-
 function Entry({ entry }: { entry: LibraryEntry }) {
   const { locale, strings } = useLocale();
   const t = words[locale];
@@ -96,34 +83,35 @@ function Entry({ entry }: { entry: LibraryEntry }) {
   const original = 'knowledge/' + sourceName + '/' + entry.id + '.md';
   const editPath = original;
   const relatedWorks = entry.kind === 'people'
-    ? getDataset().works.filter((candidate) => candidate.attribution.some((credit) => credit.personId === entry.id || credit.name === entry.titleZh))
+    ? getDataset().works.filter((candidate) => candidate.attribution.some((credit) => credit.personId === entry.id))
     : [];
   const relatedObjects = entry.kind === 'people'
-    ? getDataset().objects.filter((object) => (object.attribution ?? []).some((credit) => credit.personId === entry.id || credit.name === entry.titleZh))
+    ? getDataset().objects.filter((object) => (object.attribution ?? []).some((credit) => credit.personId === entry.id))
     : [];
-  const selectedPlace = selectedObject ? getPlace(selectedObject.currentCollection.placeId) : undefined;
+  const selectedPlace = selectedObject && selectedObject.currentCollection.locationKind !== 'unknown' ? getPlace(selectedObject.currentCollection.placeId) : undefined;
   return <article>
-    <p className="library-kicker">{t[entry.kind]} · {(guide?.state ?? work?.review.state) === 'draft' ? strings.reviewDraft : strings.reviewReviewed}</p>
+    <p className="library-kicker">{t[entry.kind]} · {(work?.review.state ?? guide?.state) === 'draft' ? strings.reviewDraft : strings.reviewReviewed}</p>
     <h1>{locale === 'zh' ? entry.titleZh : entry.titleEn || entry.titleZh}</h1>
     {work && <p className="library-byline">{formatDate(work.compositionDate, locale)}
       {work.compositionDate.meaning ? ' · ' + strings.dateMeaningLabels[work.compositionDate.meaning] : ''}
       {' · '}{formatAttribution(work.attribution, locale, strings.attributionRoleShort)}</p>}
     <a className="library-edit" href={github + '/edit/main/' + editPath}>{locale === 'zh' ? '编辑条目并提交' : 'Edit and submit changes'}</a>
+    {guide && work && <p className="section__meta">{t.authored} · {guide.state === 'draft' ? strings.reviewDraft : strings.reviewReviewed}</p>}
     {guide ? <KnowledgeProse guide={guide} /> : work && <p className="library-intro">{(locale === 'zh' && work.backgroundZh) || work.background}</p>}
     {people.length > 0 && <Section title={t.people}><ul>{people.map((p) => <li key={p.id}><EntryLink entry={p} /></li>)}</ul></Section>}
     {entry.kind === 'people' && (relatedWorks.length > 0 || relatedObjects.length > 0) && <Section title={t.roles}>
       <ul>
         {relatedWorks.map((candidate) => {
           const roles = candidate.attribution
-            .filter((credit) => credit.personId === entry.id || credit.name === entry.titleZh)
-            .map((credit) => (locale === 'zh' ? strings.attributionRoleLabels[credit.role] : strings.attributionRoleShort[credit.role]))
+            .filter((credit) => credit.personId === entry.id)
+            .map((credit) => [strings.attributionRoleLabels[credit.role], credit.certainty !== 'documented' ? strings.certaintyLabels[credit.certainty] : undefined].filter(Boolean).join(' · '))
             .join(locale === 'zh' ? '、' : ', ');
           return <li key={candidate.id}><a href={'#/work/' + candidate.id}>{locale === 'zh' ? candidate.titles.zh : candidate.titles.en}</a> <small>{roles}</small></li>;
         })}
         {relatedObjects.map((object) => {
           const roles = (object.attribution ?? [])
-            .filter((credit) => credit.personId === entry.id || credit.name === entry.titleZh)
-            .map((credit) => (locale === 'zh' ? strings.attributionRoleLabels[credit.role] : strings.attributionRoleShort[credit.role]))
+            .filter((credit) => credit.personId === entry.id)
+            .map((credit) => [strings.attributionRoleLabels[credit.role], credit.certainty !== 'documented' ? strings.certaintyLabels[credit.certainty] : undefined].filter(Boolean).join(' · '))
             .join(locale === 'zh' ? '、' : ', ');
           return <li key={object.id}><a href={'#/object/' + object.id}>{locale === 'zh' ? object.titles.zh : object.titles.en}</a> <small>{roles}</small></li>;
         })}
@@ -139,15 +127,15 @@ function Entry({ entry }: { entry: LibraryEntry }) {
       </div>
       {selectedObject ? <div className="library-object">
         <h3>{selectedObject.titles[locale]}</h3>
-        <p className="section__meta">{strings.objectTypeLabels[selectedObject.objectType]} · {strings.survivalLabels[selectedObject.survivalStatus]} · {selectedPlace?.names[locale] ?? t.unknownPlace}</p>
+        <p className="section__meta">{selectedObject.review.state === 'draft' ? strings.reviewDraft : strings.reviewReviewed} · {strings.objectTypeLabels[selectedObject.objectType]} · {strings.survivalLabels[selectedObject.survivalStatus]} · {selectedPlace && selectedObject.currentCollection.locationKind === 'last-known' ? strings.lastKnownPlace(selectedPlace.names[locale]) : selectedPlace?.names[locale] ?? t.unknownPlace}</p>
         <a href={'#/object/' + selectedObject.id}>{t.objectMap}</a>
         <a className="library-edit" href={github + '/edit/main/knowledge/objects/' + selectedObject.id + '.md'}>{locale === 'zh' ? '编辑这件实物的源稿' : 'Edit this object record'}</a>
         <ProvenanceEvents object={selectedObject} />
-        <ClaimList claims={selectedObject.claims} title={t.claims} />
+        <ClaimSection claims={selectedObject.claims} />
       </div> : <p className="section__empty">{t.noObjects}</p>}
     </Section>}
     {objects.length === 0 && entry.kind === 'works' ? <Section title={objectHeading}><p className="section__empty">{t.noObjects}</p></Section> : null}
-    {work ? <ClaimList claims={work.claims} title={t.claims} /> : null}
+    {work ? <ClaimSection claims={work.claims} /> : null}
     {links.length > 0 && tabs.filter((tab) => tab !== 'people').map((tab) => {
       const subset = links.filter((item) => item.kind === tab);
       return subset.length > 0 && <Section key={tab} title={t[tab]}><ul>{subset.map((item) => <li key={item.id}><EntryLink entry={item} /></li>)}</ul></Section>;
@@ -192,7 +180,7 @@ export function KnowledgeLibrary({ hash }: { hash: string }) {
         {!isReleaseBuild && <a href={github + '/issues/new?template=beta-feedback.yml'}>{t.beta} · {t.feedback}</a>}</div>
       {route === 'library' ? <Index key={indexKind} kind={indexKind} /> : entry ? <Entry entry={entry} /> : <h1>{t.none}</h1>}
     </main>
-    <footer className="reading-footer"><a href={github + '/tree/main/knowledge'}>{t.github}</a>
+    <footer className="reading-footer">{route === 'library' && <a href={downloadHref} download>{t.download}</a>}<a href={github + '/tree/main/knowledge'}>{t.github}</a>
       <a href={github + '/issues/new?template=knowledge.yml'}>{t.contribute}</a></footer>
   </div>;
 }
