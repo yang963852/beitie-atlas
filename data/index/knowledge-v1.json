@@ -2,10 +2,10 @@
   "formatVersion": "beitie-knowledge/1",
   "schemaVersion": 1,
   "counts": {
-    "works": 87,
-    "objects": 96,
-    "places": 36,
-    "sources": 145,
+    "works": 98,
+    "objects": 107,
+    "places": 38,
+    "sources": 160,
     "media": 1,
     "events": 70,
     "workArticles": 4,
@@ -906,6 +906,63 @@
       "notes": []
     },
     {
+      "id": "gushi-sitie",
+      "titles": {
+        "zh": "古诗四帖",
+        "en": "Four Poems in Cursive Script"
+      },
+      "aliases": [
+        "张旭古诗四帖"
+      ],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "张旭（传）",
+          "nameEn": "Zhang Xu (attributed)",
+          "certainty": "disputed",
+          "sourceRefs": [
+            "src-lnm-gushisitie"
+          ],
+          "note": "The museum lists the scroll under Zhang Xu’s name while the attribution rests on tradition.",
+          "noteZh": "馆方展览说明列于张旭名下，归属仍依传称。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "tang",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "唐",
+        "original": "唐",
+        "certainty": "approximate",
+        "note": "卷无年款，馆方展览说明列于唐，年代依传称。"
+      },
+      "script": "狂草",
+      "background": "Four Poems is a paper handscroll in cursive script, carrying two of Yu Xin’s “Pacing the Void” poems and two verse appreciations by Xie Lingyun. It is now in the Liaoning Provincial Museum and is attributed to Zhang Xu. The writing runs on without a break, characters varying in size while the column holds together. It represents the maturing of Tang wild cursive and is a standard model for learning speed, pressure and momentum in cursive.",
+      "backgroundZh": "《古诗四帖》为纸本草书长卷，写庾信《步虚词》二首与谢灵运诗赞二首，今藏辽宁省博物馆，传为张旭所书。全卷连绵而下，字形大小错落而行气不断，是唐代狂草走向成熟的代表，也是学习草书时体会速度、提按与字势关系的经典范本。",
+      "sourceRefs": [
+        "src-lnm-gushisitie",
+        "src-lnd-gushisitie"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection. Title and holding follow the museum; dimensions and content follow a newspaper feature on the same exhibition.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿。题名与收藏依馆方页面，尺寸与内容依同一展览的报纸报道。"
+      },
+      "notes": [
+        "The attribution is “attributed to Zhang Xu”; no museum publication consulted here sets out the evidence for it.",
+        "The character count and dimensions come from a newspaper report and have not been checked against a museum catalogue."
+      ],
+      "notesZh": [
+        "作者归属作“传张旭”，本项目未见馆方出版物说明鉴定依据。",
+        "卷中字数与尺寸依报刊报道，未据馆方著录复核。"
+      ]
+    },
+    {
       "id": "hanshi",
       "titles": {
         "zh": "黄州寒食诗帖",
@@ -1359,6 +1416,63 @@
       ]
     },
     {
+      "id": "jingshiyu-jingangjing",
+      "titles": {
+        "zh": "泰山经石峪金刚经",
+        "en": "Diamond Sutra at Jingshi Valley, Mount Tai"
+      },
+      "aliases": [
+        "经石峪摩崖刻经",
+        "泰山经石峪"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-taian-jingshiyu"
+          ],
+          "note": "No date or name of writer or engraver is recorded on the stone.",
+          "noteZh": "刻石无年月与书刻者姓名。"
+        }
+      ],
+      "studyCategory": "bei",
+      "dynastyId": "northern-and-southern",
+      "dynastyQualifier": "北齐",
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "北齐",
+        "original": "北齐",
+        "certainty": "approximate",
+        "note": "刻石无年月，馆方页面称“察其笔势风格大多认为北齐人书”。"
+      },
+      "script": "隶楷",
+      "background": "The Diamond Sutra is cut into a stream-bed rock platform northeast of Doumu Gong on Mount Tai. Its characters are about fifty centimetres high and roughly a thousand survive. The stone carries no date and no name of writer or engraver, and is generally assigned to the Northern Qi. Clerical script forms the frame, with seal elements mixed in, and the inscription is usually classed among the clerical-regular transitional works; Kang Youwei’s Guangyi zhou shuang ji called it the model for monumental writing. It shows how the clerical-to-regular transition works at the scale of a cliff.",
+      "backgroundZh": "《金刚经》刻在泰山斗母宫东北的溪床石坪上，字径约五十厘米，现存一千余字。刻石无年月与书刻者姓名，一般定为北齐。它以隶书为骨，又杂篆意，在书法史上通常归入隶楷之间的过渡一路；康有为《广艺舟双楫》推为“榜书之宗”，是观察隶楷之变在大字摩崖上如何展开的样本。",
+      "sourceRefs": [
+        "src-taian-jingshiyu"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection from the Tai’an Museum page. The period is a stylistic consensus, not a dated record.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据泰安市博物馆页面；时代为风格共识，非刻石自记。"
+      },
+      "notes": [
+        "Published counts give 1,067, 1,069 or 1,071 surviving characters; none has been checked against the stone.",
+        "An Daoyi and Wang Zichun have both been proposed as the writer, without proof."
+      ],
+      "notesZh": [
+        "现存字数各文记作一千零六十七、一千零六十九或一千零七十一字，未据原石复核。",
+        "书刻者旧有安道壹、王子椿等说，均无确证。"
+      ]
+    },
+    {
       "id": "jiuchenggong-liquan-ming",
       "titles": {
         "zh": "九成宫醴泉铭",
@@ -1420,6 +1534,61 @@
       ],
       "notesZh": [
         "所引答复函未记碑石年代、尺寸与现状；撰书年份该页亦未载。"
+      ]
+    },
+    {
+      "id": "jiuhua-tie",
+      "titles": {
+        "zh": "韭花帖",
+        "en": "Letter on Leek Flowers"
+      },
+      "aliases": [],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "杨凝式",
+          "nameEn": "Yang Ningshi",
+          "certainty": "disputed",
+          "sourceRefs": [
+            "src-wuxi-jiuhua"
+          ],
+          "note": "The museum attributes the album to Yang Ningshi while recording that the authenticity of the three surviving versions is debated.",
+          "noteZh": "馆方定名杨凝式，同时说明传世三本的真伪尚有争议。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "five-dynasties",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "五代",
+        "original": "五代",
+        "certainty": "documented",
+        "note": "帖末只署“七月十一日”，无年份；馆方定于五代。"
+      },
+      "script": "行楷",
+      "background": "The Letter on Leek Flowers is Yang Ningshi’s thank-you note for a gift of leek flowers: running-regular script, ink on hemp paper, seven lines and just over sixty characters, now in the Wuxi Museum. It closes with the date “the eleventh of the seventh month” and no year. Widely spaced columns and strokes that tighten and release give it a quiet, unhurried air amid the disorder of the Five Dynasties.",
+      "backgroundZh": "《韭花帖》是杨凝式答谢友人馈赠韭花的短札，行楷书，麻纸本，七行六十余字，今藏无锡博物院。帖末只署“七月十一日”，没有年份。字距行距疏朗，用笔时收时放，在五代乱世里留下一种萧散安静的气息。",
+      "sourceRefs": [
+        "src-wuxi-jiuhua",
+        "src-wuxi-jiuhua-entry"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection from two Wuxi Museum pages that disagree on the character count. The count is therefore left out of the fields.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据无锡博物院两篇文章；两文所记字数不一，故不写入结构化字段。"
+      },
+      "notes": [
+        "The museum’s own pages give either sixty-three or sixty-five characters; the original has not been checked.",
+        "The museum records three versions and names the Luo Zhenyu album alongside the Qing palace album; their authenticity remains debated."
+      ],
+      "notesZh": [
+        "字数有六十三字与六十五字两说，馆方两篇文章即不一致，未据原件复核。",
+        "馆方记传世三本，除清内府本外，另举罗振玉藏本；真伪之争尚未定论。"
       ]
     },
     {
@@ -1824,6 +1993,63 @@
       "notes": []
     },
     {
+      "id": "lingfei-jing",
+      "titles": {
+        "zh": "灵飞经",
+        "en": "Classic of Spiritual Flight"
+      },
+      "aliases": [
+        "灵飞六甲经",
+        "四十三行本"
+      ],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "钟绍京（传）",
+          "nameEn": "Zhong Shaojing (attributed)",
+          "certainty": "disputed",
+          "sourceRefs": [
+            "src-met-lingfeijing"
+          ],
+          "note": "The museum labels the album “Attributed to Zhong Shaojing”; the writer is not confirmed.",
+          "noteZh": "馆方标为“传钟绍京”，书写者未确认。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "tang",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "approximate",
+        "startYear": 738,
+        "startMonth": null,
+        "endYear": 738,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "唐开元二十六年（738年）前后",
+        "certainty": "approximate",
+        "note": "馆方定年为约 738 年，由玉真公主请人写就。"
+      },
+      "script": "小楷",
+      "background": "The Classic of Spiritual Flight is a copy of a Daoist scripture, commissioned around 738 by Princess Yuzhen and now surviving in forty-three columns in the Metropolitan Museum of Art. It is traditionally ascribed to Zhong Shaojing, though a sutra copyist has also been proposed. The small script is steady in structure and fluid in movement. Dong Qichang judged it one of the finest Tang examples of small writing, and its inclusion in the Bohai cangzhen made it a standard model for beginners from the Ming onward.",
+      "backgroundZh": "《灵飞经》是道教经文的抄本，唐开元二十六年（738）前后由玉真公主请人写就，今存四十三行，藏纽约大都会艺术博物馆。旧题钟绍京书，馆方亦只作“传”。小楷结体端稳而笔势流动，明代董其昌推为唐代小楷的精品，刻入《渤海藏真》后广为流传，明清以来一直是小楷入门的范本。",
+      "sourceRefs": [
+        "src-met-lingfeijing"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection from the Metropolitan Museum object page. The attribution is qualified there and the rest of the scroll is lost.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据大都会艺术博物馆藏品页；馆方对作者加“传”字，全卷其余部分已佚。"
+      },
+      "notes": [
+        "The museum labels the album “attributed to Zhong Shaojing” without naming the writer or copyist.",
+        "The manuscript was once a full scroll. Only forty-three columns survive; the rest is unlocated."
+      ],
+      "notesZh": [
+        "馆方标为“传钟绍京”，未说明书写者与临写者。",
+        "墨迹原为全卷，现存四十三行，其余部分下落不明。"
+      ]
+    },
+    {
       "id": "liqi-bei",
       "titles": {
         "zh": "礼器碑",
@@ -1934,6 +2160,62 @@
         "所读页面只给出一个通高（3.24 米），但与碑阳高度加 0.42 米碑额不相合；结构化高度暂不填写，也不取平均、不作推测。",
         "碑阳一作高 1.56 米、宽 0.89 米，另一处只给通高 3.24 米；两者所量部位不同，据所读页面无法互相校核。",
         "二十世纪八十年代的维修被描述为垫高地基、加装防护罩，所引页面未给出确切年份。"
+      ]
+    },
+    {
+      "id": "lu-you-zishu-shi",
+      "titles": {
+        "zh": "陆游自书诗卷",
+        "en": "Scroll of Poems in Lu You’s Own Hand"
+      },
+      "aliases": [
+        "自书诗卷"
+      ],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "陆游",
+          "nameEn": "Lu You",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-lnm-luyou"
+          ],
+          "note": "The museum entry names Lu You and dates the scroll to his eightieth year.",
+          "noteZh": "馆方条目记陆游书，并系于其八十岁。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "southern-song",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "single",
+        "startYear": 1204,
+        "startMonth": null,
+        "endYear": 1204,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "南宋嘉泰四年（1204年）",
+        "certainty": "documented",
+        "note": "馆方记此卷作于嘉泰四年，陆游时年八十。"
+      },
+      "script": "行草",
+      "background": "The Scroll of Poems was written in 1204, when Lu You was eighty, and records eight of his own poems. It is now in the Liaoning Provincial Museum. Running and cursive script alternate, the brush moving continuously while ink varies naturally; the poems mostly concern retirement at home and remembered events. It represents Lu You’s late calligraphy and shows the everyday writing through which a Southern Song literatus entertained himself.",
+      "backgroundZh": "《自书诗卷》书于南宋嘉泰四年（1204），陆游时年八十，录自作诗八首，今藏辽宁省博物馆。全卷行草相杂，笔势连绵而墨色浓淡自然，内容多写归乡闲居与感怀往事，是陆游晚年书法的代表，也让读者看到南宋文人以诗卷自遣的日常书写。",
+      "sourceRefs": [
+        "src-lnm-luyou"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection from a Liaoning Provincial Museum object note. Dimensions, line count and provenance are not recorded there.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据辽宁省博物馆藏品说明；馆方未记尺寸、行数与流传。"
+      },
+      "notes": [
+        "The eight poems have not been collated word by word against the Jiannan shigao.",
+        "The museum note gives neither dimensions nor line count; both remain unchecked."
+      ],
+      "notesZh": [
+        "本卷所录八首与《剑南诗稿》的异文，尚待逐首校勘。",
+        "馆方页面未记尺寸与行数，相关数据待核。"
       ]
     },
     {
@@ -2337,6 +2619,63 @@
       "notes": []
     },
     {
+      "id": "nongfang-shitie",
+      "titles": {
+        "zh": "秾芳诗帖",
+        "en": "Poem on Fragrant Blossoms"
+      },
+      "aliases": [
+        "宋徽宗诗帖"
+      ],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "赵佶",
+          "nameEn": "Zhao Ji, Emperor Huizong",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-npm-nongfang"
+          ],
+          "note": "The museum entry names the emperor as the writer.",
+          "noteZh": "馆方条目记为宋徽宗赵佶书。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "northern-song",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "北宋",
+        "original": "北宋",
+        "certainty": "documented",
+        "note": "帖无年款，馆方列于北宋。"
+      },
+      "script": "瘦金书",
+      "background": "Poem on Fragrant Blossoms is Emperor Huizong’s large-character poem in slender-gold script: ink on silk, ruled with red thread lines, characters nearly five inches tall, the largest surviving example of his hand, now in the National Palace Museum, Taipei. Slender-gold script keeps the sharp entries, exits and turns visible on the paper, with a heavy stop at the end of horizontal strokes and knife-like diagonals. Here the strokes stay fine and firm, showing how the manner holds up at monumental scale.",
+      "backgroundZh": "《秾芳诗帖》是宋徽宗赵佶的大字瘦金书诗帖，绢本，朱丝栏，字大近五寸，是传世徽宗书迹中字最大的一件，今藏台北故宫博物院。瘦金书把起笔、收笔与转折的锋芒留在纸上：横画起笔尖细，收笔重顿，转折处提按分明；此帖笔画细劲，可见瘦金体在大字上的控制力。",
+      "sourceRefs": [
+        "src-npm-nongfang",
+        "src-dpm-emperor"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection. The museum entry gives the script and scale; a Palace Museum article gives the medium and dimensions.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿。书体与字径依台北故宫条目，材质与尺寸依故宫博物院文章。"
+      },
+      "notes": [
+        "The scroll has no dated colophon; the year of writing is unknown.",
+        "Dimensions follow the Palace Museum article and have not been checked against the object in Taipei."
+      ],
+      "notesZh": [
+        "帖无年款，写作年份待考。",
+        "尺寸依故宫博物院文章的著录，未据台北故宫原件复核。"
+      ]
+    },
+    {
       "id": "pingfu-tie",
       "titles": {
         "zh": "平复帖",
@@ -2393,6 +2732,74 @@
         "馆方记九行八十六字，书体作「草隶书」；本记录照录，不改称章草或草书。",
         "自宋内府至 1956 年的递藏依馆方段落概述；该段未给中间各家系年。",
         "本记录不主张书写年份：馆方只系于西晋，未给具体年。"
+      ]
+    },
+    {
+      "id": "sanfen-ji",
+      "titles": {
+        "zh": "三坟记",
+        "en": "Record of the Three Graves"
+      },
+      "aliases": [
+        "三坟记碑"
+      ],
+      "attribution": [
+        {
+          "role": "author",
+          "name": "李季卿",
+          "nameEn": "Li Jiqing",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-beilin-sanfenji"
+          ],
+          "note": "Li Jiqing wrote the text for the reburial of his three elder brothers.",
+          "noteZh": "李季卿撰文，记其三位兄长迁葬之事。"
+        },
+        {
+          "role": "calligrapher",
+          "name": "李阳冰",
+          "nameEn": "Li Yangbing",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-beilin-sanfenji"
+          ],
+          "note": "The museum entry credits the seal script to Li Yangbing.",
+          "noteZh": "馆方条目记篆书为李阳冰所书。"
+        }
+      ],
+      "studyCategory": "bei",
+      "dynastyId": "tang",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "single",
+        "startYear": 767,
+        "startMonth": null,
+        "endYear": 767,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "唐大历二年（767年）",
+        "certainty": "documented",
+        "note": null
+      },
+      "script": "小篆",
+      "background": "Record of the Three Graves was carved in 767, with text by Li Jiqing and seal script by Li Yangbing, to record the reburial of Li Jiqing’s three elder brothers. The stone is now in the Beilin Museum in Xi’an: a monument with a damaged chi-dragon head and a tortoise plinth, broken across the middle, with seal script on both faces. Li Yangbing worked from Li Si’s jade-chopstick manner in the Yishan inscription, with even, fine strokes and tall, balanced characters. The stele represents the Tang revival of seal script and is a common model for moving from Qin to Tang seal writing.",
+      "backgroundZh": "《三坟记》刻于唐大历二年（767），李季卿撰文，李阳冰篆书，记其三位兄长迁葬之事。碑今存西安碑林，螭首龟趺，碑身中部横断，两面刻篆书。李阳冰承李斯《峄山碑》的玉箸笔法，线条匀细而结体修长，此碑是唐篆复兴的代表，也是学小篆从秦碑过渡到唐碑的常用范本。",
+      "sourceRefs": [
+        "src-beilin-sanfenji",
+        "src-hbrb-sanfenji"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection. The museum describes the 767 monument; a newspaper feature reports that the present stone is a Song recutting, which remains open.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿。馆方页面记 767 年原刻，报纸则称今碑为宋时重刻，此问题仍待考。"
+      },
+      "notes": [
+        "The museum dates the carving to 767. Another account says the original was lost and the present stone is a Song recutting; its date and evidence remain unchecked.",
+        "The stone is damaged. Line and character counts follow the museum entry, and some characters are missing."
+      ],
+      "notesZh": [
+        "馆方页面记此刻于大历二年；另有记载称原石久佚、今碑为宋时重刻，重刻年份与依据待核。",
+        "碑身残损，现存行数与字数依馆方著录，个别字有阙损。"
       ]
     },
     {
@@ -3486,6 +3893,62 @@
       "notes": []
     },
     {
+      "id": "wangduo-zishu-shi",
+      "titles": {
+        "zh": "王铎行草书自书诗卷",
+        "en": "Scroll of Wang Duo’s Own Poems in Running-Cursive Script"
+      },
+      "aliases": [
+        "行草书自书诗"
+      ],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王铎",
+          "nameEn": "Wang Duo",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-dpm-wangduo"
+          ],
+          "note": "Signed and sealed by Wang Duo; the museum dates the scroll to his forty-seventh year.",
+          "noteZh": "卷有王铎款印，馆方系于其四十七岁。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "ming",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "single",
+        "startYear": 1639,
+        "startMonth": 1,
+        "endYear": 1639,
+        "endMonth": 1,
+        "eraLabel": null,
+        "original": "明崇祯十二年（1639年）正月",
+        "certainty": "documented",
+        "note": "末款“己卯正月弟王铎具草”。"
+      },
+      "script": "行草",
+      "background": "This scroll carries six of Wang Duo’s own poems. It is ink on paper, written in the first month of 1639, when Wang was forty-seven, and is now in the Palace Museum. The running-cursive brushwork runs on continuously without many joined characters, held together by column rhythm; it shows the manner of his middle years as his style took shape. Wang traced his lineage through Zhong Yao, the two Wangs, Yan Zhenqing and Mi Fu, and became known for running and cursive script. This scroll can be read as the starting point of that style.",
+      "backgroundZh": "此卷书王铎自作诗六首，纸本，作于明崇祯十二年（1639）正月，王铎时年四十七，今藏故宫博物院。行草笔势连绵而字间连带不多，靠行气贯通，是他中年书风形成期的面貌。王铎由钟繇、二王、颜真卿、米芾上溯，以行草著称，此卷正可看作其风格的起点。",
+      "sourceRefs": [
+        "src-dpm-wangduo"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection from the Palace Museum catalogue entry. The scroll is filed under the Ming because it was written in 1639.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据故宫博物院藏品条目。卷书于 1639 年，故归明。"
+      },
+      "notes": [
+        "The scroll carries no collector’s seals and is not recorded in early catalogues; its early transmission is unknown.",
+        "The museum does not identify the dedicatee named at the beginning of the scroll."
+      ],
+      "notesZh": [
+        "本幅无藏印，亦未见著录，早期流传不明。",
+        "卷首上款所涉人物，馆方未作考订。"
+      ]
+    },
+    {
       "id": "wansui-tongtian-tie",
       "titles": {
         "zh": "万岁通天帖",
@@ -3730,6 +4193,62 @@
       ],
       "notesZh": [
         "所引报道既未给拓本尺寸，也未记其保存状况。"
+      ]
+    },
+    {
+      "id": "wuchangshuo-lin-shiguwen",
+      "titles": {
+        "zh": "吴昌硕临石鼓文轴",
+        "en": "Hanging Scroll after the Stone Drums"
+      },
+      "aliases": [
+        "篆书临石鼓文轴"
+      ],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "吴昌硕",
+          "nameEn": "Wu Changshuo",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-dpm-wuchangshuo"
+          ],
+          "note": "Signed and sealed; the museum dates the scroll to his seventy-first year.",
+          "noteZh": "轴有吴昌硕款印，馆方系于其七十一岁。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "republic",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "single",
+        "startYear": 1915,
+        "startMonth": 5,
+        "endYear": 1915,
+        "endMonth": 5,
+        "eraLabel": null,
+        "original": "1915年夏五月",
+        "certainty": "documented",
+        "note": "款“乙卯夏五月客沪上，吴昌硕”，乙卯为1915年。"
+      },
+      "script": "篆书",
+      "background": "This hanging scroll copies the “Tianche” poem, the third of the Stone Drums. It is ink on paper, written in 1915 when Wu Changshuo was seventy-one, and is now in the Palace Museum. Wu turns the drums’ horizontal stance into a vertical one, offsets the characters for balance, and varies stroke weight within a heavy, blunt brush. Xiang Shen said he wrote the drums with Deng Shiru’s method, turning horizontal into vertical and founding a manner of his own. For a student of seal script it is a chance to set the copy beside the original drums and see imitation become invention.",
+      "backgroundZh": "此轴临《石鼓文》第三鼓“田车”篇，纸本，书于1915年，吴昌硕时年七十一，今藏故宫博物院。他把石鼓的横势改为纵势，结字参差取姿，用笔沉厚而线条粗细多变；近人向燊称其“以邓法写石鼓文，变横为纵，自成一派”。学篆者可由它对照原石鼓，看临摹如何变成创造。",
+      "sourceRefs": [
+        "src-dpm-wuchangshuo"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection from the Palace Museum catalogue entry. The scroll is filed under the Republic because it was written in 1915, though the museum labels it Qing.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据故宫博物院藏品条目。卷书于 1915 年，已入民国，故按书写年份归民国；馆方仍标清。"
+      },
+      "notes": [
+        "Wu copied the Stone Drums many times; the edition of the rubbing behind this scroll is unidentified.",
+        "A few characters in the transcription differ from current readings of the drums and need collation."
+      ],
+      "notesZh": [
+        "吴昌硕一生临石鼓甚多，此轴所据拓本的版本未详。",
+        "释文中的个别字与今通行释读有出入，待对照原鼓。"
       ]
     },
     {
@@ -4028,6 +4547,73 @@
       ],
       "notesZh": [
         "英文标题为本项目为检索所拟，非来源所用题名。"
+      ]
+    },
+    {
+      "id": "xuanshi-biao",
+      "titles": {
+        "zh": "宣示表",
+        "en": "Memorial of Declaration"
+      },
+      "aliases": [
+        "宣示帖"
+      ],
+      "attribution": [
+        {
+          "role": "author",
+          "name": "钟繇",
+          "nameEn": "Zhong Yao",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-dpm-xuanshi"
+          ],
+          "note": "The memorial is attributed to Zhong Yao; the surviving copies are engravings, not his hand.",
+          "noteZh": "表文归钟繇，传世皆为刻本，非其手迹。"
+        },
+        {
+          "role": "copyist",
+          "name": "王羲之（传）",
+          "nameEn": "Wang Xizhi (attributed)",
+          "certainty": "disputed",
+          "sourceRefs": [
+            "src-dpm-xuanshi"
+          ],
+          "note": "Most copies are said to reproduce a transcription by Wang Xizhi; the claim is traditional, not documented.",
+          "noteZh": "刻本多称据王羲之临本摹刻，此说为传称，未见直接证据。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "three-kingdoms",
+      "dynastyQualifier": "曹魏",
+      "compositionDate": {
+        "kind": "unknown",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": null,
+        "certainty": "unknown",
+        "note": "本帖为钟繇上魏文帝曹丕的奏文，来源未记写作年份。"
+      },
+      "script": "小楷",
+      "background": "The Memorial of Declaration is Zhong Yao’s memorial to Emperor Wen of Wei on accepting Sun Quan’s submission. The original is lost and only engravings survive, generally thought to reproduce a transcription by Wang Xizhi; the text first appears in the Northern Song Chunhua modelbooks in eighteen lines. Its broad frames and vigorous, unadorned strokes show regular script before its forms had settled, which makes it a key witness to the emergence of standard script and a source for later small-script practice.",
+      "backgroundZh": "《宣示表》是钟繇上魏文帝曹丕的奏文，请朝廷接受孙权归附。真迹早佚，传世只见刻本，一般认为是据王羲之临本摹刻，始见于北宋《淳化阁帖》，存十八行。结体宽博，点画遒劲朴茂，楷法尚未完全定型，是观察楷书从隶书脱出、走向成熟的关键样本，也是后世小楷取法的源头。",
+      "sourceRefs": [
+        "src-dpm-xuanshi"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection. The text and transmission follow a Palace Museum research article; the copyist attribution remains traditional.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿。表文与流传依据故宫博物院研究文章，临写者仍属传称。"
+      },
+      "notes": [
+        "Single-block editions and modelbook editions differ in line arrangement. The Southern Song stone engraved for Jia Sidao is now in the Capital Museum; its relation to this text is unchecked.",
+        "Both the claim that Zhong Yao wrote the memorial out himself and the claim that the engraving follows Wang Xizhi are traditional."
+      ],
+      "notesZh": [
+        "传世单刻与丛帖本的行款互有出入，南宋贾似道摹刻石今存首都博物馆，它与本表的关系待核。",
+        "钟繇是否亲书此表、刻本是否即据王羲之临本，均属传称。"
       ]
     },
     {
@@ -4528,6 +5114,63 @@
       "notes": []
     },
     {
+      "id": "zhang-xuan-muzhi",
+      "titles": {
+        "zh": "张玄墓志",
+        "en": "Epitaph of Zhang Xuan"
+      },
+      "aliases": [
+        "张黑女墓志",
+        "魏故南阳张玄墓志"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-yongji-zhangxuan"
+          ],
+          "note": "The epitaph names neither the writer nor the calligrapher.",
+          "noteZh": "志文未署撰文者与书丹者姓名。"
+        }
+      ],
+      "studyCategory": "bei",
+      "dynastyId": "northern-and-southern",
+      "dynastyQualifier": "北魏",
+      "compositionDate": {
+        "kind": "single",
+        "startYear": 531,
+        "startMonth": 10,
+        "endYear": 531,
+        "endMonth": 10,
+        "eraLabel": null,
+        "original": "北魏普泰元年（531年）十月",
+        "certainty": "documented",
+        "note": null
+      },
+      "script": "楷书",
+      "background": "The epitaph was carved in the tenth month of 531 for Zhang Xuan, styled Heinu, who served as governor of Nanyang. Qing writers, avoiding the Kangxi emperor’s personal name, referred to the work by Zhang’s courtesy name. The stone is lost; only the cut-and-mounted album once owned by He Shaoji survives, now in the Shanghai Museum. Square and round brushwork meet in a broad frame with clerical remnants, a Northern Wei epitaph that joins regular-script method to an archaic flavour.",
+      "backgroundZh": "《张玄墓志》刻于北魏普泰元年（531）十月，志主张玄字黑女，官至南阳太守；清人避康熙讳，多以“张黑女”称之。原石久佚，传世仅有何绍基旧藏的剪裱拓本，今藏上海博物馆。书法方圆兼备，结体扁方而含隶意，是魏碑墓志中兼有楷法与古意的一路。",
+      "sourceRefs": [
+        "src-yongji-zhangxuan"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 classics selection from a municipal-government cultural feature. Line count and findspot still need a rubbing-level check.",
+        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据市政府文化介绍整理；行款与出土地仍待对勘拓本。"
+      },
+      "notes": [
+        "Sources give the text as either twenty lines or twelve; the character count also differs. Neither has been checked against the album.",
+        "The findspot is unknown. The text records only a burial on the eastern plain at Pupo."
+      ],
+      "notesZh": [
+        "志文行款有二十行与十二行两说，现存字数亦有出入，未据拓本复核。",
+        "出土地不详，志文只记葬于蒲坂城东原。"
+      ]
+    },
+    {
       "id": "zhanghan",
       "titles": {
         "zh": "张翰帖",
@@ -4978,6 +5621,58 @@
   ],
   "objects": [
     {
+      "id": "album-lingfei-jing",
+      "workId": "lingfei-jing",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "灵飞经（四十三行本）",
+        "en": "Classic of Spiritual Flight, forty-three-column album"
+      },
+      "productionDate": {
+        "kind": "approximate",
+        "startYear": 738,
+        "startMonth": null,
+        "endYear": 738,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "约738年",
+        "certainty": "approximate",
+        "note": "馆方定年为约 738 年。"
+      },
+      "catalogNumber": "1989.141.1a–i",
+      "dimensions": {
+        "raw": "九开，每开纵20.8厘米，横8.9厘米",
+        "note": "存四十三行，每行约十七字。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-met-museum",
+        "sourceRefs": [
+          "src-met-lingfeijing"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "Purchased with the Dillon Fund in 1989; the label records Dong Qichang’s ownership and the Bohai cangzhen.",
+        "noteZh": "1989 年以狄龙基金购藏；馆方说明记董其昌旧藏与《渤海藏真》摹刻。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The museum labels the work “attributed to Zhong Shaojing”.",
+        "noteZh": "实物草稿。馆方标为“传钟绍京”。"
+      },
+      "notes": [
+        "The museum says the album is what survived, but does not trace the rest of the scroll.",
+        "The museum dates the album to about 738; the exact month and year of writing are not recorded."
+      ],
+      "notesZh": [
+        "全卷其余部分的下落，馆方说明只称本册为劫余，未记去向。",
+        "馆方定年为约 738 年，具体书写年月未记。"
+      ]
+    },
+    {
       "id": "chunhua-maoqin-6",
       "workId": "chunhua-getie",
       "objectType": "rubbing",
@@ -5135,6 +5830,58 @@
         "高宽数据来自永州市页面，湖南省页面未给尺寸。",
         "页面称崖面现状完整，但没有保存状况调查或保护记录。",
         "未记录坐标。"
+      ]
+    },
+    {
+      "id": "cliff-jingshiyu",
+      "workId": "jingshiyu-jingangjing",
+      "objectType": "cliff-inscription",
+      "titles": {
+        "zh": "泰山经石峪金刚经摩崖",
+        "en": "Cliff inscription of the Diamond Sutra at Jingshi Valley"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "北齐",
+        "original": "北齐",
+        "certainty": "approximate",
+        "note": "刻石无年月，时代依笔势风格推定。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "石坪约三千平方米，字径约50厘米",
+        "note": "石坪面积与字径依泰安市博物馆页面。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "in-situ",
+        "placeId": "place-taishan-jingshiyu",
+        "sourceRefs": [
+          "src-taian-jingshiyu"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "The inscription remains on the rock platform in the stream bed; the museum page gives no coordinate.",
+        "noteZh": "刻经仍在溪床石坪上，馆方页面未给坐标。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The object is the cliff itself, not a rubbing.",
+        "noteZh": "实物草稿。此处登记的是摩崖原石，不是拓本。"
+      },
+      "notes": [
+        "Published figures for the platform area and the surviving character count differ and have not been measured here.",
+        "Only part of the sutra was carved. Explanations for the halt differ, and this record adopts none of them."
+      ],
+      "notesZh": [
+        "石坪面积与现存字数各文所记不一，未据实测复核。",
+        "经文只刻了一部分，中止原因有不同解释，本记录不取一说。"
       ]
     },
     {
@@ -7000,6 +7747,58 @@
       ]
     },
     {
+      "id": "rubbing-xuanshi-biao",
+      "workId": "xuanshi-biao",
+      "objectType": "rubbing",
+      "titles": {
+        "zh": "宋拓锺王楷帖册（宣示表）",
+        "en": "Rubbing album of Zhong Yao and Wang Xizhi models, with the Memorial of Declaration"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "宋",
+        "original": "宋拓",
+        "certainty": "disputed",
+        "note": "馆藏著录称“宋拓”，册内小楷刻帖的实际拓制年代尚待鉴定。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "墨纸十九开，半开纵24.4至25.2厘米，横12.6至13.3厘米",
+        "note": "半开尺寸依故宫博物院文章所记，各开略有出入。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-palace-museum",
+        "sourceRefs": [
+          "src-dpm-xuanshi"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "The article describes the album as formerly kept in the Maoqin Hall and lists the seven small-script models it contains.",
+        "noteZh": "文章记此册曾贮懋勤殿，内集七种小楷刻帖，《宣示表》为其中之一。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The album is a compilation of engravings, not a single rubbing of one stone.",
+        "noteZh": "实物草稿。此册为多种小楷刻帖的合装，不是一石之拓。"
+      },
+      "notes": [
+        "“Song rubbing” is the old label and catalogue wording. Whether every model in the album is a Song impression has not been established sheet by sheet.",
+        "The relation between this copy of the Memorial and impressions from Jia Sidao’s Southern Song stone is unchecked."
+      ],
+      "notesZh": [
+        "“宋拓”为旧签与著录用语，册中诸帖是否同为宋拓，未见逐开鉴定。",
+        "册内《宣示表》与南宋贾似道摹刻石的拓本关系待核。"
+      ]
+    },
+    {
       "id": "rubbing-yugong-nansong",
       "workId": "yugong-gong-bei",
       "objectType": "rubbing",
@@ -7125,6 +7924,58 @@
       ],
       "notesZh": [
         "所引条目没有给出库房位置，也未核实目前的展出状态。"
+      ]
+    },
+    {
+      "id": "rubbing-zhang-xuan-muzhi",
+      "workId": "zhang-xuan-muzhi",
+      "objectType": "rubbing",
+      "titles": {
+        "zh": "张玄墓志（何绍基旧藏剪裱拓本）",
+        "en": "Epitaph of Zhang Xuan, cut-and-mounted album formerly owned by He Shaoji"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "明",
+        "original": "明拓",
+        "certainty": "approximate",
+        "note": "以纸墨考其年代，似为明代拓本。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "剪裱十二页，每页四行，满行八字",
+        "note": "行款依市政府页面所记，与志文二十行之说并存。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-shanghai-museum",
+        "sourceRefs": [
+          "src-yongji-zhangxuan"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "The page traces the album from He Shaoji in 1825 to Qin Wenjin and then to the Shanghai Museum.",
+        "noteZh": "页面记此本道光五年归何绍基，民国间归秦文锦，今藏上海博物馆。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The stone is lost; this album is the only surviving carrier recorded here.",
+        "noteZh": "实物草稿。原石已佚，本记录只登记这一件传世拓本。"
+      },
+      "notes": [
+        "The album’s page count does not match the recorded line arrangement of the text; the original order before mounting needs checking.",
+        "The year the album entered the Shanghai Museum is not recorded in the source."
+      ],
+      "notesZh": [
+        "剪裱页数与志文行款不一致，需据原件核对改装前的行次。",
+        "入藏上海博物馆的年份，来源未记。"
       ]
     },
     {
@@ -7282,6 +8133,316 @@
         "此件为整组刻石，非任何单一拓本；故宫藏清拓另作一件。",
         "不主张石数：报道作四百九十五方，故宫条目未记，故该数字只作为转述留在作品说明中。",
         "帖石嵌于同为文物建筑的楼壁；本记录不主张开放情况或可否摄影。"
+      ]
+    },
+    {
+      "id": "scroll-gushi-sitie",
+      "workId": "gushi-sitie",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "古诗四帖卷",
+        "en": "Four Poems, handscroll"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "唐",
+        "original": "唐",
+        "certainty": "approximate",
+        "note": "卷无年款，馆方列于唐。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "纵29.5厘米，横195.2厘米",
+        "note": "尺寸依报纸报道，未据馆方著录复核。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-liaoning-museum",
+        "sourceRefs": [
+          "src-lnm-gushisitie"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "The museum exhibition list records the scroll among its holdings.",
+        "noteZh": "馆方展览清单记此卷为馆藏。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The carrier is a paper handscroll; its attribution to Zhang Xu is traditional.",
+        "noteZh": "实物草稿。载体为纸本长卷，张旭归属属传称。"
+      },
+      "notes": [
+        "The sequence of colophons and collectors’ seals needs checking against the scroll or a full reproduction.",
+        "Dimensions and character count come from a newspaper report; no museum measurement was consulted."
+      ],
+      "notesZh": [
+        "卷上题跋与鉴藏印的先后关系，需据原件或影印本逐段核对。",
+        "尺寸与字数依报刊，未见馆方尺寸著录。"
+      ]
+    },
+    {
+      "id": "scroll-jiuhua-tie",
+      "workId": "jiuhua-tie",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "韭花帖（清内府藏本）",
+        "en": "Letter on Leek Flowers, Qing palace album"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "五代",
+        "original": "五代",
+        "certainty": "documented",
+        "note": "馆方定于五代；帖末只署月日，无年份。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "纵26厘米，横28厘米",
+        "note": "墨迹麻纸本，七行。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-wuxi-museum",
+        "sourceRefs": [
+          "src-wuxi-jiuhua"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "Formerly in the Qing palace, removed in the 1920s, and accessioned by the Wuxi Museum in 1982.",
+        "noteZh": "清宫旧藏，二十世纪二十年代流出，1982 年入藏无锡博物院。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The museum records three surviving versions and an unresolved authenticity debate.",
+        "noteZh": "实物草稿。馆方记传世三本，真伪之争尚未定论。"
+      },
+      "notes": [
+        "Two museum pages give sixty-three and sixty-five characters; neither has been checked against the object.",
+        "Whether the Qing palace album is a copy or an original is disputed."
+      ],
+      "notesZh": [
+        "馆方两篇文章分别记六十三字与六十五字，未据原件复核。",
+        "清内府本为摹本还是真迹，鉴定意见不一。"
+      ]
+    },
+    {
+      "id": "scroll-lu-you-shi",
+      "workId": "lu-you-zishu-shi",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "陆游自书诗卷",
+        "en": "Scroll of Poems in Lu You’s Own Hand"
+      },
+      "productionDate": {
+        "kind": "single",
+        "startYear": 1204,
+        "startMonth": null,
+        "endYear": 1204,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "南宋嘉泰四年（1204年）",
+        "certainty": "documented",
+        "note": null
+      },
+      "catalogNumber": null,
+      "dimensions": null,
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-liaoning-museum",
+        "sourceRefs": [
+          "src-lnm-luyou"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "The museum note lists the scroll among its holdings and dates it to Lu You’s eightieth year.",
+        "noteZh": "馆方说明记此卷为馆藏，并系于陆游八十岁。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The museum note gives no dimensions, line count or provenance.",
+        "noteZh": "实物草稿。馆方说明未记尺寸、行数与流传。"
+      },
+      "notes": [
+        "The museum note consulted gives no dimensions, line count or paper type.",
+        "The Yuan and Ming colophons and the scroll’s collecting history await a museum catalogue."
+      ],
+      "notesZh": [
+        "尺寸、行数与纸质未见于所据馆方说明。",
+        "卷后元明题跋的鉴藏经过，待查馆方著录。"
+      ]
+    },
+    {
+      "id": "scroll-nongfang-shitie",
+      "workId": "nongfang-shitie",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "秾芳诗帖卷",
+        "en": "Poem on Fragrant Blossoms, handscroll"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "北宋",
+        "original": "北宋",
+        "certainty": "documented",
+        "note": "帖无年款，馆方列于北宋。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "纵27.2厘米，横265.9厘米",
+        "note": "绢本，界朱丝栏，字大近五寸。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-taipei-palace",
+        "sourceRefs": [
+          "src-npm-nongfang",
+          "src-dpm-emperor"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "The Taipei entry catalogues the scroll; the Palace Museum article gives the present holding and dimensions.",
+        "noteZh": "台北故宫条目著录此卷，故宫博物院文章记今藏与尺寸。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The writing year is not recorded in either source.",
+        "noteZh": "实物草稿。两处来源均未记书写年份。"
+      },
+      "notes": [
+        "No writing year is recorded; the scroll can only be assigned to the Northern Song.",
+        "Dimensions follow the Palace Museum article and have not been checked against the object in Taipei."
+      ],
+      "notesZh": [
+        "书写年份无记载，只能定为北宋。",
+        "尺寸依故宫博物院文章，未据台北故宫原件复核。"
+      ]
+    },
+    {
+      "id": "scroll-wangduo-shi",
+      "workId": "wangduo-zishu-shi",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "王铎行草书自书诗卷",
+        "en": "Scroll of Wang Duo’s Own Poems, handscroll"
+      },
+      "productionDate": {
+        "kind": "single",
+        "startYear": 1639,
+        "startMonth": 1,
+        "endYear": 1639,
+        "endMonth": 1,
+        "eraLabel": null,
+        "original": "明崇祯十二年（1639年）正月",
+        "certainty": "documented",
+        "note": null
+      },
+      "catalogNumber": "新00134421",
+      "dimensions": {
+        "raw": "纵26.9厘米，横166厘米",
+        "note": "纸本。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-palace-museum",
+        "sourceRefs": [
+          "src-dpm-wangduo"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "The catalogue entry records the object number and the signed colophon.",
+        "noteZh": "藏品条目记文物号与本人款识。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The scroll carries no collector’s seals and is not recorded in early catalogues.",
+        "noteZh": "实物草稿。本幅无藏印，亦未见早期著录。"
+      },
+      "notes": [
+        "The scroll has no collector’s seals and no early catalogue record; its transmission before entering the palace is unknown.",
+        "The dedicatee named at the start of the scroll is unidentified."
+      ],
+      "notesZh": [
+        "本幅无藏印，亦未见著录，入宫以前的流传不明。",
+        "卷首上款人物待考。"
+      ]
+    },
+    {
+      "id": "scroll-wuchangshuo-shigu",
+      "workId": "wuchangshuo-lin-shiguwen",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "吴昌硕篆书临石鼓文轴",
+        "en": "Hanging scroll after the Stone Drums"
+      },
+      "productionDate": {
+        "kind": "single",
+        "startYear": 1915,
+        "startMonth": 5,
+        "endYear": 1915,
+        "endMonth": 5,
+        "eraLabel": null,
+        "original": "1915年夏五月",
+        "certainty": "documented",
+        "note": null
+      },
+      "catalogNumber": "新00111675",
+      "dimensions": {
+        "raw": "纵149.5厘米，横82.3厘米",
+        "note": "纸本。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-palace-museum",
+        "sourceRefs": [
+          "src-dpm-wuchangshuo"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "The catalogue entry records the object number and the signed and dated colophon.",
+        "noteZh": "藏品条目记文物号与本人款识。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The source does not identify the rubbing used for the copy.",
+        "noteZh": "实物草稿。来源未记所据拓本。"
+      },
+      "notes": [
+        "The museum does not record which edition of the Stone Drums rubbing was used.",
+        "The transcription differs from current readings in places and needs collation against the drums."
+      ],
+      "notesZh": [
+        "所据石鼓拓本的版本与早晚，馆方未记。",
+        "释文与今通行释读的出入，待对照原鼓。"
       ]
     },
     {
@@ -9008,6 +10169,59 @@
       ],
       "notesZh": [
         "所引条目没有给出库房位置，也未核实目前的展出状态。"
+      ]
+    },
+    {
+      "id": "stele-sanfen-ji",
+      "workId": "sanfen-ji",
+      "objectType": "recarving",
+      "titles": {
+        "zh": "三坟记碑（宋时重刻）",
+        "en": "Record of the Three Graves, Song recutting"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "宋",
+        "original": "宋时重刻",
+        "certainty": "approximate",
+        "note": "原石立于唐大历二年，久佚；现存碑林者为宋时重刻，重刻年份未详。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "残高160厘米，宽80厘米，厚25厘米",
+        "note": "螭首已残，碑身中部横断；尺寸依西安碑林博物馆页面。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-xian-beilin-museum",
+        "sourceRefs": [
+          "src-beilin-sanfenji",
+          "src-hbrb-sanfenji"
+        ],
+        "sourceAccessedAt": "2026-11-24",
+        "assertionAsOf": null,
+        "note": "The museum page describes the stone now in the Beilin; a newspaper feature identifies it as a Song recutting of the lost Tang original.",
+        "noteZh": "馆方页面记今碑在碑林，报纸称其为唐原石佚后的宋时重刻。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. This entry describes the surviving carrier, not the lost Tang stone.",
+        "noteZh": "实物草稿。此处登记的是现存重刻，不是已佚的唐原石。"
+      },
+      "notes": [
+        "Neither the recutting year nor its sponsor is recorded in the sources; the stele’s back and catalogues need checking.",
+        "The Beilin page does not mark the stone as a recutting, and only a museum catalogue can settle the difference."
+      ],
+      "notesZh": [
+        "重刻年份与主持者，来源均未记，待查碑阴或著录。",
+        "碑林页面未标注重刻，两种表述的差异需由馆方著录定夺。"
       ]
     },
     {
@@ -12404,6 +13618,25 @@
       "notesZh": []
     },
     {
+      "id": "place-taishan-jingshiyu",
+      "names": {
+        "zh": "泰山经石峪",
+        "en": "Jingshi Valley, Mount Tai"
+      },
+      "historicalName": "经石峪",
+      "kind": "historical-site",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-taian-jingshiyu"
+      ],
+      "notes": [
+        "The museum page locates the inscription northeast of Doumu Gong on a stream-bed rock platform. It gives no coordinate, so none is recorded."
+      ],
+      "notesZh": [
+        "馆方页面只记刻经在斗母宫东北的溪床石坪上，未给坐标，本记录不设点位。"
+      ]
+    },
+    {
       "id": "place-tianjin-museum",
       "names": {
         "zh": "天津博物馆",
@@ -12459,6 +13692,25 @@
       "notesZh": [
         "位于永州祁阳湘江之畔，颂文刻在峿台崖壁上。",
         "未记录坐标：所引页面描述崖壁位置，但没有实测点位。"
+      ]
+    },
+    {
+      "id": "place-wuxi-museum",
+      "names": {
+        "zh": "无锡博物院",
+        "en": "Wuxi Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-wuxi-jiuhua"
+      ],
+      "notes": [
+        "The museum page gives no street address or point; no coordinate is recorded."
+      ],
+      "notesZh": [
+        "馆方页面没有给出地址或点位，本记录不设坐标。"
       ]
     },
     {
@@ -12840,6 +14092,17 @@
       "accessedAt": "2026-11-18",
       "locator": "Named collection entry and its descriptive text",
       "note": null
+    },
+    {
+      "id": "src-beilin-sanfenji",
+      "kind": "web",
+      "title": "三坟记碑",
+      "publisher": "西安碑林博物馆 Xi’an Beilin Museum",
+      "url": "https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2611",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "记大历二年（767）刻、李季卿撰文、李阳冰书写、原石立于唐长安城凤栖原、螭首龟趺、残高160厘米宽80厘米厚25厘米、碑阳13行碑阴11行满行20字",
+      "note": "Museum page. It describes the stone as the 767 monument and does not mention a recutting; the recarving report is recorded in a separate source and left as an open question."
     },
     {
       "id": "src-beilin-shengjiaoxu",
@@ -13535,6 +14798,17 @@
       "note": "A thematic page by the museum. The 563 cm figure covers the mounted scroll; accounts of the calligraphy section alone give about 166 cm."
     },
     {
+      "id": "src-dpm-emperor",
+      "kind": "web",
+      "title": "皇帝書家宋徽宗",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1956/T00022_00.pdf",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "记《穠芳詩帖》絹本、大字楷書、界朱絲欄、27.2×265.9厘米、今藏臺北故宮博物院，為趙佶傳世惟一大字作品",
+      "note": "Museum article PDF. Used for the medium and dimensions; the calligraphy's date is not recorded there."
+    },
+    {
       "id": "src-dpm-hengfang",
       "kind": "web",
       "title": "【清拓东汉衡方碑】",
@@ -13621,6 +14895,39 @@
       "accessedAt": "2026-11-18",
       "locator": "Catalogue number and 简介",
       "note": null
+    },
+    {
+      "id": "src-dpm-wangduo",
+      "kind": "web",
+      "title": "王铎行草书自书诗卷",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228265.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "释文、尺寸、己卯（崇祯十二年，1639）款、时年四十七，以及“本幅无藏印，亦未见著录”",
+      "note": "Museum catalogue entry with a signed attribution and a dated colophon."
+    },
+    {
+      "id": "src-dpm-wuchangshuo",
+      "kind": "web",
+      "title": "吴俊卿篆书临石鼓文轴",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228268.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "尺寸、乙卯（1915）款、时年七十一、临石鼓第三鼓“田车”篇，及向燊“以邓法写石鼓文，变横为纵”的评语",
+      "note": "Museum catalogue entry with a signed and dated colophon. It does not identify the rubbing used for the copy."
+    },
+    {
+      "id": "src-dpm-xuanshi",
+      "kind": "web",
+      "title": "谈《石渠宝笈·续编》中的“宋拓”《锺王楷帖》",
+      "publisher": "故宫博物院 The Palace Museum",
+      "url": "https://img.dpm.org.cn/Uploads/File/2023/11/14/u6553200bb65a8.pdf",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "第一节《宣示表》；记钟繇生卒、真迹未存、据王羲之临本摹刻、存十八行、单刻与丛帖，以及贾似道摹刻石今存首都博物馆",
+      "note": "Museum research article on the album that contains the Xuanshi biao. It describes the transmission and the engraved copies; it does not treat the album as an autograph."
     },
     {
       "id": "src-dpm-yan-qinli-rubbing",
@@ -13711,6 +15018,17 @@
       "note": "Identifies the Shimen Song among the inscriptions removed and moved to Hanzhong Museum in the early 1970s."
     },
     {
+      "id": "src-hbrb-sanfenji",
+      "kind": "web",
+      "title": "阳冰独步",
+      "publisher": "河北日报 Hebei Daily",
+      "url": "https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html",
+      "publicationDate": "2018-05-25",
+      "accessedAt": "2026-11-24",
+      "locator": "论《三坟记》“原石久佚，现存陕西省西安市碑林的为宋时重刻”，并引孙承泽、康有为的评价",
+      "note": "A newspaper feature used for the recutting report and the art-historical assessment. It is not an institutional catalogue and gives no recutting year."
+    },
+    {
       "id": "src-hunan-wuxi",
       "kind": "web",
       "title": "浯溪碑林",
@@ -13788,6 +15106,39 @@
       "note": null
     },
     {
+      "id": "src-lnd-gushisitie",
+      "kind": "web",
+      "title": "开辟并丰富中国书法艺术表现空间——解读国家一级文物《古诗四帖》卷",
+      "publisher": "辽宁日报 Liaoning Daily",
+      "url": "https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html",
+      "publicationDate": "2019-11-11",
+      "accessedAt": "2026-11-24",
+      "locator": "“唐 张旭《古诗四帖》卷 纸本 草书 纵29.5厘米 横195.2厘米 辽宁省博物馆藏”，以及释文与四首诗的作者",
+      "note": "A newspaper feature published for a museum exhibition. Used for the physical description and content; the holding and title come from the museum page."
+    },
+    {
+      "id": "src-lnm-gushisitie",
+      "kind": "web",
+      "title": "姑苏繁华图、张旭草书四帖领衔，看一看辽博哪些藏品将亮相“姑苏繁华”特展",
+      "publisher": "辽宁省博物馆 Liaoning Provincial Museum",
+      "url": "https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "第一单元“草圣典范”展品清单第一项“唐 张旭 草书古诗四帖卷 … 辽宁省博物馆藏”",
+      "note": "Museum exhibition page. It establishes the title, the traditional attribution and the holding; it gives no dimensions or edition history."
+    },
+    {
+      "id": "src-lnm-luyou",
+      "kind": "web",
+      "title": "国宝咏诵人 | 国宝资料库（一）",
+      "publisher": "辽宁省博物馆 Liaoning Provincial Museum",
+      "url": "https://www.lnmuseum.com.cn/mobile/?id=8354#/about/detail?pageType=2&id=85402002231912272047189481446",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "第 09 条“南宋 陆游 自书诗卷”：纸本行草长卷、南宋嘉泰四年所作、陆游八十岁、收录自作诗八首",
+      "note": "Museum object note. It does not give dimensions, line count or provenance events."
+    },
+    {
       "id": "src-lnm-wansui",
       "kind": "web",
       "title": "藏品：摹王氏一门书翰卷",
@@ -13808,6 +15159,17 @@
       "accessedAt": "2026-11-18",
       "locator": "Catalogue note on 张迁碑",
       "note": "A secondary album note. It states the 张迁碑 was carved in 中平三年 (186), unearthed in the early Ming, and stands in the 岱庙 stele corridor. No museum page was found to confirm this."
+    },
+    {
+      "id": "src-met-lingfeijing",
+      "kind": "web",
+      "title": "Classic of Spiritual Flight",
+      "publisher": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/36439",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "Object data and label text: attributed to Zhong Shaojing, ca. 738, commissioned by Princess Yuzhen, album of nine leaves, 43 surviving columns, Dong Qichang and the Bohai cangzhen.",
+      "note": "Museum collection page. The attribution is stated as “Attributed to”, and the label records the loss of the rest of the scroll."
     },
     {
       "id": "src-met-shiqi",
@@ -13874,6 +15236,17 @@
       "accessedAt": "2026-11-18",
       "locator": "Abstract, p. 169: the imperial album and the distinct Zhang Yu copy",
       "note": null
+    },
+    {
+      "id": "src-npm-nongfang",
+      "kind": "web",
+      "title": "宋徽宗詩帖 卷",
+      "publisher": "國立故宮博物院 National Palace Museum",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/13889?dep=P",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "品名、書體、釋文與說明：瘦金書、朱絲欄、字大近五寸、傳世徽宗書跡最大者",
+      "note": "Museum digital archive entry. It does not give dimensions or a writing year."
     },
     {
       "id": "src-people-longzang",
@@ -14063,6 +15436,17 @@
       "note": "Identifies Dai Temple as the site of the Tai’an Museum. It gives no object-specific coordinates."
     },
     {
+      "id": "src-taian-jingshiyu",
+      "kind": "web",
+      "title": "经石峪",
+      "publisher": "泰安市博物馆 Tai'an Municipal Museum",
+      "url": "https://www.daimiao.cn/contents/193/5382.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "记刻经位置、石坪面积、字径五十厘米、现存字数、无年月与书刻者姓名，以及康有为“榜书之宗”的评语",
+      "note": "Museum page on the cliff inscription. The surviving character count differs between this page and the museum's rubbing article; neither is asserted in the structured fields."
+    },
+    {
       "id": "src-taian-zhangqian-holding",
       "kind": "web",
       "title": "泰安市博物馆开展国际博物馆日系列活动",
@@ -14206,6 +15590,28 @@
       "note": "Crowd-sourced secondary data, institution-level only. It locates the museum as a whole, not a storage room or gallery."
     },
     {
+      "id": "src-wuxi-jiuhua-entry",
+      "kind": "web",
+      "title": "《韭花帖》",
+      "publisher": "无锡博物院 Wuxi Museum",
+      "url": "https://www.wxmuseum.cn/News/Details/fab18864-9728-4d78-a7fe-37a67421ad03",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "藏品条目：行楷书、墨迹麻纸本、高26厘米宽28厘米、七行六十五字、国家一级文物",
+      "note": "Short collection entry. Its character count differs from the museum's longer feature, which is why the record notes both readings."
+    },
+    {
+      "id": "src-wuxi-jiuhua",
+      "kind": "web",
+      "title": "【无锡宝藏之十四】杨凝式《韭花帖》：一件因吃而成就的笔墨神迹",
+      "publisher": "无锡博物院 Wuxi Museum",
+      "url": "https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b",
+      "publicationDate": null,
+      "accessedAt": "2026-11-24",
+      "locator": "记行楷墨迹麻纸本、高26厘米宽28厘米、七行六十三字、清宫旧藏、1982年入藏、传世三本与真伪争议",
+      "note": "Museum feature. It gives 63 characters here and 65 in the shorter entry, so the count is not asserted in the structured fields."
+    },
+    {
       "id": "src-xiling-shen-chronology",
       "kind": "web",
       "title": "专题·沈尹默书风研究（年表）",
@@ -14270,6 +15676,17 @@
       "accessedAt": "2026-11-18",
       "locator": "「一」节中两碑叙述",
       "note": "Gives 405 and a width of 0.86 m for 宝子碑, and records the 1827 protective building ordered for 龙颜碑."
+    },
+    {
+      "id": "src-yongji-zhangxuan",
+      "kind": "web",
+      "title": "蒲坂城遇见南阳太守张黑女",
+      "publisher": "永济市人民政府门户网站",
+      "url": "https://www.yongji.gov.cn/doc/2024/09/02/472291.shtml",
+      "publicationDate": "2024-09-02",
+      "accessedAt": "2026-11-24",
+      "locator": "记普泰元年（531）十月合葬、正书二十行行二十字、原石久佚、何绍基道光五年得剪裱旧拓孤本、今藏上海博物馆",
+      "note": "A local-government cultural feature. It states the inscription's date, script and transmission, and places the burial ground in present-day Yongji; it does not reproduce a museum accession record."
     },
     {
       "id": "src-yz-wuxi",

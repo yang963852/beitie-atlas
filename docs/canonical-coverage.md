@@ -4,22 +4,25 @@ Task 024 brings ink manuscripts and manuscript copies into scope through the Qin
 
 Task 037 fills the largest remaining gaps on the 帖 side and the early medieval 碑 side: 平复帖、十七帖、洛神赋十三行、好太王碑、始平公造像记、虞恭公碑、颜氏家庙碑、万岁通天帖、胆巴碑、三门记 and 三希堂法帖. Where a work survives only as a later carrier — a Southern Song carving, a Tang tracing, a paper draft, a set of Qing blocks — the record describes that carrier and does not imply the lost original survives.
 
+Task 041 adds a teaching-oriented classics selection and closes three empty periods: 宣示表、张玄墓志、泰山经石峪金刚经、灵飞经、三坟记、古诗四帖、韭花帖、秾芳诗帖、陆游自书诗卷、王铎行草书自书诗卷 and 吴昌硕临石鼓文轴. The selection report and its rejected candidates are in [research/classics-selection-2026-11.md](research/classics-selection-2026-11.md).
+
 The owner's reading list sets priorities. A name in this table is not approval of a date, holding, image right, or attribution. The supplied list mentions a separate debate section that was not supplied.
 
 | Period | Already represented (including drafts) | Next stone, rubbing or modelbook gaps |
 | --- | --- | --- |
 | Pre-Qin and Qin | 石鼓文 (023); 泰山刻石, 琅琊刻石, 峄山碑 | 诅楚文: identify a particular surviving rubbing or recut; never plot the lost original as current. |
 | Han | 石门颂, 乙瑛碑, 礼器碑, 史晨碑, 西狭颂, 曹全碑, 张迁碑; 熹平石经 (023) | 明拓礼器碑 (新00044512) is recorded. Identify a separate institutional copy of 史晨前碑; add other 熹平石经 fragments only with item-level evidence. |
-| Three Kingdoms through Northern and Southern Dynasties | 平复帖 (037), 十七帖 (037), 兰亭序 (神龙本 and 定武肥本翻刻), 洛神赋十三行 (037); 爨宝子碑, 爨龙颜碑, 石门铭, 张猛龙碑, 郑文公上下碑, 好太王碑 (037), 始平公造像记 (037) | 张黑女墓志, 黄庭经, 宣示表, 荐季直表; other individual 龙门造像题记 (not a fictitious single stone). |
-| Sui and Tang | 龙藏寺碑, 九成宫醴泉铭, 皇甫诞碑, 晋祠之铭, 温泉铭, 集王圣教序, 多宝塔碑, 颜勤礼碑, 麓山寺碑, 玄秘塔碑, 神策军碑, 雁塔圣教序, 化度寺塔铭, 董美人墓志, 麻姑仙坛记, 虞恭公碑 (037), 颜氏家庙碑 (037), 万岁通天帖 (037), 胆巴碑 (037) | 四欧堂 九成宫 copy; distinguish monument, surviving impression, recut and lost original for 虞恭公碑, whose lower half is effaced. |
-| Song | 淳化阁帖 (懋勤殿本卷六) | 大观帖, 绛帖, 汝帖, 祕阁帖; record the edition and volume of the physical impression. |
+| Three Kingdoms through Northern and Southern Dynasties | 平复帖 (037), 十七帖 (037), 兰亭序 (神龙本 and 定武肥本翻刻), 洛神赋十三行 (037), 宣示表 (041); 爨宝子碑, 爨龙颜碑, 石门铭, 张猛龙碑, 郑文公上下碑, 好太王碑 (037), 始平公造像记 (037), 张玄墓志 (041), 泰山经石峪金刚经 (041) | 黄庭经, 荐季直表; other individual 龙门造像题记 (not a fictitious single stone). |
+| Sui and Tang | 龙藏寺碑, 九成宫醴泉铭, 皇甫诞碑, 晋祠之铭, 温泉铭, 集王圣教序, 多宝塔碑, 颜勤礼碑, 麓山寺碑, 玄秘塔碑, 神策军碑, 雁塔圣教序, 化度寺塔铭, 董美人墓志, 麻姑仙坛记, 虞恭公碑 (037), 颜氏家庙碑 (037), 万岁通天帖 (037), 胆巴碑 (037), 灵飞经 (041), 三坟记 (041), 古诗四帖 (041) | 四欧堂 九成宫 copy; distinguish monument, surviving impression, recut and lost original for 虞恭公碑, whose lower half is effaced. |
+| Song | 淳化阁帖 (懋勤殿本卷六), 秾芳诗帖 (041), 陆游自书诗卷 (041) | 大观帖, 绛帖, 汝帖, 祕阁帖; record the edition and volume of the physical impression. |
 | Yuan | 胆巴碑 (037), 三门记 (037) | Distinguish the many 洛神赋 and 赤壁赋 versions; both new entries are paper drafts, not stones, and the fate of either carved stele is unrecorded. |
-| Ming | No matching named item in this checklist | 龙马记; verify the object and distinguish Wang Duo's role from later copying or engraving. |
+| Ming | 王铎行草书自书诗卷 (041) | 龙马记; verify the object. Wang Duo is now represented by a signed 1639 scroll, not by a later copy. |
 | Qing | 三希堂法帖 (037) | Identify a single Qing impression and its volume; the 495-block count comes from a press feature and the museum gives none. |
+| Republican period | 吴昌硕临石鼓文轴 (041, written 1915) | The museum labels the scroll Qing; the atlas files it by writing year. Confirm the rule before adding more late-Qing hands. |
 
 ## Open questions from the witness audit
 
-- **张黑女墓志 (张玄墓志).** The [Shanghai Museum entry](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00162800) names the work and period. It gives neither accession number nor ownership marks. Match the He Shaoji album against a catalogue or plate before assigning its holding. The reported family ownership also needs a full publisher statement identifying the same object.
+- **张黑女墓志 (张玄墓志).** Now recorded as a draft (041) from a [Yongji municipal government feature](https://www.yongji.gov.cn/doc/2024/09/02/472291.shtml), not from the Shanghai Museum entry. The album's line count (twenty lines or twelve), the character count and the accession year remain unverified. Match the He Shaoji album against a catalogue or plate before asserting the holding.
 - **郑文公碑.** Compare measured surveys of the two cliffs before citing disputed dimensions or counts. Check the Palace Museum album separately for trimming and retouching.
 - **化度寺塔铭.** Obtain the Si’ou album shelfmark and a page-level catalogue of its colophons. Research the Dunhuang leaves under their Paris and London identifiers separately. Their dating and recut status require comparison.
 - **淳化阁帖.** Check the contents and supplied leaves of volume six against another identified volume. Keep the location of disputed matrices outside the album history.
