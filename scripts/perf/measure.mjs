@@ -365,6 +365,7 @@ async function runOnce(path, index) {
       ok();
     }, 45000);
     page.on('Page.loadEventFired', () => {
+      if (loadTimedOut || loadTransfer !== null) return;
       // Snapshot inside the load event, before any later readable-time reads.
       loadTransfer = transferSoFar();
       clearTimeout(timer);
