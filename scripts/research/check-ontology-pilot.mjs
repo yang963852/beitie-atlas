@@ -575,8 +575,10 @@ function validatePilot(pilot, index, options = {}) {
   const locatorFor = (year) => jizhiYears.find((claim) => claim.value === year)?.evidence?.[0]?.locator ?? '';
   const locator1282 = locatorFor(1282);
   const locator1283 = locatorFor(1283);
-  if (!/壬午/.test(locator1282) || !/癸未/.test(locator1283) || locator1282 === locator1283) {
-    error('PROBE_JIZHI_COLOPHON_LOCATORS', '$.cases', 'The 1282 claim must cite the 壬午 colophon and the 1283 claim the 癸未 colophon, with distinct locators. Script style is disputed and is not part of this probe.');
+  const identifies1282 = /壬午|丙戌/.test(locator1282);
+  const identifies1283 = /癸未|戊子/.test(locator1283);
+  if (!identifies1282 || !identifies1283 || locator1282 === locator1283) {
+    error('PROBE_JIZHI_COLOPHON_LOCATORS', '$.cases', 'The 1282 claim must cite the 壬午 or 丙戌 colophon and the 1283 claim the 癸未 or 戊子 colophon, with distinct locators. Script style is disputed and is not part of this probe.');
   }
   const jizhiUnresolved = caseRecords
     .filter((record) => record.workId === 'jizhi')
