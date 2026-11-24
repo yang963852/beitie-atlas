@@ -8,7 +8,7 @@ export function deskTexture(surface: 'felt' | 'paper') {
   let seed = 2397;
   const random = () => ((seed = (1664525 * seed + 1013904223) >>> 0) / 4294967296);
   const wool = surface === 'felt';
-  ctx.fillStyle = wool ? '#555952' : '#decfae';
+  ctx.fillStyle = wool ? '#55503f' : '#decfae';
   ctx.fillRect(0, 0, 1024, 768);
   // Soft clumps beneath individual strands break up the uniform digital grain.
   for (let i = 0; i < 560; i++) {

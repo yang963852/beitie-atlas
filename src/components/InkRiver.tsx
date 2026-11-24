@@ -32,7 +32,7 @@ export function InkRiver() {
             float current=.45*sin(flow*7.+eddy)+.3*sin(x*.8-flow*5.);
             float water=1.-smoothstep(.88,1.02,distanceToBank);
             float fibre=.045*sin(x*23.+v.y*80.);
-            vec3 ink=mix(vec3(.53,.63,.57),vec3(.16,.32,.30),.5+.48*current+fibre);
+            vec3 ink=mix(vec3(.62,.54,.41),vec3(.28,.19,.13),.5+.48*current+fibre);
             gl_FragColor=vec4(ink,water*(.72+.19*current-.38*glint));
           }`,
       });

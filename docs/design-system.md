@@ -1,6 +1,6 @@
-# Design system — calm, useful, content-led
+# Design system — a reading room for steles
 
-Owner direction, 2026-11-17: take inspiration from Apple's simplicity without losing functionality. This document defines our own web design choices; it is not an Apple component kit or a claim of Apple affiliation.
+Owner direction, 2026-11-17: take inspiration from Apple's simplicity without losing functionality. Owner direction, 2026-11-25: carry the knowledge library's paper, ink and seal setting across the whole product, including the opening desk. This document defines our own web design choices; it is not an Apple component kit or a claim of Apple affiliation.
 
 ## Principles
 
@@ -8,44 +8,45 @@ Write for a reader at the copying desk. Use concrete details from the inscriptio
 
 Show the artifact and its location first. Use strong hierarchy, consistent alignment, whitespace, and progressive disclosure. Keep search, selection, source access, and recovery discoverable. Do not equate simplicity with hiding necessary controls.
 
-The opening camera descends from a misty classroom to the copying desk. The question floats above the practice sheet. Clicking the scene or pressing Enter brings the brush from the ink dish to the paper. After contact, the camera moves closer to the spreading wash before revealing the work timeline. Desktop readers move from earlier to later works horizontally; narrow layouts follow the same sequence vertically. A work opens in a reading dialog. Its individual witnesses link to their own collection map and sourced transmission narrative. Reduced motion enters immediately. Shared links land on the corresponding record or journey.
+The opening camera descends from a misty classroom to the copying desk. The question floats above the practice sheet. Clicking the scene or pressing Enter brings the brush from the ink dish to the paper. After contact, the camera moves closer to the spreading wash before revealing the work timeline. Desktop readers move from earlier to later works horizontally; narrow layouts follow the same sequence vertically. A work opens in a reading dialog. Its individual witnesses link to their own collection map and sourced transmission narrative. Reduced motion enters immediately. Shared links land on the corresponding record or journey. The camera, brush, hand and ink-spread timing are the scene's core; visual work stays in lighting, colour, texture and the surrounding page chrome.
 
-The knowledge library is a second direct entry. A work or person page leads with its title and authored text. Name the edition and observer for a close reading. Keep source, review state and a route back to the subject visible. Reading and following links must work when the subject has no map point, portrait or surviving witness. Present the beta edition label and a feedback route in the reading experience.
+The knowledge library remains the reference reading page. A work or person page leads with its title and authored text. Name the edition and observer for a close reading. Keep source, review state and a route back to the subject visible. Reading and following links must work when the subject has no map point, portrait or surviving witness. Present the beta edition label and a feedback route in the reading experience.
 
 ## Starting tokens (project decisions)
 
 | Token | Initial value/use |
 | --- | --- |
-| Canvas | `#f5f5f7` |
-| Surface | `#ffffff` |
-| Main text | `#1d1d1f` |
-| Secondary text | `#515154`; verify actual background contrast |
-| Accent | `#0066cc`, reserved for actions/selection |
-| Divider | `#d2d2d7`; decorative, not sufficient for all control boundaries |
+| Canvas | `#f4eddd`; a warm paper wash with a 5% laid-paper grain |
+| Surface | `#fdf9ef`; paper leaves and cards |
+| Main text | `#2a251e` |
+| Secondary text | `#554b3d`; captions `#756a58` (at least 4.55:1 on the paper) |
+| Accent | `#8f2f22`; vermilion seal, reserved for actions, selection and focus |
+| Divider | `#d9ccb4`; soft `#e8decb`; decorative, not sufficient for all control boundaries |
 | Spacing | 4, 8, 12, 16, 24, 32, 48 px |
-| Corners | 8 px controls; 12–16 px panels; avoid pills everywhere |
-| Body | 16 px, line height 1.5–1.65 |
-| Secondary information | 14 px; avoid tiny 11 px reference paragraphs |
-| Motion | 120–200 ms for state changes; honor reduced motion |
+| Corners | 2–4 px cards, sheets and controls; doubles and hairlines carry the book structure |
+| Body | 16 px, line height 1.65; reading prose 17–18 px at 1.95–2.0 |
+| Secondary information | 12.5–14 px; avoid tiny 11 px reference paragraphs |
+| Motion | 120–200 ms for state changes; the opening keeps its authored sequence; honor reduced motion |
 
-Define reusable CSS variables and shared button/input states. Use system sans-serif stacks including Chinese fallbacks. Chinese artwork headings may use a restrained local serif fallback. Do not download or redistribute Apple fonts or icons without the relevant license; system fallback usage is sufficient.
+Define reusable CSS variables and shared button/input states. Use Song serif for reading text, Kai for captions and small labels, and a local system sans only for technical or provider chrome. Chinese artwork headings may use a restrained local serif fallback. Do not download or redistribute fonts or icons without the relevant license; system fallback usage is sufficient.
 
-## Knowledge reading room (task 040)
+## Reading-room palette (tasks 040–042)
 
-The library is a second entry with its own reading material: it uses a printed-book setting scoped to `.reading-room`, while the atlas keeps the blue interface. Warm laid paper, Song serif body text, Kai captions, a vermilion seal accent and ruled catalogue shelves carry the book metaphor. Devices must stay functional: rules separate shelves, numerals order entries, the seal marks identity, and the accent marks navigation and selection.
+The whole product now shares one printed-catalogue language. Warm laid paper, Song serif body text, Kai captions, a vermilion seal accent and ruled catalogue shelves carry the book metaphor. The knowledge library is the reference implementation; the atlas, timeline, collection map, reading card, transmission page, contribution form and opening desk inherit the same tokens. Decorative devices must stay functional: rules separate shelves and facts, numerals order entries, the seal marks identity, and the accent marks navigation and selection.
 
 | Token | Value/use |
 | --- | --- |
-| Reading paper | `#f7f1e4` |
+| Reading paper | `#f4eddd` page, `#fcf8ee` lifted leaf |
 | Reading ink | `#2a251e`; secondary `#554b3d`, captions `#756a58` |
-| Seal accent | `#8f2f22`; active tab, section marks, timeline markers, selection |
+| Seal accent | `#8f2f22`; active tab, section marks, timeline markers, map markers, selection |
 | Rules | `#e8decb` soft, `#d9ccb4`, `#c3b192` strong |
-| Reading measure | 38 rem prose column inside a 62 rem page; 17–18 px body, line height 2.0 |
+| Reading measure | 38 rem prose column; 17–18 px body, line height 2.0 |
 | Paragraphs | 2 em first-line indent; Chinese justified, English left aligned |
 | Catalogue | Chinese numerals in Chinese, Arabic numerals in English; dynasty shelf count at the right rule |
+| Map plate | 4 px double rule, paper grid, seal markers; the provider basemap keeps its own cartography |
+| Opening desk | paper-light scene, filmic tone mapping, vignette and grain over the canvas; the camera and brush core stay unchanged |
 
 The vermilion accent is not reused for decorative flourishes. Focus remains a visible 2 px seal-coloured outline. The 390, 768 and 1440 layouts and the 200% zoom equivalent must keep readable measure, 44 px controls and no horizontal overflow. Dark mode remains out of scope.
-
 
 ## Information hierarchy
 
