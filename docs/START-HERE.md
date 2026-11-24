@@ -6,6 +6,8 @@ A learner wants to identify the work on their desk, distinguish its surviving ve
 
 ## Choose the assignment
 
+For the owner or an agent preparing a technical decision, start with the [Chinese architecture guide, diagrams and decision records](engineering-plan.md#负责人架构导读).
+
 | I am here to… | Read first | Hand off |
 | --- | --- | --- |
 | Suggest a source using only a browser | [Chinese knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) | A single Issue with source and locator, or an authored Markdown PR |
