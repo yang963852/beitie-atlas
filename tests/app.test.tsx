@@ -78,7 +78,7 @@ describe('application shell', () => {
     renderApp();
     const list = resultsList();
     const periods = within(list).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim().split(/\s*\d/)[0]);
-    expect(periods).toEqual(['先秦', '秦', '西汉', '东汉', '三国', '西晋', '东晋', '南北朝', '隋', '唐', '北宋', '元', '明', '清', '中华人民共和国']);
+    expect(periods).toEqual(['先秦', '秦', '西汉', '东汉', '三国', '西晋', '东晋', '南北朝', '隋', '唐', '五代十国', '北宋', '南宋', '元', '明', '清', '民国', '中华人民共和国']);
 
     expect(within(list).getByRole('heading', { name: /东汉/ })).toBeInTheDocument();
     expect(within(list).getByRole('heading', { name: /南北朝/ })).toBeInTheDocument();
