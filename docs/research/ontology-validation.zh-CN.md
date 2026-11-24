@@ -11,6 +11,7 @@
 | 语料基线 | `c6fd7c0`（试例 `baseRevision`；本分支从 `origin/main` 建立。该版本相对本地旧基线 `53d9f24` 只改了依赖锁文件，`data/` 与 `docs/` 未变） |
 | 固定副本 | [`scripts/research/inputs/ontology-pilot.a5e56b1.json`](../../scripts/research/inputs/ontology-pilot.a5e56b1.json)，SHA-256 `c274aaf6ee7026a0543a23d2ccd374d58af5132308043b8ca48ae419bb3f2063` |
 | 语料规模 | 85 部作品、95 件实物、141 条文献、1 条媒体；试例引用其中 5 部作品、9 件实物、5 条文献、1 条媒体、1 个事件 |
+| 分支与 PR | `research/ontology-validation`；脚本提交 `b2cd306`，本报告及后续修订见 PR 提交列表；[PR #37](https://github.com/yang963852/beitie-atlas/pull/37) |
 | 校验脚本 | [`scripts/research/check-ontology-pilot.mjs`](../../scripts/research/check-ontology-pilot.mjs)；纯 Node，只读，无新增依赖 |
 
 在仓库根目录可直接重跑：
