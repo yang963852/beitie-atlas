@@ -30,6 +30,23 @@ The knowledge library is a second direct entry. A work or person page leads with
 
 Define reusable CSS variables and shared button/input states. Use system sans-serif stacks including Chinese fallbacks. Chinese artwork headings may use a restrained local serif fallback. Do not download or redistribute Apple fonts or icons without the relevant license; system fallback usage is sufficient.
 
+## Knowledge reading room (task 040)
+
+The library is a second entry with its own reading material: it uses a printed-book setting scoped to `.reading-room`, while the atlas keeps the blue interface. Warm laid paper, Song serif body text, Kai captions, a vermilion seal accent and ruled catalogue shelves carry the book metaphor. Devices must stay functional: rules separate shelves, numerals order entries, the seal marks identity, and the accent marks navigation and selection.
+
+| Token | Value/use |
+| --- | --- |
+| Reading paper | `#f7f1e4` |
+| Reading ink | `#2a251e`; secondary `#554b3d`, captions `#756a58` |
+| Seal accent | `#8f2f22`; active tab, section marks, timeline markers, selection |
+| Rules | `#e8decb` soft, `#d9ccb4`, `#c3b192` strong |
+| Reading measure | 38 rem prose column inside a 62 rem page; 17–18 px body, line height 2.0 |
+| Paragraphs | 2 em first-line indent; Chinese justified, English left aligned |
+| Catalogue | Chinese numerals in Chinese, Arabic numerals in English; dynasty shelf count at the right rule |
+
+The vermilion accent is not reused for decorative flourishes. Focus remains a visible 2 px seal-coloured outline. The 390, 768 and 1440 layouts and the 200% zoom equivalent must keep readable measure, 44 px controls and no horizontal overflow. Dark mode remains out of scope.
+
+
 ## Information hierarchy
 
 - Always visible: original title, English title, object type, collection/location status, useful date, and review/uncertainty status when material.
