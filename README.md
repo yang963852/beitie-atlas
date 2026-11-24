@@ -10,6 +10,7 @@
 
 | 我想做什么 | 从这里开始 |
 | --- | --- |
+| 理解网站怎么运行，判断下一步要不要换技术 | [负责人架构导读与五幅图](docs/engineering-plan.md#负责人架构导读) · [演进条件](docs/engineering-plan.md#怎样判断下一步需要什么技术未来建议) · [架构决策记录](docs/engineering-plan.md#架构决策记录adr) |
 | 读作品、找书家或辨版本 | 从[《颜勤礼碑》](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei)读原石与拓本，也可以从[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)找作品，或进[知识库目录](knowledge/README.md)浏览 Markdown |
 | 加一条馆藏出处、补一段读帖体会 | 填[中文资料投稿表](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)，或在浏览器编辑知识文章。可只用中文，一次选一种方式。[投稿示例与操作](docs/CONTRIBUTE.zh-CN.md) |
 | 测试网站 | [五分钟试读](docs/CONTRIBUTE.zh-CN.md#五分钟试读)。反馈可写网址、设备、看到的现象与预期结果 |
