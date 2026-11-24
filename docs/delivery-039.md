@@ -1,6 +1,6 @@
 # Delivery 039 · Markdown knowledge base rebuild
 
-**状态：实施与复核完成，负责人已授权合并及预览上线。** 初次交付基线 `c9aa45a`，实施提交 `2023e6c`，本轮集成提交 `cc536b6`、`820b77b`（分支 `codex/knowledge-rebuild-review`，[PR #41](https://github.com/yang963852/beitie-atlas/pull/41)）。下文保留初次自检，复核结论见末节。
+**状态：已合并并部署标注草稿的预览。** 初次交付基线 `c9aa45a`，实施提交 `2023e6c`，复核提交 `cc536b6`、`820b77b`、`40f77f2`、`183d140`，合并提交 `816cda0`（[PR #41](https://github.com/yang963852/beitie-atlas/pull/41)）。下文保留初次自检，复核结论与部署记录见末节。
 
 ## 范围
 
@@ -72,4 +72,12 @@
 
 技术复核恢复迁移中遗失的人物、读帖笔记关联和出处，区分编译漂移、证据缺失及地图坐标缺失，修订读者页面中的归名、现藏和审核状态；主张必须有出处与定位，地点坐标必须成对，ZIP 在有未提交源稿时不标注提交号。复核发现的 P1 问题为礼器意见归属与两件拓本的无证底石关系，均已在合并前修正；无遗留 P2。P3 为 38 条数据警告、真实底图密钥和真实 200% 缩放未验证。
 
-上述复核由另一实施代理完成并修订，属于实施方工具复核而非外部独立编辑验收；合并决定由负责人作出。必需 CI、合并提交及 Pages 工作流见 PR #41。当前仅交付标注草稿的预览；本轮正式门槛实查为 127 项草稿阻断、38 条警告。
+上述复核由另一实施代理完成并修订，属于实施方工具复核而非外部独立编辑验收；合并决定由负责人作出。当前仅交付标注草稿的预览；本轮正式门槛实查为 127 项草稿阻断、38 条警告。
+
+## 合并与部署
+
+- PR #41 合并于 2026-11-24T13:50:20Z，合并提交 `816cda05372dd76324c6f60a849e39e7ef176c5a`；合并前检查与 [PR CI](https://github.com/yang963852/beitie-atlas/actions/runs/45407062548) 通过。
+- 「Publish GitHub Pages preview」[run 45407580827](https://github.com/yang963852/beitie-atlas/actions/runs/45407580827) 成功；「Preview quality checks」[run 45407580895](https://github.com/yang963852/beitie-atlas/actions/runs/45407580895) 成功。
+- [公开预览](https://yang963852.github.io/beitie-atlas/) 返回 HTTP 200，页面标记 `beitie-build-mode=preview`；在线 `#/work/yan-qinli-bei` 显示标题、原石与民国拓本两件实物，无空白或可见报错。
+- 在线下载包 473 个文件、481.9 KiB，`manifest.json` 的 `sourceRevision` 为 `816cda0`，`knowledge/` 含 468 篇 Markdown。
+- 可达性仅从本次执行环境验证；真实 Tianditu 底图与中国大陆公共网络仍未验证。正式出版继续被 127 项草稿错误阻断。
