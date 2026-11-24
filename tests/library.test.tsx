@@ -74,3 +74,11 @@ it('keeps the recorded polity visible in the period shelf and search results', (
   fireEvent.change(screen.getByRole('searchbox'), { target: { value: '好太王碑' } });
   expect(row()).toHaveTextContent('东晋 · 高句丽');
 });
+
+it('prints a provenance date once when the recorded wording repeats the label', () => {
+  window.history.replaceState(null, '', '#/work/yan-qinli-bei');
+  render(<App />);
+  const timeline = document.querySelector('.timeline');
+  expect(timeline?.textContent?.match(/1922年10月/g)?.length).toBe(1);
+  expect(timeline?.textContent).toContain('1928年三四月间');
+});

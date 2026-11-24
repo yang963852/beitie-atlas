@@ -23,13 +23,14 @@ export function ProvenanceEvents({ object }: { object: ObjectRecord }) {
               const eventPlace = getPlace(event.placeId);
               const referencePlace = getPlace(event.referencePlaceId ?? null);
               const summary = pickText(locale, event.summaryZh, event.summary);
+              const mainDate = formatDate(event.date, locale);
               return (
                 <li key={event.id} className="timeline__item">
                   <div className="timeline__marker" aria-hidden="true" />
                   <div className="timeline__body">
                     <div className="timeline__date">
-                      <span className="timeline__date-main">{formatDate(event.date, locale)}</span>
-                      {event.date.original ? (
+                      <span className="timeline__date-main">{mainDate}</span>
+                      {event.date.original && event.date.original !== mainDate ? (
                         <span className="timeline__date-original" lang="zh-Hans">
                           {event.date.original}
                         </span>
