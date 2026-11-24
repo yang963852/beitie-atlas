@@ -156,7 +156,7 @@ function localLinkIssue(root: string, sourcePath: string, body: string, workIds:
       if (!workIds.has(id) || (anchor && objectWork.get(anchor) !== id)) {
         issues.push({ code: 'BROKEN_KNOWLEDGE_LINK', path: sourcePath, message: 'Broken catalogue or witness link: ' + href });
       }
-    } else if (!articlePaths.has(kind + '/' + id + '.md')) {
+    } else if (kind === 'works' ? !workIds.has(id) : !articlePaths.has(kind + '/' + id + '.md')) {
       issues.push({ code: 'BROKEN_KNOWLEDGE_LINK', path: sourcePath, message: 'Broken knowledge page link: ' + href });
     }
   }
@@ -254,7 +254,7 @@ export function compileKnowledge(root: string = process.cwd(), options: { releas
       const note = readNoteRecord(input);
       articleInputs.push({
         kind: 'notes', id: note.id, titleZh: note.titleZh, titleEn: note.titleEn,
-        state: note.state, people: [], works: note.works, objects: note.objects,
+        state: note.state, people: idList(input.fields.people, 'people'), works: note.works, objects: note.objects,
         sources: note.sources, zh: note.zh, en: note.en, path: input.path,
       });
     } catch (error) {

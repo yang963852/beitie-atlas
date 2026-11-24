@@ -32,8 +32,8 @@
     },
     "objects": {
       "total": 96,
-      "identical": 89,
-      "knownEditorial": 6,
+      "identical": 88,
+      "knownEditorial": 7,
       "changed": 0,
       "legacyOnly": 0,
       "compiledOnly": 1,
@@ -734,28 +734,19 @@
       "status": "known-editorial",
       "differences": [
         {
-          "path": "claims",
-          "legacy": null,
-          "compiled": [
-            {
-              "id": "claim-liqi-weng-writers",
-              "kind": "scholarly-opinion",
-              "predicate": "writer-count",
-              "value": "翁方纲认为碑文由七人书写",
-              "voice": "翁方纲（馆方条目转引）",
-              "stance": "neutral",
-              "certainty": "documented",
-              "sourceRefs": [
-                "src-dpm-234635"
-              ],
-              "locator": "馆方条目所引翁方纲说",
-              "note": "A sourced opinion, not a roster of seven established calligraphers.",
-              "noteZh": "这是有出处的意见，不据此生成七名确定书家。"
-            }
-          ]
+          "path": "relationships[0]",
+          "legacy": {
+            "type": "rubbing-of",
+            "targetObjectId": "stele-liqi",
+            "sourceRefs": [
+              "src-dpm-234635"
+            ],
+            "note": null
+          },
+          "compiled": null
         }
       ],
-      "knownReason": "Weng Fanggang’s seven-writer opinion is recorded as a sourced claim."
+      "knownReason": "The exact source stone is unconfirmed; the work link is retained."
     },
     {
       "id": "luoshen-yuban-stone",
@@ -803,6 +794,33 @@
       "id": "rubbing-zhang-menglong-bei",
       "status": "known-editorial",
       "differences": [
+        {
+          "path": "relationships[0]",
+          "legacy": {
+            "type": "rubbing-of",
+            "targetObjectId": "stele-zhang-menglong-bei",
+            "sourceRefs": [
+              "src-dpm-zhang-menglong"
+            ],
+            "note": "The Palace Museum identifies the album as a Ming rubbing of this stele."
+          },
+          "compiled": null
+        },
+        {
+          "path": "review.state",
+          "legacy": "reviewed",
+          "compiled": "draft"
+        },
+        {
+          "path": "review.note",
+          "legacy": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
+          "compiled": "The previous record was approved on 2026-11-18. Its task 039 edits await publication review."
+        },
+        {
+          "path": "review.noteZh",
+          "legacy": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。",
+          "compiled": "上一版于 2026-11-18 获准出版。本次修改待出版审核。"
+        },
         {
           "path": "claims",
           "legacy": null,
@@ -955,9 +973,46 @@
     },
     {
       "id": "stele-liqi",
-      "status": "identical",
-      "differences": [],
-      "knownReason": null
+      "status": "known-editorial",
+      "differences": [
+        {
+          "path": "review.state",
+          "legacy": "reviewed",
+          "compiled": "draft"
+        },
+        {
+          "path": "review.note",
+          "legacy": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
+          "compiled": "The previous record was approved on 2026-11-18. Its task 039 edits await publication review."
+        },
+        {
+          "path": "review.noteZh",
+          "legacy": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。",
+          "compiled": "上一版于 2026-11-18 获准出版。本次修改待出版审核。"
+        },
+        {
+          "path": "claims",
+          "legacy": null,
+          "compiled": [
+            {
+              "id": "claim-liqi-weng-writers",
+              "kind": "scholarly-opinion",
+              "predicate": "writer-count",
+              "value": "翁方纲认为碑文由七人书写",
+              "voice": "翁方纲（馆方条目转引）",
+              "stance": "neutral",
+              "certainty": "documented",
+              "sourceRefs": [
+                "src-dpm-234635"
+              ],
+              "locator": "故宫《明拓东汉礼器碑》简介第二段末，转述翁方纲说",
+              "note": "A sourced opinion, not a roster of seven established calligraphers.",
+              "noteZh": "这是有出处的意见，不据此生成七名确定书家。"
+            }
+          ]
+        }
+      ],
+      "knownReason": "Weng Fanggang’s seven-writer opinion is recorded as a sourced claim."
     },
     {
       "id": "stele-longzang-si",
@@ -1125,7 +1180,7 @@
         {
           "path": "provenanceEvents[0].date.original",
           "legacy": null,
-          "compiled": "至元壬午（1282）"
+          "compiled": "至元壬午"
         },
         {
           "path": "provenanceEvents[0].date.certainty",
@@ -1175,17 +1230,17 @@
         {
           "path": "provenanceEvents[1].date.original",
           "legacy": null,
-          "compiled": "至元癸未（1283）"
+          "compiled": "至元癸未"
         },
         {
           "path": "provenanceEvents[1].summary",
           "legacy": "Xianyu Shu’s colophon records that the scroll was remounted in Qiantang in 1284.",
-          "compiled": "Xianyu Shu’s colophon signed in wuzi gives 1283 (Zhiyuan guiwei) for the same acquisition from Cao Yanli."
+          "compiled": "Xianyu Shu’s colophon signed in wuzi gives 1283 (Zhiyuan guiwei) for acquiring the scroll from Cao Yanli in exchange for books."
         },
         {
           "path": "provenanceEvents[1].summaryZh",
           "legacy": "鲜于枢题跋记，至元甲申（1284）在钱塘重装此卷。",
-          "compiled": "鲜于枢戊子署款的跋记至元癸未（1283）从曹彦礼处得卷。"
+          "compiled": "鲜于枢戊子署款的跋记至元癸未（1283）以古书向曹彦礼换得此卷。"
         },
         {
           "path": "provenanceEvents[1].sourceRefs[0]",
@@ -1534,6 +1589,21 @@
           "path": "provenanceEvents[3].shortLabelZh",
           "legacy": null,
           "compiled": "移入碑林"
+        },
+        {
+          "path": "review.state",
+          "legacy": "reviewed",
+          "compiled": "draft"
+        },
+        {
+          "path": "review.note",
+          "legacy": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record with evidence from the holding museum and the Palace Museum catalogue. Collection and provenance remain subject to editorial approval.",
+          "compiled": "The previous record was approved on 2026-11-18. Its task 039 edits await publication review."
+        },
+        {
+          "path": "review.noteZh",
+          "legacy": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿已补充收藏机构条目，并保留故宫目录依据。现藏与流转仍待编辑验收。",
+          "compiled": "上一版于 2026-11-18 获准出版。本次修改待出版审核。"
         }
       ],
       "knownReason": "Modern reference landmarks and their notes are added to the four existing events; historical places and wordings are unchanged."

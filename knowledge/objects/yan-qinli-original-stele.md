@@ -128,9 +128,9 @@ events:
       - src-beilin-article-2007
     certainty: documented
 review:
-  state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record with evidence from the holding museum and the Palace Museum catalogue. Collection and provenance remain subject to editorial approval."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿已补充收藏机构条目，并保留故宫目录依据。现藏与流转仍待编辑验收。
+  state: draft
+  note: The previous record was approved on 2026-11-18. Its task 039 edits await publication review.
+  noteZh: 上一版于 2026-11-18 获准出版。本次修改待出版审核。
 ---
 
 # 颜勤礼碑（原石）

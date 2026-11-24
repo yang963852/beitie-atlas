@@ -13,8 +13,7 @@ import {
   chmodSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync,
 } from 'node:fs';
 import { join, relative } from 'node:path';
-import { compileKnowledge } from './lib/knowledge-compiler';
-import { canonical } from './lib/knowledge-schema';
+import { compileKnowledge, compiledText } from './lib/knowledge-compiler';
 
 const root = process.cwd();
 const tempBase = join(root, '.private', 'tmp');
@@ -59,8 +58,8 @@ try {
 }
 
 const before = snapshot(copy);
-const first = canonical(compileKnowledge(work).knowledge);
-const second = canonical(compileKnowledge(work).knowledge);
+const first = compiledText(compileKnowledge(work));
+const second = compiledText(compileKnowledge(work));
 const after = snapshot(copy);
 
 const problems: string[] = [];

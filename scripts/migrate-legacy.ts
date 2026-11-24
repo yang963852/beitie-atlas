@@ -8,7 +8,8 @@
  * a stable ID as its filename; after this run the compiler is the only reader.
  */
 
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse, stringify } from 'yaml';
 import type {
@@ -24,7 +25,7 @@ import { loadDatasetFromDisk } from './lib/dataset';
 
 const root = process.cwd();
 const write = process.argv.includes('--write');
-const knowledge = join(root, 'knowledge');
+const base = 'c9aa45ae4a38bef426895fb0795ab3bda71e09c6';
 
 interface LegacyArticle {
   id: string;
@@ -39,8 +40,8 @@ function text(value: unknown, fallback = ''): string {
 }
 
 function splitArticle(kind: string, id: string): LegacyArticle {
-  const path = join(knowledge, kind, id + '.md');
-  const input = readFileSync(path, 'utf8').replace(/\r\n?/g, '\n');
+  const path = 'knowledge/' + kind + '/' + id + '.md';
+  const input = execFileSync('git', ['show', base + ':' + path], { cwd: root, encoding: 'utf8' }).replace(/\r\n?/g, '\n');
   const header = /^---\n([\s\S]*?)\n---(?:\n|$)/.exec(input);
   const fields = (parse(header?.[1] ?? '') ?? {}) as Record<string, unknown>;
   const body = input.slice(header?.[0].length ?? 0);
@@ -52,42 +53,8 @@ function splitArticle(kind: string, id: string): LegacyArticle {
 }
 
 function listArticles(kind: string): LegacyArticle[] {
-  const dir = join(knowledge, kind);
-  if (!existsSync(dir)) return [];
-  return readdirSync(dir)
-    .filter((name) => name.endsWith('.md'))
-    .sort()
-    .map((name) => splitArticle(kind, name.slice(0, -3)));
-}
-
-function listWorkGuides(): LegacyArticle[] {
-  const dir = join(knowledge, 'works');
-  if (!existsSync(dir)) return [];
-  return readdirSync(dir)
-    .filter((name) => name.endsWith('.md'))
-    .sort()
-    .flatMap((name) => {
-      const id = name.slice(0, -3);
-      const input = readFileSync(join(dir, name), 'utf8').replace(/\r\n?/g, '\n');
-      const header = /^---\n([\s\S]*?)\n---(?:\n|$)/.exec(input);
-      const fields = (parse(header?.[1] ?? '') ?? {}) as Record<string, unknown>;
-      if (!fields.guide || typeof fields.guide !== 'object') return [];
-      const body = input.slice(header?.[0].length ?? 0);
-      const section = /^## 导读[ \t]*$/m.exec(body);
-      if (!section) return [];
-      const guideBody = body.slice(section.index + section[0].length);
-      const next = /^## [^\n]+$/m.exec(guideBody);
-      const text = next ? guideBody.slice(0, next.index) : guideBody;
-      const zh = /^### 中文[ \t]*$/m.exec(text);
-      const en = /^### English[ \t]*$/m.exec(text);
-      return [{
-        id,
-        fields: fields.guide as Record<string, unknown>,
-        body: text.trim(),
-        zh: zh ? text.slice(zh.index + zh[0].length, en?.index).trim() : '',
-        en: en ? text.slice(en.index + en[0].length).trim() : '',
-      }];
-    });
+  const names = execFileSync('git', ['ls-tree', '--name-only', base + ':knowledge/' + kind], { cwd: root, encoding: 'utf8' });
+  return names.trim().split('\n').filter((name) => name.endsWith('.md')).map((name) => splitArticle(kind, name.trim().slice(0, -3)));
 }
 
 function guideList(value: unknown): string[] {
@@ -204,7 +171,7 @@ const objects = legacy.objects as ObjectRecord[];
 const places = legacy.places as Place[];
 const sources = legacy.sources as Source[];
 const media = legacy.media as Array<Record<string, unknown>>;
-const workGuides = new Map(listWorkGuides().map((guide) => [guide.id, guide]));
+const workGuides = new Map(listArticles('works').map((guide) => [guide.id, guide]));
 const peopleArticles = listArticles('people');
 const noteArticles = listArticles('notes');
 const relationsPath = join(root, 'data/knowledge-relations.json');
@@ -322,7 +289,7 @@ if (jizhi) {
         id: 'witness-jizhi-acquisition-1282',
         objectId: jizhi.id,
         type: 'custody',
-        date: { kind: 'single', startYear: 1282, startMonth: null, endYear: 1282, endMonth: null, eraLabel: null, original: '至元壬午（1282）', certainty: 'documented', note: null },
+        date: { kind: 'single', startYear: 1282, startMonth: null, endYear: 1282, endMonth: null, eraLabel: null, original: '至元壬午', certainty: 'documented', note: null },
         placeId: null,
         placeWording: null,
         summary: 'Xianyu Shu’s colophon signed in bingxu gives 1282 (Zhiyuan renwu) for receiving the scroll from Cao Yanli.',
@@ -334,11 +301,11 @@ if (jizhi) {
         id: 'witness-jizhi-acquisition-1283',
         objectId: jizhi.id,
         type: 'custody',
-        date: { kind: 'single', startYear: 1283, startMonth: null, endYear: 1283, endMonth: null, eraLabel: null, original: '至元癸未（1283）', certainty: 'documented', note: null },
+        date: { kind: 'single', startYear: 1283, startMonth: null, endYear: 1283, endMonth: null, eraLabel: null, original: '至元癸未', certainty: 'documented', note: null },
         placeId: null,
         placeWording: null,
-        summary: 'Xianyu Shu’s colophon signed in wuzi gives 1283 (Zhiyuan guiwei) for the same acquisition from Cao Yanli.',
-        summaryZh: '鲜于枢戊子署款的跋记至元癸未（1283）从曹彦礼处得卷。',
+        summary: 'Xianyu Shu’s colophon signed in wuzi gives 1283 (Zhiyuan guiwei) for acquiring the scroll from Cao Yanli in exchange for books.',
+        summaryZh: '鲜于枢戊子署款的跋记至元癸未（1283）以古书向曹彦礼换得此卷。',
         sourceRefs: ['src-jizhi-colophon-wuzi'],
         certainty: 'documented',
       },
@@ -364,6 +331,7 @@ if (jizhi) {
 
 const yanStone = objects.find((object) => object.id === 'yan-qinli-original-stele');
 if (yanStone) {
+  yanStone.review = { state: 'draft', note: 'The previous record was approved on 2026-11-18. Its task 039 edits await publication review.', noteZh: '上一版于 2026-11-18 获准出版。本次修改待出版审核。' };
   const references: Record<string, { place: string; zh: string; en: string; labelZh: string; labelEn: string }> = {
     'ev-1922-discovery': {
       place: 'place-xian-drum-tower',
@@ -469,8 +437,11 @@ if (dingwu) {
 }
 
 const liqiRubbing = objects.find((object) => object.id === 'liqi-ming-44512');
-if (liqiRubbing) {
-  liqiRubbing.claims = [
+if (liqiRubbing) liqiRubbing.relationships = [];
+const liqiStone = objects.find((object) => object.id === 'stele-liqi');
+if (liqiStone) {
+  liqiStone.review = { state: 'draft', note: 'The previous record was approved on 2026-11-18. Its task 039 edits await publication review.', noteZh: '上一版于 2026-11-18 获准出版。本次修改待出版审核。' };
+  liqiStone.claims = [
     {
       id: 'claim-liqi-weng-writers',
       kind: 'scholarly-opinion',
@@ -480,7 +451,7 @@ if (liqiRubbing) {
       stance: 'neutral',
       certainty: 'documented',
       sourceRefs: ['src-dpm-234635'],
-      locator: '馆方条目所引翁方纲说',
+      locator: '故宫《明拓东汉礼器碑》简介第二段末，转述翁方纲说',
       note: 'A sourced opinion, not a roster of seven established calligraphers.',
       noteZh: '这是有出处的意见，不据此生成七名确定书家。',
     },
@@ -489,6 +460,8 @@ if (liqiRubbing) {
 
 const zhangRubbing = objects.find((object) => object.id === 'rubbing-zhang-menglong-bei');
 if (zhangRubbing) {
+  zhangRubbing.review = { state: 'draft', note: 'The previous record was approved on 2026-11-18. Its task 039 edits await publication review.', noteZh: '上一版于 2026-11-18 获准出版。本次修改待出版审核。' };
+  zhangRubbing.relationships = [];
   zhangRubbing.claims = [
     {
       id: 'claim-zhang-menglong-36-pages',
@@ -616,6 +589,10 @@ if (!write) {
   process.exit(0);
 }
 
+const tempBase = join(root, '.private', 'tmp');
+mkdirSync(tempBase, { recursive: true });
+const knowledge = join(mkdtempSync(join(tempBase, 'legacy-reconstruction-')), 'knowledge');
+console.log('Migration output:', knowledge);
 for (const kind of ['works', 'objects', 'places', 'sources', 'people', 'notes']) {
   mkdirSync(join(knowledge, kind), { recursive: true });
 }
@@ -833,7 +810,7 @@ const newPeople = [
     en: 'Xiang Yuanbian’s colophon on the Shenlong copy attributes the copying to Feng Chengsu. The Palace Museum questions both that attribution and the date of the Shenlong seal, so the project records Feng as a disputed copyist rather than a settled one.',
   },
   {
-    id: 'weng-fanggang', titleZh: '翁方纲', titleEn: 'Weng Fanggang', works: ['liqi-bei'], objects: ['liqi-ming-44512'],
+    id: 'weng-fanggang', titleZh: '翁方纲', titleEn: 'Weng Fanggang', works: ['liqi-bei'], objects: ['stele-liqi'],
     sources: ['src-dpm-234635'],
     zh: '故宫博物院《明拓东汉礼器碑》条目引翁方纲说，认为碑文由七人书写。这是有出处的学术意见；本项目不据此生成七名确定书家。',
     en: 'The Palace Museum’s entry for the Ming rubbing of the Liqi Stele cites Weng Fanggang’s view that seven people wrote the inscription. It is a sourced scholarly opinion; the project does not turn it into seven established calligraphers.',
@@ -860,6 +837,7 @@ for (const note of noteArticles) {
     titleZh: text(note.fields.titleZh, note.id),
     titleEn: text(note.fields.titleEn, text(note.fields.titleZh, note.id)),
     state: text(note.fields.state, 'draft'),
+    people: guideList(note.fields.people),
     works: typeof note.fields.works === 'string' ? note.fields.works.split(',').map((id) => id.trim()).filter(Boolean) : [],
     objects: typeof note.fields.objects === 'string' ? note.fields.objects.split(',').map((id) => id.trim()).filter(Boolean) : [],
     sources: typeof note.fields.sources === 'string' ? note.fields.sources.split(',').map((id) => id.trim()).filter(Boolean) : [],

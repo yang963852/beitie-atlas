@@ -18,7 +18,7 @@
 | 类别 | 一致 | 已知编辑修改 | 未解释改动 | 仅旧库 | 仅新库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | works | 85 | 0 | 0 | 0 | 2 |
-| objects | 89 | 6 | 0 | 0 | 1 |
+| objects | 88 | 7 | 0 | 0 | 1 |
 | places | 33 | 0 | 0 | 0 | 3 |
 | sources | 141 | 0 | 0 | 0 | 4 |
 
@@ -142,7 +142,7 @@
 | `fragments-yihe-ming` | identical | 0 | 逐项一致 |
 | `haotaiwang-stele` | identical | 0 | 逐项一致 |
 | `huadu-siou` | identical | 0 | 逐项一致 |
-| `liqi-ming-44512` | known-editorial | 1 | Weng Fanggang’s seven-writer opinion is recorded as a sourced claim. |
+| `liqi-ming-44512` | known-editorial | 1 | The exact source stone is unconfirmed; the work link is retained. |
 | `luoshen-yuban-stone` | identical | 0 | 逐项一致 |
 | `pingfu-tie-scroll` | identical | 0 | 逐项一致 |
 | `rubbing-hengfang-qing` | identical | 0 | 逐项一致 |
@@ -150,7 +150,7 @@
 | `rubbing-tianfa-shenchen-bei` | identical | 0 | 逐项一致 |
 | `rubbing-wenquan-ming` | identical | 0 | 逐项一致 |
 | `rubbing-yugong-nansong` | identical | 0 | 逐项一致 |
-| `rubbing-zhang-menglong-bei` | known-editorial | 1 | The 36-page count is recorded as a claim scoped to this album. |
+| `rubbing-zhang-menglong-bei` | known-editorial | 5 | The 36-page count is recorded as a claim scoped to this album. |
 | `sanmen-scroll` | identical | 0 | 逐项一致 |
 | `sanxitang-stones` | identical | 0 | 逐项一致 |
 | `shipinggong-inscription` | identical | 0 | 逐项一致 |
@@ -172,7 +172,7 @@
 | `stele-kaicheng-shijing` | identical | 0 | 逐项一致 |
 | `stele-kongzi-miaotang` | identical | 0 | 逐项一致 |
 | `stele-lin-zexu-huashan` | identical | 0 | 逐项一致 |
-| `stele-liqi` | identical | 0 | 逐项一致 |
+| `stele-liqi` | known-editorial | 4 | Weng Fanggang’s seven-writer opinion is recorded as a sourced claim. |
 | `stele-longzang-si` | identical | 0 | 逐项一致 |
 | `stele-lushan-si` | identical | 0 | 逐项一致 |
 | `stele-meixuexuan-buziqi` | identical | 0 | 逐项一致 |
@@ -213,7 +213,7 @@
 | `witness-zhao-shen-colophon` | compiled-only | 0 | New object record for Zhao Puchu’s colophon, created from the Shanghai Museum entry. |
 | `witness-zhu-santi` | identical | 0 | 逐项一致 |
 | `witness-zixu` | identical | 0 | 逐项一致 |
-| `yan-qinli-original-stele` | known-editorial | 20 | Modern reference landmarks and their notes are added to the four existing events; historical places and wordings are unchanged. |
+| `yan-qinli-original-stele` | known-editorial | 23 | Modern reference landmarks and their notes are added to the four existing events; historical places and wordings are unchanged. |
 | `zheng-wengong-lower` | identical | 0 | 逐项一致 |
 | `zheng-wengong-upper` | identical | 0 | 逐项一致 |
 
@@ -419,8 +419,9 @@
 - Markdown-only work promoted to a base work record in the 2026-11 migration.
 - Markdown-only work promoted to a base work record; the colophon receives its own object.
 - Dingwu version label added from the museum entry.
-- Weng Fanggang’s seven-writer opinion is recorded as a sourced claim.
+- The exact source stone is unconfirmed; the work link is retained.
 - The 36-page count is recorded as a claim scoped to this album.
+- Weng Fanggang’s seven-writer opinion is recorded as a sourced claim.
 - The single disputed 1282–1283 acquisition event is split into two dated events; the editorial grouping claim is new.
 - Shenlong version label, disputed Feng Chengsu copyist credit and two attribution claims are new.
 - New object record for Zhao Puchu’s colophon, created from the Shanghai Museum entry.
@@ -435,7 +436,7 @@
 
 ## 新旧正式门槛差异
 
-旧库 `npm run check:release` 报 117 项草稿错误。新库报告 124 项：新增两篇现代作品的基础档（2）、赵朴初跋实物（1）、四位新人物页（4）。草稿阻断能力保留，正式出版仍被拒绝。
+旧库 `npm run check:release` 报 117 项草稿错误。新库报告 127 项：新增两篇现代作品的基础档（2）、赵朴初跋实物（1）、四位新人物页（4）以及三件旧审实物的本次更订（3）。草稿阻断能力保留，正式出版仍被拒绝。
 
 
 

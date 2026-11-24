@@ -9,7 +9,8 @@
  *   npm run knowledge:inventory
  */
 
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse } from 'yaml';
 import type { ObjectRecord, Source, Work } from '../src/domain/types';
@@ -34,13 +35,14 @@ interface GuideMeta {
 }
 
 function readGuides(kind: 'works' | 'people' | 'notes'): GuideMeta[] {
-  const dir = join(root, 'knowledge', kind);
-  if (!existsSync(dir)) return [];
-  return readdirSync(dir)
+  const base = 'c9aa45ae4a38bef426895fb0795ab3bda71e09c6';
+  const dir = 'knowledge/' + kind;
+  const names = execFileSync('git', ['ls-tree', '--name-only', base + ':' + dir], { cwd: root, encoding: 'utf8' });
+  return names.trim().split(/\r?\n/)
     .filter((name) => name.endsWith('.md'))
     .sort()
     .map((name) => {
-      const text = readFileSync(join(dir, name), 'utf8').replace(/\r\n?/g, '\n');
+      const text = execFileSync('git', ['show', base + ':' + dir + '/' + name], { cwd: root, encoding: 'utf8' }).replace(/\r\n?/g, '\n');
       const header = /^---\n([\s\S]*?)\n---/.exec(text)?.[1] ?? '';
       const fields = (parse(header) ?? {}) as Record<string, unknown>;
       const split = (value: unknown) => typeof value === 'string'

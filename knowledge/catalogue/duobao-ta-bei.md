@@ -18,7 +18,7 @@ Duobao Pagoda Stele
 
 书体：楷书
 
-延伸阅读：[多宝塔感应碑](../works/duobao-ta-bei.md)
+延伸阅读：[多宝塔感应碑](../works/duobao-ta-bei.md) · [颜真卿](../people/yan-zhenqing.md) · [读《多宝塔碑》时，先找碑额上的“塔”](../notes/duobao-reading.md)
 
 作品待考与说明
 

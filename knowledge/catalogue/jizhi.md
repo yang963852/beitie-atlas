@@ -16,7 +16,7 @@ Draft Requiem for a Nephew
 
 书体：行书
 
-延伸阅读：[鲜于枢](../people/xianyu-shu.md)
+延伸阅读：[鲜于枢](../people/xianyu-shu.md) · [颜真卿](../people/yan-zhenqing.md)
 
 <a name="witness-jizhi"></a>
 
@@ -34,8 +34,8 @@ Draft Requiem for a Nephew
 
 ### 递藏与流传
 
-- 至元壬午（1282） · 保管（有明确记载）　鲜于枢丙戌署款的跋记至元壬午（1282）从曹彦礼处得卷。 [出处 2](#ref-src-jizhi-colophon-bingxu)
-- 至元癸未（1283） · 保管（有明确记载）　鲜于枢戊子署款的跋记至元癸未（1283）从曹彦礼处得卷。 [出处 3](#ref-src-jizhi-colophon-wuzi)
+- 至元壬午 · 保管（有明确记载）　鲜于枢丙戌署款的跋记至元壬午（1282）从曹彦礼处得卷。 [出处 2](#ref-src-jizhi-colophon-bingxu)
+- 至元癸未 · 保管（有明确记载）　鲜于枢戊子署款的跋记至元癸未（1283）以古书向曹彦礼换得此卷。 [出处 3](#ref-src-jizhi-colophon-wuzi)
 - 1284年 · 见于记载（有明确记载）　鲜于枢题跋记，至元甲申（1284）在钱塘重装此卷。 [出处 1](#ref-src-catalogue-jizhi)
 - 1724年 · 见于记载（有明确记载）　王顼龄雍正二年题跋说，先在徐乾学处见卷，后在弟弟王鸿绪处再见，并记从子彤文将卷赠予自己。题跋年不是所有交接的年份。 [出处 1](#ref-src-catalogue-jizhi)
 

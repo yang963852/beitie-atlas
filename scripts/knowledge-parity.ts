@@ -8,7 +8,9 @@
  * as unexplained so it cannot hide in a migration.
  */
 
+import { createHash } from 'node:crypto';
 import { mkdirSync, writeFileSync } from 'node:fs';
+import migrationDigests from './research/fixtures/knowledge-migration-digests.json';
 import { join } from 'node:path';
 import type { ObjectRecord, Place, Source, Work } from '../src/domain/types';
 import { compileKnowledge } from './lib/knowledge-compiler';
@@ -25,7 +27,9 @@ const legacy = loadDatasetFromDisk(root) as unknown as {
   sources: Source[];
   media: Array<Record<string, unknown>>;
 };
-const compiled = compileKnowledge(root).knowledge;
+const compilation = compileKnowledge(root);
+if (compilation.issues.length) throw new Error(compilation.issues.map((issue) => issue.path + ': ' + issue.message).join('\n'));
+const compiled = compilation.knowledge;
 
 function equal(a: unknown, b: unknown): boolean {
   if (a == null && b == null) return true;
@@ -54,7 +58,7 @@ interface Difference {
 function diff(a: unknown, b: unknown, path = ''): Difference[] {
   // `kind: web` was the implicit default in the legacy JSON. Recording it
   // explicitly is a representation change, not a changed source.
-  if ((path === 'kind' || path.endsWith('.kind')) && (a == null || a === 'web') && (b == null || b === 'web')) return [];
+
   if (equal(a, b)) return [];
   if (a && b && typeof a === 'object' && typeof b === 'object' && !Array.isArray(a) && !Array.isArray(b)) {
     const aRecord = a as Record<string, unknown>;
@@ -81,6 +85,12 @@ function truncate(value: unknown): string {
   return text.length > 120 ? text.slice(0, 117) + '...' : text;
 }
 
+// Pin the exact additions and field differences reviewed for the one-time migration.
+function matchesSnapshot(id: string, value: unknown): boolean {
+  const digest = createHash('sha256').update(JSON.stringify(value)).digest('hex');
+  return (migrationDigests as Record<string, string>)[id] === digest;
+}
+
 function compareKind<T extends { id: string }>(legacyRows: T[], compiledRows: T[]) {
   const legacyMap = new Map(legacyRows.map((row) => [row.id, row]));
   const compiledMap = new Map(compiledRows.map((row) => [row.id, row]));
@@ -105,14 +115,15 @@ function compareKind<T extends { id: string }>(legacyRows: T[], compiledRows: T[
     'yan-qinli-original-stele': 'Modern reference landmarks and their notes are added to the four existing events; historical places and wordings are unchanged.',
     'witness-lanting': 'Shenlong version label, disputed Feng Chengsu copyist credit and two attribution claims are new.',
     'dingwu-zhan': 'Dingwu version label added from the museum entry.',
-    'liqi-ming-44512': 'Weng Fanggang’s seven-writer opinion is recorded as a sourced claim.',
+    'liqi-ming-44512': 'The exact source stone is unconfirmed; the work link is retained.',
+    'stele-liqi': 'Weng Fanggang’s seven-writer opinion is recorded as a sourced claim.',
     'rubbing-zhang-menglong-bei': 'The 36-page count is recorded as a claim scoped to this album.',
   };
   for (const id of new Set([...legacyMap.keys(), ...compiledMap.keys()])) {
     const before = legacyMap.get(id);
     const after = compiledMap.get(id);
     if (!before) {
-      rows.push({ id, status: 'compiled-only', differences: [], knownReason: known[id] ?? null });
+      rows.push({ id, status: 'compiled-only', differences: [], knownReason: known[id] && matchesSnapshot(id, after) ? known[id] : null });
       continue;
     }
     if (!after) {
@@ -126,14 +137,21 @@ function compareKind<T extends { id: string }>(legacyRows: T[], compiledRows: T[
         && typeof (before as { background?: unknown }).background === 'string'
         && item.compiled === (before as { background?: string }).background) return false;
       // Local person links were added where a person record already existed.
-      if (item.path.endsWith('personId') && item.legacy == null) return false;
+      const attribution = /^attribution\[(\d+)\]\.personId$/.exec(item.path);
+      if (attribution && item.legacy == null) {
+        const previous = (before as { attribution?: { name: string }[] }).attribution?.[Number(attribution[1])];
+        const person = compiled.articles.find((article) => article.kind === 'people' && article.id === item.compiled);
+        if (previous && person && person.titleZh === previous.name) return false;
+      }
+      if ('publisher' in before && item.path === 'kind' && item.legacy == null && item.compiled === 'web') return false;
       return true;
     });
+    const explained = Boolean(known[id] && differences.length && matchesSnapshot(id, differences));
     rows.push({
       id,
-      status: known[id] ? 'known-editorial' : differences.length ? 'changed' : 'identical',
+      status: explained ? 'known-editorial' : differences.length ? 'changed' : 'identical',
       differences,
-      knownReason: known[id] ?? null,
+      knownReason: explained ? known[id] : null,
     });
   }
   return rows.sort((a, b) => a.id.localeCompare(b.id));
@@ -153,7 +171,7 @@ function summarize(rows: ReturnType<typeof compareKind>) {
     changed: rows.filter((row) => row.status === 'changed').length,
     legacyOnly: rows.filter((row) => row.status === 'legacy-only').length,
     compiledOnly: rows.filter((row) => row.status === 'compiled-only').length,
-    unexplained: rows.filter((row) => row.status === 'changed' || row.status === 'legacy-only').map((row) => row.id),
+    unexplained: rows.filter((row) => row.status === 'changed' || row.status === 'legacy-only' || (row.status === 'compiled-only' && !row.knownReason)).map((row) => row.id),
   };
 }
 
@@ -257,7 +275,7 @@ const markdown = [
   '',
   '## 新旧正式门槛差异',
   '',
-  '旧库 `npm run check:release` 报 117 项草稿错误。新库报告 124 项：新增两篇现代作品的基础档（2）、赵朴初跋实物（1）、四位新人物页（4）。草稿阻断能力保留，正式出版仍被拒绝。',
+  '旧库 `npm run check:release` 报 117 项草稿错误。新库报告 127 项：新增两篇现代作品的基础档（2）、赵朴初跋实物（1）、四位新人物页（4）以及三件旧审实物的本次更订（3）。草稿阻断能力保留，正式出版仍被拒绝。',
   '',
   details(works, '作品'),
   details(objects, '实物'),
@@ -274,3 +292,4 @@ writeFileSync(join(outDir, 'migration-parity-2026-11-24.md'), markdown, 'utf8');
 console.log('Wrote docs/baseline/migration-parity-2026-11-24.md and .json');
 console.log('Unexplained:', summary.works.unexplained.length + summary.objects.unexplained.length + summary.places.unexplained.length + summary.sources.unexplained.length);
 console.log(summary);
+if (Object.values(summary).some((group) => group.unexplained.length)) process.exitCode = 1;

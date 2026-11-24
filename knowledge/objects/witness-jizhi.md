@@ -37,7 +37,7 @@ events:
       end: 1282
       endMonth: null
       era: null
-      original: 至元壬午（1282）
+      original: 至元壬午
       certainty: documented
       note: null
     place: null
@@ -56,13 +56,13 @@ events:
       end: 1283
       endMonth: null
       era: null
-      original: 至元癸未（1283）
+      original: 至元癸未
       certainty: documented
       note: null
     place: null
     placeWording: null
-    summary: Xianyu Shu’s colophon signed in wuzi gives 1283 (Zhiyuan guiwei) for the same acquisition from Cao Yanli.
-    summaryZh: 鲜于枢戊子署款的跋记至元癸未（1283）从曹彦礼处得卷。
+    summary: Xianyu Shu’s colophon signed in wuzi gives 1283 (Zhiyuan guiwei) for acquiring the scroll from Cao Yanli in exchange for books.
+    summaryZh: 鲜于枢戊子署款的跋记至元癸未（1283）以古书向曹彦礼换得此卷。
     sources:
       - src-jizhi-colophon-wuzi
     certainty: documented

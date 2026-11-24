@@ -30,13 +30,13 @@ const forbiddenInWeb = [
   /data\/(?:works|objects|places|sources|media|knowledge-relations|yan-qinli-journey)/,
 ];
 const forbiddenInCompiler = [
-  /src\/(?:components|i18n|App|styles|map)\//,
+  /src\/(?:components|i18n|App|styles|map)(?:[/.]|$)/,
   /virtual:beitie-knowledge/,
 ];
 
 for (const file of walk(join(root, 'src'), /\.(?:ts|tsx|css)$/)) {
   const text = readFileSync(file, 'utf8');
-  const specifiers = [...text.matchAll(/(?:from\s+|import\s*\()\s*['"]([^'"]+)['"]/g)].map((match) => match[1]);
+  const specifiers = [...text.matchAll(/(?:from\s+|import\s*(?:\(|(?=['"]))|import\.meta\.glob\s*\(\s*\[?)\s*['"]([^'"]+)['"]/g)].map((match) => match[1]);
   for (const specifier of specifiers) {
     for (const pattern of forbiddenInWeb) {
       if (pattern.test(specifier)) {
@@ -66,7 +66,7 @@ for (const file of compilerFiles) {
     continue;
   }
   for (const pattern of forbiddenInCompiler) {
-    const specifiers = [...text.matchAll(/(?:from\s+|import\s*\()\s*['"]([^'"]+)['"]/g)].map((match) => match[1]);
+    const specifiers = [...text.matchAll(/(?:from\s+|import\s*(?:\(|(?=['"]))|import\.meta\.glob\s*\(\s*\[?)\s*['"]([^'"]+)['"]/g)].map((match) => match[1]);
     if (specifiers.some((specifier) => pattern.test(specifier))) {
       problems.push(file + ': the compiler must not import UI code: ' + pattern);
     }

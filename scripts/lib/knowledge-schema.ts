@@ -202,6 +202,8 @@ export function readClaims(value: unknown, path: string): Claim[] | undefined {
     if (typeof certainty !== 'string' || !CERTAINTIES.has(certainty as DateCertainty)) {
       throw new Error(at + '.certainty is invalid');
     }
+    const sourceRefs = idList(item.sources, at + '.sources');
+    if (!sourceRefs.length) throw new Error(at + ' requires a source');
     return {
       id: text(item.id, at + '.id'),
       kind: kind as Claim['kind'],
@@ -211,8 +213,8 @@ export function readClaims(value: unknown, path: string): Claim[] | undefined {
       ...(item.person == null ? {} : { personId: optionalText(item.person, at + '.person') }),
       stance: stance as Claim['stance'],
       certainty: certainty as DateCertainty,
-      sourceRefs: idList(item.sources, at + '.sources'),
-      locator: optionalText(item.locator, at + '.locator'),
+      sourceRefs,
+      locator: text(item.locator, at + '.locator'),
       note: optionalText(item.note, at + '.note'),
       ...(item.noteZh == null ? {} : { noteZh: optionalText(item.noteZh, at + '.noteZh') }),
     };
@@ -565,9 +567,13 @@ export function readPlace(recordInput: MarkdownRecord): Place {
     if (!PRECISIONS.has(precision)) throw new Error('coordinates.precision is invalid');
     if (!METHODS.has(method)) throw new Error('coordinates.method is invalid');
     if (!VERIFICATIONS.has(verification)) throw new Error('coordinates.verification is invalid');
+    const longitude = optionalNumber(f.coordinates.longitude, 'coordinates.longitude');
+    const latitude = optionalNumber(f.coordinates.latitude, 'coordinates.latitude');
+    if (longitude === null || latitude === null) throw new Error('coordinates requires both longitude and latitude');
+    if (f.coordinates.crs != null && f.coordinates.crs !== 'WGS84') throw new Error('coordinates.crs must be WGS84');
     coordinates = {
-      longitude: optionalNumber(f.coordinates.longitude, 'coordinates.longitude') ?? 0,
-      latitude: optionalNumber(f.coordinates.latitude, 'coordinates.latitude') ?? 0,
+      longitude,
+      latitude,
       crs: 'WGS84',
       precision: precision as Coordinates['precision'],
       sourceRefs: idList(f.coordinates.sources, 'coordinates.sources'),

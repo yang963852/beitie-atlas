@@ -6517,16 +6517,7 @@
       "catalogNumber": "新00044512",
       "dimensions": null,
       "survivalStatus": "surviving",
-      "relationships": [
-        {
-          "type": "rubbing-of",
-          "targetObjectId": "stele-liqi",
-          "sourceRefs": [
-            "src-dpm-234635"
-          ],
-          "note": null
-        }
-      ],
+      "relationships": [],
       "currentCollection": {
         "locationKind": "collection-institution",
         "placeId": "place-palace-museum",
@@ -6543,23 +6534,6 @@
         "note": "Catalogue identification awaits editorial review.",
         "noteZh": "馆藏著录待编辑复核。"
       },
-      "claims": [
-        {
-          "id": "claim-liqi-weng-writers",
-          "kind": "scholarly-opinion",
-          "predicate": "writer-count",
-          "value": "翁方纲认为碑文由七人书写",
-          "voice": "翁方纲（馆方条目转引）",
-          "stance": "neutral",
-          "certainty": "documented",
-          "sourceRefs": [
-            "src-dpm-234635"
-          ],
-          "locator": "馆方条目所引翁方纲说",
-          "note": "A sourced opinion, not a roster of seven established calligraphers.",
-          "noteZh": "这是有出处的意见，不据此生成七名确定书家。"
-        }
-      ],
       "notes": [
         "The album preserves all four inscribed faces. At 绝思, the impression shows the cuts before the damaged areas joined."
       ],
@@ -7111,16 +7085,7 @@
         "note": null
       },
       "survivalStatus": "surviving",
-      "relationships": [
-        {
-          "type": "rubbing-of",
-          "targetObjectId": "stele-zhang-menglong-bei",
-          "sourceRefs": [
-            "src-dpm-zhang-menglong"
-          ],
-          "note": "The Palace Museum identifies the album as a Ming rubbing of this stele."
-        }
-      ],
+      "relationships": [],
       "currentCollection": {
         "locationKind": "collection-institution",
         "placeId": "place-palace-museum",
@@ -7134,9 +7099,9 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "state": "draft",
+        "note": "The previous record was approved on 2026-11-18. Its task 039 edits await publication review.",
+        "noteZh": "上一版于 2026-11-18 获准出版。本次修改待出版审核。"
       },
       "claims": [
         {
@@ -8782,10 +8747,27 @@
         }
       ],
       "review": {
-        "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+        "state": "draft",
+        "note": "The previous record was approved on 2026-11-18. Its task 039 edits await publication review.",
+        "noteZh": "上一版于 2026-11-18 获准出版。本次修改待出版审核。"
       },
+      "claims": [
+        {
+          "id": "claim-liqi-weng-writers",
+          "kind": "scholarly-opinion",
+          "predicate": "writer-count",
+          "value": "翁方纲认为碑文由七人书写",
+          "voice": "翁方纲（馆方条目转引）",
+          "stance": "neutral",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-dpm-234635"
+          ],
+          "locator": "故宫《明拓东汉礼器碑》简介第二段末，转述翁方纲说",
+          "note": "A sourced opinion, not a roster of seven established calligraphers.",
+          "noteZh": "这是有出处的意见，不据此生成七名确定书家。"
+        }
+      ],
       "notes": [
         "The cited page states the date, the scribe where one is recorded, and the holding institution.",
         "Excavation, accession, and present display status are not stated in the audited source and are left blank.",
@@ -10493,7 +10475,7 @@
             "endYear": 1282,
             "endMonth": null,
             "eraLabel": null,
-            "original": "至元壬午（1282）",
+            "original": "至元壬午",
             "certainty": "documented",
             "note": null
           },
@@ -10519,7 +10501,7 @@
             "endYear": 1283,
             "endMonth": null,
             "eraLabel": null,
-            "original": "至元癸未（1283）",
+            "original": "至元癸未",
             "certainty": "documented",
             "note": null
           },
@@ -10527,8 +10509,8 @@
           "placeWording": null,
           "referenceNote": null,
           "shortLabel": null,
-          "summary": "Xianyu Shu’s colophon signed in wuzi gives 1283 (Zhiyuan guiwei) for the same acquisition from Cao Yanli.",
-          "summaryZh": "鲜于枢戊子署款的跋记至元癸未（1283）从曹彦礼处得卷。",
+          "summary": "Xianyu Shu’s colophon signed in wuzi gives 1283 (Zhiyuan guiwei) for acquiring the scroll from Cao Yanli in exchange for books.",
+          "summaryZh": "鲜于枢戊子署款的跋记至元癸未（1283）以古书向曹彦礼换得此卷。",
           "sourceRefs": [
             "src-jizhi-colophon-wuzi"
           ],
@@ -11769,9 +11751,9 @@
         }
       ],
       "review": {
-        "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record with evidence from the holding museum and the Palace Museum catalogue. Collection and provenance remain subject to editorial approval.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿已补充收藏机构条目，并保留故宫目录依据。现藏与流转仍待编辑验收。"
+        "state": "draft",
+        "note": "The previous record was approved on 2026-11-18. Its task 039 edits await publication review.",
+        "noteZh": "上一版于 2026-11-18 获准出版。本次修改待出版审核。"
       },
       "notes": [
         "Xi’an Beilin’s catalogue gives Fengqiyuan as the original setting. The site has no point in this dataset.",
@@ -14430,9 +14412,15 @@
       "titleEn": "Shen Yinmo",
       "state": "draft",
       "people": [],
-      "works": [],
+      "works": [
+        "shen-yinmo-dakai-jia"
+      ],
       "objects": [],
-      "sources": [],
+      "sources": [
+        "src-pku-shen-teaching",
+        "src-shm-zhao-shen-colophon",
+        "src-xiling-shen-chronology"
+      ],
       "zh": "给年轻人谈学书时，沈尹默一面写讲解，一面为他们写范字。姜涛记述，1962年《人民教育》刊有他讨论毛笔练习的文章。他编写的[《甲种本大楷习字帖》](../works/shen-yinmo-dakai-jia.md)由上海教育出版社出版。沿着这一本书，可以把他的教育工作落实到一个可辨认的版本。[姜涛，晚年居沪一节](https://shufa.pku.edu.cn/whsf/8dc5e55fd0e445a781a861c438b81cf9.htm)\n\n他和[赵朴初](zhao-puchu.md)还用诗词相答。沈氏年表在1965年条中把一次唱和放在《兰亭序》真伪讨论的背景下。日后赵朴初在沈氏论书札后题跋，那篇[写于1976年的跋](../works/zhao-puchu-shen-colophon.md)留住了朋友追念他的一个瞬间。[西泠印社年表，1965年条](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf) · [上海博物馆，题跋简介](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)\n\n两处记载对沈氏卒年有出入。年表列在1971年，上海博物馆的赵跋简介写作1972年。这项分歧保留在此，读者可以分别核对。[年表，1971年条](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf) · [上博藏品简介](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)",
       "en": "Shen Yinmo gave young learners both accounts of brush practice and characters to copy. Jiang Tao records a 1962 article by Shen in the education journal 人民教育. Shanghai Education Publishing House published his [large regular-script copybook, edition A](../works/shen-yinmo-dakai-jia.md). Together they give a concrete starting point for studying his teaching. [Jiang Tao, section on Shen’s later years in Shanghai](https://shufa.pku.edu.cn/whsf/8dc5e55fd0e445a781a861c438b81cf9.htm)\n\nShen and [Zhao Puchu](zhao-puchu.md) also answered one another in verse. A chronology places an exchange in 1965 amid debate about the authenticity of the Lanting Preface. Zhao later remembered Shen in a [1976 colophon](../works/zhao-puchu-shen-colophon.md) attached to Shen’s writing about calligraphy. [Xiling chronology, 1965 entry](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf) · [Shanghai Museum, colophon description](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)\n\nThe chronology records Shen’s death in 1971. The Shanghai Museum description gives 1972. Both readings are retained here for comparison. [Chronology, 1971 entry](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf) · [Museum description](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)"
     },
@@ -14466,7 +14454,7 @@
         "liqi-bei"
       ],
       "objects": [
-        "liqi-ming-44512"
+        "stele-liqi"
       ],
       "sources": [
         "src-dpm-234635"
@@ -14502,9 +14490,21 @@
       "titleEn": "Yan Zhenqing",
       "state": "draft",
       "people": [],
-      "works": [],
+      "works": [
+        "duobao-ta-bei",
+        "yan-qinli-bei",
+        "datang-zhongxing-song",
+        "jizhi",
+        "magu"
+      ],
       "objects": [],
-      "sources": [],
+      "sources": [
+        "src-beilin-duobaota",
+        "src-beilin-yan-qinli-object",
+        "src-hunan-wuxi",
+        "src-catalogue-jizhi",
+        "src-catalogue-magu"
+      ],
       "zh": "读颜真卿，可以先并看两方碑。在写寺院建塔的[《多宝塔感应碑》](../works/duobao-ta-bei.md)里，文字出自岑勋，颜真卿应楚金之请书丹。看颜书之前，先在图上找徐浩写的碑额，便能分清同一块石上两个人的笔迹。[西安碑林博物馆，多宝塔感应碑](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)\n\n到了家族的[《颜勤礼碑》](../works/yan-qinli-bei.md)，撰文、书写都由颜真卿承担。碑题里的颜勤礼是他的曾祖父。从一通碑读到另一通，连着问“谁撰、谁书、写给谁”，两篇文字的来由就清楚了。[西安碑林博物馆，颜勤礼碑](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home)\n\n还可以沿三种不同的载体读颜书。浯溪崖壁上的[《大唐中兴颂》](../catalogue/datang-zhongxing-song.md)由元结撰文、颜真卿书写。台北故宫著录的[《祭侄文稿》](../catalogue/jizhi.md)是一卷行书，馆方释文标出了涂改处。北京故宫的[《麻姑仙坛记》](../catalogue/magu.md)则可循翻刻的拓本去读。[湖南省政府，浯溪碑林「历史寻迹」](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [台北故宫，藏品基本资料与释文](https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P) · [北京故宫，麻姑仙坛记](https://www.dpm.org.cn/collection/impres/234172.html)",
       "en": "Two steles offer a way into Yan Zhenqing’s work. For the [Duobao Pagoda Stele](../works/duobao-ta-bei.md), Cen Xun composed the text and the monk Chujin invited Yan to write it. Xu Hao wrote the heading. Look for it first to distinguish the two hands on the stone. [Xi’an Beilin Museum, Duobao entry](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)\n\nFor the [Stele of Yan Qinli](../works/yan-qinli-bei.md), Yan Zhenqing both composed and wrote the text, commemorating his great-grandfather. Asking who composed each inscription, who wrote it and whom it concerns brings its occasion into view. [Xi’an Beilin Museum, Yan Qinli entry](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home)\n\nThree other works let us follow his writing across different surfaces. At Wuxi, Yuan Jie’s [Eulogy of the Tang Restoration](../catalogue/datang-zhongxing-song.md) was carved on a cliff in Yan’s hand. The National Palace Museum in Taipei transcribes cancelled words in Yan’s running-script [Draft Requiem for a Nephew](../catalogue/jizhi.md). The Palace Museum in Beijing catalogues the [Record of the Immortal Altar](../catalogue/magu.md) in an impression taken from a recarving. [Hunan government, Wuxi account](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [National Palace Museum, scroll and transcription](https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P) · [Palace Museum, Magu entry](https://www.dpm.org.cn/collection/impres/234172.html)"
     },
@@ -14515,9 +14515,14 @@
       "titleEn": "Zhao Puchu",
       "state": "draft",
       "people": [],
-      "works": [],
+      "works": [
+        "zhao-puchu-shen-colophon"
+      ],
       "objects": [],
-      "sources": [],
+      "sources": [
+        "src-shm-zhao-shen-colophon",
+        "src-xiling-shen-chronology"
+      ],
       "zh": "在上海博物馆著录的一卷书迹中，赵朴初接着故友的字写下了自己的话。卷前是[沈尹默](shen-yinmo.md)的论书札，赵朴初用行书写的[卷后题跋](../works/zhao-puchu-shen-colophon.md)作于1976年。馆方分别量出沈书和赵跋的尺寸，翻看藏品说明时可以据此辨认两段。[上海博物馆，尺寸与简介](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)\n\n这卷书迹之前，两人已有诗词往来。西泠印社所载年表给了一个可追索的题目：1965年，两人因《兰亭序》真伪之议而有唱和。[年表，1965年条](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf)",
       "en": "On a scroll catalogued by the Shanghai Museum, Zhao Puchu added his own words after those of his friend [Shen Yinmo](shen-yinmo.md). Shen’s text discusses calligraphy. Zhao’s [running-script colophon](../works/zhao-puchu-shen-colophon.md) dates to 1976. The museum gives separate measurements for the two contributions. [Shanghai Museum, measurements and description](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)\n\nThe friends had exchanged poems before the colophon was written. A chronology identifies the debate over the authenticity of the Lanting Preface as the subject of an exchange in 1965. [Xiling chronology, 1965 entry](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf)"
     },
@@ -14527,10 +14532,18 @@
       "titleZh": "读《多宝塔碑》时，先找碑额上的“塔”",
       "titleEn": "Find the character 塔 in the Duobao heading",
       "state": "draft",
-      "people": [],
-      "works": [],
-      "objects": [],
-      "sources": [],
+      "people": [
+        "yan-zhenqing"
+      ],
+      "works": [
+        "duobao-ta-bei"
+      ],
+      "objects": [
+        "stele-duobao-ta"
+      ],
+      "sources": [
+        "src-beilin-duobaota"
+      ],
       "zh": "读帖练习由 Codex 拟写，供读者依图复看。\n\n打开[《多宝塔感应碑》](../works/duobao-ta-bei.md)的馆方图版与说明。西安碑林著录，额上的“大唐多宝塔感应碑”为徐浩所书，书体是隶书；正文由颜真卿书丹。读碑时先找额题里的“塔”，用手在纸上标出它在题名中的位置。[馆方图版及题额说明](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)\n\n再从正文里选一个看得清的字，在另一格临写。给两格各注书者、字在碑上的位置。若手上的字帖只截取了正文，可写下它的书名和页码，回到馆方整碑图补看题额。换一位读者，能否循你的标注在图上找到同一处？",
       "en": "A looking exercise drafted by Codex. Check it against the museum illustrations.\n\nOpen the museum entry for the [Duobao Pagoda Stele](../works/duobao-ta-bei.md). It identifies the clerical-script heading as Xu Hao’s and the body text as Yan Zhenqing’s. Locate 塔 in the heading 大唐多宝塔感应碑 and mark its position in the title on paper. [Museum illustrations and account of the heading](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)\n\nChoose one legible character from the body text and copy it in a second square. Label each square with its writer and its place on the stone. If your copybook crops the heading, record the book and page, then consult the museum’s view of the stone. Could a second reader find the same characters from your labels?"
     },
@@ -14541,9 +14554,18 @@
       "titleEn": "Reading the Yan Qinli Stele through a single character",
       "state": "draft",
       "people": [],
-      "works": [],
-      "objects": [],
-      "sources": [],
+      "works": [
+        "yan-qinli-bei"
+      ],
+      "objects": [
+        "yan-qinli-original-stele",
+        "dpm-rubbing-xin00045406"
+      ],
+      "sources": [
+        "src-beilin-yan-qinli-object",
+        "src-beilin-article-2007",
+        "src-dpm-yan-qinli-rubbing"
+      ],
       "zh": "临《颜勤礼碑》，可以先留意碑背的一个「故」字。颜真卿为曾祖父颜勤礼撰文并书写的这通碑，立于唐大历十四年（779）。一千多年后，恰好穿过这个字的一道断口，让人得以追看碑石重见天日以后的经历。 [碑林藏品说明](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home) · [碑林移碑记述](https://www.beilin-museum.com/index.php?a=index&aid=2440&c=View&m=home)\n\n1922 年 10 月，工人在西安修整省长公署的地基时掘出了断成两截的碑石。西安碑林博物馆的文章记载，有人就在坑边取拓；当时两截石头还能对上，「故」字的笔画也能接起来。数日后，碑立到公署前院，字的断处已合不拢了。 [碑林移碑记述](https://www.beilin-museum.com/index.php?a=index&aid=2440&c=View&m=home)\n\n1928 年春，碑迁到新城，成为当地「小碑林」的一部分。馆方记述，此时「故」只剩几笔。1948 年，这批碑石又迁入西安碑林。临写时若遇到残笔，可以先问一句：我眼前这一笔，留下的是笔锋，还是石头后来受过的伤？ [碑林移碑记述](https://www.beilin-museum.com/index.php?a=index&aid=2440&c=View&m=home)\n\n再翻故宫的藏品目录，同一个碑名下是一册纸本，编号新00045406。馆方列出册页图，并引录旧目录里的装裱和购价信息，只将拓制年代定为民国。我们还不知道这册具体拓于哪一年、何时入藏，也没有依据把它认作当年坑边拓下的那一份。 [故宫藏品简介](https://www.dpm.org.cn/collection/impres/234175.html)",
       "en": "Look for the character 故 on the back of the Yan Qinli Stele. Yan Zhenqing composed and wrote the inscription for his great-grandfather Yan Qinli. The stone was erected in 779. More than a thousand years later, a break running through that one character would help tell the story of the stone after its rediscovery. [Beilin object entry](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home) · [Beilin account of the transfers](https://www.beilin-museum.com/index.php?a=index&aid=2440&c=View&m=home)\n\nIn October 1922, workers repairing the foundations of the governor’s compound in Xi’an uncovered the stone in two pieces. According to the Beilin Museum, people took impressions at the edge of the pit. The halves still fitted together, joining the strokes of 故. A few days later, when the stone stood in the front courtyard, the broken edges of the character no longer met. [Beilin account of the transfers](https://www.beilin-museum.com/index.php?a=index&aid=2440&c=View&m=home)\n\nIn spring 1928 the stone moved to Xincheng, where it became part of a small collection of steles. The museum recounts that only a few strokes of 故 remained. In 1948 the collection moved to the Xi’an Beilin. When a stroke breaks off in your copybook, consider what its edge preserves: the movement of the brush, or later damage to the stone? [Beilin account of the transfers](https://www.beilin-museum.com/index.php?a=index&aid=2440&c=View&m=home)\n\nUnder the same title, the Palace Museum catalogues a paper album, number 新00045406. Its entry shows the leaves and quotes an earlier catalogue on mounting and purchase prices. The museum dates the impression to the Republican era. Its precise year and accession date remain open, as does any connection to the impressions taken beside the pit. [Palace Museum catalogue](https://www.dpm.org.cn/collection/impres/234175.html)"
     }

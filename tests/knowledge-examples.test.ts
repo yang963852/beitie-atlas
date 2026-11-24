@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { readCompiledKnowledge } from '../scripts/lib/knowledge-compiler';
 
+import { readClaims, readPlace } from '../scripts/lib/knowledge-schema';
+
 const compiled = readCompiledKnowledge(process.cwd());
 const work = (id: string) => compiled.works.find((item) => item.id === id)!;
 const object = (id: string) => compiled.objects.find((item) => item.id === id)!;
@@ -38,8 +40,9 @@ describe('five worked examples', () => {
   });
 
   it('records Weng Fanggang as a sourced opinion rather than seven calligraphers', () => {
-    const rubbing = object('liqi-ming-44512');
-    expect(rubbing.claims?.some((claim) => claim.kind === 'scholarly-opinion' && claim.value.includes('七人'))).toBe(true);
+    const stone = object('stele-liqi');
+    expect(object('liqi-ming-44512').claims ?? []).toEqual([]);
+    expect(stone.claims?.some((claim) => claim.kind === 'scholarly-opinion' && claim.value.includes('七人'))).toBe(true);
     expect(work('liqi-bei').attribution.map((entry) => entry.role)).toEqual(['unknown']);
   });
 
@@ -56,5 +59,28 @@ describe('five worked examples', () => {
     expect(work('zhao-puchu-shen-colophon').compositionDate.meaning).toBe('colophon');
     expect(compiled.works).toHaveLength(87);
     expect(compiled.objects).toHaveLength(96);
+  });
+});
+
+describe('author-source migration safeguards', () => {
+  it('preserves references on independent people and note articles', () => {
+    const note = compiled.articles.find((article) => article.id === 'duobao-reading')!;
+    const person = compiled.articles.find((article) => article.id === 'yan-zhenqing')!;
+    expect(note.people).toContain('yan-zhenqing');
+    expect(note.objects).toContain('stele-duobao-ta');
+    expect(person.works).toContain('datang-zhongxing-song');
+    expect(person.sources).toContain('src-hunan-wuxi');
+  });
+
+  it('rejects partial map coordinates before an unknown latitude can become zero', () => {
+    const coordinates = { longitude: 109, precision: 'city', method: 'field-survey', verification: 'unverified' };
+    expect(() => readPlace({ id: 'sample', path: 'places/sample.md', fields: { kind: 'city', coordinates }, body: '' }))
+      .toThrow('both longitude and latitude');
+  });
+
+  it('requires a traceable source and locator for an attributed claim', () => {
+    const claim = { id: 'sample', kind: 'source-report', predicate: 'year', value: 'unknown' };
+    expect(() => readClaims([claim], 'claims')).toThrow('requires a source');
+    expect(() => readClaims([{ ...claim, sources: ['test-source'] }], 'claims')).toThrow('locator');
   });
 });

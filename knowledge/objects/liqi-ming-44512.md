@@ -17,12 +17,7 @@ date:
 catalogNumber: 新00044512
 dimensions: null
 survival: surviving
-relationships:
-  - type: rubbing-of
-    target: stele-liqi
-    sources:
-      - src-dpm-234635
-    note: null
+relationships: []
 collection:
   kind: collection-institution
   place: place-palace-museum
@@ -33,19 +28,6 @@ collection:
   note: null
   noteZh: null
 events: []
-claims:
-  - id: claim-liqi-weng-writers
-    kind: scholarly-opinion
-    predicate: writer-count
-    value: 翁方纲认为碑文由七人书写
-    voice: 翁方纲（馆方条目转引）
-    stance: neutral
-    certainty: documented
-    sources:
-      - src-dpm-234635
-    locator: 馆方条目所引翁方纲说
-    note: A sourced opinion, not a roster of seven established calligraphers.
-    noteZh: 这是有出处的意见，不据此生成七名确定书家。
 review:
   state: draft
   note: Catalogue identification awaits editorial review.

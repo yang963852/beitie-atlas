@@ -12,7 +12,7 @@
 
 import { spawnSync } from 'node:child_process';
 import { deflateRawSync } from 'node:zlib';
-import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, lstatSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { compileKnowledge } from './lib/knowledge-compiler';
 
@@ -25,8 +25,10 @@ function walk(dir: string): string[] {
   for (const name of readdirSync(dir)) {
     if (name.startsWith('.')) continue;
     const path = join(dir, name);
-    if (statSync(path).isDirectory()) out.push(...walk(path));
-    else out.push(path);
+    const entry = lstatSync(path);
+    if (entry.isDirectory()) out.push(...walk(path));
+    else if (entry.isFile()) out.push(path);
+    else throw new Error('Only regular files and directories can be packaged: ' + path);
   }
   return out.sort();
 }
@@ -38,8 +40,10 @@ function git(args: string[]): string | null {
     : null;
 }
 
-const revision = git(['rev-parse', 'HEAD']);
-const revisionDate = git(['show', '-s', '--format=%cs', 'HEAD']);
+const sourceState = spawnSync('git', ['status', '--porcelain', '--untracked-files=all', '--',
+  'knowledge', 'docs/CONTRIBUTE.zh-CN.md', 'LICENSE', 'NOTICE.md'], { cwd: root, encoding: 'utf8' });
+const revision = sourceState.status === 0 && !sourceState.stdout.trim() ? git(['rev-parse', 'HEAD']) : null;
+const revisionDate = revision ? git(['show', '-s', '--format=%cs', 'HEAD']) : null;
 
 const compiled = compileKnowledge(root);
 if (compiled.issues.length) {
@@ -61,7 +65,7 @@ if (catalogueCheck.status !== 0) {
 const readme = [
   '# 碑帖之间 · 独立知识库',
   '',
-  '这份下载包由已检查的 GitHub `main` 生成，随包附源提交号、中文总目、作者 Markdown、生成目录、内部链接和权利说明。',
+  '源版本见 manifest.json。未提交的本地资料包不标注提交号。中文总目位于 knowledge/README.md。',
   '',
   '## 从下载到投稿',
   '',

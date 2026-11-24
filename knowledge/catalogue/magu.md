@@ -16,6 +16,8 @@ Record of the Immortal Altar
 
 书体：楷书
 
+延伸阅读：[颜真卿](../people/yan-zhenqing.md)
+
 <a name="witness-magu"></a>
 
 ## 麻姑仙坛记（翻刻旧拓）

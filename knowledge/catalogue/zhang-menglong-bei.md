@@ -24,7 +24,7 @@ Stele of Zhang Menglong
 
 Stele of Zhang Menglong, Ming rubbing
 
-拓本 · 存世 · 已审
+拓本 · 存世 · 待审
 
 - 制作年代：明拓
 - 著录编号：新00045763
@@ -37,8 +37,6 @@ Stele of Zhang Menglong, Ming rubbing
 ### 递藏与流传
 
 所引资料尚未记下这件实物的递藏经过。
-
-拓自：[张猛龙碑（原石）](zhang-menglong-bei.md#stele-zhang-menglong-bei) [出处 2](#ref-src-dpm-zhang-menglong)
 
 ### 实物待考与说明
 

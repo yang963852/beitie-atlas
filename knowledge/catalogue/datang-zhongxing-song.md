@@ -19,6 +19,8 @@ Eulogy of the Tang Restoration
 
 书体：楷书
 
+延伸阅读：[颜真卿](../people/yan-zhenqing.md)
+
 作品待考与说明
 
 - 湖南、永州两处页面所记字数不一致（242 字与 332 字）。

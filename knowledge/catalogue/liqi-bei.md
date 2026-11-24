@@ -40,8 +40,6 @@ Ritual Vessels Stele, Ming rubbing with Zhang Boying’s label
 
 所引资料尚未记下这件实物的递藏经过。
 
-拓自：[礼器碑（原石）](liqi-bei.md#stele-liqi) [出处 3](#ref-src-dpm-234635)
-
 ### 实物待考与说明
 
 - 从碑阳读到碑阴、碑侧，这册把四面的字都拓了下来。翻到“绝思”二字，还可以看到石面损处尚未连在一起时的字口。
@@ -54,7 +52,7 @@ Ritual Vessels Stele, Ming rubbing with Zhang Boying’s label
 
 Stele of the Ritual Vessels, original stone
 
-原石 · 存世 · 已审
+原石 · 存世 · 待审
 
 - 制作年代：东汉永寿二年（156年）
 - 著录编号：未记录

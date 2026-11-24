@@ -12,7 +12,7 @@ import {
 export function knowledgePlugin(root: string): Plugin {
   const base = normalizePath(root) + '/';
   const isInput = (file: string) =>
-    normalizePath(file).startsWith(base) && /^knowledge\/[^/]+\/[^/]+\.md$/.test(normalizePath(file).slice(base.length));
+    normalizePath(file).startsWith(base) && /^knowledge\/(?:relations\.md|(?:works|objects|people|places|sources|notes)\/[^/]+\.md)$/.test(normalizePath(file).slice(base.length));
 
   return {
     name: 'beitie-knowledge-interface',

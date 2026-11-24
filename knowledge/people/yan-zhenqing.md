@@ -4,9 +4,9 @@ titleZh: 颜真卿
 titleEn: Yan Zhenqing
 aliases: []
 state: draft
-works: []
+works: [duobao-ta-bei, yan-qinli-bei, datang-zhongxing-song, jizhi, magu]
 objects: []
-sources: []
+sources: [src-beilin-duobaota, src-beilin-yan-qinli-object, src-hunan-wuxi, src-catalogue-jizhi, src-catalogue-magu]
 ---
 
 # 颜真卿（草稿）

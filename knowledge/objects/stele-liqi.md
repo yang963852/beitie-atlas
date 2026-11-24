@@ -48,10 +48,23 @@ events:
     sources:
       - src-sdxc-kongmiao-sanbei
     certainty: documented
+claims:
+  - id: claim-liqi-weng-writers
+    kind: scholarly-opinion
+    predicate: writer-count
+    value: 翁方纲认为碑文由七人书写
+    voice: 翁方纲（馆方条目转引）
+    stance: neutral
+    certainty: documented
+    sources:
+      - src-dpm-234635
+    locator: 故宫《明拓东汉礼器碑》简介第二段末，转述翁方纲说
+    note: A sourced opinion, not a roster of seven established calligraphers.
+    noteZh: 这是有出处的意见，不据此生成七名确定书家。
 review:
-  state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。
+  state: draft
+  note: The previous record was approved on 2026-11-18. Its task 039 edits await publication review.
+  noteZh: 上一版于 2026-11-18 获准出版。本次修改待出版审核。
 ---
 
 # 礼器碑（原石）

@@ -7,7 +7,7 @@ state: draft
 works:
   - liqi-bei
 objects:
-  - liqi-ming-44512
+  - stele-liqi
 sources:
   - src-dpm-234635
 ---

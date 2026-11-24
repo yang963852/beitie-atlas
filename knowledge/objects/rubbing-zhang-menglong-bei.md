@@ -19,12 +19,7 @@ dimensions:
   raw: 每页纵26.6厘米，横14.1厘米
   note: null
 survival: surviving
-relationships:
-  - type: rubbing-of
-    target: stele-zhang-menglong-bei
-    sources:
-      - src-dpm-zhang-menglong
-    note: The Palace Museum identifies the album as a Ming rubbing of this stele.
+relationships: []
 collection:
   kind: collection-institution
   place: place-palace-museum
@@ -49,9 +44,9 @@ claims:
     note: The leaf count belongs to this Ming rubbing album only; neither the stone nor another rubbing inherits it.
     noteZh: 页数只属于此明拓册；原石与另一拓本都不继承。
 review:
-  state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。
+  state: draft
+  note: The previous record was approved on 2026-11-18. Its task 039 edits await publication review.
+  noteZh: 上一版于 2026-11-18 获准出版。本次修改待出版审核。
 ---
 
 # 张猛龙碑（明拓本）

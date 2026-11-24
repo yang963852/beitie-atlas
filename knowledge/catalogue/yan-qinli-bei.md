@@ -14,7 +14,7 @@ Stele of Yan Qinli
 
 - 撰文并书丹 · 颜真卿（有明确记载）  [出处 1](#ref-src-dpm-yan-qinli-rubbing)、[出处 3](#ref-src-beilin-yan-qinli-object)
 
-延伸阅读：[颜勤礼碑](../works/yan-qinli-bei.md)
+延伸阅读：[颜勤礼碑](../works/yan-qinli-bei.md) · [颜真卿](../people/yan-zhenqing.md) · [从一个「故」字读《颜勤礼碑》](../notes/yan-qinli-story.md)
 
 作品待考与说明
 
@@ -57,7 +57,7 @@ Yan Qinli Stele, Republican-era rubbing
 
 Yan Qinli Stele, original stone
 
-原石 · 存世 · 已审
+原石 · 存世 · 待审
 
 - 制作年代：唐大历十四年（779年）
 - 著录编号：未记录

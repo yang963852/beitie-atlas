@@ -4,9 +4,9 @@ titleZh: 沈尹默
 titleEn: Shen Yinmo
 aliases: []
 state: draft
-works: []
+works: [shen-yinmo-dakai-jia]
 objects: []
-sources: []
+sources: [src-pku-shen-teaching, src-shm-zhao-shen-colophon, src-xiling-shen-chronology]
 ---
 
 # 沈尹默（草稿）
