@@ -7,4 +7,4 @@
 - **Non-goals:** Dark mode, downloaded fonts, new dependencies, post-processing passes, changing the Tianditu SDK marker icon, or inventing decorative seals with editorial wording.
 - **Evidence:** 1440 / 768 / 390 screenshots for the opening, timeline, workspace, collections, folio, contribution and library; a 720 CSS px / 2× zoom equivalent; English locale; reduced-motion opening. See [delivery 042](../docs/delivery-042.md).
 - **Checks:** `npm.cmd run check`; all 156 tests; no page errors; no horizontal overflow; keyboard focus, search empty state, sticky masthead and missing-map-key fallback exercised.
-- **Review:** Implementer self-review. The coordinator decides acceptance and the merge/deployment instruction.
+- **Review:** Implementer self-review; [PR #46](https://github.com/yang963852/beitie-atlas/pull/46). The coordinator decides acceptance and the merge/deployment instruction.

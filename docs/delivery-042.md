@@ -1,6 +1,6 @@
 # Delivery 042 · Reading-room setting across the frontend
 
-**Status: implemented, checked and self-reviewed; opened for the coordinator's merge decision.** Branch `feat/reading-room-project`, base `1d08a33`.
+**Status: implemented, checked and self-reviewed; [PR #46](https://github.com/yang963852/beitie-atlas/pull/46) awaits the coordinator's merge decision.** Branch `feat/reading-room-project`, base `1d08a33`, implementation `31ae6d0`.
 
 ## Scope
 
