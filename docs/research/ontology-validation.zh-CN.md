@@ -1,6 +1,6 @@
 # 本体试例的数据层校验（B 卡）
 
-**交付 · 2026-11-24 · 角色：B · 模型验证（数据 Agent）。** 本卡只读校验 PR #34 的五件试例，未改生产档案、加载器、地图和出版门槛。结论：试例能用现有 JSON 表达十个能力问题；固定语料中的作品、实物、事件、来源和媒体编号全部可解析；六个故意破坏的副本都被检出并指向具体断言或实物。史料真伪仍待 A 卡复核与 D 卡评审，程序通过不等于史实成立。
+**交付 · 2026-11-24 · 角色：B · 模型验证（数据 Agent）。** 本卡只读校验 PR #34 的五件试例，未改生产档案、加载器、地图和出版门槛。结论：试例能用现有 JSON 表达十个能力问题；固定语料中的作品、实物、事件、来源和媒体编号全部可解析；七个故意破坏的副本都被检出并指向具体断言或实物，其中包括同一作品内把拓本页数挂到原石的同案错绑。史料真伪仍待 A 卡复核与 D 卡评审，程序通过不等于史实成立。
 
 ## 一、输入与重跑
 
@@ -9,7 +9,7 @@
 | 试例 | PR #34 的 [`docs/research/ontology-pilot.json`](https://github.com/yang963852/beitie-atlas/blob/a5e56b1/docs/research/ontology-pilot.json) |
 | 固定提交 | `a5e56b1`（本卡开工时 PR #34 的 head）；报告中的编号以该提交为准 |
 | 语料基线 | `c6fd7c0`（试例 `baseRevision`；本分支从 `origin/main` 建立。该版本相对本地旧基线 `53d9f24` 只改了依赖锁文件，`data/` 与 `docs/` 未变） |
-| 固定副本 | [`scripts/research/inputs/ontology-pilot.a5e56b1.json`](../../scripts/research/inputs/ontology-pilot.a5e56b1.json)，SHA-256 `c274aaf6ee7026a0543a23d2ccd374d58af5132308043b8ca48ae419bb3f2063` |
+| 固定副本 | [`scripts/research/inputs/ontology-pilot.a5e56b1.json`](../../scripts/research/inputs/ontology-pilot.a5e56b1.json)，SHA-256 `c274aaf6ee7026a0543a23d2ccd374d58af5132308043b8ca48ae419bb3f2063`（Windows 检出、CRLF 换行）；Git blob 为 LF 换行，同一内容的 SHA-256 是 `9e6dda9061123fb931ce9ea956d02fc2f4152fa9ab3b84fdd38aad31665332c7`。引用哈希时须同时注明换行与取值口径。 |
 | 语料规模 | 85 部作品、95 件实物、141 条文献、1 条媒体；试例引用其中 5 部作品、9 件实物、5 条文献、1 条媒体、1 个事件 |
 | 分支与 PR | `research/ontology-validation`；脚本提交 `b2cd306`，本报告及后续修订见 PR 提交列表；[PR #37](https://github.com/yang963852/beitie-atlas/pull/37) |
 | 校验脚本 | [`scripts/research/check-ontology-pilot.mjs`](../../scripts/research/check-ontology-pilot.mjs)；纯 Node，只读，无新增依赖 |
@@ -36,7 +36,7 @@ Errors: 0
 Warnings: 0
 Counts: 5 cases, 9 objects, 10 claims, 10 evidence items, 1 version, 1 media link, 1 conflict.
 Research pilot validation passed.
-Self-test: 6/6 negative cases detected; restored pilot passed.
+Self-test: 7/7 negative cases detected; restored pilot passed.
 ```
 
 十个断言、十处证据定位、一个版本组、一条媒体链接和一个冲突组全部通过；没有出现“引用存在但事件挂错实物”或“版本与实物不同作”的情况。
@@ -49,6 +49,7 @@ Self-test: 6/6 negative cases detected; restored pilot passed.
 | 引用存在 | 作品、实物、事件、文献、媒体编号都能在 `data/` 中解析 | 通过（5＋9＋1＋5＋1） |
 | 事件属于正确实物 | `event-year` 的主语必须是事件，事件的 `objectId` 必须在本案实物内 | 通过（`witness-jizhi-yuan-acquisition` → `witness-jizhi`） |
 | 版本与实物同作 | 版本 `work` 等于案例作品；归组断言的主语实物与版本同属一部作品 | 通过（`trial-shenlong` → `lanting`） |
+| 实物类别与断言匹配 | `album-leaf-count`、`diagnostic-reading` 的主语必须是拓本；同一作品的原石不能承接这类断言 | 通过（`zhang-extent`、`zhang-reading`、`li-face` 均落在 `rubbing`） |
 | 图像绑定本件 | 案例引用的媒体必须存在，且 `media.objectId` 属于本案实物；媒体有许可与权利依据 | 通过（`media-shenlong-opening` → `witness-lanting`） |
 | 每条断言有说话者和段落 | `voice` 非空；每条证据有存在的文献号和非空 `locator` | 通过（10/10） |
 | 冲突可复原 | 成员至少两条、同案、同谓词、值不同； `selected` 为 `null` 或成员之一；有 `reason` | 通过（`ji-1282`／`ji-1283`，`selected: null`） |
@@ -65,12 +66,13 @@ Self-test: 6/6 negative cases detected; restored pilot passed.
 | --- | --- | --- |
 | 把 `yan-era` 的文献改成 `src-ghost` | `CLAIM_EVIDENCE_SOURCE_UNKNOWN` | `$.cases[0].claims[0].evidence[0].source` |
 | 把 `li-face` 的主语改成另一案的 `witness-jizhi` | `CLAIM_SUBJECT_UNKNOWN` | `$.cases[2].claims[0].subject` |
+| 把 `zhang-extent` 从明拓册改挂到同案原石 `stele-zhang-menglong-bei` | `CLAIM_SUBJECT_TYPE_MISMATCH` | `$.cases[3].claims[1].subject` |
 | 清空 `zhang-extent` 的段落定位 | `CLAIM_EVIDENCE_LOCATOR_MISSING` | `$.cases[3].claims[1].evidence[0].locator` |
 | 从冲突组删去 `ji-1283` | `CONFLICT_MEMBERS_INSUFFICIENT` | `$.cases[4].conflicts[0].members` |
 | 把 `lan-version` 的值改成不存在的版本 | `CLAIM_VERSION_UNKNOWN` | `$.cases[1].claims[0].value` |
 | 把神龙本裁图挂到颜勤礼碑案 | `CASE_MEDIA_OBJECT_MISMATCH` | `$.cases[0].media[0]` |
 
-六项均按预期失败；恢复原样后通过。自测只覆盖结构反例，不替代史料复核。
+七项均按预期失败；恢复原样后通过。自测只覆盖结构反例，不替代史料复核。
 
 ## 五、Q1–Q10 答卷
 
@@ -84,9 +86,9 @@ Self-test: 6/6 negative cases detected; restored pilot passed.
 | Q4 哪件拓本留下什么字口？ | `liqi-ming-44512` | “绝思二字未损连”，说话者为故宫博物院 | `li-face`（`src-dpm-234635`，“藏品说明末段的字口与碑面描述”） | 字口在本件授权数字图中的像素位置 |
 | Q5 谁提出关于书者的判断？ | `stele-liqi` | 翁方纲（据馆方转述）提出“七人”，作为署名观点返回，不生成七位书家 | `li-opinion`（`src-dpm-234635`，“历代评价段末句”） | 七位书者各自身份；馆方转述与翁氏原文的差异由 A 卡判断 |
 | Q6 哪件被剪裱成册，怎样定位版本特征？ | `rubbing-zhang-menglong-bei` | 新00045763 为明拓剪裱册，36 页；“盖魏二字未连”落在该册 | `zhang-extent`（“藏品说明首段，剪裱装册”）；`zhang-reading`（“藏品说明末段，馆号新00045763”） | 能否据该字口为另一部拓本断年 |
-| Q7 两条记载是否针对同一事件？ | `witness-jizhi-yuan-acquisition` | 是。两跋同指一次得卷；楷书跋记 1282，行书跋记 1283 | `ji-1282`（“拖尾楷书跋，至元壬午”）；`ji-1283`（“拖尾行书跋，至元癸未”）；冲突组 `selected: null` | 两说是否真为同一次交接，仍属史料判断 |
+| Q7 两条记载是否针对同一事件？ | `witness-jizhi-yuan-acquisition` | 按旧档事件主语读作同一次得卷（编辑推定，两跋未自称追记同一件事）；1282 与 1283 分别落在壬午、癸未两跋 | `ji-1282`（“拖尾跋，至元壬午；署丙戌六月”）；`ji-1283`（“拖尾跋，至元癸未；署戊子十月”）；冲突组 `selected: null` | 两说是否真为同一次交接，仍属史料判断；两跋书体的馆方标签与论文记载冲突，定位不依赖书体 |
 | Q8 能否选定交接年和地点？ | 同上 | 不能。两说并存；事件 `placeId` 与 `placeWording` 均为 `null` | 旧档事件 `witness-jizhi-yuan-acquisition`；试例冲突组 | 唯一年份；得卷地点 |
-| Q9 谁在何时提取、谁批准？ | 试例顶层 | 由 Codex 以 `agent-assisted-extraction` 于 2026-11-24 提取，`status: draft`；旧档 5 部作品中 3 部 `reviewed`、2 部 `draft`，9 件实物中 6 件 `reviewed`、3 件 `draft` | `model`、`preparedBy`、`method`、`status`、`sourceCheckedOn`；`data/works/*.json`、`data/objects/*.json` 的 `review.state` | 谁批准；研究稿待审，自动校验不提升审核状态 |
+| Q9 谁在何时提取、谁批准？ | 试例顶层 | 由 Codex 以 `agent-assisted-extraction` 于 2026-11-24 提取，`status: draft`；旧档 5 部作品中 3 部 `reviewed`、2 部 `draft`，9 件实物中 5 件 `reviewed`、4 件 `draft` | `model`、`preparedBy`、`method`、`status`、`sourceCheckedOn`；`data/works/*.json`、`data/objects/*.json` 的 `review.state` | 谁批准；研究稿待审，自动校验不提升审核状态 |
 | Q10 哪些图可以复用？ | `witness-lanting` | 本批只有 `media-shenlong-opening`：绑定 `witness-lanting`，PD-Art 许可，权利依据为 Commons 版本 URL，文件 `src/assets/shenlong-opening.webp` | `data/media.json`；试例 `cases[1].media` | 其他图；无 IIIF 画布或区域；“网站可看”“史料有出处”“图片可再发布”“编辑已批准”仍是四种判断 |
 
 ## 六、旧档已有、研究层新增与旧字段的缺口
@@ -99,14 +101,14 @@ Self-test: 6/6 negative cases detected; restored pilot passed.
 | 实物制作年代 | 颜勤礼拓本 `eraLabel` 民国、`startYear` 为 `null`；兰亭唐；定武宋；礼器明；张猛龙明；祭侄 758 单年 | `yan-era` 只写民国，不补拓制年；其余仍由旧档承担 |
 | 事件 | 9 件共 13 条事件；祭侄 3 条，其中得卷事件为 `range` 1282–1283、`certainty: disputed`、`placeId` 与 `placeWording` 均 `null` | 事件仍为 range；两说另拆为两条 `event-year`；地点仍为空 |
 | 双语原文 | 20 条实物注记中英成对；13 条事件摘要均有中文 | 保留旧译文；试例只新增 `voice` 与 `locator`，不改写原文 |
-| 审核状态 | 5 部作品 3 部 `reviewed`、2 部 `draft`；9 件实物 6 件 `reviewed`、3 件 `draft` | 顶层试例为 `draft`；程序不提升任何旧记录 |
+| 审核状态 | 5 部作品 3 部 `reviewed`、2 部 `draft`；9 件实物 5 件 `reviewed`、4 件 `draft` | 顶层试例为 `draft`；程序不提升任何旧记录 |
 
 新增的是“一条具体说法”这一层：
 
 | 信息 | 旧档字段 | 试例表达 | 旧字段无法表示的细节 |
 | --- | --- | --- | --- |
 | 同一事件的两年 | `provenanceEvents[].date` 为 `range` 1282–1283，`certainty: disputed`，摘要用文字说明两说 | `ji-1282`、`ji-1283` 两条断言，各自 `value`、`voice`、`locator`；冲突组 `selected: null` | 不能把 1282 和 1283 分别作为可查询的值返回，也不能给每条说法各配一个段落定位 |
-| 同页两跋 | `sourceRefs` 指向整条文献，`source.locator` 只有一个字符串 | 每条证据各带 `source` 与 `locator`（楷书跋／行书跋） | 同页的两则题跋只能压在一条文献定位里，无法按跋分别复查 |
+| 同页两跋 | `sourceRefs` 指向整条文献，`source.locator` 只有一个字符串 | 每条证据各带 `source` 与 `locator`（壬午跋／癸未跋） | 同页的两则题跋只能压在一条文献定位里，无法按跋分别复查 |
 | 支持与质疑 | `notes` 用文字写“馆方对归名提出疑问” | 同一 `subject`／`predicate`／`value` 的两条断言，`stance` 分别为 `supports`、`questions` | 不能按立场筛选，也不能保证支持与质疑指向同一归名 |
 | 逐条说话者 | 作品层 `attribution` 只记创作署名；事件摘要用散文提到人物 | 每条断言有 `voice`，区分材料作者、转述者与录入者 | 事件摘要中的“某人说”无法变成可查询的说话者字段 |
 | 版本组 | 只有 `workId` 与实物号 | 版本 `trial-shenlong` 带 `label`、`basis`、`work`；归组本身是一条断言 | 没有“版本”实体，无法保存归组依据，也无法并存两种分组 |
@@ -118,7 +120,7 @@ Self-test: 6/6 negative cases detected; restored pilot passed.
 
 ## 七、覆盖与未覆盖
 
-本轮实际覆盖：5 部作品、9 件实物、10 条断言、10 处证据、1 个版本、1 条媒体、1 个冲突、1 个事件主语。负例覆盖坏文献、错挂实物、缺定位、冲突成员缺失、未知版本、媒体错绑六类。
+本轮实际覆盖：5 部作品、9 件实物、10 条断言、10 处证据、1 个版本、1 条媒体、1 个冲突、1 个事件主语。负例覆盖坏文献、跨案错挂、同案错挂、缺定位、冲突成员缺失、未知版本、媒体错绑七类。
 
 未覆盖，不能由本卡推出结论：
 
@@ -135,7 +137,7 @@ Self-test: 6/6 negative cases detected; restored pilot passed.
 
 已运行：
 
-- `node scripts/research/check-ontology-pilot.mjs --base c6fd7c0 --self-test`：0 错误、0 警告，6/6 反例检出，恢复后通过。
+- `node scripts/research/check-ontology-pilot.mjs --base c6fd7c0 --self-test`：0 错误、0 警告，7/7 反例检出，恢复后通过。
 - `npm.cmd run check`：类型检查、数据检查、知识目录检查、看板检查、测试套件均通过；`vite build` 首次因环境拒绝清理 esbuild 临时文件而失败。
 - 将 `TMP`／`TEMP` 指向项目内 `.private/tmp/esbuild` 后重跑 `npm.cmd run build`：构建通过（主包 gzip 约 283 kB，与架构研究的基线估算一致）。
 - `git diff --check`：无空白错误。

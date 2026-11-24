@@ -35,6 +35,13 @@ const PREDICATES = new Map([
 ]);
 const KINDS = new Set(['source-report', 'scholarly-opinion', 'editor-interpretation']);
 const STANCES = new Set(['supports', 'questions']);
+// These predicates describe the physical copy, not the stone it may reproduce.
+// A same-work case contains both objects, so membership alone cannot catch a
+// rubbing-specific claim being moved onto the original stele.
+const SUBJECT_OBJECT_TYPES = new Map([
+  ['diagnostic-reading', new Set(['rubbing'])],
+  ['album-leaf-count', new Set(['rubbing'])],
+]);
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 function isRecord(value) {
@@ -449,6 +456,15 @@ function validatePilot(pilot, index, options = {}) {
             { caseWork: record.workId, claimId: label },
           );
         }
+        const allowedTypes = SUBJECT_OBJECT_TYPES.get(claim.predicate);
+        if (allowedTypes && subject && !allowedTypes.has(subject.objectType)) {
+          error(
+            'CLAIM_SUBJECT_TYPE_MISMATCH',
+            `${claimPath}.subject`,
+            `Claim "${label}" (${claim.predicate}) must describe ${[...allowedTypes].join(' or ')}, but "${claim.subject}" is ${String(subject.objectType)}.`,
+            { caseWork: record.workId, claimId: label },
+          );
+        }
 
         if (claim.predicate === 'assigned-version') {
           const versionEntry = versionIndex.get(claim.value);
@@ -557,8 +573,10 @@ function validatePilot(pilot, index, options = {}) {
     error('PROBE_JIZHI_TWO_YEARS', '$.cases', 'The Jizhi case must return both 1282 and 1283 as separate event-year claims.');
   }
   const locatorFor = (year) => jizhiYears.find((claim) => claim.value === year)?.evidence?.[0]?.locator ?? '';
-  if (!/楷书/.test(locatorFor(1282)) || !/行书/.test(locatorFor(1283))) {
-    error('PROBE_JIZHI_COLOPHON_LOCATORS', '$.cases', 'The 1282 claim must cite the regular-script colophon and the 1283 claim the running-script colophon.');
+  const locator1282 = locatorFor(1282);
+  const locator1283 = locatorFor(1283);
+  if (!/壬午/.test(locator1282) || !/癸未/.test(locator1283) || locator1282 === locator1283) {
+    error('PROBE_JIZHI_COLOPHON_LOCATORS', '$.cases', 'The 1282 claim must cite the 壬午 colophon and the 1283 claim the 癸未 colophon, with distinct locators. Script style is disputed and is not part of this probe.');
   }
   const jizhiUnresolved = caseRecords
     .filter((record) => record.workId === 'jizhi')
@@ -681,6 +699,15 @@ function runSelfTest(pilot, index, options) {
       claimId: 'li-face',
       mutate(copy) {
         findClaim(copy, 'liqi-bei', 'li-face').subject = 'witness-jizhi';
+      },
+    },
+    {
+      name: 'same-case-wrong-copy',
+      expected: 'CLAIM_SUBJECT_TYPE_MISMATCH',
+      caseWork: 'zhang-menglong-bei',
+      claimId: 'zhang-extent',
+      mutate(copy) {
+        findClaim(copy, 'zhang-menglong-bei', 'zhang-extent').subject = 'stele-zhang-menglong-bei';
       },
     },
     {
