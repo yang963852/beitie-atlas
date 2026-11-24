@@ -2247,6 +2247,12 @@ html[lang='en'] .result::before {
   box-shadow: none;
 }
 
+/* The provider's default pin is blue. Shift only the marker image to the
+   seal hue; the basemap cartography stays the provider's own. */
+.map--live .tdt-marker-icon {
+  filter: hue-rotate(150deg) saturate(1.35) brightness(0.95);
+}
+
 .map__hint {
   font-size: 0.8rem;
 }
