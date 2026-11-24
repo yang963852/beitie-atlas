@@ -55,7 +55,7 @@ Self-test: 6/6 negative cases detected; restored pilot passed.
 | 试例仍是待审 | 顶层 `status` 必须为 `draft`；`preparedBy`、`method`、`sourceCheckedOn` 必填 | 通过 |
 | 能力探针 | 祭侄两说可分别检出且各有跋文定位；按“冯承素”检索同时返回支持与质疑 | 通过 |
 
-冲突组还额外检查了谓词一致：两条记录的 `subject`、`predicate` 相同，只有 `value`、`voice` 和 `locator` 不同；这正是“同页异跋”需要的最小结构。
+冲突组还额外检查了谓词一致：两条记录的 `subject`、`predicate` 相同，只有 `value`、`locator` 不同（`voice` 同为鲜于枢）；这正是“同页异跋”需要的最小结构。
 
 ## 四、反例自测
 
@@ -96,7 +96,7 @@ Self-test: 6/6 negative cases detected; restored pilot passed.
 | 对照项 | 旧档实际值 | 试例处理 |
 | --- | --- | --- |
 | 馆号 | 9 件中 6 件有馆号（新00045406、故00002597、新00135367、新00044512、新00045763、故書000060N000000000）；3 件原石为 `null` | 不重复馆号，只在需要时引用实物号；3 个 `null` 保持为空 |
-| 生产年代 | 颜勤礼拓本 `eraLabel` 民国、`startYear` 为 `null`；兰亭唐；定武宋；礼器明；张猛龙明；祭侄 758 单年 | `yan-era` 只写民国，不补拓制年；其余仍由旧档承担 |
+| 实物制作年代 | 颜勤礼拓本 `eraLabel` 民国、`startYear` 为 `null`；兰亭唐；定武宋；礼器明；张猛龙明；祭侄 758 单年 | `yan-era` 只写民国，不补拓制年；其余仍由旧档承担 |
 | 事件 | 9 件共 13 条事件；祭侄 3 条，其中得卷事件为 `range` 1282–1283、`certainty: disputed`、`placeId` 与 `placeWording` 均 `null` | 事件仍为 range；两说另拆为两条 `event-year`；地点仍为空 |
 | 双语原文 | 20 条实物注记中英成对；13 条事件摘要均有中文 | 保留旧译文；试例只新增 `voice` 与 `locator`，不改写原文 |
 | 审核状态 | 5 部作品 3 部 `reviewed`、2 部 `draft`；9 件实物 6 件 `reviewed`、3 件 `draft` | 顶层试例为 `draft`；程序不提升任何旧记录 |
