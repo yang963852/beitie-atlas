@@ -1,6 +1,6 @@
 # Delivery 042 · Reading-room setting across the frontend
 
-**Status: implemented, checked and self-reviewed; [PR #46](https://github.com/yang963852/beitie-atlas/pull/46) awaits the coordinator's merge decision.** Branch `feat/reading-room-project`, base `1d08a33`, implementation `31ae6d0`.
+**Status: implemented, checked and self-reviewed; [PR #46](https://github.com/yang963852/beitie-atlas/pull/46) checks passed and awaits the coordinator's merge decision.** Branch `feat/reading-room-project`, base `1d08a33`, implementation `31ae6d0`.
 
 ## Scope
 
@@ -27,7 +27,7 @@ Changed only: renderer tone mapping and exposure, scene background/fog colour, h
 | --- | --- |
 | `npm.cmd run typecheck` | Passed |
 | `npx.cmd vitest run` | Passed: 18 files / 156 tests |
-| `npm.cmd run check` | Passed: interface current; data 0 errors / 38 known warnings; 99 catalogue pages current; isolation and reproducibility (518 files) passed; board 42 rows; 18 test files / 156 tests; ZIP 523 files; preview build succeeded |
+| `npm.cmd run check` | Passed locally: interface current; data 0 errors / 38 known warnings; 99 catalogue pages current; isolation and reproducibility (518 files) passed; board 42 rows; 18 test files / 156 tests; ZIP 523 files; preview build succeeded. PR check [run 45512657624](https://github.com/yang963852/beitie-atlas/actions/runs/45512657624) passed. |
 | Browser checks | Passed: 390 / 768 / 1440 and the zoom equivalent, English and reduced motion; no page errors or horizontal overflow |
 
 Exercised: cold load of a shared object URL, sticky topbar and timeline masthead, mobile list/map/detail switch, keyboard focus on results and witness buttons, search and empty state, missing map key fallback, reading dialog and contribution form. Contrast samples: captions 4.55:1, seal dates 6.93:1, body copy above 7:1.
