@@ -46,7 +46,7 @@ Stele of the Xuanmi Pagoda, rubbing
 
 - 尺寸为册页每页之数。此册定为明初拓，确切拓年未详。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-xuanmi-ta-bei-026) · [实物数据](../../data/objects/dpm-xuanmi-ta-bei-026.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-xuanmi-ta-bei-026) · [实物源稿](../../knowledge/objects/dpm-xuanmi-ta-bei-026.md)
 
 <a name="stele-xuanmi-ta"></a>
 
@@ -74,7 +74,7 @@ Xuanmi Pagoda Stele, original stone
 - 出土、入藏与今日陈列状态在所核来源中没有记载，留空。
 - 未记录坐标：来源给出的是机构名称，不是实测点位。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-xuanmi-ta) · [实物数据](../../data/objects/stele-xuanmi-ta.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-xuanmi-ta) · [实物源稿](../../knowledge/objects/stele-xuanmi-ta.md)
 
 ## 据以著录的来源
 
@@ -90,4 +90,4 @@ Xuanmi Pagoda Stele, original stone
 
 3. 西安碑林博物馆 · [玄秘塔碑](<https://www.beilin-museum.com/index.php?a=index&aid=2998&c=View&lang=en&m=home>)。定位：Opening paragraph on Anguo Temple and the Yuanyou transfer。查阅于 2026-11-18。
 
-[作品数据](../../data/works/xuanmi-ta-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/xuanmi-ta-bei.md) · [返回知识总目](../README.md)

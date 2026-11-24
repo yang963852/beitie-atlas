@@ -1,9 +1,12 @@
 ---
+schemaVersion: 1
 titleZh: 沈尹默
 titleEn: Shen Yinmo
+aliases: []
 state: draft
-works: shen-yinmo-dakai-jia
-sources: src-pku-shen-teaching, src-shm-zhao-shen-colophon, src-xiling-shen-chronology
+works: []
+objects: []
+sources: []
 ---
 
 # 沈尹默（草稿）

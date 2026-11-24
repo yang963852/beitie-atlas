@@ -1,9 +1,12 @@
 ---
+schemaVersion: 1
 titleZh: 赵朴初
 titleEn: Zhao Puchu
+aliases: []
 state: draft
-works: zhao-puchu-shen-colophon
-sources: src-shm-zhao-shen-colophon, src-xiling-shen-chronology
+works: []
+objects: []
+sources: []
 ---
 
 # 赵朴初（草稿）

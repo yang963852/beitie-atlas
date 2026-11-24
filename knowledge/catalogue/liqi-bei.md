@@ -16,6 +16,8 @@ Stele of the Ritual Vessels
 
 书体：隶书
 
+延伸阅读：[翁方纲](../people/weng-fanggang.md)
+
 作品待考与说明
 
 - 英文标题为本项目为检索所拟，非来源所用题名。
@@ -44,7 +46,7 @@ Ritual Vessels Stele, Ming rubbing with Zhang Boying’s label
 
 - 从碑阳读到碑阴、碑侧，这册把四面的字都拓了下来。翻到“绝思”二字，还可以看到石面损处尚未连在一起时的字口。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/liqi-ming-44512) · [实物数据](../../data/objects/liqi-ming-44512.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/liqi-ming-44512) · [实物源稿](../../knowledge/objects/liqi-ming-44512.md)
 
 <a name="stele-liqi"></a>
 
@@ -73,7 +75,7 @@ Stele of the Ritual Vessels, original stone
 - 未记录坐标：来源给出的是机构名称，不是实测点位。
 - 所核页面没有给出尺寸。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-liqi) · [实物数据](../../data/objects/stele-liqi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-liqi) · [实物源稿](../../knowledge/objects/stele-liqi.md)
 
 ## 据以著录的来源
 
@@ -89,4 +91,4 @@ Stele of the Ritual Vessels, original stone
 
 3. 故宫博物院 · [明拓东汉礼器碑](<https://www.dpm.org.cn/collection/impres/234635.html>)。定位：新00044512，简介中本拓本一段。查阅于 2026-11-19。
 
-[作品数据](../../data/works/liqi-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/liqi-bei.md) · [返回知识总目](../README.md)

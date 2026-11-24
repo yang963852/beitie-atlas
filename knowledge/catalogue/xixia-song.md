@@ -50,7 +50,7 @@ Xixia Song, cliff inscription
 - 未填尺寸：所引页面没有给出。
 - 摩崖本身即实物，未凿移，故没有入藏经过可记。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/cliff-xixia-song) · [实物数据](../../data/objects/cliff-xixia-song.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/cliff-xixia-song) · [实物源稿](../../knowledge/objects/cliff-xixia-song.md)
 
 ## 据以著录的来源
 
@@ -58,4 +58,4 @@ Xixia Song, cliff inscription
 
 1. 成县人民政府 Cheng County People's Government · [【西狭颂】独属于成县的悠久文脉](<https://www.gscx.gov.cn/zfxxgk/public/32128434/147920230.html>)。定位：《西狭颂》摩崖石刻一节。查阅于 2026-11-18。
 
-[作品数据](../../data/works/xixia-song.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/xixia-song.md) · [返回知识总目](../README.md)

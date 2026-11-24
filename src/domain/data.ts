@@ -1,14 +1,13 @@
 /**
- * Loads the reviewed editorial JSON at build time.
+ * Loads the compiled knowledge interface at build time.
  *
- * Data files stay canonical and independent of the map provider. Nothing is
- * fetched at runtime, so the corpus is available even when every external
- * service is blocked.
+ * `knowledge/` Markdown is the author source; `scripts/lib/knowledge-compiler.ts`
+ * produces `data/index/knowledge-v1.json`. The browser never reads an author
+ * file or a legacy JSON record directly, so a field cannot be edited in one
+ * place and silently ignored by the page.
  */
 
-import mediaFile from '../../data/media.json';
-import placesFile from '../../data/places.json';
-import sourcesFile from '../../data/sources.json';
+import compiledFile from '../../data/index/knowledge-v1.json';
 import { currentPlaceId, isCurrentLocation } from './collection';
 import { isReleaseBuild } from './build';
 import { type Dynasty, dynastyOrder, findDynasty } from './dynasties';
@@ -17,14 +16,13 @@ import { validateDataset, type ValidationReport } from './validate';
 import { knowledgeArticles, knowledgeRelations } from './knowledge';
 import { knowledgeSourceIds } from './knowledge-types';
 
-const workModules = import.meta.glob<unknown>('../../data/works/*.json', {
-  eager: true,
-  import: 'default',
-});
-const objectModules = import.meta.glob<unknown>('../../data/objects/*.json', {
-  eager: true,
-  import: 'default',
-});
+const compiled = compiledFile as unknown as {
+  works: Work[];
+  objects: ObjectRecord[];
+  places: Place[];
+  sources: Source[];
+  media: MediaItem[];
+};
 
 const OBJECT_TYPE_ORDER: ObjectType[] = [
   'ink-manuscript',
@@ -35,12 +33,6 @@ const OBJECT_TYPE_ORDER: ObjectType[] = [
   'fragment',
   'rubbing',
 ];
-
-function moduleValues<T>(modules: Record<string, unknown>): T[] {
-  return Object.keys(modules)
-    .sort()
-    .map((key) => modules[key] as T);
-}
 
 function sortObjects(objects: ObjectRecord[], works: Work[]): ObjectRecord[] {
   const worksById = new Map(works.map((work) => [work.id, work]));
@@ -98,13 +90,12 @@ let index: DatasetIndex | null = null;
 
 export function getDataset(): Dataset {
   if (cached) return cached;
-  const works = moduleValues<Work>(workModules);
   cached = {
-    works,
-    objects: sortObjects(moduleValues<ObjectRecord>(objectModules), works),
-    places: placesFile.items as unknown as Place[],
-    sources: sourcesFile.items as unknown as Source[],
-    media: mediaFile.items as unknown as MediaItem[],
+    works: compiled.works,
+    objects: sortObjects(compiled.objects, compiled.works),
+    places: compiled.places,
+    sources: compiled.sources,
+    media: compiled.media,
   };
   index = buildIndex(cached);
   return cached;

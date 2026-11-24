@@ -51,7 +51,7 @@ Stele of the Diffusion of the Luminous Religion, original stone
 - 未记录坐标：页面给出的是机构名称，不是实测点位。
 - 页面称此碑为「世界四大名碑」之一，但未说明这一名目的具体所指。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-daqin-jingjiao) · [实物数据](../../data/objects/stele-daqin-jingjiao.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-daqin-jingjiao) · [实物源稿](../../knowledge/objects/stele-daqin-jingjiao.md)
 
 ## 据以著录的来源
 
@@ -63,4 +63,4 @@ Stele of the Diffusion of the Luminous Religion, original stone
 
 2. 西安碑林博物馆 · [大秦景教流行中国碑（馆方另一条目）](<https://www.beilin-museum.com/INDEX.PHP?a=index&aid=2999&c=View&m=home>)。定位：Discovery and transfer paragraph。查阅于 2026-11-18。
 
-[作品数据](../../data/works/daqin-jingjiao-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/daqin-jingjiao-bei.md) · [返回知识总目](../README.md)

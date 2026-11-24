@@ -38,7 +38,7 @@ Autobiography
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-zixu) · [实物数据](../../data/objects/witness-zixu.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-zixu) · [实物源稿](../../knowledge/objects/witness-zixu.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Autobiography
 
 1. 國立故宮博物院 · [自叙帖](<https://digitalarchive.npm.gov.tw/Collection/Detail/14901?dep=P>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/zixu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/zixu.md) · [返回知识总目](../README.md)

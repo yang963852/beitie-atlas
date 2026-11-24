@@ -2,9 +2,9 @@
 
 # 碑帖之间 · 知识总目
 
-从作品、书家或版本笔记入手，也可按时代查找传世实物。标为「待审」的内容仍在编辑中。
+从作品、书家或版本笔记入手，也可按时代查找传世实物。标为「待审」的内容仍在编辑中。本页与 `catalogue/` 由 `knowledge/` 源稿生成，不要手改。
 
-[打开网页知识库](https://yang963852.github.io/beitie-atlas/#/library) · [提交中文资料或勘误](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) · [中文贡献指南](../docs/CONTRIBUTE.zh-CN.md)
+[打开网页知识库](https://yang963852.github.io/beitie-atlas/#/library) · [下载完整知识库](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip) · [提交中文资料或勘误](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) · [中文贡献指南](../docs/CONTRIBUTE.zh-CN.md)
 
 ## 作品导读
 
@@ -15,7 +15,11 @@
 
 ## 书家
 
+- [冯承素](people/feng-chengsu.md) · 待审
 - [沈尹默](people/shen-yinmo.md) · 待审
+- [王羲之](people/wang-xizhi.md) · 待审
+- [翁方纲](people/weng-fanggang.md) · 待审
+- [鲜于枢](people/xianyu-shu.md) · 待审
 - [颜真卿](people/yan-zhenqing.md) · 待审
 - [赵朴初](people/zhao-puchu.md) · 待审
 
@@ -154,3 +158,8 @@
 - [楷书诗轴](catalogue/deng-kaishu.md) · 1 件实物 · 待审
 - [隶书五字横幅](catalogue/yi-wuzi.md) · 1 件实物 · 待审
 - [篆书急就章轴](catalogue/zhao-jijiu.md) · 1 件实物 · 待审
+
+### 中华人民共和国
+
+- [甲种本大楷习字帖](catalogue/shen-yinmo-dakai-jia.md) · 0 件实物 · 待审
+- [行书跋沈尹默论书札卷](catalogue/zhao-puchu-shen-colophon.md) · 1 件实物 · 待审

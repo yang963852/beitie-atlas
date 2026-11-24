@@ -50,7 +50,7 @@ Stone Terrace Classic of Filial Piety, original stone
 - 未记录坐标。
 - 碑额篆书出自李亨之说，仅见于该页面。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-shitai-xiaojing) · [实物数据](../../data/objects/stele-shitai-xiaojing.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-shitai-xiaojing) · [实物源稿](../../knowledge/objects/stele-shitai-xiaojing.md)
 
 ## 据以著录的来源
 
@@ -62,4 +62,4 @@ Stone Terrace Classic of Filial Piety, original stone
 
 2. 中国政法大学法律古籍整理研究所 · [「法度与气象：在碑刻中遇见盛唐」展品简介（六）](<https://flgj.cupl.edu.cn/info/1074/4178.htm>)。查阅于 2026-11-18。
 
-[作品数据](../../data/works/shitai-xiaojing.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shitai-xiaojing.md) · [返回知识总目](../README.md)

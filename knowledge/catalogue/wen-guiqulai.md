@@ -38,7 +38,7 @@ Return Home in Regular Script
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-wen-guiqulai) · [实物数据](../../data/objects/witness-wen-guiqulai.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-wen-guiqulai) · [实物源稿](../../knowledge/objects/witness-wen-guiqulai.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Return Home in Regular Script
 
 1. 故宫博物院 · [楷书归去来兮辞页](<https://www.dpm.org.cn/collection/handwriting/230983.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/wen-guiqulai.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/wen-guiqulai.md) · [返回知识总目](../README.md)

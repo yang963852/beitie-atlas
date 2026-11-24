@@ -75,40 +75,39 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-  evidence["馆方目录、书目与编辑考证"] --> facts["data · JSON 事实与来源编号"]
-  evidence --> prose["knowledge · 手写 Markdown 文章"]
-  facts --> gen["knowledge:generate · 生成供仓库阅读的目录"]
-  prose --> gen
+  evidence["馆方目录、书目与编辑考证"] --> source["knowledge · 作者 Markdown 源稿"]
+  source --> compiler["knowledge-compile · 只读编译器"]
+  compiler --> iface["data/index/knowledge-v1.json"]
+  compiler --> gen["knowledge:generate · 生成供仓库阅读的目录"]
   gen --> index["knowledge/README 与 catalogue"]
   index -->|比对生成结果| check["check · 校验与测试"]
-  facts --> check
-  prose --> check
-  check -->|通过后打包| bundle["Vite · 导入 JSON，把文章和关系编成模块"]
+  iface --> check
+  check -->|通过后打包| bundle["Vite · 只导入版本化接口"]
   bundle --> site["Pages 预览"]
   site -->|下载| read["浏览器按编号关联、筛选与展示"]
+  iface --> zip["knowledge:package · 独立 ZIP"]
 ```
 
 - Use React + TypeScript + Vite, npm, a committed lockfile, and a documented supported Node version.
-- Keep structured catalogue facts in versioned JSON and original editorial prose in the [Markdown knowledge library](../knowledge/README.md). Build the static site from both. Generated catalogue pages and indexes are readable on GitHub and checked for drift. Ingestion travels through GitHub Issues and PRs.
+- Keep structured facts and original editorial prose in the [Markdown knowledge library](../knowledge/README.md); `scripts/lib/knowledge-compiler.ts` compiles the author source into the versioned `data/index/knowledge-v1.json` interface. Build the static site, checks, timeline, map and download package from that interface only. Generated catalogue pages and indexes are readable on GitHub and checked for drift. Ingestion travels through GitHub Issues and PRs.
+- The legacy `data/works/`, `data/objects/`, `data/places.json`, `data/sources.json`, `data/media.json`, `data/knowledge-relations.json` and journey JSON are frozen migration inputs. Do not edit them or import them from `src/`.
 - Place provider integration behind a small map component boundary: points, selection, focus, and optional schematic event connections. Do not design a generic GIS framework.
 - Tianditu is the implemented live provider. The local location overview remains available when the key, SDK or tiles are unavailable. See [the adapter](../src/map/tianditu.ts) and [the earlier provider evaluation](map-options.md).
 - Keep matching interface dictionaries in `src/i18n/en.ts` and `src/i18n/zh.ts`. Preserve Chinese titles, aliases and authored Chinese prose. Show the source language where a translation is missing.
 - Use ordinary React state initially. Avoid premature state frameworks, CMSs, microservices, and search servers.
 - Preserve canonical records independently of map vendors. A credential proxy, if required by the selected provider, is a separately documented deployment component, not an unnoticed expansion into a full backend.
 
-**给 Agent 分配文件。** 改馆藏依据，从 `data/objects/` 找到具体实物；改读帖文章，从 `knowledge/` 找作者原稿；改判断“哪些地点能画成当前馆藏点”的规则，看 `src/domain/collection.ts`；改地图服务的调用，看 `src/map/`。改读者界面，看 `src/components/`；改生成、检查或部署，看 `scripts/` 和 `.github/workflows/`。下列目录名可直接交给 Agent 定位。
+**给 Agent 分配文件。** 改作品、实物、人物、地点、来源或事件，从 `knowledge/` 找对应 Markdown；改读帖文章，也从 `knowledge/notes/`；改判断“哪些地点能画成当前馆藏点”的规则，看 `src/domain/collection.ts`；改地图服务的调用，看 `src/map/`。改读者界面，看 `src/components/`；改编译器、生成、检查或部署，看 `scripts/lib/knowledge-*`、`scripts/` 和 `.github/workflows/`。旧 JSON 不再分派编辑任务。下列目录名可直接交给 Agent 定位。
 
 ```text
 src/components/       map, results, detail, timeline, source citation
-src/domain/           types, validation, search, temporal helpers
+src/domain/           types, validation, search, temporal helpers, data boundary
 src/map/              one selected provider adapter and configuration
 src/i18n/             interface dictionaries
-knowledge/            authored Markdown and readable generated catalogue
-data/works/           composition-level records
-data/objects/         physical objects and embedded provenance events
-data/places.json      reusable place records
-data/sources.json     bibliography and web references
-data/media.json       only approved reusable assets
+knowledge/            authored Markdown, templates and readable generated catalogue
+knowledge/_templates/ Chinese starting points for each record type
+scripts/lib/knowledge-*.ts  schema, compiler, isolation and packaging helpers
+data/index/           generated versioned interface; never edit by hand
 tests/fixtures/       clearly synthetic edge cases, excluded from release data
 docs/                 requirements, decisions, review reports
 ```
@@ -139,11 +138,11 @@ erDiagram
   SOURCE }|--o{ MEDIA : "记录图像出处"
 ```
 
-**怎样读一个真实例子。** 原石和故宫著录的民国拓本都用 `workId: yan-qinli-bei` 指向同一作品，故宫拓本另有馆号“新00045406”。其制作年代只记“民国”，拓制年份空缺。该拓本的事件和实物关系数组都是空的，原因是现有著录不足以证明它拓自哪一方石，也不足以建立递藏链。查阅目录的日期与馆藏断言的日期分别保存。即使馆藏成立，机构位置也不能精确到库房。地点未知、仅知旧址或缺少可用坐标时，仍可保留文字和出处。[作品](../data/works/yan-qinli-bei.json) · [原石](../data/objects/yan-qinli-original-stele.json) · [民国拓本](../data/objects/dpm-rubbing-xin00045406.json) · [书家文章](../knowledge/people/yan-zhenqing.md)
+**怎样读一个真实例子。** 原石和故宫著录的民国拓本都用 `work: yan-qinli-bei` 指向同一作品，故宫拓本另有馆号“新00045406”。其制作年代只记“民国”，拓制年份空缺。该拓本的事件和实物关系数组都是空的，原因是现有著录不足以证明它拓自哪一方石，也不足以建立递藏链。查阅目录的日期与馆藏断言的日期分别保存。即使馆藏成立，机构位置也不能精确到库房。地点未知、仅知旧址或缺少可用坐标时，仍可保留文字和出处。[作品](../knowledge/works/yan-qinli-bei.md) · [原石](../knowledge/objects/yan-qinli-original-stele.md) · [民国拓本](../knowledge/objects/dpm-rubbing-xin00045406.md) · [书家文章](../knowledge/people/yan-zhenqing.md)
 
-**编辑应改哪里。** JSON 是有固定字段的档案，编号用来跨文件引用。事件内嵌在所属实物中；地点和文献可由多件实物共用。文章开头两条横线之间的 YAML 字段记录标题、关联编号、审核状态等。文章正文保存在 `knowledge/works`、`people`、`notes`；人物之间的具名关系另存在 `data/knowledge-relations.json`，每条带来源和状态。目录生成器从源文件编出 GitHub 可读目录，网页则由 Vite 插件直接读取作者文章。改生成页会被一致性检查发现，应回到源记录修改。[字段定义](../src/domain/types.ts) · [文章及关系](../src/domain/knowledge-types.ts) · [关系样本](../data/knowledge-relations.json) · [目录生成器](../scripts/lib/catalogue.ts) · [网页文章入口](../scripts/lib/knowledge-plugin.ts)
+**编辑应改哪里。** `knowledge/` 的 Markdown 是有固定字段的档案，文件名即稳定编号。事件内嵌在所属实物的 YAML 中；地点和文献各有一份文件，可由多件实物共用。作品、实物、人物、地点、来源的开头 YAML 记录程序字段，正文写给人读。人物之间的具名关系在 `knowledge/relations.md`，每条带来源和状态。`npm run knowledge:compile` 生成 `data/index/knowledge-v1.json`；`npm run knowledge:generate` 编出 GitHub 可读目录。网页、检查、时间线、地图和下载包只读该接口，不再直接读作者文件。[字段定义](../src/domain/types.ts) · [作者格式](../scripts/lib/knowledge-schema.ts) · [编译器](../scripts/lib/knowledge-compiler.ts) · [目录生成器](../scripts/lib/catalogue.ts) · [接口](../data/index/knowledge-v1.json)
 
-**此次核对的规模。** 85 部作品、95 件实物、69 条实物事件、33 个地点、141 条文献、1 条实物媒体记录；手写文章有 4 篇作品导读、3 篇人物、2 篇读帖。这些是此版本的记录数，包含草稿。实物媒体表只登记与具体实物关联的媒体，开场的桌面、教室等界面素材另放在 `src/assets/`。新增作品即使尚无导读，也能从结构化档案进入目录。[浏览器数据入口](../src/domain/data.ts) · [目录合并逻辑](../src/domain/library.ts) · [媒体记录](../data/media.json)
+**此次核对的规模。** 87 部作品、96 件实物、70 条实物事件、36 个地点、145 条文献、1 条实物媒体记录；手写文章有 4 篇作品导读、7 篇人物、2 篇读帖。这些是 2026-11-24 迁移后的记录数，包含草稿。实物媒体表只登记与具体实物关联的媒体，开场的桌面、教室等界面素材另放在 `src/assets/`。新增作品即使尚无导读，也能从编译档案进入目录。[浏览器数据入口](../src/domain/data.ts) · [目录合并逻辑](../src/domain/library.ts) · [知识库](../knowledge/README.md)
 
 | Entity | Minimum meaning and fields |
 | --- | --- |
@@ -207,7 +206,9 @@ Candidate → source collection → draft → fact and rights review → approve
 
 Record sources before writing the narrative. Summarize facts in original prose. AI output is a drafting aid, not evidence. Do not scrape or redistribute an entire museum catalog as a shortcut.
 
-Readers can submit a single source or lead in Chinese using the knowledge Issue form. An editor checks the evidence, normalizes accepted fields, links the original Issue and preserves credit. Members may edit authored Markdown directly in a GitHub browser or local checkout. Source gaps stay visible.
+Readers can submit a single source or lead in Chinese using the knowledge Issue form. An editor checks the evidence, normalizes accepted fields, links the original Issue and preserves credit. Members may edit authored Markdown directly in a GitHub browser, a local checkout, or the downloadable library ZIP. Source gaps stay visible.
+
+The compiler is the only path from author source to the reader. `npm run knowledge:compile` reads `knowledge/`, validates references and bilingual alignment, and writes `data/index/knowledge-v1.json`. `npm run check:interface` rejects a stale file; `npm run check:isolation` rejects a page that imports author or legacy files; `npm run check:reproducible` compiles a read-only copy twice and hashes the sources before and after. The generated catalogue is a separate projection for GitHub readers. A data-contract change updates the schema, compiler, validator, web consumer and tests together.
 
 For v0.1, review all publication records, not a random sample. Keep a future maintenance queue for stale links, collection changes, disputed claims, and image permissions. An update to collection data changes its review record, not unrelated dates.
 
@@ -289,10 +290,10 @@ Three properties decided the shape, not fashion:
 
 | 已观察到的依赖 | 耦合与可能的影响 | 下次改动怎样验收 |
 | --- | --- | --- |
-| 浏览器一次导入全部作品、实物、地点和来源，首次取数建立按编号查找的索引；命令行从磁盘组装同一套字段，两端共用校验器。文章与人物关系由构建插件注入。[浏览器](../src/domain/data.ts) · [命令行](../scripts/lib/dataset.ts) · [严格检查](../scripts/lib/release-gate.ts) | 数据形状是跨层契约，耦合高。索引使单条查找便宜，但首访仍须接收资料；新增字段可能只在一个入口生效。 | 用同一件实物核对命令行、生成目录和网页。记录首访传输字节及打开详情耗时，再决定是否分包。 |
+| 浏览器只导入编译后的 `data/index/knowledge-v1.json`；命令行、生成目录和正式检查从 `knowledge/` 源稿重新编译同一套字段。[浏览器边界](../src/domain/data.ts) · [编译器](../scripts/lib/knowledge-compiler.ts) · [严格检查](../scripts/lib/release-gate.ts) | 数据形状是跨层契约，耦合高。接口让网页不依赖作者文件；新增字段须同时改 schema、编译器、校验和消费方。 | 用同一件实物核对命令行、生成目录和网页；改一篇 Markdown 后确认所有引用处同步。记录首访传输字节及打开详情耗时。 |
 | 作品阅读、实物检索、年代页共享档案，却各自处理搜索范围、网址和界面状态。[实物搜索](../src/domain/search.ts) · [知识库搜索](../src/domain/library.ts) · [年代页](../src/components/AtlasTimeline.tsx) | 页面间通过网址和稳定编号协作，耦合中等。改名、修改筛选或返回逻辑可能影响旧链接；两个搜索的查找对象不同。 | 从书家到作品，再到实物；复制链接刷新，浏览器后退，用键盘回到原处。分别用书家名与实物馆藏名检查预期结果。 |
-| 地图面板借适配器调用天地图，普通馆藏图与颜勤礼专题分别管理地图的装载和销毁；专题另读专用 JSON。[普通地图](../src/components/MapPanel.tsx) · [专题](../src/components/JourneyMap.tsx) · [历史点位](../src/components/HistoryPoints.tsx) | 地点规则与地图服务之间耦合较低，两个地图界面与服务装载过程的耦合较高。专题若推广到更多实物，专用数据与各件实物事件有重复维护风险。 | 对同一个地点检查无键、脚本失败、瓦片失败和文字入口；增加第二个同类专题前先核对哪些内容能来自实物档案。 |
-| 作品署名、文章中的人物编号、人物间具名关系各有来源；生成目录与网页共读作者材料。[资料类型](../src/domain/types.ts) · [知识解析](../scripts/lib/knowledge.ts) | 姓名与人物身份之间存在编辑判断。仅按同名自动连线会把不同人混在一起；改稳定编号会波及文章、关系、旧网址。 | 需要合并身份时列出受影响的引用与旧链接，人工核对角色及来源。生成目录与网页都应能追到同一证据。 |
+| 地图面板借适配器调用天地图；颜勤礼专题从同一组实物事件读取 `referencePlace`，不再读取专用 JSON。[普通地图](../src/components/MapPanel.tsx) · [专题](../src/components/JourneyMap.tsx) · [历史点位](../src/components/HistoryPoints.tsx) | 地点规则与地图服务之间耦合较低；专题与事件、参照地标共享字段，重复维护风险已降低。 | 对同一个地点检查无键、脚本失败、瓦片失败和文字入口；新增专题时先确认事件已有 `referencePlace` 和可引用坐标。 |
+| 作品署名、实物级摹写/题跋署名、文章中的人物编号、人物间具名关系与 claim 各有来源；生成目录与网页共读编译接口。[资料类型](../src/domain/types.ts) · [作者格式](../scripts/lib/knowledge-schema.ts) | 姓名与人物身份之间存在编辑判断。仅按同名自动连线会把不同人混在一起；claim 让意见与事实分开，但增加录入成本。 | 需要合并身份时列出受影响的引用与旧链接，人工核对角色及来源。生成目录与网页都应能追到同一证据。 |
 | 动画场景延迟加载，页面仍依赖书桌入口完成跳转。[书桌](../src/components/OpeningDesk.tsx) | 动画资源与正文分开加载，耦合较低；开场若拖慢进入目录，读者仍会承担体验成本。 | 分别测直接打开作品和从首页进入目录；检查减少动态效果、设备缺少图形能力时的入口。 |
 
 本次在该基线运行 `npm run check` 时，Vite 报告主脚本 912.55 kB（gzip 压缩估算 283.43 kB），可延迟加载的 Three.js 模块 704.74 kB（压缩估算 181.09 kB）。两者都触发了构建工具的大小提醒。主脚本含程序和资料，不能把它的大小全算在碑帖数据上。文件大小可作为以后比较的起点；手机实际传输时间、解码时间和首次可读时间仍待测量。
@@ -332,6 +333,7 @@ ADR 是一张保留取舍理由的决策单。以后 Agent 提议“上数据库
 | ADR-001 · 静态阅读与仓库审稿，已实施 | 作品与传本要公开查阅，事实需要审稿。可选静态文件、逐页手写 HTML 或由服务器按请求出页。 | JSON 与 Markdown 进 Git；React 联动筛选、地图与详情，Vite 打包，Pages 发预览。可逐条查版本和回退。 | 改动须重新构建，站内私有写入需要新边界；按前述读写需求重议。历史版本可重新构建发布。[构建配置](../vite.config.ts) · [部署](../.github/workflows/pages.yml) |
 | ADR-002 · 作品与实物分开，已实施 | 同一作品有不同时代的传本。可每部作品一张总卡，也可给每件实物单独建档。 | 实物用 workId 归到作品，制作日期、馆藏和事件跟随实物。能把一张民国拓本和唐碑分别考证。 | 需维护编号和跨文件校验；引入合册、拆页等新关系前用真实著录验证模型。模型迁移须能还原原记录。[领域类型](../src/domain/types.ts) · [编辑流程](atlas-workflow.md) |
 | ADR-003 · 一份文章供仓库和网站阅读，已实施 | 作者要在 GitHub 校阅同一篇导读。可维护两份文案、写进网页组件或共享 Markdown。 | 共享 Markdown，构建时解析 YAML，网页用 react-markdown 渲染。编辑一次，两处可读。 | 两种阅读界面需兼容；引入新排版前在两端验收。可退回基础段落、清单和链接。[任务 036 交付](delivery-036.md) · [网页正文](../src/components/KnowledgeProse.tsx) |
+| ADR-004 · 知识库为作者源、接口为网页边界，已采纳 | 作品、实物、事件、地点和来源分散在 JSON 与 Markdown 两套输入；网页、命令行和目录生成器各读一套，编辑链接指向不一致，贡献者无法只改一篇 Markdown 就完成投稿。可选维持双输入、把全部内容搬进网页代码，或建立 Markdown 源与只读接口。 | `knowledge/` 的 Markdown 是唯一作者源；`scripts/lib/knowledge-compiler.ts` 只读编译为 `data/index/knowledge-v1.json`；网页、校验、时间线、地图和下载包只消费该接口。旧 JSON 冻结为迁移基线，切换后退出生产读取。 | 需维护编译器与格式版本，首期迁移量大；作者必须按模板改源稿。若编译器无法在只读副本上复现、网页再次直接读取作者文件，或迁移出现无法解释的字段差异，则停止切换并回退到旧读取路径。[执行方案](knowledge-rebuild.md) · [知识库](../knowledge/README.md) |
 
 ## Primary technical references
 

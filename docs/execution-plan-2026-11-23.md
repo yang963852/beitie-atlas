@@ -1,5 +1,7 @@
 # Execution plan · 2026-11-23
 
+> **2026-11-24:** The knowledge-base portions of this plan are superseded by [knowledge-rebuild.md](knowledge-rebuild.md) and [delivery 039](delivery-039.md). This file is retained as history; the warning-closing and corpus work it records remain valid evidence.
+
 Coordinator-facing plan for the next four weeks. This is not reader-facing prose and it does not
 describe a milestone, so it adds no row to the iteration board and no `tasks/NNN-*` card. Convert any
 section below into a task brief when the coordinator assigns it.

@@ -44,7 +44,7 @@ Stele of Zhang Menglong, Ming rubbing
 
 - 所引条目没有给出库房位置，也未核实目前的展出状态。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-zhang-menglong-bei) · [实物数据](../../data/objects/rubbing-zhang-menglong-bei.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-zhang-menglong-bei) · [实物源稿](../../knowledge/objects/rubbing-zhang-menglong-bei.md)
 
 <a name="stele-zhang-menglong-bei"></a>
 
@@ -71,7 +71,7 @@ Stele of Zhang Menglong, original stone
 
 - 所引条目没有给出库房位置，也未核实目前的展出状态。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-zhang-menglong-bei) · [实物数据](../../data/objects/stele-zhang-menglong-bei.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-zhang-menglong-bei) · [实物源稿](../../knowledge/objects/stele-zhang-menglong-bei.md)
 
 ## 据以著录的来源
 
@@ -83,4 +83,4 @@ Stele of Zhang Menglong, original stone
 
 2. 故宫博物院 The Palace Museum · [明拓北魏张猛龙碑](<https://www.dpm.org.cn/collection/impres/228416.html>)。定位：Catalogue number and 简介。查阅于 2026-11-18。
 
-[作品数据](../../data/works/zhang-menglong-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/zhang-menglong-bei.md) · [返回知识总目](../README.md)

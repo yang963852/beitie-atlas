@@ -40,7 +40,7 @@ Lin Zexu’s Mount Hua Poem and Preface, stone
 
 - 所引条目没有给出库房位置，也未核实目前的展出状态。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-lin-zexu-huashan) · [实物数据](../../data/objects/stele-lin-zexu-huashan.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-lin-zexu-huashan) · [实物源稿](../../knowledge/objects/stele-lin-zexu-huashan.md)
 
 ## 据以著录的来源
 
@@ -48,4 +48,4 @@ Lin Zexu’s Mount Hua Poem and Preface, stone
 
 1. 西安碑林博物馆 Xi’an Beilin Museum · [林则徐游华山诗并序](<https://www.beilin-museum.com/index.php?a=index&aid=2644&c=View&m=home>)（2020-08-26）。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
 
-[作品数据](../../data/works/lin-zexu-huashan.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/lin-zexu-huashan.md) · [返回知识总目](../README.md)

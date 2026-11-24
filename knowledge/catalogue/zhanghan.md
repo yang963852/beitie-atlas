@@ -41,7 +41,7 @@ Letter on Zhang Han, manuscript copy
 
 - 此为唐人钩填本，摹手姓名未详。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-zhanghan-026) · [实物数据](../../data/objects/dpm-zhanghan-026.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-zhanghan-026) · [实物源稿](../../knowledge/objects/dpm-zhanghan-026.md)
 
 ## 据以著录的来源
 
@@ -49,4 +49,4 @@ Letter on Zhang Han, manuscript copy
 
 1. 故宫博物院 · [欧阳询行书张翰帖](<https://www.dpm.org.cn/collection/handwriting/234567.html>)。定位：藏品题名、文物号及简介。查阅于 2026-11-18。
 
-[作品数据](../../data/works/zhanghan.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/zhanghan.md) · [返回知识总目](../README.md)

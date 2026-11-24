@@ -38,7 +38,7 @@ Stele of Chan Master Guifeng Dinghui, rubbing
 
 - 故宫著录为明拓，拓印的确年及此册馆藏编号尚待核实。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-guifeng-026) · [实物数据](../../data/objects/dpm-guifeng-026.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-guifeng-026) · [实物源稿](../../knowledge/objects/dpm-guifeng-026.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Stele of Chan Master Guifeng Dinghui, rubbing
 
 1. 故宫博物院 · [圭峰定慧禅师碑](<https://www.dpm.org.cn/collection/impres/234182.html>)。定位：藏品题名、文物号及简介。查阅于 2026-11-18。
 
-[作品数据](../../data/works/guifeng.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/guifeng.md) · [返回知识总目](../README.md)

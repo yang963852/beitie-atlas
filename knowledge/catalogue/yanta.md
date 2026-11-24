@@ -40,7 +40,7 @@ Wild Goose Pagoda Preface, rubbing
 
 - 临到“灵”字，可以留意右上角的回笔。朱翼盦拿另一册对读，正是从这处辨别两本传拓的早晚。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-yanta) · [实物数据](../../data/objects/witness-yanta.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-yanta) · [实物源稿](../../knowledge/objects/witness-yanta.md)
 
 ## 据以著录的来源
 
@@ -48,4 +48,4 @@ Wild Goose Pagoda Preface, rubbing
 
 1. 故宫博物院 · [雁塔圣教序（慈恩寺圣教序拓本）](<https://www.dpm.org.cn/collection/impres/234134.html>)。定位：藏品题名及作品说明。查阅于 2026-11-19。
 
-[作品数据](../../data/works/yanta.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/yanta.md) · [返回知识总目](../README.md)

@@ -1,19 +1,16 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import type { Dataset } from '../src/domain/types';
-import { formatReport, validateDataset } from '../src/domain/validate';
 import { cataloguePages, generatedMarker } from './lib/catalogue';
-import { loadDatasetFromDisk } from './lib/dataset';
-import { readKnowledge } from './lib/knowledge';
+import { compileKnowledge } from './lib/knowledge-compiler';
 
 const root = process.cwd();
 const check = process.argv.includes('--check');
-const data = loadDatasetFromDisk(root);
-const report = validateDataset(data);
-if (!report.ok) throw new Error(formatReport(report));
-const knowledge = readKnowledge(root, data, false);
-if (knowledge.errors.length) throw new Error(knowledge.errors.map(e => e.path + ': ' + e.message).join('\n'));
-const pages = cataloguePages(data as Dataset, knowledge.articles);
+const result = compileKnowledge(root, { releaseMode: false });
+if (result.issues.length) {
+  throw new Error(result.issues.map((issue) => issue.path + ': ' + issue.message).join('\n'));
+}
+const pages = cataloguePages(result.knowledge as unknown as Dataset, result.knowledge.articles);
 const folder = join(root, 'knowledge');
 const catalogue = join(folder, 'catalogue');
 const outdated: string[] = [];

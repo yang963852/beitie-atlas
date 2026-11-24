@@ -47,7 +47,7 @@ Stele of Huangfu Dan, original stone
 - 出土、入藏与今日陈列状态在所核来源中没有记载，留空。
 - 未记录坐标：来源给出的是机构名称，不是实测点位。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-huangfu-dan) · [实物数据](../../data/objects/stele-huangfu-dan.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-huangfu-dan) · [实物源稿](../../knowledge/objects/stele-huangfu-dan.md)
 
 ## 据以著录的来源
 
@@ -55,4 +55,4 @@ Stele of Huangfu Dan, original stone
 
 1. 西安碑林博物馆 Xi’an Beilin Museum · [国宝名碑 · 皇甫诞碑](<https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2578>)。定位：Entry text: dimensions, 28 lines of 59 characters, original location 皇甫川。查阅于 2026-11-18。
 
-[作品数据](../../data/works/huangfu-dan-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/huangfu-dan-bei.md) · [返回知识总目](../README.md)

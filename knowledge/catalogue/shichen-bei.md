@@ -47,7 +47,7 @@ Stele of Shi Chen, original stone
 - 未记录坐标：来源给出的是机构名称，不是实测点位。
 - 尺寸与移入陈列馆的经过，所核页面没有记载。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-shichen) · [实物数据](../../data/objects/stele-shichen.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-shichen) · [实物源稿](../../knowledge/objects/stele-shichen.md)
 
 ## 据以著录的来源
 
@@ -59,4 +59,4 @@ Stele of Shi Chen, original stone
 
 2. 山东宣传网（山东省委宣传部） · [孔庙三碑，惊艳了时光](<https://www.sdxc.gov.cn/whql/whcc/202508/t20250822_16374659.htm>)（2025-08-22）。定位：Paragraphs on 乙瑛碑 / 礼器碑 / 史晨碑 and the 1998 move。查阅于 2026-11-18。
 
-[作品数据](../../data/works/shichen-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shichen-bei.md) · [返回知识总目](../README.md)

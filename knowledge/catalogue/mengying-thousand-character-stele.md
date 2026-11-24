@@ -43,7 +43,7 @@ Mengying’s Seal-script Thousand Character Stele, original stone
 
 - 所引条目没有给出库房位置，也未核实目前的展出状态。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-mengying-thousand-character-stele) · [实物数据](../../data/objects/stele-mengying-thousand-character-stele.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-mengying-thousand-character-stele) · [实物源稿](../../knowledge/objects/stele-mengying-thousand-character-stele.md)
 
 ## 据以著录的来源
 
@@ -51,4 +51,4 @@ Mengying’s Seal-script Thousand Character Stele, original stone
 
 1. 西安碑林博物馆 Xi’an Beilin Museum · [篆书千字文碑](<https://www.beilin-museum.com/index.php?a=index&aid=4613&c=View&m=home>)（2025-04-28）。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
 
-[作品数据](../../data/works/mengying-thousand-character-stele.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/mengying-thousand-character-stele.md) · [返回知识总目](../README.md)

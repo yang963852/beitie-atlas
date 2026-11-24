@@ -9,14 +9,16 @@ import { formatDate } from '../domain/dates';
 import { isReleaseBuild } from '../domain/build';
 import { SourceList } from './SourceList';
 import { KnowledgeProse } from './KnowledgeProse';
+import { ProvenanceEvents } from './ProvenanceEvents';
 import './knowledge-library.css';
 
 const github = 'https://github.com/yang963852/beitie-atlas';
+const downloadHref = (import.meta.env.BASE_URL || '/') + 'download/beitie-knowledge.zip';
 const tabs: KnowledgeKind[] = ['works', 'people', 'notes'];
 const tabHref = (kind: KnowledgeKind) => kind === 'works' ? '#/library' : '#/library/' + kind;
 const words = {
-  zh: { works: '作品', people: '书家', notes: '读帖笔记', title: '作品与书家', collection: '实物图录', library: '知识库', beta: '内部测试第一版', feedback: '内测反馈', contribute: '补充资料', github: '在 GitHub 阅读', search: '搜索作品、书家或笔记', empty: '未找到相关条目。', clear: '清除搜索', objects: '传世实物', relations: '人物往来', sources: '参考出处', authored: '作品导读', none: '条目尚未收录', home: '返回知识目录', selected: '本期选读', unknownPlace: '收藏地待考' },
-  en: { works: 'Works', people: 'Calligraphers', notes: 'Reading notes', title: 'Works and calligraphers', collection: 'Object catalogue', library: 'Library', beta: 'Internal beta 1', feedback: 'Beta feedback', contribute: 'Suggest a source', github: 'Read on GitHub', search: 'Search works, people or notes', empty: 'No matching entries.', clear: 'Clear search', objects: 'Surviving witnesses', relations: 'Documented relationships', sources: 'Sources', authored: 'Reading guide', none: 'Entry unavailable', home: 'Back to the library', selected: 'Selected readings', unknownPlace: 'Holding unknown' },
+  zh: { works: '作品', people: '书家', notes: '读帖笔记', title: '作品与书家', collection: '实物图录', library: '知识库', beta: '内部测试第一版', feedback: '内测反馈', contribute: '补充资料', github: '在 GitHub 阅读', download: '下载完整知识库（ZIP）', search: '搜索作品、书家或笔记', empty: '未找到相关条目。', clear: '清除搜索', objects: '传世实物', objectsHeading: '选择一件实物', selectedObject: '当前实物', objectMap: '在地图与完整记录中查看', noObjects: '本项目尚未收录可辨实物。', claims: '异说与意见', roles: '关联作品与角色', relations: '人物往来', sources: '参考出处', authored: '作品导读', none: '条目尚未收录', home: '返回知识目录', selected: '本期选读', unknownPlace: '收藏地待考' },
+  en: { works: 'Works', people: 'Calligraphers', notes: 'Reading notes', title: 'Works and calligraphers', collection: 'Object catalogue', library: 'Library', beta: 'Internal beta 1', feedback: 'Beta feedback', contribute: 'Suggest a source', github: 'Read on GitHub', download: 'Download the full library (ZIP)', search: 'Search works, people or notes', empty: 'No matching entries.', clear: 'Clear search', objects: 'Surviving witnesses', objectsHeading: 'Choose a witness', selectedObject: 'Selected witness', objectMap: 'Open the map and full record', noObjects: 'No identifiable witness is catalogued yet.', claims: 'Claims and opinions', roles: 'Works and roles', relations: 'Documented relationships', sources: 'Sources', authored: 'Reading guide', none: 'Entry unavailable', home: 'Back to the library', selected: 'Selected readings', unknownPlace: 'Holding unknown' },
 };
 function EntryLink({ entry }: { entry: LibraryEntry }) {
   const { locale } = useLocale();
@@ -64,25 +66,88 @@ function Index({ kind }: { kind: KnowledgeKind }) {
   </>;
 }
 
+function ClaimList({ claims, title }: { claims: NonNullable<LibraryEntry['work']>['claims']; title: string }) {
+  const { locale, strings } = useLocale();
+  if (!claims?.length) return null;
+  return <Section title={title}><ul className="library-claims">{claims.map((claim) => {
+    const note = locale === 'zh' ? claim.noteZh ?? claim.note : claim.note;
+    return <li key={claim.id}>
+      <p><strong>{claim.value}</strong> <span className="tag">{strings.claimKindLabels[claim.kind]}</span> <span className="tag">{strings.claimStanceLabels[claim.stance]}</span></p>
+      {claim.voice ? <p className="library-claim-voice">{locale === 'zh' ? '说法' : 'Voice'}：{claim.voice}{claim.locator ? ' · ' + claim.locator : ''}</p> : null}
+      {note ? <p>{note}</p> : null}
+      <SourceList ids={claim.sourceRefs} compact />
+    </li>;
+  })}</ul></Section>;
+}
+
 function Entry({ entry }: { entry: LibraryEntry }) {
   const { locale, strings } = useLocale();
   const t = words[locale];
   const { guide, work } = entry;
+  const [selectedObjectId, setSelectedObjectId] = useState<string | null>(null);
   const people = linkedEntries(entry, 'people');
   const links = [...linkedEntries(entry, 'works'), ...linkedEntries(entry, 'notes')];
   const objects = getDataset().objects.filter((object) => (entry.kind === 'works' && entry.id === object.workId) || guide?.objects.includes(object.id));
+  const selectedObject = objects.find((object) => object.id === selectedObjectId) ?? objects[0];
   const relations = entry.kind === 'people' ? knowledgeRelations.filter((r) => r.from === entry.id || r.to === entry.id) : [];
   const objectHeading = objects.every(o => o.survivalStatus === 'surviving') ? t.objects : t.collection;
   const sourceIds = [...new Set([...(guide?.sources ?? []), ...(work?.sourceRefs ?? [])])];
-  const original = guide ? 'knowledge/' + guide.kind + '/' + guide.id + '.md' : 'knowledge/catalogue/' + entry.id + '.md';
-  const editPath = guide ? original : 'data/works/' + entry.id + '.json';
+  const sourceName = entry.kind === 'works' ? 'works' : entry.kind === 'people' ? 'people' : 'notes';
+  const original = 'knowledge/' + sourceName + '/' + entry.id + '.md';
+  const editPath = original;
+  const relatedWorks = entry.kind === 'people'
+    ? getDataset().works.filter((candidate) => candidate.attribution.some((credit) => credit.personId === entry.id || credit.name === entry.titleZh))
+    : [];
+  const relatedObjects = entry.kind === 'people'
+    ? getDataset().objects.filter((object) => (object.attribution ?? []).some((credit) => credit.personId === entry.id || credit.name === entry.titleZh))
+    : [];
+  const selectedPlace = selectedObject ? getPlace(selectedObject.currentCollection.placeId) : undefined;
   return <article>
     <p className="library-kicker">{t[entry.kind]} · {(guide?.state ?? work?.review.state) === 'draft' ? strings.reviewDraft : strings.reviewReviewed}</p>
     <h1>{locale === 'zh' ? entry.titleZh : entry.titleEn || entry.titleZh}</h1>
-    {work && <p className="library-byline">{formatDate(work.compositionDate, locale)} · {formatAttribution(work.attribution, locale, strings.attributionRoleShort)}</p>}
+    {work && <p className="library-byline">{formatDate(work.compositionDate, locale)}
+      {work.compositionDate.meaning ? ' · ' + strings.dateMeaningLabels[work.compositionDate.meaning] : ''}
+      {' · '}{formatAttribution(work.attribution, locale, strings.attributionRoleShort)}</p>}
     <a className="library-edit" href={github + '/edit/main/' + editPath}>{locale === 'zh' ? '编辑条目并提交' : 'Edit and submit changes'}</a>
     {guide ? <KnowledgeProse guide={guide} /> : work && <p className="library-intro">{(locale === 'zh' && work.backgroundZh) || work.background}</p>}
     {people.length > 0 && <Section title={t.people}><ul>{people.map((p) => <li key={p.id}><EntryLink entry={p} /></li>)}</ul></Section>}
+    {entry.kind === 'people' && (relatedWorks.length > 0 || relatedObjects.length > 0) && <Section title={t.roles}>
+      <ul>
+        {relatedWorks.map((candidate) => {
+          const roles = candidate.attribution
+            .filter((credit) => credit.personId === entry.id || credit.name === entry.titleZh)
+            .map((credit) => (locale === 'zh' ? strings.attributionRoleLabels[credit.role] : strings.attributionRoleShort[credit.role]))
+            .join(locale === 'zh' ? '、' : ', ');
+          return <li key={candidate.id}><a href={'#/work/' + candidate.id}>{locale === 'zh' ? candidate.titles.zh : candidate.titles.en}</a> <small>{roles}</small></li>;
+        })}
+        {relatedObjects.map((object) => {
+          const roles = (object.attribution ?? [])
+            .filter((credit) => credit.personId === entry.id || credit.name === entry.titleZh)
+            .map((credit) => (locale === 'zh' ? strings.attributionRoleLabels[credit.role] : strings.attributionRoleShort[credit.role]))
+            .join(locale === 'zh' ? '、' : ', ');
+          return <li key={object.id}><a href={'#/object/' + object.id}>{locale === 'zh' ? object.titles.zh : object.titles.en}</a> <small>{roles}</small></li>;
+        })}
+      </ul>
+    </Section>}
+    {objects.length > 0 && <Section title={objectHeading}>
+      <p className="section__meta">{t.objectsHeading}。{locale === 'zh' ? '每件实物只显示自己的履历。' : 'Each witness keeps its own record.'}</p>
+      <div className="library-objects" role="group" aria-label={t.objectsHeading}>
+        {objects.map((object) => <button type="button" key={object.id} aria-pressed={selectedObject?.id === object.id} onClick={() => setSelectedObjectId(object.id)}>
+          <strong>{object.titles[locale]}</strong>
+          <small>{strings.objectTypeLabels[object.objectType]} · {formatDate(object.productionDate, locale)}</small>
+        </button>)}
+      </div>
+      {selectedObject ? <div className="library-object">
+        <h3>{selectedObject.titles[locale]}</h3>
+        <p className="section__meta">{strings.objectTypeLabels[selectedObject.objectType]} · {strings.survivalLabels[selectedObject.survivalStatus]} · {selectedPlace?.names[locale] ?? t.unknownPlace}</p>
+        <a href={'#/object/' + selectedObject.id}>{t.objectMap}</a>
+        <a className="library-edit" href={github + '/edit/main/knowledge/objects/' + selectedObject.id + '.md'}>{locale === 'zh' ? '编辑这件实物的源稿' : 'Edit this object record'}</a>
+        <ProvenanceEvents object={selectedObject} />
+        <ClaimList claims={selectedObject.claims} title={t.claims} />
+      </div> : <p className="section__empty">{t.noObjects}</p>}
+    </Section>}
+    {objects.length === 0 && entry.kind === 'works' ? <Section title={objectHeading}><p className="section__empty">{t.noObjects}</p></Section> : null}
+    {work ? <ClaimList claims={work.claims} title={t.claims} /> : null}
     {links.length > 0 && tabs.filter((tab) => tab !== 'people').map((tab) => {
       const subset = links.filter((item) => item.kind === tab);
       return subset.length > 0 && <Section key={tab} title={t[tab]}><ul>{subset.map((item) => <li key={item.id}><EntryLink entry={item} /></li>)}</ul></Section>;
@@ -95,15 +160,9 @@ function Entry({ entry }: { entry: LibraryEntry }) {
         <small> {r.state === 'draft' ? strings.reviewDraft : strings.reviewReviewed}</small><SourceList ids={r.sourceRefs} compact />
       </li>;
     })}</ul></Section>}
-    {objects.length > 0 && <Section title={objectHeading}><ul>{objects.map((o) => {
-      const { locationKind, placeId } = o.currentCollection;
-      const place = locationKind === 'unknown' ? undefined : getPlace(placeId);
-      const holding = place?.names[locale] ?? t.unknownPlace;
-      return <li key={o.id}><a href={'#/object/' + o.id}>{o.titles[locale]}</a>
-        <small> · {strings.survivalLabels[o.survivalStatus]} · {locationKind === 'last-known' ? strings.lastKnownPlace(holding) : holding}</small></li>;
-    })}</ul></Section>}
     {sourceIds.length > 0 && <Section title={t.sources}><SourceList ids={sourceIds} plain /></Section>}
     <div className="library-footlinks"><a href={github + '/blob/main/' + original}>{t.github}</a>
+      <a href={downloadHref} download>{t.download}</a>
       <a href={github + '/issues/new?template=knowledge.yml&title=' + encodeURIComponent(entry.titleZh)}>{t.contribute}</a></div>
   </article>;
 }

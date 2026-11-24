@@ -42,10 +42,12 @@ Run `npm run check` again after implementation. Push the checked branch to the c
 
 | Change | Editable input | How to check |
 | --- | --- | --- |
-| Authored Chinese introductions, people and practice notes | Follow the article links in [knowledge/README.md](../knowledge/README.md) | Inspect GitHub Markdown, website, review status, sources and incoming links |
-| Catalogue, holdings, events, places or bibliographic sources | `data/works/`, `data/objects/`, `data/places.json`, `data/sources.json` | Run `npm run knowledge:generate` when projections change, commit the generated diff and run `npm run check` |
-| UI and navigation | `src/App.tsx`, `src/components/`, `src/styles.css`, `src/i18n/` | Exercise entry, link refresh, keyboard, narrow screen and 200% zoom |
-| Domain model or provider | `src/domain/`, `scripts/lib/`, `src/map/` | Test consumers and the affected failure modes, including a missing map when relevant |
+| Authored works, objects, people, places, sources or reading notes | Markdown under `knowledge/`; start from [the templates](../knowledge/_templates/) | Run `npm run knowledge:compile`, then `npm run check` |
+| Catalogue index and GitHub reading copies | Generated from `knowledge/`; never hand-edit `knowledge/catalogue/` or `knowledge/README.md` | `npm run knowledge:generate` and commit the generated diff |
+| Website and navigation | `src/App.tsx`, `src/components/`, `src/styles.css`, `src/i18n/`; import only the compiled interface | Exercise entry, link refresh, keyboard, narrow screen and 200% zoom |
+| Compiler, interface or validation | `scripts/lib/knowledge-*.ts`, `src/domain/`, `data/index/knowledge-v1.json` | Run `npm run check:data`, `npm run check:interface`, `npm run check:isolation`, `npm run check:reproducible` |
 | Formal publication | `scripts/release.ts`, [release runbook](release.md) | Verify all reviewed inputs, release marker, manifest and host |
+
+The website reads `data/index/knowledge-v1.json`; it does not import author Markdown or the frozen legacy JSON. The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`.
 
 The public **内部测试第一版** uses the checked Pages preview. The last owner-approved formal edition is tagged [v0.1.0-alpha.2](https://github.com/yang963852/beitie-atlas/tree/v0.1.0-alpha.2). Its approval and manifest are recorded in [delivery 021](delivery-021.md).

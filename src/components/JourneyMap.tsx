@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-import journey from '../../data/yan-qinli-journey.json';
 import { getPlace } from '../domain/data';
-import type { ObjectRecord } from '../domain/types';
+import { compareDates, formatDate } from '../domain/dates';
+import type { ObjectRecord, Place, ProvenanceEvent } from '../domain/types';
 import { useLocale } from '../i18n';
 import { mapIsConfigured } from '../map/config';
 import { createTiandituAdapter } from '../map/tianditu';
@@ -9,13 +9,11 @@ import { watchTiles } from '../map/tiles';
 import type { MapAdapter, MapMarker } from '../map/types';
 import { SourceList } from './SourceList';
 
-const points: MapMarker[] = journey.landmarks.flatMap((landmark) => {
-  const point = landmark.placeId ? getPlace(landmark.placeId)?.coordinates : landmark;
-  if (point?.longitude == null || point.latitude == null) return [];
-  return [{ placeId: landmark.id, longitude: point.longitude, latitude: point.latitude,
-    label: landmark.zh, sublabel: landmark.en, provisional: true, precision: 'site', objectIds: [] }];
-});
-
+/**
+ * The journey map reads the same events and place records as the text
+ * timeline. A reference landmark is deliberately separate from the event's
+ * historical place: it orients the reader without asserting a find-spot.
+ */
 export function JourneyMap({ object, active, onClose }: {
   object: ObjectRecord; active: boolean; onClose: () => void;
 }) {
@@ -26,18 +24,36 @@ export function JourneyMap({ object, active, onClose }: {
   const [hasTiles, setHasTiles] = useState(false);
   const canvas = useRef<HTMLDivElement>(null);
   const adapter = useRef<MapAdapter | null>(null);
-  const steps = journey.steps.flatMap(step => {
-    const event = object.provenanceEvents.find(item => item.id === step.event);
-    const landmark = journey.landmarks.find(item => item.id === step.landmark);
-    return event && landmark ? [{ ...step, event, landmark }] : [];
-  });
+
+  const ordered = [...object.provenanceEvents]
+    .filter((event) => Boolean(event.referencePlaceId))
+    .sort((a, b) => compareDates(a.date, b.date));
+  const landmarks = new Map<string, Place>();
+  const points: MapMarker[] = [];
+  for (const event of ordered) {
+    const place = getPlace(event.referencePlaceId ?? null);
+    if (!place?.coordinates || landmarks.has(place.id)) continue;
+    landmarks.set(place.id, place);
+    points.push({
+      placeId: place.id,
+      longitude: place.coordinates.longitude,
+      latitude: place.coordinates.latitude,
+      label: place.names.zh,
+      sublabel: place.names.en,
+      provisional: true,
+      precision: 'site',
+      objectIds: [],
+    });
+  }
+  const steps = ordered.filter((event) => landmarks.has(event.referencePlaceId ?? ''));
   const step = steps[index];
+  const landmark = step ? landmarks.get(step.referencePlaceId ?? '') : undefined;
   const stepRef = useRef(steps);
   stepRef.current = steps;
   const chooseLandmark = (id: string) => setIndex(current => {
     const list = stepRef.current;
-    if (list[current]?.landmark.id === id) return current;
-    const next = list.findIndex(item => item.landmark.id === id);
+    if (list[current]?.referencePlaceId === id) return current;
+    const next = list.findIndex(item => item.referencePlaceId === id);
     return next < 0 ? current : next;
   });
   useEffect(() => {
@@ -58,28 +74,33 @@ export function JourneyMap({ object, active, onClose }: {
   }, [active]);
 
   useEffect(() => {
-    if (ready && step) adapter.current?.focus(step.landmark.id, 15);
-  }, [ready, step?.landmark.id]);
+    if (ready && step && landmark) adapter.current?.focus(landmark.id, 15);
+  }, [ready, step?.referencePlaceId, landmark?.id]);
 
-  if (!step) return null;
-  const { landmark, event } = step;
+  if (!step || !landmark) return null;
   const live = ready && hasTiles;
   const xs = points.map(p => p.longitude), ys = points.map(p => p.latitude);
+  const label = (event: ProvenanceEvent) => zh
+    ? event.shortLabelZh ?? strings.eventTypeLabels[event.type]
+    : event.shortLabel ?? strings.eventTypeLabels[event.type];
+  const note = (event: ProvenanceEvent) => zh
+    ? event.referenceNoteZh ?? landmark?.notesZh?.[0]
+    : event.referenceNote ?? landmark?.notes?.[0];
   return (
     <section id="map" tabIndex={-1} className="pane pane--map journey" aria-labelledby="journey-heading">
       <header><button className="link-button" onClick={onClose}>{zh ? '← 现藏分布' : '← Collection map'}</button>
-        <h2 id="journey-heading">{zh ? '颜勤礼碑 · 原石流传' : 'The journey of the Yan Qinli stone'}</h2>
-        <p>{zh ? '西安 · 1922–1948　点选时间轴，循地读碑。' : 'Xi’an · 1922–1948. Select a stop to explore the stone’s journey.'}</p>
+        <h2 id="journey-heading">{zh ? object.titles.zh + ' · 原石流传' : object.titles.en + ' · journey'}</h2>
+        <p>{zh ? '点选时间轴，循同一条事件记录读碑。' : 'Select a stop; the rail and the text timeline read the same events.'}</p>
       </header>
       <ol className="journey-rail" aria-label={zh ? '流传时间轴' : 'Journey timeline'}>
-        {steps.map((item, i) => <li key={item.event.id}><button type="button" aria-pressed={i === index} onClick={() => setIndex(i)}>
-          <small>{zh ? item.event.date.original : item.dateEn}</small><strong>{item[locale]}</strong>
+        {steps.map((item, i) => <li key={item.id}><button type="button" aria-pressed={i === index} onClick={() => setIndex(i)}>
+          <small>{formatDate(item.date, locale)}</small><strong>{label(item)}</strong>
         </button></li>)}
       </ol>
       <div className="journey-map">
         <div ref={canvas} style={{ visibility: live ? 'visible' : 'hidden' }} className="map__canvas" aria-hidden="true" />
         {!live && <div className="journey-grid" aria-label={zh ? '西安地标方位图' : 'Xi’an landmark map'}>
-          <small>{zh ? '西安 · 地标方位　北 ↑' : 'Xi’an · Landmarks　N ↑'}</small>
+          <small>{zh ? '西安 · 参照地标方位　北 ↑' : 'Xi’an · reference landmarks　N ↑'}</small>
           {points.map(point => {
             const x = (point.longitude - Math.min(...xs)) / (Math.max(...xs) - Math.min(...xs));
             const y = (Math.max(...ys) - point.latitude) / (Math.max(...ys) - Math.min(...ys));
@@ -90,14 +111,13 @@ export function JourneyMap({ object, active, onClose }: {
         </div>}
       </div>
       <div aria-live="polite" className="journey-stop">
-        <small>{zh ? '地图参照' : 'Map landmark'} · {landmark[locale]}</small>
-        <h3>{zh ? event.date.original : step.dateEn} · {zh ? event.placeWording : step.en}</h3>
-        <p>{zh ? event.summaryZh ?? event.summary : event.summary}</p>
-        <p>{zh ? landmark.noteZh : landmark.noteEn}</p>
+        <small>{zh ? '参照地标' : 'Reference landmark'} · {zh ? landmark.names.zh : landmark.names.en}</small>
+        <h3>{formatDate(step.date, locale)} · {zh ? step.placeWording ?? landmark.names.zh : step.placeWording ?? landmark.names.en}</h3>
+        <p>{zh ? step.summaryZh ?? step.summary : step.summary}</p>
+        {note(step) ? <p>{note(step)}</p> : null}
       </div>
-      <p className="section__meta">{zh ? '图钉为现代参照地标。各次移碑的精确位置与行经路线未详。' : 'Pins mark modern landmarks. Exact historical positions and transport routes remain unknown.'}</p>
-      <SourceList ids={event.sourceRefs} compact />
-      <a href={landmark.source} target="_blank" rel="noreferrer">{zh ? '参照位置来源' : 'Landmark coordinate source'} · {landmark.credit}</a>
+      <p className="section__meta">{zh ? '图钉为现代参照地标，不是各次移碑的实测位置；行经路线未详。' : 'Pins mark modern reference landmarks, not surveyed positions or transport routes.'}</p>
+      <SourceList ids={[...new Set([...step.sourceRefs, ...landmark.sourceRefs])]} compact />
       {live && <p className="section__meta">{strings.mapAttributionText}</p>}
     </section>
   );

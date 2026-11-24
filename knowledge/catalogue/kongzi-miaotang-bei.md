@@ -55,7 +55,7 @@ Stele of the Confucius Temple, Western Hall recut
 - 尺寸不填入：碑林记碑身 191 × 108 厘米，省志记 280 × 110 厘米。
 - 未记入藏时间，故不主张此石何时进入碑林。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-kongzi-miaotang) · [实物数据](../../data/objects/stele-kongzi-miaotang.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-kongzi-miaotang) · [实物源稿](../../knowledge/objects/stele-kongzi-miaotang.md)
 
 ## 据以著录的来源
 
@@ -67,4 +67,4 @@ Stele of the Confucius Temple, Western Hall recut
 
 2. 陕西省文物局《陕西省志·文物志》，陕西学习平台转载 · [【陕西·考古】重刻唐《孔子庙堂碑》](<https://sn.xuexi.cn/local/detail.html?6E9D852F0075DEF5A5B44097C3EBECDA=DBF8B0C02F8A1978DB3A263A167C8A61DB743B6F85EFE4A56B01B2A1BA346EC9&AC11F3C9EE565CEDC2B7AA9B8914E5A6=B5113B4EA8358C5990194456332E5FCD0C671022ECBBF2BA947025E6E8AA3FB8>)。定位：重刻唐《孔子庙堂碑》条目正文。查阅于 2026-11-18。
 
-[作品数据](../../data/works/kongzi-miaotang-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/kongzi-miaotang-bei.md) · [返回知识总目](../README.md)

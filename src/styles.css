@@ -1342,6 +1342,23 @@ a {
   line-height: 1.55;
 }
 
+.claims {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.claims li {
+  border-left: 2px solid var(--rule, #d2d2d7);
+  padding-left: 12px;
+}
+
+.claims p {
+  margin: 3px 0;
+}
+
 .fact__value {
   margin: 3px 0 0;
   color: var(--ink);
@@ -1619,6 +1636,13 @@ a {
 
 .timeline__place-en {
   color: var(--ink-4);
+}
+
+.timeline__reference {
+  margin: 4px 0 0;
+  color: var(--ink-4);
+  font-size: 12px;
+  line-height: 1.55;
 }
 
 .notes {

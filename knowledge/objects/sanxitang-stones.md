@@ -1,0 +1,90 @@
+---
+schemaVersion: 1
+work: sanxitang-fatie
+objectType: recarving
+titleZh: 三希堂法帖刻石
+titleEn: Carved blocks of the Modelbook of the Three Rarities Hall
+date:
+  kind: range
+  start: 1747
+  month: null
+  end: 1750
+  endMonth: null
+  era: 清乾隆十二年至十五年
+  original: 乾隆十二年（1747）上谕，乾隆十五年（1750）刻跋
+  certainty: documented
+  note: The order dates from 1747 and the ministers' colophon from 1750; the intervening carving is not separately dated.
+catalogNumber: null
+dimensions: null
+survival: surviving
+relationships: []
+collection:
+  kind: in-situ
+  place: place-beihai-yuegu
+  sources:
+    - src-dpm-sanxitang
+    - src-chinadaily-yuegu
+  accessedAt: 2026-11-23
+  asOf: null
+  note: The Palace Museum states that the stones are set into the Yuegu Lou pavilion in Beihai Park; the press feature describes the two-storey building on the west slope of Qionghua Island. Neither source gives a block count that the other confirms.
+  noteZh: 故宫称帖石嵌于北海阅古楼；报道记该楼在琼岛西麓、上下两层。两处所记刻石方数互不印证。
+events:
+  - id: ev-sanxitang-stones-1
+    type: carving
+    date:
+      kind: single
+      start: 1747
+      month: null
+      end: 1747
+      endMonth: null
+      era: 清乾隆十二年
+      original: 乾隆十二年（1747）
+      certainty: documented
+      note: null
+    place: null
+    placeWording: 内府
+    summary: The Qianlong Emperor ordered the selection and carving of the imperial collection of calligraphy.
+    summaryZh: 乾隆帝特谕选编内府所藏法书，摹刻上石。
+    sources:
+      - src-dpm-sanxitang-vr
+    certainty: documented
+  - id: ev-sanxitang-stones-2
+    type: other
+    date:
+      kind: single
+      start: 1753
+      month: null
+      end: 1753
+      endMonth: null
+      era: 清乾隆十八年
+      original: 清乾隆十八年（1753年）
+      certainty: documented
+      note: null
+    place: place-beihai-yuegu
+    placeWording: 北海琼岛西麓阅古楼
+    summary: A pavilion was built on the west slope of Qionghua Island to house the stones; its walls carry them today. The source dates the building, not the transfer of the stones.
+    summaryZh: 琼岛西麓建阅古楼以储帖石，今石仍嵌楼壁。所引来源记建楼之年，未记移石之年。
+    sources:
+      - src-chinadaily-yuegu
+    certainty: documented
+review:
+  state: draft
+  note: Draft object record. The stones are evidenced as a set in the pavilion's walls; no survey, block count or condition report is cited consistently. The stones were not examined.
+  noteZh: 草稿实物记录。帖石作为整组嵌于楼壁有据，但所引来源对石数、保存状况的记载不能互相印证。未实地核对。
+---
+
+# 三希堂法帖刻石
+
+## 待考
+
+### 中文
+
+- 此件为整组刻石，非任何单一拓本；故宫藏清拓另作一件。
+- 不主张石数：报道作四百九十五方，故宫条目未记，故该数字只作为转述留在作品说明中。
+- 帖石嵌于同为文物建筑的楼壁；本记录不主张开放情况或可否摄影。
+
+### English
+
+- The object is the set of carved blocks, not any single rubbing. The Palace Museum's Qing rubbing is a separate object.
+- No block count is asserted: the press feature gives 495 and the museum entries give none, so the figure stays in the work notes as a reported number.
+- The stones are described as set into the walls of a building that is itself a heritage structure; the record makes no claim about public access or photography.

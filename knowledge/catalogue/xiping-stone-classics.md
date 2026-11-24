@@ -46,7 +46,7 @@ Xiping Stone Classics, National Museum of China fragment
 
 - 此条仅指所引目录页上的残石，不代表各处所藏残石。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/fragment-xiping-national-museum) · [实物数据](../../data/objects/fragment-xiping-national-museum.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/fragment-xiping-national-museum) · [实物源稿](../../knowledge/objects/fragment-xiping-national-museum.md)
 
 ## 据以著录的来源
 
@@ -58,4 +58,4 @@ Xiping Stone Classics, National Museum of China fragment
 
 2. 中国国家博物馆 National Museum of China · [朝闻天下：孔子文化展国博启幕](<https://www.chnmuseum.cn/sp/xwlb/202001/t20200103_186504.shtml>)。定位：展品介绍。查阅于 2026-11-18。
 
-[作品数据](../../data/works/xiping-stone-classics.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/xiping-stone-classics.md) · [返回知识总目](../README.md)

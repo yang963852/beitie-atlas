@@ -7,6 +7,8 @@ import { formatDate } from '../domain/dates';
 import { formatAttribution } from '../domain/attribution';
 import type { ObjectRecord } from '../domain/types';
 import { useLocale, type Locale } from '../i18n';
+import { zhStrings } from '../i18n/zh';
+import { enStrings } from '../i18n/en';
 import { buildMarkers } from '../map/markers';
 import { InkRiver } from './InkRiver';
 import { CollectionAtlas } from './CollectionAtlas';
@@ -33,10 +35,12 @@ const ordered = [...works].sort((a,b) =>
 function dateLine(entry: LibraryEntry, locale: Locale) {
   if (entry.work) {
     const date = entry.work.compositionDate;
-    if (date.kind === 'era' && date.startYear == null && date.eraLabel && locale === 'zh') {
-      return date.original ?? date.eraLabel;
-    }
-    return formatDate(date,locale);
+    const base = date.kind === 'era' && date.startYear == null && date.eraLabel && locale === 'zh'
+      ? date.original ?? date.eraLabel
+      : formatDate(date, locale);
+    return date.meaning
+      ? base + ' · ' + (locale === 'zh' ? zhStrings.dateMeaningLabels[date.meaning] : enStrings.dateMeaningLabels[date.meaning])
+      : base;
   }
   return entry.guide?.timelineYear?.toString() ?? (locale === 'zh' ? '年代待考' : 'Date unknown');
 }

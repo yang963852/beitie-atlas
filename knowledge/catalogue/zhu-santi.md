@@ -36,7 +36,7 @@ Poems in Three Scripts
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-zhu-santi) · [实物数据](../../data/objects/witness-zhu-santi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-zhu-santi) · [实物源稿](../../knowledge/objects/witness-zhu-santi.md)
 
 ## 据以著录的来源
 
@@ -44,4 +44,4 @@ Poems in Three Scripts
 
 1. 故宫博物院 · [三体杂书诗卷](<https://www.dpm.org.cn/collection/handwriting/231809.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/zhu-santi.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/zhu-santi.md) · [返回知识总目](../README.md)

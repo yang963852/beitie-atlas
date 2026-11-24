@@ -38,7 +38,7 @@ Imperial Summons Letter, ink manuscript
 
 - 此卷与刻帖所收《翰林帖》文辞有异，执笔者及书写年代均待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-mengzhao-026) · [实物数据](../../data/objects/dpm-mengzhao-026.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-mengzhao-026) · [实物源稿](../../knowledge/objects/dpm-mengzhao-026.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Imperial Summons Letter, ink manuscript
 
 1. 故宫博物院 · [柳公权行书蒙诏帖卷](<https://www.dpm.org.cn/collection/handwriting/231095.html>)。定位：藏品题名、文物号及简介。查阅于 2026-11-18。
 
-[作品数据](../../data/works/mengzhao.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/mengzhao.md) · [返回知识总目](../README.md)

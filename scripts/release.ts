@@ -15,6 +15,7 @@
 import { spawnSync } from 'node:child_process';
 import { join } from 'node:path';
 import { formatReport } from '../src/domain/validate';
+import { writeCompiledKnowledge } from './lib/knowledge-compiler';
 import {
   clearOutput,
   runReleaseGate,
@@ -89,8 +90,14 @@ console.log('\n[release] Strict data gate');
 console.log(formatReport(report));
 if (!report.ok) abort('the corpus contains draft or invalid records.');
 
+writeCompiledKnowledge(root);
+
 if (runNodeScript('Type check', 'node_modules/typescript/bin/tsc', ['--noEmit']) !== 0) {
   abort('the type check failed.');
+}
+
+if (runNodeScript('Knowledge download package', 'node_modules/tsx/dist/cli.mjs', ['scripts/knowledge-package.ts']) !== 0) {
+  abort('the knowledge download package could not be built.');
 }
 
 if (

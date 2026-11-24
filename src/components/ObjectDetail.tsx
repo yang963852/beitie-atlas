@@ -4,13 +4,15 @@ import { formatCoordinate } from '../domain/coordinates';
 import { getPlace, getWork } from '../domain/data';
 import { formatDate } from '../domain/dates';
 import { dynastyLabel } from '../domain/dynasties';
-import type { HistoricalDate, ObjectRecord, Place, Work } from '../domain/types';
+import type { Claim, HistoricalDate, ObjectRecord, Place, Work } from '../domain/types';
 import { detectLang, pickText } from '../domain/text';
 import { useLocale } from '../i18n';
 import { isReleaseBuild } from '../domain/build';
 import { YanQinliStory } from './YanQinliStory';
 import { ProvenanceEvents } from './ProvenanceEvents';
 import { SourceList } from './SourceList';
+
+const github = 'https://github.com/yang963852/beitie-atlas';
 
 type NoteScope = 'object' | 'work' | 'place';
 
@@ -76,6 +78,7 @@ function DateLine({ date, locale }: { date: HistoricalDate; locale: 'zh' | 'en' 
   return (
     <span className="date-value">
       <span className="date-value__main">{formatDate(date, locale)}</span>
+      {date.meaning ? <span className="tag">{strings.dateMeaningLabels[date.meaning]}</span> : null}
       {date.original ? (
         <span className="date-value__original">
           {strings.sourceWording} <span lang="zh-Hans">{date.original}</span>
@@ -95,6 +98,25 @@ function Fact({ term, children }: { term: string; children: ReactNode }) {
       <dd className="fact__value">{children}</dd>
     </div>
   );
+}
+
+function ClaimSection({ claims }: { claims?: Claim[] }) {
+  const { locale, strings } = useLocale();
+  if (!claims?.length) return null;
+  return <section className="section" aria-labelledby="claims-heading">
+    <h3 id="claims-heading" className="section__heading">{strings.claimsHeading}</h3>
+    <ul className="claims">
+      {claims.map((claim) => {
+        const note = locale === 'zh' ? claim.noteZh ?? claim.note : claim.note;
+        return <li key={claim.id}>
+          <p><strong>{claim.value}</strong> <span className="tag">{strings.claimKindLabels[claim.kind]}</span> <span className="tag">{strings.claimStanceLabels[claim.stance]}</span></p>
+          {claim.voice ? <p className="section__meta">{locale === 'zh' ? '说法' : 'Voice'}：{claim.voice}{claim.locator ? ' · ' + claim.locator : ''}</p> : null}
+          {note ? <p className="section__note">{note}</p> : null}
+          <SourceList ids={claim.sourceRefs} compact />
+        </li>;
+      })}
+    </ul>
+  </section>;
 }
 
 interface ObjectDetailProps {
@@ -123,6 +145,9 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
       ...(place?.coordinates?.sourceRefs ?? []),
       ...object.provenanceEvents.flatMap((event) => event.sourceRefs),
       ...(work?.sourceRefs ?? []),
+      ...(object.attribution ?? []).flatMap((entry) => entry.sourceRefs),
+      ...(object.version?.sourceRefs ?? []),
+      ...(object.claims ?? []).flatMap((claim) => claim.sourceRefs),
     ]),
   );
 
@@ -162,6 +187,9 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
               .map((entry) => attributionName(entry, locale)).join(' · ')}</span>
           </p>
         ) : null}
+        <a className="link-button" href={github + '/edit/main/knowledge/objects/' + object.id + '.md'}>
+          {locale === 'zh' ? '编辑这件实物的源稿' : 'Edit this object record'}
+        </a>
       </header>
 
       {onJourney && <button className="button" onClick={onJourney}>{locale === 'zh' ? '在地图上看原石流传 →' : 'Explore the stone’s journey →'}</button>}
@@ -241,6 +269,34 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
         </section>
       ) : null}
 
+      {object.attribution && object.attribution.length > 0 ? (
+        <section className="section" aria-labelledby="object-attribution-heading">
+          <h3 id="object-attribution-heading" className="section__heading">{strings.objectAttributionHeading}</h3>
+          <ul className="attribution">
+            {object.attribution.map((entry, index) => {
+              const note = attributionNote(entry, locale);
+              return <li className="attribution__item" key={`${entry.role}-${entry.name}-${index}`}>
+                <span className="attribution__role">{strings.attributionRoleLabels[entry.role]}</span>
+                <span className="attribution__name" lang={locale === 'zh' ? 'zh-Hans' : undefined}>{attributionName(entry, locale)}</span>
+                {entry.certainty === 'disputed' ? <span className="tag tag--warn">{strings.certaintyLabels.disputed}</span> : null}
+                {note ? <span className="attribution__note">{note}</span> : null}
+                <SourceList ids={entry.sourceRefs} compact />
+              </li>;
+            })}
+          </ul>
+        </section>
+      ) : null}
+
+      {object.version ? (
+        <section className="section" aria-labelledby="version-heading">
+          <h3 id="version-heading" className="section__heading">{strings.versionHeading}</h3>
+          <p><strong>{object.version.label}</strong></p>
+          {object.version.basis ? <p className="section__meta">{strings.versionBasisLabel}：{object.version.basis}</p> : null}
+          {pickText(locale, object.version.noteZh, object.version.note) ? <p className="section__note">{pickText(locale, object.version.noteZh, object.version.note)}</p> : null}
+          <SourceList ids={object.version.sourceRefs} compact />
+        </section>
+      ) : null}
+
       <section className="section" aria-labelledby="collection-heading">
         <h3 id="collection-heading" className="section__heading">
           {strings.collectionHeading}
@@ -317,6 +373,8 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
       </section>
 
       <ProvenanceEvents object={object} />
+
+      <ClaimSection claims={object.claims} />
 
       {notes.length > 0 ? (
         <details className="section detail-fold">

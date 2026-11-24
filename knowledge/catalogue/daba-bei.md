@@ -49,7 +49,7 @@ Draft of the Stele of the Imperial Preceptor Dampa
 - 馆方记卷后有清姚元之、杨岘、李鸿裔、潘祖荫、王懿荣等题跋；本记录不载各跋年月与书写地。
 - 不设入藏事件：所引页面未记此卷如何入馆。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/daba-scroll) · [实物数据](../../data/objects/daba-scroll.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/daba-scroll) · [实物源稿](../../knowledge/objects/daba-scroll.md)
 
 ## 据以著录的来源
 
@@ -57,4 +57,4 @@ Draft of the Stele of the Imperial Preceptor Dampa
 
 1. 故宫博物院 The Palace Museum · [书画交辉——赵孟頫的艺术成就（楷书帝师胆巴碑卷）](<https://www.dpm.org.cn/subject_zhaomengfu/achievement/245821.html>)。定位：Entry 赵孟頫楷书帝师胆巴碑卷: 元, 纸本, 33.6 × 563 cm, 故宫博物院藏, with the full inscription text.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/daba-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/daba-bei.md) · [返回知识总目](../README.md)

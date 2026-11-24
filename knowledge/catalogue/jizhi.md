@@ -16,7 +16,7 @@ Draft Requiem for a Nephew
 
 书体：行书
 
-延伸阅读：[颜真卿](../people/yan-zhenqing.md)
+延伸阅读：[鲜于枢](../people/xianyu-shu.md)
 
 <a name="witness-jizhi"></a>
 
@@ -34,7 +34,8 @@ Draft Requiem for a Nephew
 
 ### 递藏与流传
 
-- 1282年—1283年 · 保管（有争议）　鲜于枢在卷后两跋均称得卷于曹彦礼，但一处写至元壬午（1282），另一处写至元癸未（1283）；此处保留两说。 [出处 1](#ref-src-catalogue-jizhi)
+- 至元壬午（1282） · 保管（有明确记载）　鲜于枢丙戌署款的跋记至元壬午（1282）从曹彦礼处得卷。 [出处 2](#ref-src-jizhi-colophon-bingxu)
+- 至元癸未（1283） · 保管（有明确记载）　鲜于枢戊子署款的跋记至元癸未（1283）从曹彦礼处得卷。 [出处 3](#ref-src-jizhi-colophon-wuzi)
 - 1284年 · 见于记载（有明确记载）　鲜于枢题跋记，至元甲申（1284）在钱塘重装此卷。 [出处 1](#ref-src-catalogue-jizhi)
 - 1724年 · 见于记载（有明确记载）　王顼龄雍正二年题跋说，先在徐乾学处见卷，后在弟弟王鸿绪处再见，并记从子彤文将卷赠予自己。题跋年不是所有交接的年份。 [出处 1](#ref-src-catalogue-jizhi)
 
@@ -42,7 +43,7 @@ Draft Requiem for a Nephew
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-jizhi) · [实物数据](../../data/objects/witness-jizhi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-jizhi) · [实物源稿](../../knowledge/objects/witness-jizhi.md)
 
 ## 据以著录的来源
 
@@ -50,4 +51,12 @@ Draft Requiem for a Nephew
 
 1. 國立故宮博物院 · [祭侄文稿](<https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P>)。定位：藏品题名；拖尾题跋中鲜于枢的两则题记与王顼龄雍正二年跋。查阅于 2026-11-18。
 
-[作品数据](../../data/works/jizhi.json) · [返回知识总目](../README.md)
+<a name="ref-src-jizhi-colophon-bingxu"></a>
+
+2. 國立故宮博物院 · [祭侄文稿 · 鲜于枢丙戌跋](<https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P>)。定位：拖尾鲜于枢丙戌署款跋；记至元壬午（1282）得卷于曹彦礼。查阅于 2026-11-18。
+
+<a name="ref-src-jizhi-colophon-wuzi"></a>
+
+3. 國立故宮博物院 · [祭侄文稿 · 鲜于枢戊子跋](<https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P>)。定位：拖尾鲜于枢戊子署款跋；记至元癸未（1283）。查阅于 2026-11-18。
+
+[作品源稿](../../knowledge/works/jizhi.md) · [返回知识总目](../README.md)

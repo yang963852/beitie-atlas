@@ -36,7 +36,7 @@ Lower inscription for Duke Wen of Zheng
 
 - 下碑字数与尺寸待核，宜与上碑分别测录。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/zheng-wengong-lower) · [实物数据](../../data/objects/zheng-wengong-lower.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/zheng-wengong-lower) · [实物源稿](../../knowledge/objects/zheng-wengong-lower.md)
 
 <a name="zheng-wengong-upper"></a>
 
@@ -60,7 +60,7 @@ Upper inscription for Duke Wen of Zheng
 
 - 上碑行数尚待核对原石测录。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/zheng-wengong-upper) · [实物数据](../../data/objects/zheng-wengong-upper.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/zheng-wengong-upper) · [实物源稿](../../knowledge/objects/zheng-wengong-upper.md)
 
 ## 据以著录的来源
 
@@ -76,4 +76,4 @@ Upper inscription for Duke Wen of Zheng
 
 3. 平度市博物馆 · [天柱山摩崖石刻](<https://www.pdsbwg.net/html/quanguozhongdianwenwubaohudanwei/20170724_4731.html>)。定位：天柱山方位及郑氏父子石刻。查阅于 2026-11-19。
 
-[作品数据](../../data/works/zheng-wengong.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/zheng-wengong.md) · [返回知识总目](../README.md)

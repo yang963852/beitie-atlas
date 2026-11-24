@@ -52,7 +52,7 @@ Shimen Inscription, cliff block
 - 所引页面没有尺寸，故不填写。
 - 迁移年份不详，事件按无日期记录，不填推测年份。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/cliff-shimen-ming) · [实物数据](../../data/objects/cliff-shimen-ming.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/cliff-shimen-ming) · [实物源稿](../../knowledge/objects/cliff-shimen-ming.md)
 
 ## 据以著录的来源
 
@@ -64,4 +64,4 @@ Shimen Inscription, cliff block
 
 2. 央广网 China National Radio · [感悟魏碑神品《石门铭》](<https://www.cnr.cn/hnfw/hnfwsh/20150723/t20150723_519292763.shtml>)（2015-07-23）。定位：第 1、4 段：王远书、武阿仁凿刻，割移汉中博物馆。查阅于 2026-11-18。
 
-[作品数据](../../data/works/shimen-ming.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shimen-ming.md) · [返回知识总目](../README.md)
