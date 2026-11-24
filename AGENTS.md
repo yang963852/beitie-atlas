@@ -1,6 +1,6 @@
 # Project rules for every coding agent
 
-Read the assigned Issue or [task brief](templates/task-brief.md), [iteration board](docs/iteration-board.md), [engineering plan](docs/engineering-plan.md) and [design system](docs/design-system.md) before changing implementation. This file applies to this project only. Explicit owner instructions take precedence. Start a fresh clone at [the member and agent guide](docs/START-HERE.md).
+Read the assigned Issue or [task brief](templates/task-brief.md), then follow the relevant row below. Consult the [engineering plan](docs/engineering-plan.md) for changes to shared interfaces and architecture. Explicit owner instructions take precedence. Start a fresh clone at [the member and agent guide](docs/START-HERE.md).
 
 ## Read by task
 
