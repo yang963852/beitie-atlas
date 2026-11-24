@@ -1,6 +1,6 @@
 # Delivery 040 · Reading-room styling for the knowledge library
 
-**Status: delivered locally; self-reviewed. The coordinator authorized the merge and the labelled preview.** Branch `feat/library-reading-style`, base `1d0de8f`.
+**Status: delivered and deployed as the labelled preview. Merged in [PR #43](https://github.com/yang963852/beitie-atlas/pull/43).** Branch `feat/library-reading-style`, base `1d0de8f`, implementation `22f94bd`, merge commit `b896b5a`.
 
 ## Scope
 
@@ -60,3 +60,10 @@ Observed:
 ## Rollback
 
 Revert the PR. The change is confined to the library stylesheet, the library component and one shared date-display guard; the atlas and the knowledge records are unaffected.
+
+## Merge and deployment
+
+- PR #43 passed the Preview quality checks ([run 45415661528](https://github.com/yang963852/beitie-atlas/actions/runs/45415661528)) and merged on 2026-11-24T14:36:06Z at `b896b5a1fb0fcc6a30c3f1428b91519b6bd61cc5`, on the coordinator's instruction.
+- The post-merge Preview quality checks ([run 45415926048](https://github.com/yang963852/beitie-atlas/actions/runs/45415926048)) and Publish GitHub Pages preview ([run 45415925860](https://github.com/yang963852/beitie-atlas/actions/runs/45415925860)) both succeeded.
+- The [public preview](https://yang963852.github.io/beitie-atlas/) returns HTTP 200 and is marked `beitie-build-mode=preview`. `#/library` shows the new masthead, seal, counts and shelves; `#/work/yan-qinli-bei` shows the centred title leaf, and the provenance date prints once. No page errors or horizontal overflow were observed at 1440.
+- Reachability was observed only from this execution environment. Mainland public-network access and the formal release were not tested; 127 drafts still block `npm run release`.
