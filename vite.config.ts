@@ -50,6 +50,7 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     base,
+    server: { watch: { ignored: ['**/.private/**'] } },
     plugins: [react(), knowledgePlugin(process.cwd()), buildModePlugin(buildMode)],
     build: {
       outDir: 'dist',

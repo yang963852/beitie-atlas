@@ -29,7 +29,7 @@
     "check:map-key": "tsx scripts/check-map-key.ts",
     "knowledge:inventory": "tsx scripts/knowledge-inventory.ts",
     "test": "vitest run",
-    "check": "npm run knowledge:compile && npm run typecheck && npm run check:data && npm run check:interface && npm run check:knowledge && npm run check:isolation && npm run check:reproducible && npm run check:docs && npm run test && npm run knowledge:package && vite build"
+    "check": "npm run check:interface && npm run typecheck && npm run check:data && npm run check:knowledge && npm run check:isolation && npm run check:reproducible && npm run check:docs && npm run test && npm run knowledge:package && vite build"
   },
   "dependencies": {
     "react": "19.3.1",
