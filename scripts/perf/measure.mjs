@@ -357,9 +357,19 @@ async function runOnce(path, index) {
   await page.send('Page.addScriptToEvaluateOnNewDocument', { source: observer(READABLE[path]) });
 
   const started = Date.now();
+  let loadTransfer = null;
+  let loadTimedOut = false;
   const loadPromise = new Promise((ok) => {
-    const timer = setTimeout(ok, 45000);
-    page.on('Page.loadEventFired', () => { clearTimeout(timer); ok(); });
+    const timer = setTimeout(() => {
+      loadTimedOut = true;
+      ok();
+    }, 45000);
+    page.on('Page.loadEventFired', () => {
+      // Snapshot inside the load event, before any later readable-time reads.
+      loadTransfer = transferSoFar();
+      clearTimeout(timer);
+      ok();
+    });
   });
   await page.send('Page.navigate', { url: `http://127.0.0.1:${PORT}${URLS[path]}` });
 
@@ -381,7 +391,8 @@ async function runOnce(path, index) {
 
   const result = { path, run: index + 1, readable: Math.round(readable), wall: Date.now() - started };
   result.transferAtReadable = readableTransfer;
-  result.transferAtLoad = transferSoFar();
+  result.transferAtLoad = loadTransfer;
+  result.loadTimedOut = loadTimedOut;
 
   if (path === 'home' && !REDUCED && !BLOCK_THREE) {
     const sceneStart = Date.now();
@@ -523,8 +534,9 @@ async function main() {
       dclMs: median(items.map((run) => run.nav?.dcl ?? -1)),
       loadMs: median(items.map((run) => run.nav?.load ?? -1)),
       transferKb: median(items.map((run) => Math.round(run.transferTotal / 1024))),
-      firstScreenKb: median(items.map((run) => Math.round((run.transferAtReadable ?? 0) / 1024))),
-      loadTransferKb: median(items.map((run) => Math.round((run.transferAtLoad ?? 0) / 1024))),
+      firstScreenKb: median(items.map((run) => (run.transferAtReadable == null ? -1 : Math.round(run.transferAtReadable / 1024)))),
+      loadTransferKb: median(items.map((run) => (run.transferAtLoad == null ? -1 : Math.round(run.transferAtLoad / 1024)))),
+      loadTimedOutRuns: items.filter((run) => run.loadTimedOut).length,
       sceneMs: median(items.map((run) => run.sceneMs ?? -1)),
       settledMs: median(items.map((run) => run.settledWall ?? -1)),
       scriptKb: median(items.map((run) => Math.round(run.scriptBytes / 1024))),
