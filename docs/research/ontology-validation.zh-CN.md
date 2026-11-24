@@ -7,7 +7,7 @@
 | 项 | 值 |
 | --- | --- |
 | 试例 | PR #34 的 [`docs/research/ontology-pilot.json`](https://github.com/yang963852/beitie-atlas/blob/a5e56b1/docs/research/ontology-pilot.json) |
-| 固定提交 | `a5e56b1`（PR #34 当前 head）；报告中的编号以该提交为准 |
+| 固定提交 | `a5e56b1`（本卡开工时 PR #34 的 head）；报告中的编号以该提交为准 |
 | 语料基线 | `c6fd7c0`（试例 `baseRevision`；本分支从 `origin/main` 建立。该版本相对本地旧基线 `53d9f24` 只改了依赖锁文件，`data/` 与 `docs/` 未变） |
 | 固定副本 | [`scripts/research/inputs/ontology-pilot.a5e56b1.json`](../../scripts/research/inputs/ontology-pilot.a5e56b1.json)，SHA-256 `c274aaf6ee7026a0543a23d2ccd374d58af5132308043b8ca48ae419bb3f2063` |
 | 语料规模 | 85 部作品、95 件实物、141 条文献、1 条媒体；试例引用其中 5 部作品、9 件实物、5 条文献、1 条媒体、1 个事件 |
