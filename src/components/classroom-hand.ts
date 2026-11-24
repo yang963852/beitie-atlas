@@ -37,7 +37,7 @@ function contour(points: Point[]) {
 export function writingHand() {
   const hand = new T.Group();
   const skin = new T.MeshStandardMaterial({color:'#c68f72',roughness:.88});
-  const cuff = new T.MeshStandardMaterial({color:'#505c53',roughness:.98});
+  const cuff = new T.MeshStandardMaterial({color:'#4a4036',roughness:.98});
   function part(points: Point[], material: T.Material = skin) {
     const mesh = new T.Mesh(contour(points), material);
     mesh.castShadow = mesh.receiveShadow = true;

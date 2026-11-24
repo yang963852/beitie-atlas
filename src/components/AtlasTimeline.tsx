@@ -184,7 +184,7 @@ export function AtlasTimeline({ hash }: { hash: string }) {
     else window.location.replace('#catalogue');
   }
   return <div className="atlas-reader"><header className="atlas-mast">
-    <a href="#" className="atlas-brand">{strings.siteTitleZh}<small>Between Steles</small></a>
+    <a href="#" className="atlas-brand"><span className="atlas-seal" aria-hidden="true">碑</span>{strings.siteTitleZh}<small>Between Steles</small></a>
     <button type="button" onClick={() => setLocale(zh ? 'en' : 'zh')}>{zh ? 'EN' : '中文'}</button>
   </header>
   <nav className="reader-sections" aria-label={strings.sectionsLabel}>

@@ -241,6 +241,7 @@ function AppShell() {
       <header className="topbar">
         <div className="topbar__inner">
           <div className="brand">
+            <span className="brand__seal" aria-hidden="true">碑</span>
             <span className="brand__zh" lang="zh-Hans">
               {strings.siteTitleZh}
             </span>
