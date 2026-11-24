@@ -21,6 +21,8 @@ When two citable pages disagree — the year of a stele, the height of a stone, 
 
 ## From a source to a record
 
+负责人研究材料：[领域本体、证据与五件碑帖试验](research/ontology.md)。其中的新增字段和迁移方案处于提议阶段；现行录入仍依本页流程。
+
 1. Start from a reader's Issue or small PR. Claim a bounded subject, identify its source and agree any overlapping edits. Record scope, lead, expected evidence and review in the Issue/PR. Add numbered board and delivery records for milestones, migrations and releases.
 2. Open the institution's object page, catalogue, or other primary publication. Record its URL, publisher, access date, and claim locator. Cross-check conflicting collection, attribution, or date claims. Keep unknown fields empty and explain disputed evidence.
 3. Enter the work and each physical object separately. Left-column groups follow the period of the represented inscription or calligraphic work. Within a group, known dates go first in chronological order. A later carving or rubbing keeps its own production date and holding.
