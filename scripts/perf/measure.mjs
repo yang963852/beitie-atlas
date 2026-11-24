@@ -364,16 +364,24 @@ async function runOnce(path, index) {
   await page.send('Page.navigate', { url: `http://127.0.0.1:${PORT}${URLS[path]}` });
 
   let readable = -1;
+  let readableTransfer = null;
   for (let i = 0; i < 900; i += 1) {
     const probe = await page.send('Runtime.evaluate', { expression: 'window.__perf?.readableAt ?? null', returnByValue: true });
-    if (typeof probe.result?.result?.value === 'number') { readable = probe.result.result.value; break; }
+    if (typeof probe.result?.result?.value === 'number') {
+      readable = probe.result.result.value;
+      // Sample here, not after `load`: the metric is the bytes already
+      // transferred when the target became readable, not the final page total.
+      readableTransfer = transferSoFar();
+      break;
+    }
     if (Date.now() - started > 45000) break;
     await new Promise((ok) => setTimeout(ok, 50));
   }
   await loadPromise;
 
   const result = { path, run: index + 1, readable: Math.round(readable), wall: Date.now() - started };
-  result.transferAtReadable = transferSoFar();
+  result.transferAtReadable = readableTransfer;
+  result.transferAtLoad = transferSoFar();
 
   if (path === 'home' && !REDUCED && !BLOCK_THREE) {
     const sceneStart = Date.now();
@@ -516,6 +524,7 @@ async function main() {
       loadMs: median(items.map((run) => run.nav?.load ?? -1)),
       transferKb: median(items.map((run) => Math.round(run.transferTotal / 1024))),
       firstScreenKb: median(items.map((run) => Math.round((run.transferAtReadable ?? 0) / 1024))),
+      loadTransferKb: median(items.map((run) => Math.round((run.transferAtLoad ?? 0) / 1024))),
       sceneMs: median(items.map((run) => run.sceneMs ?? -1)),
       settledMs: median(items.map((run) => run.settledWall ?? -1)),
       scriptKb: median(items.map((run) => Math.round(run.scriptBytes / 1024))),
