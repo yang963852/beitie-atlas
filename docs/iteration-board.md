@@ -1,6 +1,6 @@
 # Iteration board
 
-Updated: 2026-11-23. This board tracks milestones. Independent contributions are coordinated in GitHub Issues and pull requests.
+Updated: 2026-11-24. This board tracks milestones. Independent contributions are coordinated in GitHub Issues and pull requests.
 
 | Task | Outcome | State | Exit evidence |
 | --- | --- | --- | --- |
@@ -41,6 +41,7 @@ Updated: 2026-11-23. This board tracks milestones. Independent contributions are
 | 035 | Use GitHub Pages as the sole website host | Delivered — hosting cutover verified by self-review; owner decides acceptance at merge | [Task 035](../tasks/035-github-pages-only.md), [delivery 035](delivery-035.md), and [PR #23](https://github.com/yang963852/beitie-atlas/pull/23). |
 | 036 | First internal beta on public Pages | Delivered — partially verified by Codex self-review; coordinator authorized the beta rollout | [Task 036](../tasks/036-internal-beta.md), [delivery 036](delivery-036.md), [PR #24](https://github.com/yang963852/beitie-atlas/pull/24). |
 | 037 | Complete the beitie corpus and record what the images need | Delivered — self-reviewed; coordinator decides acceptance | 85 works / 95 objects / 33 places / 141 sources; 11 new works, no media shipped because no licence or file could be verified; see [task 037](../tasks/037-corpus-completion.md), [delivery 037](delivery-037.md) and [PR #27](https://github.com/yang963852/beitie-atlas/pull/27). |
+| 038 | Architecture and ontology research, A–D verification and Pages preview | Delivered — coordinator delegated merge; research retained as draft | Seven checked PRs merged; preview and two direct witness links verified. See [task 038](../tasks/038-research-delivery.md) and [delivery 038](delivery-038.md). |
 
 ## Iteration loop
 
