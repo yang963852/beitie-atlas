@@ -7,8 +7,8 @@ provider SDKs, trademarks, or dependencies. Preserve source references and
 qualifications when reusing records. Draft records are research material, not
 certified collection information.
 
-The compiled knowledge interface currently carries no media records. Before adding media, document creator,
-license, credit, source and permission evidence. Source-page availability alone
+The compiled knowledge interface can carry media records. Every media record must document creator,
+license, credit, source and permission evidence before it enters the build. Source-page availability alone
 does not establish reuse permission. Dependencies retain their own licenses.
 
 Interaction inspiration: https://github.com/DeanChensj/jiangshan-map (GPL-3.0).
