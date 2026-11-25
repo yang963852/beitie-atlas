@@ -3,7 +3,7 @@
 这份说明写给不写代码的项目所有者。目标只有一个：拿到一个天地图「浏览器端」密钥（Key），
 让页面显示真实底图。**不需要改代码，也不需要在对话里发送 Key。**
 
-技术评估见 [map-pilot.md](map-pilot.md)，六种底图对比见 [map-options.md](map-options.md)。
+技术评估见[归档的 map-pilot](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/map-pilot.md)，六种底图对比见[归档的 map-options](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/map-options.md)。
 本文只讲操作。
 
 ---

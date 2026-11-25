@@ -16,7 +16,7 @@ Which rubbing of the Yan Qinli Stele are we looking at when we copy it? Who was 
 - **Use the collection map.** Locate witnesses by their present collection in the [collection map](https://yang963852.github.io/beitie-atlas/#/collections); places without reliable coordinates stay textual rather than guessed.
 - **Search the library.** Enter the [library](https://yang963852.github.io/beitie-atlas/#/library) by work, calligrapher, reading note or object record — for example [Yan Zhenqing](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing).
 
-**Current corpus** (`npm run knowledge:compile`, 2026-11-24): 87 works · 96 physical objects · 36 places · 145 sources · 70 events. Some records are marked draft.
+**Current corpus** (`npm run knowledge:compile`, 2026-11-25): 98 works · 107 physical objects · 38 places · 160 sources · 70 events. Some records are marked draft.
 
 ## Three editorial rules
 
@@ -69,8 +69,9 @@ npm run dev
 | `scripts/` | Compiler, checks, library packaging and release gate |
 | `src/` | React site: reading, chronology, map, library |
 | `data/index/knowledge-v1.json` | Versioned interface produced by the compiler; the site reads only this |
-| Other JSON under `data/` | Frozen migration baseline; no longer read by the web |
 | `docs/` | Architecture, editorial workflow, tasks and delivery records |
+
+The retired corpus and milestones 001–039 are indexed in [the archive](docs/archive.md); local agent workspaces and handoffs are described in [the workflow](docs/agent-workflow.zh-CN.md) (Chinese).
 
 ## Status and limitations
 

@@ -51,10 +51,8 @@ const compilerFiles = [
   'scripts/lib/knowledge-compiler.ts',
   'scripts/lib/knowledge-plugin.ts',
   'scripts/lib/catalogue.ts',
-  'scripts/migrate-legacy.ts',
   'scripts/knowledge-compile.ts',
   'scripts/knowledge-catalogue.ts',
-  'scripts/knowledge-parity.ts',
   'scripts/knowledge-package.ts',
   'scripts/check-reproducible.ts',
 ];

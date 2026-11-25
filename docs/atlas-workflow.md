@@ -17,11 +17,11 @@ The distinction is not snobbery about apps. A work page in an app usually has no
 
 What an app is genuinely good for: discovering which inscriptions exist, learning the conventional titles and aliases, and noticing that a stele you had never heard of is worth researching. Take the name from the app, then find a museum or government page, or the printed catalogue, that actually states the fact.
 
-When two citable pages disagree — the year of a stele, the height of a stone, the number of characters — record both readings in the notes and leave the structured field empty. Do not average, and do not pick the figure that looks tidier. `docs/delivery-018.md` has four worked examples from this pass.
+When two citable pages disagree — the year of a stele, the height of a stone, the number of characters — record both readings in the notes and leave the structured field empty. Do not average, and do not pick the figure that looks tidier. [Delivery 018](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/delivery-018.md) has four worked examples from this pass.
 
 ## From a source to a record
 
-负责人研究材料：[领域本体、证据与五件碑帖试验](research/ontology.md)。其中的新增字段和迁移方案处于提议阶段；现行录入仍依本页流程。
+负责人研究材料：[领域本体、证据与五件碑帖试验](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/research/ontology.md)（已归档，现行录入仍依本页流程）。
 
 1. Start from a reader's Issue or small PR. Claim a bounded subject, identify its source and agree any overlapping edits. Record scope, lead, expected evidence and review in the Issue/PR. Add numbered board and delivery records for milestones, migrations and releases.
 2. Open the institution's object page, catalogue, or other primary publication. Record its URL, publisher, access date, and claim locator. Cross-check conflicting collection, attribution, or date claims. Keep unknown fields empty and explain disputed evidence.

@@ -16,7 +16,7 @@
 - **查馆藏地图**：在[馆藏地图](https://yang963852.github.io/beitie-atlas/#/collections)按今天的收藏地找实物；没有可靠坐标的地点只列文字，不猜位置。
 - **找书家与读帖笔记**：在[知识库](https://yang963852.github.io/beitie-atlas/#/library)按作品、书家、笔记或实物档案进入，例如[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)。
 
-**当前收录**（`npm run knowledge:compile`，2026-11-24）：87 部作品 · 96 件实物 · 36 处地点 · 145 条来源 · 70 条事件。部分记录标为「待审」。
+**当前收录**（`npm run knowledge:compile`，2026-11-25）：98 部作品 · 107 件实物 · 38 处地点 · 160 条来源 · 70 条事件。部分记录标为「待审」。
 
 ## 三条编辑原则
 
@@ -69,8 +69,9 @@ npm run dev
 | `scripts/` | 编译器、校验、知识库打包与发布门槛 |
 | `src/` | React 网站：阅读、时间线、地图、知识库 |
 | `data/index/knowledge-v1.json` | 编译器生成的带版本接口，网站只读这一份 |
-| `data/` 其余旧 JSON | 迁移基线，已冻结，网页不再读取 |
 | `docs/` | 架构、编辑流程、任务与交付记录 |
+
+旧库与 001–039 里程碑已移出 `main`，见[历史归档](docs/archive.md)；本地 agent 的目录、分支和交接规则见[工作流](docs/agent-workflow.zh-CN.md)。
 
 ## 状态与限制
 

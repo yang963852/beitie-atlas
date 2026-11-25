@@ -1,7 +1,0 @@
-# Delivery 028 | GitHub Pages basemap
-
-Base `b4475ed`; branch `codex/028-pages-basemap`. The owner confirmed the Pages host whitelist and supplied the browser key. It was encrypted and stored as the repository Actions secret `TIANDITU_BROWSER_KEY`. The Pages workflow sends it to the publication build only; automated tests stay keyless. The key is not tracked in Git. A published browser key is necessarily visible to site visitors. No Codex Sites deployment or corpus change is part of this task.
-
-Local self-review: `npm.cmd run check` passed all 123 tests and the preview build; `git diff --check` was clean. [PR #15](https://github.com/yang963852/beitie-atlas/pull/15) head `fa9ebd10861450c10c8114462439638960a5f74b` passed [GitHub CI](https://github.com/yang963852/beitie-atlas/actions/runs/44317376178) and merged as `49897c9e0b7685576bb416d23300f4360e47210d`.
-
-[Pages deployment](https://github.com/yang963852/beitie-atlas/actions/runs/44317664276) succeeded. On 2026-11-18, Chrome at 1440 CSS px opened the [public preview](https://yang963852.github.io/beitie-atlas/), entered the catalogue, decoded 24 Tianditu tiles and displayed attribution without the map fallback. The observed SDK and tile requests returned HTTP 200. This verifies the tested connection, not mainland reachability. To roll back to a keyless Pages preview, remove the repository Actions secret and dispatch the Pages workflow from `main`.

@@ -90,14 +90,14 @@ flowchart LR
 
 - Use React + TypeScript + Vite, npm, a committed lockfile, and a documented supported Node version.
 - Keep structured facts and original editorial prose in the [Markdown knowledge library](../knowledge/README.md); `scripts/lib/knowledge-compiler.ts` compiles the author source into the versioned `data/index/knowledge-v1.json` interface. Build the static site, checks, timeline, map and download package from that interface only. Generated catalogue pages and indexes are readable on GitHub and checked for drift. Ingestion travels through GitHub Issues and PRs.
-- The legacy `data/works/`, `data/objects/`, `data/places.json`, `data/sources.json`, `data/media.json`, `data/knowledge-relations.json` and journey JSON are frozen migration inputs. Do not edit them or import them from `src/`.
+- The pre-rebuild JSON corpus and its one-time migration tools were retired on 2026-11-25. They remain in the annotated tag `archive-pre-hygiene-2026-11-25`; do not reintroduce them into `main` or import them from `src/`.
 - Place provider integration behind a small map component boundary: points, selection, focus, and optional schematic event connections. Do not design a generic GIS framework.
-- Tianditu is the implemented live provider. The local location overview remains available when the key, SDK or tiles are unavailable. See [the adapter](../src/map/tianditu.ts) and [the earlier provider evaluation](map-options.md).
+- Tianditu is the implemented live provider. The local location overview remains available when the key, SDK or tiles are unavailable. See [the adapter](../src/map/tianditu.ts) and [the earlier provider evaluation](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/map-options.md).
 - Keep matching interface dictionaries in `src/i18n/en.ts` and `src/i18n/zh.ts`. Preserve Chinese titles, aliases and authored Chinese prose. Show the source language where a translation is missing.
 - Use ordinary React state initially. Avoid premature state frameworks, CMSs, microservices, and search servers.
 - Preserve canonical records independently of map vendors. A credential proxy, if required by the selected provider, is a separately documented deployment component, not an unnoticed expansion into a full backend.
 
-**给 Agent 分配文件。** 改作品、实物、人物、地点、来源或事件，从 `knowledge/` 找对应 Markdown；改读帖文章，也从 `knowledge/notes/`；改判断“哪些地点能画成当前馆藏点”的规则，看 `src/domain/collection.ts`；改地图服务的调用，看 `src/map/`。改读者界面，看 `src/components/`；改编译器、生成、检查或部署，看 `scripts/lib/knowledge-*`、`scripts/` 和 `.github/workflows/`。旧 JSON 不再分派编辑任务。下列目录名可直接交给 Agent 定位。
+**给 Agent 分配文件。** 改作品、实物、人物、地点、来源或事件，从 `knowledge/` 找对应 Markdown；改读帖文章，也从 `knowledge/notes/`；改判断“哪些地点能画成当前藏点”的规则，看 `src/domain/collection.ts`；改地图服务的调用，看 `src/map/`。改读者界面，看 `src/components/`；改编译器、生成、检查或部署，看 `scripts/lib/knowledge-*`、`scripts/` 和 `.github/workflows/`。旧库已归档，不再分派编辑任务。下列目录名可直接交给 Agent 定位。
 
 ```text
 src/components/       map, results, detail, timeline, source citation
@@ -281,7 +281,7 @@ Three properties decided the shape, not fashion:
 | If the bundled corpus becomes expensive to load | Split the data at the domain boundary into separately loaded chunks, then verify both browser and CLI paths | Public routes and validation rules |
 | A different map provider | Implement `MapAdapter` in `src/map/types.ts`: mount, focus, fit, destroy | Markers, filtering, detail view, evidence rules |
 | A third language | Add a dictionary in `src/i18n/` and register it | Components, data, validation |
-| Photographs or IIIF images | `data/media.json` already models rights, credit and licence; a media pipeline and hosting do not exist yet | Records, map, list |
+| Photographs or IIIF images | The compiled knowledge interface models media rights, credit and licence; a media pipeline and hosting do not exist yet | Records, map, list |
 | Published book sources | Supported since task 018: publisher, year, page locator, no URL | Everything |
 
 ## 模块依赖与维护成本
@@ -332,8 +332,8 @@ ADR 是一张保留取舍理由的决策单。以后 Agent 提议“上数据库
 | --- | --- | --- | --- |
 | ADR-001 · 静态阅读与仓库审稿，已实施 | 作品与传本要公开查阅，事实需要审稿。可选静态文件、逐页手写 HTML 或由服务器按请求出页。 | JSON 与 Markdown 进 Git；React 联动筛选、地图与详情，Vite 打包，Pages 发预览。可逐条查版本和回退。 | 改动须重新构建，站内私有写入需要新边界；按前述读写需求重议。历史版本可重新构建发布。[构建配置](../vite.config.ts) · [部署](../.github/workflows/pages.yml) |
 | ADR-002 · 作品与实物分开，已实施 | 同一作品有不同时代的传本。可每部作品一张总卡，也可给每件实物单独建档。 | 实物用 workId 归到作品，制作日期、馆藏和事件跟随实物。能把一张民国拓本和唐碑分别考证。 | 需维护编号和跨文件校验；引入合册、拆页等新关系前用真实著录验证模型。模型迁移须能还原原记录。[领域类型](../src/domain/types.ts) · [编辑流程](atlas-workflow.md) |
-| ADR-003 · 一份文章供仓库和网站阅读，已实施 | 作者要在 GitHub 校阅同一篇导读。可维护两份文案、写进网页组件或共享 Markdown。 | 共享 Markdown，构建时解析 YAML，网页用 react-markdown 渲染。编辑一次，两处可读。 | 两种阅读界面需兼容；引入新排版前在两端验收。可退回基础段落、清单和链接。[任务 036 交付](delivery-036.md) · [网页正文](../src/components/KnowledgeProse.tsx) |
-| ADR-004 · 知识库为作者源、接口为网页边界，已采纳 | 作品、实物、事件、地点和来源分散在 JSON 与 Markdown 两套输入；网页、命令行和目录生成器各读一套，编辑链接指向不一致，贡献者无法只改一篇 Markdown 就完成投稿。可选维持双输入、把全部内容搬进网页代码，或建立 Markdown 源与只读接口。 | `knowledge/` 的 Markdown 是唯一作者源；`scripts/lib/knowledge-compiler.ts` 只读编译为 `data/index/knowledge-v1.json`；网页、校验、时间线、地图和下载包只消费该接口。旧 JSON 冻结为迁移基线，切换后退出生产读取。 | 需维护编译器与格式版本，首期迁移量大；作者必须按模板改源稿。若编译器无法在只读副本上复现、网页再次直接读取作者文件，或迁移出现无法解释的字段差异，则停止切换并回退到旧读取路径。[执行方案](knowledge-rebuild.md) · [知识库](../knowledge/README.md) |
+| ADR-003 · 一份文章供仓库和网站阅读，已实施 | 作者要在 GitHub 校阅同一篇导读。可维护两份文案、写进网页组件或共享 Markdown。 | 共享 Markdown，构建时解析 YAML，网页用 react-markdown 渲染。编辑一次，两处可读。 | 两种阅读界面需兼容；引入新排版前在两端验收。可退回基础段落、清单和链接。[任务 036 交付](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/delivery-036.md) · [网页正文](../src/components/KnowledgeProse.tsx) |
+| ADR-004 · 知识库为作者源、接口为网页边界，已采纳 | 作品、实物、事件、地点和来源分散在 JSON 与 Markdown 两套输入；网页、命令行和目录生成器各读一套，编辑链接指向不一致，贡献者无法只改一篇 Markdown 就完成投稿。可选维持双输入、把全部内容搬进网页代码，或建立 Markdown 源与只读接口。 | `knowledge/` 的 Markdown 是唯一作者源；`scripts/lib/knowledge-compiler.ts` 只读编译为 `data/index/knowledge-v1.json`；网页、校验、时间线、地图和下载包只消费该接口。旧 JSON 已于 2026-11-25 退役并归档，不再参与生产读取。 | 需维护编译器与格式版本，首期迁移量大；作者必须按模板改源稿。若编译器无法在只读副本上复现、网页再次直接读取作者文件，或迁移出现无法解释的字段差异，则停止切换并回退到旧读取路径。[执行方案](knowledge-rebuild.md) · [知识库](../knowledge/README.md) |
 
 ## Primary technical references
 

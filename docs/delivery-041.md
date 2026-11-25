@@ -43,7 +43,7 @@
 
 - `knowledge/README.md`、`knowledge/catalogue/`：由 `knowledge:generate` 生成，未手改。
 - `data/index/knowledge-v1.json`：由 `knowledge:compile` 生成。
-- `docs/canonical-coverage.md`：把已补条目移入“已收录”，保留未决问题。
+- [归档的覆盖面矩阵](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/canonical-coverage.md)：把已补条目移入“已收录”，保留未决问题。
 - `docs/iteration-board.md`、`README.md`、`README.en.md`：语料数量与看板。
 - `tests/knowledge.test.ts`、`tests/knowledge-examples.test.ts`：作品与实物计数 87/96 → 98/107。
 - `tests/app.test.tsx`：期间分组新增五代十国、南宋、民国三组。
