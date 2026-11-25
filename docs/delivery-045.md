@@ -22,7 +22,7 @@
 
 - Removed seven stale worktrees: `worktree-040`, `worktree-042`, `worktree-a`, `worktree-b`, `worktree-d`, `direct-pr-verification` and `review-pr29-38d73a6`.
 - Deleted 51 merged local branches plus five archived unmerged branches; kept `main`, `trae/work`, `workbuddy/work`, the active `feat/043-unified-library-river` worktree and WorkBuddy's running session.
-- Deleted old `.private/tmp` test copies and caches, and the completed `043-live` browser profile. `.private` fell from about 6.2 GB (after the worktree copies) to about 313 MB.
+- Deleted old `.private/tmp` test copies and caches, and the completed `043-live` browser profile. `.private` fell from about 6.2 GB (after the worktree copies) to about 270 MB.
 - WorkBuddy currently uses `C:\Users\zhangyang\WorkBuddy\Worktrees\碑帖之间\main-57a0db19` on branch `workbuddy/main-57a0db19`; the new long-lived workspace is `.private/worktrees/workbuddy` on `workbuddy/work`.
 
 ## Not done here
