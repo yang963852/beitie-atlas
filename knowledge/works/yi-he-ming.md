@@ -30,8 +30,6 @@ sources:
   - src-jiangsu-yihe
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record. Both the date and the attribution are disputed in the cited sources; the record preserves the dispute."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。所引材料对年代与书者均有异说，本条保留争议。
 ---
 
 # 瘗鹤铭

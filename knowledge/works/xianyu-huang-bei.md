@@ -33,8 +33,6 @@ sources:
   - src-tjbwg-xianyu-2
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. The holding museum and the excavation month come from its own pages read on 2026-11-18; the stone was not examined and the gallery it stands in is unspecified."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。收藏机构与出土月份取自 2026-11-18 阅读的馆方页面；未核对原石，所在展厅未载。
 ---
 
 # 鲜于璜碑

@@ -6,7 +6,7 @@
 
 Lin Zexu’s Mount Hua Poem and Preface
 
-**作品**　清 · 清道光二十二年（1842） · 碑 · 已审
+**作品**　清 · 清道光二十二年（1842） · 碑
 
 林则徐赴伊犁途中游华山，作诗并亲书。诗题所记，也是行旅中一段可考的停留。
 
@@ -22,7 +22,7 @@ Lin Zexu’s Mount Hua Poem and Preface
 
 Lin Zexu’s Mount Hua Poem and Preface, stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：年代不详
 - 著录编号：未记录

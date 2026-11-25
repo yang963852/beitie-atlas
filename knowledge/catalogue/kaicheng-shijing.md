@@ -6,7 +6,7 @@
 
 Kaicheng Stone Classics
 
-**作品**　唐 · 唐开成二年（837）刻成 · 碑 · 已审
+**作品**　唐 · 唐开成二年（837）刻成 · 碑
 
 唐人将十二部儒家经典刻上石面，共用一百一十四石。经籍于是既可传抄，也可就石校读。西安碑林将这座石上书库收入第一展室。
 
@@ -29,7 +29,7 @@ Kaicheng Stone Classics
 
 Kaicheng Stone Classics, original stones
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：唐开成二年（837）刻成
 - 著录编号：未记录

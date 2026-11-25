@@ -6,7 +6,7 @@
 
 Model Letters of the Wan Sui Tong Tian Year
 
-**作品**　唐 · 万岁通天二年（697年） · 帖 · 待审
+**作品**　唐 · 万岁通天二年（697年） · 帖
 
 万岁通天二年（697），王方庆进献其先祖王羲之、王献之等一门二十八人法书十卷，武则天命弘文馆以勾填法摹写留内府。今仅存此一卷，收七人书翰十通。此卷历经明无锡真赏斋火、清乾隆间乾清宫火两次火劫，1922 年由溥仪携往长春，今藏辽宁省博物馆。
 
@@ -38,7 +38,7 @@ Model Letters of the Wan Sui Tong Tian Year
 
 Tang tracing of letters by the Wang family
 
-墨迹摹本 · 存世 · 待审
+墨迹摹本 · 存世
 
 - 制作年代：万岁通天二年（697年）
 - 著录编号：未记录

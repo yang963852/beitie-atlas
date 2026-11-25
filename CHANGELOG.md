@@ -1,6 +1,10 @@
 # Changelog
 
-Current release: [v0.2.0-beta.1 · 内部测试第一版](https://github.com/yang963852/beitie-atlas/releases/tag/v0.2.0-beta.1) (2026-11-22).
+Current release: **v1.1.0 · 1.1 版** (2026-11-25).
+
+## v1.1.0 · 1.1 版
+
+The 1.1 edition publishes the whole library: 117 works, 126 physical witnesses, 46 places, 184 sources and 75 provenance events. Every record passes the release gate, so the draft state, the per-entry review labels and the preview draft notice no longer appear to readers. Editorial uncertainty stays in each record's 待考 and claims sections, not in workflow notes. The version is shown as 1.1 on the site. [Knowledge library](knowledge/README.md) · [Status report](docs/knowledge-status.md)
 
 ## v0.2.0-beta.1 · 内部测试第一版
 

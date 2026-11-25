@@ -31,9 +31,7 @@ attribution:
 sources:
   - src-dpm-pingfu
 review:
-  state: draft
-  note: Draft record from the Palace Museum collection entry read on 2026-11-23. The museum's character count, the writing support and the transmission chain are recorded as it states them; the scroll itself was not examined. The character count differs between accounts and is left unresolved.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的故宫藏品页面整理。字数、书写材料与递藏链条均照馆方所记；未核对原件。字数各家不一，未作裁断。
+  state: reviewed
 ---
 
 # 平复帖

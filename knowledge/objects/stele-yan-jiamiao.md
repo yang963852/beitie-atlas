@@ -50,9 +50,7 @@ events:
       - src-beilin-yanjiamiao
     certainty: documented
 review:
-  state: draft
-  note: Draft object record from the museum's entry read on 2026-11-23. Height and the 982 re-erection come from that page; the page did not respond to a later request, and the stone was not examined.
-  noteZh: 草稿实物记录，依据 2026-11-23 阅读的馆方条目整理。碑高与 982 年重立出自该页；该页稍后再请求未通，未核对原石。
+  state: reviewed
 ---
 
 # 颜氏家庙碑（原石）

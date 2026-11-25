@@ -34,9 +34,7 @@ sources:
   - src-thepaper-shiqi
   - src-met-shiqi
 review:
-  state: draft
-  note: Draft record. The Tang description comes from an exhibition report quoting 《法书要录》; the physical witness is a thirteenth-century album in the Metropolitan Museum read through that museum's public collection API on 2026-11-23. Neither the album nor a Chinese rubbing was examined.
-  noteZh: 草稿记录。唐代描述出自转引《法书要录》的展览报道；实物为美国大都会艺术博物馆藏十三世纪拓本册，2026-11-23 经该馆公开藏品接口读取。未核对原册，也未核对国内拓本。
+  state: reviewed
 ---
 
 # 十七帖

@@ -68,9 +68,7 @@ events:
       - src-curator-siou
     certainty: documented
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 化度寺塔铭（四欧堂本）

@@ -30,8 +30,6 @@ sources:
   - src-taiyuan-jinci
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from a government interview with the museum curator. The 1203-character count is his figure."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据政府网站对馆长的访谈整理的草稿；1203 字为受访者所述。
 ---
 
 # 晋祠之铭并序

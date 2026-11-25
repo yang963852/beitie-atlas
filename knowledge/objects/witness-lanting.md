@@ -112,9 +112,7 @@ claims:
     note: The museum does not substitute another named copyist.
     noteZh: 馆方没有因此改归另一名摹者。
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 media:
   - id: media-shenlong-opening
     asset: src/assets/shenlong-opening.webp

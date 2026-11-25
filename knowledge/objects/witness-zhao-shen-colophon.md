@@ -32,9 +32,7 @@ collection:
   noteZh: 馆方条目只记收藏单位，未给库房或展出状态。
 events: []
 review:
-  state: draft
-  note: Created during the 2026-11 migration; the museum entry has not been independently reviewed.
-  noteZh: 2026 年 11 月迁移时建立；馆方条目尚未经独立编辑复核。
+  state: reviewed
 ---
 
 # 行书跋沈尹默论书札卷（赵朴初跋）

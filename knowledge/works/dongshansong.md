@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-dpm-dongshansong
 review:
-  state: draft
-  note: Draft from the palace museum collection entry, read on 2026-11-25. The entry gives the inventory number, size, transcription, seals and the modelbooks it was engraved in; it does not date the sheet.
-  noteZh: 草稿，依据 2026-11-25 阅读的故宫藏品说明整理。该页给文物号、尺寸、释文、鉴藏印与所刻法帖，未记此页的制作年代。
+  state: reviewed
 ---
 
 # 东山松帖

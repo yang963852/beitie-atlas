@@ -31,9 +31,7 @@ collection:
   noteZh: 页面记此本道光五年归何绍基，民国间归秦文锦，今藏上海博物馆。
 events: []
 review:
-  state: draft
-  note: Draft object record. The stone is lost; this album is the only surviving carrier recorded here.
-  noteZh: 实物草稿。原石已佚，本记录只登记这一件传世拓本。
+  state: reviewed
 ---
 
 # 张玄墓志（何绍基旧藏剪裱拓本）

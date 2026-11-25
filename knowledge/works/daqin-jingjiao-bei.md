@@ -36,8 +36,6 @@ sources:
   - src-beilin-jingjiao
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from the museum page. The English title is a project rendering, not a title used by the source."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；英文题名为本项目译名，非来源用语。
 ---
 
 # 大秦景教流行中国碑

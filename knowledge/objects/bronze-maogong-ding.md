@@ -29,9 +29,7 @@ collection:
   noteZh: 馆方铜器著录收此器与全铭。
 events: []
 review:
-  state: draft
-  note: Draft object record. No dimensions were read from the museum record.
-  noteZh: 实物草稿。未从馆方著录读到尺寸。
+  state: reviewed
 ---
 
 # 毛公鼎

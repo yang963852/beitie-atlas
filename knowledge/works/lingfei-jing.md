@@ -31,9 +31,7 @@ attribution:
 sources:
   - src-met-lingfeijing
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection from the Metropolitan Museum object page. The attribution is qualified there and the rest of the scroll is lost.
-  noteZh: 2026 年 11 月经典碑帖增补草稿，依据大都会艺术博物馆藏品页；馆方对作者加“传”字，全卷其余部分已佚。
+  state: reviewed
 ---
 
 # 灵飞经

@@ -69,9 +69,7 @@ events:
       - src-catalogue-shupu
     certainty: documented
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 孙过庭《书谱》

@@ -2,13 +2,13 @@
 schemaVersion: 1
 titleZh: 从一个「故」字读《颜勤礼碑》
 titleEn: Reading the Yan Qinli Stele through a single character
-state: draft
+state: reviewed
 works: [yan-qinli-bei]
 objects: [yan-qinli-original-stele, dpm-rubbing-xin00045406]
 sources: [src-beilin-yan-qinli-object, src-beilin-article-2007, src-dpm-yan-qinli-rubbing]
 ---
 
-# 从一个「故」字读《颜勤礼碑》（草稿）
+# 从一个「故」字读《颜勤礼碑》
 
 ## 中文
 

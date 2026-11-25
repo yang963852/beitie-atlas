@@ -51,8 +51,6 @@ events:
     certainty: approximate
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from an interview transcript. The 984 move is a hypothesis in the source and is labeled as such."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据访谈整理的草稿；984 年迁移在来源中是推测，本条照录并标注为推测。
 ---
 
 # 晋祠之铭并序（唐碑）

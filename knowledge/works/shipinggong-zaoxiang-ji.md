@@ -49,9 +49,7 @@ sources:
   - src-gmw-shipinggong
   - src-shanghai-ly-shipinggong
 review:
-  state: draft
-  note: Draft record from a museum-supported popular feature and an exhibition notice read on 2026-11-23. Both describe the carving technique and the find site; neither is an object catalogue entry with a measured survey. The stone was not examined.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的博物馆协作科普文章与展览说明。两处均述刻法与所在地，但都不是附测量的著录；未核对原石。
+  state: reviewed
 ---
 
 # 始平公造像记

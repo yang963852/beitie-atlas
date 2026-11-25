@@ -6,7 +6,7 @@
 
 Diamond Sutra at Jingshi Valley, Mount Tai
 
-**作品**　南北朝 · 北齐 · 北齐 · 碑 · 待审
+**作品**　南北朝 · 北齐 · 北齐 · 碑
 
 《金刚经》刻在泰山斗母宫东北的溪床石坪上，字径约五十厘米，现存一千余字。刻石无年月与书刻者姓名，一般定为北齐。它以隶书为骨，又杂篆意，在书法史上通常归入隶楷之间的过渡一路；康有为《广艺舟双楫》推为“榜书之宗”，是观察隶楷之变在大字摩崖上如何展开的样本。
 
@@ -29,7 +29,7 @@ Diamond Sutra at Jingshi Valley, Mount Tai
 
 Cliff inscription of the Diamond Sutra at Jingshi Valley
 
-摩崖 · 存世 · 待审
+摩崖 · 存世
 
 - 制作年代：北齐
 - 著录编号：未记录

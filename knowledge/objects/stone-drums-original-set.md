@@ -68,9 +68,7 @@ events:
       - src-dpm-stone-drums-transmission
     certainty: documented
 review:
-  state: draft
-  note: Draft. One museum catalogue entry covers the set.
-  noteZh: 草稿。此条对应馆方整组著录。
+  state: reviewed
 ---
 
 # 秦石鼓（原石十件）

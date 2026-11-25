@@ -4,7 +4,7 @@ titleZh: 王羲之
 titleEn: Wang Xizhi
 aliases:
   - 王右军
-state: draft
+state: reviewed
 works:
   - lanting
   - kuaixue
@@ -44,7 +44,7 @@ sources:
   - src-dpm-xuanshi
 ---
 
-# 王羲之（草稿）
+# 王羲之
 
 ## 中文
 

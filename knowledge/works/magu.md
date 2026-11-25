@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-catalogue-magu
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 麻姑仙坛记

@@ -37,8 +37,6 @@ sources:
   - src-beilin-shitai
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from the museum page. The attribution of the seal-script heading rests on the same page."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；碑额篆书归属同样仅据该页面。
 ---
 
 # 石台孝经

@@ -34,9 +34,7 @@ sources:
   - src-npm-pingan-essay
   - src-bo-ch-pingan
 review:
-  state: draft
-  note: Draft from two palace museum pages on the object, a museum exhibition essay and the 2012 national treasure record, all read on 2026-11-25. The sources disagree on the copying period and on the mounted width; both are left open.
-  noteZh: 草稿，依据 2026-11-25 阅读的台北故宫两处藏品页、院方展览文稿与文化部 2012 年古物公告整理。来源对摹写年代与装裱横长均有异说，两处都不作定论。
+  state: reviewed
 ---
 
 # 平安何如奉橘三帖

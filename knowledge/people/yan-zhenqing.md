@@ -3,13 +3,13 @@ schemaVersion: 1
 titleZh: 颜真卿
 titleEn: Yan Zhenqing
 aliases: []
-state: draft
+state: reviewed
 works: [duobao-ta-bei, yan-qinli-bei, datang-zhongxing-song, jizhi, magu]
 objects: []
 sources: [src-beilin-duobaota, src-beilin-yan-qinli-object, src-hunan-wuxi, src-catalogue-jizhi, src-catalogue-magu]
 ---
 
-# 颜真卿（草稿）
+# 颜真卿
 
 ## 中文
 

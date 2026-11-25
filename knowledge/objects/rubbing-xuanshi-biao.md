@@ -31,9 +31,7 @@ collection:
   noteZh: 文章记此册曾贮懋勤殿，内集七种小楷刻帖，《宣示表》为其中之一。
 events: []
 review:
-  state: draft
-  note: Draft object record. The album is a compilation of engravings, not a single rubbing of one stone.
-  noteZh: 实物草稿。此册为多种小楷刻帖的合装，不是一石之拓。
+  state: reviewed
 ---
 
 # 宋拓锺王楷帖册（宣示表）

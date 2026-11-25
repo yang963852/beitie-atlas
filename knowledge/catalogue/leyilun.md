@@ -6,7 +6,7 @@
 
 On Yue Yi
 
-**作品**　东晋 · 晉王羲之 · 帖 · 待审
+**作品**　东晋 · 晉王羲之 · 帖
 
 小楷刻本，帖文以「乐毅论。夏侯泰初」起首。王羲之书此论，原墨迹不存，今日所读皆刻本；馆方所藏为宋拓《晋唐小楷》册中的一本，楷书，一件。
 
@@ -30,7 +30,7 @@ On Yue Yi
 
 Song rubbing of On Yue Yi, from an album of Jin and Tang small regular script
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：宋拓
 - 著录编号：故帖00000700001

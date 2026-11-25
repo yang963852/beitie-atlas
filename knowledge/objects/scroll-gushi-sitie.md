@@ -31,9 +31,7 @@ collection:
   noteZh: 馆方展览清单记此卷为馆藏。
 events: []
 review:
-  state: draft
-  note: Draft object record. The carrier is a paper handscroll; its attribution to Zhang Xu is traditional.
-  noteZh: 实物草稿。载体为纸本长卷，张旭归属属传称。
+  state: reviewed
 ---
 
 # 古诗四帖卷

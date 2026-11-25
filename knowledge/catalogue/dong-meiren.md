@@ -6,7 +6,7 @@
 
 Epitaph of Dong Meiren
 
-**作品**　隋 · 597年 · 碑 · 待审
+**作品**　隋 · 597年 · 碑
 
 隋《董美人墓志》。本条收录清拓本。
 
@@ -22,7 +22,7 @@ Epitaph of Dong Meiren
 
 Epitaph of Dong Meiren, rubbing
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：清拓本
 - 著录编号：新00046539

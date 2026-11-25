@@ -32,8 +32,6 @@ collection:
 events: []
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. The collection assertion comes from the publishing museum's own catalogue entry but has not been independently reviewed."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据出自收藏机构自己的目录条目，但尚未经过独立审核。
 ---
 
 # 颜勤礼碑（民国拓本）

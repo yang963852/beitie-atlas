@@ -6,7 +6,7 @@
 
 Memorial of Declaration
 
-**作品**　三国 · 曹魏 · 年代不详 · 帖 · 待审
+**作品**　三国 · 曹魏 · 年代不详 · 帖
 
 《宣示表》是钟繇上魏文帝曹丕的奏文，请朝廷接受孙权归附。真迹早佚，传世只见刻本，一般认为是据王羲之临本摹刻，始见于北宋《淳化阁帖》，存十八行。结体宽博，点画遒劲朴茂，楷法尚未完全定型，是观察楷书从隶书脱出、走向成熟的关键样本，也是后世小楷取法的源头。
 
@@ -32,7 +32,7 @@ Memorial of Declaration
 
 Rubbing album of Zhong Yao and Wang Xizhi models, with the Memorial of Declaration
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：宋拓
 - 著录编号：未记录

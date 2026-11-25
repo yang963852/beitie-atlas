@@ -119,9 +119,7 @@ claims:
     note: The two colophons agree on the holder but give 1282 and 1283. Grouping them is an editorial inference; the place of transfer remains unrecorded.
     noteZh: 两跋同记曹彦礼，却分别写 1282 与 1283。归为同一次得卷是编辑推定，交接地点未详。
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 颜真卿《祭侄文稿》

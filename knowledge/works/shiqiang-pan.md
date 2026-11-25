@@ -31,9 +31,7 @@ sources:
   - src-bjqtm-shiqiang
   - src-cssn-shiqiang
 review:
-  state: draft
-  note: Draft added in the 2026-11 bronze and slip expansion. The date is a scholarly assignment, not a recorded year.
-  noteZh: 2026 年 11 月金文与简牍增补草稿。时代为学界推定，铭文未记王年。
+  state: reviewed
 ---
 
 # 史墙盘

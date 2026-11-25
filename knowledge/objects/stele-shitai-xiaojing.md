@@ -32,8 +32,6 @@ collection:
 events: []
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from the museum page. The block count and the heading’s attribution have not been checked against the stone."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；石数与碑额归属尚未与实物核对。
 ---
 
 # 石台孝经（原石）

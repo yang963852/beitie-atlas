@@ -6,7 +6,7 @@
 
 Mengying’s Seal-script Thousand Character Stele
 
-**作品**　北宋 · 北宋乾德三年(965) · 碑 · 已审
+**作品**　北宋 · 北宋乾德三年(965) · 碑
 
 《千字文》成篇在前，北宋僧人梦英以篆书写定此碑在后。本目著录的是梦英的这一通书迹。
 
@@ -25,7 +25,7 @@ Mengying’s Seal-script Thousand Character Stele
 
 Mengying’s Seal-script Thousand Character Stele, original stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：北宋乾德三年(965)
 - 著录编号：未记录

@@ -5,7 +5,7 @@ titleEn: Wang Xianzhi
 aliases:
   - 王大令
   - 子敬
-state: draft
+state: reviewed
 works:
   - luoshen-shisanhang
   - zhongqiu
@@ -24,7 +24,7 @@ sources:
   - src-dpm-228204
 ---
 
-# 王献之（草稿）
+# 王献之
 
 ## 中文
 

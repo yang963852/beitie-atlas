@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-jmm-guodian
 review:
-  state: draft
-  note: Draft added in the 2026-11 bronze and slip expansion. The museum gives both 730 and 731 inscribed slips on different pages.
-  noteZh: 2026 年 11 月金文与简牍增补草稿。馆方不同页面分别记有字简730枚与731枚。
+  state: reviewed
 ---
 
 # 郭店楚简

@@ -4,7 +4,7 @@
 
 Which rubbing of the Yan Qinli Stele are we looking at when we copy it? Who was the text written for? What can still be made out of the 「故」 character on the back, depending on the version? Between Steles organises works, calligraphers and surviving witnesses from antiquity to the present, so a learner can follow one observation back to its documented source.
 
-**[Open the website](https://yang963852.github.io/beitie-atlas/)** · [Read the Markdown library](knowledge/README.md) · [Download the full library (ZIP)](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip) · [Submit a source](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) · [Report beta feedback](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)
+**[Open the website](https://yang963852.github.io/beitie-atlas/)** · [Read the Markdown library](knowledge/README.md) · [Download the full library (ZIP)](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip) · [Submit a source](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) · [Report a problem](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)
 
 ![The Yan Qinli Stele work page: the original stone and a Republican-era rubbing listed separately, with custody and study sources in the text](docs/screenshots/039-1440.png)
 
@@ -16,7 +16,7 @@ Which rubbing of the Yan Qinli Stele are we looking at when we copy it? Who was 
 - **Use the collection map.** Locate witnesses by their present collection in the [collection map](https://yang963852.github.io/beitie-atlas/#/collections); places without reliable coordinates stay textual rather than guessed.
 - **Search the library.** Enter the [library](https://yang963852.github.io/beitie-atlas/#/library) by work, calligrapher, reading note or object record — for example [Yan Zhenqing](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing).
 
-**Current corpus** (`npm run knowledge:compile`, 2026-11-25): 117 works · 126 physical objects · 46 places · 184 sources · 75 events. Some records are marked draft.
+**Current corpus** (`npm run knowledge:compile`, 2026-11-25): 117 works · 126 physical objects · 46 places · 184 sources · 75 events.
 
 ## Three editorial rules
 
@@ -43,7 +43,7 @@ More: [reconstruction plan](docs/knowledge-rebuild.md) · [architecture guide wi
 | Fix an article or add a custody source | Edit the Markdown in a browser, or use the [knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml). Chinese only is fine |
 | Edit one article in Obsidian | [Download the library ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip), then send a PR on the same path |
 | Change the website or compiler | Fork, work on a branch and open a PR against `main`; read [setup and handoff](docs/START-HERE.md) first |
-| Report a beta problem | [Beta feedback form](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) |
+| Report a problem | [Feedback form](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) |
 | Coordinate topics, review and merges | [Issues](https://github.com/yang963852/beitie-atlas/issues) · [Pull requests](https://github.com/yang963852/beitie-atlas/pulls) · [Milestone board](docs/iteration-board.md) |
 
 Send a pull request directly; an Issue is optional, and Chinese explanations are welcome. [@yang963852](https://github.com/yang963852) is the primary reviewer and maintainer. [Contributing guide](CONTRIBUTING.md) · [Chinese guide](docs/CONTRIBUTE.zh-CN.md)
@@ -75,7 +75,7 @@ The retired corpus and milestones 001–039 are indexed in [the archive](docs/ar
 
 ## Status and limitations
 
-- The site is the **first internal beta** on public GitHub Pages: drafts and open questions are visible and labelled. A formal edition requires the release gate and editorial approval — see the [release runbook](docs/release.md).
+- The site is public on GitHub Pages with the **1.1 edition** of the library: every entry has passed the release gate and editorial confirmation. Open questions and conflicting accounts stay in each record's 待考 and claims sections rather than being resolved by assertion. See the [release runbook](docs/release.md).
 - The live basemap depends on the Tianditu network service; without a key, or when tiles are refused, the map shows a coordinate schematic. Observed access varies by network and must be tested locally; the project does not guarantee it.
 - Quotations, collection images and map services retain their own terms. [License](LICENSE) · [Rights and attribution](NOTICE.md)
 

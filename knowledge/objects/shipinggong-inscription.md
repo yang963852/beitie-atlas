@@ -30,9 +30,7 @@ collection:
   noteZh: 两处来源均记此刻在龙门西山古阳洞北壁。未记距地高度、保护设施与现存字口状况。
 events: []
 review:
-  state: draft
-  note: Draft object record from two illustrated features read on 2026-11-23. The rock face has not been measured in any cited source, so dimensions stay empty; the inscription was not examined.
-  noteZh: 草稿实物记录，依据 2026-11-23 阅读的两篇图文材料整理。所引来源均未测量石面，故尺寸从缺；未核对原刻。
+  state: reviewed
 ---
 
 # 始平公造像记（古阳洞北壁）

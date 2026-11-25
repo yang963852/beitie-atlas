@@ -29,9 +29,7 @@ collection:
   noteZh: 数位典藏著录以此文物编号列于王羲之楷书之下。
 events: []
 review:
-  state: draft
-  note: Draft object record. The record gives the album title, script and inventory number but no measurement and no stone date.
-  noteZh: 实物草稿。馆方著录给册名、书体与文物编号，未给尺寸与刻石年代。
+  state: reviewed
 ---
 
 # 宋拓晋唐小楷册·乐毅论

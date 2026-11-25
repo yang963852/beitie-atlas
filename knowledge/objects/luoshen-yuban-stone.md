@@ -87,9 +87,7 @@ events:
       - src-cnr-luoshen
     certainty: documented
 review:
-  state: draft
-  note: Draft object record from two illustrated press features read on 2026-11-23. The stone's material, size and inscription count are not stated by either source and stay empty; the stone was not examined.
-  noteZh: 草稿实物记录，依据 2026-11-23 阅读的两篇图文报道。两文均未记石质、尺寸与行字数，故从缺；未核对原石。
+  state: reviewed
 ---
 
 # 玉版十三行刻石

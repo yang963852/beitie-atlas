@@ -44,10 +44,8 @@ sources:
   - src-beilin-duobaota
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。
 guide:
-  state: draft
+  state: reviewed
   people:
     - yan-zhenqing
   objects:

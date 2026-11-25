@@ -6,7 +6,7 @@
 
 Stele of the Heavenly Omen
 
-**作品**　三国 · 孙吴 · 吴天玺元年（276年） · 碑 · 已审
+**作品**　三国 · 孙吴 · 吴天玺元年（276年） · 碑
 
 吴人刻石记祥瑞。故宫著录记原石毁于嘉庆十年（1805）；今日读此碑文，须辨传本。
 
@@ -20,7 +20,7 @@ Stele of the Heavenly Omen
 
 Stele of the Heavenly Omen, Northern Song rubbing
 
-拓本 · 存世 · 已审
+拓本 · 存世
 
 - 制作年代：北宋拓本
 - 著录编号：新00046692

@@ -35,8 +35,6 @@ sources:
   - src-ynkg-cuanbaozi
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. The date, dimensions and relocation sequence come from provincial and municipal pages that were read on 2026-11-18; the stone itself was not examined and the current display position inside the museum was not confirmed."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。年代、尺寸与迁置经过取自 2026-11-18 阅读的省级、市级页面；未核对原石，也未确认其在馆内的当前陈列位置。
 ---
 
 # 爨宝子碑

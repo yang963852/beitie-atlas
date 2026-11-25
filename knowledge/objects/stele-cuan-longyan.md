@@ -52,8 +52,6 @@ events:
     certainty: documented
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. Dimensions and the 1827 event come from a provincial page read on 2026-11-18; the stone was not examined and the present shelter is unconfirmed."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿实物记录。尺寸与 1827 年一事取自 2026-11-18 阅读的省级页面；未核对原石，现存保护建筑未确认。
 ---
 
 # 爨龙颜碑（原石）

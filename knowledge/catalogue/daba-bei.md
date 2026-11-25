@@ -6,7 +6,7 @@
 
 Stele of the Imperial Preceptor Dampa
 
-**作品**　元 · 延祐三年（1316）□月立石 · 帖 · 待审
+**作品**　元 · 延祐三年（1316）□月立石 · 帖
 
 此为真定龙兴寺碑之纸本稿，奉敕记述吐蕃僧人胆巴（1230—1303）生平，身后追号帝师。赵孟頫自撰自书，并篆碑额。馆方称其用笔苍劲浑厚，取法唐李邕、柳公权，为赵书碑碣中的大楷名作。
 
@@ -30,7 +30,7 @@ Stele of the Imperial Preceptor Dampa
 
 Draft of the Stele of the Imperial Preceptor Dampa
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：延祐三年（1316）□月立石
 - 著录编号：未记录

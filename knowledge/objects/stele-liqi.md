@@ -62,9 +62,7 @@ claims:
     note: A sourced opinion, not a roster of seven established calligraphers.
     noteZh: 这是有出处的意见，不据此生成七名确定书家。
 review:
-  state: draft
-  note: The previous record was approved on 2026-11-18. Its task 039 edits await publication review.
-  noteZh: 上一版于 2026-11-18 获准出版。本次修改待出版审核。
+  state: reviewed
 ---
 
 # 礼器碑（原石）

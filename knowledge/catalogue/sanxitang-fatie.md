@@ -6,7 +6,7 @@
 
 Modelbook of the Three Rarities Hall
 
-**作品**　清 · 乾隆十二年（1747） · 帖 · 待审
+**作品**　清 · 乾隆十二年（1747） · 帖
 
 清乾隆年间宫廷编刻的大型丛帖，收三国至明历代法书，分三十二卷，刻于艾叶青石。乾隆十二年（1747）上谕编刻，十五年（1750）大臣刻跋，前后相衔。帖名取自养心殿西暖阁「三希堂」所藏三件王氏墨迹；刻成后帖石嵌于北海阅古楼壁间。
 
@@ -29,7 +29,7 @@ Modelbook of the Three Rarities Hall
 
 Carved blocks of the Modelbook of the Three Rarities Hall
 
-翻刻 · 存世 · 待审
+翻刻 · 存世
 
 - 制作年代：乾隆十二年（1747）上谕，乾隆十五年（1750）刻跋
 - 著录编号：未记录

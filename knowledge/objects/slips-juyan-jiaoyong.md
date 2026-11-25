@@ -31,9 +31,7 @@ collection:
   noteZh: 展览报道记简号与收藏机构。
 events: []
 review:
-  state: draft
-  note: Draft object record. The official’s name is transcribed differently across reports.
-  noteZh: 实物草稿。报道对所涉人名姓氏的录文不一。
+  state: reviewed
 ---
 
 # 居延新简·隧长焦永死驹劾状

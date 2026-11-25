@@ -30,9 +30,7 @@ collection:
   noteZh: 按机构著录记录收藏，不据此判断当前是否展出。
 events: []
 review:
-  state: draft
-  note: Draft. No accession number or exact production year is assigned.
-  noteZh: 草稿。未填写藏品编号或确切刻成年份。
+  state: reviewed
 ---
 
 # 熹平石经残石（中国国家博物馆藏）

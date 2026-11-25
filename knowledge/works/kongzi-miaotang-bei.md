@@ -50,9 +50,7 @@ sources:
   - src-beilin-kongzi-miaotang
   - src-shaanxi-wwz-kongzi
 review:
-  state: draft
-  note: Draft record from the museum page and a provincial heritage summary read on 2026-11-18. The two disagree on measurements, line length and the carver's name; the conflicts are recorded rather than resolved. The stone was not examined.
-  noteZh: 草稿记录，依据 2026-11-18 阅读的碑林页面与省志条目整理。两处在尺寸、行字数和刻字者姓名上不一致；分歧照录，未作裁断。未核对原石。
+  state: reviewed
 ---
 
 # 孔子庙堂碑

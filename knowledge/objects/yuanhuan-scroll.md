@@ -50,9 +50,7 @@ events:
       - src-npm-yuanhuan
     certainty: documented
 review:
-  state: draft
-  note: Draft object record. The museum does not date the copy, count its characters or describe its present mounting beyond the measurements.
-  noteZh: 实物草稿。馆方未记摹写年代与字数，除尺寸外未述现状。
+  state: reviewed
 ---
 
 # 远宦帖卷（双钩廓填本）

@@ -31,9 +31,7 @@ attribution:
 sources:
   - src-chnmuseum-xiping
 review:
-  state: draft
-  note: Draft from the National Museum catalogue.
-  noteZh: 草稿，依据国博藏品目录。
+  state: reviewed
 ---
 
 # 熹平石经

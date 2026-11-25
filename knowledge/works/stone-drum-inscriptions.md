@@ -32,9 +32,7 @@ sources:
   - src-dpm-stone-drums
   - src-dpm-stone-drums-ming
 review:
-  state: draft
-  note: Draft. The exact date remains disputed.
-  noteZh: 草稿。确切刻成年代存疑。
+  state: reviewed
 ---
 
 # 石鼓文

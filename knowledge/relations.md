@@ -9,7 +9,7 @@ relations:
     sourceRefs:
       - src-shm-zhao-shen-colophon
       - src-xiling-shen-chronology
-    state: draft
+    state: reviewed
 ---
 
 # 人物关系

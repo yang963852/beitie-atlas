@@ -32,8 +32,6 @@ sources:
   - src-qufu-wufeng
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。
 ---
 
 # 五凤刻石

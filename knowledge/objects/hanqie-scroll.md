@@ -31,9 +31,7 @@ collection:
   noteZh: 馆方以此卷为馆藏精品，并述明代题跋，未给藏品号。
 events: []
 review:
-  state: draft
-  note: Draft object record. The page supplies size, transcription and colophon authors but no accession number or gallery.
-  noteZh: 实物草稿。馆方页面给尺寸、释文与题跋作者，未给藏品号或展室。
+  state: reviewed
 ---
 
 # 唐摹王羲之草书寒切帖卷

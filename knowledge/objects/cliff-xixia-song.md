@@ -29,9 +29,7 @@ collection:
   noteZh: 成县页面记摩崖在成县县城以西约 13 公里的西狭青龙头崖壁，且仍在原址。页面没有说明碑亭、围栏或参观安排。
 events: []
 review:
-  state: draft
-  note: Draft object record from a county government page read on 2026-11-18. No measured dimensions, condition survey or protection file is cited; the cliff was not examined.
-  noteZh: 草稿实物记录，依据 2026-11-18 阅读的县政府页面整理。未引用实测尺寸、保存状况调查或保护档案；未实地核对。
+  state: reviewed
 ---
 
 # 西狭颂（摩崖）

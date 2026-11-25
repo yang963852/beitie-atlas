@@ -41,9 +41,7 @@ sources:
   - src-dpm-sanxitang-vr
   - src-chinadaily-yuegu
 review:
-  state: draft
-  note: Draft record from two Palace Museum entries and a China Daily feature read on 2026-11-23. The museum entries agree on the 1747 order and the Beihai holding; the block count and the number of included works come from the press feature alone.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的故宫两处条目与《中国日报》报道整理。故宫两处在 1747 年上谕与北海藏石上一致；刻石方数与收录件数仅见于报道。
+  state: reviewed
 ---
 
 # 三希堂法帖

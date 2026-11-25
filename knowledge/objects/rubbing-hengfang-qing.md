@@ -36,9 +36,7 @@ collection:
   noteZh: 著录于故宫博物院线上藏品目录，馆藏编号新00046098。条目没有说明展厅、入藏时间或展出状态。
 events: []
 review:
-  state: draft
-  note: Draft object record from the museum's catalogue entry read on 2026-11-18. The rubbing's condition, acquisition and mounting history are not stated.
-  noteZh: 草稿实物记录，依据 2026-11-18 阅读的馆方目录条目整理。拓本的保存状况、入藏与装裱经过均未记载。
+  state: reviewed
 ---
 
 # 衡方碑（清拓本）

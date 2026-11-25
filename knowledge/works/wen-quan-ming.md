@@ -31,8 +31,6 @@ sources:
   - src-shi-dunhuang-rubbings
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from a news report. The report identifies the rubbing but does not describe the lost stone."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据新闻报道整理的草稿；报道确认拓本，但未描述已佚原石。
 ---
 
 # 温泉铭

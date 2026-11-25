@@ -30,8 +30,6 @@ sources:
   - src-csjypt-lushan
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from a local-history page. The cutter’s name is recorded as 黄仙鹤, whom scholars suspect to be Li Yong’s alias; no attribution is asserted for the cutting."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据地方志平台页面整理的草稿；刻者署「黄仙鹤」，学界疑为李邕化名，故不主张刻者身份。
 ---
 
 # 麓山寺碑

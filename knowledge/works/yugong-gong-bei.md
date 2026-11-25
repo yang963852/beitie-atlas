@@ -43,9 +43,7 @@ sources:
   - src-dpm-yugong-nansong
   - src-nlc-shike-xulu-19
 review:
-  state: draft
-  note: Draft record from two Palace Museum object entries and a National Library collection survey, all read on 2026-11-23. They agree on date, authorship and line count. Neither the stone nor a rubbing was examined.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的故宫两处著录与国家图书馆藏石刻叙录整理。三处在年代、撰书人与行款上一致。未核对原石与拓本。
+  state: reviewed
 ---
 
 # 虞恭公碑

@@ -31,9 +31,7 @@ collection:
   noteZh: 馆方记1977年出土与469字铭文。
 events: []
 review:
-  state: draft
-  note: Draft object record. The object is the vessel, not a rubbing.
-  noteZh: 实物草稿。此处登记铜器原器，不是拓本。
+  state: reviewed
 ---
 
 # 中山王厝铁足铜鼎

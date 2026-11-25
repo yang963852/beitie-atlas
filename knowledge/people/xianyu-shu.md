@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 鲜于枢
 titleEn: Xianyu Shu
 aliases: []
-state: draft
+state: reviewed
 works:
   - jizhi
 objects:
@@ -14,7 +14,7 @@ sources:
   - src-jizhi-colophon-wuzi
 ---
 
-# 鲜于枢（草稿）
+# 鲜于枢
 
 ## 中文
 

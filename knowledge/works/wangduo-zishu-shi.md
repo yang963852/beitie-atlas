@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-dpm-wangduo
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection from the Palace Museum catalogue entry. The scroll is filed under the Ming because it was written in 1639.
-  noteZh: 2026 年 11 月经典碑帖增补草稿，依据故宫博物院藏品条目。卷书于 1639 年，故归明。
+  state: reviewed
 ---
 
 # 王铎行草书自书诗卷

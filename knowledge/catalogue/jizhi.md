@@ -6,7 +6,7 @@
 
 Draft Requiem for a Nephew
 
-**作品**　唐 · 758年 · 帖 · 待审
+**作品**　唐 · 758年 · 帖
 
 唐颜真卿书《祭侄文稿》。
 
@@ -24,7 +24,7 @@ Draft Requiem for a Nephew
 
 Draft Requiem for a Nephew
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：758年
 - 著录编号：故書000060N000000000

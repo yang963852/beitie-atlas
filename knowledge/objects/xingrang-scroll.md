@@ -50,9 +50,7 @@ events:
       - src-shm-xingrang
     certainty: documented
 review:
-  state: draft
-  note: Draft object record from a Shanghai Museum exhibition entry for the Princeton loan. No accession number or full colophon list was available on that page.
-  noteZh: 实物草稿，依据上海博物馆为普林斯顿借展所写的展品说明。该页未给藏品号与完整题跋目。
+  state: reviewed
 ---
 
 # 行穰帖卷

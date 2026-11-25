@@ -4,7 +4,7 @@
 
 临《颜勤礼碑》时，我们看到的是哪一份拓本？碑文写给谁？碑背那个「故」字，在不同版本里还能辨出哪些笔画？碑帖之间为临帖者整理从先秦到当代的作品、书家和传世实物，让读者循着一次观察找到原始出处。
 
-**[打开网站](https://yang963852.github.io/beitie-atlas/)** · [读 Markdown 知识库](knowledge/README.md) · [下载完整知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip) · [提交资料](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) · [反馈内测问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)
+**[打开网站](https://yang963852.github.io/beitie-atlas/)** · [读 Markdown 知识库](knowledge/README.md) · [下载完整知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip) · [提交资料](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) · [反馈问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)
 
 ![《颜勤礼碑》作品页：原石与民国拓本分列，正文注明馆藏与临习出处](docs/screenshots/039-1440.png)
 
@@ -16,7 +16,7 @@
 - **查馆藏地图**：在[馆藏地图](https://yang963852.github.io/beitie-atlas/#/collections)按今天的收藏地找实物；没有可靠坐标的地点只列文字，不猜位置。
 - **找书家与读帖笔记**：在[知识库](https://yang963852.github.io/beitie-atlas/#/library)按作品、书家、笔记或实物档案进入，例如[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)。
 
-**当前收录**（`npm run knowledge:compile`，2026-11-25）：117 部作品 · 126 件实物 · 46 处地点 · 184 条来源 · 75 条事件。部分记录标为「待审」。
+**当前收录**（`npm run knowledge:compile`，2026-11-25）：117 部作品 · 126 件实物 · 46 处地点 · 184 条来源 · 75 条事件。
 
 ## 三条编辑原则
 
@@ -43,7 +43,7 @@
 | 改一篇文章、补一条馆藏出处 | 在浏览器里编辑对应 Markdown，或填[资料投稿表](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)。可只用中文 |
 | 在 Obsidian 里改一篇再提交 | [下载知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip)，按原路径提 PR |
 | 改网站或编译器 | Fork 后在分支上修改，向 `main` 提 PR；先看[上手与交接](docs/START-HERE.md) |
-| 反馈内测问题 | 按[五分钟试读](docs/CONTRIBUTE.zh-CN.md#五分钟试读)走一遍，再填[内测反馈表](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) |
+| 反馈问题 | 按[五分钟试读](docs/CONTRIBUTE.zh-CN.md#五分钟试读)走一遍，再填[反馈表](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) |
 | 跟进选题、评审与合并 | [Issues](https://github.com/yang963852/beitie-atlas/issues) · [PRs](https://github.com/yang963852/beitie-atlas/pulls) · [里程碑台账](docs/iteration-board.md) |
 
 欢迎直接提 PR，无需预先开 Issue；中文说明完全可以。[@yang963852](https://github.com/yang963852) 是主要审查人和维护人，负责审查与合并。[贡献指南](CONTRIBUTING.md) · [中文操作指南](docs/CONTRIBUTE.zh-CN.md)
@@ -75,7 +75,7 @@ npm run dev
 
 ## 状态与限制
 
-- 网站是公开 GitHub Pages 上的**内部测试第一版**：草稿与存疑记录可见并标明状态；正式版次须通过发布门槛与编辑审批，见[发布手册](docs/release.md)。
+- 网站公开在 GitHub Pages 上，当前内容为**1.1 版**：全部条目已通过发布门槛与编辑确认；存疑与异说仍按原样留在各条的「待考」与「异说」中，不作确定性改写。发布流程见[发布手册](docs/release.md)。
 - 真实底图依赖天地图网络服务；无密钥或被拒绝时显示点位示意图。各地网络能否打开须在当地实测，项目不作保证。
 - 引文、馆藏图片与地图服务的权利依各自依据处理。[许可证](LICENSE) · [权利与致谢](NOTICE.md)
 
