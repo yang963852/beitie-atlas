@@ -1,4 +1,4 @@
-# Delivery 044 · Retire the legacy corpus and trim the repository
+# Delivery 045 · Retire the legacy corpus and trim the repository
 
 **Status: delivered — self-reviewed; awaiting coordinator merge and acceptance.** Base `0fc8b85` (`origin/main`, 2026-11-25). Branch `trae/work`. Implementation commits `551cac0` (workflow rules) and `ee74725` (legacy retirement and archive). Archive tag `archive-pre-hygiene-2026-11-25` was pushed before any deletion.
 
@@ -7,7 +7,7 @@
 - Removed the frozen JSON corpus (`data/works/`, `data/objects/`, `data/places.json`, `data/sources.json`, `data/media.json`, `data/knowledge-relations.json`, `data/yan-qinli-journey.json`).
 - Removed the one-time migration and parity tools: `scripts/lib/dataset.ts`, `scripts/migrate-legacy.ts`, `scripts/knowledge-inventory.ts`, `scripts/knowledge-parity.ts`, the migration digest fixture and the ontology pilot check; removed `knowledge:inventory` and `knowledge:parity`.
 - Moved tasks, deliveries, reviews, baseline records, research notes and screenshots 001–039 out of `main`; kept tasks/deliveries 040–042 and their screenshots, plus the README screenshot.
-- Added `docs/archive.md` and `docs/agent-workflow.zh-CN.md`; created long-lived branches `trae/work` and `workbuddy/work`; added task 044.
+- Added `docs/archive.md` and `docs/agent-workflow.zh-CN.md`; created long-lived branches `trae/work` and `workbuddy/work`; added task 045.
 
 ## Commands and outcomes
 

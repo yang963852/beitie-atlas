@@ -1,4 +1,4 @@
-# Task 044 | Retire the legacy corpus and trim the repository
+# Task 045 | Retire the legacy corpus and trim the repository
 
 Base revision: `0fc8b85` (`origin/main`, 2026-11-25). Owner instruction: remove the unusable parts, keep `main` current, and keep the three local agents out of each other's workspaces.
 
@@ -13,7 +13,7 @@ A contributor can open the repository and see only the current Markdown knowledg
 - Remove the `knowledge:inventory` and `knowledge:parity` npm commands.
 - Delete task cards, delivery reports, reviews, baseline records, research notes and screenshots for tasks 001–039 from `main`; keep them in the archive tag.
 - Keep tasks 040–042, their deliveries and screenshots, `research/classics-selection-2026-11.md`, and the README screenshot.
-- Add `docs/archive.md`, `docs/agent-workflow.zh-CN.md` and `tasks/044-repository-hygiene.md`.
+- Add `docs/archive.md`, `docs/agent-workflow.zh-CN.md` and `tasks/045-repository-hygiene.md`.
 - Create the long-lived branches `trae/work` and `workbuddy/work`; `main` remains the only deployment branch.
 
 ## Evidence
