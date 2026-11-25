@@ -34,21 +34,30 @@
 
 ### 先秦
 
+- [大盂鼎](catalogue/dayu-ding.md) · 1 件实物 · 待审
+- [郭店楚简](catalogue/guodian-chujian.md) · 1 件实物 · 待审
+- [毛公鼎](catalogue/maogong-ding.md) · 1 件实物 · 待审
+- [散氏盘](catalogue/san-shi-pan.md) · 1 件实物 · 待审
+- [史墙盘](catalogue/shiqiang-pan.md) · 1 件实物 · 待审
 - [石鼓文](catalogue/stone-drum-inscriptions.md) · 2 件实物 · 待审
+- [中山王厝鼎](catalogue/zhongshan-wang-cuo-ding.md) · 1 件实物 · 待审
 
 ### 秦
 
 - [琅琊刻石](catalogue/langya-keshi.md) · 1 件实物 · 待审
 - [泰山刻石](catalogue/taishan-keshi.md) · 1 件实物 · 待审
 - [峄山刻石](catalogue/yishan-inscription.md) · 1 件实物 · 已审
+- [睡虎地秦简](catalogue/shuihudi-qinjian.md) · 1 件实物 · 待审
 
 ### 西汉
 
 - [北陛石](catalogue/beibi-stone.md) · 1 件实物 · 已审
 - [五凤刻石](catalogue/wufeng-inscription.md) · 1 件实物 · 已审
+- [武威仪礼简](catalogue/wuwei-yili-jian.md) · 1 件实物 · 待审
 
 ### 东汉
 
+- [居延新简·隧长焦永死驹劾状](catalogue/juyan-hanjian.md) · 1 件实物 · 待审
 - [石门颂](catalogue/shimen-song.md) · 1 件实物 · 已审
 - [乙瑛碑](catalogue/yiying-bei.md) · 1 件实物 · 已审
 - [礼器碑](catalogue/liqi-bei.md) · 2 件实物 · 已审
@@ -64,6 +73,7 @@
 
 - [天发神谶碑](catalogue/tianfa-shenchen-bei.md) · 1 件实物 · 已审
 - [宣示表](catalogue/xuanshi-biao.md) · 1 件实物 · 待审
+- [走马楼吴简·嘉禾吏民田家莂](catalogue/zoumalou-wujian.md) · 1 件实物 · 待审
 
 ### 西晋
 

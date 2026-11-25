@@ -204,6 +204,7 @@ export const enStrings = {
     'manuscript-copy': 'Manuscript copy',
     'original-stele': 'Original stele',
     'cliff-inscription': 'Cliff inscription',
+    'bronze-vessel': 'Bronze vessel',
     recarving: 'Recarving',
     rubbing: 'Rubbing',
     fragment: 'Fragment',

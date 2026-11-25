@@ -2,10 +2,10 @@
   "formatVersion": "beitie-knowledge/1",
   "schemaVersion": 1,
   "counts": {
-    "works": 98,
-    "objects": 107,
-    "places": 38,
-    "sources": 160,
+    "works": 108,
+    "objects": 117,
+    "places": 45,
+    "sources": 171,
     "media": 1,
     "events": 70,
     "workArticles": 4,
@@ -628,6 +628,62 @@
       ]
     },
     {
+      "id": "dayu-ding",
+      "titles": {
+        "zh": "大盂鼎",
+        "en": "Da Yu Ding, the Great Yu Cauldron"
+      },
+      "aliases": [
+        "盂鼎"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-chnmuseum-dayuding"
+          ],
+          "note": "The inscription records a royal charge to Yu, who had the vessel cast; the writer is not named.",
+          "noteZh": "铭文记康王册命盂、盂作鼎，书手未署名。"
+        }
+      ],
+      "studyCategory": "bei",
+      "dynastyId": "pre-qin",
+      "dynastyQualifier": "西周",
+      "compositionDate": {
+        "kind": "single",
+        "startYear": -1003,
+        "startMonth": null,
+        "endYear": -1003,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "西周康王二十三年（公元前1003年）",
+        "certainty": "documented",
+        "note": "馆方以铭文“王廿又三祀”定为康王二十三年。"
+      },
+      "script": "金文",
+      "background": "In the twenty-third year of King Kang of Zhou, the noble Yu cast this cauldron for his grandfather Nan Gong. Its inner wall carries a nineteen-line, 291-character inscription recording the royal charge and the warning that Shang fell through drunkenness. Vigorous, compact and square in stance, it is a representative early Western Zhou bronze inscription and a common starting point for learning bronze script.",
+      "backgroundZh": "西周康王二十三年，贵族盂作鼎祭祀祖父南公，腹内壁铸铭十九行二百九十一字，记康王册命与殷商酗酒亡国的训诫。铭文雄壮凝练、方圆兼备，是西周早期金文的代表作；学金文者常由它入手，先看字形的庄重，再看行气的整饬。",
+      "sourceRefs": [
+        "src-chnmuseum-dayuding"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. The findspot is given differently across the museum’s own pages.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方不同页面所记出土地不一。"
+      },
+      "notes": [
+        "The findspot is given as either Li village in Mei county or Qishan; the museum’s own pages differ.",
+        "The “twenty-third year” is assigned to King Kang through the Xiao Yu Ding inscription, not named in this vessel’s text."
+      ],
+      "notesZh": [
+        "出土地有陕西郿县礼村与岐山两说，馆方不同页面即不一致。",
+        "铭文所说“二十三年”依小盂鼎铭文推定为康王，非鼎铭自书王名。"
+      ]
+    },
+    {
       "id": "deng-kaishu",
       "titles": {
         "zh": "楷书诗轴",
@@ -904,6 +960,62 @@
         "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
       },
       "notes": []
+    },
+    {
+      "id": "guodian-chujian",
+      "titles": {
+        "zh": "郭店楚简",
+        "en": "Guodian Chu Slips"
+      },
+      "aliases": [
+        "郭店楚墓竹简"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-jmm-guodian"
+          ],
+          "note": "The slips are a tomb library; no scribe is named.",
+          "noteZh": "简册为墓中随葬典籍，未署书手。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "pre-qin",
+      "dynastyQualifier": "战国",
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "战国中期",
+        "original": "战国中期",
+        "certainty": "approximate",
+        "note": "据墓葬与简文定为战国中期楚墓。"
+      },
+      "script": "楚系简帛书",
+      "background": "The tomb at Guodian near Jingmen yielded more than eight hundred bamboo slips in 1993, carrying eighteen pre-Qin texts including the Laozi, Tai Yi Sheng Shui, Wuxing and Ziyi. The script is typical Chu writing: graceful, slightly tilted, with clear pressure changes. It is primary evidence for Warring States Chu calligraphy and for how slip manuscripts were assembled.",
+      "backgroundZh": "1993年荆门郭店一号楚墓出土，八百余枚竹简，抄录《老子》《太一生水》《五行》《缁衣》等十八篇先秦典籍。字体为典型楚系文字，秀丽欹侧，用笔提按分明，是研究战国楚简书法与简册制度的第一手材料。",
+      "sourceRefs": [
+        "src-jmm-guodian"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. The museum gives both 730 and 731 inscribed slips on different pages.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方不同页面分别记有字简730枚与731枚。"
+      },
+      "notes": [
+        "The museum gives either 730 or 731 inscribed slips on different pages.",
+        "The texts were composed at different times; this record dates only the tomb."
+      ],
+      "notesZh": [
+        "有字简作七百三十枚或七百三十一枚，馆方两处记载不一。",
+        "各篇的成书年代先后不一，本记录只记墓葬时代。"
+      ]
     },
     {
       "id": "gushi-sitie",
@@ -1637,6 +1749,63 @@
         "noteZh": "馆藏著录待编辑复核。"
       },
       "notes": []
+    },
+    {
+      "id": "juyan-hanjian",
+      "titles": {
+        "zh": "居延新简·隧长焦永死驹劾状",
+        "en": "Juyan document on the death of a post-station horse"
+      },
+      "aliases": [
+        "居延汉简",
+        "死驹劾状"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-thepaper-juyan"
+          ],
+          "note": "A frontier office document copied by a clerk; no scribe is named.",
+          "noteZh": "边塞官文书，由书吏抄录，未署名。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-han",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "single",
+        "startYear": 27,
+        "startMonth": null,
+        "endYear": 27,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "东汉光武帝建武三年（27年）",
+        "certainty": "documented",
+        "note": null
+      },
+      "script": "章草",
+      "background": "Found in 1974 at the Jiaqu frontier office in Ejina, this sixteen-slip document of 27 CE records an inquiry into a post-station horse’s death. The whole text is in zhangcao, with swallow-tail exits, each character separate yet the column continuous. It is a model of Han cursive and a direct sample of how frontier offices wrote.",
+      "backgroundZh": "1974年出土于内蒙古额济纳旗甲渠候官遗址，十六简，释读四百余字，记东汉建武三年调查驿马死亡一案。全篇章草，收笔带燕尾，字字独立而气脉贯通，是汉代章草的典范，也是边塞文书书写的实物。",
+      "sourceRefs": [
+        "src-thepaper-juyan"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. Reports differ on the official’s surname in the title.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。报道对所涉人名姓氏的录文不一。"
+      },
+      "notes": [
+        "Reports transcribe the official’s name as either Jiao Yong or Hou Yong; the title here avoids choosing.",
+        "The order of the sixteen slips follows the edited text; the original cords have rotted away."
+      ],
+      "notesZh": [
+        "简主名有“焦永”与“侯永”两种录文，本记录题名不取其一。",
+        "十六简的编连次序依整理本，原编绳已朽。"
+      ]
     },
     {
       "id": "kaicheng-shijing",
@@ -2393,6 +2562,60 @@
       "notes": []
     },
     {
+      "id": "maogong-ding",
+      "titles": {
+        "zh": "毛公鼎",
+        "en": "Mao Gong Ding, the Cauldron of Duke Mao"
+      },
+      "aliases": [],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-npm-maogong"
+          ],
+          "note": "The text records the royal charge to Duke Mao, who had the cauldron cast; the writer is not named.",
+          "noteZh": "铭文记宣王册命毛公、毛公作鼎，书手未署名。"
+        }
+      ],
+      "studyCategory": "bei",
+      "dynastyId": "pre-qin",
+      "dynastyQualifier": "西周",
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "西周·宣王",
+        "original": "西周晚期",
+        "certainty": "approximate",
+        "note": "馆方定为西周晚期，一般系于宣王。"
+      },
+      "script": "金文",
+      "background": "Under King Xuan of Zhou, Duke Mao cast this cauldron to record his charge and the royal gifts. Thirty-two lines and nearly five hundred characters cover the inner wall, the longest bronze inscription known. Dense, grave and strictly built, it is long enough to show the full range of late Western Zhou bronze writing and is often assigned as a model for study.",
+      "backgroundZh": "西周宣王时，毛公作鼎记宣王册命与赏赐，腹内壁铭三十二行、近五百字，是现存铭文最长的青铜器。铭文庄重饱满、结体谨严，篇幅足以呈现西周晚期金文的完整面貌，是金文学习中常被指定为范本的一件。",
+      "sourceRefs": [
+        "src-npm-maogong"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. The museum page gives the full text but not a character count; the record says “near five hundred”.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方页面载全铭而未给字数，本记录作“近五百字”。"
+      },
+      "notes": [
+        "Character counts of 497, 499 and 500 are all in circulation; this record chooses none of them.",
+        "The museum page consulted gives no dimensions, so none are recorded."
+      ],
+      "notesZh": [
+        "字数有四百九十七、四百九十九、五百字三说，本记录不取一说。",
+        "馆方页面未列尺寸，本记录不填。"
+      ]
+    },
+    {
       "id": "meixuexuan-buziqi",
       "titles": {
         "zh": "梅雪轩书晦翁不自弃文",
@@ -2732,6 +2955,63 @@
         "馆方记九行八十六字，书体作「草隶书」；本记录照录，不改称章草或草书。",
         "自宋内府至 1956 年的递藏依馆方段落概述；该段未给中间各家系年。",
         "本记录不主张书写年份：馆方只系于西晋，未给具体年。"
+      ]
+    },
+    {
+      "id": "san-shi-pan",
+      "titles": {
+        "zh": "散氏盘",
+        "en": "San Shi Pan, the Pan of the San Clan"
+      },
+      "aliases": [
+        "散盘",
+        "夨人盘"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-npm-sanpan"
+          ],
+          "note": "The inscription records a land settlement between the Ze and San states; no writer is named.",
+          "noteZh": "铭文记夨、散两国割田立契，未署书手。"
+        }
+      ],
+      "studyCategory": "bei",
+      "dynastyId": "pre-qin",
+      "dynastyQualifier": "西周",
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "西周·厉王",
+        "original": "西周晚期",
+        "certainty": "approximate",
+        "note": "馆方定为西周晚期（公元前9至8世纪），一般系于厉王。"
+      },
+      "script": "金文",
+      "background": "In the late Western Zhou, the Ze state compensated San with land after an attack. The inscription records the boundaries, the oaths and a map in just over 350 characters. Its writing is restless and oblique, each character tilted into a new posture, and has been praised as the extreme of seal script. Set beside the grave Mao Gong Ding, it shows two faces of late Western Zhou bronze writing.",
+      "backgroundZh": "西周晚期，夨国侵散国后割田赔偿，铭文记定界、盟誓与地图，三百五十余字。书风奇逸跳宕，结字欹侧而姿态横生，被推为篆书的极致；与《毛公鼎》的庄重对读，可见西周晚期金文的两种面貌。",
+      "sourceRefs": [
+        "src-npm-sanpan"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. Character counts differ between the museum page and other publications.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方页面与其他出版物所记字数不一。"
+      },
+      "notes": [
+        "The count is given as either 350 or 357 characters; the museum page says 350.",
+        "The vessel is conventionally called after the San clan, while the text names both San and Ze; the naming and clan relations are still discussed."
+      ],
+      "notesZh": [
+        "字数有三百五十字与三百五十七字两说，馆方页面作三百五十字。",
+        "器名旧称“散氏盘”，铭文自称“散”“夨”，定名与族属仍有讨论。"
       ]
     },
     {
@@ -3435,6 +3715,63 @@
       ]
     },
     {
+      "id": "shiqiang-pan",
+      "titles": {
+        "zh": "史墙盘",
+        "en": "Shi Qiang Pan, the Qiang Basin"
+      },
+      "aliases": [
+        "墙盘"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-bjqtm-shiqiang"
+          ],
+          "note": "The basin was made by Qiang, a scribe of the Wei clan; the writer is not named.",
+          "noteZh": "作器者为微氏史官墙，书手未署名。"
+        }
+      ],
+      "studyCategory": "bei",
+      "dynastyId": "pre-qin",
+      "dynastyQualifier": "西周",
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "西周·恭王",
+        "original": "西周恭王时期",
+        "certainty": "approximate",
+        "note": "铭文所记周王止于穆王，学界定为恭王时器。"
+      },
+      "script": "金文",
+      "background": "Under King Gong of Zhou, the scribe Qiang of the Wei clan made this basin. Its inner base carries eighteen lines and 284 characters: the first half praises the kings from Wen to Mu, the second records six generations of the Wei family. Evenly spaced and fluently written, it represents the shift from the vigorous early Western Zhou manner to a more ordered middle-period style.",
+      "backgroundZh": "西周恭王时，微氏史官墙作盘，内底铸铭十八行二百八十四字，前半颂文、武、成、康、昭、穆及恭王，后半记微氏六代家史。铭文排列整齐、笔势流畅，是西周中期金文由雄浑转向整饬的代表，也是研究西周史与微氏家族的第一手材料。",
+      "sourceRefs": [
+        "src-bjqtm-shiqiang",
+        "src-cssn-shiqiang"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. The date is a scholarly assignment, not a recorded year.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。时代为学界推定，铭文未记王年。"
+      },
+      "notes": [
+        "The family history can be read against the Shiji, but the original fief of the Wei clan remains disputed.",
+        "The attribution to King Gong rests on the king list, not on a royal name in the text."
+      ],
+      "notesZh": [
+        "铭文所记家史可与《史记》对读，但微氏高祖的封地仍有异说。",
+        "盘铭的“恭王”为学界据世系推定，铭文本身未书王名。"
+      ]
+    },
+    {
       "id": "shitai-xiaojing",
       "titles": {
         "zh": "石台孝经",
@@ -3496,6 +3833,62 @@
       ],
       "notesZh": [
         "页面未记字数，也未记刻石现状。"
+      ]
+    },
+    {
+      "id": "shuihudi-qinjian",
+      "titles": {
+        "zh": "睡虎地秦简",
+        "en": "Shuihudi Qin Slips"
+      },
+      "aliases": [
+        "云梦秦简"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-hbww-shuihudi"
+          ],
+          "note": "The slips were written by local clerks; no individual scribe is recorded.",
+          "noteZh": "简册出自基层吏员之手，未记书手姓名。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "qin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "战国晚期至秦",
+        "original": "战国晚期至秦始皇时期",
+        "certainty": "approximate",
+        "note": "简文写于战国晚期及秦始皇时期。"
+      },
+      "script": "秦隶",
+      "background": "Tomb 11 at Shuihudi in Yunmeng yielded more than 1,100 bamboo slips in 1975, mostly Qin statutes and official documents written in ink in Qin clerical script. Strokes are short and straight, forms broad and slightly seal-like: the script stands at the point where seal turns into clerical. Read beside Han stone inscriptions, it shows the natural movement of the brush that carving flattens.",
+      "backgroundZh": "1975年云梦睡虎地十一号秦墓出土，一千一百余枚竹简，多为秦律与官文书，墨书秦隶。笔画短直、结体扁方，还带篆意，正处在篆书向隶书转变的关口；与汉代石刻隶书对读，能看到毛笔书写的自然笔势。",
+      "sourceRefs": [
+        "src-hbww-shuihudi"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. The museum page gives the slips and script, not the total character count.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方页面记简数与书体，未给总字数。"
+      },
+      "notes": [
+        "The individual texts were copied at different times; this record gives only the broad span.",
+        "The museum page does not set out the office of the tomb occupant Xi or how the slips were bound."
+      ],
+      "notesZh": [
+        "各篇的抄写年代不一，本记录只记简文书写的大致时段。",
+        "墓主“喜”所任职务与简册的编连关系，馆方页面未展开。"
       ]
     },
     {
@@ -4300,6 +4693,63 @@
         "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
       },
       "notes": []
+    },
+    {
+      "id": "wuwei-yili-jian",
+      "titles": {
+        "zh": "武威仪礼简",
+        "en": "Wuwei Slips of the Yili"
+      },
+      "aliases": [
+        "武威汉简",
+        "仪礼简"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-people-yili"
+          ],
+          "note": "The manuscript was copied by several hands; no scribe is named.",
+          "noteZh": "简册出自多人之手，未署书手。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "western-han",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "西汉晚期",
+        "original": "西汉晚期",
+        "certainty": "approximate",
+        "note": "简上有“河平”年号，为西汉成帝年号（前28—前25）。"
+      },
+      "script": "汉隶",
+      "background": "The Wuwei tomb at Mozuizi yielded 469 slips in 1959, carrying nine chapters of the Yili in mature Han clerical script. Flat forms, silkworm-head and swallow-tail strokes, and generous spacing make it a model of Western Han manuscript clerical script. Set beside the carved Xiping stone classics, it shows what the brush does that the chisel does not.",
+      "backgroundZh": "1959年武威磨嘴子汉墓出土，四百六十九枚，抄录《仪礼》九篇，墨书成熟汉隶。结体扁平、蚕头燕尾，字距疏朗，是汉代写本隶书的典范；与《熹平石经》的刻隶对读，可见墨迹与刻石的不同。",
+      "sourceRefs": [
+        "src-people-yili"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. The count and dimensions follow a news feature because no museum object page was found.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。未见馆方藏品页，枚数与尺寸依报刊报道。"
+      },
+      "notes": [
+        "No museum object page was found; the count, character total and dimensions follow a news report.",
+        "Several hands copied the manuscript; the differences between chapters await a sheet-by-sheet comparison."
+      ],
+      "notesZh": [
+        "未见馆方藏品页，枚数、字数与尺寸依报刊报道。",
+        "抄写出自多人之手，各篇笔迹差异待逐篇比对。"
+      ]
     },
     {
       "id": "xianyu-huang-bei",
@@ -5527,6 +5977,62 @@
       "notes": []
     },
     {
+      "id": "zhongshan-wang-cuo-ding",
+      "titles": {
+        "zh": "中山王厝鼎",
+        "en": "Ding of King Cuo of Zhongshan"
+      },
+      "aliases": [
+        "中山王铁足铜鼎"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-hebei-zhongshan"
+          ],
+          "note": "The inscription is King Cuo’s charge; the writer or engraver is not named.",
+          "noteZh": "铭文为中山王厝的告诫之辞，书刻者未署名。"
+        }
+      ],
+      "studyCategory": "bei",
+      "dynastyId": "pre-qin",
+      "dynastyQualifier": "战国",
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "战国·中山",
+        "original": "战国",
+        "certainty": "approximate",
+        "note": "1977年平山县中山王墓出土，同出器物属中山王厝时期。"
+      },
+      "script": "中山篆（金文）",
+      "background": "From the tomb of King Cuo of Zhongshan comes this cauldron, its outer wall cut with seventy-seven lines and 469 characters. The text praises the minister Sima Zhou for the campaign against Yan and warns the heir; it is the longest Warring States bronze inscription. Tall, slender characters with sharp entries and exits give the script a strong decorative force, and it stands apart from other Warring States bronze writing as “Zhongshan seal script”.",
+      "backgroundZh": "战国中山王厝墓出土，外壁刻铭七十七行四百六十九字，记相邦司马赒伐燕之功与对后嗣的告诫，是战国铭文最长的铜器。字形修长、线条尖入尖出，装饰性强，被称为“中山篆”，在战国金文中独树一帜。",
+      "sourceRefs": [
+        "src-hebei-zhongshan"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. Whether the text was cast or cut is still debated.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。铭文是铸是刻，学界尚无定论。"
+      },
+      "notes": [
+        "Whether the text was cast or cut is still debated.",
+        "The three Zhongshan vessels are counted at either 1,123 or 1,124 characters in total; this record gives only the 469 on this cauldron."
+      ],
+      "notesZh": [
+        "铭文是铸是刻，学界尚无定论。",
+        "中山三器铭文总字数有1123字与1124字两说，本篇只记此鼎的469字。"
+      ]
+    },
+    {
       "id": "zhu-santi",
       "titles": {
         "zh": "三体杂书诗卷",
@@ -5617,6 +6123,63 @@
         "noteZh": "馆藏著录待编辑复核。"
       },
       "notes": []
+    },
+    {
+      "id": "zoumalou-wujian",
+      "titles": {
+        "zh": "走马楼吴简·嘉禾吏民田家莂",
+        "en": "Zoumalou Wu slips, Jiahe field-tax records"
+      },
+      "aliases": [
+        "走马楼吴简",
+        "田家莂"
+      ],
+      "attribution": [
+        {
+          "role": "unknown",
+          "name": "未署名",
+          "nameEn": "Unrecorded",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-csjd-tianjia"
+          ],
+          "note": "Tax records written by local clerks; no scribe is named.",
+          "noteZh": "赋税簿籍由基层书吏书写，未署名。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "three-kingdoms",
+      "dynastyQualifier": "孙吴",
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "孙吴·嘉禾",
+        "original": "三国吴嘉禾年间（232—238年）",
+        "certainty": "documented",
+        "note": "嘉禾为孙权年号，简文自记年份。"
+      },
+      "script": "吴简隶楷",
+      "background": "More than 100,000 Sun Wu slips came from a well at Zoumalou in Changsha in 1996. Among them the Jiahe field-tax records are large wooden tablets about fifty centimetres long, listing each household’s rented land, tax and payments. Clerical forms have not yet gone and regular-script habits are appearing: square, firm characters that show the clerical-to-regular change inside everyday administration.",
+      "backgroundZh": "1996年长沙走马楼出土十万余枚孙吴简牍，其中“嘉禾吏民田家莂”是长约五十厘米的大木简，逐户记录佃田、赋税与缴纳。隶意未退而楷法渐生，结体方整、笔画峻利，是观察隶楷之变在民间文书中的样本。",
+      "sourceRefs": [
+        "src-csjd-tianjia"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft added in the 2026-11 bronze and slip expansion. The source describes the document type, not a single item’s full transcription.",
+        "noteZh": "2026 年 11 月金文与简牍增补草稿。来源介绍的是这一类文书，不是单件简的完整释文。"
+      },
+      "notes": [
+        "The museum page does not give the total number of these tablets; this record describes only their form and content.",
+        "Full transcriptions and the order of the large tablets await the edited corpus."
+      ],
+      "notesZh": [
+        "田家莂的总数，馆方页面未给出，本记录只记形制与内容。",
+        "大木简的完整释文与编连，需查整理本。"
+      ]
     }
   ],
   "objects": [
@@ -5670,6 +6233,264 @@
       "notesZh": [
         "全卷其余部分的下落，馆方说明只称本册为劫余，未记去向。",
         "馆方定年为约 738 年，具体书写年月未记。"
+      ]
+    },
+    {
+      "id": "bronze-dayu-ding",
+      "workId": "dayu-ding",
+      "objectType": "bronze-vessel",
+      "titles": {
+        "zh": "大盂鼎",
+        "en": "Da Yu Ding"
+      },
+      "productionDate": {
+        "kind": "single",
+        "startYear": -1003,
+        "startMonth": null,
+        "endYear": -1003,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "西周康王二十三年（公元前1003年）",
+        "certainty": "documented",
+        "note": null
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "通高101.9厘米，口径77.8厘米，重153.5千克",
+        "note": "器壁较厚，立耳微外撇，垂腹，三蹄足。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-national-museum",
+        "sourceRefs": [
+          "src-chnmuseum-dayuding"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum records the 1951 Pan family donation to the Shanghai Museum and the 1959 accession into the Museum of Chinese History.",
+        "noteZh": "馆方记1951年潘氏后人捐赠上海博物馆，1959年入藏中国历史博物馆。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The findspot differs between the museum’s pages, so it is not asserted.",
+        "noteZh": "实物草稿。馆方不同页面所记出土地不一，本记录不作断言。"
+      },
+      "notes": [
+        "The findspot is given as either Li village in Mei county or Qishan.",
+        "Before accession the museum records only the Pan family donation and the 1959 transfer."
+      ],
+      "notesZh": [
+        "出土地有郿县礼村与岐山两说。",
+        "入藏前的递藏，馆方只记潘氏捐赠与1959年调拨。"
+      ]
+    },
+    {
+      "id": "bronze-maogong-ding",
+      "workId": "maogong-ding",
+      "objectType": "bronze-vessel",
+      "titles": {
+        "zh": "毛公鼎",
+        "en": "Mao Gong Ding"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "西周晚期",
+        "original": "西周晚期",
+        "certainty": "approximate",
+        "note": null
+      },
+      "catalogNumber": null,
+      "dimensions": null,
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-taipei-palace",
+        "sourceRefs": [
+          "src-npm-maogong"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum antique record holds the vessel and the full inscription.",
+        "noteZh": "馆方铜器著录收此器与全铭。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. No dimensions were read from the museum record.",
+        "noteZh": "实物草稿。未从馆方著录读到尺寸。"
+      },
+      "notes": [
+        "Dimensions and weight are not filled from the museum record.",
+        "The inscription is counted at 497, 499 or 500 characters."
+      ],
+      "notesZh": [
+        "尺寸与重量未据馆方著录填写。",
+        "铭文字数有497、499、500字三说。"
+      ]
+    },
+    {
+      "id": "bronze-san-shi-pan",
+      "workId": "san-shi-pan",
+      "objectType": "bronze-vessel",
+      "titles": {
+        "zh": "散氏盘（散盘）",
+        "en": "San Shi Pan"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "西周晚期",
+        "original": "西周晚期（公元前9—8世纪）",
+        "certainty": "approximate",
+        "note": null
+      },
+      "catalogNumber": "故銅002376N000000000",
+      "dimensions": {
+        "raw": "通高20.6厘米，口径54.6厘米，底径41.4厘米，腹深9.8厘米",
+        "note": "圆形浅腹，双附耳，高圈足。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-taipei-palace",
+        "sourceRefs": [
+          "src-npm-sanpan"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum catalogue records the vessel number and the inscription.",
+        "noteZh": "馆方著录记文物统一编号与铭文。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The museum counts 350 characters; other publications give 357.",
+        "noteZh": "实物草稿。馆方记350字，其他出版物作357字。"
+      },
+      "notes": [
+        "The inscription is counted at either 350 or 357 characters.",
+        "Older accounts place the find in Fengxiang, Shaanxi; the museum page does not give a findspot."
+      ],
+      "notesZh": [
+        "铭文字数有350字与357字两说。",
+        "出土地旧说在陕西凤翔，馆方页面未记出土地点。"
+      ]
+    },
+    {
+      "id": "bronze-shiqiang-pan",
+      "workId": "shiqiang-pan",
+      "objectType": "bronze-vessel",
+      "titles": {
+        "zh": "史墙盘",
+        "en": "Shi Qiang Pan"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "西周·恭王",
+        "original": "西周恭王时期",
+        "certainty": "approximate",
+        "note": null
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "通高16.2厘米，口径47.3厘米，深8.6厘米，重12.45千克",
+        "note": "盘腹外附双耳，腹部饰垂冠分尾凤鸟纹。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-baoji-bronze-museum",
+        "sourceRefs": [
+          "src-cssn-shiqiang",
+          "src-bjqtm-shiqiang"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "Both sources place the basin in the Baoji Bronze Ware Museum.",
+        "noteZh": "两处来源均记此盘藏宝鸡青铜器博物院。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The date is a scholarly assignment to King Gong.",
+        "noteZh": "实物草稿。时代为学界推定为恭王。"
+      },
+      "notes": [
+        "The museum pages do not record any conservation after excavation.",
+        "How the Wei lineage in the inscription maps onto received texts is still discussed."
+      ],
+      "notesZh": [
+        "出土后是否经过修复，馆方页面未记。",
+        "盘铭所记微氏世系与传世文献的对应，仍有讨论。"
+      ]
+    },
+    {
+      "id": "bronze-zhongshan-cuo-ding",
+      "workId": "zhongshan-wang-cuo-ding",
+      "objectType": "bronze-vessel",
+      "titles": {
+        "zh": "中山王厝铁足铜鼎",
+        "en": "Iron-legged bronze ding of King Cuo of Zhongshan"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "战国·中山",
+        "original": "战国",
+        "certainty": "approximate",
+        "note": null
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "高51.5厘米",
+        "note": "铜身铁足，战国中山王墓出土九鼎中的首鼎。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-hebei-museum",
+        "sourceRefs": [
+          "src-hebei-zhongshan"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum records the 1977 excavation and the 469-character inscription.",
+        "noteZh": "馆方记1977年出土与469字铭文。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The object is the vessel, not a rubbing.",
+        "noteZh": "实物草稿。此处登记铜器原器，不是拓本。"
+      },
+      "notes": [
+        "Whether the inscription was cast or cut is still debated.",
+        "The museum page does not set out how the iron legs were joined to the bronze body."
+      ],
+      "notesZh": [
+        "铭文是铸是刻，学界尚无定论。",
+        "铁足与铜身的接合工艺，馆方页面未展开。"
       ]
     },
     {
@@ -8574,6 +9395,261 @@
       "notesZh": [
         "未记关系：馆方著录未指明所自拓的刻石或木板，故不设推定的母本。",
         "馆方定为拓本；所读字段未描述纸张、装裱与鉴藏印。"
+      ]
+    },
+    {
+      "id": "slips-guodian",
+      "workId": "guodian-chujian",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "郭店楚简（《老子》甲、乙、丙）",
+        "en": "Guodian Chu slips, Laozi A, B and C"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "战国中期",
+        "original": "战国中期",
+        "certainty": "approximate",
+        "note": null
+      },
+      "catalogNumber": null,
+      "dimensions": null,
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-jingmen-museum",
+        "sourceRefs": [
+          "src-jmm-guodian"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum records the 1993 rescue excavation and the corpus of 804 slips.",
+        "noteZh": "馆方记1993年抢救性发掘与804枚竹简。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. Dimensions of the slips were not read from a museum page.",
+        "noteZh": "实物草稿。简的尺寸未从馆方页面读到。"
+      },
+      "notes": [
+        "The museum page does not give the slip dimensions or how the three Laozi groups were bound.",
+        "The inscribed slips are counted at either 730 or 731."
+      ],
+      "notesZh": [
+        "简的尺寸与《老子》三组的编连，馆方页面未展开。",
+        "有字简记作730枚或731枚。"
+      ]
+    },
+    {
+      "id": "slips-juyan-jiaoyong",
+      "workId": "juyan-hanjian",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "居延新简·隧长焦永死驹劾状",
+        "en": "Juyan document on the death of a post-station horse"
+      },
+      "productionDate": {
+        "kind": "single",
+        "startYear": 27,
+        "startMonth": null,
+        "endYear": 27,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": "东汉光武帝建武三年（27年）",
+        "certainty": "documented",
+        "note": null
+      },
+      "catalogNumber": "EPF22:186-201",
+      "dimensions": {
+        "raw": "十六简，长21.2—23厘米，宽0.9—1.1厘米",
+        "note": "木质，除一简略有残蚀外，墨迹清晰。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-gansu-slips-museum",
+        "sourceRefs": [
+          "src-thepaper-juyan"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The exhibition report records the slip numbers and the holding.",
+        "noteZh": "展览报道记简号与收藏机构。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The official’s name is transcribed differently across reports.",
+        "noteZh": "实物草稿。报道对所涉人名姓氏的录文不一。"
+      },
+      "notes": [
+        "The official’s name is transcribed as either Jiao Yong or Hou Yong.",
+        "The original binding is lost; the present order follows the edited text."
+      ],
+      "notesZh": [
+        "简主名有“焦永”与“侯永”两种录文。",
+        "十六简的原编连已失，今次序依整理本。"
+      ]
+    },
+    {
+      "id": "slips-shuihudi",
+      "workId": "shuihudi-qinjian",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "睡虎地秦简",
+        "en": "Shuihudi Qin slips"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "战国晚期至秦",
+        "original": "战国晚期至秦始皇时期",
+        "certainty": "approximate",
+        "note": null
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "简长23.1—27.8厘米，宽0.3—0.7厘米，厚0.25厘米",
+        "note": "竹简1155枚，另有残片80片。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-hubei-museum",
+        "sourceRefs": [
+          "src-hbww-shuihudi"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum survey records the tomb, the slip count and the script.",
+        "noteZh": "馆方综述记墓葬、简数与书体。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The total character count is not in the museum page used.",
+        "noteZh": "实物草稿。所据馆方页面未给总字数。"
+      },
+      "notes": [
+        "The chapters were copied at different times, and their binding order awaits the edited corpus."
+      ],
+      "notesZh": [
+        "各篇抄写年代不一，编连次序需查整理本。"
+      ]
+    },
+    {
+      "id": "slips-wuwei-yili",
+      "workId": "wuwei-yili-jian",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "武威《仪礼》简（甲本）",
+        "en": "Wuwei Yili slips, text A"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "西汉晚期",
+        "original": "西汉晚期",
+        "certainty": "approximate",
+        "note": "简上有“河平”年号。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "每简长约50.5—56.5厘米，宽约0.75厘米",
+        "note": "甲本木简398枚，存《士相见》至《泰射》七篇。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-gansu-museum",
+        "sourceRefs": [
+          "src-people-yili"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The feature records the 1959 excavation and the holding in the Gansu Provincial Museum.",
+        "noteZh": "报道记1959年出土与甘肃省博物馆收藏。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. No museum object page was found; the data follows a news feature.",
+        "noteZh": "实物草稿。未见馆方藏品页，数据依报刊报道。"
+      },
+      "notes": [
+        "The report gives 469 slips in total and 398 in text A; the fascicle numbers await the edited corpus.",
+        "Several hands copied the chapters; the differences await a sheet-by-sheet comparison."
+      ],
+      "notesZh": [
+        "报道记总469枚、甲本398枚；各篇分册与编号需查整理本。",
+        "各篇抄手不同，笔迹差异待逐篇比对。"
+      ]
+    },
+    {
+      "id": "slips-zoumalou-tianjia",
+      "workId": "zoumalou-wujian",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "走马楼吴简·嘉禾吏民田家莂",
+        "en": "Zoumalou Wu field-tax tablets"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "孙吴·嘉禾",
+        "original": "三国吴嘉禾年间（232—238年）",
+        "certainty": "documented",
+        "note": null
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "大木简，长约50厘米",
+        "note": "比一般竹简长一倍，逐户记录佃田与赋税。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-changsha-slips-museum",
+        "sourceRefs": [
+          "src-csjd-tianjia"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum explainer records the form and the 1996 excavation.",
+        "noteZh": "馆方说明记形制与1996年出土。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The source describes the document type rather than one catalogued tablet.",
+        "noteZh": "实物草稿。来源介绍的是文书类型，不是单件编号。"
+      },
+      "notes": [
+        "The museum page gives neither the total number of tablets nor individual numbers.",
+        "Full transcriptions and the order of the tablets await the edited corpus."
+      ],
+      "notesZh": [
+        "田家莂的总数与单件编号，馆方页面未给出。",
+        "大木简的完整释文与编连，需查整理本。"
       ]
     },
     {
@@ -13137,6 +14213,25 @@
   ],
   "places": [
     {
+      "id": "place-baoji-bronze-museum",
+      "names": {
+        "zh": "宝鸡青铜器博物院",
+        "en": "Baoji Bronze Ware Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-bjqtm-shiqiang"
+      ],
+      "notes": [
+        "The museum pages give no street address or point; no coordinate is recorded."
+      ],
+      "notesZh": [
+        "馆方页面没有给出地址或点位，本记录不设坐标。"
+      ]
+    },
+    {
       "id": "place-beihai-yuegu",
       "names": {
         "zh": "北海公园阅古楼",
@@ -13196,6 +14291,25 @@
       ]
     },
     {
+      "id": "place-changsha-slips-museum",
+      "names": {
+        "zh": "长沙简牍博物馆",
+        "en": "Changsha Bamboo Slips Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-csjd-tianjia"
+      ],
+      "notes": [
+        "The museum page gives no street address or point; no coordinate is recorded."
+      ],
+      "notesZh": [
+        "馆方页面没有给出地址或点位，本记录不设坐标。"
+      ]
+    },
+    {
       "id": "place-chengxian-xixia",
       "names": {
         "zh": "西狭颂摩崖（成县）",
@@ -13212,6 +14326,44 @@
       ],
       "notesZh": [
         "县政府页面记摩崖在成县县城以西约 13 公里的鱼窍峡、西狭颂景区内，未给出坐标。"
+      ]
+    },
+    {
+      "id": "place-gansu-museum",
+      "names": {
+        "zh": "甘肃省博物馆",
+        "en": "Gansu Provincial Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-people-yili"
+      ],
+      "notes": [
+        "The news feature names the holding but gives no address or point; no coordinate is recorded."
+      ],
+      "notesZh": [
+        "报道只记收藏机构，未给地址或点位，本记录不设坐标。"
+      ]
+    },
+    {
+      "id": "place-gansu-slips-museum",
+      "names": {
+        "zh": "甘肃简牍博物馆",
+        "en": "Gansu Bamboo Slips Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-thepaper-juyan"
+      ],
+      "notes": [
+        "The exhibition report names the holding but gives no address or point; no coordinate is recorded."
+      ],
+      "notesZh": [
+        "展览报道只记收藏机构，未给地址或点位，本记录不设坐标。"
       ]
     },
     {
@@ -13233,6 +14385,44 @@
       "notesZh": [
         "由古汉台、拜将坛、饮马池三处遗址组成，石门十三品在专室陈列。",
         "未记录坐标：所引报道介绍博物馆，但没有实测点位。"
+      ]
+    },
+    {
+      "id": "place-hebei-museum",
+      "names": {
+        "zh": "河北博物院",
+        "en": "Hebei Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-hebei-zhongshan"
+      ],
+      "notes": [
+        "The museum page gives no street address or point; no coordinate is recorded."
+      ],
+      "notesZh": [
+        "馆方页面没有给出地址或点位，本记录不设坐标。"
+      ]
+    },
+    {
+      "id": "place-hubei-museum",
+      "names": {
+        "zh": "湖北省博物馆",
+        "en": "Hubei Provincial Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-hbww-shuihudi"
+      ],
+      "notes": [
+        "The museum page gives no street address or point; no coordinate is recorded."
+      ],
+      "notesZh": [
+        "馆方页面没有给出地址或点位，本记录不设坐标。"
       ]
     },
     {
@@ -13305,6 +14495,25 @@
       "notesZh": [
         "祠内唐碑亭（贞观宝翰亭）并立唐贞观原碑与清乾隆三十七年摹刻。",
         "本轮未记录坐标：所引访谈没有给出点位。"
+      ]
+    },
+    {
+      "id": "place-jingmen-museum",
+      "names": {
+        "zh": "荆门市博物馆",
+        "en": "Jingmen Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-jmm-guodian"
+      ],
+      "notes": [
+        "The museum pages give no street address or point; no coordinate is recorded."
+      ],
+      "notesZh": [
+        "馆方页面没有给出地址或点位，本记录不设坐标。"
       ]
     },
     {
@@ -14204,6 +15413,17 @@
       "note": null
     },
     {
+      "id": "src-bjqtm-shiqiang",
+      "kind": "web",
+      "title": "宝博微课堂｜周原的世家大族——微氏家族（上）",
+      "publisher": "宝鸡青铜器博物院 Baoji Bronze Ware Museum",
+      "url": "https://www.bjqtm.com/?p=5143",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "记1976年扶风庄白一号窖藏、墙盘内铸铭文284字、作器者墙为微氏第六代史官",
+      "note": "Museum educational article. It gives the inscription and the family history but no dimensions."
+    },
+    {
       "id": "src-catalogue-boyuan",
       "kind": "web",
       "title": "伯远帖",
@@ -14479,6 +15699,17 @@
       "note": "A press report of the museum's own exhibition; it does not give an accession number."
     },
     {
+      "id": "src-chnmuseum-dayuding",
+      "kind": "web",
+      "title": "“盂”青铜鼎",
+      "publisher": "中国国家博物馆 National Museum of China",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247375.shtml",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "记周康王时期、通高101.9厘米、口径77.8厘米、重153.5千克、腹内壁铭文19行291字，以及1959年入藏中国历史博物馆",
+      "note": "Museum collection entry. It gives two different findspots across its own pages (郿县礼村 here, 岐山 in the exhibition feature), so the record does not assert a county."
+    },
+    {
       "id": "src-chnmuseum-langya-dimensions",
       "kind": "web",
       "title": "石刻砖瓦",
@@ -14589,6 +15820,17 @@
       "note": "Museum article. Each entry states the holding institution 曲阜汉魏碑刻陈列馆, the date, and the line count."
     },
     {
+      "id": "src-csjd-tianjia",
+      "kind": "web",
+      "title": "吴简｜三国农民的纳税凭证——嘉禾吏民田家莂",
+      "publisher": "长沙简牍博物馆 Changsha Bamboo Slips Museum",
+      "url": "https://www.chinajiandu.cn/News/Details/zhshkp?nid=1660",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "记1996年走马楼出土十万余枚吴简、嘉禾吏民田家莂为大木简、长度在50厘米左右、嘉禾为孙权年号232—238年",
+      "note": "Museum explainer for one object type in the Zoumalou corpus. It gives the form and content, not a full corpus count for the 田家莂 alone."
+    },
+    {
       "id": "src-csjypt-lushan",
       "kind": "web",
       "title": "李邕为《麓山寺碑》撰文并书",
@@ -14609,6 +15851,17 @@
       "accessedAt": "2026-11-18",
       "locator": "Paragraph on 汉中市博物馆",
       "note": "States that 石门颂 is a 建和二年 (148) text by 汉中太守王升 praising 杨孟文, and that the cliff inscriptions were moved to the museum in 1970."
+    },
+    {
+      "id": "src-cssn-shiqiang",
+      "kind": "web",
+      "title": "史墙盘",
+      "publisher": "中国社会科学网 China Social Sciences Press",
+      "url": "https://cssn.cn/skgz/bwyc/202212/t20221228_5574599.shtml",
+      "publicationDate": "2022-12-28",
+      "accessedAt": "2026-11-25",
+      "locator": "记史墙盘通高16.2厘米、口径47.3厘米、深8.6厘米、重12.45千克，盘内底18行284字，现藏宝鸡青铜器博物院",
+      "note": "A scholarly news feature that states the dimensions and holding. Used with the museum article for the inscription and date."
     },
     {
       "id": "src-cupl-shitai",
@@ -15029,6 +16282,28 @@
       "note": "A newspaper feature used for the recutting report and the art-historical assessment. It is not an institutional catalogue and gives no recutting year."
     },
     {
+      "id": "src-hbww-shuihudi",
+      "kind": "web",
+      "title": "湖北简牍地理，一窥湖北简牍之风采！",
+      "publisher": "湖北省博物馆 Hubei Provincial Museum",
+      "url": "https://m-www.hbww.org.cn/p/8892.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "睡虎地秦简条：1975年云梦睡虎地出土、竹简1155枚（另有残片80片）、长23.1—27.8厘米、宽0.3—0.7厘米、字体秦隶、湖北省博物馆收藏",
+      "note": "Museum survey page. It gives the slip dimensions and the script classification; the character count and the tomb occupant are not given here."
+    },
+    {
+      "id": "src-hebei-zhongshan",
+      "kind": "web",
+      "title": "中山王 铁足铜鼎",
+      "publisher": "河北博物院 Hebei Museum",
+      "url": "https://www.hebeimuseum.org.cn/shida/tongding.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "记战国、1977年平山县三汲村中山王墓出土、高51.5厘米、外壁铭文77行469字，并称铭文字体修长秀丽",
+      "note": "Museum object page. It identifies the inscription as the longest among Warring States bronzes."
+    },
+    {
       "id": "src-hunan-wuxi",
       "kind": "web",
       "title": "浯溪碑林",
@@ -15093,6 +16368,17 @@
       "accessedAt": "2026-11-23",
       "locator": "Entry for 414: dimensions, four-face inscription, 44 lines and 1,775 characters, and the 1961 designation.",
       "note": "A provincial gazetteer entry. It gives 1,590 legible characters and the 1961 designation with 洞沟古墓群."
+    },
+    {
+      "id": "src-jmm-guodian",
+      "kind": "web",
+      "title": "央视《简牍探中华》聚焦郭店楚简，探秘“神州第一书”",
+      "publisher": "荆门市博物馆 Jingmen Museum",
+      "url": "https://www.jmmuseum.com/Social/detail/id/3967.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "记1993年郭店村战国楚墓出土、804枚竹简、有字简731枚、书写超13000字、含最早《老子》抄本与《太一生水》",
+      "note": "Museum news article. A second museum page gives 730 inscribed slips; the record does not choose between 730 and 731."
     },
     {
       "id": "src-laizhou-yunfeng",
@@ -15238,6 +16524,17 @@
       "note": null
     },
     {
+      "id": "src-npm-maogong",
+      "kind": "web",
+      "title": "毛公鼎",
+      "publisher": "國立故宮博物院 National Palace Museum",
+      "url": "https://digitalarchive.npm.gov.tw/Antique/Content?uid=1438&Dept=U",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "器名、時代與腹內紀事銘文全文；館方著錄為西周晚期，銘文三十餘行",
+      "note": "Museum object page with the full inscription. It does not print the character count in the catalogue data shown here, so the record says “近五百字”."
+    },
+    {
       "id": "src-npm-nongfang",
       "kind": "web",
       "title": "宋徽宗詩帖 卷",
@@ -15247,6 +16544,17 @@
       "accessedAt": "2026-11-24",
       "locator": "品名、書體、釋文與說明：瘦金書、朱絲欄、字大近五寸、傳世徽宗書跡最大者",
       "note": "Museum digital archive entry. It does not give dimensions or a writing year."
+    },
+    {
+      "id": "src-npm-sanpan",
+      "kind": "web",
+      "title": "散盤",
+      "publisher": "國立故宮博物院 National Palace Museum",
+      "url": "https://digitalarchive.npm.gov.tw/Antique/Content?uid=1462&Dept=U",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "器名、時代、尺寸與說明：西周晚期、通高20.6公分、口徑54.6公分、底徑41.4公分、腹深9.8公分、銘文350字，並評其書風「奇逸跳宕」",
+      "note": "Museum object page. It gives 350 characters where other publications give 357; the record says “三百五十余字” and notes both readings."
     },
     {
       "id": "src-people-longzang",
@@ -15269,6 +16577,17 @@
       "accessedAt": "2026-11-23",
       "locator": "Section 玉版十三行, 其珍比玉昂.",
       "note": "A newspaper feature; it states the carving history and the present holding, but gives no accession number or stone measurement."
+    },
+    {
+      "id": "src-people-yili",
+      "kind": "web",
+      "title": "武威《仪礼》简：天下第一简",
+      "publisher": "人民网 People’s Daily Online",
+      "url": "https://culture.people.com.cn/n/2015/1206/c1013-27894041.html",
+      "publicationDate": "2015-12-06",
+      "accessedAt": "2026-11-25",
+      "locator": "记1959年磨嘴子汉墓出土469枚、27298字、每简长约50.5—56.5厘米、汉代隶书、现藏甘肃省博物馆",
+      "note": "A news feature quoting the excavation and holding. It is used for the count, dimensions and script; the museum has no object page for the corpus."
     },
     {
       "id": "src-pingdu-tianzhu",
@@ -15467,6 +16786,17 @@
       "accessedAt": "2026-11-18",
       "locator": "Interview with 晋祠博物馆 curator 郭保平: 646 date, 1.95 × 1.2 × 0.27 m, 1203 characters, 984 relocation hypothesis, condition",
       "note": "Government interview transcript. The 984 move is presented by the curator as a likelihood, not a documented fact."
+    },
+    {
+      "id": "src-thepaper-juyan",
+      "kind": "web",
+      "title": "国际博物馆日｜解锁兰州这些博物馆的“镇馆之宝”",
+      "publisher": "澎湃新闻 The Paper",
+      "url": "https://m.thepaper.cn/wap/v3/jsp/newsDetail_forward_12738181",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "甘肃简牍博物馆条：居延新简·隧长侯永死驹劾状，16简、编号EPF22:186-201、长21.2—23厘米、宽0.9—1.1厘米、可释读409字、全篇章草",
+      "note": "An exhibition report that lists the object and its measurements. The name appears as 焦永 in other reports and 侯永 here; the record uses the title without choosing a surname reading."
     },
     {
       "id": "src-thepaper-shiqi",
