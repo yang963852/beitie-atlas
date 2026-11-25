@@ -1,6 +1,6 @@
 # Delivery 043 · 金文与简牍增补
 
-**状态：本地实施与自检完成；待合并与部署。**
+**状态：已合并并部署为标注草稿的预览。** 合并提交 `19d3550`（[PR #49](https://github.com/yang963852/beitie-atlas/pull/49)）；Preview quality checks 与 Publish GitHub Pages preview 均成功。
 
 按业主指示把收录范围从碑帖扩展到金文与简牍。选目与分类理由见 [research/bronze-and-slips-2026-11.md](research/bronze-and-slips-2026-11.md)。
 
@@ -61,6 +61,12 @@
 - `#/work/dayu-ding`：青铜器标签、铭文说明、实物卡与来源正常。
 - `#/work/guodian-chujian`：简牍页正常，书体显示“楚系简帛书”。
 - `#/library`：语料统计为 108 部作品；“青铜器”作为实物类型出现在筛选与条目中。
+
+## 部署与线上验证
+
+- 合并提交 `19d3550`；Pages 工作流 `45517288477` 完成并成功。
+- 线上 https://yang963852.github.io/beitie-atlas/ 返回 200；`#/work/dayu-ding` 显示“大盂鼎 · 前1003年 · 未署名 · 青铜器 · 中国国家博物馆”；`#/library` 统计为 108 部作品。
+- 线上仍是带“内部测试版”标注的预览；正式出版门槛仍拦截全部草稿。
 
 ## 未完成或未验证
 
