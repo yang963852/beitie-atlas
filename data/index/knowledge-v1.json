@@ -2,14 +2,14 @@
   "formatVersion": "beitie-knowledge/1",
   "schemaVersion": 1,
   "counts": {
-    "works": 108,
-    "objects": 117,
-    "places": 45,
-    "sources": 171,
+    "works": 117,
+    "objects": 126,
+    "places": 46,
+    "sources": 184,
     "media": 1,
-    "events": 70,
+    "events": 75,
     "workArticles": 4,
-    "peopleArticles": 7,
+    "peopleArticles": 8,
     "noteArticles": 2,
     "peopleRelations": 1
   },
@@ -823,6 +823,63 @@
       "notes": []
     },
     {
+      "id": "dongshansong",
+      "titles": {
+        "zh": "东山松帖",
+        "en": "Letter on the Dongshan Pines"
+      },
+      "aliases": [],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王献之",
+          "nameEn": "Wang Xianzhi",
+          "personId": "wang-xianzhi",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-dpm-dongshansong"
+          ],
+          "note": "The palace museum lists the leaf under Wang Xianzhi without discussing whether this sheet is a copy.",
+          "noteZh": "故宫以此页列于王献之名下，未讨论此本是否为摹本。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-jin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "东晋",
+        "original": null,
+        "certainty": "documented",
+        "note": "馆方题名系于晋，帖无款署，亦无年款。"
+      },
+      "script": "行草",
+      "background": "A paper leaf in running-cursive, a fragment of a letter with four characters effaced. It carries no signature or colophon. Its seals include the Southern Song Shaoxing interlocking seal and the Palace Library seal, then Ming collectors' seals of Wen Zhengming, Liu Chengxi and Wu Ting and the Qing collector Cao Rong; the Qianlong palace seals and imperial inscription were scraped away. It is recorded in the Xuanhe Calligraphy Catalogue and the Zhongxing guange lu, in Dong Qichang's Rongtai ji, and in Sun Chengze's and An Qi's catalogues, and was engraved in the Yuqingzhai, Xihongtang and Sanxitang modelbooks.",
+      "backgroundZh": "纸本行草，为一通信札的断片，有四字磨灭。无款署与题跋；钤南宋「绍兴」连珠印、「内府书印」，以及明文徵明、刘承禧、吴廷、清曹溶等印，原有清乾隆内府诸印与乾隆题语，已被刮去。宋《宣和书谱》《中兴馆阁录》、明董其昌《容台集》、清孙承泽《庚子消夏记》、安岐《墨缘汇观》著录，刻入明吴廷《馀清斋法帖》、董其昌《戏鸿堂法帖》与清《三希堂法帖》。",
+      "sourceRefs": [
+        "src-dpm-dongshansong"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft from the palace museum collection entry, read on 2026-11-25. The entry gives the inventory number, size, transcription, seals and the modelbooks it was engraved in; it does not date the sheet.",
+        "noteZh": "草稿，依据 2026-11-25 阅读的故宫藏品说明整理。该页给文物号、尺寸、释文、鉴藏印与所刻法帖，未记此页的制作年代。"
+      },
+      "notes": [
+        "The museum does not say whether this leaf is a copy; the record calls it an ink leaf and leaves the question open.",
+        "The inventory number reads 故00002895-1/10; the other leaves of the album and its mounting are not described on this page.",
+        "The four missing characters are marked with boxes by the museum and are not supplied here."
+      ],
+      "notesZh": [
+        "馆方未说明此页是否为摹本，本记录只记墨迹本，不代馆方作判断。",
+        "文物号作「故00002895-1/10」，册中其余各页与装裱未见于此页。",
+        "释文所缺四字，馆方以方框标出，未作补字。"
+      ]
+    },
+    {
       "id": "duobao-ta-bei",
       "titles": {
         "zh": "多宝塔感应碑",
@@ -1072,6 +1129,66 @@
       "notesZh": [
         "作者归属作“传张旭”，本项目未见馆方出版物说明鉴定依据。",
         "卷中字数与尺寸依报刊报道，未据馆方著录复核。"
+      ]
+    },
+    {
+      "id": "hanqie",
+      "titles": {
+        "zh": "寒切帖",
+        "en": "Piercing Cold Letter"
+      },
+      "aliases": [
+        "谢司马帖",
+        "廿七帖"
+      ],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王羲之",
+          "nameEn": "Wang Xizhi",
+          "personId": "wang-xizhi",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-tjbwg-hanqie"
+          ],
+          "note": "The attribution refers to the letter; the museum identifies the scroll as a Tang tracing copy.",
+          "noteZh": "归属指原信，馆方定此卷为唐摹本。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-jin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "东晋",
+        "original": null,
+        "certainty": "documented",
+        "note": "馆方题名系于东晋，帖无年款。"
+      },
+      "script": "草书",
+      "background": "A Tang tracing copy in paper, five columns and fifty-one characters of cursive: Wang Xizhi's reply after receiving two letters, ending with a message for the Marshal Xie. Ming colophons by Dong Qichang and Lou Jian follow the sheet. The museum quotes Xu Bangda, who called it an unmistakable double-outline copy in pale ink, its edges and turns still sharp, in quality not below the Yuanhuan letter.",
+      "backgroundZh": "唐摹本，纸本，草书五行五十一字，是王羲之收到两封来信后的答书，末及「谢司马」。帖后有明董其昌、娄坚等跋。馆方引徐邦达语，称此帖「双钩淡墨帖，极为明显，觚棱转折，备见锋芒，精好亦不在《远宦》之下，是唐摹善本无疑」。",
+      "sourceRefs": [
+        "src-tjbwg-hanqie"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft from the Tianjin Museum collection entry, read on 2026-11-25. The entry supplies the full transcription and the Xu Bangda appraisal; it gives no accession number.",
+        "noteZh": "草稿，依据 2026-11-25 阅读的天津博物馆藏品说明整理。该页载全帖释文与徐邦达评语，未给藏品号。"
+      },
+      "notes": [
+        "The English caption dates Wang Xizhi to 321-379, which differs from the Chinese page and the usual reckoning; those dates are not adopted here.",
+        "The transcription and the count of fifty-one characters follow the museum's Chinese page and have not been collated against another edition.",
+        "The accession number and the mounting measurements are not given on the page."
+      ],
+      "notesZh": [
+        "馆方英文说明将王羲之生卒写作 321—379，与中文页及通行系年不同，本记录不取该组生卒。",
+        "释文与「五十一字」从馆方中文页，未另据他本对校。",
+        "藏品号、引首与拖尾尺寸未见于此页。"
       ]
     },
     {
@@ -1359,6 +1476,61 @@
       ],
       "notesZh": [
         "英文标题为本项目为检索所拟，非来源所用题名。"
+      ]
+    },
+    {
+      "id": "huangting",
+      "titles": {
+        "zh": "黄庭经",
+        "en": "Yellow Court Classic"
+      },
+      "aliases": [],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王羲之",
+          "nameEn": "Wang Xizhi",
+          "personId": "wang-xizhi",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-npm-huangting"
+          ],
+          "note": "The museum lists the album under Wang Xizhi in regular script; the surviving witness is a Song rubbing.",
+          "noteZh": "馆方以楷书列于王羲之名下；存世一本为宋拓。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-jin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "东晋",
+        "original": "晉王羲之",
+        "certainty": "documented",
+        "note": "馆方题名系于晋，未记书写年份。"
+      },
+      "script": "楷书",
+      "background": "Small regular script carrying the text of the Yellow Court Classic. The palace museum holds a Song rubbing in its album of Jin and Tang small regular script: one volume of seven leaves, fourteen panels, in regular script. What is read is a rubbing, not Wang Xizhi's manuscript.",
+      "backgroundZh": "小楷，写《黄庭经》文本。馆方所藏为宋拓《晋唐小楷》册的一种，一册七开，本幅七开十四幅，楷书。所读为拓本，不是王羲之墨迹。",
+      "sourceRefs": [
+        "src-npm-huangting"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft from the palace museum digital archive record, read on 2026-11-25. The record lists the album's seven leaves and its inventory number but no measurement or stone date.",
+        "noteZh": "草稿，依据 2026-11-25 阅读的台北故宫数位典藏著录整理。该页记一册七开与文物编号，未给尺寸与刻石年代。"
+      },
+      "notes": [
+        "The museum gives the transcription and leaf count only; it records no stone, rubbing date or measurement.",
+        "The \"trading for geese\" story does not appear on the cited museum page and is not used here."
+      ],
+      "notesZh": [
+        "馆方只给释文与册页数，未记原石、拓制年份与尺寸。",
+        "「换鹅」一类传说不见于所引馆方页面，本记录不取。"
       ]
     },
     {
@@ -2116,6 +2288,63 @@
       "notes": []
     },
     {
+      "id": "leyilun",
+      "titles": {
+        "zh": "乐毅论",
+        "en": "On Yue Yi"
+      },
+      "aliases": [],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王羲之",
+          "nameEn": "Wang Xizhi",
+          "personId": "wang-xizhi",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-npm-leyilun"
+          ],
+          "note": "The museum lists the album under Wang Xizhi in regular script; only rubbings survive, no ink original.",
+          "noteZh": "馆方以楷书列于王羲之名下；传世皆拓本，无墨迹。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-jin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "东晋",
+        "original": "晉王羲之",
+        "certainty": "documented",
+        "note": "馆方题名系于晋，未记书写年份。"
+      },
+      "script": "楷书",
+      "background": "A small-regular-script engraving, opening with the title and the name Xiahou Taichu. Wang Xizhi's manuscript is lost and the text is read today only in engravings; the palace museum holds a Song rubbing in its album of Jin and Tang small regular script, in regular script, one item.",
+      "backgroundZh": "小楷刻本，帖文以「乐毅论。夏侯泰初」起首。王羲之书此论，原墨迹不存，今日所读皆刻本；馆方所藏为宋拓《晋唐小楷》册中的一本，楷书，一件。",
+      "sourceRefs": [
+        "src-npm-leyilun"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft from the palace museum digital archive record, read on 2026-11-25. The record gives the album title, script and inventory number but no leaf measurement or stone date.",
+        "noteZh": "草稿，依据 2026-11-25 阅读的台北故宫数位典藏著录整理。该页给册名、书体与文物编号，未给册页尺寸与刻石年代。"
+      },
+      "notes": [
+        "The museum gives no date for the stone or the rubbing and no leaf measurement.",
+        "The relation between this album and the Yuezhou engraving system held elsewhere has not been checked, so no comparison is made.",
+        "The stone's whereabouts and survival are not stated on the page."
+      ],
+      "notesZh": [
+        "馆方未记原石与拓制年份，也未给册页尺寸。",
+        "此本与他馆所藏越州刻系统的关系未核，本记录不作比较。",
+        "刻石的所在地与存佚未见于此页。"
+      ]
+    },
+    {
       "id": "lin-zexu-huashan",
       "titles": {
         "zh": "林则徐游华山诗并序",
@@ -2414,6 +2643,7 @@
           "role": "calligrapher",
           "name": "王献之",
           "nameEn": "Wang Xianzhi",
+          "personId": "wang-xianzhi",
           "certainty": "documented",
           "sourceRefs": [
             "src-people-luoshen",
@@ -2899,6 +3129,67 @@
       ]
     },
     {
+      "id": "pingan-hero-fengju",
+      "titles": {
+        "zh": "平安何如奉橘三帖",
+        "en": "Three Letters: Ping'an, Heru and Fengju"
+      },
+      "aliases": [],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王羲之",
+          "nameEn": "Wang Xizhi",
+          "personId": "wang-xizhi",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-npm-pingan-record",
+            "src-npm-pingan-essay"
+          ],
+          "note": "The attribution refers to the three letters; the scroll is a tracing copy.",
+          "noteZh": "归属指三通原札，存世一卷为摹本。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-jin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "东晋",
+        "original": null,
+        "certainty": "documented",
+        "note": "三帖皆无年款，馆方题名系于东晋。"
+      },
+      "script": "行书",
+      "background": "Three letters on one scroll. Ping'an reports that all is well, in running script mixed with cursive; Heru greets a friend and gives news of himself; Fengju began as a postscript to Heru and was separated into its own piece in the Northern Song. The three were joined into a single scroll by the late Ming at the latest. The sheet also reproduces the half-signatures of Southern Chen to Sui authenticators and a colophon dated the twenty-seventh day of the third month of Kaihuang 18 (598), signed by Liu Guyan, Zhuge Ying and the monk Zhiguo. The digital archive calls the copies pre-Tang; a Southern Branch exhibition note calls them Tang double-outline tracings.",
+      "backgroundZh": "一卷三札。〈平安〉报平安，行书兼草书；〈何如〉问候友人并告近况；〈奉橘〉原是〈何如〉的附书，北宋时独立成帖，三帖最晚在明末合裱为一卷。卷中摹出南朝至隋鉴书人的押署，并有开皇十八年（598）三月廿七日柳顾言、诸葛颖、释智果题记。馆方数位典藏称三帖为「唐代以前」的摹本，南部院区展件说明则称「唐人双钩廓填」。",
+      "sourceRefs": [
+        "src-npm-pingan-record",
+        "src-npm-pingan-south",
+        "src-npm-pingan-essay",
+        "src-bo-ch-pingan"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft from two palace museum pages on the object, a museum exhibition essay and the 2012 national treasure record, all read on 2026-11-25. The sources disagree on the copying period and on the mounted width; both are left open.",
+        "noteZh": "草稿，依据 2026-11-25 阅读的台北故宫两处藏品页、院方展览文稿与文化部 2012 年古物公告整理。来源对摹写年代与装裱横长均有异说，两处都不作定论。"
+      },
+      "notes": [
+        "The copying period is given as either pre-Tang or Tang; no date is recorded here.",
+        "The mounted width is 46.8 cm in the museum record and 47.3 cm in the 2012 designation; neither figure is chosen.",
+        "The museum essay notes that Ping'an lost its last two lines but does not date the loss."
+      ],
+      "notesZh": [
+        "摹写年代有「唐代以前」与「唐人双钩廓填」两说，本记录不填年代。",
+        "装裱横长，馆方数位典藏作 46.8 厘米，文化部古物公告作 47.3 厘米，不取一数。",
+        "〈平安〉失去末两行，馆方文稿记此事而未记失去的时间。"
+      ]
+    },
+    {
       "id": "pingfu-tie",
       "titles": {
         "zh": "平复帖",
@@ -3223,6 +3514,63 @@
         "故宫拓本条目称收入精品「三千四百余件」；报道则记一百三十五位书家、三百四十件作品、刻石四百九十五方。两处总数相差一个数量级，均不入结构化字段。",
         "此帖为丛刻，非单一作品：所记年代是编刻之年，非所收书迹之作年。",
         "帖石在北海原址；故宫所藏清拓是另一件实物，本记录不并列。"
+      ]
+    },
+    {
+      "id": "shangyu",
+      "titles": {
+        "zh": "上虞帖",
+        "en": "Shangyu Letter"
+      },
+      "aliases": [],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王羲之",
+          "nameEn": "Wang Xizhi",
+          "personId": "wang-xizhi",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-shm-shangyu"
+          ],
+          "note": "The attribution refers to the letter; the museum identifies the surviving sheet as a Tang tracing copy.",
+          "noteZh": "归属指原信，馆方定存世一本为唐摹本。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-jin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "东晋",
+        "original": null,
+        "certainty": "documented",
+        "note": "馆方题名系于东晋，帖无年款。"
+      },
+      "script": "行书",
+      "background": "A Tang tracing copy on hard-yellow paper. The front mounting carries Emperor Huizong's slender-gold title slip, \"Wang Xizhi of Jin, Shangyu Letter\", on moon-white silk; the sheet bears a half-seal of the Southern Tang Academy of Worthies and the Neihetong seal, along with Northern Song Zhenghe and Xuanhe seals, a double dragon and the Imperial Library seal. It passed through the Southern Tang and Northern Song palaces, the Ming Prince of Jin's household and Han Fengxi, and in the Qing through Liang Qingbiao.",
+      "backgroundZh": "硬黄纸本，唐摹本。前隔水有宋徽宗瘦金书「晋王羲之上虞帖」月白绢签，钤南唐「集贤院御书印」半印、「内合同印」，又有北宋「政和」「宣和」、双龙、「内府图书之印」等印记。曾藏南唐内府、北宋宣和内府，明代经晋王府、韩逢禧，清代经梁清标鉴藏。",
+      "sourceRefs": [
+        "src-shm-shangyu"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft from the Shanghai Museum collection entry, read on 2026-11-25. The page's width figure is garbled, so only the height is carried into the object record.",
+        "noteZh": "草稿，依据 2026-11-25 阅读的上海博物馆藏品说明整理。该页横长数字残缺，实物记录只取纵长。"
+      },
+      "notes": [
+        "The width figure is garbled on the museum page, so no full measurement is recorded.",
+        "The transcription, line count and character count have not been checked against the page.",
+        "No accession number appears on this page."
+      ],
+      "notesZh": [
+        "馆方页面横长数字残缺，本记录不填完整尺寸。",
+        "释文、行数与字数未据馆方页面核对。",
+        "藏品号未见于此页。"
       ]
     },
     {
@@ -4401,6 +4749,7 @@
           "role": "calligrapher",
           "name": "王献之",
           "nameEn": "Wang Xianzhi",
+          "personId": "wang-xianzhi",
           "certainty": "documented",
           "sourceRefs": [
             "src-gmw-wansui"
@@ -4812,6 +5161,63 @@
       ]
     },
     {
+      "id": "xingrang",
+      "titles": {
+        "zh": "行穰帖",
+        "en": "Xingrang Letter"
+      },
+      "aliases": [],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王羲之",
+          "nameEn": "Wang Xizhi",
+          "personId": "wang-xizhi",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-shm-xingrang"
+          ],
+          "note": "The attribution refers to the letter; the surviving sheet is a Tang double-outline copy of its first half.",
+          "noteZh": "归属指原信，存世一本为唐代双钩摹本，应是信札前半。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-jin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "东晋",
+        "original": null,
+        "certainty": "documented",
+        "note": "馆方题名系于东晋，帖无年款。"
+      },
+      "script": null,
+      "background": "A Tang double-outline tracing copy, which the museum takes to be the first half of the letter. The text is first recorded in Zhang Yanyuan's ninth-century Fashu yaolu and entered the Northern Song Xuanhe collection; after the dynasty fell, Wang Tingyun engraved it in the Xuexitang modelbooks. In the Ming it passed through Xiang Yuanbian, Han Shineng and Dong Qichang, who traded it for Li Tang's River Scenes; his friend Wu Ting then had it engraved in the Yuqingzhai modelbooks. It is now in the Princeton University Art Museum, the John B. Elliott bequest.",
+      "backgroundZh": "唐代双钩摹本，馆方认为应是原信的前半。文字最早著录于张彦远《法书要录》，后入北宋宣和内府；北宋亡后，金人王庭筠刻入《雪溪堂帖》。明代经项元汴、韩世能、董其昌鉴藏，董其昌以此帖换得李唐《江山小景图》卷，友人吴廷收得后刻入《余清斋法帖》。今藏普林斯顿大学艺术博物馆，John B. Elliott 遗赠。",
+      "sourceRefs": [
+        "src-shm-xingrang"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft from a Shanghai Museum exhibition entry for the Princeton loan, read on 2026-11-25. The page gives no accession number and no script label.",
+        "noteZh": "草稿，依据 2026-11-25 阅读的上海博物馆展品说明整理。该页未给藏品号，也未标书体。"
+      },
+      "notes": [
+        "The page gives no script label, so none is recorded.",
+        "\"Should be the first half\" is the museum's inference; it is repeated here as such.",
+        "Neither an accession number nor the present mounting and colophons appear on this page."
+      ],
+      "notesZh": [
+        "馆方页面未标书体，本记录不填。",
+        "「应是信札前半」是馆方推测语，本记录照录，不作定论。",
+        "藏品号与装裱、题跋现状未见于此页。"
+      ]
+    },
+    {
       "id": "xiping-stone-classics",
       "titles": {
         "zh": "熹平石经",
@@ -5024,6 +5430,7 @@
           "role": "copyist",
           "name": "王羲之（传）",
           "nameEn": "Wang Xizhi (attributed)",
+          "personId": "wang-xizhi",
           "certainty": "disputed",
           "sourceRefs": [
             "src-dpm-xuanshi"
@@ -5242,6 +5649,61 @@
       "notes": []
     },
     {
+      "id": "yatouwan",
+      "titles": {
+        "zh": "鸭头丸帖",
+        "en": "Duck-Head Pill Letter"
+      },
+      "aliases": [],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王献之",
+          "nameEn": "Wang Xianzhi",
+          "personId": "wang-xianzhi",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-shm-yatouwan"
+          ],
+          "note": "The attribution refers to the letter; the museum identifies the surviving sheet as a Tang tracing copy.",
+          "noteZh": "归属指原信，馆方定存世一本为唐摹本。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-jin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "东晋",
+        "original": null,
+        "certainty": "documented",
+        "note": "馆方题名系于东晋，帖无年款。"
+      },
+      "script": null,
+      "background": "A Tang tracing copy on paper. It passed through the Northern Song Xuanhe collection, and part of the Xuanhe mounting survives. In the late Ming it belonged to Wu Xiyuan, a cousin of Wu Ting, which gave Dong Qichang and Wang Kentang the chance to see it and add colophons. The museum explains Wang Xianzhi's departure from his father's manner through his outward-turning brush and the linked momentum later called one-stroke writing.",
+      "backgroundZh": "唐摹本，纸本。经北宋宣和内府收藏，现存部分宣和裱。晚明为吴廷族兄吴希元所藏，董其昌与王肯堂因此得观并题跋。馆方以「外拓」用笔与连绵相属的「一笔书」说明王献之在父书之外的变革。",
+      "sourceRefs": [
+        "src-shm-yatouwan"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft from the Shanghai Museum digital exhibition entry, read on 2026-11-25. The entry gives the material, size, copy status and late-Ming owners but no script label, character count or accession number.",
+        "noteZh": "草稿，依据 2026-11-25 阅读的上海博物馆数字展览说明整理。该页给质地、尺寸、摹本性质与晚明藏家，未标书体、字数与藏品号。"
+      },
+      "notes": [
+        "The page gives no script label, line count or character count; none are recorded.",
+        "The accession number and the full order of colophons do not appear on this page."
+      ],
+      "notesZh": [
+        "馆方页面未标书体、行数与字数，本记录不填。",
+        "藏品号与完整题跋次序未见于此页。"
+      ]
+    },
+    {
       "id": "yi-he-ming",
       "titles": {
         "zh": "瘗鹤铭",
@@ -5439,6 +5901,65 @@
       ],
       "notesZh": [
         "英文标题为本项目为检索所拟，非来源所用题名。"
+      ]
+    },
+    {
+      "id": "yuanhuan",
+      "titles": {
+        "zh": "远宦帖",
+        "en": "Letter from a Distant Post"
+      },
+      "aliases": [
+        "省别帖"
+      ],
+      "attribution": [
+        {
+          "role": "calligrapher",
+          "name": "王羲之",
+          "nameEn": "Wang Xizhi",
+          "personId": "wang-xizhi",
+          "certainty": "documented",
+          "sourceRefs": [
+            "src-npm-yuanhuan",
+            "src-npm-yuanhuan-record"
+          ],
+          "note": "The attribution refers to the letter Wang Xizhi wrote; the surviving sheet is a double-outline tracing copy.",
+          "noteZh": "归属指王羲之所写的原信，存世一本为双钩廓填本。"
+        }
+      ],
+      "studyCategory": "tie",
+      "dynastyId": "eastern-jin",
+      "dynastyQualifier": null,
+      "compositionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "东晋",
+        "original": null,
+        "certainty": "documented",
+        "note": "馆方题名系于东晋，帖无年款。"
+      },
+      "script": "草书",
+      "background": "A letter Wang Xizhi wrote to Zhou Fu, governor of Yi province; it is also known as the Xingbie modelbook. The surviving sheet is a double-outline tracing copy, carrying Emperor Huizong's slender-gold title slip and palace seals, then the Jin emperor Zhangzong's seals and Yuan, Ming and Qing collectors' seals. The Tang Seventeen-Day Letters engraving also carries this text; the museum considers its lines stiffer and less revealing than this ink copy.",
+      "backgroundZh": "王羲之写给益州刺史周抚的一封信，亦称《省别帖》。存世一本为双钩廓填，卷上有宋徽宗瘦金书签题与内府印记，又有金章宗「群玉中秘」「明昌御览」及元、明、清收藏印。唐《十七帖》刻本也收此札，馆方认为刻本线条较呆板，不如墨迹本传神。",
+      "sourceRefs": [
+        "src-npm-yuanhuan",
+        "src-npm-yuanhuan-record"
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft from a palace museum selection page and its catalogue record, both read on 2026-11-25. The page does not date the copy, so work and object dates are kept apart.",
+        "noteZh": "草稿，依据 2026-11-25 阅读的台北故宫精选赏析页与数位典藏著录整理。馆方未记摹写年代，作品与实物年代分开处理。"
+      },
+      "notes": [
+        "The museum gives no date for the copy, so none is recorded.",
+        "The wording has not been collated word by word against the Seventeen-Day Letters engraving."
+      ],
+      "notesZh": [
+        "摹写年代馆方未记，本记录不填。",
+        "墨迹本与《十七帖》刻本的文字异同未逐字校对。"
       ]
     },
     {
@@ -5942,6 +6463,7 @@
           "role": "calligrapher",
           "name": "王献之（传）",
           "nameEn": "Wang Xianzhi (traditional attribution)",
+          "personId": "wang-xianzhi",
           "certainty": "disputed",
           "sourceRefs": [
             "src-dpm-228204"
@@ -7050,6 +7572,60 @@
       ]
     },
     {
+      "id": "dongshansong-leaf",
+      "workId": "dongshansong",
+      "objectType": "ink-manuscript",
+      "titles": {
+        "zh": "东山松帖页",
+        "en": "Leaf of the Letter on the Dongshan Pines"
+      },
+      "productionDate": {
+        "kind": "unknown",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": null,
+        "certainty": "unknown",
+        "note": "馆方题名系于晋，未说明此页的制作年代。"
+      },
+      "catalogNumber": "故00002895-1/10",
+      "dimensions": {
+        "raw": "纵22.8厘米，横22.3厘米",
+        "note": "馆方记纸本。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-palace-museum",
+        "sourceRefs": [
+          "src-dpm-dongshansong"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The palace museum entry holds the leaf under the inventory number 故00002895-1/10.",
+        "noteZh": "故宫藏品说明记此页藏故宫博物院，文物号故00002895-1/10。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The museum gives size, transcription and seals but neither the sheet's date nor its copy status.",
+        "noteZh": "实物草稿。馆方给尺寸、释文与鉴藏印，未记此页年代，也未说明是否摹本。"
+      },
+      "notes": [
+        "The museum does not say whether the leaf is a copy.",
+        "The inventory number carries \"-1/10\"; the other nine leaves of the album and their order are not described.",
+        "When the Qianlong palace seals and inscription were scraped away is not recorded."
+      ],
+      "notesZh": [
+        "此页是否摹本，馆方未作说明。",
+        "文物号带「-1/10」，同册其余九页的内容与编次未记。",
+        "乾隆内府诸印与题语被刮去的时间未记。"
+      ]
+    },
+    {
       "id": "dpm-cai-zishu-026",
       "workId": "cai-zishu",
       "objectType": "ink-manuscript",
@@ -7858,6 +8434,60 @@
       ]
     },
     {
+      "id": "hanqie-scroll",
+      "workId": "hanqie",
+      "objectType": "manuscript-copy",
+      "titles": {
+        "zh": "唐摹王羲之草书寒切帖卷",
+        "en": "Tang tracing copy of Wang Xizhi's Hanqie Letter"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "唐",
+        "original": "唐摹本",
+        "certainty": "documented",
+        "note": "馆方定此卷为唐摹本，未记具体年份。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "纵25.6厘米，横21.5厘米",
+        "note": "馆方中英文说明均作此数。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-tianjin-museum",
+        "sourceRefs": [
+          "src-tjbwg-hanqie"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum lists the scroll as a collection highlight and describes the Ming colophons; it gives no accession number.",
+        "noteZh": "馆方以此卷为馆藏精品，并述明代题跋，未给藏品号。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The page supplies size, transcription and colophon authors but no accession number or gallery.",
+        "noteZh": "实物草稿。馆方页面给尺寸、释文与题跋作者，未给藏品号或展室。"
+      },
+      "notes": [
+        "The accession number and acquisition history are not given on this page.",
+        "The frontispiece, colophon section and their paper sizes are not recorded.",
+        "The full text and dates of the Dong Qichang and Lou Jian colophons are not transcribed."
+      ],
+      "notesZh": [
+        "藏品号与入藏经过未见于此页。",
+        "引首、拖尾与题跋纸的尺寸未记。",
+        "董其昌、娄坚跋的全文与书写年份未录。"
+      ]
+    },
+    {
       "id": "haotaiwang-stele",
       "workId": "haotaiwang-bei",
       "objectType": "original-stele",
@@ -8064,6 +8694,108 @@
       ]
     },
     {
+      "id": "huangting-rubbing",
+      "workId": "huangting",
+      "objectType": "rubbing",
+      "titles": {
+        "zh": "宋拓晋唐小楷册·黄庭经",
+        "en": "Song rubbing of the Yellow Court Classic, from an album of Jin and Tang small regular script"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "宋",
+        "original": "宋拓",
+        "certainty": "documented",
+        "note": "馆方品名作「宋拓」，未记具体拓制年份。"
+      },
+      "catalogNumber": "故帖00000800003",
+      "dimensions": null,
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-taipei-palace",
+        "sourceRefs": [
+          "src-npm-huangting"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The record describes one volume of seven leaves, fourteen panels, under this inventory number.",
+        "noteZh": "馆方著录记一册七开、本幅七开十四幅，并列此文物编号。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. Leaf count is known; no measurement or stone date is given.",
+        "noteZh": "实物草稿。册页数可据著录，尺寸与刻石年代未给。"
+      },
+      "notes": [
+        "Leaf measurements are not recorded.",
+        "The stone and rubbing date are not recorded.",
+        "\"Seven leaves, fourteen panels\" describes the folding format, not the text's character count or standard divisions."
+      ],
+      "notesZh": [
+        "册页尺寸未记。",
+        "原石与拓制年份未记。",
+        "「七开十四幅」指本幅折装方式，不等於帖文字数或通行分段。"
+      ]
+    },
+    {
+      "id": "leyilun-rubbing",
+      "workId": "leyilun",
+      "objectType": "rubbing",
+      "titles": {
+        "zh": "宋拓晋唐小楷册·乐毅论",
+        "en": "Song rubbing of On Yue Yi, from an album of Jin and Tang small regular script"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "宋",
+        "original": "宋拓",
+        "certainty": "documented",
+        "note": "馆方品名作「宋拓」，未记具体拓制年份。"
+      },
+      "catalogNumber": "故帖00000700001",
+      "dimensions": null,
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-taipei-palace",
+        "sourceRefs": [
+          "src-npm-leyilun"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The digital archive record lists the album leaf under this inventory number and attributes it to Wang Xizhi in regular script.",
+        "noteZh": "数位典藏著录以此文物编号列于王羲之楷书之下。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The record gives the album title, script and inventory number but no measurement and no stone date.",
+        "noteZh": "实物草稿。馆方著录给册名、书体与文物编号，未给尺寸与刻石年代。"
+      },
+      "notes": [
+        "Leaf measurements and the number of mounted leaves are not given in this record.",
+        "The stone and the rubbing date are not recorded.",
+        "The album's internal order relative to its other small-script pieces has not been checked."
+      ],
+      "notesZh": [
+        "册页尺寸与墨纸开数未记于此条。",
+        "原石与拓制年份未记。",
+        "与同册其他小楷帖的编次关系未核。"
+      ]
+    },
+    {
       "id": "liqi-ming-44512",
       "workId": "liqi-bei",
       "objectType": "rubbing",
@@ -8238,6 +8970,58 @@
         "此件为刻石，不是拓本；本记录不描述任何具体拓本。",
         "来源称其石「似碧玉」，是外观形容，非岩性鉴定，故不主张石种。",
         "1900 年后的流散只有概括表述；清内府至 1981 年之间未记具体藏家。"
+      ]
+    },
+    {
+      "id": "pingan-hero-fengju-scroll",
+      "workId": "pingan-hero-fengju",
+      "objectType": "manuscript-copy",
+      "titles": {
+        "zh": "平安何如奉橘三帖卷",
+        "en": "Scroll of the Three Letters Ping'an, Heru and Fengju"
+      },
+      "productionDate": {
+        "kind": "unknown",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": null,
+        "certainty": "unknown",
+        "note": "馆方两处对摹写年代的表述不同（唐代以前／唐人双钩廓填），本记录不填年代。"
+      },
+      "catalogNumber": "故書000050N000000000",
+      "dimensions": null,
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-taipei-palace",
+        "sourceRefs": [
+          "src-npm-pingan-record",
+          "src-bo-ch-pingan"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum record and the 2012 national treasure designation both place the scroll in the Taipei palace museum and give the registered number 故書000050.",
+        "noteZh": "馆方著录与 2012 年古物公告均记此卷藏台北故宫，典藏编号作故書000050。"
+      },
+      "provenanceEvents": [],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The two sources disagree on the mounted width (46.8 against 47.3 cm), so the measurement field is left empty and both readings are kept in the note.",
+        "noteZh": "实物草稿。两处来源对装裱横长有 46.8 与 47.3 厘米两说，尺寸字段留空，两说并记于注。"
+      },
+      "notes": [
+        "Mounted width: the museum record gives 24.7 by 46.8 cm, the 2012 designation 24.7 by 47.3 cm; neither is chosen.",
+        "The copying period remains open between two statements.",
+        "The authenticators' half-signatures and the 598 colophon are themselves reproduced in the copy, as the museum record states."
+      ],
+      "notesZh": [
+        "装裱横长：馆方数位典藏作本幅 24.7 × 46.8 厘米，文化部古物公告作 24.7 × 47.3 厘米，不取一数。",
+        "摹写年代两说，未定。",
+        "卷中押署与开皇十八年题记为摹出，非原迹，馆方著录已如此说明。"
       ]
     },
     {
@@ -9264,6 +10048,87 @@
       "notesZh": [
         "所据石鼓拓本的版本与早晚，馆方未记。",
         "释文与今通行释读的出入，待对照原鼓。"
+      ]
+    },
+    {
+      "id": "shangyu-scroll",
+      "workId": "shangyu",
+      "objectType": "manuscript-copy",
+      "titles": {
+        "zh": "上虞帖卷（唐摹本）",
+        "en": "Shangyu Letter, Tang tracing copy"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "唐",
+        "original": "此系唐摹本",
+        "certainty": "documented",
+        "note": "馆方定此本为唐摹本，未记具体年份。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "纵23.5厘米",
+        "note": "馆方页面横长数字残缺，未取；硬黄纸本。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-shanghai-museum",
+        "sourceRefs": [
+          "src-shm-shangyu"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum entry names Shanghai Museum as the holder and describes the front mounting and seals; it gives no accession number.",
+        "noteZh": "馆方条目记藏上海博物馆，并述前隔水题签与鉴藏印，未给藏品号。"
+      },
+      "provenanceEvents": [
+        {
+          "id": "ev-shangyu-southern-tang",
+          "objectId": "shangyu-scroll",
+          "type": "custody",
+          "date": {
+            "kind": "era",
+            "startYear": null,
+            "startMonth": null,
+            "endYear": null,
+            "endMonth": null,
+            "eraLabel": "南唐",
+            "original": "曾經南唐內府",
+            "certainty": "documented",
+            "note": null
+          },
+          "placeId": null,
+          "placeWording": "南唐內府",
+          "referenceNote": null,
+          "shortLabel": null,
+          "summary": "The scroll was once in the Southern Tang palace collection, whose seals it carries.",
+          "summaryZh": "此卷曾入南唐内府，卷上存其藏书印。",
+          "sourceRefs": [
+            "src-shm-shangyu"
+          ],
+          "certainty": "documented"
+        }
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. Only the height is recorded because the width figure is garbled in the museum page.",
+        "noteZh": "实物草稿。馆方页面横长数字残缺，仅记纵长。"
+      },
+      "notes": [
+        "The width is not recorded and awaits a complete museum entry.",
+        "Neither the accession number nor the transcription and line count appears on the cited page.",
+        "The positions of Huizong's silk title slip and the Southern Tang and Northern Song seals have not been checked."
+      ],
+      "notesZh": [
+        "横长未取，待据馆方完整著录补。",
+        "藏品号、释文与行数字数均未见于所引页面。",
+        "宋徽宗绢签与南唐、北宋诸印的存印位置未核。"
       ]
     },
     {
@@ -13885,6 +14750,87 @@
       ]
     },
     {
+      "id": "xingrang-scroll",
+      "workId": "xingrang",
+      "objectType": "manuscript-copy",
+      "titles": {
+        "zh": "行穰帖卷",
+        "en": "Xingrang Letter, scroll"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "唐",
+        "original": "唐代双钩摹本",
+        "certainty": "documented",
+        "note": "馆方定此卷为唐代双钩摹本。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "纵24.4厘米，横8.5厘米",
+        "note": "尺寸依上海博物馆展品说明。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-princeton-art-museum",
+        "sourceRefs": [
+          "src-shm-xingrang"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The Shanghai Museum entry records the scroll as Princeton University Art Museum, John B. Elliott bequest; it gives no accession number.",
+        "noteZh": "上海博物馆展品说明记此卷藏普林斯顿大学艺术博物馆，John B. Elliott 遗赠，未给藏品号。"
+      },
+      "provenanceEvents": [
+        {
+          "id": "ev-xingrang-xuanhe",
+          "objectId": "xingrang-scroll",
+          "type": "custody",
+          "date": {
+            "kind": "era",
+            "startYear": null,
+            "startMonth": null,
+            "endYear": null,
+            "endMonth": null,
+            "eraLabel": "北宋",
+            "original": "後入北宋宣和內府收藏",
+            "certainty": "documented",
+            "note": null
+          },
+          "placeId": null,
+          "placeWording": "宣和內府",
+          "referenceNote": null,
+          "shortLabel": null,
+          "summary": "The scroll entered the Northern Song Xuanhe imperial collection.",
+          "summaryZh": "此卷后入北宋宣和内府。",
+          "sourceRefs": [
+            "src-shm-xingrang"
+          ],
+          "certainty": "documented"
+        }
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record from a Shanghai Museum exhibition entry for the Princeton loan. No accession number or full colophon list was available on that page.",
+        "noteZh": "实物草稿，依据上海博物馆为普林斯顿借展所写的展品说明。该页未给藏品号与完整题跋目。"
+      },
+      "notes": [
+        "No accession number appears on the cited page.",
+        "The present mounting, colophons and seals have not been checked.",
+        "The museum's \"should be the first half\" is a judgment about the text, not evidence from the mounting."
+      ],
+      "notesZh": [
+        "藏品号未见于所引页面。",
+        "装裱、题跋与鉴藏印的现存状况未核。",
+        "馆方称「应是信札前半」，为本卷内容的判断，非装裱上的证据。"
+      ]
+    },
+    {
       "id": "yan-qinli-original-stele",
       "workId": "yan-qinli-bei",
       "objectType": "original-stele",
@@ -14058,6 +15004,194 @@
         "出土地点在故宫条目中写作「旧藩廨库基」，在博物馆文章中写作「省长公署」。两种表述都原样保留，不合并成一个规范化地址。",
         "所有事件都没有坐标记录：来源给出的是区域与建筑名称，不是实测点位。",
         "今日是否展出、确切存放位置，均不清楚。"
+      ]
+    },
+    {
+      "id": "yatouwan-scroll",
+      "workId": "yatouwan",
+      "objectType": "manuscript-copy",
+      "titles": {
+        "zh": "鸭头丸帖卷（唐摹本）",
+        "en": "Duck-Head Pill Letter, Tang tracing copy"
+      },
+      "productionDate": {
+        "kind": "era",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": "唐",
+        "original": "唐摹本",
+        "certainty": "documented",
+        "note": "馆方定此卷为唐摹本，未记具体年份。"
+      },
+      "catalogNumber": null,
+      "dimensions": {
+        "raw": "纵26.1厘米，横26.9厘米",
+        "note": "纸本；馆方记「尺寸（内）」。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-shanghai-museum",
+        "sourceRefs": [
+          "src-shm-yatouwan"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The museum entry records the scroll as Shanghai Museum and notes that part of the Xuanhe mounting survives; no accession number is given.",
+        "noteZh": "馆方条目记藏上海博物馆，并记现存部分宣和裱，未给藏品号。"
+      },
+      "provenanceEvents": [
+        {
+          "id": "ev-yatouwan-xuanhe",
+          "objectId": "yatouwan-scroll",
+          "type": "custody",
+          "date": {
+            "kind": "era",
+            "startYear": null,
+            "startMonth": null,
+            "endYear": null,
+            "endMonth": null,
+            "eraLabel": "北宋",
+            "original": "經北宋宣和內府收藏",
+            "certainty": "documented",
+            "note": null
+          },
+          "placeId": null,
+          "placeWording": "宣和內府",
+          "referenceNote": null,
+          "shortLabel": null,
+          "summary": "The scroll passed through the Northern Song Xuanhe palace collection.",
+          "summaryZh": "此卷经北宋宣和内府收藏。",
+          "sourceRefs": [
+            "src-shm-yatouwan"
+          ],
+          "certainty": "documented"
+        },
+        {
+          "id": "ev-yatouwan-wu-xiyuan",
+          "objectId": "yatouwan-scroll",
+          "type": "custody",
+          "date": {
+            "kind": "era",
+            "startYear": null,
+            "startMonth": null,
+            "endYear": null,
+            "endMonth": null,
+            "eraLabel": "明",
+            "original": "晚明時為吳廷族兄吳希元所藏",
+            "certainty": "documented",
+            "note": "晚明，具体年份未记。"
+          },
+          "placeId": null,
+          "placeWording": null,
+          "referenceNote": null,
+          "shortLabel": null,
+          "summary": "In the late Ming the scroll belonged to Wu Xiyuan, cousin of Wu Ting.",
+          "summaryZh": "晚明时此卷为吴廷族兄吴希元所藏。",
+          "sourceRefs": [
+            "src-shm-yatouwan"
+          ],
+          "certainty": "documented"
+        }
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. Size, material and two custody episodes are documented; the accession number and the colophon order are not.",
+        "noteZh": "实物草稿。尺寸、质地与两段递藏有据；藏品号与题跋次序未记。"
+      },
+      "notes": [
+        "No accession number appears on the cited page.",
+        "How much of the Xuanhe mounting survives is not stated.",
+        "The dates and full text of the Dong Qichang and Wang Kentang colophons are not recorded."
+      ],
+      "notesZh": [
+        "藏品号未见于所引页面。",
+        "宣和裱现存部分的具体范围未记。",
+        "董其昌、王肯堂题跋的书写年份与全文未录。"
+      ]
+    },
+    {
+      "id": "yuanhuan-scroll",
+      "workId": "yuanhuan",
+      "objectType": "manuscript-copy",
+      "titles": {
+        "zh": "远宦帖卷（双钩廓填本）",
+        "en": "Yuanhuan Letter, double-outline tracing copy"
+      },
+      "productionDate": {
+        "kind": "unknown",
+        "startYear": null,
+        "startMonth": null,
+        "endYear": null,
+        "endMonth": null,
+        "eraLabel": null,
+        "original": null,
+        "certainty": "unknown",
+        "note": "馆方称双钩廓填本，未记摹写年代。"
+      },
+      "catalogNumber": "故書000053N000000000",
+      "dimensions": {
+        "raw": "本幅纵24.8厘米，横21.5厘米",
+        "note": "拖尾纵24.6厘米，横81厘米；隔水尺寸馆方另记。"
+      },
+      "survivalStatus": "surviving",
+      "relationships": [],
+      "currentCollection": {
+        "locationKind": "collection-institution",
+        "placeId": "place-taipei-palace",
+        "sourceRefs": [
+          "src-npm-yuanhuan-record"
+        ],
+        "sourceAccessedAt": "2026-11-25",
+        "assertionAsOf": null,
+        "note": "The catalogue record holds the scroll in the Taipei palace museum and gives its inventory number and mounting measurements.",
+        "noteZh": "馆方著录记此卷藏台北故宫，并给文物编号与各段尺寸。"
+      },
+      "provenanceEvents": [
+        {
+          "id": "ev-yuanhuan-qing-palace",
+          "objectId": "yuanhuan-scroll",
+          "type": "custody",
+          "date": {
+            "kind": "era",
+            "startYear": null,
+            "startMonth": null,
+            "endYear": null,
+            "endMonth": null,
+            "eraLabel": "清",
+            "original": "轉入清宮",
+            "certainty": "documented",
+            "note": null
+          },
+          "placeId": null,
+          "placeWording": "清宮",
+          "referenceNote": null,
+          "shortLabel": null,
+          "summary": "After Ming and Qing private collectors, the scroll entered the Qing palace collection.",
+          "summaryZh": "历经明清私家收藏后，此卷转入清宫。",
+          "sourceRefs": [
+            "src-npm-yuanhuan"
+          ],
+          "certainty": "documented"
+        }
+      ],
+      "review": {
+        "state": "draft",
+        "note": "Draft object record. The museum does not date the copy, count its characters or describe its present mounting beyond the measurements.",
+        "noteZh": "实物草稿。馆方未记摹写年代与字数，除尺寸外未述现状。"
+      },
+      "notes": [
+        "Neither the copying date nor the copyist is recorded.",
+        "The character and line counts have not been taken from the museum record.",
+        "The present order of title slip, mountings and colophon section has not been checked."
+      ],
+      "notesZh": [
+        "摹写年代与摹手均未记。",
+        "全卷字数与行数未据馆方著录清点。",
+        "题签、隔水与拖尾的现存次序未核。"
       ]
     },
     {
@@ -14681,6 +15815,25 @@
         "src-dpm-yan-qinli-rubbing"
       ],
       "notes": []
+    },
+    {
+      "id": "place-princeton-art-museum",
+      "names": {
+        "zh": "普林斯顿大学艺术博物馆",
+        "en": "Princeton University Art Museum"
+      },
+      "historicalName": null,
+      "kind": "institution",
+      "coordinates": null,
+      "sourceRefs": [
+        "src-shm-xingrang"
+      ],
+      "notes": [
+        "The Shanghai Museum entry names Princeton as the holding institution and records the John B. Elliott bequest; it gives no address or coordinate."
+      ],
+      "notesZh": [
+        "上海博物馆展品说明记此卷藏普林斯顿大学艺术博物馆、John B. Elliott 遗赠，未给地址或坐标。"
+      ]
     },
     {
       "id": "place-qufu-hanwei-gallery",
@@ -15424,6 +16577,17 @@
       "note": "Museum educational article. It gives the inscription and the family history but no dimensions."
     },
     {
+      "id": "src-bo-ch-pingan",
+      "kind": "web",
+      "title": "王羲之平安何如奉橘三帖卷",
+      "publisher": "文化部文化資產局 Bureau of Cultural Heritage, Ministry of Culture",
+      "url": "https://nchdb.boch.gov.tw/assets/overview/antiquity/20120326000077",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "公告資料，2012-03-26 會授字第10120020772號；尺寸與典藏編號欄",
+      "note": "The national treasure designation record of 2012 gives the registered number 故書000050 and a mounted width of 47.3 cm, which differs from the palace museum's 46.8 cm."
+    },
+    {
       "id": "src-catalogue-boyuan",
       "kind": "web",
       "title": "伯远帖",
@@ -16051,6 +17215,17 @@
       "note": "A thematic page by the museum. The 563 cm figure covers the mounted scroll; accounts of the calligraphy section alone give about 166 cm."
     },
     {
+      "id": "src-dpm-dongshansong",
+      "kind": "web",
+      "title": "【王獻之行書東山松帖頁】",
+      "publisher": "故宮博物院 The Palace Museum",
+      "url": "https://www.dpm.org.cn/collection/handwriting/229389.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "藏品說明正文，記文物號、尺寸、釋文、鑒藏印與著錄",
+      "note": "The palace museum entry attributes the leaf to Wang Xianzhi and lists its seals and modelbook engravings. It does not discuss whether this leaf is a copy; the page also carries the museum's short biography of Wang Xianzhi."
+    },
+    {
       "id": "src-dpm-emperor",
       "kind": "web",
       "title": "皇帝書家宋徽宗",
@@ -16513,6 +17688,17 @@
       "note": null
     },
     {
+      "id": "src-npm-huangting",
+      "kind": "web",
+      "title": "宋拓晉唐小楷(一) 冊 晉王羲之書黃庭經",
+      "publisher": "國立故宮博物院數位典藏 National Palace Museum Digital Archives",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/22715?dep=P",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "品名、作者、書體、數量、文物統一編號、釋文欄",
+      "note": "The record gives the album title, the attribution, the script, the leaf count and the inventory number, but no measurement or stone date."
+    },
+    {
       "id": "src-npm-kuaixue-yuan",
       "kind": "web",
       "title": "王義之《快雪時晴帖》在元代的接受與認識",
@@ -16522,6 +17708,17 @@
       "accessedAt": "2026-11-18",
       "locator": "Abstract, p. 169: the imperial album and the distinct Zhang Yu copy",
       "note": null
+    },
+    {
+      "id": "src-npm-leyilun",
+      "kind": "web",
+      "title": "宋拓晉唐小楷 冊 王羲之樂毅論",
+      "publisher": "國立故宮博物院數位典藏 National Palace Museum Digital Archives",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/21574?dep=P",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "品名、作者、書體、數量、文物統一編號、釋文欄",
+      "note": "The record supplies the album title, the attribution to Wang Xizhi, the script and the inventory number. It gives no leaf measurement and no date for the stone."
     },
     {
       "id": "src-npm-maogong",
@@ -16546,6 +17743,39 @@
       "note": "Museum digital archive entry. It does not give dimensions or a writing year."
     },
     {
+      "id": "src-npm-pingan-essay",
+      "kind": "web",
+      "title": "國寶再現之書蹟名品",
+      "publisher": "國立故宮博物院 National Palace Museum",
+      "url": "https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3590",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "〈平安何如奉橘三帖〉一節，論雙鉤廓填、〈平安〉失去末兩行與明末合裱",
+      "note": "A museum exhibition essay. It states that the three pieces were joined into one scroll by the late Ming and that the 奉橘 piece was separated from 何如 in the Northern Song."
+    },
+    {
+      "id": "src-npm-pingan-record",
+      "kind": "web",
+      "title": "晉王羲之平安何如奉橘三帖 卷",
+      "publisher": "國立故宮博物院數位典藏 National Palace Museum Digital Archives",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1?dep=P",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "品名、書體、文物統一編號、尺寸、題跋欄",
+      "note": "The record lists the Southern Chen to Sui authenticators' half-signatures and the Kaihuang 18 (598) colophon copied on the sheet, and describes the three pieces as tracing copies made before the Tang."
+    },
+    {
+      "id": "src-npm-pingan-south",
+      "kind": "web",
+      "title": "晉 王羲之 平安何如奉橘三帖",
+      "publisher": "國立故宮博物院南部院區 Southern Branch of the National Palace Museum",
+      "url": "https://south.npm.gov.tw/SelectionsDetailC004100.aspx?Cond=9a9aead4-de8f-499e-add9-c16bae1710e6",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "精彩選件條目說明",
+      "note": "A museum exhibition note. It calls all three pieces Tang double-outline tracing copies, which differs from the digital archive record's \"before the Tang\"."
+    },
+    {
       "id": "src-npm-sanpan",
       "kind": "web",
       "title": "散盤",
@@ -16555,6 +17785,28 @@
       "accessedAt": "2026-11-25",
       "locator": "器名、時代、尺寸與說明：西周晚期、通高20.6公分、口徑54.6公分、底徑41.4公分、腹深9.8公分、銘文350字，並評其書風「奇逸跳宕」",
       "note": "Museum object page. It gives 350 characters where other publications give 357; the record says “三百五十余字” and notes both readings."
+    },
+    {
+      "id": "src-npm-yuanhuan-record",
+      "kind": "web",
+      "title": "晉王羲之遠宦帖 卷",
+      "publisher": "國立故宮博物院數位典藏 National Palace Museum Digital Archives",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/2?dep=P",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "品名、書體、文物統一編號、尺寸欄",
+      "note": "The catalogue record supplies the inventory number and the mounting measurements; it does not state when the copy was made."
+    },
+    {
+      "id": "src-npm-yuanhuan",
+      "kind": "web",
+      "title": "遠宦帖",
+      "publisher": "國立故宮博物院 National Palace Museum",
+      "url": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04009142",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "精選賞析〈遠宦帖〉正文，首段說明雙鉤廓填與周撫受信",
+      "note": "A museum selection page. It states the copy method and the recipient but gives no inventory number or date of copying."
     },
     {
       "id": "src-people-longzang",
@@ -16722,6 +17974,39 @@
       "note": null
     },
     {
+      "id": "src-shm-shangyu",
+      "kind": "web",
+      "title": "行書上虞帖 王羲之",
+      "publisher": "上海博物館 Shanghai Museum",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/P00002752",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "藏品說明，記硬黃紙本、尺寸與南唐北宋鑒藏印",
+      "note": "The entry states the Tang tracing copy and the seal chain. Its width figure is garbled in the page text, so no full measurement is taken from it."
+    },
+    {
+      "id": "src-shm-xingrang",
+      "kind": "web",
+      "title": "東晉 王羲之 行穰帖卷",
+      "publisher": "上海博物館 Shanghai Museum",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/P00004987",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "展品說明正文，記紙本、尺寸、普林斯頓藏與 John B. Elliott 遺贈",
+      "note": "A Shanghai Museum exhibition entry for a work lent by Princeton. It states the Tang double-outline copy and the transmission chain but gives no accession number."
+    },
+    {
+      "id": "src-shm-yatouwan",
+      "kind": "web",
+      "title": "鴨頭丸帖卷",
+      "publisher": "上海博物館 Shanghai Museum",
+      "url": "https://www.shanghaimuseum.net/museum/dongqichang/detail_2.html?id=5",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "展品說明，記紙本、尺寸、唐摹本與宣和裱",
+      "note": "A museum digital-exhibition entry. It states the Tang tracing copy, the partial Xuanhe mounting and the late-Ming owners, but gives no character count or accession number."
+    },
+    {
       "id": "src-shm-zhao-shen-colophon",
       "kind": "web",
       "title": "现代 赵朴初 行书跋沈尹默论书札卷",
@@ -16819,6 +18104,17 @@
       "accessedAt": "2026-11-18",
       "locator": "Article: 温泉铭 P.4508 described as the earliest surviving rubbing, held by the Bibliothèque nationale de France",
       "note": "News report on the digital return of the Pelliot collection. Does not give the rubbing’s measurements or condition."
+    },
+    {
+      "id": "src-tjbwg-hanqie",
+      "kind": "web",
+      "title": "唐 摹 王羲之 草書寒切帖卷",
+      "publisher": "天津博物館 Tianjin Museum",
+      "url": "https://www.tjbwg.cn/cn/collectionInfo.aspx?id=2384",
+      "publicationDate": null,
+      "accessedAt": "2026-11-25",
+      "locator": "藏品說明，記唐摹本、尺寸、五十一字與董其昌婁堅跋",
+      "note": "The museum page gives the full transcription and the Xu Bangda appraisal. Its English caption dates Wang Xizhi to 321-379, differing from the Chinese page and the usual 303-361."
     },
     {
       "id": "src-tjbwg-xianyu-1",
@@ -17173,22 +18469,82 @@
     },
     {
       "kind": "people",
+      "id": "wang-xianzhi",
+      "titleZh": "王献之",
+      "titleEn": "Wang Xianzhi",
+      "state": "draft",
+      "people": [],
+      "works": [
+        "luoshen-shisanhang",
+        "zhongqiu",
+        "wansui-tongtian-tie",
+        "yatouwan",
+        "dongshansong"
+      ],
+      "objects": [
+        "luoshen-yuban-stone",
+        "dpm-zhongqiu-026",
+        "wansui-tongtian-scroll",
+        "yatouwan-scroll",
+        "dongshansong-leaf"
+      ],
+      "sources": [
+        "src-dpm-dongshansong",
+        "src-shm-yatouwan",
+        "src-dpm-228204"
+      ],
+      "zh": "王献之（344—386），字子敬，小名官奴，王羲之第七子，官至中书令，人称「王大令」，与父并称「二王」。故宫博物院所附小传记其传世书迹有《鸭头丸帖》《中秋帖》《玉版十三行》等。[故宫，东山松帖页所附小传](https://www.dpm.org.cn/collection/handwriting/229389.html)\n\n本库所收，没有一件可定为他的手笔：《鸭头丸帖》为唐摹本，《东山松帖》为墨迹页而馆方未论摹本，《万岁通天帖》卷中存其书翰；《中秋帖》旧题其书，故宫指出纸料与用笔与晋人书迹有别；《洛神赋十三行》所存为玉版刻石。读这几条时，可把「原书」与「存世一本」分开记。",
+      "en": "Wang Xianzhi (344-386), courtesy name Zijing, seventh son of Wang Xizhi, rose to the Palace Secretariat and was known as the Great Minister Wang; father and son are called the Two Wangs. The Palace Museum's note lists the Duck-Head Pill Letter, the Mid-Autumn Letter and the Jade-version Thirteen Lines among his transmitted works. [Palace Museum, biography attached to the Dongshan Pine leaf](https://www.dpm.org.cn/collection/handwriting/229389.html)\n\nNothing in this library can be called his own hand: the Duck-Head Pill Letter is a Tang tracing copy, the Dongshan Pine leaf is an ink leaf whose copy status the museum leaves open, and one of his letters survives inside the Wan Sui Tong Tian scroll. The Mid-Autumn Letter is traditionally his, but the palace museum notes that its paper and brushwork differ from Jin practice. The Thirteen Lines survive as a stone engraving. In each record the original writing and the surviving witness are kept apart."
+    },
+    {
+      "kind": "people",
       "id": "wang-xizhi",
       "titleZh": "王羲之",
       "titleEn": "Wang Xizhi",
       "state": "draft",
       "people": [],
       "works": [
-        "lanting"
+        "lanting",
+        "kuaixue",
+        "shiqi-tie",
+        "wansui-tongtian-tie",
+        "yuanhuan",
+        "pingan-hero-fengju",
+        "xingrang",
+        "shangyu",
+        "hanqie",
+        "leyilun",
+        "huangting",
+        "xuanshi-biao"
       ],
       "objects": [
-        "witness-lanting"
+        "witness-lanting",
+        "dingwu-zhan",
+        "witness-kuaixue",
+        "shiqi-tie-album",
+        "wansui-tongtian-scroll",
+        "yuanhuan-scroll",
+        "pingan-hero-fengju-scroll",
+        "xingrang-scroll",
+        "shangyu-scroll",
+        "hanqie-scroll",
+        "leyilun-rubbing",
+        "huangting-rubbing",
+        "rubbing-xuanshi-biao"
       ],
       "sources": [
-        "src-catalogue-lanting"
+        "src-catalogue-lanting",
+        "src-npm-yuanhuan",
+        "src-npm-pingan-record",
+        "src-shm-xingrang",
+        "src-shm-shangyu",
+        "src-tjbwg-hanqie",
+        "src-npm-leyilun",
+        "src-npm-huangting",
+        "src-dpm-xuanshi"
       ],
-      "zh": "《兰亭序》传统上归于王羲之。故宫博物院将神龙本列为唐摹本，并在同一页面讨论摹者与神龙印的年代。读这一页时，可把“王羲之其文”与“某位唐人摹写”分开记。",
-      "en": "The Preface to the Orchid Pavilion is traditionally attributed to Wang Xizhi. The Palace Museum catalogues the Shenlong copy as a Tang manuscript copy and discusses both the copyist and the date of the Shenlong seal. Keep the author and the later copyist as separate claims."
+      "zh": "《兰亭序》传统上归于王羲之。故宫博物院将神龙本列为唐摹本，并在同一页面讨论摹者与神龙印的年代。读这一页时，可把「王羲之其文」与「某位唐人摹写」分开记。\n\n本库另收其尺牍数种，皆以唐或唐代以前的摹本传世：《远宦帖》为双钩廓填，《平安何如奉橘三帖》的摹写年代尚有两说，《行穰帖》为唐代双钩摹本，《上虞帖》《寒切帖》馆方均定为唐摹本。小楷《乐毅论》《黄庭经》则只有宋拓刻本，所读不是墨迹。《宣示表》刻本多称出自他的临本，此说属传称。天津博物馆说其真迹早已毁佚，今日可见唯钩摹墨本与法帖拓本二种。",
+      "en": "The Preface to the Orchid Pavilion is traditionally attributed to Wang Xizhi. The Palace Museum catalogues the Shenlong copy as a Tang manuscript copy and discusses both the copyist and the date of the Shenlong seal. Keep the author and the later copyist as separate claims.\n\nThe library also holds several of his letters, all through Tang or pre-Tang tracing copies: the Yuanhuan Letter is a double-outline tracing, the period of the Three Letters Ping'an, Heru and Fengju is still given two ways, the Xingrang Letter is a Tang double-outline copy, and the Shangyu and Hanqie letters are both called Tang tracing copies by their museums. The small-script On Yue Yi and Yellow Court Classic survive only as Song rubbings, not ink. The engravings of the Memorial of Declaration are often said to reproduce his transcription, a traditional attribution. The Tianjin Museum states that his autographs were destroyed long ago, leaving traced ink copies and engraved modelbooks as what can be read today."
     },
     {
       "kind": "people",

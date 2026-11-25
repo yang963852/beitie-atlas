@@ -16,6 +16,8 @@ Clearing after Snow
 
 书体：行书
 
+延伸阅读：[王羲之](../people/wang-xizhi.md)
+
 <a name="witness-kuaixue"></a>
 
 ## 快雪时晴帖（传世摹本）

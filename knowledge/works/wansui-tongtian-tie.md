@@ -58,6 +58,7 @@ attribution:
   - role: calligrapher
     name: 王献之
     nameEn: Wang Xianzhi
+    person: wang-xianzhi
     certainty: documented
     sources:
       - src-gmw-wansui

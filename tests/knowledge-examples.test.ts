@@ -57,8 +57,8 @@ describe('five worked examples', () => {
     expect(work('shen-yinmo-dakai-jia').compositionDate.meaning).toBe('publication');
     expect(work('zhao-puchu-shen-colophon').compositionDate.startYear).toBe(1976);
     expect(work('zhao-puchu-shen-colophon').compositionDate.meaning).toBe('colophon');
-    expect(compiled.works).toHaveLength(108);
-    expect(compiled.objects).toHaveLength(117);
+    expect(compiled.works).toHaveLength(117);
+    expect(compiled.objects).toHaveLength(126);
   });
 });
 
