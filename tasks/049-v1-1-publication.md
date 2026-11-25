@@ -33,4 +33,4 @@ A reader opens the library and sees works, calligraphers and witnesses as publis
 
 ## Handoff
 
-Self-reviewed PR from `workbuddy/work` to `main`. The coordinator reviews the diff and decides the merge. Formal release deployment remains a separate step in the release runbook.
+Self-reviewed PR [#57](https://github.com/yang963852/beitie-atlas/pull/57) from `workbuddy/work` to `main`. The coordinator reviews the diff and decides the merge. Formal release deployment remains a separate step in the release runbook.

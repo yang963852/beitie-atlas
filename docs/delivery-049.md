@@ -1,6 +1,6 @@
 # Delivery 049 · Publish the 1.1 edition without draft labels
 
-**Status: delivered — self-reviewed; PR open for coordinator review.** Base `db5ae6b` (`workbuddy/work`, 2026-11-25). Branch `workbuddy/work`.
+**Status: delivered — self-reviewed; open as [PR #57](https://github.com/yang963852/beitie-atlas/pull/57) at `86b660f`; coordinator acceptance pending.** Base `db5ae6b` (`workbuddy/work`, 2026-11-25). Branch `workbuddy/work`.
 
 ## What changed
 
