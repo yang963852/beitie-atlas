@@ -1,6 +1,6 @@
 # Delivery 043 · One catalogue top and a flowing river
 
-**Status: implemented, checked and self-reviewed; PR pending.** Branch `feat/043-unified-reader-river`, base `0fc8b85`.
+**Status: implemented, checked and self-reviewed; PR pending.** Branch `feat/043-unified-library-river`, base `0fc8b85`.
 
 ## Scope
 
