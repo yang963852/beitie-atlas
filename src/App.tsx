@@ -396,7 +396,8 @@ function AppShell() {
 
       <footer className="footer">
         <a href="#/library">{locale === 'zh' ? '作品与书家' : 'Works and calligraphers'}</a>
-        {!isReleaseBuild && <a href="https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml">{locale === 'zh' ? '1.1 · 提交反馈' : 'Edition 1.1 · Feedback'}</a>}
+        <span className="footer__note">{locale === 'zh' ? '1.1' : 'Edition 1.1'}</span>
+        {!isReleaseBuild && <a href="https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml">{locale === 'zh' ? '提交反馈' : 'Feedback'}</a>}
         {!isReleaseBuild && hasDraftRecords() ? <p className="footer__note">{strings.draftNotice}</p> : null}
         <p className="footer__note">{strings.footerNote}</p>
         <button
