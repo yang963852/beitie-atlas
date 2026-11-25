@@ -1,4 +1,4 @@
-# Task 049 | Set the two-track plan and audit the foundation
+# Task 050 | Set the two-track plan and audit the foundation
 
 Base revision: `eccc9b5` (`trae/work`, same as `origin/main`, 2026-11-25).
 
