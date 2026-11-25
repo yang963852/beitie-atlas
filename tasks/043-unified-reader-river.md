@@ -7,4 +7,4 @@
 - **Non-goals:** Changing the English section label, editorial records, card dates in the reading card, or the map cartography.
 - **Evidence:** Shared masthead/nav measurements, 1440 / 768 / 390 screenshots, English screenshots, animation frame comparison, reduced-motion comparison. See [delivery 043](../docs/delivery-043.md).
 - **Checks:** `npm.cmd run check`; all tests; no page errors or horizontal overflow; header geometry identical across the three entries.
-- **Review:** Implementer self-review. The coordinator decides acceptance and the merge/deployment instruction.
+- **Review:** Implementer self-review; [PR #48](https://github.com/yang963852/beitie-atlas/pull/48). The coordinator decides acceptance and the merge/deployment instruction.

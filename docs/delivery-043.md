@@ -1,6 +1,6 @@
 # Delivery 043 · One catalogue top and a flowing river
 
-**Status: implemented, checked and self-reviewed; PR pending.** Branch `feat/043-unified-library-river`, base `0fc8b85`.
+**Status: implemented, checked and self-reviewed; [PR #48](https://github.com/yang963852/beitie-atlas/pull/48) checks running; coordinator decides merge and deployment.** Branch `feat/043-unified-library-river`, base `0fc8b85`.
 
 ## Scope
 
