@@ -11,6 +11,7 @@ import { zhStrings } from '../i18n/zh';
 import { enStrings } from '../i18n/en';
 import { buildMarkers } from '../map/markers';
 import { InkRiver } from './InkRiver';
+import { ReaderHeader } from './ReaderHeader';
 import { CollectionAtlas } from './CollectionAtlas';
 import { HistoryPoints } from './HistoryPoints';
 import { MapPanel } from './MapPanel';
@@ -143,7 +144,7 @@ function Transmission({ object }: { object: ObjectRecord }) {
 }
 
 export function AtlasTimeline({ hash }: { hash: string }) {
-  const { locale, setLocale, strings } = useLocale();
+  const { locale, strings } = useLocale();
   const zh = locale === 'zh';
   const [query,setQuery] = useState('');
   const [jump,setJump] = useState('');
@@ -183,15 +184,8 @@ export function AtlasTimeline({ hash }: { hash: string }) {
     if (lastCard.current && window.history.state?.fromTimeline) window.history.back();
     else window.location.replace('#catalogue');
   }
-  return <div className="atlas-reader"><header className="atlas-mast">
-    <a href="#" className="atlas-brand"><span className="atlas-seal" aria-hidden="true">碑</span>{strings.siteTitleZh}<small>Between Steles</small></a>
-    <button type="button" onClick={() => setLocale(zh ? 'en' : 'zh')}>{zh ? 'EN' : '中文'}</button>
-  </header>
-  <nav className="reader-sections" aria-label={strings.sectionsLabel}>
-    <a href="#catalogue" aria-current={hash !== '#/collections' ? 'page' : undefined}>{zh ? '年代长河' : 'Chronology'}</a>
-    <a href="#/collections" aria-current={hash === '#/collections' ? 'page' : undefined}>{zh ? '馆藏地图' : 'Collection map'}</a>
-    <a href="#/library">{zh ? '知识库' : 'Library'}</a>
-  </nav>
+  return <div className="atlas-reader">
+  <ReaderHeader active={hash === '#/collections' ? 'collections' : 'catalogue'} />
   {hash === '#/collections' && <CollectionAtlas />}
   <main ref={main} id="catalogue" tabIndex={-1} hidden={Boolean(object) || hash === '#/collections'} className="atlas-time">
     <div className="atlas-time__intro"><div><h1>{zh ? '碑帖时间轴' : 'A chronology of calligraphy'}</h1>
@@ -210,9 +204,7 @@ export function AtlasTimeline({ hash }: { hash: string }) {
         <h2>{period(items[0])?.[locale] ?? strings.dynastyUnknown}</h2>
         <ul>{items.map(item => <li key={item.id} data-bank={ordered.indexOf(item) % 2 ? 'lower' : 'upper'}>
           <a href={'#/folio/'+item.id} className="atlas-card" onClick={openCard}>
-            <span className="atlas-date">{dateLine(item,locale)}</span>
             <h3>{title(item,locale)}</h3>
-            <span className="atlas-hand">{byline(item,locale,strings.attributionRoleShort)}</span>
           </a></li>)}</ul>
       </section>)}
     </div></div>

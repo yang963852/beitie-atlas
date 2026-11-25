@@ -11,6 +11,7 @@ import { SourceList } from './SourceList';
 import { ClaimSection } from './ClaimSection';
 import { KnowledgeProse } from './KnowledgeProse';
 import { ProvenanceEvents } from './ProvenanceEvents';
+import { ReaderHeader } from './ReaderHeader';
 import './knowledge-library.css';
 
 const github = 'https://github.com/yang963852/beitie-atlas';
@@ -23,8 +24,8 @@ const totals = {
   notes: libraryEntries.filter((entry) => entry.kind === 'notes').length,
 };
 const words = {
-  zh: { works: '作品', people: '书家', notes: '读帖笔记', title: '作品与书家', collection: '实物图录', library: '知识库', catalogue: '目录', beta: '内部测试第一版', feedback: '内测反馈', contribute: '补充资料', github: '在 GitHub 阅读', download: '下载完整知识库（ZIP）', search: '搜索作品、书家或笔记', empty: '未找到相关条目。', clear: '清除搜索', objects: '传世实物', objectsHeading: '选择一件实物', selectedObject: '当前实物', objectMap: '在地图与完整记录中查看', noObjects: '本项目尚未收录可辨实物。', claims: '异说与意见', roles: '关联作品与角色', relations: '人物往来', sources: '参考出处', authored: '作品导读', none: '条目尚未收录', home: '返回知识目录', selected: '本期选读', unknownPlace: '收藏地待考' },
-  en: { works: 'Works', people: 'Calligraphers', notes: 'Reading notes', title: 'Works and calligraphers', collection: 'Object catalogue', library: 'Library', catalogue: 'Catalogue', beta: 'Internal beta 1', feedback: 'Beta feedback', contribute: 'Suggest a source', github: 'Read on GitHub', download: 'Download the full library (ZIP)', search: 'Search works, people or notes', empty: 'No matching entries.', clear: 'Clear search', objects: 'Surviving witnesses', objectsHeading: 'Choose a witness', selectedObject: 'Selected witness', objectMap: 'Open the map and full record', noObjects: 'No identifiable witness is catalogued yet.', claims: 'Claims and opinions', roles: 'Works and roles', relations: 'Documented relationships', sources: 'Sources', authored: 'Reading guide', none: 'Entry unavailable', home: 'Back to the library', selected: 'Selected readings', unknownPlace: 'Holding unknown' },
+  zh: { works: '作品', people: '书家', notes: '读帖笔记', title: '作品与书家', collection: '实物图录', library: '知识库', beta: '内部测试第一版', feedback: '内测反馈', contribute: '补充资料', github: '在 GitHub 阅读', download: '下载完整知识库（ZIP）', search: '搜索作品、书家或笔记', empty: '未找到相关条目。', clear: '清除搜索', objects: '传世实物', objectsHeading: '选择一件实物', selectedObject: '当前实物', objectMap: '在地图与完整记录中查看', noObjects: '本项目尚未收录可辨实物。', claims: '异说与意见', roles: '关联作品与角色', relations: '人物往来', sources: '参考出处', authored: '作品导读', none: '条目尚未收录', home: '返回知识目录', selected: '本期选读', unknownPlace: '收藏地待考' },
+  en: { works: 'Works', people: 'Calligraphers', notes: 'Reading notes', title: 'Works and calligraphers', collection: 'Object catalogue', library: 'Library', beta: 'Internal beta 1', feedback: 'Beta feedback', contribute: 'Suggest a source', github: 'Read on GitHub', download: 'Download the full library (ZIP)', search: 'Search works, people or notes', empty: 'No matching entries.', clear: 'Clear search', objects: 'Surviving witnesses', objectsHeading: 'Choose a witness', selectedObject: 'Selected witness', objectMap: 'Open the map and full record', noObjects: 'No identifiable witness is catalogued yet.', claims: 'Claims and opinions', roles: 'Works and roles', relations: 'Documented relationships', sources: 'Sources', authored: 'Reading guide', none: 'Entry unavailable', home: 'Back to the library', selected: 'Selected readings', unknownPlace: 'Holding unknown' },
 };
 function EntryLink({ entry }: { entry: LibraryEntry }) {
   const { locale } = useLocale();
@@ -52,8 +53,7 @@ function Index({ kind }: { kind: KnowledgeKind }) {
     return entry?.guide ? [entry] : [];
   });
   return <>
-    <header className="library-masthead">
-      <p className="library-eyebrow">{t.library}</p>
+    <header className="library-head">
       <h1>{kind === 'works' ? t.title : t[kind]}</h1>
       <p className="library-lede">{locale === 'zh'
         ? `共 ${totals.works} 部作品 · ${totals.people} 位书家 · ${totals.notes} 篇读帖笔记${kind === 'works' ? '，依时代编次' : ''}`
@@ -169,7 +169,7 @@ function Entry({ entry }: { entry: LibraryEntry }) {
 }
 
 export function KnowledgeLibrary({ hash }: { hash: string }) {
-  const { locale, setLocale } = useLocale();
+  const { locale } = useLocale();
   const t = words[locale];
   const [, route, id] = hash.split('/');
   const kind = route === 'work' ? 'works' : route === 'person' ? 'people' : 'notes';
@@ -178,23 +178,17 @@ export function KnowledgeLibrary({ hash }: { hash: string }) {
   useLayoutEffect(() => {
     const heading = document.getElementById('reading-main');
     heading?.focus({ preventScroll: true });
-    document.querySelector('.reading-top')?.scrollIntoView?.({ block: 'start', behavior: 'instant' });
+    window.scrollTo(0, 0);
   }, [hash]);
   return <div className="reading-room">
-    <header className="reading-top">
-      <a className="reading-brand" href="#/library"><span className="reading-seal" aria-hidden="true">碑</span>碑帖之间</a>
-
-      <button type="button" onClick={() => setLocale(locale === 'zh' ? 'en' : 'zh')}>{locale === 'zh' ? 'English' : '简体中文'}</button>
-    </header>
+    <ReaderHeader active="library" />
     <main className="reading-main" id="reading-main" tabIndex={-1}>
-      <nav className="library-paths" aria-label={t.library}><a href="#catalogue">{locale === 'zh' ? '年代长河' : 'Chronology'}</a>
-        <a href="#/collections">{locale === 'zh' ? '馆藏地图' : 'Collection map'}</a></nav>
-      <div className="reading-status">{route === 'library' ? <span>{t.catalogue}</span> : <a href={tabHref(kind)}>← {t.home}</a>}
-        {!isReleaseBuild && <a href={github + '/issues/new?template=beta-feedback.yml'}>{t.beta} · {t.feedback}</a>}</div>
+      {route !== 'library' && <nav className="library-back" aria-label={t.library}><a href={tabHref(kind)}>← {t.home}</a></nav>}
       {route === 'library' ? <Index key={indexKind} kind={indexKind} /> : entry ? <Entry entry={entry} /> : <h1>{t.none}</h1>}
     </main>
     <footer className="reading-footer">{route === 'library' && <a href={downloadHref} download>{t.download}</a>}<a href={github + '/tree/main/knowledge'}>{t.github}</a>
       <a href={github + '/issues/new?template=knowledge.yml'}>{t.contribute}</a>
+      {!isReleaseBuild && <a href={github + '/issues/new?template=beta-feedback.yml'}>{t.beta} · {t.feedback}</a>}
       <p className="reading-colophon">碑帖之间 · {t.library}</p></footer>
   </div>;
 }
