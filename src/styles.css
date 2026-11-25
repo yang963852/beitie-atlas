@@ -60,6 +60,10 @@
   --font-reading: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia,
     'Source Han Serif SC', 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
   --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  /* The atlas styles were written against these local aliases; define them
+     globally so the shared masthead and nav render identically on the library. */
+  --book: var(--font-zh);
+  --kai: var(--font-kai);
 
   --ease: cubic-bezier(0.22, 0.61, 0.24, 1);
   --gutter: clamp(16px, 2.4vw, 36px);
