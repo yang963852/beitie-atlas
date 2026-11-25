@@ -65,10 +65,10 @@ not a release artifact.
 
 ## CI and deployment
 
-[The Pages workflow](../.github/workflows/pages.yml) automatically deploys the labelled preview from checked `main`. GitHub Pages is the sole website host. The public preview carries the label **1.1** and a preview marker. The 1.1 corpus is fully reviewed, so the preview contains no draft records; the marker stays until a formal release artifact is built and deployed. Record the deployed revision and Actions run plus observed host or network results. Use the [feedback form](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) for reader reports.
+[The Pages workflow](../.github/workflows/pages.yml) publishes a verified release build from checked `main`. Since 2026-11-25 it runs `npm run check`, then `npm run release` with the Pages base path and the browser map key, verifies the `release` marker and `dist/release-manifest.json`, checks the downloadable library ZIP, and uploads `dist/`. A push to `main` therefore cannot publish a draft or an unverified artifact. `npm run build` still produces a preview artifact for local review; it is never uploaded.
 
-For formal publication, obtain editorial approval of the exact source revision and update the Pages workflow in that release task. Have the workflow build with `npm run release` and the Pages base path, verify the release marker and manifest, and deploy the resulting `dist/`. Account for the preview trigger in the same task so a push cannot silently replace the formal edition with a preview. Record the Actions run, full source SHA, manifest and public URL. Verify the hosted permalink, actual map tiles and attribution when configured, and mainland reachability as separate checks.
+The current public edition is **1.1**. Record the deployed revision, the Actions run and observed host or network results for each publication. Use the [feedback form](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) for reader reports.
 
 ## Rolling back
 
-To roll back the current preview, revert the offending change through a PR so Pages deploys the checked `main` revision. A formal release rollback rebuilds a previously approved revision with `npm run release` and verifies its artifact before publishing it through Pages. Use Git revisions as rollback sources.
+To roll back, revert the offending change through a PR so Pages rebuilds the checked `main` revision through the same release gate. Use Git revisions as rollback sources; never upload a hand-made `dist/`.

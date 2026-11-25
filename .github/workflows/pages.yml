@@ -1,4 +1,4 @@
-name: Publish GitHub Pages preview
+name: Publish GitHub Pages release
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: pages-preview
+  group: pages-release
   cancel-in-progress: false
 
 jobs:
@@ -33,14 +33,15 @@ jobs:
           VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
           VITE_RELEASE_MODE: '0'
           VITE_TIANDITU_KEY: ''
-      - name: Build Pages preview with browser map configuration
-        run: npm run build
+      - name: Build the release artifact
+        run: npm run release
         env:
           VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
-          VITE_RELEASE_MODE: '0'
           VITE_TIANDITU_KEY: ${{ secrets.TIANDITU_BROWSER_KEY }}
-      - name: Verify preview marker
-        run: grep -F 'name="beitie-build-mode" content="preview"' dist/index.html
+      - name: Verify the release marker and manifest
+        run: |
+          grep -F 'name="beitie-build-mode" content="release"' dist/index.html
+          node -e "const m=require('./dist/release-manifest.json'); if(m.mode!=='release'||m.releaseMode!==true) { console.error('not a release manifest'); process.exit(1); } console.log('release manifest counts', JSON.stringify(m.counts));"
       - name: Verify the downloadable author library
         run: |
           python3 - <<'PY'
