@@ -147,7 +147,9 @@ export function hasDraftRecords(): boolean {
 
 export function getWork(id: string): Work | undefined {
   return getIndex().works.get(id);
-}export function getPlace(id: string | null): Place | undefined {
+}
+
+export function getPlace(id: string | null): Place | undefined {
   if (!id) return undefined;
   return getIndex().places.get(id);
 }
