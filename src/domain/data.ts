@@ -29,6 +29,7 @@ const OBJECT_TYPE_ORDER: ObjectType[] = [
   'manuscript-copy',
   'original-stele',
   'cliff-inscription',
+  'bronze-vessel',
   'recarving',
   'fragment',
   'rubbing',

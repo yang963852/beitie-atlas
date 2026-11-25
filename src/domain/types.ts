@@ -186,6 +186,7 @@ export type ObjectType =
   | 'manuscript-copy'
   | 'original-stele'
   | 'cliff-inscription'
+  | 'bronze-vessel'
   | 'recarving'
   | 'rubbing'
   | 'fragment';

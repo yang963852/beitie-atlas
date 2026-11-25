@@ -20,6 +20,17 @@ The owner's reading list sets priorities. A name in this table is not approval o
 | Qing | 三希堂法帖 (037) | Identify a single Qing impression and its volume; the 495-block count comes from a press feature and the museum gives none. |
 | Republican period | 吴昌硕临石鼓文轴 (041, written 1915) | The museum labels the scroll Qing; the atlas files it by writing year. Confirm the rule before adding more late-Qing hands. |
 
+## Bronze inscriptions and bamboo slips (043)
+
+The owner extended the corpus beyond steles and modelbooks. Bronze inscriptions are filed as `bei` because they reached calligraphers as rubbings; bamboo slips are filed as `tie` because they are ink writing. A new object type `bronze-vessel` records the vessel itself, never a rubbing of it.
+
+| Group | Represented | Gaps |
+| --- | --- | --- |
+| Bronze inscriptions | 大盂鼎 (early Western Zhou), 史墙盘 (middle), 散氏盘 and 毛公鼎 (late), 中山王厝鼎 (Warring States) | Shang bronze inscriptions; 虢季子白盘 and 大克鼎; a specific early rubbing for each vessel |
+| Bamboo slips | 郭店楚简 (Warring States Chu), 睡虎地秦简 (Qin), 武威仪礼简 (Western Han), 居延劾状 (Eastern Han), 走马楼田家莂 (Sun Wu) | 马王堆帛书 (silk, outside the slip scope); 银雀山, 里耶 and 清华简; object-level catalogue numbers for the corpora |
+
+All ten records are drafts and the places carry no coordinates. The object counts and disputed character counts are recorded as open questions in each record.
+
 ## Open questions from the witness audit
 
 - **张黑女墓志 (张玄墓志).** Now recorded as a draft (041) from a [Yongji municipal government feature](https://www.yongji.gov.cn/doc/2024/09/02/472291.shtml), not from the Shanghai Museum entry. The album's line count (twenty lines or twelve), the character count and the accession year remain unverified. Match the He Shaoji album against a catalogue or plate before asserting the holding.

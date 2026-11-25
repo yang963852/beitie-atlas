@@ -177,6 +177,7 @@ function AppShell() {
         // a copy. A recarving is a later stone and stays out of this filter.
         (objectType === 'original-stele' ||
           objectType === 'cliff-inscription' ||
+          objectType === 'bronze-vessel' ||
           objectType === 'fragment' ||
           objectType === 'ink-manuscript'))
       : filtered,
