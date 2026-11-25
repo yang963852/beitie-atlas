@@ -31,9 +31,7 @@ attribution:
 sources:
   - src-yongji-zhangxuan
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection from a municipal-government cultural feature. Line count and findspot still need a rubbing-level check.
-  noteZh: 2026 年 11 月经典碑帖增补草稿，依据市政府文化介绍整理；行款与出土地仍待对勘拓本。
+  state: reviewed
 ---
 
 # 张玄墓志

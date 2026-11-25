@@ -6,7 +6,7 @@
 
 Xuanmi Pagoda Stele
 
-**作品**　唐 · 唐会昌元年（841年） · 碑 · 已审
+**作品**　唐 · 唐会昌元年（841年） · 碑
 
 唐会昌元年（841）立碑。裴休撰文，柳公权书丹，又以篆书题额。西安碑林藏其石，故宫另藏明初拓册，石与纸各有来历。
 
@@ -28,7 +28,7 @@ Xuanmi Pagoda Stele
 
 Stele of the Xuanmi Pagoda, rubbing
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：明初拓
 - 著录编号：新00072378
@@ -54,7 +54,7 @@ Stele of the Xuanmi Pagoda, rubbing
 
 Xuanmi Pagoda Stele, original stone
 
-原石 · 存世 · 待审
+原石 · 存世
 
 - 制作年代：唐会昌元年（841年）
 - 著录编号：未记录

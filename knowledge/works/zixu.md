@@ -29,9 +29,7 @@ attribution:
 sources:
   - src-catalogue-zixu
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 自叙帖

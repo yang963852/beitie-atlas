@@ -31,9 +31,7 @@ collection:
   noteZh: 馆方综述记墓葬、简数与书体。
 events: []
 review:
-  state: draft
-  note: Draft object record. The total character count is not in the museum page used.
-  noteZh: 实物草稿。所据馆方页面未给总字数。
+  state: reviewed
 ---
 
 # 睡虎地秦简

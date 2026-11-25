@@ -10,7 +10,7 @@ sources:
   - src-example
 ---
 
-# 姓名（草稿）
+# 姓名
 
 ## 中文
 

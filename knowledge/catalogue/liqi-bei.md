@@ -6,7 +6,7 @@
 
 Stele of the Ritual Vessels
 
-**作品**　东汉 · 东汉永寿二年（156年） · 碑 · 已审
+**作品**　东汉 · 东汉永寿二年（156年） · 碑
 
 东汉永寿二年（156），碑记鲁相韩敕修孔庙、铸礼器之事。石今藏曲阜汉魏碑刻陈列馆。
 
@@ -28,7 +28,7 @@ Stele of the Ritual Vessels
 
 Ritual Vessels Stele, Ming rubbing with Zhang Boying’s label
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：明
 - 著录编号：新00044512
@@ -52,7 +52,7 @@ Ritual Vessels Stele, Ming rubbing with Zhang Boying’s label
 
 Stele of the Ritual Vessels, original stone
 
-原石 · 存世 · 待审
+原石 · 存世
 
 - 制作年代：东汉永寿二年（156年）
 - 著录编号：未记录

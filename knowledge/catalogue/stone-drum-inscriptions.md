@@ -6,7 +6,7 @@
 
 Stone Drum Inscriptions
 
-**作品**　先秦 · 秦国遗物，确切年代未定 · 碑 · 待审
+**作品**　先秦 · 秦国遗物，确切年代未定 · 碑
 
 十件鼓形石上刻有篆书诗篇，内容涉及出行与田猎。故宫著录为秦国遗物，但确切刻成年代有争议。
 
@@ -28,7 +28,7 @@ Stone Drum Inscriptions
 
 Stone Drum Inscriptions, Palace Museum Ming rubbing album
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：明初拓
 - 著录编号：新00045770
@@ -56,7 +56,7 @@ Stone Drum Inscriptions, Palace Museum Ming rubbing album
 
 Qin Stone Drums, original set of ten
 
-原石 · 存世 · 待审
+原石 · 存世
 
 - 制作年代：秦国遗物，确切年代未定
 - 著录编号：故00000991

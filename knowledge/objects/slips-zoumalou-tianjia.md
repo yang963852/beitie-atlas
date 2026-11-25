@@ -31,9 +31,7 @@ collection:
   noteZh: 馆方说明记形制与1996年出土。
 events: []
 review:
-  state: draft
-  note: Draft object record. The source describes the document type rather than one catalogued tablet.
-  noteZh: 实物草稿。来源介绍的是文书类型，不是单件编号。
+  state: reviewed
 ---
 
 # 走马楼吴简·嘉禾吏民田家莂

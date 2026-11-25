@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-shm-shangyu
 review:
-  state: draft
-  note: Draft from the Shanghai Museum collection entry, read on 2026-11-25. The page's width figure is garbled, so only the height is carried into the object record.
-  noteZh: 草稿，依据 2026-11-25 阅读的上海博物馆藏品说明整理。该页横长数字残缺，实物记录只取纵长。
+  state: reviewed
 ---
 
 # 上虞帖

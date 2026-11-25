@@ -70,9 +70,7 @@ events:
       - src-jl-dfz-haotaiwang
     certainty: documented
 review:
-  state: draft
-  note: Draft object record from provincial gazetteer entries read on 2026-11-23. Dimensions and the 1961 designation come from those pages; the stone was not examined and no condition survey is cited.
-  noteZh: 草稿实物记录，依据 2026-11-23 阅读的省地方志条目整理。尺寸与 1961 年公布均出自该页；未核对原石，未引保护状况报告。
+  state: reviewed
 ---
 
 # 好太王碑（原石）

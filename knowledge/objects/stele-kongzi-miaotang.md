@@ -30,9 +30,7 @@ collection:
   noteZh: 两处页面都记西庙堂本藏西安碑林博物馆。均未给出展厅、入藏时间或展出状态。
 events: []
 review:
-  state: draft
-  note: Draft object record. The recut's date and holding are sourced; its measurements, condition and accession are not, and the two pages disagree on size. The stone was not examined.
-  noteZh: 草稿实物记录。重刻年代与收藏机构有来源；尺寸、保存状况与入藏经过没有来源，且两处所记尺寸不同。未核对原石。
+  state: reviewed
 ---
 
 # 孔子庙堂碑（西庙堂·宋刻）

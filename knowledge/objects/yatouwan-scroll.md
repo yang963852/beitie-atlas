@@ -69,9 +69,7 @@ events:
       - src-shm-yatouwan
     certainty: documented
 review:
-  state: draft
-  note: Draft object record. Size, material and two custody episodes are documented; the accession number and the colophon order are not.
-  noteZh: 实物草稿。尺寸、质地与两段递藏有据；藏品号与题跋次序未记。
+  state: reviewed
 ---
 
 # 鸭头丸帖卷（唐摹本）

@@ -52,8 +52,6 @@ events:
     certainty: documented
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from two government pages that disagree on the character count."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据两份政府页面整理的草稿；两份材料所记字数不一致。
 ---
 
 # 大唐中兴颂（摩崖）

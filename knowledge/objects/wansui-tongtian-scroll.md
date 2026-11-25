@@ -70,9 +70,7 @@ events:
       - src-chinanews-wansui
     certainty: documented
 review:
-  state: draft
-  note: Draft object record. Dimensions come from a museum feature rather than the museum's own entry; accession number and gallery are unknown. The scroll was not examined.
-  noteZh: 草稿实物记录。尺寸出自博物馆专题文章，非馆方藏品条目；藏品号与展室不详。未核对原卷。
+  state: reviewed
 ---
 
 # 唐摹王氏一门书翰卷

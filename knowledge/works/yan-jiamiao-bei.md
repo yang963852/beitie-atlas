@@ -40,9 +40,7 @@ attribution:
 sources:
   - src-beilin-yanjiamiao
 review:
-  state: draft
-  note: Draft record from the Xi'an Beilin object entry read on 2026-11-23. That page did not respond to a second request later the same day, so the wording is recorded but not re-verified; the stone was not examined.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的西安碑林条目整理。该页当日稍后再次请求未通，故所记文字未得复核；未核对原石。
+  state: reviewed
 ---
 
 # 颜氏家庙碑

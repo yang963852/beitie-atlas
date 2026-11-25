@@ -31,9 +31,7 @@ sources:
   - src-npm-nongfang
   - src-dpm-emperor
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection. The museum entry gives the script and scale; a Palace Museum article gives the medium and dimensions.
-  noteZh: 2026 年 11 月经典碑帖增补草稿。书体与字径依台北故宫条目，材质与尺寸依故宫博物院文章。
+  state: reviewed
 ---
 
 # 秾芳诗帖

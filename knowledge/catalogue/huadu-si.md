@@ -6,7 +6,7 @@
 
 Huadu Temple Stupa Inscription
 
-**作品**　唐 · 唐 · 碑 · 待审
+**作品**　唐 · 唐 · 碑
 
 这篇塔铭是欧阳询所书。吴湖帆所藏四种欧书宋拓中，便有这一册。
 
@@ -24,7 +24,7 @@ Huadu Temple Stupa Inscription
 
 Huadu Temple inscription, Si’ou Hall album
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：宋
 - 著录编号：未记录

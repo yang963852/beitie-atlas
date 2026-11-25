@@ -6,7 +6,7 @@
 
 Chunhua Modelbooks
 
-**作品**　北宋 · 淳化三年 · 帖 · 待审
+**作品**　北宋 · 淳化三年 · 帖
 
 王著奉敕编次内府所藏墨迹，摹刻为十卷。临王羲之，可从卷六读起。
 
@@ -20,7 +20,7 @@ Chunhua Modelbooks
 
 Chunhua Modelbooks, Maoqin Hall edition, vol. 6
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：宋
 - 著录编号：故00004678-6/10

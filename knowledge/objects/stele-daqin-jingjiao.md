@@ -71,8 +71,6 @@ events:
     certainty: documented
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from the museum page. The 1907 episode is summarized from that page without checking Holm’s own account."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；1907 年一段仅据该页面，未核对何乐模本人记述。
 ---
 
 # 大秦景教流行中国碑（原石）

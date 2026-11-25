@@ -6,7 +6,7 @@
 
 Preface to the Orchid Pavilion
 
-**作品**　东晋 · 353年 · 帖 · 待审
+**作品**　东晋 · 353年 · 帖
 
 读王羲之《兰亭序》，可以对看神龙本的摹写与定武本的刻拓。
 
@@ -24,7 +24,7 @@ Preface to the Orchid Pavilion
 
 Dingwu Orchid Pavilion, Zhan Dongtu copy
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：宋
 - 著录编号：新00135367
@@ -48,7 +48,7 @@ Dingwu Orchid Pavilion, Zhan Dongtu copy
 
 Orchid Pavilion Preface, Tang copy traditionally attributed to Feng Chengsu
 
-墨迹摹本 · 存世 · 待审
+墨迹摹本 · 存世
 
 - 制作年代：唐（仅记年号，年份未记）
 - 著录编号：故00002597

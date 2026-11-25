@@ -6,7 +6,7 @@
 
 Juyan document on the death of a post-station horse
 
-**作品**　东汉 · 东汉光武帝建武三年（27年） · 帖 · 待审
+**作品**　东汉 · 东汉光武帝建武三年（27年） · 帖
 
 1974年出土于内蒙古额济纳旗甲渠候官遗址，十六简，释读四百余字，记东汉建武三年调查驿马死亡一案。全篇章草，收笔带燕尾，字字独立而气脉贯通，是汉代章草的典范，也是边塞文书书写的实物。
 
@@ -29,7 +29,7 @@ Juyan document on the death of a post-station horse
 
 Juyan document on the death of a post-station horse
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：东汉光武帝建武三年（27年）
 - 著录编号：EPF22:186-201

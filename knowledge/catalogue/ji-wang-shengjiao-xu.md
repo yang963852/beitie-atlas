@@ -6,7 +6,7 @@
 
 Preface to the Sacred Teaching, assembled from Wang Xizhi
 
-**作品**　唐 · 唐咸亨三年（672年） · 碑 · 已审
+**作品**　唐 · 唐咸亨三年（672年） · 碑
 
 碑载唐太宗所撰序文与高宗所作记文。怀仁从王羲之书迹中集字成篇，至咸亨三年（672）刻石。今天临写的，是晋人笔迹经唐人选集、布置而成的一通碑。
 
@@ -26,7 +26,7 @@ Preface to the Sacred Teaching, assembled from Wang Xizhi
 
 Assembled Wang Xizhi Sacred Teaching Stele, original stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：唐咸亨三年（672年）
 - 著录编号：未记录

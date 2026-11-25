@@ -44,9 +44,7 @@ claims:
     note: The leaf count belongs to this Ming rubbing album only; neither the stone nor another rubbing inherits it.
     noteZh: 页数只属于此明拓册；原石与另一拓本都不继承。
 review:
-  state: draft
-  note: The previous record was approved on 2026-11-18. Its task 039 edits await publication review.
-  noteZh: 上一版于 2026-11-18 获准出版。本次修改待出版审核。
+  state: reviewed
 ---
 
 # 张猛龙碑（明拓本）

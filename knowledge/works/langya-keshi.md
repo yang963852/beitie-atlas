@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-chnmuseum-langya
 review:
-  state: draft
-  note: Draft record from the National Museum's collection page read on 2026-11-18. The page gives the fragment's measurements and character count but no excavation, accession or condition history; the stone was not examined.
-  noteZh: 草稿记录，依据 2026-11-18 阅读的中国国家博物馆藏品页整理。该页给出残石尺寸与字数，但没有出土、入藏或保存状况记录；未核对原石。
+  state: reviewed
 ---
 
 # 琅琊刻石

@@ -144,13 +144,7 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
       <header className="detail__head">
         <p className="detail__eyebrow">
           <span className="badge">{strings.objectTypeLabels[object.objectType]}</span>
-          <span
-            className={
-              object.review.state === 'draft' ? 'badge badge--draft' : 'badge badge--ok'
-            }
-          >
-            {object.review.state === 'draft' ? strings.reviewDraft : strings.reviewReviewed}
-          </span>
+          {object.review.state === 'draft' ? <span className="badge badge--draft">{strings.reviewDraft}</span> : null}
         </p>
 
         <h2 id="detail-title" className="detail__title" lang="zh-Hans">
@@ -393,13 +387,6 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
             {strings.contributeAction}
           </button>
         </div>
-      ) : null}
-
-      {pickText(locale, object.review.noteZh, object.review.note) ? (
-        <p className="review-note">
-          <strong>{strings.reviewNoteLabel}</strong>{' '}
-          {pickText(locale, object.review.noteZh, object.review.note)}
-        </p>
       ) : null}
     </article>
   );

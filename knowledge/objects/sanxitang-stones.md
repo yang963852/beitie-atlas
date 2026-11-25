@@ -68,9 +68,7 @@ events:
       - src-chinadaily-yuegu
     certainty: documented
 review:
-  state: draft
-  note: Draft object record. The stones are evidenced as a set in the pavilion's walls; no survey, block count or condition report is cited consistently. The stones were not examined.
-  noteZh: 草稿实物记录。帖石作为整组嵌于楼壁有据，但所引来源对石数、保存状况的记载不能互相印证。未实地核对。
+  state: reviewed
 ---
 
 # 三希堂法帖刻石

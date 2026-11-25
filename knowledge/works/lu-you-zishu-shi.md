@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-lnm-luyou
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection from a Liaoning Provincial Museum object note. Dimensions, line count and provenance are not recorded there.
-  noteZh: 2026 年 11 月经典碑帖增补草稿，依据辽宁省博物馆藏品说明；馆方未记尺寸、行数与流传。
+  state: reviewed
 ---
 
 # 陆游自书诗卷

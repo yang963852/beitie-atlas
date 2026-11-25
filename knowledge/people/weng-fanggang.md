@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 翁方纲
 titleEn: Weng Fanggang
 aliases: []
-state: draft
+state: reviewed
 works:
   - liqi-bei
 objects:
@@ -12,7 +12,7 @@ sources:
   - src-dpm-234635
 ---
 
-# 翁方纲（草稿）
+# 翁方纲
 
 ## 中文
 

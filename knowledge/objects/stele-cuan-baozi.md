@@ -90,8 +90,6 @@ events:
     certainty: documented
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. Holding, dimensions and the three dated events come from municipal and provincial pages; the stone itself was not examined."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿实物记录。现藏、尺寸与三件有年份的事件取自市级、省级页面；未核对原石。
 ---
 
 # 爨宝子碑（原石）

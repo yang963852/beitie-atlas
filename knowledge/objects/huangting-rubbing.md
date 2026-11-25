@@ -29,9 +29,7 @@ collection:
   noteZh: 馆方著录记一册七开、本幅七开十四幅，并列此文物编号。
 events: []
 review:
-  state: draft
-  note: Draft object record. Leaf count is known; no measurement or stone date is given.
-  noteZh: 实物草稿。册页数可据著录，尺寸与刻石年代未给。
+  state: reviewed
 ---
 
 # 宋拓晋唐小楷册·黄庭经

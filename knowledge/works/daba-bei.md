@@ -32,9 +32,7 @@ attribution:
 sources:
   - src-dpm-daba
 review:
-  state: draft
-  note: Draft record from the Palace Museum's thematic page on Zhao Mengfu read on 2026-11-23. The page transcribes the inscription and gives dimensions and holding; the manuscript was not examined.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的故宫赵孟頫专题页整理。该页录全文，并记尺寸与收藏；未核对原件。
+  state: reviewed
 ---
 
 # 胆巴碑

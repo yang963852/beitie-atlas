@@ -29,9 +29,7 @@ collection:
   noteZh: 馆方说明记此卷为馆藏，并系于陆游八十岁。
 events: []
 review:
-  state: draft
-  note: Draft object record. The museum note gives no dimensions, line count or provenance.
-  noteZh: 实物草稿。馆方说明未记尺寸、行数与流传。
+  state: reviewed
 ---
 
 # 陆游自书诗卷

@@ -6,7 +6,7 @@
 
 Yellow Court Classic
 
-**作品**　东晋 · 晉王羲之 · 帖 · 待审
+**作品**　东晋 · 晉王羲之 · 帖
 
 小楷，写《黄庭经》文本。馆方所藏为宋拓《晋唐小楷》册的一种，一册七开，本幅七开十四幅，楷书。所读为拓本，不是王羲之墨迹。
 
@@ -29,7 +29,7 @@ Yellow Court Classic
 
 Song rubbing of the Yellow Court Classic, from an album of Jin and Tang small regular script
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：宋拓
 - 著录编号：故帖00000800003

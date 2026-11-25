@@ -6,7 +6,7 @@
 
 Treatise on Calligraphy
 
-**作品**　唐 · 垂拱三年寫記 · 帖 · 待审
+**作品**　唐 · 垂拱三年寫記 · 帖
 
 唐孙过庭书《书谱》。
 
@@ -22,7 +22,7 @@ Treatise on Calligraphy
 
 Treatise on Calligraphy
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：垂拱三年寫記
 - 著录编号：故書000058N000000000

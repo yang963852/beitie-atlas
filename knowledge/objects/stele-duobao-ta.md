@@ -50,9 +50,7 @@ events:
       - src-beilin-duobaota
     certainty: documented
 review:
-  state: draft
-  note: The earlier collection record was owner-approved on 2026-11-18. The new provenance lead awaits editorial review.
-  noteZh: 此前的馆藏记录于 2026-11-18 经负责人批准；本次新增的递藏线索尚待编辑核实。
+  state: reviewed
 ---
 
 # 多宝塔感应碑（原石）

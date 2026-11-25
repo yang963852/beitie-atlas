@@ -39,9 +39,7 @@ sources:
   - src-beilin-sanfenji
   - src-hbrb-sanfenji
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection. The museum describes the 767 monument; a newspaper feature reports that the present stone is a Song recutting, which remains open.
-  noteZh: 2026 年 11 月经典碑帖增补草稿。馆方页面记 767 年原刻，报纸则称今碑为宋时重刻，此问题仍待考。
+  state: reviewed
 ---
 
 # 三坟记

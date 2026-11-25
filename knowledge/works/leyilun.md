@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-npm-leyilun
 review:
-  state: draft
-  note: Draft from the palace museum digital archive record, read on 2026-11-25. The record gives the album title, script and inventory number but no leaf measurement or stone date.
-  noteZh: 草稿，依据 2026-11-25 阅读的台北故宫数位典藏著录整理。该页给册名、书体与文物编号，未给册页尺寸与刻石年代。
+  state: reviewed
 ---
 
 # 乐毅论

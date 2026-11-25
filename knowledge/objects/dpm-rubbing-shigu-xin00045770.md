@@ -36,9 +36,7 @@ collection:
   noteZh: 按机构著录记录收藏，不据此判断当前是否展出。
 events: []
 review:
-  state: draft
-  note: Draft. The museum dates this rubbing to the early Ming; no individual year is given.
-  noteZh: 草稿。馆方定为明初拓，无确切年份。
+  state: reviewed
 ---
 
 # 石鼓文（故宫明拓册）

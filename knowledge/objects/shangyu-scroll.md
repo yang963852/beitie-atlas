@@ -50,9 +50,7 @@ events:
       - src-shm-shangyu
     certainty: documented
 review:
-  state: draft
-  note: Draft object record. Only the height is recorded because the width figure is garbled in the museum page.
-  noteZh: 实物草稿。馆方页面横长数字残缺，仅记纵长。
+  state: reviewed
 ---
 
 # 上虞帖卷（唐摹本）

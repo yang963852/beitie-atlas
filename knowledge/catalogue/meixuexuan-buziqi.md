@@ -6,7 +6,7 @@
 
 Meixuexuan Inscription of Huiweng’s Essay
 
-**作品**　明 · 明万历三十四年（1606） · 碑 · 已审
+**作品**　明 · 明万历三十四年（1606） · 碑
 
 明人以草书镌录一篇前人文章。馆方著录将原文归于朱熹，文章与眼前的刻石分属两个时代。
 
@@ -24,7 +24,7 @@ Meixuexuan Inscription of Huiweng’s Essay
 
 Meixuexuan Inscription of Huiweng’s Essay, stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：明万历三十四年（1606）
 - 著录编号：未记录

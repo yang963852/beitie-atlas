@@ -6,7 +6,7 @@
 
 Inscriptions for Duke Wen of Zheng
 
-**作品**　南北朝 · 北魏 · 北魏 · 碑 · 待审
+**作品**　南北朝 · 北魏 · 北魏 · 碑
 
 郑道昭为父亲记功，两山各留一刻。上碑在平度天柱山，下碑在莱州云峰山。
 
@@ -20,7 +20,7 @@ Inscriptions for Duke Wen of Zheng
 
 Lower inscription for Duke Wen of Zheng
 
-摩崖 · 存世 · 待审
+摩崖 · 存世
 
 - 制作年代：北魏
 - 著录编号：未记录
@@ -44,7 +44,7 @@ Lower inscription for Duke Wen of Zheng
 
 Upper inscription for Duke Wen of Zheng
 
-摩崖 · 存世 · 待审
+摩崖 · 存世
 
 - 制作年代：北魏
 - 著录编号：未记录

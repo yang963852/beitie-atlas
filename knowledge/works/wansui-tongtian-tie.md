@@ -101,9 +101,7 @@ sources:
   - src-chinanews-wansui
   - src-lnm-wansui
 review:
-  state: draft
-  note: Draft record from a museum collection highlight, a Guangming Online museum feature and a China News Service exhibition report, all read on 2026-11-23. They agree on the 697 submission and the seven surviving hands. The scroll was not examined.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的辽宁省博物馆藏品条目、光明网博物馆频道文章与中国新闻网展览报道整理。三处在 697 年进呈与存世七人上一致。未核对原卷。
+  state: reviewed
 ---
 
 # 万岁通天帖

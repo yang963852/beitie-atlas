@@ -40,9 +40,7 @@ sources:
   - src-tnm-sanmen
   - src-colbase-sanmen
 review:
-  state: draft
-  note: Draft record from the Tokyo National Museum collection record and the ColBase national database entry, read on 2026-11-23. Neither gives a writing year, dimensions or an accession date; the scroll was not examined.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的东京国立博物馆藏品著录与 ColBase 国家数据库条目整理。两处均未记书写年份、尺寸与入藏年份；未核对原卷。
+  state: reviewed
 ---
 
 # 三门记

@@ -31,9 +31,7 @@ collection:
   noteZh: 藏品条目记文物号与本人款识。
 events: []
 review:
-  state: draft
-  note: Draft object record. The source does not identify the rubbing used for the copy.
-  noteZh: 实物草稿。来源未记所据拓本。
+  state: reviewed
 ---
 
 # 吴昌硕篆书临石鼓文轴

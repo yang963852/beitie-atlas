@@ -30,9 +30,7 @@ collection:
   noteZh: 馆方将其编入东洋书法类，机构管理序号 TB-1461。两处均未记入藏经过与年份。
 events: []
 review:
-  state: draft
-  note: Draft object record from two museum records read on 2026-11-23. The accession history and the scroll's measurements are not stated; the object was not examined.
-  noteZh: 草稿实物记录，依据 2026-11-23 阅读的两处馆方著录整理。入藏经过与尺寸均未记载；未核对原件。
+  state: reviewed
 ---
 
 # 楷书玄妙观重修三门记卷

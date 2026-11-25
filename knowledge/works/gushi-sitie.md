@@ -31,9 +31,7 @@ sources:
   - src-lnm-gushisitie
   - src-lnd-gushisitie
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection. Title and holding follow the museum; dimensions and content follow a newspaper feature on the same exhibition.
-  noteZh: 2026 年 11 月经典碑帖增补草稿。题名与收藏依馆方页面，尺寸与内容依同一展览的报纸报道。
+  state: reviewed
 ---
 
 # 古诗四帖

@@ -6,7 +6,7 @@
 
 Stele of Huangfu Dan
 
-**作品**　唐 · 年代不详 · 碑 · 已审
+**作品**　唐 · 年代不详 · 碑
 
 欧阳询为皇甫诞书此碑。馆方著录记其出土地望，刻石确年则未详。
 
@@ -27,7 +27,7 @@ Stele of Huangfu Dan
 
 Stele of Huangfu Dan, original stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：年代不详
 - 著录编号：未记录

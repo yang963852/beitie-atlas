@@ -49,9 +49,7 @@ events:
       - src-cnr-shimen-ming
     certainty: unknown
 review:
-  state: draft
-  note: Draft object record. The removal is dated only as 'after the inscription was made'; no year, dimensions or condition survey is cited.
-  noteZh: 草稿实物记录。迁移只知发生在刻石之后，未记年份；未引用尺寸或保存状况调查。
+  state: reviewed
 ---
 
 # 石门铭（摩崖）

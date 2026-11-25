@@ -6,7 +6,7 @@
 
 Return Home in Regular Script
 
-**作品**　明 · 明（仅记年号，年份未记） · 帖 · 待审
+**作品**　明 · 明（仅记年号，年份未记） · 帖
 
 明文徵明书《楷书归去来兮辞页》。
 
@@ -22,7 +22,7 @@ Return Home in Regular Script
 
 Return Home in Regular Script
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：明（仅记年号，年份未记）
 - 著录编号：故00002899-8/8

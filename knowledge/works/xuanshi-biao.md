@@ -39,9 +39,7 @@ attribution:
 sources:
   - src-dpm-xuanshi
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection. The text and transmission follow a Palace Museum research article; the copyist attribution remains traditional.
-  noteZh: 2026 年 11 月经典碑帖增补草稿。表文与流传依据故宫博物院研究文章，临写者仍属传称。
+  state: reviewed
 ---
 
 # 宣示表

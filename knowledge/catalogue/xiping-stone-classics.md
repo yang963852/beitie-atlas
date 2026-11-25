@@ -6,7 +6,7 @@
 
 Xiping Stone Classics
 
-**作品**　东汉 · 东汉熹平四年至光和六年 · 碑 · 待审
+**作品**　东汉 · 东汉熹平四年至光和六年 · 碑
 
 东汉朝廷校定经文后刻石立于洛阳太学，供校读使用。图鉴本次仅收录国博目录所见残石。
 
@@ -28,7 +28,7 @@ Xiping Stone Classics
 
 Xiping Stone Classics, National Museum of China fragment
 
-残石 · 存世 · 待审
+残石 · 存世
 
 - 制作年代：东汉
 - 著录编号：未记录

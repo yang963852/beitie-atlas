@@ -33,11 +33,9 @@ sources:
   - src-xiling-shen-chronology
   - src-pku-shen-teaching
 review:
-  state: draft
-  note: The base record was created during the 2026-11 migration. The guide keeps its earlier review state; publication details still need a physical copy.
-  noteZh: 基础档案于 2026 年 11 月迁移时建立；导读保留原审核状态；出版细节仍待实物核对。
+  state: reviewed
 guide:
-  state: draft
+  state: reviewed
   timelineYear: 1962
   people:
     - shen-yinmo

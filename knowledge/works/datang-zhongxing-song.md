@@ -38,8 +38,6 @@ sources:
   - src-yz-wuxi
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from two government pages. Their character counts disagree, so the count is recorded as disputed rather than chosen."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据两份政府页面整理的草稿；两处字数记载不一致，故记为有争议而非择一。
 ---
 
 # 大唐中兴颂

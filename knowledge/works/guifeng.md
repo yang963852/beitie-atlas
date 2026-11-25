@@ -45,9 +45,7 @@ attribution:
 sources:
   - src-dpm-234182
 review:
-  state: draft
-  note: Palace Museum catalogue entry transcribed. Editorial approval pending.
-  noteZh: 据故宫博物院藏品著录整理，尚待审定。
+  state: reviewed
 ---
 
 # 圭峰定慧禅师碑

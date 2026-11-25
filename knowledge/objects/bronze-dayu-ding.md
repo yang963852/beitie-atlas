@@ -31,9 +31,7 @@ collection:
   noteZh: 馆方记1951年潘氏后人捐赠上海博物馆，1959年入藏中国历史博物馆。
 events: []
 review:
-  state: draft
-  note: Draft object record. The findspot differs between the museum’s pages, so it is not asserted.
-  noteZh: 实物草稿。馆方不同页面所记出土地不一，本记录不作断言。
+  state: reviewed
 ---
 
 # 大盂鼎

@@ -6,7 +6,7 @@
 
 Record of the Three Gates of the Xuanmiao Abbey
 
-**作品**　元 · 元代 14世纪 · 帖 · 待审
+**作品**　元 · 元代 14世纪 · 帖
 
 此为苏州玄妙观重修三门所立碑之文稿。玄妙观始建于西晋，元代重修三门并立碑；记文由牟巘撰写，赵孟頫誊写并篆额。馆方称其运笔以唐李邕为法。
 
@@ -31,7 +31,7 @@ Record of the Three Gates of the Xuanmiao Abbey
 
 Draft of the Record of the Three Gates
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：元代 14世纪
 - 著录编号：TB-1461

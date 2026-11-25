@@ -31,9 +31,7 @@ attribution:
 sources:
   - src-people-yili
 review:
-  state: draft
-  note: Draft added in the 2026-11 bronze and slip expansion. The count and dimensions follow a news feature because no museum object page was found.
-  noteZh: 2026 年 11 月金文与简牍增补草稿。未见馆方藏品页，枚数与尺寸依报刊报道。
+  state: reviewed
 ---
 
 # 武威仪礼简

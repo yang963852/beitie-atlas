@@ -31,9 +31,7 @@ sources:
   - src-catalogue-lanting
   - src-dpm-233468
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 兰亭序

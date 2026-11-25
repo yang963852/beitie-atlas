@@ -6,7 +6,7 @@
 
 Stele of the Shence Army
 
-**作品**　唐 · 唐会昌三年（843） · 碑 · 已审
+**作品**　唐 · 唐会昌三年（843） · 碑
 
 碑为记天子巡幸左神策军而立。原石在禁中，传拓不易，后来石佚。今日所见，是宋装拓本幸存的一卷。
 
@@ -29,7 +29,7 @@ Stele of the Shence Army
 
 Stele of the Shence Army, unique Song rubbing
 
-拓本 · 存世 · 已审
+拓本 · 存世
 
 - 制作年代：宋拓
 - 著录编号：未记录

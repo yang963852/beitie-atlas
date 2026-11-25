@@ -6,7 +6,7 @@
 
 Stele of the Confucius Temple
 
-**作品**　唐 · 唐贞观三年至四年（629—630）之间 · 碑 · 待审
+**作品**　唐 · 唐贞观三年至四年（629—630）之间 · 碑
 
 唐贞观年间立于长安国子监孔庙，虞世南撰并书。原石刻成不久即毁，存世者为北宋王彦超重刻的「西庙堂本」，今藏西安碑林；碑身明代地震后断为三块。
 
@@ -34,7 +34,7 @@ Stele of the Confucius Temple
 
 Stele of the Confucius Temple, Western Hall recut
 
-翻刻 · 存世 · 待审
+翻刻 · 存世
 
 - 制作年代：北宋建隆二年至乾德二年（961—964）
 - 著录编号：未记录

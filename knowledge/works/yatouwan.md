@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-shm-yatouwan
 review:
-  state: draft
-  note: Draft from the Shanghai Museum digital exhibition entry, read on 2026-11-25. The entry gives the material, size, copy status and late-Ming owners but no script label, character count or accession number.
-  noteZh: 草稿，依据 2026-11-25 阅读的上海博物馆数字展览说明整理。该页给质地、尺寸、摹本性质与晚明藏家，未标书体、字数与藏品号。
+  state: reviewed
 ---
 
 # 鸭头丸帖

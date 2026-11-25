@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-dpm-hengfang
 review:
-  state: draft
-  note: Draft record from the Palace Museum's catalogue entry for a Qing rubbing, read on 2026-11-18. The entry supplies the date, the colophon, the original site and the present location; the stone itself was not examined.
-  noteZh: 草稿记录，依据 2026-11-18 阅读的故宫博物院清拓本条目整理。该条目给出年代、碑末题名、原址与现存地点；未核对原石。
+  state: reviewed
 ---
 
 # 衡方碑

@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-shm-xingrang
 review:
-  state: draft
-  note: Draft from a Shanghai Museum exhibition entry for the Princeton loan, read on 2026-11-25. The page gives no accession number and no script label.
-  noteZh: 草稿，依据 2026-11-25 阅读的上海博物馆展品说明整理。该页未给藏品号，也未标书体。
+  state: reviewed
 ---
 
 # 行穰帖

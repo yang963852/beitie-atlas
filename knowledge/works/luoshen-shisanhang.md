@@ -43,9 +43,7 @@ sources:
   - src-people-luoshen
   - src-cnr-luoshen
 review:
-  state: draft
-  note: Draft record from a 2016 People's Daily Overseas Edition feature and a 2015 CNR art history article, both read on 2026-11-23. They agree on the transmission outline; the stone was not examined.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的《人民日报海外版》2016 年文章与央广网 2015 年文章。两文递藏脉络一致；未核对原石。
+  state: reviewed
 ---
 
 # 洛神赋十三行

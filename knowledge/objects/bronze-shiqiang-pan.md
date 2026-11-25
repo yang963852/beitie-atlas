@@ -32,9 +32,7 @@ collection:
   noteZh: 两处来源均记此盘藏宝鸡青铜器博物院。
 events: []
 review:
-  state: draft
-  note: Draft object record. The date is a scholarly assignment to King Gong.
-  noteZh: 实物草稿。时代为学界推定为恭王。
+  state: reviewed
 ---
 
 # 史墙盘

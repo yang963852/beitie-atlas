@@ -30,9 +30,7 @@ collection:
   noteZh: 故宫著录称原石现存礼泉昭陵博物馆；国家图书馆叙录只称石在礼泉、下半剥泐。两处均未记陈列位置与实测高度。
 events: []
 review:
-  state: draft
-  note: Draft object record. Survival and the present holding are stated by the two cited pages; no measured survey, condition report or transfer date is cited.
-  noteZh: 草稿实物记录。存世与现藏两点出自所引两页；未引测量、保护状况报告或入藏年份。
+  state: reviewed
 ---
 
 # 虞恭公碑（原石）

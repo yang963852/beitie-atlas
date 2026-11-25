@@ -3,13 +3,13 @@ schemaVersion: 1
 titleZh: 读《多宝塔碑》时，先找碑额上的“塔”
 titleEn: Find the character 塔 in the Duobao heading
 people: [yan-zhenqing]
-state: draft
+state: reviewed
 works: [duobao-ta-bei]
 objects: [stele-duobao-ta]
 sources: [src-beilin-duobaota]
 ---
 
-# 读《多宝塔碑》时，先找碑额上的“塔”（草稿）
+# 读《多宝塔碑》时，先找碑额上的“塔”
 
 ## 中文
 

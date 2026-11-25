@@ -20,7 +20,7 @@ export const enStrings = {
   studyFilter: 'Filter by work category',
   studyLabels: { all: 'All', bei: 'Inscriptions', tie: 'Modelbooks' },
   draftNotice:
-    'This preview may include drafts awaiting editorial review. Check each record’s review status and sources.',
+    'This preview includes records still awaiting editorial review. Check each record’s sources.',
 
   languageLabel: 'Language',
   languageZh: '中文',
@@ -116,8 +116,6 @@ export const enStrings = {
   contributeFooterLink: 'Submit information',
 
   reviewDraft: 'Draft',
-  reviewReviewed: 'Reviewed',
-  reviewNoteLabel: 'Review note',
 
   mapHeading: 'Map',
   mapOriginalsOnly: 'Surviving originals only',

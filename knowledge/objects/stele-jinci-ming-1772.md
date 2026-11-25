@@ -35,8 +35,6 @@ collection:
 events: []
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The recarving is kept separate from the Tang stone so the two are never confused."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。摹刻与唐碑分列，避免混为一物。
 ---
 
 # 晋祠之铭并序（清乾隆摹刻）

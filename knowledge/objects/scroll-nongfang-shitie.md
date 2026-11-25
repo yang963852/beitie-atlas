@@ -32,9 +32,7 @@ collection:
   noteZh: 台北故宫条目著录此卷，故宫博物院文章记今藏与尺寸。
 events: []
 review:
-  state: draft
-  note: Draft object record. The writing year is not recorded in either source.
-  noteZh: 实物草稿。两处来源均未记书写年份。
+  state: reviewed
 ---
 
 # 秾芳诗帖卷

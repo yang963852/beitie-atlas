@@ -50,9 +50,7 @@ events:
       - src-dpm-261938
     certainty: documented
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 淳化阁帖（懋勤殿本卷六）

@@ -36,8 +36,6 @@ sources:
   - src-baoji-jiuchenggong
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from an official reply that names the stele but does not describe it in detail."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据文物局答复函整理的草稿；该函只提及碑名与所在遗址，未详述碑况。
 ---
 
 # 九成宫醴泉铭

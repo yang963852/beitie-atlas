@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 冯承素
 titleEn: Feng Chengsu
 aliases: []
-state: draft
+state: reviewed
 works:
   - lanting
 objects:
@@ -12,7 +12,7 @@ sources:
   - src-catalogue-lanting
 ---
 
-# 冯承素（草稿）
+# 冯承素
 
 ## 中文
 

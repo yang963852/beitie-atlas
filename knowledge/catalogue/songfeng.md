@@ -6,7 +6,7 @@
 
 Poem on the Hall of Wind and Pines
 
-**作品**　北宋 · 1102年 · 帖 · 待审
+**作品**　北宋 · 1102年 · 帖
 
 北宋黄庭坚书《松风阁诗》。
 
@@ -22,7 +22,7 @@ Poem on the Hall of Wind and Pines
 
 Poem on the Hall of Wind and Pines
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：年代不详
 - 著录编号：故書000069N000000000

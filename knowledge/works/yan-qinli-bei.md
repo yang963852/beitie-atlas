@@ -32,9 +32,8 @@ sources:
   - src-beilin-yan-qinli-object
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Work-level summary drafted from two audited sources. Not publication-approved; aliases and script classification still need sourced support."
 guide:
-  state: draft
+  state: reviewed
   people:
     - yan-zhenqing
   objects:

@@ -6,7 +6,7 @@
 
 Inscription on the Hot Spring
 
-**作品**　唐 · 唐贞观二十二年（648） · 碑 · 已审
+**作品**　唐 · 唐贞观二十二年（648） · 碑
 
 唐太宗为骊山温泉作铭。敦煌传出的一件唐拓今藏法国国家图书馆，编号P.4508。
 
@@ -28,7 +28,7 @@ Inscription on the Hot Spring
 
 Inscription on the Hot Spring, Tang rubbing fragment
 
-拓本 · 存世 · 已审
+拓本 · 存世
 
 - 制作年代：唐拓
 - 著录编号：Pelliot chinois 4508

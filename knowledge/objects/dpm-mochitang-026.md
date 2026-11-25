@@ -31,9 +31,7 @@ collection:
   noteZh: null
 events: []
 review:
-  state: draft
-  note: Palace Museum catalogue entry transcribed. Editorial approval pending.
-  noteZh: 据故宫博物院藏品著录整理，尚待审定。
+  state: reviewed
 ---
 
 # 《墨池堂选帖》（明拓本）

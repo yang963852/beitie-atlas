@@ -6,7 +6,7 @@
 
 Dedication for the Late Duke of Shiping
 
-**作品**　南北朝 · 北魏 · 北魏太和二十二年（498年） · 碑 · 待审
+**作品**　南北朝 · 北魏 · 北魏太和二十二年（498年） · 碑
 
 此刻位于龙门古阳洞北壁，是龙门二十品中唯一阳刻之作：字与界格均凸出石面。额二行六字，正文十行、行二十字。清乾隆间金石学者黄易将其置于龙门造像题记之首。
 
@@ -32,7 +32,7 @@ Dedication for the Late Duke of Shiping
 
 The Shiping Gong dedication on the north wall of Guyang Cave
 
-摩崖 · 存世 · 待审
+摩崖 · 存世
 
 - 制作年代：太和二十二年（498年）
 - 著录编号：未记录

@@ -38,9 +38,7 @@ sources:
   - src-gqb-shimen-thirteen
   - src-cnr-shimen-ming
 review:
-  state: draft
-  note: Draft record from a government interview page and a broadcaster's feature, both read on 2026-11-18. The date and the museum holding come from the government page; the two credited hands come from the feature. Neither is a catalogue entry, and the stone was not examined.
-  noteZh: 草稿记录，依据 2026-11-18 阅读的政府访谈页与央广报道整理。年代与收藏机构取自政府页，两位署名者取自报道。两者都不是馆方目录条目；未核对原石。
+  state: reviewed
 ---
 
 # 石门铭

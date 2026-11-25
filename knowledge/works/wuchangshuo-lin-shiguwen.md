@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-dpm-wuchangshuo
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection from the Palace Museum catalogue entry. The scroll is filed under the Republic because it was written in 1915, though the museum labels it Qing.
-  noteZh: 2026 年 11 月经典碑帖增补草稿，依据故宫博物院藏品条目。卷书于 1915 年，已入民国，故按书写年份归民国；馆方仍标清。
+  state: reviewed
 ---
 
 # 吴昌硕临石鼓文轴

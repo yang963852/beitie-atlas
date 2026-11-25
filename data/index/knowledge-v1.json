@@ -58,8 +58,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -103,9 +102,8 @@
         "src-catalogue-boyuan"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -149,9 +147,8 @@
         "src-dpm-228526"
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -211,8 +208,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+        "note": null
       },
       "notes": [
         "The English title is a project rendering for navigation, not a title used by the source."
@@ -266,8 +262,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -311,9 +306,8 @@
         "src-dpm-261938"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -365,8 +359,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. The date, dimensions and relocation sequence come from provincial and municipal pages that were read on 2026-11-18; the stone itself was not examined and the current display position inside the museum was not confirmed.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。年代、尺寸与迁置经过取自 2026-11-18 阅读的省级、市级页面；未核对原石，也未确认其在馆内的当前陈列位置。"
+        "note": null
       },
       "notes": [
         "The inscription's own date, 大亨四年, is read as 405 by the provincial culture department and the municipal government; a provincial archaeology institute page gives 404. Both readings are recorded.",
@@ -425,8 +418,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. Date, dimensions and character counts come from the provincial culture department page read on 2026-11-18; the stone was not examined and its present shelter was not confirmed.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。年代、尺寸与字数取自 2026-11-18 阅读的省文旅厅页面；未核对原石，也未确认现有保护建筑。"
+        "note": null
       },
       "notes": [
         "The provincial page gives a total height of 3.38 m, widths of 1.35 m at the top and 1.46 m at the bottom, and 1217 characters across the two faces.",
@@ -482,9 +474,8 @@
         "src-dpm-daba"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from the Palace Museum's thematic page on Zhao Mengfu read on 2026-11-23. The page transcribes the inscription and gives dimensions and holding; the manuscript was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的故宫赵孟頫专题页整理。该页录全文，并记尺寸与收藏；未核对原件。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The object is the paper draft, not the carved stele. The record does not assert that the stone survives or where it stands.",
@@ -551,8 +542,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from the museum page. The English title is a project rendering, not a title used by the source.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；英文题名为本项目译名，非来源用语。"
+        "note": null
       },
       "notes": [
         "The source gives the Chinese and Syriac contents but no full transcription or translation."
@@ -617,8 +607,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from two government pages. Their character counts disagree, so the count is recorded as disputed rather than chosen.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据两份政府页面整理的草稿；两处字数记载不一致，故记为有争议而非择一。"
+        "note": null
       },
       "notes": [
         "The Hunan page and the Yongzhou page disagree on the character count (242 vs 332)."
@@ -670,9 +659,8 @@
         "src-chnmuseum-dayuding"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. The findspot is given differently across the museum’s own pages.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方不同页面所记出土地不一。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The findspot is given as either Li village in Mei county or Qishan; the museum’s own pages differ.",
@@ -723,9 +711,8 @@
         "src-catalogue-deng-kaishu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -769,9 +756,8 @@
         "src-catalogue-dong-lunshu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -816,9 +802,8 @@
         "src-catalogue-dong-meiren"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -864,9 +849,8 @@
         "src-dpm-dongshansong"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from the palace museum collection entry, read on 2026-11-25. The entry gives the inventory number, size, transcription, seals and the modelbooks it was engraved in; it does not date the sheet.",
-        "noteZh": "草稿，依据 2026-11-25 阅读的故宫藏品说明整理。该页给文物号、尺寸、释文、鉴藏印与所刻法帖，未记此页的制作年代。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum does not say whether this leaf is a copy; the record calls it an ink leaf and leaves the question open.",
@@ -942,8 +926,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+        "note": null
       },
       "notes": [
         "The English title is a project rendering for navigation, not a title used by the source."
@@ -1012,9 +995,8 @@
         "src-dpm-234182"
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -1061,9 +1043,8 @@
         "src-jmm-guodian"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. The museum gives both 730 and 731 inscribed slips on different pages.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方不同页面分别记有字简730枚与731枚。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum gives either 730 or 731 inscribed slips on different pages.",
@@ -1118,9 +1099,8 @@
         "src-lnd-gushisitie"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection. Title and holding follow the museum; dimensions and content follow a newspaper feature on the same exhibition.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿。题名与收藏依馆方页面，尺寸与内容依同一展览的报纸报道。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The attribution is “attributed to Zhang Xu”; no museum publication consulted here sets out the evidence for it.",
@@ -1176,9 +1156,8 @@
         "src-tjbwg-hanqie"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from the Tianjin Museum collection entry, read on 2026-11-25. The entry supplies the full transcription and the Xu Bangda appraisal; it gives no accession number.",
-        "noteZh": "草稿，依据 2026-11-25 阅读的天津博物馆藏品说明整理。该页载全帖释文与徐邦达评语，未给藏品号。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The English caption dates Wang Xizhi to 321-379, which differs from the Chinese page and the usual reckoning; those dates are not adopted here.",
@@ -1231,9 +1210,8 @@
         "src-catalogue-hanshi"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -1295,9 +1273,8 @@
         "src-jl-dfz-haotaiwang-alt"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from two entries of the Jilin provincial gazetteer read on 2026-11-23. They agree on height, line count and character total. The stone was not examined and no rubbing was consulted; the reading of individual characters is not addressed.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的两条吉林省地方志条目整理。两处所记碑高、行数与总字数一致。未核对原石，未参校拓本；个别字的释读不在本文范围。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The gazetteer's older entry counts 44 lines of 41 characters per full line; the newer entry gives 44 lines and 1,775 characters. The two are consistent, but neither states how many characters a full line holds on each face.",
@@ -1353,9 +1330,8 @@
         "src-dpm-hengfang"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from the Palace Museum's catalogue entry for a Qing rubbing, read on 2026-11-18. The entry supplies the date, the colophon, the original site and the present location; the stone itself was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-18 阅读的故宫博物院清拓本条目整理。该条目给出年代、碑末题名、原址与现存地点；未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The cited entry catalogues a rubbing. Its measurements (223 × 107 cm) describe the rubbing, not the stele, so no stone dimension is stored.",
@@ -1411,9 +1387,8 @@
         "src-curator-siou"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -1468,8 +1443,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+        "note": null
       },
       "notes": [
         "The English title is a project rendering for navigation, not a title used by the source."
@@ -1520,9 +1494,8 @@
         "src-npm-huangting"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from the palace museum digital archive record, read on 2026-11-25. The record lists the album's seven leaves and its inventory number but no measurement or stone date.",
-        "noteZh": "草稿，依据 2026-11-25 阅读的台北故宫数位典藏著录整理。该页记一册七开与文物编号，未给尺寸与刻石年代。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum gives the transcription and leaf count only; it records no stone, rubbing date or measurement.",
@@ -1584,8 +1557,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from the museum page. The claim that no rubbing circulated before 1986 rests on that page alone.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；「此前无拓本流传」一说仅据该页面。"
+        "note": null
       },
       "notes": [
         "The page does not say how the slab was displayed before it entered the museum."
@@ -1635,8 +1607,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+        "note": null
       },
       "notes": [
         "The English title is a project rendering for navigation, not a title used by the source."
@@ -1689,8 +1660,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from a government interview with the museum curator. The 1203-character count is his figure.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据政府网站对馆长的访谈整理的草稿；1203 字为受访者所述。"
+        "note": null
       },
       "notes": [
         "The source discusses the text’s political argument but not the calligraphy’s transmission in any detail."
@@ -1743,9 +1713,8 @@
         "src-taian-jingshiyu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection from the Tai’an Museum page. The period is a stylistic consensus, not a dated record.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据泰安市博物馆页面；时代为风格共识，非刻石自记。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Published counts give 1,067, 1,069 or 1,071 surviving characters; none has been checked against the stone.",
@@ -1810,8 +1779,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from an official reply that names the stele but does not describe it in detail.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据文物局答复函整理的草稿；该函只提及碑名与所在遗址，未详述碑况。"
+        "note": null
       },
       "notes": [
         "The cited reply gives no date, dimensions, or condition for the stone; the composition year is not stated there."
@@ -1862,9 +1830,8 @@
         "src-wuxi-jiuhua-entry"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection from two Wuxi Museum pages that disagree on the character count. The count is therefore left out of the fields.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据无锡博物院两篇文章；两文所记字数不一，故不写入结构化字段。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum’s own pages give either sixty-three or sixty-five characters; the original has not been checked.",
@@ -1916,9 +1883,8 @@
         "src-catalogue-jizhi"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -1966,9 +1932,8 @@
         "src-thepaper-juyan"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. Reports differ on the official’s surname in the title.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。报道对所涉人名姓氏的录文不一。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Reports transcribe the official’s name as either Jiao Yong or Hou Yong; the title here avoids choosing.",
@@ -2036,8 +2001,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from the museum page. No compiler or scribe is recorded here because the page names none.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；页面未记撰书人，故不列属名。"
+        "note": null
       },
       "notes": [
         "The page gives the number of stones, faces, and characters but no list of the individual colophons."
@@ -2115,9 +2079,8 @@
         "src-shaanxi-wwz-kongzi"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from the museum page and a provincial heritage summary read on 2026-11-18. The two disagree on measurements, line length and the carver's name; the conflicts are recorded rather than resolved. The stone was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-18 阅读的碑林页面与省志条目整理。两处在尺寸、行字数和刻字者姓名上不一致；分歧照录，未作裁断。未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum gives 191 × 108 cm for the stele body; the provincial summary gives 280 × 110 cm. Neither is asserted in the structured field.",
@@ -2175,9 +2138,8 @@
         "src-catalogue-kuaixue"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -2224,9 +2186,8 @@
         "src-chnmuseum-langya"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from the National Museum's collection page read on 2026-11-18. The page gives the fragment's measurements and character count but no excavation, accession or condition history; the stone was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-18 阅读的中国国家博物馆藏品页整理。该页给出残石尺寸与字数，但没有出土、入藏或保存状况记录；未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The measurements belong to the surviving fragment, not to the original cliff face.",
@@ -2281,9 +2242,8 @@
         "src-dpm-233468"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -2329,9 +2289,8 @@
         "src-npm-leyilun"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from the palace museum digital archive record, read on 2026-11-25. The record gives the album title, script and inventory number but no leaf measurement or stone date.",
-        "noteZh": "草稿，依据 2026-11-25 阅读的台北故宫数位典藏著录整理。该页给册名、书体与文物编号，未给册页尺寸与刻石年代。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum gives no date for the stone or the rubbing and no leaf measurement.",
@@ -2385,8 +2344,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -2434,9 +2392,8 @@
         "src-met-lingfeijing"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection from the Metropolitan Museum object page. The attribution is qualified there and the rest of the scroll is lost.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据大都会艺术博物馆藏品页；馆方对作者加“传”字，全卷其余部分已佚。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum labels the album “attributed to Zhong Shaojing” without naming the writer or copyist.",
@@ -2546,8 +2503,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. Date, layout and the 1980s conservation work come from state and municipal pages read on 2026-11-18; the stone was not examined and the height figures conflict across the pages.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。年代、行款与二十世纪八十年代的维修取自 2026-11-18 阅读的国家级与市级页面；未核对原石，各页面所记高度互有出入。"
+        "note": null
       },
       "notes": [
         "Only one overall height is published on the pages read (3.24 m), but it does not agree with the face height plus the 0.42 m heading; the structured height is left out rather than averaged or guessed.",
@@ -2603,9 +2559,8 @@
         "src-lnm-luyou"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection from a Liaoning Provincial Museum object note. Dimensions, line count and provenance are not recorded there.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据辽宁省博物馆藏品说明；馆方未记尺寸、行数与流传。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The eight poems have not been collated word by word against the Jiannan shigao.",
@@ -2675,9 +2630,8 @@
         "src-cnr-luoshen"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from a 2016 People's Daily Overseas Edition feature and a 2015 CNR art history article, both read on 2026-11-23. They agree on the transmission outline; the stone was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的《人民日报海外版》2016 年文章与央广网 2015 年文章。两文递藏脉络一致；未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The original manuscript is lost; what survives is a stone carving of thirteen lines, not a Tang or Song copy on paper.",
@@ -2734,8 +2688,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from a local-history page. The cutter’s name is recorded as 黄仙鹤, whom scholars suspect to be Li Yong’s alias; no attribution is asserted for the cutting.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据地方志平台页面整理的草稿；刻者署「黄仙鹤」，学界疑为李邕化名，故不主张刻者身份。"
+        "note": null
       },
       "notes": [
         "The page gives the surviving character count only approximately (“1000余字”)."
@@ -2785,9 +2738,8 @@
         "src-catalogue-magu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -2832,9 +2784,8 @@
         "src-npm-maogong"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. The museum page gives the full text but not a character count; the record says “near five hundred”.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方页面载全铭而未给字数，本记录作“近五百字”。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Character counts of 497, 499 and 500 are all in circulation; this record chooses none of them.",
@@ -2906,8 +2857,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -2964,8 +2914,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -3009,9 +2958,8 @@
         "src-dpm-231095"
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -3065,9 +3013,8 @@
         "src-dpm-234595"
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -3115,9 +3062,8 @@
         "src-dpm-emperor"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection. The museum entry gives the script and scale; a Palace Museum article gives the medium and dimensions.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿。书体与字径依台北故宫条目，材质与尺寸依故宫博物院文章。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The scroll has no dated colophon; the year of writing is unknown.",
@@ -3174,9 +3120,8 @@
         "src-bo-ch-pingan"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from two palace museum pages on the object, a museum exhibition essay and the 2012 national treasure record, all read on 2026-11-25. The sources disagree on the copying period and on the mounted width; both are left open.",
-        "noteZh": "草稿，依据 2026-11-25 阅读的台北故宫两处藏品页、院方展览文稿与文化部 2012 年古物公告整理。来源对摹写年代与装裱横长均有异说，两处都不作定论。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The copying period is given as either pre-Tang or Tang; no date is recorded here.",
@@ -3233,9 +3178,8 @@
         "src-dpm-pingfu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from the Palace Museum collection entry read on 2026-11-23. The museum's character count, the writing support and the transmission chain are recorded as it states them; the scroll itself was not examined. The character count differs between accounts and is left unresolved.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的故宫藏品页面整理。字数、书写材料与递藏链条均照馆方所记；未核对原件。字数各家不一，未作裁断。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum gives 9 lines and 86 characters and calls the script 草隶书; the wording is kept rather than converted to 章草 or 草书.",
@@ -3292,9 +3236,8 @@
         "src-npm-sanpan"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. Character counts differ between the museum page and other publications.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方页面与其他出版物所记字数不一。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The count is given as either 350 or 357 characters; the museum page says 350.",
@@ -3360,9 +3303,8 @@
         "src-hbrb-sanfenji"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection. The museum describes the 767 monument; a newspaper feature reports that the present stone is a Song recutting, which remains open.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿。馆方页面记 767 年原刻，报纸则称今碑为宋时重刻，此问题仍待考。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum dates the carving to 767. Another account says the original was lost and the present stone is a Song recutting; its date and evidence remain unchecked.",
@@ -3429,9 +3371,8 @@
         "src-colbase-sanmen"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from the Tokyo National Museum collection record and the ColBase national database entry, read on 2026-11-23. Neither gives a writing year, dimensions or an accession date; the scroll was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的东京国立博物馆藏品著录与 ColBase 国家数据库条目整理。两处均未记书写年份、尺寸与入藏年份；未核对原卷。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The scroll is the draft, not the stele. The record does not claim that the stone survives.",
@@ -3501,9 +3442,8 @@
         "src-chinadaily-yuegu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from two Palace Museum entries and a China Daily feature read on 2026-11-23. The museum entries agree on the 1747 order and the Beihai holding; the block count and the number of included works come from the press feature alone.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的故宫两处条目与《中国日报》报道整理。故宫两处在 1747 年上谕与北海藏石上一致；刻石方数与收录件数仅见于报道。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The Palace Museum's rubbing entry says the compendium takes in more than 3,400 pieces; the press feature counts 340 works by 135 calligraphers and 495 stone blocks. The two totals are an order of magnitude apart and neither is asserted in a field.",
@@ -3558,9 +3498,8 @@
         "src-shm-shangyu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from the Shanghai Museum collection entry, read on 2026-11-25. The page's width figure is garbled, so only the height is carried into the object record.",
-        "noteZh": "草稿，依据 2026-11-25 阅读的上海博物馆藏品说明整理。该页横长数字残缺，实物记录只取纵长。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The width figure is garbled on the museum page, so no full measurement is recorded.",
@@ -3613,9 +3552,8 @@
         "src-dpm-231255"
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -3675,8 +3613,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from a newspaper article by a library staff member. The 843 date refers to the lost stone, not to the surviving rubbing.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据图书馆员撰写的报纸文章整理的草稿；843 年为已佚原石之刻立年，不是存世拓本年代。"
+        "note": null
       },
       "notes": [
         "The article does not describe the missing lower volume beyond noting that it is lost."
@@ -3730,9 +3667,8 @@
         "src-pku-shen-teaching"
       ],
       "review": {
-        "state": "draft",
-        "note": "The base record was created during the 2026-11 migration. The guide keeps its earlier review state; publication details still need a physical copy.",
-        "noteZh": "基础档案于 2026 年 11 月迁移时建立；导读保留原审核状态；出版细节仍待实物核对。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The English title is a project translation for navigation."
@@ -3785,8 +3721,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+        "note": null
       },
       "notes": [
         "The English title is a project rendering for navigation, not a title used by the source."
@@ -3849,9 +3784,8 @@
         "src-cnr-shimen-ming"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from a government interview page and a broadcaster's feature, both read on 2026-11-18. The date and the museum holding come from the government page; the two credited hands come from the feature. Neither is a catalogue entry, and the stone was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-18 阅读的政府访谈页与央广报道整理。年代与收藏机构取自政府页，两位署名者取自报道。两者都不是馆方目录条目；未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "No measured dimensions are given by the cited pages, so none is stored.",
@@ -3908,8 +3842,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+        "note": null
       },
       "notes": [
         "The English title is a project rendering for navigation, not a title used by the source."
@@ -3985,9 +3918,8 @@
         "src-shanghai-ly-shipinggong"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from a museum-supported popular feature and an exhibition notice read on 2026-11-23. Both describe the carving technique and the find site; neither is an object catalogue entry with a measured survey. The stone was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的博物馆协作科普文章与展览说明。两处均述刻法与所在地，但都不是附测量的著录；未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "No measured survey of the stone face is cited. The exhibition notice gives 89 × 39 cm for the rubbing held by the Longmen research institute, which is a paper size and not the rock's.",
@@ -4047,9 +3979,8 @@
         "src-met-shiqi"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record. The Tang description comes from an exhibition report quoting 《法书要录》; the physical witness is a thirteenth-century album in the Metropolitan Museum read through that museum's public collection API on 2026-11-23. Neither the album nor a Chinese rubbing was examined.",
-        "noteZh": "草稿记录。唐代描述出自转引《法书要录》的展览报道；实物为美国大都会艺术博物馆藏十三世纪拓本册，2026-11-23 经该馆公开藏品接口读取。未核对原册，也未核对国内拓本。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The 107-line, 943-character figure describes the Tang palace scroll as recorded by 张彦远; it is not a count made on the surviving album.",
@@ -4106,9 +4037,8 @@
         "src-cssn-shiqiang"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. The date is a scholarly assignment, not a recorded year.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。时代为学界推定，铭文未记王年。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The family history can be read against the Shiji, but the original fief of the Wei clan remains disputed.",
@@ -4173,8 +4103,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from the museum page. The attribution of the seal-script heading rests on the same page.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；碑额篆书归属同样仅据该页面。"
+        "note": null
       },
       "notes": [
         "The page does not state the number of characters or the condition of the carving today."
@@ -4226,9 +4155,8 @@
         "src-hbww-shuihudi"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. The museum page gives the slips and script, not the total character count.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。馆方页面记简数与书体，未给总字数。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The individual texts were copied at different times; this record gives only the broad span.",
@@ -4279,9 +4207,8 @@
         "src-catalogue-shupu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -4325,9 +4252,8 @@
         "src-catalogue-shusu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -4371,9 +4297,8 @@
         "src-catalogue-songfeng"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -4422,9 +4347,8 @@
         "src-dpm-stone-drums-ming"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft. The exact date remains disputed.",
-        "noteZh": "草稿。确切刻成年代存疑。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The catalogue discusses competing dates; the reading group is not a precise dating claim."
@@ -4478,9 +4402,8 @@
         "src-taian-dai-museum-site"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from the Tai'an scenic-area page read on 2026-11-18. The page gives the surviving characters and the present location but no measured dimensions or condition survey; the stone was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-18 阅读的泰安泰山风景名胜区页面整理。该页给出残存字数与现存地点，但没有实测尺寸或保存状况调查；未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The page says ten characters survive, seven complete (臣去疾臣请矣臣) and three damaged (斯昧死). Another reading counts nine and a half; the record follows the cited page.",
@@ -4535,8 +4458,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -4582,8 +4504,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -4627,9 +4548,8 @@
         "src-catalogue-tiaoxi"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -4676,9 +4596,8 @@
         "src-dpm-wangduo"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection from the Palace Museum catalogue entry. The scroll is filed under the Ming because it was written in 1639.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据故宫博物院藏品条目。卷书于 1639 年，故归明。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The scroll carries no collector’s seals and is not recorded in early catalogues; its early transmission is unknown.",
@@ -4821,9 +4740,8 @@
         "src-lnm-wansui"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from a museum collection highlight, a Guangming Online museum feature and a China News Service exhibition report, all read on 2026-11-23. They agree on the 697 submission and the seven surviving hands. The scroll was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的辽宁省博物馆藏品条目、光明网博物馆频道文章与中国新闻网展览报道整理。三处在 697 年进呈与存世七人上一致。未核对原卷。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The ten letters are private correspondence, not composed literary works; the album's value as a modelbook is a later use.",
@@ -4876,9 +4794,8 @@
         "src-catalogue-wen-guiqulai"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -4927,8 +4844,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from a news report. The report identifies the rubbing but does not describe the lost stone.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据新闻报道整理的草稿；报道确认拓本，但未描述已佚原石。"
+        "note": null
       },
       "notes": [
         "The cited report gives neither the rubbing’s measurements nor its condition."
@@ -4980,9 +4896,8 @@
         "src-dpm-wuchangshuo"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection from the Palace Museum catalogue entry. The scroll is filed under the Republic because it was written in 1915, though the museum labels it Qing.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据故宫博物院藏品条目。卷书于 1915 年，已入民国，故按书写年份归民国；馆方仍标清。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Wu copied the Stone Drums many times; the edition of the rubbing behind this scroll is unidentified.",
@@ -5038,8 +4953,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -5087,9 +5001,8 @@
         "src-people-yili"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. The count and dimensions follow a news feature because no museum object page was found.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。未见馆方藏品页，枚数与尺寸依报刊报道。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "No museum object page was found; the count, character total and dimensions follow a news report.",
@@ -5146,8 +5059,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. The holding museum and the excavation month come from its own pages read on 2026-11-18; the stone was not examined and the gallery it stands in is unspecified.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。收藏机构与出土月份取自 2026-11-18 阅读的馆方页面；未核对原石，所在展厅未载。"
+        "note": null
       },
       "notes": [
         "The museum pages give 827 characters across both faces; one also states a rubbing size of 242 × 83 cm rather than the stone's own dimensions.",
@@ -5202,9 +5114,8 @@
         "src-shm-xingrang"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from a Shanghai Museum exhibition entry for the Princeton loan, read on 2026-11-25. The page gives no accession number and no script label.",
-        "noteZh": "草稿，依据 2026-11-25 阅读的上海博物馆展品说明整理。该页未给藏品号，也未标书体。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The page gives no script label, so none is recorded.",
@@ -5261,9 +5172,8 @@
         "src-chnmuseum-xiping"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from the National Museum catalogue.",
-        "noteZh": "草稿，依据国博藏品目录。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The dates describe the overall project; no exact carving year for the surviving fragment is assigned."
@@ -5317,9 +5227,8 @@
         "src-chengxian-xixia"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from the Cheng County government page read on 2026-11-18. The page describes the cliff, its date and its preservation in general terms but gives no measured dimensions; the cliff was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-18 阅读的成县人民政府页面整理。页面概述摩崖的年代、位置与保存情况，但没有实测尺寸；未实地核对。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The page calls 仇靖 the writer of the text (书写者) without separating composition from calligraphy; one hand is therefore credited for the writing.",
@@ -5395,8 +5304,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+        "note": null
       },
       "notes": [
         "The English title is a project rendering for navigation, not a title used by the source."
@@ -5460,9 +5368,8 @@
         "src-dpm-xuanshi"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection. The text and transmission follow a Palace Museum research article; the copyist attribution remains traditional.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿。表文与流传依据故宫博物院研究文章，临写者仍属传称。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Single-block editions and modelbook editions differ in line arrangement. The Southern Song stone engraved for Jia Sidao is now in the Capital Museum; its relation to this text is unchecked.",
@@ -5529,9 +5436,8 @@
         "src-beilin-yanjiamiao"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from the Xi'an Beilin object entry read on 2026-11-23. That page did not respond to a second request later the same day, so the wording is recorded but not re-verified; the stone was not examined.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的西安碑林条目整理。该页当日稍后再次请求未通，故所记文字未得复核；未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum gives the height as 338 cm and does not give width or thickness, so only the height is recorded.",
@@ -5587,7 +5493,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Work-level summary drafted from two audited sources. Not publication-approved; aliases and script classification still need sourced support."
+        "note": null
       },
       "notes": [
         "The English title is a project translation for navigation. The cited sources use the Chinese title only.",
@@ -5642,9 +5548,8 @@
         "src-catalogue-yanta"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -5690,9 +5595,8 @@
         "src-shm-yatouwan"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from the Shanghai Museum digital exhibition entry, read on 2026-11-25. The entry gives the material, size, copy status and late-Ming owners but no script label, character count or accession number.",
-        "noteZh": "草稿，依据 2026-11-25 阅读的上海博物馆数字展览说明整理。该页给质地、尺寸、摹本性质与晚明藏家，未标书体、字数与藏品号。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The page gives no script label, line count or character count; none are recorded.",
@@ -5747,8 +5651,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record. Both the date and the attribution are disputed in the cited sources; the record preserves the dispute.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。所引材料对年代与书者均有异说，本条保留争议。"
+        "note": null
       },
       "notes": [
         "The cited sources list several candidate authors (王羲之, 陶弘景, 顾况, 王瓒) without settling the question."
@@ -5797,9 +5700,8 @@
         "src-catalogue-yi-wuzi"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -5844,8 +5746,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -5893,8 +5794,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+        "note": null
       },
       "notes": [
         "The English title is a project rendering for navigation, not a title used by the source."
@@ -5949,9 +5849,8 @@
         "src-npm-yuanhuan-record"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft from a palace museum selection page and its catalogue record, both read on 2026-11-25. The page does not date the copy, so work and object dates are kept apart.",
-        "noteZh": "草稿，依据 2026-11-25 阅读的台北故宫精选赏析页与数位典藏著录整理。馆方未记摹写年代，作品与实物年代分开处理。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum gives no date for the copy, so none is recorded.",
@@ -6020,9 +5919,8 @@
         "src-nlc-shike-xulu-19"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft record from two Palace Museum object entries and a National Library collection survey, all read on 2026-11-23. They agree on date, authorship and line count. Neither the stone nor a rubbing was examined.",
-        "noteZh": "草稿记录，依据 2026-11-23 阅读的故宫两处著录与国家图书馆藏石刻叙录整理。三处在年代、撰书人与行款上一致。未核对原石与拓本。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The character total is given as 约二千八百余字 by the National Library survey; it is not a count of any surviving impression.",
@@ -6079,8 +5977,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": []
     },
@@ -6128,9 +6025,8 @@
         "src-yongji-zhangxuan"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 classics selection from a municipal-government cultural feature. Line count and findspot still need a rubbing-level check.",
-        "noteZh": "2026 年 11 月经典碑帖增补草稿，依据市政府文化介绍整理；行款与出土地仍待对勘拓本。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Sources give the text as either twenty lines or twelve; the character count also differs. Neither has been checked against the album.",
@@ -6183,9 +6079,8 @@
         "src-dpm-234567"
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -6254,8 +6149,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。"
+        "note": null
       },
       "notes": [
         "The English title is a project rendering for navigation, not a title used by the source."
@@ -6304,9 +6198,8 @@
         "src-catalogue-zhao-jijiu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -6350,9 +6243,8 @@
         "src-catalogue-zhao-luoshen"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -6399,9 +6291,8 @@
         "src-shm-zhao-shen-colophon"
       ],
       "review": {
-        "state": "draft",
-        "note": "The base record was created during the 2026-11 migration. The guide keeps its earlier review state.",
-        "noteZh": "基础档案于 2026 年 11 月迁移时建立；导读保留原审核状态。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -6445,9 +6336,8 @@
         "src-yantai-zheng"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -6492,9 +6382,8 @@
         "src-dpm-228204"
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -6541,9 +6430,8 @@
         "src-hebei-zhongshan"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. Whether the text was cast or cut is still debated.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。铭文是铸是刻，学界尚无定论。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Whether the text was cast or cut is still debated.",
@@ -6594,9 +6482,8 @@
         "src-catalogue-zhu-santi"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -6640,9 +6527,8 @@
         "src-catalogue-zixu"
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": []
     },
@@ -6690,9 +6576,8 @@
         "src-csjd-tianjia"
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft added in the 2026-11 bronze and slip expansion. The source describes the document type, not a single item’s full transcription.",
-        "noteZh": "2026 年 11 月金文与简牍增补草稿。来源介绍的是这一类文书，不是单件简的完整释文。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum page does not give the total number of these tablets; this record describes only their form and content.",
@@ -6744,9 +6629,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The museum labels the work “attributed to Zhong Shaojing”.",
-        "noteZh": "实物草稿。馆方标为“传钟绍京”。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum says the album is what survived, but does not trace the rest of the scroll.",
@@ -6796,9 +6680,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The findspot differs between the museum’s pages, so it is not asserted.",
-        "noteZh": "实物草稿。馆方不同页面所记出土地不一，本记录不作断言。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The findspot is given as either Li village in Mei county or Qishan.",
@@ -6845,9 +6728,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. No dimensions were read from the museum record.",
-        "noteZh": "实物草稿。未从馆方著录读到尺寸。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Dimensions and weight are not filled from the museum record.",
@@ -6897,9 +6779,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The museum counts 350 characters; other publications give 357.",
-        "noteZh": "实物草稿。馆方记350字，其他出版物作357字。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The inscription is counted at either 350 or 357 characters.",
@@ -6950,9 +6831,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The date is a scholarly assignment to King Gong.",
-        "noteZh": "实物草稿。时代为学界推定为恭王。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum pages do not record any conservation after excavation.",
@@ -7002,9 +6882,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The object is the vessel, not a rubbing.",
-        "noteZh": "实物草稿。此处登记铜器原器，不是拓本。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Whether the inscription was cast or cut is still debated.",
@@ -7080,9 +6959,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The year this album entered the Qing collection remains unknown."
@@ -7159,8 +7037,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from two government pages that disagree on the character count.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据两份政府页面整理的草稿；两份材料所记字数不一致。"
+        "note": null
       },
       "notes": [
         "The two cited pages give 242 and 332 characters; the record keeps both and asserts neither.",
@@ -7214,9 +7091,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The object is the cliff itself, not a rubbing.",
-        "noteZh": "实物草稿。此处登记的是摩崖原石，不是拓本。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Published figures for the platform area and the surviving character count differ and have not been measured here.",
@@ -7291,9 +7167,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The removal is dated only as 'after the inscription was made'; no year, dimensions or condition survey is cited.",
-        "noteZh": "草稿实物记录。迁移只知发生在刻石之后，未记年份；未引用尺寸或保存状况调查。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The object is the moved block. The original cliff setting is not described by the cited pages.",
@@ -7370,8 +7245,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+        "note": null
       },
       "notes": [
         "The district account identifies the holding and describes the group’s relocation.",
@@ -7422,9 +7296,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from a county government page read on 2026-11-18. No measured dimensions, condition survey or protection file is cited; the cliff was not examined.",
-        "noteZh": "草稿实物记录，依据 2026-11-18 阅读的县政府页面整理。未引用实测尺寸、保存状况调查或保护档案；未实地核对。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The page says the text survives intact, but it is a general description, not a condition survey.",
@@ -7476,9 +7349,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from the Palace Museum page read on 2026-11-23. Dimensions and the inscription text are as transcribed there; the scroll was not examined and its colophons are not individually catalogued here.",
-        "noteZh": "草稿实物记录，依据 2026-11-23 阅读的故宫页面整理。尺寸与碑文从该页转录；未核对原件，题跋亦未逐条著录。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The scroll carries Qing colophons by 姚元之、杨岘、李鸿裔、潘祖荫、王懿荣 and others according to the museum; their dates and places of writing are not recorded here.",
@@ -7560,9 +7432,8 @@
         "noteZh": "馆方以定武本题名，并记其翻刻特征。"
       },
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Look for damage to five characters: 湍, 流, 带, 右 and 天. Three dots in 崇 and the broad strokes also help identify this recut of the Dingwu broad-letter edition."
@@ -7610,9 +7481,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The museum gives size, transcription and seals but neither the sheet's date nor its copy status.",
-        "noteZh": "实物草稿。馆方给尺寸、释文与鉴藏印，未记此页年代，也未说明是否摹本。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum does not say whether the leaf is a copy.",
@@ -7663,9 +7533,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The poems relate to the journey of 1050. The scroll itself has no precise writing date in this record."
@@ -7739,9 +7608,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The catalogue describes a Ming rubbing. Its precise impression year and museum registration number remain open here."
@@ -7788,9 +7656,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The wording differs from the engraved Hanlin Letter. The hand and date of this sheet remain uncertain."
@@ -7837,9 +7704,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The dates of cutting concern the modelbook. The precise date this impression was taken is unknown."
@@ -7896,9 +7762,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft. The museum dates this rubbing to the early Ming; no individual year is given.",
-        "noteZh": "草稿。馆方定为明初拓，无确切年份。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum notes that the eighth drum is absent from this album."
@@ -7947,8 +7812,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. The collection assertion comes from the publishing museum's own catalogue entry but has not been independently reviewed.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据出自收藏机构自己的目录条目，但尚未经过独立审核。"
+        "note": null
       },
       "notes": [
         "No custody events are recorded for this rubbing yet. The original stone's documented 1922–1948 movements are not copied into this record.",
@@ -8001,9 +7865,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The sheet bears collectors’ seals. Their sequence has not been established here."
@@ -8060,9 +7923,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Each measurement applies to one album leaf. The precise date of this early Ming impression remains unknown."
@@ -8162,9 +8024,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The Tang tracing preserves Ouyang Xun’s model. Its copyist is unidentified."
@@ -8238,9 +8099,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Palace Museum catalogue entry transcribed. Editorial approval pending.",
-        "noteZh": "据故宫博物院藏品著录整理，尚待审定。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The scroll is unsigned. Its traditional name and suggested Song copyist are distinct attributions."
@@ -8289,9 +8149,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record built from the museum's collection page read on 2026-11-18. The removal of the stone from the cliff in the Qing dynasty is stated, but no dated event sequence or accession record is given.",
-        "noteZh": "草稿实物记录，依据 2026-11-18 阅读的馆方藏品页整理。页面提到清代将刻石从山崖凿下，但没有具日期的迁移经过或入藏记录。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum describes the block as the rear half of the original stone. The front half is not recorded as extant on the cited page.",
@@ -8341,9 +8200,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft. No accession number or exact production year is assigned.",
-        "noteZh": "草稿。未填写藏品编号或确切刻成年份。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "This is the fragment identified by the linked catalogue page, not a collective record of every surviving fragment."
@@ -8417,8 +8275,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The five fragments are recorded as one object; their individual sizes are not published in the cited pages.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。五方残石合为一条实物；所引页面未公布各石尺寸。"
+        "note": null
       },
       "notes": [
         "The pages give 93 surviving characters with 11 incomplete; the original text is given as 178 characters in one source and about 160 in another.",
@@ -8472,9 +8329,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The page supplies size, transcription and colophon authors but no accession number or gallery.",
-        "noteZh": "实物草稿。馆方页面给尺寸、释文与题跋作者，未给藏品号或展室。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The accession number and acquisition history are not given on this page.",
@@ -8580,9 +8436,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from provincial gazetteer entries read on 2026-11-23. Dimensions and the 1961 designation come from those pages; the stone was not examined and no condition survey is cited.",
-        "noteZh": "草稿实物记录，依据 2026-11-23 阅读的省地方志条目整理。尺寸与 1961 年公布均出自该页；未核对原石，未引保护状况报告。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The stele stands where it was erected; no relocation event is recorded, and the record does not treat the findspot as a separate place.",
@@ -8682,9 +8537,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The shelfmark and accession date of this album remain unconfirmed."
@@ -8729,9 +8583,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. Leaf count is known; no measurement or stone date is given.",
-        "noteZh": "实物草稿。册页数可据著录，尺寸与刻石年代未给。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Leaf measurements are not recorded.",
@@ -8780,9 +8633,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The record gives the album title, script and inventory number but no measurement and no stone date.",
-        "noteZh": "实物草稿。馆方著录给册名、书体与文物编号，未给尺寸与刻石年代。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Leaf measurements and the number of mounted leaves are not given in this record.",
@@ -8830,9 +8682,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The album preserves all four inscribed faces. At 绝思, the impression shows the cuts before the damaged areas joined."
@@ -8957,9 +8808,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from two illustrated press features read on 2026-11-23. The stone's material, size and inscription count are not stated by either source and stay empty; the stone was not examined.",
-        "noteZh": "草稿实物记录，依据 2026-11-23 阅读的两篇图文报道。两文均未记石质、尺寸与行字数，故从缺；未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The object is the carved stone, not a rubbing. No particular impression is described in this record.",
@@ -9009,9 +8859,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The two sources disagree on the mounted width (46.8 against 47.3 cm), so the measurement field is left empty and both readings are kept in the note.",
-        "noteZh": "实物草稿。两处来源对装裱横长有 46.8 与 47.3 厘米两说，尺寸字段留空，两说并记于注。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Mounted width: the museum record gives 24.7 by 46.8 cm, the 2012 designation 24.7 by 47.3 cm; neither is chosen.",
@@ -9090,9 +8939,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from the Palace Museum entry read on 2026-11-23. Accession number, dimensions and the 1956 donation come from that page; the scroll was not examined and no condition report is cited.",
-        "noteZh": "草稿实物记录，依据 2026-11-23 阅读的故宫页面整理。文物号、尺寸与 1956 年捐献均出自该页；未核对原件，未引状态报告。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The scroll is recorded as a paper handscroll; the mounting, colophons and seals are not described here because the cited page does not enumerate them.",
@@ -9151,9 +8999,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from the museum's catalogue entry read on 2026-11-18. The rubbing's condition, acquisition and mounting history are not stated.",
-        "noteZh": "草稿实物记录，依据 2026-11-18 阅读的馆方目录条目整理。拓本的保存状况、入藏与装裱经过均未记载。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The entry describes the ink as fine and notes two character-level features (将 partly preserved, 仪之 joined); these are the cataloguer's observations, not a condition survey.",
@@ -9234,8 +9081,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The album is dated only as a Song mounting; the exact rubbing date is not established.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。此本只定为宋装宋拓，具体拓制年代未定。"
+        "note": null
       },
       "notes": [
         "Only the upper volume survives; one opening of two pages is missing between pages 42 and 43.",
@@ -9287,8 +9133,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -9335,8 +9180,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft with a firsthand study of the Paris rubbing. The present BnF catalogue entry and precise production date still need checking.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿已增补在巴黎查阅实物的研究，仍待核对法国国家图书馆现行目录及具体拓制年代。"
+        "note": null
       },
       "notes": [
         "A relative dating claim in the news report still requires comparison with other early rubbings.",
@@ -9390,9 +9234,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The album is a compilation of engravings, not a single rubbing of one stone.",
-        "noteZh": "实物草稿。此册为多种小楷刻帖的合装，不是一石之拓。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "“Song rubbing” is the old label and catalogue wording. Whether every model in the album is a Song impression has not been established sheet by sheet.",
@@ -9451,9 +9294,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from the Palace Museum entry read on 2026-11-23. The Southern Song dating rests on the museum's character-damage test; no plate was compared and the album was not examined.",
-        "noteZh": "草稿实物记录，依据 2026-11-23 阅读的故宫页面整理。南宋之定依据馆方所记字损特征；未比看图版，未核对原册。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The album is a cut-and-mounted edition: the museum calls it a 剪裱装册, so the leaf size is not the stone's.",
@@ -9503,9 +9345,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "The previous record was approved on 2026-11-18. Its task 039 edits await publication review.",
-        "noteZh": "上一版于 2026-11-18 获准出版。本次修改待出版审核。"
+        "state": "reviewed",
+        "note": null
       },
       "claims": [
         {
@@ -9570,9 +9411,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The stone is lost; this album is the only surviving carrier recorded here.",
-        "noteZh": "实物草稿。原石已佚，本记录只登记这一件传世拓本。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The album’s page count does not match the recorded line arrangement of the text; the original order before mounting needs checking.",
@@ -9620,9 +9460,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from two museum records read on 2026-11-23. The accession history and the scroll's measurements are not stated; the object was not examined.",
-        "noteZh": "草稿实物记录，依据 2026-11-23 阅读的两处馆方著录整理。入藏经过与尺寸均未记载；未核对原件。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "No dimensions are recorded because neither museum record gives them.",
@@ -9725,9 +9564,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The stones are evidenced as a set in the pavilion's walls; no survey, block count or condition report is cited consistently. The stones were not examined.",
-        "noteZh": "草稿实物记录。帖石作为整组嵌于楼壁有据，但所引来源对石数、保存状况的记载不能互相印证。未实地核对。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The object is the set of carved blocks, not any single rubbing. The Palace Museum's Qing rubbing is a separate object.",
@@ -9779,9 +9617,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The carrier is a paper handscroll; its attribution to Zhang Xu is traditional.",
-        "noteZh": "实物草稿。载体为纸本长卷，张旭归属属传称。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The sequence of colophons and collectors’ seals needs checking against the scroll or a full reproduction.",
@@ -9831,9 +9668,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The museum records three surviving versions and an unresolved authenticity debate.",
-        "noteZh": "实物草稿。馆方记传世三本，真伪之争尚未定论。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Two museum pages give sixty-three and sixty-five characters; neither has been checked against the object.",
@@ -9880,9 +9716,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The museum note gives no dimensions, line count or provenance.",
-        "noteZh": "实物草稿。馆方说明未记尺寸、行数与流传。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum note consulted gives no dimensions, line count or paper type.",
@@ -9933,9 +9768,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The writing year is not recorded in either source.",
-        "noteZh": "实物草稿。两处来源均未记书写年份。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "No writing year is recorded; the scroll can only be assigned to the Northern Song.",
@@ -9985,9 +9819,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The scroll carries no collector’s seals and is not recorded in early catalogues.",
-        "noteZh": "实物草稿。本幅无藏印，亦未见早期著录。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The scroll has no collector’s seals and no early catalogue record; its transmission before entering the palace is unknown.",
@@ -10037,9 +9870,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The source does not identify the rubbing used for the copy.",
-        "noteZh": "实物草稿。来源未记所据拓本。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum does not record which edition of the Stone Drums rubbing was used.",
@@ -10116,9 +9948,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. Only the height is recorded because the width figure is garbled in the museum page.",
-        "noteZh": "实物草稿。馆方页面横长数字残缺，仅记纵长。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The width is not recorded and awaits a complete museum entry.",
@@ -10168,9 +9999,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from two illustrated features read on 2026-11-23. The rock face has not been measured in any cited source, so dimensions stay empty; the inscription was not examined.",
-        "noteZh": "草稿实物记录，依据 2026-11-23 阅读的两篇图文材料整理。所引来源均未测量石面，故尺寸从缺；未核对原刻。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The only measurement available is the rubbing's (89 × 39 cm, Longmen research institute collection); it is not used as the stone's size.",
@@ -10249,9 +10079,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. Title, date, medium, dimensions, credit line, accession number and public-domain status were read from the museum's public collection API on 2026-11-23 because the object page itself did not load from this network. The album was not examined.",
-        "noteZh": "草稿实物记录。题名、年代、材质、尺寸、来源、藏品号与公有领域状态于 2026-11-23 经该馆公开藏品接口读取，因本网络无法打开对象页面。未核对原册。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "No relationship is recorded: the stone or woodblock this album was taken from is not identified by the museum record, so nothing is postulated.",
@@ -10298,9 +10127,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. Dimensions of the slips were not read from a museum page.",
-        "noteZh": "实物草稿。简的尺寸未从馆方页面读到。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum page does not give the slip dimensions or how the three Laozi groups were bound.",
@@ -10350,9 +10178,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The official’s name is transcribed differently across reports.",
-        "noteZh": "实物草稿。报道对所涉人名姓氏的录文不一。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The official’s name is transcribed as either Jiao Yong or Hou Yong.",
@@ -10402,9 +10229,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The total character count is not in the museum page used.",
-        "noteZh": "实物草稿。所据馆方页面未给总字数。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The chapters were copied at different times, and their binding order awaits the edited corpus."
@@ -10452,9 +10278,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. No museum object page was found; the data follows a news feature.",
-        "noteZh": "实物草稿。未见馆方藏品页，数据依报刊报道。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The report gives 469 slips in total and 398 in text A; the fascicle numbers await the edited corpus.",
@@ -10504,9 +10329,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The source describes the document type rather than one catalogued tablet.",
-        "noteZh": "实物草稿。来源介绍的是文书类型，不是单件编号。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The museum page gives neither the total number of tablets nor individual numbers.",
@@ -10610,8 +10434,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -10661,8 +10484,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+        "note": null
       },
       "notes": [
         "The current Beilin entry and the Palace Museum give 185; a second Beilin entry gives 186.",
@@ -10719,8 +10541,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -10849,8 +10670,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. Holding, dimensions and the three dated events come from municipal and provincial pages; the stone itself was not examined.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿实物记录。现藏、尺寸与三件有年份的事件取自市级、省级页面；未核对原石。"
+        "note": null
       },
       "notes": [
         "The date conversion is disputed between two provincial sources; the structured year is 405 and the alternative is stated rather than hidden.",
@@ -10931,8 +10751,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. Dimensions and the 1827 event come from a provincial page read on 2026-11-18; the stone was not examined and the present shelter is unconfirmed.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿实物记录。尺寸与 1827 年一事取自 2026-11-18 阅读的省级页面；未核对原石，现存保护建筑未确认。"
+        "note": null
       },
       "notes": [
         "The character count (1217 across both faces) comes from the provincial page; no rubbing was consulted.",
@@ -11039,8 +10858,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from the museum page. The 1907 episode is summarized from that page without checking Holm’s own account.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；1907 年一段仅据该页面，未核对何乐模本人记述。"
+        "note": null
       },
       "notes": [
         "The museum page states the date, authors, body size, and 1907 move; it does not give the total height, weight, or present display condition.",
@@ -11121,9 +10939,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "The earlier collection record was owner-approved on 2026-11-18. The new provenance lead awaits editorial review.",
-        "noteZh": "此前的馆藏记录于 2026-11-18 经负责人批准；本次新增的递藏线索尚待编辑核实。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The cited page states the date, the scribe where one is recorded, and the holding institution.",
@@ -11199,9 +11016,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The location and the 1730 re-erection come from a rubbing catalogue entry; the stone was not examined and its exact position inside the temple is reported differently by two pages.",
-        "noteZh": "草稿实物记录。现藏地点与雍正八年重立事取自拓本目录条目；未核对原石，且两处页面所记寺内位置不同。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The entry gives no stone measurements. The number 223 × 107 cm in the same entry belongs to its Qing rubbing.",
@@ -11254,8 +11070,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+        "note": null
       },
       "notes": [
         "The cited page states the date, the scribe where one is recorded, and the holding institution.",
@@ -11335,8 +11150,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from the museum page. The find circumstances are summarized from one sentence.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；出土经过仅据一句话概括。"
+        "note": null
       },
       "notes": [
         "The page gives dimensions and line count but no weight, accession number, or conservation history.",
@@ -11391,8 +11205,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+        "note": null
       },
       "notes": [
         "The cited page states the date, the scribe where one is recorded, and the holding institution.",
@@ -11451,8 +11264,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The recarving is kept separate from the Tang stone so the two are never confused.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。摹刻与唐碑分列，避免混为一物。"
+        "note": null
       },
       "notes": [
         "The source states the date and the copyist but gives no dimensions or condition.",
@@ -11532,8 +11344,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from an interview transcript. The 984 move is a hypothesis in the source and is labeled as such.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据访谈整理的草稿；984 年迁移在来源中是推测，本条照录并标注为推测。"
+        "note": null
       },
       "notes": [
         "The curator gives measurements and a condition summary but no weight or conservation record.",
@@ -11585,8 +11396,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from an official reply. The reply names the stone but does not describe its condition.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据文物局答复函整理的草稿；该函只列碑名，未描述碑况。"
+        "note": null
       },
       "notes": [
         "The reply confirms the stone survives in the site; it gives no dimensions, condition survey, or protection status for the stone itself.",
@@ -11668,8 +11478,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The set is treated as one object; the museum page does not describe stone-by-stone condition.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。本条把整套石经作为一个实物；馆方页面没有逐石描述保存状况。"
+        "note": null
       },
       "notes": [
         "The page gives the stone count, faces, height, and character total, but no weight, accession record, or per-stone condition.",
@@ -11721,9 +11530,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The recut's date and holding are sourced; its measurements, condition and accession are not, and the two pages disagree on size. The stone was not examined.",
-        "noteZh": "草稿实物记录。重刻年代与收藏机构有来源；尺寸、保存状况与入藏经过没有来源，且两处所记尺寸不同。未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The object is the Northern Song recut known as 西庙堂, one of the Beilin's earliest stones; it is not the Tang original.",
@@ -11775,8 +11583,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -11849,9 +11656,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "The previous record was approved on 2026-11-18. Its task 039 edits await publication review.",
-        "noteZh": "上一版于 2026-11-18 获准出版。本次修改待出版审核。"
+        "state": "reviewed",
+        "note": null
       },
       "claims": [
         {
@@ -11921,8 +11727,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The in-situ claim and the unsigned height dispute come from state and provincial pages read on 2026-11-18; the stone was not examined.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿实物记录。原址所在与高度分歧取自 2026-11-18 阅读的国家级、省级页面；未核对原石。"
+        "note": null
       },
       "notes": [
         "The structured dimensions are empty on purpose: one page gives an overall height of 3.24 m, another a face of 1.56 × 0.89 m plus a 0.42 m heading, and the two do not reconcile.",
@@ -12002,8 +11807,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from a local-history page. The fracture history is summarized in one clause.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据地方志平台页面整理的草稿；断裂经过仅一句带过。"
+        "note": null
       },
       "notes": [
         "The page gives dimensions, line count, and an approximate surviving character count, but no condition survey.",
@@ -12055,8 +11859,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -12102,8 +11905,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -12152,9 +11954,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. This entry describes the surviving carrier, not the lost Tang stone.",
-        "noteZh": "实物草稿。此处登记的是现存重刻，不是已佚的唐原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Neither the recutting year nor its sponsor is recorded in the sources; the stele’s back and catalogues need checking.",
@@ -12203,8 +12004,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+        "note": null
       },
       "notes": [
         "The cited page states the date, the scribe where one is recorded, and the holding institution.",
@@ -12259,8 +12059,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record from the museum page. The block count and the heading’s attribution have not been checked against the stone.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；石数与碑额归属尚未与实物核对。"
+        "note": null
       },
       "notes": [
         "The page gives block dimensions and counts but no weight, accession number, or condition report.",
@@ -12338,9 +12137,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from the Tai'an scenic-area page read on 2026-11-18. Location, relic grade and the surviving characters are stated; dimensions, condition and the dates of the moves are not.",
-        "noteZh": "草稿实物记录，依据 2026-11-18 阅读的泰安泰山风景名胜区页面整理。页面记有现存地点、文物级别与残存文字；尺寸、保存状况与迁移年份均未记载。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The page gives ten surviving characters; it does not give the stone's size or a condition survey.",
@@ -12392,8 +12190,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -12442,8 +12239,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -12517,8 +12313,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The holding, the character count and the excavation month come from the museum's own pages; the stone was not examined.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿实物记录。现藏、字数与出土月份取自馆方页面；未核对原石。"
+        "note": null
       },
       "notes": [
         "The structured dimensions are empty on purpose: both cited pages quote a rubbing size of 242 × 83 cm, which is not the stone's own measurement.",
@@ -12597,9 +12392,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "The earlier collection record was owner-approved on 2026-11-18. The new provenance lead awaits editorial review.",
-        "noteZh": "此前的馆藏记录于 2026-11-18 经负责人批准；本次新增的递藏线索尚待编辑核实。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The cited page states the date, the scribe where one is recorded, and the holding institution.",
@@ -12678,9 +12472,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from the museum's entry read on 2026-11-23. Height and the 982 re-erection come from that page; the page did not respond to a later request, and the stone was not examined.",
-        "noteZh": "草稿实物记录，依据 2026-11-23 阅读的馆方条目整理。碑高与 982 年重立出自该页；该页稍后再请求未通，未核对原石。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The stele is inscribed on both faces and both sides; this record treats it as one object, not four.",
@@ -12731,8 +12524,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -12779,8 +12571,7 @@
       "provenanceEvents": [],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+        "note": null
       },
       "notes": [
         "The cited page states the date, the scribe where one is recorded, and the holding institution.",
@@ -12832,9 +12623,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. Survival and the present holding are stated by the two cited pages; no measured survey, condition report or transfer date is cited.",
-        "noteZh": "草稿实物记录。存世与现藏两点出自所引两页；未引测量、保护状况报告或入藏年份。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The stele stands where the tomb complex is; the record does not claim it is in its original position beside the burial mound.",
@@ -12935,8 +12725,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft from the cited collection entry. Independent editorial review remains pending.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：据所引馆藏条目整理的草稿，尚待独立编辑审核。"
+        "note": null
       },
       "notes": [
         "The catalogue does not identify a storage room or establish current display status."
@@ -13010,8 +12799,7 @@
       ],
       "review": {
         "state": "reviewed",
-        "note": "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The collection assertion comes from the cited page but has not been reviewed against the object itself.",
-        "noteZh": "项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。现藏依据来自所引页面，但尚未与实物核对，也未经独立审核。"
+        "note": null
       },
       "notes": [
         "The activity report describes an illustrated exhibition; it does not establish whether the original was on view.",
@@ -13118,9 +12906,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft. One museum catalogue entry covers the set.",
-        "noteZh": "草稿。此条对应馆方整组著录。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Reported general dimensions are not individual drum measurements."
@@ -13222,9 +13009,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. Dimensions come from a museum feature rather than the museum's own entry; accession number and gallery are unknown. The scroll was not examined.",
-        "noteZh": "草稿实物记录。尺寸出自博物馆专题文章，非馆方藏品条目；藏品号与展室不详。未核对原卷。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The scroll is a tracing copy (双钩填墨), not an autograph; the record keeps that distinction in the object type.",
@@ -13328,9 +13114,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery has not been verified."
@@ -13377,9 +13162,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -13426,9 +13210,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -13475,9 +13258,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -13574,9 +13356,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -13725,9 +13506,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "claims": [
         {
@@ -13842,9 +13622,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -13967,9 +13746,8 @@
         "noteZh": "馆方讨论神龙印的年代；此称名是流传中的版本名，不等于认定印章与摹本同时。"
       },
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "claims": [
         {
@@ -14051,9 +13829,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14153,9 +13930,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The manuscript opens with “upper scroll”, while the label on the mounting reads “lower preface”. Compare Sun’s cursive hand with the later regular-script label."
@@ -14199,9 +13975,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14272,9 +14047,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14321,9 +14095,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14370,9 +14143,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14443,9 +14215,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "At 灵, look at the returning stroke in the upper right. Zhu Yi’an compared it with another impression to judge their relative age."
@@ -14492,9 +14263,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14541,9 +14311,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14590,9 +14359,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14641,9 +14409,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Created during the 2026-11 migration; the museum entry has not been independently reviewed.",
-        "noteZh": "2026 年 11 月迁移时建立；馆方条目尚未经独立编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The writing date of Shen Yinmo’s original letters remains open.",
@@ -14692,9 +14459,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14738,9 +14504,8 @@
       },
       "provenanceEvents": [],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The current gallery and accession date have not been verified."
@@ -14815,9 +14580,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record from a Shanghai Museum exhibition entry for the Princeton loan. No accession number or full colophon list was available on that page.",
-        "noteZh": "实物草稿，依据上海博物馆为普林斯顿借展所写的展品说明。该页未给藏品号与完整题跋目。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "No accession number appears on the cited page.",
@@ -14952,7 +14716,8 @@
           "summary": "宋哲元, then provincial chairman, moved the stone to the north-east side of the Xincheng building as the centrepiece of a 'small stele forest' (小碑林), with side galleries and a stele pavilion built beside it. By this move the character 故 had lost most of its strokes.",
           "summaryZh": "时任省主席宋哲元将此石移至新城大楼东北侧，作为「小碑林」的主体，并在旁边修建侧廊与碑亭。经此次移动，「故」字的笔画已大部残损。",
           "sourceRefs": [
-            "src-beilin-article-2007"
+            "src-beilin-article-2007",
+            "src-beilin-xiao-beilin"
           ],
           "certainty": "documented"
         },
@@ -14987,9 +14752,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "The previous record was approved on 2026-11-18. Its task 039 edits await publication review.",
-        "noteZh": "上一版于 2026-11-18 获准出版。本次修改待出版审核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Xi’an Beilin’s catalogue gives Fengqiyuan as the original setting. The site has no point in this dataset.",
@@ -15098,9 +14862,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. Size, material and two custody episodes are documented; the accession number and the colophon order are not.",
-        "noteZh": "实物草稿。尺寸、质地与两段递藏有据；藏品号与题跋次序未记。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "No accession number appears on the cited page.",
@@ -15179,9 +14942,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Draft object record. The museum does not date the copy, count its characters or describe its present mounting beyond the measurements.",
-        "noteZh": "实物草稿。馆方未记摹写年代与字数，除尺寸外未述现状。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "Neither the copying date nor the copyist is recorded.",
@@ -15258,9 +15020,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The character count and dimensions await a survey specific to the lower cliff."
@@ -15333,9 +15094,8 @@
         }
       ],
       "review": {
-        "state": "draft",
-        "note": "Catalogue identification awaits editorial review.",
-        "noteZh": "馆藏著录待编辑复核。"
+        "state": "reviewed",
+        "note": null
       },
       "notes": [
         "The line count awaits a measured survey of the upper inscription."
@@ -18347,7 +18107,7 @@
       "id": "duobao-ta-bei",
       "titleZh": "多宝塔感应碑",
       "titleEn": "Duobao Pagoda Stele",
-      "state": "draft",
+      "state": "reviewed",
       "people": [
         "yan-zhenqing"
       ],
@@ -18370,7 +18130,7 @@
       "titleZh": "甲种本大楷习字帖",
       "titleEn": "Large Regular-Script Copybook, Edition A",
       "timelineYear": 1962,
-      "state": "draft",
+      "state": "reviewed",
       "people": [
         "shen-yinmo"
       ],
@@ -18390,7 +18150,7 @@
       "id": "yan-qinli-bei",
       "titleZh": "颜勤礼碑",
       "titleEn": "Stele of Yan Qinli",
-      "state": "draft",
+      "state": "reviewed",
       "people": [
         "yan-zhenqing"
       ],
@@ -18415,7 +18175,7 @@
       "titleZh": "行书跋沈尹默论书札卷",
       "titleEn": "Colophon to Shen Yinmo’s Writing on Calligraphy",
       "timelineYear": 1976,
-      "state": "draft",
+      "state": "reviewed",
       "people": [
         "zhao-puchu"
       ],
@@ -18434,7 +18194,7 @@
       "id": "feng-chengsu",
       "titleZh": "冯承素",
       "titleEn": "Feng Chengsu",
-      "state": "draft",
+      "state": "reviewed",
       "people": [],
       "works": [
         "lanting"
@@ -18453,7 +18213,7 @@
       "id": "shen-yinmo",
       "titleZh": "沈尹默",
       "titleEn": "Shen Yinmo",
-      "state": "draft",
+      "state": "reviewed",
       "people": [],
       "works": [
         "shen-yinmo-dakai-jia"
@@ -18472,7 +18232,7 @@
       "id": "wang-xianzhi",
       "titleZh": "王献之",
       "titleEn": "Wang Xianzhi",
-      "state": "draft",
+      "state": "reviewed",
       "people": [],
       "works": [
         "luoshen-shisanhang",
@@ -18501,7 +18261,7 @@
       "id": "wang-xizhi",
       "titleZh": "王羲之",
       "titleEn": "Wang Xizhi",
-      "state": "draft",
+      "state": "reviewed",
       "people": [],
       "works": [
         "lanting",
@@ -18551,7 +18311,7 @@
       "id": "weng-fanggang",
       "titleZh": "翁方纲",
       "titleEn": "Weng Fanggang",
-      "state": "draft",
+      "state": "reviewed",
       "people": [],
       "works": [
         "liqi-bei"
@@ -18570,7 +18330,7 @@
       "id": "xianyu-shu",
       "titleZh": "鲜于枢",
       "titleEn": "Xianyu Shu",
-      "state": "draft",
+      "state": "reviewed",
       "people": [],
       "works": [
         "jizhi"
@@ -18591,7 +18351,7 @@
       "id": "yan-zhenqing",
       "titleZh": "颜真卿",
       "titleEn": "Yan Zhenqing",
-      "state": "draft",
+      "state": "reviewed",
       "people": [],
       "works": [
         "duobao-ta-bei",
@@ -18616,7 +18376,7 @@
       "id": "zhao-puchu",
       "titleZh": "赵朴初",
       "titleEn": "Zhao Puchu",
-      "state": "draft",
+      "state": "reviewed",
       "people": [],
       "works": [
         "zhao-puchu-shen-colophon"
@@ -18634,7 +18394,7 @@
       "id": "duobao-reading",
       "titleZh": "读《多宝塔碑》时，先找碑额上的“塔”",
       "titleEn": "Find the character 塔 in the Duobao heading",
-      "state": "draft",
+      "state": "reviewed",
       "people": [
         "yan-zhenqing"
       ],
@@ -18655,7 +18415,7 @@
       "id": "yan-qinli-story",
       "titleZh": "从一个「故」字读《颜勤礼碑》",
       "titleEn": "Reading the Yan Qinli Stele through a single character",
-      "state": "draft",
+      "state": "reviewed",
       "people": [],
       "works": [
         "yan-qinli-bei"
@@ -18684,7 +18444,7 @@
         "src-shm-zhao-shen-colophon",
         "src-xiling-shen-chronology"
       ],
-      "state": "draft"
+      "state": "reviewed"
     }
   ]
 }

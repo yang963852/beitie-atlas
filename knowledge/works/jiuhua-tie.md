@@ -30,9 +30,7 @@ sources:
   - src-wuxi-jiuhua
   - src-wuxi-jiuhua-entry
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection from two Wuxi Museum pages that disagree on the character count. The count is therefore left out of the fields.
-  noteZh: 2026 年 11 月经典碑帖增补草稿，依据无锡博物院两篇文章；两文所记字数不一，故不写入结构化字段。
+  state: reviewed
 ---
 
 # 韭花帖

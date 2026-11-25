@@ -6,7 +6,7 @@
 
 Seventeen-Day Letters
 
-**作品**　东晋 · 永和三年到升平五年（347—361） · 帖 · 待审
+**作品**　东晋 · 永和三年到升平五年（347—361） · 帖
 
 此为致益州刺史周抚的一组书信，前后约十四年。唐内府将王羲之书迹以「一丈二尺为一卷」装裱；张彦远《法书要录》记《十七帖》长一丈二尺、一百七行、九百四十三字。原墨迹已佚，今以刻本流传，据展览报道以唐弘文馆「馆本」一系最存原貌。
 
@@ -32,7 +32,7 @@ Seventeen-Day Letters
 
 Album of rubbings of the Seventeen-Day Letters
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：13th-century rubbing of a series of 4th-century texts
 - 著录编号：1991.380
