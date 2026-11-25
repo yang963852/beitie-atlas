@@ -50,7 +50,7 @@ Langya Inscription, surviving fragment
 - 页面没有馆藏编号、出土记录或入藏时间，故均不填写。
 - 残石状况仅以「字已漫漶」概述，未引用保存状况调查。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/fragment-langya-keshi) · [实物数据](../../data/objects/fragment-langya-keshi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/fragment-langya-keshi) · [实物源稿](../../knowledge/objects/fragment-langya-keshi.md)
 
 ## 据以著录的来源
 
@@ -62,4 +62,4 @@ Langya Inscription, surviving fragment
 
 2. 中国国家博物馆 National Museum of China · [石刻砖瓦](<https://m.chnmuseum.cn/zp/zpml/csp/sk/>)。定位：琅琊刻石条目。查阅于 2026-11-18。
 
-[作品数据](../../data/works/langya-keshi.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/langya-keshi.md) · [返回知识总目](../README.md)

@@ -21,14 +21,16 @@ export function ProvenanceEvents({ object }: { object: ObjectRecord }) {
           <ol className="timeline">
             {events.map((event) => {
               const eventPlace = getPlace(event.placeId);
+              const referencePlace = getPlace(event.referencePlaceId ?? null);
               const summary = pickText(locale, event.summaryZh, event.summary);
+              const mainDate = formatDate(event.date, locale);
               return (
                 <li key={event.id} className="timeline__item">
                   <div className="timeline__marker" aria-hidden="true" />
                   <div className="timeline__body">
                     <div className="timeline__date">
-                      <span className="timeline__date-main">{formatDate(event.date, locale)}</span>
-                      {event.date.original ? (
+                      <span className="timeline__date-main">{mainDate}</span>
+                      {event.date.original && event.date.original !== mainDate ? (
                         <span className="timeline__date-original" lang="zh-Hans">
                           {event.date.original}
                         </span>
@@ -51,6 +53,12 @@ export function ProvenanceEvents({ object }: { object: ObjectRecord }) {
                       ) : null}
                       {!event.placeWording && !eventPlace ? strings.eventPlaceUnknown : null}
                     </p>
+                    {referencePlace ? (
+                      <p className="timeline__reference">
+                        {locale === 'zh' ? '今日参照' : 'Reference today'}：{locale === 'zh' ? referencePlace.names.zh : referencePlace.names.en}
+                        {pickText(locale, event.referenceNoteZh, event.referenceNote) ? ' · ' + pickText(locale, event.referenceNoteZh, event.referenceNote) : ''}
+                      </p>
+                    ) : null}
                     <SourceList ids={event.sourceRefs} compact />
                   </div>
                 </li>

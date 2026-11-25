@@ -38,7 +38,7 @@ Coral Letter, ink manuscript
 
 - 纸上留有数家鉴藏印，递藏先后尚待细考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-shanhu-026) · [实物数据](../../data/objects/dpm-shanhu-026.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-shanhu-026) · [实物源稿](../../knowledge/objects/dpm-shanhu-026.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Coral Letter, ink manuscript
 
 1. 故宫博物院 · [米芾行书珊瑚帖页](<https://www.dpm.org.cn/collection/handwriting/231255.html>)。定位：藏品题名、文物号及简介。查阅于 2026-11-18。
 
-[作品数据](../../data/works/shanhu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shanhu.md) · [返回知识总目](../README.md)

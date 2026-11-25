@@ -38,7 +38,7 @@ Poem on the Hall of Wind and Pines
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-songfeng) · [实物数据](../../data/objects/witness-songfeng.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-songfeng) · [实物源稿](../../knowledge/objects/witness-songfeng.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Poem on the Hall of Wind and Pines
 
 1. 國立故宮博物院 · [松风阁诗](<https://digitalarchive.npm.gov.tw/Collection/Detail/43?dep=P>)。定位：藏品题名；收传印记及鉴藏宝玺栏。查阅于 2026-11-18。
 
-[作品数据](../../data/works/songfeng.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/songfeng.md) · [返回知识总目](../README.md)

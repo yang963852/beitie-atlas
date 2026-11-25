@@ -15,22 +15,57 @@
 
 读帖观察欢迎中文原稿。请写明观察人、具体版本、哪一字或哪一行、别人怎样复看。第三方图片可给原始链接；申请收录图片时附作者、来源、许可和署名方式。保留相冲突的著录和各自出处。一般投稿只走一条路径即可。
 
-想新写一篇，可以在 [作品](../knowledge/works)、[书家](../knowledge/people)或[读帖笔记](../knowledge/notes)目录点 **Add file → Create new file**，用小写英文字母、数字与短横线起一个便于引用的文件名，以 `.md` 结尾。参考[现有笔记](../knowledge/notes/duobao-reading.md)，在文件顶部写中文标题和草稿状态，正文放在 `## 中文` 下。可省略英文标题和译文。下列是可填写的最小文本。
+想新写一篇，可以在 [作品](../knowledge/works)、[书家](../knowledge/people)、[读帖笔记](../knowledge/notes)或[实物](../knowledge/objects)目录点 **Add file → Create new file**，用小写英文字母、数字与短横线起一个便于引用的文件名，以 `.md` 结尾。先复制对应的[中文模板](../knowledge/_templates/)，把 `schemaVersion: 1` 保留在顶部。作品与实物的日期、署名、出处和审核状态写在 YAML；背景、待考和导读写进正文。参考[现有作品](../knowledge/works/yan-qinli-bei.md)，正文用下列结构：
 
 ```markdown
 ---
-titleZh: 我想与大家一起看的一个字
-state: draft
+schemaVersion: 1
+titleZh: 作品题名
+studyCategory: bei
+dynastyId: tang
+date:
+  kind: single
+  start: 779
+  end: 779
+  certainty: documented
+attribution:
+  - role: author-and-calligrapher
+    name: 姓名
+    certainty: documented
+    sources: [src-example]
+sources: [src-example]
+review:
+  state: draft
+  note: 还缺什么证据
 ---
 
-## 中文
+# 作品题名
 
-观察者与版本：……
-观察到的字或行：……
-可核对的出处（链接和段落，或书名、版本及页码）：……
+## 背景
+
+### 中文
+
+……（有英文译文时放在 `### English`）
+
+## 待考
+
+### 中文
+
+- ……（可省略译文，不要机器翻译）
 ```
 
-新建、改题或调整审核状态可能使知识总目需要更新。编辑可在同一投稿 PR 运行 `npm run knowledge:generate` 并提交生成结果；如果投稿人使用 Fork，由编辑与投稿人协商分支更新或关联整理 PR。你可以始终只用浏览器。
+没有署名时写 `role: unknown`，不要留空。日期没有来源时留空并在待考说明，不猜年份。
+
+新建、改题或调整审核状态可能使知识总目需要更新。编辑可在同一投稿 PR 运行 `npm run knowledge:compile && npm run knowledge:generate` 并提交生成结果；如果投稿人使用 Fork，由编辑与投稿人协商分支更新或关联整理 PR。你可以始终只用浏览器。
+
+## 下载完整知识库，改一篇再提 PR
+
+[下载完整知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip)。压缩包随已检查的 `main` 生成，附源提交号、中文总目、作者 Markdown、生成目录、内部链接和权利说明。
+
+1. 解压，用 Obsidian 或任意 Markdown 编辑器打开。先读根目录的 `开始阅读.md`。
+2. 只改你要改的那一篇，例如 `knowledge/works/yan-qinli-bei.md`。文件名是稳定 ID，不要改名。
+3. 在自己的 GitHub Fork 中按原路径上传这个文件，向 `yang963852/beitie-atlas` 的 `main` 提 PR。
+4. 只提交你改动的源稿。`knowledge/catalogue/`、`knowledge/README.md` 和 `manifest.json` 是生成文件，由项目维护者重新生成。
 
 ## 只用浏览器提交资料
 

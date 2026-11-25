@@ -23,9 +23,13 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   renderer.setPixelRatio(Math.min(devicePixelRatio, 1.6));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = T.PCFSoftShadowMap;
+  // A filmic curve keeps the warm paper highlights from clipping; the camera,
+  // geometry and animation are untouched.
+  renderer.toneMapping = T.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.02;
   const scene = new T.Scene();
-  scene.background = new T.Color('#e0dfcf');
-  scene.fog = new T.FogExp2('#e0dfcf', .072);
+  scene.background = new T.Color('#e8e0cc');
+  scene.fog = new T.FogExp2('#e8e0cc', .072);
   const camera = new T.PerspectiveCamera(39, 1, .1, 100);
   const [facsimile, grain, normal] = images.map(image => {
     const texture = new T.Texture(image);
@@ -40,8 +44,8 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   const oak = new T.MeshStandardMaterial({map:grain, normalMap:normal, normalScale:new T.Vector2(.48,.48), roughness:.62});
   const felt = new T.MeshStandardMaterial({map:wool,bumpMap:wool,bumpScale:.0016,roughness:1});
   const paper = new T.MeshStandardMaterial({map:fibre,bumpMap:fibre,bumpScale:.00065,roughness:.96});
-  const frame = pigment('#364842'), ivory = pigment('#dfd3b7');
-  const bamboo = new T.MeshStandardMaterial({color:'#d4ae70',map:grain,roughness:.39});
+  const frame = pigment('#3b352b'), ivory = pigment('#e2d6ba');
+  const bamboo = new T.MeshStandardMaterial({color:'#d6b078',map:grain,roughness:.39});
   const ink = new T.MeshPhysicalMaterial({color:'#070808',roughness:.095,clearcoat:1,clearcoatRoughness:.05});
   const studio = new RoomEnvironment();
   const pmrem = new T.PMREMGenerator(renderer);
@@ -199,8 +203,8 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   const writingRotation = new T.Quaternion().setFromEuler(new T.Euler(-.28, 0, -.29));
   brush.position.copy(rest); brush.quaternion.copy(restRotation);
 
-  scene.add(new T.HemisphereLight('#fff8e6', '#827b69', 1.13));
-  const sun = new T.DirectionalLight('#fff0db', 1.55);
+  scene.add(new T.HemisphereLight('#fff7e4', '#7d7361', 1.12));
+  const sun = new T.DirectionalLight('#ffedcf', 1.5);
   sun.position.set(-5, 8, -4); sun.castShadow = true;
   Object.assign(sun.shadow.camera, { left: -5, right: 5, top: 5, bottom: -5 });
   sun.shadow.mapSize.set(1024, 1024); sun.shadow.normalBias = .008;

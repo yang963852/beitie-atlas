@@ -51,7 +51,7 @@ Draft of the Record of the Three Gates
 - TB-1461 为机构管理序号，非中国式拓本登录号；此处照录。
 - 不设递藏事件：馆方未记旧藏家，也未记入藏年份。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/sanmen-scroll) · [实物数据](../../data/objects/sanmen-scroll.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/sanmen-scroll) · [实物源稿](../../knowledge/objects/sanmen-scroll.md)
 
 ## 据以著录的来源
 
@@ -63,4 +63,4 @@ Draft of the Record of the Three Gates
 
 2. 日本国立文化财机构 National Institutes for Cultural Heritage · [楷书《玄妙观重修三门记》卷（ColBase）](<https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh>)。定位：Chinese-language record: the 49–56 age inference, the 李邕 basis, and the seal-script heading.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/sanmen-ji.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/sanmen-ji.md) · [返回知识总目](../README.md)

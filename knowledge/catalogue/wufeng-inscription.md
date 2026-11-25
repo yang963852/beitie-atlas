@@ -40,7 +40,7 @@ Wufeng Inscription, inscribed stone
 
 - 所引条目没有给出库房位置，也未核实目前的展出状态。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-wufeng-inscription) · [实物数据](../../data/objects/stele-wufeng-inscription.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-wufeng-inscription) · [实物源稿](../../knowledge/objects/stele-wufeng-inscription.md)
 
 ## 据以著录的来源
 
@@ -48,4 +48,4 @@ Wufeng Inscription, inscribed stone
 
 1. 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery · [西汉刻石：五凤刻石](<https://hwbk.qfwbw.cn/xihan/>)。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
 
-[作品数据](../../data/works/wufeng-inscription.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/wufeng-inscription.md) · [返回知识总目](../README.md)

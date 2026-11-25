@@ -1,0 +1,51 @@
+---
+schemaVersion: 1
+work: daba-bei
+objectType: ink-manuscript
+titleZh: 楷书帝师胆巴碑卷
+titleEn: Draft of the Stele of the Imperial Preceptor Dampa
+date:
+  kind: single
+  start: 1316
+  month: null
+  end: 1316
+  endMonth: null
+  era: 元延祐三年
+  original: 延祐三年（1316）□月立石
+  certainty: documented
+  note: null
+catalogNumber: null
+dimensions:
+  raw: 纵33.6厘米，横563厘米
+  note: The museum gives these figures for the mounted handscroll; the height of the written sheet and the width of the text alone are not stated.
+survival: surviving
+relationships: []
+collection:
+  kind: collection-institution
+  place: place-palace-museum
+  sources:
+    - src-dpm-daba
+  accessedAt: 2026-11-23
+  asOf: null
+  note: The museum's thematic page states that the scroll is held in the Palace Museum. It gives no accession number, gallery or display status.
+  noteZh: 馆方专题页称此卷藏故宫博物院，未给藏品号、展室与展出状态。
+events: []
+review:
+  state: draft
+  note: Draft object record from the Palace Museum page read on 2026-11-23. Dimensions and the inscription text are as transcribed there; the scroll was not examined and its colophons are not individually catalogued here.
+  noteZh: 草稿实物记录，依据 2026-11-23 阅读的故宫页面整理。尺寸与碑文从该页转录；未核对原件，题跋亦未逐条著录。
+---
+
+# 楷书帝师胆巴碑卷
+
+## 待考
+
+### 中文
+
+- 馆方记卷后有清姚元之、杨岘、李鸿裔、潘祖荫、王懿荣等题跋；本记录不载各跋年月与书写地。
+- 不设入藏事件：所引页面未记此卷如何入馆。
+
+### English
+
+- The scroll carries Qing colophons by 姚元之、杨岘、李鸿裔、潘祖荫、王懿荣 and others according to the museum; their dates and places of writing are not recorded here.
+- No accession event is recorded: the cited page does not describe how the scroll entered the museum.

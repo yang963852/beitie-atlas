@@ -38,7 +38,7 @@ Five Characters in Clerical Script
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-yi-wuzi) · [实物数据](../../data/objects/witness-yi-wuzi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-yi-wuzi) · [实物源稿](../../knowledge/objects/witness-yi-wuzi.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Five Characters in Clerical Script
 
 1. 故宫博物院 · [隶书五字横幅](<https://www.dpm.org.cn/collection/handwriting/228281.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/yi-wuzi.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/yi-wuzi.md) · [返回知识总目](../README.md)

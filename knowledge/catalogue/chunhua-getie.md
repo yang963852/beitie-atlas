@@ -36,7 +36,7 @@ Chunhua Modelbooks, Maoqin Hall edition, vol. 6
 
 - 此册入清宫的年份待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/chunhua-maoqin-6) · [实物数据](../../data/objects/chunhua-maoqin-6.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/chunhua-maoqin-6) · [实物源稿](../../knowledge/objects/chunhua-maoqin-6.md)
 
 ## 据以著录的来源
 
@@ -44,4 +44,4 @@ Chunhua Modelbooks, Maoqin Hall edition, vol. 6
 
 1. 故宫博物院 · [宋拓懋勤殿本淳化阁帖册](<https://www.dpm.org.cn/collection/impres/261938.html>)。定位：故00004678-6/10，简介第一、二段。查阅于 2026-11-19。
 
-[作品数据](../../data/works/chunhua-getie.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/chunhua-getie.md) · [返回知识总目](../README.md)

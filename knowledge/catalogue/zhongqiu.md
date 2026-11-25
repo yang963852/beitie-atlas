@@ -16,6 +16,8 @@ Mid-Autumn Letter
 
 书体：行草
 
+延伸阅读：[王献之](../people/wang-xianzhi.md)
+
 <a name="dpm-zhongqiu-026"></a>
 
 ## 《中秋帖》（传王献之，后世临本）
@@ -38,7 +40,7 @@ Mid-Autumn Letter, manuscript copy
 
 - 卷上无署款。旧题王献之，宋人临写之说另有考证，摹者尚难确指。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-zhongqiu-026) · [实物数据](../../data/objects/dpm-zhongqiu-026.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-zhongqiu-026) · [实物源稿](../../knowledge/objects/dpm-zhongqiu-026.md)
 
 ## 据以著录的来源
 
@@ -46,4 +48,4 @@ Mid-Autumn Letter, manuscript copy
 
 1. 故宫博物院 · [王献之行草书中秋帖卷](<https://www.dpm.org.cn/collection/handwriting/228204.html>)。定位：藏品题名、文物号及简介。查阅于 2026-11-18。
 
-[作品数据](../../data/works/zhongqiu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/zhongqiu.md) · [返回知识总目](../README.md)

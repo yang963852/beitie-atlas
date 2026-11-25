@@ -51,7 +51,7 @@ Mount Tai Inscription, surviving fragment
 - 页面提到的被盗与追回没有年份，只在本条说明中记下，不单列为事件。
 - 此石是原碑残石，不是拓本，也不是后代的摹刻。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-taishan-keshi) · [实物数据](../../data/objects/stele-taishan-keshi.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-taishan-keshi) · [实物源稿](../../knowledge/objects/stele-taishan-keshi.md)
 
 ## 据以著录的来源
 
@@ -59,4 +59,4 @@ Mount Tai Inscription, surviving fragment
 
 1. 泰山风景名胜区管理委员会 · [岱庙（景点介绍）](<https://tsgw.taian.gov.cn/art/2021/6/13/art_363479_10320189.html>)（2021-06-13）。定位：First paragraph of the site history。查阅于 2026-11-18。
 
-[作品数据](../../data/works/taishan-keshi.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/taishan-keshi.md) · [返回知识总目](../README.md)

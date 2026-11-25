@@ -49,7 +49,7 @@ The Pingfu Tie scroll
 - 此卷著录为纸本手卷；所引页面未逐项列出装裱、题跋与鉴藏印，故不在此描述。
 - 此前递藏不设系年：页面自宋内府以下只列藏家，未给年份。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/pingfu-tie-scroll) · [实物数据](../../data/objects/pingfu-tie-scroll.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/pingfu-tie-scroll) · [实物源稿](../../knowledge/objects/pingfu-tie-scroll.md)
 
 ## 据以著录的来源
 
@@ -57,4 +57,4 @@ The Pingfu Tie scroll
 
 1. 故宫博物院 The Palace Museum · [陆机草隶书平复帖卷](<https://www.dpm.org.cn/collection/handwriting/234553.html>)。定位：文物号 新00044430, 尺寸、释文、递藏与陆机小传各段.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/pingfu-tie.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/pingfu-tie.md) · [返回知识总目](../README.md)

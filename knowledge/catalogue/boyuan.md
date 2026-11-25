@@ -39,7 +39,7 @@ Letter to Boyuan
 
 - 现展厅待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-boyuan) · [实物数据](../../data/objects/witness-boyuan.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-boyuan) · [实物源稿](../../knowledge/objects/witness-boyuan.md)
 
 ## 据以著录的来源
 
@@ -51,4 +51,4 @@ Letter to Boyuan
 
 2. 故宫博物院 · [流失国宝重返故宫](<https://www.dpm.org.cn/topic/party_building/north/detail/255754.html>)。定位：Paragraph on the formal accession of 伯远帖 and 中秋帖。查阅于 2026-11-18。
 
-[作品数据](../../data/works/boyuan.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/boyuan.md) · [返回知识总目](../README.md)

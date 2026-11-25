@@ -15,8 +15,8 @@ it('includes guide-only works after the historic catalogue in source year order'
   expect(cards.slice(-2).map(card => card.hash)).toEqual([
     '#/folio/shen-yinmo-dakai-jia', '#/folio/zhao-puchu-shen-colophon',
   ]);
-  expect(cards.at(-2)).toHaveTextContent('1962');
-  expect(cards.at(-1)).toHaveTextContent('1976');
+  expect(cards.at(-2)).toHaveTextContent('甲种本大楷习字帖');
+  expect(cards.at(-1)).toHaveTextContent('行书跋沈尹默论书札卷');
 });
 
 it('keeps the rubbing’s transmission separate from the original stone on a direct map link', () => {
@@ -50,4 +50,12 @@ it('restores the collection filter and open place after reading a witness', asyn
     const restored = within(index()).getAllByRole('button').find(b => b.textContent === label);
     expect(restored).toHaveAttribute('aria-pressed', 'true');
   });
+});
+
+it('shows the editorial inference alongside both colophon dates on transmission links', () => {
+  visit('#/transmission/witness-jizhi');
+  const page = screen.getByRole('main');
+  expect(page).toHaveTextContent('1282');
+  expect(page).toHaveTextContent('1283');
+  expect(page).toHaveTextContent('编辑推定');
 });

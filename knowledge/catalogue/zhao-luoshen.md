@@ -38,7 +38,7 @@ Rhapsody on the Goddess of the Luo
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-zhao-luoshen) · [实物数据](../../data/objects/witness-zhao-luoshen.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-zhao-luoshen) · [实物源稿](../../knowledge/objects/witness-zhao-luoshen.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Rhapsody on the Goddess of the Luo
 
 1. 故宫博物院 · [洛神赋](<https://www.dpm.org.cn/collection/handwriting/228244.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/zhao-luoshen.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/zhao-luoshen.md) · [返回知识总目](../README.md)

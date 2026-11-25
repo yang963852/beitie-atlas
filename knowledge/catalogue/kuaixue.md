@@ -16,6 +16,8 @@ Clearing after Snow
 
 书体：行书
 
+延伸阅读：[王羲之](../people/wang-xizhi.md)
+
 <a name="witness-kuaixue"></a>
 
 ## 快雪时晴帖（传世摹本）
@@ -39,7 +41,7 @@ Clearing after Snow, manuscript copy
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-kuaixue) · [实物数据](../../data/objects/witness-kuaixue.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-kuaixue) · [实物源稿](../../knowledge/objects/witness-kuaixue.md)
 
 ## 据以著录的来源
 
@@ -51,4 +53,4 @@ Clearing after Snow, manuscript copy
 
 2. 國立故宮博物院《故宮學術季刊》 · [王義之《快雪時晴帖》在元代的接受與認識](<https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3907>)。定位：Abstract, p. 169: the imperial album and the distinct Zhang Yu copy。查阅于 2026-11-18。
 
-[作品数据](../../data/works/kuaixue.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/kuaixue.md) · [返回知识总目](../README.md)

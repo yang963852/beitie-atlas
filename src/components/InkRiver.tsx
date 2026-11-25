@@ -21,19 +21,26 @@ export function InkRiver() {
           varying vec2 v;
           uniform float width, offset, time;
           void main(){
-            float x=(v.x*width+offset)*.011;
-            float bend=.5+.14*sin(x*.79)+.07*sin(x*1.6+.8);
-            float radius=.19+.05*sin(x*.53);
+            float x=(v.x*width+offset)*.009;
+            float t=time;
+            // A slow meander, with the stream narrowing and widening downstream.
+            float bend=.5+.115*sin(x*.62+t*.05)+.045*sin(x*1.35+.7);
+            float radius=.205+.045*sin(x*.47-t*.035);
             float distanceToBank=abs(v.y-bend)/radius;
             float flow=(v.y-bend)/radius;
-            float eddy=sin(x*1.37-time*.23+flow*4.)+.6*sin(x*2.1+flow*3.);
-            float ripple=sin(flow*21.+eddy*2.3+sin(x-time*.32));
-            float glint=pow(max(ripple,0.),7.)*smoothstep(-.6,.8,sin(x*.85+flow*9.));
-            float current=.45*sin(flow*7.+eddy)+.3*sin(x*.8-flow*5.);
-            float water=1.-smoothstep(.88,1.02,distanceToBank);
-            float fibre=.045*sin(x*23.+v.y*80.);
-            vec3 ink=mix(vec3(.53,.63,.57),vec3(.16,.32,.30),.5+.48*current+fibre);
-            gl_FragColor=vec4(ink,water*(.72+.19*current-.38*glint));
+            float water=1.-smoothstep(.84,1.03,distanceToBank);
+            // Bands and highlights drift along the current; the banks catch paper light.
+            float drift=sin(flow*13.+x*1.9-t*.9);
+            float ripple=sin(flow*29.+x*3.4-t*1.7+.7*sin(x*.9+t*.15));
+            float glint=pow(max(ripple,0.),10.)*smoothstep(.1,.9,sin(x*.55-t*.55+flow*2.2));
+            float current=.4*sin(flow*6.5+x*.6-t*.3)+.26*sin(x*1.15-t*.45);
+            float fibre=.03*sin(x*26.+v.y*70.+t*.12);
+            vec3 ink=mix(vec3(.58,.49,.37),vec3(.22,.155,.11),.48+.4*current+fibre);
+            float rim=smoothstep(.88,1.,distanceToBank)*(1.-smoothstep(1.,1.1,distanceToBank));
+            ink=mix(ink,vec3(.86,.80,.69),rim*.32);
+            ink+=vec3(.16,.13,.10)*glint;
+            float alpha=water*(.58+.18*current+.08*drift)+glint*.22;
+            gl_FragColor=vec4(ink,clamp(alpha,0.,.94));
           }`,
       });
       const geometry = new THREE.PlaneGeometry(2, 2);

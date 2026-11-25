@@ -50,7 +50,7 @@ Stele of Xianyu Huang, original stone
 - 出土时间精确到 1973 年 5 月，因此事件按单月记录，不扩写为整年。
 - 碑上未署撰书者，故不主张作者。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-xianyu-huang) · [实物数据](../../data/objects/stele-xianyu-huang.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-xianyu-huang) · [实物源稿](../../knowledge/objects/stele-xianyu-huang.md)
 
 ## 据以著录的来源
 
@@ -62,4 +62,4 @@ Stele of Xianyu Huang, original stone
 
 2. 天津博物馆 · [「文物会说话」有声海报｜这些「第一」，鉴证何以中国](<https://www.tjbwg.cn/cn/NewsInfo.aspx?id=20860>)。定位：东汉鲜于璜碑条。查阅于 2026-11-18。
 
-[作品数据](../../data/works/xianyu-huang-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/xianyu-huang-bei.md) · [返回知识总目](../README.md)

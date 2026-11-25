@@ -49,7 +49,7 @@ Stele of Cuan Longyan, original stone
 - 方位按「原址」记在村落尺度，不是实测点位。
 - 后世文献称有撰文者，所引页面未载，故不主张作者。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-cuan-longyan) · [实物数据](../../data/objects/stele-cuan-longyan.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-cuan-longyan) · [实物源稿](../../knowledge/objects/stele-cuan-longyan.md)
 
 ## 据以著录的来源
 
@@ -61,4 +61,4 @@ Stele of Cuan Longyan, original stone
 
 2. 云南宣传网 · [读懂「二爨碑」 领略爨文化](<https://www.ynxc.gov.cn/html/2024/whxdfocus_0709/3013517.html>)（2024-07-09）。定位：「一」节中两碑叙述。查阅于 2026-11-18。
 
-[作品数据](../../data/works/cuan-longyan-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/cuan-longyan-bei.md) · [返回知识总目](../README.md)

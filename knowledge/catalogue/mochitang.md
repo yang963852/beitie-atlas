@@ -37,7 +37,7 @@ Mochitang Modelbook, rubbing
 
 - 万历年间所记是刻帖始末，这一部拓本究竟拓于何年，尚未详定。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-mochitang-026) · [实物数据](../../data/objects/dpm-mochitang-026.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dpm-mochitang-026) · [实物源稿](../../knowledge/objects/dpm-mochitang-026.md)
 
 ## 据以著录的来源
 
@@ -45,4 +45,4 @@ Mochitang Modelbook, rubbing
 
 1. 故宫博物院 · [明拓墨池堂选帖](<https://www.dpm.org.cn/collection/impres/234595.html>)。定位：藏品题名、文物号及简介。查阅于 2026-11-18。
 
-[作品数据](../../data/works/mochitang.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/mochitang.md) · [返回知识总目](../README.md)

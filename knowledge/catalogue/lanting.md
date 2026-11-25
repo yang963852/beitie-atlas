@@ -16,6 +16,8 @@ Preface to the Orchid Pavilion
 
 书体：行书
 
+延伸阅读：[冯承素](../people/feng-chengsu.md) · [王羲之](../people/wang-xizhi.md)
+
 <a name="dingwu-zhan"></a>
 
 ## 定武兰亭序（詹东图藏本）
@@ -38,7 +40,7 @@ Dingwu Orchid Pavilion, Zhan Dongtu copy
 
 - 找一找“湍、流、带、右、天”五字的损处。故宫又据“崇”字三点与偏肥的字形，辨此册出自定武肥本翻刻。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dingwu-zhan) · [实物数据](../../data/objects/dingwu-zhan.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/dingwu-zhan) · [实物源稿](../../knowledge/objects/dingwu-zhan.md)
 
 <a name="witness-lanting"></a>
 
@@ -64,7 +66,7 @@ Orchid Pavilion Preface, Tang copy traditionally attributed to Feng Chengsu
 - 展厅与入藏日期待考。
 - 故宫博物院对冯承素摹的传统归名及卷首神龙印的年代均提出疑问。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-lanting) · [实物数据](../../data/objects/witness-lanting.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-lanting) · [实物源稿](../../knowledge/objects/witness-lanting.md)
 
 ## 据以著录的来源
 
@@ -76,4 +78,4 @@ Orchid Pavilion Preface, Tang copy traditionally attributed to Feng Chengsu
 
 2. 故宫博物院 · [宋拓定武兰亭序](<https://www.dpm.org.cn/collection/impres/233468.html>)。定位：新00135367，拓纸、翻刻特征、题跋及木匣。查阅于 2026-11-19。
 
-[作品数据](../../data/works/lanting.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/lanting.md) · [返回知识总目](../README.md)

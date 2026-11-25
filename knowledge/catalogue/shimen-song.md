@@ -47,7 +47,7 @@ Eulogy of Shimen, cliff inscription
 - 未记录坐标：来源给出的是机构名称，不是实测点位。
 - 迁移前的石面状况与凿离的确切日期，所核页面均未记载。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/cliff-shimen-song) · [实物数据](../../data/objects/cliff-shimen-song.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/cliff-shimen-song) · [实物源稿](../../knowledge/objects/cliff-shimen-song.md)
 
 ## 据以著录的来源
 
@@ -59,4 +59,4 @@ Eulogy of Shimen, cliff inscription
 
 2. 汉中市汉台区人民政府 · [石门十三品摩崖石刻](<https://www.htq.gov.cn/hzshtqzf/zjht/lswh/201707/312e445fc8eb26fd26e26ed8d7f0edf8.shtml>)。定位：Reservoir relocation paragraph and the fifth item in the inscription list。查阅于 2026-11-18。
 
-[作品数据](../../data/works/shimen-song.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shimen-song.md) · [返回知识总目](../README.md)

@@ -49,7 +49,7 @@ Elegy for a Crane, five surviving fragments
 - 年代与书者仍有争议，本条不选定作者。
 - 未记录坐标。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/fragments-yihe-ming) · [实物数据](../../data/objects/fragments-yihe-ming.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/fragments-yihe-ming) · [实物源稿](../../knowledge/objects/fragments-yihe-ming.md)
 
 ## 据以著录的来源
 
@@ -61,4 +61,4 @@ Elegy for a Crane, five surviving fragments
 
 2. 江苏省文化和旅游厅 Jiangsu Provincial Department of Culture and Tourism · [江苏大学戏曲传承基地推出《瘗鹤铭》京剧之歌](<https://wlt.jiangsu.gov.cn/art/2023/8/31/art_695_11000960.html>)（2023-08-31）。定位：Paragraph 2: original cliff carving at 焦山西麓, fell into the river, five fragments now in 焦山碑林。查阅于 2026-11-18。
 
-[作品数据](../../data/works/yi-he-ming.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/yi-he-ming.md) · [返回知识总目](../README.md)

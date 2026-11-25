@@ -177,6 +177,7 @@ function AppShell() {
         // a copy. A recarving is a later stone and stays out of this filter.
         (objectType === 'original-stele' ||
           objectType === 'cliff-inscription' ||
+          objectType === 'bronze-vessel' ||
           objectType === 'fragment' ||
           objectType === 'ink-manuscript'))
       : filtered,
@@ -241,6 +242,7 @@ function AppShell() {
       <header className="topbar">
         <div className="topbar__inner">
           <div className="brand">
+            <span className="brand__seal" aria-hidden="true">碑</span>
             <span className="brand__zh" lang="zh-Hans">
               {strings.siteTitleZh}
             </span>
@@ -260,7 +262,7 @@ function AppShell() {
 
           <nav className="topnav" aria-label={strings.sectionsLabel}>
             <a className="topnav__link" href="#/library">{locale === 'zh' ? '知识库' : 'Library'}</a>
-            <a className="topnav__link" href="#catalogue">{locale === 'zh' ? '年代长河' : 'Chronology'}</a>
+            <a className="topnav__link" href="#catalogue">{locale === 'zh' ? '历史脉络' : 'Chronology'}</a>
             <a className="topnav__link" href="#/collections">{locale === 'zh' ? '馆藏地图' : 'Collection map'}</a>
             {sectionLink('results', strings.resultsHeading)}
             {sectionLink('map', strings.mapHeading)}

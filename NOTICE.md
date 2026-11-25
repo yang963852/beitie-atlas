@@ -7,7 +7,7 @@ provider SDKs, trademarks, or dependencies. Preserve source references and
 qualifications when reusing records. Draft records are research material, not
 certified collection information.
 
-`data/media.json` is currently empty. Before adding media, document creator,
+The compiled knowledge interface currently carries no media records. Before adding media, document creator,
 license, credit, source and permission evidence. Source-page availability alone
 does not establish reuse permission. Dependencies retain their own licenses.
 

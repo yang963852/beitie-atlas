@@ -39,7 +39,7 @@ Treatise on Calligraphy
 
 - 卷首写“书谱卷上”，隔水上的题签却写“序下”。临卷时，可以分别看孙过庭的草书与后人题签的楷书。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-shupu) · [实物数据](../../data/objects/witness-shupu.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-shupu) · [实物源稿](../../knowledge/objects/witness-shupu.md)
 
 ## 据以著录的来源
 
@@ -47,4 +47,4 @@ Treatise on Calligraphy
 
 1. 國立故宮博物院 · [书谱](<https://digitalarchive.npm.gov.tw/Collection/Detail?dep=P&id=14900>)。定位：卷末自题、题跋、印记及收藏著录。查阅于 2026-11-19。
 
-[作品数据](../../data/works/shupu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/shupu.md) · [返回知识总目](../README.md)

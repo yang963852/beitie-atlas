@@ -24,6 +24,8 @@ Model Letters of the Wan Sui Tong Tian Year
 
 别名：唐摹王氏一门书翰、摹王氏一门书翰卷、王氏宝章集
 
+延伸阅读：[王献之](../people/wang-xianzhi.md) · [王羲之](../people/wang-xizhi.md)
+
 作品待考与说明
 
 - 十通书翰本为私人书信，非有意撰写的文章；其作为法帖的价值是后来的用法。
@@ -57,7 +59,7 @@ Tang tracing of letters by the Wang family
 - 两次火劫，所引页面未记年份，故不设损伤事件。
 - 697 年据卷末款识；所摹书翰本身跨数代。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/wansui-tongtian-scroll) · [实物数据](../../data/objects/wansui-tongtian-scroll.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/wansui-tongtian-scroll) · [实物源稿](../../knowledge/objects/wansui-tongtian-scroll.md)
 
 ## 据以著录的来源
 
@@ -73,4 +75,4 @@ Tang tracing of letters by the Wang family
 
 3. 辽宁省博物馆 Liaoning Provincial Museum · [藏品：摹王氏一门书翰卷](<https://www.lnmuseum.com.cn/>)。定位：Collection highlight entry 摹王氏一门书翰卷: 硬黄纸唐人双钩填墨本, 万岁通天二年王方庆进, 《石渠宝笈》著录.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/wansui-tongtian-tie.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/wansui-tongtian-tie.md) · [返回知识总目](../README.md)

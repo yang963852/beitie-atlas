@@ -49,7 +49,7 @@ Stele of the Yan Family Shrine, original stone
 - 此碑两面两侧俱刻；本记录作一件实物，不作四件。
 - 本记录不主张完缺：馆方只称存世，未记残损或修补。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-yan-jiamiao) · [实物数据](../../data/objects/stele-yan-jiamiao.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-yan-jiamiao) · [实物源稿](../../knowledge/objects/stele-yan-jiamiao.md)
 
 ## 据以著录的来源
 
@@ -57,4 +57,4 @@ Stele of the Yan Family Shrine, original stone
 
 1. 西安碑林博物馆 Xi'an Beilin Museum · [颜氏家庙碑](<https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2615>)。定位：Object entry: 780, 颜真卿撰并书, 李阳冰篆额, 螭首龟趺, 338 cm, 24 lines of 47 characters on both faces, 6 lines of 52 on the sides, 982 re-erection.。查阅于 2026-11-23。
 
-[作品数据](../../data/works/yan-jiamiao-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/yan-jiamiao-bei.md) · [返回知识总目](../README.md)

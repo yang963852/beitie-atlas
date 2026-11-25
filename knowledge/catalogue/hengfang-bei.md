@@ -52,7 +52,7 @@ Stele of Heng Fang, Qing rubbing
 - 目录只给「清」，不据此推断更具体的年份。
 - 拓片尺寸不等于碑石尺寸，两条实物记录不共用尺寸。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-hengfang-qing) · [实物数据](../../data/objects/rubbing-hengfang-qing.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/rubbing-hengfang-qing) · [实物源稿](../../knowledge/objects/rubbing-hengfang-qing.md)
 
 <a name="stele-hengfang"></a>
 
@@ -80,7 +80,7 @@ Stele of Heng Fang, original stone
 - 两处页面都记为岱庙，但一作炳灵门、一作东碑廊；结构化地点只记到岱庙。
 - 雍正八年是水灾后重立，不是有记载的保管转移；中间迁移无记录。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-hengfang) · [实物数据](../../data/objects/stele-hengfang.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-hengfang) · [实物源稿](../../knowledge/objects/stele-hengfang.md)
 
 ## 据以著录的来源
 
@@ -88,4 +88,4 @@ Stele of Heng Fang, original stone
 
 1. 故宫博物院 The Palace Museum · [【清拓东汉衡方碑】](<https://www.dpm.org.cn/collection/impres/228606.html>)。定位：条目正文：建宁元年（168）、拓本尺寸、原址与现存地点。查阅于 2026-11-18。
 
-[作品数据](../../data/works/hengfang-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/hengfang-bei.md) · [返回知识总目](../README.md)

@@ -35,7 +35,7 @@ npm run build           # succeeds; preview artifact only
 npm run preview         # serves the preview build locally
 ```
 
-The founding second edition passed the strict gate and was deployed in [delivery 021](delivery-021.md).
+The founding second edition passed the strict gate and was deployed in [delivery 021](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/delivery-021.md).
 Future changes that introduce drafts will still block formal publication.
 
 The rejection is the correct behaviour while the records are drafts. Do not mark records
@@ -50,7 +50,7 @@ artifact fails, and a mismatched manifest fails.
 During task 002 the full command was also executed end-to-end in an isolated temporary copy of
 the project where the three records were marked reviewed **only in that copy**. That run
 produced `content="release"` and a matching manifest with exit code 0. The real corpus was not
-modified. See `docs/delivery-002.md`.
+modified. See [delivery 002](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/delivery-002.md).
 
 ## Verifying a candidate artifact manually
 

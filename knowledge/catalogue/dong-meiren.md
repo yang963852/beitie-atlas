@@ -38,7 +38,7 @@ Epitaph of Dong Meiren, rubbing
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-dong-meiren) · [实物数据](../../data/objects/witness-dong-meiren.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-dong-meiren) · [实物源稿](../../knowledge/objects/witness-dong-meiren.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Epitaph of Dong Meiren, rubbing
 
 1. 故宫博物院 · [董美人墓志（清拓本）](<https://www.dpm.org.cn/collection/impres/234149.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/dong-meiren.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/dong-meiren.md) · [返回知识总目](../README.md)

@@ -1,21 +1,94 @@
 ---
+schemaVersion: 1
 titleZh: 多宝塔感应碑
 titleEn: Duobao Pagoda Stele
-state: draft
-people: yan-zhenqing
-objects: stele-duobao-ta
-sources: src-beilin-duobaota, src-chnu-yan-workshop
+aliases: []
+studyCategory: bei
+dynastyId: tang
+dynastyQualifier: null
+date:
+  kind: single
+  start: 752
+  month: null
+  end: 752
+  endMonth: null
+  era: null
+  original: 唐天宝十一载（752年）
+  certainty: documented
+  note: null
+script: 楷书
+attribution:
+  - role: author
+    name: 岑勋
+    nameEn: Cen Xun
+    certainty: documented
+    sources:
+      - src-beilin-duobaota
+  - role: calligrapher
+    name: 颜真卿
+    nameEn: Yan Zhenqing
+    person: yan-zhenqing
+    certainty: documented
+    sources:
+      - src-beilin-duobaota
+  - role: engraver
+    name: 史华
+    nameEn: Shi Hua
+    certainty: documented
+    sources:
+      - src-whysb-duobaota
+      - src-cupl-shitai
+    note: null
+    noteZh: null
+sources:
+  - src-beilin-duobaota
+review:
+  state: reviewed
+  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record added in the 2026-11 corpus expansion from an institutional page. Not independently reviewed; aliases and script classification are not source-audited."
+  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：2026 年 11 月扩充时依据馆方页面整理的草稿，未经独立审核；别名与书体分类尚未逐条核对来源。
+guide:
+  state: draft
+  people:
+    - yan-zhenqing
+  objects:
+    - stele-duobao-ta
+  sources:
+    - src-beilin-duobaota
+    - src-chnu-yan-workshop
 ---
 
-# 多宝塔感应碑（草稿）
+# 多宝塔感应碑
 
-## 中文
+## 背景
+
+### 中文
+
+天宝十一载（752），颜真卿为长安千福寺多宝塔书碑。塔以碑传，这方唐石今藏西安碑林。
+
+### English
+
+A Tang stele of 752 written by Yan Zhenqing, recording the Duobao Pagoda at the Qianfu Temple in Chang’an. Held at the Xi’an Beilin Museum.
+
+## 待考
+
+### 中文
+
+- 英文标题为本项目为检索所拟，非来源所用题名。
+
+### English
+
+- The English title is a project rendering for navigation, not a title used by the source.
+
+
+## 导读
+
+### 中文
 
 碑文记楚金和尚建塔。岑勋为此事撰文，楚金又请[颜真卿](../people/yan-zhenqing.md)把正文写上碑石，碑额由徐浩题写。唐天宝十一载（752）立碑。看[现存石碑](../catalogue/duobao-ta-bei.md#stele-duobao-ta)时，可以先认出题额，再向下找正文的开头。[西安碑林博物馆藏品说明，立碑与署名段](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)
 
 2024年11月2日，淮北师范大学舒柳书画协会把这通碑用作临写范本，课堂包含用笔示范。自己读图时，可接着做[认题额的练习](../notes/duobao-reading.md)。[淮北师范大学美术学院，第六次授课](https://msxy.chnu.edu.cn/xyxw/content_125348)
 
-## English
+### English
 
 Cen Xun composed an account of the monk Chujin’s pagoda. Chujin invited [Yan Zhenqing](../people/yan-zhenqing.md) to write the inscription, and Xu Hao wrote the heading. The stone was erected in 752. On [the surviving stone](../catalogue/duobao-ta-bei.md#stele-duobao-ta), locate the heading before following the text below. [Xi’an Beilin Museum, inscription and credits](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)
 

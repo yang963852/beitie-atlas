@@ -38,6 +38,7 @@ const OBJECT_TYPES = new Set([
   'manuscript-copy',
   'original-stele',
   'cliff-inscription',
+  'bronze-vessel',
   'recarving',
   'rubbing',
   'fragment',
@@ -62,12 +63,19 @@ const ATTRIBUTION_ROLES = new Set([
   'author-and-calligrapher',
   'author',
   'calligrapher',
+  'copyist',
+  'colophon-author',
   'engraver',
   'title-writer',
   'compiler',
   'sponsor',
   'unknown',
 ]);
+const DATE_MEANINGS = new Set([
+  'composition', 'publication', 'colophon', 'production', 'discovery', 'accession', 'other',
+]);
+const CLAIM_KINDS = new Set(['source-report', 'scholarly-opinion', 'editor-interpretation']);
+const CLAIM_STANCES = new Set(['supports', 'questions', 'neutral']);
 /** Ranges that overlap are expected; this only guards against typos in the table. */
 const DYNASTY_IDS = DYNASTIES.map((dynasty) => dynasty.id);
 
@@ -271,6 +279,9 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean; 
     }
     if (typeof value.certainty !== 'string' || !CERTAINTIES.has(value.certainty)) {
       error('INVALID_DATE', `${path}.certainty`, 'Date certainty must be documented/approximate/disputed/unknown.');
+    }
+    if (value.meaning !== undefined && value.meaning !== null && (typeof value.meaning !== 'string' || !DATE_MEANINGS.has(value.meaning))) {
+      error('INVALID_DATE', `${path}.meaning`, 'Date meaning must be a known activity or null.');
     }
 
     const startYear = value.startYear;
@@ -511,6 +522,7 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean; 
     if (!isNonEmptyString(entry.background)) {
       error('MISSING_FIELD', `${path}.background`, 'Work needs a short background text.');
     }
+    checkClaims(entry.claims, `${path}.claims`);
     checkSourceRefs(entry.sourceRefs, `${path}.sourceRefs`, true);
     checkNotes(entry.notes, entry.notesZh, `${path}.notes`);
     checkReview(entry.review, `${path}.review`, 'Work');
@@ -621,8 +633,28 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean; 
             usedPlaces.add(event.placeId);
           }
         }
+        if (event.referencePlaceId !== undefined && event.referencePlaceId !== null) {
+          if (!isNonEmptyString(event.referencePlaceId) || !placeIds.has(event.referencePlaceId)) {
+            error('MISSING_PLACE', `${ePath}.referencePlaceId`, `Unknown reference place "${String(event.referencePlaceId)}".`);
+          } else {
+            usedPlaces.add(event.referencePlaceId);
+          }
+        }
       });
     }
+
+    if (entry.attribution !== undefined) {
+      checkAttribution(entry.attribution, `${path}.attribution`, false);
+    }
+    if (entry.version !== undefined && entry.version !== null) {
+      if (!isRecord(entry.version)) {
+        error('INVALID_VERSION', `${path}.version`, 'Version must be an object or null.');
+      } else {
+        if (!isNonEmptyString(entry.version.label)) error('INVALID_VERSION', `${path}.version.label`, 'Version needs a label.');
+        checkSourceRefs(entry.version.sourceRefs, `${path}.version.sourceRefs`, true);
+      }
+    }
+    checkClaims(entry.claims, `${path}.claims`);
   });
 
   // ------------------------------------------------------------------ media
@@ -696,6 +728,74 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean; 
       events: eventCount,
     },
   };
+
+  function checkAttribution(value: unknown, path: string, required: boolean) {
+    if (!Array.isArray(value)) {
+      error('MISSING_FIELD', path, 'Attribution must be an array.');
+      return;
+    }
+    if (required && value.length === 0) {
+      error('ATTRIBUTION_GAP', path, 'List credited persons or one explicit unknown entry.');
+    }
+    value.forEach((item, index) => {
+      const aPath = `${path}[${index}]`;
+      if (!isRecord(item)) {
+        error('MISSING_FIELD', aPath, 'Attribution must be an object.');
+        return;
+      }
+      if (!isNonEmptyString(item.name)) error('MISSING_FIELD', `${aPath}.name`, 'Attribution needs a name.');
+      if (!isNonEmptyString(item.role)) {
+        error('MISSING_FIELD', `${aPath}.role`, 'Attribution needs a role.');
+      } else if (!ATTRIBUTION_ROLES.has(item.role)) {
+        error('ATTRIBUTION_ROLE', `${aPath}.role`, `Unknown attribution role "${item.role}".`);
+      }
+      if (typeof item.certainty !== 'string' || !CERTAINTIES.has(item.certainty)) {
+        error('ATTRIBUTION_CERTAINTY', `${aPath}.certainty`, 'Attribution needs a certainty value.');
+      }
+      if (item.note !== undefined && item.note !== null && typeof item.note !== 'string') {
+        error('ATTRIBUTION_NOTE', `${aPath}.note`, 'Attribution note must be a string or null.');
+      }
+      if (item.noteZh !== undefined && item.noteZh !== null && typeof item.noteZh !== 'string') {
+        error('ATTRIBUTION_NOTE', `${aPath}.noteZh`, 'Attribution noteZh must be a string or null.');
+      }
+      checkSourceRefs(item.sourceRefs, `${aPath}.sourceRefs`, item.certainty !== 'unknown');
+    });
+  }
+
+  function checkClaims(value: unknown, path: string) {
+    if (value === undefined) return;
+    if (!Array.isArray(value)) {
+      error('INVALID_CLAIM', path, 'Claims must be an array.');
+      return;
+    }
+    const ids = new Set<string>();
+    value.forEach((item, index) => {
+      const cPath = `${path}[${index}]`;
+      if (!isRecord(item)) {
+        error('INVALID_CLAIM', cPath, 'Claim must be an object.');
+        return;
+      }
+      if (!isNonEmptyString(item.id) || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id)) {
+        error('INVALID_CLAIM', `${cPath}.id`, 'Claim needs a stable ID.');
+      } else if (ids.has(item.id)) {
+        error('DUPLICATE_CLAIM_ID', `${cPath}.id`, 'Duplicate claim ID: ' + item.id);
+      } else {
+        ids.add(item.id);
+      }
+      if (typeof item.kind !== 'string' || !CLAIM_KINDS.has(item.kind)) {
+        error('INVALID_CLAIM', `${cPath}.kind`, 'Claim kind is invalid.');
+      }
+      if (typeof item.stance !== 'string' || !CLAIM_STANCES.has(item.stance)) {
+        error('INVALID_CLAIM', `${cPath}.stance`, 'Claim stance is invalid.');
+      }
+      if (!isNonEmptyString(item.predicate)) error('INVALID_CLAIM', `${cPath}.predicate`, 'Claim needs a predicate.');
+      if (!isNonEmptyString(item.value)) error('INVALID_CLAIM', `${cPath}.value`, 'Claim needs a value.');
+      if (typeof item.certainty !== 'string' || !CERTAINTIES.has(item.certainty)) {
+        error('INVALID_CLAIM', `${cPath}.certainty`, 'Claim certainty is invalid.');
+      }
+      checkSourceRefs(item.sourceRefs, `${cPath}.sourceRefs`, true);
+    });
+  }
 
   function checkReview(value: unknown, path: string, kind: string) {
     if (!isRecord(value)) {

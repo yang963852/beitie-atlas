@@ -38,7 +38,7 @@ Jijiu Zhang in Seal Script
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-zhao-jijiu) · [实物数据](../../data/objects/witness-zhao-jijiu.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-zhao-jijiu) · [实物源稿](../../knowledge/objects/witness-zhao-jijiu.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Jijiu Zhang in Seal Script
 
 1. 故宫博物院 · [篆书急就章轴](<https://www.dpm.org.cn/collection/handwriting/228366.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/zhao-jijiu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/zhao-jijiu.md) · [返回知识总目](../README.md)

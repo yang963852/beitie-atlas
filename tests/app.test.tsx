@@ -58,7 +58,8 @@ describe('application shell', () => {
     window.history.replaceState(null, '', '#/object/witness-jizhi');
     renderApp();
     expect(document.activeElement).toBe(document.getElementById('detail'));
-    expect(within(screen.getByRole('article')).getByText(/一处写至元壬午/)).toBeInTheDocument();
+    expect(within(screen.getByRole('article')).getAllByText(/至元壬午（1282）/).length).toBeGreaterThan(0);
+    expect(within(screen.getByRole('article')).getAllByText(/至元癸未（1283）/).length).toBeGreaterThan(0);
   });
 
   it('lists every object record and opens the first one', () => {
@@ -69,7 +70,8 @@ describe('application shell', () => {
     expect(within(resultsList()).getByText('颜勤礼碑（原石）')).toBeInTheDocument();
     expect(within(resultsList()).getByText('颜勤礼碑（民国拓本）')).toBeInTheDocument();
 
-    expect(screen.getByRole('heading', { name: '秦石鼓（原石十件）' })).toBeInTheDocument();
+    expect(within(resultsList()).getByText('秦石鼓（原石十件）')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '大盂鼎' })).toBeInTheDocument();
     expect(within(resultsList()).getByText('玄秘塔碑（原石）')).toBeInTheDocument();
   });
 
@@ -77,7 +79,7 @@ describe('application shell', () => {
     renderApp();
     const list = resultsList();
     const periods = within(list).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim().split(/\s*\d/)[0]);
-    expect(periods).toEqual(['先秦', '秦', '西汉', '东汉', '三国', '西晋', '东晋', '南北朝', '隋', '唐', '北宋', '元', '明', '清']);
+    expect(periods).toEqual(['先秦', '秦', '西汉', '东汉', '三国', '西晋', '东晋', '南北朝', '隋', '唐', '五代十国', '北宋', '南宋', '元', '明', '清', '民国', '中华人民共和国']);
 
     expect(within(list).getByRole('heading', { name: /东汉/ })).toBeInTheDocument();
     expect(within(list).getByRole('heading', { name: /南北朝/ })).toBeInTheDocument();
@@ -245,8 +247,8 @@ describe('application shell', () => {
   it('keeps the map open after showing the default record on the map', async () => {
     const { container } = renderApp();
     const workspace = container.querySelector('.workspace');
-    fireEvent.click(screen.getByRole('link', { name: '实物详情' }));
-    expect(window.location.hash).toBe('#results');
+    fireEvent.click(within(resultsList()).getByText('秦石鼓（原石十件）'));
+    goBackTo('#results');
 
     fireEvent.click(within(screen.getByRole('article')).getByRole('button', { name: '在地图上查看' }));
     await act(async () => {

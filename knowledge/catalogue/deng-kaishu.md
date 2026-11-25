@@ -38,7 +38,7 @@ Poem in Regular Script
 
 - 展厅与入藏日期待考。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-deng-kaishu) · [实物数据](../../data/objects/witness-deng-kaishu.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-deng-kaishu) · [实物源稿](../../knowledge/objects/witness-deng-kaishu.md)
 
 ## 据以著录的来源
 
@@ -46,4 +46,4 @@ Poem in Regular Script
 
 1. 故宫博物院 · [楷书诗轴](<https://www.dpm.org.cn/collection/handwriting/231788.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
-[作品数据](../../data/works/deng-kaishu.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/deng-kaishu.md) · [返回知识总目](../README.md)

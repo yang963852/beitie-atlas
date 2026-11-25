@@ -49,7 +49,7 @@ Stele of Lushan Temple, original stone
 - 刻者署「黄仙鹤」，学界疑为撰书者化名，故不单列刻者。
 - 未记录坐标。
 
-[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-lushan-si) · [实物数据](../../data/objects/stele-lushan-si.json)
+[在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/stele-lushan-si) · [实物源稿](../../knowledge/objects/stele-lushan-si.md)
 
 ## 据以著录的来源
 
@@ -57,4 +57,4 @@ Stele of Lushan Temple, original stone
 
 1. 长沙记忆（长沙市地方志编纂室内容平台）Changsha Memory · [李邕为《麓山寺碑》撰文并书](<https://www.csjypt.cn/csjy/csjy/csjy/lssjjy/lssjz/2023/11/11/828080818bba2df0018bbda894030006.html>)（2023-11-11）。定位：Entry text: 730 date, 李邕 authorship, 272 × 133 cm, 28 lines of 56 characters, surviving text about 1000 characters。查阅于 2026-11-18。
 
-[作品数据](../../data/works/lushan-si-bei.json) · [返回知识总目](../README.md)
+[作品源稿](../../knowledge/works/lushan-si-bei.md) · [返回知识总目](../README.md)

@@ -7,16 +7,21 @@ import { formatDate } from '../domain/dates';
 import { formatAttribution } from '../domain/attribution';
 import type { ObjectRecord } from '../domain/types';
 import { useLocale, type Locale } from '../i18n';
+import { zhStrings } from '../i18n/zh';
+import { enStrings } from '../i18n/en';
 import { buildMarkers } from '../map/markers';
 import { InkRiver } from './InkRiver';
+import { ReaderHeader } from './ReaderHeader';
 import { CollectionAtlas } from './CollectionAtlas';
 import { HistoryPoints } from './HistoryPoints';
 import { MapPanel } from './MapPanel';
 import { KnowledgeProse } from './KnowledgeProse';
 import { ProvenanceEvents } from './ProvenanceEvents';
+import { ClaimSection } from './ClaimSection';
 import { SourceList } from './SourceList';
-import shenlong from '../assets/shenlong-opening.webp';
 import './atlas-timeline.css';
+
+const localMedia = import.meta.glob<string>('../assets/*.webp', { eager: true, query: '?url', import: 'default' });
 
 const dataset = getDataset();
 const works = libraryEntries.filter(entry => entry.kind === 'works');
@@ -33,10 +38,12 @@ const ordered = [...works].sort((a,b) =>
 function dateLine(entry: LibraryEntry, locale: Locale) {
   if (entry.work) {
     const date = entry.work.compositionDate;
-    if (date.kind === 'era' && date.startYear == null && date.eraLabel && locale === 'zh') {
-      return date.original ?? date.eraLabel;
-    }
-    return formatDate(date,locale);
+    const base = date.kind === 'era' && date.startYear == null && date.eraLabel && locale === 'zh'
+      ? date.original ?? date.eraLabel
+      : formatDate(date, locale);
+    return date.meaning
+      ? base + ' · ' + (locale === 'zh' ? zhStrings.dateMeaningLabels[date.meaning] : enStrings.dateMeaningLabels[date.meaning])
+      : base;
   }
   return entry.guide?.timelineYear?.toString() ?? (locale === 'zh' ? '年代待考' : 'Date unknown');
 }
@@ -80,7 +87,13 @@ function WorkFolio({ entry, close }: { entry: LibraryEntry; close: () => void })
         <button ref={closeRef} type="button" onClick={close} aria-label={zh ? '关闭阅读卡片' : 'Close reading card'}>×</button></div>
       <h2 id="folio-title">{title(entry,locale)}</h2>
       <p className="folio__byline">{byline(entry,locale,strings.attributionRoleShort)}</p>
-      {entry.id === 'lanting' && <figure><img src={shenlong} alt={zh ? '神龙本卷首局部' : 'Opening columns of the Shenlong copy'} /><figcaption>{zh ? '神龙本卷首局部 · 故宫博物院藏' : 'Opening of the Shenlong copy · Palace Museum'}</figcaption></figure>}
+      {dataset.media.filter(media => witnesses.some(object => object.id === media.objectId)).map(media => {
+        const url = localMedia[media.assetPathOrUrl.replace(/^src\//, '../')];
+        if (!url) return null;
+        const witness = witnesses.find(object => object.id === media.objectId)!;
+        return <figure key={media.id}><img src={url} alt={witness.titles[locale]} />
+          <figcaption>{witness.titles[locale]} · <a href={media.rightsEvidence}>{media.credit}</a></figcaption></figure>;
+      })}
       <h3>{zh ? '实物与流传' : 'Witnesses and transmission'}</h3>
       {witnesses.length ? <ul className="folio__witnesses">{witnesses.map(o => <li key={o.id}>
         <a className="folio-witness" href={'#/transmission/'+o.id} onClick={e => {
@@ -126,12 +139,12 @@ function Transmission({ object }: { object: ObjectRecord }) {
           <p>{zh ? '现有记录不足以标注现藏位置。' : 'The record does not establish a mappable current location.'}</p>
           <SourceList ids={object.currentCollection.sourceRefs} compact /></section>}
       {object.id === 'yan-qinli-original-stele' && !isReleaseBuild && <a href="#/object/yan-qinli-original-stele/journey">{zh ? '循西安地标读原石流传 →' : 'Follow the stone through Xi’an →'}</a>}
-    </div><div className="atlas-journey__story"><HistoryPoints key={object.id} object={object} /><ProvenanceEvents object={object} /></div></div>
+    </div><div className="atlas-journey__story"><HistoryPoints key={object.id} object={object} /><ProvenanceEvents object={object} /><ClaimSection claims={object.claims} /></div></div>
   </main>;
 }
 
 export function AtlasTimeline({ hash }: { hash: string }) {
-  const { locale, setLocale, strings } = useLocale();
+  const { locale, strings } = useLocale();
   const zh = locale === 'zh';
   const [query,setQuery] = useState('');
   const [jump,setJump] = useState('');
@@ -171,15 +184,8 @@ export function AtlasTimeline({ hash }: { hash: string }) {
     if (lastCard.current && window.history.state?.fromTimeline) window.history.back();
     else window.location.replace('#catalogue');
   }
-  return <div className="atlas-reader"><header className="atlas-mast">
-    <a href="#" className="atlas-brand">{strings.siteTitleZh}<small>Between Steles</small></a>
-    <button type="button" onClick={() => setLocale(zh ? 'en' : 'zh')}>{zh ? 'EN' : '中文'}</button>
-  </header>
-  <nav className="reader-sections" aria-label={strings.sectionsLabel}>
-    <a href="#catalogue" aria-current={hash !== '#/collections' ? 'page' : undefined}>{zh ? '年代长河' : 'Chronology'}</a>
-    <a href="#/collections" aria-current={hash === '#/collections' ? 'page' : undefined}>{zh ? '馆藏地图' : 'Collection map'}</a>
-    <a href="#/library">{zh ? '知识库' : 'Library'}</a>
-  </nav>
+  return <div className="atlas-reader">
+  <ReaderHeader active={hash === '#/collections' ? 'collections' : 'catalogue'} />
   {hash === '#/collections' && <CollectionAtlas />}
   <main ref={main} id="catalogue" tabIndex={-1} hidden={Boolean(object) || hash === '#/collections'} className="atlas-time">
     <div className="atlas-time__intro"><div><h1>{zh ? '碑帖时间轴' : 'A chronology of calligraphy'}</h1>
@@ -198,9 +204,7 @@ export function AtlasTimeline({ hash }: { hash: string }) {
         <h2>{period(items[0])?.[locale] ?? strings.dynastyUnknown}</h2>
         <ul>{items.map(item => <li key={item.id} data-bank={ordered.indexOf(item) % 2 ? 'lower' : 'upper'}>
           <a href={'#/folio/'+item.id} className="atlas-card" onClick={openCard}>
-            <span className="atlas-date">{dateLine(item,locale)}</span>
             <h3>{title(item,locale)}</h3>
-            <span className="atlas-hand">{byline(item,locale,strings.attributionRoleShort)}</span>
           </a></li>)}</ul>
       </section>)}
     </div></div>

@@ -41,6 +41,16 @@ jobs:
           VITE_TIANDITU_KEY: ${{ secrets.TIANDITU_BROWSER_KEY }}
       - name: Verify preview marker
         run: grep -F 'name="beitie-build-mode" content="preview"' dist/index.html
+      - name: Verify the downloadable author library
+        run: |
+          python3 - <<'PY'
+          import json, os, zipfile
+          with zipfile.ZipFile('dist/download/beitie-knowledge.zip') as library:
+              assert library.testzip() is None
+              manifest = json.loads(library.read('manifest.json'))
+              assert manifest['sourceRevision'] == os.environ['GITHUB_SHA']
+              assert 'knowledge/README.md' in library.namelist()
+          PY
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
         with:
           path: dist
