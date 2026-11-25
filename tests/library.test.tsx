@@ -96,3 +96,10 @@ it('shows no workflow status on a published work or witness', () => {
   expect(detail.textContent).not.toContain('草稿');
   expect(detail.textContent).not.toContain('审核说明');
 });
+
+it('names the 1.1 edition on the library page', () => {
+  window.history.replaceState(null, '', '#/library');
+  render(<App />);
+  const colophon = document.querySelector('.reading-colophon');
+  expect(colophon?.textContent).toContain('1.1');
+});

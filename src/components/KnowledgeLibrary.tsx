@@ -189,6 +189,6 @@ export function KnowledgeLibrary({ hash }: { hash: string }) {
     <footer className="reading-footer">{route === 'library' && <a href={downloadHref} download>{t.download}</a>}<a href={github + '/tree/main/knowledge'}>{t.github}</a>
       <a href={github + '/issues/new?template=knowledge.yml'}>{t.contribute}</a>
       {!isReleaseBuild && <a href={github + '/issues/new?template=beta-feedback.yml'}>{t.beta} · {t.feedback}</a>}
-      <p className="reading-colophon">碑帖之间 · {t.library}</p></footer>
+      <p className="reading-colophon">碑帖之间 · {t.library} · {t.beta}</p></footer>
   </div>;
 }

@@ -11,7 +11,8 @@ GitHub Pages serves the 1.1 edition as a verified release build, not a labelled 
 - `.github/workflows/pages.yml`: rename the workflow to a release; build with `npm run release`; verify the `release` marker and `dist/release-manifest.json` before upload; keep the download-package check.
 - `docs/release.md`: record that the Pages workflow now publishes release builds and how a preview is still produced locally.
 - `tasks/051-1-1-formal-release.md`, `docs/delivery-051.md`, one board row.
-- Do not change knowledge records, the schema, the compiler or reader components.
+- Show the edition label in release builds: the library colophon and atlas footer name `1.1`, and a regression test fails if the label disappears.
+- Do not change knowledge records, the schema, the compiler or reader components beyond that label.
 
 ## Evidence
 
