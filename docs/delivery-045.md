@@ -13,7 +13,7 @@
 
 | Command | Result |
 | --- | --- |
-| `npm.cmd run check` | Passed: interface current (98 works / 107 objects); data 0 errors / 38 known warnings; 99 catalogue pages; isolation; reproducibility (518 files); board 4 rows; 18 test files / 156 tests; ZIP 523 files; preview build succeeded |
+| `npm.cmd run check` | Passed: interface current (108 works / 117 objects); data 0 errors / 38 known warnings; 99 catalogue pages; isolation; reproducibility (518 files); board 6 rows; 18 test files / 156 tests; ZIP 571 files; preview build succeeded |
 | `npm.cmd run check:release` | Expected rejection: `[release] Gate FAILED. This corpus is not releasable.` Drafts still block formal publication |
 | Archive tag | `git push origin archive-pre-hygiene-2026-11-25` succeeded before deletion |
 | Long-lived branches | `origin/trae/work` and `origin/workbuddy/work` pushed from `0fc8b85` |

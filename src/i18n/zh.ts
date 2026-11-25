@@ -192,6 +192,7 @@ export const zhStrings: Strings = {
     'manuscript-copy': '墨迹摹本',
     'original-stele': '原石',
     'cliff-inscription': '摩崖',
+    'bronze-vessel': '青铜器',
     recarving: '翻刻',
     rubbing: '拓本',
     fragment: '残石',

@@ -70,7 +70,8 @@ describe('application shell', () => {
     expect(within(resultsList()).getByText('颜勤礼碑（原石）')).toBeInTheDocument();
     expect(within(resultsList()).getByText('颜勤礼碑（民国拓本）')).toBeInTheDocument();
 
-    expect(screen.getByRole('heading', { name: '秦石鼓（原石十件）' })).toBeInTheDocument();
+    expect(within(resultsList()).getByText('秦石鼓（原石十件）')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '大盂鼎' })).toBeInTheDocument();
     expect(within(resultsList()).getByText('玄秘塔碑（原石）')).toBeInTheDocument();
   });
 
@@ -246,8 +247,8 @@ describe('application shell', () => {
   it('keeps the map open after showing the default record on the map', async () => {
     const { container } = renderApp();
     const workspace = container.querySelector('.workspace');
-    fireEvent.click(screen.getByRole('link', { name: '实物详情' }));
-    expect(window.location.hash).toBe('#results');
+    fireEvent.click(within(resultsList()).getByText('秦石鼓（原石十件）'));
+    goBackTo('#results');
 
     fireEvent.click(within(screen.getByRole('article')).getByRole('button', { name: '在地图上查看' }));
     await act(async () => {
