@@ -8,3 +8,11 @@
 *.png binary
 *.jpg binary
 *.webp binary
+
+# Generated knowledge interface: keep its payload out of text diffs.
+# Inspect it with `git diff --text` when the generated content itself matters.
+data/index/knowledge-v1.json -diff linguist-generated
+
+# Generated catalogue pages keep local text diffs but collapse in GitHub reviews.
+knowledge/catalogue/** linguist-generated
+knowledge/README.md linguist-generated
