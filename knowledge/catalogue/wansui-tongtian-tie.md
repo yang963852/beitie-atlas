@@ -24,6 +24,8 @@ Model Letters of the Wan Sui Tong Tian Year
 
 别名：唐摹王氏一门书翰、摹王氏一门书翰卷、王氏宝章集
 
+延伸阅读：[王献之](../people/wang-xianzhi.md) · [王羲之](../people/wang-xizhi.md)
+
 作品待考与说明
 
 - 十通书翰本为私人书信，非有意撰写的文章；其作为法帖的价值是后来的用法。

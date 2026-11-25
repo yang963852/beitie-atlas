@@ -16,6 +16,8 @@ Mid-Autumn Letter
 
 书体：行草
 
+延伸阅读：[王献之](../people/wang-xianzhi.md)
+
 <a name="dpm-zhongqiu-026"></a>
 
 ## 《中秋帖》（传王献之，后世临本）

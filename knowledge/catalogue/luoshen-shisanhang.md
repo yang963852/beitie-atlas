@@ -19,6 +19,8 @@ Thirteen Lines from the Goddess of the Luo
 
 书体：小楷
 
+延伸阅读：[王献之](../people/wang-xianzhi.md)
+
 作品待考与说明
 
 - 原墨迹已佚，存世者为十三行刻石，不是唐宋纸本摹本。

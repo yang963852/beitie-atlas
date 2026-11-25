@@ -30,6 +30,7 @@ attribution:
   - role: copyist
     name: 王羲之（传）
     nameEn: Wang Xizhi (attributed)
+    person: wang-xizhi
     certainty: disputed
     sources:
       - src-dpm-xuanshi

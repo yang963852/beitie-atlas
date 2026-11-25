@@ -21,6 +21,7 @@ attribution:
   - role: calligrapher
     name: 王献之（传）
     nameEn: Wang Xianzhi (traditional attribution)
+    person: wang-xianzhi
     certainty: disputed
     sources:
       - src-dpm-228204
