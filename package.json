@@ -21,13 +21,15 @@
     "knowledge:compile": "tsx scripts/knowledge-compile.ts",
     "knowledge:generate": "tsx scripts/knowledge-catalogue.ts",
     "check:knowledge": "tsx scripts/knowledge-catalogue.ts --check",
+    "knowledge:status": "tsx scripts/knowledge-status.ts",
+    "check:status": "tsx scripts/knowledge-status.ts --check",
     "check:interface": "tsx scripts/knowledge-compile.ts --check",
     "check:isolation": "tsx scripts/check-isolation.ts",
     "check:reproducible": "tsx scripts/check-reproducible.ts",
     "knowledge:package": "tsx scripts/knowledge-package.ts",
     "check:map-key": "tsx scripts/check-map-key.ts",
     "test": "vitest run",
-    "check": "npm run check:interface && npm run typecheck && npm run check:data && npm run check:knowledge && npm run check:isolation && npm run check:reproducible && npm run check:docs && npm run test && npm run knowledge:package && vite build"
+    "check": "npm run check:interface && npm run typecheck && npm run check:data && npm run check:knowledge && npm run check:status && npm run check:isolation && npm run check:reproducible && npm run check:docs && npm run test && npm run knowledge:package && vite build"
   },
   "dependencies": {
     "react": "19.3.1",
