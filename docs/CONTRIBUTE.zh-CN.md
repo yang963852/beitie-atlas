@@ -1,6 +1,6 @@
-# 中文投稿与内测指南
+# 中文投稿与试读指南
 
-[项目首页](../README.md) · [知识库目录](../knowledge/README.md) · [网站 · 内部测试第一版](https://yang963852.github.io/beitie-atlas/)
+[项目首页](../README.md) · [知识库目录](../knowledge/README.md) · [网站 · 1.1 版](https://yang963852.github.io/beitie-atlas/)
 
 ## 直接提 PR
 
@@ -79,6 +79,6 @@ review:
 
 1. 打开[网页知识库](https://yang963852.github.io/beitie-atlas/#/library)，找到[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)，从书家页进入[《颜勤礼碑》](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei)。刷新一次，看看能否回到同一条目。
 2. 打开作品下的一件实物，找它的持藏出处。换到另一件，对比实物名称、年代和记载。再回知识库，选择「书家」，搜「沈尹默」，查一条与他有关的人物关系及所附依据。
-3. 任选手机或电脑，试试键盘 Tab、浏览器返回或放大页面。遇到问题点[反馈内测问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)，写下出问题的网址、设备或浏览器、操作步骤、实际结果和预期。也欢迎告诉我们哪段叙述最难读。
+3. 任选手机或电脑，试试键盘 Tab、浏览器返回或放大页面。遇到问题点[反馈问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)，写下出问题的网址、设备或浏览器、操作步骤、实际结果和预期。也欢迎告诉我们哪段叙述最难读。
 
-目前人物与作品专题按选题逐步增加，资料含草稿，部分年代、藏址与当代临习使用情况仍待来源核实。真实底图依赖网络和地图服务；没有坐标的实物仍可查阅文字、来源和已知地点。各地网络能否打开须在当地实际测试。网站读者都能打开这个公开的 Pages 地址；「内部测试第一版」指本次版次。
+目前人物与作品专题按选题逐步增加，条目以馆方与印本著录为据；部分年代、藏址与当代临习使用情况仍待来源核实。真实底图依赖网络和地图服务；没有坐标的实物仍可查阅文字、来源和已知地点。各地网络能否打开须在当地实际测试。网站读者都能打开这个公开的 Pages 地址；「1.1」指本次内容版次。

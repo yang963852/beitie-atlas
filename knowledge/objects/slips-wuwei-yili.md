@@ -31,9 +31,7 @@ collection:
   noteZh: 报道记1959年出土与甘肃省博物馆收藏。
 events: []
 review:
-  state: draft
-  note: Draft object record. No museum object page was found; the data follows a news feature.
-  noteZh: 实物草稿。未见馆方藏品页，数据依报刊报道。
+  state: reviewed
 ---
 
 # 武威《仪礼》简（甲本）

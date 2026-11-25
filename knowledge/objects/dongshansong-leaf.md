@@ -31,9 +31,7 @@ collection:
   noteZh: 故宫藏品说明记此页藏故宫博物院，文物号故00002895-1/10。
 events: []
 review:
-  state: draft
-  note: Draft object record. The museum gives size, transcription and seals but neither the sheet's date nor its copy status.
-  noteZh: 实物草稿。馆方给尺寸、释文与鉴藏印，未记此页年代，也未说明是否摹本。
+  state: reviewed
 ---
 
 # 东山松帖页

@@ -6,7 +6,7 @@
 
 Eulogy of the Tang Restoration
 
-**作品**　唐 · 唐大历六年（771） · 碑 · 已审
+**作品**　唐 · 唐大历六年（771） · 碑
 
 元结撰颂，记平定安史之乱；颜真卿六十三岁书之，文字镌在浯溪崖壁。湖南方面的著录推此刻为现存“三绝”碑刻之首。
 
@@ -31,7 +31,7 @@ Eulogy of the Tang Restoration
 
 Eulogy of the Tang Restoration, cliff inscription
 
-摩崖 · 存世 · 已审
+摩崖 · 存世
 
 - 制作年代：唐大历六年（771）
 - 著录编号：未记录

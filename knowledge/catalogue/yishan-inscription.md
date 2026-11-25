@@ -6,7 +6,7 @@
 
 Mount Yi Inscription
 
-**作品**　秦 · 公元前219年 · 碑 · 已审
+**作品**　秦 · 公元前219年 · 碑
 
 秦始皇巡行峄山，刻石纪事。碑文所记的秦代巡游，与后来传世各本的制作年代，各有其时。
 
@@ -22,7 +22,7 @@ Mount Yi Inscription
 
 Mount Yi Inscription, Northern Song Chang’an recarving
 
-翻刻 · 存世 · 已审
+翻刻 · 存世
 
 - 制作年代：北宋淳化四年(993)
 - 著录编号：未记录

@@ -6,7 +6,7 @@
 
 Stele of the Diffusion of the Luminous Religion in China
 
-**作品**　唐 · 唐建中二年（781） · 碑 · 已审
+**作品**　唐 · 唐建中二年（781） · 碑
 
 唐人在长安大秦寺立碑，追记景教使团于贞观九年（635）入唐，继而叙其后一百五十年间的兴替。馆方将此石列为世界著名碑刻之一。
 
@@ -29,7 +29,7 @@ Stele of the Diffusion of the Luminous Religion in China
 
 Stele of the Diffusion of the Luminous Religion, original stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：唐建中二年（781）
 - 著录编号：未记录

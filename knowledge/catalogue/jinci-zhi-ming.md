@@ -6,7 +6,7 @@
 
 Inscription for the Jin Shrine
 
-**作品**　唐 · 唐贞观二十年（646） · 碑 · 已审
+**作品**　唐 · 唐贞观二十年（646） · 碑
 
 唐太宗自述晋祠掌故与唐室开国之事，以行书入石。碑阳是帝王手笔，碑阴还留有七位随臣的署名。
 
@@ -28,7 +28,7 @@ Inscription for the Jin Shrine
 
 Inscription for the Jin Shrine, 1772 recarving
 
-翻刻 · 存世 · 已审
+翻刻 · 存世
 
 - 制作年代：清乾隆三十七年（1772）
 - 著录编号：未记录
@@ -58,7 +58,7 @@ Inscription for the Jin Shrine, 1772 recarving
 
 Inscription for the Jin Shrine, Tang original
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：唐贞观二十年（646）正月二十六日
 - 著录编号：未记录

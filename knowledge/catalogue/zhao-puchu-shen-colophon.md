@@ -6,7 +6,7 @@
 
 Colophon to Shen Yinmo’s Writing on Calligraphy
 
-**作品**　中华人民共和国 · 1976年 · 帖 · 待审
+**作品**　中华人民共和国 · 1976年 · 帖
 
 1976年，赵朴初在沈尹默论书札后题跋。上海博物馆记赵跋为行书，高20.8厘米、宽10.0厘米；沈氏原札的书写年月尚待查明。
 
@@ -24,7 +24,7 @@ Colophon to Shen Yinmo’s Writing on Calligraphy
 
 Zhao Puchu’s colophon to Shen Yinmo’s letters
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：1976年
 - 著录编号：未记录

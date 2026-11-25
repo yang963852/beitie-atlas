@@ -6,7 +6,7 @@
 
 Wild Goose Pagoda Preface
 
-**作品**　唐 · 653年 · 碑 · 待审
+**作品**　唐 · 653年 · 碑
 
 唐褚遂良书《雁塔圣教序》。本条收录慈恩寺圣教序拓本。
 
@@ -24,7 +24,7 @@ Wild Goose Pagoda Preface
 
 Wild Goose Pagoda Preface, rubbing
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：明拓本
 - 著录编号：新00045571

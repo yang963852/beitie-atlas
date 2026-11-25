@@ -6,7 +6,7 @@
 
 Sweet Spring at Jiucheng Palace
 
-**作品**　唐 · 唐贞观六年（632） · 碑 · 已审
+**作品**　唐 · 唐贞观六年（632） · 碑
 
 魏徵在九成宫撰铭，颂辞中寄有规谏之意，欧阳询为之书丹。今日寻访此碑，仍可在九成宫遗址内见其原石的著录。
 
@@ -29,7 +29,7 @@ Sweet Spring at Jiucheng Palace
 
 Sweet Spring at Jiucheng Palace, original stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：唐贞观六年（632）
 - 著录编号：未记录

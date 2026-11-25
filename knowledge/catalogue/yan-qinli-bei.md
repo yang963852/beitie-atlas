@@ -6,7 +6,7 @@
 
 Stele of Yan Qinli
 
-**作品**　唐 · 唐大历十四年（779年） · 碑 · 已审
+**作品**　唐 · 唐大历十四年（779年） · 碑
 
 颜真卿为颜勤礼撰文并书，故宫著录系于大历十四年（779）。1922年，西安修缮旧巡抚署时碑石出土，后藏西安碑林。故宫另藏民国拓本一册，入藏与递传须另案考察。
 
@@ -28,7 +28,7 @@ Stele of Yan Qinli
 
 Yan Qinli Stele, Republican-era rubbing
 
-拓本 · 存世 · 已审
+拓本 · 存世
 
 - 制作年代：民国拓本
 - 著录编号：新00045406
@@ -57,7 +57,7 @@ Yan Qinli Stele, Republican-era rubbing
 
 Yan Qinli Stele, original stone
 
-原石 · 存世 · 待审
+原石 · 存世
 
 - 制作年代：唐大历十四年（779年）
 - 著录编号：未记录
@@ -71,7 +71,7 @@ Yan Qinli Stele, original stone
 
 - 1922年10月 · 出土 · 省长公署（位于今西安鼓楼以东及东北一带）（有明确记载）　工人拆除旧屋、修整地基时，在地下数米处发现此石。碑身自中部断裂，其余部分基本完整。文中记载，数日之内便有人在坑边拓取。 [出处 2](#ref-src-beilin-article-2007)　今日参照地标：西安鼓楼（不是事件发生地）
 - 出土数日后 · 迁移 · 省长公署前院（有明确记载）　省长刘镇华将此石立于公署前院。文中指出，「故」字的接缝在这次移动中已经受损，无法再合拢。 [出处 2](#ref-src-beilin-article-2007)　今日参照地标：西安鼓楼（不是事件发生地）
-- 1928年三四月间 · 迁移 · 新城大楼北东侧（有明确记载）　时任省主席宋哲元将此石移至新城大楼东北侧，作为「小碑林」的主体，并在旁边修建侧廊与碑亭。经此次移动，「故」字的笔画已大部残损。 [出处 2](#ref-src-beilin-article-2007)　今日参照地标：新城广场取景处（不是事件发生地）
+- 1928年三四月间 · 迁移 · 新城大楼北东侧（有明确记载）　时任省主席宋哲元将此石移至新城大楼东北侧，作为「小碑林」的主体，并在旁边修建侧廊与碑亭。经此次移动，「故」字的笔画已大部残损。 [出处 2](#ref-src-beilin-article-2007)、[出处 4](#ref-src-beilin-xiao-beilin)　今日参照地标：新城广场取景处（不是事件发生地）
 - 1948年 · 迁移 · 西安碑林（有明确记载）　新城「小碑林」整体迁入西安碑林。文中称，此时「故」字已完全断裂。 [出处 2](#ref-src-beilin-article-2007)　今日参照地标：西安碑林博物馆（不是事件发生地）
 
 ### 实物待考与说明
@@ -97,5 +97,9 @@ Yan Qinli Stele, original stone
 <a name="ref-src-beilin-yan-qinli-object"></a>
 
 3. 西安碑林博物馆 · [颜勤礼碑](<https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home>)（2020-08-26）。定位：Object description and final sentence of the custody paragraph。查阅于 2026-11-18。
+
+<a name="ref-src-beilin-xiao-beilin"></a>
+
+4. 西安碑林博物馆 Xi’an Beilin Museum · [宋联奎《小碑林记》](<https://www.beilin-museum.com/index.php?a=index&aid=3490&c=View&m=home>)（2021-08-27）。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
 
 [作品源稿](../../knowledge/works/yan-qinli-bei.md) · [返回知识总目](../README.md)

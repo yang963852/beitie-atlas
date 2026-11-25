@@ -6,7 +6,7 @@
 
 Stele of Chan Master Guifeng Dinghui
 
-**作品**　唐 · 唐大中九年（855年） · 碑 · 待审
+**作品**　唐 · 唐大中九年（855年） · 碑
 
 此碑正文出自裴休，碑额则是柳公权的篆书，最后由邵建初刻石。故宫所藏明拓本中，“同中书”的“同”字尚未损坏。一字的完缺，也能为辨本留下线索。
 
@@ -22,7 +22,7 @@ Stele of Chan Master Guifeng Dinghui
 
 Stele of Chan Master Guifeng Dinghui, rubbing
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：明拓本
 - 著录编号：未记录

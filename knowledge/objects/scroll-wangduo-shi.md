@@ -31,9 +31,7 @@ collection:
   noteZh: 藏品条目记文物号与本人款识。
 events: []
 review:
-  state: draft
-  note: Draft object record. The scroll carries no collector’s seals and is not recorded in early catalogues.
-  noteZh: 实物草稿。本幅无藏印，亦未见早期著录。
+  state: reviewed
 ---
 
 # 王铎行草书自书诗卷

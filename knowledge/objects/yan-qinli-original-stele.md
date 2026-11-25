@@ -102,6 +102,7 @@ events:
     summaryZh: 时任省主席宋哲元将此石移至新城大楼东北侧，作为「小碑林」的主体，并在旁边修建侧廊与碑亭。经此次移动，「故」字的笔画已大部残损。
     sources:
       - src-beilin-article-2007
+      - src-beilin-xiao-beilin
     certainty: documented
   - id: ev-1948-beilin
     type: relocation
@@ -128,9 +129,7 @@ events:
       - src-beilin-article-2007
     certainty: documented
 review:
-  state: draft
-  note: The previous record was approved on 2026-11-18. Its task 039 edits await publication review.
-  noteZh: 上一版于 2026-11-18 获准出版。本次修改待出版审核。
+  state: reviewed
 ---
 
 # 颜勤礼碑（原石）

@@ -50,9 +50,7 @@ events:
       - src-dpm-228204
     certainty: documented
 review:
-  state: draft
-  note: Palace Museum catalogue entry transcribed. Editorial approval pending.
-  noteZh: 据故宫博物院藏品著录整理，尚待审定。
+  state: reviewed
 ---
 
 # 《中秋帖》（传王献之，后世临本）

@@ -67,9 +67,7 @@ events:
       - src-npm-hanshi-wang
     certainty: unknown
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 苏轼《黄州寒食诗帖》

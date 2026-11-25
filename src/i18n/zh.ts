@@ -17,7 +17,7 @@ export const zhStrings: Strings = {
     '从案头临习的碑帖出发，读历代书家与作品，循著录访原石、墨迹与拓本。',
   studyFilter: '按作品类别筛选',
   studyLabels: { all: '全部', bei: '碑', tie: '帖' },
-  draftNotice: '此预览版可能包含仍待审核的草稿。请以每条记录的审核状态与引证为准。',
+  draftNotice: '此预览版包含仍待审核的记录。请以每条记录的引证为准。',
 
   languageLabel: '语言',
   languageZh: '中文',
@@ -108,8 +108,6 @@ export const zhStrings: Strings = {
   contributeFooterLink: '提交资料',
 
   reviewDraft: '草稿',
-  reviewReviewed: '已审核',
-  reviewNoteLabel: '审核说明',
 
   mapHeading: '地图',
   mapOriginalsOnly: '仅显示存世原件',

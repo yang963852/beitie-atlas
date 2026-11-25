@@ -6,7 +6,7 @@
 
 Poems on Mount Tianguan attributed to Zhao Mengfu
 
-**作品**　元 · 年代不详 · 帖 · 已审
+**作品**　元 · 年代不详 · 帖
 
 这组游天冠山诗旧题赵孟頫。馆方指出，据以刻石的墨本真伪尚有异说，书家归属亦须存疑。
 
@@ -20,7 +20,7 @@ Poems on Mount Tianguan attributed to Zhao Mengfu
 
 Mount Tianguan Poems, Qing carving
 
-翻刻 · 存世 · 已审
+翻刻 · 存世
 
 - 制作年代：清康熙二十一年（1682）十一月十五日
 - 著录编号：未记录

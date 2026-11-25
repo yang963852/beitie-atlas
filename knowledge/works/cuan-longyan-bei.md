@@ -33,8 +33,6 @@ sources:
   - src-ynxc-cuan
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. Date, dimensions and character counts come from the provincial culture department page read on 2026-11-18; the stone was not examined and its present shelter was not confirmed."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。年代、尺寸与字数取自 2026-11-18 阅读的省文旅厅页面；未核对原石，也未确认现有保护建筑。
 ---
 
 # 爨龙颜碑

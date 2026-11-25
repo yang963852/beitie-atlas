@@ -41,8 +41,6 @@ sources:
   - src-beilin-kaicheng
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from the museum page. No compiler or scribe is recorded here because the page names none."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；页面未记撰书人，故不列属名。
 ---
 
 # 开成石经

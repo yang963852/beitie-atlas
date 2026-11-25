@@ -6,7 +6,7 @@
 
 Scroll of Poems in the Author’s Hand
 
-**作品**　北宋 · 北宋 · 帖 · 待审
+**作品**　北宋 · 北宋 · 帖
 
 皇祐二年，蔡襄自福州北行，把沿途所见写成诗。卷中十一首，故宫推测写于诗成后不久。后人又将这些字刻入《秋碧堂》等法帖，于是一卷行旅诗稿，也成了案头的临本。
 
@@ -22,7 +22,7 @@ Scroll of Poems in the Author’s Hand
 
 Scroll of Poems in the Author’s Hand, ink manuscript
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：北宋
 - 著录编号：新00044433

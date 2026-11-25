@@ -6,7 +6,7 @@
 
 Thirteen Lines from the Goddess of the Luo
 
-**作品**　东晋 · 东晋 · 帖 · 待审
+**作品**　东晋 · 东晋 · 帖
 
 王献之所书曹植《洛神赋》入宋已残。南宋权相贾似道先得九行、又续得四行，刻于似碧玉的佳石，世称「玉版十三行」。石后佚，明万历间于西湖葛岭复得，清康熙间入内府，1900 年后流散民间；1981 年由北京市文物商店购得，转交首都博物馆。
 
@@ -33,7 +33,7 @@ Thirteen Lines from the Goddess of the Luo
 
 Jade-version stone of the Thirteen Lines
 
-翻刻 · 存世 · 待审
+翻刻 · 存世
 
 - 制作年代：南宋权相贾似道……刻于似碧玉的佳石上
 - 著录编号：未记录

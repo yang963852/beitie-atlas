@@ -32,9 +32,7 @@ attribution:
 sources:
   - src-taian-dai-museum-site
 review:
-  state: draft
-  note: Draft record from the Tai'an scenic-area page read on 2026-11-18. The page gives the surviving characters and the present location but no measured dimensions or condition survey; the stone was not examined.
-  noteZh: 草稿记录，依据 2026-11-18 阅读的泰安泰山风景名胜区页面整理。该页给出残存字数与现存地点，但没有实测尺寸或保存状况调查；未核对原石。
+  state: reviewed
 ---
 
 # 泰山刻石

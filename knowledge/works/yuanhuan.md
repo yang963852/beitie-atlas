@@ -33,9 +33,7 @@ sources:
   - src-npm-yuanhuan
   - src-npm-yuanhuan-record
 review:
-  state: draft
-  note: Draft from a palace museum selection page and its catalogue record, both read on 2026-11-25. The page does not date the copy, so work and object dates are kept apart.
-  noteZh: 草稿，依据 2026-11-25 阅读的台北故宫精选赏析页与数位典藏著录整理。馆方未记摹写年代，作品与实物年代分开处理。
+  state: reviewed
 ---
 
 # 远宦帖

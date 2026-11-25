@@ -1275,12 +1275,6 @@ a {
   color: var(--draft);
 }
 
-.badge--ok {
-  border-color: var(--ok-line);
-  background: var(--ok-wash);
-  color: var(--ok);
-}
-
 .detail__title {
   margin: 0;
   font-family: var(--font-zh);
@@ -1704,20 +1698,6 @@ a {
   color: var(--ink-2);
   font-size: 13.5px;
   line-height: 1.62;
-}
-
-.review-note {
-  margin: 22px 0 0;
-  padding-top: 12px;
-  border-top: 1px solid var(--line-soft);
-  color: var(--ink-4);
-  font-size: 11.5px;
-  line-height: 1.55;
-}
-
-.review-note strong {
-  margin-right: 4px;
-  color: var(--ink-3);
 }
 
 .detail-empty {
@@ -2471,12 +2451,6 @@ html[lang='en'] .result::before {
   color: var(--draft);
 }
 
-.badge--ok {
-  border-color: var(--ok-line);
-  background: var(--ok-wash);
-  color: var(--ok);
-}
-
 .detail__title {
   font: 600 clamp(24px, 2.1vw, 30px)/1.32 var(--font-zh);
   letter-spacing: 0.05em;
@@ -2722,11 +2696,6 @@ html[lang='zh-Hans'] .folio__prose {
 .notes__list {
   color: var(--ink-2);
   font-family: var(--font-reading);
-}
-
-.review-note {
-  color: var(--ink-3);
-  font-family: var(--font-kai);
 }
 
 .detail-empty__title {

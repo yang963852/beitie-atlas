@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-hbww-shuihudi
 review:
-  state: draft
-  note: Draft added in the 2026-11 bronze and slip expansion. The museum page gives the slips and script, not the total character count.
-  noteZh: 2026 年 11 月金文与简牍增补草稿。馆方页面记简数与书体，未给总字数。
+  state: reviewed
 ---
 
 # 睡虎地秦简

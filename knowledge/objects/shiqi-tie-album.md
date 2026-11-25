@@ -50,9 +50,7 @@ events:
       - src-met-shiqi
     certainty: documented
 review:
-  state: draft
-  note: Draft object record. Title, date, medium, dimensions, credit line, accession number and public-domain status were read from the museum's public collection API on 2026-11-23 because the object page itself did not load from this network. The album was not examined.
-  noteZh: 草稿实物记录。题名、年代、材质、尺寸、来源、藏品号与公有领域状态于 2026-11-23 经该馆公开藏品接口读取，因本网络无法打开对象页面。未核对原册。
+  state: reviewed
 ---
 
 # 十七帖拓本册

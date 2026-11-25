@@ -82,3 +82,17 @@ it('prints a provenance date once when the recorded wording repeats the label', 
   expect(timeline?.textContent?.match(/1922年10月/g)?.length).toBe(1);
   expect(timeline?.textContent).toContain('1928年三四月间');
 });
+
+it('shows no workflow status on a published work or witness', () => {
+  window.history.replaceState(null, '', '#/work/yan-qinli-bei');
+  render(<App />);
+  const entry = screen.getByRole('article');
+  expect(entry.textContent).not.toContain('已审核');
+  expect(entry.textContent).not.toContain('草稿');
+  expect(entry.textContent).not.toContain('审核说明');
+  navigate('#/object/yan-qinli-original-stele');
+  const detail = screen.getByRole('article');
+  expect(detail.textContent).not.toContain('已审核');
+  expect(detail.textContent).not.toContain('草稿');
+  expect(detail.textContent).not.toContain('审核说明');
+});

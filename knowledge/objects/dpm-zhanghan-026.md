@@ -69,9 +69,7 @@ events:
       - src-dpm-234567
     certainty: documented
 review:
-  state: draft
-  note: Palace Museum catalogue entry transcribed. Editorial approval pending.
-  noteZh: 据故宫博物院藏品著录整理，尚待审定。
+  state: reviewed
 ---
 
 # 欧阳询《张翰帖》（唐人钩填本）

@@ -32,9 +32,7 @@ attribution:
 sources:
   - src-chengxian-xixia
 review:
-  state: draft
-  note: Draft record from the Cheng County government page read on 2026-11-18. The page describes the cliff, its date and its preservation in general terms but gives no measured dimensions; the cliff was not examined.
-  noteZh: 草稿记录，依据 2026-11-18 阅读的成县人民政府页面整理。页面概述摩崖的年代、位置与保存情况，但没有实测尺寸；未实地核对。
+  state: reviewed
 ---
 
 # 西狭颂

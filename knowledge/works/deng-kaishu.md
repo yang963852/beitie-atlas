@@ -29,9 +29,7 @@ attribution:
 sources:
   - src-catalogue-deng-kaishu
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 楷书诗轴

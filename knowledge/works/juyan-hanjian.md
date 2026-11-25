@@ -31,9 +31,7 @@ attribution:
 sources:
   - src-thepaper-juyan
 review:
-  state: draft
-  note: Draft added in the 2026-11 bronze and slip expansion. Reports differ on the official’s surname in the title.
-  noteZh: 2026 年 11 月金文与简牍增补草稿。报道对所涉人名姓氏的录文不一。
+  state: reviewed
 ---
 
 # 居延新简·隧长焦永死驹劾状

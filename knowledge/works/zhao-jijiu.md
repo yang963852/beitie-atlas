@@ -29,9 +29,7 @@ attribution:
 sources:
   - src-catalogue-zhao-jijiu
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 篆书急就章轴

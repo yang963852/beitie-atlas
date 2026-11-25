@@ -108,7 +108,7 @@ function WorkFolio({ entry, close }: { entry: LibraryEntry; close: () => void })
         </a>
       </li>)}</ul> : <p>{zh ? '本项目尚未收录可定位的具体实物。' : 'No physical witness is catalogued for this work yet.'}</p>}
       {entry.guide ? <KnowledgeProse guide={entry.guide} /> : <p className="folio__prose">{zh ? entry.work?.backgroundZh ?? entry.work?.background : entry.work?.background}</p>}
-      <p className="folio__status">{(entry.guide?.state ?? entry.work?.review.state) === 'draft' ? strings.reviewDraft : strings.reviewReviewed}</p>
+      {(entry.guide?.state ?? entry.work?.review.state) === 'draft' ? <p className="folio__status">{strings.reviewDraft}</p> : null}
       <SourceList ids={[...new Set([...(entry.work?.sourceRefs ?? []),...(entry.guide?.sources ?? [])])]} compact />
       <a href={'#/work/'+entry.id}>{zh ? '阅读完整条目' : 'Read the full entry'}</a>
     </div>

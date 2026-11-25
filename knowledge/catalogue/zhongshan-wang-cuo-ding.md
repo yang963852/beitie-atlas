@@ -6,7 +6,7 @@
 
 Ding of King Cuo of Zhongshan
 
-**作品**　先秦 · 战国 · 战国 · 碑 · 待审
+**作品**　先秦 · 战国 · 战国 · 碑
 
 战国中山王厝墓出土，外壁刻铭七十七行四百六十九字，记相邦司马赒伐燕之功与对后嗣的告诫，是战国铭文最长的铜器。字形修长、线条尖入尖出，装饰性强，被称为“中山篆”，在战国金文中独树一帜。
 
@@ -29,7 +29,7 @@ Ding of King Cuo of Zhongshan
 
 Iron-legged bronze ding of King Cuo of Zhongshan
 
-青铜器 · 存世 · 待审
+青铜器 · 存世
 
 - 制作年代：战国
 - 著录编号：未记录

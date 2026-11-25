@@ -34,8 +34,6 @@ sources:
   - src-beilin-huiyuan
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from the museum page. The claim that no rubbing circulated before 1986 rests on that page alone."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据馆方页面整理的草稿；「此前无拓本流传」一说仅据该页面。
 ---
 
 # 迴元观钟楼铭

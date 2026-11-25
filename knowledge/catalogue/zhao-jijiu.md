@@ -6,7 +6,7 @@
 
 Jijiu Zhang in Seal Script
 
-**作品**　清 · 清（仅记年号，年份未记） · 帖 · 待审
+**作品**　清 · 清（仅记年号，年份未记） · 帖
 
 清赵之谦书《篆书急就章轴》。
 
@@ -22,7 +22,7 @@ Jijiu Zhang in Seal Script
 
 Jijiu Zhang in Seal Script
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：清（仅记年号，年份未记）
 - 著录编号：新00094049

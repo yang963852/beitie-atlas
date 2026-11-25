@@ -31,11 +31,9 @@ attribution:
 sources:
   - src-shm-zhao-shen-colophon
 review:
-  state: draft
-  note: The base record was created during the 2026-11 migration. The guide keeps its earlier review state.
-  noteZh: 基础档案于 2026 年 11 月迁移时建立；导读保留原审核状态。
+  state: reviewed
 guide:
-  state: draft
+  state: reviewed
   timelineYear: 1976
   people:
     - zhao-puchu

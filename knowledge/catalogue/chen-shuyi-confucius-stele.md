@@ -6,7 +6,7 @@
 
 Chen Shuyi’s Confucius Temple Repair Stele
 
-**作品**　隋 · 隋大业七年（611年） · 碑 · 已审
+**作品**　隋 · 隋大业七年（611年） · 碑
 
 馆方将此碑列入隋代藏石。碑题所记，是修孔庙一事。
 
@@ -22,7 +22,7 @@ Chen Shuyi’s Confucius Temple Repair Stele
 
 Chen Shuyi’s Confucius Temple Repair Stele, original stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：隋大业七年（611年）
 - 著录编号：未记录

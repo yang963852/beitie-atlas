@@ -6,7 +6,7 @@
 
 Record of the Immortal Altar
 
-**作品**　唐 · 771年 · 碑 · 待审
+**作品**　唐 · 771年 · 碑
 
 唐颜真卿书《麻姑仙坛记》。本条收录翻刻旧拓。
 
@@ -24,7 +24,7 @@ Record of the Immortal Altar
 
 Record of the Immortal Altar, rubbing
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：年代不详
 - 著录编号：新00045727

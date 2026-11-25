@@ -116,6 +116,7 @@ function getIndex(): DatasetIndex {
  * on every keystroke.
  */
 let cachedReport: ValidationReport | null = null;
+let cachedDrafts: boolean | null = null;
 
 export function getValidationReport(): ValidationReport {
   if (cachedReport) return cachedReport;
@@ -126,11 +127,27 @@ export function getValidationReport(): ValidationReport {
   return cachedReport;
 }
 
-export function getWork(id: string): Work | undefined {
-  return getIndex().works.get(id);
+/**
+ * Whether any reader-facing record is still awaiting editorial review.
+ *
+ * A preview may show a draft, but only when it says so. The notice and the
+ * per-record labels are driven by this check, so a fully reviewed corpus shows
+ * neither.
+ */
+export function hasDraftRecords(): boolean {
+  if (cachedDrafts !== null) return cachedDrafts;
+  const { works, objects } = getDataset();
+  cachedDrafts =
+    works.some((work) => work.review.state === 'draft') ||
+    objects.some((object) => object.review.state === 'draft') ||
+    knowledgeArticles.some((article) => article.state === 'draft') ||
+    knowledgeRelations.some((relation) => relation.state === 'draft');
+  return cachedDrafts;
 }
 
-export function getPlace(id: string | null): Place | undefined {
+export function getWork(id: string): Work | undefined {
+  return getIndex().works.get(id);
+}export function getPlace(id: string | null): Place | undefined {
   if (!id) return undefined;
   return getIndex().places.get(id);
 }

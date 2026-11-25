@@ -29,9 +29,7 @@ attribution:
 sources:
   - src-npm-maogong
 review:
-  state: draft
-  note: Draft added in the 2026-11 bronze and slip expansion. The museum page gives the full text but not a character count; the record says “near five hundred”.
-  noteZh: 2026 年 11 月金文与简牍增补草稿。馆方页面载全铭而未给字数，本记录作“近五百字”。
+  state: reviewed
 ---
 
 # 毛公鼎

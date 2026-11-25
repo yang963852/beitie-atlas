@@ -36,9 +36,7 @@ collection:
   noteZh: 馆方著录藏品号 新00045747。条目引《欧斋藏碑帖目录》所记宋拓本购价三千元，但未记本册入藏年份。
 events: []
 review:
-  state: draft
-  note: Draft object record from the Palace Museum entry read on 2026-11-23. The Southern Song dating rests on the museum's character-damage test; no plate was compared and the album was not examined.
-  noteZh: 草稿实物记录，依据 2026-11-23 阅读的故宫页面整理。南宋之定依据馆方所记字损特征；未比看图版，未核对原册。
+  state: reviewed
 ---
 
 # 虞恭公碑（南宋拓本）

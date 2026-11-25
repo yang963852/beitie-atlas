@@ -31,9 +31,7 @@ collection:
   noteZh: 1989 年以狄龙基金购藏；馆方说明记董其昌旧藏与《渤海藏真》摹刻。
 events: []
 review:
-  state: draft
-  note: Draft object record. The museum labels the work “attributed to Zhong Shaojing”.
-  noteZh: 实物草稿。馆方标为“传钟绍京”。
+  state: reviewed
 ---
 
 # 灵飞经（四十三行本）

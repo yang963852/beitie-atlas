@@ -32,9 +32,7 @@ collection:
   noteZh: 馆方页面记今碑在碑林，报纸称其为唐原石佚后的宋时重刻。
 events: []
 review:
-  state: draft
-  note: Draft object record. This entry describes the surviving carrier, not the lost Tang stone.
-  noteZh: 实物草稿。此处登记的是现存重刻，不是已佚的唐原石。
+  state: reviewed
 ---
 
 # 三坟记碑（宋时重刻）

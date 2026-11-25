@@ -50,9 +50,7 @@ events:
       - src-dpm-pingfu
     certainty: documented
 review:
-  state: draft
-  note: Draft object record from the Palace Museum entry read on 2026-11-23. Accession number, dimensions and the 1956 donation come from that page; the scroll was not examined and no condition report is cited.
-  noteZh: 草稿实物记录，依据 2026-11-23 阅读的故宫页面整理。文物号、尺寸与 1956 年捐献均出自该页；未核对原件，未引状态报告。
+  state: reviewed
 ---
 
 # 平复帖卷

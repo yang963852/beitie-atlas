@@ -48,9 +48,7 @@ events:
       - src-taian-dai-museum-site
     certainty: approximate
 review:
-  state: draft
-  note: Draft object record from the Tai'an scenic-area page read on 2026-11-18. Location, relic grade and the surviving characters are stated; dimensions, condition and the dates of the moves are not.
-  noteZh: 草稿实物记录，依据 2026-11-18 阅读的泰安泰山风景名胜区页面整理。页面记有现存地点、文物级别与残存文字；尺寸、保存状况与迁移年份均未记载。
+  state: reviewed
 ---
 
 # 泰山刻石（残石）

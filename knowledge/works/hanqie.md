@@ -32,9 +32,7 @@ attribution:
 sources:
   - src-tjbwg-hanqie
 review:
-  state: draft
-  note: Draft from the Tianjin Museum collection entry, read on 2026-11-25. The entry supplies the full transcription and the Xu Bangda appraisal; it gives no accession number.
-  noteZh: 草稿，依据 2026-11-25 阅读的天津博物馆藏品说明整理。该页载全帖释文与徐邦达评语，未给藏品号。
+  state: reviewed
 ---
 
 # 寒切帖

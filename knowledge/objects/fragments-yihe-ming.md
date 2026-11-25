@@ -50,8 +50,6 @@ events:
     certainty: documented
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The five fragments are recorded as one object; their individual sizes are not published in the cited pages."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。五方残石合为一条实物；所引页面未公布各石尺寸。
 ---
 
 # 瘗鹤铭（残石五方）

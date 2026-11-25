@@ -6,7 +6,7 @@
 
 Rhapsody on the Goddess of the Luo
 
-**作品**　元 · 元（仅记年号，年份未记） · 帖 · 待审
+**作品**　元 · 元（仅记年号，年份未记） · 帖
 
 元赵孟頫书《洛神赋》。
 
@@ -22,7 +22,7 @@ Rhapsody on the Goddess of the Luo
 
 Rhapsody on the Goddess of the Luo
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：元（仅记年号，年份未记）
 - 著录编号：新00152406

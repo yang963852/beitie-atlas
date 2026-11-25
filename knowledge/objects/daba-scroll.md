@@ -31,9 +31,7 @@ collection:
   noteZh: 馆方专题页称此卷藏故宫博物院，未给藏品号、展室与展出状态。
 events: []
 review:
-  state: draft
-  note: Draft object record from the Palace Museum page read on 2026-11-23. Dimensions and the inscription text are as transcribed there; the scroll was not examined and its colophons are not individually catalogued here.
-  noteZh: 草稿实物记录，依据 2026-11-23 阅读的故宫页面整理。尺寸与碑文从该页转录；未核对原件，题跋亦未逐条著录。
+  state: reviewed
 ---
 
 # 楷书帝师胆巴碑卷

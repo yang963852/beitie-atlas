@@ -31,9 +31,7 @@ collection:
   noteZh: 清宫旧藏，二十世纪二十年代流出，1982 年入藏无锡博物院。
 events: []
 review:
-  state: draft
-  note: Draft object record. The museum records three surviving versions and an unresolved authenticity debate.
-  noteZh: 实物草稿。馆方记传世三本，真伪之争尚未定论。
+  state: reviewed
 ---
 
 # 韭花帖（清内府藏本）

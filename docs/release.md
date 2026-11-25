@@ -65,7 +65,7 @@ not a release artifact.
 
 ## CI and deployment
 
-[The Pages workflow](../.github/workflows/pages.yml) automatically deploys the labelled preview from checked `main`. GitHub Pages is the sole website host. The first internal beta is publicly reachable under the label **内部测试第一版**. It carries preview markers and may include editorial drafts. Record the deployed revision and Actions run plus observed host or network results. Use the [beta feedback form](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) for reader reports.
+[The Pages workflow](../.github/workflows/pages.yml) automatically deploys the labelled preview from checked `main`. GitHub Pages is the sole website host. The public preview carries the label **1.1** and a preview marker. The 1.1 corpus is fully reviewed, so the preview contains no draft records; the marker stays until a formal release artifact is built and deployed. Record the deployed revision and Actions run plus observed host or network results. Use the [feedback form](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) for reader reports.
 
 For formal publication, obtain editorial approval of the exact source revision and update the Pages workflow in that release task. Have the workflow build with `npm run release` and the Pages base path, verify the release marker and manifest, and deploy the resulting `dist/`. Account for the preview trigger in the same task so a push cannot silently replace the formal edition with a preview. Record the Actions run, full source SHA, manifest and public URL. Verify the hosted permalink, actual map tiles and attribution when configured, and mainland reachability as separate checks.
 

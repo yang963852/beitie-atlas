@@ -83,7 +83,7 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
     <section className="desk" data-scene={phase} data-entering={Boolean(origin)} aria-labelledby="opening-title">
       <canvas ref={canvas} className="desk__scene" aria-hidden="true" />
       <div className="desk__library">
-        {!isReleaseBuild && <span>{locale === 'zh' ? '内部测试第一版' : 'Internal beta 1'}</span>}
+        {!isReleaseBuild && <span>{locale === 'zh' ? '1.1' : 'Edition 1.1'}</span>}
         <a href="#/library"><span className="desk__seal" aria-hidden="true">碑</span>{locale === 'zh' ? '读作品与书家' : 'Read works and calligraphers'}</a>
       </div>
       <a className="desk__credit" href="#/object/witness-lanting" onClick={event => {

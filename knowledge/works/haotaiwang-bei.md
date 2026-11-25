@@ -42,9 +42,7 @@ sources:
   - src-jl-dfz-haotaiwang
   - src-jl-dfz-haotaiwang-alt
 review:
-  state: draft
-  note: Draft record from two entries of the Jilin provincial gazetteer read on 2026-11-23. They agree on height, line count and character total. The stone was not examined and no rubbing was consulted; the reading of individual characters is not addressed.
-  noteZh: 草稿记录，依据 2026-11-23 阅读的两条吉林省地方志条目整理。两处所记碑高、行数与总字数一致。未核对原石，未参校拓本；个别字的释读不在本文范围。
+  state: reviewed
 ---
 
 # 好太王碑

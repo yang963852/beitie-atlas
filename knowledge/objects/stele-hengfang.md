@@ -48,9 +48,7 @@ events:
       - src-dpm-hengfang
     certainty: documented
 review:
-  state: draft
-  note: Draft object record. The location and the 1730 re-erection come from a rubbing catalogue entry; the stone was not examined and its exact position inside the temple is reported differently by two pages.
-  noteZh: 草稿实物记录。现藏地点与雍正八年重立事取自拓本目录条目；未核对原石，且两处页面所记寺内位置不同。
+  state: reviewed
 ---
 
 # 衡方碑（原石）

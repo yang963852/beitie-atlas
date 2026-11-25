@@ -52,8 +52,6 @@ events:
     certainty: documented
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The album is dated only as a Song mounting; the exact rubbing date is not established."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。此本只定为宋装宋拓，具体拓制年代未定。
 ---
 
 # 神策军碑（宋拓孤本）

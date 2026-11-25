@@ -31,9 +31,7 @@ attribution:
 sources:
   - src-csjd-tianjia
 review:
-  state: draft
-  note: Draft added in the 2026-11 bronze and slip expansion. The source describes the document type, not a single item’s full transcription.
-  noteZh: 2026 年 11 月金文与简牍增补草稿。来源介绍的是这一类文书，不是单件简的完整释文。
+  state: reviewed
 ---
 
 # 走马楼吴简·嘉禾吏民田家莂

@@ -29,9 +29,7 @@ collection:
   noteZh: 馆方记1993年抢救性发掘与804枚竹简。
 events: []
 review:
-  state: draft
-  note: Draft object record. Dimensions of the slips were not read from a museum page.
-  noteZh: 实物草稿。简的尺寸未从馆方页面读到。
+  state: reviewed
 ---
 
 # 郭店楚简（《老子》甲、乙、丙）

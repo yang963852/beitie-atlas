@@ -15,11 +15,12 @@ describe('knowledge authoring format', () => {
     expect(body).toContain('## 中文');
   });
 
-  it('keeps the work record and its guide as separate review states', () => {
+  it('keeps the work record and its guide as separate records', () => {
     const work = compiled.knowledge.works.find((item) => item.id === 'yan-qinli-bei')!;
     const guide = compiled.knowledge.articles.find((item) => item.kind === 'works' && item.id === 'yan-qinli-bei')!;
     expect(work.review.state).toBe('reviewed');
-    expect(guide.state).toBe('draft');
+    expect(guide.state).toBe('reviewed');
+    expect(guide.sources.length).toBeGreaterThan(0);
   });
 
   it('reports a clean compiled corpus and keeps stable work/object counts', () => {

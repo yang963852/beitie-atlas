@@ -31,9 +31,7 @@ attribution:
 sources:
   - src-taian-jingshiyu
 review:
-  state: draft
-  note: Draft added in the 2026-11 classics selection from the Tai’an Museum page. The period is a stylistic consensus, not a dated record.
-  noteZh: 2026 年 11 月经典碑帖增补草稿，依据泰安市博物馆页面；时代为风格共识，非刻石自记。
+  state: reviewed
 ---
 
 # 泰山经石峪金刚经

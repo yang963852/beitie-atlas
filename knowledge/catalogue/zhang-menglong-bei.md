@@ -6,7 +6,7 @@
 
 Stele of Zhang Menglong
 
-**作品**　南北朝 · 北魏 · 北魏正光三年（522年） · 碑 · 已审
+**作品**　南北朝 · 北魏 · 北魏正光三年（522年） · 碑
 
 碑文颂张猛龙治郡之绩，其中尤记兴学之事。
 
@@ -24,7 +24,7 @@ Stele of Zhang Menglong
 
 Stele of Zhang Menglong, Ming rubbing
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：明拓
 - 著录编号：新00045763
@@ -50,7 +50,7 @@ Stele of Zhang Menglong, Ming rubbing
 
 Stele of Zhang Menglong, original stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：北魏正光三年（522年）
 - 著录编号：未记录

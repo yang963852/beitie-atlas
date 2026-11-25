@@ -6,7 +6,7 @@
 
 Imperial Summons Letter
 
-**作品**　唐 · 年代不详 · 帖 · 待审
+**作品**　唐 · 年代不详 · 帖
 
 信中人婉辞所托，自言虽有官职，实难为人办事。此卷旧题柳公权，故宫将其与刻帖中的《翰林帖》比读，指出官称与文辞都有疑处，或是宋人依原意写成。
 
@@ -22,7 +22,7 @@ Imperial Summons Letter
 
 Imperial Summons Letter, ink manuscript
 
-墨迹 · 存世 · 待审
+墨迹 · 存世
 
 - 制作年代：年代不详
 - 著录编号：故00004528

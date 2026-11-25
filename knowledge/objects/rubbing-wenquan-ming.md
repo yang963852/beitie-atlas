@@ -31,8 +31,6 @@ collection:
 events: []
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft with a firsthand study of the Paris rubbing. The present BnF catalogue entry and precise production date still need checking."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿已增补在巴黎查阅实物的研究，仍待核对法国国家图书馆现行目录及具体拓制年代。
 ---
 
 # 温泉铭（唐拓残卷）

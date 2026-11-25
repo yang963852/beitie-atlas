@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-npm-huangting
 review:
-  state: draft
-  note: Draft from the palace museum digital archive record, read on 2026-11-25. The record lists the album's seven leaves and its inventory number but no measurement or stone date.
-  noteZh: 草稿，依据 2026-11-25 阅读的台北故宫数位典藏著录整理。该页记一册七开与文物编号，未给尺寸与刻石年代。
+  state: reviewed
 ---
 
 # 黄庭经

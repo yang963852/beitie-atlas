@@ -30,9 +30,7 @@ collection:
   noteZh: 馆方著录与 2012 年古物公告均记此卷藏台北故宫，典藏编号作故書000050。
 events: []
 review:
-  state: draft
-  note: Draft object record. The two sources disagree on the mounted width (46.8 against 47.3 cm), so the measurement field is left empty and both readings are kept in the note.
-  noteZh: 实物草稿。两处来源对装裱横长有 46.8 与 47.3 厘米两说，尺寸字段留空，两说并记于注。
+  state: reviewed
 ---
 
 # 平安何如奉橘三帖卷

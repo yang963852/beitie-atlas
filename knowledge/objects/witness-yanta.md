@@ -48,9 +48,7 @@ events:
       - src-catalogue-yanta
     certainty: documented
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 雁塔圣教序（慈恩寺圣教序拓本）

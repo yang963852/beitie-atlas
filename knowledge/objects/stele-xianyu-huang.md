@@ -50,8 +50,6 @@ events:
     certainty: documented
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The holding, the character count and the excavation month come from the museum's own pages; the stone was not examined."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿实物记录。现藏、字数与出土月份取自馆方页面；未核对原石。
 ---
 
 # 鲜于璜碑（原石）

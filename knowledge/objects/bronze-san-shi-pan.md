@@ -31,9 +31,7 @@ collection:
   noteZh: 馆方著录记文物统一编号与铭文。
 events: []
 review:
-  state: draft
-  note: Draft object record. The museum counts 350 characters; other publications give 357.
-  noteZh: 实物草稿。馆方记350字，其他出版物作357字。
+  state: reviewed
 ---
 
 # 散氏盘（散盘）

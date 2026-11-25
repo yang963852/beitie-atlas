@@ -51,8 +51,6 @@ events:
     certainty: documented
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The set is treated as one object; the museum page does not describe stone-by-stone condition."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。本条把整套石经作为一个实物；馆方页面没有逐石描述保存状况。
 ---
 
 # 开成石经（原石）

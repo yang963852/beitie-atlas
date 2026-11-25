@@ -31,9 +31,7 @@ collection:
   noteZh: 刻经仍在溪床石坪上，馆方页面未给坐标。
 events: []
 review:
-  state: draft
-  note: Draft object record. The object is the cliff itself, not a rubbing.
-  noteZh: 实物草稿。此处登记的是摩崖原石，不是拓本。
+  state: reviewed
 ---
 
 # 泰山经石峪金刚经摩崖

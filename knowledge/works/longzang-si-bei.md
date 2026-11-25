@@ -32,8 +32,6 @@ sources:
   - src-sjzgov-longzang
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft record. Date, layout and the 1980s conservation work come from state and municipal pages read on 2026-11-18; the stone was not examined and the height figures conflict across the pages."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿记录。年代、行款与二十世纪八十年代的维修取自 2026-11-18 阅读的国家级与市级页面；未核对原石，各页面所记高度互有出入。
 ---
 
 # 龙藏寺碑

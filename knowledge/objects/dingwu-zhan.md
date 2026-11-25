@@ -55,9 +55,7 @@ version:
   note: The museum names this rubbing as a Dingwu version and describes its recutting features.
   noteZh: 馆方以定武本题名，并记其翻刻特征。
 review:
-  state: draft
-  note: Catalogue identification awaits editorial review.
-  noteZh: 馆藏著录待编辑复核。
+  state: reviewed
 ---
 
 # 定武兰亭序（詹东图藏本）

@@ -38,8 +38,6 @@ sources:
   - src-nlc-shence-museum
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft work record from a newspaper article by a library staff member. The 843 date refers to the lost stone, not to the surviving rubbing."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：依据图书馆员撰写的报纸文章整理的草稿；843 年为已佚原石之刻立年，不是存世拓本年代。
 ---
 
 # 神策军碑

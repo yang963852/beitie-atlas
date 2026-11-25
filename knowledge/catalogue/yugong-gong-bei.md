@@ -6,7 +6,7 @@
 
 Stele of Duke Yugong
 
-**作品**　唐 · 唐贞观十一年（637年）十月 · 碑 · 待审
+**作品**　唐 · 唐贞观十一年（637年）十月 · 碑
 
 此为温彦博的墓碑，贞观十一年（637）十月立于醴泉昭陵：正书三十六行、行七十七字，篆额四行十六字。碑之下半入宋已断裂，故无全文拓本；传世最旧之本仅存八百余字，而全文约二千八百余字。
 
@@ -31,7 +31,7 @@ Stele of Duke Yugong
 
 Stele of Duke Yugong, Southern Song rubbing
 
-拓本 · 存世 · 待审
+拓本 · 存世
 
 - 制作年代：南宋拓本
 - 著录编号：新00045747
@@ -60,7 +60,7 @@ Stele of Duke Yugong, Southern Song rubbing
 
 Stele of Duke Yugong, original stone
 
-原石 · 存世 · 待审
+原石 · 存世
 
 - 制作年代：唐贞观十一年（637年）十月
 - 著录编号：未记录

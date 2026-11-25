@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-chnmuseum-dayuding
 review:
-  state: draft
-  note: Draft added in the 2026-11 bronze and slip expansion. The findspot is given differently across the museum’s own pages.
-  noteZh: 2026 年 11 月金文与简牍增补草稿。馆方不同页面所记出土地不一。
+  state: reviewed
 ---
 
 # 大盂鼎

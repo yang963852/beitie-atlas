@@ -32,9 +32,7 @@ collection:
   noteZh: 著录于中国国家博物馆线上藏品目录。条目没有说明展厅、库房或展出状态，也没有给出入藏时间。
 events: []
 review:
-  state: draft
-  note: Draft object record built from the museum's collection page read on 2026-11-18. The removal of the stone from the cliff in the Qing dynasty is stated, but no dated event sequence or accession record is given.
-  noteZh: 草稿实物记录，依据 2026-11-18 阅读的馆方藏品页整理。页面提到清代将刻石从山崖凿下，但没有具日期的迁移经过或入藏记录。
+  state: reviewed
 ---
 
 # 琅琊刻石（残石）

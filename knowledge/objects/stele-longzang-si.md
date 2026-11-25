@@ -31,8 +31,6 @@ collection:
 events: []
 review:
   state: reviewed
-  note: "Owner approved for publication on 2026-11-18. Pre-approval evidence note: Draft object record. The in-situ claim and the unsigned height dispute come from state and provincial pages read on 2026-11-18; the stone was not examined."
-  noteZh: 项目负责人于 2026-11-18 审核并同意发布。审核前的证据记录：草稿实物记录。原址所在与高度分歧取自 2026-11-18 阅读的国家级、省级页面；未核对原石。
 ---
 
 # 龙藏寺碑（原石）

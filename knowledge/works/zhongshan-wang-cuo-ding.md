@@ -30,9 +30,7 @@ attribution:
 sources:
   - src-hebei-zhongshan
 review:
-  state: draft
-  note: Draft added in the 2026-11 bronze and slip expansion. Whether the text was cast or cut is still debated.
-  noteZh: 2026 年 11 月金文与简牍增补草稿。铭文是铸是刻，学界尚无定论。
+  state: reviewed
 ---
 
 # 中山王厝鼎

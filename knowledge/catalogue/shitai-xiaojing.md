@@ -6,7 +6,7 @@
 
 Stone Terrace Classic of Filial Piety
 
-**作品**　唐 · 唐天宝四年（745） · 碑 · 已审
+**作品**　唐 · 唐天宝四年（745） · 碑
 
 玄宗亲为《孝经》作序、注解并以隶书写经，李亨篆额。三十五方石合为一碑，下承三层石台，故名《石台孝经》。
 
@@ -29,7 +29,7 @@ Stone Terrace Classic of Filial Piety
 
 Stone Terrace Classic of Filial Piety, original stone
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：唐天宝四年（745）
 - 著录编号：未记录

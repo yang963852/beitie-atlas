@@ -6,7 +6,7 @@
 
 Bell Tower Inscription of the Huiyuan Abbey
 
-**作品**　唐 · 唐开成元年（836） · 碑 · 已审
+**作品**　唐 · 唐开成元年（836） · 碑
 
 这方横石记一座唐代道观的旧事。历代金石书中未见著录，直至1986年才在西安出土。馆方定其为柳公权晚年书迹。
 
@@ -27,7 +27,7 @@ Bell Tower Inscription of the Huiyuan Abbey
 
 Bell Tower Inscription of the Huiyuan Abbey, original slab
 
-原石 · 存世 · 已审
+原石 · 存世
 
 - 制作年代：唐开成元年（836）
 - 著录编号：未记录
