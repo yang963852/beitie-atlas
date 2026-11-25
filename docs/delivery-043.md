@@ -38,7 +38,7 @@
 
 - `knowledge/README.md`、`knowledge/catalogue/`：生成页。
 - `data/index/knowledge-v1.json`：编译接口。
-- `docs/canonical-coverage.md`、`docs/iteration-board.md`。
+- [归档的覆盖面矩阵](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/canonical-coverage.md)、`docs/iteration-board.md`。
 - `tests/app.test.tsx`：默认选中变为大盂鼎，地图测试改为先选石鼓再回列表。
 - `tests/knowledge.test.ts`、`tests/knowledge-examples.test.ts`：108 作品 / 117 实物。
 

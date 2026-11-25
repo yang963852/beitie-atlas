@@ -9,7 +9,7 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 | Assignment | Read first | Do not change |
 | --- | --- | --- |
 | Edit a work, object, person, place, source or note | [Editorial workflow](docs/atlas-workflow.md), [Chinese templates](knowledge/_templates/), the target Markdown and its sources | Compiler, UI, generated catalogue |
-| Develop the website | [Design system](docs/design-system.md), [data boundary](src/domain/data.ts), the compiled interface shape and the affected component | Author Markdown, legacy JSON, compiler |
+| Develop the website | [Design system](docs/design-system.md), [data boundary](src/domain/data.ts), the compiled interface shape and the affected component | Author Markdown, retired legacy JSON, compiler |
 | Maintain the compiler or interface | [Schema](scripts/lib/knowledge-schema.ts), [compiler](scripts/lib/knowledge-compiler.ts), [execution plan](docs/knowledge-rebuild.md) | Reader-facing prose except a migration correction |
 | Review a contribution | [Review skill](.agents/skills/review-change/SKILL.md), the Issue/PR, the target record and evidence | Merging or publishing on the author's behalf |
 | Coordinate a milestone or release | [Iteration board](docs/iteration-board.md), [release runbook](docs/release.md), [execution plan](docs/knowledge-rebuild.md) | Other contributors' assigned files |
@@ -17,6 +17,8 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 ## Roles and scope
 
 - The coordinator (the project owner) prioritizes Issues, assigns reviews, settles scope and decides merges. A contributor may use their preferred local agent. Work independently on disjoint subjects or files. Assign one lead per task and agree responsibility before editing overlapping files.
+- Local agents use separate workspaces: TRAE works in `.private/worktrees/trae` on `trae/work`; WorkBuddy works in `.private/worktrees/workbuddy` on `workbuddy/work` (or its own app-managed worktree until moved); Codex is read-only on the primary checkout and writes plans only when the coordinator asks. The primary checkout is the coordinator's space, not a shared agent workspace. See [the local agent workflow](docs/agent-workflow.zh-CN.md).
+- `trae/work` and `workbuddy/work` are long-lived integration branches. Keep one task per PR, merge `origin/main` into the branch before opening it, and synchronize the branch again after the coordinator merges. Never commit directly to `main`.
 - Resolve blocking findings within the assigned PR. Do not rewrite the application or introduce a backend, framework, provider, or dependency without a concrete need recorded in the decision log.
 - Use English for implementation, technical guidance and skills. Communicate with the coordinator in Chinese. Welcome Chinese-only submissions and preserve original wording and names.
 - Inspect `git status` first. Preserve others' changes. Work inside this repository, never stage the parent workspace or personal documents.
@@ -24,12 +26,14 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 ## Local artifact storage
 
 - Never create project folders or write project outputs in the parent workspace or beside this repository.
-- Use `.private/tmp/` for temporary files and caches, `.private/browser/` for browser profiles, `.private/sites/` for deployment checkouts and archives, and `.private/workspace-archive/` for retained legacy artifacts. Keep existing `dist/` and `build/` conventions. Never stage `.private/`.
+- Use `.private/tmp/` for temporary files and caches, `.private/worktrees/` for the two long-lived agent worktrees, `.private/browser/` for browser profiles, `.private/sites/` for deployment checkouts and archives, and `.private/workspace-archive/` for retained legacy artifacts. Keep existing `dist/` and `build/` conventions. Never stage `.private/`.
+- WorkBuddy's own application data directory (`C:/Users/zhangyang/WorkBuddy/Worktrees/碑帖之间/`) is the only permitted workspace outside this repository. It is a Git worktree managed by that application, not a project output; do not create other folders there.
 - Set tool output paths, browser profile paths, and temporary-directory variables explicitly as needed. If a tool cannot keep its output inside the project, report the limitation instead of writing beside the repository. Check for stray project outputs at handoff; leave unrelated folders alone.
 
 ## Evidence and data
 
-- Readers enter through the [Markdown library](knowledge/README.md). Author original editorial prose there. `knowledge/` is the only author source; `scripts/lib/knowledge-compiler.ts` produces `data/index/knowledge-v1.json`, and the website, checks, timeline, map and download package consume that interface. The old JSON under `data/works/`, `data/objects/`, `data/places.json`, `data/sources.json`, `data/media.json`, `data/knowledge-relations.json` and `data/yan-qinli-journey.json` is a frozen migration baseline; do not edit it or read it from the web.
+- Readers enter through the [Markdown library](knowledge/README.md). Author original editorial prose there. `knowledge/` is the only author source; `scripts/lib/knowledge-compiler.ts` produces `data/index/knowledge-v1.json`, and the website, checks, timeline, map and download package consume that interface.
+- The pre-rebuild JSON corpus (`data/works/`, `data/objects/`, `data/places.json`, `data/sources.json`, `data/media.json`, `data/knowledge-relations.json`, `data/yan-qinli-journey.json`) and its one-time migration tools were retired on 2026-11-25. They remain in the annotated tag `archive-pre-hygiene-2026-11-25`; do not reintroduce them into `main` or read them from the web.
 - Update generated pages with `npm run knowledge:compile && npm run knowledge:generate`. Never hand-edit `knowledge/catalogue/` or `knowledge/README.md`. Link drafts to the issue, evidence and relevant stable IDs. Review the [editorial workflow](docs/atlas-workflow.md) before changing historical claims.
 - Work and physical object remain separate. Never copy provenance between related objects.
 - Every collection assertion and history event needs evidence. Unknown values stay unknown. Source access date is not physical verification date.
@@ -55,7 +59,7 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 
 - Use small commits with `feat:`, `fix:`, `docs:`, `test:`, `ci:`, or `chore:` prefixes; do not rewrite history or push unless the current task calls for it.
 - For a small contribution, keep scope, assignee, evidence, actual checks, limitations and review in the Issue/PR. A contributor may submit either a browser-only source Issue or a Markdown PR. The editor links the two when normalizing a reader's submission.
-- For a milestone, migration or release, update the iteration board and write `docs/delivery-NNN.md` with the exact revision, changed files, commands/outcomes, screenshots for UI work, source gaps and limitations. The board's state cell opens with `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted` or `Superseded`. `npm run check:docs` checks that vocabulary, task rows and evidence links. Retain existing milestone evidence.
+- For a milestone, migration or release, update the iteration board and write `docs/delivery-NNN.md` with the exact revision, changed files, commands/outcomes, screenshots for UI work, source gaps and limitations. The board's state cell opens with `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted` or `Superseded`. `npm run check:docs` checks that vocabulary, task rows and evidence links. Milestone evidence may be retired from `main` only after the coordinator pushes an annotated `archive-*` tag; record the tag in [the archive index](docs/archive.md). Never rewrite history.
 - Review outcomes are changes-required / partially-verified / accepted. P1 blocks release; P2 must be fixed in its assigned iteration; P3 is optional polish. Never mark your own work independently accepted.
 - A review produced by the implementer's own tooling is a self-review. It may clear findings. Record who performed it and who decides acceptance in the PR (and the board row for a milestone).
 - Do not silently change these rules to make a failing check pass.
@@ -70,7 +74,7 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 
 ## Repository and preview workflow
 
-- Start a task branch from current project `main`. Record its review outcome before merge. Source merge, labelled preview and formal editorial approval are separate events.
+- Start a task branch from current project `main`. Local agents use their long-lived branch (`trae/work` or `workbuddy/work`) and open a PR after each task; external contributors use a short-lived `task/...` branch. Record its review outcome before merge. Source merge, labelled preview and formal editorial approval are separate events.
 - Apply the evidence checklist in [the atlas workflow](docs/atlas-workflow.md) to additions and coordinate changes. Sort the left column by the represented inscription's period, then date. Keep the production date of each copy visible in its own detail.
 - GitHub Pages is the sole website host. [The Pages workflow](.github/workflows/pages.yml) publishes a labelled preview of checked `main`. Record the deployed revision, Actions run, and observed network reachability separately.
 - A formal publication on GitHub Pages requires `npm run release`, a verified release manifest, editorial approval, and host checks. Follow [the release runbook](docs/release.md) before changing the Pages deployment mode.

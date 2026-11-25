@@ -1,8 +1,8 @@
 /**
  * Preview data check: `npm run check:data`.
  *
- * Reads the same JSON the application bundles, runs the shared validator, and
- * exits non-zero on any error so a broken record cannot reach a preview build.
+ * Compiles the Markdown knowledge base, runs the shared validator, and exits
+ * non-zero on any error so a broken record cannot reach a preview build.
  * Drafts are allowed here; `npm run release` is the strict gate.
  */
 
@@ -19,7 +19,7 @@ console.log('Knowledge:', report.counts.workArticles, 'work guides,', report.cou
   'people,', report.counts.noteArticles, 'notes,', report.counts.peopleRelations, 'relationships.');
 
 if (report.counts.works === 0 || report.counts.objects === 0) {
-  console.error('\nData validation FAILED: no works or objects were found in data/.');
+  console.error('\nData validation FAILED: no works or objects were found in the compiled knowledge base.');
   process.exit(1);
 }
 
