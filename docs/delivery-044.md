@@ -1,6 +1,6 @@
 # Delivery 044 · Retire the legacy corpus and trim the repository
 
-**Status: delivered — self-reviewed; awaiting coordinator merge and acceptance.** Base `0fc8b85` (`origin/main`, 2026-11-25). Branch `trae/work`. Archive tag `archive-pre-hygiene-2026-11-25` was pushed before any deletion.
+**Status: delivered — self-reviewed; awaiting coordinator merge and acceptance.** Base `0fc8b85` (`origin/main`, 2026-11-25). Branch `trae/work`. Implementation commits `551cac0` (workflow rules) and `ee74725` (legacy retirement and archive). Archive tag `archive-pre-hygiene-2026-11-25` was pushed before any deletion.
 
 ## Scope
 
