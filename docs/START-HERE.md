@@ -2,7 +2,7 @@
 
 A learner wants to identify the work on their desk, distinguish its surviving versions and learn what to look at in the writing. Follow that reader from a work to a person, a witness and a source. The project covers historical and modern calligraphy. A claim about current teaching use needs evidence for that use.
 
-[中文资料与试读指南](CONTRIBUTE.zh-CN.md) · [First internal beta on Pages](https://yang963852.github.io/beitie-atlas/) · [Markdown knowledge library](../knowledge/README.md)
+[中文资料与试读指南](CONTRIBUTE.zh-CN.md) · [First internal beta on Pages](https://yang963852.github.io/beitie-atlas/) · [Markdown knowledge library](../knowledge/README.md) · [Local agent workflow (Chinese)](agent-workflow.zh-CN.md)
 
 ## Choose the assignment
 
@@ -17,6 +17,8 @@ For the owner or an agent preparing a technical decision, start with the [Chines
 | Coordinate priorities or release | [Open Issues and PRs](../CONTRIBUTING.md#coordinators-queue), [milestone board](iteration-board.md), [release runbook](release.md) | Assignee, reviewer, recorded merge decision and separately authorized release |
 
 A local agent can read each `SKILL.md` directly from the checkout. Each assignment supplies a reader outcome, subject or files, base revision, evidence, acceptance example and stopping point. Copy the [task card and Chinese prompt](../templates/task-brief.md). GitHub handles repository permissions. A task description or skill provides workflow guidance.
+
+TRAE commits to the long-lived `trae/work` branch and WorkBuddy to `workbuddy/work`; each task opens a PR to `main`, and the coordinator decides the merge. Codex is read-only unless the coordinator asks for a written plan. The workspace, synchronization and cleanup rules are in [the local agent workflow](agent-workflow.zh-CN.md).
 
 ## Set up a clean workspace
 
@@ -48,6 +50,6 @@ Run `npm run check` again after implementation. Push the checked branch to the c
 | Compiler, interface or validation | `scripts/lib/knowledge-*.ts`, `src/domain/`, `data/index/knowledge-v1.json` | Run `npm run check:data`, `npm run check:interface`, `npm run check:isolation`, `npm run check:reproducible` |
 | Formal publication | `scripts/release.ts`, [release runbook](release.md) | Verify all reviewed inputs, release marker, manifest and host |
 
-The website reads `data/index/knowledge-v1.json`; it does not import author Markdown or the frozen legacy JSON. The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`.
+The website reads `data/index/knowledge-v1.json`; it does not import author Markdown. The pre-rebuild JSON corpus and its migration tools were retired on 2026-11-25 and remain in the annotated tag [archive-pre-hygiene-2026-11-25](https://github.com/yang963852/beitie-atlas/tree/archive-pre-hygiene-2026-11-25). The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`.
 
-The public **内部测试第一版** uses the checked Pages preview. The last owner-approved formal edition is tagged [v0.1.0-alpha.2](https://github.com/yang963852/beitie-atlas/tree/v0.1.0-alpha.2). Its approval and manifest are recorded in [delivery 021](delivery-021.md).
+The public **内部测试第一版** uses the checked Pages preview. The last owner-approved formal edition is tagged [v0.1.0-alpha.2](https://github.com/yang963852/beitie-atlas/tree/v0.1.0-alpha.2). Its approval and manifest are recorded in [delivery 021](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/delivery-021.md).
