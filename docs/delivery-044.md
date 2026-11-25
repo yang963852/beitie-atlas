@@ -1,6 +1,6 @@
 # Delivery 044 · One catalogue top and a flowing river
 
-**Status: implemented and self-reviewed; [PR #48](https://github.com/yang963852/beitie-atlas/pull/48) updated after merging task 043; checks pending.** Branch `feat/043-unified-library-river`, base `19d3550` (work began at `0fc8b85`).
+**Status: delivered and deployed as the labelled preview. Merged in [PR #48](https://github.com/yang963852/beitie-atlas/pull/48) at `9cce99e`.** Branch `feat/043-unified-library-river`, base `19d3550` (work began at `0fc8b85`).
 
 ## Scope
 
@@ -28,7 +28,7 @@
 | --- | --- |
 | `npm.cmd run typecheck` | Passed |
 | `npx.cmd vitest run tests/atlas-timeline.test.tsx tests/library.test.tsx` | Passed: 2 files / 11 tests |
-| `npm.cmd run check` | Passed after merging task 043: interface current; data 0 errors / 38 known warnings; 109 catalogue pages current; isolation and reproducibility (566 source files); board 44 rows; 18 test files / 156 tests; ZIP 571 files; preview build succeeded. The local ZIP revision was unrecorded during the merge; the PR check records it. |
+| `npm.cmd run check` | Passed after merging task 043: interface current; data 0 errors / 38 known warnings; 109 catalogue pages current; isolation and reproducibility (566 source files); board 44 rows; 18 test files / 156 tests; ZIP 571 files; preview build succeeded. |
 | Browser checks | Passed at 390 / 768 / 1440, English locale and reduced motion; no page errors or horizontal overflow |
 
 ## Evidence
@@ -39,6 +39,7 @@
 - [Collection map 1440](../screenshots/044-collections-1440.jpg)
 - [Library entry 1440](../screenshots/044-entry-1440.jpg)
 - [English library](../screenshots/044-library-en-1440.jpg), [English historical threads](../screenshots/044-catalogue-en-1440.jpg)
+- Live preview at `9cce99e`: [library](../screenshots/044-live-library-1440.jpg), [historical threads](../screenshots/044-live-catalogue-1440.jpg)
 
 ## Limitations
 
@@ -46,6 +47,13 @@
 - Card names are visually clamped to two lines on narrow slips; the full link text remains in the DOM and the reading card shows the full title, date and attribution.
 - The English nav stays `Chronology`; only the Chinese label changed as requested.
 - Dark mode and a formal release remain out of scope; drafts still block `npm run release`.
+
+## Merge and deployment
+
+- PR #48 passed the Preview quality checks ([run 45518553172](https://github.com/yang963852/beitie-atlas/actions/runs/45518553172)) and merged on 2026-11-25T00:31:20Z at `9cce99e82a0c85d0645ccbfdfb102d73ccc19a57`, on the coordinator's instruction, after merging [PR #49](https://github.com/yang963852/beitie-atlas/pull/49) (task 043) and its deploy record.
+- The post-merge Preview quality checks ([run 45518711509](https://github.com/yang963852/beitie-atlas/actions/runs/45518711509)) and Publish GitHub Pages preview ([run 45518711551](https://github.com/yang963852/beitie-atlas/actions/runs/45518711551)) succeeded.
+- The [public preview](https://yang963852.github.io/beitie-atlas/) returns HTTP 200. Live measurements: library h1 `作品与书家`, active `知识库`, lede `共 108 部作品 · 7 位书家 · 2 篇读帖笔记，依时代编次`; masthead 61.375 px and nav 50.531 px; 108 timeline cards with `大盂鼎` first; card 187.19 × 86.39 px; river frames 1.2 s apart differ; collection map active `馆藏地图`; the map pin filter resolves to `hue-rotate(150deg) saturate(1.35) brightness(0.95)`; no page errors or horizontal overflow.
+- Reachability was observed from this execution environment. Mainland public-network access and a formal release were not tested; drafts still block `npm run release`.
 
 ## Rollback
 
