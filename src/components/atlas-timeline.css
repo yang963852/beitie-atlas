@@ -94,7 +94,7 @@
 .reader-sections a {text-decoration:none;padding:.9rem 0 .65rem;font:1rem var(--book);}
 .reader-sections [aria-current] {border-bottom:2px solid #904534;color:#7e3729;}
 .river-reach {position:relative;isolation:isolate;}
-.ink-river {position:absolute;top:calc(50% + .5rem);left:0;right:0;height:4rem;transform:translateY(-50%);pointer-events:none;background:linear-gradient(176deg,transparent 43%,#93a69a70 48%,#708e8255 51%,transparent 57%);z-index:-1;}
+.ink-river {position:absolute;top:calc(50% + .95rem);left:0;right:0;height:7rem;transform:translateY(-50%);pointer-events:none;background:radial-gradient(130% 60% at 50% 50%,#0e355fb8 0%,#21578394 42%,#85b2cc4d 70%,transparent 78%);z-index:-1;}
 .ink-river:has(canvas) {background:none;}
 .atlas-rail {display:flex;overflow-x:auto;overflow-y:hidden;padding:.35rem .2rem .8rem;align-items:stretch;}
 .atlas-period {border:0;padding:0;}
@@ -118,6 +118,7 @@
 .atlas-reader .map-overview {background-color:#f4f1e7;background-image:linear-gradient(to right,#a99e802b 1px,transparent 1px),linear-gradient(to bottom,#a99e802b 1px,transparent 1px);}
 .atlas-reader .map-overview__marker {background:#48655b;}
 .atlas-reader .map-overview__marker[aria-pressed=true] {background:#8a4637;outline-color:#8a4637;}
+@media(min-width:761px){.atlas-period li {height:17rem;}}
 @media(max-width:540px){
   .atlas-time,.atlas-journey {padding-top:1.5rem;}
   .atlas-toolbar {gap:.65rem;}
@@ -454,22 +455,29 @@
   font: 0.9rem/1.5 var(--book);
 }
 
+@media (max-width: 760px) {
+  .ink-river {
+    height: 5.6rem;
+  }
+}
+
 .ink-river {
-  background: linear-gradient(176deg, transparent 43%, rgba(102, 82, 60, 0.28) 48%, rgba(62, 47, 34, 0.22) 51%, transparent 57%);
+  background: radial-gradient(130% 60% at 50% 50%, rgba(14, 53, 95, 0.72) 0%, rgba(33, 87, 131, 0.58) 42%, rgba(133, 178, 204, 0.3) 70%, transparent 78%);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .ink-river:not(:has(canvas)) {
     background-image:
-      repeating-linear-gradient(100deg, transparent 0 22px, rgba(143, 111, 78, 0.16) 24px 26px, transparent 28px 56px),
-      linear-gradient(176deg, transparent 42%, rgba(143, 111, 78, 0.38) 47%, rgba(75, 56, 38, 0.3) 51%, transparent 58%);
-    background-size: 112px 100%, 100% 100%;
-    animation: river-drift 10s linear infinite;
+      repeating-linear-gradient(97deg, transparent 0 34px, rgba(240, 247, 250, 0.13) 36px 38px, transparent 40px 74px),
+      repeating-linear-gradient(84deg, transparent 0 52px, rgba(240, 247, 250, 0.07) 54px 55px, transparent 57px 108px),
+      radial-gradient(130% 60% at 50% 50%, rgba(14, 53, 95, 0.72) 0%, rgba(33, 87, 131, 0.58) 42%, rgba(133, 178, 204, 0.3) 70%, transparent 78%);
+    background-size: 300px 100%, 440px 100%, 100% 100%;
+    animation: river-drift 9s linear infinite;
   }
 
   @keyframes river-drift {
     to {
-      background-position: -112px 0, 0 0;
+      background-position: 300px 0, 440px 0, 0 0;
     }
   }
 }
