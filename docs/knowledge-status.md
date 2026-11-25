@@ -10,7 +10,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | --- | --- |
 | Works | 117 (117 reviewed / 0 draft) |
 | Objects | 126 (126 reviewed / 0 draft) |
-| Guides | 4 (4 reviewed / 0 draft) |
+| Guides | 5 (4 reviewed / 1 draft) |
 | People pages | 8 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
@@ -47,7 +47,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [居延新简·隧长焦永死驹劾状](../knowledge/works/juyan-hanjian.md) | Eastern Han | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [石门颂](../knowledge/works/shimen-song.md) | Eastern Han | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [乙瑛碑](../knowledge/works/yiying-bei.md) | Eastern Han | reviewed | — | 0 | 2 | 1 | 0/1 | — |
-| [礼器碑](../knowledge/works/liqi-bei.md) | Eastern Han | reviewed | — | 1 | 2 | 2 | 1/2 | — |
+| [礼器碑](../knowledge/works/liqi-bei.md) | Eastern Han | reviewed | draft | 1 | 2 | 2 | 1/2 | — |
 | [鲜于璜碑](../knowledge/works/xianyu-huang-bei.md) | Eastern Han | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [衡方碑](../knowledge/works/hengfang-bei.md) | Eastern Han | reviewed | — | 0 | 1 | 2 | 2/2 | — |
 | [史晨碑](../knowledge/works/shichen-bei.md) | Eastern Han | reviewed | — | 0 | 2 | 1 | 0/1 | — |

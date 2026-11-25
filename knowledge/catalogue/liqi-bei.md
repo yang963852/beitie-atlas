@@ -16,7 +16,7 @@ Stele of the Ritual Vessels
 
 书体：隶书
 
-延伸阅读：[翁方纲](../people/weng-fanggang.md)
+延伸阅读：[礼器碑](../works/liqi-bei.md) · [翁方纲](../people/weng-fanggang.md)
 
 作品待考与说明
 

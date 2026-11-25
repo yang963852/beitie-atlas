@@ -39,6 +39,9 @@ review:
 # 可选：有出处的异说、学术意见或编辑推定。
 claims: []
 # 可选：作品导读。没有导读时删除整段。
+# 正文写「## 导读 / ### 中文 / ### English」；七段（01 概述 … 07 研究与文献）用 #### 标题，
+# 是 docs/knowledge-plan.md 第四节的编辑规范，不是 YAML 字段。
+# 03 的审美评价与 05 的临习建议须由有书法实践的人审读；审读前 state: draft。
 guide:
   state: draft
   timelineYear: 779
