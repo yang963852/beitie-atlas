@@ -17,7 +17,8 @@
 
 - Masthead height 61.375 px and section nav height 50.531 px on all three entries at 1440; both start at the same y.
 - Active labels: 知识库, 历史脉络, 馆藏地图.
-- A timeline card at 1440: 187.19 × 86.39 px, text `石鼓文`.
+- The timeline now renders 108 cards; the first is 大盂鼎 after the bronze and slip records merged. The library lede reports 108 works.
+- A timeline card at 1440: 187.19 × 86.39 px, text `石鼓文` before the merge and the same slip size for `大盂鼎` after it.
 - Two river frames 1.2 s apart differ; with reduced motion the same two frames are byte-identical.
 - No page errors or horizontal overflow at 1440 / 768 / 390; English labels and cards render with the shared nav.
 
@@ -27,7 +28,7 @@
 | --- | --- |
 | `npm.cmd run typecheck` | Passed |
 | `npx.cmd vitest run tests/atlas-timeline.test.tsx tests/library.test.tsx` | Passed: 2 files / 11 tests |
-| `npm.cmd run check` | Passed: interface current; data 0 errors / 38 known warnings; 99 catalogue pages current; isolation and reproducibility (518 files); board 43 rows; 18 test files / 156 tests; ZIP 523 files; preview build succeeded |
+| `npm.cmd run check` | Passed after merging task 043: interface current; data 0 errors / 38 known warnings; 109 catalogue pages current; isolation and reproducibility (566 source files); board 44 rows; 18 test files / 156 tests; ZIP 571 files; preview build succeeded. The local ZIP revision was unrecorded during the merge; the PR check records it. |
 | Browser checks | Passed at 390 / 768 / 1440, English locale and reduced motion; no page errors or horizontal overflow |
 
 ## Evidence
