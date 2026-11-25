@@ -1,6 +1,6 @@
 # Delivery 045 · Retire the legacy corpus and trim the repository
 
-**Status: delivered — self-reviewed; awaiting coordinator merge and acceptance.** Base `0fc8b85` (`origin/main`, 2026-11-25). Branch `trae/work`. Implementation commits `551cac0` (workflow rules) and `ee74725` (legacy retirement and archive). Archive tag `archive-pre-hygiene-2026-11-25` was pushed before any deletion.
+**Status: delivered — self-reviewed; awaiting coordinator merge and acceptance.** Base `0fc8b85` (`origin/main`, 2026-11-25). Branch `trae/work`. Implementation commits `551cac0` (workflow rules), `ee74725` (legacy retirement and archive), `d3b6a4f` (renumber to task 045), and integration merges `94316d0` and `4e4b5ce`. Archive tag `archive-pre-hygiene-2026-11-25` was pushed before any deletion.
 
 ## Scope
 
@@ -18,11 +18,18 @@
 | Archive tag | `git push origin archive-pre-hygiene-2026-11-25` succeeded before deletion |
 | Long-lived branches | `origin/trae/work` and `origin/workbuddy/work` pushed from `0fc8b85` |
 
+## Local cleanup
+
+- Removed seven stale worktrees: `worktree-040`, `worktree-042`, `worktree-a`, `worktree-b`, `worktree-d`, `direct-pr-verification` and `review-pr29-38d73a6`.
+- Deleted 51 merged local branches plus five archived unmerged branches; kept `main`, `trae/work`, `workbuddy/work`, the active `feat/043-unified-library-river` worktree and WorkBuddy's running session.
+- Deleted old `.private/tmp` test copies and caches, and the completed `043-live` browser profile. `.private` fell from about 6.2 GB (after the worktree copies) to about 313 MB.
+- WorkBuddy currently uses `C:\Users\zhangyang\WorkBuddy\Worktrees\碑帖之间\main-57a0db19` on branch `workbuddy/main-57a0db19`; the new long-lived workspace is `.private/worktrees/workbuddy` on `workbuddy/work`.
+
 ## Not done here
 
 - The coordinator decides the merge. This report is a self-review, not an acceptance.
-- Two parallel task-043 workstreams (`tasks/043-bronze-and-slips.md` in the primary checkout and `tasks/043-unified-reader-river.md` in `feat/043-unified-library-river`) are left untouched. They need renumbering or a merge decision before their rows enter the board.
-- Local branch/worktree/cache cleanup and the `workbuddy/work` workspace handoff are performed after the merge; WorkBuddy's running session is not interrupted.
+- Task 043 (bronze/slips) and task 044 (unified reader river) were merged into `main` while this branch was open; their task cards, deliveries, screenshots and counts are included. The repository-hygiene task was renumbered from 044 to 045 to avoid the collision.
+- WorkBuddy's running session is not interrupted. Its worktree and the active `worktree-043` are retained.
 - GitHub clone size will not shrink materially because history is not rewritten.
 
 ## Rollback
