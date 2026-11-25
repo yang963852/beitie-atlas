@@ -38,6 +38,7 @@ const OBJECT_TYPES = new Set([
   'manuscript-copy',
   'original-stele',
   'cliff-inscription',
+  'bronze-vessel',
   'recarving',
   'rubbing',
   'fragment',

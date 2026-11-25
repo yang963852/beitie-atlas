@@ -351,7 +351,7 @@ export function readWork(recordInput: MarkdownRecord): { work: Work; guide: (Gui
 }
 
 const OBJECT_TYPES = new Set<ObjectType>([
-  'ink-manuscript', 'manuscript-copy', 'original-stele', 'cliff-inscription', 'recarving', 'rubbing', 'fragment',
+  'ink-manuscript', 'manuscript-copy', 'original-stele', 'cliff-inscription', 'bronze-vessel', 'recarving', 'rubbing', 'fragment',
 ]);
 const SURVIVAL = new Set<SurvivalStatus>(['surviving', 'lost', 'unknown']);
 const RELATIONSHIP_TYPES = new Set(['rubbing-of', 'recarving-of', 'fragment-of']);
