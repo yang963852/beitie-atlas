@@ -8,17 +8,17 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 
 | Measure | Value |
 | --- | --- |
-| Works | 117 (117 reviewed / 0 draft) |
+| Works | 117 (114 reviewed / 3 draft) |
 | Objects | 126 (126 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
 | People pages | 12 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
-| Sources | 186 (0 uncited) |
+| Sources | 189 (0 uncited) |
 | Events | 75 (50 objects with events) |
 | Attribution entries linked to a person | 25 / 159 |
-| Work sources (0 / 1 / 2+) | 0 / 81 / 36 |
-| Reviewed works with one source | 81 |
+| Work sources (0 / 1 / 2+) | 0 / 79 / 38 |
+| Reviewed works with one source | 78 |
 | Dates without source wording | 44 |
 
 ## Gaps
@@ -104,7 +104,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [三坟记](../knowledge/works/sanfen-ji.md) | Tang | reviewed | — | 0 | 2 | 1 | 1/1 | — |
 | [大唐中兴颂](../knowledge/works/datang-zhongxing-song.md) | Tang | reviewed | — | 1 | 2 | 1 | 0/1 | — |
 | [麻姑仙坛记](../knowledge/works/magu.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
-| [自叙帖](../knowledge/works/zixu.md) | Tang | reviewed | — | 0 | 1 | 1 | 0/1 | — |
+| [自叙帖](../knowledge/works/zixu.md) | Tang | draft | — | 0 | 2 | 1 | 0/1 | — |
 | [颜勤礼碑](../knowledge/works/yan-qinli-bei.md) | Tang | reviewed | reviewed | 1 | 3 | 2 | 2/5 | — |
 | [颜氏家庙碑](../knowledge/works/yan-jiamiao-bei.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [大秦景教流行中国碑](../knowledge/works/daqin-jingjiao-bei.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
@@ -124,7 +124,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [黄州寒食诗帖](../knowledge/works/hanshi.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 0/1 | 1 |
 | [蜀素帖](../knowledge/works/shusu.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [苕溪诗卷](../knowledge/works/tiaoxi.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [松风阁诗](../knowledge/works/songfeng.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 0/1 | 1 |
+| [松风阁诗](../knowledge/works/songfeng.md) | Northern Song | draft | — | 0 | 3 | 1 | 0/1 | 1 |
 | [自书诗卷](../knowledge/works/cai-zishu.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [秾芳诗帖](../knowledge/works/nongfang-shitie.md) | Northern Song | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [珊瑚帖](../knowledge/works/shanhu.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
@@ -135,7 +135,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [洛神赋](../knowledge/works/zhao-luoshen.md) | Yuan | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |
 | [墨池堂选帖](../knowledge/works/mochitang.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [梅雪轩书晦翁不自弃文](../knowledge/works/meixuexuan-buziqi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [王铎行草书自书诗卷](../knowledge/works/wangduo-zishu-shi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [王铎行草书自书诗卷](../knowledge/works/wangduo-zishu-shi.md) | Ming | draft | — | 0 | 1 | 1 | 1/1 | — |
 | [行书论书卷](../knowledge/works/dong-lunshu.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |
 | [楷书归去来兮辞页](../knowledge/works/wen-guiqulai.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |
 | [三体杂书诗卷](../knowledge/works/zhu-santi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |

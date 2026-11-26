@@ -5,7 +5,7 @@
     "works": 117,
     "objects": 126,
     "places": 46,
-    "sources": 186,
+    "sources": 189,
     "media": 1,
     "events": 75,
     "workArticles": 14,
@@ -4291,16 +4291,27 @@
         "note": null
       },
       "script": "行书",
-      "background": "北宋黄庭坚书《松风阁诗》。",
-      "backgroundZh": "北宋黄庭坚书《松风阁诗》。",
+      "background": "In 1102, the first year of Chongning, Huang Tingjian was removed from his post at Taiping and given the sinecure of supervising the Yulong Abbey in Hongzhou. He went up the Yangzi intending to settle near Jingnan, but stopped at Fankou in the ninth month and stayed on at Wuchang, today’s Ezhou. The Ezhou Municipal Museum records that he lodged in an old temple on West Mountain, “lost in the ancient pines that fill the slopes, sleeping to the sound of wind in the pines and rain”, and visited the Cold Stream, the Bodhisattva Spring, the fishing terrace and the Yiting pavilion; there, in the ninth month of that year, he wrote the Poem on the Hall of Wind and Pines. It is a seven-character poem, opening “a pavilion built against the hill looks out on the plain”, turning on the night rain and drinking, “rain sounding in the corridor till dawn”, and closing “the man of Dongpo has already sunk into the spring, when will Lord Zhang appear before my eyes” — Su Shi was dead, Zhang Lei had not come. In the same year and the same place he joined Zhang Lei and Chao Buzhi in writing the epitaphs of Li Shenzhi and his wife, which locals called “three excellences”. [Ezhou Municipal Museum, the Su family exhibition](https://ezbwg.com/ReadNews.asp?NewsId=1736)\n\nThe work is ink on paper. According to the Ezhou Daily it measures 32.8 by 219.2 cm and runs to twenty-nine lines. Fifteen colophons follow, from the Song and Yuan onward; the scroll carries the seals of Jia Sidao, the Grand Princess, Xiang Yuanbian, Sun Chengze, An Qi and Bian Yongyu, along with the Qianlong, Jiaqing and Xuantong “imperial inspection” seals. It is recorded in the Qianshan tang shuhua ji, the Qinghe shuhua fang, the Gengzi xiaoxia ji, the Moyuan huiguan and the second series of the Shiqu baoji, and was carved into the Sanxitang fatie and other modelbooks. The original is now in the National Palace Museum, Taipei. [Ezhou Daily, Huang Tingjian and the Hall of Wind and Pines](https://ga.eznews.cn/ezrb/2021/20210121/20210121_005/20210121_005_1.htm)\n\nThe chain of ownership can be read as a curriculum vitae: the Xiang family in the Song, then Jia Sidao; the Grand Princess Sengge Ragi in the Yuan; Xiang Yuanbian in the Ming; Sun Chengze, An Qi and Bian Yongyu in the Qing, and finally the imperial collection. A poem written overnight in a mountain temple travelled from private hands to the emperor’s shelves, leaving a seal at every change of hand. [Ezhou Daily, Huang Tingjian and the Hall of Wind and Pines](https://ga.eznews.cn/ezrb/2021/20210121/20210121_005/20210121_005_1.htm)",
+      "backgroundZh": "崇宁元年（1102），黄庭坚罢太平州，改“管勾洪州玉隆观”，溯江西上，本欲卜居荆南，九月停船樊口，却在武昌（今鄂州）盘桓下来。鄂州市博物馆记他寓居西山古寺，“沉醉于满山参天的古松，听松涛与雨声而眠”，又游寒溪、菩萨泉、钓台、怡亭，就在这一年九月写成《松风阁诗帖》。诗为七言，起句“依山筑阁见平川”，中间写夜雨会饮“夜雨鸣廊到晓悬”，末段“东坡道人已沉泉，张侯何时到眼前”——苏轼已死，张耒未到。同一年同一地，他还与张耒、晁补之合书李深之夫妇墓志，被当地称作“三绝”。[鄂州市博物馆，苏门三绝展](https://ezbwg.com/ReadNews.asp?NewsId=1736)\n\n墨迹纸本，据《鄂州日报》所记，纵三十二点八厘米、横二百一十九点二厘米，二十九行。卷后有宋元以来十五家跋语，钤贾似道、大长公主、项元汴、孙承泽、安岐、卞永誉诸家印，又有乾隆、嘉庆、宣统“御览之宝”；著录于《钤山堂书画记》《清河书画舫》《庚子销夏记》《墨缘汇观》《石渠宝笈续编》，并刻入《三希堂法帖》等丛帖。原迹今藏台北故宫博物院。[鄂州日报，黄庭坚与松风阁](https://ga.eznews.cn/ezrb/2021/20210121/20210121_005/20210121_005_1.htm)\n\n递藏一线可以当履历读：宋时归向氏，后入贾似道；元归大长公主祥哥喇吉；明入项元汴；清经孙承泽、安岐、卞永誉，终入内府。一件夜宿山寺写成的诗稿，从私人手里一路走到皇帝的书架，每一次转手都留一方印。[鄂州日报，黄庭坚与松风阁](https://ga.eznews.cn/ezrb/2021/20210121/20210121_005/20210121_005_1.htm)",
       "sourceRefs": [
-        "src-catalogue-songfeng"
+        "src-catalogue-songfeng",
+        "src-ezbwg-songfeng",
+        "src-ezrb-songfeng"
       ],
       "review": {
-        "state": "reviewed",
+        "state": "draft",
         "note": null
       },
-      "notes": []
+      "notes": [
+        "The newspaper consulted gives 150 characters; other accounts usually give 153. The original has not been checked, so no character count is stated here.",
+        "Dimensions and line count come from the Ezhou Daily and have not been checked against the Taipei catalogue; the original is in Taipei, and this entry answers only for the printed record.",
+        "The newspaper gives only the number and period of the fifteen colophons, not their authors; the list awaits a museum catalogue."
+      ],
+      "notesZh": [
+        "所据报刊作一百五十字，通行别本多作一百五十三字，未据原件复核，故本条不记字数。",
+        "尺寸与行数出自《鄂州日报》，未及台北故宫著录页核对；原迹在台北，本条只对纸上的记录负责。",
+        "卷后十五家跋语，所据报刊只记人数与时代，未列姓名；待据馆方著录补。"
+      ]
     },
     {
       "id": "stone-drum-inscriptions",
@@ -4590,22 +4601,26 @@
         "note": "末款“己卯正月弟王铎具草”。"
       },
       "script": "行草",
-      "background": "This scroll carries six of Wang Duo’s own poems. It is ink on paper, written in the first month of 1639, when Wang was forty-seven, and is now in the Palace Museum. The running-cursive brushwork runs on continuously without many joined characters, held together by column rhythm; it shows the manner of his middle years as his style took shape. Wang traced his lineage through Zhong Yao, the two Wangs, Yan Zhenqing and Mi Fu, and became known for running and cursive script. This scroll can be read as the starting point of that style.",
-      "backgroundZh": "此卷书王铎自作诗六首，纸本，作于明崇祯十二年（1639）正月，王铎时年四十七，今藏故宫博物院。行草笔势连绵而字间连带不多，靠行气贯通，是他中年书风形成期的面貌。王铎由钟繇、二王、颜真卿、米芾上溯，以行草著称，此卷正可看作其风格的起点。",
+      "background": "This scroll carries six of Wang Duo’s own poems. It is ink on paper, written in the first month of 1639, when Wang was forty-seven, and is now in the Palace Museum. The running-cursive brushwork runs on continuously without many joined characters, held together by column rhythm; it shows the manner of his middle years as his style took shape. Wang traced his lineage through Zhong Yao, the two Wangs, Yan Zhenqing and Mi Fu, and became known for running and cursive script. This scroll can be read as the starting point of that style. [Palace Museum, Wang Duo’s scroll of his own poems](https://www.dpm.org.cn/collection/handwriting/228265.html)\n\nThe museum gives its size as 26.9 by 166 cm. The text opens “for my elder brother of the same examination year, Judge of Nankang, six poems presented”, and closes “respectfully drafted by your younger brother Wang Duo, first month of jimao”, with the seals “Wang Duo’s seal” and “Fisherman of the Misty Pool” at the left. The modern scholar Ma Zonghuo wrote: “Ming men’s cursive all stretch the brush to seize momentum; Juesi stretches and can also hold back, so he never exhausts the momentum and yet it seems inexhaustible — this is not something a man of less than full strength could say.” The scroll tests that sentence: the brush runs on and on, yet never quite lets go, held inside the column rhythm. [Palace Museum, Wang Duo’s scroll of his own poems](https://www.dpm.org.cn/collection/handwriting/228265.html)\n\nWang Duo (1592–1652), courtesy name Juesi, style names Songqiao, Fisherman of the Misty Pool and Chixian Daoren, was a native of Mengjin, modern Mengjin county in Luoyang. He passed the examinations in 1622 and rose to minister of rites and grand secretary of the East Pavilion. In calligraphy he studied Zhong Yao, the two Wangs, Yan Zhenqing and Mi Fu, drawing most on the Chunhua ge tie; steeped in the old methods, he also innovated, and was strongest in running and cursive script. His carvings include the Nishan yuan tie and the Langhua guan tie, and the Qing History carries his biography. [Palace Museum, Wang Duo’s scroll, biography of Wang Duo](https://www.dpm.org.cn/collection/handwriting/228265.html)",
+      "backgroundZh": "此卷书王铎自作诗六首，纸本，作于明崇祯十二年（1639）正月，王铎时年四十七，今藏故宫博物院。行草笔势连绵而字间连带不多，靠行气贯通，是他中年书风形成期的面貌。王铎由钟繇、二王、颜真卿、米芾上溯，以行草著称，此卷正可看作其风格的起点。[故宫博物院，王铎行草书自书诗卷](https://www.dpm.org.cn/collection/handwriting/228265.html)\n\n据故宫著录，卷纵二十六点九厘米、横一百六十六厘米。释文起首作“君宣年家兄翁判南康，赠以六首”，末款“己卯正月弟王铎具草”，左钤“王铎之印”“烟潭渔叟”。近人马宗霍说：“明人草书，无不纵笔以取势者，觉斯则纵而能敛，故不极势而势若不尽，非力有余者，未易语此。”这卷正可拿来验这句话：笔势一路连绵，却始终没有放尽，收在行气里。[故宫博物院，王铎行草书自书诗卷](https://www.dpm.org.cn/collection/handwriting/228265.html)\n\n王铎（1592—1652），字觉斯，号嵩樵、烟潭渔叟、痴仙道人，孟津（今洛阳孟津县）人。明天启二年（1622）进士，累官礼部尚书、东阁大学士。书法师钟繇、二王、颜真卿、米芾，尤得力于《淳化阁帖》，既浸淫古法又有所创新，最擅行、草，刻有《拟山园帖》《琅华馆帖》，《清史稿》有传。[故宫博物院，王铎行草书自书诗卷·王铎](https://www.dpm.org.cn/collection/handwriting/228265.html)",
       "sourceRefs": [
         "src-dpm-wangduo"
       ],
       "review": {
-        "state": "reviewed",
+        "state": "draft",
         "note": null
       },
       "notes": [
         "The scroll carries no collector’s seals and is not recorded in early catalogues; its early transmission is unknown.",
-        "The museum does not identify the dedicatee named at the beginning of the scroll."
+        "The museum does not identify the dedicatee named at the beginning of the scroll.",
+        "The museum catalogues the scroll under the Qing, though its colophon is dated jimao, the twelfth year of Chongzhen in the Ming; this entry dates it by the colophon.",
+        "The museum’s note gives the dedicatee’s name as Junxuan while its transcription of the text reads Qunxuan; the one-character difference is left unresolved."
       ],
       "notesZh": [
         "本幅无藏印，亦未见著录，早期流传不明。",
-        "卷首上款所涉人物，馆方未作考订。"
+        "卷首上款所涉人物，馆方未作考订。",
+        "馆方条目朝代作“清”，而款识为己卯（明崇祯十二年），本库按书写年份系于明。",
+        "馆方说明记上款作“君宣”，同页释文作“群宣”，一字之异未详孰是。"
       ]
     },
     {
@@ -6521,16 +6536,26 @@
         "note": null
       },
       "script": "草书",
-      "background": "唐怀素书《自叙帖》。",
-      "backgroundZh": "唐怀素书《自叙帖》。",
+      "background": "Huaisu (737–799), whose secular surname was Qian and whose courtesy name was Zangzhen, was a native of Lingling in Yongzhou, modern Hunan. He left home as a boy, loved the brush in the intervals of meditation, and became famous for wild cursive; history calls him the “cursive sage”. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)\n\nThe scroll is ink on paper. The Qilu Evening News gives its size as 28.3 by 755 cm, in 126 lines and 698 characters. The text recounts his study of calligraphy and appends poems given to him by Yan Zhenqing, Zhang Wei, Dai Shulun and others: the first half is his own account, the second a gathering of contemporary praise. It opens “Huaisu’s home is in Changsha; as a boy I served the Buddha, and in the intervals of meditation I loved the brush”, and it closes “the twenty-eighth day of the tenth month, winter, dingsi of the Dali era” — dingsi being 777. The article calls it the longest work Huaisu left and notes that it is “known as the finest cursive under heaven”. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)\n\nThe frontispiece is Li Dongyang’s seal-script “Zangzhen’s own account”. The scroll passed through the Southern Tang palace collection, then Su Shunqin, Shao Ye and Lü Bian in the Song; Xu Qianzhai, Wu Kuan, Wen Zhengming and Xiang Yuanbian in the Ming; and Xu Yufeng, An Qi and the Qing palace. It is now in the National Palace Museum, Taipei. The seals run from the tenth century to the eighteenth without a gap. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)\n\nOpening the scroll, look first for the first six lines. The article says they are “said to have been supplied by the Song collector Su Shunqin, and set beside the seventh line onward the difference is like heaven and earth”. That seam between supplement and original is the most concrete reading point in the scroll: see the six lines first, then watch how the movement picks up from the seventh. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)",
+      "backgroundZh": "怀素（737—799），俗姓钱，字藏真，永州零陵（今湖南零陵）人。自幼出家，经禅之暇好笔翰，以狂草名世，史称“草圣”。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)\n\n卷为纸本墨迹，据《齐鲁晚报》所记，纵二十八点三厘米、横七百五十五厘米，一百二十六行，六百九十八字。内容是自述学书经历，兼录颜真卿、张谓、戴叔伦等人赠诗：前半是自叙，后半是一卷时人评语的汇编。开篇“怀素家长沙，幼而事佛，经禅之暇，颇好笔翰”，说的就是他自己；卷末署“时大历丁巳冬十月廿有八日”，丁巳即大历十二年（777）。文章说它是怀素流传下来篇幅最长的作品，“人称‘天下第一草书’”。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)\n\n卷前有明李东阳篆书引首“藏真自叙”。全卷经南唐内府、宋苏舜钦、邵叶、吕辩，明徐谦斋、吴宽、文徵明、项元汴，清徐玉峰、安岐、清内府递藏，今藏台北故宫博物院。一串藏印从十世纪排到十八世纪，中间没有断代。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)\n\n打开全卷先找前六行。文章说“最初的六行，据说是由此帖收藏者苏舜钦（宋）所补写，与第七行以下的相比，确有天壤之别”。补书与原文的界线，是这一卷最实在的一处读点：先看这六行，再看第七行以后笔势怎样接上去。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)",
       "sourceRefs": [
-        "src-catalogue-zixu"
+        "src-catalogue-zixu",
+        "src-qlwb-zixu"
       ],
       "review": {
-        "state": "reviewed",
+        "state": "draft",
         "note": null
       },
-      "notes": []
+      "notes": [
+        "The date is given as either 776 or 777: the article opens with “the eleventh or twelfth year of Dali (776 or 777)”, while the transcription it prints ends “dingsi of Dali”, and dingsi is 777. This entry follows the colophon and dates the work to 777, recording both readings.",
+        "The supplement of the first six lines is introduced with “said to be”; neither the copyist nor the date of the supplement is recorded by the museum.",
+        "Dimensions, line count and character count come from the newspaper and have not been checked against the museum catalogue. The scroll’s authenticity has long been debated; this entry does not enter that debate and awaits citable sources."
+      ],
+      "notesZh": [
+        "年代有 776 与 777 两说：文章开篇作“大历十一年或十二年（776或777年）”，而所录释文末署“大历丁巳”，丁巳为大历十二年。本库依自署系于 777，两说并记。",
+        "前六行补书之说，文章作“据说”；补书者与补写时间均未见馆方著录。",
+        "尺寸、行数、字数依报刊，未据馆方著录复核；此帖真伪历来有议，本条目未展开，待补可引来源。"
+      ]
     },
     {
       "id": "zoumalou-wujian",
@@ -17173,6 +17198,28 @@
       "note": null
     },
     {
+      "id": "src-ezbwg-songfeng",
+      "kind": "web",
+      "title": "苏门三绝——宋李深之及其龚夫人石墓志铭展",
+      "publisher": "鄂州市博物馆",
+      "url": "https://ezbwg.com/ReadNews.asp?NewsId=1736",
+      "publicationDate": null,
+      "accessedAt": "2026-11-26",
+      "locator": "展览说明中「北宋崇宁元年（公元1102年）」一段：黄庭坚罢太平州、改「管勾洪州玉隆观」、溯江西上、九月停留樊口、寓居西山古寺年余，并于是年九月完成《松风阁诗帖》",
+      "note": "Museum exhibition page. Used for the circumstances of composition only; it gives no dimensions, line count or transmission."
+    },
+    {
+      "id": "src-ezrb-songfeng",
+      "kind": "web",
+      "title": "黄庭坚与松风阁",
+      "publisher": "鄂州日报",
+      "url": "https://ga.eznews.cn/ezrb/2021/20210121/20210121_005/20210121_005_1.htm",
+      "publicationDate": "2021-01-21",
+      "accessedAt": "2026-11-26",
+      "locator": "记墨迹粉花白纸本、纵32.8厘米横219.2厘米、二十九行、一百五十字；卷后宋元以来十五家跋；自宋向氏、贾似道、元大长公主、明项元汴至清孙承泽、安岐、卞永誉递藏；《钤山堂书画记》《清河书画舫》《庚子销夏记》《墨缘汇观》《石渠宝笈续编》著录；刻入《三希堂法帖》等丛帖",
+      "note": "A local newspaper feature. It gives 150 characters where other accounts give 153, so the entry does not cite a character count. Dimensions, line count and transmission are used."
+    },
+    {
       "id": "src-gmw-shipinggong",
       "kind": "web",
       "title": "凹凹凹凸凹凹凹，这块题记很特别",
@@ -17644,6 +17691,17 @@
       "accessedAt": "2026-11-18",
       "locator": "「爨文化博物馆」与「《爨宝子碑》」两段",
       "note": "Records the 1778 find and loss, the 1852 move to 武侯祠, the 1937 pavilion on the school campus, and the 2015 opening of the museum."
+    },
+    {
+      "id": "src-qlwb-zixu",
+      "kind": "web",
+      "title": "怀素《自叙帖》通篇酣畅淋漓",
+      "publisher": "齐鲁晚报·齐鲁壹点",
+      "url": "https://www.ql1d.com/general/11203193.html",
+      "publicationDate": "2020-01-04",
+      "accessedAt": "2026-11-26",
+      "locator": "记怀素737—799、俗姓钱、字藏真、永州零陵；纸本纵28.3厘米横755厘米、126行、698字；李东阳篆书引首「藏真自叙」；南唐内府至清内府递藏；首六行相传为苏舜钦补书；释文全篇，末署「时大历丁巳冬十月廿有八日」",
+      "note": "A newspaper arts feature. The colophon date given in its transcription of the text (大历丁巳, 777) is more specific than its own opening sentence (776 or 777), which the entry notes."
     },
     {
       "id": "src-qufu-beibi",

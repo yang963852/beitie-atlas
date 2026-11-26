@@ -150,7 +150,7 @@
 - [三坟记](catalogue/sanfen-ji.md) · 1 件实物
 - [大唐中兴颂](catalogue/datang-zhongxing-song.md) · 1 件实物
 - [麻姑仙坛记](catalogue/magu.md) · 1 件实物
-- [自叙帖](catalogue/zixu.md) · 1 件实物
+- [自叙帖](catalogue/zixu.md) · 1 件实物 · 待审
 - [颜勤礼碑](catalogue/yan-qinli-bei.md) · 2 件实物
 - [颜氏家庙碑](catalogue/yan-jiamiao-bei.md) · 1 件实物
 - [大秦景教流行中国碑](catalogue/daqin-jingjiao-bei.md) · 1 件实物
@@ -176,7 +176,7 @@
 - [黄州寒食诗帖](catalogue/hanshi.md) · 1 件实物
 - [蜀素帖](catalogue/shusu.md) · 1 件实物
 - [苕溪诗卷](catalogue/tiaoxi.md) · 1 件实物
-- [松风阁诗](catalogue/songfeng.md) · 1 件实物
+- [松风阁诗](catalogue/songfeng.md) · 1 件实物 · 待审
 - [自书诗卷](catalogue/cai-zishu.md) · 1 件实物
 - [秾芳诗帖](catalogue/nongfang-shitie.md) · 1 件实物
 - [珊瑚帖](catalogue/shanhu.md) · 1 件实物
@@ -196,7 +196,7 @@
 
 - [墨池堂选帖](catalogue/mochitang.md) · 1 件实物
 - [梅雪轩书晦翁不自弃文](catalogue/meixuexuan-buziqi.md) · 1 件实物
-- [王铎行草书自书诗卷](catalogue/wangduo-zishu-shi.md) · 1 件实物
+- [王铎行草书自书诗卷](catalogue/wangduo-zishu-shi.md) · 1 件实物 · 待审
 - [行书论书卷](catalogue/dong-lunshu.md) · 1 件实物
 - [楷书归去来兮辞页](catalogue/wen-guiqulai.md) · 1 件实物
 - [三体杂书诗卷](catalogue/zhu-santi.md) · 1 件实物
