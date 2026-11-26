@@ -147,7 +147,7 @@ In 697 Wang Fangqing presented ten scrolls of letters by twenty-eight members of
 
 万岁通天二年（697），凤阁侍郎王方庆进献其先祖[王羲之](../people/wang-xizhi.md)、[王献之](../people/wang-xianzhi.md)等一门二十八人的法书十卷。武则天命弘文馆以勾填法摹写，留于内府；王方庆是进呈者，不是摹手。[光明网《那些有故事的镇馆之宝》](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm)[中国新闻网报道](https://www.chinanews.com/cul/2018/02-13/8448541.shtml)
 
-当年进呈的十卷，今仅存此一卷，收七人书翰十通。卷上无摹手署款，内府勾填者的姓名在所引来源中都没有留下；因此只能称“唐摹”，不能指名某位摹手。[光明网](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm)[辽宁省博物馆藏品页](https://www.lnmuseum.com.cn/)
+当年进呈的十卷，今仅存此一卷，收七人书翰十通。卷上无摹手署款，内府勾填者的姓名在所引来源中都没有留下；因此只能称“唐摹”，不能指名某位摹手。本站记录的是[唐摹王氏一门书翰卷](../catalogue/wansui-tongtian-tie.md#wansui-tongtian-scroll)。[光明网](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm)[辽宁省博物馆藏品页](https://www.lnmuseum.com.cn/)
 
 此卷历经明无锡真赏斋火与清乾隆间乾清宫火两次火劫；所引页面都没有记下火劫年份，也没有给出损伤评估。1922 年，溥仪将它携往长春，今藏辽宁省博物馆。[中国新闻网报道](https://www.chinanews.com/cul/2018/02-13/8448541.shtml)[辽宁省博物馆](https://www.lnmuseum.com.cn/)
 
@@ -157,7 +157,7 @@ In 697 Wang Fangqing presented ten scrolls of letters by twenty-eight members of
 
 In 697, the second year of Wansui Tongtian, the chancellor Wang Fangqing presented ten scrolls of calligraphy by twenty-eight members of his family, including his ancestors [Wang Xizhi](../people/wang-xizhi.md) and [Wang Xianzhi](../people/wang-xianzhi.md). Empress Wu ordered the Hongwen Academy to trace and ink-fill them for the imperial collection; Wang Fangqing was the presenter, not the copyist. [Guangming Online, museum treasures](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm) [China News Service report](https://www.chinanews.com/cul/2018/02-13/8448541.shtml)
 
-Of the ten scrolls submitted, only this one survives, carrying ten letters by seven hands. The scroll bears no copyist’s signature, and the names of the court copyists are absent from the cited sources; it can therefore be called a Tang tracing, but no individual copyist can be named. [Guangming Online](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm) [Liaoning Provincial Museum collection page](https://www.lnmuseum.com.cn/)
+Of the ten scrolls submitted, only this one survives, carrying ten letters by seven hands. The scroll bears no copyist’s signature, and the names of the court copyists are absent from the cited sources; it can therefore be called a Tang tracing, but no individual copyist can be named. This site records [the Tang tracing of letters by the Wang family](../catalogue/wansui-tongtian-tie.md#wansui-tongtian-scroll). [Guangming Online](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm) [Liaoning Provincial Museum collection page](https://www.lnmuseum.com.cn/)
 
 The scroll passed through two fires, one at the Zhenshang Studio in Wuxi in the Ming and one at the Qianqing Palace in the Qianlong period; the cited pages give neither fire a year and offer no damage assessment. In 1922 Puyi took it to Changchun, and it is now held by the Liaoning Provincial Museum. [China News Service report](https://www.chinanews.com/cul/2018/02-13/8448541.shtml) [Liaoning Provincial Museum](https://www.lnmuseum.com.cn/)
 

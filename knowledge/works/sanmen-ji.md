@@ -81,7 +81,7 @@ Zhao Mengfu's draft for the stele recording the repair of the three gates of the
 
 ### 中文
 
-这是苏州玄妙观重修三门所立碑文的原稿，不是碑石。记文由宋末元初文人牟巘撰写，赵孟頫誊写，并在卷首以篆书题额；馆方称此卷为赵孟頫所书碑文原稿，正文楷书。[东京国立博物馆藏品记录](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461)[ColBase 记录](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)
+这是苏州玄妙观重修三门所立碑文的原稿，不是碑石。记文由宋末元初文人牟巘撰写，赵孟頫誊写，并在卷首以篆书题额；馆方称此卷为赵孟頫所书碑文原稿，正文楷书。本站记录的是[楷书玄妙观重修三门记卷](../catalogue/sanmen-ji.md#sanmen-scroll)。[东京国立博物馆藏品记录](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461)[ColBase 记录](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)
 
 书写年份没有著录。馆方只把此卷定在元代 14 世纪；日本国家数据库据碑文与赵孟頫的官职，推断书写时年四十九至五十六岁。这是推断，不是著录年月，作品条目因此不换算成公元年。[东京国立博物馆](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461)[ColBase](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)
 
@@ -91,7 +91,7 @@ Zhao Mengfu's draft for the stele recording the repair of the three gates of the
 
 ### English
 
-This is the draft of the inscription recording the repair of the three gates of the Xuanmiao Abbey in Suzhou, not the stele itself. Mou Yan, a literatus of the late Song and early Yuan, wrote the text; Zhao Mengfu copied it and added a seal-script heading at the front, and the museum describes the scroll as Zhao’s draft for the stele, written in regular script. [Tokyo National Museum record](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461) [ColBase record](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)
+This is the draft of the inscription recording the repair of the three gates of the Xuanmiao Abbey in Suzhou, not the stele itself. Mou Yan, a literatus of the late Song and early Yuan, wrote the text; Zhao Mengfu copied it and added a seal-script heading at the front, and the museum describes the scroll as Zhao’s draft for the stele, written in regular script. This site records [the scroll of the Record of the Three Gates](../catalogue/sanmen-ji.md#sanmen-scroll). [Tokyo National Museum record](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461) [ColBase record](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)
 
 No writing year is recorded. The museum dates the scroll only to the fourteenth-century Yuan; the Japanese national database infers, from the text and Zhao Mengfu’s offices, that he was forty-nine to fifty-six when he wrote it. That is an inference, not a recorded date, and the record does not convert it into a year. [Tokyo National Museum](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461) [ColBase](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)
 
