@@ -19,7 +19,7 @@ Stele of Duke Yugong
 
 书体：楷书
 
-延伸阅读：[虞恭公碑](../works/yugong-gong-bei.md)
+延伸阅读：[虞恭公碑](../works/yugong-gong-bei.md) · [欧阳询](../people/ouyang-xun.md)
 
 作品待考与说明
 

@@ -19,6 +19,8 @@ Sweet Spring at Jiucheng Palace
 
 书体：楷书
 
+延伸阅读：[欧阳询](../people/ouyang-xun.md)
+
 作品待考与说明
 
 - 所引答复函未记碑石年代、尺寸与现状；撰书年份该页亦未载。

@@ -16,6 +16,8 @@ Tiaoxi Poems
 
 书体：行书
 
+延伸阅读：[米芾](../people/mi-fu.md)
+
 <a name="witness-tiaoxi"></a>
 
 ## 米芾《苕溪诗卷》

@@ -26,6 +26,8 @@
 ## 书家
 
 - [冯承素](people/feng-chengsu.md)
+- [米芾](people/mi-fu.md) · 待审
+- [欧阳询](people/ouyang-xun.md) · 待审
 - [沈尹默](people/shen-yinmo.md)
 - [王献之](people/wang-xianzhi.md)
 - [王羲之](people/wang-xizhi.md)
