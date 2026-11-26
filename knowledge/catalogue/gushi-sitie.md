@@ -18,6 +18,8 @@ Four Poems in Cursive Script
 
 书体：狂草
 
+延伸阅读：[张旭](../people/zhang-xu.md)
+
 作品待考与说明
 
 - 作者归属作“传张旭”，本项目未见馆方出版物说明鉴定依据。
@@ -58,6 +60,6 @@ Four Poems, handscroll
 
 <a name="ref-src-lnd-gushisitie"></a>
 
-2. 辽宁日报 Liaoning Daily · [开辟并丰富中国书法艺术表现空间——解读国家一级文物《古诗四帖》卷](<https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html>)（2019-11-11）。定位：“唐 张旭《古诗四帖》卷 纸本 草书 纵29.5厘米 横195.2厘米 辽宁省博物馆藏”，以及释文与四首诗的作者。查阅于 2026-11-24。
+2. 辽宁日报 Liaoning Daily · [开辟并丰富中国书法艺术表现空间——解读国家一级文物《古诗四帖》卷](<https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html>)（2019-11-11）。定位：“唐 张旭《古诗四帖》卷 纸本 草书 纵29.5厘米 横195.2厘米 辽宁省博物馆藏”，以及释文、四首诗的作者；文末「张旭简历」（658—742、字伯高、常熟尉、金吾长史、草圣、唐代三绝）与北宋误归谢灵运、明董其昌定名之说。查阅于 2026-11-24。
 
 [作品源稿](../../knowledge/works/gushi-sitie.md) · [返回知识总目](../README.md)

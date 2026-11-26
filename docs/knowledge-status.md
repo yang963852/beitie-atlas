@@ -11,10 +11,10 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | Works | 117 (117 reviewed / 0 draft) |
 | Objects | 126 (126 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
-| People pages | 8 |
+| People pages | 12 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
-| Sources | 184 (0 uncited) |
+| Sources | 186 (0 uncited) |
 | Events | 75 (50 objects with events) |
 | Attribution entries linked to a person | 25 / 159 |
 | Work sources (0 / 1 / 2+) | 0 / 81 / 36 |
@@ -113,19 +113,19 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [玄秘塔碑](../knowledge/works/xuanmi-ta-bei.md) | Tang | reviewed | reviewed | 0 | 2 | 2 | 2/2 | 1 |
 | [神策军碑](../knowledge/works/shen-ce-jun-bei.md) | Tang | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [圭峰定慧禅师碑](../knowledge/works/guifeng.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [古诗四帖](../knowledge/works/gushi-sitie.md) | Tang | reviewed | — | 0 | 2 | 1 | 0/1 | — |
+| [古诗四帖](../knowledge/works/gushi-sitie.md) | Tang | reviewed | — | 1 | 2 | 1 | 0/1 | — |
 | [化度寺邕禅师舍利塔铭](../knowledge/works/huadu-si.md) | Tang | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [皇甫诞碑](../knowledge/works/huangfu-dan-bei.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [蒙诏帖](../knowledge/works/mengzhao.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [张翰帖](../knowledge/works/zhanghan.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [韭花帖](../knowledge/works/jiuhua-tie.md) | Five Dynasties and Ten Kingdoms | reviewed | — | 0 | 2 | 1 | 0/1 | — |
+| [韭花帖](../knowledge/works/jiuhua-tie.md) | Five Dynasties and Ten Kingdoms | reviewed | — | 1 | 2 | 1 | 0/1 | — |
 | [篆书千字文碑](../knowledge/works/mengying-thousand-character-stele.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [淳化阁帖](../knowledge/works/chunhua-getie.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [黄州寒食诗帖](../knowledge/works/hanshi.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 0/1 | 1 |
+| [黄州寒食诗帖](../knowledge/works/hanshi.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 0/1 | 1 |
 | [蜀素帖](../knowledge/works/shusu.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [苕溪诗卷](../knowledge/works/tiaoxi.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [松风阁诗](../knowledge/works/songfeng.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 0/1 | 1 |
-| [自书诗卷](../knowledge/works/cai-zishu.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [自书诗卷](../knowledge/works/cai-zishu.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [秾芳诗帖](../knowledge/works/nongfang-shitie.md) | Northern Song | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [珊瑚帖](../knowledge/works/shanhu.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [陆游自书诗卷](../knowledge/works/lu-you-zishu-shi.md) | Southern Song | reviewed | — | 0 | 1 | 1 | 0/1 | — |

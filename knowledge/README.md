@@ -25,13 +25,17 @@
 
 ## 书家
 
+- [蔡襄](people/cai-xiang.md) · 待审
 - [冯承素](people/feng-chengsu.md)
 - [沈尹默](people/shen-yinmo.md)
+- [苏轼](people/su-shi.md) · 待审
 - [王献之](people/wang-xianzhi.md)
 - [王羲之](people/wang-xizhi.md)
 - [翁方纲](people/weng-fanggang.md)
 - [鲜于枢](people/xianyu-shu.md)
 - [颜真卿](people/yan-zhenqing.md)
+- [杨凝式](people/yang-ningshi.md) · 待审
+- [张旭](people/zhang-xu.md) · 待审
 - [赵朴初](people/zhao-puchu.md)
 
 ## 考证与读帖笔记
