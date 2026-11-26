@@ -52,4 +52,4 @@ Date: 2026-11-26. Task: [052](../tasks/052-repository-slimming.md). Branch: `tra
 
 ## Reviewer outcome
 
-Self-review by TRAE. The coordinator decides acceptance and merge.
+Self-review by TRAE. [PR #61](https://github.com/yang963852/beitie-atlas/pull/61) is open for coordinator review. The coordinator decides acceptance and merge.
