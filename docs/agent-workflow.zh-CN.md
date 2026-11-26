@@ -34,8 +34,8 @@
 | WorkBuddy | `.private/worktrees/workbuddy`（分支 `workbuddy/work`） | `knowledge/`、来源与读帖资料 |
 | Codex | 主工作区只读；需要写方案时用 `.private/worktrees/codex` | 任务卡、方案、评审意见 |
 
-- 主工作区 `c:\Users\zhangyang\Desktop\AI_working\碑帖之间` 用于协调、查看和临时 WIP；不要让它同时承担 TRAE 和 WorkBuddy 的提交。
-- WorkBuddy 应用当前会自动创建会话 worktree（例如 `C:\Users\zhangyang\WorkBuddy\Worktrees\碑帖之间\main-57a0db19`）。下一次会话请打开 `.private/worktrees/workbuddy`，或把会话提交转推到 `workbuddy/work`。
+- 主工作区（本仓库的根目录，下文用 `<项目根目录>` 表示）用于协调、查看和临时 WIP；不要让它同时承担 TRAE 和 WorkBuddy 的提交。
+- WorkBuddy 应用会自动创建会话 worktree（路径由应用生成）。下一次会话请打开 `.private/worktrees/workbuddy`，或把会话提交转推到 `workbuddy/work`。
 - 不在别人的工作区改文件；不把 `node_modules`、`dist`、浏览器配置或密钥提交到 Git。
 
 ## 3. 日常循环
@@ -65,7 +65,5 @@
 - 每个任务结束后清掉 `.private/tmp` 中该任务的副本、截图和缓存；`.private` 保持在 500 MB 以内。
 - 任务超过 7 天未合并：先提交检查点，再由负责人决定继续、关闭或转成 Issue。
 - 历史里程碑移出 `main` 前，先打 `archive-*` annotated tag 并推送；没有 tag 不删除。
-
-## 6. 当前任务状态
-
-任务 043（青铜器与简牍）和 044（统一目录与墨河动效）已经合并进 `main`；它们的任务卡和交付记录保留在 `tasks/` 与 `docs/`。本次仓库整理使用任务号 045，避免与已合并的任务冲突。
+- 验收后归档记录的本地副本可放在 `.private/workspace-archive/`，不进入 Git；规范副本以归档 tag 为准。
+- 当前任务只看[迭代看板](iteration-board.md)；验收后的任务卡与交付记录不在 `main` 保留。
