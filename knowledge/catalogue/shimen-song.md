@@ -16,6 +16,8 @@ Eulogy of Shimen
 
 书体：隶书
 
+延伸阅读：[石门颂](../works/shimen-song.md)
+
 作品待考与说明
 
 - 英文标题为本项目为检索所拟，非来源所用题名。

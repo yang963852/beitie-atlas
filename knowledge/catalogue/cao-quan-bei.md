@@ -17,6 +17,8 @@ Stele of Cao Quan
 
 书体：隶书
 
+延伸阅读：[曹全碑](../works/cao-quan-bei.md)
+
 作品待考与说明
 
 - 英文标题为本项目为检索所拟，非来源所用题名。

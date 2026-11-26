@@ -18,6 +18,8 @@ Xuanmi Pagoda Stele
 
 书体：楷书
 
+延伸阅读：[玄秘塔碑](../works/xuanmi-ta-bei.md)
+
 作品待考与说明
 
 - 英文标题为本项目为检索所拟，非来源所用题名。
