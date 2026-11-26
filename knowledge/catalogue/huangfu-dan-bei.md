@@ -17,6 +17,8 @@ Stele of Huangfu Dan
 
 书体：楷书
 
+延伸阅读：[欧阳询](../people/ouyang-xun.md)
+
 作品待考与说明
 
 - 英文标题为本项目为检索所拟，非来源所用题名。

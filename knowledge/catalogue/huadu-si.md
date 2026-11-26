@@ -18,6 +18,8 @@ Huadu Temple Stupa Inscription
 
 书体：楷书
 
+延伸阅读：[欧阳询](../people/ouyang-xun.md)
+
 <a name="huadu-siou"></a>
 
 ## 化度寺塔铭（四欧堂本）

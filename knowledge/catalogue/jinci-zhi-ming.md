@@ -18,6 +18,8 @@ Inscription for the Jin Shrine
 
 书体：行书
 
+延伸阅读：[李世民](../people/li-shimin.md)
+
 作品待考与说明
 
 - 来源讨论碑文的政治主张，未细述其书法流传。

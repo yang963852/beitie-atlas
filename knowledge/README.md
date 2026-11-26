@@ -25,13 +25,25 @@
 
 ## 书家
 
+- [蔡襄](people/cai-xiang.md)
 - [冯承素](people/feng-chengsu.md)
+- [李世民](people/li-shimin.md)
+- [李斯](people/li-si.md)
+- [李阳冰](people/li-yangbing.md)
+- [柳公权](people/liu-gongquan.md)
+- [米芾](people/mi-fu.md)
+- [欧阳询](people/ouyang-xun.md)
 - [沈尹默](people/shen-yinmo.md)
+- [苏轼](people/su-shi.md)
 - [王献之](people/wang-xianzhi.md)
 - [王羲之](people/wang-xizhi.md)
+- [王珣](people/wang-xun.md)
 - [翁方纲](people/weng-fanggang.md)
 - [鲜于枢](people/xianyu-shu.md)
 - [颜真卿](people/yan-zhenqing.md)
+- [杨凝式](people/yang-ningshi.md)
+- [张旭](people/zhang-xu.md)
+- [赵孟頫](people/zhao-mengfu.md)
 - [赵朴初](people/zhao-puchu.md)
 
 ## 考证与读帖笔记

@@ -5,11 +5,11 @@
     "works": 117,
     "objects": 126,
     "places": 46,
-    "sources": 184,
+    "sources": 191,
     "media": 1,
     "events": 75,
     "workArticles": 14,
-    "peopleArticles": 8,
+    "peopleArticles": 20,
     "noteArticles": 2,
     "peopleRelations": 1
   },
@@ -4291,16 +4291,28 @@
         "note": null
       },
       "script": "行书",
-      "background": "北宋黄庭坚书《松风阁诗》。",
-      "backgroundZh": "北宋黄庭坚书《松风阁诗》。",
+      "background": "In 1102, the first year of Chongning, Huang Tingjian was removed from his post at Taiping and given the sinecure of supervising the Yulong Abbey in Hongzhou. He went up the Yangzi intending to settle near Jingnan, but stopped at Fankou in the ninth month and stayed on at Wuchang, today’s Ezhou. The Ezhou Municipal Museum records that he lodged in an old temple on West Mountain, “lost in the ancient pines that fill the slopes, sleeping to the sound of wind in the pines and rain”, and visited the Cold Stream, the Bodhisattva Spring, the fishing terrace and the Yiting pavilion; there, in the ninth month of that year, he wrote the Poem on the Hall of Wind and Pines. It is a seven-character poem, opening “a pavilion built against the hill looks out on the plain”, turning on the night rain and drinking, “rain sounding in the corridor till dawn”, and closing “the man of Dongpo has already sunk into the spring, when will Lord Zhang appear before my eyes” — Su Shi was dead, Zhang Lei had not come. In the same year and the same place he joined Zhang Lei and Chao Buzhi in producing the epitaphs of Li Shenzhi and his wife — Zhang Lei composing, Chao Buzhi writing, Huang cutting the seal-script covers — which the Ezhou Museum presents as the “three excellences of the Su school”. [Ezhou Municipal Museum, the Su family exhibition](https://ezbwg.com/ReadNews.asp?NewsId=1736)\n\nThe work is ink on paper. According to the Ezhou Daily it measures 32.8 by 219.2 cm and runs to twenty-nine lines. Fifteen colophons follow, beginning with the Xiang family of the Song and including Wei Bifu and Li Jiong of the Yuan; the scroll carries the seals of Jia Sidao, the Grand Princess, Xiang Yuanbian, Sun Chengze, An Qi and Bian Yongyu, along with the Qianlong, Jiaqing and Xuantong “imperial inspection” seals. It is recorded in the Qianshan tang shuhua ji, the Qinghe shuhua fang, the Gengzi xiaoxia ji, the Moyuan huiguan and the second series of the Shiqu baoji, and was carved into the imperial Sanxitang shiqu baoji fatie and other modelbooks. The original is now in the National Palace Museum, Taipei. [Ezhou Daily, Huang Tingjian and the Hall of Wind and Pines](https://ga.eznews.cn/ezrb/2021/20210121/20210121_005/20210121_005_1.htm) · [Ezhou literary federation, A Song of Wind in the Pines](https://wl.ezhou.gov.cn/ezwyl/contents/295/2244.html)\n\nThe chain of ownership can be read as a curriculum vitae: the Xiang family in the Song, then Jia Sidao; the Grand Princess Sengge Ragi in the Yuan; Xiang Yuanbian in the Ming; Sun Chengze, An Qi and Bian Yongyu in the Qing, and finally the imperial collection. A poem written overnight in a mountain temple travelled from private hands to the emperor’s shelves, leaving a seal at every change of hand. [Ezhou literary federation, A Song of Wind in the Pines](https://wl.ezhou.gov.cn/ezwyl/contents/295/2244.html)",
+      "backgroundZh": "崇宁元年（1102），黄庭坚罢太平州，改“管勾洪州玉隆观”，溯江西上，本欲卜居荆南，九月停船樊口，却在武昌（今鄂州）盘桓下来。鄂州市博物馆记他寓居西山古寺，“沉醉于满山参天的古松，听松涛与雨声而眠”，又游寒溪、菩萨泉、钓台、怡亭，就在这一年九月写成《松风阁诗帖》。诗为七言，起句“依山筑阁见平川”，中间写夜雨会饮“夜雨鸣廊到晓悬”，末段“东坡道人已沉泉，张侯何时到眼前”——苏轼已死，张耒未到。同一年同一地，他还与张耒、晁补之合作李深之夫妇墓志——张耒撰文，晁补之书丹，黄庭坚篆盖，展览以“苏门三绝”称之。[鄂州市博物馆，苏门三绝展](https://ezbwg.com/ReadNews.asp?NewsId=1736)\n\n墨迹纸本，据《鄂州日报》所记，纵三十二点八厘米、横二百一十九点二厘米，二十九行。卷后有宋向氏及元魏必复、李泂等十五家跋语，钤贾似道、大长公主、项元汴、孙承泽、安岐、卞永誉诸家印，又有乾隆、嘉庆、宣统“御览之宝”；著录于《钤山堂书画记》《清河书画舫》《庚子销夏记》《墨缘汇观》《石渠宝笈续编》，并刻入《御刻三希堂石渠宝笈法帖》等丛帖。原迹今藏台北故宫博物院。[鄂州日报，黄庭坚与松风阁](https://ga.eznews.cn/ezrb/2021/20210121/20210121_005/20210121_005_1.htm) · [鄂州市文联，一曲松风万古传](https://wl.ezhou.gov.cn/ezwyl/contents/295/2244.html)\n\n递藏一线可以当履历读：宋时归向氏，后入贾似道；元归大长公主祥哥喇吉；明入项元汴；清经孙承泽、安岐、卞永誉，后入清内府。一件夜宿山寺写成的诗稿，从私人手里一路走到皇帝的书架，每一次转手都留一方印。[鄂州市文联，一曲松风万古传](https://wl.ezhou.gov.cn/ezwyl/contents/295/2244.html)",
       "sourceRefs": [
-        "src-catalogue-songfeng"
+        "src-catalogue-songfeng",
+        "src-ezbwg-songfeng",
+        "src-ezrb-songfeng",
+        "src-ezwl-songfeng"
       ],
       "review": {
         "state": "reviewed",
         "note": null
       },
-      "notes": []
+      "notes": [
+        "The character count is given as 150 in Chen Zhiping’s essay and 153 in the Ezhou Daily; the original has not been checked, so no count is stated here.",
+        "Dimensions and line count come from the Ezhou Daily and have not been checked against the Taipei catalogue; the original is in Taipei, and this entry answers only for the printed record.",
+        "The names of the fifteen colophon writers follow Chen Zhiping’s essay and have not been checked one by one against the Taipei catalogue."
+      ],
+      "notesZh": [
+        "字数有 150 与 153 两说：《鄂州日报》作一百五十三字，鄂州市文联陈志平文作一百五十字；未据原件复核，故本条不记字数。",
+        "尺寸与行数出自《鄂州日报》，未及台北故宫著录页核对；原迹在台北，本条只对纸上的记录负责。",
+        "十五家跋语的姓名依陈志平文，未据台北故宫著录逐一核对。"
+      ]
     },
     {
       "id": "stone-drum-inscriptions",
@@ -4590,8 +4602,8 @@
         "note": "末款“己卯正月弟王铎具草”。"
       },
       "script": "行草",
-      "background": "This scroll carries six of Wang Duo’s own poems. It is ink on paper, written in the first month of 1639, when Wang was forty-seven, and is now in the Palace Museum. The running-cursive brushwork runs on continuously without many joined characters, held together by column rhythm; it shows the manner of his middle years as his style took shape. Wang traced his lineage through Zhong Yao, the two Wangs, Yan Zhenqing and Mi Fu, and became known for running and cursive script. This scroll can be read as the starting point of that style.",
-      "backgroundZh": "此卷书王铎自作诗六首，纸本，作于明崇祯十二年（1639）正月，王铎时年四十七，今藏故宫博物院。行草笔势连绵而字间连带不多，靠行气贯通，是他中年书风形成期的面貌。王铎由钟繇、二王、颜真卿、米芾上溯，以行草著称，此卷正可看作其风格的起点。",
+      "background": "This scroll carries six of Wang Duo’s own poems. It is ink on paper, written in the first month of 1639, when Wang was forty-seven, and is now in the Palace Museum. The running-cursive brushwork runs on continuously without many joined characters, held together by column rhythm; it shows the manner of his middle years as his style took shape. Wang traced his lineage through Zhong Yao, the two Wangs, Yan Zhenqing and Mi Fu, and became known for running and cursive script. This scroll can be read as the starting point of that style. [Palace Museum, Wang Duo’s scroll of his own poems](https://www.dpm.org.cn/collection/handwriting/228265.html)\n\nThe museum gives its size as 26.9 by 166 cm. The text opens “for my elder brother of the same examination year, Judge of Nankang, six poems presented”, and closes “respectfully drafted by your younger brother Wang Duo, first month of jimao”, with the seals “Wang Duo’s seal” and “Fisherman of the Misty Pool” at the left. The modern scholar Ma Zonghuo wrote: “Ming men’s cursive all stretch the brush to seize momentum; Juesi stretches and can also hold back, so he never exhausts the momentum and yet it seems inexhaustible — this is not something a man of less than full strength could say.” The scroll tests that sentence: the brush runs on and on, yet never quite lets go, held inside the column rhythm. [Palace Museum, Wang Duo’s scroll of his own poems](https://www.dpm.org.cn/collection/handwriting/228265.html)\n\nWang Duo (1592–1652), courtesy name Juesi, style names Songqiao, Fisherman of the Misty Pool and Chixian Daoren, was a native of Mengjin, modern Mengjin county in Luoyang. He passed the examinations in 1622 and rose to minister of rites and grand secretary of the East Pavilion. In calligraphy he studied Zhong Yao, the two Wangs, Yan Zhenqing and Mi Fu, drawing most on the Chunhua ge tie; steeped in the old methods, he also innovated, and was strongest in running and cursive script. His carvings include the Nishan yuan tie and the Langhua guan tie, and the Qing History carries his biography. [Palace Museum, Wang Duo’s scroll, biography of Wang Duo](https://www.dpm.org.cn/collection/handwriting/228265.html)",
+      "backgroundZh": "此卷书王铎自作诗六首，纸本，作于明崇祯十二年（1639）正月，王铎时年四十七，今藏故宫博物院。行草笔势连绵而字间连带不多，靠行气贯通，是他中年书风形成期的面貌。王铎由钟繇、二王、颜真卿、米芾上溯，以行草著称，此卷正可看作其风格的起点。[故宫博物院，王铎行草书自书诗卷](https://www.dpm.org.cn/collection/handwriting/228265.html)\n\n据故宫著录，卷纵二十六点九厘米、横一百六十六厘米。释文起首作“君宣年家兄翁判南康，赠以六首”，末款“己卯正月弟王铎具草”，左钤“王铎之印”“烟潭渔叟”。近人马宗霍说：“明人草书，无不纵笔以取势者，觉斯则纵而能敛，故不极势而势若不尽，非力有余者，未易语此。”这卷正可拿来验这句话：笔势一路连绵，却始终没有放尽，收在行气里。[故宫博物院，王铎行草书自书诗卷](https://www.dpm.org.cn/collection/handwriting/228265.html)\n\n王铎（1592—1652），字觉斯，号嵩樵、烟潭渔叟、痴仙道人，孟津（今洛阳孟津县）人。明天启二年（1622）进士，累官礼部尚书、东阁大学士。书法师钟繇、二王、颜真卿、米芾，尤得力于《淳化阁帖》，既浸淫古法又有所创新，最擅行、草，刻有《拟山园帖》《琅华馆帖》，《清史稿》有传。[故宫博物院，王铎行草书自书诗卷·王铎](https://www.dpm.org.cn/collection/handwriting/228265.html)",
       "sourceRefs": [
         "src-dpm-wangduo"
       ],
@@ -4601,11 +4613,15 @@
       },
       "notes": [
         "The scroll carries no collector’s seals and is not recorded in early catalogues; its early transmission is unknown.",
-        "The museum does not identify the dedicatee named at the beginning of the scroll."
+        "The museum does not identify the dedicatee named at the beginning of the scroll.",
+        "The museum catalogues the scroll under the Qing, though its colophon is dated jimao, the twelfth year of Chongzhen in the Ming; this entry dates it by the colophon.",
+        "The museum’s note gives the dedicatee’s name as Junxuan while its transcription of the text reads Qunxuan; the one-character difference is left unresolved."
       ],
       "notesZh": [
         "本幅无藏印，亦未见著录，早期流传不明。",
-        "卷首上款所涉人物，馆方未作考订。"
+        "卷首上款所涉人物，馆方未作考订。",
+        "馆方条目朝代作“清”，而款识为己卯（明崇祯十二年），本库按书写年份系于明。",
+        "馆方说明记上款作“君宣”，同页释文作“群宣”，一字之异未详孰是。"
       ]
     },
     {
@@ -6521,16 +6537,26 @@
         "note": null
       },
       "script": "草书",
-      "background": "唐怀素书《自叙帖》。",
-      "backgroundZh": "唐怀素书《自叙帖》。",
+      "background": "Huaisu (737–799), whose secular surname was Qian and whose courtesy name was Zangzhen, was a native of Lingling in Yongzhou, modern Hunan. He left home as a boy, loved the brush in the intervals of meditation, and became famous for wild cursive; history calls him the “cursive sage”. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)\n\nThe scroll is ink on paper. The Qilu Evening News gives its size as 28.3 by 755 cm, in 126 lines and 698 characters. The text recounts his study of calligraphy and appends poems given to him by Yan Zhenqing, Zhang Wei, Dai Shulun and others: the first half is his own account, the second a gathering of contemporary praise. It opens “Huaisu’s home is in Changsha; as a boy I served the Buddha, and in the intervals of meditation I loved the brush”, and it closes “the twenty-eighth day of the tenth month, winter, dingsi of the Dali era” — dingsi being 777. The article calls it the longest work Huaisu left and notes that it is “known as the finest cursive under heaven”. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)\n\nThe frontispiece is Li Dongyang’s seal-script “Zangzhen’s own account”. The scroll passed through the Southern Tang palace collection, then Su Shunqin, Shao Ye and Lü Bian in the Song; Xu Qianzhai, Wu Kuan, Wen Zhengming and Xiang Yuanbian in the Ming; and Xu Yufeng, An Qi and the Qing palace. It is now in the National Palace Museum, Taipei. The seals run from the tenth century to the eighteenth without a gap. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)\n\nOpening the scroll, look first for the first six lines. The article says they are “said to have been supplied by the Song collector Su Shunqin, and set beside the seventh line onward the difference is like heaven and earth”. That seam between supplement and original is the most concrete reading point in the scroll: see the six lines first, then watch how the movement picks up from the seventh. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)",
+      "backgroundZh": "怀素（737—799），俗姓钱，字藏真，永州零陵（今湖南零陵）人。自幼出家，经禅之暇好笔翰，以狂草名世，史称“草圣”。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)\n\n卷为纸本墨迹，据《齐鲁晚报》所记，纵二十八点三厘米、横七百五十五厘米，一百二十六行，六百九十八字。内容是自述学书经历，兼录颜真卿、张谓、戴叔伦等人赠诗：前半是自叙，后半是一卷时人评语的汇编。开篇“怀素家长沙，幼而事佛，经禅之暇，颇好笔翰”，说的就是他自己；卷末署“时大历丁巳冬十月廿有八日”，丁巳即大历十二年（777）。文章说它是怀素流传下来篇幅最长的作品，“人称‘天下第一草书’”。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)\n\n卷前有明李东阳篆书引首“藏真自叙”。全卷经南唐内府、宋苏舜钦、邵叶、吕辩，明徐谦斋、吴宽、文徵明、项元汴，清徐玉峰、安岐、清内府递藏，今藏台北故宫博物院。一串藏印从十世纪排到十八世纪，中间没有断代。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)\n\n打开全卷先找前六行。文章说“最初的六行，据说是由此帖收藏者苏舜钦（宋）所补写，与第七行以下的相比，确有天壤之别”。补书与原文的界线，是这一卷最实在的一处读点：先看这六行，再看第七行以后笔势怎样接上去。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)",
       "sourceRefs": [
-        "src-catalogue-zixu"
+        "src-catalogue-zixu",
+        "src-qlwb-zixu"
       ],
       "review": {
         "state": "reviewed",
         "note": null
       },
-      "notes": []
+      "notes": [
+        "The date is given as either 776 or 777: the article opens with “the eleventh or twelfth year of Dali (776 or 777)”, while the transcription it prints ends “dingsi of Dali”, and dingsi is 777. This entry follows the colophon and dates the work to 777, recording both readings.",
+        "The supplement of the first six lines is introduced with “said to be”; neither the copyist nor the date of the supplement is recorded by the museum.",
+        "Dimensions, line count and character count come from the newspaper and have not been checked against the museum catalogue. The scroll’s authenticity has long been debated; this entry does not enter that debate and awaits citable sources."
+      ],
+      "notesZh": [
+        "年代有 776 与 777 两说：文章开篇作“大历十一年或十二年（776或777年）”，而所录释文末署“大历丁巳”，丁巳为大历十二年。本库依自署系于 777，两说并记。",
+        "前六行补书之说，文章作“据说”；补书者与补写时间均未见馆方著录。",
+        "尺寸、行数、字数依报刊，未据馆方著录复核；此帖真伪历来有议，本条目未展开，待补可引来源。"
+      ]
     },
     {
       "id": "zoumalou-wujian",
@@ -16576,7 +16602,7 @@
       "publicationDate": "2012-06-22",
       "accessedAt": "2026-11-18",
       "locator": "Article: 843 carving, 崔铉 text, 柳公权 calligraphy, 27 openings, 34.3 cm, 贾似道 to 1965 return",
-      "note": "Newspaper article by a National Library staff member. States the original stone is lost and only the upper volume survives."
+      "note": "Newspaper article by a National Library staff member. States the original stone is lost and only the upper volume survives. The URL returned 404 on 2026-11-26; the locator records what was read on 2026-11-18."
     },
     {
       "id": "src-centv-kaicheng",
@@ -16839,8 +16865,19 @@
       "url": "https://www.dpm.org.cn/collection/handwriting/228526.html",
       "publicationDate": null,
       "accessedAt": "2026-11-18",
-      "locator": "藏品题名、文物号及简介",
+      "locator": "藏品题名、文物号（新00044433）、尺寸与行数字数、十三家题跋、欧阳修批语、朱文钧跋语、著录与刻帖；页末「蔡襄」小传",
       "note": null
+    },
+    {
+      "id": "src-dpm-231008",
+      "kind": "web",
+      "title": "苏轼行书治平帖卷",
+      "publisher": "故宫博物院",
+      "url": "https://www.dpm.org.cn/collection/handwriting/231008.html",
+      "publicationDate": null,
+      "accessedAt": "2026-11-26",
+      "locator": "藏品题名、文物号（故00002887）与释文；卷末赵孟頫、文徵明、王穉登题跋；页末「苏轼」小传（生卒、字号、籍贯、科举、历官、贬谪、谥号、书法师承与评语、宋四家、传世书迹）",
+      "note": "The biography sidebar names the 黄州寒食诗帖 among his surviving works. The entry is used here for the biography only; the letter itself is not a work in this library."
     },
     {
       "id": "src-dpm-231095",
@@ -17162,6 +17199,50 @@
       "note": null
     },
     {
+      "id": "src-ezbwg-songfeng",
+      "kind": "web",
+      "title": "苏门三绝——宋李深之及其龚夫人石墓志铭展",
+      "publisher": "鄂州市博物馆",
+      "url": "https://ezbwg.com/ReadNews.asp?NewsId=1736",
+      "publicationDate": null,
+      "accessedAt": "2026-11-26",
+      "locator": "展览说明中「北宋崇宁元年（公元1102年）」一段：黄庭坚罢太平州、改「管勾洪州玉隆观」、溯江西上、九月停留樊口、寓居西山古寺年余，并于是年九月完成《松风阁诗帖》",
+      "note": "Museum exhibition page. Used for the circumstances of composition only; it gives no dimensions, line count or transmission."
+    },
+    {
+      "id": "src-ezrb-songfeng",
+      "kind": "web",
+      "title": "黄庭坚与松风阁",
+      "publisher": "鄂州日报",
+      "url": "https://ga.eznews.cn/ezrb/2021/20210121/20210121_005/20210121_005_1.htm",
+      "publicationDate": "2021-01-21",
+      "accessedAt": "2026-11-26",
+      "locator": "记墨迹纸本、纵32.8厘米横219.2厘米、二十九行、一百五十三字；诗中两处误笔；崇宁元年九月途经武昌、为松风阁命名并夜雨会饮的经过；现藏台北故宫博物院",
+      "note": "A local newspaper feature. It gives 153 characters, where Chen Zhiping’s essay gives 150, so the entry does not cite a character count. Dimensions, line count and the occasion of writing are used."
+    },
+    {
+      "id": "src-ezwl-songfeng",
+      "kind": "web",
+      "title": "一曲松风万古传——黄庭坚《松风阁》墨迹赏析",
+      "publisher": "鄂州市文学艺术界联合会（《江南风》2014年第5期）",
+      "url": "https://wl.ezhou.gov.cn/ezwyl/contents/295/2244.html",
+      "publicationDate": "2016-07-21",
+      "accessedAt": "2026-11-26",
+      "locator": "记墨迹粉花白纸本、纵32.8厘米横219.2厘米、二十九行、一百五十字；卷后宋向氏及元魏必复、李泂、张珪、王约、冯子振、陈颢、陈庭实、孛朮鲁翀、李源道、袁桷、邓文原、柳贯、赵巖、杜禧等十五人跋语；贾似道、皇姊图书、仇英、项元汴、北平孙氏、卞永誉、安仪周家珍藏及乾隆嘉庆宣统「御览之宝」等鉴藏印；《钤山堂书画记》《清河书画舫》《庚子销夏记》《墨缘汇观》《石渠宝笈续编》著录；刻入《御刻三希堂石渠宝笈法帖》等丛帖；宋向氏、贾似道、元大长公主祥哥喇吉、明项元汴、清孙承泽安岐卞永誉递藏；现藏台北故宫博物院",
+      "note": "A scholarly essay by Chen Zhiping. It gives 150 characters where the Ezhou Daily gives 153; used for the colophons, seals, records and transmission, not for the character count."
+    },
+    {
+      "id": "src-gmw-erxi",
+      "kind": "web",
+      "title": "不惜重金新中国迎回“二希”",
+      "publisher": "光明日报",
+      "url": "https://www.gmw.cn/01gmrb/2005-10/29/content_323325.htm",
+      "publicationDate": "2005-10-29",
+      "accessedAt": "2026-11-26",
+      "locator": "记《中秋帖》《伯远帖》清亡后流出宫廷、上世纪三十年代为袁世凯差官郭葆昌所得、其子郭昭俊携帖赴台湾求售未果、在香港抵押给英国银行；郑振铎报告中央、周恩来批示购回、王冶秋与马衡及徐森玉前往鉴定、1951年12月王冶秋送交故宫博物院",
+      "note": "A newspaper feature on the return of the two scrolls. Used for the modern transmission only; the Palace Museum entry supplies the palace history and the 1951 buyback."
+    },
+    {
       "id": "src-gmw-shipinggong",
       "kind": "web",
       "title": "凹凹凹凸凹凹凹，这块题记很特别",
@@ -17334,8 +17415,8 @@
       "url": "https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html",
       "publicationDate": "2019-11-11",
       "accessedAt": "2026-11-24",
-      "locator": "“唐 张旭《古诗四帖》卷 纸本 草书 纵29.5厘米 横195.2厘米 辽宁省博物馆藏”，以及释文与四首诗的作者",
-      "note": "A newspaper feature published for a museum exhibition. Used for the physical description and content; the holding and title come from the museum page."
+      "locator": "“唐 张旭《古诗四帖》卷 纸本 草书 纵29.5厘米 横195.2厘米 辽宁省博物馆藏”，以及释文、四首诗的作者；文末「张旭简历」（658—742、字伯高、常熟尉、金吾长史、草圣、唐代三绝）与北宋误归谢灵运、明董其昌定名之说",
+      "note": "A newspaper feature published for a museum exhibition. Used for the physical description and content, for the biography sidebar and for the attribution history; the holding and title come from the museum page."
     },
     {
       "id": "src-lnm-gushisitie",
@@ -17635,6 +17716,17 @@
       "note": "Records the 1778 find and loss, the 1852 move to 武侯祠, the 1937 pavilion on the school campus, and the 2015 opening of the museum."
     },
     {
+      "id": "src-qlwb-zixu",
+      "kind": "web",
+      "title": "怀素《自叙帖》通篇酣畅淋漓",
+      "publisher": "齐鲁晚报·齐鲁壹点",
+      "url": "https://www.ql1d.com/general/11203193.html",
+      "publicationDate": "2020-01-04",
+      "accessedAt": "2026-11-26",
+      "locator": "记怀素737—799、俗姓钱、字藏真、永州零陵；纸本纵28.3厘米横755厘米、126行、698字；李东阳篆书引首「藏真自叙」；南唐内府至清内府递藏；首六行相传为苏舜钦补书；释文全篇，末署「时大历丁巳冬十月廿有八日」",
+      "note": "A newspaper arts feature. The colophon date given in its transcription of the text (大历丁巳, 777) is more specific than its own opening sentence (776 or 777), which the entry notes."
+    },
+    {
       "id": "src-qufu-beibi",
       "kind": "web",
       "title": "西汉•北陛石（鲁灵光殿址刻石）",
@@ -17677,6 +17769,17 @@
       "accessedAt": "2026-11-18",
       "locator": "Named collection entry and its descriptive text",
       "note": null
+    },
+    {
+      "id": "src-scwwj-hanshi",
+      "kind": "web",
+      "title": "从《黄州寒食帖》题跋印章考察其庋藏递传历史",
+      "publisher": "四川省文物局（转载四川新闻网）",
+      "url": "https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml",
+      "publicationDate": "2020-07-08",
+      "accessedAt": "2026-11-26",
+      "locator": "尺寸字数与释文、黄庭坚元符三年（1100）跋文九行五十九字全文、董其昌观款、乾隆戊辰（1748）题跋原文、裴景福《壮陶阁书画录》所记近现代递藏、王世杰题跋与1987年入藏",
+      "note": "作者唐林（四川省社会科学院）。文记纵34.5厘米、25行，通行著录多作纵34.2厘米、17行，故人物页不引尺寸与行数，只取两处一致的129字。"
     },
     {
       "id": "src-sdxc-kongmiao-sanbei",
@@ -17994,7 +18097,7 @@
       "url": "https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b",
       "publicationDate": null,
       "accessedAt": "2026-11-24",
-      "locator": "记行楷墨迹麻纸本、高26厘米宽28厘米、七行六十三字、清宫旧藏、1982年入藏、传世三本与真伪争议",
+      "locator": "记行楷墨迹麻纸本、高26厘米宽28厘米、七行六十三字、释文、乾隆引首、清宫旧藏与溥仪盗出、薛氏递藏、1982年入藏、传世三本与真伪争议、黄庭坚「杨风子」诗、「天下第五行书」之序",
       "note": "Museum feature. It gives 63 characters here and 65 in the shorter entry, so the count is not asserted in the structured fields."
     },
     {
@@ -18406,6 +18509,23 @@
     },
     {
       "kind": "people",
+      "id": "cai-xiang",
+      "titleZh": "蔡襄",
+      "titleEn": "Cai Xiang",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "cai-zishu"
+      ],
+      "objects": [],
+      "sources": [
+        "src-dpm-228526"
+      ],
+      "zh": "蔡襄（1012—1067），字君谟，兴化仙游（今属福建）人，举进士，在泉州、福州、杭州等地做过官，有《蔡端明文集》，《宋史》有传。故宫的小传把一句话放在最前面：他的书法“在当时享有很高的声誉，被推为本朝第一”，又与苏轼、黄庭坚、米芾并称“宋四家”。四家并称是后来的事，“本朝第一”却是他活着时听到的话。[故宫博物院，蔡襄行书自书诗卷·蔡襄](https://www.dpm.org.cn/collection/handwriting/228526.html)\n\n[《自书诗卷》](../works/cai-zishu.md)的来历，故宫记得很具体：皇祐二年（1050），蔡襄罢福建转运使，召还汴京修起居注，于是从福州一路北行，走了半年多；沿途见闻有感于怀的都写成诗，卷中五言、七言共十一首，书写时间当在诗成之后不久，时年约四十。纸本，三接纸，纵二十八点二厘米、横二百二十一点二厘米，行书七十三行、八百八十四字。半年的路收进十一首诗，再收进两米多长的一卷纸——这不是抄诗，是一段路被压平了。[故宫博物院，蔡襄行书自书诗卷](https://www.dpm.org.cn/collection/handwriting/228526.html)\n\n故宫对它的判断是“因属个人诗稿，无意求工”，所以“笔致飘逸流畅，点画婉转精美”，显出中年“清健圆润”的面貌。可卷里已经有人在读它：第三首诗题下有一行小字“此一篇极有古人风格”，据卷后杨时跋，是欧阳修写的。诗成不久，另一位大手笔就在上面批了一句。近代朱文钧的跋说得更细：“此册行楷略备，无不臻美。其婉约处极似虞永兴，而温栗不减柳谏议。盖其能博采约举以自成一家书派者。”一句里点了两家——虞世南的婉约、柳公权的温栗，本库有[《孔子庙堂碑》](../works/kongzi-miaotang-bei.md)与[《玄秘塔碑》](../works/xuanmi-ta-bei.md)可以对看。[故宫博物院，蔡襄行书自书诗卷](https://www.dpm.org.cn/collection/handwriting/228526.html)\n\n稿与帖的分界在后头。此卷经贾似道、梁清标、嘉庆内府递藏，著录于《珊瑚网》《吴氏书画记》《平生壮观》《石渠宝笈三编》，又刻入《秋碧堂》《经训堂》《玉虹鉴真》诸帖。刻进帖里，一件不能复制的墨迹就变成可以反复临写的范本，同一卷字从此有了墨迹与拓本两种读法。所以读它的顺序不妨倒过来：先记住这是赶路途中随手写的十一首诗，再看那些笔画里哪一处是当日的速度，哪一处是后世的刀。[故宫博物院，蔡襄行书自书诗卷](https://www.dpm.org.cn/collection/handwriting/228526.html)",
+      "en": "Cai Xiang (1012–1067), courtesy name Junmo, a native of Xianyou in Xinghua (modern Fujian), passed the examinations, served in Quanzhou, Fuzhou and Hangzhou, and left the Cai Duanming collection; the Song History carries his biography. The Palace Museum’s note puts one sentence first: his calligraphy “enjoyed a high reputation in his own day and was ranked first of the dynasty”, and he is named with Su Shi, Huang Tingjian and Mi Fu as the Four Masters of the Song. The fourfold name came later; “first of the dynasty” was said while he was alive to hear it. [Palace Museum, Cai Xiang’s poem scroll, biography](https://www.dpm.org.cn/collection/handwriting/228526.html)\n\nThe museum records the occasion of the [Scroll of Poems in the Author’s Hand](../works/cai-zishu.md) precisely: in the second year of Huangyou (1050) Cai was relieved of the post of Fujian transport commissioner and recalled to the capital as diarist, so he went north from Fuzhou and was more than half a year on the road; whatever moved him on the way became a poem, and the scroll holds eleven of them in five- and seven-character lines, written not long after they were made, when he was about forty. Paper, three joined sheets, 28.2 by 221.2 cm, running script, seventy-three lines and 884 characters. Half a year of road pressed into eleven poems, then into a scroll over two metres long: this is not poems copied out, it is a journey flattened. [Palace Museum, Cai Xiang’s poem scroll](https://www.dpm.org.cn/collection/handwriting/228526.html)\n\nThe museum’s judgement is that the scroll was “a personal draft, with no thought of refinement”, hence the “fluent, drifting brush and the graceful, turning strokes”, the “clear and rounded” manner of his middle years. Yet someone was already reading it inside the scroll: under the title of the third poem stands a line in small characters, “this one has very much the air of the ancients”, which the colophon by Yang Shi at the end attributes to Ouyang Xiu. Soon after the poems were finished, another great hand had written a comment on them. The modern colophon by Zhu Wenjun goes further: “This album has both running and regular script, and nothing in it falls short of the excellent. Where it is graceful it comes very close to Yu Yongxing; where it is warm and firm it yields nothing to Liu Jianyi. This is how he gathered widely, chose the essential, and made a school of his own.” Two names in one sentence — the grace of Yu Shinan and the warmth and firmness of Liu Gongquan; this library holds the [Confucius Temple Stele](../works/kongzi-miaotang-bei.md) and the [Xuanmi Pagoda Stele](../works/xuanmi-ta-bei.md) to set beside it. [Palace Museum, Cai Xiang’s poem scroll](https://www.dpm.org.cn/collection/handwriting/228526.html)\n\nThe line between draft and model comes later. The scroll passed through Jia Sidao, Liang Qingbiao and the Jiaqing palace collection, was recorded in the Shanhu wang, the Wushi shuhua ji, the Pingsheng zhuangguan and the third series of the Shiqu baoji, and was carved into the Qiubi tang, Jingxun tang and Yuhong jianzhen modelbooks. Once carved into a modelbook, an unrepeatable manuscript becomes a copybook that can be written from again and again: one scroll, two ways of reading it, as ink and as rubbing. So the order might be reversed — remember first that these are eleven poems written on the road, then look at the strokes and ask which passage is the speed of that day and which is a later knife. [Palace Museum, Cai Xiang’s poem scroll](https://www.dpm.org.cn/collection/handwriting/228526.html)"
+    },
+    {
+      "kind": "people",
       "id": "feng-chengsu",
       "titleZh": "冯承素",
       "titleEn": "Feng Chengsu",
@@ -18425,6 +18545,140 @@
     },
     {
       "kind": "people",
+      "id": "li-shimin",
+      "titleZh": "李世民",
+      "titleEn": "Li Shimin",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "jinci-zhi-ming",
+        "wen-quan-ming"
+      ],
+      "objects": [],
+      "sources": [
+        "src-taiyuan-jinci",
+        "src-thepaper-wenquanming",
+        "src-shi-dunhuang-rubbings"
+      ],
+      "zh": "李世民即唐太宗。库里两件作品都是他御制御书，也都是行书入碑，一件原石还在，一件只剩拓本，正好用来看“行书入碑”这句话是怎么立起来的。\n\n[《晋祠之铭并序》](../works/jinci-zhi-ming.md)刻于贞观二十年（646）。晋祠博物馆馆长郭保平说，这是他御制御书唯一存世的原碑。碑身今在晋祠贞观宝翰亭内，高一点九五米、宽一点二米、厚零点二七米，碑额左右各雕螭首一对，额首书“贞观廿年正月廿六日”九字，作龙头飞白隶书；全文一千二百零三字。碑阴另有长孙无忌、萧瑀、李勣、张亮、李道宗、杨师道、马周七位随征功臣的亲笔签名与官衔——碑阳是帝王手笔，碑阴是臣下的字，一块石上两种身份，读的时候不该混为一谈。此石今基本完好，唯下部三分之一剥落较多；明末清初傅山已说，他少时所见拓本极精，后来碑面模糊，又有人“镌而深之，颇失其质”。[太原市人民政府，唐太宗唯一存世石碑](https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html)\n\n“行书入碑”的谱系，恰恰是被存佚改写的。清钱泳说：“以行书碑者始于唐太宗之《晋祠铭》。”但赵明诚《金石录》记《魏郑公碑》“太宗御制并行书，贞观十七年正月”，比晋祠铭还早三年；那通碑没有留下来。于是通常把《晋祠之铭并序》算作行书入碑之始，其实它是“流传至今最早”的那一件。读碑时把这两句话分开，碑史上的“第一”往往是“现存第一”。[太原市人民政府，唐太宗唯一存世石碑](https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html)\n\n两年后的[《温泉铭》](../works/wen-quan-ming.md)（648）连石也没有了。今日所见是敦煌石室所出的一件唐拓，编号 P.4508，藏法国国家图书馆，报道称其为现存最早的拓本。故宫博物院施安昌曾把它与巴黎所藏另外三种碑刻古拓放在一起比对。所以这两件要分开读：晋祠铭读石与刻，温泉铭只能读纸与墨——唐初的拓墨技术，反倒靠一块已亡的碑保存下来。郭保平还说，太宗传世书作甚少，晋祠碑是他学王羲之的经典之作，碑中三十九个“之”字千姿百态。拿这句话去看温泉铭的拓本，可以比对同一手在同一时期的两副面貌。[澎湃新闻，法藏敦煌遗书资源回归](https://thepaper.cn/newsDetail_forward_2020736) · [施安昌，敦煌石室发现的四种碑刻古拓](https://www.dpm.org.cn/Uploads/pdf/1887/T00071_00.pdf)",
+      "en": "Li Shimin is Emperor Taizong of the Tang. Both works in this library he composed and wrote himself, both are carved in running script, and one stone survives while the other survives only as a rubbing — which makes the two a good test of what “running script on a stele” actually means.\n\nThe [Inscription for the Jin Shrine](../works/jinci-zhi-ming.md) was carved in 646. Guo Baoping, curator of the Jinci Museum, calls it the only original stele by Taizong that survives, composed and written by the emperor himself. The stone now stands in the Zhen Guan Bao Han pavilion at the shrine: 1.95 m high, 1.2 m wide, 0.27 m thick, with a pair of chi-dragon heads flanking the heading, which reads “the twenty-sixth day of the first month of the twentieth year of Zhenguan” in nine characters of a rare flying-white clerical script; the text runs to 1,203 characters. On the reverse are the signatures and titles of seven ministers who accompanied the campaign — Zhangsun Wuji, Xiao Yu, Li Ji, Zhang Liang, Li Daozong, Yang Shidao and Ma Zhou. The emperor’s hand on the face, his ministers’ hands on the back: two kinds of writing on one stone, and they should not be read as one. The stone is largely intact, though the lower third has flaked; Fu Shan, writing in the late Ming, said that the rubbings he saw as a boy were superb, that the face later blurred, and that someone had “cut it deeper and rather lost its substance”. [Taiyuan municipal government, the emperor’s only surviving stele](https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html)\n\nThe pedigree of running script on stone has been rewritten by survival. Qian Yong of the Qing wrote that “carving a stele in running script begins with Taizong’s Jin Shrine inscription”. But Zhao Mingcheng’s Jinshi lu records a Stele for Duke Zheng of Wei, “composed and written in running script by Taizong, first month of the seventeenth year of Zhenguan” — three years earlier. That stone is gone. So the Jin Shrine inscription is usually counted as the beginning, when it is really the earliest that came down to us. Keep the two sentences apart: in stele history a “first” is often a “first surviving”. [Taiyuan municipal government, the emperor’s only surviving stele](https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html)\n\nTwo years later the [Hot Spring Inscription](../works/wen-quan-ming.md) of 648 has lost even its stone. What survives is a Tang rubbing found in the Dunhuang cave library, numbered P.4508 and held at the Bibliothèque nationale de France, described in report as the earliest surviving rubbing. Shi Anchang of the Palace Museum compared it with three other early stele rubbings in Paris. So the two works must be read apart: at the Jin shrine, stone and carving; at the hot spring, only paper and ink — the rubbing technique of the early Tang preserved by a stele that no longer exists. Guo also notes that Taizong’s writing is scarce, that this stele is his classic study of Wang Xizhi, and that its thirty-nine instances of the character zhi are each different. Hold that against the Hot Spring rubbing and one hand can be compared with itself across two years. [The Paper, return of the Pelliot manuscripts](https://thepaper.cn/newsDetail_forward_2020736) · [Shi Anchang, four early stele rubbings from Dunhuang](https://www.dpm.org.cn/Uploads/pdf/1887/T00071_00.pdf)"
+    },
+    {
+      "kind": "people",
+      "id": "li-si",
+      "titleZh": "李斯",
+      "titleEn": "Li Si",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "langya-keshi",
+        "taishan-keshi",
+        "yishan-inscription"
+      ],
+      "objects": [],
+      "sources": [
+        "src-chnmuseum-langya",
+        "src-taian-dai-museum-site",
+        "src-beilin-yishan"
+      ],
+      "zh": "库里三件秦刻石都归到李斯名下：琅琊、泰山、峄山。三件都因秦始皇二十八年（前 219）东巡而立，秦二世元年（前 209）又在石上加刻。三处馆方著录对他的官称并不一致：中国国家博物馆记随行的是“廷尉”，西安碑林与泰安方面都写作“丞相”。同一年的同一件事，两种写法并存，本页照录，不改写成一种。[中国国家博物馆，琅琊刻石](https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml) · [西安碑林博物馆，峄山刻石](https://www.beilin-museum.com/index.php?a=index&aid=2620&c=View&m=home) · [泰山风景名胜区，岱庙](https://tsgw.taian.gov.cn/art/2021/6/13/art_363479_10320189.html)\n\n读[《琅琊刻石》](../works/langya-keshi.md)可以先从一个“传”字入手。国博的条目说此刻石“书体为秦篆，传为随行廷尉李斯所书”，是传统归名，条目也没有引署名或当时文献作证。现存残石是原石的后半部：高一百三十二点二厘米，宽六十五点八至七十一点三厘米，厚三十六点二厘米，存十三行八十七字。前两行是前 219 年从臣的官职姓名，后十一行是前 209 年二世补刻的诏书。一块石上两代刻辞，字口的漫漶也不同，读的时候要分开记。[中国国家博物馆，琅琊刻石](https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml)\n\n[《泰山刻石》](../works/taishan-keshi.md)剩下的更少：原石只存二世诏书的残字十个，在岱庙东御座内，其中“臣去疾臣请矣臣”七字完整，“斯昧死”三字残泐。这十个字在诏书末尾，是从臣奏请的部分；“斯”在这里是李斯的自称，与后世书画的落款不是一回事——石上有名字，不等于自署。始皇的诏文今主要靠拓本流传，石上已经读不到。[泰山风景名胜区，岱庙](https://tsgw.taian.gov.cn/art/2021/6/13/art_363479_10320189.html)\n\n[《峄山刻石》](../works/yishan-inscription.md)在西安碑林，高二百一十八厘米、宽八十四厘米，十五行，满行十五字，两面刻字。它不是秦石：北宋淳化四年（993），郑文宝用徐铉的摹本刻成。碑林的说法是“原为秦丞相李斯所书”——“原为”二字指向那块已经不存的秦石，不是眼前这块宋碑。三条著录放在一起，措辞的松紧与石头的年代恰好相反：原石残块写“传为”，宋人摹刻反而写得更肯定。为什么会这样，条目本身没有解释；但读秦篆时记着这一点，就不容易把重刻的碑当作秦人的手。[西安碑林博物馆，峄山刻石](https://www.beilin-museum.com/index.php?a=index&aid=2620&c=View&m=home)\n\n三块石还给同一件事：秦篆的样子。峄山条目说秦篆“用笔圆转，结构匀称，点画粗细均匀”，并引旧评“画如铁石，字若飞动，作楷隶之祖，为不易之法”。这是对书体的描述，不是对李斯其人的判断。拿它当读字的尺子可以，拿它当李斯的个人风格则要留余地——三块石上没有一块能确证是他的手。[西安碑林博物馆，峄山刻石](https://www.beilin-museum.com/index.php?a=index&aid=2620&c=View&m=home)",
+      "en": "Three Qin inscriptions in this library carry Li Si’s name: Langya, Mount Tai and Mount Yi. All three were set up on the First Emperor’s eastern tour of 219 BCE, and all three were added to in 209 BCE, the first year of the Second Emperor. The museum entries do not agree on his office: the National Museum of China records that the attendant who accompanied the emperor was a commandant of justice, while the Xi’an Beilin Museum and the Mount Tai authority both call him chancellor. Two titles for one event in one year; this page records both and does not reduce them to one. [National Museum of China, Langya inscription](https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml) · [Xi’an Beilin Museum, Mount Yi inscription](https://www.beilin-museum.com/index.php?a=index&aid=2620&c=View&m=home) · [Mount Tai authority, Dai Temple](https://tsgw.taian.gov.cn/art/2021/6/13/art_363479_10320189.html)\n\nThe [Langya inscription](../works/langya-keshi.md) is best entered through a single word: “traditionally”. The National Museum’s entry says the script is Qin seal script, “traditionally attributed to the commandant of justice Li Si who accompanied the emperor” — a traditional attribution, and the entry cites neither a signature nor a contemporary document. The surviving block is the rear half of the original: 132.2 cm high, 65.8 to 71.3 cm wide, 36.2 cm thick, thirteen lines and eighty-seven characters. The first two lines give the offices and names of attendants from 219 BCE; the following eleven lines carry the Second Emperor’s edict of 209 BCE. Two reigns on one stone, worn to different degrees — keep the accounts apart as you read. [National Museum of China, Langya inscription](https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml)\n\nLess again survives of the [Mount Tai inscription](../works/taishan-keshi.md): ten damaged characters of the Second Emperor’s edict, kept in the eastern throne room of the Dai Temple. Seven of them, “chen quji chen qing yi chen”, are intact; the three reading “Si mei si” are worn. They belong to the close of the edict, where the attending officials submit their request; the “Si” there is Li Si naming himself, which is not the same as a signature on a painting or a scroll. A name on a stone is not an autograph. The First Emperor’s text survives today mainly through rubbings; on the stone it can no longer be read. [Mount Tai authority, Dai Temple](https://tsgw.taian.gov.cn/art/2021/6/13/art_363479_10320189.html)\n\nThe [Mount Yi inscription](../works/yishan-inscription.md) is at the Xi’an Beilin Museum: 218 cm high, 84 cm wide, fifteen lines of fifteen characters, carved on both faces. It is not a Qin stone. In 993, the fourth year of Chunhua in the Northern Song, Zheng Wenbao cut it from a tracing of Xu Xuan’s copy. The Beilin entry says it “was originally written by the Qin chancellor Li Si” — “originally” pointing to the lost Qin stone, not to the Song slab in front of you. Put the three entries together and the firmness of the wording runs opposite to the age of the stone: the original fragment says “traditionally”, while the Song recutting speaks more confidently. Why, the entries do not say; but keeping this in mind makes it harder to mistake a recut for a Qin hand. [Xi’an Beilin Museum, Mount Yi inscription](https://www.beilin-museum.com/index.php?a=index&aid=2620&c=View&m=home)\n\nAll three stones also testify to one thing: what Qin seal script looked like. The Mount Yi entry describes it as “round in the turn of the brush, even in structure, uniform in the thickness of stroke”, and quotes an old judgement: “drawn like iron and stone, the characters seem to fly, the ancestor of regular and clerical script, a law not to be changed.” That is a description of a script, not a judgement of the man. Use it to measure characters; do not use it as Li Si’s personal style — not one of the three stones can be shown to be his hand. [Xi’an Beilin Museum, Mount Yi inscription](https://www.beilin-museum.com/index.php?a=index&aid=2620&c=View&m=home)"
+    },
+    {
+      "kind": "people",
+      "id": "li-yangbing",
+      "titleZh": "李阳冰",
+      "titleEn": "Li Yangbing",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "sanfen-ji",
+        "yan-jiamiao-bei"
+      ],
+      "objects": [],
+      "sources": [
+        "src-beilin-sanfenji",
+        "src-hbrb-sanfenji",
+        "src-beilin-yanjiamiao"
+      ],
+      "zh": "李阳冰（约721—约785），字少温，祖籍赵郡（今河北赵县），后迁云阳（今陕西淳化），是李白的族叔。历上元县尉、缙云县令、当涂县令、国子监丞、集贤院学士、将作少监、秘书少监，世称“李监”。他以小篆名家，被推为李斯之后“小篆第一人”，唐时已有“阳冰独步”“仓颉后身”之说。[河北日报，阳冰独步](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)\n\n库里两件，一主一辅，正好分开篆书的两种用途。[《三坟记》](../works/sanfen-ji.md)刻于大历二年（767），李季卿撰文，李阳冰篆书，记李家三位兄长迁葬之事；碑在西安碑林，螭首龟趺，碑身中部横断，两面刻篆书，残高一百六十厘米、宽八十厘米、厚二十五厘米，碑阳十三行、碑阴十一行、满行二十字。这一件从撰到刻都有他的位置——文是别人的，篆全是他的。到了[《颜氏家庙碑》](../works/yan-jiamiao-bei.md)（780），他就只剩碑额“颜氏家庙之碑”几个字，正文是颜真卿的楷书。同一个人，一件写全篇，一件只写题头；读之前先问一句“他在这块石上写了多少”，答案会改变你对“李阳冰篆书”的印象。[西安碑林博物馆，三坟记碑](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2611) · [西安碑林博物馆，颜氏家庙碑](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2615)\n\n两块石的可信度也不同。碑林记《三坟记》刻于大历二年，未提重刻；河北日报则说原石久佚，今存碑林者是宋时重刻，且未记重刻年份。本库的《三坟记》条目把这一点留在待考里。而《颜氏家庙碑》的碑额在原石上——那通碑曾仆于郊野，北宋太平兴国七年（982）重立，今高三百三十八厘米。所以今天读到的李阳冰，一件隔着宋人的刀，一件直接落在唐石上。清孙承泽说他曾见李阳冰手书，“遒劲中逸致翩然，又非石刻所能及也”——这话值得记着：石与刻工，已经先拿走了一层。[西安碑林博物馆，三坟记碑](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2611) · [河北日报，阳冰独步](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)\n\n他的篆法来自李斯。《上李大夫论古篆书》自述“阳冰志在古篆，殆三十年”，先从《峄山刻石》入手，又学《吴季札墓志》。这里有个容易忽略的层次：唐人所见的峄山，与今日碑林那块峄山——北宋淳化四年（993）郑文宝用徐铉摹本刻成——并不是同一块石，本库[《峄山刻石》](../works/yishan-inscription.md)条目已记明。也就是说，“上追秦篆”这件事，唐人追的是一块唐时还在的石头，我们追的是一块宋人重刻的石头。[河北日报，阳冰独步](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)\n\n评价可以看三条。唐人概括他的篆书为“格峻”“力猛”“功备”，称为“铁线描”；宋朱长文《续书断》品第唐宋书家九十四人，神品只列三位：李阳冰、颜真卿、张旭；清康有为说《三坟记》“瘦劲取胜”。他与颜真卿并称“二绝”，当时颜书之碑多请他篆额，《颜氏家庙碑》正是这对组合的实例——碑阳颜楷、碑额李篆，一块石上两个“神品”，读的时候却要用两副眼睛。[河北日报，阳冰独步](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)",
+      "en": "Li Yangbing (c. 721 – c. 785), courtesy name Shaowen, came from a family registered in Zhao commandery, present-day Zhao county in Hebei, later moved to Yunyang in Shaanxi, and was an elder kinsman of the poet Li Bai. He served as a county defender, magistrate of Jinyun and of Dangtu, and rose through the Directorate of Education, the Academy of Scholarly Worthies and the Directorate of Works to the post of secretary of the Secretariat, from which he was known as Director Li. He made his name in small seal script and was later called the first seal writer since Li Si; already in his own day people spoke of “Yangbing alone” and of him as “Cangjie reborn”. [Hebei Daily, Yangbing alone](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)\n\nTwo works here, one primary and one ancillary, and between them they separate two uses of seal script. The [Record of the Three Graves](../works/sanfen-ji.md) was carved in 767: Li Jiqing composed the text, Li Yangbing wrote it in seal script, recording the reburial of the Li brothers. The stone is in the Beilin at Xi’an, with a chi-dragon head and a tortoise plinth, broken across the middle, seal script on both faces; the fragment stands 160 cm high, 80 cm wide and 25 cm thick, with thirteen lines on the face and eleven on the back, twenty characters to the line. Here he has a place from text to carving — the words are another man’s, the seal script entirely his. On the [Stele of the Yan Family Shrine](../works/yan-jiamiao-bei.md) of 780 only the heading is his, the six characters “Stele of the Yan Family Shrine”, while the body is Yan Zhenqing’s regular script. One man, one work written entire and one heading only: before reading, ask how much of the stone he actually wrote, and the answer will change what “Li Yangbing’s seal script” means. [Xi’an Beilin Museum, Record of the Three Graves](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2611) · [Xi’an Beilin Museum, Yan family shrine stele](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2615)\n\nThe two stones are not equally trustworthy either. The Beilin dates the Record of the Three Graves to 767 and mentions no recutting; Hebei Daily reports that the original was long lost and that the stone in the Beilin is a Song recutting, without giving its year. This library keeps that point open in the work record. The heading of the Yan shrine stele, by contrast, is on the original: that monument fell in the fields and was re-erected in 982, and it stands 338 cm high today. So the Li Yangbing we read is, in one case, seen through a Song knife, and in the other lies on Tang stone. Sun Chengze of the Qing, having seen a Li Yangbing manuscript, wrote that “its vigour carries an untroubled ease that no carving can reach” — worth remembering: stone and cutter have already taken a layer away. [Xi’an Beilin Museum, Record of the Three Graves](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2611) · [Hebei Daily, Yangbing alone](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)\n\nHis seal method came from Li Si. In his letter to Li Dafu on ancient seal script he says that he gave himself to it for nearly thirty years, beginning with the Mount Yi inscription and going on to the Wu Jizha epitaph. There is a layer here that is easily missed: the Mount Yi that Tang readers saw and the Mount Yi in the Beilin today — cut in 993 by Zheng Wenbao from Xu Xuan’s tracing — are not the same stone, as this library’s [Mount Yi entry](../works/yishan-inscription.md) records. “Going back to Qin seal script” meant, for a Tang writer, a stone that still stood in his own time; for us it means a Song recutting. [Hebei Daily, Yangbing alone](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)\n\nThree judgements are worth keeping. The Tang summed up his seal script as “lofty in frame, fierce in force, complete in method”, and called it iron-wire drawing. Zhu Changwen’s Xu shutuan graded ninety-four calligraphers of the Tang and Song and placed only three in the divine class: Li Yangbing, Yan Zhenqing and Zhang Xu. Kang Youwei said the Record of the Three Graves “wins by leanness and strength”. He and Yan Zhenqing were known together as “the two excellences”, and Yan’s steles were usually headed by Li’s seal script; the Yan family shrine stele is exactly that pairing — Yan’s regular script on the face, Li’s seal on the heading, two “divine” hands on one stone, to be read with two different eyes. [Hebei Daily, Yangbing alone](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)"
+    },
+    {
+      "kind": "people",
+      "id": "liu-gongquan",
+      "titleZh": "柳公权",
+      "titleEn": "Liu Gongquan",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "xuanmi-ta-bei",
+        "shen-ce-jun-bei",
+        "huiyuan-guan-zhonglou-ming",
+        "mengzhao",
+        "guifeng"
+      ],
+      "objects": [],
+      "sources": [
+        "src-dpm-231095",
+        "src-dpm-259370",
+        "src-beilin-xuanmita",
+        "src-ccdy-shence",
+        "src-nlc-shence-museum",
+        "src-beilin-huiyuan",
+        "src-dpm-234182"
+      ],
+      "zh": "柳公权（778—865），字诚悬，京兆华原（今陕西耀县）人。宪宗元和初年进士，历中书舍人、谏议大夫、太子宾客，官至太子少师，世称“柳少师”，封河东郡公。故宫的小传称他“师颜真卿、欧阳询而能参化其神理，自成一局”，与颜真卿并称“颜筋柳骨”；又说穆宗曾问用笔之法，他答“用笔在心，心正则笔正”，语意双关，既论写字，也是笔谏。这句话可以当读柳书的入口：他讲的是骨力，不是姿态。[故宫博物院，柳公权行书蒙诏帖卷·柳公权](https://www.dpm.org.cn/collection/handwriting/231095.html)\n\n小传称他的楷书以《玄秘塔碑》《神策军碑》等最具特色，两件都在本库，刻石相隔两年。[《玄秘塔碑》](../works/xuanmi-ta-bei.md)立于会昌元年（841），裴休撰文，柳公权书丹并篆额，邵建和、邵建初兄弟刻石；原石今在西安碑林，故宫另藏一册明初拓本。[《神策军碑》](../works/shen-ce-jun-bei.md)立于会昌三年（843），崔铉撰文；原石在禁中，传拓不易，后来石佚，今日所见只是一卷宋装的上册，二十七开，经贾似道递藏，1965年归藏，今在中国国家图书馆。[西安碑林博物馆，玄秘塔碑](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=148) · [中国文化报，宋拓《神策军碑》](https://nepaper.ccdy.cn/html/2012-06/22/content_74528.htm)\n\n同一书手的两件代表作，一件有石、一件只剩纸。读玄秘塔要先把原石与拓册分开记账，到了神策军，拓本已是唯一的实物，石面的状态无从校对。故宫形容玄秘塔“用笔锐利，结体紧密，筋骨外露”，又说它“横画右肩稍高，略带欹侧之势”，见出“柳书的险绝”，推为“柳书最佳之临习范本”。这些话是对着原石说的，拿它去量拓本，才不至于把纸上的墨色当成石上的刀口。[故宫博物院，明初拓大达法师玄秘塔碑册](https://www.dpm.org.cn/collection/impres/259370.html)\n\n比这两碑更早的一方，反而最晚被人读到。[《迴元观钟楼铭》](../works/huiyuan-guan-zhonglou-ming.md)刻于开成元年（836），令狐楚撰文，柳公权书丹，石面一百二十三乘六十厘米，四十一行。此石历代金石书未见著录，1986年才在西安太乙路出土。它的好处正在“没被读过”：没有宋以来的翻刻，也很少有拓本递藏的题跋可依，字口离石面更近。看熟了名碑的拓本，不妨先在这块出土晚的石上认一遍骨力，再回头读玄秘塔。[西安碑林博物馆，迴元观钟楼铭](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2581)\n\n墨迹只有一卷，而且靠不住。[《蒙诏帖》](../works/mengzhao.md)纸本行书，纵二十六点八厘米、横五十七点四厘米，旧题柳公权，故宫定为非柳书。理由分两路。文辞上，帖中“出守翰林”不合唐人居官的称谓，南宋《兰亭续帖》所收《翰林帖》文字更顺，此卷或是宋人依其大意写出。笔法上，前四行用笔尚雄畅，后几行渐瘦薄、结字松散，末行“权”字笔画不成结构，与柳氏“遒媚劲健”的书风悬殊。这一卷读的不是柳公权，而是“旧题”怎么被拆掉：官称对不上、笔法前后不匀，两条都成立，归名便保不住。[故宫博物院，柳公权行书蒙诏帖卷](https://www.dpm.org.cn/collection/handwriting/231095.html)\n\n还有一块石，他只写了碑额。[《圭峰定慧禅师碑》](../works/guifeng.md)立于大中九年（855），裴休撰文并书丹，柳公权篆额，邵建初刻石。与玄秘塔并看，相隔十四年，同一组人合作了两次，角色却换了：玄秘塔是裴休撰、柳书丹，圭峰碑是裴休自书、柳篆额。碑额是另一套笔法，篆书与楷书不能互证。故宫所藏明拓中，“同中书”的“同”字尚未损坏，一字完缺即可辨本。[故宫博物院，圭峰定慧禅师碑](https://www.dpm.org.cn/collection/impres/234182.html)",
+      "en": "Liu Gongquan (778–865), courtesy name Chengxuan, was a native of Huayuan in the capital prefecture, present-day Yaoxian in Shaanxi. He passed the metropolitan examination in the early Yuanhe years and served as Secretariat drafter, remonstrance official and guest of the crown prince before rising to Junior Preceptor of the Heir Apparent, from which he was known as Young Preceptor Liu, and was enfeoffed as Duke of Hedong. The Palace Museum’s short biography says he “studied Yan Zhenqing and Ouyang Xun and transformed their spirit, forming a manner of his own”, and pairs him with Yan as “Yan’s sinew, Liu’s bone”. It also records that when Emperor Muzong asked him about brush method, he answered that the brush lies in the mind, and when the mind is upright the brush is upright — a double sense that spoke of writing and of remonstrance at once. That sentence is as good an entrance as any: what he writes is bone, not posture. [Palace Museum, Liu Gongquan’s Mengzhao letter, biography of Liu Gongquan](https://www.dpm.org.cn/collection/handwriting/231095.html)\n\nThe same biography says that among his regular-script works the [Xuanmi Pagoda Stele](../works/xuanmi-ta-bei.md) and the [Shence Army Stele](../works/shen-ce-jun-bei.md) are the most distinctive. Both are in this library, carved two years apart. The Xuanmi stele was erected in 841, composed by Pei Xiu, written and given a seal-script heading by Liu, and cut by the brothers Shao Jianhe and Shao Jianchu; the stone is at the Xi’an Beilin Museum, and the Palace Museum holds a separate early Ming rubbing album. The Shence stele of 843 was composed by Cui Xuan and stood inside the palace compound, where rubbings were hard to take; the stone was later lost, and what survives is one volume of a Song mounting, twenty-seven openings, once in Jia Sidao’s collection and returned in 1965, now in the National Library of China. [Xi’an Beilin Museum, Xuanmi stele](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=148) · [China Culture Daily, Song rubbing of the Shence stele](https://nepaper.ccdy.cn/html/2012-06/22/content_74528.htm)\n\nTwo representative works by one hand, one stone and one sheet of paper. With the Xuanmi stele, keep the stone and the album in separate accounts; with the Shence stele the rubbing is all that is left, and the surface cannot be checked at all. The Palace Museum describes the Xuanmi stele as “cut with a sharp edge, tightly knit in structure, sinew showing on the outside”, its horizontal strokes “rising a little at the right shoulder, with a slight tilt”, which it reads as the “dangerous steepness” of Liu’s script, and calls the stele the best model for copying his work. Those words were written against the stone; use them to measure a rubbing and the ink will not be mistaken for the blade. [Palace Museum, early Ming rubbing of the Xuanmi stele](https://www.dpm.org.cn/collection/impres/259370.html)\n\nEarlier than either stele, this slab was the last to be read. The [Huiyuan Abbey Bell Tower Inscription](../works/huiyuan-guan-zhonglou-ming.md) was carved in 836, composed by Linghu Chu and written by Liu, on a slab 123 by 60 cm with forty-one lines. No epigraphic catalogue recorded it, and it came to light only in 1986 on Taiyi Road in Xi’an. Its virtue is exactly that it went unread: no Song recarving, few colophons of ownership to lean on, and letterforms that sit closer to the stone. Having looked long at famous rubbings, one might first take the measure of the bone on this late-found slab, then go back to the Xuanmi stele. [Xi’an Beilin Museum, Huiyuan inscription](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2581)\n\nOnly one sheet of ink survives, and it will not hold. The [Mengzhao letter](../works/mengzhao.md) is ink on paper, running script, 26.8 by 57.4 cm, long attributed to Liu and judged by the Palace Museum not to be his. The argument runs two ways. In wording, “sent out to serve in the Hanlin” does not fit the titles of a Tang officeholder, and the Hanlin letter preserved in the Southern Song Lanting xu tie reads more naturally; this scroll may be a Song writer’s expansion of its sense. In brushwork, the first four lines are still vigorous, the later lines thin and loosely built, and the final “quan” of his signature falls apart as a character — far from the “supple, firm and strong” manner of Liu. What this scroll teaches is not Liu Gongquan but how an old attribution is taken apart: a title that does not fit and a hand that does not hold steady. With both in place, the name cannot stand. [Palace Museum, Liu Gongquan’s Mengzhao letter](https://www.dpm.org.cn/collection/handwriting/231095.html)\n\nOn one stone he wrote only the heading. The [Guifeng Chan Master Stele](../works/guifeng.md) was erected in 855, composed and written by Pei Xiu, with its seal-script heading by Liu and the cutting by Shao Jianchu. Set beside the Xuanmi stele, fourteen years apart, the same group worked twice with the roles exchanged: at Xuanmi, Pei composed and Liu wrote; at Guifeng, Pei wrote his own text and Liu supplied only the heading. A heading is another script altogether, and seal cannot vouch for regular. In the Palace Museum’s Ming rubbing the “tong” of “tong zhongshu” is still intact, and the soundness of a single character is enough to tell one impression from another. [Palace Museum, Guifeng stele](https://www.dpm.org.cn/collection/impres/234182.html)"
+    },
+    {
+      "kind": "people",
+      "id": "mi-fu",
+      "titleZh": "米芾",
+      "titleEn": "Mi Fu",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "tiaoxi",
+        "shusu",
+        "shanhu"
+      ],
+      "objects": [],
+      "sources": [
+        "src-catalogue-tiaoxi",
+        "src-dpm-231255",
+        "src-catalogue-shusu"
+      ],
+      "zh": "米芾（1051—1107），字元章，号鹿门居士、襄阳漫士、海岳外史，祖籍太原，后迁襄阳，晚居润州（今江苏镇江）。徽宗时官书学博士，擢礼部员外郎，人称“米南宫”。故宫博物院的小传称其书法“初宗二王、颜真卿，后博采众长，自成一家”，用笔“八面出锋”，结体欹侧多姿，与蔡襄、苏轼、黄庭坚并称“北宋四大家”。[故宫博物院，米芾行书苕溪诗卷·米芾](https://www.dpm.org.cn/collection/handwriting/228246.html)\n\n读米芾，可从元祐三年（1088）一年里的两卷入手。[《苕溪诗卷》](../works/tiaoxi.md)为纸本行书，三十五行二百九十四字，末署“元祐戊辰八月八日作”，馆方据此定在 1088 年，时米芾三十八岁；卷首自题“將之苕溪戲作呈諸友，襄陽漫仕黻”，所书是他自撰的六首诗。清人吴其贞《书画记》评此卷“运笔潇洒，结构舒畅，盖效颜鲁公化书者”——馆方引此语，说它道出了米芾宗法[颜真卿](../people/yan-zhenqing.md)又自出新意的路子。同年所书的[《蜀素帖》](../works/shusu.md)，可与此卷对看。[故宫博物院，米芾行书苕溪诗卷](https://www.dpm.org.cn/collection/handwriting/228246.html) · [国立故宫博物院，蜀素帖](https://digitalarchive.npm.gov.tw/Collection/Detail/912?dep=P)\n\n一卷怎样被认作真迹，此卷末尾留着材料：其子米友仁跋“右呈諸友等詩，先臣芾真迹，臣米友仁鑑定恭跋”。由儿子出面，称“先臣”，作“鉴定恭跋”，这一行字本身就是递藏链的第一环。此卷后入南宋绍兴内府，经项元汴、梁清标诸家，终归乾隆内府，并刻入[《三希堂法帖》](../works/sanxitang-fatie.md)。[故宫博物院，米芾行书苕溪诗卷](https://www.dpm.org.cn/collection/handwriting/228246.html)\n\n米芾另有一面留在[《珊瑚帖》](../works/shanhu.md)里。那是他与人谈收藏的一封书信：收了张僧繇的天王、景温的《问礼图》，又提到一枝珊瑚笔架；说到珊瑚，索性随手把笔架画在信里。馆方称此为“米芾唯一的传世画迹”。他本以水墨山水立“米家山”之名，这里留下的却是一个笔架的小图——看米芾的画，不妨从这个“随手”入手。[故宫博物院，米芾行书珊瑚帖页](https://www.dpm.org.cn/collection/handwriting/231255.html)",
+      "en": "Mi Fu (1051–1107), courtesy name Yuanzhang, called himself Lumen Jushi, Xiangyang Manshi and Haiyue Waishi. His ancestral home was Taiyuan; the family moved to Xiangyang and he settled late in life at Runzhou, present-day Zhenjiang in Jiangsu. Under Huizong he served as Erudite of Calligraphy and was promoted to Vice Director of the Ministry of Rites, which earned him the name Mi Nangong. The Palace Museum’s short biography says his calligraphy “first took the Two Wangs and Yan Zhenqing as its model, then gathered from many masters to form a manner of its own,” with a brush that “issues from eight facets,” and that his characters lean and vary; it counts him with Cai Xiang, Su Shi and Huang Tingjian as the Four Masters of the Northern Song. [Palace Museum, Mi Fu’s Tiaoxi poems, biography of Mi Fu](https://www.dpm.org.cn/collection/handwriting/228246.html)\n\nA way into Mi Fu is the two scrolls he wrote in one year, the third of Yuanyou (1088). The [Tiaoxi Poems](../works/tiaoxi.md) is ink on paper, running script, thirty-five lines and 294 characters, ending with the date “the eighth day of the eighth month, wuchen year of Yuanyou”; the museum dates it to 1088 on that basis, when Mi Fu was thirty-eight. The opening line, “playing at this as I go to Tiaoxi, presented to my friends, the Xiangyang idle official Fu,” shows the poems are his own, six of them. The Qing connoisseur Wu Qizhen judged in his Shuhua Ji that the scroll “moves the brush freely and its structure is relaxed, for he is following Yan Lugong’s transformed manner”; the museum quotes this to show how Mi Fu took [Yan Zhenqing](../people/yan-zhenqing.md) as his model and then made something new. The [Poems on Shu Silk](../works/shusu.md), written the same year, can be read against it. [Palace Museum, Mi Fu’s Tiaoxi poems](https://www.dpm.org.cn/collection/handwriting/228246.html) · [National Palace Museum, Poems on Shu Silk](https://digitalarchive.npm.gov.tw/Collection/Detail/912?dep=P)\n\nHow a scroll comes to be accepted as genuine is documented at the end of this one: Mi Fu’s son Mi Youren wrote a colophon — “the poems presented to my friends above are the true trace of my late father Fu, respectfully appraised and colophoned by his subject Mi Youren.” A son speaking, calling himself a subject, appraising in a colophon: that line is itself the first link in the chain of transmission. The scroll later entered the Shaoxing palace collection of the Southern Song, passed through Xiang Yuanbian and Liang Qingbiao, and ended in the Qianlong emperor’s collection, where it was cut into the [Sanxitang Model Letters](../works/sanxitang-fatie.md). [Palace Museum, Mi Fu’s Tiaoxi poems](https://www.dpm.org.cn/collection/handwriting/228246.html)\n\nAnother side of Mi Fu survives in the [Coral Letter](../works/shanhu.md), a note to a friend about collecting: he has acquired Zhang Sengyou’s Heavenly King and Xie Jingwen’s Painting of the Question of Rites, and mentions a coral brush-rest. Coming to the coral, he simply drew the rest into the letter. The museum calls this “the only surviving painting by Mi Fu.” He made his name in landscape with the “Mi family mountains”; what remains here is a small drawing of a brush-rest — a good place to begin with Mi Fu as a painter. [Palace Museum, Mi Fu’s Coral Letter](https://www.dpm.org.cn/collection/handwriting/231255.html)"
+    },
+    {
+      "kind": "people",
+      "id": "ouyang-xun",
+      "titleZh": "欧阳询",
+      "titleEn": "Ouyang Xun",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "jiuchenggong-liquan-ming",
+        "huangfu-dan-bei",
+        "huadu-si",
+        "yugong-gong-bei",
+        "zhanghan"
+      ],
+      "objects": [],
+      "sources": [
+        "src-dpm-234567",
+        "src-dpm-yugong-song",
+        "src-beilin-huangfudan",
+        "src-baoji-jiuchenggong",
+        "src-curator-siou"
+      ],
+      "zh": "欧阳询（557—641），字信本，潭州临湘（今湖南长沙）人。他历陈、隋、唐三朝，贞观间官至太子率更令、弘文馆学士，封渤海县男，与虞世南、褚遂良、薛稷并称“初唐四家”。故宫博物院的小传叙其书迹，只举四种名碑：《虞恭公碑》《化度寺邕禅师塔铭》《九成宫醴泉铭》《皇甫诞碑》——四种都在本库。[故宫博物院，欧阳询行书张翰帖·欧阳询](https://www.dpm.org.cn/collection/handwriting/234567.html)\n\n四碑可以并看，先分清谁撰、谁书。[《九成宫醴泉铭》](../works/jiuchenggong-liquan-ming.md)的文字出自魏徵；[《虞恭公碑》](../works/yugong-gong-bei.md)出自岑文本，篆额四行十六字；[《皇甫诞碑》](../works/huangfu-dan-bei.md)出自于志宁。三碑的书丹都是欧阳询。同一个人写在三块石上，撰者却各不相同，读时分开记账即可。[故宫博物院，宋拓虞恭公温彦博碑](https://www.dpm.org.cn/collection/impres/228414.html) · [西安碑林博物馆，皇甫诞碑](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2578) · [宝鸡市文物局，九成宫遗址答复函](https://wwj.baoji.gov.cn/col1892/col9955/202608/t20260821_1295837.html)\n\n第四种[《化度寺邕禅师舍利塔铭》](../works/huadu-si.md)以拓本传世。吴湖帆所藏四种欧书宋拓，合称“四欧宝笈”，此铭居其一；展览说明中，策展人仲威逐一交代了这四种的书者与收藏。[澎湃新闻，四欧宝笈领衔唐碑善本大展](https://www.thepaper.cn/newsDetail_forward_15167730)\n\n碑刻之外还有一件墨迹可读。[《张翰帖》](../works/zhanghan.md)记西晋张翰见秋风起、思吴中菰菜鲈鱼而弃官归乡事。故宫著录为纸本行书，十一行九十八字，唐人所摹，并说是欧阳询存世四件墨迹之一。对开有宋徽宗瘦金书题跋，评此帖“笔法险劲，猛锐长驱”，又谓欧阳询“晚年笔力益刚劲，有执法面折庭争之风，孤峰崛起，四面削成”。隔着摹手看骨力，这段题跋是最省事的入口。[故宫博物院，欧阳询行书张翰帖](https://www.dpm.org.cn/collection/handwriting/234567.html)\n\n此帖原属《史事帖》。宋米芾《书史》记他曾于濮州李丞相家见十全帖，其后渐散佚，今存者只余数纸，此帖是其中一纸。[米芾](../people/mi-fu.md)读过的那一份，可从本库另存的米芾页接过去看。[故宫博物院，欧阳询行书张翰帖·史事帖](https://www.dpm.org.cn/collection/handwriting/234567.html)",
+      "en": "Ouyang Xun (557–641), courtesy name Xinben, was a native of Linxiang in Tan Prefecture, present-day Changsha in Hunan. He served through the Chen, Sui and Tang dynasties, rising under Taizong to Director of the Crown Prince’s Household and a scholar of the Hongwen Academy, and was enfeoffed as a baron of Bohai. The Palace Museum’s short biography pairs him with Yu Shinan, Chu Suiliang and Xue Ji as the Four Masters of the Early Tang, and names only four steles among his surviving works: the Yugong Gong Stele, the Huadu Temple Stupa Inscription, the Sweet Spring at Jiucheng Palace, and the Huangfu Dan Stele. All four are in this library. [Palace Museum, Ouyang Xun’s Zhang Han letter, biography of Ouyang Xun](https://www.dpm.org.cn/collection/handwriting/234567.html)\n\nThe four can be read side by side once the composer and the writer are kept apart. Wei Zheng composed the text of the [Sweet Spring at Jiucheng Palace](../works/jiuchenggong-liquan-ming.md); Cen Wenben composed the [Yugong Gong Stele](../works/yugong-gong-bei.md), whose seal heading runs four lines of sixteen characters; Yu Zhining composed the [Huangfu Dan Stele](../works/huangfu-dan-bei.md). Ouyang wrote all three. One hand on three stones, three different authors — keep the accounts separate as you read. [Palace Museum, Song rubbing of the Yugong Gong Stele](https://www.dpm.org.cn/collection/impres/228414.html) · [Xi’an Beilin Museum, Huangfu Dan Stele](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2578) · [Baoji Cultural Heritage Bureau, reply on the Jiucheng Palace site](https://wwj.baoji.gov.cn/col1892/col9955/202608/t20260821_1295837.html)\n\nThe fourth, the [Huadu Temple Stupa Inscription](../works/huadu-si.md), survives as rubbings. Wu Hufan’s four Song rubbings of Ouyang’s writing were known together as the Four Ouyang Treasures, and this inscription is one of them; the exhibition account has the curator Zhong Wei going through the writer and the collecting history of each. [The Paper, exhibition of the Four Ouyang Treasures](https://www.thepaper.cn/newsDetail_forward_15167730)\n\nBeyond the stones there is one sheet of ink to read. The [Zhang Han letter](../works/zhanghan.md) tells how Zhang Han, seeing the autumn wind rise, thought of the water-shield soup and perch of his native Wu and gave up office to go home. The Palace Museum catalogues it as ink on paper, running script, eleven lines and ninety-eight characters, a Tang tracing, and calls it one of four surviving examples of Ouyang’s brushwork. On the facing leaf is a colophon in Emperor Huizong’s slender-gold script, which judges the letter “vigorous in method, fierce and driving”, and says of Ouyang that “in late years his stroke grew firmer, with the manner of one who holds the law and argues to the emperor’s face, a lone peak rising, cut on four sides.” To read bone through a copyist’s hand, that colophon is the shortest way in. [Palace Museum, Ouyang Xun’s Zhang Han letter](https://www.dpm.org.cn/collection/handwriting/234567.html)\n\nThe letter belonged to the Shishi Tie, a gathering of Ouyang’s accounts of earlier figures. Mi Fu, in his Shishi, records seeing a complete set of ten at the house of a former chancellor in Puzhou; the set later scattered, and only a few sheets remain, this among them. The copy Mi Fu read can be reached from the [Mi Fu](../people/mi-fu.md) page kept here. [Palace Museum, Ouyang Xun’s Zhang Han letter, entry on the Shishi Tie](https://www.dpm.org.cn/collection/handwriting/234567.html)"
+    },
+    {
+      "kind": "people",
       "id": "shen-yinmo",
       "titleZh": "沈尹默",
       "titleEn": "Shen Yinmo",
@@ -18441,6 +18695,25 @@
       ],
       "zh": "给年轻人谈学书时，沈尹默一面写讲解，一面为他们写范字。姜涛记述，1962年《人民教育》刊有他讨论毛笔练习的文章。他编写的[《甲种本大楷习字帖》](../works/shen-yinmo-dakai-jia.md)由上海教育出版社出版。沿着这一本书，可以把他的教育工作落实到一个可辨认的版本。[姜涛，晚年居沪一节](https://shufa.pku.edu.cn/whsf/8dc5e55fd0e445a781a861c438b81cf9.htm)\n\n他和[赵朴初](zhao-puchu.md)还用诗词相答。沈氏年表在1965年条中把一次唱和放在《兰亭序》真伪讨论的背景下。日后赵朴初在沈氏论书札后题跋，那篇[写于1976年的跋](../works/zhao-puchu-shen-colophon.md)留住了朋友追念他的一个瞬间。[西泠印社年表，1965年条](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf) · [上海博物馆，题跋简介](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)\n\n两处记载对沈氏卒年有出入。年表列在1971年，上海博物馆的赵跋简介写作1972年。这项分歧保留在此，读者可以分别核对。[年表，1971年条](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf) · [上博藏品简介](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)",
       "en": "Shen Yinmo gave young learners both accounts of brush practice and characters to copy. Jiang Tao records a 1962 article by Shen in the education journal 人民教育. Shanghai Education Publishing House published his [large regular-script copybook, edition A](../works/shen-yinmo-dakai-jia.md). Together they give a concrete starting point for studying his teaching. [Jiang Tao, section on Shen’s later years in Shanghai](https://shufa.pku.edu.cn/whsf/8dc5e55fd0e445a781a861c438b81cf9.htm)\n\nShen and [Zhao Puchu](zhao-puchu.md) also answered one another in verse. A chronology places an exchange in 1965 amid debate about the authenticity of the Lanting Preface. Zhao later remembered Shen in a [1976 colophon](../works/zhao-puchu-shen-colophon.md) attached to Shen’s writing about calligraphy. [Xiling chronology, 1965 entry](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf) · [Shanghai Museum, colophon description](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)\n\nThe chronology records Shen’s death in 1971. The Shanghai Museum description gives 1972. Both readings are retained here for comparison. [Chronology, 1971 entry](https://www.xlys.org.cn/wenku/www/202205/17174437ptfn.pdf) · [Museum description](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160807)"
+    },
+    {
+      "kind": "people",
+      "id": "su-shi",
+      "titleZh": "苏轼",
+      "titleEn": "Su Shi",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "hanshi"
+      ],
+      "objects": [],
+      "sources": [
+        "src-catalogue-hanshi",
+        "src-dpm-231008",
+        "src-scwwj-hanshi"
+      ],
+      "zh": "苏轼（1037—1101），字子瞻，号东坡居士，眉山（今属四川）人，苏洵次子。嘉祐二年（1057）进士，熙宁间任祠部员外郎，知密州、徐州、湖州；因对王安石新政有异见，上书神宗，被贬黄州。元祐间复起，任翰林学士，出知杭州、颍州，官至礼部尚书；绍圣四年（1097）再谪惠州、儋州，遇赦北返，病殁常州，谥文忠。故宫的小传说他“擅书法，得力于王僧虔、李邕、徐浩、颜真卿、杨凝式而自成家数。用笔丰腴跌宕，有天真烂漫之趣”，传世书迹一栏里就列着《黄州寒食诗帖》。[故宫博物院，苏轼行书治平帖卷·苏轼](https://www.dpm.org.cn/collection/handwriting/231008.html)\n\n[《黄州寒食诗帖》](../works/hanshi.md)写于元丰五年（1082）寒食节，是他贬到黄州的第三年。两首诗，一百二十九字。第一首从“自我来黄州，已过三寒食”起，写海棠花落泥污，“何殊病少年，病起头已白”；第二首写“空庖煮寒菜，破灶烧湿苇”，收在“君门深九重，坟墓在万里。也拟哭途穷，死灰吹不起”。四川省文物局所刊文章的读法是：开篇起笔字小，沉稳劲秀，写到后篇随着情绪变化，“字行跌宕起伏，气势开张，大小错落”。诗与字在同一卷上一起变重。[四川省文物局，从《黄州寒食帖》题跋印章考察其庋藏递传历史](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml)\n\n这卷的分量有一半是黄庭坚加上去的。元符三年（1100）七月至九月间，黄庭坚从宜宾往青神探亲，张浩携卷来见，他写下九行五十九字的跋：“东坡此诗似李太白，犹恐太白有未到处。此书兼颜鲁公、杨少师、李西台笔意，试使东坡复为之，未必及此。它日东坡或见此书，应笑我于无佛处称尊也。”跋里点的三家——颜真卿、杨凝式、李建中——与馆方所记苏轼师承中的颜、杨正好重合；而“试使东坡复为之，未必及此”一句，说的是这卷字不可重来，它记的是一次完成的心境与手。本库另有[《韭花帖》](../works/jiuhua-tie.md)，作者杨凝式正是黄庭坚在此处取来作尺子的人。[四川省文物局，从《黄州寒食帖》题跋印章考察其庋藏递传历史](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml)\n\n后来的读者一代比一代说得重。董其昌的观款写：“余生平见东坡先生真迹，不下三十余卷，必以此为甲观，已摹刻戏鸿堂帖中。”乾隆十三年（1748）题跋说“东坡书豪宕秀逸，为颜杨以后一人……所谓无意于佳乃佳者”。卷子的命比字更曲折：1860 年圆明园火后流出，冯展云、萧维邦、裴景福、盛昱、完颜景贤、颜世清依次经手；1922 年颜世清以六万元售与日本菊池惺堂，次年关东大地震，菊池冒死把它从火里抢出，卷上至今留着烧痕；1948 年王世杰以三千二百美元购回，1987 年归台北故宫博物院。读这卷字，也是在读它怎样一次次从火里出来。[四川省文物局，从《黄州寒食帖》题跋印章考察其庋藏递传历史](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml)",
+      "en": "Su Shi (1037–1101), courtesy name Zizhan, style name Dongpo Jushi, was a native of Meishan in modern Sichuan and the second son of Su Xun. He passed the examinations in 1057, served as a bureau director under the Xining reign and governed Mizhou, Xuzhou and Huzhou; for disagreeing with Wang Anshi’s reforms he memorialised the emperor and was banished to Huangzhou. Recalled in the Yuanyou years, he became a Hanlin academician, governed Hangzhou and Yingzhou, and rose to minister of rites; in 1097 factional strife sent him again to Huizhou and Danzhou, and on his pardon and return north he died at Changzhou and was given the posthumous name Wenzhong. The Palace Museum’s note says he “excelled at calligraphy, drawing on Wang Sengqian, Li Yong, Xu Hao, Yan Zhenqing and Yang Ningshi to form a manner of his own, his brush rich and steep, with the flavour of unspoilt spontaneity”, and among his surviving works it lists the Cold Food Poems. [Palace Museum, Su Shi’s letter to Zhipping, biography](https://www.dpm.org.cn/collection/handwriting/231008.html)\n\nThe [Cold Food Poems](../works/hanshi.md) were written at the Cold Food festival of 1082, his third year of exile at Huangzhou. Two poems, 129 characters. The first opens “since I came to Huangzhou I have passed three Cold Food festivals” and ends with the crab-apple blossoms fouled in mud, “no different from a sick boy who rises with his head already white”; the second speaks of “an empty kitchen boiling cold greens, a broken stove burning wet reeds” and closes with “the gates of the palace ninefold deep, the graves ten thousand li away; I too would weep at the end of the road, dead ash that cannot be blown up again.” The article published by the Sichuan cultural relics bureau reads the writing as beginning small, steady and lean, then, as the feeling rises, “the columns pitching and swelling, the momentum opening out, characters large and small out of step”. Poem and brush grow heavier together on the same sheet. [Sichuan Cultural Relics Bureau, on the colophons and seals of the Cold Food Poems](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml)\n\nHalf its weight was added by Huang Tingjian. Between the seventh and ninth months of 1100, on his way from Yibin to visit relatives at Qingshen, Huang was shown the scroll by Zhang Hao and wrote a colophon of nine lines and fifty-nine characters: “Dongpo’s poem resembles Li Taibai, except that Taibai may not have reached this far. The writing combines the intentions of Yan Lugong, Yang Shaoshi and Li Xitai; if Dongpo were to do it again, he might not match it. Should Dongpo see this some day, he will laugh at me for claiming supremacy where there is no Buddha.” The three names he cites — Yan Zhenqing, Yang Ningshi, Li Jianzhong — overlap exactly with the Yan and Yang in the museum’s list of Su’s models; and “if Dongpo were to do it again, he might not match it” says that this writing cannot be repeated, that it records a single passing state of mind and hand. This library also holds the [Letter on Leek Flowers](../works/jiuhua-tie.md), whose author, Yang Ningshi, is the very man Huang uses here as his measure. [Sichuan Cultural Relics Bureau, on the colophons and seals of the Cold Food Poems](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml)\n\nLater readers spoke ever more heavily. Dong Qichang’s inscription reads: “In my life I have seen no fewer than thirty-odd genuine works of Dongpo, and this must be the finest of them; I have already had it carved in the Xihongtang modelbook.” Qianlong’s colophon of 1748 says that “Dongpo’s writing is bold and free, the one man after Yan and Yang… the saying that one does not aim at excellence and so attains it.” The scroll’s fate is more twisted than its brush: it left the Yuanmingyuan after the fire of 1860 and passed through Feng Zhanyun, Xiao Weibang, Pei Jingfu, Sheng Yu, Wanyan Jingxian and Yan Shiqing; in 1922 Yan sold it to the Japanese collector Kikuchi Seido for sixty thousand yuan, and when the Great Kanto earthquake struck the next year Kikuchi pulled it from the flames at the risk of his life — the burn marks are still on the scroll; in 1948 Wang Shijie bought it back for 3,200 dollars, and in 1987 it entered the National Palace Museum in Taipei. To read the writing is also to read how it came out of the fire, again and again. [Sichuan Cultural Relics Bureau, on the colophons and seals of the Cold Food Poems](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml)"
     },
     {
       "kind": "people",
@@ -18523,6 +18796,24 @@
     },
     {
       "kind": "people",
+      "id": "wang-xun",
+      "titleZh": "王珣",
+      "titleEn": "Wang Xun",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "boyuan"
+      ],
+      "objects": [],
+      "sources": [
+        "src-catalogue-boyuan",
+        "src-gmw-erxi"
+      ],
+      "zh": "王珣（350—401），字元琳，小字法护，王导之孙、王洽之长子。《晋书》本传载他早年追随桓温，封东亭侯，累官辅国将军、吴国内史、尚书仆射，隆安初迁尚书令，赠车骑将军，谥献穆。《宣和书谱》说他“三世以能书称，家范世学。珣之草圣亦有传焉”；宣和内府藏王珣书两件，[《伯远帖》](../works/boyuan.md)是其中之一。[故宫博物院，王珣行书伯远帖·王珣](https://www.dpm.org.cn/collection/handwriting/228199.html)\n\n此帖纸本行书，五行四十七字，纵二十五点一厘米、横十七点二厘米，是写给“伯远”的一封信，起首“珣顿首顿首”。字不多，分量却重。故宫的说明写道：王羲之作为“书圣”垂范百代，书作却只以临本、摹本、刻本流传，没有一件真迹；王氏家族世代擅书，作品命运大抵相同，“唯羲之族侄王珣有此短笺留在人间”。同一页又说，此帖与陆机《平复帖》是现今仅存的两件晋代名人法书。所以读王家笔法，别的入口都隔着一层——双勾填墨的摹本、刻帖的刀痕——这一件是原迹，能看见使转用笔的精微处，而那正是摹本与刻帖传不出来的。[故宫博物院，王珣行书伯远帖](https://www.dpm.org.cn/collection/handwriting/228199.html)\n\n它的位置是乾隆给定的。乾隆十一年（1746）此帖入内府，与前藏的王羲之《快雪时晴帖》、王献之《中秋帖》并贮养心殿西暖阁，额曰“三希堂”；次年又精选内府所藏魏晋至明一百三十四家真迹，摹勒上石，是为《三希堂法帖》，刻石嵌于西苑北海阅古楼。卷前引首是乾隆御书“江左风华”四字，前隔水有御笔“家学世范，草圣有传。宣和书谱”十二字，后隔水有明董其昌跋，卷尾是董邦达的图与沈德潜的《三希堂歌》。值得留意的是：三希并置一室，其中《快雪时晴帖》馆方另条明说是唐摹本，王珣此帖是原迹——所谓“三希”，其实是摹本与原迹同坐。[故宫博物院，王珣行书伯远帖](https://www.dpm.org.cn/collection/handwriting/228199.html)\n\n最后一段流传，比书法更像一部传奇。1911 年以后至 1924 年溥仪出宫前，此帖与《中秋帖》藏在敬懿皇贵妃所居的寿康宫；溥仪出宫时，敬懿皇贵妃将二帖带出，此后流散在外。上世纪三十年代，二帖辗转为袁世凯差官郭葆昌（字世五）所得，再归其子郭昭俊。郭昭俊曾携帖赴台湾求售未果，又到香港将二帖抵押给一家英国银行，赎期定在 1951 年底；郑振铎闻讯急报中央，周恩来批示购回，国家文物局副局长王冶秋、故宫博物院院长马衡与上海文管会主任徐森玉前往鉴定真伪，二帖终以重价购回，1951 年 12 月由王冶秋送交故宫博物院。本库另有[王羲之](../people/wang-xizhi.md)、[王献之](../people/wang-xianzhi.md)两页，可以接着读这一门的三个人；但要知道，三件里只有这一件是当日亲手写下的纸。[故宫博物院，王珣行书伯远帖·流传](https://www.dpm.org.cn/collection/handwriting/228199.html) · [光明日报，不惜重金新中国迎回“二希”](https://www.gmw.cn/01gmrb/2005-10/29/content_323325.htm)",
+      "en": "Wang Xun (350–401), courtesy name Yuanlin, childhood name Fahu, was a grandson of Wang Dao and eldest son of Wang Qia. His biography in the Book of Jin records that he followed Huan Wen early on, was enfeoffed as Marquis of Dongting, rose through the offices of general and interior minister of Wu to vice director of the Secretariat, and in the early Long’an years became director of the Secretariat; he was granted the title General of Chariots and Cavalry and the posthumous name Xianmu. The Xuanhe shupu says that “for three generations his family was known for writing, a household model and a family learning, and Xun’s cursive also came down to us”; the Xuanhe palace collection held two works by Wang Xun, and the [Letter to Boyuan](../works/boyuan.md) is one of them. [Palace Museum, Wang Xun’s letter to Boyuan, biography of Wang Xun](https://www.dpm.org.cn/collection/handwriting/228199.html)\n\nThe letter is ink on paper, running script, five lines and forty-seven characters, 25.1 by 17.2 cm, written to a man called Boyuan and opening “Xun bows his head twice”. Few characters, heavy weight. The Palace Museum’s note observes that Wang Xizhi, the “sage of calligraphy”, set the model for a hundred generations, yet his works survive only as tracings, copies and carvings, not one autograph; the Wang family produced writers generation after generation and their works met much the same fate, “and only Wang Xun, a kinsman-nephew of Xizhi, has this short note left in the world”. The same page says that this letter and Lu Ji’s Pingfu tie are the only two surviving examples of famous Jin calligraphy. Every other way into the family’s brush passes through something else — a traced outline, a carver’s knife — while this one is the original, where the turns of the brush can be seen, which is exactly what copies and carvings cannot convey. [Palace Museum, Wang Xun’s letter to Boyuan](https://www.dpm.org.cn/collection/handwriting/228199.html)\n\nIts standing was fixed by the Qianlong emperor. In 1746 the letter entered the imperial collection and was stored with Wang Xizhi’s Kuaixue shiqing tie and Wang Xianzhi’s Zhongqiu tie in the western warm chamber of the Hall of Mental Cultivation, which was named the Hall of the Three Rarities; the next year 134 works from the Wei, Jin, Tang, Song, Yuan and Ming collections were traced onto stone as the Sanxitang fatie, and the stones set into the Yuegu tower in the Western Garden. The frontispiece is Qianlong’s own four characters, “Elegance of the Left of the Yangzi”; the front mounting carries twelve characters in his hand, “a household model and a family learning, the cursive sage has a tradition, Xuanhe shupu”; the rear mounting has Dong Qichang’s colophon; the end of the scroll has Dong Bangda’s painting and Shen Deqian’s “Song of the Three Rarities”. One detail is worth noting: of the three rarities kept in one room, the Kuaixue tie is described by the museum, elsewhere on the same site, as a Tang tracing, while Wang Xun’s letter is the original — so the “three rarities” seat copies and an autograph together. [Palace Museum, Wang Xun’s letter to Boyuan](https://www.dpm.org.cn/collection/handwriting/228199.html)\n\nThe last stage of its transmission reads more like a romance than a chapter of calligraphy history. Between 1911 and the emperor’s departure from the palace in 1924, this letter and the Zhongqiu tie were kept in the Palace of Longevity and Health where the Dowager Consort Jingyi lived; when Puyi left, she carried both out, and they scattered. In the 1930s they passed to Guo Baochang, a former aide to Yuan Shikai, and then to his son Guo Zhaojun. Guo Zhaojun tried to sell them in Taiwan without success, then pledged both in Hong Kong to a British bank with redemption due at the end of 1951. Zheng Zhenduo reported the matter to the central government, Zhou Enlai authorised the purchase, and Wang Yeqiu, vice director of the cultural relics bureau, Ma Heng, director of the Palace Museum, and Xu Senyu of the Shanghai cultural relics committee went to authenticate them. The two scrolls were bought back at a heavy price and delivered to the Palace Museum by Wang Yeqiu in December 1951. This library keeps pages for [Wang Xizhi](../people/wang-xizhi.md) and [Wang Xianzhi](../people/wang-xianzhi.md), and the three men of one family can be read together — but of the three works, only this one is paper written by the hand on the day. [Palace Museum, Wang Xun’s letter to Boyuan, transmission](https://www.dpm.org.cn/collection/handwriting/228199.html) · [Guangming Daily, the return of the “two rarities”](https://www.gmw.cn/01gmrb/2005-10/29/content_323325.htm)"
+    },
+    {
+      "kind": "people",
       "id": "weng-fanggang",
       "titleZh": "翁方纲",
       "titleEn": "Weng Fanggang",
@@ -18585,6 +18876,66 @@
       ],
       "zh": "读颜真卿，可以先并看两方碑。在写寺院建塔的[《多宝塔感应碑》](../works/duobao-ta-bei.md)里，文字出自岑勋，颜真卿应楚金之请书丹。看颜书之前，先在图上找徐浩写的碑额，便能分清同一块石上两个人的笔迹。[西安碑林博物馆，多宝塔感应碑](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)\n\n到了家族的[《颜勤礼碑》](../works/yan-qinli-bei.md)，撰文、书写都由颜真卿承担。碑题里的颜勤礼是他的曾祖父。从一通碑读到另一通，连着问“谁撰、谁书、写给谁”，两篇文字的来由就清楚了。[西安碑林博物馆，颜勤礼碑](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home)\n\n还可以沿三种不同的载体读颜书。浯溪崖壁上的[《大唐中兴颂》](../catalogue/datang-zhongxing-song.md)由元结撰文、颜真卿书写。台北故宫著录的[《祭侄文稿》](../catalogue/jizhi.md)是一卷行书，馆方释文标出了涂改处。北京故宫的[《麻姑仙坛记》](../catalogue/magu.md)则可循翻刻的拓本去读。[湖南省政府，浯溪碑林「历史寻迹」](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [台北故宫，藏品基本资料与释文](https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P) · [北京故宫，麻姑仙坛记](https://www.dpm.org.cn/collection/impres/234172.html)",
       "en": "Two steles offer a way into Yan Zhenqing’s work. For the [Duobao Pagoda Stele](../works/duobao-ta-bei.md), Cen Xun composed the text and the monk Chujin invited Yan to write it. Xu Hao wrote the heading. Look for it first to distinguish the two hands on the stone. [Xi’an Beilin Museum, Duobao entry](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)\n\nFor the [Stele of Yan Qinli](../works/yan-qinli-bei.md), Yan Zhenqing both composed and wrote the text, commemorating his great-grandfather. Asking who composed each inscription, who wrote it and whom it concerns brings its occasion into view. [Xi’an Beilin Museum, Yan Qinli entry](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home)\n\nThree other works let us follow his writing across different surfaces. At Wuxi, Yuan Jie’s [Eulogy of the Tang Restoration](../catalogue/datang-zhongxing-song.md) was carved on a cliff in Yan’s hand. The National Palace Museum in Taipei transcribes cancelled words in Yan’s running-script [Draft Requiem for a Nephew](../catalogue/jizhi.md). The Palace Museum in Beijing catalogues the [Record of the Immortal Altar](../catalogue/magu.md) in an impression taken from a recarving. [Hunan government, Wuxi account](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [National Palace Museum, scroll and transcription](https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P) · [Palace Museum, Magu entry](https://www.dpm.org.cn/collection/impres/234172.html)"
+    },
+    {
+      "kind": "people",
+      "id": "yang-ningshi",
+      "titleZh": "杨凝式",
+      "titleEn": "Yang Ningshi",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "jiuhua-tie"
+      ],
+      "objects": [],
+      "sources": [
+        "src-wuxi-jiuhua",
+        "src-wuxi-jiuhua-entry"
+      ],
+      "zh": "杨凝式生于唐末，在后梁、唐、晋、汉、周五代朝廷都做过官，官至太子太保；曾佯疯自晦，因此有“杨风子”的雅号。黄庭坚有一首绝句专说他：“世人尽学兰亭面，欲换凡骨无金丹。谁知洛阳杨风子，下笔便到乌丝栏。”别人临《兰亭》只得其面，他随手写去，却自然落在界格之内。[无锡博物院，杨凝式《韭花帖》](https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b)\n\n[《韭花帖》](../works/jiuhua-tie.md)是一封谢帖。他午睡起来，饿得厉害，恰有友人送来韭花：“当一叶报秋之初，乃韭花逞味之始。助其肥羜，实谓珍羞，充腹之馀，铭肌载切。”于是修状道谢。行楷，墨迹，麻纸本，高二十六厘米、宽二十八厘米，七行，六十余字；帖末只署“七月十一日”，没有年份。馆方的形容是“布局疏朗大气，用笔率性洒脱，时行时楷，时收时放”。一件只为道谢而写的短札，把字距行距都放开了，反而比郑重书写更经看。[无锡博物院，杨凝式《韭花帖》](https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b)\n\n这帖今天有三本之说。无锡博物院所藏是清宫内府本，乾隆在引首题“杨少师韭花帖妙迹”，入《石渠宝笈》，又收入《三希堂法帖》；另一本为罗振玉所藏，1945 年后不知所踪，很可能毁于战乱。两本真伪在书法界一直有争议，但徐邦达、谢稚柳两位对无锡这本的意见一致。清宫本于上世纪二十年代由溥仪盗出宫，后归无锡藏家薛氏，1982 年入藏无锡博物院。[无锡博物院，杨凝式《韭花帖》](https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b)\n\n无锡那篇文章另给了一个位置：清宫所藏历代法书浩若烟海，此帖被公认为“天下第五行书”——第一王羲之《兰亭序》，第二颜真卿《祭侄文稿》，第三苏轼《寒食帖》，第四王珣《伯远帖》，第五就是它。这个序列里，本库已有[《寒食帖》](../works/hanshi.md)、[《伯远帖》](../works/boyuan.md)与它自己三件。七行短札与三件长卷并坐，靠的不是字数：别人用几百字铺开的气势，它用六十余字收住。至于字数，馆方两篇文章一作六十三、一作六十五，读时不必急着定。[无锡博物院，《韭花帖》藏品条目](https://www.wxmuseum.cn/News/Details/fab18864-9728-4d78-a7fe-37a67421ad03)",
+      "en": "Yang Ningshi was born at the end of the Tang and served at the courts of all five dynasties — Later Liang, Tang, Jin, Han and Zhou — rising to grand guardian of the heir apparent. He once feigned madness to keep himself out of harm, which earned him the nickname “Madman Yang”. Huang Tingjian wrote a quatrain about him alone: “The world all learns the face of the Lanting, and would trade mortal bones for a golden elixir; who would have thought that Madman Yang of Luoyang, setting down his brush, arrives at the silk grid.” Others copy the Lanting and get only its face; he writes offhand and lands inside the rule. [Wuxi Museum, Yang Ningshi’s Letter on Leek Flowers](https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b)\n\nThe [Letter on Leek Flowers](../works/jiuhua-tie.md) is a thank-you note. He had woken from a nap and was very hungry when a friend sent leek flowers: “just as one leaf announces autumn, the leek flower begins to show its flavour; with the fat lamb it is truly a rare delicacy, and after filling the belly the gratitude is cut into the flesh.” So he wrote a note of thanks. Running-regular script, ink on hemp paper, 26 by 28 cm, seven lines, just over sixty characters; it closes with “the eleventh of the seventh month” and no year. The museum describes the layout as “open and generous, the brush easy and free, now running, now regular, now gathered, now released”. A short note written only to say thank you, with columns and lines let wide apart, turns out to bear looking at longer than a solemn piece of writing. [Wuxi Museum, Yang Ningshi’s Letter on Leek Flowers](https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b)\n\nThree versions are known today. The Wuxi Museum’s is the Qing palace copy, with Qianlong’s frontispiece, “the wondrous trace of Yang Shaoshi’s Leek Flower letter”; it was recorded in the Shiqu baoji and included in the Sanxitang fatie. The other belonged to Luo Zhenyu and has not been seen since 1945; it was probably destroyed in the fighting. Their authenticity has long been debated, though Xu Bangda and Xie Zhiliu agreed on the Wuxi copy. That copy was taken out of the palace by Puyi in the 1920s, passed to the Wuxi collector Xue, and entered the museum in 1982. [Wuxi Museum, Yang Ningshi’s Letter on Leek Flowers](https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b)\n\nThe Wuxi article gives it one further position: among the vast imperial collection of calligraphy it is recognised as the “fifth running-script work under heaven” — first Wang Xizhi’s Lanting xu, second Yan Zhenqing’s Draft Elegy for a Nephew, third Su Shi’s Cold Food Poems, fourth Wang Xun’s Letter to Boyuan, fifth this. Three of that list are in this library: the Cold Food Poems, the Letter to Boyuan, and this one. A seven-line note sits beside three long scrolls, and not by count of characters: what the others unfurl over hundreds of characters, it gathers in just over sixty. As for the count itself, the museum’s two pages give sixty-three and sixty-five; it need not be settled before reading. [Wuxi Museum, collection entry for the Letter on Leek Flowers](https://www.wxmuseum.cn/News/Details/fab18864-9728-4d78-a7fe-37a67421ad03)"
+    },
+    {
+      "kind": "people",
+      "id": "zhang-xu",
+      "titleZh": "张旭",
+      "titleEn": "Zhang Xu",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "gushi-sitie"
+      ],
+      "objects": [],
+      "sources": [
+        "src-lnm-gushisitie",
+        "src-lnd-gushisitie"
+      ],
+      "zh": "据《辽宁日报》为“又见大唐”展所附小传，张旭（658—742），字伯高，苏州人，初仕常熟尉，后官至金吾长史，世称“张长史”。为人洒脱不羁，嗜酒，精晓楷法，以“疾风骤雨之势”的草书最为知名，世称狂草，有“草圣”之誉，与李白的诗、裴旻的剑舞并称“唐代三绝”。黄庭坚评其书为“草书之冠冕”。[辽宁日报，开辟并丰富中国书法艺术表现空间](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)\n\n狂草看起来最不讲法度，张旭自己却说得出谱系。唐卢携《临池诀》转引他的话：“自智永禅师过江，楷法随渡。智永禅师乃羲、献之孙，得其家法，以授虞世南，虞传陆柬之，陆传子彦远，彦远仆之堂舅，以授余。”一笔一笔数下来，传的是楷法，到他手里才放开。《新唐书》另记一事：他初任常熟尉，有位老人反复递状子求判，他嫌烦，老人说“观公笔奇妙，欲以藏家尔”；再问所藏，老人尽出其父书，张旭看了，以为是天下奇笔，“自是尽其法”。一条谱系在士人手里，一条在民间，他都收了。[辽宁日报，开辟并丰富中国书法艺术表现空间](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)\n\n[《古诗四帖》](../works/gushi-sitie.md)是这条线的落点。纸本草书，纵二十九点五厘米、横一百九十五点二厘米，一百八十八字，写庾信《步虚词》二首与谢灵运《王子晋赞》《岩下一老公四五少年赞》二首，今藏辽宁省博物馆，是国家一级文物。报道里的形容是“笔法灵动多变、奔放连绵，字法结字高古、因势成形，章法自然疏密，无刻意雕琢”。狂草到这一卷，字与字之间的连带不再只是连接，而是整行的一次呼吸。[辽宁日报，开辟并丰富中国书法艺术表现空间](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html) · [辽宁省博物馆，姑苏繁华图、张旭草书四帖领衔](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337)\n\n只是这卷的名字是后定的。北宋初它被认作谢灵运所书，到明董其昌才指出是张旭；本库此条因此把作者写作“传张旭”，并注明未见馆方说明鉴定依据。于是读它有两层：一层看字，唐狂草在这一点上到了高处；一层看归名，一件作品的作者从谢灵运换成张旭，靠的是几行题跋而不是落款。若想拿张旭的楷法来对看，本库没有第二件——他“精晓楷法”这句话，只能从这一卷的使转里去推。[辽宁日报，开辟并丰富中国书法艺术表现空间](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)",
+      "en": "According to the biographical note that Liaoning Daily appended to the “Tang Again” exhibition, Zhang Xu (658–742), courtesy name Bogao, was a native of Suzhou. He began as magistrate of Changshu and rose to director of the imperial guard, and is known as “Director Zhang”. Unrestrained and fond of wine, he knew regular script thoroughly but was famous for cursive with “the force of a sudden storm”, called wild cursive and honoured with the name “cursive sage”; with Li Bai’s poetry and Pei Min’s swordplay he formed the “three excellences of the Tang”. Huang Tingjian called his writing “the crown of cursive”. [Liaoning Daily, opening up the expressive space of Chinese calligraphy](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)\n\nWild cursive looks like the least law-bound of writings, yet Zhang Xu himself could give its lineage. Lu Xie’s Linchi jue quotes him: “When Chan Master Zhiyong crossed the river, the method of regular script crossed with him. Zhiyong was a descendant of Xi and Xian and received the family method, which he gave to Yu Shinan; Yu passed it to Lu Jianzhi, Lu to his son Yanyuan, and Yanyuan, my maternal uncle, gave it to me.” Counted stroke by stroke, what the list transmits is regular script, and only in his hand does it let go. The New History of the Tang adds another story: as magistrate of Changshu he was pestered by an old man who kept filing petitions, and when he lost patience the old man said, “I saw that your honour’s brush is marvellous and wished to keep it in my family.” Asked what he owned, the old man brought out his father’s writing; Zhang Xu looked and judged it the finest under heaven, “and from then on exhausted its method”. One lineage ran through scholars, one through the countryside; he took both. [Liaoning Daily, opening up the expressive space of Chinese calligraphy](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)\n\nThe [Four Poems in Cursive Script](../works/gushi-sitie.md) is where that line lands. Ink on paper, 29.5 by 195.2 cm, 188 characters: two of Yu Xin’s “Pacing the Void” poems and two verse appreciations by Xie Lingyun, “Prince Jin” and “An Old Man and Four or Five Youths beneath the Cliff”. It is in the Liaoning Provincial Museum and is a Grade One national treasure. The newspaper describes “brushwork nimble and changeable, unrestrained and continuous; characters archaic in structure, shaped by momentum; spacing naturally dense and open, with no deliberate carving”. By this scroll the joins between characters are no longer mere connections but a single breath running down the column. [Liaoning Daily, opening up the expressive space of Chinese calligraphy](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html) · [Liaoning Provincial Museum, Zhang Xu’s cursive scroll among the exhibition highlights](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337)\n\nThe name on the scroll, however, was settled late. In the early Northern Song it was taken as Xie Lingyun’s writing; only Dong Qichang, in the Ming, named Zhang Xu. This library therefore records the author as “attributed to Zhang Xu” and notes that no museum publication consulted here sets out the evidence. So it can be read on two levels: the writing, where Tang wild cursive reaches a high point; and the naming, where a work changes hands from Xie Lingyun to Zhang Xu on the strength of a few colophons rather than a signature. Anyone wanting Zhang Xu’s regular script for comparison will not find a second piece in this library — that he “knew regular script thoroughly” can only be inferred from the turns of this scroll. [Liaoning Daily, opening up the expressive space of Chinese calligraphy](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)"
+    },
+    {
+      "kind": "people",
+      "id": "zhao-mengfu",
+      "titleZh": "赵孟頫",
+      "titleEn": "Zhao Mengfu",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "daba-bei",
+        "sanmen-ji",
+        "zhao-luoshen",
+        "tianguanshan-poems"
+      ],
+      "objects": [],
+      "sources": [
+        "src-dpm-daba",
+        "src-catalogue-zhao-luoshen",
+        "src-tnm-sanmen",
+        "src-colbase-sanmen",
+        "src-beilin-tianguanshan"
+      ],
+      "zh": "赵孟頫（1254—1322），字子昂，号松雪、水精宫道人，吴兴（今浙江湖州）人。宋宗室，十四岁以父荫补真州司户参军，入元出仕，历翰林侍读学士、荣禄大夫，卒赠魏国公，谥文敏。故宫的小传称他为“元之冠冕”，说他于钟繇、二王、李邕、宋高宗赵构及历代诸家无所不学，篆、隶、真、草各臻神妙。同页又引鲜于枢的评语：“子昂篆、隶、真、行、颠草为当今第一。”后人把这一路书风叫“赵体”，但“赵体”是一顶帽子，戴在哪件上，要一件一件核。[故宫博物院，赵孟頫行书洛神赋卷·赵孟頫](https://www.dpm.org.cn/collection/handwriting/228244.html)\n\n库里两件碑版的文稿，恰好一件自撰、一件替人誊写。[《胆巴碑》](../works/daba-bei.md)立于延祐三年（1316），碑文开篇自署“集贤学士、资德大夫、臣赵孟頫奉敕撰并书篆”——撰文、书丹、篆额三项都在他一人身上，是奉元仁宗之命为真定龙兴寺记胆巴国师事。故宫藏的是纸本稿，馆方记纵三十三点六厘米，横五百六十三厘米（书心另有一百六十六厘米一说），并称其用笔苍劲浑厚，取法唐李邕、柳公权，又参以二王，“是赵书碑碣中的大楷名作”。[故宫博物院，赵孟頫楷书帝师胆巴碑卷](https://www.dpm.org.cn/subject_zhaomengfu/achievement/245821.html)\n\n[《三门记》](../works/sanmen-ji.md)就只剩一项。记文是牟巘的，赵孟頫誊写，并在卷首篆额；此卷今在东京国立博物馆，馆方只定“元代 14 世纪”，不记书写年份。日本国立文化财机构的数据库据碑文与赵氏官职，推断他书写时四十九至五十六岁，那是推断，不是著录。两件并看，“赵书碑版”并不是一个均质的整体：一件有确切年份、撰书篆俱全，一件连年份都只能推到世纪。[东京国立博物馆，楷书玄妙观重修三门记卷](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461) · [ColBase 记录](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)\n\n墨迹里最耐读的是[《洛神赋》](../works/zhao-luoshen.md)卷。纸本行书，纵二十九厘米、横二百二十点九厘米，八十行，末署“子昂”；后纸有无李倜、明高启、清王铎与曹溶的题跋，全卷钤印三十七方，见于卞永誉《式古堂书画汇考》与《石渠宝笈》。这卷写的是曹植的赋，笔法却对着王献之的《洛神赋》去——即《玉版十三行》那一路。李倜的跋说得最直：“无一笔不合法，盖以兰亭肥本运腕而出之者，可云买王得羊矣。”高启则说它“出入王氏父子间”而“别有天趣”。读这卷要分三层：曹植的文、王献之的帖、赵孟頫的临。虞集评他“楷法深得《洛神赋》而揽其标，行书诣《圣教序》而入其室”，说的正是这种以摹古为自运的路子。[故宫博物院，赵孟頫行书洛神赋卷](https://www.dpm.org.cn/collection/handwriting/228244.html)\n\n还有一件挂着赵孟頫名字的刻石。[《赵子昂游天冠山诗》](../works/tianguanshan-poems.md)在西安碑林，馆方指出，据以刻石的墨本真伪尚有异说，书家归属也须存疑。它的用处正在于与前几件对照：“赵体”在元代即是显学，学的人多，伪托的也多；而一块刻石能把一份有问题的墨本固定下来——墨本可以伪，石上的字却是真的刻痕。读到这一层，“赵孟頫”三个字就不再是结论，而是一个要每件分别核对的问题。[西安碑林博物馆，赵子昂游天冠山诗碑](https://www.beilin-museum.com/index.php?a=index&aid=2646&c=View&m=home)",
+      "en": "Zhao Mengfu (1254–1322), courtesy name Zi’ang, styled Songxue and Shuijinggong Daoren, was a native of Wuxing, present-day Huzhou in Zhejiang, and a member of the Song imperial clan. At fourteen he entered office on his father’s merit as a revenue officer in Zhenzhou; after the Yuan conquest he served the new dynasty, rising through the Hanlin readership to the rank of Ronglu dafu, and was granted the title Duke of Wei and the posthumous name Wenmin. The Palace Museum’s biography calls him “the crown of the Yuan”, says he studied Zhong You, the two Wangs, Li Yong, Emperor Gaozong of Song and every school before them, and that his seal, clerical, regular and cursive scripts each reached mastery. The same page quotes Xianyu Shu: “Zi’ang’s seal, clerical, regular, running and wild cursive are the first of the age.” Later ages call this manner “Zhao style”, but a style is a label, and which work it fits has to be checked one at a time. [Palace Museum, Zhao Mengfu’s Luoshen fu, biography of Zhao Mengfu](https://www.dpm.org.cn/collection/handwriting/228244.html)\n\nThe library holds drafts for two steles, one composed by Zhao and one copied for another man. The [Dampa Stele](../works/daba-bei.md) was set up in 1316, and its opening names him as “a Hanlin academician and Ronglu dafu, your servant Zhao Mengfu, who by imperial order composed, wrote and sealed the heading” — composition, calligraphy and seal heading all his, commissioned by Emperor Renzong for the Longxing Temple at Zhending to record the monk Dampa. The Palace Museum’s copy is a draft on paper, recorded as 33.6 cm high and 563 cm long (the calligraphy alone is given elsewhere as about 166 cm). The museum describes the brush as “vigorous and thick”, taking its method from Li Yong and Liu Gongquan of the Tang while borrowing from the two Wangs, and calls it “the great regular-script masterpiece among Zhao’s steles”. [Palace Museum, Zhao Mengfu’s Dampa stele](https://www.dpm.org.cn/subject_zhaomengfu/achievement/245821.html)\n\nWith the [Record of the Three Gates](../works/sanmen-ji.md) only one role is left. Mou Yan wrote the text; Zhao copied it and added a seal-script heading at the front. The scroll is now in the Tokyo National Museum, which dates it only to “Yuan, fourteenth century” and records no writing year. The Japanese national database infers from the text and Zhao’s offices that he was between forty-nine and fifty-six when he wrote it — an inference, not a record. Set the two side by side and “Zhao’s steles” stop being a single thing: one has a precise year and all three roles, the other cannot be dated closer than a century. [Tokyo National Museum, Record of the Three Gates](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461) · [ColBase record](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)\n\nAmong the ink works the most rewarding is the [Rhapsody on the Goddess of the Luo](../works/zhao-luoshen.md). Ink on paper, running script, 29 by 220.9 cm, eighty lines, signed “Zi’ang” at the end; on the paper after it are colophons by Li Ti of the Yuan, Gao Qi of the Ming, and Wang Duo and Cao Rong of the Qing, with thirty-seven seals in all, and the scroll is recorded in Bian Yongyu’s Shigutang shuhua huikao and the Shiqu baoji. The text is Cao Zhi’s rhapsody, but the brush follows Wang Xianzhi’s own copy of it, the so-called Thirteen Lines on jade. Li Ti puts it most plainly: “Not one stroke departs from the law; it is written from the wrist with the fat Lanting, and one may say he bought Wang and got Yang.” Gao Qi says it “enters and leaves the father and son” yet “has a heavenly interest of its own”. Read the scroll in three layers: Cao Zhi’s text, Wang Xianzhi’s model, Zhao’s copy. Yu Ji’s judgement that “his regular script grasps the standard of the Luoshen fu, his running script enters the chamber of the Shengjiao xu” describes exactly this making of the old into one’s own. [Palace Museum, Zhao Mengfu’s Luoshen fu](https://www.dpm.org.cn/collection/handwriting/228244.html)\n\nOne more stone carries Zhao’s name. The [Poems on Mount Tianguan](../works/tianguanshan-poems.md) is at the Xi’an Beilin Museum, and the museum notes that the authenticity of the ink model from which it was cut is disputed, so the attribution must be held in doubt as well. Its use is precisely the contrast with the others: “Zhao style” was already a school in the Yuan, much imitated and much forged, and a carved stone can fix a questionable model in place — the paper may be false, but the cuts in the stone are really there. At that point the name Zhao Mengfu stops being a conclusion and becomes a question to be checked work by work. [Xi’an Beilin Museum, Poems on Mount Tianguan](https://www.beilin-museum.com/index.php?a=index&aid=2646&c=View&m=home)"
     },
     {
       "kind": "people",

@@ -16,6 +16,8 @@ Stele of Chan Master Guifeng Dinghui
 - 篆额 · 柳公权（有明确记载）  [出处 1](#ref-src-dpm-234182)
 - 刻字 · 邵建初（有明确记载）  [出处 1](#ref-src-dpm-234182)
 
+延伸阅读：[柳公权](../people/liu-gongquan.md)
+
 <a name="dpm-guifeng-026"></a>
 
 ## 圭峰定慧禅师碑（故宫明拓本）

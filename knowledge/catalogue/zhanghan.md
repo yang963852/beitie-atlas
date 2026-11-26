@@ -18,6 +18,8 @@ Letter on Zhang Han
 
 书体：行书
 
+延伸阅读：[欧阳询](../people/ouyang-xun.md)
+
 <a name="dpm-zhanghan-026"></a>
 
 ## 欧阳询《张翰帖》（唐人钩填本）

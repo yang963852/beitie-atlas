@@ -19,7 +19,7 @@ Record of the Three Gates of the Xuanmiao Abbey
 
 书体：楷书
 
-延伸阅读：[三门记](../works/sanmen-ji.md)
+延伸阅读：[三门记](../works/sanmen-ji.md) · [赵孟頫](../people/zhao-mengfu.md)
 
 作品待考与说明
 
