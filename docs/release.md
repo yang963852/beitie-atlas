@@ -10,7 +10,14 @@ Task 002 introduced a strict release gate. This page records the formal release 
 | `npm run release` | Public interactive atlas | No, a draft or invalid record fails the build | `dist/` marked `release`, with `dist/release-manifest.json` |
 | `npm run check:release` | Review the gate without building | No | Nothing written; exit code only |
 
-`npm run check` runs the preview quality checks, including data and knowledge validation, document checks, tests and a preview build. CI gives technical evidence for the source PR. The coordinator decides merges. Editorial approval for a formal release applies to an exact corpus revision, including the knowledge library.
+`npm run check` runs the preview quality checks, including data and knowledge validation, document checks, tests and a preview build. CI gives technical evidence for the source PR. The owner decides merges; under the lightweight workflow, the owner's merge is the editorial approval. No separate sign-off is required.
+
+## Lightweight release
+
+1. Merge the checked change to `main`; the Pages workflow runs `npm run check`, `npm run release` and deploys.
+2. Update `CHANGELOG.md` and the `package.json` version.
+3. Tag `vX.Y.Z` and push the tag. A GitHub Release is optional.
+4. Open the live URL and smoke-test the home page, one work, one object, search and a phone-width layout. Record only what you actually checked.
 
 ## What `npm run release` does, in order
 
@@ -66,7 +73,7 @@ not a release artifact.
 
 [The Pages workflow](../.github/workflows/pages.yml) publishes a verified release build from checked `main`. Since 2026-11-25 it runs `npm run check`, then `npm run release` with the Pages base path and the browser map key, verifies the `release` marker and `dist/release-manifest.json`, checks the downloadable library ZIP, and uploads `dist/`. A push to `main` therefore cannot publish a draft or an unverified artifact. `npm run build` still produces a preview artifact for local review; it is never uploaded.
 
-The current public edition is **1.1**. Record the deployed revision, the Actions run and observed host or network results for each publication. Use the [feedback form](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) for reader reports.
+The current public edition is **1.1**. For a release, a short note with the deployed revision and the smoke-test result is enough; the full host matrix is optional unless the owner asks for it.
 
 ## Rolling back
 

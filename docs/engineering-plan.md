@@ -225,7 +225,7 @@ Automated checks must catch meaningful risks:
 
 Do not build a giant test suite for cosmetic choices. Check the actual risks and a small end-to-end journey.
 
-Manual acceptance:
+Manual acceptance (optional; use for a major release):
 
 1. Open the same tested build on mainland desktop broadband and mobile data without special network routing. Record date, network, browser, page loading, and map loading separately.
 2. Check an overseas connection if available; otherwise label overseas verification outstanding.
@@ -249,9 +249,9 @@ M0/M1 local code checks can pass before external access checks. Report these as 
 
 ## Collaboration
 
-The coordinator chooses priorities, resolves editorial or technical disagreements, names reviewers and decides merges, or explicitly delegates a specific merge. Members choose their local tools. Assign one lead per bounded task and coordinate overlapping files. Independent tasks can proceed concurrently.
+The coordinator chooses priorities, resolves editorial or technical disagreements and decides merges, or explicitly delegates a specific merge. Self-review is sufficient. Members choose their local tools. Assign one lead per bounded task and coordinate overlapping files. Independent tasks can proceed concurrently.
 
-Use one small PR per bounded change. Routine handoff lives in the Issue and PR, with changed subjects or files, actual command outcomes, unresolved questions and the revision tested. Milestones, migrations and releases also retain the numbered task, board row and delivery report. Identify self-review and the owner of the final decision.
+Use one small PR per bounded change. Routine handoff lives in the Issue and PR, with changed subjects or files, actual command outcomes, unresolved questions and the revision tested. A release also updates `CHANGELOG.md` and gets a `vX.Y.Z` tag; task cards, board rows and delivery reports are optional.
 
 Reviewer findings should include severity, file/location, reproduction, expected behavior, and a proposed fix direction. Fix findings on the same task before expanding scope. Update a short decision log when a reviewed architecture choice changes.
 

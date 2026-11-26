@@ -31,6 +31,47 @@ export const libraryEntries = [...byKey.values()].sort((a, b) =>
   a.titleZh.localeCompare(b.titleZh, 'zh-Hans'));
 export const findEntry = (kind: KnowledgeKind, id: string) => byKey.get(kind + '/' + id);
 
+/**
+ * Curated order for the library's reading-guide strip. Works without a guide
+ * are skipped, so the strip grows automatically as guides are merged. The
+ * order is editorial, not chronological: start with the two existing Yan
+ * Zhenqing entry points, then the ten core works in the 2026-11 guide batch.
+ */
+const FEATURED_WORK_ORDER = [
+  'yan-qinli-bei',
+  'duobao-ta-bei',
+  'stone-drum-inscriptions',
+  'cao-quan-bei',
+  'zhangqian-bei',
+  'shimen-song',
+  'cuan-baozi-bei',
+  'lanting',
+  'wansui-tongtian-tie',
+  'yugong-gong-bei',
+  'xuanmi-ta-bei',
+  'sanmen-ji',
+  'jiuchenggong-liquan-ming',
+  'shen-yinmo-dakai-jia',
+  'zhao-puchu-shen-colophon',
+];
+
+export function featuredGuideEntries(limit = 20): LibraryEntry[] {
+  const preferred = FEATURED_WORK_ORDER
+    .map((id) => byKey.get('works/' + id))
+    .filter((entry): entry is LibraryEntry => Boolean(entry?.guide));
+  const rest = libraryEntries.filter(
+    (entry) =>
+      entry.kind === 'works' &&
+      Boolean(entry.guide) &&
+      !FEATURED_WORK_ORDER.includes(entry.id),
+  );
+  return [...preferred, ...rest].slice(0, Math.max(0, limit));
+}
+
+export function guideWorkCount(): number {
+  return libraryEntries.filter((entry) => entry.kind === 'works' && Boolean(entry.guide)).length;
+}
+
 export function linkedEntries(entry: LibraryEntry, kind: KnowledgeKind): LibraryEntry[] {
   return libraryEntries.filter((other) => {
     if (other.kind !== kind || other === entry) return false;
