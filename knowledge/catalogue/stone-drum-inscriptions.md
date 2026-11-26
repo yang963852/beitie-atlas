@@ -18,6 +18,8 @@ Stone Drum Inscriptions
 
 书体：大篆
 
+延伸阅读：[石鼓文](../works/stone-drum-inscriptions.md)
+
 作品待考与说明
 
 - 目录列有不同断代；列入先秦组不表示采用某个确切年份。

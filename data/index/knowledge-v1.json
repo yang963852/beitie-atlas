@@ -8,7 +8,7 @@
     "sources": 184,
     "media": 1,
     "events": 75,
-    "workArticles": 4,
+    "workArticles": 14,
     "peopleArticles": 8,
     "noteArticles": 2,
     "peopleRelations": 1
@@ -18104,6 +18104,48 @@
   "articles": [
     {
       "kind": "works",
+      "id": "cao-quan-bei",
+      "titleZh": "曹全碑",
+      "titleEn": "Stele of Cao Quan",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "cao-quan-bei"
+      ],
+      "objects": [
+        "stele-cao-quan"
+      ],
+      "sources": [
+        "src-beilin-caoquan",
+        "src-beilin-caoquan-alternate",
+        "src-dpm-caoquan"
+      ],
+      "zh": "《曹全碑》是东汉为曹全所立的碑，今藏西安碑林。碑上留下了受颂者的姓名，却没有署撰文者与书丹者的姓名。[西安碑林博物馆条目](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=145)\n\n年代有两说：西安碑林[现行条目](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=145)与[故宫条目](https://www.dpm.org.cn/collection/impres/228534.html)作 185 年，碑林[另一条目](https://www.beilin-museum.com/index.php?a=index&aid=2996&c=View&lang=en&m=home)作 186 年。条目把两说并列，不替读者选一个。\n\n读碑时可以先看碑阴所列捐资立碑的属吏王敞、王毕等；他们是立碑人，不是撰文者或书丹者。原石与故宫明初拓本要分开读：本站记录的是[曹全碑原石](../catalogue/cao-quan-bei.md#stele-cao-quan)，纸上的墨色不能当成石面的特征。[故宫明初拓本条目](https://www.dpm.org.cn/collection/impres/228534.html)",
+      "en": "The Stele of Cao Quan is an Eastern Han stele erected for Cao Quan, now held at the Xi’an Beilin Museum. The stone preserves the name of the man it honors, but it records neither the author of its text nor its calligrapher. [Xi’an Beilin Museum entry](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=145)\n\nThe date has two readings: the current Xi’an Beilin [entry](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=145) and the [Palace Museum entry](https://www.dpm.org.cn/collection/impres/228534.html) give 185, while [another Beilin entry](https://www.beilin-museum.com/index.php?a=index&aid=2996&c=View&lang=en&m=home) gives 186. The record sets the two readings side by side and does not choose one for the reader.\n\nWhen reading the stone, begin with the donors listed on the reverse, the subordinate officials Wang Chang, Wang Bi and others; they paid for and erected the stone, and they are not its author or calligrapher. Read the original stone and the Palace Museum’s early Ming rubbing as two separate things: this site records [the original stone](../catalogue/cao-quan-bei.md#stele-cao-quan), and ink on paper cannot be treated as a feature of the stone surface. [Palace Museum early Ming rubbing](https://www.dpm.org.cn/collection/impres/228534.html)"
+    },
+    {
+      "kind": "works",
+      "id": "cuan-baozi-bei",
+      "titleZh": "爨宝子碑",
+      "titleEn": "Stele of Cuan Baozi",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "cuan-baozi-bei"
+      ],
+      "objects": [
+        "stele-cuan-baozi"
+      ],
+      "sources": [
+        "src-yn-dct-cuan",
+        "src-qjgov-cuan-museum",
+        "src-ynkg-cuanbaozi"
+      ],
+      "zh": "碑自署“大亨四年”。云南省文化和旅游厅与曲靖市政府把这一年读作 405 年，云南省文物考古研究所的页面作 404 年；作品条目把两说并列，不替读者选一个。[云南省文化和旅游厅答复函](https://dct.yn.gov.cn/zfxxgk/fdzdgknr/qtgk/zxtablqk/202404/t20240410_2381763.html)[云南省文物考古研究所页面](https://www.ynkgs.cn/view/ynkgPC/1/248/view/1514.html)\n\n此碑清乾隆四十三年（1778）在曲靖城南杨旗田出土，后一度湮没；咸丰二年（1852）重新出土，移入城内武侯祠，1937 年再移入曲靖中学（今曲靖一中）碑亭。1961 年，它被列为首批全国重点文物保护单位。本站记录的是[爨宝子碑原石](../catalogue/cuan-baozi-bei.md#stele-cuan-baozi)。[曲靖市政府《爨文化博物馆》](https://www.qj.gov.cn/html/2020/csmp_0417/83745.html)[云南省文化和旅游厅答复函](https://dct.yn.gov.cn/zfxxgk/fdzdgknr/qtgk/zxtablqk/202404/t20240410_2381763.html)\n\n书体方面，作品条目记为“隶书向楷书过渡”，这是为检索与阅读设置的分类，不是对某一笔画的描述。公布宽度另有 0.68 米与 0.86 米两说，条目并列而不合并；引用时先说明依据的是哪一说。[云南省文化和旅游厅答复函](https://dct.yn.gov.cn/zfxxgk/fdzdgknr/qtgk/zxtablqk/202404/t20240410_2381763.html)[云南省文物考古研究所页面](https://www.ynkgs.cn/view/ynkgPC/1/248/view/1514.html)\n\n碑上未署撰书者；后世虽有著作称撰书者姓名，所引政府页面未载，故本条目不主张作者。[曲靖市政府《爨文化博物馆》](https://www.qj.gov.cn/html/2020/csmp_0417/83745.html)",
+      "en": "The stone dates itself to the fourth year of the Daheng era. The Yunnan Provincial Department of Culture and Tourism and the Qujing municipal government read that year as 405, while a Yunnan institute of archaeology page gives 404; the record sets the two readings side by side and does not choose one. [Yunnan culture department reply](https://dct.yn.gov.cn/zfxxgk/fdzdgknr/qtgk/zxtablqk/202404/t20240410_2381763.html) [Yunnan archaeology institute page](https://www.ynkgs.cn/view/ynkgPC/1/248/view/1514.html)\n\nThe stone was unearthed at Yangqitian south of Qujing in 1778, then lost again; it was recovered in 1852 and moved into the Wuhou shrine in the city, and in 1937 it was moved into the stele pavilion at the Qujing school, now Qujing No. 1 Middle School. In 1961 it was listed among the first group of nationally protected cultural sites. This site records [the original stone of the Cuan Baozi stele](../catalogue/cuan-baozi-bei.md#stele-cuan-baozi). [Qujing municipal government, Cuan Culture Museum](https://www.qj.gov.cn/html/2020/csmp_0417/83745.html) [Yunnan culture department reply](https://dct.yn.gov.cn/zfxxgk/fdzdgknr/qtgk/zxtablqk/202404/t20240410_2381763.html)\n\nFor script, the record classifies the stele as a transition from clerical to regular script; this is a classification for retrieval and reading, not a description of any single stroke. Published widths also differ, 0.68 m and 0.86 m; the record keeps both rather than merging them, and a citation should say which figure it follows. [Yunnan culture department reply](https://dct.yn.gov.cn/zfxxgk/fdzdgknr/qtgk/zxtablqk/202404/t20240410_2381763.html) [Yunnan archaeology institute page](https://www.ynkgs.cn/view/ynkgPC/1/248/view/1514.html)\n\nThe stone names no writer or calligrapher. Later works do give names, but the cited government pages do not, so this record asserts no author. [Qujing municipal government, Cuan Culture Museum](https://www.qj.gov.cn/html/2020/csmp_0417/83745.html)"
+    },
+    {
+      "kind": "works",
       "id": "duobao-ta-bei",
       "titleZh": "多宝塔感应碑",
       "titleEn": "Duobao Pagoda Stele",
@@ -18123,6 +18165,50 @@
       ],
       "zh": "碑文记楚金和尚建塔。岑勋为此事撰文，楚金又请[颜真卿](../people/yan-zhenqing.md)把正文写上碑石，碑额由徐浩题写。唐天宝十一载（752）立碑。看[现存石碑](../catalogue/duobao-ta-bei.md#stele-duobao-ta)时，可以先认出题额，再向下找正文的开头。[西安碑林博物馆藏品说明，立碑与署名段](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)\n\n2024年11月2日，淮北师范大学舒柳书画协会把这通碑用作临写范本，课堂包含用笔示范。自己读图时，可接着做[认题额的练习](../notes/duobao-reading.md)。[淮北师范大学美术学院，第六次授课](https://msxy.chnu.edu.cn/xyxw/content_125348)",
       "en": "Cen Xun composed an account of the monk Chujin’s pagoda. Chujin invited [Yan Zhenqing](../people/yan-zhenqing.md) to write the inscription, and Xu Hao wrote the heading. The stone was erected in 752. On [the surviving stone](../catalogue/duobao-ta-bei.md#stele-duobao-ta), locate the heading before following the text below. [Xi’an Beilin Museum, inscription and credits](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)\n\nA calligraphy society at Huaibei Normal University used the inscription in a copying class on 2 November 2024, with a demonstration of brush movements. Try [reading the heading](../notes/duobao-reading.md) alongside the museum entry. [Faculty activity report, sixth session](https://msxy.chnu.edu.cn/xyxw/content_125348)"
+    },
+    {
+      "kind": "works",
+      "id": "lanting",
+      "titleZh": "兰亭序",
+      "titleEn": "Preface to the Orchid Pavilion",
+      "state": "reviewed",
+      "people": [
+        "wang-xizhi",
+        "feng-chengsu"
+      ],
+      "works": [
+        "lanting"
+      ],
+      "objects": [
+        "witness-lanting",
+        "dingwu-zhan"
+      ],
+      "sources": [
+        "src-catalogue-lanting",
+        "src-dpm-233468"
+      ],
+      "zh": "永和九年（353），王羲之写下这篇序。原迹不存，今天能读到的是两条传本：唐摹神龙本与定武刻拓本；作品条目不把任何一件当作原迹。[故宫博物院《冯承素行书摹兰亭序卷》](https://www.dpm.org.cn/collection/handwriting/228279.html)\n\n神龙本是一件唐摹本，传统上归为[冯承素](../people/feng-chengsu.md)摹写。故宫博物院对这一归名与卷首“神龙”印的年代都提出疑问，所以条目写作“传冯承素摹”，不把“传”字去掉；[王羲之](../people/wang-xizhi.md)是序文的作者，不是这卷的书写者。[神龙本条目](https://www.dpm.org.cn/collection/handwriting/228279.html)\n\n定武本则是刻拓本，不是摹本。本站把[神龙本](../catalogue/lanting.md#witness-lanting)与[定武本](../catalogue/lanting.md#dingwu-zhan)分列为两件实物：一件是唐摹墨迹，一件是宋代拓本，各有自己的制作与收藏。读的时候先分清“摹”与“拓”，再把它们与王羲之的原稿分开。[故宫博物院《宋拓定武兰亭序》](https://www.dpm.org.cn/collection/impres/233468.html)",
+      "en": "In 353, the ninth year of Yonghe, Wang Xizhi wrote this preface. The original is not extant; what can be read today are two lines of transmission, the Tang tracing known as the Shenlong copy and the Dingwu engraved rubbing, and the record treats neither as the original. [Palace Museum, Feng Chengsu manuscript copy of the Lanting Preface](https://www.dpm.org.cn/collection/handwriting/228279.html)\n\nThe Shenlong copy is a Tang tracing, traditionally attributed to [Feng Chengsu](../people/feng-chengsu.md). The Palace Museum questions both that attribution and the date of the “Shenlong” seal at the front, so the record says “traditionally attributed to Feng Chengsu” and keeps the qualification; [Wang Xizhi](../people/wang-xizhi.md) is the author of the text, not the writer of this scroll. [Shenlong copy entry](https://www.dpm.org.cn/collection/handwriting/228279.html)\n\nThe Dingwu version, by contrast, is an engraved rubbing, not a tracing. This site records [the Shenlong copy](../catalogue/lanting.md#witness-lanting) and [the Dingwu version](../catalogue/lanting.md#dingwu-zhan) as two objects: one a Tang ink tracing, the other a Song rubbing, each with its own making and holding. First separate tracing from rubbing, then separate both from Wang Xizhi’s original. [Palace Museum, Song rubbing of the Dingwu Lanting](https://www.dpm.org.cn/collection/impres/233468.html)"
+    },
+    {
+      "kind": "works",
+      "id": "sanmen-ji",
+      "titleZh": "三门记",
+      "titleEn": "Record of the Three Gates of the Xuanmiao Abbey",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "sanmen-ji"
+      ],
+      "objects": [
+        "sanmen-scroll"
+      ],
+      "sources": [
+        "src-tnm-sanmen",
+        "src-colbase-sanmen"
+      ],
+      "zh": "这是苏州玄妙观重修三门所立碑文的原稿，不是碑石。记文由宋末元初文人牟巘撰写，赵孟頫誊写，并在卷首以篆书题额；馆方称此卷为赵孟頫所书碑文原稿，正文楷书。本站记录的是[楷书玄妙观重修三门记卷](../catalogue/sanmen-ji.md#sanmen-scroll)。[东京国立博物馆藏品记录](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461)[ColBase 记录](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)\n\n书写年份没有著录。馆方只把此卷定在元代 14 世纪；日本国家数据库据碑文与赵孟頫的官职，推断书写时年四十九至五十六岁。这是推断，不是著录年月，作品条目因此不换算成公元年。[东京国立博物馆](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461)[ColBase](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)\n\n馆方另称其运笔以唐李邕为法；这是馆方的说法，本项目照录，不把它改写成自己的风格判断。读此卷时，可把“牟巘的记文”“赵孟頫的誊写与篆额”“馆方的评价”分开记。[ColBase 记录](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)\n\n此卷为纸本墨迹，馆方未记尺寸，条目留空；碑石是否存世、原石在何处，本条目不主张。要了解玄妙观与立碑本事，只能回到记文本身与馆方说明，不用后出的地点或尺寸补足。[东京国立博物馆](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461)",
+      "en": "This is the draft of the inscription recording the repair of the three gates of the Xuanmiao Abbey in Suzhou, not the stele itself. Mou Yan, a literatus of the late Song and early Yuan, wrote the text; Zhao Mengfu copied it and added a seal-script heading at the front, and the museum describes the scroll as Zhao’s draft for the stele, written in regular script. This site records [the scroll of the Record of the Three Gates](../catalogue/sanmen-ji.md#sanmen-scroll). [Tokyo National Museum record](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461) [ColBase record](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)\n\nNo writing year is recorded. The museum dates the scroll only to the fourteenth-century Yuan; the Japanese national database infers, from the text and Zhao Mengfu’s offices, that he was forty-nine to fifty-six when he wrote it. That is an inference, not a recorded date, and the record does not convert it into a year. [Tokyo National Museum](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461) [ColBase](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)\n\nThe museum also says that the writing follows the manner of the Tang calligrapher Li Yong; this is the museum’s statement, recorded here as such and not rewritten as the project’s own judgement of style. When reading the scroll, keep “Mou Yan’s text”, “Zhao Mengfu’s copy and heading” and “the museum’s assessment” apart. [ColBase record](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)\n\nThe scroll is an ink manuscript on paper; the museum gives no dimensions, so the record leaves size empty. It does not claim that the stele survives or say where a stone might be. To understand the abbey and the commission, return to the text and the museum’s account rather than filling the gaps with later locations or measurements. [Tokyo National Museum](https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TB1461)"
     },
     {
       "kind": "works",
@@ -18147,6 +18233,92 @@
     },
     {
       "kind": "works",
+      "id": "shimen-song",
+      "titleZh": "石门颂",
+      "titleEn": "Eulogy of Shimen",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "shimen-song"
+      ],
+      "objects": [
+        "cliff-shimen-song"
+      ],
+      "sources": [
+        "src-cssn-shaanxi-beike",
+        "src-hantai-shimen-thirteen"
+      ],
+      "zh": "东汉建和二年（148），汉中太守王升撰此颂，表彰杨孟文开通石门之功。刻辞原在崖壁，属摩崖刻石；条目只记撰者王升，没有另记书丹者。[中国社会科学网《陕西碑刻文献存藏丰富》](https://cssn.cn/skgz/bwyc/202403/t20240301_5736431.shtml)\n\n20 世纪 70 年代初，因修建石门水库，入选的一批石门石刻被凿离原址，迁入汉中市博物馆保存。这批刻石常称“石门十三品”，《石门颂》为其中之一。[汉台区人民政府《石门十三品摩崖石刻》](https://www.htq.gov.cn/hzshtqzf/zjht/lswh/201707/312e445fc8eb26fd26e26ed8d7f0edf8.shtml)\n\n因此，今天读到的已不是崖壁上的原位刻辞，而是凿迁后入藏博物馆的石刻。本站的[石门颂（摩崖）](../catalogue/shimen-song.md#cliff-shimen-song)记录收藏机构与迁移，不把“摩崖”理解为仍在原址。[中国社会科学网](https://cssn.cn/skgz/bwyc/202403/t20240301_5736431.shtml)",
+      "en": "In 148, the second year of Jianhe, the Hanzhong governor Wang Sheng composed this eulogy praising Yang Mengwen for opening the Shimen passage. The text was first cut into a cliff; the record names Wang Sheng as its author and records no calligrapher. [Chinese Social Sciences Net, Shaanxi stone inscriptions](https://cssn.cn/skgz/bwyc/202403/t20240301_5736431.shtml)\n\nIn the early 1970s, during the construction of the Shimen reservoir, a selected group of Shimen inscriptions was cut from the cliff and moved to the Hanzhong Museum. The group is commonly called the Thirteen Works of Shimen, and the Eulogy of Shimen is one of them. [Hantai District Government, Shimen cliff inscriptions](https://www.htq.gov.cn/hzshtqzf/zjht/lswh/201707/312e445fc8eb26fd26e26ed8d7f0edf8.shtml)\n\nWhat can be read today is therefore no longer the inscription in its original cliff position, but the stone after it was cut away and taken into a museum. This site’s [Eulogy of Shimen](../catalogue/shimen-song.md#cliff-shimen-song) records the holding and the move, and does not treat “cliff inscription” as meaning that it still stands on the cliff. [Chinese Social Sciences Net](https://cssn.cn/skgz/bwyc/202403/t20240301_5736431.shtml)"
+    },
+    {
+      "kind": "works",
+      "id": "stone-drum-inscriptions",
+      "titleZh": "石鼓文",
+      "titleEn": "Stone Drum Inscriptions",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "stone-drum-inscriptions"
+      ],
+      "objects": [
+        "stone-drums-original-set",
+        "dpm-rubbing-shigu-xin00045770"
+      ],
+      "sources": [
+        "src-dpm-stone-drums",
+        "src-dpm-stone-drums-ming"
+      ],
+      "zh": "十件鼓形石上刻有篆书诗篇，内容涉及出行与田猎。故宫博物院把这一组著录为秦国遗物，但确切刻成年代仍有争议；作品条目的年代因此写作“秦国遗物，确切年代未定”，不指定某位秦王或某一年。[故宫博物院“秦石鼓”条目](https://www.dpm.org.cn/collection/impres/234438.html)\n\n读这组作品，先分清石与纸。本站把[原石十件](../catalogue/stone-drum-inscriptions.md#stone-drums-original-set)与[故宫明拓册](../catalogue/stone-drum-inscriptions.md#dpm-rubbing-shigu-xin00045770)分列为两件实物：前者是现存石鼓，后者是明初拓本，各有自己的制作年代与收藏。[故宫博物院“明拓战国石鼓文册”条目](https://www.dpm.org.cn/collection/impres/228598.html)\n\n看拓本时，不要把纸上的字口当成石面今日的样子。拓本反映的是拓制时的石面，不能直接当作原石现在的状态；石与纸分开记，年代与损泐的问题才不会混在一起。[故宫博物院“明拓战国石鼓文册”条目](https://www.dpm.org.cn/collection/impres/228598.html)\n\n年代问题留在待考：目录列出不同断代，本站把作品列入先秦组，不等于采用某个确切年份。[故宫博物院“秦石鼓”条目](https://www.dpm.org.cn/collection/impres/234438.html)",
+      "en": "Ten drum-shaped stones carry seal-script poems about travel and hunting. The Palace Museum catalogues the group as a Qin relic, but the exact date of carving remains disputed; the work record therefore reads “a Qin relic, exact date undetermined” and names neither a ruler nor a year. [Palace Museum, “Qin Stone Drums”](https://www.dpm.org.cn/collection/impres/234438.html)\n\nBegin by separating stone from paper. This site records [the ten original drums](../catalogue/stone-drum-inscriptions.md#stone-drums-original-set) and [the Palace Museum’s Ming rubbing album](../catalogue/stone-drum-inscriptions.md#dpm-rubbing-shigu-xin00045770) as two objects: the surviving drums and an early Ming impression, each with its own date and holding. [Palace Museum, Ming rubbing album](https://www.dpm.org.cn/collection/impres/228598.html)\n\nWhen reading the album, do not treat ink on paper as the present surface of the stone. A rubbing records the stone as it was when taken; it cannot be read as the drums’ current condition. Keeping stone and paper apart prevents dates and damage from being merged. [Palace Museum, Ming rubbing album](https://www.dpm.org.cn/collection/impres/228598.html)\n\nThe dating question stays open: the catalogue gives competing dates, and placing the work in the pre-Qin group does not adopt one precise year. [Palace Museum, “Qin Stone Drums”](https://www.dpm.org.cn/collection/impres/234438.html)"
+    },
+    {
+      "kind": "works",
+      "id": "wansui-tongtian-tie",
+      "titleZh": "万岁通天帖",
+      "titleEn": "Model Letters of the Wan Sui Tong Tian Year",
+      "state": "reviewed",
+      "people": [
+        "wang-xizhi",
+        "wang-xianzhi"
+      ],
+      "works": [
+        "wansui-tongtian-tie"
+      ],
+      "objects": [
+        "wansui-tongtian-scroll"
+      ],
+      "sources": [
+        "src-gmw-wansui",
+        "src-chinanews-wansui",
+        "src-lnm-wansui"
+      ],
+      "zh": "万岁通天二年（697），凤阁侍郎王方庆进献其先祖[王羲之](../people/wang-xizhi.md)、[王献之](../people/wang-xianzhi.md)等一门二十八人的法书十卷。武则天命弘文馆以勾填法摹写，留于内府；王方庆是进呈者，不是摹手。[光明网《那些有故事的镇馆之宝》](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm)[中国新闻网报道](https://www.chinanews.com/cul/2018/02-13/8448541.shtml)\n\n当年进呈的十卷，今仅存此一卷，收七人书翰十通。卷上无摹手署款，内府勾填者的姓名在所引来源中都没有留下；因此只能称“唐摹”，不能指名某位摹手。本站记录的是[唐摹王氏一门书翰卷](../catalogue/wansui-tongtian-tie.md#wansui-tongtian-scroll)。[光明网](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm)[辽宁省博物馆藏品页](https://www.lnmuseum.com.cn/)\n\n此卷历经明无锡真赏斋火与清乾隆间乾清宫火两次火劫；所引页面都没有记下火劫年份，也没有给出损伤评估。1922 年，溥仪将它携往长春，今藏辽宁省博物馆。[中国新闻网报道](https://www.chinanews.com/cul/2018/02-13/8448541.shtml)[辽宁省博物馆](https://www.lnmuseum.com.cn/)\n\n读这卷时，先记住它是一件双钩填墨的唐摹本，不是王氏真迹；卷中十通本是私人书信，作为法帖的价值来自后来的用法。把“王氏原信”“唐人摹本”“今天收藏的实物”三层分开，版本问题才不会混在一起。[辽宁省博物馆](https://www.lnmuseum.com.cn/)[光明网](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm)",
+      "en": "In 697, the second year of Wansui Tongtian, the chancellor Wang Fangqing presented ten scrolls of calligraphy by twenty-eight members of his family, including his ancestors [Wang Xizhi](../people/wang-xizhi.md) and [Wang Xianzhi](../people/wang-xianzhi.md). Empress Wu ordered the Hongwen Academy to trace and ink-fill them for the imperial collection; Wang Fangqing was the presenter, not the copyist. [Guangming Online, museum treasures](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm) [China News Service report](https://www.chinanews.com/cul/2018/02-13/8448541.shtml)\n\nOf the ten scrolls submitted, only this one survives, carrying ten letters by seven hands. The scroll bears no copyist’s signature, and the names of the court copyists are absent from the cited sources; it can therefore be called a Tang tracing, but no individual copyist can be named. This site records [the Tang tracing of letters by the Wang family](../catalogue/wansui-tongtian-tie.md#wansui-tongtian-scroll). [Guangming Online](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm) [Liaoning Provincial Museum collection page](https://www.lnmuseum.com.cn/)\n\nThe scroll passed through two fires, one at the Zhenshang Studio in Wuxi in the Ming and one at the Qianqing Palace in the Qianlong period; the cited pages give neither fire a year and offer no damage assessment. In 1922 Puyi took it to Changchun, and it is now held by the Liaoning Provincial Museum. [China News Service report](https://www.chinanews.com/cul/2018/02-13/8448541.shtml) [Liaoning Provincial Museum](https://www.lnmuseum.com.cn/)\n\nWhen reading the scroll, remember first that it is a Tang double-outline tracing with ink fill, not a Wang autograph; the ten letters were private correspondence, and their value as a modelbook comes from later use. Keep “the Wang letters”, “the Tang tracing” and “the object held today” as three separate layers, and the textual questions will not collapse into one. [Liaoning Provincial Museum](https://www.lnmuseum.com.cn/) [Guangming Online](https://museum.gmw.cn/2017-12/15/content_27109986_6.htm)"
+    },
+    {
+      "kind": "works",
+      "id": "xuanmi-ta-bei",
+      "titleZh": "玄秘塔碑",
+      "titleEn": "Xuanmi Pagoda Stele",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "xuanmi-ta-bei"
+      ],
+      "objects": [
+        "stele-xuanmi-ta",
+        "dpm-xuanmi-ta-bei-026"
+      ],
+      "sources": [
+        "src-beilin-xuanmita",
+        "src-dpm-259370"
+      ],
+      "zh": "唐会昌元年（841）立碑。裴休撰文，柳公权书丹，并以篆书题额；刻石者为邵建和、邵建初兄弟，二人是唐中书省玉册官，专办御用刻石。[西安碑林博物馆条目](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=148)\n\n原石今藏西安碑林；故宫博物院另藏一册明初拓本，二者是两件不同的实物。原石有自己的刻立与收藏经历，拓本有自己的拓制年代与收藏，不能把拓本上的墨色当成石面今日的状态。原石见[玄秘塔碑原石](../catalogue/xuanmi-ta-bei.md#stele-xuanmi-ta)，拓本见[故宫明初拓册](../catalogue/xuanmi-ta-bei.md#dpm-xuanmi-ta-bei-026)。[故宫博物院《明初拓大达法师玄秘塔碑册》](https://www.dpm.org.cn/collection/impres/259370.html)\n\n读的时候先分清四种角色：裴休撰文、柳公权书丹并篆额、邵氏兄弟刻石，以及后世拓本的拓制者。碑文作者与书写者不是同一人，刻工也不是书丹者；把这几层混在一起，就会把馆方没有说的归名补进去。[西安碑林博物馆条目](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=148)[故宫明初拓册](https://www.dpm.org.cn/collection/impres/259370.html)\n\n馆方条目没有说明原石何时入藏碑林、今日是否展出；这些空白留在实物条目的待考里。[西安碑林博物馆条目](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=148)",
+      "en": "The stele was erected in 841, the first year of Huichang. Pei Xiu composed the text, Liu Gongquan wrote it in regular script and added a seal-script heading; the brothers Shao Jianhe and Shao Jianchu cut the stone, both being jade-tablet officers of the Tang Secretariat who handled imperial commissions. [Xi’an Beilin Museum entry](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=148)\n\nThe original stone is held at the Xi’an Beilin Museum; the Palace Museum holds a separate early Ming rubbing album, and the two are different objects. The stone has its own history of carving and keeping, the album its own date and holding; ink on paper cannot be treated as the stone’s present surface. The original stone is recorded as [the Xuanmi Pagoda Stele original stone](../catalogue/xuanmi-ta-bei.md#stele-xuanmi-ta), and the rubbing as [the Palace Museum’s early Ming album](../catalogue/xuanmi-ta-bei.md#dpm-xuanmi-ta-bei-026). [Palace Museum, early Ming rubbing album](https://www.dpm.org.cn/collection/impres/259370.html)\n\nWhen reading, separate four roles: Pei Xiu as author, Liu Gongquan as writer and heading-writer, the Shao brothers as engravers, and the later maker of the rubbing. The author and the calligrapher are not the same person, and the engraver is not the calligrapher; merging these layers invites attributions the museum does not make. [Xi’an Beilin Museum entry](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=148) [Palace Museum album](https://www.dpm.org.cn/collection/impres/259370.html)\n\nThe museum entry does not state when the stone entered the Beilin or whether it is on display today; those gaps remain in the object record. [Xi’an Beilin Museum entry](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=148)"
+    },
+    {
+      "kind": "works",
       "id": "yan-qinli-bei",
       "titleZh": "颜勤礼碑",
       "titleEn": "Stele of Yan Qinli",
@@ -18168,6 +18340,49 @@
       ],
       "zh": "颜勤礼是书写者的曾祖父。唐大历十四年（779），[颜真卿](../people/yan-zhenqing.md)为他撰文并书写神道碑。今天从拓本上读到的文字，把两个人的名字留在了一起。[西安碑林博物馆藏品说明](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home)\n\n故宫图录中的新00045406是一册民国拓本。看图时可以先记下这个编号，再分别翻阅[纸本拓册](../catalogue/yan-qinli-bei.md#dpm-rubbing-xin00045406)和[西安原石](../catalogue/yan-qinli-bei.md#yan-qinli-original-stele)的经历。纸上的某个字究竟留下了哪一时的石面？可以从[碑背的“故”字](../notes/yan-qinli-story.md)读起。[故宫藏品号与简介](https://www.dpm.org.cn/collection/impres/234175.html)\n\n这方碑仍有人拿来临写。2024年11月6日，淮北师范大学舒柳书画协会用它上了一堂临摹课。学院的记录点出了碑名，课堂所用拓本的版本还有待辨认。[美术学院活动简报，第七次授课](https://msxy.chnu.edu.cn/xyxw/content_125348)",
       "en": "[Yan Zhenqing](../people/yan-zhenqing.md) composed and wrote this inscription for his great-grandfather Yan Qinli in 779. Both names belong to the stone, each in a different role. [Xi’an Beilin Museum, object description](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home)\n\nThe Palace Museum entry numbered 新00045406 describes a Republican-era paper album. Follow [that impression](../catalogue/yan-qinli-bei.md#dpm-rubbing-xin00045406) and [the stone in Xi’an](../catalogue/yan-qinli-bei.md#yan-qinli-original-stele) separately. For a way to ask which state of a stone an impression preserves, start with [the character 故 on its back](../notes/yan-qinli-story.md). [Palace Museum, number and description](https://www.dpm.org.cn/collection/impres/234175.html)\n\nOn 6 November 2024 a calligraphy society at Huaibei Normal University taught a copying session using the inscription. The faculty report identifies the work. The edition used by the class remains open. [Faculty activity report, seventh session](https://msxy.chnu.edu.cn/xyxw/content_125348)"
+    },
+    {
+      "kind": "works",
+      "id": "yugong-gong-bei",
+      "titleZh": "虞恭公碑",
+      "titleEn": "Stele of Duke Yugong",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "yugong-gong-bei"
+      ],
+      "objects": [
+        "stele-yugong",
+        "rubbing-yugong-nansong"
+      ],
+      "sources": [
+        "src-dpm-yugong-song",
+        "src-dpm-yugong-nansong",
+        "src-nlc-shike-xulu-19"
+      ],
+      "zh": "这是温彦博的墓碑，唐贞观十一年（637）十月立于醴泉昭陵。岑文本撰文，欧阳询书；正书三十六行、行七十七字，碑额以篆书刻四行十六字。[故宫博物院《宋拓唐虞恭公温彦博碑》](https://www.dpm.org.cn/collection/impres/228414.html)\n\n碑的下半在宋代已经断裂，所以没有全文拓本传世。传世最旧的拓本仅存八百余字；国家图书馆叙录记全文约二千八百余字，这是全文规模，不是任何一件拓本的实际存字。[国家图书馆《北京图书馆藏石刻叙录（十九）》](https://www.nlc.cn/upload/attachments/2026-02-14/40e09fcb.pdf)\n\n本站把[原石](../catalogue/yugong-gong-bei.md#stele-yugong)与[故宫藏南宋拓本](../catalogue/yugong-gong-bei.md#rubbing-yugong-nansong)分列为两件实物。原石现存礼泉昭陵博物馆，下半剥泐；拓本则是剪裱册，馆方据“历”“高”二字未损定为南宋拓本。石与纸各有自己的年代与收藏，不能互相补足。[故宫博物院《温彦博碑》](https://www.dpm.org.cn/collection/impres/234129.html)\n\n读这通碑，先看原石的存佚与下半剥泐，再看拓本存字；不要把“约二千八百余字”当成原石今日可读的字数，也不要把南宋拓本的存字当成全文。拓本上未见的内容，只能写“待访”或“待补”。[国家图书馆叙录](https://www.nlc.cn/upload/attachments/2026-02-14/40e09fcb.pdf)[故宫南宋拓本条目](https://www.dpm.org.cn/collection/impres/234129.html)",
+      "en": "This is the funerary stele of Wen Yanbo, set up at Zhaoling in Liquan in the tenth month of 637. Cen Wenben composed the text and Ouyang Xun wrote it; the inscription has thirty-six lines of seventy-seven characters, with a seal-script heading of four lines and sixteen characters. [Palace Museum, Song rubbing of the Wen Yanbo stele](https://www.dpm.org.cn/collection/impres/228414.html)\n\nThe lower half of the stone broke away in the Song, so no complete rubbing survives. The oldest surviving impression carries only about eight hundred characters; the National Library survey gives the full text as about two thousand eight hundred characters, a total for the composition, not a count for any surviving impression. [National Library of China, stone inscription survey 19](https://www.nlc.cn/upload/attachments/2026-02-14/40e09fcb.pdf)\n\nThis site records [the original stone](../catalogue/yugong-gong-bei.md#stele-yugong) and [the Palace Museum’s Southern Song rubbing](../catalogue/yugong-gong-bei.md#rubbing-yugong-nansong) as two objects. The stone is now in the Zhaoling Museum in Liquan, with its lower half effaced; the rubbing is a cut-and-mounted album, identified as Southern Song by the undamaged 历 and 高 characters. Stone and paper have their own dates and holdings and cannot fill each other’s gaps. [Palace Museum, Wen Yanbo stele](https://www.dpm.org.cn/collection/impres/234129.html)\n\nWhen reading the stele, first establish what survives of the stone and how much of its lower half is effaced, then look at the characters preserved in the rubbing. Do not treat “about two thousand eight hundred characters” as the stone’s readable total today, or the rubbing’s surviving characters as the full text. What the rubbing does not show can only be marked as sought or supplied. [National Library survey](https://www.nlc.cn/upload/attachments/2026-02-14/40e09fcb.pdf) [Palace Museum, Southern Song rubbing](https://www.dpm.org.cn/collection/impres/234129.html)"
+    },
+    {
+      "kind": "works",
+      "id": "zhangqian-bei",
+      "titleZh": "张迁碑",
+      "titleEn": "Stele of Zhang Qian",
+      "state": "reviewed",
+      "people": [],
+      "works": [
+        "zhangqian-bei"
+      ],
+      "objects": [
+        "stele-zhangqian"
+      ],
+      "sources": [
+        "src-ltfc-zhuyunge",
+        "src-taian-zhangqian-holding",
+        "src-nlc-shike-xulu"
+      ],
+      "zh": "东汉中平三年（186），为县令张迁立碑，立石者为故吏韦萌等。碑文没有署撰文者与书丹者姓名；作品条目把立碑者、刻工与撰书者分开记录。[中华珍宝馆竹云阁帖著录](https://g2.ltfc.net/work/SUFA/67d64a1899a6320270c19860)\n\n碑文记“賃師孫興，刊石立表”，即刻工为孙兴；碑阴另列捐资题名四十一人。立碑者与刻工都没有被写成书丹者，读碑时也不应替它补一位名家。[国家图书馆《北京图书馆藏石刻叙录（六）》](https://www.nlc.cn/upload/attachments/2026-04-23/187a80e0.pdf)\n\n原石今为泰安市博物馆馆藏。2025 年的馆方活动报道把它列入馆藏，但没有说明具体陈列位置；本站的[张迁碑原石](../catalogue/zhangqian-bei.md#stele-zhangqian)据此记录收藏，不据此判断今日是否展出。[泰安市博物馆活动报道](https://tsgw.taian.gov.cn/art/2025/5/19/art_48253_10316874.html)\n\n另据碑帖著录，此石明初出土，但著录没有给出年份、地点与依据；出土、入藏与今日陈列状态，所核来源都没有记载。这些空白保留在实物条目的待考里，不用“相传”补足。[中华珍宝馆竹云阁帖著录](https://g2.ltfc.net/work/SUFA/67d64a1899a6320270c19860)",
+      "en": "In 186, the third year of Zhongping, the stele was erected for the magistrate Zhang Qian; the former subordinates Wei Meng and others put up the stone. The inscription names neither its author nor its calligrapher, and the record keeps sponsors, engraver and writers apart. [Zhu Yun Ge album note](https://g2.ltfc.net/work/SUFA/67d64a1899a6320270c19860)\n\nThe inscription says that the donors “hired the craftsman Sun Xing to cut the stone”, so Sun Xing is the engraver; the reverse lists forty-one donors. Neither the sponsors nor the engraver are presented as the calligrapher, and no famous hand should be supplied for them. [National Library of China, stone inscription survey](https://www.nlc.cn/upload/attachments/2026-04-23/187a80e0.pdf)\n\nThe original stone is now a Tai’an Museum holding. A 2025 museum activity report lists it among the collection but does not state where it is displayed; this site’s [original stone](../catalogue/zhangqian-bei.md#stele-zhangqian) records the holding on that basis and makes no claim about current display. [Tai’an Museum report](https://tsgw.taian.gov.cn/art/2025/5/19/art_48253_10316874.html)\n\nAn album note says the stone was unearthed in the early Ming, but gives no year, place or evidence; the audited source records neither the find nor the accession. These gaps stay open in the object record rather than being filled with tradition. [Zhu Yun Ge album note](https://g2.ltfc.net/work/SUFA/67d64a1899a6320270c19860)"
     },
     {
       "kind": "works",
