@@ -6,7 +6,7 @@ Updated: 2026-11-26. This board tracks the active milestone. Independent contrib
 
 | Task | Outcome | State | Exit evidence |
 | --- | --- | --- | --- |
-| 052 | Slim the repository and archive milestones 040–051 | Delivered — self-reviewed; [PR #61](https://github.com/yang963852/beitie-atlas/pull/61) open for coordinator review | See [task 052](../tasks/052-repository-slimming.md) and [delivery 052](delivery-052.md); archive tag `archive-milestones-040-051-2026-11-26` |
+| 052 | Slim the repository and archive milestones 040–051 | Delivered — self-reviewed; merged in [PR #61](https://github.com/yang963852/beitie-atlas/pull/61) at `44dba21`; Pages release run `45730768543`; coordinator acceptance pending | See [task 052](../tasks/052-repository-slimming.md) and [delivery 052](delivery-052.md); archive tag `archive-milestones-040-051-2026-11-26` |
 
 ## Iteration loop
 

@@ -27,6 +27,10 @@ Date: 2026-11-26. Task: [052](../tasks/052-repository-slimming.md). Branch: `tra
 | `git tag -a archive-milestones-040-051-2026-11-26` and `git push origin` | Tag present on origin at `ee93d96` |
 | `git ls-remote --tags origin archive-milestones-040-051-2026-11-26` | `ee93d96b434f138b0d94f781cc3f51cf909a309e` |
 | `npm run check` | Passed |
+| `gh pr merge 61 --merge` | Merged as `44dba21` at 2026-11-26T00:43:30Z |
+| Pages release workflow | Run `45730768543`, completed successfully in 1m11s |
+| Live release marker | `beitie-build-mode` = `release` |
+| Live manifest | `mode=release`; 117 works, 126 objects, 46 places, 184 sources, 75 events |
 
 ## Verification evidence
 
@@ -52,4 +56,4 @@ Date: 2026-11-26. Task: [052](../tasks/052-repository-slimming.md). Branch: `tra
 
 ## Reviewer outcome
 
-Self-review by TRAE. [PR #61](https://github.com/yang963852/beitie-atlas/pull/61) is open for coordinator review. The coordinator decides acceptance and merge.
+Self-review by TRAE. [PR #61](https://github.com/yang963852/beitie-atlas/pull/61) was merged by coordinator instruction on 2026-11-26 and the Pages release was verified live. Coordinator acceptance remains pending.
