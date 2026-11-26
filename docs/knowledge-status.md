@@ -11,7 +11,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | Works | 117 (117 reviewed / 0 draft) |
 | Objects | 126 (126 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
-| People pages | 8 |
+| People pages | 9 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
 | Sources | 184 (0 uncited) |
@@ -108,15 +108,15 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [颜勤礼碑](../knowledge/works/yan-qinli-bei.md) | Tang | reviewed | reviewed | 1 | 3 | 2 | 2/5 | — |
 | [颜氏家庙碑](../knowledge/works/yan-jiamiao-bei.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [大秦景教流行中国碑](../knowledge/works/daqin-jingjiao-bei.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [迴元观钟楼铭](../knowledge/works/huiyuan-guan-zhonglou-ming.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [迴元观钟楼铭](../knowledge/works/huiyuan-guan-zhonglou-ming.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [开成石经](../knowledge/works/kaicheng-shijing.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [玄秘塔碑](../knowledge/works/xuanmi-ta-bei.md) | Tang | reviewed | reviewed | 0 | 2 | 2 | 2/2 | 1 |
-| [神策军碑](../knowledge/works/shen-ce-jun-bei.md) | Tang | reviewed | — | 0 | 2 | 1 | 0/1 | — |
-| [圭峰定慧禅师碑](../knowledge/works/guifeng.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [玄秘塔碑](../knowledge/works/xuanmi-ta-bei.md) | Tang | reviewed | reviewed | 1 | 2 | 2 | 2/2 | 1 |
+| [神策军碑](../knowledge/works/shen-ce-jun-bei.md) | Tang | reviewed | — | 1 | 2 | 1 | 0/1 | — |
+| [圭峰定慧禅师碑](../knowledge/works/guifeng.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [古诗四帖](../knowledge/works/gushi-sitie.md) | Tang | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [化度寺邕禅师舍利塔铭](../knowledge/works/huadu-si.md) | Tang | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [皇甫诞碑](../knowledge/works/huangfu-dan-bei.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [蒙诏帖](../knowledge/works/mengzhao.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [蒙诏帖](../knowledge/works/mengzhao.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [张翰帖](../knowledge/works/zhanghan.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [韭花帖](../knowledge/works/jiuhua-tie.md) | Five Dynasties and Ten Kingdoms | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [篆书千字文碑](../knowledge/works/mengying-thousand-character-stele.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |

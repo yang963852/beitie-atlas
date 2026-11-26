@@ -26,6 +26,7 @@
 ## 书家
 
 - [冯承素](people/feng-chengsu.md)
+- [柳公权](people/liu-gongquan.md) · 待审
 - [沈尹默](people/shen-yinmo.md)
 - [王献之](people/wang-xianzhi.md)
 - [王羲之](people/wang-xizhi.md)

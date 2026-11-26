@@ -18,7 +18,7 @@ Xuanmi Pagoda Stele
 
 书体：楷书
 
-延伸阅读：[玄秘塔碑](../works/xuanmi-ta-bei.md)
+延伸阅读：[玄秘塔碑](../works/xuanmi-ta-bei.md) · [柳公权](../people/liu-gongquan.md)
 
 作品待考与说明
 

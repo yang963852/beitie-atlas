@@ -17,6 +17,8 @@ Bell Tower Inscription of the Huiyuan Abbey
 
 书体：楷书
 
+延伸阅读：[柳公权](../people/liu-gongquan.md)
+
 作品待考与说明
 
 - 页面未记此石入馆前如何陈列。
