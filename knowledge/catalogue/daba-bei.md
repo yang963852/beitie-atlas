@@ -18,6 +18,8 @@ Stele of the Imperial Preceptor Dampa
 
 书体：楷书
 
+延伸阅读：[赵孟頫](../people/zhao-mengfu.md)
+
 作品待考与说明
 
 - 此件为纸本稿，非刻石。本记录不主张碑石存世，也不主张其所在。

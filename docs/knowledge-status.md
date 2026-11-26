@@ -11,7 +11,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | Works | 117 (117 reviewed / 0 draft) |
 | Objects | 126 (126 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
-| People pages | 8 |
+| People pages | 10 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
 | Sources | 184 (0 uncited) |
@@ -37,9 +37,9 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [史墙盘](../knowledge/works/shiqiang-pan.md) | Pre-Qin | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [石鼓文](../knowledge/works/stone-drum-inscriptions.md) | Pre-Qin | reviewed | reviewed | 0 | 2 | 2 | 1/1 | 1 |
 | [中山王厝鼎](../knowledge/works/zhongshan-wang-cuo-ding.md) | Pre-Qin | reviewed | — | 0 | 1 | 1 | 0/1 | — |
-| [琅琊刻石](../knowledge/works/langya-keshi.md) | Qin | reviewed | — | 0 | 1 | 1 | 0/1 | — |
-| [泰山刻石](../knowledge/works/taishan-keshi.md) | Qin | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [峄山刻石](../knowledge/works/yishan-inscription.md) | Qin | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [琅琊刻石](../knowledge/works/langya-keshi.md) | Qin | reviewed | — | 1 | 1 | 1 | 0/1 | — |
+| [泰山刻石](../knowledge/works/taishan-keshi.md) | Qin | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [峄山刻石](../knowledge/works/yishan-inscription.md) | Qin | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [睡虎地秦简](../knowledge/works/shuihudi-qinjian.md) | Qin | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [北陛石](../knowledge/works/beibi-stone.md) | Western Han | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [五凤刻石](../knowledge/works/wufeng-inscription.md) | Western Han | reviewed | — | 0 | 1 | 1 | 0/1 | — |
@@ -129,10 +129,10 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [秾芳诗帖](../knowledge/works/nongfang-shitie.md) | Northern Song | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [珊瑚帖](../knowledge/works/shanhu.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [陆游自书诗卷](../knowledge/works/lu-you-zishu-shi.md) | Southern Song | reviewed | — | 0 | 1 | 1 | 0/1 | — |
-| [胆巴碑](../knowledge/works/daba-bei.md) | Yuan | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [三门记](../knowledge/works/sanmen-ji.md) | Yuan | reviewed | reviewed | 0 | 2 | 1 | 0/1 | — |
-| [赵子昂游天冠山诗](../knowledge/works/tianguanshan-poems.md) | Yuan | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [洛神赋](../knowledge/works/zhao-luoshen.md) | Yuan | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |
+| [胆巴碑](../knowledge/works/daba-bei.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [三门记](../knowledge/works/sanmen-ji.md) | Yuan | reviewed | reviewed | 1 | 2 | 1 | 0/1 | — |
+| [赵子昂游天冠山诗](../knowledge/works/tianguanshan-poems.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [洛神赋](../knowledge/works/zhao-luoshen.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | 2 |
 | [墨池堂选帖](../knowledge/works/mochitang.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [梅雪轩书晦翁不自弃文](../knowledge/works/meixuexuan-buziqi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [王铎行草书自书诗卷](../knowledge/works/wangduo-zishu-shi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |

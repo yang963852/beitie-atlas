@@ -14,6 +14,8 @@ Poems on Mount Tianguan attributed to Zhao Mengfu
 
 - 撰文并书丹 · 赵孟頫（传）（有争议） 馆方指出学者对所据墨本的真伪有质疑。 [出处 1](#ref-src-beilin-tianguanshan)
 
+延伸阅读：[赵孟頫](../people/zhao-mengfu.md)
+
 <a name="stele-tianguanshan-poems"></a>
 
 ## 赵子昂游天冠山诗碑（清刻）
