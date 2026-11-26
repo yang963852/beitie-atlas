@@ -29,17 +29,16 @@ leaves nothing that could be uploaded by mistake.
 ## Commands and expected outcomes
 
 ```bash
-npm run check:release   # exits 1 while the corpus contains drafts
-npm run release         # exits 1 at step 2; dist/ is removed
+npm run check:release   # passes on the current 1.1 corpus; fails if a draft or invalid record is introduced
+npm run release         # builds and verifies the release artifact; a failed gate removes dist/
 npm run build           # succeeds; preview artifact only
 npm run preview         # serves the preview build locally
 ```
 
-The founding second edition passed the strict gate and was deployed in [delivery 021](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/delivery-021.md).
-Future changes that introduce drafts will still block formal publication.
+The 1.1 edition passed the strict gate and is deployed through the Pages workflow. Its deployment evidence is recorded in delivery 051 in the `archive-milestones-040-051-2026-11-26` tag. Future changes that introduce drafts still block formal publication.
 
-The rejection is the correct behaviour while the records are drafts. Do not mark records
-`reviewed` to get a green build; editorial review is a separate gate.
+A rejection means a draft or invalid record was introduced. Fix the record; do not mark records
+`reviewed` to get a green build. Editorial review is a separate gate.
 
 ## Positive-path evidence
 

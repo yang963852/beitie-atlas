@@ -2,7 +2,16 @@
 
 A learner wants to identify the work on their desk, distinguish its surviving versions and learn what to look at in the writing. Follow that reader from a work to a person, a witness and a source. The project covers historical and modern calligraphy. A claim about current teaching use needs evidence for that use.
 
-[中文资料与试读指南](CONTRIBUTE.zh-CN.md) · [First internal beta on Pages](https://yang963852.github.io/beitie-atlas/) · [Markdown knowledge library](../knowledge/README.md) · [Local agent workflow (Chinese)](agent-workflow.zh-CN.md)
+[中文资料与试读指南](CONTRIBUTE.zh-CN.md) · [Public site on Pages](https://yang963852.github.io/beitie-atlas/) · [Markdown knowledge library](../knowledge/README.md) · [Local agent workflow (Chinese)](agent-workflow.zh-CN.md)
+
+## What lives in `main`
+
+`main` holds the current author sources, the website and compiler, the checks, the current operating documents and the active milestone. Dated records are retrievable but are not current guidance:
+
+- Milestones 001–039: annotated tag `archive-pre-hygiene-2026-11-25`.
+- Milestones 040–051, acceptance screenshots and completed plans or proposals: annotated tag `archive-milestones-040-051-2026-11-26`.
+
+See [the archive index](archive.md) for browsing and restore commands. A new contributor only needs the current documents linked on this page.
 
 ## Choose the assignment
 
@@ -50,6 +59,16 @@ Run `npm run check` again after implementation. Push the checked branch to the c
 | Compiler, interface or validation | `scripts/lib/knowledge-*.ts`, `src/domain/`, `data/index/knowledge-v1.json` | Run `npm run check:data`, `npm run check:interface`, `npm run check:isolation`, `npm run check:reproducible` |
 | Formal publication | `scripts/release.ts`, [release runbook](release.md) | Verify all reviewed inputs, release marker, manifest and host |
 
-The website reads `data/index/knowledge-v1.json`; it does not import author Markdown. The pre-rebuild JSON corpus and its migration tools were retired on 2026-11-25 and remain in the annotated tag [archive-pre-hygiene-2026-11-25](https://github.com/yang963852/beitie-atlas/tree/archive-pre-hygiene-2026-11-25). The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`.
+The website reads `data/index/knowledge-v1.json`; it does not import author Markdown. The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`. The pre-rebuild JSON corpus and its migration tools are retired; their records are in the archive tags listed in [the archive index](archive.md).
 
-The public **1.1** corpus is served by the checked Pages preview. It is owner-approved as content; a formal release artifact still requires `npm run release` and the workflow change described in [the release runbook](release.md). The last published release tag is [v0.1.0-alpha.2](https://github.com/yang963852/beitie-atlas/tree/v0.1.0-alpha.2); its approval and manifest are recorded in [delivery 021](https://github.com/yang963852/beitie-atlas/blob/archive-pre-hygiene-2026-11-25/docs/delivery-021.md).
+The public **1.1** edition is built and deployed through `npm run release`. The Pages workflow verifies the release marker, the manifest counts and the downloadable library ZIP. Deployment evidence for the 1.1 release is recorded in delivery 051 in the `archive-milestones-040-051-2026-11-26` tag.
+
+## Reusing this repository
+
+The MIT licence covers the code, documentation and original editorial work; third-party rights stay in [NOTICE.md](../NOTICE.md). To build a different library from this repository:
+
+1. Fork the project and replace the records under `knowledge/` using the [Chinese templates](../knowledge/_templates/).
+2. Change the site title, interface text and deployment address; set the Vite base path for your host.
+3. Run `npm run knowledge:compile && npm run knowledge:generate`, then `npm run check`.
+4. Keep the evidence, rights and release rules that you still need. The iteration board, delivery reports and local-agent branches describe this project's coordination, not a requirement for a fork.
+5. The archive tags and `docs/archive.md` are optional in a fork; they preserve this project's dated records.

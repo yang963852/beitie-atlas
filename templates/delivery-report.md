@@ -1,6 +1,6 @@
 # Delivery report
 
-Use for numbered milestones, migrations and releases. Routine contributions report evidence in their PR.
+Use for numbered milestones, migrations and releases. Routine contributions report evidence in their PR. After acceptance, this report is archived with the milestone and removed from `main`; attach UI screenshots to the PR or issue instead of committing them to `docs/`.
 
 Task ID:
 Date:
@@ -20,6 +20,8 @@ Exact setup/start commands and preview address:
 Required non-secret configuration:
 
 ## Verification evidence
+
+UI screenshots belong in the PR or issue; link them here rather than adding binary files to the repository.
 
 | Check | Result: passed / failed / not run | Evidence or limitation |
 | --- | --- | --- |

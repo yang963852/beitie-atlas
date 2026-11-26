@@ -6,8 +6,6 @@
 
 **[打开网站](https://yang963852.github.io/beitie-atlas/)** · [读 Markdown 知识库](knowledge/README.md) · [下载完整知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip) · [提交资料](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) · [反馈问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)
 
-![《颜勤礼碑》作品页：原石与民国拓本分列，正文注明馆藏与临习出处](docs/screenshots/039-1440.png)
-
 ## 在网站里能做什么
 
 - **从案头进入**：一张摊开的帖引你进入年代长河；桌上的帖影直达《兰亭序》神龙本的实物记录。
@@ -34,7 +32,7 @@
 - 网站不直接读作者 Markdown，编译器也不反向导入网页代码；隔离由 `npm run check:isolation` 检查。
 - 同一输入编译两次，产物逐字节一致，由 `npm run check:reproducible` 验证。
 
-细节：[知识库重建执行计划](docs/knowledge-rebuild.md) · [负责人架构导读与五幅图](docs/engineering-plan.md#负责人架构导读)
+细节：[架构与数据流](docs/engineering-plan.md#data-model-and-invariants) · [负责人架构导读与五幅图](docs/engineering-plan.md#负责人架构导读)
 
 ## 参与
 
@@ -44,9 +42,9 @@
 | 在 Obsidian 里改一篇再提交 | [下载知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip)，按原路径提 PR |
 | 改网站或编译器 | Fork 后在分支上修改，向 `main` 提 PR；先看[上手与交接](docs/START-HERE.md) |
 | 反馈问题 | 按[五分钟试读](docs/CONTRIBUTE.zh-CN.md#五分钟试读)走一遍，再填[反馈表](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) |
-| 跟进选题、评审与合并 | [Issues](https://github.com/yang963852/beitie-atlas/issues) · [PRs](https://github.com/yang963852/beitie-atlas/pulls) · [里程碑台账](docs/iteration-board.md) |
+| 复刻为自己的知识库 | Fork 后替换 `knowledge/`、站点标题与部署地址；MIT 许可，保留 `NOTICE.md` 的第三方权利说明。见[上手与交接](docs/START-HERE.md#reusing-this-repository) |
 
-欢迎直接提 PR，无需预先开 Issue；中文说明完全可以。[@yang963852](https://github.com/yang963852) 是主要审查人和维护人，负责审查与合并。[贡献指南](CONTRIBUTING.md) · [中文操作指南](docs/CONTRIBUTE.zh-CN.md)
+欢迎直接提 PR，无需预先开 Issue；中文说明完全可以。[贡献指南](CONTRIBUTING.md) · [中文操作指南](docs/CONTRIBUTE.zh-CN.md)
 
 ## 本地运行
 
@@ -69,18 +67,16 @@ npm run dev
 | `scripts/` | 编译器、校验、知识库打包与发布门槛 |
 | `src/` | React 网站：阅读、时间线、地图、知识库 |
 | `data/index/knowledge-v1.json` | 编译器生成的带版本接口，网站只读这一份 |
-| `docs/` | 架构、编辑流程、任务与交付记录 |
-
-旧库与 001–039 里程碑已移出 `main`，见[历史归档](docs/archive.md)；本地 agent 的目录、分支和交接规则见[工作流](docs/agent-workflow.zh-CN.md)。
+| `docs/` | 现行操作文档：上手、编辑、设计、架构、发布、地图与归档 |
 
 ## 状态与限制
 
 - 网站公开在 GitHub Pages 上，当前内容为**1.1 版**：全部条目已通过发布门槛与编辑确认；存疑与异说仍按原样留在各条的「待考」与「异说」中，不作确定性改写。发布流程见[发布手册](docs/release.md)。
 - 真实底图依赖天地图网络服务；无密钥或被拒绝时显示点位示意图。各地网络能否打开须在当地实测，项目不作保证。
-- 引文、馆藏图片与地图服务的权利依各自依据处理。[许可证](LICENSE) · [权利与致谢](NOTICE.md)
+- 引文、馆藏图片与地图服务的权利依各自依据处理。
 
-原创代码、文档与原创编辑内容采用 MIT 许可证。
+## 许可与致谢
 
-## 贡献者
+原创代码、文档与原创编辑内容采用 MIT 许可证。[许可证](LICENSE) · [权利与致谢](NOTICE.md)
 
 [doublett523](https://github.com/doublett523) 设计并实现了案头落墨开场、年代长河、馆藏地图和知识库编辑入口。[贡献记录 #29](https://github.com/yang963852/beitie-atlas/pull/29)

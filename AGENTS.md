@@ -10,9 +10,9 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 | --- | --- | --- |
 | Edit a work, object, person, place, source or note | [Editorial workflow](docs/atlas-workflow.md), [Chinese templates](knowledge/_templates/), the target Markdown and its sources | Compiler, UI, generated catalogue |
 | Develop the website | [Design system](docs/design-system.md), [data boundary](src/domain/data.ts), the compiled interface shape and the affected component | Author Markdown, retired legacy JSON, compiler |
-| Maintain the compiler or interface | [Schema](scripts/lib/knowledge-schema.ts), [compiler](scripts/lib/knowledge-compiler.ts), [execution plan](docs/knowledge-rebuild.md) | Reader-facing prose except a migration correction |
+| Maintain the compiler or interface | [Schema](scripts/lib/knowledge-schema.ts), [compiler](scripts/lib/knowledge-compiler.ts), [engineering plan](docs/engineering-plan.md) | Reader-facing prose except a migration correction |
 | Review a contribution | [Review skill](.agents/skills/review-change/SKILL.md), the Issue/PR, the target record and evidence | Merging or publishing on the author's behalf |
-| Coordinate a milestone or release | [Iteration board](docs/iteration-board.md), [release runbook](docs/release.md), [execution plan](docs/knowledge-rebuild.md) | Other contributors' assigned files |
+| Coordinate a milestone or release | [Iteration board](docs/iteration-board.md), [release runbook](docs/release.md), [archive index](docs/archive.md) | Other contributors' assigned files |
 
 ## Roles and scope
 
@@ -26,7 +26,7 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 ## Local artifact storage
 
 - Never create project folders or write project outputs in the parent workspace or beside this repository.
-- Use `.private/tmp/` for temporary files and caches, `.private/worktrees/` for the two long-lived agent worktrees, `.private/browser/` for browser profiles, `.private/sites/` for deployment checkouts and archives, and `.private/workspace-archive/` for retained legacy artifacts. Keep existing `dist/` and `build/` conventions. Never stage `.private/`.
+- Use `.private/tmp/` for temporary files and caches, `.private/worktrees/` for the two long-lived agent worktrees, `.private/browser/` for browser profiles, `.private/sites/` for deployment checkouts and archives, and `.private/workspace-archive/` for retained legacy artifacts and local copies of records retired from `main`. The canonical copy of a retired record is its annotated archive tag. Keep existing `dist/` and `build/` conventions. Never stage `.private/`.
 - WorkBuddy's own application data directory (`C:/Users/zhangyang/WorkBuddy/Worktrees/碑帖之间/`) is the only permitted workspace outside this repository. It is a Git worktree managed by that application, not a project output; do not create other folders there.
 - Set tool output paths, browser profile paths, and temporary-directory variables explicitly as needed. If a tool cannot keep its output inside the project, report the limitation instead of writing beside the repository. Check for stray project outputs at handoff; leave unrelated folders alone.
 
@@ -59,7 +59,8 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 
 - Use small commits with `feat:`, `fix:`, `docs:`, `test:`, `ci:`, or `chore:` prefixes; do not rewrite history or push unless the current task calls for it.
 - For a small contribution, keep scope, assignee, evidence, actual checks, limitations and review in the Issue/PR. A contributor may submit either a browser-only source Issue or a Markdown PR. The editor links the two when normalizing a reader's submission.
-- For a milestone, migration or release, update the iteration board and write `docs/delivery-NNN.md` with the exact revision, changed files, commands/outcomes, screenshots for UI work, source gaps and limitations. The board's state cell opens with `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted` or `Superseded`. `npm run check:docs` checks that vocabulary, task rows and evidence links. Milestone evidence may be retired from `main` only after the coordinator pushes an annotated `archive-*` tag; record the tag in [the archive index](docs/archive.md). Never rewrite history.
+- For a milestone, migration or release, update the iteration board and write `docs/delivery-NNN.md` with the exact revision, changed files, commands/outcomes, source gaps and limitations. Attach UI screenshots to the PR or issue and link them from the report; do not commit them to `docs/`. The board's state cell opens with `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted` or `Superseded`. `npm run check:docs` checks that vocabulary, task rows and evidence links.
+- `main` keeps only current sources, operating documents and the active milestone. After acceptance, retire the milestone's task card, delivery report, screenshots, research and dated plans to an annotated `archive-*` tag, record the tag in [the archive index](docs/archive.md), and remove them from `main`. Do not rewrite history.
 - Review outcomes are changes-required / partially-verified / accepted. P1 blocks release; P2 must be fixed in its assigned iteration; P3 is optional polish. Never mark your own work independently accepted.
 - A review produced by the implementer's own tooling is a self-review. It may clear findings. Record who performed it and who decides acceptance in the PR (and the board row for a milestone).
 - Do not silently change these rules to make a failing check pass.

@@ -38,6 +38,8 @@ For a work introduction, cite the writing context and identify the sources for a
 
 When moving an existing narrative, compare its text, language, source links, stable ID and review state before switching consumers. Remove superseded editable copies after parity is established. The website and GitHub should both lead readers to the same evidence.
 
+The Chinese contribution guide carries the six source rules and the seven-part guide standard used by Chinese-language editors: [中文投稿与试读指南](CONTRIBUTE.zh-CN.md#来源六条硬规则).
+
 ## GitHub Pages preview
 
 1. In GitHub repository **Settings → Pages**, set the publishing source to **GitHub Actions**. [The Pages workflow](../.github/workflows/pages.yml) runs on changes to `main` or by manual dispatch from `main`.
