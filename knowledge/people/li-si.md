@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 李斯
 titleEn: Li Si
 aliases: []
-state: draft
+state: reviewed
 works: [langya-keshi, taishan-keshi, yishan-inscription]
 objects: []
 sources: [src-chnmuseum-langya, src-taian-dai-museum-site, src-beilin-yishan]

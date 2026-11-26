@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 苏轼
 titleEn: Su Shi
 aliases: []
-state: draft
+state: reviewed
 works: [hanshi]
 objects: []
 sources: [src-catalogue-hanshi, src-dpm-231008, src-scwwj-hanshi]

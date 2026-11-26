@@ -30,7 +30,7 @@ sources:
   - src-catalogue-zixu
   - src-qlwb-zixu
 review:
-  state: draft
+  state: reviewed
 ---
 
 # 自叙帖

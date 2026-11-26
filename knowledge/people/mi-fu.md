@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 米芾
 titleEn: Mi Fu
 aliases: []
-state: draft
+state: reviewed
 works: [tiaoxi, shusu, shanhu]
 objects: []
 sources: [src-catalogue-tiaoxi, src-dpm-231255, src-catalogue-shusu]

@@ -3,10 +3,10 @@ schemaVersion: 1
 titleZh: 王珣
 titleEn: Wang Xun
 aliases: []
-state: draft
+state: reviewed
 works: [boyuan]
 objects: []
-sources: [src-catalogue-boyuan]
+sources: [src-catalogue-boyuan, src-gmw-erxi]
 ---
 
 # 王珣
@@ -19,7 +19,7 @@ sources: [src-catalogue-boyuan]
 
 它的位置是乾隆给定的。乾隆十一年（1746）此帖入内府，与前藏的王羲之《快雪时晴帖》、王献之《中秋帖》并贮养心殿西暖阁，额曰“三希堂”；次年又精选内府所藏魏晋至明一百三十四家真迹，摹勒上石，是为《三希堂法帖》，刻石嵌于西苑北海阅古楼。卷前引首是乾隆御书“江左风华”四字，前隔水有御笔“家学世范，草圣有传。宣和书谱”十二字，后隔水有明董其昌跋，卷尾是董邦达的图与沈德潜的《三希堂歌》。值得留意的是：三希并置一室，其中《快雪时晴帖》馆方另条明说是唐摹本，王珣此帖是原迹——所谓“三希”，其实是摹本与原迹同坐。[故宫博物院，王珣行书伯远帖](https://www.dpm.org.cn/collection/handwriting/228199.html)
 
-最后一段流传，比书法更像一部传奇。1911 年以后至 1924 年溥仪出宫前，此帖与《中秋帖》藏在敬懿皇贵妃所居的寿康宫；溥仪出宫时，敬懿皇贵妃将二帖带出，此后流散在外，辗转入郭世五之手，再归其子郭昭俊。1950 年郭昭俊在香港以二帖抵押借款，徐伯郊报故宫博物院院长马衡，马衡报告周恩来，周派王冶秋与马衡赴广州商定备款赎回；1951 年，二帖从香港购回，交故宫博物院收藏。本库另有[王羲之](../people/wang-xizhi.md)、[王献之](../people/wang-xianzhi.md)两页，可以接着读这一门的三个人；但要知道，三件里只有这一件是当日亲手写下的纸。[故宫博物院，王珣行书伯远帖·流传](https://www.dpm.org.cn/collection/handwriting/228199.html)
+最后一段流传，比书法更像一部传奇。1911 年以后至 1924 年溥仪出宫前，此帖与《中秋帖》藏在敬懿皇贵妃所居的寿康宫；溥仪出宫时，敬懿皇贵妃将二帖带出，此后流散在外。上世纪三十年代，二帖辗转为袁世凯差官郭葆昌（字世五）所得，再归其子郭昭俊。郭昭俊曾携帖赴台湾求售未果，又到香港将二帖抵押给一家英国银行，赎期定在 1951 年底；郑振铎闻讯急报中央，周恩来批示购回，国家文物局副局长王冶秋、故宫博物院院长马衡与上海文管会主任徐森玉前往鉴定真伪，二帖终以重价购回，1951 年 12 月由王冶秋送交故宫博物院。本库另有[王羲之](../people/wang-xizhi.md)、[王献之](../people/wang-xianzhi.md)两页，可以接着读这一门的三个人；但要知道，三件里只有这一件是当日亲手写下的纸。[故宫博物院，王珣行书伯远帖·流传](https://www.dpm.org.cn/collection/handwriting/228199.html) · [光明日报，不惜重金新中国迎回“二希”](https://www.gmw.cn/01gmrb/2005-10/29/content_323325.htm)
 
 ## English
 
@@ -29,4 +29,4 @@ The letter is ink on paper, running script, five lines and forty-seven character
 
 Its standing was fixed by the Qianlong emperor. In 1746 the letter entered the imperial collection and was stored with Wang Xizhi’s Kuaixue shiqing tie and Wang Xianzhi’s Zhongqiu tie in the western warm chamber of the Hall of Mental Cultivation, which was named the Hall of the Three Rarities; the next year 134 works from the Wei, Jin, Tang, Song, Yuan and Ming collections were traced onto stone as the Sanxitang fatie, and the stones set into the Yuegu tower in the Western Garden. The frontispiece is Qianlong’s own four characters, “Elegance of the Left of the Yangzi”; the front mounting carries twelve characters in his hand, “a household model and a family learning, the cursive sage has a tradition, Xuanhe shupu”; the rear mounting has Dong Qichang’s colophon; the end of the scroll has Dong Bangda’s painting and Shen Deqian’s “Song of the Three Rarities”. One detail is worth noting: of the three rarities kept in one room, the Kuaixue tie is described by the museum, elsewhere on the same site, as a Tang tracing, while Wang Xun’s letter is the original — so the “three rarities” seat copies and an autograph together. [Palace Museum, Wang Xun’s letter to Boyuan](https://www.dpm.org.cn/collection/handwriting/228199.html)
 
-The last stage of its transmission reads more like a romance than a chapter of calligraphy history. Between 1911 and the emperor’s departure from the palace in 1924, this letter and the Zhongqiu tie were kept in the Palace of Longevity and Health where the Dowager Consort Jingyi lived; when Puyi left, she carried both out, and they scattered, passing eventually to Guo Shiwei and then to his son Guo Zhaojun. In 1950 Guo Zhaojun pledged them for a loan in Hong Kong; Xu Bojiao informed Ma Heng, director of the Palace Museum, who reported to Zhou Enlai, who sent Wang Yeqiu and Ma Heng to Guangzhou to arrange the redemption. In 1951 the two scrolls were bought back from Hong Kong and given to the Palace Museum. This library keeps pages for [Wang Xizhi](../people/wang-xizhi.md) and [Wang Xianzhi](../people/wang-xianzhi.md), and the three men of one family can be read together — but of the three works, only this one is paper written by the hand on the day. [Palace Museum, Wang Xun’s letter to Boyuan, transmission](https://www.dpm.org.cn/collection/handwriting/228199.html)
+The last stage of its transmission reads more like a romance than a chapter of calligraphy history. Between 1911 and the emperor’s departure from the palace in 1924, this letter and the Zhongqiu tie were kept in the Palace of Longevity and Health where the Dowager Consort Jingyi lived; when Puyi left, she carried both out, and they scattered. In the 1930s they passed to Guo Baochang, a former aide to Yuan Shikai, and then to his son Guo Zhaojun. Guo Zhaojun tried to sell them in Taiwan without success, then pledged both in Hong Kong to a British bank with redemption due at the end of 1951. Zheng Zhenduo reported the matter to the central government, Zhou Enlai authorised the purchase, and Wang Yeqiu, vice director of the cultural relics bureau, Ma Heng, director of the Palace Museum, and Xu Senyu of the Shanghai cultural relics committee went to authenticate them. The two scrolls were bought back at a heavy price and delivered to the Palace Museum by Wang Yeqiu in December 1951. This library keeps pages for [Wang Xizhi](../people/wang-xizhi.md) and [Wang Xianzhi](../people/wang-xianzhi.md), and the three men of one family can be read together — but of the three works, only this one is paper written by the hand on the day. [Palace Museum, Wang Xun’s letter to Boyuan, transmission](https://www.dpm.org.cn/collection/handwriting/228199.html) · [Guangming Daily, the return of the “two rarities”](https://www.gmw.cn/01gmrb/2005-10/29/content_323325.htm)

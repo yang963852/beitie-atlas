@@ -25,25 +25,25 @@
 
 ## 书家
 
-- [蔡襄](people/cai-xiang.md) · 待审
+- [蔡襄](people/cai-xiang.md)
 - [冯承素](people/feng-chengsu.md)
-- [李世民](people/li-shimin.md) · 待审
-- [李斯](people/li-si.md) · 待审
-- [李阳冰](people/li-yangbing.md) · 待审
-- [柳公权](people/liu-gongquan.md) · 待审
-- [米芾](people/mi-fu.md) · 待审
-- [欧阳询](people/ouyang-xun.md) · 待审
+- [李世民](people/li-shimin.md)
+- [李斯](people/li-si.md)
+- [李阳冰](people/li-yangbing.md)
+- [柳公权](people/liu-gongquan.md)
+- [米芾](people/mi-fu.md)
+- [欧阳询](people/ouyang-xun.md)
 - [沈尹默](people/shen-yinmo.md)
-- [苏轼](people/su-shi.md) · 待审
+- [苏轼](people/su-shi.md)
 - [王献之](people/wang-xianzhi.md)
 - [王羲之](people/wang-xizhi.md)
-- [王珣](people/wang-xun.md) · 待审
+- [王珣](people/wang-xun.md)
 - [翁方纲](people/weng-fanggang.md)
 - [鲜于枢](people/xianyu-shu.md)
 - [颜真卿](people/yan-zhenqing.md)
-- [杨凝式](people/yang-ningshi.md) · 待审
-- [张旭](people/zhang-xu.md) · 待审
-- [赵孟頫](people/zhao-mengfu.md) · 待审
+- [杨凝式](people/yang-ningshi.md)
+- [张旭](people/zhang-xu.md)
+- [赵孟頫](people/zhao-mengfu.md)
 - [赵朴初](people/zhao-puchu.md)
 
 ## 考证与读帖笔记
@@ -158,7 +158,7 @@
 - [三坟记](catalogue/sanfen-ji.md) · 1 件实物
 - [大唐中兴颂](catalogue/datang-zhongxing-song.md) · 1 件实物
 - [麻姑仙坛记](catalogue/magu.md) · 1 件实物
-- [自叙帖](catalogue/zixu.md) · 1 件实物 · 待审
+- [自叙帖](catalogue/zixu.md) · 1 件实物
 - [颜勤礼碑](catalogue/yan-qinli-bei.md) · 2 件实物
 - [颜氏家庙碑](catalogue/yan-jiamiao-bei.md) · 1 件实物
 - [大秦景教流行中国碑](catalogue/daqin-jingjiao-bei.md) · 1 件实物
@@ -184,7 +184,7 @@
 - [黄州寒食诗帖](catalogue/hanshi.md) · 1 件实物
 - [蜀素帖](catalogue/shusu.md) · 1 件实物
 - [苕溪诗卷](catalogue/tiaoxi.md) · 1 件实物
-- [松风阁诗](catalogue/songfeng.md) · 1 件实物 · 待审
+- [松风阁诗](catalogue/songfeng.md) · 1 件实物
 - [自书诗卷](catalogue/cai-zishu.md) · 1 件实物
 - [秾芳诗帖](catalogue/nongfang-shitie.md) · 1 件实物
 - [珊瑚帖](catalogue/shanhu.md) · 1 件实物
@@ -204,7 +204,7 @@
 
 - [墨池堂选帖](catalogue/mochitang.md) · 1 件实物
 - [梅雪轩书晦翁不自弃文](catalogue/meixuexuan-buziqi.md) · 1 件实物
-- [王铎行草书自书诗卷](catalogue/wangduo-zishu-shi.md) · 1 件实物 · 待审
+- [王铎行草书自书诗卷](catalogue/wangduo-zishu-shi.md) · 1 件实物
 - [行书论书卷](catalogue/dong-lunshu.md) · 1 件实物
 - [楷书归去来兮辞页](catalogue/wen-guiqulai.md) · 1 件实物
 - [三体杂书诗卷](catalogue/zhu-santi.md) · 1 件实物

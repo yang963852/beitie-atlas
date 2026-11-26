@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 欧阳询
 titleEn: Ouyang Xun
 aliases: []
-state: draft
+state: reviewed
 works: [jiuchenggong-liquan-ming, huangfu-dan-bei, huadu-si, yugong-gong-bei, zhanghan]
 objects: []
 sources: [src-dpm-234567, src-dpm-yugong-song, src-beilin-huangfudan, src-baoji-jiuchenggong, src-curator-siou]

@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 张旭
 titleEn: Zhang Xu
 aliases: []
-state: draft
+state: reviewed
 works: [gushi-sitie]
 objects: []
 sources: [src-lnm-gushisitie, src-lnd-gushisitie]

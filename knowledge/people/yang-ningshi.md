@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 杨凝式
 titleEn: Yang Ningshi
 aliases: []
-state: draft
+state: reviewed
 works: [jiuhua-tie]
 objects: []
 sources: [src-wuxi-jiuhua, src-wuxi-jiuhua-entry]

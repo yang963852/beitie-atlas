@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 柳公权
 titleEn: Liu Gongquan
 aliases: []
-state: draft
+state: reviewed
 works: [xuanmi-ta-bei, shen-ce-jun-bei, huiyuan-guan-zhonglou-ming, mengzhao, guifeng]
 objects: []
 sources: [src-dpm-231095, src-dpm-259370, src-beilin-xuanmita, src-ccdy-shence, src-nlc-shence-museum, src-beilin-huiyuan, src-dpm-234182]

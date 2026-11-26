@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 蔡襄
 titleEn: Cai Xiang
 aliases: []
-state: draft
+state: reviewed
 works: [cai-zishu]
 objects: []
 sources: [src-dpm-228526]

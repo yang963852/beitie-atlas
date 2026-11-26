@@ -3,7 +3,7 @@ schemaVersion: 1
 titleZh: 李世民
 titleEn: Li Shimin
 aliases: []
-state: draft
+state: reviewed
 works: [jinci-zhi-ming, wen-quan-ming]
 objects: []
 sources: [src-taiyuan-jinci, src-thepaper-wenquanming, src-shi-dunhuang-rubbings]

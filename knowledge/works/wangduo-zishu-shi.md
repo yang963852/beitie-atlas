@@ -30,7 +30,7 @@ attribution:
 sources:
   - src-dpm-wangduo
 review:
-  state: draft
+  state: reviewed
 ---
 
 # 王铎行草书自书诗卷
