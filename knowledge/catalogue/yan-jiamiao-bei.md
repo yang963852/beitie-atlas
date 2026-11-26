@@ -19,6 +19,8 @@ Stele of the Yan Family Shrine
 
 书体：楷书
 
+延伸阅读：[李阳冰](../people/li-yangbing.md)
+
 作品待考与说明
 
 - 馆方只记高三百三十八厘米，未记宽厚，故仅录高度。

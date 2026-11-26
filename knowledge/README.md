@@ -26,10 +26,13 @@
 ## 书家
 
 - [冯承素](people/feng-chengsu.md)
+- [李世民](people/li-shimin.md) · 待审
 - [李斯](people/li-si.md) · 待审
+- [李阳冰](people/li-yangbing.md) · 待审
 - [沈尹默](people/shen-yinmo.md)
 - [王献之](people/wang-xianzhi.md)
 - [王羲之](people/wang-xizhi.md)
+- [王珣](people/wang-xun.md) · 待审
 - [翁方纲](people/weng-fanggang.md)
 - [鲜于枢](people/xianyu-shu.md)
 - [颜真卿](people/yan-zhenqing.md)

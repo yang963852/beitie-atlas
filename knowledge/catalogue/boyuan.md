@@ -16,6 +16,8 @@ Letter to Boyuan
 
 书体：行书
 
+延伸阅读：[王珣](../people/wang-xun.md)
+
 <a name="witness-boyuan"></a>
 
 ## 王珣《伯远帖》
