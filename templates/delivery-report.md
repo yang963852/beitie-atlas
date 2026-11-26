@@ -1,6 +1,6 @@
 # Delivery report
 
-Use for numbered milestones, migrations and releases. Routine contributions report evidence in their PR. After acceptance, this report is archived with the milestone and removed from `main`; attach UI screenshots to the PR or issue instead of committing them to `docs/`.
+Optional. Use for a formal release or a large migration when a longer record is useful. Routine changes use the PR; a release may use a short `CHANGELOG.md` entry instead. Attach UI screenshots to the PR or issue instead of committing them to `docs/`.
 
 Task ID:
 Date:
@@ -28,6 +28,12 @@ UI screenshots belong in the PR or issue; link them here rather than adding bina
 | Type check | | |
 | Data validation | | |
 | Production build | | |
+| Live smoke test (home, work, object, search, phone width) | | |
+
+Use the full access matrix below only when the owner asks for a formal host check.
+
+| Check | Result: passed / failed / not run | Evidence or limitation |
+| --- | --- | --- |
 | Object identity and source review | | |
 | Browser interaction | | |
 | Mainland desktop access | | |
@@ -39,6 +45,8 @@ UI screenshots belong in the PR or issue; link them here rather than adding bina
 
 List remaining issues, relevant source gaps, provider conditions, and proposed decisions. Never include secret values in this report.
 
-## Reviewer outcome
+## Decision
 
-Name the reviewer and label self-review when applicable. Record accepted / changes required / partially verified with actionable findings, reproduction steps and expected behavior. Name the coordinator or delegate deciding the merge. Link the PR, resulting revision and any separate deployment or editorial review.
+Who merged it and when. Self-review is acceptable; no separate acceptance record is required.
+
+Link the PR, resulting revision and any separate deployment. Describe any remaining source gap or limitation; never include secret values.

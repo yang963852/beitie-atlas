@@ -6,7 +6,7 @@ A learner wants to identify the work on their desk, distinguish its surviving ve
 
 ## What lives in `main`
 
-`main` holds the current author sources, the website and compiler, the checks, the current operating documents and the active milestone. Dated records are retrievable but are not current guidance:
+`main` holds the current author sources, the website and compiler, the checks, the current operating documents and active work. The project uses a lightweight owner-merge workflow: self-review is sufficient, and `npm run check` green plus the owner's merge is the gate. Dated records are retrievable but are not current guidance:
 
 - Milestones 001–039: annotated tag `archive-pre-hygiene-2026-11-25`.
 - Milestones 040–051, acceptance screenshots and completed plans or proposals: annotated tag `archive-milestones-040-051-2026-11-26`.
@@ -22,10 +22,10 @@ For the owner or an agent preparing a technical decision, start with the [Chines
 | Suggest a source using only a browser | [Chinese knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) | A single Issue with source and locator, or an authored Markdown PR |
 | Edit a work, witness, person or reading note | [Research skill](../.agents/skills/research-entry/SKILL.md), [editorial workflow](atlas-workflow.md) | A narrow PR linking the subject, evidence, contributor and open questions |
 | Develop a web feature | [Web skill](../.agents/skills/web-change/SKILL.md), [engineering plan](engineering-plan.md), [design system](design-system.md) | A reproducible reader path and check results in a PR |
-| Review a contribution | [Review skill](../.agents/skills/review-change/SKILL.md), [project rules](../AGENTS.md) | Findings and a review outcome for the coordinator |
-| Coordinate priorities or release | [Open Issues and PRs](../CONTRIBUTING.md#coordinators-queue), [milestone board](iteration-board.md), [release runbook](release.md) | Assignee, reviewer, recorded merge decision and separately authorized release |
+| Review a contribution | [Review skill](../.agents/skills/review-change/SKILL.md), [project rules](../AGENTS.md) | Findings, optionally; the owner decides the merge |
+| Coordinate priorities or release | [Open Issues and PRs](../CONTRIBUTING.md#coordinators-queue), [milestone board](iteration-board.md), [release runbook](release.md) | Scope, merge decision and release tag |
 
-A local agent can read each `SKILL.md` directly from the checkout. Each assignment supplies a reader outcome, subject or files, base revision, evidence, acceptance example and stopping point. Copy the [task card and Chinese prompt](../templates/task-brief.md). GitHub handles repository permissions. A task description or skill provides workflow guidance.
+A local agent can read each `SKILL.md` directly from the checkout. Each assignment supplies a reader outcome, subject or files, base revision, evidence and a stopping point; an acceptance example is optional. Copy the [task card and Chinese prompt](../templates/task-brief.md). GitHub handles repository permissions. A task description or skill provides workflow guidance.
 
 TRAE commits to the long-lived `trae/work` branch and WorkBuddy to `workbuddy/work`; each task opens a PR to `main`, and the coordinator decides the merge. Codex is read-only unless the coordinator asks for a written plan. The workspace, synchronization and cleanup rules are in [the local agent workflow](agent-workflow.zh-CN.md).
 
@@ -57,7 +57,7 @@ Run `npm run check` again after implementation. Push the checked branch to the c
 | Catalogue index and GitHub reading copies | Generated from `knowledge/`; never hand-edit `knowledge/catalogue/` or `knowledge/README.md` | `npm run knowledge:generate` and commit the generated diff |
 | Website and navigation | `src/App.tsx`, `src/components/`, `src/styles.css`, `src/i18n/`; import only the compiled interface | Exercise entry, link refresh, keyboard, narrow screen and 200% zoom |
 | Compiler, interface or validation | `scripts/lib/knowledge-*.ts`, `src/domain/`, `data/index/knowledge-v1.json` | Run `npm run check:data`, `npm run check:interface`, `npm run check:isolation`, `npm run check:reproducible` |
-| Formal publication | `scripts/release.ts`, [release runbook](release.md) | Verify all reviewed inputs, release marker, manifest and host |
+| Formal publication | `scripts/release.ts`, [release runbook](release.md) | Verify all reviewed inputs, the release marker, the manifest and a live smoke test |
 
 The website reads `data/index/knowledge-v1.json`; it does not import author Markdown. The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`. The pre-rebuild JSON corpus and its migration tools are retired; their records are in the archive tags listed in [the archive index](archive.md).
 
