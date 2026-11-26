@@ -19,6 +19,8 @@ Record of the Three Gates of the Xuanmiao Abbey
 
 书体：楷书
 
+延伸阅读：[三门记](../works/sanmen-ji.md)
+
 作品待考与说明
 
 - 此卷为碑文原稿，非碑石。本记录不主张碑石存世。

@@ -16,7 +16,7 @@ Preface to the Orchid Pavilion
 
 书体：行书
 
-延伸阅读：[冯承素](../people/feng-chengsu.md) · [王羲之](../people/wang-xizhi.md)
+延伸阅读：[兰亭序](../works/lanting.md) · [冯承素](../people/feng-chengsu.md) · [王羲之](../people/wang-xizhi.md)
 
 <a name="dingwu-zhan"></a>
 

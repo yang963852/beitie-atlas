@@ -24,7 +24,7 @@ Model Letters of the Wan Sui Tong Tian Year
 
 别名：唐摹王氏一门书翰、摹王氏一门书翰卷、王氏宝章集
 
-延伸阅读：[王献之](../people/wang-xianzhi.md) · [王羲之](../people/wang-xizhi.md)
+延伸阅读：[万岁通天帖](../works/wansui-tongtian-tie.md) · [王献之](../people/wang-xianzhi.md) · [王羲之](../people/wang-xizhi.md)
 
 作品待考与说明
 
