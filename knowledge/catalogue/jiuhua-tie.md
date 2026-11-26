@@ -16,6 +16,8 @@ Letter on Leek Flowers
 
 书体：行楷
 
+延伸阅读：[杨凝式](../people/yang-ningshi.md)
+
 作品待考与说明
 
 - 字数有六十三字与六十五字两说，馆方两篇文章即不一致，未据原件复核。
@@ -52,7 +54,7 @@ Letter on Leek Flowers, Qing palace album
 
 <a name="ref-src-wuxi-jiuhua"></a>
 
-1. 无锡博物院 Wuxi Museum · [【无锡宝藏之十四】杨凝式《韭花帖》：一件因吃而成就的笔墨神迹](<https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b>)。定位：记行楷墨迹麻纸本、高26厘米宽28厘米、七行六十三字、清宫旧藏、1982年入藏、传世三本与真伪争议。查阅于 2026-11-24。
+1. 无锡博物院 Wuxi Museum · [【无锡宝藏之十四】杨凝式《韭花帖》：一件因吃而成就的笔墨神迹](<https://www.wxmuseum.cn/News/Details/a77f8975-ec06-4367-ad8a-0818b08c535b>)。定位：记行楷墨迹麻纸本、高26厘米宽28厘米、七行六十三字、释文、乾隆引首、清宫旧藏与溥仪盗出、薛氏递藏、1982年入藏、传世三本与真伪争议、黄庭坚「杨风子」诗、「天下第五行书」之序。查阅于 2026-11-24。
 
 <a name="ref-src-wuxi-jiuhua-entry"></a>
 

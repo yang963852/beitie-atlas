@@ -16,6 +16,8 @@ Rhapsody on the Goddess of the Luo
 
 书体：行书
 
+延伸阅读：[赵孟頫](../people/zhao-mengfu.md)
+
 <a name="witness-zhao-luoshen"></a>
 
 ## 赵孟頫《洛神赋》

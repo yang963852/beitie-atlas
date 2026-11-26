@@ -16,6 +16,8 @@ Poems on Shu Silk
 
 书体：行书
 
+延伸阅读：[米芾](../people/mi-fu.md)
+
 <a name="witness-shusu"></a>
 
 ## 米芾《蜀素帖》

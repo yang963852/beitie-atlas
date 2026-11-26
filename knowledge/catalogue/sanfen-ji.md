@@ -19,6 +19,8 @@ Record of the Three Graves
 
 书体：小篆
 
+延伸阅读：[李阳冰](../people/li-yangbing.md)
+
 作品待考与说明
 
 - 馆方页面记此刻于大历二年；另有记载称原石久佚、今碑为宋时重刻，重刻年份与依据待核。

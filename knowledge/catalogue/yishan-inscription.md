@@ -16,6 +16,8 @@ Mount Yi Inscription
 
 书体：小篆
 
+延伸阅读：[李斯](../people/li-si.md)
+
 <a name="stele-yishan-inscription"></a>
 
 ## 峄山刻石（北宋长安本）

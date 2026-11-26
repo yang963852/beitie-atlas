@@ -19,6 +19,8 @@ Stele of the Shence Army
 
 书体：楷书
 
+延伸阅读：[柳公权](../people/liu-gongquan.md)
+
 作品待考与说明
 
 - 文章除称下册已佚外，未描述其内容。

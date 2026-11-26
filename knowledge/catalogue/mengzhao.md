@@ -16,6 +16,8 @@ Imperial Summons Letter
 
 书体：行书
 
+延伸阅读：[柳公权](../people/liu-gongquan.md)
+
 <a name="dpm-mengzhao-026"></a>
 
 ## 《蒙诏帖》（旧题柳公权）

@@ -18,6 +18,8 @@ Inscription on the Hot Spring
 
 书体：行书
 
+延伸阅读：[李世民](../people/li-shimin.md)
+
 作品待考与说明
 
 - 所引报道既未给拓本尺寸，也未记其保存状况。

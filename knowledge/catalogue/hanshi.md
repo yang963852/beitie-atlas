@@ -16,6 +16,8 @@ Cold Food Poems
 
 书体：行书
 
+延伸阅读：[苏轼](../people/su-shi.md)
+
 <a name="witness-hanshi"></a>
 
 ## 苏轼《黄州寒食诗帖》

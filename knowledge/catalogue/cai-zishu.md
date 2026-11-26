@@ -16,6 +16,8 @@ Scroll of Poems in the Author’s Hand
 
 书体：行书
 
+延伸阅读：[蔡襄](../people/cai-xiang.md)
+
 <a name="dpm-cai-zishu-026"></a>
 
 ## 蔡襄《自书诗卷》
@@ -44,6 +46,6 @@ Scroll of Poems in the Author’s Hand, ink manuscript
 
 <a name="ref-src-dpm-228526"></a>
 
-1. 故宫博物院 · [蔡襄行书自书诗卷](<https://www.dpm.org.cn/collection/handwriting/228526.html>)。定位：藏品题名、文物号及简介。查阅于 2026-11-18。
+1. 故宫博物院 · [蔡襄行书自书诗卷](<https://www.dpm.org.cn/collection/handwriting/228526.html>)。定位：藏品题名、文物号（新00044433）、尺寸与行数字数、十三家题跋、欧阳修批语、朱文钧跋语、著录与刻帖；页末「蔡襄」小传。查阅于 2026-11-18。
 
 [作品源稿](../../knowledge/works/cai-zishu.md) · [返回知识总目](../README.md)

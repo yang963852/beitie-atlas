@@ -16,6 +16,8 @@ Coral Letter
 
 书体：行书
 
+延伸阅读：[米芾](../people/mi-fu.md)
+
 <a name="dpm-shanhu-026"></a>
 
 ## 米芾《珊瑚帖》
