@@ -9,7 +9,6 @@
 .atlas-mast a {text-decoration:none;}
 .atlas-brand {font:600 1.35rem var(--book); letter-spacing:.08em;}
 .atlas-brand small {display:inline-block; margin-left:1rem; font:italic .95rem Georgia,serif; letter-spacing:0;}
-.atlas-mast button {border:0;background:none;color:inherit;cursor:pointer;}
 .atlas-time,.atlas-journey {padding:clamp(2rem,6vh,5rem) clamp(1rem,5vw,5rem) 3.5rem;}
 .atlas-time {scroll-margin-top:5rem;}
 .atlas-time:focus,.atlas-journey h1:focus {outline:none;}
@@ -217,19 +216,7 @@
   letter-spacing: 0.02em;
 }
 
-.atlas-mast button {
-  min-height: 44px;
-  padding: 0 0.1rem;
-  border-bottom: 1px solid var(--rule);
-  color: var(--ink-2);
-  font: 500 0.82rem/1.4 var(--kai);
-  letter-spacing: 0.14em;
-}
 
-.atlas-mast button:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
 
 .reader-sections {
   gap: 1.5rem;
@@ -502,4 +489,72 @@
   padding: 0 var(--gutter);
   border-bottom: 1px solid var(--rule-soft);
   flex-wrap: nowrap;
+}
+
+/* ==========================================================================
+   Narrow chronology
+   The reading-room layer above re-declares the rail as a horizontal strip for
+   desktop. On a phone the same works must follow one sequence down the page,
+   so reset the rail, the banks and the paging controls after every layer.
+   ========================================================================== */
+
+@media (max-width: 760px) {
+  /* The river is the horizontal reading device; a vertical rail uses the
+     period rule instead, so the water would only cut across the sequence. */
+  .ink-river {
+    display: none;
+  }
+
+  .atlas-rail {
+    display: block;
+    overflow: visible;
+    padding: 0.35rem 0 0 0.65rem;
+  }
+
+  .atlas-period {
+    border-left: 1px solid var(--rule);
+    padding: 0 0 1.4rem 1.35rem;
+  }
+
+  .atlas-period h2 {
+    padding: 0 0 0.8rem;
+  }
+
+  .atlas-period ul {
+    display: grid;
+    gap: 0.65rem;
+    padding: 0;
+    border: 0;
+  }
+
+  .atlas-period li {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .atlas-card {
+    width: 100%;
+    height: auto;
+    min-height: 4.6rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .atlas-controls {
+    display: none;
+  }
+
+  .atlas-tools {
+    flex-wrap: wrap;
+  }
+
+  .atlas-tools label,
+  .atlas-tools input {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .atlas-tools select {
+    width: 100%;
+  }
 }

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="碑帖之间">
+  <rect width="64" height="64" rx="3" fill="#8f2f22"/>
+  <rect x="5" y="5" width="54" height="54" rx="1" fill="none" stroke="#faf3e3" stroke-opacity="0.28"/>
+  <text x="32" y="46" text-anchor="middle" font-family="Songti SC, STSong, SimSun, serif" font-size="40" fill="#faf3e3">碑</text>
+</svg>
