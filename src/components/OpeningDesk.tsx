@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type MouseEvent } from 'react';
 import { useLocale } from '../i18n';
 import { isReleaseBuild } from '../domain/build';
+import { EDITION_LABEL } from '../domain/version';
 import type { createClassroom } from './classroom-scene';
 import { LocaleSwitch } from './LocaleSwitch';
 import './opening-desk.css';
@@ -84,7 +85,7 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
     <section className="desk" data-scene={phase} data-entering={Boolean(origin)} aria-labelledby="opening-title">
       <canvas ref={canvas} className="desk__scene" aria-hidden="true" />
       <div className="desk__library">
-        {!isReleaseBuild && <span>{locale === 'zh' ? '1.2' : 'Edition 1.2'}</span>}
+        {!isReleaseBuild && <span>{EDITION_LABEL[locale]}</span>}
         <LocaleSwitch className="langswitch langswitch--desk" />
         <a href="#/library"><span className="desk__seal" aria-hidden="true">碑</span>{locale === 'zh' ? '读作品与书家' : 'Read works and calligraphers'}</a>
       </div>
