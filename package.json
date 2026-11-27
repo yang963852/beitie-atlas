@@ -24,6 +24,7 @@
     "contrib:new": "tsx scripts/contrib-new.ts",
     "check:knowledge": "tsx scripts/knowledge-catalogue.ts --check",
     "knowledge:status": "tsx scripts/knowledge-status.ts",
+    "knowledge:query": "tsx scripts/knowledge-query.ts",
     "check:status": "tsx scripts/knowledge-status.ts --check",
     "check:interface": "tsx scripts/knowledge-compile.ts --check",
     "check:isolation": "tsx scripts/check-isolation.ts",
