@@ -1,7 +1,10 @@
+import { readFileSync } from 'node:fs';
 import { act, fireEvent, render, screen, within } from '@testing-library/react';
 import { beforeEach, describe, expect, it } from 'vitest';
 import App from '../src/App';
 import { featuredGuideEntries, guideWorkCount } from '../src/domain/library';
+
+const { version } = JSON.parse(readFileSync('package.json', 'utf8')) as { version: string };
 
 function navigate(hash: string) {
   act(() => {
@@ -98,11 +101,11 @@ it('shows no workflow status on a published work or witness', () => {
   expect(detail.textContent).not.toContain('审核说明');
 });
 
-it('names the 1.2 edition on the library page', () => {
+it('names the current edition on the library page', () => {
   window.history.replaceState(null, '', '#/library');
   render(<App />);
   const colophon = document.querySelector('.reading-colophon');
-  expect(colophon?.textContent).toContain('1.2');
+  expect(colophon?.textContent).toContain(version);
 });
 
 describe('featured reading guides', () => {

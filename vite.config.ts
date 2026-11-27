@@ -1,5 +1,5 @@
 /// <reference types="vitest/config" />
-import { mkdirSync } from 'node:fs';
+import { mkdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import react from '@vitejs/plugin-react';
 import { loadEnv, type Plugin } from 'vite';
@@ -15,6 +15,13 @@ mkdirSync(localTemp, { recursive: true });
 process.env.TEMP = localTemp;
 process.env.TMP = localTemp;
 process.env.TMPDIR = localTemp;
+
+// The edition label in the interface must follow the package release instead of
+// being typed into a component. Vite replaces `__APP_VERSION__` in the client
+// and in Vitest's transform, so there is one source for both.
+const packageVersion = (
+  JSON.parse(readFileSync(join(process.cwd(), 'package.json'), 'utf8')) as { version: string }
+).version;
 
 /**
  * Writes the build mode into the served HTML. `scripts/release.ts` checks the
@@ -50,6 +57,7 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     base,
+    define: { __APP_VERSION__: JSON.stringify(packageVersion) },
     server: { watch: { ignored: ['**/.private/**'] } },
     plugins: [react(), knowledgePlugin(process.cwd()), buildModePlugin(buildMode)],
     build: {
