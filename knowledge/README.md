@@ -172,6 +172,7 @@
 - [玄秘塔碑](catalogue/xuanmi-ta-bei.md) · 2 件实物
 - [神策军碑](catalogue/shen-ce-jun-bei.md) · 1 件实物
 - [圭峰定慧禅师碑](catalogue/guifeng.md) · 1 件实物
+- [卜商帖](catalogue/bushang-tie.md) · 1 件实物
 - [古诗四帖](catalogue/gushi-sitie.md) · 1 件实物
 - [化度寺邕禅师舍利塔铭](catalogue/huadu-si.md) · 1 件实物
 - [皇甫诞碑](catalogue/huangfu-dan-bei.md) · 1 件实物

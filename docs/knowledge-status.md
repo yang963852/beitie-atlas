@@ -8,17 +8,17 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 
 | Measure | Value |
 | --- | --- |
-| Works | 120 (120 reviewed / 0 draft) |
-| Objects | 127 (127 reviewed / 0 draft) |
+| Works | 121 (121 reviewed / 0 draft) |
+| Objects | 128 (128 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
 | People pages | 22 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
-| Sources | 194 (0 uncited) |
+| Sources | 195 (0 uncited) |
 | Events | 75 (50 objects with events) |
-| Attribution entries linked to a person | 39 / 162 |
-| Work sources (0 / 1 / 2+) | 0 / 80 / 40 |
-| Reviewed works with one source | 80 |
+| Attribution entries linked to a person | 40 / 163 |
+| Work sources (0 / 1 / 2+) | 0 / 81 / 40 |
+| Reviewed works with one source | 81 |
 | Dates without source wording | 44 |
 
 ## Gaps
@@ -116,6 +116,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [玄秘塔碑](../knowledge/works/xuanmi-ta-bei.md) | Tang | reviewed | reviewed | 1 | 2 | 2 | 2/2 | 1 |
 | [神策军碑](../knowledge/works/shen-ce-jun-bei.md) | Tang | reviewed | — | 1 | 2 | 1 | 0/1 | — |
 | [圭峰定慧禅师碑](../knowledge/works/guifeng.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [卜商帖](../knowledge/works/bushang-tie.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [古诗四帖](../knowledge/works/gushi-sitie.md) | Tang | reviewed | — | 1 | 2 | 1 | 0/1 | — |
 | [化度寺邕禅师舍利塔铭](../knowledge/works/huadu-si.md) | Tang | reviewed | — | 1 | 1 | 1 | 0/1 | — |
 | [皇甫诞碑](../knowledge/works/huangfu-dan-bei.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
