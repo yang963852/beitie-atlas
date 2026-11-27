@@ -13,7 +13,7 @@ sources: [src-beilin-duobaota]
 
 ## 中文
 
-读帖练习由 Codex 拟写，供读者依图复看。
+读帖练习由项目整理，供读者依图复看。
 
 打开[《多宝塔感应碑》](../works/duobao-ta-bei.md)的馆方图版与说明。西安碑林著录，额上的“大唐多宝塔感应碑”为徐浩所书，书体是隶书；正文由颜真卿书丹。读碑时先找额题里的“塔”，用手在纸上标出它在题名中的位置。[馆方图版及题额说明](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)
 
@@ -21,7 +21,7 @@ sources: [src-beilin-duobaota]
 
 ## English
 
-A looking exercise drafted by Codex. Check it against the museum illustrations.
+A looking exercise prepared for this project. Check it against the museum illustrations.
 
 Open the museum entry for the [Duobao Pagoda Stele](../works/duobao-ta-bei.md). It identifies the clerical-script heading as Xu Hao’s and the body text as Yan Zhenqing’s. Locate 塔 in the heading 大唐多宝塔感应碑 and mark its position in the title on paper. [Museum illustrations and account of the heading](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147)
 

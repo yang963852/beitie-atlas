@@ -4,6 +4,23 @@
 
 归档中的计划、提案与审计按当时状态冻结，不再随现行文档更新。需要继续某项工作时，先恢复对应文件，再按新的任务范围改写。
 
+## archive-agent-records-2026-11-27
+
+2026-11-27 为清理公共仓库中的本地 Agent 名称创建。包含：
+
+- `tasks/052-repository-slimming.md`、`tasks/053-core-work-guides.md`（2 份任务卡）
+- `docs/delivery-052.md`（交付报告）
+- `scripts/research/inputs/ontology-pilot.a5e56b1.json`（研究输入）
+- `knowledge/notes/duobao-reading.md` 的原始题注（当前版本已改为项目整理）
+
+查看与恢复：
+
+- 浏览归档目录：<https://github.com/yang963852/beitie-atlas/tree/archive-agent-records-2026-11-27>
+- 查看单个文件：`git show archive-agent-records-2026-11-27:tasks/053-core-work-guides.md`
+- 恢复文件：`git checkout archive-agent-records-2026-11-27 -- tasks/053-core-work-guides.md`
+
+更早的分支与 Agent 分工表述仍保留在 `pre-refactor-2026-11-27` 快照中。
+
 ## archive-milestones-040-051-2026-11-26
 
 2026-11-26 为精简仓库创建。包含：

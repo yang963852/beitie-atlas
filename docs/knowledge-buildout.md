@@ -1,6 +1,6 @@
 # 知识库下一阶段建构方案
 
-2026-11-26。执行：项目成员。合并：项目负责人。配套首批任务：[tasks/053-core-work-guides.md](../tasks/053-core-work-guides.md)。
+2026-11-26。执行：项目成员。合并：项目负责人。配套首批任务：[tasks/053-core-work-guides.md](https://github.com/yang963852/beitie-atlas/blob/archive-agent-records-2026-11-27/tasks/053-core-work-guides.md)。
 
 这份方案把知识库从“117 部作品的索引”推进到“可临、可读、可查的学习库”。一次只做一个批次，每批一个 PR；先有来源，再写内容；宁可少做，不编证据。
 
@@ -52,7 +52,7 @@
 
 **产出**：14 篇作品导读（现有 4 + 新增 10）。
 
-**详细边界**：见 [tasks/053-core-work-guides.md](../tasks/053-core-work-guides.md)。
+**详细边界**：见 [tasks/053-core-work-guides.md](https://github.com/yang963852/beitie-atlas/blob/archive-agent-records-2026-11-27/tasks/053-core-work-guides.md)。
 
 ### Batch 2 · 书家与读帖
 
