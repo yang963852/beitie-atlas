@@ -36,7 +36,7 @@ leaves nothing that could be uploaded by mistake.
 ## Commands and expected outcomes
 
 ```bash
-npm run check:release   # passes on the current 1.1 corpus; fails if a draft or invalid record is introduced
+npm run check:release   # passes on the current 1.2 corpus; fails if a draft or invalid record is introduced
 npm run release         # builds and verifies the release artifact; a failed gate removes dist/
 npm run build           # succeeds; preview artifact only
 npm run preview         # serves the preview build locally
@@ -73,7 +73,7 @@ not a release artifact.
 
 [The Pages workflow](../.github/workflows/pages.yml) publishes a verified release build from checked `main`. Since 2026-11-25 it runs `npm run check`, then `npm run release` with the Pages base path and the browser map key, verifies the `release` marker and `dist/release-manifest.json`, checks the downloadable library ZIP, and uploads `dist/`. A push to `main` therefore cannot publish a draft or an unverified artifact. `npm run build` still produces a preview artifact for local review; it is never uploaded.
 
-The current public edition is **1.1**. For a release, a short note with the deployed revision and the smoke-test result is enough; the full host matrix is optional unless the owner asks for it.
+The current public edition is **1.2**. For a release, a short note with the deployed revision and the smoke-test result is enough; the full host matrix is optional unless the owner asks for it.
 
 ## Rolling back
 
