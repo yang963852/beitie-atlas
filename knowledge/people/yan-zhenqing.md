@@ -4,9 +4,9 @@ titleZh: 颜真卿
 titleEn: Yan Zhenqing
 aliases: []
 state: reviewed
-works: [duobao-ta-bei, yan-qinli-bei, datang-zhongxing-song, jizhi, magu]
+works: [duobao-ta-bei, yan-qinli-bei, datang-zhongxing-song, jizhi, magu, yan-jiamiao-bei]
 objects: []
-sources: [src-beilin-duobaota, src-beilin-yan-qinli-object, src-hunan-wuxi, src-catalogue-jizhi, src-catalogue-magu]
+sources: [src-beilin-duobaota, src-beilin-yan-qinli-object, src-hunan-wuxi, src-catalogue-jizhi, src-catalogue-magu, src-beilin-yanjiamiao]
 ---
 
 # 颜真卿
@@ -17,7 +17,7 @@ sources: [src-beilin-duobaota, src-beilin-yan-qinli-object, src-hunan-wuxi, src-
 
 到了家族的[《颜勤礼碑》](../works/yan-qinli-bei.md)，撰文、书写都由颜真卿承担。碑题里的颜勤礼是他的曾祖父。从一通碑读到另一通，连着问“谁撰、谁书、写给谁”，两篇文字的来由就清楚了。[西安碑林博物馆，颜勤礼碑](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home)
 
-还可以沿三种不同的载体读颜书。浯溪崖壁上的[《大唐中兴颂》](../catalogue/datang-zhongxing-song.md)由元结撰文、颜真卿书写。台北故宫著录的[《祭侄文稿》](../catalogue/jizhi.md)是一卷行书，馆方释文标出了涂改处。北京故宫的[《麻姑仙坛记》](../catalogue/magu.md)则可循翻刻的拓本去读。[湖南省政府，浯溪碑林「历史寻迹」](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [台北故宫，藏品基本资料与释文](https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P) · [北京故宫，麻姑仙坛记](https://www.dpm.org.cn/collection/impres/234172.html)
+还可以沿三种不同的载体读颜书。浯溪崖壁上的[《大唐中兴颂》](../catalogue/datang-zhongxing-song.md)由元结撰文、颜真卿书写。台北故宫著录的[《祭侄文稿》](../catalogue/jizhi.md)是一卷行书，馆方释文标出了涂改处。北京故宫的[《麻姑仙坛记》](../catalogue/magu.md)则可循翻刻的拓本去读。另有一块[《颜氏家庙碑》](../catalogue/yan-jiamiao-bei.md)，建中元年（780）为他父亲颜惟贞而立，篆额出李阳冰之手，是现存最晚之作。[湖南省政府，浯溪碑林「历史寻迹」](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [台北故宫，藏品基本资料与释文](https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P) · [北京故宫，麻姑仙坛记](https://www.dpm.org.cn/collection/impres/234172.html) · [西安碑林博物馆，颜氏家庙碑](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2615)
 
 ## English
 
@@ -25,4 +25,4 @@ Two steles offer a way into Yan Zhenqing’s work. For the [Duobao Pagoda Stele]
 
 For the [Stele of Yan Qinli](../works/yan-qinli-bei.md), Yan Zhenqing both composed and wrote the text, commemorating his great-grandfather. Asking who composed each inscription, who wrote it and whom it concerns brings its occasion into view. [Xi’an Beilin Museum, Yan Qinli entry](https://www.beilin-museum.com/index.php?a=index&aid=2582&c=View&m=home)
 
-Three other works let us follow his writing across different surfaces. At Wuxi, Yuan Jie’s [Eulogy of the Tang Restoration](../catalogue/datang-zhongxing-song.md) was carved on a cliff in Yan’s hand. The National Palace Museum in Taipei transcribes cancelled words in Yan’s running-script [Draft Requiem for a Nephew](../catalogue/jizhi.md). The Palace Museum in Beijing catalogues the [Record of the Immortal Altar](../catalogue/magu.md) in an impression taken from a recarving. [Hunan government, Wuxi account](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [National Palace Museum, scroll and transcription](https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P) · [Palace Museum, Magu entry](https://www.dpm.org.cn/collection/impres/234172.html)
+Three other works let us follow his writing across different surfaces. At Wuxi, Yuan Jie’s [Eulogy of the Tang Restoration](../catalogue/datang-zhongxing-song.md) was carved on a cliff in Yan’s hand. The National Palace Museum in Taipei transcribes cancelled words in Yan’s running-script [Draft Requiem for a Nephew](../catalogue/jizhi.md). The Palace Museum in Beijing catalogues the [Record of the Immortal Altar](../catalogue/magu.md) in an impression taken from a recarving. One more stone, the [Stele of the Yan Family Shrine](../catalogue/yan-jiamiao-bei.md) of 780, was raised for his father Yan Weizhen with a seal-script heading by Li Yangbing; it is his latest surviving work. [Hunan government, Wuxi account](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [National Palace Museum, scroll and transcription](https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P) · [Palace Museum, Magu entry](https://www.dpm.org.cn/collection/impres/234172.html) · [Xi’an Beilin Museum, Yan family shrine stele](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2615)
