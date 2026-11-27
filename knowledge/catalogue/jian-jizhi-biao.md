@@ -8,7 +8,7 @@ Memorial Recommending Ji Zhi
 
 **作品**　三国 · 曹魏 · 黄初二年（221） · 帖
 
-钟繇荐旧臣关内侯季直的表奏，旧说书于黄初二年（221）。墨迹本毁于民国年间，今日所见只有影印；明刻《真赏斋帖》、清刻《三希堂法帖》都收此表，且列于篇首。[中国大百科全书，钟繇](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004) · [河南省书法家协会，钟繇](http://www.hnssfjxh.com/content/?781.html)
+钟繇荐旧臣关内侯季直的表奏，旧说书于黄初二年（221）。墨迹本毁于民国年间，今日所见只有影印；明刻《真赏斋帖》、清刻《三希堂法帖》都收此表，且列于篇首。[中国大百科全书，钟繇](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004) · [河南省书法家协会，钟繇](https://www.hnssfjxh.com/content/?781.html)
 
 [出处 1](#ref-src-zgbk-zhongyao)、[出处 2](#ref-src-hnssfjxh-zhongyao)
 
@@ -32,6 +32,6 @@ Memorial Recommending Ji Zhi
 
 <a name="ref-src-hnssfjxh-zhongyao"></a>
 
-2. 河南省书法家协会 · [钟繇](<http://www.hnssfjxh.com/content/?781.html>)。定位：《荐季直表》《宣示表》《贺捷表》《墓田丙舍帖》各条；记《荐季直表》书于黄初二年（221）、《贺捷表》书于建安二十四年（219）及郁冈斋帖本。查阅于 2026-11-27。
+2. 河南省书法家协会 · [钟繇](<https://www.hnssfjxh.com/content/?781.html>)。定位：《荐季直表》《宣示表》《贺捷表》《墓田丙舍帖》各条；记《荐季直表》书于黄初二年（221）、《贺捷表》书于建安二十四年（219）及郁冈斋帖本。查阅于 2026-11-27。
 
 [作品源稿](../../knowledge/works/jian-jizhi-biao.md) · [返回知识总目](../README.md)

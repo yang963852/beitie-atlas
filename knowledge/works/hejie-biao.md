@@ -41,11 +41,11 @@ reviewState: reviewed
 
 ### 中文
 
-又名《戎路表》《戎辂表》，旧说书于建安二十四年（219），是钟繇得知关羽败亡后所上的贺表。《宣和书谱》以「备尽法度，为正书之祖」评此表；传世有郁冈斋帖本。[河南省书法家协会，钟繇](http://www.hnssfjxh.com/content/?781.html) · [中国大百科全书，钟繇](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004)
+又名《戎路表》《戎辂表》，旧说书于建安二十四年（219），是钟繇得知关羽败亡后所上的贺表。《宣和书谱》以「备尽法度，为正书之祖」评此表；传世有郁冈斋帖本。[河南省书法家协会，钟繇](https://www.hnssfjxh.com/content/?781.html) · [中国大百科全书，钟繇](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004)
 
 ### English
 
-Also called the Ronglu or Ronggu modelbook, it is traditionally dated to 219, the twenty-fourth year of Jian’an, and is the memorial Zhong Yao submitted on hearing of Guan Yu’s defeat. The Xuanhe shupu cites this piece when it calls his regular script “exhausts method and measure” and names him the ancestor of standard script; the surviving text is the Yugangzhai modelbook edition. [Henan Calligraphers Association, Zhong Yao](http://www.hnssfjxh.com/content/?781.html) · [Chinese Encyclopedia, Zhong Yao](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004)
+Also called the Ronglu or Ronggu modelbook, it is traditionally dated to 219, the twenty-fourth year of Jian’an, and is the memorial Zhong Yao submitted on hearing of Guan Yu’s defeat. The Xuanhe shupu cites this piece when it calls his regular script “exhausts method and measure” and names him the ancestor of standard script; the surviving text is the Yugangzhai modelbook edition. [Henan Calligraphers Association, Zhong Yao](https://www.hnssfjxh.com/content/?781.html) · [Chinese Encyclopedia, Zhong Yao](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004)
 
 ## 待考
 

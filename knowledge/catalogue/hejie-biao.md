@@ -8,7 +8,7 @@ Memorial of Victory
 
 **作品**　三国 · 曹魏 · 建安二十四年（219） · 帖
 
-又名《戎路表》《戎辂表》，旧说书于建安二十四年（219），是钟繇得知关羽败亡后所上的贺表。《宣和书谱》以「备尽法度，为正书之祖」评此表；传世有郁冈斋帖本。[河南省书法家协会，钟繇](http://www.hnssfjxh.com/content/?781.html) · [中国大百科全书，钟繇](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004)
+又名《戎路表》《戎辂表》，旧说书于建安二十四年（219），是钟繇得知关羽败亡后所上的贺表。《宣和书谱》以「备尽法度，为正书之祖」评此表；传世有郁冈斋帖本。[河南省书法家协会，钟繇](https://www.hnssfjxh.com/content/?781.html) · [中国大百科全书，钟繇](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004)
 
 [出处 1](#ref-src-zgbk-zhongyao)、[出处 2](#ref-src-hnssfjxh-zhongyao)
 
@@ -34,6 +34,6 @@ Memorial of Victory
 
 <a name="ref-src-hnssfjxh-zhongyao"></a>
 
-2. 河南省书法家协会 · [钟繇](<http://www.hnssfjxh.com/content/?781.html>)。定位：《荐季直表》《宣示表》《贺捷表》《墓田丙舍帖》各条；记《荐季直表》书于黄初二年（221）、《贺捷表》书于建安二十四年（219）及郁冈斋帖本。查阅于 2026-11-27。
+2. 河南省书法家协会 · [钟繇](<https://www.hnssfjxh.com/content/?781.html>)。定位：《荐季直表》《宣示表》《贺捷表》《墓田丙舍帖》各条；记《荐季直表》书于黄初二年（221）、《贺捷表》书于建安二十四年（219）及郁冈斋帖本。查阅于 2026-11-27。
 
 [作品源稿](../../knowledge/works/hejie-biao.md) · [返回知识总目](../README.md)

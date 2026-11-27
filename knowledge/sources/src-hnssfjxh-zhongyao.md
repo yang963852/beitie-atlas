@@ -3,7 +3,7 @@ schemaVersion: 2
 kind: web
 title: 钟繇
 publisher: 河南省书法家协会
-url: http://www.hnssfjxh.com/content/?781.html
+url: https://www.hnssfjxh.com/content/?781.html
 publicationDate: null
 accessedAt: 2026-11-27
 locator: 《荐季直表》《宣示表》《贺捷表》《墓田丙舍帖》各条；记《荐季直表》书于黄初二年（221）、《贺捷表》书于建安二十四年（219）及郁冈斋帖本

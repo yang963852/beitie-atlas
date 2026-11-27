@@ -39,11 +39,11 @@ reviewState: reviewed
 
 ### 中文
 
-钟繇荐旧臣关内侯季直的表奏，旧说书于黄初二年（221）。墨迹本毁于民国年间，今日所见只有影印；明刻《真赏斋帖》、清刻《三希堂法帖》都收此表，且列于篇首。[中国大百科全书，钟繇](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004) · [河南省书法家协会，钟繇](http://www.hnssfjxh.com/content/?781.html)
+钟繇荐旧臣关内侯季直的表奏，旧说书于黄初二年（221）。墨迹本毁于民国年间，今日所见只有影印；明刻《真赏斋帖》、清刻《三希堂法帖》都收此表，且列于篇首。[中国大百科全书，钟繇](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004) · [河南省书法家协会，钟繇](https://www.hnssfjxh.com/content/?781.html)
 
 ### English
 
-Zhong Yao’s memorial recommending the old official Ji Zhi, traditionally written in 221, the second year of Huangchu. The ink copy was destroyed in the Republican period and only reproductions remain; the Ming Zhenshang Studio modelbook and the Qing Sanxitang modelbook both carry the text, placing it first in their selections. [Chinese Encyclopedia, Zhong Yao](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004) · [Henan Calligraphers Association, Zhong Yao](http://www.hnssfjxh.com/content/?781.html)
+Zhong Yao’s memorial recommending the old official Ji Zhi, traditionally written in 221, the second year of Huangchu. The ink copy was destroyed in the Republican period and only reproductions remain; the Ming Zhenshang Studio modelbook and the Qing Sanxitang modelbook both carry the text, placing it first in their selections. [Chinese Encyclopedia, Zhong Yao](https://www.zgbk.com/ecph/words?Name=%E9%92%9F%E7%B9%87&SiteID=1&SourceID=52427&Type=bkzyb&subSourceType=000003000013000004) · [Henan Calligraphers Association, Zhong Yao](https://www.hnssfjxh.com/content/?781.html)
 
 ## 待考
 
