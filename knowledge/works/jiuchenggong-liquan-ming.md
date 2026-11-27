@@ -28,6 +28,7 @@ attribution:
   - role: calligrapher
     name: 欧阳询
     nameEn: Ouyang Xun
+    person: ouyang-xun
     certainty: documented
     sources:
       - src-baoji-jiuchenggong

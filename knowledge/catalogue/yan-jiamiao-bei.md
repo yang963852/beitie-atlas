@@ -19,7 +19,7 @@ Stele of the Yan Family Shrine
 
 书体：楷书
 
-延伸阅读：[李阳冰](../people/li-yangbing.md)
+延伸阅读：[李阳冰](../people/li-yangbing.md) · [颜真卿](../people/yan-zhenqing.md)
 
 作品待考与说明
 

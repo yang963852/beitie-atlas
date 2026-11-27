@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 柳公权（传）
     nameEn: Liu Gongquan (traditional attribution)
+    person: liu-gongquan
     certainty: disputed
     sources:
       - src-dpm-231095
