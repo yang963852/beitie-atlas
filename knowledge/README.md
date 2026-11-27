@@ -35,6 +35,7 @@
 - [欧阳询](people/ouyang-xun.md)
 - [沈尹默](people/shen-yinmo.md)
 - [苏轼](people/su-shi.md)
+- [王宠](people/wang-chong.md)
 - [王献之](people/wang-xianzhi.md)
 - [王羲之](people/wang-xizhi.md)
 - [王珣](people/wang-xun.md)
@@ -42,11 +43,13 @@
 - [鲜于枢](people/xianyu-shu.md)
 - [颜真卿](people/yan-zhenqing.md)
 - [杨凝式](people/yang-ningshi.md)
+- [杨维桢](people/yang-weizhen.md)
 - [虞世南](people/yushi-nan.md)
 - [张旭](people/zhang-xu.md)
 - [赵孟頫](people/zhao-mengfu.md)
 - [赵朴初](people/zhao-puchu.md)
 - [钟繇](people/zhong-yao.md)
+- [褚遂良](people/zhu-suiliang.md)
 
 ## 考证与读帖笔记
 
@@ -152,6 +155,7 @@
 - [晋祠之铭并序](catalogue/jinci-zhi-ming.md) · 2 件实物
 - [温泉铭](catalogue/wen-quan-ming.md) · 1 件实物
 - [雁塔圣教序](catalogue/yanta.md) · 1 件实物
+- [同州圣教序](catalogue/tongzhou-shengjiao-xu.md) · 1 件实物
 - [大唐三藏圣教序碑](catalogue/ji-wang-shengjiao-xu.md) · 1 件实物
 - [书谱](catalogue/shupu.md) · 1 件实物
 - [万岁通天帖](catalogue/wansui-tongtian-tie.md) · 1 件实物
@@ -202,16 +206,20 @@
 ### 元
 
 - [胆巴碑](catalogue/daba-bei.md) · 1 件实物
+- [城南唱和诗卷](catalogue/chengnan-changhe-shi.md) · 1 件实物
 - [三门记](catalogue/sanmen-ji.md) · 1 件实物
 - [赵子昂游天冠山诗](catalogue/tianguanshan-poems.md) · 1 件实物
 - [洛神赋](catalogue/zhao-luoshen.md) · 1 件实物
+- [真镜庵募缘疏卷](catalogue/zhenjing-an-muyuan-shu.md) · 1 件实物
 
 ### 明
 
+- [游包山集](catalogue/you-baoshan-ji.md) · 1 件实物
 - [墨池堂选帖](catalogue/mochitang.md) · 1 件实物
 - [梅雪轩书晦翁不自弃文](catalogue/meixuexuan-buziqi.md) · 1 件实物
 - [王铎行草书自书诗卷](catalogue/wangduo-zishu-shi.md) · 1 件实物
 - [行书论书卷](catalogue/dong-lunshu.md) · 1 件实物
+- [送陈子龄会试诗](catalogue/song-chen-ziling.md) · 1 件实物
 - [楷书归去来兮辞页](catalogue/wen-guiqulai.md) · 1 件实物
 - [三体杂书诗卷](catalogue/zhu-santi.md) · 1 件实物
 
