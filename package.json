@@ -21,6 +21,7 @@
     "knowledge:compile": "tsx scripts/knowledge-compile.ts",
     "knowledge:generate": "tsx scripts/knowledge-catalogue.ts",
     "knowledge:migrate": "tsx scripts/knowledge-migrate.ts",
+    "contrib:new": "tsx scripts/contrib-new.ts",
     "check:knowledge": "tsx scripts/knowledge-catalogue.ts --check",
     "knowledge:status": "tsx scripts/knowledge-status.ts",
     "check:status": "tsx scripts/knowledge-status.ts --check",
