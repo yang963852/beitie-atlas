@@ -1,6 +1,6 @@
 # 知识库下一阶段建构方案
 
-2026-11-26。执行：WorkBuddy。合并：项目负责人。配套首批任务：[tasks/053-core-work-guides.md](../tasks/053-core-work-guides.md)。
+2026-11-26。执行：项目成员。合并：项目负责人。配套首批任务：[tasks/053-core-work-guides.md](../tasks/053-core-work-guides.md)。
 
 这份方案把知识库从“117 部作品的索引”推进到“可临、可读、可查的学习库”。一次只做一个批次，每批一个 PR；先有来源，再写内容；宁可少做，不编证据。
 
@@ -154,7 +154,7 @@ npm.cmd run check:release
 - 不猜坐标、不猜年份、不补尺寸、不编 DOI/ISBN/馆藏号。
 - 不机翻；英文缺失时保留中文，不生成占位译文。
 - 不删除已有的异说与待考；冲突并列。
-- 不改 `src/`、`scripts/`、`data/index/`；需要新字段时先提给负责人和 TRAE。
+- 不改 `src/`、`scripts/`、`data/index/`；需要新字段时先提给负责人和编译器维护者。
 
 ## 6. 指标
 

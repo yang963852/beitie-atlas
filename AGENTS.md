@@ -1,92 +1,91 @@
-# Project rules for every coding agent
+# Public agent contract
 
-Read the assigned Issue or [task brief](templates/task-brief.md), then follow the relevant row below. Consult the [engineering plan](docs/engineering-plan.md) for changes to shared interfaces and architecture. Explicit owner instructions take precedence. Start a fresh clone at [the member and agent guide](docs/START-HERE.md).
+This file is the tool-independent contract for any agent or contributor working on this repository. It says what must not break, not how any particular assistant should think. Read the assigned Issue or [task brief](templates/task-brief.md), then the documents named for that kind of work.
 
-## Working mode (2026-11-26)
+## Ten rules
 
-The owner has simplified this project's workflow. This section supersedes any stricter review, acceptance, delivery-report or archival step later in this file or in `docs/`.
+1. Edit only the files in the assigned scope. If the task requires a file outside it, stop and report instead of widening the task.
+2. Never hand-edit a generated file. `knowledge/catalogue/`, `knowledge/README.md` and `data/index/knowledge-v1.json` are compiler output.
+3. Every factual claim carries a source, and a specific locator when the source is not itself the passage.
+4. Unknown stays unknown, and conflicting sources may coexist. Do not pick a winner, and do not invent a date, coordinate, catalogue number, provenance link or licence.
+5. Work and physical witness stay separate. Never copy provenance between related objects.
+6. Do not add a dependency, framework, backend, provider or schema field unless the task requires it.
+7. Never commit credentials, local agent configuration, personal paths, private workspace files or build products.
+8. Run the checks required for the paths you changed. Never delete or weaken a check to make a change pass.
+9. Stop after opening or updating the pull request. Only the maintainer decides merge and publication.
+10. The pull request states the changed scope, the evidence or reproduction, the commands actually run and what remains unresolved.
 
-- The owner is the reviewer and decides merges. Self-review is enough. No independent reviewer, acceptance record, delivery report, board row, archive tag or screenshot set is required for routine work or a release.
-- The gate is `npm run check` green plus the owner's merge. The PR is the record: state what changed, what ran and what remains uncertain.
-- Publish when the owner says so. Merging to `main` deploys through the Pages workflow. Tag the release and update `CHANGELOG.md`; a GitHub Release and a delivery report are optional. `npm run release` and the release manifest remain the automated data gate for the public build.
-- For reader-facing changes, do a quick live smoke test: home, one work, one object, search and a phone-width layout. The full 390/768/1440 + 200% + keyboard matrix is for major redesigns, not every change.
-- Keep the evidence rules: every factual claim has a source, unknown values stay unknown, no guessed coordinates, bilingual notes stay aligned, no credentials in commits. These protect the content, not the ceremony.
-- Keep the automated checks. Do not delete or bypass a check to make a change pass.
+## Where the detail lives
+
+| Question | Read |
+| --- | --- |
+| How do I contribute, and how is a change reviewed? | [CONTRIBUTING.md](CONTRIBUTING.md), [Chinese contribution guide](docs/CONTRIBUTE.zh-CN.md) |
+| How do I set up a clean clone? | [Member and agent handoff](docs/START-HERE.md) |
+| What may I claim about a work, a witness or a date? | [Editorial workflow](docs/atlas-workflow.md) |
+| Where does a change belong, and how is it checked? | The table below |
+| How is a release built and verified? | [Release runbook](docs/release.md), [archive index](docs/archive.md) |
 
 ## Read by task
 
-Do not read the whole repository to make a bounded change. Read the row that matches the assignment, then the target record and its cited sources.
+Do not read the whole repository for a bounded change. Read the matching row, then the target record and its cited sources.
 
 | Assignment | Read first | Do not change |
 | --- | --- | --- |
 | Edit a work, object, person, place, source or note | [Editorial workflow](docs/atlas-workflow.md), [Chinese templates](knowledge/_templates/), the target Markdown and its sources | Compiler, UI, generated catalogue |
 | Develop the website | [Design system](docs/design-system.md), [data boundary](src/domain/data.ts), the compiled interface shape and the affected component | Author Markdown, retired legacy JSON, compiler |
 | Maintain the compiler or interface | [Schema](scripts/lib/knowledge-schema.ts), [compiler](scripts/lib/knowledge-compiler.ts), [engineering plan](docs/engineering-plan.md) | Reader-facing prose except a migration correction |
-| Review a contribution | [Review skill](.agents/skills/review-change/SKILL.md), the Issue/PR, the target record and evidence | Merging or publishing on the author's behalf |
+| Review a contribution | The Issue or PR, the target record and its evidence, [CONTRIBUTING.md](CONTRIBUTING.md) | Merging or publishing on the author's behalf |
 | Publish a release | [Release runbook](docs/release.md), [CHANGELOG](CHANGELOG.md), the affected source | Other contributors' assigned files |
 
 ## Roles and scope
 
-- The coordinator (the project owner) prioritizes work, settles scope and decides merges. Self-review is sufficient; no independent reviewer is required. A contributor may use their preferred local agent. Work independently on disjoint subjects or files. Assign one lead per task and agree responsibility before editing overlapping files.
-- Local agents use separate workspaces: TRAE works in `.private/worktrees/trae`, WorkBuddy in `.private/worktrees/workbuddy` (or its own app-managed worktree until moved); Codex is read-only on the primary checkout and writes plans only when the coordinator asks. The primary checkout is the coordinator's space, not a shared agent workspace. See [the local agent workflow](docs/agent-workflow.zh-CN.md).
-- Use one short-lived `task/NNN-slug` branch per task, created from current `main` in the agent's own worktree or checkout and deleted after merge. Do not reuse a branch across tasks and do not keep per-agent integration branches. Keep one task per PR, merge `origin/main` into the branch if `main` moved before you open it, and never commit directly to `main`.
-- Resolve blocking findings within the assigned PR. Do not rewrite the application or introduce a backend, framework, provider, or dependency without a concrete need recorded in the decision log.
-- Use English for implementation, technical guidance and skills. Communicate with the coordinator in Chinese. Welcome Chinese-only submissions and preserve original wording and names.
-- Inspect `git status` first. Preserve others' changes. Work inside this repository, never stage the parent workspace or personal documents.
-
-## Local artifact storage
-
-- Never create project folders or write project outputs in the parent workspace or beside this repository.
-- Use `.private/tmp/` for temporary files and caches, `.private/worktrees/` for the fixed agent worktrees, `.private/browser/` for browser profiles, `.private/sites/` for deployment checkouts and archives, and `.private/workspace-archive/` for retained legacy artifacts and local copies of records retired from `main`. The canonical copy of a retired record is its annotated archive tag. Keep existing `dist/` and `build/` conventions. Never stage `.private/`.
-- WorkBuddy's own application data directory (`C:/Users/zhangyang/WorkBuddy/Worktrees/碑帖之间/`) is the only permitted workspace outside this repository. It is a Git worktree managed by that application, not a project output; do not create other folders there.
-- Set tool output paths, browser profile paths, and temporary-directory variables explicitly as needed. If a tool cannot keep its output inside the project, report the limitation instead of writing beside the repository. Check for stray project outputs at handoff; leave unrelated folders alone.
+- The maintainer prioritizes work, settles scope and decides merges. Self-review is sufficient; no independent reviewer is required. Work independently on disjoint subjects or files; name one lead and the paths each task owns before editing overlapping files.
+- Use one short-lived `task/NNN-slug` branch per task, created from current `main` and deleted after merge. Do not reuse a branch across tasks or keep per-agent integration branches. Open one pull request per task, merge `origin/main` into the branch if `main` moved before you open it, and never commit directly to `main`.
+- Use a separate clone or working tree per concurrent task so that two agents never edit the same checkout at once. The primary checkout is for coordination, not a shared agent workspace.
+- Resolve blocking findings within the assigned pull request. Do not rewrite the application or add a backend, framework, provider or dependency without a concrete need recorded in the decision log.
+- Use English for implementation and technical guidance. Communicate with the maintainer in Chinese when needed; Chinese-only submissions are welcome, and original wording and names are preserved.
+- Keep build products, local environment files, private notes and workspace tooling out of the repository. Use an ignored local directory such as `.private/` for temporary work; never stage it.
 
 ## Evidence and data
 
-- Readers enter through the [Markdown library](knowledge/README.md). Author original editorial prose there. `knowledge/` is the only author source; `scripts/lib/knowledge-compiler.ts` produces `data/index/knowledge-v1.json`, and the website, checks, timeline, map and download package consume that interface.
-- The pre-rebuild JSON corpus (`data/works/`, `data/objects/`, `data/places.json`, `data/sources.json`, `data/media.json`, `data/knowledge-relations.json`, `data/yan-qinli-journey.json`) and its one-time migration tools were retired on 2026-11-25. They remain in the annotated tag `archive-pre-hygiene-2026-11-25`; do not reintroduce them into `main` or read them from the web.
-- Update generated pages with `npm run knowledge:compile && npm run knowledge:generate`. Never hand-edit `knowledge/catalogue/` or `knowledge/README.md`. Link drafts to the issue, evidence and relevant stable IDs. Review the [editorial workflow](docs/atlas-workflow.md) before changing historical claims.
-- Work and physical object remain separate. Never copy provenance between related objects.
-- Every collection assertion and history event needs evidence. Unknown values stay unknown. Source access date is not physical verification date.
+- `knowledge/` is the only author source. `scripts/lib/knowledge-compiler.ts` produces `data/index/knowledge-v1.json`; the website, checks, timeline, map and download package read that interface and never parse author Markdown.
+- Regenerate with `npm run knowledge:compile && npm run knowledge:generate`, and include the generated diff in the pull request.
+- Work and physical object remain separate. A work may survive in several copies; each copy's production date, condition and custody belong to that copy alone.
+- Every collection assertion and history event needs evidence. Source access date is not physical verification date.
 - Last-known and unknown locations are not current-location markers. Coordinate display precision is not measurement accuracy. A modern reference landmark is not an event's historical place.
-- No guessed coordinates, invented transformations, fictional licenses, or generated history presented as fact.
-- Drafts are allowed in clearly labeled previews. Public releases require an enforceable build-time data gate. Tests cannot replace editorial judgment; the owner may self-review.
-- Bilingual prose travels in pairs. `notesZh`, `summaryZh` and `noteZh` keep the same count and order as the recorded wording; a present but misaligned translation is a validation error. A missing translation is allowed and shows the recorded language, never a machine translation. Work-level notes are reader-facing: a note that no view renders is dead data and must be either shown or removed.
-- Keep credentials out of commits. Browser configuration is public after bundling. Keep image rights and map attribution explicit.
+- No guessed coordinates, invented transformations, fictional licences, or generated history presented as fact.
+- Bilingual prose travels in pairs. `notesZh`, `summaryZh` and `noteZh` keep the same count and order as the recorded wording; a present but misaligned translation is a validation error. A missing translation is allowed and shows the recorded language, never a machine translation. A reader-facing note that no view renders is dead data and must be either shown or removed.
+- Keep image rights and map attribution explicit.
 
 ## Implementation and checks
 
-- Keep the existing React/TypeScript/Vite stack and npm lockfile. Prefer stable versions and existing dependencies. Separate domain rules, provider code, UI, and editorial data.
+- Keep the React/TypeScript/Vite stack and the npm lockfile. Prefer stable versions and existing dependencies. Separate domain rules, provider code, UI and editorial data.
 - Follow the design system: content first, progressive disclosure, accessible controls, functional parity across screen sizes.
-- PowerShell 7 is supported. Use `npm.cmd` on Windows when needed; do not rely on Bash environment-variable syntax. Use Node scripts for shared cross-platform commands. Do not change system execution policies to run the project.
-- Run `npm.cmd run check` for implementation changes. It compiles `knowledge/`, runs type, data, interface, catalogue, isolation, board and unit checks, builds the download package and emits a preview build. Editors run `npm run knowledge:compile && npm run knowledge:generate` when source or index changes affect a generated page and include the generated diff in the PR. Run `npm run check:reproducible` when changing the compiler or interface. Add focused regression tests for defects, not tests that merely restate a visual choice.
-- Keep `index.html`'s declared `lang` identical to the product's default interface language; JavaScript switches it at runtime, and the first paint, a reader without JavaScript, and a crawler must not disagree.
-- Do not hard-code a test count in reader-facing documents (`README*`, `START-HERE`, the release runbook). The number changes with every task and cannot be checked. A dated release note may state the count of its own revision.
-- For a reader-facing layout change, inspect the changed view at a phone width and a desktop width, and exercise keyboard access, missing data, missing key, map failure or share-link refresh where relevant. Save the full 390/768/1440 + 200% matrix for a redesign.
-- Report unrun checks as unrun. A local preview does not prove public mainland access. A mocked SDK does not prove a live map works.
-- Add no unnecessary confirmation steps for reversible work within the assigned task. Continue independent work while account information is pending.
+- Use Node scripts for shared cross-platform commands. On Windows, `npm.cmd` works in PowerShell; do not change a system execution policy to run the project.
+- `npm run check` is the gate for implementation changes: it compiles `knowledge/`, runs the type, data, interface, catalogue, isolation and unit checks, builds the download package and emits a preview build. Run `npm run check:reproducible` when changing the compiler or interface.
+- Keep `index.html`'s declared `lang` identical to the product's default interface language; JavaScript switches it at runtime, and the first paint, a reader without JavaScript and a crawler must not disagree.
+- For a reader-facing layout change, inspect the changed view at a phone width and a desktop width, and exercise keyboard access, missing data, missing key, map failure and share-link refresh where relevant. Save the full 390/768/1440 + 200% matrix for a redesign.
+- Report an unrun check as unrun. A local preview does not prove public mainland access. A mocked SDK does not prove a live map works.
+- Add focused regression tests for defects, not tests that restate a visual choice. Do not hard-code a test count in a reader-facing document.
 
 ## Handoff
 
-- Use small commits with `feat:`, `fix:`, `docs:`, `test:`, `ci:`, or `chore:` prefixes; do not rewrite history or push unless the current task calls for it.
-- For a small contribution, keep scope, assignee, evidence, actual checks, limitations and review in the Issue/PR. A contributor may submit either a browser-only source Issue or a Markdown PR. The editor links the two when normalizing a reader's submission.
-- Routine work: put scope, checks and known gaps in the PR. The owner's merge is the decision; no delivery report or board row is needed.
-- A release: update `CHANGELOG.md`, tag `vX.Y.Z`, and let the Pages workflow publish. A short release note is enough; the full delivery report in `docs/delivery-NNN.md` is optional.
-- The iteration board is optional. If a task card or delivery report exists, `npm run check:docs` still checks that its row and links resolve.
-- Self-review is acceptable. Record who made the change and that the owner merged it; no independent acceptance is required.
-- Do not silently change these rules to make a failing check pass.
+- Small commits with `feat:`, `fix:`, `docs:`, `test:`, `ci:` or `chore:` prefixes. Do not rewrite pushed history.
+- The pull request is the delivery record: scope, evidence, commands run, limitations and any open question. A dated delivery report is for a milestone, migration or release, not for routine work.
+- A contributor may submit either a browser-only source Issue or a Markdown pull request. An editor links the two when normalising a reader's submission, and that link preserves attribution.
+- Routine work needs no independent acceptance, delivery report or board row. The maintainer's merge is the decision.
+- Do not add unnecessary confirmation steps for reversible work within the assigned task.
 
-## GitHub synchronization
+## Repository and publication
 
-- Submit each change as a checked PR against the canonical GitHub repository. The owner decides the merge or explicitly delegates that specific PR. Keep the required CI job visible. Resolve blocking findings before merge. Failing checks and repository protection cannot be bypassed.
-- After merge synchronize local `main` with the project's `main`. For a direct clone this is `origin/main`; for a contributor fork the project is normally `upstream/main`. A local-only change remains unsubmitted.
-- Do not force-push a branch that another person or tool may have based work on, and do not rewrite pushed history.
-- Report a blocked push exactly: the command, the error, and what remains unpushed. Never describe unpushed work as delivered.
-- Keep `dist/`, `build/`, local environment files, map keys, and deployment credentials out of the source remote. GitHub Actions uploads the built site as a Pages artifact.
-
-## Repository and preview workflow
-
-- Start a short-lived `task/NNN-slug` branch from current project `main` for each task, whether you are a local agent or an external contributor, and open a PR after each task. Delete the branch once it is merged. CI green plus the owner's merge is the gate.
+- `main` is the published branch. Branch from current `main`, open one pull request per task, and let the maintainer decide the merge. Delete the branch after merge.
+- The maintainer is the reviewer. `npm run check` green plus the maintainer's merge is the gate. Self-review is sufficient.
 - Apply the evidence checklist in [the atlas workflow](docs/atlas-workflow.md) to additions and coordinate changes. Sort the left column by the represented inscription's period, then date. Keep the production date of each copy visible in its own detail.
-- GitHub Pages is the sole website host. [The Pages workflow](.github/workflows/pages.yml) publishes a release build of checked `main`.
-- A release keeps the automated `npm run release` gate and manifest check. The owner's merge is the approval; a quick live smoke test is recommended. Follow [the release runbook](docs/release.md) before changing the Pages deployment mode.
+- GitHub Pages is the sole website host. [The Pages workflow](.github/workflows/pages.yml) publishes checked `main`; `npm run release` and the release manifest remain the automated data gate for a public build.
+- Publish when the maintainer says so. Merging to `main` deploys through the Pages workflow. A release updates `CHANGELOG.md`, tags `vX.Y.Z`, and keeps the automated gate; a quick live smoke test is recommended.
+- Keep `dist/`, `build/`, local environment files, map keys and deployment credentials out of the source remote.
+- Every image, quotation and map tile keeps its own rights. The repository licence does not relicense third-party material; see [NOTICE.md](NOTICE.md).
+
+## Local automation
+
+The maintainer may run local automation, private agent configuration or workspace tooling that is not part of this repository's interface. It is excluded from version control and is not required to contribute. Nothing in a local configuration overrides the ten rules above.
