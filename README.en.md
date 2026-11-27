@@ -14,7 +14,7 @@ Which rubbing of the Yan Qinli Stele are we looking at when we copy it? Who was 
 - **Use the collection map.** Locate witnesses by their present collection in the [collection map](https://yang963852.github.io/beitie-atlas/#/collections); places without reliable coordinates stay textual rather than guessed.
 - **Search the library.** Enter the [library](https://yang963852.github.io/beitie-atlas/#/library) by work, calligrapher, reading note or object record — for example [Yan Zhenqing](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing).
 
-**Current corpus** (`npm run knowledge:compile`, 2026-11-27): 119 works · 126 physical objects · 46 places · 193 sources · 75 events.
+**Current corpus** (`npm run knowledge:compile`, 2026-11-27): 120 works · 127 physical objects · 46 places · 194 sources · 75 events.
 
 ## Three editorial rules
 

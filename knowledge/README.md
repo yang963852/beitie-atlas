@@ -42,6 +42,7 @@
 - [鲜于枢](people/xianyu-shu.md)
 - [颜真卿](people/yan-zhenqing.md)
 - [杨凝式](people/yang-ningshi.md)
+- [虞世南](people/yushi-nan.md)
 - [张旭](people/zhang-xu.md)
 - [赵孟頫](people/zhao-mengfu.md)
 - [赵朴初](people/zhao-puchu.md)
@@ -146,6 +147,7 @@
 
 - [孔子庙堂碑](catalogue/kongzi-miaotang-bei.md) · 1 件实物
 - [九成宫醴泉铭](catalogue/jiuchenggong-liquan-ming.md) · 1 件实物
+- [汝南公主墓志铭](catalogue/runan-gongzhu-muzhi.md) · 1 件实物
 - [虞恭公碑](catalogue/yugong-gong-bei.md) · 2 件实物
 - [晋祠之铭并序](catalogue/jinci-zhi-ming.md) · 2 件实物
 - [温泉铭](catalogue/wen-quan-ming.md) · 1 件实物
