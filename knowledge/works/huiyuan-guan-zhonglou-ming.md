@@ -26,6 +26,7 @@ attribution:
   - role: calligrapher
     name: 柳公权
     nameEn: Liu Gongquan
+    person: liu-gongquan
     certainty: documented
     sources:
       - src-beilin-huiyuan
