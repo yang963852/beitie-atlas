@@ -45,7 +45,9 @@ export function ResultsList({
         <h2 id="results-heading" className="pane__title">
           {strings.resultsHeading}
         </h2>
-        <span className="results__count">{strings.resultsCount(objects.length, total)}</span>
+        <span className="results__count" role="status" aria-live="polite">
+          {strings.resultsCount(objects.length, total)}
+        </span>
       </div>
 
       <div className="study-filter" role="group" aria-label={strings.studyFilter}>

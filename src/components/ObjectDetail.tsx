@@ -163,13 +163,7 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
               .map((entry) => attributionName(entry, locale)).join(' · ')}</span>
           </p>
         ) : null}
-        <a className="link-button" href={github + '/edit/main/knowledge/objects/' + object.id + '.md'}>
-          {locale === 'zh' ? '编辑这件实物的源稿' : 'Edit this object record'}
-        </a>
       </header>
-
-      {onJourney && <button className="button" onClick={onJourney}>{locale === 'zh' ? '在地图上看原石流传 →' : 'Explore the stone’s journey →'}</button>}
-      {!isReleaseBuild && <YanQinliStory key={object.id} objectId={object.id} />}
 
       <dl className="facts">
         <Fact term={locale === 'zh' ? '书体' : 'Script'}>{work?.script ?? (locale === 'zh' ? '未知' : 'Unknown')}</Fact>
@@ -195,6 +189,8 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
           </Fact>
         <Fact term={strings.survivalLabel}>{strings.survivalLabels[object.survivalStatus]}</Fact>
       </dl>
+
+      {onJourney && <button className="button" onClick={onJourney}>{locale === 'zh' ? '在地图上看原石流传 →' : 'Explore the stone’s journey →'}</button>}
 
       {/* The work record has always carried a background sentence; no view
           rendered it, which made recorded prose dead data. It is shown as
@@ -348,6 +344,8 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
         <SourceList ids={collection.sourceRefs} compact />
       </section>
 
+      {!isReleaseBuild && <YanQinliStory key={object.id} objectId={object.id} />}
+
       <ProvenanceEvents object={object} />
 
       <ClaimSection claims={object.claims} />
@@ -381,13 +379,16 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
         <SourceList ids={sourceIds} plain />
       </details>
 
-      {onContribute ? (
-        <div className="detail__actions">
+      <div className="detail__actions">
+        {onContribute ? (
           <button type="button" className="button" onClick={onContribute}>
             {strings.contributeAction}
           </button>
-        </div>
-      ) : null}
+        ) : null}
+        <a className="link-button" href={github + '/edit/main/knowledge/objects/' + object.id + '.md'}>
+          {locale === 'zh' ? '编辑这件实物的源稿' : 'Edit this object record'}
+        </a>
+      </div>
     </article>
   );
 }

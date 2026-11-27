@@ -12,7 +12,8 @@ import { isReleaseBuild } from './domain/build';
 import { getDataset, getObject, getValidationReport, hasDraftRecords } from './domain/data';
 import type { StudyFilter } from './domain/types';
 import { filterObjects } from './domain/search';
-import { LocaleProvider, useLocale, type Locale } from './i18n';
+import { LocaleProvider, useLocale } from './i18n';
+import { LocaleSwitch } from './components/LocaleSwitch';
 import { buildMarkers } from './map/markers';
 
 const OBJECT_HASH_PATTERN = /^#\/object\/([a-z0-9-]+)$/;
@@ -27,8 +28,13 @@ type SectionId = (typeof SECTION_IDS)[number];
 
 function revealSection(id: string, animate: boolean) {
   const section = document.getElementById(id);
+  const narrow = window.matchMedia?.('(max-width: 767px)')?.matches ?? false;
   const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
-  section?.scrollIntoView?.({ behavior: animate && !reduceMotion ? 'smooth' : 'instant', block: 'start' });
+  // At desktop widths all three panes are visible. Scrolling there only pushed
+  // the section nav under the sticky masthead, so focus without moving the page.
+  if (narrow) {
+    section?.scrollIntoView?.({ behavior: animate && !reduceMotion ? 'smooth' : 'instant', block: 'start' });
+  }
   section?.focus({ preventScroll: true });
 }
 
@@ -65,7 +71,7 @@ function useWideLayout(): boolean {
 function AppShell() {
   const dataset = getDataset();
   const report = getValidationReport();
-  const { locale, strings, setLocale } = useLocale();
+  const { locale, strings } = useLocale();
 
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<StudyFilter>('all');
@@ -204,7 +210,7 @@ function AppShell() {
 
   const sectionLink = (id: SectionId, label: string) => (
     <a
-      className="topnav__link"
+      className="topnav__link topnav__link--section"
       href={`#${id}`}
       onClick={(event) => {
         event.preventDefault();
@@ -213,17 +219,6 @@ function AppShell() {
     >
       {label}
     </a>
-  );
-
-  const localeButton = (value: Locale, label: string) => (
-    <button
-      type="button"
-      className="langswitch__button"
-      aria-pressed={locale === value}
-      onClick={() => setLocale(value)}
-    >
-      {label}
-    </button>
   );
 
   return (
@@ -252,10 +247,7 @@ function AppShell() {
           </div>
 
           <div className="topbar__actions">
-            <div className="langswitch" role="group" aria-label={strings.languageLabel}>
-              {localeButton('zh', strings.languageZh)}
-              {localeButton('en', strings.languageEn)}
-            </div>
+            <LocaleSwitch />
           </div>
         </div>
       </header>
@@ -264,6 +256,7 @@ function AppShell() {
             <a className="topnav__link" href="#/library">{locale === 'zh' ? '知识库' : 'Library'}</a>
             <a className="topnav__link" href="#catalogue">{locale === 'zh' ? '历史脉络' : 'Chronology'}</a>
             <a className="topnav__link" href="#/collections">{locale === 'zh' ? '馆藏地图' : 'Collection map'}</a>
+            <span className="topnav__sep" aria-hidden="true" />
             {sectionLink('results', strings.resultsHeading)}
             {sectionLink('map', strings.mapHeading)}
             {sectionLink('detail', strings.detailHeading)}

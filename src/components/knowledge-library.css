@@ -2,7 +2,8 @@
    碑帖之间 · 知识库阅读室
    A printed-book setting for the knowledge library: warm laid paper, Song
    serif prose, Kai captions, a vermilion seal accent and ruled catalogue
-   shelves. Scoped to `.reading-room`, so the atlas keeps its blue interface.
+   shelves. Scoped to `.reading-room`, so the rest of the site keeps its own
+   paper chrome.
 
    Every colour pair below keeps at least 4.5:1 against the paper; the accent
    is reserved for navigation, section marks and selection, never decoration.
@@ -397,7 +398,7 @@ html[lang='en'] .library-index li::before {
 .reading-main .library-edit {
   display: inline-flex;
   align-items: center;
-  min-height: 40px;
+  min-height: 44px;
   padding: 0.4rem 0.95rem;
   border: 1px solid var(--rule-strong);
   border-radius: 2px;
@@ -729,7 +730,7 @@ html[lang='en'] .library-index li::before {
 }
 
 .reading-main .sources__locator {
-  font-size: 0.76rem;
+  font-size: 0.8rem;
 }
 
 .reading-main .timeline {
