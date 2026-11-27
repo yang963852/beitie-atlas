@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 黄庭坚
     nameEn: Huang Tingjian
+    person: huang-tingjian
     certainty: documented
     sources:
       - src-catalogue-songfeng

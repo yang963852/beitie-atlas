@@ -27,6 +27,7 @@
 
 - [蔡襄](people/cai-xiang.md)
 - [冯承素](people/feng-chengsu.md)
+- [黄庭坚](people/huang-tingjian.md)
 - [李世民](people/li-shimin.md)
 - [李斯](people/li-si.md)
 - [李阳冰](people/li-yangbing.md)
@@ -198,6 +199,8 @@
 - [自书诗卷](catalogue/cai-zishu.md) · 1 件实物
 - [秾芳诗帖](catalogue/nongfang-shitie.md) · 1 件实物
 - [珊瑚帖](catalogue/shanhu.md) · 1 件实物
+- [治平帖](catalogue/zhiping-tie.md) · 1 件实物
+- [诸上座帖](catalogue/zhushangzuo-tie.md) · 1 件实物
 
 ### 南宋
 

@@ -20,6 +20,8 @@ Poem on the Hall of Wind and Pines
 
 书体：行书
 
+延伸阅读：[黄庭坚](../people/huang-tingjian.md)
+
 作品待考与说明
 
 - 字数有 150 与 153 两说：《鄂州日报》作一百五十三字，鄂州市文联陈志平文作一百五十字；未据原件复核，故本条不记字数。

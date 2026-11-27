@@ -8,17 +8,17 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 
 | Measure | Value |
 | --- | --- |
-| Works | 126 (126 reviewed / 0 draft) |
-| Objects | 133 (133 reviewed / 0 draft) |
+| Works | 128 (128 reviewed / 0 draft) |
+| Objects | 135 (135 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
-| People pages | 25 |
+| People pages | 26 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
-| Sources | 201 (0 uncited) |
+| Sources | 202 (0 uncited) |
 | Events | 75 (50 objects with events) |
-| Attribution entries linked to a person | 45 / 170 |
-| Work sources (0 / 1 / 2+) | 0 / 85 / 41 |
-| Reviewed works with one source | 85 |
+| Attribution entries linked to a person | 49 / 172 |
+| Work sources (0 / 1 / 2+) | 0 / 87 / 41 |
+| Reviewed works with one source | 87 |
 | Dates without source wording | 44 |
 
 ## Gaps
@@ -129,10 +129,12 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [黄州寒食诗帖](../knowledge/works/hanshi.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 0/1 | 1 |
 | [蜀素帖](../knowledge/works/shusu.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 0/1 | — |
 | [苕溪诗卷](../knowledge/works/tiaoxi.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
-| [松风阁诗](../knowledge/works/songfeng.md) | Northern Song | reviewed | — | 0 | 4 | 1 | 0/1 | 1 |
+| [松风阁诗](../knowledge/works/songfeng.md) | Northern Song | reviewed | — | 1 | 4 | 1 | 0/1 | 1 |
 | [自书诗卷](../knowledge/works/cai-zishu.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [秾芳诗帖](../knowledge/works/nongfang-shitie.md) | Northern Song | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [珊瑚帖](../knowledge/works/shanhu.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [治平帖](../knowledge/works/zhiping-tie.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [诸上座帖](../knowledge/works/zhushangzuo-tie.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [陆游自书诗卷](../knowledge/works/lu-you-zishu-shi.md) | Southern Song | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [胆巴碑](../knowledge/works/daba-bei.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [城南唱和诗卷](../knowledge/works/chengnan-changhe-shi.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
