@@ -32,4 +32,4 @@
 
 ## 现行文档
 
-从 [START-HERE](START-HERE.md)、[编辑流程](atlas-workflow.md)、[设计系统](design-system.md)、[工程方案](engineering-plan.md)、[发布手册](release.md) 和[本地 Agent 工作流](agent-workflow.zh-CN.md)进入。
+从 [START-HERE](START-HERE.md)、[编辑流程](atlas-workflow.md)、[设计系统](design-system.md)、[工程方案](engineering-plan.md)、[发布手册](release.md) 和[投稿指南](../CONTRIBUTING.md)进入。

@@ -2,7 +2,7 @@
 
 A learner wants to identify the work on their desk, distinguish its surviving versions and learn what to look at in the writing. Follow that reader from a work to a person, a witness and a source. The project covers historical and modern calligraphy. A claim about current teaching use needs evidence for that use.
 
-[中文资料与试读指南](CONTRIBUTE.zh-CN.md) · [Public site on Pages](https://yang963852.github.io/beitie-atlas/) · [Markdown knowledge library](../knowledge/README.md) · [Local agent workflow (Chinese)](agent-workflow.zh-CN.md)
+[中文资料与试读指南](CONTRIBUTE.zh-CN.md) · [Public site on Pages](https://yang963852.github.io/beitie-atlas/) · [Markdown knowledge library](../knowledge/README.md) · [Contribution guide](../CONTRIBUTING.md)
 
 ## What lives in `main`
 
@@ -20,14 +20,14 @@ For the owner or an agent preparing a technical decision, start with the [Chines
 | I am here to… | Read first | Hand off |
 | --- | --- | --- |
 | Suggest a source using only a browser | [Chinese knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) | A single Issue with source and locator, or an authored Markdown PR |
-| Edit a work, witness, person or reading note | [Research skill](../.agents/skills/research-entry/SKILL.md), [editorial workflow](atlas-workflow.md) | A narrow PR linking the subject, evidence, contributor and open questions |
-| Develop a web feature | [Web skill](../.agents/skills/web-change/SKILL.md), [engineering plan](engineering-plan.md), [design system](design-system.md) | A reproducible reader path and check results in a PR |
-| Review a contribution | [Review skill](../.agents/skills/review-change/SKILL.md), [project rules](../AGENTS.md) | Findings, optionally; the owner decides the merge |
+| Edit a work, witness, person or reading note | [Editorial workflow](atlas-workflow.md), [Chinese templates](../knowledge/_templates/) | A narrow PR linking the subject, evidence, contributor and open questions |
+| Develop a web feature | [Engineering plan](engineering-plan.md), [design system](design-system.md), [data boundary](../src/domain/data.ts) | A reproducible reader path and check results in a PR |
+| Review a contribution | [Project rules](../AGENTS.md), the Issue or PR and its evidence | Findings, optionally; the owner decides the merge |
 | Coordinate priorities or release | [Open Issues and PRs](../CONTRIBUTING.md#coordinators-queue), [milestone board](iteration-board.md), [release runbook](release.md) | Scope, merge decision and release tag |
 
-A local agent can read each `SKILL.md` directly from the checkout. Each assignment supplies a reader outcome, subject or files, base revision, evidence and a stopping point; an acceptance example is optional. Copy the [task card and Chinese prompt](../templates/task-brief.md). GitHub handles repository permissions. A task description or skill provides workflow guidance.
+Each assignment supplies a reader outcome, subject or files, base revision, evidence and a stopping point; an acceptance example is optional. Copy the [bounded task brief](../templates/task-brief.md). GitHub handles repository permissions. A task description provides workflow guidance; no repository access is granted by an assignment.
 
-TRAE commits to the long-lived `trae/work` branch and WorkBuddy to `workbuddy/work`; each task opens a PR to `main`, and the coordinator decides the merge. Codex is read-only unless the coordinator asks for a written plan. The workspace, synchronization and cleanup rules are in [the local agent workflow](agent-workflow.zh-CN.md).
+Work on your own branch, opened from current `main`, and submit one pull request per task. The maintainer decides the merge. Use a separate clone or working tree per concurrent task so that two agents never edit the same checkout at once, and name the paths each task owns before starting. [Project rules](../AGENTS.md)
 
 ## Set up a clean workspace
 

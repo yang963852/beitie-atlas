@@ -14,5 +14,11 @@ Thumbs.db
 .workbuddy/
 .private/
 .trae/
+.agents/
+claude任务.md
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/hotkeys.json
+.obsidian/plugins/
 /public/download/*.zip
 
