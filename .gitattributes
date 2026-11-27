@@ -9,9 +9,8 @@
 *.jpg binary
 *.webp binary
 
-# Generated knowledge interface: keep its payload out of text diffs.
-# Inspect it with `git diff --text` when the generated content itself matters.
-data/index/knowledge-v1.json -diff linguist-generated
+# The compiled interface `data/index/knowledge-v1.json` is a build artefact and
+# is not tracked; see .gitignore. `npm run knowledge:build` rebuilds it.
 
 # Generated catalogue pages keep local text diffs but collapse in GitHub reviews.
 knowledge/catalogue/** linguist-generated

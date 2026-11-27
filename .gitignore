@@ -22,3 +22,7 @@ claude任务.md
 .obsidian/plugins/
 /public/download/*.zip
 
+# The compiled knowledge interface is a build artefact. `npm run knowledge:build`
+# rebuilds it before dev, build and check; a fork never carries it.
+/data/index/knowledge-v1.json
+

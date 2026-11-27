@@ -5,7 +5,7 @@ This file is the tool-independent contract for any agent or contributor working 
 ## Ten rules
 
 1. Edit only the files in the assigned scope. If the task requires a file outside it, stop and report instead of widening the task.
-2. Never hand-edit a generated file. `knowledge/catalogue/`, `knowledge/README.md` and `data/index/knowledge-v1.json` are compiler output.
+2. Never hand-edit a generated file. `knowledge/catalogue/`, `knowledge/README.md` and `data/index/knowledge-v1.json` are compiler output; the interface JSON is a build artefact and is not tracked.
 3. Every factual claim carries a source, and a specific locator when the source is not itself the passage.
 4. Unknown stays unknown, and conflicting sources may coexist. Do not pick a winner, and do not invent a date, coordinate, catalogue number, provenance link or licence.
 5. Work and physical witness stay separate. Never copy provenance between related objects.
@@ -39,8 +39,8 @@ Do not read the whole repository for a bounded change. Read the matching row, th
 
 ## Evidence and data
 
-- `knowledge/` is the only author source. `scripts/lib/knowledge-compiler.ts` produces `data/index/knowledge-v1.json`; the website, checks, timeline, map and download package read that interface and never parse author Markdown.
-- Regenerate with `npm run knowledge:compile && npm run knowledge:generate`, and include the generated diff in the pull request.
+- `knowledge/` is the only author source. `scripts/lib/knowledge-compiler.ts` produces `data/index/knowledge-v1.json`; the website, checks, timeline, map and download package read that interface and never parse author Markdown. The JSON is generated on demand, not committed: `npm run knowledge:build` rebuilds it, and the `predev`, `prebuild`, `precheck`, `pretypecheck` and `pretest` hooks run that build for you.
+- Regenerate with `npm run knowledge:build`, and include the catalogue diff in the pull request.
 - Work and physical object remain separate. A work may survive in several copies; each copy's production date, condition and custody belong to that copy alone.
 - Every collection assertion and history event needs evidence. Source access date is not physical verification date.
 - Last-known and unknown locations are not current-location markers. Coordinate display precision is not measurement accuracy. A modern reference landmark is not an event's historical place.

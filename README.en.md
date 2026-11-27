@@ -66,7 +66,7 @@ npm run dev
 | `knowledge/` | Author sources: works, objects, people, places, sources, reading notes |
 | `scripts/` | Compiler, checks, library packaging and release gate |
 | `src/` | React site: reading, chronology, map, library |
-| `data/index/knowledge-v1.json` | Versioned interface produced by the compiler; the site reads only this |
+| `data/index/knowledge-v1.json` | Versioned interface produced by the compiler; the site reads only this. Rebuilt at build time, not committed |
 | `docs/` | Current operating documents: setup, editorial, design, architecture, release, map and archive |
 
 ## Status and limitations
