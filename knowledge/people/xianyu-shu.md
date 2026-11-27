@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 鲜于枢
 titleEn: Xianyu Shu
 aliases: []

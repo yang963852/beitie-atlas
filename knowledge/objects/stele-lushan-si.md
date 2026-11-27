@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: lushan-si-bei
 objectType: original-stele
 titleZh: 麓山寺碑（原石）
 titleEn: Stele of Lushan Temple, original stone
-date:
-  kind: single
-  start: 730
-  month: null
-  end: 730
-  endMonth: null
-  era: null
-  original: 唐开元十八年（730）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 730
+dateMonth: null
+dateEnd: 730
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐开元十八年（730）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 高 272 厘米，宽 133 厘米，圆顶
-  note: 28 lines of 56 characters; about 1400 characters originally.
+dimensionsRaw: 高 272 厘米，宽 133 厘米，圆顶
+dimensionsNote: 28 lines of 56 characters; about 1400 characters originally.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-yuelu-academy
-  sources:
-    - src-csjypt-lushan
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Stands in the protective pavilion at Yuelu Academy; the pavilion was built in 1962 according to the same page.
-  noteZh: 立于岳麓书院护碑亭内；该页称护碑亭建于 1962 年。
+collectionKind: collection-institution
+collectionPlace: place-yuelu-academy
+collectionSources:
+  - src-csjypt-lushan
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Stands in the protective pavilion at Yuelu Academy; the pavilion was built in 1962 according to the same page.
+collectionNoteZh: 立于岳麓书院护碑亭内；该页称护碑亭建于 1962 年。
 events:
   - id: evt-lushan-1080-mifu
     type: other
-    date:
-      kind: single
-      start: 1080
-      month: null
-      end: 1080
-      endMonth: null
-      era: null
-      original: 北宋元丰三年（1080）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1080
+    dateMonth: null
+    dateEnd: 1080
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 北宋元丰三年（1080）
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 岳麓
     summary: Mi Fu visited to study the stele and left a sixteen-character inscription on its reverse.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-csjypt-lushan
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 麓山寺碑（原石）

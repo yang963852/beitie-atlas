@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 博物馆之夜——唐开成石经
 publisher: 中国教育网络电视台（河南博物院供稿）

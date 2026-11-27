@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 双说顾恺之与王献之的《洛神赋图》
 publisher: 央广网 China National Radio

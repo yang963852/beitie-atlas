@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 曲阜汉魏碑刻陈列馆
 nameEn: Qufu Han–Wei Stele Gallery
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-confuciusmuseum-binke
   - src-sdxc-kongmiao-sanbei

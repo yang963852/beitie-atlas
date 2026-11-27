@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: Wikidata item Q10519071 — 西安碑林博物馆 (Xi'an Beilin Museum)
 publisher: Wikidata

@@ -1,45 +1,41 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: kuaixue
 objectType: manuscript-copy
 titleZh: 快雪时晴帖（传世摹本）
 titleEn: Clearing after Snow, manuscript copy
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: null
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: null
 catalogNumber: 故書000141N000000000
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-catalogue-kuaixue
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-catalogue-kuaixue
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: witness-kuaixue-yuan-colophons
     type: documented
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 元仁宗朝
-      original: null
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 元仁宗朝
+    dateOriginal: null
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: A study identifies colophons commissioned by the Yuan emperor Renzong, including one by Zhao Mengfu, on the surviving imperial album copy. It distinguishes this copy from other versions.
@@ -49,16 +45,15 @@ events:
     certainty: documented
   - id: witness-kuaixue-qing-court
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 乾隆朝
-      original: null
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 乾隆朝
+    dateOriginal: null
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: This album copy was among the works kept by the Qianlong emperor in the Hall of the Three Rarities.
@@ -66,8 +61,7 @@ events:
     sources:
       - src-npm-kuaixue-yuan
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 快雪时晴帖（传世摹本）

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 衡方碑
 titleEn: Stele of Heng Fang
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: 168
-  month: 9
-  end: 168
-  endMonth: 9
-  era: 东汉建宁元年
-  original: 东汉灵帝建宁元年（168）九月
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 168
+dateMonth: 9
+dateEnd: 168
+dateEndMonth: 9
+dateEra: 东汉建宁元年
+dateOriginal: 东汉灵帝建宁元年（168）九月
+dateCertainty: documented
+dateNote: null
 script: 隶书
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: 故宫条目引碑末小字「门生平原乐陵朱登字仲希书」，读作书丹者自题。条目未记其他撰书人。
 sources:
   - src-dpm-hengfang
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 衡方碑

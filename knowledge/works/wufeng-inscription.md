@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 五凤刻石
 titleEn: Wufeng Inscription
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: western-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: -56
-  month: null
-  end: -56
-  endMonth: null
-  era: null
-  original: 西汉宣帝五凤二年（即公元前56年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: -56
+dateMonth: null
+dateEnd: -56
+dateEndMonth: null
+dateEra: null
+dateOriginal: 西汉宣帝五凤二年（即公元前56年）
+dateCertainty: documented
+dateNote: null
 script: null
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
     noteZh: 所引条目未给出撰文者或书丹者。
 sources:
   - src-qufu-wufeng
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 五凤刻石

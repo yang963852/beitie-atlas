@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: boyuan
 objectType: ink-manuscript
 titleZh: 王珣《伯远帖》
 titleEn: Letter to Boyuan
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 东晋
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 东晋
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00145155
-dimensions:
-  raw: 纵25.1厘米，横17.2厘米
-  note: null
+dimensionsRaw: 纵25.1厘米，横17.2厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-catalogue-boyuan
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-catalogue-boyuan
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: witness-boyuan-qing-court
     type: custody
-    date:
-      kind: single
-      start: 1746
-      month: null
-      end: 1746
-      endMonth: null
-      era: null
-      original: null
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1746
+    dateMonth: null
+    dateEnd: 1746
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The letter entered the Qing imperial collection in 1746 and was kept in the Hall of the Three Rarities alongside Kuaixue Shiqing and Zhongqiu.
@@ -51,16 +47,15 @@ events:
     certainty: documented
   - id: witness-boyuan-museum-return
     type: accession
-    date:
-      kind: single
-      start: 1951
-      month: null
-      end: 1951
-      endMonth: null
-      era: null
-      original: null
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1951
+    dateMonth: null
+    dateEnd: 1951
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The Palace Museum records that the letter was purchased back from Hong Kong and formally accessioned with Zhongqiu on 27 December 1951.
@@ -68,8 +63,7 @@ events:
     sources:
       - src-dpm-boyuan-return
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 王珣《伯远帖》

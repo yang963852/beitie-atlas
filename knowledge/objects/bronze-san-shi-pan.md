@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: san-shi-pan
 objectType: bronze-vessel
 titleZh: 散氏盘（散盘）
 titleEn: San Shi Pan
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 西周晚期
-  original: 西周晚期（公元前9—8世纪）
-  certainty: approximate
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 西周晚期
+dateOriginal: 西周晚期（公元前9—8世纪）
+dateCertainty: approximate
+dateNote: null
 catalogNumber: 故銅002376N000000000
-dimensions:
-  raw: 通高20.6厘米，口径54.6厘米，底径41.4厘米，腹深9.8厘米
-  note: 圆形浅腹，双附耳，高圈足。
+dimensionsRaw: 通高20.6厘米，口径54.6厘米，底径41.4厘米，腹深9.8厘米
+dimensionsNote: 圆形浅腹，双附耳，高圈足。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-npm-sanpan
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The museum catalogue records the vessel number and the inscription.
-  noteZh: 馆方著录记文物统一编号与铭文。
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-npm-sanpan
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The museum catalogue records the vessel number and the inscription.
+collectionNoteZh: 馆方著录记文物统一编号与铭文。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 散氏盘（散盘）

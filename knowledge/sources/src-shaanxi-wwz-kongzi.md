@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 【陕西·考古】重刻唐《孔子庙堂碑》
 publisher: 陕西省文物局《陕西省志·文物志》，陕西学习平台转载

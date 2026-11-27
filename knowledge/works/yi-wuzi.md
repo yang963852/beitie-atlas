@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 隶书五字横幅
 titleEn: Five Characters in Clerical Script
 aliases: []
 studyCategory: tie
 dynastyId: qing
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 清
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 清
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 隶书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-yi-wuzi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 隶书五字横幅

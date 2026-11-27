@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 兰亭序
 titleEn: Preface to the Orchid Pavilion
 aliases: []
 studyCategory: tie
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: single
-  start: 353
-  month: null
-  end: 353
-  endMonth: null
-  era: null
-  original: null
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 353
+dateMonth: null
+dateEnd: 353
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -30,19 +29,17 @@ attribution:
 sources:
   - src-catalogue-lanting
   - src-dpm-233468
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people:
-    - wang-xizhi
-    - feng-chengsu
-  objects:
-    - witness-lanting
-    - dingwu-zhan
-  sources:
-    - src-catalogue-lanting
-    - src-dpm-233468
+reviewState: reviewed
+guideState: reviewed
+guidePeople:
+  - wang-xizhi
+  - feng-chengsu
+guideObjects:
+  - witness-lanting
+  - dingwu-zhan
+guideSources:
+  - src-catalogue-lanting
+  - src-dpm-233468
 ---
 
 # 兰亭序

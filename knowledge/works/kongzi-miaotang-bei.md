@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 孔子庙堂碑
 titleEn: Stele of the Confucius Temple
 aliases:
@@ -9,16 +9,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: range
-  start: 629
-  month: null
-  end: 630
-  endMonth: null
-  era: 唐贞观三年至四年
-  original: 唐贞观三年至四年（629—630）之间
-  certainty: approximate
-  note: The provincial summary places the first carving between 629 and 630; the museum page only says it was made before Yu Shinan's promotion in 634.
+dateKind: range
+dateStart: 629
+dateMonth: null
+dateEnd: 630
+dateEndMonth: null
+dateEra: 唐贞观三年至四年
+dateOriginal: 唐贞观三年至四年（629—630）之间
+dateCertainty: approximate
+dateNote: The provincial summary places the first carving between 629 and 630; the museum page only says it was made before Yu Shinan's promotion in 634.
 script: 楷书
 attribution:
   - role: author-and-calligrapher
@@ -49,8 +48,7 @@ attribution:
 sources:
   - src-beilin-kongzi-miaotang
   - src-shaanxi-wwz-kongzi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 孔子庙堂碑

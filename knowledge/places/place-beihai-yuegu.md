@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 北海公园阅古楼
 nameEn: Yuegu Lou, Beihai Park
 historicalName: null
 kind: historical-site
-coordinates: null
 sources:
   - src-dpm-sanxitang
   - src-chinadaily-yuegu

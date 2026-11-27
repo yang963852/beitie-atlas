@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 东西问｜梁中效：十三方石刻「讲述」的秦蜀古道是怎样的
 publisher: 国务院侨务办公室 Overseas Chinese Affairs Office of the State Council

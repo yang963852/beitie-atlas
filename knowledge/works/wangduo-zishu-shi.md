@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 王铎行草书自书诗卷
 titleEn: Scroll of Wang Duo’s Own Poems in Running-Cursive Script
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: ming
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1639
-  month: 1
-  end: 1639
-  endMonth: 1
-  era: null
-  original: 明崇祯十二年（1639年）正月
-  certainty: documented
-  note: 末款“己卯正月弟王铎具草”。
+dateKind: single
+dateStart: 1639
+dateMonth: 1
+dateEnd: 1639
+dateEndMonth: 1
+dateEra: null
+dateOriginal: 明崇祯十二年（1639年）正月
+dateCertainty: documented
+dateNote: 末款“己卯正月弟王铎具草”。
 script: 行草
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: 卷有王铎款印，馆方系于其四十七岁。
 sources:
   - src-dpm-wangduo
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 王铎行草书自书诗卷

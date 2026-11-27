@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 赵子昂游天冠山诗
 titleEn: Poems on Mount Tianguan attributed to Zhao Mengfu
 aliases: []
 studyCategory: tie
 dynastyId: yuan
 dynastyQualifier: null
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: null
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: null
 script: null
 attribution:
   - role: author-and-calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: 馆方指出学者对所据墨本的真伪有质疑。
 sources:
   - src-beilin-tianguanshan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 赵子昂游天冠山诗

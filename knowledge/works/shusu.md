@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 蜀素帖
 titleEn: Poems on Shu Silk
 aliases: []
 studyCategory: tie
 dynastyId: northern-song
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1088
-  month: null
-  end: 1088
-  endMonth: null
-  era: null
-  original: 北宋哲宗元祐三年（1088）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1088
+dateMonth: null
+dateEnd: 1088
+dateEndMonth: null
+dateEra: null
+dateOriginal: 北宋哲宗元祐三年（1088）
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-shusu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 蜀素帖

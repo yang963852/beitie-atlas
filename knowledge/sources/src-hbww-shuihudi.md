@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 湖北简牍地理，一窥湖北简牍之风采！
 publisher: 湖北省博物馆 Hubei Provincial Museum

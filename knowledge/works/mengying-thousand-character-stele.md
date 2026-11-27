@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 篆书千字文碑
 titleEn: Mengying’s Seal-script Thousand Character Stele
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: northern-song
 dynastyQualifier: null
-date:
-  kind: single
-  start: 965
-  month: null
-  end: 965
-  endMonth: null
-  era: null
-  original: 北宋乾德三年(965)
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 965
+dateMonth: null
+dateEnd: 965
+dateEndMonth: null
+dateEra: null
+dateOriginal: 北宋乾德三年(965)
+dateCertainty: documented
+dateNote: null
 script: 篆书
 attribution:
   - role: author
@@ -33,8 +32,7 @@ attribution:
       - src-beilin-mengying
 sources:
   - src-beilin-mengying
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 篆书千字文碑

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 【陕西文物览】西安碑林——曹全碑
 publisher: 学习强国（陕西省文物局供稿）

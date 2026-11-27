@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: Wikidata Q569025 — 岱庙
 publisher: Wikidata

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 黄州寒食诗帖
 publisher: 國立故宮博物院

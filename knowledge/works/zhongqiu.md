@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 中秋帖
 titleEn: Mid-Autumn Letter
 aliases: []
 studyCategory: tie
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: null
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: null
 script: 行草
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: null
 sources:
   - src-dpm-228204
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 中秋帖

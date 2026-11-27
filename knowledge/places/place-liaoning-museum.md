@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 辽宁省博物馆
 nameEn: Liaoning Provincial Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-lnm-wansui
   - src-chinanews-wansui

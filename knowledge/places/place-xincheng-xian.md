@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 新城（西安）
 nameEn: Xincheng (Xi'an)
 historicalName: null
 kind: district
-coordinates: null
 sources:
   - src-beilin-article-2007
 notes:

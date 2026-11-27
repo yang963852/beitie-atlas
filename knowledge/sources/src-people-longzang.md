@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 正定大佛寺存宋代转轮藏 仍能正常转动
 publisher: 人民网文化频道

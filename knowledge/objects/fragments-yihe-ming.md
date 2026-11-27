@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: yi-he-ming
 objectType: fragment
 titleZh: 瘗鹤铭（残石五方）
 titleEn: Elegy for a Crane, five surviving fragments
-date:
-  kind: single
-  start: 514
-  month: null
-  end: 514
-  endMonth: null
-  era: null
-  original: 南朝梁天监十三年（514），传
-  certainty: disputed
-  note: Traditional date; the inscription gives only a cyclical year.
+dateKind: single
+dateStart: 514
+dateMonth: null
+dateEnd: 514
+dateEndMonth: null
+dateEra: null
+dateOriginal: 南朝梁天监十三年（514），传
+dateCertainty: disputed
+dateNote: Traditional date; the inscription gives only a cyclical year.
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-jiaoshan-beilin
-  sources:
-    - src-jiangsu-yihe
-    - src-cyol-yihe
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Five fragments recovered in 1713 are displayed in the Jiaoshan Stele Forest.
-  noteZh: 1713 年打捞所得五方残石，现陈列于焦山碑林。
+collectionKind: collection-institution
+collectionPlace: place-jiaoshan-beilin
+collectionSources:
+  - src-jiangsu-yihe
+  - src-cyol-yihe
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Five fragments recovered in 1713 are displayed in the Jiaoshan Stele Forest.
+collectionNoteZh: 1713 年打捞所得五方残石，现陈列于焦山碑林。
 events:
   - id: evt-yihe-1713-recovery
     type: discovery
-    date:
-      kind: single
-      start: 1713
-      month: null
-      end: 1713
-      endMonth: null
-      era: null
-      original: 清康熙五十二年（1713）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1713
+    dateMonth: null
+    dateEnd: 1713
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 清康熙五十二年（1713）
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 焦山下游江中
     summary: Recovered from the river after a three-month search; the fragments were later set into a temple wall.
@@ -48,8 +44,7 @@ events:
     sources:
       - src-cyol-yihe
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 瘗鹤铭（残石五方）

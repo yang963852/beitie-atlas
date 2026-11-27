@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 唐太宗唯一存世石碑蕴藏着何种治国安邦思想
 publisher: 太原市人民政府 Taiyuan Municipal People’s Government

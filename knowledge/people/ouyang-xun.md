@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 欧阳询
 titleEn: Ouyang Xun
 aliases: []

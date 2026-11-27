@@ -1,36 +1,32 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: xiping-stone-classics
 objectType: fragment
 titleZh: 熹平石经残石（中国国家博物馆藏）
 titleEn: Xiping Stone Classics, National Museum of China fragment
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 东汉
-  original: 东汉
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 东汉
+dateOriginal: 东汉
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-national-museum
-  sources:
-    - src-chnmuseum-xiping
-    - src-chnmuseum-xiping-holding
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Catalogue holding; no current exhibition claim.
-  noteZh: 按机构著录记录收藏，不据此判断当前是否展出。
+collectionKind: collection-institution
+collectionPlace: place-national-museum
+collectionSources:
+  - src-chnmuseum-xiping
+  - src-chnmuseum-xiping-holding
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Catalogue holding; no current exhibition claim.
+collectionNoteZh: 按机构著录记录收藏，不据此判断当前是否展出。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 熹平石经残石（中国国家博物馆藏）

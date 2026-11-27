@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 王羲之平安何如奉橘三帖卷
 publisher: 文化部文化資產局 Bureau of Cultural Heritage, Ministry of Culture

@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 东山松帖
 titleEn: Letter on the Dongshan Pines
 aliases: []
 studyCategory: tie
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 东晋
-  original: null
-  certainty: documented
-  note: 馆方题名系于晋，帖无款署，亦无年款。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 东晋
+dateOriginal: null
+dateCertainty: documented
+dateNote: 馆方题名系于晋，帖无款署，亦无年款。
 script: 行草
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: 故宫以此页列于王献之名下，未讨论此本是否为摹本。
 sources:
   - src-dpm-dongshansong
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 东山松帖

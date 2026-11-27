@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 麻姑仙坛记
 titleEn: Record of the Immortal Altar
 aliases: []
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 771
-  month: null
-  end: 771
-  endMonth: null
-  era: null
-  original: null
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 771
+dateMonth: null
+dateEnd: 771
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-magu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 麻姑仙坛记

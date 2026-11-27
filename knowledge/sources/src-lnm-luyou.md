@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 国宝咏诵人 | 国宝资料库（一）
 publisher: 辽宁省博物馆 Liaoning Provincial Museum

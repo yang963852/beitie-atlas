@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 多宝塔感应碑
 titleEn: Duobao Pagoda Stele
 aliases: []
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 752
-  month: null
-  end: 752
-  endMonth: null
-  era: null
-  original: 唐天宝十一载（752年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 752
+dateMonth: null
+dateEnd: 752
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐天宝十一载（752年）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: author
@@ -42,17 +41,15 @@ attribution:
     noteZh: null
 sources:
   - src-beilin-duobaota
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people:
-    - yan-zhenqing
-  objects:
-    - stele-duobao-ta
-  sources:
-    - src-beilin-duobaota
-    - src-chnu-yan-workshop
+reviewState: reviewed
+guideState: reviewed
+guidePeople:
+  - yan-zhenqing
+guideObjects:
+  - stele-duobao-ta
+guideSources:
+  - src-beilin-duobaota
+  - src-chnu-yan-workshop
 ---
 
 # 多宝塔感应碑

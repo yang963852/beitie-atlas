@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 黄庭经
 titleEn: Yellow Court Classic
 aliases: []
 studyCategory: tie
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 东晋
-  original: 晉王羲之
-  certainty: documented
-  note: 馆方题名系于晋，未记书写年份。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 东晋
+dateOriginal: 晉王羲之
+dateCertainty: documented
+dateNote: 馆方题名系于晋，未记书写年份。
 script: 楷书
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: 馆方以楷书列于王羲之名下；存世一本为宋拓。
 sources:
   - src-npm-huangting
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 黄庭经

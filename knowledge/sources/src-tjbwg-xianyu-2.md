@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 「文物会说话」有声海报｜这些「第一」，鉴证何以中国
 publisher: 天津博物馆

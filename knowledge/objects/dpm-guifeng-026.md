@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: guifeng
 objectType: rubbing
 titleZh: 圭峰定慧禅师碑（故宫明拓本）
 titleEn: Stele of Chan Master Guifeng Dinghui, rubbing
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 明
-  original: 明拓本
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 明
+dateOriginal: 明拓本
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 29.0×30.0厘米
-  note: null
+dimensionsRaw: 29.0×30.0厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-234182
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-234182
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: event-guifeng-1
     type: accession
-    date:
-      kind: unknown
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: null
-      original: null
-      certainty: unknown
-      note: null
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: null
     place: null
     placeWording: null
     summary: Zhu Yian and his family donated this impression.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-dpm-234182
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 圭峰定慧禅师碑（故宫明拓本）

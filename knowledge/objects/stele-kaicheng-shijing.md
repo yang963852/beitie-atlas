@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: kaicheng-shijing
 objectType: original-stele
 titleZh: 开成石经（原石）
 titleEn: Kaicheng Stone Classics, original stones
-date:
-  kind: single
-  start: 837
-  month: null
-  end: 837
-  endMonth: null
-  era: null
-  original: 唐开成二年（837）刻成
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 837
+dateMonth: null
+dateEnd: 837
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐开成二年（837）刻成
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 每石高 216 厘米，宽 83—99 厘米；共 114 石、228 面
-  note: Sizes as stated by the museum; individual stones vary.
+dimensionsRaw: 每石高 216 厘米，宽 83—99 厘米；共 114 石、228 面
+dimensionsNote: Sizes as stated by the museum; individual stones vary.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-kaicheng
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum page states that the complete set is displayed in the first Beilin exhibition room.
-  noteZh: 馆方页面称全套陈列于碑林第一展室。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-kaicheng
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum page states that the complete set is displayed in the first Beilin exhibition room.
+collectionNoteZh: 馆方页面称全套陈列于碑林第一展室。
 events:
   - id: evt-kaicheng-837
     type: carving
-    date:
-      kind: single
-      start: 837
-      month: null
-      end: 837
-      endMonth: null
-      era: null
-      original: 唐开成二年（837）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 837
+    dateMonth: null
+    dateEnd: 837
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 唐开成二年（837）
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 长安
     summary: Completed in 837, the year that gives the set its name.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-beilin-kaicheng
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 开成石经（原石）

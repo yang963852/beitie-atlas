@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 天津博物馆
 nameEn: Tianjin Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-tjbwg-xianyu-2
 notes:

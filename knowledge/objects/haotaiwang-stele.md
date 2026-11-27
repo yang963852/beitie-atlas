@@ -1,48 +1,44 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: haotaiwang-bei
 objectType: original-stele
 titleZh: 好太王碑（原石）
 titleEn: Stele of King Gwanggaeto, original stone
-date:
-  kind: single
-  start: 414
-  month: null
-  end: 414
-  endMonth: null
-  era: 晋义熙十年
-  original: 晋义熙十年（414年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 414
+dateMonth: null
+dateEnd: 414
+dateEndMonth: null
+dateEra: 晋义熙十年
+dateOriginal: 晋义熙十年（414年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 高6.39米；底宽1.34—1.97米；顶宽1.00—1.60米
-  note: The gazetteer gives the third face as the widest at 2.00 m. Both entries agree on the height; neither gives the block's thickness.
+dimensionsRaw: 高6.39米；底宽1.34—1.97米；顶宽1.00—1.60米
+dimensionsNote: The gazetteer gives the third face as the widest at 2.00 m. Both entries agree on the height; neither gives the block's thickness.
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-ji-an-haotaiwang
-  sources:
-    - src-jl-dfz-haotaiwang
-    - src-jl-dfz-haotaiwang-alt
-  accessedAt: 2026-11-23
-  asOf: null
-  note: The gazetteer places the stele in 太王乡大碑街, about four kilometres east of Ji'an city, east of the tomb of King Gwanggaeto. It does not describe a shelter, a fence or current public access.
-  noteZh: 方志记碑在集安市区东约四公里太王乡大碑街、好太王陵东侧。未记碑亭、围护或现时开放情况。
+collectionKind: in-situ
+collectionPlace: place-ji-an-haotaiwang
+collectionSources:
+  - src-jl-dfz-haotaiwang
+  - src-jl-dfz-haotaiwang-alt
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: The gazetteer places the stele in 太王乡大碑街, about four kilometres east of Ji'an city, east of the tomb of King Gwanggaeto. It does not describe a shelter, a fence or current public access.
+collectionNoteZh: 方志记碑在集安市区东约四公里太王乡大碑街、好太王陵东侧。未记碑亭、围护或现时开放情况。
 events:
   - id: ev-haotaiwang-stele-1
     type: carving
-    date:
-      kind: single
-      start: 414
-      month: null
-      end: 414
-      endMonth: null
-      era: 晋义熙十年
-      original: 晋义熙十年（414年）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 414
+    dateMonth: null
+    dateEnd: 414
+    dateEndMonth: null
+    dateEra: 晋义熙十年
+    dateOriginal: 晋义熙十年（414年）
+    dateCertainty: documented
+    dateNote: null
     place: place-ji-an-haotaiwang
     placeWording: 好太王陵东
     summary: King Jangsu erected the stele east of his father's tomb.
@@ -52,16 +48,15 @@ events:
     certainty: documented
   - id: ev-haotaiwang-stele-2
     type: documented
-    date:
-      kind: single
-      start: 1961
-      month: null
-      end: 1961
-      endMonth: null
-      era: 1961年
-      original: 1961年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1961
+    dateMonth: null
+    dateEnd: 1961
+    dateEndMonth: null
+    dateEra: 1961年
+    dateOriginal: 1961年
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The State Council listed the Donggou tomb complex, including the stele, in the first batch of national key cultural relics.
@@ -69,8 +64,7 @@ events:
     sources:
       - src-jl-dfz-haotaiwang
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 好太王碑（原石）

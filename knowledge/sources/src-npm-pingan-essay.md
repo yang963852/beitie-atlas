@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 國寶再現之書蹟名品
 publisher: 國立故宮博物院 National Palace Museum

@@ -1,38 +1,34 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: nongfang-shitie
 objectType: ink-manuscript
 titleZh: 秾芳诗帖卷
 titleEn: Poem on Fragrant Blossoms, handscroll
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北宋
-  original: 北宋
-  certainty: documented
-  note: 帖无年款，馆方列于北宋。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北宋
+dateOriginal: 北宋
+dateCertainty: documented
+dateNote: 帖无年款，馆方列于北宋。
 catalogNumber: null
-dimensions:
-  raw: 纵27.2厘米，横265.9厘米
-  note: 绢本，界朱丝栏，字大近五寸。
+dimensionsRaw: 纵27.2厘米，横265.9厘米
+dimensionsNote: 绢本，界朱丝栏，字大近五寸。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-npm-nongfang
-    - src-dpm-emperor
-  accessedAt: 2026-11-24
-  asOf: null
-  note: The Taipei entry catalogues the scroll; the Palace Museum article gives the present holding and dimensions.
-  noteZh: 台北故宫条目著录此卷，故宫博物院文章记今藏与尺寸。
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-npm-nongfang
+  - src-dpm-emperor
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: The Taipei entry catalogues the scroll; the Palace Museum article gives the present holding and dimensions.
+collectionNoteZh: 台北故宫条目著录此卷，故宫博物院文章记今藏与尺寸。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 秾芳诗帖卷

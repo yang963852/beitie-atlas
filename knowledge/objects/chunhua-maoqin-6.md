@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: chunhua-getie
 objectType: rubbing
 titleZh: 淳化阁帖（懋勤殿本卷六）
 titleEn: Chunhua Modelbooks, Maoqin Hall edition, vol. 6
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 宋
-  original: 宋
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 宋
+dateOriginal: 宋
+dateCertainty: documented
+dateNote: null
 catalogNumber: 故00004678-6/10
-dimensions:
-  raw: 24.5 × 13 cm
-  note: null
+dimensionsRaw: 24.5 × 13 cm
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-261938
-  accessedAt: 2026-11-19
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-261938
+collectionAccessedAt: 2026-11-19
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: ev-chunhua-maoqin-6-1
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 清
-      original: 清
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 清
+    dateOriginal: 清
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The ten albums belonged to the Qing imperial collection. A seal on volume one gives the set its name.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-dpm-261938
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 淳化阁帖（懋勤殿本卷六）

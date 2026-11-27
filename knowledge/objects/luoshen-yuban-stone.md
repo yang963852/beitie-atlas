@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: luoshen-shisanhang
 objectType: recarving
 titleZh: 玉版十三行刻石
 titleEn: Jade-version stone of the Thirteen Lines
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 南宋
-  original: 南宋权相贾似道……刻于似碧玉的佳石上
-  certainty: approximate
-  note: The sources attribute the carving to the Southern Song chief minister Jia Sidao and give no year, so only the dynasty is recorded.
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 南宋
+dateOriginal: 南宋权相贾似道……刻于似碧玉的佳石上
+dateCertainty: approximate
+dateNote: The sources attribute the carving to the Southern Song chief minister Jia Sidao and give no year, so only the dynasty is recorded.
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-capital-museum
-  sources:
-    - src-cnr-luoshen
-    - src-people-luoshen
-  accessedAt: 2026-11-23
-  asOf: null
-  note: Both sources state that the stone is in the Capital Museum. 央广网 adds that the Beijing cultural relics company bought it in 1981 for 18,000 yuan and transferred it to the museum. Neither source gives an accession number or a gallery.
-  noteZh: 两处来源均记石藏首都博物馆。央广网另记 1981 年北京市文物公司以一万八千元购得并转交该馆。两文均未给藏品号或展室。
+collectionKind: collection-institution
+collectionPlace: place-capital-museum
+collectionSources:
+  - src-cnr-luoshen
+  - src-people-luoshen
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: Both sources state that the stone is in the Capital Museum. 央广网 adds that the Beijing cultural relics company bought it in 1981 for 18,000 yuan and transferred it to the museum. Neither source gives an accession number or a gallery.
+collectionNoteZh: 两处来源均记石藏首都博物馆。央广网另记 1981 年北京市文物公司以一万八千元购得并转交该馆。两文均未给藏品号或展室。
 events:
   - id: ev-luoshen-yuban-stone-1
     type: discovery
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 明万历
-      original: 至明万历年间，在杭州西湖葛岭半闲堂旧址复得
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 明万历
+    dateOriginal: 至明万历年间，在杭州西湖葛岭半闲堂旧址复得
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 杭州西湖葛岭半闲堂旧址
     summary: The lost stone was found again at the site of Jia Sidao's former villa at Geling, west of West Lake.
@@ -50,16 +46,15 @@ events:
     certainty: documented
   - id: ev-luoshen-yuban-stone-2
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 清康熙
-      original: 清康熙年间入内府
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 清康熙
+    dateOriginal: 清康熙年间入内府
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 内府
     summary: The stone entered the Qing imperial household.
@@ -69,16 +64,15 @@ events:
     certainty: documented
   - id: ev-luoshen-yuban-stone-3
     type: accession
-    date:
-      kind: single
-      start: 1981
-      month: null
-      end: 1981
-      endMonth: null
-      era: 1981年
-      original: 1981年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1981
+    dateMonth: null
+    dateEnd: 1981
+    dateEndMonth: null
+    dateEra: 1981年
+    dateOriginal: 1981年
+    dateCertainty: documented
+    dateNote: null
     place: place-capital-museum
     placeWording: 北京文物公司，后转交首都博物馆
     summary: The Beijing cultural relics company bought the stone and transferred it to the Capital Museum.
@@ -86,8 +80,7 @@ events:
     sources:
       - src-cnr-luoshen
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 玉版十三行刻石

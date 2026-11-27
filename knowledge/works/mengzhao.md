@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 蒙诏帖
 titleEn: Imperial Summons Letter
 aliases: []
 studyCategory: tie
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: null
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-dpm-231095
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 蒙诏帖

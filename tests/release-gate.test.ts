@@ -125,33 +125,32 @@ function writeAt(root: string, path: string, contents: string): void {
 }
 
 function writeRelations(root: string, relations: unknown[]): void {
-  writeAt(root, 'knowledge/relations.md', doc({ schemaVersion: 1, relations }, '# 人物关系\n\n测试关系。'));
+  writeAt(root, 'knowledge/relations.md', doc({ schemaVersion: 2, relations }, '# 人物关系\n\n测试关系。'));
 }
 
 function writeWork(root: string, data: Fixture, guide = true): void {
   const work = data.work;
   const fields = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     titleZh: work.titles.zh,
     titleEn: work.titles.en,
     aliases: work.aliases,
     studyCategory: work.studyCategory,
     dynastyId: work.dynastyId,
     dynastyQualifier: work.dynastyQualifier,
-    date: {
-      kind: work.compositionDate.kind,
-      start: work.compositionDate.start,
-      end: work.compositionDate.end,
-      original: work.compositionDate.original,
-      certainty: work.compositionDate.certainty,
-      note: work.compositionDate.note,
-    },
+    dateKind: work.compositionDate.kind,
+    dateStart: work.compositionDate.start,
+    dateEnd: work.compositionDate.end,
+    dateOriginal: work.compositionDate.original,
+    dateCertainty: work.compositionDate.certainty,
+    dateNote: work.compositionDate.note,
     script: work.script,
     attribution: work.attribution,
     sources: work.sourceRefs,
-    review: work.review,
+    reviewState: work.review.state,
+    reviewNote: work.review.note,
     ...(guide ? {
-      guide: { state: work.review.state, people: [], objects: [data.object.id], sources: ['src-fixture'] },
+      guideState: work.review.state, guidePeople: [], guideObjects: [data.object.id], guideSources: ['src-fixture'],
     } : {}),
   };
   const body = [
@@ -165,40 +164,36 @@ function writeWork(root: string, data: Fixture, guide = true): void {
 function writeObject(root: string, data: Fixture): void {
   const object = data.object;
   const fields = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     work: object.workId,
     objectType: object.objectType,
     titleZh: object.titles.zh,
     titleEn: object.titles.en,
-    date: {
-      kind: object.productionDate.kind,
-      start: object.productionDate.start,
-      end: object.productionDate.end,
-      original: object.productionDate.original,
-      certainty: object.productionDate.certainty,
-      note: object.productionDate.note,
-    },
+    dateKind: object.productionDate.kind,
+    dateStart: object.productionDate.start,
+    dateEnd: object.productionDate.end,
+    dateOriginal: object.productionDate.original,
+    dateCertainty: object.productionDate.certainty,
+    dateNote: object.productionDate.note,
     catalogNumber: object.catalogNumber,
-    dimensions: object.dimensions,
     survival: object.survivalStatus,
     relationships: [],
-    collection: {
-      kind: object.currentCollection.locationKind,
-      place: object.currentCollection.placeId,
-      sources: object.currentCollection.sourceRefs,
-      accessedAt: object.currentCollection.sourceAccessedAt,
-      asOf: object.currentCollection.assertionAsOf,
-      note: object.currentCollection.note,
-    },
+    collectionKind: object.currentCollection.locationKind,
+    collectionPlace: object.currentCollection.placeId,
+    collectionSources: object.currentCollection.sourceRefs,
+    collectionAccessedAt: object.currentCollection.sourceAccessedAt,
+    collectionAsOf: object.currentCollection.assertionAsOf,
+    collectionNote: object.currentCollection.note,
     events: [],
-    review: object.review,
+    reviewState: object.review.state,
+    reviewNote: object.review.note,
   };
   writeAt(root, 'knowledge/objects/' + object.id + '.md', doc(fields, '# ' + object.titles.zh));
 }
 
 function writeArticle(root: string, kind: 'people' | 'notes', id: string, state: string, refs = '') {
   const fields = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     titleZh: '测试' + id,
     titleEn: 'Fixture ' + id,
     state,
@@ -218,18 +213,17 @@ function writeFixture(root: string, data = fixture()): void {
   writeWork(root, data);
   writeObject(root, data);
   writeAt(root, 'knowledge/places/' + data.place.id + '.md', doc({
-    schemaVersion: 1,
+    schemaVersion: 2,
     nameZh: data.place.names.zh,
     nameEn: data.place.names.en,
     historicalName: null,
     kind: data.place.kind,
-    coordinates: null,
     sources: data.place.sourceRefs,
     notes: [],
     notesZh: [],
   }, '# ' + data.place.names.zh));
   writeAt(root, 'knowledge/sources/' + data.source.id + '.md', doc({
-    schemaVersion: 1,
+    schemaVersion: 2,
     kind: 'web',
     title: data.source.title,
     publisher: data.source.publisher,
@@ -306,13 +300,13 @@ describe('strict release gate', () => {
   it('resolves same-directory Markdown links against the referring article in normal and strict validation', () => {
     const root = tempRoot();
     writeFixture(root);
-    const prefix = 'schemaVersion: 1\ntitleZh: 书家\nstate: reviewed\nworks: []\nobjects: []\nsources: [src-fixture]\n';
+    const prefix = 'schemaVersion: 2\ntitleZh: 书家\nstate: reviewed\nworks: []\nobjects: []\nsources: [src-fixture]\n';
     writeAt(root, 'knowledge/people/one.md', doc({
-      schemaVersion: 1, titleZh: '书家一', titleEn: 'One', state: 'reviewed',
+      schemaVersion: 2, titleZh: '书家一', titleEn: 'One', state: 'reviewed',
       works: [], objects: [], sources: ['src-fixture'],
     }, '# 书家一\n\n## 中文\n\n[已有](two.md) [缺失](missing.md) [已有](./two.md) [缺失](./missing-too.md) [已有](../people/two.md) [缺失](../notes/missing-note.md)'));
     writeAt(root, 'knowledge/people/two.md', doc({
-      schemaVersion: 1, titleZh: '书家二', titleEn: 'Two', state: 'reviewed',
+      schemaVersion: 2, titleZh: '书家二', titleEn: 'Two', state: 'reviewed',
       works: [], objects: [], sources: ['src-fixture'],
     }, '# 书家二\n\n## 中文\n\n书家资料。'));
     for (const release of [false, true]) {

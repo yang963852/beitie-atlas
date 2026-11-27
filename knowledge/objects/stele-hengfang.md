@@ -1,45 +1,41 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: hengfang-bei
 objectType: original-stele
 titleZh: 衡方碑（原石）
 titleEn: Stele of Heng Fang, original stone
-date:
-  kind: single
-  start: 168
-  month: 9
-  end: 168
-  endMonth: 9
-  era: 东汉建宁元年
-  original: 东汉灵帝建宁元年（168）九月
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 168
+dateMonth: 9
+dateEnd: 168
+dateEndMonth: 9
+dateEra: 东汉建宁元年
+dateOriginal: 东汉灵帝建宁元年（168）九月
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taian-daimiao
-  sources:
-    - src-dpm-hengfang
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The Palace Museum entry says the stone is now at 岱庙炳灵门. It does not state a gallery number, a condition survey, or the date of the move.
-  noteZh: 故宫条目记原石现存泰安岱庙炳灵门。条目没有说明展厅编号、保存状况，也未给出迁移时间。
+collectionKind: collection-institution
+collectionPlace: place-taian-daimiao
+collectionSources:
+  - src-dpm-hengfang
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The Palace Museum entry says the stone is now at 岱庙炳灵门. It does not state a gallery number, a condition survey, or the date of the move.
+collectionNoteZh: 故宫条目记原石现存泰安岱庙炳灵门。条目没有说明展厅编号、保存状况，也未给出迁移时间。
 events:
   - id: event-hengfang-move-1730
     type: relocation
-    date:
-      kind: single
-      start: 1730
-      month: null
-      end: 1730
-      endMonth: null
-      era: 清雍正八年
-      original: 清雍正八年（1730）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1730
+    dateMonth: null
+    dateEnd: 1730
+    dateEndMonth: null
+    dateEra: 清雍正八年
+    dateOriginal: 清雍正八年（1730）
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The entry states that the Wenshui flooded in 1730 and the fallen stele was re-erected by Guo Chengxi. It does not name the place of re-erection.
@@ -47,8 +43,7 @@ events:
     sources:
       - src-dpm-hengfang
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 衡方碑（原石）

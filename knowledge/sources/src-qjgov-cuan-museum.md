@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 爨文化博物馆
 publisher: 曲靖市人民政府门户网

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 神策军碑
 titleEn: Stele of the Shence Army
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 843
-  month: null
-  end: 843
-  endMonth: null
-  era: null
-  original: 唐会昌三年（843）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 843
+dateMonth: null
+dateEnd: 843
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐会昌三年（843）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: author
@@ -36,8 +35,7 @@ attribution:
 sources:
   - src-ccdy-shence
   - src-nlc-shence-museum
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 神策军碑

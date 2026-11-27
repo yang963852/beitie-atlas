@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 史墙盘
 titleEn: Shi Qiang Pan, the Qiang Basin
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: pre-qin
 dynastyQualifier: 西周
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 西周·恭王
-  original: 西周恭王时期
-  certainty: approximate
-  note: 铭文所记周王止于穆王，学界定为恭王时器。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 西周·恭王
+dateOriginal: 西周恭王时期
+dateCertainty: approximate
+dateNote: 铭文所记周王止于穆王，学界定为恭王时器。
 script: 金文
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
 sources:
   - src-bjqtm-shiqiang
   - src-cssn-shiqiang
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 史墙盘

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 龙藏寺碑
 titleEn: Stele of the Longzang Temple
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: sui
 dynastyQualifier: null
-date:
-  kind: single
-  start: 586
-  month: null
-  end: 586
-  endMonth: null
-  era: 隋开皇六年
-  original: 隋开皇六年（586年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 586
+dateMonth: null
+dateEnd: 586
+dateEndMonth: null
+dateEra: 隋开皇六年
+dateOriginal: 隋开皇六年（586年）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: author
@@ -30,8 +29,7 @@ attribution:
 sources:
   - src-people-longzang
   - src-sjzgov-longzang
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 龙藏寺碑

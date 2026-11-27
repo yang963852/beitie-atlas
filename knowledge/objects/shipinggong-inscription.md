@@ -1,36 +1,32 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shipinggong-zaoxiang-ji
 objectType: cliff-inscription
 titleZh: 始平公造像记（古阳洞北壁）
 titleEn: The Shiping Gong dedication on the north wall of Guyang Cave
-date:
-  kind: single
-  start: 498
-  month: null
-  end: 498
-  endMonth: null
-  era: 北魏太和二十二年
-  original: 太和二十二年（498年）
-  certainty: documented
-  note: The exhibition notice dates the carving to 498; the date line on the stone is partly damaged.
+dateKind: single
+dateStart: 498
+dateMonth: null
+dateEnd: 498
+dateEndMonth: null
+dateEra: 北魏太和二十二年
+dateOriginal: 太和二十二年（498年）
+dateCertainty: documented
+dateNote: The exhibition notice dates the carving to 498; the date line on the stone is partly damaged.
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-longmen-grottoes
-  sources:
-    - src-gmw-shipinggong
-    - src-shanghai-ly-shipinggong
-  accessedAt: 2026-11-23
-  asOf: null
-  note: Both sources place the dedication on the north wall of Guyang Cave on the west hill at Longmen. Neither describes its height above the floor, its shelter or its present legibility.
-  noteZh: 两处来源均记此刻在龙门西山古阳洞北壁。未记距地高度、保护设施与现存字口状况。
+collectionKind: in-situ
+collectionPlace: place-longmen-grottoes
+collectionSources:
+  - src-gmw-shipinggong
+  - src-shanghai-ly-shipinggong
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: Both sources place the dedication on the north wall of Guyang Cave on the west hill at Longmen. Neither describes its height above the floor, its shelter or its present legibility.
+collectionNoteZh: 两处来源均记此刻在龙门西山古阳洞北壁。未记距地高度、保护设施与现存字口状况。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 始平公造像记（古阳洞北壁）

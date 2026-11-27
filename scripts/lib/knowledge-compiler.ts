@@ -12,6 +12,7 @@ import { formatReport, validateDataset, type ValidationIssue, type ValidationRep
 import type { KnowledgeArticle, KnowledgeRelation } from '../../src/domain/knowledge-types';
 import type { Dataset, MediaItem } from '../../src/domain/types';
 import {
+  AUTHOR_SCHEMA_VERSION,
   KNOWLEDGE_FORMAT_VERSION,
   KNOWLEDGE_SCHEMA_VERSION,
   canonical,
@@ -78,8 +79,8 @@ function records(root: string, kind: string): MarkdownRecord[] {
       if (!stableId(id)) throw new Error('knowledge/' + kind + '/' + name + ': use a lowercase stable ID');
       const { fields, body } = splitFrontmatter(readFileSync(join(dir, name), 'utf8'));
       const schemaVersion = fields.schemaVersion;
-      if (schemaVersion !== KNOWLEDGE_SCHEMA_VERSION) {
-        throw new Error('knowledge/' + kind + '/' + name + ': schemaVersion must be ' + KNOWLEDGE_SCHEMA_VERSION);
+      if (schemaVersion !== AUTHOR_SCHEMA_VERSION) {
+        throw new Error('knowledge/' + kind + '/' + name + ': schemaVersion must be ' + AUTHOR_SCHEMA_VERSION);
       }
       return { id, fields, body, path: 'knowledge/' + kind + '/' + name };
     });
@@ -89,8 +90,8 @@ function readRelations(root: string): KnowledgeRelation[] {
   const path = join(root, 'knowledge', 'relations.md');
   if (!existsSync(path)) return [];
   const { fields } = splitFrontmatter(readFileSync(path, 'utf8'));
-  if (fields.schemaVersion !== KNOWLEDGE_SCHEMA_VERSION) {
-    throw new Error('knowledge/relations.md: schemaVersion must be ' + KNOWLEDGE_SCHEMA_VERSION);
+  if (fields.schemaVersion !== AUTHOR_SCHEMA_VERSION) {
+    throw new Error('knowledge/relations.md: schemaVersion must be ' + AUTHOR_SCHEMA_VERSION);
   }
   if (!Array.isArray(fields.relations)) throw new Error('knowledge/relations.md: relations must be a list');
   const seen = new Set<string>();

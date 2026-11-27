@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 黄州寒食诗帖
 titleEn: Cold Food Poems
 aliases: []
 studyCategory: tie
 dynastyId: northern-song
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1082
-  month: null
-  end: 1082
-  endMonth: null
-  era: null
-  original: null
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1082
+dateMonth: null
+dateEnd: 1082
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-hanshi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 黄州寒食诗帖

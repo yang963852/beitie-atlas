@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 宋徽宗詩帖 卷
 publisher: 國立故宮博物院 National Palace Museum

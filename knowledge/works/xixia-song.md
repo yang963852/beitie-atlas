@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 西狭颂
 titleEn: Xixia Song
 aliases:
@@ -9,16 +9,15 @@ aliases:
 studyCategory: bei
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: 171
-  month: 6
-  end: 171
-  endMonth: 6
-  era: 东汉建宁四年
-  original: 东汉灵帝建宁四年（171）六月十三日
-  certainty: documented
-  note: The source gives a day; the date model stores months, so the day stays in the original wording.
+dateKind: single
+dateStart: 171
+dateMonth: 6
+dateEnd: 171
+dateEndMonth: 6
+dateEra: 东汉建宁四年
+dateOriginal: 东汉灵帝建宁四年（171）六月十三日
+dateCertainty: documented
+dateNote: The source gives a day; the date model stores months, so the day stays in the original wording.
 script: 隶书
 attribution:
   - role: calligrapher
@@ -31,8 +30,7 @@ attribution:
     noteZh: 成县页面记碑文末刻有书写者「仇靖」二字，为摩崖刻石留名较早之例；页面未区分撰文与书丹。
 sources:
   - src-chengxian-xixia
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 西狭颂

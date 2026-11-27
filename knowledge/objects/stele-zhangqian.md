@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: zhangqian-bei
 objectType: original-stele
 titleZh: 张迁碑（原石）
 titleEn: Stele of Zhang Qian, original stone
-date:
-  kind: single
-  start: 186
-  month: null
-  end: 186
-  endMonth: null
-  era: null
-  original: 东汉中平三年（186年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 186
+dateMonth: null
+dateEnd: 186
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉中平三年（186年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taian-daimiao
-  sources:
-    - src-taian-zhangqian-holding
-    - src-taian-dai-museum-site
-  accessedAt: 2026-11-18
-  asOf: null
-  note: A 2025 museum activity report identifies the stele as a Tai’an Museum holding. The site introduction associates the museum with Dai Temple; the object’s display or storage location is unspecified.
-  noteZh: 2025 年馆方活动报道列张迁碑为泰安市博物馆馆藏。岱庙介绍确认博物馆设在岱庙，未说明原石的具体展出或存放位置。
+collectionKind: collection-institution
+collectionPlace: place-taian-daimiao
+collectionSources:
+  - src-taian-zhangqian-holding
+  - src-taian-dai-museum-site
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: A 2025 museum activity report identifies the stele as a Tai’an Museum holding. The site introduction associates the museum with Dai Temple; the object’s display or storage location is unspecified.
+collectionNoteZh: 2025 年馆方活动报道列张迁碑为泰安市博物馆馆藏。岱庙介绍确认博物馆设在岱庙，未说明原石的具体展出或存放位置。
 events:
   - id: ev-stele-zhangqian-1
     type: discovery
-    date:
-      kind: unknown
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: null
-      original: 明初
-      certainty: approximate
-      note: Only the era wording is recorded; no year is given.
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 明初
+    dateCertainty: approximate
+    dateNote: Only the era wording is recorded; no year is given.
     place: null
     placeWording: null
     summary: The album note says the stone was unearthed in the early Ming. It gives no year, place, or source for the find.
@@ -48,8 +44,7 @@ events:
     sources:
       - src-ltfc-zhuyunge
     certainty: approximate
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 张迁碑（原石）

@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: zhongqiu
 objectType: manuscript-copy
 titleZh: 《中秋帖》（传王献之，后世临本）
 titleEn: Mid-Autumn Letter, manuscript copy
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: null
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: null
 catalogNumber: 新00145170
-dimensions:
-  raw: 纵27厘米，横11.9厘米
-  note: null
+dimensionsRaw: 纵27厘米，横11.9厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-228204
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-228204
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: event-zhongqiu-1
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 清乾隆时期
-      original: 清乾隆时期
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 清乾隆时期
+    dateOriginal: 清乾隆时期
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The Qianlong emperor counted the scroll among the Three Rarities.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-dpm-228204
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 《中秋帖》（传王献之，后世临本）

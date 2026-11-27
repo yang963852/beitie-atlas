@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 古诗四帖
 titleEn: Four Poems in Cursive Script
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 唐
-  original: 唐
-  certainty: approximate
-  note: 卷无年款，馆方展览说明列于唐，年代依传称。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 唐
+dateOriginal: 唐
+dateCertainty: approximate
+dateNote: 卷无年款，馆方展览说明列于唐，年代依传称。
 script: 狂草
 attribution:
   - role: calligrapher
@@ -30,8 +29,7 @@ attribution:
 sources:
   - src-lnm-gushisitie
   - src-lnd-gushisitie
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 古诗四帖

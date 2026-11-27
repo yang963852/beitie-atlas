@@ -1,19 +1,18 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 晋祠博物馆
 nameEn: Jinci Museum
 historicalName: null
 kind: institution
-coordinates:
-  longitude: 112.43579
-  latitude: 37.708318
-  precision: institution
-  method: secondary-database
-  verification: unverified
-  sources:
-    - src-wikidata-jinci-site
-  note: Representative coordinate for the Jinci complex; the object’s position was not surveyed.
-  noteZh: 此点代表晋祠院落范围，未经实地核对，不对应实物的具体位置。
+coordinateLongitude: 112.43579
+coordinateLatitude: 37.708318
+coordinatePrecision: institution
+coordinateMethod: secondary-database
+coordinateVerification: unverified
+coordinateSources:
+  - src-wikidata-jinci-site
+coordinateNote: Representative coordinate for the Jinci complex; the object’s position was not surveyed.
+coordinateNoteZh: 此点代表晋祠院落范围，未经实地核对，不对应实物的具体位置。
 sources: []
 notes:
   - The 唐碑亭 (贞观宝翰亭) inside the shrine holds the 646 original and a 1772 recarving side by side.

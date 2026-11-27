@@ -1,48 +1,44 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shen-ce-jun-bei
 objectType: rubbing
 titleZh: 神策军碑（宋拓孤本）
 titleEn: Stele of the Shence Army, unique Song rubbing
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 宋
-  original: 宋拓
-  certainty: approximate
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 宋
+dateOriginal: 宋拓
+dateCertainty: approximate
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 27 开、54 页；通高 34.3 厘米，通宽 46 厘米
-  note: Cut-and-mounted album; the lower volume is lost.
+dimensionsRaw: 27 开、54 页；通高 34.3 厘米，通宽 46 厘米
+dimensionsNote: Cut-and-mounted album; the lower volume is lost.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-nlc
-  sources:
-    - src-nlc-shence-museum
-    - src-ccdy-shence
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The National Library’s National Museum of Classic Books lists the surviving rubbing in its collection. The return and accession are recorded separately.
-  noteZh: 国家典籍博物馆著录此存世拓本。购回与入藏经过另列流转事件。
+collectionKind: collection-institution
+collectionPlace: place-nlc
+collectionSources:
+  - src-nlc-shence-museum
+  - src-ccdy-shence
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The National Library’s National Museum of Classic Books lists the surviving rubbing in its collection. The return and accession are recorded separately.
+collectionNoteZh: 国家典籍博物馆著录此存世拓本。购回与入藏经过另列流转事件。
 events:
   - id: evt-shence-1965-return
     type: accession
-    date:
-      kind: single
-      start: 1965
-      month: null
-      end: 1965
-      endMonth: null
-      era: null
-      original: 1965 年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1965
+    dateMonth: null
+    dateEnd: 1965
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 1965 年
+    dateCertainty: documented
+    dateNote: null
     place: place-nlc
     placeWording: 北京图书馆（今中国国家图书馆）
     summary: Bought back from Hong Kong with government funds and deposited in the National Library, together with six other rubbings and books.
@@ -50,8 +46,7 @@ events:
     sources:
       - src-ccdy-shence
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 神策军碑（宋拓孤本）

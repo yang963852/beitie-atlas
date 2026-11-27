@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: jiuchenggong-liquan-ming
 objectType: original-stele
 titleZh: 九成宫醴泉铭（原石）
 titleEn: Sweet Spring at Jiucheng Palace, original stone
-date:
-  kind: single
-  start: 632
-  month: null
-  end: 632
-  endMonth: null
-  era: null
-  original: 唐贞观六年（632）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 632
+dateMonth: null
+dateEnd: 632
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐贞观六年（632）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-jiuchenggong-site
-  sources:
-    - src-baoji-jiuchenggong
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The bureau lists the stele among the monuments surviving inside the protected palace site.
-  noteZh: 文物局答复函将该碑列为遗址内现存的碑刻之一。
+collectionKind: in-situ
+collectionPlace: place-jiuchenggong-site
+collectionSources:
+  - src-baoji-jiuchenggong
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The bureau lists the stele among the monuments surviving inside the protected palace site.
+collectionNoteZh: 文物局答复函将该碑列为遗址内现存的碑刻之一。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 九成宫醴泉铭（原石）

@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 祭侄文稿
 titleEn: Draft Requiem for a Nephew
 aliases: []
 studyCategory: tie
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 758
-  month: null
-  end: 758
-  endMonth: null
-  era: null
-  original: null
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 758
+dateMonth: null
+dateEnd: 758
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-jizhi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 祭侄文稿

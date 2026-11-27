@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: yan-jiamiao-bei
 objectType: original-stele
 titleZh: 颜氏家庙碑（原石）
 titleEn: Stele of the Yan Family Shrine, original stone
-date:
-  kind: single
-  start: 780
-  month: null
-  end: 780
-  endMonth: null
-  era: 唐建中元年
-  original: 唐建中元年（780年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 780
+dateMonth: null
+dateEnd: 780
+dateEndMonth: null
+dateEra: 唐建中元年
+dateOriginal: 唐建中元年（780年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 高338厘米
-  note: The museum gives the height only. Width, thickness and the dimensions of the head and base are not stated on the cited page.
+dimensionsRaw: 高338厘米
+dimensionsNote: The museum gives the height only. Width, thickness and the dimensions of the head and base are not stated on the cited page.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-yanjiamiao
-  accessedAt: 2026-11-23
-  asOf: null
-  note: The museum's entry describes the stele as held at the Xi'an Beilin Museum and among the earliest stones moved to the present site. It does not give a hall or a display status.
-  noteZh: 馆方条目记此碑藏西安碑林博物馆，且为移入今址最早的碑石之一。未记陈列殿堂与展出状态。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-yanjiamiao
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: The museum's entry describes the stele as held at the Xi'an Beilin Museum and among the earliest stones moved to the present site. It does not give a hall or a display status.
+collectionNoteZh: 馆方条目记此碑藏西安碑林博物馆，且为移入今址最早的碑石之一。未记陈列殿堂与展出状态。
 events:
   - id: ev-stele-yan-jiamiao-1
     type: relocation
-    date:
-      kind: single
-      start: 982
-      month: null
-      end: 982
-      endMonth: null
-      era: 北宋太平兴国七年
-      original: 北宋太平兴国七年（982年）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 982
+    dateMonth: null
+    dateEnd: 982
+    dateEndMonth: null
+    dateEra: 北宋太平兴国七年
+    dateOriginal: 北宋太平兴国七年（982年）
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 京兆府文庙
     summary: After the stone had fallen in open country, it was moved into the prefectural Confucian temple and re-erected; the Song colophon under the first line records this.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-beilin-yanjiamiao
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 颜氏家庙碑（原石）

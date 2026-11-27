@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 迴元观钟楼铭
 titleEn: Bell Tower Inscription of the Huiyuan Abbey
 aliases: []
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 836
-  month: null
-  end: 836
-  endMonth: null
-  era: null
-  original: 唐开成元年（836）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 836
+dateMonth: null
+dateEnd: 836
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐开成元年（836）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: author
@@ -32,8 +31,7 @@ attribution:
       - src-beilin-huiyuan
 sources:
   - src-beilin-huiyuan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 迴元观钟楼铭

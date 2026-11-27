@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 曲靖一中爨文化园建筑设计工程
 publisher: 云南省文物考古研究所

@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 中国国家图书馆
 nameEn: National Library of China
 historicalName: null
 kind: institution
-coordinates: null
 sources: []
 notes:
   - Holds the only surviving volume of the 神策军碑 rubbing, acquired in 1965.

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 〔唐〕颜真卿书《多宝塔感应碑》
 publisher: 文化艺术报

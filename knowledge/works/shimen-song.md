@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 石门颂
 titleEn: Eulogy of Shimen
 aliases: []
 studyCategory: bei
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: 148
-  month: null
-  end: 148
-  endMonth: null
-  era: null
-  original: 东汉建和二年（148年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 148
+dateMonth: null
+dateEnd: 148
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉建和二年（148年）
+dateCertainty: documented
+dateNote: null
 script: 隶书
 attribution:
   - role: author
@@ -27,16 +26,14 @@ attribution:
 sources:
   - src-cssn-shaanxi-beike
   - src-hantai-shimen-thirteen
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people: []
-  objects:
-    - cliff-shimen-song
-  sources:
-    - src-cssn-shaanxi-beike
-    - src-hantai-shimen-thirteen
+reviewState: reviewed
+guideState: reviewed
+guidePeople: []
+guideObjects:
+  - cliff-shimen-song
+guideSources:
+  - src-cssn-shaanxi-beike
+  - src-hantai-shimen-thirteen
 ---
 
 # 石门颂

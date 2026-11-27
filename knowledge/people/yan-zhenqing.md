@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 颜真卿
 titleEn: Yan Zhenqing
 aliases: []

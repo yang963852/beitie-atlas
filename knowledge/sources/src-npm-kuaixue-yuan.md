@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 王義之《快雪時晴帖》在元代的接受與認識
 publisher: 國立故宮博物院《故宮學術季刊》

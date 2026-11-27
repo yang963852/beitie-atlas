@@ -15,28 +15,26 @@
 
 读帖观察欢迎中文原稿。请写明观察人、具体版本、哪一字或哪一行、别人怎样复看。第三方图片可给原始链接；申请收录图片时附作者、来源、许可和署名方式。保留相冲突的著录和各自出处。一般投稿只走一条路径即可。
 
-想新写一篇，可以在 [作品](../knowledge/works)、[书家](../knowledge/people)、[读帖笔记](../knowledge/notes)或[实物](../knowledge/objects)目录点 **Add file → Create new file**，用小写英文字母、数字与短横线起一个便于引用的文件名，以 `.md` 结尾。先复制对应的[中文模板](../knowledge/_templates/)，把 `schemaVersion: 1` 保留在顶部。作品与实物的日期、署名、出处和审核状态写在 YAML；背景、待考和导读写进正文。参考[现有作品](../knowledge/works/yan-qinli-bei.md)，正文用下列结构：
+想新写一篇，可以在 [作品](../knowledge/works)、[书家](../knowledge/people)、[读帖笔记](../knowledge/notes)或[实物](../knowledge/objects)目录点 **Add file → Create new file**，用小写英文字母、数字与短横线起一个便于引用的文件名，以 `.md` 结尾。先复制对应的[中文模板](../knowledge/_templates/)，把 `schemaVersion: 2` 保留在顶部。作品与实物的日期、署名、出处和审核状态写在 YAML；背景、待考和导读写进正文。参考[现有作品](../knowledge/works/yan-qinli-bei.md)，正文用下列结构：
 
 ```markdown
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 作品题名
 studyCategory: bei
 dynastyId: tang
-date:
-  kind: single
-  start: 779
-  end: 779
-  certainty: documented
+dateKind: single
+dateStart: 779
+dateEnd: 779
+dateCertainty: documented
 attribution:
   - role: author-and-calligrapher
     name: 姓名
     certainty: documented
     sources: [src-example]
 sources: [src-example]
-review:
-  state: draft
-  note: 还缺什么证据
+reviewState: draft
+reviewNote: 还缺什么证据
 ---
 
 # 作品题名
@@ -79,17 +77,16 @@ review:
 
 ## 导读七段规范
 
-作品导读不是独立文件，而是作品 Markdown 的 `guide:` 前置字段加正文 `## 导读` 段落。现有 schema 只承载导读的状态、时间轴年份、关联人物、关联实物与来源；七段是正文编辑规范，用 `####` 标题写在 `### 中文` 与 `### English` 之内，不新增字段。
+作品导读不是独立文件，而是作品 Markdown 的 `guide*` 前置字段加正文 `## 导读` 段落。现有 schema 只承载导读的状态、时间轴年份、关联人物、关联实物与来源；七段是正文编辑规范，用 `####` 标题写在 `### 中文` 与 `### English` 之内，不新增字段。
 
 ### 记录头
 
 ```yaml
-guide:
-  state: draft          # 审读前一律 draft
-  timelineYear: 156     # 有时间轴意义的年份，整数
-  people: []            # 正文实际提到的人物 id
-  objects: []           # 正文实际引用的实物 id
-  sources: []           # 正文全部外部事实的来源 id
+guideState: draft          # 审读前一律 draft
+guideTimelineYear: 156     # 有时间轴意义的年份，整数
+guidePeople: []            # 正文实际提到的人物 id
+guideObjects: []           # 正文实际引用的实物 id
+guideSources: []           # 正文全部外部事实的来源 id
 ```
 
 ### 七段与各段要求
@@ -109,7 +106,7 @@ guide:
 - 中英成对：`### 中文` 与 `### English` 各写一份七段，英文是中文的翻译，不增事实，不是机器翻译占位。
 - 冲突并列，不取平均；结构化字段留空，冲突写进当段与 07。
 - 每句事实给链接或“作者《篇名》卷/页”；转引写“转引自”，不伪装成亲见原书。
-- `guide.people`、`guide.objects`、`guide.sources` 必须与正文实际引用一致，id 真实存在。
+- `guidePeople`、`guideObjects`、`guideSources` 必须与正文实际引用一致，id 真实存在。
 - 审读前 `state: draft`；审读后由审读人确认再改 `reviewed`，实施者不能自审自批。
 
 ## 下载完整知识库，改一篇再提 PR

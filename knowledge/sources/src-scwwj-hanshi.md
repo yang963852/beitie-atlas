@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 从《黄州寒食帖》题跋印章考察其庋藏递传历史
 publisher: 四川省文物局（转载四川新闻网）

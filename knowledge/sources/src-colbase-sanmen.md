@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 楷书《玄妙观重修三门记》卷（ColBase）
 publisher: 日本国立文化财机构 National Institutes for Cultural Heritage

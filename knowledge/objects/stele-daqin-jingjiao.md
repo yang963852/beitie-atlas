@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: daqin-jingjiao-bei
 objectType: original-stele
 titleZh: 大秦景教流行中国碑（原石）
 titleEn: Stele of the Diffusion of the Luminous Religion, original stone
-date:
-  kind: single
-  start: 781
-  month: null
-  end: 781
-  endMonth: null
-  era: null
-  original: 唐建中二年（781）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 781
+dateMonth: null
+dateEnd: 781
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐建中二年（781）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 碑身 193 × 96 厘米
-  note: Body only; the museum page gives no total height with the turtle base.
+dimensionsRaw: 碑身 193 × 96 厘米
+dimensionsNote: Body only; the museum page gives no total height with the turtle base.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-jingjiao
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum page states that the stone was moved into the Beilin in October 1907 and is displayed there.
-  noteZh: 馆方页面称此碑于 1907 年 10 月移入碑林并陈列于此。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-jingjiao
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum page states that the stone was moved into the Beilin in October 1907 and is displayed there.
+collectionNoteZh: 馆方页面称此碑于 1907 年 10 月移入碑林并陈列于此。
 events:
   - id: evt-daqin-1625-discovery
     type: discovery
-    date:
-      kind: range
-      start: 1623
-      month: null
-      end: 1625
-      endMonth: null
-      era: null
-      original: 明代天启五年（1625）初春
-      certainty: disputed
-      note: The endpoints are two alternative dates in Beilin publications.
+    dateKind: range
+    dateStart: 1623
+    dateMonth: null
+    dateEnd: 1625
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 明代天启五年（1625）初春
+    dateCertainty: disputed
+    dateNote: The endpoints are two alternative dates in Beilin publications.
     place: null
     placeWording: null
     summary: Two Beilin articles give different find dates and location descriptions. The collection catalogue places the find near Chongren Temple in 1625; the other article gives western Xi’an in 1623.
@@ -52,16 +48,15 @@ events:
     certainty: disputed
   - id: evt-daqin-1907-move
     type: relocation
-    date:
-      kind: single
-      start: 1907
-      month: 10
-      end: 1907
-      endMonth: 10
-      era: null
-      original: 1907 年 10 月 2—6 日
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1907
+    dateMonth: 10
+    dateEnd: 1907
+    dateEndMonth: 10
+    dateEra: null
+    dateOriginal: 1907 年 10 月 2—6 日
+    dateCertainty: documented
+    dateNote: null
     place: place-xian-beilin-museum
     placeWording: 西安碑林
     summary: Moved into the Beilin after a purchase attempt by the Danish collector Holm was stopped; only his copy left the country.
@@ -69,8 +64,7 @@ events:
     sources:
       - src-beilin-jingjiao
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 大秦景教流行中国碑（原石）

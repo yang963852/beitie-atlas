@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 武威《仪礼》简：天下第一简
 publisher: 人民网 People’s Daily Online

@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 天发神谶碑
 titleEn: Stele of the Heavenly Omen
 aliases: []
 studyCategory: bei
 dynastyId: three-kingdoms
 dynastyQualifier: 孙吴
-date:
-  kind: single
-  start: 276
-  month: null
-  end: 276
-  endMonth: null
-  era: null
-  original: 吴天玺元年（276年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 276
+dateMonth: null
+dateEnd: 276
+dateEndMonth: null
+dateEra: null
+dateOriginal: 吴天玺元年（276年）
+dateCertainty: documented
+dateNote: null
 script: null
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: 故宫条目载相传为皇象书，并指出无确据。
 sources:
   - src-dpm-tianfa
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 天发神谶碑

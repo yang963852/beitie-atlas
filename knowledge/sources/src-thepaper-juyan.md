@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 国际博物馆日｜解锁兰州这些博物馆的“镇馆之宝”
 publisher: 澎湃新闻 The Paper

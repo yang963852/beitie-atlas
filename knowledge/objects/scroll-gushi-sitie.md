@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: gushi-sitie
 objectType: ink-manuscript
 titleZh: 古诗四帖卷
 titleEn: Four Poems, handscroll
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 唐
-  original: 唐
-  certainty: approximate
-  note: 卷无年款，馆方列于唐。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 唐
+dateOriginal: 唐
+dateCertainty: approximate
+dateNote: 卷无年款，馆方列于唐。
 catalogNumber: null
-dimensions:
-  raw: 纵29.5厘米，横195.2厘米
-  note: 尺寸依报纸报道，未据馆方著录复核。
+dimensionsRaw: 纵29.5厘米，横195.2厘米
+dimensionsNote: 尺寸依报纸报道，未据馆方著录复核。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-liaoning-museum
-  sources:
-    - src-lnm-gushisitie
-  accessedAt: 2026-11-24
-  asOf: null
-  note: The museum exhibition list records the scroll among its holdings.
-  noteZh: 馆方展览清单记此卷为馆藏。
+collectionKind: collection-institution
+collectionPlace: place-liaoning-museum
+collectionSources:
+  - src-lnm-gushisitie
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: The museum exhibition list records the scroll among its holdings.
+collectionNoteZh: 馆方展览清单记此卷为馆藏。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 古诗四帖卷

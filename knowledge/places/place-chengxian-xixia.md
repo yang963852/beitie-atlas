@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 西狭颂摩崖（成县）
 nameEn: Xixia Song cliff, Cheng County
 historicalName: null
 kind: historical-site
-coordinates: null
 sources:
   - src-chengxian-xixia
 notes:

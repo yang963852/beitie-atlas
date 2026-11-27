@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 台北故宫博物院
 nameEn: National Palace Museum, Taipei
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-catalogue-shupu
 notes: []

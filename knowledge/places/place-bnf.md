@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 法国国家图书馆
 nameEn: Bibliothèque nationale de France
 historicalName: null
 kind: institution
-coordinates: null
 sources: []
 notes:
   - Holds the Dunhuang rubbing of the 温泉铭 as Pelliot chinois 4508.

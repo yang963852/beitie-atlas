@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 行穰帖
 titleEn: Xingrang Letter
 aliases: []
 studyCategory: tie
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 东晋
-  original: null
-  certainty: documented
-  note: 馆方题名系于东晋，帖无年款。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 东晋
+dateOriginal: null
+dateCertainty: documented
+dateNote: 馆方题名系于东晋，帖无年款。
 script: null
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: 归属指原信，存世一本为唐代双钩摹本，应是信札前半。
 sources:
   - src-shm-xingrang
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 行穰帖

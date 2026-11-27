@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: zheng-wengong
 objectType: cliff-inscription
 titleZh: 郑文公下碑
 titleEn: Lower inscription for Duke Wen of Zheng
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北魏
-  original: 北魏
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北魏
+dateOriginal: 北魏
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-zheng-lower
-  sources:
-    - src-laizhou-yunfeng
-    - src-yantai-zheng
-  accessedAt: 2026-11-19
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: in-situ
+collectionPlace: place-zheng-lower
+collectionSources:
+  - src-laizhou-yunfeng
+  - src-yantai-zheng
+collectionAccessedAt: 2026-11-19
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: ev-zheng-wengong-lower-1
     type: carving
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 北魏
-      original: 北魏
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 北魏
+    dateOriginal: 北魏
+    dateCertainty: documented
+    dateNote: null
     place: place-zheng-lower
     placeWording: 莱州云峰山
     summary: Lower inscription carved on Mount Yunfeng, Laizhou.
@@ -49,8 +45,7 @@ events:
       - src-laizhou-yunfeng
       - src-yantai-zheng
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 郑文公下碑

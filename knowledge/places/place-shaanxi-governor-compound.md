@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 陕西省长公署（旧址）
 nameEn: Shaanxi provincial governor's compound (former site)
 historicalName: 省长公署
 kind: historical-site
-coordinates: null
 sources:
   - src-beilin-article-2007
 notes:

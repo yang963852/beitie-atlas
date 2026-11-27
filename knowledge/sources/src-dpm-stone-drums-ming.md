@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 明拓战国石鼓文册
 publisher: 故宫博物院 The Palace Museum

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 爨龙颜碑
 titleEn: Stele of Cuan Longyan
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: northern-and-southern
 dynastyQualifier: 南朝宋
-date:
-  kind: single
-  start: 458
-  month: null
-  end: 458
-  endMonth: null
-  era: 南朝宋孝武帝大明二年
-  original: 大明二年（458年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 458
+dateMonth: null
+dateEnd: 458
+dateEndMonth: null
+dateEra: 南朝宋孝武帝大明二年
+dateOriginal: 大明二年（458年）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: unknown
@@ -31,8 +30,7 @@ attribution:
 sources:
   - src-yn-dct-cuan
   - src-ynxc-cuan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 爨龙颜碑

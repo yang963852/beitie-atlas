@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: zhanghan
 objectType: manuscript-copy
 titleZh: 欧阳询《张翰帖》（唐人钩填本）
 titleEn: Letter on Zhang Han, manuscript copy
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 唐
-  original: 唐人钩填本
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 唐
+dateOriginal: 唐人钩填本
+dateCertainty: documented
+dateNote: null
 catalogNumber: 故00002895-3/10
-dimensions:
-  raw: 纵25.1厘米，横31.7厘米
-  note: null
+dimensionsRaw: 纵25.1厘米，横31.7厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-234567
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-234567
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: event-zhanghan-1
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 南宋
-      original: 南宋
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 南宋
+    dateOriginal: 南宋
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: This sheet belonged to the Southern Song imperial collection.
@@ -51,16 +47,15 @@ events:
     certainty: documented
   - id: event-zhanghan-2
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 清
-      original: 清
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 清
+    dateOriginal: 清
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: An Qi collected this sheet before it entered the Qianlong imperial collection.
@@ -68,8 +63,7 @@ events:
     sources:
       - src-dpm-234567
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 欧阳询《张翰帖》（唐人钩填本）
