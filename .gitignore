@@ -16,3 +16,13 @@ Thumbs.db
 .trae/
 /public/download/*.zip
 
+# Obsidian: the shared vault config under knowledge/.obsidian is tracked so a
+# contributor opens the library with the right property types and templates.
+# Everything below is per-machine state and must never reach the repository.
+knowledge/.obsidian/workspace*.json
+knowledge/.obsidian/cache
+knowledge/.obsidian/plugins/
+knowledge/.obsidian/themes/
+knowledge/.obsidian/hotkeys.json
+knowledge/.obsidian/community-plugins.json
+

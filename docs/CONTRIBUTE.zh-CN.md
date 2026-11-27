@@ -56,6 +56,14 @@ reviewNote: 还缺什么证据
 
 新建、改题或调整审核状态可能使知识总目需要更新。编辑可在同一投稿 PR 运行 `npm run knowledge:compile && npm run knowledge:generate` 并提交生成结果；如果投稿人使用 Fork，由编辑与投稿人协商分支更新或关联整理 PR。你可以始终只用浏览器。
 
+## 在 Obsidian 里编辑
+
+把 `knowledge/` 文件夹作为仓库（Vault）打开，会加载随仓库提交的配置：属性类型按 schema v2 预设，模板文件夹指向 `_templates/`，阅读视图使用 `snippets/reading.css`。这些文件在 `knowledge/.obsidian/`，只含共享设置；个人的窗口布局、插件、主题与快捷键不会进入 git。
+
+- 在属性面板里直接编辑扁平字段（`titleZh`、`dateStart`、`reviewState` 等），不要改回 v1 的嵌套写法；嵌套的 `date:`、`collection:` 会让构建失败。
+- 新建记录选对应模板，替换占位内容，文件名保持小写稳定 ID。
+- 提交前仍要运行 `npm run knowledge:compile && npm run knowledge:generate`；Obsidian 不会替你检查证据、引用和双语对齐。
+
 ## 来源六条硬规则
 
 | 材料 | 可否引用 | 记录方式 | 常见误用 |
