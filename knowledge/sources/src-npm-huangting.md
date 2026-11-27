@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 宋拓晉唐小楷(一) 冊 晉王羲之書黃庭經
 publisher: 國立故宮博物院數位典藏 National Palace Museum Digital Archives

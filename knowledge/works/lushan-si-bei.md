@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 麓山寺碑
 titleEn: Stele of Lushan Temple
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 730
-  month: null
-  end: 730
-  endMonth: null
-  era: null
-  original: 唐开元十八年（730）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 730
+dateMonth: null
+dateEnd: 730
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐开元十八年（730）
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: author-and-calligrapher
@@ -28,8 +27,7 @@ attribution:
       - src-csjypt-lushan
 sources:
   - src-csjypt-lushan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 麓山寺碑

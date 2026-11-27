@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 中山王 铁足铜鼎
 publisher: 河北博物院 Hebei Museum

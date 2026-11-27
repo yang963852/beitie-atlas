@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 洛阳龙门石窟
 nameEn: Longmen Grottoes, Luoyang
 historicalName: 伊阙
 kind: historical-site
-coordinates: null
 sources:
   - src-gmw-shipinggong
   - src-shanghai-ly-shipinggong

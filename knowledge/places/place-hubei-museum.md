@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 湖北省博物馆
 nameEn: Hubei Provincial Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-hbww-shuihudi
 notes:

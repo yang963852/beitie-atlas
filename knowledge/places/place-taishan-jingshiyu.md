@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 泰山经石峪
 nameEn: Jingshi Valley, Mount Tai
 historicalName: 经石峪
 kind: historical-site
-coordinates: null
 sources:
   - src-taian-jingshiyu
 notes:

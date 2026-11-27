@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 好太王碑
 titleEn: Stele of King Gwanggaeto the Great
 aliases:
@@ -9,16 +9,15 @@ aliases:
 studyCategory: bei
 dynastyId: eastern-jin
 dynastyQualifier: 高句丽
-date:
-  kind: single
-  start: 414
-  month: null
-  end: 414
-  endMonth: null
-  era: 晋义熙十年
-  original: 晋义熙十年（414年）
-  certainty: documented
-  note: The gazetteer's entry heading gives 晋义熙十年 (414) as the year the stele was erected.
+dateKind: single
+dateStart: 414
+dateMonth: null
+dateEnd: 414
+dateEndMonth: null
+dateEra: 晋义熙十年
+dateOriginal: 晋义熙十年（414年）
+dateCertainty: documented
+dateNote: The gazetteer's entry heading gives 晋义熙十年 (414) as the year the stele was erected.
 script: 隶书
 attribution:
   - role: sponsor
@@ -41,8 +40,7 @@ attribution:
 sources:
   - src-jl-dfz-haotaiwang
   - src-jl-dfz-haotaiwang-alt
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 好太王碑

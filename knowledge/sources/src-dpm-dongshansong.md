@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 【王獻之行書東山松帖頁】
 publisher: 故宮博物院 The Palace Museum

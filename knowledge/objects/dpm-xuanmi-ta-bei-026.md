@@ -1,23 +1,21 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: xuanmi-ta-bei
 objectType: rubbing
 titleZh: 玄秘塔碑（故宫明初拓册）
 titleEn: Stele of the Xuanmi Pagoda, rubbing
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 明
-  original: 明初拓
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 明
+dateOriginal: 明初拓
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00072378
-dimensions:
-  raw: 每页纵27.3厘米，横16.3厘米
-  note: null
+dimensionsRaw: 每页纵27.3厘米，横16.3厘米
+dimensionsNote: null
 survival: surviving
 relationships:
   - type: rubbing-of
@@ -26,18 +24,16 @@ relationships:
       - src-dpm-259370
       - src-beilin-xuanmita
     note: null
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-259370
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-259370
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 玄秘塔碑（故宫明初拓册）

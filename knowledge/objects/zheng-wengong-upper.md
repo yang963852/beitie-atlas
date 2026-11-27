@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: zheng-wengong
 objectType: cliff-inscription
 titleZh: 郑文公上碑
 titleEn: Upper inscription for Duke Wen of Zheng
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北魏
-  original: 北魏
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北魏
+dateOriginal: 北魏
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-zheng-upper
-  sources:
-    - src-pingdu-tianzhu
-    - src-yantai-zheng
-  accessedAt: 2026-11-19
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: in-situ
+collectionPlace: place-zheng-upper
+collectionSources:
+  - src-pingdu-tianzhu
+  - src-yantai-zheng
+collectionAccessedAt: 2026-11-19
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: ev-zheng-wengong-upper-1
     type: carving
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 北魏
-      original: 北魏
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 北魏
+    dateOriginal: 北魏
+    dateCertainty: documented
+    dateNote: null
     place: place-zheng-upper
     placeWording: 平度天柱山
     summary: Upper inscription carved on Mount Tianzhu, Pingdu.
@@ -49,8 +45,7 @@ events:
       - src-pingdu-tianzhu
       - src-yantai-zheng
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 郑文公上碑

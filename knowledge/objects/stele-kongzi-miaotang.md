@@ -1,36 +1,32 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: kongzi-miaotang-bei
 objectType: recarving
 titleZh: 孔子庙堂碑（西庙堂·宋刻）
 titleEn: Stele of the Confucius Temple, Western Hall recut
-date:
-  kind: range
-  start: 961
-  month: null
-  end: 964
-  endMonth: null
-  era: 北宋建隆二年至乾德二年
-  original: 北宋建隆二年至乾德二年（961—964）
-  certainty: documented
-  note: The provincial summary gives the range for Wang Yanchao's recut.
+dateKind: range
+dateStart: 961
+dateMonth: null
+dateEnd: 964
+dateEndMonth: null
+dateEra: 北宋建隆二年至乾德二年
+dateOriginal: 北宋建隆二年至乾德二年（961—964）
+dateCertainty: documented
+dateNote: The provincial summary gives the range for Wang Yanchao's recut.
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-kongzi-miaotang
-    - src-shaanxi-wwz-kongzi
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Both pages place the 西庙堂 recut in the Xi'an Beilin Museum. Neither gives a gallery, an accession date, or an exhibition status.
-  noteZh: 两处页面都记西庙堂本藏西安碑林博物馆。均未给出展厅、入藏时间或展出状态。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-kongzi-miaotang
+  - src-shaanxi-wwz-kongzi
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Both pages place the 西庙堂 recut in the Xi'an Beilin Museum. Neither gives a gallery, an accession date, or an exhibition status.
+collectionNoteZh: 两处页面都记西庙堂本藏西安碑林博物馆。均未给出展厅、入藏时间或展出状态。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 孔子庙堂碑（西庙堂·宋刻）

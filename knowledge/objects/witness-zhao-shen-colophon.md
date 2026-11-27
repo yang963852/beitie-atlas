@@ -1,38 +1,34 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: zhao-puchu-shen-colophon
 objectType: ink-manuscript
 titleZh: 行书跋沈尹默论书札卷（赵朴初跋）
 titleEn: Zhao Puchu’s colophon to Shen Yinmo’s letters
-date:
-  kind: single
-  start: 1976
-  month: null
-  end: 1976
-  endMonth: null
-  era: null
-  original: 1976年
-  certainty: documented
-  meaning: colophon
-  note: null
+dateKind: single
+dateStart: 1976
+dateMonth: null
+dateEnd: 1976
+dateEndMonth: null
+dateEra: null
+dateOriginal: 1976年
+dateCertainty: documented
+dateMeaning: colophon
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 高20.8厘米，宽10.0厘米
-  note: 馆方所记赵朴初跋一段的尺寸；沈尹默原札另记尺寸。
+dimensionsRaw: 高20.8厘米，宽10.0厘米
+dimensionsNote: 馆方所记赵朴初跋一段的尺寸；沈尹默原札另记尺寸。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-shanghai-museum
-  sources:
-    - src-shm-zhao-shen-colophon
-  accessedAt: 2026-11-24
-  asOf: null
-  note: The museum entry names the holding institution but gives no storage room or display status.
-  noteZh: 馆方条目只记收藏单位，未给库房或展出状态。
+collectionKind: collection-institution
+collectionPlace: place-shanghai-museum
+collectionSources:
+  - src-shm-zhao-shen-colophon
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: The museum entry names the holding institution but gives no storage room or display status.
+collectionNoteZh: 馆方条目只记收藏单位，未给库房或展出状态。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 行书跋沈尹默论书札卷（赵朴初跋）

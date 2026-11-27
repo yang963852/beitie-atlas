@@ -1,36 +1,32 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: longzang-si-bei
 objectType: original-stele
 titleZh: 龙藏寺碑（原石）
 titleEn: Longzang Temple stele, original stone
-date:
-  kind: single
-  start: 586
-  month: null
-  end: 586
-  endMonth: null
-  era: 隋开皇六年
-  original: 隋开皇六年（586年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 586
+dateMonth: null
+dateEnd: 586
+dateEndMonth: null
+dateEra: 隋开皇六年
+dateOriginal: 隋开皇六年（586年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-zhengding-longxing-si
-  sources:
-    - src-people-longzang
-    - src-sjzgov-longzang
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Both pages state that the stone still stands inside 隆兴寺 in 正定, sheltered by a stele pavilion. Neither gives the pavilion's position within the complex.
-  noteZh: 两处页面均记此碑仍在正定隆兴寺内，置于碑亭中。均未给出碑亭在寺院中的位置。
+collectionKind: in-situ
+collectionPlace: place-zhengding-longxing-si
+collectionSources:
+  - src-people-longzang
+  - src-sjzgov-longzang
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Both pages state that the stone still stands inside 隆兴寺 in 正定, sheltered by a stele pavilion. Neither gives the pavilion's position within the complex.
+collectionNoteZh: 两处页面均记此碑仍在正定隆兴寺内，置于碑亭中。均未给出碑亭在寺院中的位置。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 龙藏寺碑（原石）

@@ -1,7 +1,7 @@
 {
   "name": "beitie-atlas",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Between Steles — a learning library of Chinese calligraphy, its makers and surviving witnesses from antiquity to the present",
   "type": "module",
   "engines": {
@@ -20,8 +20,11 @@
     "check:docs": "node scripts/check-board.mjs",
     "knowledge:compile": "tsx scripts/knowledge-compile.ts",
     "knowledge:generate": "tsx scripts/knowledge-catalogue.ts",
+    "knowledge:migrate": "tsx scripts/knowledge-migrate.ts",
+    "contrib:new": "tsx scripts/contrib-new.ts",
     "check:knowledge": "tsx scripts/knowledge-catalogue.ts --check",
     "knowledge:status": "tsx scripts/knowledge-status.ts",
+    "knowledge:query": "tsx scripts/knowledge-query.ts",
     "check:status": "tsx scripts/knowledge-status.ts --check",
     "check:interface": "tsx scripts/knowledge-compile.ts --check",
     "check:isolation": "tsx scripts/check-isolation.ts",

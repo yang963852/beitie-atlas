@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 汉中市博物馆
 nameEn: Hanzhong Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-cssn-shaanxi-beike
 notes:

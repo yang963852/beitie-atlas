@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 江苏大学戏曲传承基地推出《瘗鹤铭》京剧之歌
 publisher: 江苏省文化和旅游厅 Jiangsu Provincial Department of Culture and Tourism

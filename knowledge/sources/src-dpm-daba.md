@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 书画交辉——赵孟頫的艺术成就（楷书帝师胆巴碑卷）
 publisher: 故宫博物院 The Palace Museum

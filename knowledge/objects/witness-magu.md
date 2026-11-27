@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: magu
 objectType: rubbing
 titleZh: 麻姑仙坛记（翻刻旧拓）
 titleEn: Record of the Immortal Altar, rubbing
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: null
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: null
 catalogNumber: 新00045727
-dimensions:
-  raw: 34.8×40.8厘米
-  note: null
+dimensionsRaw: 34.8×40.8厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-catalogue-magu
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-catalogue-magu
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 麻姑仙坛记（翻刻旧拓）

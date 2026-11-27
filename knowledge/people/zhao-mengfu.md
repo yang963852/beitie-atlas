@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 赵孟頫
 titleEn: Zhao Mengfu
 aliases: []

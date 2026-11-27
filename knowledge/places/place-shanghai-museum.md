@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 上海博物馆
 nameEn: Shanghai Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-shm-zhao-shen-colophon
 notes:

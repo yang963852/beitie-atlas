@@ -1,36 +1,32 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: sanmen-ji
 objectType: ink-manuscript
 titleZh: 楷书玄妙观重修三门记卷
 titleEn: Draft of the Record of the Three Gates
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 元
-  original: 元代 14世纪
-  certainty: approximate
-  note: The museum dates the scroll to the fourteenth century and records no writing year.
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 元
+dateOriginal: 元代 14世纪
+dateCertainty: approximate
+dateNote: The museum dates the scroll to the fourteenth century and records no writing year.
 catalogNumber: TB-1461
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-tokyo-national-museum
-  sources:
-    - src-tnm-sanmen
-    - src-colbase-sanmen
-  accessedAt: 2026-11-23
-  asOf: null
-  note: The museum catalogues the scroll as TB-1461 in its East Asian calligraphy section. Neither record states how or when the scroll entered the collection.
-  noteZh: 馆方将其编入东洋书法类，机构管理序号 TB-1461。两处均未记入藏经过与年份。
+collectionKind: collection-institution
+collectionPlace: place-tokyo-national-museum
+collectionSources:
+  - src-tnm-sanmen
+  - src-colbase-sanmen
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: The museum catalogues the scroll as TB-1461 in its East Asian calligraphy section. Neither record states how or when the scroll entered the collection.
+collectionNoteZh: 馆方将其编入东洋书法类，机构管理序号 TB-1461。两处均未记入藏经过与年份。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 楷书玄妙观重修三门记卷

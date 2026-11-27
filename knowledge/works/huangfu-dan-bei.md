@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 皇甫诞碑
 titleEn: Stele of Huangfu Dan
 aliases: []
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: No carving year is stated in the audited museum entry.
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: No carving year is stated in the audited museum entry.
 script: 楷书
 attribution:
   - role: author
@@ -32,8 +31,7 @@ attribution:
       - src-beilin-huangfudan
 sources:
   - src-beilin-huangfudan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 皇甫诞碑

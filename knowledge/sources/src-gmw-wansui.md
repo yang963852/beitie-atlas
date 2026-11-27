@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 那些有故事的镇馆之宝（唐摹王羲之一门书翰卷）
 publisher: 光明网博物馆频道 Guangming Online

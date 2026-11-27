@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 冯承素
 titleEn: Feng Chengsu
 aliases: []

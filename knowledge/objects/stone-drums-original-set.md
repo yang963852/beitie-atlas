@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: stone-drum-inscriptions
 objectType: original-stele
 titleZh: 秦石鼓（原石十件）
 titleEn: Qin Stone Drums, original set of ten
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 先秦
-  original: 秦国遗物，确切年代未定
-  certainty: disputed
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 先秦
+dateOriginal: 秦国遗物，确切年代未定
+dateCertainty: disputed
+dateNote: null
 catalogNumber: 故00000991
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-stone-drums
-    - src-dpm-stone-drums-ming
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Catalogue holding; no current exhibition claim.
-  noteZh: 按机构著录记录收藏，不据此判断当前是否展出。
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-stone-drums
+  - src-dpm-stone-drums-ming
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Catalogue holding; no current exhibition claim.
+collectionNoteZh: 按机构著录记录收藏，不据此判断当前是否展出。
 events:
   - id: stone-drums-original-set-north-song
     type: relocation
-    date:
-      kind: range
-      start: 1107
-      month: null
-      end: 1110
-      endMonth: null
-      era: null
-      original: 大观年间
-      certainty: documented
-      note: null
+    dateKind: range
+    dateStart: 1107
+    dateMonth: null
+    dateEnd: 1110
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 大观年间
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: A Palace Museum lecture account places the drums in the Jigugu Pavilion of Baohe Hall after their move to Bianliang during the Daguan era.
@@ -50,16 +46,15 @@ events:
     certainty: documented
   - id: stone-drums-original-set-wartime
     type: relocation
-    date:
-      kind: single
-      start: 1933
-      month: null
-      end: 1933
-      endMonth: null
-      era: null
-      original: null
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1933
+    dateMonth: null
+    dateEnd: 1933
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: In 1933 the original drums went south with objects from the Imperial Academy and other institutions. They returned after the war; the wider evacuation route is not a verified itinerary for the drums.
@@ -67,8 +62,7 @@ events:
     sources:
       - src-dpm-stone-drums-transmission
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 秦石鼓（原石十件）

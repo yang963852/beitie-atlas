@@ -1,0 +1,12 @@
+{
+  "attachmentFolderPath": "_attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "works",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "defaultViewMode": "preview"
+}

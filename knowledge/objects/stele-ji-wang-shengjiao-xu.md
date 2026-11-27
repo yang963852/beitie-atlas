@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: ji-wang-shengjiao-xu
 objectType: original-stele
 titleZh: 大唐三藏圣教序碑（原石）
 titleEn: Assembled Wang Xizhi Sacred Teaching Stele, original stone
-date:
-  kind: single
-  start: 672
-  month: null
-  end: 672
-  endMonth: null
-  era: null
-  original: 唐咸亨三年（672年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 672
+dateMonth: null
+dateEnd: 672
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐咸亨三年（672年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 高350厘米，宽100厘米
-  note: Museum entry; 30 lines, seven Buddha figures on the head.
+dimensionsRaw: 高350厘米，宽100厘米
+dimensionsNote: Museum entry; 30 lines, seven Buddha figures on the head.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-shengjiaoxu
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum entry describes the assembled characters and the stele head; the assembly process and the stone’s later history are not documented there.
-  noteZh: 馆方条目记述集字与碑首形制，未记集字过程与此后流转。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-shengjiaoxu
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum entry describes the assembled characters and the stele head; the assembly process and the stone’s later history are not documented there.
+collectionNoteZh: 馆方条目记述集字与碑首形制，未记集字过程与此后流转。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 大唐三藏圣教序碑（原石）

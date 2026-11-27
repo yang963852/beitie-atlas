@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 「博物馆奇妙夜——我为国宝发声」活动即将启动啦！
 publisher: 天津博物馆

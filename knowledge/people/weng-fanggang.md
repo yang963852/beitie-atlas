@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 翁方纲
 titleEn: Weng Fanggang
 aliases: []

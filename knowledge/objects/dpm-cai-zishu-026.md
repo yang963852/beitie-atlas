@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: cai-zishu
 objectType: ink-manuscript
 titleZh: 蔡襄《自书诗卷》
 titleEn: Scroll of Poems in the Author’s Hand, ink manuscript
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北宋
-  original: 北宋
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北宋
+dateOriginal: 北宋
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00044433
-dimensions:
-  raw: 纵28.2厘米，横221.2厘米
-  note: null
+dimensionsRaw: 纵28.2厘米，横221.2厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-228526
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-228526
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 蔡襄《自书诗卷》

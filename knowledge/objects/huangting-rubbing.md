@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: huangting
 objectType: rubbing
 titleZh: 宋拓晋唐小楷册·黄庭经
 titleEn: Song rubbing of the Yellow Court Classic, from an album of Jin and Tang small regular script
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 宋
-  original: 宋拓
-  certainty: documented
-  note: 馆方品名作「宋拓」，未记具体拓制年份。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 宋
+dateOriginal: 宋拓
+dateCertainty: documented
+dateNote: 馆方品名作「宋拓」，未记具体拓制年份。
 catalogNumber: 故帖00000800003
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-npm-huangting
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The record describes one volume of seven leaves, fourteen panels, under this inventory number.
-  noteZh: 馆方著录记一册七开、本幅七开十四幅，并列此文物编号。
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-npm-huangting
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The record describes one volume of seven leaves, fourteen panels, under this inventory number.
+collectionNoteZh: 馆方著录记一册七开、本幅七开十四幅，并列此文物编号。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 宋拓晋唐小楷册·黄庭经

@@ -1,45 +1,41 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: hanshi
 objectType: ink-manuscript
 titleZh: 苏轼《黄州寒食诗帖》
 titleEn: Cold Food Poems
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: null
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: null
 catalogNumber: 購書001001N000000000
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-catalogue-hanshi
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-catalogue-hanshi
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: witness-hanshi-kikuchi
     type: custody
-    date:
-      kind: unknown
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: null
-      original: null
-      certainty: unknown
-      note: null
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: null
     place: null
     placeWording: null
     summary: The museum catalogue records the sale of this scroll by Yan Yunbo to Kikuchi Seitō. A transaction date is not assigned here.
@@ -49,16 +45,15 @@ events:
     certainty: unknown
   - id: witness-hanshi-wang
     type: custody
-    date:
-      kind: unknown
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: null
-      original: null
-      certainty: unknown
-      note: null
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: null
     place: null
     placeWording: null
     summary: A National Palace Museum article records that Wang Shijie later arranged to buy the scroll back from Japan.
@@ -66,8 +61,7 @@ events:
     sources:
       - src-npm-hanshi-wang
     certainty: unknown
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 苏轼《黄州寒食诗帖》

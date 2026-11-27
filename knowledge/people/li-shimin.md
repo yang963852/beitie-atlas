@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 李世民
 titleEn: Li Shimin
 aliases: []

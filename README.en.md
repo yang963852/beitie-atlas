@@ -71,7 +71,7 @@ npm run dev
 
 ## Status and limitations
 
-- The site is public on GitHub Pages with the **1.1 edition** of the library: every entry has passed the release gate and editorial confirmation. Open questions and conflicting accounts stay in each record's 待考 and claims sections rather than being resolved by assertion. See the [release runbook](docs/release.md).
+- The site is public on GitHub Pages with the **1.2 edition** of the library: every entry has passed the release gate and editorial confirmation. Open questions and conflicting accounts stay in each record's 待考 and claims sections rather than being resolved by assertion. See the [release runbook](docs/release.md).
 - The live basemap depends on the Tianditu network service; without a key, or when tiles are refused, the map shows a coordinate schematic. Observed access varies by network and must be tested locally; the project does not guarantee it.
 - Quotations, collection images and map services retain their own terms.
 

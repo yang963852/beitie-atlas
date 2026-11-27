@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: yan-qinli-bei
 objectType: rubbing
 titleZh: 颜勤礼碑（民国拓本）
 titleEn: Yan Qinli Stele, Republican-era rubbing
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 民国
-  original: 民国拓本
-  certainty: documented
-  note: The catalogue gives only the era label. The year the rubbing was taken is not recorded, so no year is stored.
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 民国
+dateOriginal: 民国拓本
+dateCertainty: documented
+dateNote: The catalogue gives only the era label. The year the rubbing was taken is not recorded, so no year is stored.
 catalogNumber: 新00045406
-dimensions:
-  raw: 31.8×37.7厘米
-  note: Axis order is not stated in the catalogue entry.
+dimensionsRaw: 31.8×37.7厘米
+dimensionsNote: Axis order is not stated in the catalogue entry.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-yan-qinli-rubbing
-  accessedAt: 2026-11-17
-  asOf: null
-  note: Published in the Palace Museum's online collection catalogue under museum object number 新00045406. The entry does not state a storage room, gallery, or exhibition status, and it gives no date for the holding.
-  noteZh: 著录于故宫博物院线上藏品目录，馆藏编号新00045406。条目没有说明库房、展厅或展出状态，也没有给出入藏时间。
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-yan-qinli-rubbing
+collectionAccessedAt: 2026-11-17
+collectionAsOf: null
+collectionNote: Published in the Palace Museum's online collection catalogue under museum object number 新00045406. The entry does not state a storage room, gallery, or exhibition status, and it gives no date for the holding.
+collectionNoteZh: 著录于故宫博物院线上藏品目录，馆藏编号新00045406。条目没有说明库房、展厅或展出状态，也没有给出入藏时间。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 颜勤礼碑（民国拓本）

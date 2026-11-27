@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 宣示表
 titleEn: Memorial of Declaration
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: three-kingdoms
 dynastyQualifier: 曹魏
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: 本帖为钟繇上魏文帝曹丕的奏文，来源未记写作年份。
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: 本帖为钟繇上魏文帝曹丕的奏文，来源未记写作年份。
 script: 小楷
 attribution:
   - role: author
@@ -38,8 +37,7 @@ attribution:
     noteZh: 刻本多称据王羲之临本摹刻，此说为传称，未见直接证据。
 sources:
   - src-dpm-xuanshi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 宣示表

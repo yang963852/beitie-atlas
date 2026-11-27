@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 峄山刻石
 titleEn: Mount Yi Inscription
 aliases: []
 studyCategory: bei
 dynastyId: qin
 dynastyQualifier: null
-date:
-  kind: single
-  start: -219
-  month: null
-  end: -219
-  endMonth: null
-  era: null
-  original: 公元前219年
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: -219
+dateMonth: null
+dateEnd: -219
+dateEndMonth: null
+dateEra: null
+dateOriginal: 公元前219年
+dateCertainty: documented
+dateNote: null
 script: 小篆
 attribution:
   - role: calligrapher
@@ -26,8 +25,7 @@ attribution:
       - src-beilin-yishan
 sources:
   - src-beilin-yishan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 峄山刻石

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 三门记
 titleEn: Record of the Three Gates of the Xuanmiao Abbey
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: yuan
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 元
-  original: 元代 14世纪
-  certainty: approximate
-  note: The museum dates the scroll to fourteenth-century Yuan and states that no writing year is recorded. The national database infers an age of 49 to 56 from the text and Zhao Mengfu's offices; that inference is not converted into a year here.
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 元
+dateOriginal: 元代 14世纪
+dateCertainty: approximate
+dateNote: The museum dates the scroll to fourteenth-century Yuan and states that no writing year is recorded. The national database infers an age of 49 to 56 from the text and Zhao Mengfu's offices; that inference is not converted into a year here.
 script: 楷书
 attribution:
   - role: author
@@ -39,16 +38,14 @@ attribution:
 sources:
   - src-tnm-sanmen
   - src-colbase-sanmen
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people: []
-  objects:
-    - sanmen-scroll
-  sources:
-    - src-tnm-sanmen
-    - src-colbase-sanmen
+reviewState: reviewed
+guideState: reviewed
+guidePeople: []
+guideObjects:
+  - sanmen-scroll
+guideSources:
+  - src-tnm-sanmen
+  - src-colbase-sanmen
 ---
 
 # 三门记

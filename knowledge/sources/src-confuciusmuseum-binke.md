@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 暑期攻略｜阅览碑刻 品读千年石墨精华
 publisher: 孔子博物馆 Confucius Museum

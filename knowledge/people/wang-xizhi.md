@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 王羲之
 titleEn: Wang Xizhi
 aliases:

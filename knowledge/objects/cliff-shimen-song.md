@@ -1,45 +1,41 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shimen-song
 objectType: cliff-inscription
 titleZh: 石门颂（摩崖）
 titleEn: Eulogy of Shimen, cliff inscription
-date:
-  kind: single
-  start: 148
-  month: null
-  end: 148
-  endMonth: null
-  era: null
-  original: 东汉建和二年（148年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 148
+dateMonth: null
+dateEnd: 148
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉建和二年（148年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-hanzhong-museum
-  sources:
-    - src-hantai-shimen-thirteen
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The district government names the Shimen Song among the inscriptions removed and collected by the Hanzhong Museum.
-  noteZh: 汉台区政府把《石门颂》列为凿迁入藏汉中市博物馆的石刻之一。
+collectionKind: collection-institution
+collectionPlace: place-hanzhong-museum
+collectionSources:
+  - src-hantai-shimen-thirteen
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The district government names the Shimen Song among the inscriptions removed and collected by the Hanzhong Museum.
+collectionNoteZh: 汉台区政府把《石门颂》列为凿迁入藏汉中市博物馆的石刻之一。
 events:
   - id: ev-cliff-shimen-song-1
     type: relocation
-    date:
-      kind: approximate
-      start: 1970
-      month: null
-      end: 1970
-      endMonth: null
-      era: null
-      original: 上世纪七十年代初
-      certainty: approximate
-      note: The source gives an approximate period rather than a precise date.
+    dateKind: approximate
+    dateStart: 1970
+    dateMonth: null
+    dateEnd: 1970
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 上世纪七十年代初
+    dateCertainty: approximate
+    dateNote: The source gives an approximate period rather than a precise date.
     place: place-hanzhong-museum
     placeWording: 汉中市博物馆（古汉台）
     summary: Selected Shimen inscriptions were removed during the reservoir project and transferred to Hanzhong Museum for preservation.
@@ -47,8 +43,7 @@ events:
     sources:
       - src-hantai-shimen-thirteen
     certainty: approximate
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 石门颂（摩崖）

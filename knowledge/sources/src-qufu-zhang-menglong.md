@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 北魏•张猛龙碑（魏鲁郡太守张府君清颂之碑）
 publisher: 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery

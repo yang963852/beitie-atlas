@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 李邕为《麓山寺碑》撰文并书
 publisher: 长沙记忆（长沙市地方志编纂室内容平台）Changsha Memory

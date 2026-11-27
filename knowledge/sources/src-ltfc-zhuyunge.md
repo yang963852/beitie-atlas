@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 竹云阁帖（石门颂、神君碑、张迁碑、礼器碑）
 publisher: 中华珍宝馆

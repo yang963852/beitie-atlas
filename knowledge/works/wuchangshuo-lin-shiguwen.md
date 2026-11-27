@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 吴昌硕临石鼓文轴
 titleEn: Hanging Scroll after the Stone Drums
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: republic
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1915
-  month: 5
-  end: 1915
-  endMonth: 5
-  era: null
-  original: 1915年夏五月
-  certainty: documented
-  note: 款“乙卯夏五月客沪上，吴昌硕”，乙卯为1915年。
+dateKind: single
+dateStart: 1915
+dateMonth: 5
+dateEnd: 1915
+dateEndMonth: 5
+dateEra: null
+dateOriginal: 1915年夏五月
+dateCertainty: documented
+dateNote: 款“乙卯夏五月客沪上，吴昌硕”，乙卯为1915年。
 script: 篆书
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: 轴有吴昌硕款印，馆方系于其七十一岁。
 sources:
   - src-dpm-wuchangshuo
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 吴昌硕临石鼓文轴

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 陆机草隶书平复帖卷
 publisher: 故宫博物院 The Palace Museum

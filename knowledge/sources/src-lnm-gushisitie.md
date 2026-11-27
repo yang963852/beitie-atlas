@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 姑苏繁华图、张旭草书四帖领衔，看一看辽博哪些藏品将亮相“姑苏繁华”特展
 publisher: 辽宁省博物馆 Liaoning Provincial Museum

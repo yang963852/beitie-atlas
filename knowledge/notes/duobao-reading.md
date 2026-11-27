@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 读《多宝塔碑》时，先找碑额上的“塔”
 titleEn: Find the character 塔 in the Duobao heading
 people: [yan-zhenqing]

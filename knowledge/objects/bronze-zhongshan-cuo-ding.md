@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: zhongshan-wang-cuo-ding
 objectType: bronze-vessel
 titleZh: 中山王厝铁足铜鼎
 titleEn: Iron-legged bronze ding of King Cuo of Zhongshan
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 战国·中山
-  original: 战国
-  certainty: approximate
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 战国·中山
+dateOriginal: 战国
+dateCertainty: approximate
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 高51.5厘米
-  note: 铜身铁足，战国中山王墓出土九鼎中的首鼎。
+dimensionsRaw: 高51.5厘米
+dimensionsNote: 铜身铁足，战国中山王墓出土九鼎中的首鼎。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-hebei-museum
-  sources:
-    - src-hebei-zhongshan
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The museum records the 1977 excavation and the 469-character inscription.
-  noteZh: 馆方记1977年出土与469字铭文。
+collectionKind: collection-institution
+collectionPlace: place-hebei-museum
+collectionSources:
+  - src-hebei-zhongshan
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The museum records the 1977 excavation and the 469-character inscription.
+collectionNoteZh: 馆方记1977年出土与469字铭文。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 中山王厝铁足铜鼎

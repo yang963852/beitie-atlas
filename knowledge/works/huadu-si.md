@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 化度寺邕禅师舍利塔铭
 titleEn: Huadu Temple Stupa Inscription
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 唐
-  original: 唐
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 唐
+dateOriginal: 唐
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
       - src-curator-siou
 sources:
   - src-curator-siou
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 化度寺邕禅师舍利塔铭

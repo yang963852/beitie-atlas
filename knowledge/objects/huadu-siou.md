@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: huadu-si
 objectType: rubbing
 titleZh: 化度寺塔铭（四欧堂本）
 titleEn: Huadu Temple inscription, Si’ou Hall album
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 宋
-  original: 宋
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 宋
+dateOriginal: 宋
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-shanghai-library
-  sources:
-    - src-shlibrary-tang
-    - src-curator-siou
-  accessedAt: 2026-11-19
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-shanghai-library
+collectionSources:
+  - src-shlibrary-tang
+  - src-curator-siou
+collectionAccessedAt: 2026-11-19
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: ev-huadu-siou-1915
     type: custody
-    date:
-      kind: single
-      start: 1915
-      month: null
-      end: 1915
-      endMonth: null
-      era: null
-      original: 1915年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1915
+    dateMonth: null
+    dateEnd: 1915
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 1915年
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: Pan Jingshu brought this album from Pan Zuyin’s collection into the Wu household on her marriage, together with two other Ouyang Xun rubbings.
@@ -50,16 +46,15 @@ events:
     certainty: documented
   - id: ev-huadu-siou-1926
     type: custody
-    date:
-      kind: single
-      start: 1926
-      month: null
-      end: 1926
-      endMonth: null
-      era: null
-      original: 1926年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1926
+    dateMonth: null
+    dateEnd: 1926
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 1926年
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: Wu Hufan placed the four Song rubbing albums in one case and named the set Si Ou Bao Ji.
@@ -67,8 +62,7 @@ events:
     sources:
       - src-curator-siou
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 化度寺塔铭（四欧堂本）

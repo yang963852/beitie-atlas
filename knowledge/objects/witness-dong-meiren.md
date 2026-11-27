@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: dong-meiren
 objectType: rubbing
 titleZh: 董美人墓志（清拓本）
 titleEn: Epitaph of Dong Meiren, rubbing
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 清
-  original: 清拓本
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 清
+dateOriginal: 清拓本
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00046539
-dimensions:
-  raw: 140.5×72.0厘米
-  note: null
+dimensionsRaw: 140.5×72.0厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-catalogue-dong-meiren
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-catalogue-dong-meiren
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 董美人墓志（清拓本）

@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 陆良薛官堡
 nameEn: Xueguanbao, Luliang
 historicalName: 贞元堡
 kind: historical-site
-coordinates: null
 sources:
   - src-ynxc-cuan
 notes:

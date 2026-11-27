@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shanhu
 objectType: ink-manuscript
 titleZh: 米芾《珊瑚帖》
 titleEn: Coral Letter, ink manuscript
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北宋
-  original: 北宋
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北宋
+dateOriginal: 北宋
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00092904-1/2
-dimensions:
-  raw: 纵26.6厘米，横47.1厘米
-  note: null
+dimensionsRaw: 纵26.6厘米，横47.1厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-231255
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-231255
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 米芾《珊瑚帖》

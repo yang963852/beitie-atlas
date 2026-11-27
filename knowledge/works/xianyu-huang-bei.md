@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 鲜于璜碑
 titleEn: Stele of Xianyu Huang
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: 165
-  month: null
-  end: 165
-  endMonth: null
-  era: 东汉延熹八年
-  original: 东汉延熹八年（165年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 165
+dateMonth: null
+dateEnd: 165
+dateEndMonth: null
+dateEra: 东汉延熹八年
+dateOriginal: 东汉延熹八年（165年）
+dateCertainty: documented
+dateNote: null
 script: 隶书
 attribution:
   - role: unknown
@@ -31,8 +30,7 @@ attribution:
 sources:
   - src-tjbwg-xianyu-1
   - src-tjbwg-xianyu-2
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 鲜于璜碑

@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: guodian-chujian
 objectType: ink-manuscript
 titleZh: 郭店楚简（《老子》甲、乙、丙）
 titleEn: Guodian Chu slips, Laozi A, B and C
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 战国中期
-  original: 战国中期
-  certainty: approximate
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 战国中期
+dateOriginal: 战国中期
+dateCertainty: approximate
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-jingmen-museum
-  sources:
-    - src-jmm-guodian
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The museum records the 1993 rescue excavation and the corpus of 804 slips.
-  noteZh: 馆方记1993年抢救性发掘与804枚竹简。
+collectionKind: collection-institution
+collectionPlace: place-jingmen-museum
+collectionSources:
+  - src-jmm-guodian
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The museum records the 1993 rescue excavation and the corpus of 804 slips.
+collectionNoteZh: 馆方记1993年抢救性发掘与804枚竹简。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 郭店楚简（《老子》甲、乙、丙）

@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shimen-ming
 objectType: cliff-inscription
 titleZh: 石门铭（摩崖）
 titleEn: Shimen Inscription, cliff block
-date:
-  kind: single
-  start: 509
-  month: null
-  end: 509
-  endMonth: null
-  era: 北魏永平二年
-  original: 北魏宣武帝永平二年（509）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 509
+dateMonth: null
+dateEnd: 509
+dateEndMonth: null
+dateEra: 北魏永平二年
+dateOriginal: 北魏宣武帝永平二年（509）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-hanzhong-museum
-  sources:
-    - src-gqb-shimen-thirteen
-    - src-cnr-shimen-ming
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Both pages place the inscription in 汉中市博物馆 after its removal from the cliff. Neither gives a gallery, an accession date, or a measured size.
-  noteZh: 两处页面都记此刻已从崖壁移入汉中市博物馆。均未给出展厅、入藏时间或实测尺寸。
+collectionKind: collection-institution
+collectionPlace: place-hanzhong-museum
+collectionSources:
+  - src-gqb-shimen-thirteen
+  - src-cnr-shimen-ming
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Both pages place the inscription in 汉中市博物馆 after its removal from the cliff. Neither gives a gallery, an accession date, or a measured size.
+collectionNoteZh: 两处页面都记此刻已从崖壁移入汉中市博物馆。均未给出展厅、入藏时间或实测尺寸。
 events:
   - id: event-shimen-ming-removal
     type: relocation
-    date:
-      kind: unknown
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: null
-      original: null
-      certainty: unknown
-      note: The cited pages state that the cliff face was cut out and moved, but neither dates the operation.
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: The cited pages state that the cliff face was cut out and moved, but neither dates the operation.
     place: null
     placeWording: null
     summary: The inscription was cut from the cliff and moved into the Hanzhong museum. The year is not recorded by the cited pages.
@@ -48,8 +44,7 @@ events:
     sources:
       - src-cnr-shimen-ming
     certainty: unknown
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 石门铭（摩崖）

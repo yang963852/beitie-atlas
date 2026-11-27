@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 韭花帖
 titleEn: Letter on Leek Flowers
 aliases: []
 studyCategory: tie
 dynastyId: five-dynasties
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 五代
-  original: 五代
-  certainty: documented
-  note: 帖末只署“七月十一日”，无年份；馆方定于五代。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 五代
+dateOriginal: 五代
+dateCertainty: documented
+dateNote: 帖末只署“七月十一日”，无年份；馆方定于五代。
 script: 行楷
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
 sources:
   - src-wuxi-jiuhua
   - src-wuxi-jiuhua-entry
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 韭花帖

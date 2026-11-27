@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 西汉刻石：五凤刻石
 publisher: 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery

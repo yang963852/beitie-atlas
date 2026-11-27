@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shusu
 objectType: ink-manuscript
 titleZh: 米芾《蜀素帖》
 titleEn: Poems on Shu Silk
-date:
-  kind: single
-  start: 1088
-  month: null
-  end: 1088
-  endMonth: null
-  era: null
-  original: 北宋哲宗元祐三年（1088）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1088
+dateMonth: null
+dateEnd: 1088
+dateEndMonth: null
+dateEra: null
+dateOriginal: 北宋哲宗元祐三年（1088）
+dateCertainty: documented
+dateNote: null
 catalogNumber: 故書000071N000000000
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-catalogue-shusu
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-catalogue-shusu
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 米芾《蜀素帖》

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 冯承素行书摹兰亭序卷
 publisher: 故宫博物院

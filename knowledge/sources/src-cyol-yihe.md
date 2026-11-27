@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 一座书法宝库，“浮”在大江之上
 publisher: 中国青年报 China Youth Daily (中青在线)

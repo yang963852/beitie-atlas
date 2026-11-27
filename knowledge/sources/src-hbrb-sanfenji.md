@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 阳冰独步
 publisher: 河北日报 Hebei Daily

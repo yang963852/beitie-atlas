@@ -30,8 +30,92 @@ import type {
   Work,
 } from '../../src/domain/types';
 
+/** Format and schema of the compiled interface consumed by the site and checks. */
 export const KNOWLEDGE_FORMAT_VERSION = 'beitie-knowledge/1';
 export const KNOWLEDGE_SCHEMA_VERSION = 1;
+/** Version of the author frontmatter under `knowledge/`, independent of the interface. */
+export const AUTHOR_SCHEMA_VERSION = 2;
+
+/**
+ * Every top-level frontmatter key each record type may carry.
+ *
+ * The compiler rejects anything outside this table, so a field that no reader
+ * consumes — a leftover nested v1 block, a renamed key, a typo — stops the
+ * build instead of vanishing from the site without a trace. Add the name here
+ * in the same change that teaches a reader to consume it.
+ */
+export const FIELD_NAMES: Readonly<Record<string, readonly string[]>> = {
+  works: [
+    'schemaVersion',
+    'titleZh', 'titleEn', 'aliases', 'attribution',
+    'studyCategory', 'dynastyId', 'dynastyQualifier', 'script',
+    'dateKind', 'dateStart', 'dateMonth', 'dateEnd', 'dateEndMonth',
+    'dateEra', 'dateOriginal', 'dateCertainty', 'dateMeaning', 'dateNote',
+    'sources', 'claims',
+    'reviewState', 'reviewNote', 'reviewNoteZh',
+    'guideState', 'guideTimelineYear', 'guidePeople', 'guideObjects', 'guideSources',
+  ],
+  objects: [
+    'schemaVersion',
+    'work', 'objectType', 'titleZh', 'titleEn', 'catalogNumber',
+    'dateKind', 'dateStart', 'dateMonth', 'dateEnd', 'dateEndMonth',
+    'dateEra', 'dateOriginal', 'dateCertainty', 'dateMeaning', 'dateNote',
+    'dimensionsRaw', 'dimensionsNote', 'survival',
+    'relationships', 'events', 'media',
+    'collectionKind', 'collectionPlace', 'collectionSources',
+    'collectionAccessedAt', 'collectionAsOf', 'collectionNote', 'collectionNoteZh',
+    'attribution',
+    'versionLabel', 'versionBasis', 'versionSources', 'versionNote', 'versionNoteZh',
+    'reviewState', 'reviewNote', 'reviewNoteZh',
+    'claims',
+  ],
+  people: [
+    'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases',
+  ],
+  // Notes share the person reader and add `people`, read directly by the compiler.
+  notes: [
+    'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases', 'people',
+  ],
+  places: [
+    'schemaVersion', 'nameZh', 'nameEn', 'historicalName', 'kind', 'sources', 'notes', 'notesZh',
+    'coordinateLongitude', 'coordinateLatitude', 'coordinatePrecision', 'coordinateMethod',
+    'coordinateVerification', 'coordinateSources', 'coordinateNote', 'coordinateNoteZh',
+  ],
+  sources: [
+    'schemaVersion', 'kind', 'title', 'publisher', 'url',
+    'publicationDate', 'accessedAt', 'locator', 'note',
+  ],
+};
+
+/** Keys `knowledge/relations.md` itself may carry. */
+export const RELATION_FILE_FIELDS = ['schemaVersion', 'relations'] as const;
+/** Keys each entry under `relations:` may carry. */
+export const RELATION_FIELDS = ['from', 'to', 'type', 'labelZh', 'labelEn', 'sourceRefs', 'state'] as const;
+
+/** Template that documents each record type's field list, for error messages. */
+const FIELD_GUIDE: Readonly<Record<string, string>> = {
+  works: 'work', objects: 'object', people: 'person', notes: 'note', places: 'place', sources: 'source',
+};
+
+/**
+ * Reject a frontmatter key that no reader consumes.
+ *
+ * A key that parses but is never read is the failure mode this guard exists
+ * for: the author sees their edit accepted, and the site silently drops it.
+ */
+export function assertFields(kind: string, fields: Record<string, unknown>, path: string): void {
+  const allowed = FIELD_NAMES[kind];
+  if (!allowed) throw new Error(path + ': no field list is declared for "' + kind + '"');
+  const known = new Set(allowed);
+  const unknown = Object.keys(fields).filter((key) => !known.has(key));
+  if (unknown.length === 0) return;
+  const guide = FIELD_GUIDE[kind] ? 'knowledge/_templates/' + FIELD_GUIDE[kind] + '.md' : 'the schema';
+  throw new Error(
+    path + ': unknown frontmatter ' + (unknown.length === 1 ? 'field ' : 'fields ') +
+    unknown.map((key) => '"' + key + '"').join(', ') +
+    '. Author records use flat v2 keys; see ' + guide + '.',
+  );
+}
 
 export interface GuideInput {
   state: ReviewState;
@@ -115,12 +199,11 @@ export function reviewState(value: unknown, path: string): ReviewState {
   return value;
 }
 
-export function readReview(value: unknown, path: string): { state: ReviewState; note: string | null; noteZh?: string | null } {
-  if (!record(value)) throw new Error(path + ' must be a mapping');
+export function readReview(fields: Record<string, unknown>): { state: ReviewState; note: string | null; noteZh?: string | null } {
   return {
-    state: reviewState(value.state, path + '.state'),
-    note: optionalText(value.note, path + '.note'),
-    ...(value.noteZh == null ? {} : { noteZh: optionalText(value.noteZh, path + '.noteZh') }),
+    state: reviewState(fields.reviewState, 'reviewState'),
+    note: optionalText(fields.reviewNote, 'reviewNote'),
+    ...(fields.reviewNoteZh == null ? {} : { noteZh: optionalText(fields.reviewNoteZh, 'reviewNoteZh') }),
   };
 }
 
@@ -130,29 +213,34 @@ const DATE_MEANINGS = new Set<DateMeaning>([
   'composition', 'publication', 'colophon', 'production', 'discovery', 'accession', 'other',
 ]);
 
-export function readDate(value: unknown, path: string): HistoricalDate {
-  if (!record(value)) throw new Error(path + ' must be a date mapping');
-  const kind = value.kind;
-  if (typeof kind !== 'string' || !DATE_KINDS.has(kind as DateKind)) throw new Error(path + '.kind is invalid');
-  const certainty = value.certainty ?? 'documented';
+/** `date` + `kind` -> `dateKind`; keeps the flat frontmatter and its errors in step. */
+function flatKey(prefix: string, name: string): string {
+  return prefix + name[0].toUpperCase() + name.slice(1);
+}
+
+export function readDate(fields: Record<string, unknown>, prefix: string, at = ''): HistoricalDate {
+  const key = (name: string) => at + flatKey(prefix, name);
+  const kind = fields[flatKey(prefix, 'kind')];
+  if (typeof kind !== 'string' || !DATE_KINDS.has(kind as DateKind)) throw new Error(key('kind') + ' is invalid');
+  const certainty = fields[flatKey(prefix, 'certainty')] ?? 'documented';
   if (typeof certainty !== 'string' || !CERTAINTIES.has(certainty as DateCertainty)) {
-    throw new Error(path + '.certainty is invalid');
+    throw new Error(key('certainty') + ' is invalid');
   }
-  const meaning = value.meaning;
+  const meaning = fields[flatKey(prefix, 'meaning')];
   if (meaning != null && (typeof meaning !== 'string' || !DATE_MEANINGS.has(meaning as DateMeaning))) {
-    throw new Error(path + '.meaning is invalid');
+    throw new Error(key('meaning') + ' is invalid');
   }
   return {
     kind: kind as DateKind,
-    startYear: integer(value.start, path + '.start'),
-    startMonth: integer(value.month, path + '.month'),
-    endYear: integer(value.end, path + '.end'),
-    endMonth: integer(value.endMonth, path + '.endMonth'),
-    eraLabel: optionalText(value.era, path + '.era'),
-    original: optionalText(value.original, path + '.original'),
+    startYear: integer(fields[flatKey(prefix, 'start')], key('start')),
+    startMonth: integer(fields[flatKey(prefix, 'month')], key('month')),
+    endYear: integer(fields[flatKey(prefix, 'end')], key('end')),
+    endMonth: integer(fields[flatKey(prefix, 'endMonth')], key('endMonth')),
+    eraLabel: optionalText(fields[flatKey(prefix, 'era')], key('era')),
+    original: optionalText(fields[flatKey(prefix, 'original')], key('original')),
     certainty: certainty as DateCertainty,
     ...(meaning == null ? {} : { meaning: meaning as DateMeaning }),
-    note: optionalText(value.note, path + '.note'),
+    note: optionalText(fields[flatKey(prefix, 'note')], key('note')),
   };
 }
 
@@ -221,15 +309,16 @@ export function readClaims(value: unknown, path: string): Claim[] | undefined {
   });
 }
 
-export function readVersion(value: unknown, path: string): VersionAssertion | null {
-  if (value == null) return null;
-  if (!record(value)) throw new Error(path + ' must be a mapping or null');
+export function readVersion(fields: Record<string, unknown>): VersionAssertion | null {
+  const hasVersion = ['versionLabel', 'versionBasis', 'versionSources', 'versionNote', 'versionNoteZh']
+    .some((key) => fields[key] != null);
+  if (!hasVersion) return null;
   return {
-    label: text(value.label, path + '.label'),
-    basis: optionalText(value.basis, path + '.basis'),
-    sourceRefs: idList(value.sources, path + '.sources'),
-    note: optionalText(value.note, path + '.note'),
-    ...(value.noteZh == null ? {} : { noteZh: optionalText(value.noteZh, path + '.noteZh') }),
+    label: text(fields.versionLabel, 'versionLabel'),
+    basis: optionalText(fields.versionBasis, 'versionBasis'),
+    sourceRefs: idList(fields.versionSources, 'versionSources'),
+    note: optionalText(fields.versionNote, 'versionNote'),
+    ...(fields.versionNoteZh == null ? {} : { noteZh: optionalText(fields.versionNoteZh, 'versionNoteZh') }),
   };
 }
 
@@ -275,22 +364,23 @@ export function bullets(text: string | null): string[] {
     .filter((line): line is string => Boolean(line));
 }
 
-export function readGuide(value: unknown, body: string, path: string): (GuideInput & { zh: string; en: string }) | null {
-  if (value == null) return null;
-  if (!record(value)) throw new Error(path + ' must be a mapping');
+const GUIDE_KEYS = ['guideState', 'guideTimelineYear', 'guidePeople', 'guideObjects', 'guideSources'] as const;
+
+export function readGuide(fields: Record<string, unknown>, body: string): (GuideInput & { zh: string; en: string }) | null {
+  if (GUIDE_KEYS.every((key) => fields[key] == null)) return null;
   const section = h2Section(body, '导读');
-  if (!section) throw new Error(path + ' requires a "## 导读" body section');
+  if (!section) throw new Error('guide requires a "## 导读" body section');
   const languages = languageSections(section);
-  const year = value.timelineYear;
+  const year = fields.guideTimelineYear;
   if (year != null && (typeof year !== 'number' || !Number.isInteger(year) || year === 0)) {
-    throw new Error(path + '.timelineYear must be a nonzero integer');
+    throw new Error('guideTimelineYear must be a nonzero integer');
   }
   return {
-    state: reviewState(value.state, path + '.state'),
+    state: reviewState(fields.guideState, 'guideState'),
     timelineYear: year == null ? null : year,
-    people: idList(value.people, path + '.people'),
-    objects: idList(value.objects, path + '.objects'),
-    sources: idList(value.sources, path + '.sources'),
+    people: idList(fields.guidePeople, 'guidePeople'),
+    objects: idList(fields.guideObjects, 'guideObjects'),
+    sources: idList(fields.guideSources, 'guideSources'),
     zh: languages.zh,
     en: languages.en,
   };
@@ -334,19 +424,19 @@ export function readWork(recordInput: MarkdownRecord): { work: Work; guide: (Gui
     studyCategory: text(f.studyCategory, 'studyCategory') as StudyCategory,
     dynastyId: text(f.dynastyId, 'dynastyId') as Work['dynastyId'],
     dynastyQualifier: optionalText(f.dynastyQualifier, 'dynastyQualifier'),
-    compositionDate: readDate(f.date, 'date'),
+    compositionDate: readDate(f, 'date'),
     script: optionalText(f.script, 'script'),
     background: body.background,
     ...(body.backgroundZh ? { backgroundZh: body.backgroundZh } : {}),
     sourceRefs: idList(f.sources, 'sources'),
-    review: readReview(f.review, 'review'),
+    review: readReview(f),
     ...(claims ? { claims } : {}),
     notes: body.notes,
     ...(body.notesZh.length ? { notesZh: body.notesZh } : {}),
   };
   if (work.studyCategory !== 'bei' && work.studyCategory !== 'tie') throw new Error('studyCategory must be bei or tie');
   if (work.notesZh && work.notesZh.length !== work.notes.length) throw new Error('notesZh must align with notes');
-  const guide = readGuide(f.guide, recordInput.body, 'guide');
+  const guide = readGuide(f, recordInput.body);
   return { work, guide };
 }
 
@@ -358,18 +448,17 @@ const RELATIONSHIP_TYPES = new Set(['rubbing-of', 'recarving-of', 'fragment-of']
 const LOCATION_KINDS = new Set(['collection-institution', 'in-situ', 'last-known', 'unknown']);
 const EVENT_TYPES = new Set(['composition', 'carving', 'discovery', 'relocation', 'custody', 'rubbing-taken', 'accession', 'documented', 'other']);
 
-function readCollection(value: unknown, path: string): CollectionAssertion {
-  if (!record(value)) throw new Error(path + ' must be a mapping');
-  const kind = text(value.kind, path + '.kind');
-  if (!LOCATION_KINDS.has(kind)) throw new Error(path + '.kind is invalid');
+function readCollection(fields: Record<string, unknown>): CollectionAssertion {
+  const kind = text(fields.collectionKind, 'collectionKind');
+  if (!LOCATION_KINDS.has(kind)) throw new Error('collectionKind is invalid');
   return {
     locationKind: kind as CollectionAssertion['locationKind'],
-    placeId: optionalText(value.place, path + '.place'),
-    sourceRefs: idList(value.sources, path + '.sources'),
-    sourceAccessedAt: text(value.accessedAt, path + '.accessedAt'),
-    assertionAsOf: optionalText(value.asOf, path + '.asOf'),
-    note: optionalText(value.note, path + '.note'),
-    ...(value.noteZh == null ? {} : { noteZh: optionalText(value.noteZh, path + '.noteZh') }),
+    placeId: optionalText(fields.collectionPlace, 'collectionPlace'),
+    sourceRefs: idList(fields.collectionSources, 'collectionSources'),
+    sourceAccessedAt: text(fields.collectionAccessedAt, 'collectionAccessedAt'),
+    assertionAsOf: optionalText(fields.collectionAsOf, 'collectionAsOf'),
+    note: optionalText(fields.collectionNote, 'collectionNote'),
+    ...(fields.collectionNoteZh == null ? {} : { noteZh: optionalText(fields.collectionNoteZh, 'collectionNoteZh') }),
   };
 }
 
@@ -389,7 +478,7 @@ function readEvents(value: unknown, objectId: string, path: string): ProvenanceE
       id: text(item.id, at + '.id'),
       objectId,
       type: type as ProvenanceEvent['type'],
-      date: readDate(item.date, at + '.date'),
+      date: readDate(item, 'date', at + '.'),
       placeId: optionalText(item.place, at + '.place'),
       placeWording: optionalText(item.placeWording, at + '.placeWording'),
       ...(item.referencePlace == null ? {} : { referencePlaceId: optionalText(item.referencePlace, at + '.referencePlace') }),
@@ -449,13 +538,11 @@ export function readObject(recordInput: MarkdownRecord): { object: ObjectRecord;
   if (!OBJECT_TYPES.has(objectType as ObjectType)) throw new Error('objectType is invalid');
   const survival = text(f.survival, 'survival');
   if (!SURVIVAL.has(survival as SurvivalStatus)) throw new Error('survival is invalid');
-  const dimensions = f.dimensions == null ? null : (() => {
-    if (!record(f.dimensions)) throw new Error('dimensions must be a mapping or null');
-    return {
-      raw: text(f.dimensions.raw, 'dimensions.raw'),
-      note: optionalText(f.dimensions.note, 'dimensions.note'),
-    };
-  })();
+  const dimensions = f.dimensionsRaw == null && f.dimensionsNote == null ? null : {
+    raw: text(f.dimensionsRaw, 'dimensionsRaw'),
+    note: optionalText(f.dimensionsNote, 'dimensionsNote'),
+  };
+  const version = readVersion(f);
   const notesSection = h2Section(recordInput.body, '待考');
   let notesZh: string[] = [];
   let notes: string[] = [];
@@ -476,16 +563,16 @@ export function readObject(recordInput: MarkdownRecord): { object: ObjectRecord;
     workId: text(f.work, 'work'),
     objectType: objectType as ObjectType,
     titles: { zh: text(f.titleZh, 'titleZh'), en: optionalText(f.titleEn, 'titleEn') ?? text(f.titleZh, 'titleZh') },
-    productionDate: readDate(f.date, 'date'),
+    productionDate: readDate(f, 'date'),
     catalogNumber: optionalText(f.catalogNumber, 'catalogNumber'),
     dimensions,
     survivalStatus: survival as SurvivalStatus,
     relationships: readRelationships(f.relationships, 'relationships'),
-    currentCollection: readCollection(f.collection, 'collection'),
+    currentCollection: readCollection(f),
     provenanceEvents: readEvents(f.events, recordInput.id, 'events'),
     ...(f.attribution == null ? {} : { attribution: readAttribution(f.attribution, 'attribution') }),
-    ...(f.version == null ? {} : { version: readVersion(f.version, 'version') }),
-    review: readReview(f.review, 'review'),
+    ...(version ? { version } : {}),
+    review: readReview(f),
     ...(claims ? { claims } : {}),
     notes,
     ...(notesZh.length ? { notesZh } : {}),
@@ -559,28 +646,30 @@ export function readPlace(recordInput: MarkdownRecord): Place {
   const kind = text(f.kind, 'kind');
   if (!PLACE_KINDS.has(kind)) throw new Error('kind is invalid');
   let coordinates: Coordinates | null = null;
-  if (f.coordinates != null) {
-    if (!record(f.coordinates)) throw new Error('coordinates must be a mapping or null');
-    const precision = text(f.coordinates.precision, 'coordinates.precision');
-    const method = text(f.coordinates.method, 'coordinates.method');
-    const verification = text(f.coordinates.verification, 'coordinates.verification');
-    if (!PRECISIONS.has(precision)) throw new Error('coordinates.precision is invalid');
-    if (!METHODS.has(method)) throw new Error('coordinates.method is invalid');
-    if (!VERIFICATIONS.has(verification)) throw new Error('coordinates.verification is invalid');
-    const longitude = optionalNumber(f.coordinates.longitude, 'coordinates.longitude');
-    const latitude = optionalNumber(f.coordinates.latitude, 'coordinates.latitude');
-    if (longitude === null || latitude === null) throw new Error('coordinates requires both longitude and latitude');
-    if (f.coordinates.crs != null && f.coordinates.crs !== 'WGS84') throw new Error('coordinates.crs must be WGS84');
+  const hasCoordinates = ['coordinateLongitude', 'coordinateLatitude', 'coordinatePrecision', 'coordinateMethod']
+    .some((key) => f[key] != null);
+  if (hasCoordinates) {
+    const precision = text(f.coordinatePrecision, 'coordinatePrecision');
+    const method = text(f.coordinateMethod, 'coordinateMethod');
+    const verification = text(f.coordinateVerification, 'coordinateVerification');
+    if (!PRECISIONS.has(precision)) throw new Error('coordinatePrecision is invalid');
+    if (!METHODS.has(method)) throw new Error('coordinateMethod is invalid');
+    if (!VERIFICATIONS.has(verification)) throw new Error('coordinateVerification is invalid');
+    const longitude = optionalNumber(f.coordinateLongitude, 'coordinateLongitude');
+    const latitude = optionalNumber(f.coordinateLatitude, 'coordinateLatitude');
+    if (longitude === null || latitude === null) {
+      throw new Error('coordinates require both coordinateLongitude and coordinateLatitude');
+    }
     coordinates = {
       longitude,
       latitude,
       crs: 'WGS84',
       precision: precision as Coordinates['precision'],
-      sourceRefs: idList(f.coordinates.sources, 'coordinates.sources'),
+      sourceRefs: idList(f.coordinateSources, 'coordinateSources'),
       method: method as Coordinates['method'],
       verification: verification as Coordinates['verification'],
-      note: optionalText(f.coordinates.note, 'coordinates.note'),
-      ...(f.coordinates.noteZh == null ? {} : { noteZh: optionalText(f.coordinates.noteZh, 'coordinates.noteZh') }),
+      note: optionalText(f.coordinateNote, 'coordinateNote'),
+      ...(f.coordinateNoteZh == null ? {} : { noteZh: optionalText(f.coordinateNoteZh, 'coordinateNoteZh') }),
     };
   }
   return {

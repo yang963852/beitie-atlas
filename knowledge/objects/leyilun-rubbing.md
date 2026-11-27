@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: leyilun
 objectType: rubbing
 titleZh: 宋拓晋唐小楷册·乐毅论
 titleEn: Song rubbing of On Yue Yi, from an album of Jin and Tang small regular script
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 宋
-  original: 宋拓
-  certainty: documented
-  note: 馆方品名作「宋拓」，未记具体拓制年份。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 宋
+dateOriginal: 宋拓
+dateCertainty: documented
+dateNote: 馆方品名作「宋拓」，未记具体拓制年份。
 catalogNumber: 故帖00000700001
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-npm-leyilun
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The digital archive record lists the album leaf under this inventory number and attributes it to Wang Xizhi in regular script.
-  noteZh: 数位典藏著录以此文物编号列于王羲之楷书之下。
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-npm-leyilun
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The digital archive record lists the album leaf under this inventory number and attributes it to Wang Xizhi in regular script.
+collectionNoteZh: 数位典藏著录以此文物编号列于王羲之楷书之下。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 宋拓晋唐小楷册·乐毅论

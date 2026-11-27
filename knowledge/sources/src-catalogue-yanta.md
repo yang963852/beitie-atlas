@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 雁塔圣教序（慈恩寺圣教序拓本）
 publisher: 故宫博物院

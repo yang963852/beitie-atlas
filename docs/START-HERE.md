@@ -27,7 +27,7 @@ For the owner or an agent preparing a technical decision, start with the [Chines
 
 Each assignment supplies a reader outcome, subject or files, base revision, evidence and a stopping point; an acceptance example is optional. Copy the [bounded task brief](../templates/task-brief.md). GitHub handles repository permissions. A task description provides workflow guidance; no repository access is granted by an assignment.
 
-Work on your own branch, opened from current `main`, and submit one pull request per task. The maintainer decides the merge. Use a separate clone or working tree per concurrent task so that two agents never edit the same checkout at once, and name the paths each task owns before starting. [Project rules](../AGENTS.md)
+Work on a short-lived `task/NNN-slug` branch opened from current `main`, and submit one pull request per task; delete the branch after merge. The maintainer decides the merge. Use a separate clone or working tree per concurrent task so that two agents never edit the same checkout at once, and name the paths each task owns before starting. [Project rules](../AGENTS.md)
 
 ## Set up a clean workspace
 
@@ -47,7 +47,7 @@ npm run dev
 
 Replace `YOUR-ACCOUNT` and `your-topic`. Invited collaborators cloning the project can branch from `origin/main`. Windows PowerShell supports `npm.cmd` in place of `npm`. Use the URL printed by Vite. The corpus and knowledge pages work without a map key. Local basemap setup is optional. [Tianditu setup](map-setup.md)
 
-Run `npm run check` again after implementation. Push the checked branch to the contributor's own remote, open a PR against project `main`, and state the tested revision and unverified paths. On a fork, `git push -u origin task/your-topic` pushes to the fork. The coordinator decides merge or delegates the particular PR. Keep project artifacts in the locations defined by [AGENTS.md](../AGENTS.md).
+Run `npm run check` again after implementation. Push the checked branch to the contributor's own remote, open a PR against project `main`, and state the tested revision and unverified paths. On a fork, `git push -u origin task/your-topic` pushes to the fork. The coordinator decides merge or delegates the particular PR. Keep build products and temporary artifacts out of Git; use an ignored local directory for temporary work. [Project rules](../AGENTS.md)
 
 ## Where a change belongs
 
@@ -61,7 +61,7 @@ Run `npm run check` again after implementation. Push the checked branch to the c
 
 The website reads `data/index/knowledge-v1.json`; it does not import author Markdown. The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`. The pre-rebuild JSON corpus and its migration tools are retired; their records are in the archive tags listed in [the archive index](archive.md).
 
-The public **1.1** edition is built and deployed through `npm run release`. The Pages workflow verifies the release marker, the manifest counts and the downloadable library ZIP. Deployment evidence for the 1.1 release is recorded in delivery 051 in the `archive-milestones-040-051-2026-11-26` tag.
+The public **1.2** edition is built and deployed through `npm run release`. The Pages workflow verifies the release marker, the manifest counts and the downloadable library ZIP. Deployment evidence for the earlier 1.1 release is recorded in delivery 051 in the `archive-milestones-040-051-2026-11-26` tag.
 
 ## Reusing this repository
 

@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 甘肃简牍博物馆
 nameEn: Gansu Bamboo Slips Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-thepaper-juyan
 notes:

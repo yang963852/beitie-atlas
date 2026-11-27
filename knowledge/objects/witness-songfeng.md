@@ -1,45 +1,41 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: songfeng
 objectType: ink-manuscript
 titleZh: 黄庭坚《松风阁诗》
 titleEn: Poem on the Hall of Wind and Pines
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: null
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: null
 catalogNumber: 故書000069N000000000
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-catalogue-songfeng
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-catalogue-songfeng
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: witness-songfeng-seals
     type: documented
-    date:
-      kind: unknown
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: null
-      original: null
-      certainty: unknown
-      note: null
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: null
     place: null
     placeWording: null
     summary: The museum records seals of Xiang Yuanbian and An Qi, among others, together with Qing imperial seals. The impressions are leads, not dates or locations of transfers.
@@ -47,8 +43,7 @@ events:
     sources:
       - src-catalogue-songfeng
     certainty: unknown
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 黄庭坚《松风阁诗》

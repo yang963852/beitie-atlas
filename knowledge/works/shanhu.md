@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 珊瑚帖
 titleEn: Coral Letter
 aliases: []
 studyCategory: tie
 dynastyId: northern-song
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北宋
-  original: 北宋
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北宋
+dateOriginal: 北宋
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-dpm-231255
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 珊瑚帖

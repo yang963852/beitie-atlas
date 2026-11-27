@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 谈《石渠宝笈·续编》中的“宋拓”《锺王楷帖》
 publisher: 故宫博物院 The Palace Museum

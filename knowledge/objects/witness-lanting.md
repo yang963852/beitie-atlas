@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: lanting
 objectType: manuscript-copy
 titleZh: 兰亭序（唐摹神龙本，传冯承素摹）
 titleEn: Orchid Pavilion Preface, Tang copy traditionally attributed to Feng Chengsu
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 唐
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 唐
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 catalogNumber: 故00002597
-dimensions:
-  raw: 纵24.5厘米，横69.9厘米
-  note: null
+dimensionsRaw: 纵24.5厘米，横69.9厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-catalogue-lanting
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-catalogue-lanting
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: witness-lanting-southern-song
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 南宋
-      original: null
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 南宋
+    dateOriginal: null
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The Palace Museum’s tentative reconstruction from colophons, seals and catalogues includes the Southern Song imperial collections of Gaozong and Lizong and the collector Yang Zhen.
@@ -51,16 +47,15 @@ events:
     certainty: documented
   - id: witness-lanting-later-collectors
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 元至清
-      original: null
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 元至清
+    dateOriginal: null
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The museum’s reconstruction also names Guo Tianxi in the Yuan, the Ming court and Xiang Yuanbian, and Chen Ding among the Qing collectors before the Qianlong court. Not every transfer is dated.
@@ -78,13 +73,12 @@ attribution:
       - src-catalogue-lanting
     note: The traditional attribution comes from Xiang Yuanbian’s colophon; the museum questions it.
     noteZh: 传统归名出自项元汴题记；故宫博物院对此提出疑问。
-version:
-  label: 神龙本
-  basis: 馆方以卷首“神龙”印与题跋称名
-  sources:
-    - src-catalogue-lanting
-  note: The museum discusses the date of the Shenlong seal; the label is a transmission name, not a claim that the seal is contemporary with the copy.
-  noteZh: 馆方讨论神龙印的年代；此称名是流传中的版本名，不等于认定印章与摹本同时。
+versionLabel: 神龙本
+versionBasis: 馆方以卷首“神龙”印与题跋称名
+versionSources:
+  - src-catalogue-lanting
+versionNote: The museum discusses the date of the Shenlong seal; the label is a transmission name, not a claim that the seal is contemporary with the copy.
+versionNoteZh: 馆方讨论神龙印的年代；此称名是流传中的版本名，不等于认定印章与摹本同时。
 claims:
   - id: claim-lanting-feng-support
     kind: scholarly-opinion
@@ -111,8 +105,7 @@ claims:
     locator: 藏品说明中对归名与神龙印年代的讨论
     note: The museum does not substitute another named copyist.
     noteZh: 馆方没有因此改归另一名摹者。
-review:
-  state: reviewed
+reviewState: reviewed
 media:
   - id: media-shenlong-opening
     asset: src/assets/shenlong-opening.webp

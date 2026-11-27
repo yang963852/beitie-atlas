@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 【无锡宝藏之十四】杨凝式《韭花帖》：一件因吃而成就的笔墨神迹
 publisher: 无锡博物院 Wuxi Museum

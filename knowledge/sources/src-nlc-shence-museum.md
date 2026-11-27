@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 神策军碑
 publisher: 中国国家图书馆 · 国家典籍博物馆

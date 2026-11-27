@@ -1,48 +1,44 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: yan-qinli-bei
 objectType: original-stele
 titleZh: 颜勤礼碑（原石）
 titleEn: Yan Qinli Stele, original stone
-date:
-  kind: single
-  start: 779
-  month: null
-  end: 779
-  endMonth: null
-  era: null
-  original: 唐大历十四年（779年）
-  certainty: documented
-  note: The holding museum gives 779 as the erection year. A separate carving date is unspecified.
+dateKind: single
+dateStart: 779
+dateMonth: null
+dateEnd: 779
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐大历十四年（779年）
+dateCertainty: documented
+dateNote: The holding museum gives 779 as the erection year. A separate carving date is unspecified.
 catalogNumber: null
-dimensions:
-  raw: 碑身及碑首高268厘米，碑身宽92厘米
-  note: The Beilin catalogue gives the dimensions of the original stone.
+dimensionsRaw: 碑身及碑首高268厘米，碑身宽92厘米
+dimensionsNote: The Beilin catalogue gives the dimensions of the original stone.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-yan-qinli-object
-    - src-dpm-yan-qinli-rubbing
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Xi’an Beilin’s catalogue describes this original stone and records its transfer to the museum in 1948. The Palace Museum records a separate rubbing.
-  noteZh: 西安碑林馆方目录著录这方原石，并记载其于 1948 年移归碑林。故宫目录著录的是另件拓本。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-yan-qinli-object
+  - src-dpm-yan-qinli-rubbing
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Xi’an Beilin’s catalogue describes this original stone and records its transfer to the museum in 1948. The Palace Museum records a separate rubbing.
+collectionNoteZh: 西安碑林馆方目录著录这方原石，并记载其于 1948 年移归碑林。故宫目录著录的是另件拓本。
 events:
   - id: ev-1922-discovery
     type: discovery
-    date:
-      kind: single
-      start: 1922
-      month: 10
-      end: 1922
-      endMonth: 10
-      era: null
-      original: 1922年10月
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1922
+    dateMonth: 10
+    dateEnd: 1922
+    dateEndMonth: 10
+    dateEra: null
+    dateOriginal: 1922年10月
+    dateCertainty: documented
+    dateNote: null
     place: place-shaanxi-governor-compound
     placeWording: 省长公署（位于今西安鼓楼以东及东北一带）
     referencePlace: place-xian-drum-tower
@@ -57,16 +53,15 @@ events:
     certainty: documented
   - id: ev-1922-erected-in-courtyard
     type: relocation
-    date:
-      kind: approximate
-      start: 1922
-      month: null
-      end: 1922
-      endMonth: null
-      era: null
-      original: 出土数日后
-      certainty: approximate
-      note: Only the interval 'a few days after the discovery' is given.
+    dateKind: approximate
+    dateStart: 1922
+    dateMonth: null
+    dateEnd: 1922
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 出土数日后
+    dateCertainty: approximate
+    dateNote: Only the interval 'a few days after the discovery' is given.
     place: place-shaanxi-governor-compound
     placeWording: 省长公署前院
     referencePlace: place-xian-drum-tower
@@ -81,16 +76,15 @@ events:
     certainty: documented
   - id: ev-1928-xincheng
     type: relocation
-    date:
-      kind: range
-      start: 1928
-      month: 3
-      end: 1928
-      endMonth: 4
-      era: null
-      original: 1928年三四月间
-      certainty: documented
-      note: null
+    dateKind: range
+    dateStart: 1928
+    dateMonth: 3
+    dateEnd: 1928
+    dateEndMonth: 4
+    dateEra: null
+    dateOriginal: 1928年三四月间
+    dateCertainty: documented
+    dateNote: null
     place: place-xincheng-xian
     placeWording: 新城大楼北东侧
     referencePlace: place-xincheng-square-view
@@ -106,16 +100,15 @@ events:
     certainty: documented
   - id: ev-1948-beilin
     type: relocation
-    date:
-      kind: single
-      start: 1948
-      month: null
-      end: 1948
-      endMonth: null
-      era: null
-      original: 1948年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1948
+    dateMonth: null
+    dateEnd: 1948
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 1948年
+    dateCertainty: documented
+    dateNote: null
     place: place-xian-beilin-1948
     placeWording: 西安碑林
     referencePlace: place-xian-beilin-museum
@@ -128,8 +121,7 @@ events:
     sources:
       - src-beilin-article-2007
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 颜勤礼碑（原石）

@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 莱州云峰山
 nameEn: Mount Yunfeng, Laizhou
 historicalName: null
 kind: historical-site
-coordinates: null
 sources:
   - src-laizhou-yunfeng
   - src-yantai-zheng

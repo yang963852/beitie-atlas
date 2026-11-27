@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 行書上虞帖 王羲之
 publisher: 上海博物館 Shanghai Museum

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 万岁通天帖
 titleEn: Model Letters of the Wan Sui Tong Tian Year
 aliases:
@@ -9,16 +9,15 @@ aliases:
 studyCategory: tie
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 697
-  month: null
-  end: 697
-  endMonth: null
-  era: 唐万岁通天二年
-  original: 万岁通天二年（697年）
-  certainty: documented
-  note: The year of the submission and of the court copy is written on the scroll itself and repeated by the museum and press accounts.
+dateKind: single
+dateStart: 697
+dateMonth: null
+dateEnd: 697
+dateEndMonth: null
+dateEra: 唐万岁通天二年
+dateOriginal: 万岁通天二年（697年）
+dateCertainty: documented
+dateNote: The year of the submission and of the court copy is written on the scroll itself and repeated by the museum and press accounts.
 script: null
 attribution:
   - role: compiler
@@ -100,19 +99,17 @@ sources:
   - src-gmw-wansui
   - src-chinanews-wansui
   - src-lnm-wansui
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people:
-    - wang-xizhi
-    - wang-xianzhi
-  objects:
-    - wansui-tongtian-scroll
-  sources:
-    - src-gmw-wansui
-    - src-chinanews-wansui
-    - src-lnm-wansui
+reviewState: reviewed
+guideState: reviewed
+guidePeople:
+  - wang-xizhi
+  - wang-xianzhi
+guideObjects:
+  - wansui-tongtian-scroll
+guideSources:
+  - src-gmw-wansui
+  - src-chinanews-wansui
+  - src-lnm-wansui
 ---
 
 # 万岁通天帖

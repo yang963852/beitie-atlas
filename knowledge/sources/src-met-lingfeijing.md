@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: Classic of Spiritual Flight
 publisher: The Metropolitan Museum of Art

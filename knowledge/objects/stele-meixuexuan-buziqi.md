@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: meixuexuan-buziqi
 objectType: original-stele
 titleZh: 梅雪轩书晦翁不自弃文（刻石）
 titleEn: Meixuexuan Inscription of Huiweng’s Essay, stone
-date:
-  kind: single
-  start: 1606
-  month: null
-  end: 1606
-  endMonth: null
-  era: null
-  original: 明万历三十四年（1606）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1606
+dateMonth: null
+dateEnd: 1606
+dateEndMonth: null
+dateEra: null
+dateOriginal: 明万历三十四年（1606）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-meixuexuan
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum lists this object in its stele catalogue.
-  noteZh: 西安碑林博物馆在碑刻目录中著录此件。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-meixuexuan
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum lists this object in its stele catalogue.
+collectionNoteZh: 西安碑林博物馆在碑刻目录中著录此件。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 梅雪轩书晦翁不自弃文（刻石）

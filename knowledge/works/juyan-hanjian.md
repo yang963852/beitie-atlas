@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 居延新简·隧长焦永死驹劾状
 titleEn: Juyan document on the death of a post-station horse
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: tie
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: 27
-  month: null
-  end: 27
-  endMonth: null
-  era: null
-  original: 东汉光武帝建武三年（27年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 27
+dateMonth: null
+dateEnd: 27
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉光武帝建武三年（27年）
+dateCertainty: documented
+dateNote: null
 script: 章草
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
     noteZh: 边塞官文书，由书吏抄录，未署名。
 sources:
   - src-thepaper-juyan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 居延新简·隧长焦永死驹劾状

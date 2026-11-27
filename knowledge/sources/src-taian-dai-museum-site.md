@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 岱庙（景点介绍）
 publisher: 泰山风景名胜区管理委员会

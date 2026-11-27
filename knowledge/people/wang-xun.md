@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 王珣
 titleEn: Wang Xun
 aliases: []

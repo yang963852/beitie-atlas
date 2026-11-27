@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 晉 王羲之 平安何如奉橘三帖
 publisher: 國立故宮博物院南部院區 Southern Branch of the National Palace Museum

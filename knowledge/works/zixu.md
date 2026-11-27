@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 自叙帖
 titleEn: Autobiography
 aliases: []
 studyCategory: tie
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 777
-  month: null
-  end: 777
-  endMonth: null
-  era: null
-  original: 唐代宗大曆十二年（777）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 777
+dateMonth: null
+dateEnd: 777
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐代宗大曆十二年（777）
+dateCertainty: documented
+dateNote: null
 script: 草书
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
 sources:
   - src-catalogue-zixu
   - src-qlwb-zixu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 自叙帖

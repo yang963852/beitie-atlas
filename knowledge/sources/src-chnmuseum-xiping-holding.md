@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 朝闻天下：孔子文化展国博启幕
 publisher: 中国国家博物馆 National Museum of China

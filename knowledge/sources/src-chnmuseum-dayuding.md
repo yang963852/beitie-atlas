@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: “盂”青铜鼎
 publisher: 中国国家博物馆 National Museum of China

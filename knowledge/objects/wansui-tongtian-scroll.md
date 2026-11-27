@@ -1,48 +1,44 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: wansui-tongtian-tie
 objectType: manuscript-copy
 titleZh: 唐摹王氏一门书翰卷
 titleEn: Tang tracing of letters by the Wang family
-date:
-  kind: single
-  start: 697
-  month: null
-  end: 697
-  endMonth: null
-  era: 唐万岁通天二年
-  original: 万岁通天二年（697年）
-  certainty: documented
-  note: The year is written in the scroll's own subscription and repeated by the museum.
+dateKind: single
+dateStart: 697
+dateMonth: null
+dateEnd: 697
+dateEndMonth: null
+dateEra: 唐万岁通天二年
+dateOriginal: 万岁通天二年（697年）
+dateCertainty: documented
+dateNote: The year is written in the scroll's own subscription and repeated by the museum.
 catalogNumber: null
-dimensions:
-  raw: 纵26.3厘米，横253.8厘米
-  note: The Guangming Online museum feature gives these figures for the scroll. The museum's own collection entry does not state dimensions.
+dimensionsRaw: 纵26.3厘米，横253.8厘米
+dimensionsNote: The Guangming Online museum feature gives these figures for the scroll. The museum's own collection entry does not state dimensions.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-liaoning-museum
-  sources:
-    - src-lnm-wansui
-    - src-chinanews-wansui
-  accessedAt: 2026-11-23
-  asOf: null
-  note: The museum lists the scroll among its collection highlights and the press report describes it as one of the museum's principal treasures. Neither gives an accession number or a gallery.
-  noteZh: 馆方将其列入藏品精品，报道称其为镇馆之宝之一。两处均未给藏品号与展室。
+collectionKind: collection-institution
+collectionPlace: place-liaoning-museum
+collectionSources:
+  - src-lnm-wansui
+  - src-chinanews-wansui
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: The museum lists the scroll among its collection highlights and the press report describes it as one of the museum's principal treasures. Neither gives an accession number or a gallery.
+collectionNoteZh: 馆方将其列入藏品精品，报道称其为镇馆之宝之一。两处均未给藏品号与展室。
 events:
   - id: ev-wansui-tongtian-scroll-1
     type: composition
-    date:
-      kind: single
-      start: 697
-      month: null
-      end: 697
-      endMonth: null
-      era: 唐万岁通天二年
-      original: 万岁通天二年（697年）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 697
+    dateMonth: null
+    dateEnd: 697
+    dateEndMonth: null
+    dateEra: 唐万岁通天二年
+    dateOriginal: 万岁通天二年（697年）
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 内府弘文馆
     summary: The Hongwen Academy traced and ink-filled Wang Fangqing's ten scrolls of family letters for the imperial collection.
@@ -52,16 +48,15 @@ events:
     certainty: documented
   - id: ev-wansui-tongtian-scroll-2
     type: relocation
-    date:
-      kind: single
-      start: 1922
-      month: null
-      end: 1922
-      endMonth: null
-      era: 民国十一年
-      original: 1922年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1922
+    dateMonth: null
+    dateEnd: 1922
+    dateEndMonth: null
+    dateEra: 民国十一年
+    dateOriginal: 1922年
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 长春
     summary: The last Qing emperor took the scroll to Changchun; the cited report does not describe how it left Changchun or when it reached the museum.
@@ -69,8 +64,7 @@ events:
     sources:
       - src-chinanews-wansui
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 唐摹王氏一门书翰卷

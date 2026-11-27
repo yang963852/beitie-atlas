@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 篆书千字文碑
 publisher: 西安碑林博物馆 Xi’an Beilin Museum
