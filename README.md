@@ -14,7 +14,7 @@
 - **查馆藏地图**：在[馆藏地图](https://yang963852.github.io/beitie-atlas/#/collections)按今天的收藏地找实物；没有可靠坐标的地点只列文字，不猜位置。
 - **找书家与读帖笔记**：在[知识库](https://yang963852.github.io/beitie-atlas/#/library)按作品、书家、笔记或实物档案进入，例如[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)。
 
-**当前收录**（`npm run knowledge:compile`，2026-11-27）：121 部作品 · 128 件实物 · 46 处地点 · 195 条来源 · 75 条事件。
+**当前收录**（`npm run knowledge:compile`，2026-11-27）：126 部作品 · 133 件实物 · 46 处地点 · 201 条来源 · 75 条事件。
 
 ## 三条编辑原则
 

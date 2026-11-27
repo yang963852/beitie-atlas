@@ -18,6 +18,8 @@ Wild Goose Pagoda Preface
 
 书体：楷书
 
+延伸阅读：[褚遂良](../people/zhu-suiliang.md)
+
 <a name="witness-yanta"></a>
 
 ## 雁塔圣教序（慈恩寺圣教序拓本）

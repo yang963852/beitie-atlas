@@ -8,17 +8,17 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 
 | Measure | Value |
 | --- | --- |
-| Works | 121 (121 reviewed / 0 draft) |
-| Objects | 128 (128 reviewed / 0 draft) |
+| Works | 126 (126 reviewed / 0 draft) |
+| Objects | 133 (133 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
-| People pages | 22 |
+| People pages | 25 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
-| Sources | 195 (0 uncited) |
+| Sources | 201 (0 uncited) |
 | Events | 75 (50 objects with events) |
-| Attribution entries linked to a person | 40 / 163 |
-| Work sources (0 / 1 / 2+) | 0 / 81 / 40 |
-| Reviewed works with one source | 81 |
+| Attribution entries linked to a person | 45 / 170 |
+| Work sources (0 / 1 / 2+) | 0 / 85 / 41 |
+| Reviewed works with one source | 85 |
 | Dates without source wording | 44 |
 
 ## Gaps
@@ -95,7 +95,8 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [虞恭公碑](../knowledge/works/yugong-gong-bei.md) | Tang | reviewed | reviewed | 1 | 3 | 2 | 1/2 | — |
 | [晋祠之铭并序](../knowledge/works/jinci-zhi-ming.md) | Tang | reviewed | — | 1 | 1 | 2 | 1/1 | — |
 | [温泉铭](../knowledge/works/wen-quan-ming.md) | Tang | reviewed | — | 1 | 2 | 1 | 0/1 | — |
-| [雁塔圣教序](../knowledge/works/yanta.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | 1 |
+| [雁塔圣教序](../knowledge/works/yanta.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
+| [同州圣教序](../knowledge/works/tongzhou-shengjiao-xu.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | — |
 | [大唐三藏圣教序碑](../knowledge/works/ji-wang-shengjiao-xu.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [书谱](../knowledge/works/shupu.md) | Tang | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [万岁通天帖](../knowledge/works/wansui-tongtian-tie.md) | Tang | reviewed | reviewed | 2 | 3 | 1 | 0/1 | — |
@@ -134,13 +135,17 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [珊瑚帖](../knowledge/works/shanhu.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [陆游自书诗卷](../knowledge/works/lu-you-zishu-shi.md) | Southern Song | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [胆巴碑](../knowledge/works/daba-bei.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [城南唱和诗卷](../knowledge/works/chengnan-changhe-shi.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [三门记](../knowledge/works/sanmen-ji.md) | Yuan | reviewed | reviewed | 1 | 2 | 1 | 0/1 | — |
 | [赵子昂游天冠山诗](../knowledge/works/tianguanshan-poems.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [洛神赋](../knowledge/works/zhao-luoshen.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | 2 |
+| [真镜庵募缘疏卷](../knowledge/works/zhenjing-an-muyuan-shu.md) | Yuan | reviewed | — | 1 | 1 | 1 | 0/1 | — |
+| [游包山集](../knowledge/works/you-baoshan-ji.md) | Ming | reviewed | — | 1 | 1 | 1 | 0/1 | — |
 | [墨池堂选帖](../knowledge/works/mochitang.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [梅雪轩书晦翁不自弃文](../knowledge/works/meixuexuan-buziqi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [王铎行草书自书诗卷](../knowledge/works/wangduo-zishu-shi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [行书论书卷](../knowledge/works/dong-lunshu.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |
+| [送陈子龄会试诗](../knowledge/works/song-chen-ziling.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [楷书归去来兮辞页](../knowledge/works/wen-guiqulai.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |
 | [三体杂书诗卷](../knowledge/works/zhu-santi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |
 | [三希堂法帖](../knowledge/works/sanxitang-fatie.md) | Qing | reviewed | — | 0 | 3 | 1 | 0/1 | — |
