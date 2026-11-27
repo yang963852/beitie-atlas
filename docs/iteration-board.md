@@ -1,13 +1,13 @@
 # Iteration board
 
-Updated: 2026-11-26. This board tracks the active milestone. Independent contributions are coordinated in GitHub Issues and pull requests.
+Updated: 2026-11-27. This board tracks the active milestone. Independent contributions are coordinated in GitHub Issues and pull requests.
 
-**Archived milestones:** 001–039 are in the annotated tag `archive-pre-hygiene-2026-11-25`; 040–051 and the completed plans, proposals and audit are in `archive-milestones-040-051-2026-11-26`. See [the archive index](archive.md).
+**Archived milestones:** 001–039 are in the annotated tag `archive-pre-hygiene-2026-11-25`; 040–051 and the completed plans, proposals and audit are in `archive-milestones-040-051-2026-11-26`. Agent-named coordination records are in `archive-agent-records-2026-11-27`. See [the archive index](archive.md).
 
 | Task | Outcome | State | Exit evidence |
 | --- | --- | --- | --- |
-| 052 | Slim the repository and archive milestones 040–051 | Delivered — merged in [PR #61](https://github.com/yang963852/beitie-atlas/pull/61) at `44dba21`; Pages release run `45730768543`; self-reviewed; no separate acceptance required | See [task 052](../tasks/052-repository-slimming.md) and [delivery 052](delivery-052.md); archive tag `archive-milestones-040-051-2026-11-26` |
-| 053 | Add 10 core work guides | Delivered — merged in [PR #64](https://github.com/yang963852/beitie-atlas/pull/64) at `01d11bf`; 10 guides verified; self-reviewed; no separate acceptance required | See [task 053](../tasks/053-core-work-guides.md) and [knowledge buildout](knowledge-buildout.md) |
+| 052 | Slim the repository and archive milestones 040–051 | Delivered — merged in [PR #61](https://github.com/yang963852/beitie-atlas/pull/61) at `44dba21`; Pages release run `45730768543`; self-reviewed; no separate acceptance required | See [task 052](https://github.com/yang963852/beitie-atlas/blob/archive-agent-records-2026-11-27/tasks/052-repository-slimming.md) and [delivery 052](https://github.com/yang963852/beitie-atlas/blob/archive-agent-records-2026-11-27/docs/delivery-052.md); [archive index](archive.md) |
+| 053 | Add 10 core work guides | Delivered — merged in [PR #64](https://github.com/yang963852/beitie-atlas/pull/64) at `01d11bf`; 10 guides verified; self-reviewed; no separate acceptance required | See [task 053](https://github.com/yang963852/beitie-atlas/blob/archive-agent-records-2026-11-27/tasks/053-core-work-guides.md) and [knowledge buildout](knowledge-buildout.md) |
 
 ## Working mode
 
@@ -19,6 +19,7 @@ P1 blocks a release; P2 is fixed in the next pass; P3 is optional. Fix demonstra
 
 ## Decisions
 
+- 2026-11-27: Historical records that named a local agent moved to the annotated tag `archive-agent-records-2026-11-27`: tasks 052/053, delivery 052, the ontology pilot input and the original Duobao reading-note credit. `main` keeps the current guidance without those names; [the archive index](archive.md) gives the restore paths.
 - 2026-11-27: The compiled interface leaves version control. `data/index/knowledge-v1.json` is rebuilt by `npm run knowledge:build`, and the `dev`, `build`, `check`, `typecheck` and `test` entry points run that build themselves, so a fork no longer carries one generated file that conflicts on every content change. `knowledge/catalogue/` and `knowledge/README.md` stay tracked: they are the GitHub reading surface and the target of the repository's navigation links, and `check:knowledge` still fails on drift.
 - 2026-11-27: The public repository carries a tool-independent agent contract. `AGENTS.md` states the binding rules and the documents to read per task; it names no local agent, branch or machine path. Agent prompts, private skills and local workspace instructions live outside version control. This supersedes the 2026-11-25 long-lived per-agent branch decision: each task uses its own short-lived branch opened from current `main`, and concurrent tasks use separate clones or working trees.
 - 2026-11-26: Lightweight solo-owner workflow. The owner's merge is the acceptance; self-review is sufficient. Routine work needs no delivery report, board row, screenshot set or archive tag. A release is a `CHANGELOG.md` entry plus a `vX.Y.Z` tag; `npm run release` remains the automated data gate. Evidence rules and automated checks remain. This supersedes the 2026-11-18 independent-review decision and the archive-after-acceptance rule below.

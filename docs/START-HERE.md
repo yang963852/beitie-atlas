@@ -10,6 +10,7 @@ A learner wants to identify the work on their desk, distinguish its surviving ve
 
 - Milestones 001–039: annotated tag `archive-pre-hygiene-2026-11-25`.
 - Milestones 040–051, acceptance screenshots and completed plans or proposals: annotated tag `archive-milestones-040-051-2026-11-26`.
+- Agent-named coordination records: annotated tag `archive-agent-records-2026-11-27`.
 
 See [the archive index](archive.md) for browsing and restore commands. A new contributor only needs the current documents linked on this page.
 
