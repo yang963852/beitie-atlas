@@ -8,16 +8,16 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 
 | Measure | Value |
 | --- | --- |
-| Works | 117 (117 reviewed / 0 draft) |
+| Works | 119 (119 reviewed / 0 draft) |
 | Objects | 126 (126 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
-| People pages | 20 |
+| People pages | 21 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
-| Sources | 191 (0 uncited) |
+| Sources | 193 (0 uncited) |
 | Events | 75 (50 objects with events) |
-| Attribution entries linked to a person | 35 / 159 |
-| Work sources (0 / 1 / 2+) | 0 / 79 / 38 |
+| Attribution entries linked to a person | 38 / 161 |
+| Work sources (0 / 1 / 2+) | 0 / 79 / 40 |
 | Reviewed works with one source | 79 |
 | Dates without source wording | 44 |
 
@@ -55,8 +55,10 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [熹平石经](../knowledge/works/xiping-stone-classics.md) | Eastern Han | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [曹全碑](../knowledge/works/cao-quan-bei.md) | Eastern Han | reviewed | reviewed | 0 | 3 | 1 | 1/1 | — |
 | [张迁碑](../knowledge/works/zhangqian-bei.md) | Eastern Han | reviewed | reviewed | 0 | 2 | 1 | 1/1 | — |
+| [贺捷表](../knowledge/works/hejie-biao.md) | Three Kingdoms | reviewed | — | 1 | 2 | 0 | — | — |
+| [荐季直表](../knowledge/works/jian-jizhi-biao.md) | Three Kingdoms | reviewed | — | 1 | 2 | 0 | — | — |
 | [天发神谶碑](../knowledge/works/tianfa-shenchen-bei.md) | Three Kingdoms | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [宣示表](../knowledge/works/xuanshi-biao.md) | Three Kingdoms | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [宣示表](../knowledge/works/xuanshi-biao.md) | Three Kingdoms | reviewed | — | 2 | 1 | 1 | 1/1 | — |
 | [走马楼吴简·嘉禾吏民田家莂](../knowledge/works/zoumalou-wujian.md) | Three Kingdoms | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [平复帖](../knowledge/works/pingfu-tie.md) | Western Jin | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [洛神赋十三行](../knowledge/works/luoshen-shisanhang.md) | Eastern Jin | reviewed | — | 1 | 2 | 1 | 0/1 | — |

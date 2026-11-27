@@ -45,6 +45,7 @@
 - [张旭](people/zhang-xu.md)
 - [赵孟頫](people/zhao-mengfu.md)
 - [赵朴初](people/zhao-puchu.md)
+- [钟繇](people/zhong-yao.md)
 
 ## 考证与读帖笔记
 
@@ -94,6 +95,8 @@
 
 ### 三国
 
+- [贺捷表](catalogue/hejie-biao.md) · 0 件实物
+- [荐季直表](catalogue/jian-jizhi-biao.md) · 0 件实物
 - [天发神谶碑](catalogue/tianfa-shenchen-bei.md) · 1 件实物
 - [宣示表](catalogue/xuanshi-biao.md) · 1 件实物
 - [走马楼吴简·嘉禾吏民田家莂](catalogue/zoumalou-wujian.md) · 1 件实物
