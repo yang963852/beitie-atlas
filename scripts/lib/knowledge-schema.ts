@@ -36,6 +36,87 @@ export const KNOWLEDGE_SCHEMA_VERSION = 1;
 /** Version of the author frontmatter under `knowledge/`, independent of the interface. */
 export const AUTHOR_SCHEMA_VERSION = 2;
 
+/**
+ * Every top-level frontmatter key each record type may carry.
+ *
+ * The compiler rejects anything outside this table, so a field that no reader
+ * consumes — a leftover nested v1 block, a renamed key, a typo — stops the
+ * build instead of vanishing from the site without a trace. Add the name here
+ * in the same change that teaches a reader to consume it.
+ */
+export const FIELD_NAMES: Readonly<Record<string, readonly string[]>> = {
+  works: [
+    'schemaVersion',
+    'titleZh', 'titleEn', 'aliases', 'attribution',
+    'studyCategory', 'dynastyId', 'dynastyQualifier', 'script',
+    'dateKind', 'dateStart', 'dateMonth', 'dateEnd', 'dateEndMonth',
+    'dateEra', 'dateOriginal', 'dateCertainty', 'dateMeaning', 'dateNote',
+    'sources', 'claims',
+    'reviewState', 'reviewNote', 'reviewNoteZh',
+    'guideState', 'guideTimelineYear', 'guidePeople', 'guideObjects', 'guideSources',
+  ],
+  objects: [
+    'schemaVersion',
+    'work', 'objectType', 'titleZh', 'titleEn', 'catalogNumber',
+    'dateKind', 'dateStart', 'dateMonth', 'dateEnd', 'dateEndMonth',
+    'dateEra', 'dateOriginal', 'dateCertainty', 'dateMeaning', 'dateNote',
+    'dimensionsRaw', 'dimensionsNote', 'survival',
+    'relationships', 'events', 'media',
+    'collectionKind', 'collectionPlace', 'collectionSources',
+    'collectionAccessedAt', 'collectionAsOf', 'collectionNote', 'collectionNoteZh',
+    'attribution',
+    'versionLabel', 'versionBasis', 'versionSources', 'versionNote', 'versionNoteZh',
+    'reviewState', 'reviewNote', 'reviewNoteZh',
+    'claims',
+  ],
+  people: [
+    'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases',
+  ],
+  // Notes share the person reader and add `people`, read directly by the compiler.
+  notes: [
+    'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases', 'people',
+  ],
+  places: [
+    'schemaVersion', 'nameZh', 'nameEn', 'historicalName', 'kind', 'sources', 'notes', 'notesZh',
+    'coordinateLongitude', 'coordinateLatitude', 'coordinatePrecision', 'coordinateMethod',
+    'coordinateVerification', 'coordinateSources', 'coordinateNote', 'coordinateNoteZh',
+  ],
+  sources: [
+    'schemaVersion', 'kind', 'title', 'publisher', 'url',
+    'publicationDate', 'accessedAt', 'locator', 'note',
+  ],
+};
+
+/** Keys `knowledge/relations.md` itself may carry. */
+export const RELATION_FILE_FIELDS = ['schemaVersion', 'relations'] as const;
+/** Keys each entry under `relations:` may carry. */
+export const RELATION_FIELDS = ['from', 'to', 'type', 'labelZh', 'labelEn', 'sourceRefs', 'state'] as const;
+
+/** Template that documents each record type's field list, for error messages. */
+const FIELD_GUIDE: Readonly<Record<string, string>> = {
+  works: 'work', objects: 'object', people: 'person', notes: 'note', places: 'place', sources: 'source',
+};
+
+/**
+ * Reject a frontmatter key that no reader consumes.
+ *
+ * A key that parses but is never read is the failure mode this guard exists
+ * for: the author sees their edit accepted, and the site silently drops it.
+ */
+export function assertFields(kind: string, fields: Record<string, unknown>, path: string): void {
+  const allowed = FIELD_NAMES[kind];
+  if (!allowed) throw new Error(path + ': no field list is declared for "' + kind + '"');
+  const known = new Set(allowed);
+  const unknown = Object.keys(fields).filter((key) => !known.has(key));
+  if (unknown.length === 0) return;
+  const guide = FIELD_GUIDE[kind] ? 'knowledge/_templates/' + FIELD_GUIDE[kind] + '.md' : 'the schema';
+  throw new Error(
+    path + ': unknown frontmatter ' + (unknown.length === 1 ? 'field ' : 'fields ') +
+    unknown.map((key) => '"' + key + '"').join(', ') +
+    '. Author records use flat v2 keys; see ' + guide + '.',
+  );
+}
+
 export interface GuideInput {
   state: ReviewState;
   timelineYear: number | null;

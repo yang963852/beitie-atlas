@@ -15,6 +15,9 @@ import {
   AUTHOR_SCHEMA_VERSION,
   KNOWLEDGE_FORMAT_VERSION,
   KNOWLEDGE_SCHEMA_VERSION,
+  RELATION_FIELDS,
+  RELATION_FILE_FIELDS,
+  assertFields,
   canonical,
   idList,
   readObject,
@@ -82,6 +85,7 @@ function records(root: string, kind: string): MarkdownRecord[] {
       if (schemaVersion !== AUTHOR_SCHEMA_VERSION) {
         throw new Error('knowledge/' + kind + '/' + name + ': schemaVersion must be ' + AUTHOR_SCHEMA_VERSION);
       }
+      assertFields(kind, fields, 'knowledge/' + kind + '/' + name);
       return { id, fields, body, path: 'knowledge/' + kind + '/' + name };
     });
 }
@@ -93,11 +97,23 @@ function readRelations(root: string): KnowledgeRelation[] {
   if (fields.schemaVersion !== AUTHOR_SCHEMA_VERSION) {
     throw new Error('knowledge/relations.md: schemaVersion must be ' + AUTHOR_SCHEMA_VERSION);
   }
+  const fileFields = new Set<string>(RELATION_FILE_FIELDS);
+  const strayFile = Object.keys(fields).filter((key) => !fileFields.has(key));
+  if (strayFile.length) {
+    throw new Error('knowledge/relations.md: unknown frontmatter field(s) ' +
+      strayFile.map((key) => '"' + key + '"').join(', ') + '; only schemaVersion and relations are read');
+  }
   if (!Array.isArray(fields.relations)) throw new Error('knowledge/relations.md: relations must be a list');
   const seen = new Set<string>();
   return fields.relations.map((input, index) => {
     const at = 'relations[' + index + ']';
     if (!record(input)) throw new Error(at + ' must be a mapping');
+    const relationFields = new Set<string>(RELATION_FIELDS);
+    const strayRelation = Object.keys(input).filter((key) => !relationFields.has(key));
+    if (strayRelation.length) {
+      throw new Error(at + ': unknown field(s) ' +
+        strayRelation.map((key) => '"' + key + '"').join(', ') + '; only ' + RELATION_FIELDS.join(', ') + ' are read');
+    }
     const { from, to, type } = input;
     if ([from, to, type].some((value) => typeof value !== 'string' || !stableId(value as string))) {
       throw new Error(at + ': endpoints and type must be stable IDs');
