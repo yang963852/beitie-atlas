@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 九成宫醴泉铭
 titleEn: Sweet Spring at Jiucheng Palace
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 632
-  month: null
-  end: 632
-  endMonth: null
-  era: null
-  original: 唐贞观六年（632）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 632
+dateMonth: null
+dateEnd: 632
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐贞观六年（632）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: author
@@ -34,8 +33,7 @@ attribution:
       - src-baoji-jiuchenggong
 sources:
   - src-baoji-jiuchenggong
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 九成宫醴泉铭

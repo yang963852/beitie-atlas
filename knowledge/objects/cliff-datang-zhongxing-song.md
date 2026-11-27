@@ -1,48 +1,44 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: datang-zhongxing-song
 objectType: cliff-inscription
 titleZh: 大唐中兴颂（摩崖）
 titleEn: Eulogy of the Tang Restoration, cliff inscription
-date:
-  kind: single
-  start: 771
-  month: null
-  end: 771
-  endMonth: null
-  era: null
-  original: 唐大历六年（771）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 771
+dateMonth: null
+dateEnd: 771
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐大历六年（771）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 高 310 厘米，宽 320 厘米；字径约 15 厘米
-  note: 21 lines, read leftwards; the character total is disputed.
+dimensionsRaw: 高 310 厘米，宽 320 厘米；字径约 15 厘米
+dimensionsNote: 21 lines, read leftwards; the character total is disputed.
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-wuxi-cliff
-  sources:
-    - src-hunan-wuxi
-    - src-yz-wuxi
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Cut into the 峿台 rock face at Wuxi and described as intact.
-  noteZh: 刻于浯溪峿台崖壁，来源称现状完整。
+collectionKind: in-situ
+collectionPlace: place-wuxi-cliff
+collectionSources:
+  - src-hunan-wuxi
+  - src-yz-wuxi
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Cut into the 峿台 rock face at Wuxi and described as intact.
+collectionNoteZh: 刻于浯溪峿台崖壁，来源称现状完整。
 events:
   - id: evt-zhongxing-771
     type: carving
-    date:
-      kind: single
-      start: 771
-      month: null
-      end: 771
-      endMonth: null
-      era: null
-      original: 唐大历六年（771）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 771
+    dateMonth: null
+    dateEnd: 771
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 唐大历六年（771）
+    dateCertainty: documented
+    dateNote: null
     place: place-wuxi-cliff
     placeWording: 浯溪峿台
     summary: Cut into the cliff in 771; later visitors added inscriptions on the same rock.
@@ -50,8 +46,7 @@ events:
     sources:
       - src-yz-wuxi
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 大唐中兴颂（摩崖）

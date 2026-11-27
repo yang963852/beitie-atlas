@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 東晉 王羲之 行穰帖卷
 publisher: 上海博物館 Shanghai Museum

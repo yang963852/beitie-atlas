@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 爨宝子碑
 titleEn: Stele of Cuan Baozi
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: single
-  start: 405
-  month: null
-  end: 405
-  endMonth: null
-  era: 东晋义熙元年
-  original: 大亨四年乙巳（405年）
-  certainty: disputed
-  note: The inscription dates itself to the fourth year of the 大亨 era, a reign title the Jianning administration kept using after the court had abandoned it. The provincial culture department and the municipal government read that year as 405; a provincial archaeology institute page on the same site gives 404. This record keeps 405 and states both readings.
+dateKind: single
+dateStart: 405
+dateMonth: null
+dateEnd: 405
+dateEndMonth: null
+dateEra: 东晋义熙元年
+dateOriginal: 大亨四年乙巳（405年）
+dateCertainty: disputed
+dateNote: The inscription dates itself to the fourth year of the 大亨 era, a reign title the Jianning administration kept using after the court had abandoned it. The provincial culture department and the municipal government read that year as 405; a provincial archaeology institute page on the same site gives 404. This record keeps 405 and states both readings.
 script: 隶书向楷书过渡
 attribution:
   - role: unknown
@@ -33,17 +32,15 @@ sources:
   - src-yn-dct-cuan
   - src-qjgov-cuan-museum
   - src-ynkg-cuanbaozi
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people: []
-  objects:
-    - stele-cuan-baozi
-  sources:
-    - src-yn-dct-cuan
-    - src-qjgov-cuan-museum
-    - src-ynkg-cuanbaozi
+reviewState: reviewed
+guideState: reviewed
+guidePeople: []
+guideObjects:
+  - stele-cuan-baozi
+guideSources:
+  - src-yn-dct-cuan
+  - src-qjgov-cuan-museum
+  - src-ynkg-cuanbaozi
 ---
 
 # 爨宝子碑

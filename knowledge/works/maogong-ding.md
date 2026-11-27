@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 毛公鼎
 titleEn: Mao Gong Ding, the Cauldron of Duke Mao
 aliases: []
 studyCategory: bei
 dynastyId: pre-qin
 dynastyQualifier: 西周
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 西周·宣王
-  original: 西周晚期
-  certainty: approximate
-  note: 馆方定为西周晚期，一般系于宣王。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 西周·宣王
+dateOriginal: 西周晚期
+dateCertainty: approximate
+dateNote: 馆方定为西周晚期，一般系于宣王。
 script: 金文
 attribution:
   - role: unknown
@@ -28,8 +27,7 @@ attribution:
     noteZh: 铭文记宣王册命毛公、毛公作鼎，书手未署名。
 sources:
   - src-npm-maogong
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 毛公鼎

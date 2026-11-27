@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 淳化阁帖
 titleEn: Chunhua Modelbooks
 aliases: []
 studyCategory: tie
 dynastyId: northern-song
 dynastyQualifier: null
-date:
-  kind: single
-  start: 992
-  month: null
-  end: 992
-  endMonth: null
-  era: 淳化三年
-  original: 淳化三年
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 992
+dateMonth: null
+dateEnd: 992
+dateEndMonth: null
+dateEra: 淳化三年
+dateOriginal: 淳化三年
+dateCertainty: documented
+dateNote: null
 script: null
 attribution:
   - role: compiler
@@ -26,8 +25,7 @@ attribution:
       - src-dpm-261938
 sources:
   - src-dpm-261938
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 淳化阁帖

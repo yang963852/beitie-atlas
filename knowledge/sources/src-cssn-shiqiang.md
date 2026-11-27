@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 史墙盘
 publisher: 中国社会科学网 China Social Sciences Press

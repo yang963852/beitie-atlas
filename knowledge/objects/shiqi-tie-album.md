@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shiqi-tie
 objectType: rubbing
 titleZh: 十七帖拓本册
 titleEn: Album of rubbings of the Seventeen-Day Letters
-date:
-  kind: approximate
-  start: 1250
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: 13th-century rubbing of a series of 4th-century texts
-  certainty: approximate
-  note: The museum dates the rubbing to the thirteenth century without naming a year or a reign period.
+dateKind: approximate
+dateStart: 1250
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: 13th-century rubbing of a series of 4th-century texts
+dateCertainty: approximate
+dateNote: The museum dates the rubbing to the thirteenth century without naming a year or a reign period.
 catalogNumber: "1991.380"
-dimensions:
-  raw: 每开纵24.4厘米，横12.7厘米，共三十开
-  note: The museum gives 24.4 × 12.7 cm for each of thirty leaves; the album's closed size is not stated.
+dimensionsRaw: 每开纵24.4厘米，横12.7厘米，共三十开
+dimensionsNote: The museum gives 24.4 × 12.7 cm for each of thirty leaves; the album's closed size is not stated.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-met-museum
-  sources:
-    - src-met-shiqi
-  accessedAt: 2026-11-23
-  asOf: null
-  note: The museum catalogues the album under accession 1991.380 with the credit line 'Gift of Mr. and Mrs. Wan-go H. C. Weng, 1991'. The record does not state a gallery or display status.
-  noteZh: 馆方著录藏品号 1991.380，来源记为「Gift of Mr. and Mrs. Wan-go H. C. Weng, 1991」。未记陈列位置或展出状态。
+collectionKind: collection-institution
+collectionPlace: place-met-museum
+collectionSources:
+  - src-met-shiqi
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: The museum catalogues the album under accession 1991.380 with the credit line 'Gift of Mr. and Mrs. Wan-go H. C. Weng, 1991'. The record does not state a gallery or display status.
+collectionNoteZh: 馆方著录藏品号 1991.380，来源记为「Gift of Mr. and Mrs. Wan-go H. C. Weng, 1991」。未记陈列位置或展出状态。
 events:
   - id: ev-shiqi-tie-album-1
     type: accession
-    date:
-      kind: single
-      start: 1991
-      month: null
-      end: 1991
-      endMonth: null
-      era: 1991年
-      original: "1991"
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1991
+    dateMonth: null
+    dateEnd: 1991
+    dateEndMonth: null
+    dateEra: 1991年
+    dateOriginal: "1991"
+    dateCertainty: documented
+    dateNote: null
     place: place-met-museum
     placeWording: The Metropolitan Museum of Art
     summary: The album entered the museum as a gift of Mr. and Mrs. Wan-go H. C. Weng.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-met-shiqi
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 十七帖拓本册

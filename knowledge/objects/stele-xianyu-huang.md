@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: xianyu-huang-bei
 objectType: original-stele
 titleZh: 鲜于璜碑（原石）
 titleEn: Stele of Xianyu Huang, original stone
-date:
-  kind: single
-  start: 165
-  month: null
-  end: 165
-  endMonth: null
-  era: 东汉延熹八年
-  original: 东汉延熹八年（165年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 165
+dateMonth: null
+dateEnd: 165
+dateEndMonth: null
+dateEra: 东汉延熹八年
+dateOriginal: 东汉延熹八年（165年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-tianjin-museum
-  sources:
-    - src-tjbwg-xianyu-1
-    - src-tjbwg-xianyu-2
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum's own pages state that the stone is held by 天津博物馆. Neither page names the gallery or the display state.
-  noteZh: 馆方页面明确此碑藏于天津博物馆；两处页面均未记展厅与陈列状态。
+collectionKind: collection-institution
+collectionPlace: place-tianjin-museum
+collectionSources:
+  - src-tjbwg-xianyu-1
+  - src-tjbwg-xianyu-2
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum's own pages state that the stone is held by 天津博物馆. Neither page names the gallery or the display state.
+collectionNoteZh: 馆方页面明确此碑藏于天津博物馆；两处页面均未记展厅与陈列状态。
 events:
   - id: ev-stele-xianyu-huang-1
     type: discovery
-    date:
-      kind: single
-      start: 1973
-      month: 5
-      end: 1973
-      endMonth: 5
-      era: null
-      original: 1973年5月
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1973
+    dateMonth: 5
+    dateEnd: 1973
+    dateEndMonth: 5
+    dateEra: null
+    dateOriginal: 1973年5月
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 天津市武清高村
     summary: The museum states that the stone was unearthed at 武清高村 in May 1973.
@@ -48,8 +44,7 @@ events:
     sources:
       - src-tjbwg-xianyu-1
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 鲜于璜碑（原石）

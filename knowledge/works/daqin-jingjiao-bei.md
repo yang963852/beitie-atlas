@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 大秦景教流行中国碑
 titleEn: Stele of the Diffusion of the Luminous Religion in China
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 781
-  month: null
-  end: 781
-  endMonth: null
-  era: null
-  original: 唐建中二年（781）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 781
+dateMonth: null
+dateEnd: 781
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐建中二年（781）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: author
@@ -34,8 +33,7 @@ attribution:
       - src-beilin-jingjiao
 sources:
   - src-beilin-jingjiao
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 大秦景教流行中国碑

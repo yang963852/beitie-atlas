@@ -26,3 +26,13 @@ claude任务.md
 # rebuilds it before dev, build and check; a fork never carries it.
 /data/index/knowledge-v1.json
 
+# Obsidian: the shared vault config under knowledge/.obsidian is tracked so a
+# contributor opens the library with the right property types and templates.
+# Everything below is per-machine state and must never reach the repository.
+knowledge/.obsidian/workspace*.json
+knowledge/.obsidian/cache
+knowledge/.obsidian/plugins/
+knowledge/.obsidian/themes/
+knowledge/.obsidian/hotkeys.json
+knowledge/.obsidian/community-plugins.json
+

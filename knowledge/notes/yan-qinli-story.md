@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 从一个「故」字读《颜勤礼碑》
 titleEn: Reading the Yan Qinli Stele through a single character
 state: reviewed

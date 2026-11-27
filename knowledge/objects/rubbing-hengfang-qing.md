@@ -1,23 +1,21 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: hengfang-bei
 objectType: rubbing
 titleZh: 衡方碑（清拓本）
 titleEn: Stele of Heng Fang, Qing rubbing
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 清
-  original: 清拓本
-  certainty: documented
-  note: The catalogue gives only the dynasty. The year the rubbing was taken is not recorded, so no year is stored.
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 清
+dateOriginal: 清拓本
+dateCertainty: documented
+dateNote: The catalogue gives only the dynasty. The year the rubbing was taken is not recorded, so no year is stored.
 catalogNumber: 新00046098
-dimensions:
-  raw: 纵 223 厘米，横 107 厘米
-  note: The catalogue does not state whether the figure describes the mounted sheet or the inked image.
+dimensionsRaw: 纵 223 厘米，横 107 厘米
+dimensionsNote: The catalogue does not state whether the figure describes the mounted sheet or the inked image.
 survival: surviving
 relationships:
   - type: rubbing-of
@@ -25,18 +23,16 @@ relationships:
     sources:
       - src-dpm-hengfang
     note: The catalogue identifies the rubbing as taken from this stele.
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-hengfang
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Published in the Palace Museum's online collection catalogue under object number 新00046098. The entry gives no gallery, accession date, or exhibition status.
-  noteZh: 著录于故宫博物院线上藏品目录，馆藏编号新00046098。条目没有说明展厅、入藏时间或展出状态。
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-hengfang
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Published in the Palace Museum's online collection catalogue under object number 新00046098. The entry gives no gallery, accession date, or exhibition status.
+collectionNoteZh: 著录于故宫博物院线上藏品目录，馆藏编号新00046098。条目没有说明展厅、入藏时间或展出状态。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 衡方碑（清拓本）

@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: huangfu-dan-bei
 objectType: original-stele
 titleZh: 皇甫诞碑（原石）
 titleEn: Stele of Huangfu Dan, original stone
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: No carving year is stated in the audited museum entry.
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: No carving year is stated in the audited museum entry.
 catalogNumber: null
-dimensions:
-  raw: 高268厘米，宽96厘米
-  note: Museum entry; 28 lines of 59 characters.
+dimensionsRaw: 高268厘米，宽96厘米
+dimensionsNote: Museum entry; 28 lines of 59 characters.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-huangfudan
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum entry states the original location near 皇甫川 but not the carving year; the year is left unrecorded rather than taken from general knowledge.
-  noteZh: 馆方条目记原在长安县鸣犊镇附近皇甫川，但没有给刻立年份。年份因此留空，不据通说补入。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-huangfudan
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum entry states the original location near 皇甫川 but not the carving year; the year is left unrecorded rather than taken from general knowledge.
+collectionNoteZh: 馆方条目记原在长安县鸣犊镇附近皇甫川，但没有给刻立年份。年份因此留空，不据通说补入。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 皇甫诞碑（原石）

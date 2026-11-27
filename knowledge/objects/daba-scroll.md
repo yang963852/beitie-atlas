@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: daba-bei
 objectType: ink-manuscript
 titleZh: 楷书帝师胆巴碑卷
 titleEn: Draft of the Stele of the Imperial Preceptor Dampa
-date:
-  kind: single
-  start: 1316
-  month: null
-  end: 1316
-  endMonth: null
-  era: 元延祐三年
-  original: 延祐三年（1316）□月立石
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1316
+dateMonth: null
+dateEnd: 1316
+dateEndMonth: null
+dateEra: 元延祐三年
+dateOriginal: 延祐三年（1316）□月立石
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 纵33.6厘米，横563厘米
-  note: The museum gives these figures for the mounted handscroll; the height of the written sheet and the width of the text alone are not stated.
+dimensionsRaw: 纵33.6厘米，横563厘米
+dimensionsNote: The museum gives these figures for the mounted handscroll; the height of the written sheet and the width of the text alone are not stated.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-daba
-  accessedAt: 2026-11-23
-  asOf: null
-  note: The museum's thematic page states that the scroll is held in the Palace Museum. It gives no accession number, gallery or display status.
-  noteZh: 馆方专题页称此卷藏故宫博物院，未给藏品号、展室与展出状态。
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-daba
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: The museum's thematic page states that the scroll is held in the Palace Museum. It gives no accession number, gallery or display status.
+collectionNoteZh: 馆方专题页称此卷藏故宫博物院，未给藏品号、展室与展出状态。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 楷书帝师胆巴碑卷

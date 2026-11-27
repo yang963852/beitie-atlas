@@ -1,22 +1,21 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 行书跋沈尹默论书札卷
 titleEn: Colophon to Shen Yinmo’s Writing on Calligraphy
 aliases: []
 studyCategory: tie
 dynastyId: prc
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1976
-  month: null
-  end: 1976
-  endMonth: null
-  era: null
-  original: 1976年
-  certainty: documented
-  meaning: colophon
-  note: The year belongs to Zhao’s colophon, not to Shen’s original letters.
+dateKind: single
+dateStart: 1976
+dateMonth: null
+dateEnd: 1976
+dateEndMonth: null
+dateEra: null
+dateOriginal: 1976年
+dateCertainty: documented
+dateMeaning: colophon
+dateNote: The year belongs to Zhao’s colophon, not to Shen’s original letters.
 script: 行书
 attribution:
   - role: colophon-author
@@ -30,16 +29,14 @@ attribution:
     noteZh: 上海博物馆将赵朴初所写这一段定为行书。
 sources:
   - src-shm-zhao-shen-colophon
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  timelineYear: 1976
-  people:
-    - zhao-puchu
-  objects: []
-  sources:
-    - src-shm-zhao-shen-colophon
+reviewState: reviewed
+guideState: reviewed
+guideTimelineYear: 1976
+guidePeople:
+  - zhao-puchu
+guideObjects: []
+guideSources:
+  - src-shm-zhao-shen-colophon
 ---
 
 # 行书跋沈尹默论书札卷

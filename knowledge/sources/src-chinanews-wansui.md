@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 辽宁省博物馆展出展馆之宝王羲之一门《万岁通天帖》
 publisher: 中国新闻网 China News Service

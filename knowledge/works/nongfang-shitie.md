@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 秾芳诗帖
 titleEn: Poem on Fragrant Blossoms
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: northern-song
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北宋
-  original: 北宋
-  certainty: documented
-  note: 帖无年款，馆方列于北宋。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北宋
+dateOriginal: 北宋
+dateCertainty: documented
+dateNote: 帖无年款，馆方列于北宋。
 script: 瘦金书
 attribution:
   - role: calligrapher
@@ -30,8 +29,7 @@ attribution:
 sources:
   - src-npm-nongfang
   - src-dpm-emperor
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 秾芳诗帖

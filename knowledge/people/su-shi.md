@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 苏轼
 titleEn: Su Shi
 aliases: []

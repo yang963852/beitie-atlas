@@ -1,0 +1,31 @@
+# 碑帖之间 / Between Steles
+
+> 一个开源的中国书法碑帖知识库：把一件作品（碑或帖）与它存世的实物分开记录，
+> 每一条馆藏、年代与流传断言都注明来源，未知的保持未知。
+> An open knowledge base of Chinese steles and model-letter rubbings, recording
+> each named work separately from its surviving physical copies, with a cited
+> source for every claim. Chinese is the authoring language; English is optional.
+
+## 网站
+
+- [首页](https://yang963852.github.io/beitie-atlas/)：按时代、书体与学习门类浏览作品与实物。
+- [知识库](https://yang963852.github.io/beitie-atlas/#/library)：作品、书家、笔记与实物档案的检索入口。
+- [馆藏地图](https://yang963852.github.io/beitie-atlas/#/collections)：按今天的收藏地查找实物；没有可靠坐标的地点只列文字，不猜位置。
+- [年代长河](https://yang963852.github.io/beitie-atlas/#catalogue)：按作品所属时代排序。
+
+## 数据
+
+- [Markdown 知识库](https://github.com/yang963852/beitie-atlas/tree/main/knowledge)：作者源，唯一的人工编辑入口。`knowledge/works`、`objects`、`people`、`places`、`sources`、`notes` 各目录一类记录，`relations.md` 记录人物与作品之间带来源的关系。
+- [完整知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip)：与上述 Markdown 同构，可直接作为 Obsidian vault 打开。
+- 网站与地图读取的是编译产物 `data/index/knowledge-v1.json`，由 `npm run knowledge:compile` 从 Markdown 确定性生成，不在仓库里人工维护。
+- 记录中的未知值以 `null` 保留；来源访问日期不是实物核验日期；作品与实物之间不复制出处。
+
+## 参与
+
+- [提交资料](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)：可以只用中文，不必写代码。
+- [贡献指南](https://github.com/yang963852/beitie-atlas/blob/main/CONTRIBUTING.md) · [中文投稿说明](https://github.com/yang963852/beitie-atlas/blob/main/docs/CONTRIBUTE.zh-CN.md)
+- [源码仓库](https://github.com/yang963852/beitie-atlas)
+
+## 权利
+
+MIT 许可证覆盖本项目的应用代码、文档与原创编辑内容；第三方引文、博物馆页面、图片、地图与商标的权利仍归原权利人，详见仓库中的 [NOTICE.md](https://github.com/yang963852/beitie-atlas/blob/main/NOTICE.md)。草稿记录是研究材料，不是经核实的馆藏信息。

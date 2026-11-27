@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shupu
 objectType: ink-manuscript
 titleZh: 孙过庭《书谱》
 titleEn: Treatise on Calligraphy
-date:
-  kind: single
-  start: 687
-  month: null
-  end: 687
-  endMonth: null
-  era: null
-  original: 垂拱三年寫記
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 687
+dateMonth: null
+dateEnd: 687
+dateEndMonth: null
+dateEra: null
+dateOriginal: 垂拱三年寫記
+dateCertainty: documented
+dateNote: null
 catalogNumber: 故書000058N000000000
-dimensions:
-  raw: 本幅 26.5 × 900.8 cm
-  note: null
+dimensionsRaw: 本幅 26.5 × 900.8 cm
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-catalogue-shupu
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-catalogue-shupu
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: ev-witness-shupu-1
     type: documented
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 北宋
-      original: 北宋
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 北宋
+    dateOriginal: 北宋
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The National Palace Museum attributes the regular-script label on the mounting to Emperor Huizong.
@@ -51,16 +47,15 @@ events:
     certainty: documented
   - id: ev-witness-shupu-2
     type: documented
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 清
-      original: 清
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 清
+    dateOriginal: 清
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The museum identifies collectors’ seals of Liang Qingbiao and An Qi. The first Shiqu baoji records the scroll in its Imperial Study section.
@@ -68,8 +63,7 @@ events:
     sources:
       - src-catalogue-shupu
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 孙过庭《书谱》

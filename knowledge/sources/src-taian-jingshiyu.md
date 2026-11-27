@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 经石峪
 publisher: 泰安市博物馆 Tai'an Municipal Museum

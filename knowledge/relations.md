@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 relations:
   - from: shen-yinmo
     to: zhao-puchu

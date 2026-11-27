@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 国宝名碑 · 三藏圣教序碑（集王圣教序碑）
 publisher: 西安碑林博物馆 Xi’an Beilin Museum

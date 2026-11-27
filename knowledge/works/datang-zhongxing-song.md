@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 大唐中兴颂
 titleEn: Eulogy of the Tang Restoration
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 771
-  month: null
-  end: 771
-  endMonth: null
-  era: null
-  original: 唐大历六年（771）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 771
+dateMonth: null
+dateEnd: 771
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐大历六年（771）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: author
@@ -36,8 +35,7 @@ attribution:
 sources:
   - src-hunan-wuxi
   - src-yz-wuxi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 大唐中兴颂

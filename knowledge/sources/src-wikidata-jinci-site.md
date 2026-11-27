@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: Wikidata Q1413164 — 晋祠
 publisher: Wikidata

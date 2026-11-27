@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 正定：往事与美，可寻可看
 publisher: 石家庄市投资促进局

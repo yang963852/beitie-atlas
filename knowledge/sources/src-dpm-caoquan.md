@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 【明初拓东汉曹全碑】
 publisher: 故宫博物院

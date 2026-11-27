@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 西汉•北陛石（鲁灵光殿址刻石）
 publisher: 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery

@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 墨池堂选帖
 titleEn: Mochitang Modelbook
 aliases: []
 studyCategory: tie
 dynastyId: ming
 dynastyQualifier: null
-date:
-  kind: range
-  start: 1602
-  month: null
-  end: 1610
-  endMonth: null
-  era: 明万历
-  original: 万历三十年（1602年）至三十八年（1610年）
-  certainty: documented
-  note: null
+dateKind: range
+dateStart: 1602
+dateMonth: null
+dateEnd: 1610
+dateEndMonth: null
+dateEra: 明万历
+dateOriginal: 万历三十年（1602年）至三十八年（1610年）
+dateCertainty: documented
+dateNote: null
 script: null
 attribution:
   - role: compiler
@@ -36,8 +35,7 @@ attribution:
     noteZh: null
 sources:
   - src-dpm-234595
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 墨池堂选帖

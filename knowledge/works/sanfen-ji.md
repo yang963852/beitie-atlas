@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 三坟记
 titleEn: Record of the Three Graves
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 767
-  month: null
-  end: 767
-  endMonth: null
-  era: null
-  original: 唐大历二年（767年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 767
+dateMonth: null
+dateEnd: 767
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐大历二年（767年）
+dateCertainty: documented
+dateNote: null
 script: 小篆
 attribution:
   - role: author
@@ -38,8 +37,7 @@ attribution:
 sources:
   - src-beilin-sanfenji
   - src-hbrb-sanfenji
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 三坟记

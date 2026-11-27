@@ -34,12 +34,21 @@ Do not read the whole repository for a bounded change. Read the matching row, th
 | Edit a work, object, person, place, source or note | [Editorial workflow](docs/atlas-workflow.md), [Chinese templates](knowledge/_templates/), the target Markdown and its sources | Compiler, UI, generated catalogue |
 | Develop the website | [Design system](docs/design-system.md), [data boundary](src/domain/data.ts), the compiled interface shape and the affected component | Author Markdown, retired legacy JSON, compiler |
 | Maintain the compiler or interface | [Schema](scripts/lib/knowledge-schema.ts), [compiler](scripts/lib/knowledge-compiler.ts), [engineering plan](docs/engineering-plan.md) | Reader-facing prose except a migration correction |
-| Review a contribution | The Issue or PR, the target record and its evidence, [project rules](CONTRIBUTING.md) | Merging or publishing on the author's behalf |
+| Review a contribution | The Issue or PR, the target record and its evidence, [CONTRIBUTING.md](CONTRIBUTING.md) | Merging or publishing on the author's behalf |
 | Publish a release | [Release runbook](docs/release.md), [CHANGELOG](CHANGELOG.md), the affected source | Other contributors' assigned files |
+
+## Roles and scope
+
+- The maintainer prioritizes work, settles scope and decides merges. Self-review is sufficient; no independent reviewer is required. Work independently on disjoint subjects or files; name one lead and the paths each task owns before editing overlapping files.
+- Use one short-lived `task/NNN-slug` branch per task, created from current `main` and deleted after merge. Do not reuse a branch across tasks or keep per-agent integration branches. Open one pull request per task, merge `origin/main` into the branch if `main` moved before you open it, and never commit directly to `main`.
+- Use a separate clone or working tree per concurrent task so that two agents never edit the same checkout at once. The primary checkout is for coordination, not a shared agent workspace.
+- Resolve blocking findings within the assigned pull request. Do not rewrite the application or add a backend, framework, provider or dependency without a concrete need recorded in the decision log.
+- Use English for implementation and technical guidance. Communicate with the maintainer in Chinese when needed; Chinese-only submissions are welcome, and original wording and names are preserved.
+- Keep build products, local environment files, private notes and workspace tooling out of the repository. Use an ignored local directory such as `.private/` for temporary work; never stage it.
 
 ## Evidence and data
 
-- `knowledge/` is the only author source. `scripts/lib/knowledge-compiler.ts` produces `data/index/knowledge-v1.json`; the website, checks, timeline, map and download package read that interface and never parse author Markdown. The JSON is generated on demand, not committed: `npm run knowledge:build` rebuilds it, and the `predev`, `prebuild`, `precheck`, `pretypecheck` and `pretest` hooks run that build for you.
+- `knowledge/` is the only author source. `scripts/lib/knowledge-compiler.ts` produces `data/index/knowledge-v1.json`; the website, checks, timeline, map and download package read that interface and never parse author Markdown. The JSON is generated on demand, not committed: `npm run knowledge:build` rebuilds it; the `predev`, `prebuild` and `precheck` hooks run that build, and `pretypecheck` and `pretest` compile the interface first.
 - Regenerate with `npm run knowledge:build`, and include the catalogue diff in the pull request.
 - Work and physical object remain separate. A work may survive in several copies; each copy's production date, condition and custody belong to that copy alone.
 - Every collection assertion and history event needs evidence. Source access date is not physical verification date.
@@ -64,11 +73,16 @@ Do not read the whole repository for a bounded change. Read the matching row, th
 - Small commits with `feat:`, `fix:`, `docs:`, `test:`, `ci:` or `chore:` prefixes. Do not rewrite pushed history.
 - The pull request is the delivery record: scope, evidence, commands run, limitations and any open question. A dated delivery report is for a milestone, migration or release, not for routine work.
 - A contributor may submit either a browser-only source Issue or a Markdown pull request. An editor links the two when normalising a reader's submission, and that link preserves attribution.
+- Routine work needs no independent acceptance, delivery report or board row. The maintainer's merge is the decision.
+- Do not add unnecessary confirmation steps for reversible work within the assigned task.
 
 ## Repository and publication
 
-- `main` is the published branch. Branch from current `main`, open one pull request per task, and let the maintainer decide the merge.
+- `main` is the published branch. Branch from current `main`, open one pull request per task, and let the maintainer decide the merge. Delete the branch after merge.
+- The maintainer is the reviewer. `npm run check` green plus the maintainer's merge is the gate. Self-review is sufficient.
+- Apply the evidence checklist in [the atlas workflow](docs/atlas-workflow.md) to additions and coordinate changes. Sort the left column by the represented inscription's period, then date. Keep the production date of each copy visible in its own detail.
 - GitHub Pages is the sole website host. [The Pages workflow](.github/workflows/pages.yml) publishes checked `main`; `npm run release` and the release manifest remain the automated data gate for a public build.
+- Publish when the maintainer says so. Merging to `main` deploys through the Pages workflow. A release updates `CHANGELOG.md`, tags `vX.Y.Z`, and keeps the automated gate; a quick live smoke test is recommended.
 - Keep `dist/`, `build/`, local environment files, map keys and deployment credentials out of the source remote.
 - Every image, quotation and map tile keeps its own rights. The repository licence does not relicense third-party material; see [NOTICE.md](NOTICE.md).
 

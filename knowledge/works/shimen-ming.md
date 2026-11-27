@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 石门铭
 titleEn: Shimen Inscription
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: northern-and-southern
 dynastyQualifier: 北魏
-date:
-  kind: single
-  start: 509
-  month: null
-  end: 509
-  endMonth: null
-  era: 北魏永平二年
-  original: 北魏宣武帝永平二年（509）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 509
+dateMonth: null
+dateEnd: 509
+dateEndMonth: null
+dateEra: 北魏永平二年
+dateOriginal: 北魏宣武帝永平二年（509）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: calligrapher
@@ -37,8 +36,7 @@ attribution:
 sources:
   - src-gqb-shimen-thirteen
   - src-cnr-shimen-ming
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 石门铭

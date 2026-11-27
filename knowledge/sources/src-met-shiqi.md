@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: On the Seventeenth Day (十七帖拓本册, 1991.380)
 publisher: The Metropolitan Museum of Art

@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: hanqie
 objectType: manuscript-copy
 titleZh: 唐摹王羲之草书寒切帖卷
 titleEn: Tang tracing copy of Wang Xizhi's Hanqie Letter
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 唐
-  original: 唐摹本
-  certainty: documented
-  note: 馆方定此卷为唐摹本，未记具体年份。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 唐
+dateOriginal: 唐摹本
+dateCertainty: documented
+dateNote: 馆方定此卷为唐摹本，未记具体年份。
 catalogNumber: null
-dimensions:
-  raw: 纵25.6厘米，横21.5厘米
-  note: 馆方中英文说明均作此数。
+dimensionsRaw: 纵25.6厘米，横21.5厘米
+dimensionsNote: 馆方中英文说明均作此数。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-tianjin-museum
-  sources:
-    - src-tjbwg-hanqie
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The museum lists the scroll as a collection highlight and describes the Ming colophons; it gives no accession number.
-  noteZh: 馆方以此卷为馆藏精品，并述明代题跋，未给藏品号。
+collectionKind: collection-institution
+collectionPlace: place-tianjin-museum
+collectionSources:
+  - src-tjbwg-hanqie
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The museum lists the scroll as a collection highlight and describes the Ming colophons; it gives no accession number.
+collectionNoteZh: 馆方以此卷为馆藏精品，并述明代题跋，未给藏品号。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 唐摹王羲之草书寒切帖卷

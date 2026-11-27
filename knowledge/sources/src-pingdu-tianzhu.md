@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 天柱山摩崖石刻
 publisher: 平度市博物馆

@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: lingfei-jing
 objectType: ink-manuscript
 titleZh: 灵飞经（四十三行本）
 titleEn: Classic of Spiritual Flight, forty-three-column album
-date:
-  kind: approximate
-  start: 738
-  month: null
-  end: 738
-  endMonth: null
-  era: null
-  original: 约738年
-  certainty: approximate
-  note: 馆方定年为约 738 年。
+dateKind: approximate
+dateStart: 738
+dateMonth: null
+dateEnd: 738
+dateEndMonth: null
+dateEra: null
+dateOriginal: 约738年
+dateCertainty: approximate
+dateNote: 馆方定年为约 738 年。
 catalogNumber: 1989.141.1a–i
-dimensions:
-  raw: 九开，每开纵20.8厘米，横8.9厘米
-  note: 存四十三行，每行约十七字。
+dimensionsRaw: 九开，每开纵20.8厘米，横8.9厘米
+dimensionsNote: 存四十三行，每行约十七字。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-met-museum
-  sources:
-    - src-met-lingfeijing
-  accessedAt: 2026-11-24
-  asOf: null
-  note: Purchased with the Dillon Fund in 1989; the label records Dong Qichang’s ownership and the Bohai cangzhen.
-  noteZh: 1989 年以狄龙基金购藏；馆方说明记董其昌旧藏与《渤海藏真》摹刻。
+collectionKind: collection-institution
+collectionPlace: place-met-museum
+collectionSources:
+  - src-met-lingfeijing
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: Purchased with the Dillon Fund in 1989; the label records Dong Qichang’s ownership and the Bohai cangzhen.
+collectionNoteZh: 1989 年以狄龙基金购藏；馆方说明记董其昌旧藏与《渤海藏真》摹刻。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 灵飞经（四十三行本）

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 石门十三品摩崖石刻
 publisher: 汉中市汉台区人民政府

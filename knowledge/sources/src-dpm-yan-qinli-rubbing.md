@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 颜勤礼碑（民国拓本，文物号 新00045406）
 publisher: 故宫博物院 The Palace Museum

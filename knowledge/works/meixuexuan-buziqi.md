@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 梅雪轩书晦翁不自弃文
 titleEn: Meixuexuan Inscription of Huiweng’s Essay
 aliases: []
 studyCategory: bei
 dynastyId: ming
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1606
-  month: null
-  end: 1606
-  endMonth: null
-  era: null
-  original: 明万历三十四年（1606）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1606
+dateMonth: null
+dateEnd: 1606
+dateEndMonth: null
+dateEra: null
+dateOriginal: 明万历三十四年（1606）
+dateCertainty: documented
+dateNote: null
 script: 草书
 attribution:
   - role: author
@@ -38,8 +37,7 @@ attribution:
       - src-beilin-meixuexuan
 sources:
   - src-beilin-meixuexuan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 梅雪轩书晦翁不自弃文

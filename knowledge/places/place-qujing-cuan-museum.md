@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 曲靖爨文化博物馆
 nameEn: Cuan Culture Museum, Qujing
 historicalName: 爨碑亭
 kind: institution
-coordinates: null
 sources:
   - src-qjgov-cuan-museum
 notes:

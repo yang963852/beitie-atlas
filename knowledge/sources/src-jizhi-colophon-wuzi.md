@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 祭侄文稿 · 鲜于枢戊子跋
 publisher: 國立故宮博物院

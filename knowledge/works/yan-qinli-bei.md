@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 颜勤礼碑
 titleEn: Stele of Yan Qinli
 aliases: []
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 779
-  month: null
-  end: 779
-  endMonth: null
-  era: null
-  original: 唐大历十四年（779年）
-  certainty: documented
-  note: Date as given in the Palace Museum catalogue entry for the rubbing.
+dateKind: single
+dateStart: 779
+dateMonth: null
+dateEnd: 779
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐大历十四年（779年）
+dateCertainty: documented
+dateNote: Date as given in the Palace Museum catalogue entry for the rubbing.
 script: null
 attribution:
   - role: author-and-calligrapher
@@ -30,19 +29,17 @@ sources:
   - src-dpm-yan-qinli-rubbing
   - src-beilin-article-2007
   - src-beilin-yan-qinli-object
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people:
-    - yan-zhenqing
-  objects:
-    - yan-qinli-original-stele
-    - dpm-rubbing-xin00045406
-  sources:
-    - src-beilin-yan-qinli-object
-    - src-dpm-yan-qinli-rubbing
-    - src-chnu-yan-workshop
+reviewState: reviewed
+guideState: reviewed
+guidePeople:
+  - yan-zhenqing
+guideObjects:
+  - yan-qinli-original-stele
+  - dpm-rubbing-xin00045406
+guideSources:
+  - src-beilin-yan-qinli-object
+  - src-dpm-yan-qinli-rubbing
+  - src-chnu-yan-workshop
 ---
 
 # 颜勤礼碑

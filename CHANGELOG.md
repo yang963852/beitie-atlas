@@ -1,6 +1,10 @@
 # Changelog
 
-Current release: **v1.1.0 · 1.1 版** (2026-11-25).
+Current release: **v1.2.0 · 1.2 版**.
+
+## v1.2.0 · 1.2 版
+
+The 1.2 edition makes the library easier to edit and easier to query without changing the published data interface. Authors now write flat `schemaVersion: 2` properties, so every record can be edited in Obsidian's property panel; `knowledge/` is the vault and ships its record templates, property types and reading CSS, while per-machine state stays ignored. Search matches every term across a record's titles, aliases, calligraphers, places and catalogue number, so terms may come from different fields. Two tools serve contributors and agents: `npm run knowledge:query` prints one record with its sources, and `/llms.txt` summarises the site, data and rights for machine readers. The compiled interface remains `beitie-knowledge/1`, and the release gate is unchanged. [Knowledge library](knowledge/README.md) · [Engineering decisions](docs/engineering-plan.md)
 
 ## Unreleased
 

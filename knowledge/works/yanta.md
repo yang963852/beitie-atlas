@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 雁塔圣教序
 titleEn: Wild Goose Pagoda Preface
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 653
-  month: null
-  end: 653
-  endMonth: null
-  era: null
-  original: null
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 653
+dateMonth: null
+dateEnd: 653
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-yanta
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 雁塔圣教序

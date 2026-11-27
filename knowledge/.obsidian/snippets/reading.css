@@ -1,0 +1,32 @@
+/*
+ * Reading comfort for the knowledge vault.
+ *
+ * The records are read as reference pages: long tables of provenance and
+ * sources, paired Chinese and English sections. Nothing here changes meaning
+ * or hides content, and the site build never reads this file.
+ */
+
+.markdown-rendered h2 {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.2em;
+}
+
+.markdown-rendered h3 {
+  color: var(--text-muted);
+  font-size: 0.95em;
+  letter-spacing: 0.04em;
+}
+
+.markdown-rendered table {
+  font-size: 0.9em;
+}
+
+/* Source and reference lists are scanned, not read; keep them dense. */
+.markdown-rendered ul li {
+  margin-block: 0.15em;
+}
+
+/* The properties panel holds every sourced value; give long lists room. */
+.metadata-container {
+  font-size: 0.9em;
+}

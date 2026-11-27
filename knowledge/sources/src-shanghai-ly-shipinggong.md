@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 跨越时空，对话龙门石窟云文博
 publisher: 上海市文化和旅游局 Shanghai Municipal Administration of Culture and Tourism

@@ -1,36 +1,32 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shichen-bei
 objectType: original-stele
 titleZh: 史晨碑（原石）
 titleEn: Stele of Shi Chen, original stone
-date:
-  kind: single
-  start: 169
-  month: null
-  end: 169
-  endMonth: null
-  era: null
-  original: 东汉建宁二年（169年）
-  certainty: documented
-  note: 后碑刻于建宁元年（168）四月，与前碑同石。
+dateKind: single
+dateStart: 169
+dateMonth: null
+dateEnd: 169
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉建宁二年（169年）
+dateCertainty: documented
+dateNote: 后碑刻于建宁元年（168）四月，与前碑同石。
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-qufu-hanwei-gallery
-  sources:
-    - src-confuciusmuseum-binke
-    - src-sdxc-kongmiao-sanbei
-  accessedAt: 2026-11-18
-  asOf: null
-  note: "One stone carries two texts: the front dated 169, the back dated 168. The record keeps 169 as the main date and states the second date in the source wording."
-  noteZh: 一石两面：碑阳刻于建宁二年（169），碑阴为建宁元年（168）四月。本条以 169 年为主，另一年保留在原文表述中。
+collectionKind: collection-institution
+collectionPlace: place-qufu-hanwei-gallery
+collectionSources:
+  - src-confuciusmuseum-binke
+  - src-sdxc-kongmiao-sanbei
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: "One stone carries two texts: the front dated 169, the back dated 168. The record keeps 169 as the main date and states the second date in the source wording."
+collectionNoteZh: 一石两面：碑阳刻于建宁二年（169），碑阴为建宁元年（168）四月。本条以 169 年为主，另一年保留在原文表述中。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 史晨碑（原石）

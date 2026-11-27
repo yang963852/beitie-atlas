@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: dongshansong
 objectType: ink-manuscript
 titleZh: 东山松帖页
 titleEn: Leaf of the Letter on the Dongshan Pines
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: 馆方题名系于晋，未说明此页的制作年代。
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: 馆方题名系于晋，未说明此页的制作年代。
 catalogNumber: 故00002895-1/10
-dimensions:
-  raw: 纵22.8厘米，横22.3厘米
-  note: 馆方记纸本。
+dimensionsRaw: 纵22.8厘米，横22.3厘米
+dimensionsNote: 馆方记纸本。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-dongshansong
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The palace museum entry holds the leaf under the inventory number 故00002895-1/10.
-  noteZh: 故宫藏品说明记此页藏故宫博物院，文物号故00002895-1/10。
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-dongshansong
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The palace museum entry holds the leaf under the inventory number 故00002895-1/10.
+collectionNoteZh: 故宫藏品说明记此页藏故宫博物院，文物号故00002895-1/10。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 东山松帖页

@@ -1,45 +1,41 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: yanta
 objectType: rubbing
 titleZh: 雁塔圣教序（慈恩寺圣教序拓本）
 titleEn: Wild Goose Pagoda Preface, rubbing
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 明
-  original: 明拓本
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 明
+dateOriginal: 明拓本
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00045571
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-catalogue-yanta
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-catalogue-yanta
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: ev-witness-yanta-1
     type: accession
-    date:
-      kind: unknown
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: null
-      original: null
-      certainty: unknown
-      note: null
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: null
     place: null
     placeWording: null
     summary: The Palace Museum credits Zhu Yi’an and his family with the donation. The item record gives no accession year.
@@ -47,8 +43,7 @@ events:
     sources:
       - src-catalogue-yanta
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 雁塔圣教序（慈恩寺圣教序拓本）

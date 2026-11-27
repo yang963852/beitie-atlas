@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: dayu-ding
 objectType: bronze-vessel
 titleZh: 大盂鼎
 titleEn: Da Yu Ding
-date:
-  kind: single
-  start: -1003
-  month: null
-  end: -1003
-  endMonth: null
-  era: null
-  original: 西周康王二十三年（公元前1003年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: -1003
+dateMonth: null
+dateEnd: -1003
+dateEndMonth: null
+dateEra: null
+dateOriginal: 西周康王二十三年（公元前1003年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 通高101.9厘米，口径77.8厘米，重153.5千克
-  note: 器壁较厚，立耳微外撇，垂腹，三蹄足。
+dimensionsRaw: 通高101.9厘米，口径77.8厘米，重153.5千克
+dimensionsNote: 器壁较厚，立耳微外撇，垂腹，三蹄足。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-national-museum
-  sources:
-    - src-chnmuseum-dayuding
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The museum records the 1951 Pan family donation to the Shanghai Museum and the 1959 accession into the Museum of Chinese History.
-  noteZh: 馆方记1951年潘氏后人捐赠上海博物馆，1959年入藏中国历史博物馆。
+collectionKind: collection-institution
+collectionPlace: place-national-museum
+collectionSources:
+  - src-chnmuseum-dayuding
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The museum records the 1951 Pan family donation to the Shanghai Museum and the 1959 accession into the Museum of Chinese History.
+collectionNoteZh: 馆方记1951年潘氏后人捐赠上海博物馆，1959年入藏中国历史博物馆。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 大盂鼎

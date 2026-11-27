@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 梅雪轩书晦翁不自弃文
 publisher: 西安碑林博物馆 Xi’an Beilin Museum

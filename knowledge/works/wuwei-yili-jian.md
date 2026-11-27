@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 武威仪礼简
 titleEn: Wuwei Slips of the Yili
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: tie
 dynastyId: western-han
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 西汉晚期
-  original: 西汉晚期
-  certainty: approximate
-  note: 简上有“河平”年号，为西汉成帝年号（前28—前25）。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 西汉晚期
+dateOriginal: 西汉晚期
+dateCertainty: approximate
+dateNote: 简上有“河平”年号，为西汉成帝年号（前28—前25）。
 script: 汉隶
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
     noteZh: 简册出自多人之手，未署书手。
 sources:
   - src-people-yili
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 武威仪礼简

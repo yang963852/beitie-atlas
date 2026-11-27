@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: tianfa-shenchen-bei
 objectType: rubbing
 titleZh: 天发神谶碑（北宋拓本）
 titleEn: Stele of the Heavenly Omen, Northern Song rubbing
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北宋
-  original: 北宋拓本
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北宋
+dateOriginal: 北宋拓本
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00046692
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-tianfa
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The Palace Museum catalogues this album as a Northern Song rubbing. Its exact year of production is unavailable.
-  noteZh: 故宫著录此册为北宋拓本，未给出具体拓年。
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-tianfa
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The Palace Museum catalogues this album as a Northern Song rubbing. Its exact year of production is unavailable.
+collectionNoteZh: 故宫著录此册为北宋拓本，未给出具体拓年。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 天发神谶碑（北宋拓本）

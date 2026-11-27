@@ -1,45 +1,41 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: lanting
 objectType: rubbing
 titleZh: 定武兰亭序（詹东图藏本）
 titleEn: Dingwu Orchid Pavilion, Zhan Dongtu copy
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 宋
-  original: 宋
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 宋
+dateOriginal: 宋
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00135367
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-233468
-  accessedAt: 2026-11-19
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-233468
+collectionAccessedAt: 2026-11-19
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events:
   - id: ev-dingwu-zhan-1
     type: documented
-    date:
-      kind: unknown
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: null
-      original: null
-      certainty: unknown
-      note: null
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: null
     place: null
     placeWording: null
     summary: The third Shiqu baoji catalogues the Ming colophons. The museum identifies the rubbing now mounted before them as a later addition.
@@ -47,15 +43,13 @@ events:
     sources:
       - src-dpm-233468
     certainty: documented
-version:
-  label: 定武本
-  basis: 馆方题名与拓本特征
-  sources:
-    - src-dpm-233468
-  note: The museum names this rubbing as a Dingwu version and describes its recutting features.
-  noteZh: 馆方以定武本题名，并记其翻刻特征。
-review:
-  state: reviewed
+versionLabel: 定武本
+versionBasis: 馆方题名与拓本特征
+versionSources:
+  - src-dpm-233468
+versionNote: The museum names this rubbing as a Dingwu version and describes its recutting features.
+versionNoteZh: 馆方以定武本题名，并记其翻刻特征。
+reviewState: reviewed
 ---
 
 # 定武兰亭序（詹东图藏本）

@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 河北博物院
 nameEn: Hebei Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-hebei-zhongshan
 notes:

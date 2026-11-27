@@ -1,48 +1,45 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: work-id
 objectType: original-stele
 titleZh: 实物题名
 titleEn: Object title
 # 制作、出土、入藏等日期含义写清楚；不确定就留空并说明。
-date:
-  kind: single
-  start: 779
-  month: null
-  end: 779
-  endMonth: null
-  era: null
-  original: 来源原文
-  certainty: documented
-  meaning: production
-  note: null
+dateKind: single
+dateStart: 779
+dateMonth: null
+dateEnd: 779
+dateEndMonth: null
+dateEra: null
+dateOriginal: 来源原文
+dateCertainty: documented
+dateMeaning: production
+dateNote: null
 catalogNumber: null
-dimensions: null
+# 可选：有尺寸记录时写 dimensionsRaw（来源原文）与 dimensionsNote；没有就不写这两项。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-example
-  sources:
-    - src-example
-  accessedAt: 2026-11-24
-  asOf: null
-  note: 来源如何描述收藏
-  noteZh: 来源如何描述收藏
+collectionKind: collection-institution
+collectionPlace: place-example
+collectionSources:
+  - src-example
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: 来源如何描述收藏
+collectionNoteZh: 来源如何描述收藏
 events:
   - id: ev-example
     type: discovery
-    date:
-      kind: single
-      start: 1922
-      month: null
-      end: 1922
-      endMonth: null
-      era: null
-      original: 1922年
-      certainty: documented
-      meaning: discovery
-      note: null
+    dateKind: single
+    dateStart: 1922
+    dateMonth: null
+    dateEnd: 1922
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 1922年
+    dateCertainty: documented
+    dateMeaning: discovery
+    dateNote: null
     place: null
     placeWording: 来源写的地点
     summary: What happened, in English.
@@ -50,15 +47,13 @@ events:
     sources:
       - src-example
     certainty: documented
-# 可选：此件特有的摹写者、题跋者、刻工。
-attribution: []
-# 可选：确有称名和依据时才写版本。
-version: null
+# 可选：此件特有的摹写者、题跋者、刻工。要写就至少一条；没有就整段删除，不要留空列表。
+# 可选：确有称名和依据时才写 versionLabel / versionBasis / versionSources /
+# versionNote / versionNoteZh 五项；没有称名就五项都不写。
 claims: []
-review:
-  state: draft
-  note: 还缺什么证据
-  noteZh: 还缺什么证据
+reviewState: draft
+reviewNote: 还缺什么证据
+reviewNoteZh: 还缺什么证据
 media: []
 ---
 

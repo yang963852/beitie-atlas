@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 法藏敦煌遗书资源回归，存世最早《温泉铭》《化度寺碑》在列
 publisher: 澎湃新闻 The Paper

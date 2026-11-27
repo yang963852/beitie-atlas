@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 昭陵博物馆
 nameEn: Zhaoling Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-dpm-yugong-nansong
 notes:

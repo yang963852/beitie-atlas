@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 楷书归去来兮辞页
 titleEn: Return Home in Regular Script
 aliases: []
 studyCategory: tie
 dynastyId: ming
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 明
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 明
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-wen-guiqulai
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 楷书归去来兮辞页

@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: beibi-stone
 objectType: original-stele
 titleZh: 北陛石（刻石）
 titleEn: Northern Stair Stone, inscribed stone
-date:
-  kind: single
-  start: -149
-  month: null
-  end: -149
-  endMonth: null
-  era: null
-  original: 西汉景帝中元元年（鲁恭王6年，前149年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: -149
+dateMonth: null
+dateEnd: -149
+dateEndMonth: null
+dateEra: null
+dateOriginal: 西汉景帝中元元年（鲁恭王6年，前149年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 长95厘米，宽42厘米，高19.5厘米
-  note: null
+dimensionsRaw: 长95厘米，宽42厘米，高19.5厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-qufu-hanwei-gallery
-  sources:
-    - src-qufu-beibi
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The gallery records the transfer of the stone to its collection in 1998.
-  noteZh: 陈列馆著录此石于 1998 年移入该馆。
+collectionKind: collection-institution
+collectionPlace: place-qufu-hanwei-gallery
+collectionSources:
+  - src-qufu-beibi
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The gallery records the transfer of the stone to its collection in 1998.
+collectionNoteZh: 陈列馆著录此石于 1998 年移入该馆。
 events:
   - id: evt-beibi-stone-1980-move
     type: relocation
-    date:
-      kind: single
-      start: 1980
-      month: null
-      end: 1980
-      endMonth: null
-      era: null
-      original: 1980年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1980
+    dateMonth: null
+    dateEnd: 1980
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 1980年
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 曲阜孔庙东庑
     summary: Transferred to the eastern wing of the Confucius Temple.
@@ -51,16 +47,15 @@ events:
     certainty: documented
   - id: evt-beibi-stone-1998-move
     type: relocation
-    date:
-      kind: single
-      start: 1998
-      month: null
-      end: 1998
-      endMonth: null
-      era: null
-      original: 1998年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1998
+    dateMonth: null
+    dateEnd: 1998
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 1998年
+    dateCertainty: documented
+    dateNote: null
     place: place-qufu-hanwei-gallery
     placeWording: 曲阜汉魏碑刻陈列馆
     summary: Transferred to the Han and Wei Stele Gallery.
@@ -68,8 +63,7 @@ events:
     sources:
       - src-qufu-beibi
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 北陛石（刻石）

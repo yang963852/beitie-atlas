@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 张玄墓志
 titleEn: Epitaph of Zhang Xuan
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: northern-and-southern
 dynastyQualifier: 北魏
-date:
-  kind: single
-  start: 531
-  month: 10
-  end: 531
-  endMonth: 10
-  era: null
-  original: 北魏普泰元年（531年）十月
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 531
+dateMonth: 10
+dateEnd: 531
+dateEndMonth: 10
+dateEra: null
+dateOriginal: 北魏普泰元年（531年）十月
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
     noteZh: 志文未署撰文者与书丹者姓名。
 sources:
   - src-yongji-zhangxuan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 张玄墓志

@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 洛神赋
 titleEn: Rhapsody on the Goddess of the Luo
 aliases: []
 studyCategory: tie
 dynastyId: yuan
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 元
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 元
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-zhao-luoshen
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 洛神赋

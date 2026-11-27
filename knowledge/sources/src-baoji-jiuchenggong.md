@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 对市十六届人民代表大会六次会议第216号建议的答复函
 publisher: 宝鸡市文物局 Baoji Municipal Cultural Heritage Bureau

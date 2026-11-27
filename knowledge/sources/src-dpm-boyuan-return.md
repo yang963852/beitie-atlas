@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 流失国宝重返故宫
 publisher: 故宫博物院

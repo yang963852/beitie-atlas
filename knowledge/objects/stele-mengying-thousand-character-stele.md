@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: mengying-thousand-character-stele
 objectType: original-stele
 titleZh: 篆书千字文碑（原石）
 titleEn: Mengying’s Seal-script Thousand Character Stele, original stone
-date:
-  kind: single
-  start: 965
-  month: null
-  end: 965
-  endMonth: null
-  era: null
-  original: 北宋乾德三年(965)
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 965
+dateMonth: null
+dateEnd: 965
+dateEndMonth: null
+dateEra: null
+dateOriginal: 北宋乾德三年(965)
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-mengying
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum lists this object in its stele catalogue.
-  noteZh: 西安碑林博物馆在碑刻目录中著录此件。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-mengying
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum lists this object in its stele catalogue.
+collectionNoteZh: 西安碑林博物馆在碑刻目录中著录此件。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 篆书千字文碑（原石）

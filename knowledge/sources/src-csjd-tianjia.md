@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 吴简｜三国农民的纳税凭证——嘉禾吏民田家莂
 publisher: 长沙简牍博物馆 Changsha Bamboo Slips Museum

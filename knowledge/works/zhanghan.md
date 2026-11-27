@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 张翰帖
 titleEn: Letter on Zhang Han
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 唐
-  original: 唐
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 唐
+dateOriginal: 唐
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: null
 sources:
   - src-dpm-234567
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 张翰帖

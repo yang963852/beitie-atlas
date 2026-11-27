@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 《韭花帖》
 publisher: 无锡博物院 Wuxi Museum

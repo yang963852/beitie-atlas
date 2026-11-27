@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 宋拓晉唐小楷 冊 王羲之樂毅論
 publisher: 國立故宮博物院數位典藏 National Palace Museum Digital Archives

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 陈叔毅修孔子庙碑
 titleEn: Chen Shuyi’s Confucius Temple Repair Stele
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: sui
 dynastyQualifier: null
-date:
-  kind: single
-  start: 611
-  month: null
-  end: 611
-  endMonth: null
-  era: null
-  original: 隋大业七年（611年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 611
+dateMonth: null
+dateEnd: 611
+dateEndMonth: null
+dateEra: null
+dateOriginal: 隋大业七年（611年）
+dateCertainty: documented
+dateNote: null
 script: null
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
     noteZh: 所引条目未给出撰文者或书丹者。
 sources:
   - src-qufu-chen-shuyi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 陈叔毅修孔子庙碑

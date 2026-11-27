@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 鴨頭丸帖卷
 publisher: 上海博物館 Shanghai Museum

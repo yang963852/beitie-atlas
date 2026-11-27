@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 敦煌石室发现的四种碑刻古拓——兼谈中国书籍制度的变迁
 publisher: 施安昌 · 故宫博物院网站所载论文

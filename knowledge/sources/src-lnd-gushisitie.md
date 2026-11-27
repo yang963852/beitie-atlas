@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 开辟并丰富中国书法艺术表现空间——解读国家一级文物《古诗四帖》卷
 publisher: 辽宁日报 Liaoning Daily

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 现场｜传世稀见，“四欧宝笈”领衔唐碑善本大展
 publisher: 澎湃新闻

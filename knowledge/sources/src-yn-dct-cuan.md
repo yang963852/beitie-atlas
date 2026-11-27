@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 关于省政协十三届二次会议第360号提案会办意见的函
 publisher: 云南省文化和旅游厅

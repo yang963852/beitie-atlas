@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 史晨碑
 titleEn: Stele of Shi Chen
 aliases: []
 studyCategory: bei
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: 169
-  month: null
-  end: 169
-  endMonth: null
-  era: null
-  original: 东汉建宁二年（169年）
-  certainty: documented
-  note: 后碑刻于建宁元年（168）四月，与前碑同石。
+dateKind: single
+dateStart: 169
+dateMonth: null
+dateEnd: 169
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉建宁二年（169年）
+dateCertainty: documented
+dateNote: 后碑刻于建宁元年（168）四月，与前碑同石。
 script: 隶书
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
 sources:
   - src-confuciusmuseum-binke
   - src-sdxc-kongmiao-sanbei
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 史晨碑

@@ -1,46 +1,42 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: sanxitang-fatie
 objectType: recarving
 titleZh: 三希堂法帖刻石
 titleEn: Carved blocks of the Modelbook of the Three Rarities Hall
-date:
-  kind: range
-  start: 1747
-  month: null
-  end: 1750
-  endMonth: null
-  era: 清乾隆十二年至十五年
-  original: 乾隆十二年（1747）上谕，乾隆十五年（1750）刻跋
-  certainty: documented
-  note: The order dates from 1747 and the ministers' colophon from 1750; the intervening carving is not separately dated.
+dateKind: range
+dateStart: 1747
+dateMonth: null
+dateEnd: 1750
+dateEndMonth: null
+dateEra: 清乾隆十二年至十五年
+dateOriginal: 乾隆十二年（1747）上谕，乾隆十五年（1750）刻跋
+dateCertainty: documented
+dateNote: The order dates from 1747 and the ministers' colophon from 1750; the intervening carving is not separately dated.
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-beihai-yuegu
-  sources:
-    - src-dpm-sanxitang
-    - src-chinadaily-yuegu
-  accessedAt: 2026-11-23
-  asOf: null
-  note: The Palace Museum states that the stones are set into the Yuegu Lou pavilion in Beihai Park; the press feature describes the two-storey building on the west slope of Qionghua Island. Neither source gives a block count that the other confirms.
-  noteZh: 故宫称帖石嵌于北海阅古楼；报道记该楼在琼岛西麓、上下两层。两处所记刻石方数互不印证。
+collectionKind: in-situ
+collectionPlace: place-beihai-yuegu
+collectionSources:
+  - src-dpm-sanxitang
+  - src-chinadaily-yuegu
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: The Palace Museum states that the stones are set into the Yuegu Lou pavilion in Beihai Park; the press feature describes the two-storey building on the west slope of Qionghua Island. Neither source gives a block count that the other confirms.
+collectionNoteZh: 故宫称帖石嵌于北海阅古楼；报道记该楼在琼岛西麓、上下两层。两处所记刻石方数互不印证。
 events:
   - id: ev-sanxitang-stones-1
     type: carving
-    date:
-      kind: single
-      start: 1747
-      month: null
-      end: 1747
-      endMonth: null
-      era: 清乾隆十二年
-      original: 乾隆十二年（1747）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1747
+    dateMonth: null
+    dateEnd: 1747
+    dateEndMonth: null
+    dateEra: 清乾隆十二年
+    dateOriginal: 乾隆十二年（1747）
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 内府
     summary: The Qianlong Emperor ordered the selection and carving of the imperial collection of calligraphy.
@@ -50,16 +46,15 @@ events:
     certainty: documented
   - id: ev-sanxitang-stones-2
     type: other
-    date:
-      kind: single
-      start: 1753
-      month: null
-      end: 1753
-      endMonth: null
-      era: 清乾隆十八年
-      original: 清乾隆十八年（1753年）
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1753
+    dateMonth: null
+    dateEnd: 1753
+    dateEndMonth: null
+    dateEra: 清乾隆十八年
+    dateOriginal: 清乾隆十八年（1753年）
+    dateCertainty: documented
+    dateNote: null
     place: place-beihai-yuegu
     placeWording: 北海琼岛西麓阅古楼
     summary: A pavilion was built on the west slope of Qionghua Island to house the stones; its walls carry them today. The source dates the building, not the transfer of the stones.
@@ -67,8 +62,7 @@ events:
     sources:
       - src-chinadaily-yuegu
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 三希堂法帖刻石

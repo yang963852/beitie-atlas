@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 焦山碑林
 nameEn: Jiaoshan Stele Forest
 historicalName: null
 kind: institution
-coordinates: null
 sources: []
 notes:
   - On Jiaoshan island in the Yangtze at Zhenjiang. The five 瘗鹤铭 fragments are displayed here.

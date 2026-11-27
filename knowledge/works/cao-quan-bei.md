@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 曹全碑
 titleEn: Stele of Cao Quan
 aliases: []
 studyCategory: bei
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: 185
-  month: null
-  end: 185
-  endMonth: null
-  era: null
-  original: 东汉中平二年（185年）
-  certainty: disputed
-  note: The current Beilin entry and Palace Museum agree on 185. An alternate Beilin entry gives 186.
+dateKind: single
+dateStart: 185
+dateMonth: null
+dateEnd: 185
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉中平二年（185年）
+dateCertainty: disputed
+dateNote: The current Beilin entry and Palace Museum agree on 185. An alternate Beilin entry gives 186.
 script: 隶书
 attribution:
   - role: unknown
@@ -39,17 +38,15 @@ sources:
   - src-beilin-caoquan
   - src-beilin-caoquan-alternate
   - src-dpm-caoquan
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people: []
-  objects:
-    - stele-cao-quan
-  sources:
-    - src-beilin-caoquan
-    - src-beilin-caoquan-alternate
-    - src-dpm-caoquan
+reviewState: reviewed
+guideState: reviewed
+guidePeople: []
+guideObjects:
+  - stele-cao-quan
+guideSources:
+  - src-beilin-caoquan
+  - src-beilin-caoquan-alternate
+  - src-dpm-caoquan
 ---
 
 # 曹全碑

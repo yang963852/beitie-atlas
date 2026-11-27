@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 大盂鼎
 titleEn: Da Yu Ding, the Great Yu Cauldron
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: pre-qin
 dynastyQualifier: 西周
-date:
-  kind: single
-  start: -1003
-  month: null
-  end: -1003
-  endMonth: null
-  era: null
-  original: 西周康王二十三年（公元前1003年）
-  certainty: documented
-  note: 馆方以铭文“王廿又三祀”定为康王二十三年。
+dateKind: single
+dateStart: -1003
+dateMonth: null
+dateEnd: -1003
+dateEndMonth: null
+dateEra: null
+dateOriginal: 西周康王二十三年（公元前1003年）
+dateCertainty: documented
+dateNote: 馆方以铭文“王廿又三祀”定为康王二十三年。
 script: 金文
 attribution:
   - role: unknown
@@ -29,8 +28,7 @@ attribution:
     noteZh: 铭文记康王册命盂、盂作鼎，书手未署名。
 sources:
   - src-chnmuseum-dayuding
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 大盂鼎

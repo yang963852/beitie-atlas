@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 无锡博物院
 nameEn: Wuxi Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-wuxi-jiuhua
 notes:

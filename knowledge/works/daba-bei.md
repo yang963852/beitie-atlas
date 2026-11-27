@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 胆巴碑
 titleEn: Stele of the Imperial Preceptor Dampa
 aliases:
@@ -9,16 +9,15 @@ aliases:
 studyCategory: tie
 dynastyId: yuan
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1316
-  month: null
-  end: 1316
-  endMonth: null
-  era: 元延祐三年
-  original: 延祐三年（1316）□月立石
-  certainty: documented
-  note: The colophon transcribed by the museum gives the year and a damaged month; the month is left empty rather than restored.
+dateKind: single
+dateStart: 1316
+dateMonth: null
+dateEnd: 1316
+dateEndMonth: null
+dateEra: 元延祐三年
+dateOriginal: 延祐三年（1316）□月立石
+dateCertainty: documented
+dateNote: The colophon transcribed by the museum gives the year and a damaged month; the month is left empty rather than restored.
 script: 楷书
 attribution:
   - role: author-and-calligrapher
@@ -31,8 +30,7 @@ attribution:
     noteZh: 碑文开篇自署「集贤学士、资德大夫、臣赵孟頫奉敕撰并书篆」。
 sources:
   - src-dpm-daba
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 胆巴碑

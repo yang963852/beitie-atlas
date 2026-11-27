@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 蒲坂城遇见南阳太守张黑女
 publisher: 永济市人民政府门户网站

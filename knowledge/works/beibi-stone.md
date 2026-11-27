@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 北陛石
 titleEn: Northern Stair Stone
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: western-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: -149
-  month: null
-  end: -149
-  endMonth: null
-  era: null
-  original: 西汉景帝中元元年（鲁恭王6年，前149年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: -149
+dateMonth: null
+dateEnd: -149
+dateEndMonth: null
+dateEra: null
+dateOriginal: 西汉景帝中元元年（鲁恭王6年，前149年）
+dateCertainty: documented
+dateNote: null
 script: 篆书
 attribution:
   - role: unknown
@@ -29,8 +28,7 @@ attribution:
     noteZh: 所引条目未给出撰文者或书丹者。
 sources:
   - src-qufu-beibi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 北陛石

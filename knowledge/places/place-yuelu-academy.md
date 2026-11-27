@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 岳麓书院
 nameEn: Yuelu Academy
 historicalName: null
 kind: institution
-coordinates: null
 sources: []
 notes:
   - The 麓山寺碑 stands in a protective pavilion (护碑亭) on the academy grounds.

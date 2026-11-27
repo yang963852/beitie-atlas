@@ -1,38 +1,34 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: sanfen-ji
 objectType: recarving
 titleZh: 三坟记碑（宋时重刻）
 titleEn: Record of the Three Graves, Song recutting
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 宋
-  original: 宋时重刻
-  certainty: approximate
-  note: 原石立于唐大历二年，久佚；现存碑林者为宋时重刻，重刻年份未详。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 宋
+dateOriginal: 宋时重刻
+dateCertainty: approximate
+dateNote: 原石立于唐大历二年，久佚；现存碑林者为宋时重刻，重刻年份未详。
 catalogNumber: null
-dimensions:
-  raw: 残高160厘米，宽80厘米，厚25厘米
-  note: 螭首已残，碑身中部横断；尺寸依西安碑林博物馆页面。
+dimensionsRaw: 残高160厘米，宽80厘米，厚25厘米
+dimensionsNote: 螭首已残，碑身中部横断；尺寸依西安碑林博物馆页面。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-sanfenji
-    - src-hbrb-sanfenji
-  accessedAt: 2026-11-24
-  asOf: null
-  note: The museum page describes the stone now in the Beilin; a newspaper feature identifies it as a Song recutting of the lost Tang original.
-  noteZh: 馆方页面记今碑在碑林，报纸称其为唐原石佚后的宋时重刻。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-sanfenji
+  - src-hbrb-sanfenji
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: The museum page describes the stone now in the Beilin; a newspaper feature identifies it as a Song recutting of the lost Tang original.
+collectionNoteZh: 馆方页面记今碑在碑林，报纸称其为唐原石佚后的宋时重刻。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 三坟记碑（宋时重刻）

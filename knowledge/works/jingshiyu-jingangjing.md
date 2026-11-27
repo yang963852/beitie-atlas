@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 泰山经石峪金刚经
 titleEn: Diamond Sutra at Jingshi Valley, Mount Tai
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: northern-and-southern
 dynastyQualifier: 北齐
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北齐
-  original: 北齐
-  certainty: approximate
-  note: 刻石无年月，馆方页面称“察其笔势风格大多认为北齐人书”。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北齐
+dateOriginal: 北齐
+dateCertainty: approximate
+dateNote: 刻石无年月，馆方页面称“察其笔势风格大多认为北齐人书”。
 script: 隶楷
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
     noteZh: 刻石无年月与书刻者姓名。
 sources:
   - src-taian-jingshiyu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 泰山经石峪金刚经

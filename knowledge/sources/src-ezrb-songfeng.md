@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 黄庭坚与松风阁
 publisher: 鄂州日报

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 感悟魏碑神品《石门铭》
 publisher: 央广网 China National Radio

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 云峰山摩崖石刻保护工作情况
 publisher: 莱州市政府

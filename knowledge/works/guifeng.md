@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 圭峰定慧禅师碑
 titleEn: Stele of Chan Master Guifeng Dinghui
 aliases: []
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 855
-  month: null
-  end: 855
-  endMonth: null
-  era: 唐大中九年
-  original: 唐大中九年（855年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 855
+dateMonth: null
+dateEnd: 855
+dateEndMonth: null
+dateEra: 唐大中九年
+dateOriginal: 唐大中九年（855年）
+dateCertainty: documented
+dateNote: null
 script: null
 attribution:
   - role: author-and-calligrapher
@@ -44,8 +43,7 @@ attribution:
     noteZh: null
 sources:
   - src-dpm-234182
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 圭峰定慧禅师碑

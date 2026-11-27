@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 东京国立博物馆
 nameEn: Tokyo National Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-tnm-sanmen
   - src-colbase-sanmen

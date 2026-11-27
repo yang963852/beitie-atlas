@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 石台孝经
 titleEn: Stone Terrace Classic of Filial Piety
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 745
-  month: null
-  end: 745
-  endMonth: null
-  era: null
-  original: 唐天宝四年（745）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 745
+dateMonth: null
+dateEnd: 745
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐天宝四年（745）
+dateCertainty: documented
+dateNote: null
 script: 隶书（八分）
 attribution:
   - role: author-and-calligrapher
@@ -35,8 +34,7 @@ attribution:
     noteZh: 时为太子的李亨（后为唐肃宗）篆额。
 sources:
   - src-beilin-shitai
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 石台孝经

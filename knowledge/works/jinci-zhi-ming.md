@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 晋祠之铭并序
 titleEn: Inscription for the Jin Shrine
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 646
-  month: null
-  end: 646
-  endMonth: null
-  era: null
-  original: 唐贞观二十年（646）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 646
+dateMonth: null
+dateEnd: 646
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐贞观二十年（646）
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: author-and-calligrapher
@@ -28,8 +27,7 @@ attribution:
       - src-taiyuan-jinci
 sources:
   - src-taiyuan-jinci
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 晋祠之铭并序

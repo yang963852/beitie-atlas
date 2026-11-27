@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 平安何如奉橘三帖
 titleEn: "Three Letters: Ping'an, Heru and Fengju"
 aliases: []
 studyCategory: tie
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 东晋
-  original: null
-  certainty: documented
-  note: 三帖皆无年款，馆方题名系于东晋。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 东晋
+dateOriginal: null
+dateCertainty: documented
+dateNote: 三帖皆无年款，馆方题名系于东晋。
 script: 行书
 attribution:
   - role: calligrapher
@@ -33,8 +32,7 @@ sources:
   - src-npm-pingan-south
   - src-npm-pingan-essay
   - src-bo-ch-pingan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 平安何如奉橘三帖

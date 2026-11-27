@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 首都博物馆
 nameEn: Capital Museum, Beijing
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-people-luoshen
   - src-cnr-luoshen

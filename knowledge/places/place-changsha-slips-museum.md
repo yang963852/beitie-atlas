@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 长沙简牍博物馆
 nameEn: Changsha Bamboo Slips Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-csjd-tianjia
 notes:

@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 甘肃省博物馆
 nameEn: Gansu Provincial Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-people-yili
 notes:

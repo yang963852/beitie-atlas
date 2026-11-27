@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 走马楼吴简·嘉禾吏民田家莂
 titleEn: Zoumalou Wu slips, Jiahe field-tax records
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: tie
 dynastyId: three-kingdoms
 dynastyQualifier: 孙吴
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 孙吴·嘉禾
-  original: 三国吴嘉禾年间（232—238年）
-  certainty: documented
-  note: 嘉禾为孙权年号，简文自记年份。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 孙吴·嘉禾
+dateOriginal: 三国吴嘉禾年间（232—238年）
+dateCertainty: documented
+dateNote: 嘉禾为孙权年号，简文自记年份。
 script: 吴简隶楷
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
     noteZh: 赋税簿籍由基层书吏书写，未署名。
 sources:
   - src-csjd-tianjia
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 走马楼吴简·嘉禾吏民田家莂
