@@ -8,17 +8,17 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 
 | Measure | Value |
 | --- | --- |
-| Works | 119 (119 reviewed / 0 draft) |
-| Objects | 126 (126 reviewed / 0 draft) |
+| Works | 120 (120 reviewed / 0 draft) |
+| Objects | 127 (127 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
-| People pages | 21 |
+| People pages | 22 |
 | Notes | 2 |
 | Places | 46 (6 with coordinates) |
-| Sources | 193 (0 uncited) |
+| Sources | 194 (0 uncited) |
 | Events | 75 (50 objects with events) |
-| Attribution entries linked to a person | 38 / 161 |
-| Work sources (0 / 1 / 2+) | 0 / 79 / 40 |
-| Reviewed works with one source | 79 |
+| Attribution entries linked to a person | 39 / 162 |
+| Work sources (0 / 1 / 2+) | 0 / 80 / 40 |
+| Reviewed works with one source | 80 |
 | Dates without source wording | 44 |
 
 ## Gaps
@@ -89,8 +89,9 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [龙藏寺碑](../knowledge/works/longzang-si-bei.md) | Sui | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [董美人墓志](../knowledge/works/dong-meiren.md) | Sui | reviewed | — | 0 | 1 | 1 | 1/1 | 1 |
 | [陈叔毅修孔子庙碑](../knowledge/works/chen-shuyi-confucius-stele.md) | Sui | reviewed | — | 0 | 1 | 1 | 0/1 | — |
-| [孔子庙堂碑](../knowledge/works/kongzi-miaotang-bei.md) | Tang | reviewed | — | 0 | 2 | 1 | 1/1 | — |
+| [孔子庙堂碑](../knowledge/works/kongzi-miaotang-bei.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | — |
 | [九成宫醴泉铭](../knowledge/works/jiuchenggong-liquan-ming.md) | Tang | reviewed | — | 1 | 1 | 1 | 0/1 | — |
+| [汝南公主墓志铭](../knowledge/works/runan-gongzhu-muzhi.md) | Tang | reviewed | — | 1 | 1 | 1 | 0/1 | — |
 | [虞恭公碑](../knowledge/works/yugong-gong-bei.md) | Tang | reviewed | reviewed | 1 | 3 | 2 | 1/2 | — |
 | [晋祠之铭并序](../knowledge/works/jinci-zhi-ming.md) | Tang | reviewed | — | 1 | 1 | 2 | 1/1 | — |
 | [温泉铭](../knowledge/works/wen-quan-ming.md) | Tang | reviewed | — | 1 | 2 | 1 | 0/1 | — |
