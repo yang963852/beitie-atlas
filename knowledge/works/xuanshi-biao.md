@@ -21,6 +21,7 @@ attribution:
   - role: author
     name: 钟繇
     nameEn: Zhong Yao
+    person: zhong-yao
     certainty: documented
     sources:
       - src-dpm-xuanshi
