@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 烟雨潇湘·诗画永州 ——摩崖石刻之旅
 publisher: 永州市人民政府 Yongzhou Municipal People’s Government

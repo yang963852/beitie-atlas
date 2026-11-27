@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 快雪时晴帖（传世摹本）
 publisher: 國立故宮博物院

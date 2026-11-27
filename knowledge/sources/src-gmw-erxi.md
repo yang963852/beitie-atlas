@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 不惜重金新中国迎回“二希”
 publisher: 光明日报

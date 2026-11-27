@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 上海图书馆
 nameEn: Shanghai Library
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-shlibrary-tang
 notes: []

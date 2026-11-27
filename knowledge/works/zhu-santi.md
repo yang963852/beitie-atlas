@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 三体杂书诗卷
 titleEn: Poems in Three Scripts
 aliases: []
 studyCategory: tie
 dynastyId: ming
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 明
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 明
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: null
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-zhu-santi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 三体杂书诗卷

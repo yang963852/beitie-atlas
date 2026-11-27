@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: xuanmi-ta-bei
 objectType: original-stele
 titleZh: 玄秘塔碑（原石）
 titleEn: Xuanmi Pagoda Stele, original stone
-date:
-  kind: single
-  start: 841
-  month: 12
-  end: 841
-  endMonth: 12
-  era: null
-  original: 唐会昌元年（841年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 841
+dateMonth: 12
+dateEnd: 841
+dateEndMonth: 12
+dateEra: null
+dateOriginal: 唐会昌元年（841年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 高386厘米，宽120厘米
-  note: Museum entry; 28 lines of 54 characters.
+dimensionsRaw: 高386厘米，宽120厘米
+dimensionsNote: Museum entry; 28 lines of 54 characters.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-xuanmita
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum entry describes the stele and its inscription. It does not state when the stone entered the Beilin or whether it is on display.
-  noteZh: 馆方条目描述了碑石形制与碑文，但没有说明何时入藏碑林、今日是否展出。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-xuanmita
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum entry describes the stele and its inscription. It does not state when the stone entered the Beilin or whether it is on display.
+collectionNoteZh: 馆方条目描述了碑石形制与碑文，但没有说明何时入藏碑林、今日是否展出。
 events:
   - id: stele-xuanmi-ta-move-beilin
     type: relocation
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 元祐年间
-      original: null
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 元祐年间
+    dateOriginal: null
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: null
     summary: The Xi’an Beilin Museum records that the original stone stood at Anguo Temple in Tang Chang’an and moved to the Beilin in the Yuanyou era.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-beilin-xuanmi-move
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 玄秘塔碑（原石）

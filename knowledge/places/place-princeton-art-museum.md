@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 普林斯顿大学艺术博物馆
 nameEn: Princeton University Art Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-shm-xingrang
 notes:

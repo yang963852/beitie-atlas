@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 张猛龙碑
 titleEn: Stele of Zhang Menglong
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: northern-and-southern
 dynastyQualifier: 北魏
-date:
-  kind: single
-  start: 522
-  month: null
-  end: 522
-  endMonth: null
-  era: null
-  original: 北魏正光三年（522年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 522
+dateMonth: null
+dateEnd: 522
+dateEndMonth: null
+dateEra: null
+dateOriginal: 北魏正光三年（522年）
+dateCertainty: documented
+dateNote: null
 script: 正书
 attribution:
   - role: unknown
@@ -29,8 +28,7 @@ attribution:
     noteZh: 所引条目未给出撰文者或书丹者。
 sources:
   - src-qufu-zhang-menglong
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 张猛龙碑

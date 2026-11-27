@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 王世杰先生與《寒食帖》
 publisher: 國立故宮博物院《故宮文物月刊》

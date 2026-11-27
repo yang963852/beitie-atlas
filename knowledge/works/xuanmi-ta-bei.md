@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 玄秘塔碑
 titleEn: Xuanmi Pagoda Stele
 aliases: []
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 841
-  month: 12
-  end: 841
-  endMonth: 12
-  era: null
-  original: 唐会昌元年（841年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 841
+dateMonth: 12
+dateEnd: 841
+dateEndMonth: 12
+dateEra: null
+dateOriginal: 唐会昌元年（841年）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: author
@@ -41,17 +40,15 @@ attribution:
 sources:
   - src-beilin-xuanmita
   - src-dpm-259370
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people: []
-  objects:
-    - stele-xuanmi-ta
-    - dpm-xuanmi-ta-bei-026
-  sources:
-    - src-beilin-xuanmita
-    - src-dpm-259370
+reviewState: reviewed
+guideState: reviewed
+guidePeople: []
+guideObjects:
+  - stele-xuanmi-ta
+  - dpm-xuanmi-ta-bei-026
+guideSources:
+  - src-beilin-xuanmita
+  - src-dpm-259370
 ---
 
 # 玄秘塔碑

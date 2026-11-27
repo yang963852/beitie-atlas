@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 浯溪碑林
 publisher: 湖南省人民政府门户网站 Hunan Provincial People’s Government

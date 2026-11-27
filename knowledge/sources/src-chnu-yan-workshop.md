@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 舒柳书画协会开展“翰墨有传承·书香沁人心”书法教学实践活动简报
 publisher: 淮北师范大学美术学院

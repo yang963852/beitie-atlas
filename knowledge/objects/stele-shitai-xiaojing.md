@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shitai-xiaojing
 objectType: original-stele
 titleZh: 石台孝经（原石）
 titleEn: Stone Terrace Classic of Filial Piety, original stone
-date:
-  kind: single
-  start: 745
-  month: null
-  end: 745
-  endMonth: null
-  era: null
-  original: 唐天宝四年（745）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 745
+dateMonth: null
+dateEnd: 745
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐天宝四年（745）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 碑身四石各高 590 厘米、宽 120 厘米；碑首、碑身、碑座共 35 石
-  note: Museum figures for the blocks, not a measured total height.
+dimensionsRaw: 碑身四石各高 590 厘米、宽 120 厘米；碑首、碑身、碑座共 35 石
+dimensionsNote: Museum figures for the blocks, not a measured total height.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-shitai
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum page describes the stele in its collection; it does not state its position in the building.
-  noteZh: 馆方页面介绍该碑藏品，但没有说明其在馆内的具体位置。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-shitai
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum page describes the stele in its collection; it does not state its position in the building.
+collectionNoteZh: 馆方页面介绍该碑藏品，但没有说明其在馆内的具体位置。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 石台孝经（原石）

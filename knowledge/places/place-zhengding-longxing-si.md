@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 正定隆兴寺
 nameEn: Longxing Temple, Zhengding
 historicalName: 龙藏寺
 kind: institution
-coordinates: null
 sources:
   - src-people-longzang
   - src-sjzgov-longzang

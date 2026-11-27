@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: jingshiyu-jingangjing
 objectType: cliff-inscription
 titleZh: 泰山经石峪金刚经摩崖
 titleEn: Cliff inscription of the Diamond Sutra at Jingshi Valley
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北齐
-  original: 北齐
-  certainty: approximate
-  note: 刻石无年月，时代依笔势风格推定。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北齐
+dateOriginal: 北齐
+dateCertainty: approximate
+dateNote: 刻石无年月，时代依笔势风格推定。
 catalogNumber: null
-dimensions:
-  raw: 石坪约三千平方米，字径约50厘米
-  note: 石坪面积与字径依泰安市博物馆页面。
+dimensionsRaw: 石坪约三千平方米，字径约50厘米
+dimensionsNote: 石坪面积与字径依泰安市博物馆页面。
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-taishan-jingshiyu
-  sources:
-    - src-taian-jingshiyu
-  accessedAt: 2026-11-24
-  asOf: null
-  note: The inscription remains on the rock platform in the stream bed; the museum page gives no coordinate.
-  noteZh: 刻经仍在溪床石坪上，馆方页面未给坐标。
+collectionKind: in-situ
+collectionPlace: place-taishan-jingshiyu
+collectionSources:
+  - src-taian-jingshiyu
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: The inscription remains on the rock platform in the stream bed; the museum page gives no coordinate.
+collectionNoteZh: 刻经仍在溪床石坪上，馆方页面未给坐标。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 泰山经石峪金刚经摩崖

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 十七帖
 titleEn: Seventeen-Day Letters
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: tie
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: range
-  start: 347
-  month: null
-  end: 361
-  endMonth: null
-  era: 东晋永和三年至升平五年
-  original: 永和三年到升平五年（347—361）
-  certainty: documented
-  note: The span is the one given by the exhibition report, which cites research dating the letters to 347–361. Individual letters are not dated in the surviving text.
+dateKind: range
+dateStart: 347
+dateMonth: null
+dateEnd: 361
+dateEndMonth: null
+dateEra: 东晋永和三年至升平五年
+dateOriginal: 永和三年到升平五年（347—361）
+dateCertainty: documented
+dateNote: The span is the one given by the exhibition report, which cites research dating the letters to 347–361. Individual letters are not dated in the surviving text.
 script: 草书
 attribution:
   - role: calligrapher
@@ -33,8 +32,7 @@ attribution:
 sources:
   - src-thepaper-shiqi
   - src-met-shiqi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 十七帖

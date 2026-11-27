@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 藏品：摹王氏一门书翰卷
 publisher: 辽宁省博物馆 Liaoning Provincial Museum

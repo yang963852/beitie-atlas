@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 玄秘塔碑
 publisher: 西安碑林博物馆

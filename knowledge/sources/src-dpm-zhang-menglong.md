@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 明拓北魏张猛龙碑
 publisher: 故宫博物院 The Palace Museum

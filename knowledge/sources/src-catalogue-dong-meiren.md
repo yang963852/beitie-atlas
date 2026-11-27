@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 董美人墓志（清拓本）
 publisher: 故宫博物院

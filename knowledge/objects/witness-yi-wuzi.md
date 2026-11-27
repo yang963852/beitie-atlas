@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: yi-wuzi
 objectType: ink-manuscript
 titleZh: 伊秉绶《隶书五字横幅》
 titleEn: Five Characters in Clerical Script
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 清
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 清
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 纵32厘米，横130.5厘米
-  note: null
+dimensionsRaw: 纵32厘米，横130.5厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-catalogue-yi-wuzi
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-catalogue-yi-wuzi
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 伊秉绶《隶书五字横幅》

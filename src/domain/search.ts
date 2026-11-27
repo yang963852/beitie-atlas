@@ -5,10 +5,38 @@ import type { ObjectRecord, StudyFilter } from './types';
 export function normalize(value: string): string {
   return value
     .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\p{M}/gu, '')
     .toLowerCase()
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/**
+ * Whitespace and punctuation separate query terms; they never have to be typed.
+ *
+ * An unsegmented Chinese string stays one term and is matched as a substring,
+ * which is what a reader expects from a two-character title fragment. A bigram
+ * index would only add ranking machinery: the library is searched by title,
+ * not by full text, and the corpus is small enough that a scan is instant.
+ */
+const SEPARATORS = /[\s,.;:!?'"`~@#$%^&*+=_|/\\()[\]{}<>—–\-，。、；：？！《》〈〉「」『』（）【】…·]+/u;
+
+export function queryTerms(query: string): string[] {
+  return normalize(query).split(SEPARATORS).filter(Boolean);
+}
+
+/**
+ * Every term must appear in some field; terms may match different fields.
+ *
+ * "王羲之 兰亭" therefore finds a record whose attribution names 王羲之 and
+ * whose work title is 兰亭序, which a single-phrase comparison would miss.
+ */
+export function matchesTerms(fields: string[], query: string): boolean {
+  if (!query.trim()) return true;
+  const terms = queryTerms(query);
+  if (terms.length === 0) return false;
+  const haystack = fields.map(normalize);
+  return terms.every((term) => haystack.some((field) => field.includes(term)));
 }
 
 /**
@@ -17,13 +45,10 @@ export function normalize(value: string): string {
  * when they are present in the data as aliases; the search does not guess them.
  */
 export function matchesQuery(object: ObjectRecord, query: string): boolean {
-  const needle = normalize(query);
-  if (!needle) return true;
-
   const work = getWork(object.workId);
   const place = getPlace(object.currentCollection.placeId);
 
-  const haystack = [
+  return matchesTerms([
     object.titles.zh,
     object.titles.en,
     object.catalogNumber ?? '',
@@ -33,9 +58,7 @@ export function matchesQuery(object: ObjectRecord, query: string): boolean {
     ...(work?.attribution.flatMap((entry) => [entry.name, entry.nameEn ?? '']) ?? []),
     place?.names.zh ?? '',
     place?.names.en ?? '',
-  ];
-
-  return haystack.some((value) => normalize(value).includes(needle));
+  ], query);
 }
 
 export function filterObjects(objects: ObjectRecord[], query: string, category: StudyFilter = 'all'): ObjectRecord[] {

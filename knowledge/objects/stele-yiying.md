@@ -1,36 +1,32 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: yiying-bei
 objectType: original-stele
 titleZh: 乙瑛碑（原石）
 titleEn: Stele of Yi Ying, original stone
-date:
-  kind: single
-  start: 153
-  month: null
-  end: 153
-  endMonth: null
-  era: null
-  original: 东汉永兴元年（153年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 153
+dateMonth: null
+dateEnd: 153
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉永兴元年（153年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-qufu-hanwei-gallery
-  sources:
-    - src-confuciusmuseum-binke
-    - src-sdxc-kongmiao-sanbei
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The museum article gives 18 lines of 40 characters but no dimensions. The stone does not name a scribe.
-  noteZh: 馆方文章记碑文 18 行、满行 40 字，但没有尺寸。碑上未署书者。
+collectionKind: collection-institution
+collectionPlace: place-qufu-hanwei-gallery
+collectionSources:
+  - src-confuciusmuseum-binke
+  - src-sdxc-kongmiao-sanbei
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The museum article gives 18 lines of 40 characters but no dimensions. The stone does not name a scribe.
+collectionNoteZh: 馆方文章记碑文 18 行、满行 40 字，但没有尺寸。碑上未署书者。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 乙瑛碑（原石）

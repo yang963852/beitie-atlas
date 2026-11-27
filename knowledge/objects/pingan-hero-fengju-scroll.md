@@ -1,36 +1,32 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: pingan-hero-fengju
 objectType: manuscript-copy
 titleZh: 平安何如奉橘三帖卷
 titleEn: Scroll of the Three Letters Ping'an, Heru and Fengju
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: 馆方两处对摹写年代的表述不同（唐代以前／唐人双钩廓填），本记录不填年代。
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: 馆方两处对摹写年代的表述不同（唐代以前／唐人双钩廓填），本记录不填年代。
 catalogNumber: 故書000050N000000000
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-npm-pingan-record
-    - src-bo-ch-pingan
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The museum record and the 2012 national treasure designation both place the scroll in the Taipei palace museum and give the registered number 故書000050.
-  noteZh: 馆方著录与 2012 年古物公告均记此卷藏台北故宫，典藏编号作故書000050。
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-npm-pingan-record
+  - src-bo-ch-pingan
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The museum record and the 2012 national treasure designation both place the scroll in the Taipei palace museum and give the registered number 故書000050.
+collectionNoteZh: 馆方著录与 2012 年古物公告均记此卷藏台北故宫，典藏编号作故書000050。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 平安何如奉橘三帖卷

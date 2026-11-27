@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 苏门三绝——宋李深之及其龚夫人石墓志铭展
 publisher: 鄂州市博物馆

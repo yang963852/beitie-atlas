@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 故宫藏王羲之拓本首次与绍兴兰亭碑刻相对
 publisher: 澎湃新闻 The Paper

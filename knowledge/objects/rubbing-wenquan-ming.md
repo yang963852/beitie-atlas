@@ -1,36 +1,32 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: wen-quan-ming
 objectType: rubbing
 titleZh: 温泉铭（唐拓残卷）
 titleEn: Inscription on the Hot Spring, Tang rubbing fragment
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 唐
-  original: 唐拓
-  certainty: approximate
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 唐
+dateOriginal: 唐拓
+dateCertainty: approximate
+dateNote: null
 catalogNumber: Pelliot chinois 4508
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-bnf
-  sources:
-    - src-shi-dunhuang-rubbings
-    - src-thepaper-wenquanming
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Shi Anchang’s study identifies the rubbing he inspected at the Bibliothèque nationale de France as P.4508.
-  noteZh: 施安昌的实物研究将法国国家图书馆所藏这件拓本著录为 P.4508。
+collectionKind: collection-institution
+collectionPlace: place-bnf
+collectionSources:
+  - src-shi-dunhuang-rubbings
+  - src-thepaper-wenquanming
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Shi Anchang’s study identifies the rubbing he inspected at the Bibliothèque nationale de France as P.4508.
+collectionNoteZh: 施安昌的实物研究将法国国家图书馆所藏这件拓本著录为 P.4508。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 温泉铭（唐拓残卷）

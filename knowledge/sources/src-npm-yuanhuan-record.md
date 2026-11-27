@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 晉王羲之遠宦帖 卷
 publisher: 國立故宮博物院數位典藏 National Palace Museum Digital Archives

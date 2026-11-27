@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 林则徐游华山诗并序
 titleEn: Lin Zexu’s Mount Hua Poem and Preface
 aliases: []
 studyCategory: bei
 dynastyId: qing
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1842
-  month: null
-  end: 1842
-  endMonth: null
-  era: null
-  original: 清道光二十二年（1842）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1842
+dateMonth: null
+dateEnd: 1842
+dateEndMonth: null
+dateEra: null
+dateOriginal: 清道光二十二年（1842）
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: author-and-calligrapher
@@ -26,8 +25,7 @@ attribution:
       - src-beilin-lin-zexu
 sources:
   - src-beilin-lin-zexu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 林则徐游华山诗并序

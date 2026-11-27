@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 魏碑体鼻祖郑道昭
 publisher: 烟台市情网

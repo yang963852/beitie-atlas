@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 乙瑛碑
 titleEn: Stele of Yi Ying
 aliases: []
 studyCategory: bei
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: 153
-  month: null
-  end: 153
-  endMonth: null
-  era: null
-  original: 东汉永兴元年（153年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 153
+dateMonth: null
+dateEnd: 153
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉永兴元年（153年）
+dateCertainty: documented
+dateNote: null
 script: 隶书
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
 sources:
   - src-confuciusmuseum-binke
   - src-sdxc-kongmiao-sanbei
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 乙瑛碑

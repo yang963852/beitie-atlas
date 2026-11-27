@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 开成石经
 titleEn: Kaicheng Stone Classics
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 837
-  month: null
-  end: 837
-  endMonth: null
-  era: null
-  original: 唐开成二年（837）刻成
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 837
+dateMonth: null
+dateEnd: 837
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐开成二年（837）刻成
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: compiler
@@ -39,8 +38,7 @@ attribution:
     noteZh: 由艾居晦、陈玠、段绛等四人书石；所引页面点名校书者为艾、陈二人。
 sources:
   - src-beilin-kaicheng
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 开成石经

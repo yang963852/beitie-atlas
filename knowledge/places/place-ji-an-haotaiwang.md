@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 集安好太王碑
 nameEn: Stele of King Gwanggaeto, Ji'an
 historicalName: 太王乡大碑街
 kind: historical-site
-coordinates: null
 sources:
   - src-jl-dfz-haotaiwang
   - src-jl-dfz-haotaiwang-alt

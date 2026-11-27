@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 「法度与气象：在碑刻中遇见盛唐」展品简介（六）
 publisher: 中国政法大学法律古籍整理研究所

@@ -1,6 +1,7 @@
 import { getDataset } from './data';
 import { dynastyOrder } from './dynasties';
 import { knowledgeArticles, type KnowledgeArticle, type KnowledgeKind } from './knowledge';
+import { matchesTerms } from './search';
 import type { Work } from './types';
 
 export interface LibraryEntry {
@@ -82,13 +83,11 @@ export function linkedEntries(entry: LibraryEntry, kind: KnowledgeKind): Library
 }
 
 export function matchesQuery(entry: LibraryEntry, query: string): boolean {
-  const needle = query.trim().toLowerCase();
-  if (!needle) return true;
   const names = [entry.titleZh, entry.titleEn, entry.id, ...(entry.work?.aliases ?? [])];
   for (const person of entry.work?.attribution ?? []) names.push(person.name, person.nameEn ?? '');
   for (const id of entry.guide?.people ?? []) {
     const person = findEntry('people', id);
     if (person) names.push(person.titleZh, person.titleEn);
   }
-  return names.some((name) => name.toLowerCase().includes(needle));
+  return matchesTerms(names, query);
 }

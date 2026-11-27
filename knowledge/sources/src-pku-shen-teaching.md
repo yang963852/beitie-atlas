@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 姜涛：沈尹默寓居沪渝时期的书风探索
 publisher: 北京大学书法艺术研究所（转载《书法报》）

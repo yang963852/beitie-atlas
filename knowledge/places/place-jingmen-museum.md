@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 荆门市博物馆
 nameEn: Jingmen Museum
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-jmm-guodian
 notes:

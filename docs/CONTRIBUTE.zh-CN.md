@@ -1,6 +1,6 @@
 # 中文投稿与试读指南
 
-[项目首页](../README.md) · [知识库目录](../knowledge/README.md) · [网站 · 1.1 版](https://yang963852.github.io/beitie-atlas/)
+[项目首页](../README.md) · [知识库目录](../knowledge/README.md) · [网站 · 1.2 版](https://yang963852.github.io/beitie-atlas/)
 
 ## 直接提 PR
 
@@ -15,28 +15,26 @@
 
 读帖观察欢迎中文原稿。请写明观察人、具体版本、哪一字或哪一行、别人怎样复看。第三方图片可给原始链接；申请收录图片时附作者、来源、许可和署名方式。保留相冲突的著录和各自出处。一般投稿只走一条路径即可。
 
-想新写一篇，可以在 [作品](../knowledge/works)、[书家](../knowledge/people)、[读帖笔记](../knowledge/notes)或[实物](../knowledge/objects)目录点 **Add file → Create new file**，用小写英文字母、数字与短横线起一个便于引用的文件名，以 `.md` 结尾。先复制对应的[中文模板](../knowledge/_templates/)，把 `schemaVersion: 1` 保留在顶部。作品与实物的日期、署名、出处和审核状态写在 YAML；背景、待考和导读写进正文。参考[现有作品](../knowledge/works/yan-qinli-bei.md)，正文用下列结构：
+想新写一篇，可以在 [作品](../knowledge/works)、[书家](../knowledge/people)、[读帖笔记](../knowledge/notes)或[实物](../knowledge/objects)目录点 **Add file → Create new file**，用小写英文字母、数字与短横线起一个便于引用的文件名，以 `.md` 结尾。在本地检出中，`npm run contrib:new -- work yan-qinli-bei`（类型可为 `work`、`object`、`person`、`note`、`place`、`source`）会按模板建好文件并校验文件名；已存在的记录不会被覆盖。先复制对应的[中文模板](../knowledge/_templates/)，把 `schemaVersion: 2` 保留在顶部。作品与实物的日期、署名、出处和审核状态写在 YAML；背景、待考和导读写进正文。参考[现有作品](../knowledge/works/yan-qinli-bei.md)，正文用下列结构：
 
 ```markdown
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 作品题名
 studyCategory: bei
 dynastyId: tang
-date:
-  kind: single
-  start: 779
-  end: 779
-  certainty: documented
+dateKind: single
+dateStart: 779
+dateEnd: 779
+dateCertainty: documented
 attribution:
   - role: author-and-calligrapher
     name: 姓名
     certainty: documented
     sources: [src-example]
 sources: [src-example]
-review:
-  state: draft
-  note: 还缺什么证据
+reviewState: draft
+reviewNote: 还缺什么证据
 ---
 
 # 作品题名
@@ -57,6 +55,14 @@ review:
 没有署名时写 `role: unknown`，不要留空。日期没有来源时留空并在待考说明，不猜年份。
 
 新建、改题或调整审核状态可能使知识总目需要更新。编辑可在同一投稿 PR 运行 `npm run knowledge:compile && npm run knowledge:generate` 并提交生成结果；如果投稿人使用 Fork，由编辑与投稿人协商分支更新或关联整理 PR。你可以始终只用浏览器。
+
+## 在 Obsidian 里编辑
+
+把 `knowledge/` 文件夹作为仓库（Vault）打开，会加载随仓库提交的配置：属性类型按 schema v2 预设，模板文件夹指向 `_templates/`，阅读视图使用 `snippets/reading.css`。这些文件在 `knowledge/.obsidian/`，只含共享设置；个人的窗口布局、插件、主题与快捷键不会进入 git。
+
+- 在属性面板里直接编辑扁平字段（`titleZh`、`dateStart`、`reviewState` 等），不要改回 v1 的嵌套写法；嵌套的 `date:`、`collection:` 会让构建失败。
+- 新建记录选对应模板，替换占位内容，文件名保持小写稳定 ID。
+- 提交前仍要运行 `npm run knowledge:compile && npm run knowledge:generate`；Obsidian 不会替你检查证据、引用和双语对齐。
 
 ## 来源六条硬规则
 
@@ -79,17 +85,16 @@ review:
 
 ## 导读七段规范
 
-作品导读不是独立文件，而是作品 Markdown 的 `guide:` 前置字段加正文 `## 导读` 段落。现有 schema 只承载导读的状态、时间轴年份、关联人物、关联实物与来源；七段是正文编辑规范，用 `####` 标题写在 `### 中文` 与 `### English` 之内，不新增字段。
+作品导读不是独立文件，而是作品 Markdown 的 `guide*` 前置字段加正文 `## 导读` 段落。现有 schema 只承载导读的状态、时间轴年份、关联人物、关联实物与来源；七段是正文编辑规范，用 `####` 标题写在 `### 中文` 与 `### English` 之内，不新增字段。
 
 ### 记录头
 
 ```yaml
-guide:
-  state: draft          # 审读前一律 draft
-  timelineYear: 156     # 有时间轴意义的年份，整数
-  people: []            # 正文实际提到的人物 id
-  objects: []           # 正文实际引用的实物 id
-  sources: []           # 正文全部外部事实的来源 id
+guideState: draft          # 审读前一律 draft
+guideTimelineYear: 156     # 有时间轴意义的年份，整数
+guidePeople: []            # 正文实际提到的人物 id
+guideObjects: []           # 正文实际引用的实物 id
+guideSources: []           # 正文全部外部事实的来源 id
 ```
 
 ### 七段与各段要求
@@ -109,8 +114,8 @@ guide:
 - 中英成对：`### 中文` 与 `### English` 各写一份七段，英文是中文的翻译，不增事实，不是机器翻译占位。
 - 冲突并列，不取平均；结构化字段留空，冲突写进当段与 07。
 - 每句事实给链接或“作者《篇名》卷/页”；转引写“转引自”，不伪装成亲见原书。
-- `guide.people`、`guide.objects`、`guide.sources` 必须与正文实际引用一致，id 真实存在。
-- 审读前 `state: draft`；审读后由审读人确认再改 `reviewed`，实施者不能自审自批。
+- `guidePeople`、`guideObjects`、`guideSources` 必须与正文实际引用一致，id 真实存在。
+- 审读前 `guideState: draft`；审读后由审读人确认再改 `guideState: reviewed`，实施者不能自审自批。
 
 ## 下载完整知识库，改一篇再提 PR
 
@@ -135,4 +140,4 @@ guide:
 2. 打开作品下的一件实物，找它的持藏出处。换到另一件，对比实物名称、年代和记载。再回知识库，选择「书家」，搜「沈尹默」，查一条与他有关的人物关系及所附依据。
 3. 任选手机或电脑，试试键盘 Tab、浏览器返回或放大页面。遇到问题点[反馈问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)，写下出问题的网址、设备或浏览器、操作步骤、实际结果和预期。也欢迎告诉我们哪段叙述最难读。
 
-目前人物与作品专题按选题逐步增加，条目以馆方与印本著录为据；部分年代、藏址与当代临习使用情况仍待来源核实。真实底图依赖网络和地图服务；没有坐标的实物仍可查阅文字、来源和已知地点。各地网络能否打开须在当地实际测试。网站读者都能打开这个公开的 Pages 地址；「1.1」指本次内容版次。
+目前人物与作品专题按选题逐步增加，条目以馆方与印本著录为据；部分年代、藏址与当代临习使用情况仍待来源核实。真实底图依赖网络和地图服务；没有坐标的实物仍可查阅文字、来源和已知地点。各地网络能否打开须在当地实际测试。网站读者都能打开这个公开的 Pages 地址；「1.2」指本次内容版次。

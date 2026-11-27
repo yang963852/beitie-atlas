@@ -1,21 +1,19 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: jinci-zhi-ming
 objectType: recarving
 titleZh: 晋祠之铭并序（清乾隆摹刻）
 titleEn: Inscription for the Jin Shrine, 1772 recarving
-date:
-  kind: single
-  start: 1772
-  month: null
-  end: 1772
-  endMonth: null
-  era: null
-  original: 清乾隆三十七年（1772）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1772
+dateMonth: null
+dateEnd: 1772
+dateEndMonth: null
+dateEra: null
+dateOriginal: 清乾隆三十七年（1772）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships:
   - type: recarving-of
@@ -23,18 +21,16 @@ relationships:
     sources:
       - src-taiyuan-jinci
     note: Cut from a rubbing by 杨堉 and set up beside the Tang stone.
-collection:
-  kind: collection-institution
-  place: place-jinci-museum
-  sources:
-    - src-taiyuan-jinci
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Stands west of the Tang original in the same pavilion.
-  noteZh: 与唐碑同亭并立，位于西侧。
+collectionKind: collection-institution
+collectionPlace: place-jinci-museum
+collectionSources:
+  - src-taiyuan-jinci
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Stands west of the Tang original in the same pavilion.
+collectionNoteZh: 与唐碑同亭并立，位于西侧。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 晋祠之铭并序（清乾隆摹刻）

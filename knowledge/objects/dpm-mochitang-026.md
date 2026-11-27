@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: mochitang
 objectType: rubbing
 titleZh: 《墨池堂选帖》（明拓本）
 titleEn: Mochitang Modelbook, rubbing
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 明
-  original: 明拓
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 明
+dateOriginal: 明拓
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00082402
-dimensions:
-  raw: 每页纵26.9厘米，横13.7厘米
-  note: null
+dimensionsRaw: 每页纵26.9厘米，横13.7厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-234595
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-234595
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 《墨池堂选帖》（明拓本）

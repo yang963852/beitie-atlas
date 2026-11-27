@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: Drum Tower of Xi’an
 publisher: Wikidata

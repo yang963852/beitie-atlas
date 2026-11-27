@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 篆书急就章轴
 titleEn: Jijiu Zhang in Seal Script
 aliases: []
 studyCategory: tie
 dynastyId: qing
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 清
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 清
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 篆书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-zhao-jijiu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 篆书急就章轴

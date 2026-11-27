@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 温泉铭
 titleEn: Inscription on the Hot Spring
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 648
-  month: null
-  end: 648
-  endMonth: null
-  era: null
-  original: 唐贞观二十二年（648）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 648
+dateMonth: null
+dateEnd: 648
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐贞观二十二年（648）
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: author-and-calligrapher
@@ -29,8 +28,7 @@ attribution:
 sources:
   - src-thepaper-wenquanming
   - src-shi-dunhuang-rubbings
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 温泉铭

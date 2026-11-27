@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 大唐三藏圣教序碑
 titleEn: Preface to the Sacred Teaching, assembled from Wang Xizhi
 aliases: []
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 672
-  month: null
-  end: 672
-  endMonth: null
-  era: null
-  original: 唐咸亨三年（672年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 672
+dateMonth: null
+dateEnd: 672
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐咸亨三年（672年）
+dateCertainty: documented
+dateNote: null
 script: 行书（集字）
 attribution:
   - role: compiler
@@ -26,8 +25,7 @@ attribution:
       - src-beilin-shengjiaoxu
 sources:
   - src-beilin-shengjiaoxu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 大唐三藏圣教序碑

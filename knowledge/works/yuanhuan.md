@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 远宦帖
 titleEn: Letter from a Distant Post
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 东晋
-  original: null
-  certainty: documented
-  note: 馆方题名系于东晋，帖无年款。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 东晋
+dateOriginal: null
+dateCertainty: documented
+dateNote: 馆方题名系于东晋，帖无年款。
 script: 草书
 attribution:
   - role: calligrapher
@@ -32,8 +31,7 @@ attribution:
 sources:
   - src-npm-yuanhuan
   - src-npm-yuanhuan-record
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 远宦帖

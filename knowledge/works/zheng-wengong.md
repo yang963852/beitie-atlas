@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 郑文公碑
 titleEn: Inscriptions for Duke Wen of Zheng
 aliases: []
 studyCategory: bei
 dynastyId: northern-and-southern
 dynastyQualifier: 北魏
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北魏
-  original: 北魏
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北魏
+dateOriginal: 北魏
+dateCertainty: documented
+dateNote: null
 script: null
 attribution:
   - role: calligrapher
@@ -26,8 +25,7 @@ attribution:
       - src-yantai-zheng
 sources:
   - src-yantai-zheng
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 郑文公碑

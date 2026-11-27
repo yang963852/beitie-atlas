@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 三希堂法帖
 titleEn: Modelbook of the Three Rarities Hall
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: tie
 dynastyId: qing
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1747
-  month: null
-  end: 1747
-  endMonth: null
-  era: 清乾隆十二年
-  original: 乾隆十二年（1747）
-  certainty: documented
-  note: The imperial order is dated 1747; the ministers' colophon is dated 1750, the end of the carving.
+dateKind: single
+dateStart: 1747
+dateMonth: null
+dateEnd: 1747
+dateEndMonth: null
+dateEra: 清乾隆十二年
+dateOriginal: 乾隆十二年（1747）
+dateCertainty: documented
+dateNote: The imperial order is dated 1747; the ministers' colophon is dated 1750, the end of the carving.
 script: null
 attribution:
   - role: compiler
@@ -40,8 +39,7 @@ sources:
   - src-dpm-sanxitang
   - src-dpm-sanxitang-vr
   - src-chinadaily-yuegu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 三希堂法帖

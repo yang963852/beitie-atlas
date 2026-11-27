@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 央视《简牍探中华》聚焦郭店楚简，探秘“神州第一书”
 publisher: 荆门市博物馆 Jingmen Museum

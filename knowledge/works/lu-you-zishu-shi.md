@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 陆游自书诗卷
 titleEn: Scroll of Poems in Lu You’s Own Hand
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: southern-song
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1204
-  month: null
-  end: 1204
-  endMonth: null
-  era: null
-  original: 南宋嘉泰四年（1204年）
-  certainty: documented
-  note: 馆方记此卷作于嘉泰四年，陆游时年八十。
+dateKind: single
+dateStart: 1204
+dateMonth: null
+dateEnd: 1204
+dateEndMonth: null
+dateEra: null
+dateOriginal: 南宋嘉泰四年（1204年）
+dateCertainty: documented
+dateNote: 馆方记此卷作于嘉泰四年，陆游时年八十。
 script: 行草
 attribution:
   - role: calligrapher
@@ -29,8 +28,7 @@ attribution:
     noteZh: 馆方条目记陆游书，并系于其八十岁。
 sources:
   - src-lnm-luyou
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 陆游自书诗卷

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 怀素《自叙帖》通篇酣畅淋漓
 publisher: 齐鲁晚报·齐鲁壹点

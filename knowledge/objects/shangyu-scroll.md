@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: shangyu
 objectType: manuscript-copy
 titleZh: 上虞帖卷（唐摹本）
 titleEn: Shangyu Letter, Tang tracing copy
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 唐
-  original: 此系唐摹本
-  certainty: documented
-  note: 馆方定此本为唐摹本，未记具体年份。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 唐
+dateOriginal: 此系唐摹本
+dateCertainty: documented
+dateNote: 馆方定此本为唐摹本，未记具体年份。
 catalogNumber: null
-dimensions:
-  raw: 纵23.5厘米
-  note: 馆方页面横长数字残缺，未取；硬黄纸本。
+dimensionsRaw: 纵23.5厘米
+dimensionsNote: 馆方页面横长数字残缺，未取；硬黄纸本。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-shanghai-museum
-  sources:
-    - src-shm-shangyu
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The museum entry names Shanghai Museum as the holder and describes the front mounting and seals; it gives no accession number.
-  noteZh: 馆方条目记藏上海博物馆，并述前隔水题签与鉴藏印，未给藏品号。
+collectionKind: collection-institution
+collectionPlace: place-shanghai-museum
+collectionSources:
+  - src-shm-shangyu
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The museum entry names Shanghai Museum as the holder and describes the front mounting and seals; it gives no accession number.
+collectionNoteZh: 馆方条目记藏上海博物馆，并述前隔水题签与鉴藏印，未给藏品号。
 events:
   - id: ev-shangyu-southern-tang
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 南唐
-      original: 曾經南唐內府
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 南唐
+    dateOriginal: 曾經南唐內府
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 南唐內府
     summary: The scroll was once in the Southern Tang palace collection, whose seals it carries.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-shm-shangyu
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 上虞帖卷（唐摹本）

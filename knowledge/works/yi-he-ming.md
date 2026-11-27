@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 瘗鹤铭
 titleEn: Elegy for a Crane
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: northern-and-southern
 dynastyQualifier: 南朝梁
-date:
-  kind: single
-  start: 514
-  month: null
-  end: 514
-  endMonth: null
-  era: null
-  original: 南朝梁天监十三年（514），传
-  certainty: disputed
-  note: The date is traditional; the inscription itself carries a cyclical year but no reign title or name.
+dateKind: single
+dateStart: 514
+dateMonth: null
+dateEnd: 514
+dateEndMonth: null
+dateEra: null
+dateOriginal: 南朝梁天监十三年（514），传
+dateCertainty: disputed
+dateNote: The date is traditional; the inscription itself carries a cyclical year but no reign title or name.
 script: 楷书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
 sources:
   - src-cyol-yihe
   - src-jiangsu-yihe
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 瘗鹤铭

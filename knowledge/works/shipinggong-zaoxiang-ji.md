@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 始平公造像记
 titleEn: Dedication for the Late Duke of Shiping
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: northern-and-southern
 dynastyQualifier: 北魏
-date:
-  kind: single
-  start: 498
-  month: null
-  end: 498
-  endMonth: null
-  era: 北魏太和二十二年
-  original: 北魏太和二十二年（498年）
-  certainty: documented
-  note: The exhibition notice dates the dedication to 498. The year is not legible on the stone itself, and the record does not reconstruct it from the damaged date line.
+dateKind: single
+dateStart: 498
+dateMonth: null
+dateEnd: 498
+dateEndMonth: null
+dateEra: 北魏太和二十二年
+dateOriginal: 北魏太和二十二年（498年）
+dateCertainty: documented
+dateNote: The exhibition notice dates the dedication to 498. The year is not legible on the stone itself, and the record does not reconstruct it from the damaged date line.
 script: 楷书（魏碑）
 attribution:
   - role: author
@@ -48,8 +47,7 @@ attribution:
 sources:
   - src-gmw-shipinggong
   - src-shanghai-ly-shipinggong
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 始平公造像记

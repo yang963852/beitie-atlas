@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 自书诗卷
 titleEn: Scroll of Poems in the Author’s Hand
 aliases: []
 studyCategory: tie
 dynastyId: northern-song
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 北宋
-  original: 北宋
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 北宋
+dateOriginal: 北宋
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: author-and-calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-dpm-228526
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 自书诗卷

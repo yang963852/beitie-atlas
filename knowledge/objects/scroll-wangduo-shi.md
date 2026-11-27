@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: wangduo-zishu-shi
 objectType: ink-manuscript
 titleZh: 王铎行草书自书诗卷
 titleEn: Scroll of Wang Duo’s Own Poems, handscroll
-date:
-  kind: single
-  start: 1639
-  month: 1
-  end: 1639
-  endMonth: 1
-  era: null
-  original: 明崇祯十二年（1639年）正月
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1639
+dateMonth: 1
+dateEnd: 1639
+dateEndMonth: 1
+dateEra: null
+dateOriginal: 明崇祯十二年（1639年）正月
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00134421
-dimensions:
-  raw: 纵26.9厘米，横166厘米
-  note: 纸本。
+dimensionsRaw: 纵26.9厘米，横166厘米
+dimensionsNote: 纸本。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-wangduo
-  accessedAt: 2026-11-24
-  asOf: null
-  note: The catalogue entry records the object number and the signed colophon.
-  noteZh: 藏品条目记文物号与本人款识。
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-wangduo
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: The catalogue entry records the object number and the signed colophon.
+collectionNoteZh: 藏品条目记文物号与本人款识。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 王铎行草书自书诗卷

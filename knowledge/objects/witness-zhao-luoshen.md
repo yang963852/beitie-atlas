@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: zhao-luoshen
 objectType: ink-manuscript
 titleZh: 赵孟頫《洛神赋》
 titleEn: Rhapsody on the Goddess of the Luo
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 元
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 元
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 catalogNumber: 新00152406
-dimensions:
-  raw: 纵29厘米，横220.9厘米
-  note: null
+dimensionsRaw: 纵29厘米，横220.9厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-catalogue-zhao-luoshen
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-catalogue-zhao-luoshen
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 赵孟頫《洛神赋》

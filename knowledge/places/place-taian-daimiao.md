@@ -1,19 +1,18 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 泰安岱庙
 nameEn: Dai Temple, Tai’an
 historicalName: null
 kind: institution
-coordinates:
-  longitude: 117.125
-  latitude: 36.195
-  precision: institution
-  method: secondary-database
-  verification: unverified
-  sources:
-    - src-wikidata-dai-temple
-  note: Representative coordinate for the Dai Temple complex; the object’s position was not surveyed.
-  noteZh: 此点代表岱庙院落范围，未经实地核对，不对应实物的具体位置。
+coordinateLongitude: 117.125
+coordinateLatitude: 36.195
+coordinatePrecision: institution
+coordinateMethod: secondary-database
+coordinateVerification: unverified
+coordinateSources:
+  - src-wikidata-dai-temple
+coordinateNote: Representative coordinate for the Dai Temple complex; the object’s position was not surveyed.
+coordinateNoteZh: 此点代表岱庙院落范围，未经实地核对，不对应实物的具体位置。
 sources:
   - src-ltfc-zhuyunge
 notes:

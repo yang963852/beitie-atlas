@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 孔庙三碑，惊艳了时光
 publisher: 山东宣传网（山东省委宣传部）

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 泰安市博物馆开展国际博物馆日系列活动
 publisher: 泰山风景名胜区管理委员会

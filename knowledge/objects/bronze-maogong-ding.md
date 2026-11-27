@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: maogong-ding
 objectType: bronze-vessel
 titleZh: 毛公鼎
 titleEn: Mao Gong Ding
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 西周晚期
-  original: 西周晚期
-  certainty: approximate
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 西周晚期
+dateOriginal: 西周晚期
+dateCertainty: approximate
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-npm-maogong
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The museum antique record holds the vessel and the full inscription.
-  noteZh: 馆方铜器著录收此器与全铭。
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-npm-maogong
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The museum antique record holds the vessel and the full inscription.
+collectionNoteZh: 馆方铜器著录收此器与全铭。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 毛公鼎

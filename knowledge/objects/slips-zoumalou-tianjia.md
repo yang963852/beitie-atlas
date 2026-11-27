@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: zoumalou-wujian
 objectType: ink-manuscript
 titleZh: 走马楼吴简·嘉禾吏民田家莂
 titleEn: Zoumalou Wu field-tax tablets
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 孙吴·嘉禾
-  original: 三国吴嘉禾年间（232—238年）
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 孙吴·嘉禾
+dateOriginal: 三国吴嘉禾年间（232—238年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions:
-  raw: 大木简，长约50厘米
-  note: 比一般竹简长一倍，逐户记录佃田与赋税。
+dimensionsRaw: 大木简，长约50厘米
+dimensionsNote: 比一般竹简长一倍，逐户记录佃田与赋税。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-changsha-slips-museum
-  sources:
-    - src-csjd-tianjia
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The museum explainer records the form and the 1996 excavation.
-  noteZh: 馆方说明记形制与1996年出土。
+collectionKind: collection-institution
+collectionPlace: place-changsha-slips-museum
+collectionSources:
+  - src-csjd-tianjia
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The museum explainer records the form and the 1996 excavation.
+collectionNoteZh: 馆方说明记形制与1996年出土。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 走马楼吴简·嘉禾吏民田家莂

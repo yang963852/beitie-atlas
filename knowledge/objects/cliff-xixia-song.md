@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: xixia-song
 objectType: cliff-inscription
 titleZh: 西狭颂（摩崖）
 titleEn: Xixia Song, cliff inscription
-date:
-  kind: single
-  start: 171
-  month: 6
-  end: 171
-  endMonth: 6
-  era: 东汉建宁四年
-  original: 东汉灵帝建宁四年（171）六月十三日
-  certainty: documented
-  note: The source gives a day; the date model stores months, so the day stays in the original wording.
+dateKind: single
+dateStart: 171
+dateMonth: 6
+dateEnd: 171
+dateEndMonth: 6
+dateEra: 东汉建宁四年
+dateOriginal: 东汉灵帝建宁四年（171）六月十三日
+dateCertainty: documented
+dateNote: The source gives a day; the date model stores months, so the day stays in the original wording.
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: in-situ
-  place: place-chengxian-xixia
-  sources:
-    - src-chengxian-xixia
-  accessedAt: 2026-11-18
-  asOf: null
-  note: The county page places the inscription on the cliff at 青龙头 in 西狭, about 13 km west of Cheng County town, and states that it remains there. No shelter, fence or visiting arrangement is described.
-  noteZh: 成县页面记摩崖在成县县城以西约 13 公里的西狭青龙头崖壁，且仍在原址。页面没有说明碑亭、围栏或参观安排。
+collectionKind: in-situ
+collectionPlace: place-chengxian-xixia
+collectionSources:
+  - src-chengxian-xixia
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: The county page places the inscription on the cliff at 青龙头 in 西狭, about 13 km west of Cheng County town, and states that it remains there. No shelter, fence or visiting arrangement is described.
+collectionNoteZh: 成县页面记摩崖在成县县城以西约 13 公里的西狭青龙头崖壁，且仍在原址。页面没有说明碑亭、围栏或参观安排。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 西狭颂（摩崖）

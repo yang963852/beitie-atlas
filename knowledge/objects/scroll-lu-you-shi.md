@@ -1,35 +1,31 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: lu-you-zishu-shi
 objectType: ink-manuscript
 titleZh: 陆游自书诗卷
 titleEn: Scroll of Poems in Lu You’s Own Hand
-date:
-  kind: single
-  start: 1204
-  month: null
-  end: 1204
-  endMonth: null
-  era: null
-  original: 南宋嘉泰四年（1204年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1204
+dateMonth: null
+dateEnd: 1204
+dateEndMonth: null
+dateEra: null
+dateOriginal: 南宋嘉泰四年（1204年）
+dateCertainty: documented
+dateNote: null
 catalogNumber: null
-dimensions: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-liaoning-museum
-  sources:
-    - src-lnm-luyou
-  accessedAt: 2026-11-24
-  asOf: null
-  note: The museum note lists the scroll among its holdings and dates it to Lu You’s eightieth year.
-  noteZh: 馆方说明记此卷为馆藏，并系于陆游八十岁。
+collectionKind: collection-institution
+collectionPlace: place-liaoning-museum
+collectionSources:
+  - src-lnm-luyou
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: The museum note lists the scroll among its holdings and dates it to Lu You’s eightieth year.
+collectionNoteZh: 馆方说明记此卷为馆藏，并系于陆游八十岁。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 陆游自书诗卷

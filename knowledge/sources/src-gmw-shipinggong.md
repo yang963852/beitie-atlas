@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 凹凹凹凸凹凹凹，这块题记很特别
 publisher: 光明网（央视新闻《文博日历》，龙门石窟研究院特别鸣谢）Guangming Online

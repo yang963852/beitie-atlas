@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 郭店楚简
 titleEn: Guodian Chu Slips
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: pre-qin
 dynastyQualifier: 战国
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 战国中期
-  original: 战国中期
-  certainty: approximate
-  note: 据墓葬与简文定为战国中期楚墓。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 战国中期
+dateOriginal: 战国中期
+dateCertainty: approximate
+dateNote: 据墓葬与简文定为战国中期楚墓。
 script: 楚系简帛书
 attribution:
   - role: unknown
@@ -29,8 +28,7 @@ attribution:
     noteZh: 简册为墓中随葬典籍，未署书手。
 sources:
   - src-jmm-guodian
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 郭店楚简

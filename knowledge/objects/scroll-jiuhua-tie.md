@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: jiuhua-tie
 objectType: ink-manuscript
 titleZh: 韭花帖（清内府藏本）
 titleEn: Letter on Leek Flowers, Qing palace album
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 五代
-  original: 五代
-  certainty: documented
-  note: 馆方定于五代；帖末只署月日，无年份。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 五代
+dateOriginal: 五代
+dateCertainty: documented
+dateNote: 馆方定于五代；帖末只署月日，无年份。
 catalogNumber: null
-dimensions:
-  raw: 纵26厘米，横28厘米
-  note: 墨迹麻纸本，七行。
+dimensionsRaw: 纵26厘米，横28厘米
+dimensionsNote: 墨迹麻纸本，七行。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-wuxi-museum
-  sources:
-    - src-wuxi-jiuhua
-  accessedAt: 2026-11-24
-  asOf: null
-  note: Formerly in the Qing palace, removed in the 1920s, and accessioned by the Wuxi Museum in 1982.
-  noteZh: 清宫旧藏，二十世纪二十年代流出，1982 年入藏无锡博物院。
+collectionKind: collection-institution
+collectionPlace: place-wuxi-museum
+collectionSources:
+  - src-wuxi-jiuhua
+collectionAccessedAt: 2026-11-24
+collectionAsOf: null
+collectionNote: Formerly in the Qing palace, removed in the 1920s, and accessioned by the Wuxi Museum in 1982.
+collectionNoteZh: 清宫旧藏，二十世纪二十年代流出，1982 年入藏无锡博物院。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 韭花帖（清内府藏本）

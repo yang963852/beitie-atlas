@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 现代 赵朴初 行书跋沈尹默论书札卷
 publisher: 上海博物馆

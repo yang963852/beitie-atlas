@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 睡虎地秦简
 titleEn: Shuihudi Qin Slips
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: tie
 dynastyId: qin
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 战国晚期至秦
-  original: 战国晚期至秦始皇时期
-  certainty: approximate
-  note: 简文写于战国晚期及秦始皇时期。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 战国晚期至秦
+dateOriginal: 战国晚期至秦始皇时期
+dateCertainty: approximate
+dateNote: 简文写于战国晚期及秦始皇时期。
 script: 秦隶
 attribution:
   - role: unknown
@@ -29,8 +28,7 @@ attribution:
     noteZh: 简册出自基层吏员之手，未记书手姓名。
 sources:
   - src-hbww-shuihudi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 睡虎地秦简

@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 大都会艺术博物馆
 nameEn: The Metropolitan Museum of Art
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-met-shiqi
 notes:

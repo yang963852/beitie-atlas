@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 宋拓《神策军碑》
 publisher: 中国文化报 China Culture Daily

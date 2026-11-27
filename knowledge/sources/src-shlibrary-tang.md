@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 上海图书馆举办“大唐气象——上海图书馆藏唐碑善本展”
 publisher: 上海图书馆

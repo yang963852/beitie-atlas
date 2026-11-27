@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 书谱
 titleEn: Treatise on Calligraphy
 aliases: []
 studyCategory: tie
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 687
-  month: null
-  end: 687
-  endMonth: null
-  era: null
-  original: 垂拱三年寫記
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 687
+dateMonth: null
+dateEnd: 687
+dateEndMonth: null
+dateEra: null
+dateOriginal: 垂拱三年寫記
+dateCertainty: documented
+dateNote: null
 script: 草书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-shupu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 书谱

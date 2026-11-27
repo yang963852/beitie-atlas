@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 灵飞经
 titleEn: Classic of Spiritual Flight
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: tie
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: approximate
-  start: 738
-  month: null
-  end: 738
-  endMonth: null
-  era: null
-  original: 唐开元二十六年（738年）前后
-  certainty: approximate
-  note: 馆方定年为约 738 年，由玉真公主请人写就。
+dateKind: approximate
+dateStart: 738
+dateMonth: null
+dateEnd: 738
+dateEndMonth: null
+dateEra: null
+dateOriginal: 唐开元二十六年（738年）前后
+dateCertainty: approximate
+dateNote: 馆方定年为约 738 年，由玉真公主请人写就。
 script: 小楷
 attribution:
   - role: calligrapher
@@ -30,8 +29,7 @@ attribution:
     noteZh: 馆方标为“传钟绍京”，书写者未确认。
 sources:
   - src-met-lingfeijing
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 灵飞经

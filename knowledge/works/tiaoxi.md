@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 苕溪诗卷
 titleEn: Tiaoxi Poems
 aliases: []
 studyCategory: tie
 dynastyId: northern-song
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1088
-  month: null
-  end: 1088
-  endMonth: null
-  era: null
-  original: 元祐戊辰八月八日作
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1088
+dateMonth: null
+dateEnd: 1088
+dateEndMonth: null
+dateEra: null
+dateOriginal: 元祐戊辰八月八日作
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -28,8 +27,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-tiaoxi
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 苕溪诗卷

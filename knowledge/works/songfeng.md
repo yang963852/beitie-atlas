@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 松风阁诗
 titleEn: Poem on the Hall of Wind and Pines
 aliases: []
 studyCategory: tie
 dynastyId: northern-song
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1102
-  month: null
-  end: 1102
-  endMonth: null
-  era: null
-  original: null
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 1102
+dateMonth: null
+dateEnd: 1102
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 行书
 attribution:
   - role: calligrapher
@@ -31,8 +30,7 @@ sources:
   - src-ezbwg-songfeng
   - src-ezrb-songfeng
   - src-ezwl-songfeng
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 松风阁诗

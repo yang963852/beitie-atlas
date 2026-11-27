@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 浯溪摩崖石刻
 nameEn: Wuxi cliff inscriptions
 historicalName: null
 kind: historical-site
-coordinates: null
 sources: []
 notes:
   - Cliff face on the Xiang River at Qiyang, Yongzhou. The 大唐中兴颂 is cut into the 峿台 rock.

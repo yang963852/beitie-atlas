@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 大秦景教流行中国碑（馆方另一条目）
 publisher: 西安碑林博物馆

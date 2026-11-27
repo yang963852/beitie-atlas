@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 读帖笔记题名
 titleEn: Reading note title
 state: draft

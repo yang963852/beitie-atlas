@@ -73,9 +73,16 @@ describe('author-source migration safeguards', () => {
   });
 
   it('rejects partial map coordinates before an unknown latitude can become zero', () => {
-    const coordinates = { longitude: 109, precision: 'city', method: 'field-survey', verification: 'unverified' };
-    expect(() => readPlace({ id: 'sample', path: 'places/sample.md', fields: { kind: 'city', coordinates }, body: '' }))
-      .toThrow('both longitude and latitude');
+    const fields = {
+      nameZh: '示例地点',
+      kind: 'city',
+      coordinateLongitude: 109,
+      coordinatePrecision: 'city',
+      coordinateMethod: 'field-survey',
+      coordinateVerification: 'unverified',
+    };
+    expect(() => readPlace({ id: 'sample', path: 'places/sample.md', fields, body: '' }))
+      .toThrow('both coordinateLongitude and coordinateLatitude');
   });
 
   it('requires a traceable source and locator for an attributed claim', () => {

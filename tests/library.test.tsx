@@ -98,11 +98,11 @@ it('shows no workflow status on a published work or witness', () => {
   expect(detail.textContent).not.toContain('审核说明');
 });
 
-it('names the 1.1 edition on the library page', () => {
+it('names the 1.2 edition on the library page', () => {
   window.history.replaceState(null, '', '#/library');
   render(<App />);
   const colophon = document.querySelector('.reading-colophon');
-  expect(colophon?.textContent).toContain('1.1');
+  expect(colophon?.textContent).toContain('1.2');
 });
 
 describe('featured reading guides', () => {

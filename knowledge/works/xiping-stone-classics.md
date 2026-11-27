@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 熹平石经
 titleEn: Xiping Stone Classics
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: range
-  start: 175
-  month: null
-  end: 183
-  endMonth: null
-  era: null
-  original: 东汉熹平四年至光和六年
-  certainty: documented
-  note: null
+dateKind: range
+dateStart: 175
+dateMonth: null
+dateEnd: 183
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉熹平四年至光和六年
+dateCertainty: documented
+dateNote: null
 script: 八分隶书
 attribution:
   - role: calligrapher
@@ -30,8 +29,7 @@ attribution:
     noteZh: 国博将蔡邕署于石经工程，不等于单独认定本残石的书者。
 sources:
   - src-chnmuseum-xiping
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 熹平石经

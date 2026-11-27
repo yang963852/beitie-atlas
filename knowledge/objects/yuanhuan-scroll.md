@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: yuanhuan
 objectType: manuscript-copy
 titleZh: 远宦帖卷（双钩廓填本）
 titleEn: Yuanhuan Letter, double-outline tracing copy
-date:
-  kind: unknown
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: null
-  original: null
-  certainty: unknown
-  note: 馆方称双钩廓填本，未记摹写年代。
+dateKind: unknown
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: unknown
+dateNote: 馆方称双钩廓填本，未记摹写年代。
 catalogNumber: 故書000053N000000000
-dimensions:
-  raw: 本幅纵24.8厘米，横21.5厘米
-  note: 拖尾纵24.6厘米，横81厘米；隔水尺寸馆方另记。
+dimensionsRaw: 本幅纵24.8厘米，横21.5厘米
+dimensionsNote: 拖尾纵24.6厘米，横81厘米；隔水尺寸馆方另记。
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-taipei-palace
-  sources:
-    - src-npm-yuanhuan-record
-  accessedAt: 2026-11-25
-  asOf: null
-  note: The catalogue record holds the scroll in the Taipei palace museum and gives its inventory number and mounting measurements.
-  noteZh: 馆方著录记此卷藏台北故宫，并给文物编号与各段尺寸。
+collectionKind: collection-institution
+collectionPlace: place-taipei-palace
+collectionSources:
+  - src-npm-yuanhuan-record
+collectionAccessedAt: 2026-11-25
+collectionAsOf: null
+collectionNote: The catalogue record holds the scroll in the Taipei palace museum and gives its inventory number and mounting measurements.
+collectionNoteZh: 馆方著录记此卷藏台北故宫，并给文物编号与各段尺寸。
 events:
   - id: ev-yuanhuan-qing-palace
     type: custody
-    date:
-      kind: era
-      start: null
-      month: null
-      end: null
-      endMonth: null
-      era: 清
-      original: 轉入清宮
-      certainty: documented
-      note: null
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 清
+    dateOriginal: 轉入清宮
+    dateCertainty: documented
+    dateNote: null
     place: null
     placeWording: 清宮
     summary: After Ming and Qing private collectors, the scroll entered the Qing palace collection.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-npm-yuanhuan
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 远宦帖卷（双钩廓填本）

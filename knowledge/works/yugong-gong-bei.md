@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 虞恭公碑
 titleEn: Stele of Duke Yugong
 aliases:
@@ -9,16 +9,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 637
-  month: 10
-  end: 637
-  endMonth: 10
-  era: 唐贞观十一年
-  original: 唐贞观十一年（637年）十月
-  certainty: documented
-  note: The Palace Museum gives the tenth month of 637 for the erection of the stone.
+dateKind: single
+dateStart: 637
+dateMonth: 10
+dateEnd: 637
+dateEndMonth: 10
+dateEra: 唐贞观十一年
+dateOriginal: 唐贞观十一年（637年）十月
+dateCertainty: documented
+dateNote: The Palace Museum gives the tenth month of 637 for the erection of the stone.
 script: 楷书
 attribution:
   - role: author
@@ -42,18 +41,16 @@ sources:
   - src-dpm-yugong-song
   - src-dpm-yugong-nansong
   - src-nlc-shike-xulu-19
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people: []
-  objects:
-    - stele-yugong
-    - rubbing-yugong-nansong
-  sources:
-    - src-dpm-yugong-song
-    - src-dpm-yugong-nansong
-    - src-nlc-shike-xulu-19
+reviewState: reviewed
+guideState: reviewed
+guidePeople: []
+guideObjects:
+  - stele-yugong
+  - rubbing-yugong-nansong
+guideSources:
+  - src-dpm-yugong-song
+  - src-dpm-yugong-nansong
+  - src-nlc-shike-xulu-19
 ---
 
 # 虞恭公碑

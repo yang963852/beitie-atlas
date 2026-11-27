@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 北京10处新文化空间：去北海公园不只是“荡起双浆”
 publisher: 中国日报网 China Daily

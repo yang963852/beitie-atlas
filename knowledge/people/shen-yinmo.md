@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 沈尹默
 titleEn: Shen Yinmo
 aliases: []

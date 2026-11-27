@@ -1,47 +1,43 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: pingfu-tie
 objectType: ink-manuscript
 titleZh: 平复帖卷
 titleEn: The Pingfu Tie scroll
-date:
-  kind: range
-  start: 265
-  month: null
-  end: 303
-  endMonth: null
-  era: 西晋
-  original: 西晋
-  certainty: approximate
-  note: The museum dates the manuscript to the Western Jin; the range runs from the start of that period to the writer's death and is not a reconstruction of the writing year.
+dateKind: range
+dateStart: 265
+dateMonth: null
+dateEnd: 303
+dateEndMonth: null
+dateEra: 西晋
+dateOriginal: 西晋
+dateCertainty: approximate
+dateNote: The museum dates the manuscript to the Western Jin; the range runs from the start of that period to the writer's death and is not a reconstruction of the writing year.
 catalogNumber: 新00044430
-dimensions:
-  raw: 纵23.7厘米，横20.6厘米
-  note: The museum's object entry gives these figures for the paper and does not separate the mounting from the sheet.
+dimensionsRaw: 纵23.7厘米，横20.6厘米
+dimensionsNote: The museum's object entry gives these figures for the paper and does not separate the mounting from the sheet.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-dpm-pingfu
-  accessedAt: 2026-11-23
-  asOf: null
-  note: The museum states that Zhang Boju and Pan Su donated the scroll to the state in 1956 and that it was transferred to the Palace Museum by the Ministry of Culture. The entry does not say which gallery holds it or whether it is on display.
-  noteZh: 馆方记 1956 年张伯驹、潘素夫妇捐献国家，由文化部拨交故宫博物院。页面未记现陈列于哪一展室，也未记是否常设展出。
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-dpm-pingfu
+collectionAccessedAt: 2026-11-23
+collectionAsOf: null
+collectionNote: The museum states that Zhang Boju and Pan Su donated the scroll to the state in 1956 and that it was transferred to the Palace Museum by the Ministry of Culture. The entry does not say which gallery holds it or whether it is on display.
+collectionNoteZh: 馆方记 1956 年张伯驹、潘素夫妇捐献国家，由文化部拨交故宫博物院。页面未记现陈列于哪一展室，也未记是否常设展出。
 events:
   - id: ev-pingfu-tie-scroll-1
     type: accession
-    date:
-      kind: single
-      start: 1956
-      month: null
-      end: 1956
-      endMonth: null
-      era: 1956年
-      original: 1956年
-      certainty: documented
-      note: null
+    dateKind: single
+    dateStart: 1956
+    dateMonth: null
+    dateEnd: 1956
+    dateEndMonth: null
+    dateEra: 1956年
+    dateOriginal: 1956年
+    dateCertainty: documented
+    dateNote: null
     place: place-palace-museum
     placeWording: 故宫博物院
     summary: Zhang Boju and Pan Su donated the scroll, together with other works, to the state; the Ministry of Culture transferred it to the Palace Museum.
@@ -49,8 +45,7 @@ events:
     sources:
       - src-dpm-pingfu
     certainty: documented
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 平复帖卷

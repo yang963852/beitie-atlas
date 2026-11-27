@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 散氏盘
 titleEn: San Shi Pan, the Pan of the San Clan
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: pre-qin
 dynastyQualifier: 西周
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 西周·厉王
-  original: 西周晚期
-  certainty: approximate
-  note: 馆方定为西周晚期（公元前9至8世纪），一般系于厉王。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 西周·厉王
+dateOriginal: 西周晚期
+dateCertainty: approximate
+dateNote: 馆方定为西周晚期（公元前9至8世纪），一般系于厉王。
 script: 金文
 attribution:
   - role: unknown
@@ -30,8 +29,7 @@ attribution:
     noteZh: 铭文记夨、散两国割田立契，未署书手。
 sources:
   - src-npm-sanpan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 散氏盘

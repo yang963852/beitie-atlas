@@ -1,37 +1,33 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: wen-guiqulai
 objectType: ink-manuscript
 titleZh: 文徵明《楷书归去来兮辞页》
 titleEn: Return Home in Regular Script
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 明
-  original: null
-  certainty: documented
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 明
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 catalogNumber: 故00002899-8/8
-dimensions:
-  raw: 纵13.7厘米，横16.1厘米
-  note: null
+dimensionsRaw: 纵13.7厘米，横16.1厘米
+dimensionsNote: null
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-palace-museum
-  sources:
-    - src-catalogue-wen-guiqulai
-  accessedAt: 2026-11-18
-  asOf: null
-  note: null
-  noteZh: null
+collectionKind: collection-institution
+collectionPlace: place-palace-museum
+collectionSources:
+  - src-catalogue-wen-guiqulai
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: null
+collectionNoteZh: null
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 文徵明《楷书归去来兮辞页》

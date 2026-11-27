@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 张迁碑
 titleEn: Stele of Zhang Qian
 aliases: []
 studyCategory: bei
 dynastyId: eastern-han
 dynastyQualifier: null
-date:
-  kind: single
-  start: 186
-  month: null
-  end: 186
-  endMonth: null
-  era: null
-  original: 东汉中平三年（186年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 186
+dateMonth: null
+dateEnd: 186
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉中平三年（186年）
+dateCertainty: documented
+dateNote: null
 script: 隶书
 attribution:
   - role: unknown
@@ -45,17 +44,15 @@ attribution:
 sources:
   - src-ltfc-zhuyunge
   - src-taian-zhangqian-holding
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people: []
-  objects:
-    - stele-zhangqian
-  sources:
-    - src-ltfc-zhuyunge
-    - src-taian-zhangqian-holding
-    - src-nlc-shike-xulu
+reviewState: reviewed
+guideState: reviewed
+guidePeople: []
+guideObjects:
+  - stele-zhangqian
+guideSources:
+  - src-ltfc-zhuyunge
+  - src-taian-zhangqian-holding
+  - src-nlc-shike-xulu
 ---
 
 # 张迁碑

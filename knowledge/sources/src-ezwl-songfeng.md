@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 一曲松风万古传——黄庭坚《松风阁》墨迹赏析
 publisher: 鄂州市文学艺术界联合会（《江南风》2014年第5期）

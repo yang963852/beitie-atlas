@@ -12,8 +12,12 @@ import { formatReport, validateDataset, type ValidationIssue, type ValidationRep
 import type { KnowledgeArticle, KnowledgeRelation } from '../../src/domain/knowledge-types';
 import type { Dataset, MediaItem } from '../../src/domain/types';
 import {
+  AUTHOR_SCHEMA_VERSION,
   KNOWLEDGE_FORMAT_VERSION,
   KNOWLEDGE_SCHEMA_VERSION,
+  RELATION_FIELDS,
+  RELATION_FILE_FIELDS,
+  assertFields,
   canonical,
   idList,
   readObject,
@@ -78,9 +82,10 @@ function records(root: string, kind: string): MarkdownRecord[] {
       if (!stableId(id)) throw new Error('knowledge/' + kind + '/' + name + ': use a lowercase stable ID');
       const { fields, body } = splitFrontmatter(readFileSync(join(dir, name), 'utf8'));
       const schemaVersion = fields.schemaVersion;
-      if (schemaVersion !== KNOWLEDGE_SCHEMA_VERSION) {
-        throw new Error('knowledge/' + kind + '/' + name + ': schemaVersion must be ' + KNOWLEDGE_SCHEMA_VERSION);
+      if (schemaVersion !== AUTHOR_SCHEMA_VERSION) {
+        throw new Error('knowledge/' + kind + '/' + name + ': schemaVersion must be ' + AUTHOR_SCHEMA_VERSION);
       }
+      assertFields(kind, fields, 'knowledge/' + kind + '/' + name);
       return { id, fields, body, path: 'knowledge/' + kind + '/' + name };
     });
 }
@@ -89,14 +94,26 @@ function readRelations(root: string): KnowledgeRelation[] {
   const path = join(root, 'knowledge', 'relations.md');
   if (!existsSync(path)) return [];
   const { fields } = splitFrontmatter(readFileSync(path, 'utf8'));
-  if (fields.schemaVersion !== KNOWLEDGE_SCHEMA_VERSION) {
-    throw new Error('knowledge/relations.md: schemaVersion must be ' + KNOWLEDGE_SCHEMA_VERSION);
+  if (fields.schemaVersion !== AUTHOR_SCHEMA_VERSION) {
+    throw new Error('knowledge/relations.md: schemaVersion must be ' + AUTHOR_SCHEMA_VERSION);
+  }
+  const fileFields = new Set<string>(RELATION_FILE_FIELDS);
+  const strayFile = Object.keys(fields).filter((key) => !fileFields.has(key));
+  if (strayFile.length) {
+    throw new Error('knowledge/relations.md: unknown frontmatter field(s) ' +
+      strayFile.map((key) => '"' + key + '"').join(', ') + '; only schemaVersion and relations are read');
   }
   if (!Array.isArray(fields.relations)) throw new Error('knowledge/relations.md: relations must be a list');
   const seen = new Set<string>();
   return fields.relations.map((input, index) => {
     const at = 'relations[' + index + ']';
     if (!record(input)) throw new Error(at + ' must be a mapping');
+    const relationFields = new Set<string>(RELATION_FIELDS);
+    const strayRelation = Object.keys(input).filter((key) => !relationFields.has(key));
+    if (strayRelation.length) {
+      throw new Error(at + ': unknown field(s) ' +
+        strayRelation.map((key) => '"' + key + '"').join(', ') + '; only ' + RELATION_FIELDS.join(', ') + ' are read');
+    }
     const { from, to, type } = input;
     if ([from, to, type].some((value) => typeof value !== 'string' || !stableId(value as string))) {
       throw new Error(at + ': endpoints and type must be stable IDs');

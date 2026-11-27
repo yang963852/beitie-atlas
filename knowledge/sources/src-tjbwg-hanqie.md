@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 唐 摹 王羲之 草書寒切帖卷
 publisher: 天津博物館 Tianjin Museum

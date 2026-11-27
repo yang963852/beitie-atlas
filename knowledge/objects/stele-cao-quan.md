@@ -1,38 +1,34 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 work: cao-quan-bei
 objectType: original-stele
 titleZh: 曹全碑（原石）
 titleEn: Stele of Cao Quan, original stone
-date:
-  kind: single
-  start: 185
-  month: null
-  end: 185
-  endMonth: null
-  era: null
-  original: 东汉中平二年（185年）
-  certainty: disputed
-  note: The current Beilin entry and Palace Museum agree on 185. An alternate Beilin entry gives 186.
+dateKind: single
+dateStart: 185
+dateMonth: null
+dateEnd: 185
+dateEndMonth: null
+dateEra: null
+dateOriginal: 东汉中平二年（185年）
+dateCertainty: disputed
+dateNote: The current Beilin entry and Palace Museum agree on 185. An alternate Beilin entry gives 186.
 catalogNumber: null
-dimensions:
-  raw: 高272厘米
-  note: The alternate Beilin entry gives a width of 95 cm; the Palace Museum entry gives 123 cm. The width remains unresolved.
+dimensionsRaw: 高272厘米
+dimensionsNote: The alternate Beilin entry gives a width of 95 cm; the Palace Museum entry gives 123 cm. The width remains unresolved.
 survival: surviving
 relationships: []
-collection:
-  kind: collection-institution
-  place: place-xian-beilin-museum
-  sources:
-    - src-beilin-caoquan
-    - src-dpm-caoquan
-  accessedAt: 2026-11-18
-  asOf: null
-  note: Xi’an Beilin lists the original stone and records its transfer in 1956. The Palace Museum catalogues a distinct early Ming rubbing and names Beilin as the stone’s holding institution.
-  noteZh: 西安碑林著录原石，并记载于 1956 年移存。故宫另有明初拓本，目录同时指出原石藏于西安碑林。
+collectionKind: collection-institution
+collectionPlace: place-xian-beilin-museum
+collectionSources:
+  - src-beilin-caoquan
+  - src-dpm-caoquan
+collectionAccessedAt: 2026-11-18
+collectionAsOf: null
+collectionNote: Xi’an Beilin lists the original stone and records its transfer in 1956. The Palace Museum catalogues a distinct early Ming rubbing and names Beilin as the stone’s holding institution.
+collectionNoteZh: 西安碑林著录原石，并记载于 1956 年移存。故宫另有明初拓本，目录同时指出原石藏于西安碑林。
 events: []
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 曹全碑（原石）

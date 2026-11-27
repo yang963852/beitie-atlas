@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 陕西碑刻文献存藏丰富
 publisher: 中国社会科学网

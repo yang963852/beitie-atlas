@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 中国国家博物馆
 nameEn: National Museum of China
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-chnmuseum-langya
 notes:

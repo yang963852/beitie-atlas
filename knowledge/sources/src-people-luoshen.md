@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 聚焦汉字文明（玉版十三行）
 publisher: 人民日报海外版 People's Daily Overseas Edition

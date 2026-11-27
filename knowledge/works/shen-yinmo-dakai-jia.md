@@ -1,22 +1,21 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 甲种本大楷习字帖
 titleEn: Large Regular-Script Copybook, Edition A
 aliases: []
 studyCategory: tie
 dynastyId: prc
 dynastyQualifier: null
-date:
-  kind: single
-  start: 1962
-  month: null
-  end: 1962
-  endMonth: null
-  era: null
-  original: 1962年
-  certainty: documented
-  meaning: publication
-  note: The year is the publication year given by the Xiling chronology, not a composition date.
+dateKind: single
+dateStart: 1962
+dateMonth: null
+dateEnd: 1962
+dateEndMonth: null
+dateEra: null
+dateOriginal: 1962年
+dateCertainty: documented
+dateMeaning: publication
+dateNote: The year is the publication year given by the Xiling chronology, not a composition date.
 script: 楷书
 attribution:
   - role: calligrapher
@@ -32,17 +31,15 @@ attribution:
 sources:
   - src-xiling-shen-chronology
   - src-pku-shen-teaching
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  timelineYear: 1962
-  people:
-    - shen-yinmo
-  objects: []
-  sources:
-    - src-xiling-shen-chronology
-    - src-pku-shen-teaching
+reviewState: reviewed
+guideState: reviewed
+guideTimelineYear: 1962
+guidePeople:
+  - shen-yinmo
+guideObjects: []
+guideSources:
+  - src-xiling-shen-chronology
+  - src-pku-shen-teaching
 ---
 
 # 甲种本大楷习字帖

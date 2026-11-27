@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: Wikidata item Q2047427 — 故宫博物院 (The Palace Museum)
 publisher: Wikidata

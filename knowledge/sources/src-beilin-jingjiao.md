@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 国宝名碑 · 大秦景教流行中国碑
 publisher: 西安碑林博物馆 Xi’an Beilin Museum

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 北京图书馆藏石刻叙录（六）
 publisher: 中国国家图书馆

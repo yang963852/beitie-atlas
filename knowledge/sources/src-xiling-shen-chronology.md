@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 专题·沈尹默书风研究（年表）
 publisher: 西泠印社

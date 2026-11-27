@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 麻姑仙坛记（翻刻旧拓）
 publisher: 故宫博物院

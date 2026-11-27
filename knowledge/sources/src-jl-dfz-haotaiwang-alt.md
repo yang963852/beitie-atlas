@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 好太王碑
 publisher: 吉林省地方志 Jilin Local Chronicles

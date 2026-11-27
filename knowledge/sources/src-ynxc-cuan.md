@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 读懂「二爨碑」 领略爨文化
 publisher: 云南宣传网

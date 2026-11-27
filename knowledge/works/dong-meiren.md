@@ -1,21 +1,20 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 董美人墓志
 titleEn: Epitaph of Dong Meiren
 aliases: []
 studyCategory: bei
 dynastyId: sui
 dynastyQualifier: null
-date:
-  kind: single
-  start: 597
-  month: null
-  end: 597
-  endMonth: null
-  era: null
-  original: null
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 597
+dateMonth: null
+dateEnd: 597
+dateEndMonth: null
+dateEra: null
+dateOriginal: null
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: unknown
@@ -28,8 +27,7 @@ attribution:
     noteZh: 所引条目未署书者姓名。
 sources:
   - src-catalogue-dong-meiren
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 董美人墓志

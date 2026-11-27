@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 李斯
 titleEn: Li Si
 aliases: []

@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 第一百一十三讲：石鼓文及其拓本
 publisher: 故宫博物院

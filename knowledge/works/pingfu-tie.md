@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 平复帖
 titleEn: Letter on Recovery
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: tie
 dynastyId: western-jin
 dynastyQualifier: null
-date:
-  kind: range
-  start: 265
-  month: null
-  end: 303
-  endMonth: null
-  era: 西晋
-  original: 西晋，距今一千七百余年
-  certainty: approximate
-  note: The museum dates the letter to the Western Jin and says it was written more than 1,700 years ago; it gives no year. The range runs from the start of the Western Jin to the writer's death, and is not a reconstructed date.
+dateKind: range
+dateStart: 265
+dateMonth: null
+dateEnd: 303
+dateEndMonth: null
+dateEra: 西晋
+dateOriginal: 西晋，距今一千七百余年
+dateCertainty: approximate
+dateNote: The museum dates the letter to the Western Jin and says it was written more than 1,700 years ago; it gives no year. The range runs from the start of the Western Jin to the writer's death, and is not a reconstructed date.
 script: 草隶书
 attribution:
   - role: author-and-calligrapher
@@ -30,8 +29,7 @@ attribution:
     noteZh: 馆方著录以陆机为书信作者，小传系于 261—303 年。此帖为私人书札，非有意撰写的文章。
 sources:
   - src-dpm-pingfu
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 平复帖

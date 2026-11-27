@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 楷书《玄妙观重修三门记》卷
 publisher: 东京国立博物馆 Tokyo National Museum

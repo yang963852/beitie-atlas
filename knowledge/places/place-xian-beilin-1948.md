@@ -1,10 +1,9 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 nameZh: 西安碑林
 nameEn: Xi'an Beilin
 historicalName: null
 kind: institution
-coordinates: null
 sources:
   - src-beilin-article-2007
 notes:

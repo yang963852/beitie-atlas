@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 中山王厝鼎
 titleEn: Ding of King Cuo of Zhongshan
 aliases:
@@ -7,16 +7,15 @@ aliases:
 studyCategory: bei
 dynastyId: pre-qin
 dynastyQualifier: 战国
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 战国·中山
-  original: 战国
-  certainty: approximate
-  note: 1977年平山县中山王墓出土，同出器物属中山王厝时期。
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 战国·中山
+dateOriginal: 战国
+dateCertainty: approximate
+dateNote: 1977年平山县中山王墓出土，同出器物属中山王厝时期。
 script: 中山篆（金文）
 attribution:
   - role: unknown
@@ -29,8 +28,7 @@ attribution:
     noteZh: 铭文为中山王厝的告诫之辞，书刻者未署名。
 sources:
   - src-hebei-zhongshan
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 中山王厝鼎

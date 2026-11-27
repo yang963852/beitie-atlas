@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 魏晋南北朝时期的吉林·晋义熙十年（414）·长寿王立好太王碑
 publisher: 吉林省地方志编纂委员会办公室 Jilin Local Chronicles

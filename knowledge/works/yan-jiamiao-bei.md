@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 颜氏家庙碑
 titleEn: Stele of the Yan Family Shrine
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: tang
 dynastyQualifier: null
-date:
-  kind: single
-  start: 780
-  month: null
-  end: 780
-  endMonth: null
-  era: 唐建中元年
-  original: 唐建中元年（780年）
-  certainty: documented
-  note: null
+dateKind: single
+dateStart: 780
+dateMonth: null
+dateEnd: 780
+dateEndMonth: null
+dateEra: 唐建中元年
+dateOriginal: 唐建中元年（780年）
+dateCertainty: documented
+dateNote: null
 script: 楷书
 attribution:
   - role: author-and-calligrapher
@@ -39,8 +38,7 @@ attribution:
     noteZh: 篆额「颜氏家庙之碑」出李阳冰之手；书额者非碑文书者。
 sources:
   - src-beilin-yanjiamiao
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 颜氏家庙碑

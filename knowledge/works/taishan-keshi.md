@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 泰山刻石
 titleEn: Mount Tai Inscription
 aliases:
@@ -9,16 +9,15 @@ aliases:
 studyCategory: bei
 dynastyId: qin
 dynastyQualifier: null
-date:
-  kind: range
-  start: -219
-  month: null
-  end: -209
-  endMonth: null
-  era: null
-  original: 秦始皇二十八年（前 219）刻，秦二世元年（前 209）加刻
-  certainty: documented
-  note: "Two carvings on one stone: the First Emperor's eulogy and the Second Emperor's edict."
+dateKind: range
+dateStart: -219
+dateMonth: null
+dateEnd: -209
+dateEndMonth: null
+dateEra: null
+dateOriginal: 秦始皇二十八年（前 219）刻，秦二世元年（前 209）加刻
+dateCertainty: documented
+dateNote: "Two carvings on one stone: the First Emperor's eulogy and the Second Emperor's edict."
 script: 小篆
 attribution:
   - role: calligrapher
@@ -31,8 +30,7 @@ attribution:
     noteZh: 泰安方面页面记为丞相李斯篆书。此系传统归名，按来源原样记录，未作独立考证。
 sources:
   - src-taian-dai-museum-site
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 泰山刻石

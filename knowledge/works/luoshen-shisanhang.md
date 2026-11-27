@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 洛神赋十三行
 titleEn: Thirteen Lines from the Goddess of the Luo
 aliases:
@@ -9,16 +9,15 @@ aliases:
 studyCategory: tie
 dynastyId: eastern-jin
 dynastyQualifier: null
-date:
-  kind: range
-  start: 344
-  month: null
-  end: 386
-  endMonth: null
-  era: 东晋
-  original: 东晋
-  certainty: approximate
-  note: The sources place the writing in the Eastern Jin and give no year; the range is Wang Xianzhi's lifespan, not a reconstructed date.
+dateKind: range
+dateStart: 344
+dateMonth: null
+dateEnd: 386
+dateEndMonth: null
+dateEra: 东晋
+dateOriginal: 东晋
+dateCertainty: approximate
+dateNote: The sources place the writing in the Eastern Jin and give no year; the range is Wang Xianzhi's lifespan, not a reconstructed date.
 script: 小楷
 attribution:
   - role: author
@@ -42,8 +41,7 @@ attribution:
 sources:
   - src-people-luoshen
   - src-cnr-luoshen
-review:
-  state: reviewed
+reviewState: reviewed
 ---
 
 # 洛神赋十三行

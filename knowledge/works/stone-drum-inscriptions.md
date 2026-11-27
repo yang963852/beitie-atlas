@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 titleZh: 石鼓文
 titleEn: Stone Drum Inscriptions
 aliases:
@@ -8,16 +8,15 @@ aliases:
 studyCategory: bei
 dynastyId: pre-qin
 dynastyQualifier: null
-date:
-  kind: era
-  start: null
-  month: null
-  end: null
-  endMonth: null
-  era: 先秦
-  original: 秦国遗物，确切年代未定
-  certainty: disputed
-  note: null
+dateKind: era
+dateStart: null
+dateMonth: null
+dateEnd: null
+dateEndMonth: null
+dateEra: 先秦
+dateOriginal: 秦国遗物，确切年代未定
+dateCertainty: disputed
+dateNote: null
 script: 大篆
 attribution:
   - role: unknown
@@ -31,17 +30,15 @@ attribution:
 sources:
   - src-dpm-stone-drums
   - src-dpm-stone-drums-ming
-review:
-  state: reviewed
-guide:
-  state: reviewed
-  people: []
-  objects:
-    - stone-drums-original-set
-    - dpm-rubbing-shigu-xin00045770
-  sources:
-    - src-dpm-stone-drums
-    - src-dpm-stone-drums-ming
+reviewState: reviewed
+guideState: reviewed
+guidePeople: []
+guideObjects:
+  - stone-drums-original-set
+  - dpm-rubbing-shigu-xin00045770
+guideSources:
+  - src-dpm-stone-drums
+  - src-dpm-stone-drums-ming
 ---
 
 # 石鼓文

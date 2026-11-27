@@ -1,5 +1,5 @@
 ---
-schemaVersion: 1
+schemaVersion: 2
 kind: web
 title: 【西狭颂】独属于成县的悠久文脉
 publisher: 成县人民政府 Cheng County People's Government
