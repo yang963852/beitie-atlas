@@ -28,8 +28,8 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 ## Roles and scope
 
 - The coordinator (the project owner) prioritizes work, settles scope and decides merges. Self-review is sufficient; no independent reviewer is required. A contributor may use their preferred local agent. Work independently on disjoint subjects or files. Assign one lead per task and agree responsibility before editing overlapping files.
-- Local agents use separate workspaces: TRAE works in `.private/worktrees/trae` on `trae/work`; WorkBuddy works in `.private/worktrees/workbuddy` on `workbuddy/work` (or its own app-managed worktree until moved); Codex is read-only on the primary checkout and writes plans only when the coordinator asks. The primary checkout is the coordinator's space, not a shared agent workspace. See [the local agent workflow](docs/agent-workflow.zh-CN.md).
-- `trae/work` and `workbuddy/work` are long-lived integration branches. Keep one task per PR, merge `origin/main` into the branch before opening it, and synchronize the branch again after the coordinator merges. Never commit directly to `main`.
+- Local agents use separate workspaces: TRAE works in `.private/worktrees/trae`, WorkBuddy in `.private/worktrees/workbuddy` (or its own app-managed worktree until moved); Codex is read-only on the primary checkout and writes plans only when the coordinator asks. The primary checkout is the coordinator's space, not a shared agent workspace. See [the local agent workflow](docs/agent-workflow.zh-CN.md).
+- Use one short-lived `task/NNN-slug` branch per task, created from current `main` in the agent's own worktree or checkout and deleted after merge. Do not reuse a branch across tasks and do not keep per-agent integration branches. Keep one task per PR, merge `origin/main` into the branch if `main` moved before you open it, and never commit directly to `main`.
 - Resolve blocking findings within the assigned PR. Do not rewrite the application or introduce a backend, framework, provider, or dependency without a concrete need recorded in the decision log.
 - Use English for implementation, technical guidance and skills. Communicate with the coordinator in Chinese. Welcome Chinese-only submissions and preserve original wording and names.
 - Inspect `git status` first. Preserve others' changes. Work inside this repository, never stage the parent workspace or personal documents.
@@ -37,7 +37,7 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 ## Local artifact storage
 
 - Never create project folders or write project outputs in the parent workspace or beside this repository.
-- Use `.private/tmp/` for temporary files and caches, `.private/worktrees/` for the two long-lived agent worktrees, `.private/browser/` for browser profiles, `.private/sites/` for deployment checkouts and archives, and `.private/workspace-archive/` for retained legacy artifacts and local copies of records retired from `main`. The canonical copy of a retired record is its annotated archive tag. Keep existing `dist/` and `build/` conventions. Never stage `.private/`.
+- Use `.private/tmp/` for temporary files and caches, `.private/worktrees/` for the fixed agent worktrees, `.private/browser/` for browser profiles, `.private/sites/` for deployment checkouts and archives, and `.private/workspace-archive/` for retained legacy artifacts and local copies of records retired from `main`. The canonical copy of a retired record is its annotated archive tag. Keep existing `dist/` and `build/` conventions. Never stage `.private/`.
 - WorkBuddy's own application data directory (`C:/Users/zhangyang/WorkBuddy/Worktrees/碑帖之间/`) is the only permitted workspace outside this repository. It is a Git worktree managed by that application, not a project output; do not create other folders there.
 - Set tool output paths, browser profile paths, and temporary-directory variables explicitly as needed. If a tool cannot keep its output inside the project, report the limitation instead of writing beside the repository. Check for stray project outputs at handoff; leave unrelated folders alone.
 
@@ -86,7 +86,7 @@ Do not read the whole repository to make a bounded change. Read the row that mat
 
 ## Repository and preview workflow
 
-- Start a task branch from current project `main`. Local agents use their long-lived branch (`trae/work` or `workbuddy/work`) and open a PR after each task; external contributors use a short-lived `task/...` branch. CI green plus the owner's merge is the gate.
+- Start a short-lived `task/NNN-slug` branch from current project `main` for each task, whether you are a local agent or an external contributor, and open a PR after each task. Delete the branch once it is merged. CI green plus the owner's merge is the gate.
 - Apply the evidence checklist in [the atlas workflow](docs/atlas-workflow.md) to additions and coordinate changes. Sort the left column by the represented inscription's period, then date. Keep the production date of each copy visible in its own detail.
 - GitHub Pages is the sole website host. [The Pages workflow](.github/workflows/pages.yml) publishes a release build of checked `main`.
 - A release keeps the automated `npm run release` gate and manifest check. The owner's merge is the approval; a quick live smoke test is recommended. Follow [the release runbook](docs/release.md) before changing the Pages deployment mode.

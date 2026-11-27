@@ -27,7 +27,7 @@ For the owner or an agent preparing a technical decision, start with the [Chines
 
 A local agent can read each `SKILL.md` directly from the checkout. Each assignment supplies a reader outcome, subject or files, base revision, evidence and a stopping point; an acceptance example is optional. Copy the [task card and Chinese prompt](../templates/task-brief.md). GitHub handles repository permissions. A task description or skill provides workflow guidance.
 
-TRAE commits to the long-lived `trae/work` branch and WorkBuddy to `workbuddy/work`; each task opens a PR to `main`, and the coordinator decides the merge. Codex is read-only unless the coordinator asks for a written plan. The workspace, synchronization and cleanup rules are in [the local agent workflow](agent-workflow.zh-CN.md).
+TRAE and WorkBuddy each open a short-lived `task/NNN-slug` branch from current `main` in their own worktree; each task opens a PR to `main`, and the coordinator decides the merge. Codex is read-only unless the coordinator asks for a written plan. The workspace, synchronization and cleanup rules are in [the local agent workflow](agent-workflow.zh-CN.md).
 
 ## Set up a clean workspace
 
