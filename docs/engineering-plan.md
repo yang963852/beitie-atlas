@@ -107,7 +107,7 @@ src/i18n/             interface dictionaries
 knowledge/            authored Markdown, templates and readable generated catalogue
 knowledge/_templates/ Chinese starting points for each record type
 scripts/lib/knowledge-*.ts  schema, compiler, isolation and packaging helpers
-data/index/           generated versioned interface; never edit by hand
+data/index/           generated versioned interface, not committed; never edit by hand
 tests/fixtures/       clearly synthetic edge cases, excluded from release data
 docs/                 requirements, decisions, review reports
 ```
@@ -140,7 +140,7 @@ erDiagram
 
 **怎样读一个真实例子。** 原石和故宫著录的民国拓本都用 `work: yan-qinli-bei` 指向同一作品，故宫拓本另有馆号“新00045406”。其制作年代只记“民国”，拓制年份空缺。该拓本的事件和实物关系数组都是空的，原因是现有著录不足以证明它拓自哪一方石，也不足以建立递藏链。查阅目录的日期与馆藏断言的日期分别保存。即使馆藏成立，机构位置也不能精确到库房。地点未知、仅知旧址或缺少可用坐标时，仍可保留文字和出处。[作品](../knowledge/works/yan-qinli-bei.md) · [原石](../knowledge/objects/yan-qinli-original-stele.md) · [民国拓本](../knowledge/objects/dpm-rubbing-xin00045406.md) · [书家文章](../knowledge/people/yan-zhenqing.md)
 
-**编辑应改哪里。** `knowledge/` 的 Markdown 是有固定字段的档案，文件名即稳定编号。事件内嵌在所属实物的 YAML 中；地点和文献各有一份文件，可由多件实物共用。作品、实物、人物、地点、来源的开头 YAML 记录程序字段，正文写给人读。人物之间的具名关系在 `knowledge/relations.md`，每条带来源和状态。`npm run knowledge:compile` 生成 `data/index/knowledge-v1.json`；`npm run knowledge:generate` 编出 GitHub 可读目录。网页、检查、时间线、地图和下载包只读该接口，不再直接读作者文件。[字段定义](../src/domain/types.ts) · [作者格式](../scripts/lib/knowledge-schema.ts) · [编译器](../scripts/lib/knowledge-compiler.ts) · [目录生成器](../scripts/lib/catalogue.ts) · [接口](../data/index/knowledge-v1.json)
+**编辑应改哪里。** `knowledge/` 的 Markdown 是有固定字段的档案，文件名即稳定编号。事件内嵌在所属实物的 YAML 中；地点和文献各有一份文件，可由多件实物共用。作品、实物、人物、地点、来源的开头 YAML 记录程序字段，正文写给人读。人物之间的具名关系在 `knowledge/relations.md`，每条带来源和状态。`npm run knowledge:compile` 生成 `data/index/knowledge-v1.json`；`npm run knowledge:generate` 编出 GitHub 可读目录。网页、检查、时间线、地图和下载包只读该接口，不再直接读作者文件。[字段定义](../src/domain/types.ts) · [作者格式](../scripts/lib/knowledge-schema.ts) · [编译器](../scripts/lib/knowledge-compiler.ts) · [目录生成器](../scripts/lib/catalogue.ts) · [浏览器接口入口](../src/domain/data.ts)
 
 **此次核对的规模。** 87 部作品、96 件实物、70 条实物事件、36 个地点、145 条文献、1 条实物媒体记录；手写文章有 4 篇作品导读、7 篇人物、2 篇读帖。这些是 2026-11-24 迁移后的记录数，包含草稿。实物媒体表只登记与具体实物关联的媒体，开场的桌面、教室等界面素材另放在 `src/assets/`。新增作品即使尚无导读，也能从编译档案进入目录。[浏览器数据入口](../src/domain/data.ts) · [目录合并逻辑](../src/domain/library.ts) · [知识库](../knowledge/README.md)
 
@@ -208,7 +208,7 @@ Record sources before writing the narrative. Summarize facts in original prose. 
 
 Readers can submit a single source or lead in Chinese using the knowledge Issue form. An editor checks the evidence, normalizes accepted fields, links the original Issue and preserves credit. Members may edit authored Markdown directly in a GitHub browser, a local checkout, or the downloadable library ZIP. Source gaps stay visible.
 
-The compiler is the only path from author source to the reader. `npm run knowledge:compile` reads `knowledge/`, validates references and bilingual alignment, and writes `data/index/knowledge-v1.json`. `npm run check:interface` rejects a stale file; `npm run check:isolation` rejects a page that imports author or legacy files; `npm run check:reproducible` compiles a read-only copy twice and hashes the sources before and after. The generated catalogue is a separate projection for GitHub readers. A data-contract change updates the schema, compiler, validator, web consumer and tests together.
+The compiler is the only path from author source to the reader. `npm run knowledge:compile` reads `knowledge/`, validates references and bilingual alignment, and writes `data/index/knowledge-v1.json`. `npm run check:interface` rejects a stale local copy of that generated file; `npm run check:isolation` rejects a page that imports author or legacy files; `npm run check:reproducible` compiles a read-only copy twice and hashes the sources before and after. The generated catalogue is a separate projection for GitHub readers. A data-contract change updates the schema, compiler, validator, web consumer and tests together.
 
 For v0.1, review all publication records, not a random sample. Keep a future maintenance queue for stale links, collection changes, disputed claims, and image permissions. An update to collection data changes its review record, not unrelated dates.
 

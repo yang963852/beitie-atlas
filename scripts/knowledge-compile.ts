@@ -2,7 +2,7 @@
  * Compile the Markdown knowledge library into the versioned web interface.
  *
  *   npm run knowledge:compile          write data/index/knowledge-v1.json
- *   npm run check:interface            verify the committed file is current
+ *   npm run check:interface            verify the local copy is current
  *   npm run check:release              strict draft gate
  */
 

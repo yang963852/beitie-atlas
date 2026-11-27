@@ -56,10 +56,10 @@ Run `npm run check` again after implementation. Push the checked branch to the c
 | Authored works, objects, people, places, sources or reading notes | Markdown under `knowledge/`; start from [the templates](../knowledge/_templates/) | Run `npm run knowledge:compile`, then `npm run check` |
 | Catalogue index and GitHub reading copies | Generated from `knowledge/`; never hand-edit `knowledge/catalogue/` or `knowledge/README.md` | `npm run knowledge:generate` and commit the generated diff |
 | Website and navigation | `src/App.tsx`, `src/components/`, `src/styles.css`, `src/i18n/`; import only the compiled interface | Exercise entry, link refresh, keyboard, narrow screen and 200% zoom |
-| Compiler, interface or validation | `scripts/lib/knowledge-*.ts`, `src/domain/`, `data/index/knowledge-v1.json` | Run `npm run check:data`, `npm run check:interface`, `npm run check:isolation`, `npm run check:reproducible` |
+| Compiler, interface or validation | `scripts/lib/knowledge-*.ts`, `src/domain/`, the generated `data/index/knowledge-v1.json` | Run `npm run check:data`, `npm run check:interface`, `npm run check:isolation`, `npm run check:reproducible` |
 | Formal publication | `scripts/release.ts`, [release runbook](release.md) | Verify all reviewed inputs, the release marker, the manifest and a live smoke test |
 
-The website reads `data/index/knowledge-v1.json`; it does not import author Markdown. The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`. The pre-rebuild JSON corpus and its migration tools are retired; their records are in the archive tags listed in [the archive index](archive.md).
+The website reads `data/index/knowledge-v1.json`; it does not import author Markdown. That file is generated on demand and is not in version control, so a fresh clone builds it before `dev`, `build` or `check`. The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`. The pre-rebuild JSON corpus and its migration tools are retired; their records are in the archive tags listed in [the archive index](archive.md).
 
 The public **1.2** edition is built and deployed through `npm run release`. The Pages workflow verifies the release marker, the manifest counts and the downloadable library ZIP. Deployment evidence for the earlier 1.1 release is recorded in delivery 051 in the `archive-milestones-040-051-2026-11-26` tag.
 
@@ -69,6 +69,6 @@ The MIT licence covers the code, documentation and original editorial work; thir
 
 1. Fork the project and replace the records under `knowledge/` using the [Chinese templates](../knowledge/_templates/).
 2. Change the site title, interface text and deployment address; set the Vite base path for your host.
-3. Run `npm run knowledge:compile && npm run knowledge:generate`, then `npm run check`.
+3. Run `npm run knowledge:build`, then `npm run check`.
 4. Keep the evidence, rights and release rules that you still need. The iteration board, delivery reports and local-agent branches describe this project's coordination, not a requirement for a fork.
 5. The archive tags and `docs/archive.md` are optional in a fork; they preserve this project's dated records.
