@@ -19,6 +19,7 @@ P1 blocks a release; P2 is fixed in the next pass; P3 is optional. Fix demonstra
 
 ## Decisions
 
+- 2026-11-27: The public repository carries a tool-independent agent contract. `AGENTS.md` states the binding rules and the documents to read per task; it names no local agent, branch or machine path. Agent prompts, private skills and local workspace instructions live outside version control. This supersedes the 2026-11-25 long-lived `trae/work` and `workbuddy/work` decision: each task uses its own branch opened from current `main`, and concurrent tasks use separate clones or working trees.
 - 2026-11-26: Lightweight solo-owner workflow. The owner's merge is the acceptance; self-review is sufficient. Routine work needs no delivery report, board row, screenshot set or archive tag. A release is a `CHANGELOG.md` entry plus a `vX.Y.Z` tag; `npm run release` remains the automated data gate. Evidence rules and automated checks remain. This supersedes the 2026-11-18 independent-review decision and the archive-after-acceptance rule below.
 - 2026-11-26: `main` keeps current sources, operating documents and the active milestone only. Accepted task cards, delivery reports, screenshots, research and dated plans move to an annotated `archive-*` tag; UI screenshots live in the PR or issue. Optional under the lightweight workflow.
 - 2026-11-25: 1.1 版发布。117 部作品、126 件实物、8 位书家、2 篇读帖与 1 条人物关系全部转为已审核，面向读者的草稿/已审核标记与预览草稿提示不再显示；发布门槛与草稿阻断能力保留。
