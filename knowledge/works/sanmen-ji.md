@@ -29,6 +29,7 @@ attribution:
   - role: calligrapher
     name: 赵孟頫
     nameEn: Zhao Mengfu
+    person: zhao-mengfu
     certainty: documented
     sources:
       - src-tnm-sanmen

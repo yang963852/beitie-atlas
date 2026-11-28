@@ -21,6 +21,7 @@ attribution:
   - role: calligrapher
     name: 褚遂良
     nameEn: Chu Suiliang
+    person: zhu-suiliang
     certainty: documented
     sources:
       - src-catalogue-yanta

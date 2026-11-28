@@ -29,6 +29,7 @@ attribution:
   - role: calligrapher
     name: 李阳冰
     nameEn: Li Yangbing
+    person: li-yangbing
     certainty: documented
     sources:
       - src-beilin-sanfenji

@@ -1,6 +1,9 @@
 ---
 schemaVersion: 2
 titleZh: "06｜专题：宋代——刻帖、墨迹与士人书"
+category: topic
+period: song
+order: 6
 titleEn: "06 — Topic: Song — Modelbooks, Ink and the Scholar's Hand"
 state: reviewed
 works:

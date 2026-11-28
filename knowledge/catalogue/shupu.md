@@ -16,6 +16,8 @@ Treatise on Calligraphy
 
 书体：草书
 
+延伸阅读：[孙过庭](../people/sun-guoting.md)
+
 <a name="witness-shupu"></a>
 
 ## 孙过庭《书谱》

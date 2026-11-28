@@ -25,6 +25,24 @@ sources: [src-dpm-daba, src-catalogue-zhao-luoshen, src-tnm-sanmen, src-colbase-
 
 还有一件挂着赵孟頫名字的刻石。[《赵子昂游天冠山诗》](../works/tianguanshan-poems.md)在西安碑林，馆方指出，据以刻石的墨本真伪尚有异说，书家归属也须存疑。它的用处正在于与前几件对照：“赵体”在元代即是显学，学的人多，伪托的也多；而一块刻石能把一份有问题的墨本固定下来——墨本可以伪，石上的字却是真的刻痕。读到这一层，“赵孟頫”三个字就不再是结论，而是一个要每件分别核对的问题。[西安碑林博物馆，赵子昂游天冠山诗碑](https://www.beilin-museum.com/index.php?a=index&aid=2646&c=View&m=home)
 
+### 生平与身份
+
+上文所记生卒、字号、籍贯、家世与历官沿用原文，但本库来源的「简介」与作品说明未逐字转录故宫小传，故不据此增添新的传记数值。[故宫博物院，赵孟頫行书洛神赋卷](https://www.dpm.org.cn/collection/handwriting/228244.html)。据 `dynastySource`，本页把他系于元。
+
+### 书体与师承
+
+上文已记其于钟繇、二王、李邕、赵构及历代诸家无所不学，篆、隶、真、草各臻神妙，为故宫小传所载；《三门记》的李邕基础与篆额见日本国立文化财机构数据库，该库据官职推断书写时四十九至五十六岁，是推断而非著录，两说分记。[ColBase 记录](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)
+
+### 代表作与本库关联
+
+本库所收[《胆巴碑》](../works/daba-bei.md)、[《三门记》](../works/sanmen-ji.md)、[《洛神赋》](../works/zhao-luoshen.md)与[《赵子昂游天冠山诗》](../works/tianguanshan-poems.md)。故宫藏《胆巴碑》为纸本稿，纵三十三点六厘米，横五百六十三厘米（书心另有一百六十六厘米一说），两说并存。[故宫博物院，赵孟頫楷书帝师胆巴碑卷](https://www.dpm.org.cn/subject_zhaomengfu/achievement/245821.html)
+
+### 书迹可靠性
+
+以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+
+— 本页 `objects` 为空。[《胆巴碑》](../works/daba-bei.md)为纸本稿、非刻石，[《三门记》](../works/sanmen-ji.md)为碑文原稿、非碑石，[《洛神赋》](../works/zhao-luoshen.md)为纸本行书墨迹，三者各依馆方著录分记。[《赵子昂游天冠山诗》](../works/tianguanshan-poems.md)在西安碑林为刻石，但馆方指出据以刻石的墨本真伪尚有异说、书家归属须存疑；石上的刻痕是真的，不能反过来证明墨本为真。此处不因同署赵名而抹平各件的差别。
+
 ## English
 
 Zhao Mengfu (1254–1322), courtesy name Zi’ang, styled Songxue and Shuijinggong Daoren, was a native of Wuxing, present-day Huzhou in Zhejiang, and a member of the Song imperial clan. At fourteen he entered office on his father’s merit as a revenue officer in Zhenzhou; after the Yuan conquest he served the new dynasty, rising through the Hanlin readership to the rank of Ronglu dafu, and was granted the title Duke of Wei and the posthumous name Wenmin. The Palace Museum’s biography calls him “the crown of the Yuan”, says he studied Zhong You, the two Wangs, Li Yong, Emperor Gaozong of Song and every school before them, and that his seal, clerical, regular and cursive scripts each reached mastery. The same page quotes Xianyu Shu: “Zi’ang’s seal, clerical, regular, running and wild cursive are the first of the age.” Later ages call this manner “Zhao style”, but a style is a label, and which work it fits has to be checked one at a time. [Palace Museum, Zhao Mengfu’s Luoshen fu, biography of Zhao Mengfu](https://www.dpm.org.cn/collection/handwriting/228244.html)
@@ -36,3 +54,21 @@ With the [Record of the Three Gates](../works/sanmen-ji.md) only one role is lef
 Among the ink works the most rewarding is the [Rhapsody on the Goddess of the Luo](../works/zhao-luoshen.md). Ink on paper, running script, 29 by 220.9 cm, eighty lines, signed “Zi’ang” at the end; on the paper after it are colophons by Li Ti of the Yuan, Gao Qi of the Ming, and Wang Duo and Cao Rong of the Qing, with thirty-seven seals in all, and the scroll is recorded in Bian Yongyu’s Shigutang shuhua huikao and the Shiqu baoji. The text is Cao Zhi’s rhapsody, but the brush follows Wang Xianzhi’s own copy of it, the so-called Thirteen Lines on jade. Li Ti puts it most plainly: “Not one stroke departs from the law; it is written from the wrist with the fat Lanting, and one may say he bought Wang and got Yang.” Gao Qi says it “enters and leaves the father and son” yet “has a heavenly interest of its own”. Read the scroll in three layers: Cao Zhi’s text, Wang Xianzhi’s model, Zhao’s copy. Yu Ji’s judgement that “his regular script grasps the standard of the Luoshen fu, his running script enters the chamber of the Shengjiao xu” describes exactly this making of the old into one’s own. [Palace Museum, Zhao Mengfu’s Luoshen fu](https://www.dpm.org.cn/collection/handwriting/228244.html)
 
 One more stone carries Zhao’s name. The [Poems on Mount Tianguan](../works/tianguanshan-poems.md) is at the Xi’an Beilin Museum, and the museum notes that the authenticity of the ink model from which it was cut is disputed, so the attribution must be held in doubt as well. Its use is precisely the contrast with the others: “Zhao style” was already a school in the Yuan, much imitated and much forged, and a carved stone can fix a questionable model in place — the paper may be false, but the cuts in the stone are really there. At that point the name Zhao Mengfu stops being a conclusion and becomes a question to be checked work by work. [Xi’an Beilin Museum, Poems on Mount Tianguan](https://www.beilin-museum.com/index.php?a=index&aid=2646&c=View&m=home)
+
+### Life and identity
+
+The dates, courtesy name, native place, family and offices above are kept; the "brief introductions" and work descriptions in the listed sources do not transcribe the museum biography verbatim, so no further biographical values are added. [Palace Museum, Zhao Mengfu's Luoshen fu](https://www.dpm.org.cn/collection/handwriting/228244.html). By `dynastySource` this page places him in the Yuan.
+
+### Scripts and models
+
+The account above — studying Zhong You, the two Wangs, Li Yong, Emperor Gaozong of Song and earlier schools — is from the museum biography. The Li Yong basis and seal heading of the Three Gates record are from the Japanese national database, whose inference of ages forty-nine to fifty-six from his offices is an inference, not a record; both are kept apart. [ColBase record](https://colbase.nich.go.jp/collection_items/tnm/TB-1461?locale=zh)
+
+### Works in this library
+
+The library holds the [Dampa Stele](../works/daba-bei.md), [Record of the Three Gates](../works/sanmen-ji.md), [Rhapsody on the Goddess of the Luo](../works/zhao-luoshen.md) and [Poems on Mount Tianguan](../works/tianguanshan-poems.md). The Palace Museum's Dampa copy is a draft on paper, 33.6 by 563 cm (the calligraphy alone given elsewhere as about 166 cm); both readings are kept. [Palace Museum, Zhao Mengfu's Dampa stele](https://www.dpm.org.cn/subject_zhaomengfu/achievement/245821.html)
+
+### Reliability of the surviving trace
+
+The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+
+— This page has no `objects` entries. The [Dampa Stele](../works/daba-bei.md) is a draft on paper, not a carved stone; the [Three Gates](../works/sanmen-ji.md) is the draft of a stele text, not the stone; and the [Luoshen fu](../works/zhao-luoshen.md) is ink on paper in running script, each recorded as the museum states. The [Poems on Mount Tianguan](../works/tianguanshan-poems.md) is a carved stone at the Beilin, but the museum notes that the authenticity of the ink model from which it was cut is disputed and the attribution must be held in doubt: the cuts in the stone are real, which cannot in turn prove the model genuine. The works are not levelled by sharing one name.

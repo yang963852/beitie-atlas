@@ -1,6 +1,9 @@
 ---
 schemaVersion: 2
 titleZh: "07｜专题：元明——复古与性灵"
+category: topic
+period: yuan-ming
+order: 7
 titleEn: "07 — Topic: Yuan and Ming — Revival and Individual Temperament"
 state: reviewed
 works:

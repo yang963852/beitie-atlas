@@ -76,9 +76,9 @@ export const FIELD_NAMES: Readonly<Record<string, readonly string[]>> = {
     'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases',
     'dynastyId', 'dynastySource',
   ],
-  // Notes share the person reader and add `people`, read directly by the compiler.
   notes: [
     'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases', 'people',
+    'category', 'period', 'order',
   ],
   places: [
     'schemaVersion', 'nameZh', 'nameEn', 'historicalName', 'kind', 'province',
@@ -96,6 +96,24 @@ export const FIELD_NAMES: Readonly<Record<string, readonly string[]>> = {
 export const RELATION_FILE_FIELDS = ['schemaVersion', 'relations'] as const;
 /** Keys each entry under `relations:` may carry. */
 export const RELATION_FIELDS = ['from', 'to', 'type', 'labelZh', 'labelEn', 'sourceRefs', 'state'] as const;
+/** Keys each entry under `attribution:` may carry. */
+export const ATTRIBUTION_FIELDS = ['role', 'name', 'nameEn', 'person', 'certainty', 'sources', 'note', 'noteZh'] as const;
+/** Keys each entry under `claims:` may carry. */
+export const CLAIM_FIELDS = [
+  'id', 'kind', 'predicate', 'value', 'voice', 'person', 'stance', 'certainty', 'sources', 'locator', 'note', 'noteZh',
+] as const;
+/** Keys each entry under `events:` may carry, including its flat `date*` fields. */
+export const EVENT_FIELDS = [
+  'id', 'type',
+  'dateKind', 'dateStart', 'dateMonth', 'dateEnd', 'dateEndMonth',
+  'dateEra', 'dateOriginal', 'dateCertainty', 'dateMeaning', 'dateNote',
+  'place', 'placeWording', 'referencePlace', 'referenceNote', 'referenceNoteZh',
+  'shortLabel', 'shortLabelZh', 'summary', 'summaryZh', 'sources', 'certainty',
+] as const;
+/** Keys each entry under an object's `relationships:` may carry. */
+export const OBJECT_RELATIONSHIP_FIELDS = ['type', 'target', 'sources', 'note'] as const;
+/** Keys each entry under `media:` may carry. */
+export const MEDIA_FIELDS = ['id', 'asset', 'creator', 'sources', 'license', 'credit', 'rightsEvidence', 'acquiredAt'] as const;
 
 /** Template that documents each record type's field list, for error messages. */
 const FIELD_GUIDE: Readonly<Record<string, string>> = {
@@ -120,6 +138,25 @@ export function assertFields(kind: string, fields: Record<string, unknown>, path
     unknown.map((key) => '"' + key + '"').join(', ') +
     '. Author records use flat v2 keys; see ' + guide + '.',
   );
+}
+
+/**
+ * Reject a key that no reader consumes inside a list entry.
+ *
+ * `assertFields` guards the top level only. The entry readers below take their
+ * optional fields by name, so without this guard a misspelt `certainty` would
+ * fall back to `documented`, and a misspelt translation would vanish from the
+ * site without a trace.
+ */
+function assertEntryFields(entry: Record<string, unknown>, allowed: readonly string[], at: string): void {
+  const known = new Set<string>(allowed);
+  const unknown = Object.keys(entry).filter((key) => !known.has(key));
+  if (unknown.length) {
+    throw new Error(
+      at + ': unknown field(s) ' + unknown.map((key) => '"' + key + '"').join(', ') +
+      '; only ' + allowed.join(', ') + ' are read',
+    );
+  }
 }
 
 export interface GuideInput {
@@ -259,6 +296,7 @@ export function readAttribution(value: unknown, path: string): Attribution[] {
   return value.map((item, index) => {
     const at = path + '[' + index + ']';
     if (!record(item)) throw new Error(at + ' must be a mapping');
+    assertEntryFields(item, ATTRIBUTION_FIELDS, at);
     const role = text(item.role, at + '.role');
     if (!ATTRIBUTION_ROLES.has(role)) throw new Error(at + '.role is unknown');
     const certainty = item.certainty ?? 'documented';
@@ -287,6 +325,7 @@ export function readClaims(value: unknown, path: string): Claim[] | undefined {
   return value.map((item, index) => {
     const at = path + '[' + index + ']';
     if (!record(item)) throw new Error(at + ' must be a mapping');
+    assertEntryFields(item, CLAIM_FIELDS, at);
     const kind = text(item.kind, at + '.kind');
     if (!CLAIM_KINDS.has(kind)) throw new Error(at + '.kind is unknown');
     const stance = item.stance ?? 'neutral';
@@ -473,6 +512,7 @@ function readEvents(value: unknown, objectId: string, path: string): ProvenanceE
   return value.map((item, index) => {
     const at = path + '[' + index + ']';
     if (!record(item)) throw new Error(at + ' must be a mapping');
+    assertEntryFields(item, EVENT_FIELDS, at);
     const type = text(item.type, at + '.type');
     if (!EVENT_TYPES.has(type)) throw new Error(at + '.type is invalid');
     const certainty = item.certainty ?? 'documented';
@@ -505,6 +545,7 @@ function readRelationships(value: unknown, path: string): ObjectRelationship[] {
   return value.map((item, index) => {
     const at = path + '[' + index + ']';
     if (!record(item)) throw new Error(at + ' must be a mapping');
+    assertEntryFields(item, OBJECT_RELATIONSHIP_FIELDS, at);
     const type = text(item.type, at + '.type');
     if (!RELATIONSHIP_TYPES.has(type)) throw new Error(at + '.type is invalid');
     return {
@@ -522,6 +563,7 @@ function readMedia(value: unknown, objectId: string, path: string): MediaItem[] 
   return value.map((item, index) => {
     const at = path + '[' + index + ']';
     if (!record(item)) throw new Error(at + ' must be a mapping');
+    assertEntryFields(item, MEDIA_FIELDS, at);
     const asset = text(item.asset, at + '.asset');
     return {
       id: text(item.id, at + '.id'),

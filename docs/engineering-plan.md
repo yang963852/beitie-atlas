@@ -48,7 +48,7 @@ flowchart TB
 
 **开发与部署。** TypeScript 给数据和函数标明类型，帮助编辑代码时发现用错字段；React 把界面拆成可更新的部件；Vite 把代码、样式和资料打包成浏览器可读文件。Node.js 运行构建脚本，CI（提交后自动执行的检查）按 `.nvmrc` 使用 Node 24，npm 按锁文件还原依赖。Vitest、jsdom 和 Testing Library 在模拟浏览器环境中检查交互。Three.js 负责开场的立体书桌，react-markdown 把作者写的 Markdown 排成网页。[依赖与命令](../package.json) · [构建配置](../vite.config.ts)
 
-**从合并到可访问。** PR 是请他人审阅并合入一组改动的申请。PR 检查运行 `npm run check`；主分支的 Pages 流程再用实际站点子路径检查，用构建环境提供的浏览器地图键重建，确认 HTML 带有 preview 标记，再上传、部署。GitHub Pages 是唯一网站主机。键一旦进入浏览器就可见。正式出版另走严格资料检查、构建、核验发布清单、编辑批准和主机核查。当前自动流程部署带标识的预览。工作流能说明部署机制，中国大陆实际访问和当天的地图服务状态需另测。[PR 检查](../.github/workflows/check.yml) · [Pages 工作流](../.github/workflows/pages.yml) · [正式发布手册](release.md)
+**从合并到可访问。** PR 是请他人审阅并合入一组改动的申请。PR 检查运行 `npm run check`；合并到 `main` 后，Pages 流程用实际站点子路径再跑一次 `npm run check`，用构建环境提供的浏览器地图键运行 `npm run release`，确认 HTML 带有 `release` 标记与发布清单、下载包完整后再上传、部署。GitHub Pages 是唯一网站主机。键一旦进入浏览器就可见。合并即通过发布门槛并部署；中国大陆实际访问和当天的地图服务状态仍需另测。[PR 检查](../.github/workflows/check.yml) · [Pages 工作流](../.github/workflows/pages.yml) · [正式发布手册](release.md)
 
 ### 3 · 打开页面以后（C4 浏览器核心组件，已实现）
 
@@ -240,7 +240,7 @@ M0/M1 local code checks can pass before external access checks. Report these as 
 ## Hosting, rights, and credentials
 
 - GitHub is the public source host. Never publish the parent workspace; it contains unrelated personal material.
-- GitHub Pages is the sole website host and serves the interactive draft preview. Verify mainland access separately.
+- GitHub Pages is the sole website host and serves the release build produced from checked `main`. Verify mainland access separately.
 - Vite's base URL must match the deployment path. The Pages workflow reads the project base path from `actions/configure-pages`.
 - Browser-embedded configuration is public even when injected from a build environment. `.env` alone cannot hide a frontend secret. Use provider-supported domain restrictions, quotas, and a server-side proxy if required; document added costs.
 - Preserve provider attribution and any required approval number. Do not use undocumented tile endpoints or remove official map annotations. Provider terms and host requirements must be checked for the selected release setup.

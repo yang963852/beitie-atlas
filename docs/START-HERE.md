@@ -62,7 +62,7 @@ Run `npm run check` again after implementation. Push the checked branch to the c
 
 The website reads `data/index/knowledge-v1.json`; it does not import author Markdown. That file is generated on demand and is not in version control, so a fresh clone builds it before `dev`, `build` or `check`. The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`. The pre-rebuild JSON corpus and its migration tools are retired; their records are in the archive tags listed in [the archive index](archive.md).
 
-The public **1.2** edition is built and deployed through `npm run release`. The Pages workflow verifies the release marker, the manifest counts and the downloadable library ZIP. Deployment evidence for the earlier 1.1 release is recorded in delivery 051 in the `archive-milestones-040-051-2026-11-26` tag.
+The public edition follows the `version` in `package.json` and is built and deployed through `npm run release`. The Pages workflow verifies the release marker, the manifest counts and the downloadable library ZIP. Deployment evidence for the earlier 1.1 release is recorded in delivery 051 in the `archive-milestones-040-051-2026-11-26` tag.
 
 ## Reusing this repository
 

@@ -8,13 +8,13 @@
 
 ## 在网站里能做什么
 
-- **从案头进入**：一张摊开的帖引你进入年代长河；桌上的帖影直达《兰亭序》神龙本的实物记录。
+- **从案头进入**：一张摊开的帖引你打开[访碑图](https://yang963852.github.io/beitie-atlas/#/collections)；桌上的帖影直达《兰亭序》神龙本的实物记录。
 - **读一件作品**：从[《颜勤礼碑》](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei)开始，背景、书家、传世实物分开呈现；原石与民国拓本各有履历，不互相顶替。
-- **看年代长河**：按作品所属时代浏览[全部作品](https://yang963852.github.io/beitie-atlas/#catalogue)，先秦至当代。
-- **查现存地图**：在[现存地图](https://yang963852.github.io/beitie-atlas/#/collections)按今天的收藏地或原址找现存实物；没有可靠坐标的地点只列文字，不猜位置。
-- **找书家与读帖笔记**：在[知识库](https://yang963852.github.io/beitie-atlas/#/library)按作品、书家、笔记或实物档案进入，例如[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)。
+- **看碑帖长卷**：在[编年](https://yang963852.github.io/beitie-atlas/#catalogue)里按作品所属时代浏览全部作品，先秦至当代。
+- **查访碑图**：在[访碑图](https://yang963852.github.io/beitie-atlas/#/collections)按今天的收藏地或原址找现存实物；没有可靠坐标的地点只列文字，不猜位置。
+- **找书家与读帖笔记**：在[读帖](https://yang963852.github.io/beitie-atlas/#/library)按作品、书家、笔记或实物档案进入，例如[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)。
 
-**当前收录**（`npm run knowledge:compile`，2026-11-28）：133 部作品 · 140 件实物 · 47 处地点 · 240 条来源 · 75 条事件。
+**当前收录**：作品、实物、地点、来源与事件的数量由编译器统计，以[知识库状态页](docs/knowledge-status.md)为准（`npm run knowledge:status` 生成）；本页不手写条目总数，以免随源稿漂移。
 
 ## 三条编辑原则
 
@@ -71,7 +71,7 @@ npm run dev
 
 ## 状态与限制
 
-- 网站公开在 GitHub Pages 上，当前内容为**1.2 版**：全部条目已通过发布门槛与编辑确认；存疑与异说仍按原样留在各条的「待考」与「异说」中，不作确定性改写。发布流程见[发布手册](docs/release.md)。
+- 网站公开在 GitHub Pages 上，内容版次以仓库 `package.json` 的 `version` 为准（界面页脚与知识库题记读取同一字段）：全部条目已通过发布门槛与编辑确认；存疑与异说仍按原样留在各条的「待考」与「异说」中，不作确定性改写。发布流程见[发布手册](docs/release.md)。
 - 真实底图依赖天地图网络服务；无密钥或被拒绝时显示点位示意图。各地网络能否打开须在当地实测，项目不作保证。
 - 引文、馆藏图片与地图服务的权利依各自依据处理。
 

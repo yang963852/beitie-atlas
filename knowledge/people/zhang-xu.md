@@ -23,6 +23,24 @@ sources: [src-lnm-gushisitie, src-lnd-gushisitie]
 
 只是这卷的名字是后定的。北宋初它被认作谢灵运所书，到明董其昌才指出是张旭；本库此条因此把作者写作“传张旭”，并注明未见馆方说明鉴定依据。于是读它有两层：一层看字，唐狂草在这一点上到了高处；一层看归名，一件作品的作者从谢灵运换成张旭，靠的是几行题跋而不是落款。若想拿张旭的楷法来对看，本库没有第二件——他“精晓楷法”这句话，只能从这一卷的使转里去推。[辽宁日报，开辟并丰富中国书法艺术表现空间](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)
 
+### 生平与身份
+
+上文所记生卒、字号、籍贯与历官沿用《辽宁日报》所附小传原文。[辽宁日报，开辟并丰富中国书法艺术表现空间](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)。据 `dynastySource`，本页把他系于唐。
+
+### 书体与师承
+
+上文所引卢携《临池诀》的谱系与《新唐书》所记老人献书一事，均见该报导。张旭“精晓楷法”而以狂草知名，“草圣”为世所称。[辽宁日报，开辟并丰富中国书法艺术表现空间](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)
+
+### 代表作与本库关联
+
+本库所收[《古诗四帖》](../works/gushi-sitie.md)纸本草书，一百八十八字，今藏辽宁省博物馆。作品归名几经改易：北宋初认作谢灵运书，明董其昌才指出是张旭，本库因此把作者写作“传张旭”。[辽宁省博物馆，姑苏繁华图、张旭草书四帖领衔](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337)
+
+### 书迹可靠性
+
+以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+
+○ 本页 `objects` 为空。辽宁省博物馆的展品页只确立[《古诗四帖》](../works/gushi-sitie.md)的题名、传统归名与收藏，未说明鉴定依据，本库故写作“传张旭”；北宋误归谢灵运与明董其昌定名两说并存，不取其一为定论。馆方著录的纸本草书载体，不因归名改动而改变。
+
 ## English
 
 According to the biographical note that Liaoning Daily appended to the “Tang Again” exhibition, Zhang Xu (658–742), courtesy name Bogao, was a native of Suzhou. He began as magistrate of Changshu and rose to director of the imperial guard, and is known as “Director Zhang”. Unrestrained and fond of wine, he knew regular script thoroughly but was famous for cursive with “the force of a sudden storm”, called wild cursive and honoured with the name “cursive sage”; with Li Bai’s poetry and Pei Min’s swordplay he formed the “three excellences of the Tang”. Huang Tingjian called his writing “the crown of cursive”. [Liaoning Daily, opening up the expressive space of Chinese calligraphy](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)
@@ -32,3 +50,21 @@ Wild cursive looks like the least law-bound of writings, yet Zhang Xu himself co
 The [Four Poems in Cursive Script](../works/gushi-sitie.md) is where that line lands. Ink on paper, 29.5 by 195.2 cm, 188 characters: two of Yu Xin’s “Pacing the Void” poems and two verse appreciations by Xie Lingyun, “Prince Jin” and “An Old Man and Four or Five Youths beneath the Cliff”. It is in the Liaoning Provincial Museum and is a Grade One national treasure. The newspaper describes “brushwork nimble and changeable, unrestrained and continuous; characters archaic in structure, shaped by momentum; spacing naturally dense and open, with no deliberate carving”. By this scroll the joins between characters are no longer mere connections but a single breath running down the column. [Liaoning Daily, opening up the expressive space of Chinese calligraphy](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html) · [Liaoning Provincial Museum, Zhang Xu’s cursive scroll among the exhibition highlights](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337)
 
 The name on the scroll, however, was settled late. In the early Northern Song it was taken as Xie Lingyun’s writing; only Dong Qichang, in the Ming, named Zhang Xu. This library therefore records the author as “attributed to Zhang Xu” and notes that no museum publication consulted here sets out the evidence. So it can be read on two levels: the writing, where Tang wild cursive reaches a high point; and the naming, where a work changes hands from Xie Lingyun to Zhang Xu on the strength of a few colophons rather than a signature. Anyone wanting Zhang Xu’s regular script for comparison will not find a second piece in this library — that he “knew regular script thoroughly” can only be inferred from the turns of this scroll. [Liaoning Daily, opening up the expressive space of Chinese calligraphy](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)
+
+### Life and identity
+
+The dates, courtesy name, native place and offices given above are kept, from the biographical note appended by Liaoning Daily. [Liaoning Daily, opening up the expressive space of Chinese calligraphy](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html). By `dynastySource` this page places him in the Tang.
+
+### Scripts and models
+
+The lineage quoted above from Lu Xie's Linchi jue and the story of the old man's gift from the New History of the Tang are from the same article. Zhang Xu "knew regular script thoroughly" but was famous for wild cursive, honoured with the name "cursive sage." [Liaoning Daily, opening up the expressive space of Chinese calligraphy](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)
+
+### Works in this library
+
+The [Four Poems in Cursive Script](../works/gushi-sitie.md) held here is ink on paper in cursive, 188 characters, kept in the Liaoning Provincial Museum. Its attribution changed more than once: taken as Xie Lingyun's in the early Northern Song, named Zhang Xu only by Dong Qichang in the Ming, so this library records the author as "attributed to Zhang Xu." [Liaoning Provincial Museum, Zhang Xu's cursive scroll](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337)
+
+### Reliability of the surviving trace
+
+The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+
+— This page has no `objects` entries. The museum's exhibition page establishes only the title, the traditional attribution and the holding of the [Four Poems](../works/gushi-sitie.md) and sets out no evidence for the attribution, so the library writes "attributed to Zhang Xu." The early Song attribution to Xie Lingyun and Dong Qichang's Ming identification are kept side by side, neither preferred as settled. The paper-and-ink carrier recorded by the museum does not change with the attribution.
