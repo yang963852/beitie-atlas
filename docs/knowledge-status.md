@@ -16,7 +16,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | Places | 47 (38 with coordinates) |
 | Sources | 241 (0 uncited) |
 | Events | 75 (50 objects with events) |
-| Attribution entries linked to a person | 52 / 178 |
+| Attribution entries linked to a person | 72 / 178 |
 | Work sources (0 / 1 / 2+) | 0 / 91 / 42 |
 | Reviewed works with one source | 91 |
 | Dates without source wording | 44 |

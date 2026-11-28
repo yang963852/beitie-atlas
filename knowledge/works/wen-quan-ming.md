@@ -21,6 +21,7 @@ attribution:
   - role: author-and-calligrapher
     name: 李世民（唐太宗）
     nameEn: Li Shimin (Emperor Taizong of Tang)
+    person: li-shimin
     certainty: documented
     sources:
       - src-thepaper-wenquanming

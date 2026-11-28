@@ -23,6 +23,7 @@ attribution:
   - role: calligrapher
     name: 李斯
     nameEn: Li Si
+    person: li-si
     certainty: documented
     sources:
       - src-taian-dai-museum-site

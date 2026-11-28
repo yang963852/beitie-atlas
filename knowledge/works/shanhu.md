@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 米芾
     nameEn: Mi Fu
+    person: mi-fu
     certainty: documented
     sources:
       - src-dpm-231255
