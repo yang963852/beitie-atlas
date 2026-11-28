@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 赵之谦
     nameEn: Zhao Zhiqian
+    person: zhao-zhiqian
     certainty: documented
     sources:
       - src-catalogue-zhao-jijiu

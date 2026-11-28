@@ -21,6 +21,7 @@ attribution:
   - role: calligrapher
     name: 王远
     nameEn: Wang Yuan
+    person: wang-yuan
     certainty: documented
     sources:
       - src-cnr-shimen-ming

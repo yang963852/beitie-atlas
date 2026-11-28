@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 邓石如
     nameEn: Deng Shiru
+    person: deng-shiru
     certainty: documented
     sources:
       - src-catalogue-deng-kaishu

@@ -22,6 +22,7 @@ attribution:
   - role: calligrapher
     name: 蔡邕
     nameEn: Cai Yong
+    person: cai-yong
     certainty: documented
     sources:
       - src-chnmuseum-xiping
