@@ -14,7 +14,19 @@
 - **查访碑图**：在[访碑图](https://yang963852.github.io/beitie-atlas/#/collections)按今天的收藏地或原址找现存实物；没有可靠坐标的地点只列文字，不猜位置。
 - **找书家与读帖笔记**：在[读帖](https://yang963852.github.io/beitie-atlas/#/library)按作品、书家、笔记或实物档案进入，例如[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)。
 
-**当前收录**：作品、实物、地点、来源与事件的数量由编译器统计，以[知识库状态页](docs/knowledge-status.md)为准（`npm run knowledge:status` 生成）；本页不手写条目总数，以免随源稿漂移。
+**当前收录**：以下计数快照由 `npm run check:docs` 对照编译接口核对；审核状态、来源缺口与日期问题见[知识库状态页](docs/knowledge-status.md)（`npm run knowledge:status` 生成）。
+
+<!-- knowledge-counts:begin -->
+| 类别 | 数量 |
+| --- | ---: |
+| 作品 | 133 |
+| 实物 | 140 |
+| 人物 | 55 |
+| 地点 | 47 |
+| 来源 | 299 |
+| 事件 | 96 |
+| 笔记 | 24 |
+<!-- knowledge-counts:end -->
 
 ## 三条编辑原则
 
