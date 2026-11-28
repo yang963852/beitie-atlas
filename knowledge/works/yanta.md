@@ -13,7 +13,7 @@ dateMonth: null
 dateEnd: 653
 dateEndMonth: null
 dateEra: null
-dateOriginal: null
+dateOriginal: 唐永徽四年(653)刻
 dateCertainty: documented
 dateNote: null
 script: 楷书

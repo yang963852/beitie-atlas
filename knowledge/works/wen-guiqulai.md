@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: null
 dateEndMonth: null
 dateEra: 明
-dateOriginal: null
+dateOriginal: 明嘉靖三十年（1551年）
 dateCertainty: documented
 dateNote: null
 script: 楷书

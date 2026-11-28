@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: null
 dateEndMonth: null
 dateEra: 明
-dateOriginal: null
+dateOriginal: 明万历十九年（1591年）
 dateCertainty: documented
 dateNote: null
 script: 行书

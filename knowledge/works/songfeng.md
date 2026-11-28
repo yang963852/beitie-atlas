@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: 1102
 dateEndMonth: null
 dateEra: null
-dateOriginal: null
+dateOriginal: 北宋崇宁元年（公元1102年）
 dateCertainty: documented
 dateNote: null
 script: 行书
