@@ -1,6 +1,24 @@
 # Changelog
 
-Current release: **v1.4.0 · 1.4 版**.
+This file records formal editions. Merging a checked change to `main` deploys the site, but only the maintainer decides when that work becomes a formal edition. The live site may therefore include changes newer than the first version section below; the interface shows both the edition and the revision it was built from.
+
+## Unreleased · 未发布
+
+Changes merged to `main` after the latest formal edition. The release owner moves them into the next edition; a contributor does not need to edit this file for every pull request.
+
+### Added
+
+- `npm run check:version` checks the package version, the npm lockfile and the matching CHANGELOG section. `npm run check:tag -- vX.Y.Z` additionally checks a formal tag against its own commit, edition and `main` ancestry.
+- The release manifest and the downloadable knowledge-library ZIP now record the product edition as `appVersion` beside the source revision and corpus counts.
+
+### Changed
+
+- The interface footer, reading-room colophon and build details show the build revision with the formal edition, so a continuously deployed page is not mistaken for the tagged edition.
+- The release runbook now defines semantic versioning, the continuous-deployment and formal-release split, the five release phases, and rollback rules.
+
+### Knowledge
+
+- Eight running-and-cursive works join the library: 邓文原《章草书急就章卷》, 宋克《急就章》, 鲜于枢《行书杜工部行次昭陵诗卷》, 怀素《苦笋帖》, 杨凝式《夏热帖》, 傅山《草书孟浩然诗卷》, 祝允明《牡丹赋》 and 于右任《草书五言联》. Four calligrapher pages accompany them: 邓文原, 宋克, 傅山 and 于右任.
 
 ## v1.4.0 · 1.4 版
 

@@ -1,4 +1,5 @@
 /// <reference types="vitest/config" />
+import { spawnSync } from 'node:child_process';
 import { mkdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import react from '@vitejs/plugin-react';
@@ -22,6 +23,28 @@ process.env.TMPDIR = localTemp;
 const packageVersion = (
   JSON.parse(readFileSync(join(process.cwd(), 'package.json'), 'utf8')) as { version: string }
 ).version;
+
+/**
+ * The formal edition changes only at release time, while `main` deploys every
+ * merge. The interface shows this short revision beside the edition so a
+ * reader can tell that the deployed content may be newer than the last release.
+ * A source archive without Git simply records no revision.
+ */
+const buildRevision = (() => {
+  try {
+    const result = spawnSync('git', ['rev-parse', '--short=7', 'HEAD'], {
+      cwd: process.cwd(),
+      encoding: 'utf8',
+    });
+    return result.status === 0 && typeof result.stdout === 'string'
+      ? result.stdout.trim()
+      : '';
+  } catch {
+    return '';
+  }
+})();
+
+const buildTime = new Date().toISOString();
 
 /**
  * Writes the build mode into the served HTML. `scripts/release.ts` checks the
@@ -57,7 +80,11 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     base,
-    define: { __APP_VERSION__: JSON.stringify(packageVersion) },
+    define: {
+      __APP_VERSION__: JSON.stringify(packageVersion),
+      __BUILD_REVISION__: JSON.stringify(buildRevision),
+      __BUILD_TIME__: JSON.stringify(buildTime),
+    },
     server: { watch: { ignored: ['**/.private/**'] } },
     plugins: [react(), knowledgePlugin(process.cwd()), buildModePlugin(buildMode)],
     build: {

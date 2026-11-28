@@ -16,6 +16,7 @@ import { spawnSync } from 'node:child_process';
 import { join } from 'node:path';
 import { formatReport } from '../src/domain/validate';
 import { writeCompiledKnowledge } from './lib/knowledge-compiler';
+import { checkReleaseMetadata, type ReleaseMetadataReport } from './lib/release-meta';
 import {
   clearOutput,
   runReleaseGate,
@@ -52,9 +53,31 @@ function readSourceRevision(): string | null {
       return result.stdout.trim();
     }
   } catch {
-    /* A source archive without Git is still buildable; the revision stays unrecorded. */
+    /* A source archive without Git is still buildable as a preview; see below. */
   }
   return null;
+}
+
+/**
+ * A release manifest names the revision it came from, so a dirty checkout
+ * cannot produce a formal artifact: the recorded revision would not match the
+ * files that were built. Untracked and ignored files do not matter.
+ */
+function readTrackedChanges(): string[] | null {
+  const result = spawnSync(
+    'git',
+    ['status', '--porcelain', '--untracked-files=no'],
+    { cwd: root, encoding: 'utf8' },
+  );
+  if (result.status !== 0) return null;
+  return typeof result.stdout === 'string'
+    ? result.stdout.split('\n').map((line) => line.trim()).filter(Boolean)
+    : null;
+}
+
+function printMetadataProblems(report: ReleaseMetadataReport): void {
+  console.error('[release] Release metadata');
+  for (const problem of report.problems) console.error(`[release]   - ${problem}`);
 }
 
 function abort(reason: string): never {
@@ -68,6 +91,13 @@ console.log(`[release] Node ${process.version}`);
 console.log('[release] Strict mode: draft records and invalid data are build errors.');
 
 if (checkOnly) {
+  const metadata = checkReleaseMetadata(root);
+  if (metadata.version) console.log(`[release] Edition ${metadata.version}`);
+  if (!metadata.ok) {
+    printMetadataProblems(metadata);
+    console.error('\n[release] Release metadata FAILED. Fix the version, lockfile or CHANGELOG first.');
+    process.exit(1);
+  }
   const report = runReleaseGate(root);
   console.log(formatReport(report));
   if (!report.ok) {
@@ -84,6 +114,27 @@ console.log(
     ? '[release] Removed the previous dist/ before validating. Nothing stale can be published.'
     : '[release] No previous dist/ was present.',
 );
+
+const metadata = checkReleaseMetadata(root);
+if (metadata.version) console.log(`[release] Edition ${metadata.version}`);
+if (!metadata.ok) {
+  printMetadataProblems(metadata);
+  abort('the release metadata is inconsistent.');
+}
+console.log('[release] package.json, package-lock.json and CHANGELOG agree.');
+
+const sourceRevision = readSourceRevision();
+if (!sourceRevision) {
+  abort('a formal release requires a Git checkout with a commit. Use npm run build for a preview.');
+}
+const trackedChanges = readTrackedChanges();
+if (trackedChanges === null) {
+  abort('git status could not be read, so the release revision cannot be trusted.');
+}
+if (trackedChanges.length > 0) {
+  for (const change of trackedChanges) console.error(`[release]   - ${change}`);
+  abort('tracked files have uncommitted changes; commit them before a formal release.');
+}
 
 const report = runReleaseGate(root);
 console.log('\n[release] Strict data gate');
@@ -109,7 +160,7 @@ if (
 }
 
 try {
-  writeReleaseManifest(root, report, readSourceRevision());
+  writeReleaseManifest(root, report, sourceRevision);
 } catch (error) {
   abort(`the release manifest could not be written: ${(error as Error).message}`);
 }
@@ -122,7 +173,8 @@ if (!artifact.ok) {
 
 console.log('\n[release] OK. This dist/ is the publishable artifact.');
 console.log(
-  `[release] ${report.counts.works} work(s), ${report.counts.objects} object(s), ` +
+  `[release] Edition ${metadata.version} from ${sourceRevision.slice(0, 12)}: ` +
+    `${report.counts.works} work(s), ${report.counts.objects} object(s), ` +
     `${report.counts.places} place(s), ${report.counts.sources} source(s), ` +
     `${report.counts.events} event(s).`,
 );
