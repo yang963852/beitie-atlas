@@ -2,6 +2,9 @@
 schemaVersion: 2
 titleZh: "08｜专题：清近代——碑学与日常书写"
 titleEn: "08 — Topic: Qing and Modern — Stele Studies and Everyday Writing"
+category: topic
+period: qing-modern
+order: 8
 state: reviewed
 works:
   - sanxitang-fatie

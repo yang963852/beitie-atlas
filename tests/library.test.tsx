@@ -23,10 +23,9 @@ beforeAll(async () => {
 }, 120000);
 
 describe('reading routes', () => {
-  it('finds people and works across the catalogue, including a work without a located object', () => {
+  it('finds works in their catalogue, including a work without a located object', () => {
     render(<App />);
     fireEvent.change(screen.getByRole('searchbox'), { target: { value: '沈尹默' } });
-    expect(screen.getByRole('link', { name: '沈尹默' })).toHaveAttribute('href', '#/person/shen-yinmo');
     expect(screen.getByRole('link', { name: '甲种本大楷习字帖' })).toHaveAttribute('href', '#/work/shen-yinmo-dakai-jia');
     navigate('#/work/shen-yinmo-dakai-jia');
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('甲种本大楷习字帖');
@@ -110,6 +109,82 @@ it('names the current edition on the library page', () => {
   render(<App />);
   const colophon = document.querySelector('.reading-colophon');
   expect(colophon?.textContent).toContain(version);
+});
+
+describe('reading notes index', () => {
+  it('groups all notes into the three reading categories in editorial order', () => {
+    window.history.replaceState(null, '', '#/library/notes');
+    const { container } = render(<App />);
+    expect(container.querySelectorAll('.note-card')).toHaveLength(16);
+    const titles = Array.from(container.querySelectorAll('.note-card h3'), (heading) => heading.textContent);
+    expect(titles.slice(0, 3)).toEqual(['先秦——青铜、石鼓与竹简', '秦汉——统一文字与隶书登场', '魏晋——名家、信札与复制']);
+    expect(titles.slice(8, 10)).toEqual(['隶变——从青铜到汉碑', '楷化——从钟繇到唐楷']);
+    expect(titles.at(-1)).toBe('从一个「故」字读《颜勤礼碑》');
+    expect(titles.every((title) => !/^\d+｜/.test(title ?? ''))).toBe(true);
+    expect(screen.getByRole('button', { name: /时代专题/ })).toHaveTextContent('8');
+    expect(screen.getByRole('button', { name: /阅读路径/ })).toHaveTextContent('6');
+    expect(screen.getByRole('button', { name: /单篇细读/ })).toHaveTextContent('2');
+  });
+
+  it('combines category and period filters and clears them from the empty state', () => {
+    window.history.replaceState(null, '', '#/library/notes');
+    const { container } = render(<App />);
+    fireEvent.click(screen.getByRole('button', { name: /时代专题/ }));
+    expect(container.querySelectorAll('.note-card')).toHaveLength(8);
+    fireEvent.change(screen.getByRole('combobox'), { target: { value: 'song' } });
+    expect(container.querySelectorAll('.note-card')).toHaveLength(1);
+    expect(screen.getByRole('link', { name: '宋代——刻帖、墨迹与士人书' })).toBeVisible();
+    fireEvent.change(screen.getByRole('searchbox'), { target: { value: '不存在的笔记' } });
+    expect(screen.getByText('没有符合条件的笔记。')).toBeVisible();
+    fireEvent.click(screen.getByRole('button', { name: '查看全部笔记' }));
+    expect(container.querySelectorAll('.note-card')).toHaveLength(16);
+    expect(screen.getByRole('searchbox')).toHaveValue('');
+    expect(screen.getByRole('combobox')).toHaveValue('all');
+  });
+
+  it('searches linked works and calligraphers without mixing other library entries', () => {
+    window.history.replaceState(null, '', '#/library/notes');
+    const { container } = render(<App />);
+    fireEvent.change(screen.getByRole('searchbox'), { target: { value: '沈尹默' } });
+    expect(container.querySelectorAll('.note-card')).toHaveLength(2);
+    expect(screen.getByRole('link', { name: '帖学——刻帖的谱系' })).toHaveAttribute('href', '#/note/path-05-modelbook');
+    expect(screen.getByRole('link', { name: '清近代——碑学与日常书写' })).toHaveAttribute('href', '#/note/essay-08-qing-modern');
+    expect(container.querySelector('a[href^="#/work/"]')).toBeNull();
+    expect(container.querySelector('a[href^="#/person/"]')).toBeNull();
+  });
+
+  it('keeps cross-period reading paths out of a single-period filter', () => {
+    window.history.replaceState(null, '', '#/library/notes');
+    const { container } = render(<App />);
+    fireEvent.click(screen.getByRole('button', { name: /阅读路径/ }));
+    expect(container.querySelectorAll('.note-card')).toHaveLength(6);
+    expect(screen.getByRole('combobox').querySelectorAll('option')).toHaveLength(1);
+  });
+
+  it('switches note labels, titles and excerpts to English', () => {
+    window.history.replaceState(null, '', '#/library/notes');
+    render(<App />);
+    fireEvent.click(screen.getByRole('button', { name: 'EN' }));
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Reading notes');
+    expect(screen.getByRole('link', { name: 'Pre-Qin — Bronzes, Stone Drums and Bamboo Slips' })).toBeVisible();
+    expect(screen.getByRole('button', { name: /Close readings/ })).toHaveTextContent('2');
+    expect(screen.getAllByText('1 work')).toHaveLength(2);
+  });
+});
+
+it('keeps work search inside the work catalogue', () => {
+  window.history.replaceState(null, '', '#/library');
+  const { container } = render(<App />);
+  fireEvent.change(screen.getByRole('searchbox'), { target: { value: '兰亭' } });
+  expect(screen.getByRole('link', { name: '兰亭序' })).toBeVisible();
+  expect(container.querySelector('a[href^="#/note/"]')).toBeNull();
+});
+
+it('finds people inside the calligrapher catalogue', () => {
+  window.history.replaceState(null, '', '#/library/people');
+  render(<App />);
+  fireEvent.change(screen.getByRole('searchbox'), { target: { value: '沈尹默' } });
+  expect(screen.getByRole('link', { name: '沈尹默' })).toHaveAttribute('href', '#/person/shen-yinmo');
 });
 
 it('groups calligraphers by their recorded dynasty', () => {

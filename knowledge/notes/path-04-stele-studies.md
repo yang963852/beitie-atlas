@@ -1,6 +1,8 @@
 ---
 schemaVersion: 2
 titleZh: "12｜阅读路径：碑学——清人如何重读石刻"
+category: path
+order: 12
 titleEn: "12 — Reading Path: Stele Studies — How Qing Readers Reopened the Stone"
 state: reviewed
 works:

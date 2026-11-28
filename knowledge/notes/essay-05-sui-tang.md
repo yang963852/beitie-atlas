@@ -1,6 +1,9 @@
 ---
 schemaVersion: 2
 titleZh: "05｜专题：隋唐——楷则与碑版"
+category: topic
+period: sui-tang
+order: 5
 titleEn: "05 — Topic: Sui and Tang — Regular Script and the Stele"
 state: reviewed
 works:

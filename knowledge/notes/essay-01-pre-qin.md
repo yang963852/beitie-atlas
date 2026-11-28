@@ -2,6 +2,9 @@
 schemaVersion: 2
 titleZh: "01｜专题：先秦——青铜、石鼓与竹简"
 titleEn: "01 — Topic: Pre-Qin — Bronzes, Stone Drums and Bamboo Slips"
+category: topic
+period: pre-qin
+order: 1
 state: reviewed
 works:
   - dayu-ding
