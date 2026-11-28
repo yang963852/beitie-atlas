@@ -1,11 +1,5 @@
 #!/usr/bin/env node
-/**
- * Documentation drift check: `npm run check:docs`.
- *
- * Current product editions belong in package.json, not in hand-written docs.
- * README's knowledge-counts block is a checked snapshot of the compiled
- * interface. This script never rewrites either source.
- */
+// Product editions live in package.json; README counts are checked against the compiled interface.
 
 import { existsSync, readFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
@@ -137,11 +131,7 @@ function loadDependencyNames() {
 
 const dependencyNames = loadDependencyNames();
 
-/**
- * Only these documented technical or historical contexts may contain 1.x.
- * Each exception is scoped to the matched token, not the whole line, so a
- * product edition added to the same line still fails.
- */
+// Exceptions are token-scoped so a product edition on the same line still fails.
 const VERSION_ALLOWLIST = [
   {
     reason: 'Node engine constraints describe the runtime, not the product edition.',
