@@ -1,7 +1,12 @@
 import { fireEvent, waitFor, render, screen, within } from '@testing-library/react';
-import { expect, it } from 'vitest';
+import { beforeAll, expect, it } from 'vitest';
 import App from '../src/App';
 import { libraryEntries } from '../src/domain/library';
+import { warmRoutes } from './warm-routes';
+
+beforeAll(async () => {
+  await warmRoutes(['timeline']);
+}, 120000);
 
 function visit(hash: string) {
   window.history.replaceState(null, '', hash);

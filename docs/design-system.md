@@ -58,6 +58,7 @@ The vermilion accent is not reused for decorative flourishes. Focus remains a vi
 - Draft and uncertainty notices remain concise and visible; visual simplification must not make tentative claims look certain.
 - Sources use a compact “Sources (N)” control near the supported claim. Preserve specific citations when expanded. Collapse repeated details, not the evidence itself.
 - User-facing map fallback: “Map unavailable. You can still explore the records.” Show Retry for recoverable failures. Owner setup instructions belong in the runbook.
+- Route loading: the opening desk is the first paint. Each route that reads the compiled corpus fetches it on demand, keeping the masthead, the language switch and the edition footer visible while it arrives. A chunk that fails to load states the failure and offers Reload instead of blanking the page.
 
 ## Layout and behavior
 

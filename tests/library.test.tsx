@@ -1,7 +1,8 @@
 import { readFileSync } from 'node:fs';
 import { act, fireEvent, render, screen, within } from '@testing-library/react';
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeAll, beforeEach, describe, expect, it } from 'vitest';
 import App from '../src/App';
+import { warmRoutes } from './warm-routes';
 
 const { version } = JSON.parse(readFileSync('package.json', 'utf8')) as { version: string };
 
@@ -16,6 +17,10 @@ beforeEach(() => {
   localStorage.clear();
   window.history.replaceState(null, '', '#/library');
 });
+
+beforeAll(async () => {
+  await warmRoutes(['library', 'workspace']);
+}, 120000);
 
 describe('reading routes', () => {
   it('finds works in their catalogue, including a work without a located object', () => {
