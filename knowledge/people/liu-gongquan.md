@@ -39,11 +39,14 @@ sources: [src-dpm-231095, src-dpm-259370, src-beilin-xuanmita, src-ccdy-shence, 
 
 本库所收[《玄秘塔碑》](../works/xuanmi-ta-bei.md)、[《神策军碑》](../works/shen-ce-jun-bei.md)、[《迴元观钟楼铭》](../works/huiyuan-guan-zhonglou-ming.md)、[《蒙诏帖》](../works/mengzhao.md)与[《圭峰定慧禅师碑》](../works/guifeng.md)。中国文化报记《神策军碑》会昌三年（843）刻、崔铉撰、二十七开、原石佚仅存上册，1965 年归藏；碑林记《迴元观钟楼铭》开成元年（836）刻、1986 年出土。[中国文化报，宋拓《神策军碑》](https://nepaper.ccdy.cn/html/2012-06/22/content_74528.htm) · [西安碑林博物馆，迴元观钟楼铭](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2581)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依著录分层：[《玄秘塔碑》](../works/xuanmi-ta-bei.md)原石今在西安碑林，故宫另藏明初拓册；[《迴元观钟楼铭》](../works/huiyuan-guan-zhonglou-ming.md)为 1986 年出土的原石，无宋以来翻刻；[《神策军碑》](../works/shen-ce-jun-bei.md)原石已佚，今日所见只是一卷宋装的上册拓本；[《蒙诏帖》](../works/mengzhao.md)旧题柳公权而故宫定为非柳书，归名不成立。[《圭峰定慧禅师碑》](../works/guifeng.md)为他篆额、裴休书丹，篆书与楷书分记。原石、拓本、非柳书各归其类，不因旧题而合并。
+- [《玄秘塔碑》](../works/xuanmi-ta-bei.md)：柳公权841年书丹、裴休撰文的楷书碑，石藏西安碑林，另有明初拓册。
+- [《神策军碑》](../works/shen-ce-jun-bei.md)：柳公权843年书的楷书碑，原石后佚，今见宋装拓本。
+- [《迴元观钟楼铭》](../works/huiyuan-guan-zhonglou-ming.md)：柳公权晚年楷书横石，1986年西安出土，记迴元观钟楼旧事。
+- [《蒙诏帖》](../works/mengzhao.md)：旧题柳公权的行书信札，故宫指出官称与文辞有疑，或为宋人依原意写成。
+- [《圭峰定慧禅师碑》](../works/guifeng.md)：柳公权的篆书碑额见于裴休撰文的唐碑，故宫藏明拓本中「同」字尚未损坏。
 
 ## English
 
@@ -71,8 +74,10 @@ The account above of his studying Yan Zhenqing and Ouyang Xun, the pairing "Yan'
 
 The library holds the [Xuanmi Pagoda Stele](../works/xuanmi-ta-bei.md), [Shence Army Stele](../works/shen-ce-jun-bei.md), [Huiyuan Abbey Bell Tower Inscription](../works/huiyuan-guan-zhonglou-ming.md), [Mengzhao letter](../works/mengzhao.md) and [Guifeng Chan Master Stele](../works/guifeng.md). China Culture Daily records the Shence stele carved in 843, composed by Cui Xuan, twenty-seven openings, the stone lost and only the upper volume surviving, returned in 1965; the Beilin dates the Huiyuan inscription to 836 and its discovery to 1986. [China Culture Daily, Song rubbing of the Shence stele](https://nepaper.ccdy.cn/html/2012-06/22/content_74528.htm) · [Xi'an Beilin Museum, Huiyuan inscription](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2581)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. By the catalogues, the [Xuanmi stele](../works/xuanmi-ta-bei.md) survives as an original stone at the Beilin with a separate early Ming rubbing album; the [Huiyuan inscription](../works/huiyuan-guan-zhonglou-ming.md) is an original stone found in 1986 with no Song recarving; the [Shence Army Stele](../works/shen-ce-jun-bei.md) has lost its stone and survives only as a Song-mounted upper-volume rubbing; the [Mengzhao letter](../works/mengzhao.md) is long attributed to Liu but judged by the Palace Museum not to be his, so the attribution does not stand; and on the [Guifeng stele](../works/guifeng.md) he wrote only the seal heading while Pei Xiu wrote the text. Original stones, rubbings and a non-Liu attribution are kept in separate classes and not merged under an old title.
+- [Xuanmi Pagoda Stele](../works/xuanmi-ta-bei.md): A regular-script stele written by Liu Gongquan with text by Pei Xiu in 841, with its stone at the Xi’an Beilin and a separate early-Ming rubbing album in the Palace Museum.
+- [Stele of the Shence Army](../works/shen-ce-jun-bei.md): A regular-script stele written by Liu Gongquan in 843, whose stone was later lost and survives through a Song-mounted rubbing.
+- [Bell Tower Inscription of the Huiyuan Abbey](../works/huiyuan-guan-zhonglou-ming.md): A horizontal regular-script stone by Liu Gongquan in his late years, unearthed at Xi’an in 1986 and recording the Huiyuan Abbey’s bell tower.
+- [Imperial Summons Letter](../works/mengzhao.md): A running-script letter traditionally attributed to Liu Gongquan, whose official title and wording lead the Palace Museum to suggest a Song writer working from the earlier text.
+- [Stele of Chan Master Guifeng Dinghui](../works/guifeng.md): Liu Gongquan’s seal-script heading belongs to a Tang stele with text by Pei Xiu, and the character 同 remains undamaged in the Palace Museum’s Ming rubbing.

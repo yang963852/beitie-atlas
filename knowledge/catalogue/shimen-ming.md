@@ -19,7 +19,7 @@ Shimen Inscription
 
 书体：楷书
 
-延伸阅读：[王远](../people/wang-yuan.md)
+延伸阅读：[王远](../people/wang-yuan.md) · [在《石门铭》里找「飞逸浑穆」](../notes/shimen-ming-flight.md)
 
 作品待考与说明
 

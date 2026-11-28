@@ -37,11 +37,11 @@ sources: [src-shm-zhenjing, src-dpm-chengnan]
 
 本库所收[《真镜庵募缘疏卷》](../works/zhenjing-an-muyuan-shu.md)为晚年为浦东真镜庵所写募缘启事，纸本，用笔多章草意；[《城南唱和诗卷》](../works/chengnan-changhe-shi.md)书于至正二十二年（1362），时年六十七。故宫著录后一件书于 1362 年、并录吴宽与徐有贞评语。[故宫博物院，张栻城南杂咏卷](https://www.dpm.org.cn/vr/stone-moat/wyd_31.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《真镜庵募缘疏卷》](../works/zhenjing-an-muyuan-shu.md)与[《城南唱和诗卷》](../works/chengnan-changhe-shi.md)均为纸本墨迹，馆方把两卷列于杨维桢名下；卷无年款者馆方只称「晚年」所作，未记具体年份，这一点待考，不代馆方补出。
+- [《真镜庵募缘疏卷》](../works/zhenjing-an-muyuan-shu.md)：杨维桢晚年为真镜庵写的行书募缘启事，馆方称其用笔多章草意。
+- [《城南唱和诗卷》](../works/chengnan-changhe-shi.md)：杨维桢1362年追和张栻《城南杂咏》二十首的行书纸本。
 
 ## English
 
@@ -63,8 +63,7 @@ The account above of mixing clerical, draft-cursive and modern cursive into a ma
 
 The [fund-raising notice for the Zhenjing nunnery](../works/zhenjing-an-muyuan-shu.md) is a late-life appeal for a Pudong nunnery, ink on paper, much imbued with clerical-cursive intent; the [South of the City poems](../works/chengnan-changhe-shi.md) was written in 1362 at sixty-seven. The Palace Museum dates the latter to 1362 and records the judgements of Wu Kuan and Xu Youzhen. [Palace Museum, Zhang Shi's South of the City poems](https://www.dpm.org.cn/vr/stone-moat/wyd_31.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. Both the [Zhenjing nunnery notice](../works/zhenjing-an-muyuan-shu.md) and the [South of the City poems](../works/chengnan-changhe-shi.md) are ink on paper listed by the museums under Yang Weizhen's name. Where a scroll carries no date, the museum calls it a "late-life" work without a specific year; that stays open here and is not supplied on his behalf.
+- [Fund-raising Notice for the Zhenjing Nunnery](../works/zhenjing-an-muyuan-shu.md): Yang Weizhen’s late running-script fund-raising notice for the Zhenjing Nunnery, described by the museum as carrying much draft-cursive in its brushwork.
+- [South of the City Poems](../works/chengnan-changhe-shi.md): A running-script paper scroll in which Yang Weizhen matched Zhang Shi’s twenty South of the City poems in 1362.

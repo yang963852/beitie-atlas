@@ -35,11 +35,10 @@ sources: [src-wuxi-jiuhua, src-wuxi-jiuhua-entry]
 
 本库所收[《韭花帖》](../works/jiuhua-tie.md)为一封谢帖，行楷墨迹麻纸本，七行，帖末只署「七月十一日」无年份。字数六十三、六十五两说并存，上文已记，不取其一。[无锡博物院，《韭花帖》藏品条目](https://www.wxmuseum.cn/News/Details/fab18864-9728-4d78-a7fe-37a67421ad03)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《韭花帖》](../works/jiuhua-tie.md)馆方记为行楷墨迹麻纸本，属墨迹一路；但今天有三本之说，无锡所藏清宫本与罗振玉旧藏本（1945 年后不知所踪）的真伪在书法界一直有争议，徐邦达、谢稚柳对无锡本意见一致。两本之争并存，本库不因墨迹载体而抹去归名争议。
+- [《韭花帖》](../works/jiuhua-tie.md)：杨凝式答谢友人馈赠韭花的行楷短札，纸本七行六十余字，末署日期无年份。
 
 ## English
 
@@ -63,8 +62,6 @@ Scripts and teacher lineage remain open; the cited catalogues do not state them 
 
 The [Letter on Leek Flowers](../works/jiuhua-tie.md) held here is a thank-you note in running-regular script, ink on hemp paper, seven lines, closing with a day but no year. The museum's two pages give sixty-three and sixty-five characters; both readings are kept and neither is settled, as noted above. [Wuxi Museum, collection entry for the Letter on Leek Flowers](https://www.wxmuseum.cn/News/Details/fab18864-9728-4d78-a7fe-37a67421ad03)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. The museum records the [Letter on Leek Flowers](../works/jiuhua-tie.md) as running-regular ink on hemp paper, an ink witness; yet three versions are known, and the authenticity of the Wuxi palace copy and the Luo Zhenyu copy (lost after 1945) has long been debated, with Xu Bangda and Xie Zhiliu agreeing on the Wuxi one. The debate is kept alongside the ink carrier rather than erased by it.
+- [Letter on Leek Flowers](../works/jiuhua-tie.md): Yang Ningshi’s running-regular-script note thanking a friend for leeks, on paper in seven lines and over sixty characters, dated by month and day but not by year.

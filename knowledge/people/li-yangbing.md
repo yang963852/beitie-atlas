@@ -37,11 +37,11 @@ sources: [src-beilin-sanfenji, src-hbrb-sanfenji, src-beilin-yanjiamiao]
 
 本库所收[《三坟记》](../works/sanfen-ji.md)刻于大历二年（767），李季卿撰、李阳冰篆，全篇篆书出于他；[《颜氏家庙碑》](../works/yan-jiamiao-bei.md)（780）他只写碑额，正文为颜真卿楷书。两件中他书写的分量不同，上文已分记。[西安碑林博物馆，三坟记碑](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2611)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《三坟记》](../works/sanfen-ji.md)的载体有两说：碑林记刻于大历二年、未提重刻，河北日报则说原石久佚、今存碑林者为宋时重刻且未记年份；本库在其条目把这一点留在待考，两说并存。[《颜氏家庙碑》](../works/yan-jiamiao-bei.md)的碑额在原石上，曾仆于郊野、北宋太平兴国七年（982）重立。一件隔宋人刀、一件直接落唐石，分记不以定论。
+- [《三坟记》](../works/sanfen-ji.md)：李阳冰767年篆书、李季卿撰文的唐碑，今存西安碑林，碑身中部横断。
+- [《颜氏家庙碑》](../works/yan-jiamiao-bei.md)：颜真卿780年为父颜惟贞立的楷书家庙碑，今藏西安碑林。
 
 ## English
 
@@ -67,8 +67,7 @@ The account above of his seal method deriving from Li Si and of his letter speak
 
 The [Record of the Three Graves](../works/sanfen-ji.md), carved in 767, was composed by Li Jiqing and written in seal script throughout by Li Yangbing; on the [Stele of the Yan Family Shrine](../works/yan-jiamiao-bei.md) of 780 he wrote only the heading, the body being Yan Zhenqing's regular script. The amount he wrote on each differs, as kept apart above. [Xi'an Beilin Museum, Record of the Three Graves](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2611)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. The carrier of the [Record of the Three Graves](../works/sanfen-ji.md) has two readings: the Beilin dates it to 767 and mentions no recutting, while Hebei Daily reports the original long lost and the surviving stone a Song recutting of unrecorded year; the library leaves the point open in the work record, and both readings are kept. The heading of the [Yan family shrine stele](../works/yan-jiamiao-bei.md) is on the original stone, which fell and was re-erected in 982. One witness is seen through a Song knife, the other lies on Tang stone; they are recorded separately and not reduced to a verdict.
+- [Record of the Three Graves](../works/sanfen-ji.md): A 767 Tang stele with seal-script calligraphy by Li Yangbing and text by Li Jiqing, now at the Xi’an Beilin and broken across its middle.
+- [Stele of the Yan Family Shrine](../works/yan-jiamiao-bei.md): A regular-script ancestral-temple stele erected by Yan Zhenqing for his father Yan Weizhen in 780, now at the Xi’an Beilin.

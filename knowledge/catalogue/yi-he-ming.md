@@ -18,7 +18,7 @@ Elegy for a Crane
 
 书体：楷书
 
-延伸阅读：[04｜专题：南北朝——碑、志与摩崖](../notes/essay-04-northern-southern.md)
+延伸阅读：[04｜专题：南北朝——碑、志与摩崖](../notes/essay-04-northern-southern.md) · [从残石的方圆关系读《瘗鹤铭》](../notes/yihe-fragments.md)
 
 作品待考与说明
 

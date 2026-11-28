@@ -92,13 +92,21 @@
 - [06｜专题：宋代——刻帖、墨迹与士人书](notes/essay-06-song.md)
 - [07｜专题：元明——复古与性灵](notes/essay-07-yuan-ming.md)
 - [08｜专题：清近代——碑学与日常书写](notes/essay-08-qing-modern.md)
+- [抓住「重」字未损，读《九成宫醴泉铭》北宋拓本](notes/jiuchenggong-chong.md)
+- [从五个损字辨认定武肥本《兰亭序》](notes/lanting-dingwu-damage.md)
 - [09｜阅读路径：隶变——从青铜到汉碑](notes/path-01-clerical-turn.md)
 - [10｜阅读路径：楷化——从钟繇到唐楷](notes/path-02-regularization.md)
 - [11｜阅读路径：行草——从信札到狂草](notes/path-03-running-cursive.md)
 - [12｜阅读路径：碑学——清人如何重读石刻](notes/path-04-stele-studies.md)
 - [13｜阅读路径：帖学——刻帖的谱系](notes/path-05-modelbook.md)
 - [14｜阅读路径：一作两命——原石与拓本](notes/path-06-one-work-two-lives.md)
+- [在《石门铭》里找「飞逸浑穆」](notes/shimen-ming-flight.md)
+- [绕过「故」字，从三面行款读《颜勤礼碑》](notes/yan-qinli-faces.md)
 - [从一个「故」字读《颜勤礼碑》](notes/yan-qinli-story.md)
+- [从残石的方圆关系读《瘗鹤铭》](notes/yihe-fragments.md)
+- [从「无常人掌领」读《乙瑛碑》的请求](notes/yiying-request.md)
+- [用「東裏潤色」四字辨认《张迁碑》明初拓](notes/zhangqian-dongli.md)
+- [上、下碑分别读：郑文公碑的「高气逸」](notes/zheng-wengong-two-steles.md)
 
 ## 作品与实物档案
 

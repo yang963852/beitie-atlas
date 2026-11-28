@@ -27,11 +27,10 @@ sources: [src-beilin-lin-zexu, src-sxdfz-linzexu, src-shm-linzexu-zhou]
 
 本库所收[《林则徐游华山诗并序》](../works/lin-zexu-huashan.md)为清道光二十二年（1842）行书，林则徐撰并书；此诗为道光二十二年林则徐革官后前往伊犁途中路过陕西登华山而作并书写，诗文前后钤「书生结习」「此间不可无我吟」「少穆初稿」「名岂文章著」诸印。[西安碑林博物馆，林则徐游华山诗并序](https://www.beilin-museum.com/index.php?a=index&aid=2644&c=View&m=home)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《游华山诗并序》](../works/lin-zexu-huashan.md)为碑刻一路，馆方著录为「撰并书」，未另作真伪判断；上博另藏《行书轴》为纸本墨迹，是另一件实物，不与碑刻混为一物。两者分记。
+- [《林则徐游华山诗并序》](../works/lin-zexu-huashan.md)：林则徐1842年游华山所作并亲书的行书诗序。
 
 ## English
 
@@ -47,8 +46,6 @@ The Beilin records that he "was quite skilled at calligraphy, especially praised
 
 The [poem and preface on visiting Mount Hua](../works/lin-zexu-huashan.md) held here is in running script, dated 1842, composed and written by Lin Zexu on his way to Ili after dismissal, when he climbed Mount Hua in Shaanxi; it bears the seals "Shusheng jiexi," "Cijian buke wu wo yin," "Shaomu chugao" and "Ming qi wenzhang zhu." [Xi'an Beilin Museum, poem on Mount Hua](https://www.beilin-museum.com/index.php?a=index&aid=2644&c=View&m=home)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The [poem on Mount Hua](../works/lin-zexu-huashan.md) is a stele witness, catalogued as composed and written by him without a further authenticity judgement; the Shanghai Museum's running-script scroll is a separate ink witness, not to be confused with the stele. The two are recorded apart.
+- [Lin Zexu’s Mount Hua Poem and Preface](../works/lin-zexu-huashan.md): A running-script poem and preface composed and written by Lin Zexu during his visit to Mount Hua in 1842.

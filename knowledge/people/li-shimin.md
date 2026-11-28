@@ -35,11 +35,11 @@ sources: [src-taiyuan-jinci, src-thepaper-wenquanming, src-shi-dunhuang-rubbings
 
 本库所收[《晋祠之铭并序》](../works/jinci-zhi-ming.md)刻于贞观二十年（646），原碑尚在晋祠；[《温泉铭》](../works/wen-quan-ming.md)书于 648，石已不存，所见为敦煌所出唐拓 P.4508。两件一件读石与刻，一件读纸与墨，上文已分记。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依著录分层：[《晋祠之铭并序》](../works/jinci-zhi-ming.md)是御制御书唯一存世的原碑，属刻于石的一路；[《温泉铭》](../works/wen-quan-ming.md)原石已亡，今日所见是敦煌石室所出唐拓 P.4508，藏法国国家图书馆，属拓本一路。报告中称其为现存最早拓本，本库照录；「行书入碑之始」的说法与《魏郑公碑》早三年的记载两存，不取其一。
+- [《晋祠之铭并序》](../works/jinci-zhi-ming.md)：唐太宗以行书自述晋祠掌故与唐室开国之事的碑，碑阴有七位随臣署名。
+- [《温泉铭》](../works/wen-quan-ming.md)：唐太宗为骊山温泉作的行书铭，敦煌所出唐拓今藏法国国家图书馆。
 
 ## English
 
@@ -63,8 +63,7 @@ Both works are noted above as composed and written by the emperor and carved in 
 
 The [Inscription for the Jin Shrine](../works/jinci-zhi-ming.md), carved in 646, survives as an original stele at the shrine; the [Hot Spring Inscription](../works/wen-quan-ming.md), written in 648, survives only as the Dunhuang Tang rubbing P.4508. One is read from stone and carving, the other from paper and ink, as kept apart above.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. By the catalogues, the [Jin Shrine inscription](../works/jinci-zhi-ming.md) is the only surviving original stele composed and written by Taizong, a witness cut into stone; the [Hot Spring Inscription](../works/wen-quan-ming.md) has lost its stone and survives as the Dunhuang rubbing P.4508 at the Bibliothèque nationale de France, a rubbing rather than stone. The report calls it the earliest surviving rubbing, as recorded here. The claim that the Jin Shrine stele begins the practice of running script on stone is kept alongside Zhao Mingcheng's record of an earlier stele; neither is preferred.
+- [Inscription for the Jin Shrine](../works/jinci-zhi-ming.md): A running-script inscription in which Emperor Taizong recounts the Jin Shrine and the Tang founding, with seven officials’ names on the reverse.
+- [Inscription on the Hot Spring](../works/wen-quan-ming.md): Emperor Taizong’s running-script inscription for the Li Mountain hot spring, surviving in a Tang rubbing from Dunhuang at the Bibliothèque nationale de France.
