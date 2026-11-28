@@ -260,6 +260,8 @@ export default function AtlasApp() {
             <a className="topnav__link" href="#/collections">{locale === 'zh' ? '访碑' : 'Atlas'}</a>
             <a className="topnav__link" href="#catalogue">{locale === 'zh' ? '编年' : 'Chronology'}</a>
             <a className="topnav__link" href="#/library">{locale === 'zh' ? '读帖' : 'Reading room'}</a>
+            <a className="topnav__link" href="#/about">{strings.navAbout}</a>
+            <a className="topnav__link" href="#/join">{strings.navJoin}</a>
             <span className="topnav__sep" aria-hidden="true" />
             {sectionLink('results', strings.resultsHeading)}
             {sectionLink('map', strings.mapHeading)}

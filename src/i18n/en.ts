@@ -24,6 +24,14 @@ export const enStrings = {
   languageZh: '中文',
   languageEn: 'EN',
 
+  /** Project-level navigation and the opening desk's short statement. The full
+   *  philosophy lives in docs/PROJECT.en.md; these are only entry labels. */
+  navAbout: 'About',
+  navJoin: 'Join in',
+  homeLead: 'From one model on the desk to a wider world of calligraphy.',
+  homeLede: 'Discover history, learn to see beauty, and share what we learn and wonder.',
+  motto: 'Everyone contributes for the benefit of others, and everyone benefits from what others share.',
+
   sectionsLabel: 'Sections',
   resultsHeading: 'Records',
   resultsCount: (shown: number, total: number) => `${shown} of ${total}`,

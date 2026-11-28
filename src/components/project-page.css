@@ -1,0 +1,170 @@
+/* About / Join in — a single printed leaf, the same paper, ink and seal as the
+   reading room. There is no new interaction here: links are plain links, the
+   masthead and language control are shared, and the prose stays one column. */
+
+.project-page {
+  background: var(--canvas);
+}
+
+.project-page .project-nav {
+  gap: 1.35rem;
+  flex-wrap: wrap;
+  overflow-x: visible;
+}
+
+.project-page .project-nav .topnav__link,
+.project-page .project-nav .topnav__link:visited {
+  min-height: 44px;
+  color: var(--ink-3);
+}
+
+.project-page .project-nav .topnav__link[aria-current='page'] {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+.project-main {
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3.5rem) var(--gutter) clamp(3rem, 7vw, 6rem);
+  outline: none;
+}
+
+.project-sheet {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: clamp(1.4rem, 4vw, 3.2rem);
+  border: 1px solid var(--line);
+  border-bottom: 3px double var(--line);
+  border-radius: 2px;
+  background: var(--surface);
+  box-shadow: var(--shadow-md);
+}
+
+.project-sheet .project-kicker {
+  margin: 0 0 0.65rem;
+  color: var(--ink-3);
+  font: 0.8rem/1.6 var(--font-kai);
+  letter-spacing: 0.16em;
+}
+
+.project-sheet h1 {
+  margin: 0 0 1.5rem;
+  color: var(--ink);
+  font: 600 clamp(2rem, 4vw, 2.8rem)/1.35 var(--font-zh);
+  letter-spacing: 0.06em;
+}
+
+.project-sheet p {
+  margin: 0 0 1.15em;
+  color: var(--ink);
+  font: 400 17px/2 var(--font-reading);
+}
+
+.project-sheet .project-motto {
+  margin: 2rem 0 1.5rem;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--accent-wash);
+  color: var(--accent-deep);
+  font-family: var(--font-kai);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-indent: 0;
+  text-align: left;
+}
+
+.project-main[lang='zh-Hans'] .project-sheet > p:not(.project-kicker):not(.project-motto):not(.project-note):not(.project-back) {
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.project-section {
+  margin: 2rem 0 0;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.project-section h2 {
+  margin: 0 0 1rem;
+  color: var(--ink);
+  font: 600 1.3rem/1.5 var(--font-zh);
+  letter-spacing: 0.08em;
+}
+
+.project-list {
+  margin: 0 0 1.3rem;
+  padding-left: 1.35em;
+  color: var(--ink);
+}
+
+.project-list li {
+  margin: 0 0 0.5em;
+  font: 400 17px/1.9 var(--font-reading);
+}
+
+.project-sheet .project-note {
+  margin: 1.6rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line-soft);
+  background: var(--surface-sunken);
+  color: var(--ink-2);
+  font: 0.86rem/1.8 var(--font-kai);
+  text-indent: 0;
+  text-align: left;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 2rem 0 0;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.project-page .project-links .button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.35rem 0.9rem;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.project-page .project-links .button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.project-sheet .project-back {
+  margin: 1.4rem 0 0;
+  font: 0.86rem/1.7 var(--font-kai);
+  text-indent: 0;
+  text-align: left;
+}
+
+@media (max-width: 540px) {
+  .project-page .project-nav {
+    gap: 0.2rem 0.9rem;
+    padding: 0 var(--gutter);
+  }
+
+  .project-sheet {
+    padding: 1.3rem 1.15rem;
+  }
+
+  .project-sheet p,
+  .project-list li {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-page * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

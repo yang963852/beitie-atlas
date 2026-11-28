@@ -21,6 +21,13 @@ export const zhStrings: Strings = {
   languageZh: '中文',
   languageEn: 'EN',
 
+  /** 项目级导航与首页简述。完整理念见 docs/PROJECT.md，此处只放入口文字。 */
+  navAbout: '关于',
+  navJoin: '共建',
+  homeLead: '从案头一帖，走向更广阔的书法世界。',
+  homeLede: '认识历史，感受美，分享我们的学习与思考。',
+  motto: '人人为我，我为人人。',
+
   sectionsLabel: '页面分区',
   resultsHeading: '记录',
   resultsCount: (shown: number, total: number) => `${shown} / ${total} 条`,

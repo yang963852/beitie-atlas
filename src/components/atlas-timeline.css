@@ -1121,3 +1121,30 @@
     display: none;
   }
 }
+
+/* --------------------------------------------------------------------------
+   About / Join in join the shared section nav
+   Five links must stay reachable at phone widths and at 200% zoom; wrapping
+   keeps the same paper rule and the same 44 px control target.
+   -------------------------------------------------------------------------- */
+
+.reader-sections {
+  flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
+}
+
+.reader-sections a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+@media (max-width: 540px) {
+  .reader-sections {
+    gap: 0.15rem 0.9rem;
+  }
+
+  .reader-sections a {
+    font-size: 0.9rem;
+  }
+}

@@ -93,11 +93,13 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
   return (
     <section className="desk" data-scene={phase} data-entering={Boolean(origin)} aria-labelledby="opening-title">
       <canvas ref={canvas} className="desk__scene" aria-hidden="true" />
-      <div className="desk__library">
+      <nav className="desk__library" aria-label={locale === 'zh' ? '项目入口' : 'Project links'}>
         {!isReleaseBuild && <span>{EDITION_LABEL[locale]}</span>}
         <LocaleSwitch className="langswitch langswitch--desk" />
+        <a href="#/about">{strings.navAbout}</a>
+        <a href="#/join">{strings.navJoin}</a>
         <a href="#/library"><span className="desk__seal" aria-hidden="true">碑</span>{locale === 'zh' ? '读帖' : 'Reading room'}</a>
-      </div>
+      </nav>
       <a className="desk__credit" href="#/object/witness-lanting" onClick={event => {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         event.preventDefault();
@@ -111,6 +113,11 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
           <span className="visually-hidden">{strings.enterCatalogue}</span>
         </a>
       </h1>
+      <aside className="desk__intro" lang={locale === 'zh' ? 'zh-Hans' : 'en'} aria-label={locale === 'zh' ? '项目简述' : 'About this project'}>
+        <p className="desk__intro-lead">{strings.homeLead}</p>
+        <p>{strings.homeLede}</p>
+        <p className="desk__intro-motto">{strings.motto}</p>
+      </aside>
       {origin && <>
         {phase === 'poster' && <i className="desk__ink" aria-hidden="true" style={{ left: origin.x + '%', top: origin.y + '%' }} />}
         <div className="desk__veil" aria-hidden="true" onAnimationEnd={finish} />
