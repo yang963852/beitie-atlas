@@ -3,6 +3,14 @@ import type { DynastyId, ReviewState } from './types';
 export const knowledgeKinds = ['works', 'people', 'notes'] as const;
 export type KnowledgeKind = (typeof knowledgeKinds)[number];
 
+export const noteCategories = ['topic', 'path', 'close-reading'] as const;
+export type NoteCategory = (typeof noteCategories)[number];
+
+export const notePeriods = [
+  'pre-qin', 'qin-han', 'wei-jin', 'northern-southern', 'sui-tang', 'song', 'yuan-ming', 'qing-modern', 'tang',
+] as const;
+export type NotePeriod = (typeof notePeriods)[number];
+
 export interface KnowledgeArticle {
   kind: KnowledgeKind;
   id: string;
@@ -13,6 +21,9 @@ export interface KnowledgeArticle {
   dynastyId?: DynastyId;
   /** The person source that states that period. */
   dynastySource?: string;
+  category?: NoteCategory;
+  period?: NotePeriod;
+  order?: number;
   state: ReviewState;
   people: string[];
   works: string[];

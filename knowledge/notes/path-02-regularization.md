@@ -1,6 +1,8 @@
 ---
 schemaVersion: 2
 titleZh: "10｜阅读路径：楷化——从钟繇到唐楷"
+category: path
+order: 10
 titleEn: "10 — Reading Path: Becoming Regular — From Zhong Yao to Tang Kai"
 state: reviewed
 works:

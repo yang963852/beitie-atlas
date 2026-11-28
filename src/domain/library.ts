@@ -1,6 +1,6 @@
 import { getDataset } from './data';
 import { dynastyOrder } from './dynasties';
-import { knowledgeArticles, type KnowledgeArticle, type KnowledgeKind } from './knowledge';
+import { knowledgeArticles, type KnowledgeArticle, type KnowledgeKind, type NoteCategory } from './knowledge';
 import { matchesTerms } from './search';
 import type { Work } from './types';
 
@@ -59,12 +59,44 @@ export function linkedEntries(entry: LibraryEntry, kind: KnowledgeKind): Library
   });
 }
 
+const noteCategoryOrder: NoteCategory[] = ['topic', 'path', 'close-reading'];
+
+export const libraryNotes = libraryEntries
+  .filter((entry) => entry.kind === 'notes')
+  .sort((a, b) =>
+    noteCategoryOrder.indexOf(a.guide!.category!) - noteCategoryOrder.indexOf(b.guide!.category!) ||
+    (a.guide!.order ?? Infinity) - (b.guide!.order ?? Infinity));
+
+export function noteDisplayTitle(title: string): string {
+  return title
+    .replace(/^\d+｜(?:专题|阅读路径)[：:]\s*/, '')
+    .replace(/^\d+\s+—\s+(?:Topic|Reading Path):\s*/i, '');
+}
+
+export function noteExcerpt(body: string, maxLength: number): string {
+  const paragraph = body.trim().split(/\n\s*\n/)[0] ?? '';
+  const plain = paragraph
+    .replace(/!\[([^\]]*)\]\([^)]*\)/g, '')
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    .replace(/[*_`>#]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const characters = Array.from(plain);
+  return characters.length > maxLength ? characters.slice(0, maxLength).join('').trimEnd() + '…' : plain;
+}
+
 export function matchesQuery(entry: LibraryEntry, query: string): boolean {
   const names = [entry.titleZh, entry.titleEn, entry.id, ...(entry.work?.aliases ?? [])];
   for (const person of entry.work?.attribution ?? []) names.push(person.name, person.nameEn ?? '');
   for (const id of entry.guide?.people ?? []) {
     const person = findEntry('people', id);
     if (person) names.push(person.titleZh, person.titleEn);
+  }
+  for (const id of entry.guide?.works ?? []) {
+    const work = worksById.get(id);
+    if (!work) continue;
+    names.push(work.titles.zh, work.titles.en, ...work.aliases);
+    for (const person of work.attribution) names.push(person.name, person.nameEn ?? '');
   }
   return matchesTerms(names, query);
 }

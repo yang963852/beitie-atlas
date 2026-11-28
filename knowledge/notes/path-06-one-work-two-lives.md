@@ -1,6 +1,8 @@
 ---
 schemaVersion: 2
 titleZh: "14｜阅读路径：一作两命——原石与拓本"
+category: path
+order: 14
 titleEn: "14 — Reading Path: One Work, Two Lives — Stone and Rubbing"
 state: reviewed
 works:
