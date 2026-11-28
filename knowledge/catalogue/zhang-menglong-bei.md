@@ -8,9 +8,9 @@ Stele of Zhang Menglong
 
 **作品**　南北朝 · 北魏 · 北魏正光三年（522年） · 碑
 
-碑文颂张猛龙治郡之绩，其中尤记兴学之事。
+碑文颂张猛龙治郡之绩，其中尤记兴学之事。碑高280厘米、宽123厘米，额题“魏鲁郡太守张府君清颂之碑”十二字，碑阳二十六行、满行四十六字，碑阴为题名。
 
-[出处 1](#ref-src-qufu-zhang-menglong)
+[出处 1](#ref-src-qufu-zhang-menglong)、[出处 2](#ref-src-cupl-zhangmenglong)
 
 - 未署名 · 署名未详（不详） 所引条目未给出撰文者或书丹者。 [出处 1](#ref-src-qufu-zhang-menglong)
 
@@ -19,6 +19,10 @@ Stele of Zhang Menglong
 书体：正书
 
 延伸阅读：[04｜专题：南北朝——碑、志与摩崖](../notes/essay-04-northern-southern.md) · [10｜阅读路径：楷化——从钟繇到唐楷](../notes/path-02-regularization.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md) · [14｜阅读路径：一作两命——原石与拓本](../notes/path-06-one-work-two-lives.md)
+
+作品待考与说明
+
+- 碑阳行数与尺寸各源有异说：或记二十四行，或记二十二行；尺寸或记通高228厘米、宽91厘米。本库并列，不取其一。
 
 <a name="rubbing-zhang-menglong-bei"></a>
 
@@ -31,7 +35,7 @@ Stele of Zhang Menglong, Ming rubbing
 - 制作年代：明拓
 - 著录编号：新00045763
 - 尺寸：每页纵26.6厘米，横14.1厘米
-- 收藏机构：故宫博物院　[出处 2](#ref-src-dpm-zhang-menglong)
+- 收藏机构：故宫博物院　[出处 3](#ref-src-dpm-zhang-menglong)
 - 所引来源查阅于 2026-11-18
 
 故宫著录为三十六页剪裱册。原石的迁移年份仅适用于原石。
@@ -57,15 +61,15 @@ Stele of Zhang Menglong, original stone
 - 制作年代：北魏正光三年（522年）
 - 著录编号：未记录
 - 尺寸：未记录
-- 收藏机构：曲阜汉魏碑刻陈列馆　[出处 1](#ref-src-qufu-zhang-menglong)
+- 收藏机构：曲阜汉魏碑刻陈列馆　[出处 1](#ref-src-qufu-zhang-menglong)、[出处 2](#ref-src-cupl-zhangmenglong)
 - 所引来源查阅于 2026-11-18
 
-陈列馆藏品条目载原石于 1998 年移入该馆。
+陈列馆藏品条目载原石于 1998 年移入该馆；中国政法大学法律古籍整理研究所另记原立孔庙同文门内、1978 年移入东庑。
 
 ### 递藏与流传
 
-- 1978年 · 迁移 · 曲阜孔庙东庑（有明确记载）　移入曲阜孔庙东庑。 [出处 1](#ref-src-qufu-zhang-menglong)
-- 1998年 · 迁移 · 曲阜汉魏碑刻陈列馆（有明确记载）　移入汉魏碑刻陈列馆。 [出处 1](#ref-src-qufu-zhang-menglong)
+- 1978年 · 迁移 · 曲阜孔庙东庑（有明确记载）　由曲阜孔庙同文门内移入东庑。 [出处 1](#ref-src-qufu-zhang-menglong)、[出处 2](#ref-src-cupl-zhangmenglong)
+- 1998年 · 迁移 · 曲阜汉魏碑刻陈列馆（有明确记载）　移入汉魏碑刻陈列馆。 [出处 1](#ref-src-qufu-zhang-menglong)、[出处 2](#ref-src-cupl-zhangmenglong)
 
 ### 实物待考与说明
 
@@ -79,8 +83,12 @@ Stele of Zhang Menglong, original stone
 
 1. 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery · [北魏•张猛龙碑（魏鲁郡太守张府君清颂之碑）](<https://hwbk.qfwbw.cn/wei/2016-04-03/2864.html>)。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
 
+<a name="ref-src-cupl-zhangmenglong"></a>
+
+2. 中国政法大学法律古籍整理研究所（中华法治文明虚拟博物馆） · [北魏·《张猛龙碑》](<https://flgj.cupl.edu.cn/info/1092/3742.htm>)（2022-10-31）。定位：【时间】【评述】栏：522 年、原立同文门、1978 移东庑、1998 移汉魏碑刻陈列馆、尺寸 280×123 厘米。查阅于 2026-11-28。
+
 <a name="ref-src-dpm-zhang-menglong"></a>
 
-2. 故宫博物院 The Palace Museum · [明拓北魏张猛龙碑](<https://www.dpm.org.cn/collection/impres/228416.html>)。定位：Catalogue number and 简介。查阅于 2026-11-18。
+3. 故宫博物院 The Palace Museum · [明拓北魏张猛龙碑](<https://www.dpm.org.cn/collection/impres/228416.html>)。定位：Catalogue number and 简介。查阅于 2026-11-18。
 
 [作品源稿](../../knowledge/works/zhang-menglong-bei.md) · [返回知识总目](../README.md)

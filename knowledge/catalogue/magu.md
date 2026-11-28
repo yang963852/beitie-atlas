@@ -8,9 +8,9 @@ Record of the Immortal Altar
 
 **作品**　唐 · 771年 · 碑
 
-唐颜真卿书《麻姑仙坛记》。本条收录翻刻旧拓。
+唐颜真卿书《麻姑仙坛记》。本条收录翻刻旧拓。颜真卿于大历六年（771）任抚州刺史时游麻姑山书此记，原碑旧藏仙都观，绍兴二十七年（1157）移入鲁公祠，南宋后期丢失；麻姑山今陈列者为1992年许亦农重刻，宋代拓本分藏北京图书馆、上海图书馆与上海博物馆。
 
-[出处 1](#ref-src-catalogue-magu)
+[出处 1](#ref-src-catalogue-magu)、[出处 2](#ref-src-fuzhou-magushan)
 
 - 书丹 · 颜真卿（有明确记载）  [出处 1](#ref-src-catalogue-magu)
 
@@ -47,5 +47,9 @@ Record of the Immortal Altar, rubbing
 <a name="ref-src-catalogue-magu"></a>
 
 1. 故宫博物院 · [麻姑仙坛记（翻刻旧拓）](<https://www.dpm.org.cn/collection/impres/234172.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
+
+<a name="ref-src-fuzhou-magushan"></a>
+
+2. 抚州市文化广电旅游局 · [自然景观—麻姑山](<https://wgxlj.jxfz.gov.cn/art/2026/6/16/art_10938_4454918.html>)（2026-06-16）。定位：“麻姑山历史人文底蕴深厚”段：771 年书碑、原碑藏仙都观、1157 年移鲁公祠、南宋后期丢失、1992 年许亦农重刻。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/magu.md) · [返回知识总目](../README.md)

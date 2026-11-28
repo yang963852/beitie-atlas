@@ -8,9 +8,9 @@ Cold Food Poems
 
 **作品**　北宋 · 1082年 · 帖
 
-北宋苏轼书《黄州寒食诗帖》。
+北宋苏轼书《黄州寒食诗帖》。此卷纸本，书《寒食雨二首》，卷后有黄庭坚跋。国立故宫博物院记其于1987年购藏。
 
-[出处 1](#ref-src-catalogue-hanshi)
+[出处 1](#ref-src-catalogue-hanshi)、[出处 2](#ref-src-npm-90collecting-hanshi)
 
 - 书丹 · 苏轼（有明确记载）  [出处 1](#ref-src-catalogue-hanshi)
 
@@ -28,14 +28,15 @@ Cold Food Poems
 
 - 制作年代：年代不详
 - 著录编号：購書001001N000000000
-- 尺寸：未记录
-- 收藏机构：台北故宫博物院　[出处 1](#ref-src-catalogue-hanshi)
+- 尺寸：纵34.2厘米，横199.5厘米
+- 收藏机构：台北故宫博物院　[出处 1](#ref-src-catalogue-hanshi)、[出处 2](#ref-src-npm-90collecting-hanshi)
 - 所引来源查阅于 2026-11-18
 
 ### 递藏与流传
 
 - 年代不详 · 保管（不详）　馆方著录记，此卷曾经颜韵伯售予菊池惺堂；此条暂不补交易日期。 [出处 1](#ref-src-catalogue-hanshi)
-- 年代不详 · 保管（不详）　国立故宫博物院刊文记，王世杰后来托人从日本购回此卷。 [出处 2](#ref-src-npm-hanshi-wang)
+- 年代不详 · 保管（不详）　国立故宫博物院刊文记，王世杰后来托人从日本购回此卷。 [出处 3](#ref-src-npm-hanshi-wang)
+- 民國七十六年 · 入藏（有明确记载）　国立故宫博物院展页记，此卷于民国七十六年（1987）购藏。 [出处 2](#ref-src-npm-90collecting-hanshi)
 
 ### 实物待考与说明
 
@@ -49,8 +50,12 @@ Cold Food Poems
 
 1. 國立故宮博物院 · [黄州寒食诗帖](<https://digitalarchive.npm.gov.tw/Collection/Detail/14714?dep=P>)。定位：藏品题名；作品说明中颜韵伯售予菊池惺堂一段。查阅于 2026-11-18。
 
+<a name="ref-src-npm-90collecting-hanshi"></a>
+
+2. 國立故宮博物院 · [天保九如：九十年來新增文物選粹（書畫）](<https://theme.npm.edu.tw/exh104/90collecting/ch/page-3.html>)。定位：「北宋 蘇東坡 書黃州寒食詩 卷」条：尺寸、材质与购藏年份。查阅于 2026-11-28。
+
 <a name="ref-src-npm-hanshi-wang"></a>
 
-2. 國立故宮博物院《故宮文物月刊》 · [王世杰先生與《寒食帖》](<https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3990>)。定位：Liu Meng’s article on Wang’s purchase of the scroll from Japan。查阅于 2026-11-18。
+3. 國立故宮博物院《故宮文物月刊》 · [王世杰先生與《寒食帖》](<https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3990>)。定位：Liu Meng’s article on Wang’s purchase of the scroll from Japan。查阅于 2026-11-18。
 
 [作品源稿](../../knowledge/works/hanshi.md) · [返回知识总目](../README.md)

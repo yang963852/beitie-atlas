@@ -14,12 +14,15 @@ dateOriginal: null
 dateCertainty: unknown
 dateNote: null
 catalogNumber: 購書001001N000000000
+dimensionsRaw: 纵34.2厘米，横199.5厘米
+dimensionsNote: 国立故宫博物院展页记本幅尺寸，纸本。
 survival: surviving
 relationships: []
 collectionKind: collection-institution
 collectionPlace: place-taipei-palace
 collectionSources:
   - src-catalogue-hanshi
+  - src-npm-90collecting-hanshi
 collectionAccessedAt: 2026-11-18
 collectionAsOf: null
 collectionNote: null
@@ -61,6 +64,24 @@ events:
     sources:
       - src-npm-hanshi-wang
     certainty: unknown
+  - id: witness-hanshi-accession-1987
+    type: accession
+    dateKind: single
+    dateStart: 1987
+    dateMonth: null
+    dateEnd: 1987
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 民國七十六年
+    dateCertainty: documented
+    dateNote: null
+    place: null
+    placeWording: null
+    summary: The National Palace Museum exhibition page records that the scroll was purchased for the museum in 1987.
+    summaryZh: 国立故宫博物院展页记，此卷于民国七十六年（1987）购藏。
+    sources:
+      - src-npm-90collecting-hanshi
+    certainty: documented
 reviewState: reviewed
 ---
 

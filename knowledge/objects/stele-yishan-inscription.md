@@ -26,7 +26,25 @@ collectionAccessedAt: 2026-11-18
 collectionAsOf: null
 collectionNote: The museum identifies the surviving stone as Zheng Wenbao’s Song recarving from a copy by Xu Xuan.
 collectionNoteZh: 馆方著录为郑文宝据徐铉摹本重刻的北宋石刻。
-events: []
+events:
+  - id: stele-yishan-recut-993
+    type: carving
+    dateKind: single
+    dateStart: 993
+    dateMonth: null
+    dateEnd: 993
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 北宋淳化四年（993）
+    dateCertainty: documented
+    dateNote: 馆方条目记重刻年份，未记月日。
+    place: null
+    placeWording: 陕西长安
+    summary: The Xi’an Beilin Museum identifies the surviving stone as the 993 recarving by Zheng Wenbao from a copy by Xu Xuan.
+    summaryZh: 西安碑林博物馆记，今存者为北宋淳化四年（993）郑文宝据徐铉摹本在长安重刻。
+    sources:
+      - src-beilin-yishan
+    certainty: documented
 reviewState: reviewed
 ---
 

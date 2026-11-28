@@ -78,6 +78,7 @@ events:
     summaryZh: 鲜于枢题跋记，至元甲申（1284）在钱塘重装此卷。
     sources:
       - src-catalogue-jizhi
+      - src-dpm-jizhi-xianyu
     certainty: documented
   - id: witness-jizhi-wang-colophon
     type: documented
@@ -96,6 +97,78 @@ events:
     summaryZh: 王顼龄雍正二年题跋说，先在徐乾学处见卷，后在弟弟王鸿绪处再见，并记从子彤文将卷赠予自己。题跋年不是所有交接的年份。
     sources:
       - src-catalogue-jizhi
+    certainty: documented
+  - id: witness-jizhi-xuanhe
+    type: custody
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: 来源记此卷曾藏宣和内府，未记入藏年份。
+    place: null
+    placeWording: 宣和内府
+    summary: A Palace Museum journal article states that the scroll was held in the Northern Song Xuanhe imperial collection, where the Xuanhe Shupu listed it among twenty-eight Yan works.
+    summaryZh: 故宫博物院院刊论文记，此卷曾藏北宋宣和内府，《宣和书谱》著录内府颜书二十八件，此其一。
+    sources:
+      - src-dpm-jizhi-xianyu
+    certainty: documented
+  - id: witness-jizhi-jingkang
+    type: relocation
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: 来源只记“靖康之变后”，不系年。
+    place: null
+    placeWording: null
+    summary: The same article states that the scroll left the imperial collection after the Jingkang catastrophe.
+    summaryZh: 同上文记，靖康之变后此卷流出宣和内府。
+    sources:
+      - src-dpm-jizhi-xianyu
+    certainty: documented
+  - id: witness-jizhi-shu-bangzhe
+    type: custody
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: 来源未记年份。
+    place: null
+    placeWording: 越州
+    summary: The article states that after leaving the palace the scroll passed to Shi Bangzhe in Yuezhou.
+    summaryZh: 同上文记，此卷流出后辗转为越州石邦哲所得。
+    sources:
+      - src-dpm-jizhi-xianyu
+    certainty: documented
+  - id: witness-jizhi-zhang-yan
+    type: custody
+    dateKind: single
+    dateStart: 1301
+    dateMonth: null
+    dateEnd: 1301
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: 辛丑
+    dateCertainty: documented
+    dateNote: 张晏跋称辛丑岁；文中换算为大德五年（1301）。
+    place: null
+    placeWording: null
+    summary: Zhang Yan’s colophon states that in the xinchou year, while travelling to Jiangzhe, he obtained the scroll from Xianyu Shu’s household.
+    summaryZh: 张晏跋称辛丑岁因到江浙，得此帖于鲜于家。
+    sources:
+      - src-dpm-jizhi-xianyu
     certainty: documented
 claims:
   - id: claim-jizhi-same-acquisition

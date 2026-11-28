@@ -28,6 +28,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-shusu
+  - src-npm-dongqichang-shusu
 reviewState: reviewed
 ---
 
@@ -37,4 +38,8 @@ reviewState: reviewed
 
 ### 中文
 
-北宋米芾书《蜀素帖》。
+北宋米芾书《蜀素帖》。此卷为米芾应林希之请，在蜀素上书诗八首；董其昌万历三十二年（1604）以所藏数件名迹与徽州古董商吴廷换得此卷，约1615年转入陈巘之手。
+
+### English
+
+Mi Fu’s Poems on Shu Silk. Mi Fu wrote eight poems on Sichuan silk at Lin Xi’s request. Dong Qichang acquired the scroll in 1604, exchanging several works from his own collection with the Huizhou dealer Wu Ting; around 1615 it passed to his friend Chen Yan.

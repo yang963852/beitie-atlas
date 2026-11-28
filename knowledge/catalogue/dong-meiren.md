@@ -8,15 +8,20 @@ Epitaph of Dong Meiren
 
 **作品**　隋 · 597年 · 碑
 
-隋《董美人墓志》。本条收录清拓本。
+隋《董美人墓志》。本条收录清拓本。志为隋文帝第四子蜀王杨秀所撰，开皇十七年（597）刻；原石清嘉道间出土于陕西兴平县，咸丰三年（1853）毁，故传世皆拓本。
 
-[出处 1](#ref-src-catalogue-dong-meiren)
+[出处 1](#ref-src-catalogue-dong-meiren)、[出处 2](#ref-src-szmuseum-dongmeiren)
 
-- 未署名 · 未署名（不详） 所引条目未署书者姓名。 [出处 1](#ref-src-catalogue-dong-meiren)
+- 未署名 · 未署名（不详） 所引故宫条目未署书者；苏州博物馆特展说明另记撰文者。 [出处 1](#ref-src-catalogue-dong-meiren)
+- 撰文 · 杨秀（有明确记载） 苏州博物馆特展说明记志文为隋文帝第四子蜀王杨秀所撰。 [出处 2](#ref-src-szmuseum-dongmeiren)
 
 书体：楷书
 
 延伸阅读：[05｜专题：隋唐——楷则与碑版](../notes/essay-05-sui-tang.md)
+
+作品待考与说明
+
+- 出土地点有陕西兴平与西安两说，清代拓本递藏的人名亦有陆庆勋、陆剑庵异文，均并存不改。
 
 <a name="witness-dong-meiren"></a>
 
@@ -47,5 +52,9 @@ Epitaph of Dong Meiren, rubbing
 <a name="ref-src-catalogue-dong-meiren"></a>
 
 1. 故宫博物院 · [董美人墓志（清拓本）](<https://www.dpm.org.cn/collection/impres/234149.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
+
+<a name="ref-src-szmuseum-dongmeiren"></a>
+
+2. 苏州博物馆 · [美人姓董·精品赏析〔董美人〕](<https://www.szmuseum.com/SpecialExhibition/Appreciation/mrxd?no=mrxdJpsx&sub=mrxdDmr>)。定位：吴湖帆藏本、张伯英藏本、朱翼盦藏本三条说明。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/dong-meiren.md) · [返回知识总目](../README.md)

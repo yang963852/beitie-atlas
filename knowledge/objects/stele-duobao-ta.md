@@ -22,10 +22,11 @@ collectionKind: collection-institution
 collectionPlace: place-xian-beilin-museum
 collectionSources:
   - src-beilin-duobaota
+  - src-dpm-duobao-songta
 collectionAccessedAt: 2026-11-18
 collectionAsOf: null
-collectionNote: The museum entry gives the form and inscription only; the stone’s move into the Beilin is not recorded there.
-collectionNoteZh: 馆方条目只记形制与碑文，未记载此石何时移入碑林。
+collectionNote: The Beilin entry gives the form and inscription only; the Palace Museum’s Song rubbing entry adds that the stone entered the Beilin in the Song, without a year.
+collectionNoteZh: 碑林条目只记形制与碑文；故宫博物院宋拓册说明另记碑于宋时入藏西安碑林，未系年。
 events:
   - id: stele-duobao-ta-move-beilin
     type: relocation
@@ -44,6 +45,7 @@ events:
     summaryZh: 西安碑林博物馆记载，原碑于北宋崇宁二年移存碑林；搬运经过未见该条详述。
     sources:
       - src-beilin-duobaota
+      - src-dpm-duobao-songta
     certainty: documented
 reviewState: reviewed
 ---

@@ -8,9 +8,9 @@ Clearing after Snow
 
 **作品**　东晋 · 东晋（仅记年号，年份未记） · 帖
 
-东晋王羲之书《快雪时晴帖》。本条收录传世摹本。
+东晋王羲之书《快雪时晴帖》。本条收录传世摹本，一般认为是唐代精摹本。乾隆十一年，此本与王献之《中秋帖》、王珣《伯远帖》合称“三希”，藏于三希堂。
 
-[出处 1](#ref-src-catalogue-kuaixue)
+[出处 1](#ref-src-catalogue-kuaixue)、[出处 2](#ref-src-npm-kuaixue-selection)
 
 - 书丹 · 王羲之（有明确记载）  [出处 1](#ref-src-catalogue-kuaixue)
 
@@ -28,14 +28,14 @@ Clearing after Snow, manuscript copy
 
 - 制作年代：年代不详
 - 著录编号：故書000141N000000000
-- 尺寸：未记录
-- 收藏机构：台北故宫博物院　[出处 1](#ref-src-catalogue-kuaixue)
+- 尺寸：纵23厘米，横14.8厘米
+- 收藏机构：台北故宫博物院　[出处 1](#ref-src-catalogue-kuaixue)、[出处 2](#ref-src-npm-kuaixue-selection)
 - 所引来源查阅于 2026-11-18
 
 ### 递藏与流传
 
-- 元仁宗朝（仅记年号，年份未记） · 见于记载（有明确记载）　研究指出，现存内府册页本后副叶有赵孟頫等奉元仁宗命所写的题跋；这一线索只对应此册页本。 [出处 2](#ref-src-npm-kuaixue-yuan)
-- 乾隆朝（仅记年号，年份未记） · 保管（有明确记载）　此册页本曾为清高宗三希堂所藏。 [出处 2](#ref-src-npm-kuaixue-yuan)
+- 元仁宗朝（仅记年号，年份未记） · 见于记载（有明确记载）　研究指出，现存内府册页本后副叶有赵孟頫等奉元仁宗命所写的题跋；这一线索只对应此册页本。 [出处 3](#ref-src-npm-kuaixue-yuan)
+- 乾隆十一年 · 保管 · 三希堂（有明确记载）　乾隆十一年（1746），清高宗将此本与王献之《中秋帖》、王珣《伯远帖》合称“三希”，藏于三希堂。 [出处 3](#ref-src-npm-kuaixue-yuan)、[出处 2](#ref-src-npm-kuaixue-selection)
 
 ### 实物待考与说明
 
@@ -49,8 +49,12 @@ Clearing after Snow, manuscript copy
 
 1. 國立故宮博物院 · [快雪时晴帖（传世摹本）](<https://digitalarchive.npm.gov.tw/Collection/Detail/19?dep=P>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
 
+<a name="ref-src-npm-kuaixue-selection"></a>
+
+2. 國立故宮博物院“精選賞析” · [快雪時晴帖](<https://theme.npm.edu.tw/selection/Article.aspx?sNo=04001001&lang=1>)。定位：“簡介”栏：尺寸、唐摹本、乾隆十一年三希堂。查阅于 2026-11-28。
+
 <a name="ref-src-npm-kuaixue-yuan"></a>
 
-2. 國立故宮博物院《故宮學術季刊》 · [王義之《快雪時晴帖》在元代的接受與認識](<https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3907>)。定位：Abstract, p. 169: the imperial album and the distinct Zhang Yu copy。查阅于 2026-11-18。
+3. 國立故宮博物院《故宮學術季刊》 · [王義之《快雪時晴帖》在元代的接受與認識](<https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3907>)。定位：Abstract, p. 169: the imperial album and the distinct Zhang Yu copy。查阅于 2026-11-18。
 
 [作品源稿](../../knowledge/works/kuaixue.md) · [返回知识总目](../README.md)

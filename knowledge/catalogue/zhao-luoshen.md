@@ -8,9 +8,9 @@ Rhapsody on the Goddess of the Luo
 
 **作品**　元 · 元（仅记年号，年份未记） · 帖
 
-元赵孟頫书《洛神赋》。
+元赵孟頫书《洛神赋》。此卷款署“子昂”而不署年，馆方据书风判断约作于赵孟頫五十岁前后；赵孟頫所书《洛神赋》存世多件。
 
-[出处 1](#ref-src-catalogue-zhao-luoshen)
+[出处 1](#ref-src-catalogue-zhao-luoshen)、[出处 2](#ref-src-dpm-zhao-luoshen-vr)
 
 - 书丹 · 赵孟頫（有明确记载）  [出处 1](#ref-src-catalogue-zhao-luoshen)
 
@@ -29,12 +29,12 @@ Rhapsody on the Goddess of the Luo
 - 制作年代：元（仅记年号，年份未记）
 - 著录编号：新00152406
 - 尺寸：纵29厘米，横220.9厘米
-- 收藏机构：故宫博物院　[出处 1](#ref-src-catalogue-zhao-luoshen)
+- 收藏机构：故宫博物院　[出处 1](#ref-src-catalogue-zhao-luoshen)、[出处 2](#ref-src-dpm-zhao-luoshen-vr)
 - 所引来源查阅于 2026-11-18
 
 ### 递藏与流传
 
-所引资料尚未记下这件实物的递藏经过。
+- 清（仅记年号，年份未记） · 保管 · 御书房（有明确记载）　故宫博物院展页记，此卷经《石渠宝笈》初编著录，贮御书房，钤乾隆、嘉庆、宣统内府诸印。 [出处 2](#ref-src-dpm-zhao-luoshen-vr)
 
 ### 实物待考与说明
 
@@ -47,5 +47,9 @@ Rhapsody on the Goddess of the Luo
 <a name="ref-src-catalogue-zhao-luoshen"></a>
 
 1. 故宫博物院 · [洛神赋](<https://www.dpm.org.cn/collection/handwriting/228244.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
+
+<a name="ref-src-dpm-zhao-luoshen-vr"></a>
+
+2. 故宫博物院“石渠宝笈”专题展页（撰稿 王亦旻） · [元 赵孟頫 行书洛神赋卷](<https://www.dpm.org.cn/vr/stone-moat/wyd_27.html>)。定位：展签与说明：《石渠宝笈》初编贮御书房、钤三玺、尺寸、款署子昂无年款。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/zhao-luoshen.md) · [返回知识总目](../README.md)

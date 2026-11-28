@@ -22,6 +22,7 @@ collectionKind: collection-institution
 collectionPlace: place-taipei-palace
 collectionSources:
   - src-catalogue-shupu
+  - src-dpm-shupu-ketie
 collectionAccessedAt: 2026-11-18
 collectionAsOf: null
 collectionNote: null
@@ -62,6 +63,24 @@ events:
     summaryZh: 卷上可见梁清标、安岐等人的鉴藏印。《石渠宝笈初编》御书房卷著录此卷。
     sources:
       - src-catalogue-shupu
+    certainty: documented
+  - id: ev-witness-shupu-qing-court
+    type: custody
+    dateKind: unknown
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: null
+    dateOriginal: null
+    dateCertainty: unknown
+    dateNote: 来源未记年份。
+    place: null
+    placeWording: 清内府；台湾
+    summary: A Palace Museum article states that the upper scroll was held in the Qing imperial collection, later passed to the Palace Museum, and is now in Taiwan; no year is given.
+    summaryZh: 故宫博物院刊文记，《书谱》上卷墨迹原藏清内府，后归故宫博物院，今在台湾；未记年份。
+    sources:
+      - src-dpm-shupu-ketie
     certainty: documented
 reviewState: reviewed
 ---

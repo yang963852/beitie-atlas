@@ -8,9 +8,9 @@ Letter to Boyuan
 
 **作品**　东晋 · 东晋（仅记年号，年份未记） · 帖
 
-东晋王珣书《伯远帖》。
+东晋王珣书《伯远帖》。此帖宋代入徽宗宣和御府，清初归安岐，著录于《墨缘汇观》，后入清内府。
 
-[出处 1](#ref-src-catalogue-boyuan)
+[出处 1](#ref-src-catalogue-boyuan)、[出处 2](#ref-src-dpm-boyuan-vr)
 
 - 书丹 · 王珣（有明确记载）  [出处 1](#ref-src-catalogue-boyuan)
 
@@ -35,7 +35,13 @@ Letter to Boyuan
 ### 递藏与流传
 
 - 1746年 · 保管（有明确记载）　乾隆十一年入清内府，后与《快雪时晴帖》《中秋帖》同贮养心殿三希堂。 [出处 1](#ref-src-catalogue-boyuan)
-- 1951年 · 入藏（有明确记载）　故宫博物院记载，此帖从香港购回后，于 1951 年 12 月 27 日与《中秋帖》正式入藏。 [出处 2](#ref-src-dpm-boyuan-return)
+- 1951年 · 入藏（有明确记载）　故宫博物院记载，此帖从香港购回后，于 1951 年 12 月 27 日与《中秋帖》正式入藏。 [出处 3](#ref-src-dpm-boyuan-return)、[出处 2](#ref-src-dpm-boyuan-vr)
+- 年代不详 · 保管 · 宣和御府（有明确记载）　故宫博物院展页记，此帖宋代入徽宗宣和御府。 [出处 2](#ref-src-dpm-boyuan-vr)
+- 年代不详 · 保管（有明确记载）　同上页记，清初此帖归安岐所有，著录于《墨缘汇观》。 [出处 2](#ref-src-dpm-boyuan-vr)
+- 一九二四年 · 迁移 · 宫外（有明确记载）　同上页记，一九二四年逊帝溥仪出宫时，此帖与《中秋帖》流出宫外。 [出处 2](#ref-src-dpm-boyuan-vr)
+- 年代不详 · 保管（有明确记载）　同上页记，流出后辗转为鉴藏家郭葆昌所得。 [出处 2](#ref-src-dpm-boyuan-vr)
+- 年代不详 · 保管（有明确记载）　同上页记，郭葆昌去世后，二帖由其子郭昭俊拥有。 [出处 2](#ref-src-dpm-boyuan-vr)
+- 一九四九年 · 保管 · 香港（有明确记载）　同上页记，一九四九年郭昭俊为借款将二帖在香港抵押，一九五一年到期而郭家无力赎回。 [出处 2](#ref-src-dpm-boyuan-vr)
 
 ### 实物待考与说明
 
@@ -49,8 +55,12 @@ Letter to Boyuan
 
 1. 故宫博物院 · [伯远帖](<https://www.dpm.org.cn/collection/handwriting/228199.html>)。定位：藏品题名及乾隆十一年入内府、三希堂合藏一段。查阅于 2026-11-18。
 
+<a name="ref-src-dpm-boyuan-vr"></a>
+
+2. 故宫博物院“石渠宝笈”专题展页（撰稿 华宁） · [行书伯远帖卷](<https://www.dpm.org.cn/vr/stone-moat/wyd_1.html>)。定位：全页释文说明：尺寸、宣和御府、安岐《墨缘汇观》、1924 年出宫、1949 年香港抵押、1951 年购回。查阅于 2026-11-28。
+
 <a name="ref-src-dpm-boyuan-return"></a>
 
-2. 故宫博物院 · [流失国宝重返故宫](<https://www.dpm.org.cn/topic/party_building/north/detail/255754.html>)。定位：Paragraph on the formal accession of 伯远帖 and 中秋帖。查阅于 2026-11-18。
+3. 故宫博物院 · [流失国宝重返故宫](<https://www.dpm.org.cn/topic/party_building/north/detail/255754.html>)。定位：Paragraph on the formal accession of 伯远帖 and 中秋帖。查阅于 2026-11-18。
 
 [作品源稿](../../knowledge/works/boyuan.md) · [返回知识总目](../README.md)

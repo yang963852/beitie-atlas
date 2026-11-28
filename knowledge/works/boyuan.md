@@ -28,6 +28,7 @@ attribution:
     noteZh: null
 sources:
   - src-catalogue-boyuan
+  - src-dpm-boyuan-vr
 reviewState: reviewed
 ---
 
@@ -37,4 +38,8 @@ reviewState: reviewed
 
 ### 中文
 
-东晋王珣书《伯远帖》。
+东晋王珣书《伯远帖》。此帖宋代入徽宗宣和御府，清初归安岐，著录于《墨缘汇观》，后入清内府。
+
+### English
+
+Wang Xun’s Letter to Boyuan. The letter entered Emperor Huizong’s Xuanhe collection in the Song; in the early Qing it belonged to An Qi and is recorded in his Moyuan Huiguan, before entering the Qing imperial collection.
