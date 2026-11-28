@@ -14,7 +14,7 @@ Inscriptions for Duke Wen of Zheng
 
 - 书丹 · 郑道昭（有明确记载）  [出处 1](#ref-src-yantai-zheng)
 
-延伸阅读：[郑道昭](../people/zheng-daozhao.md)
+延伸阅读：[郑道昭](../people/zheng-daozhao.md) · [上、下碑分别读：郑文公碑的「高气逸」](../notes/zheng-wengong-two-steles.md)
 
 <a name="zheng-wengong-lower"></a>
 
