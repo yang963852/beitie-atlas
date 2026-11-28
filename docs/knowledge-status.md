@@ -11,10 +11,10 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | Works | 133 (133 reviewed / 0 draft) |
 | Objects | 140 (140 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
-| People pages | 29 |
+| People pages | 41 |
 | Notes | 16 |
 | Places | 47 (38 with coordinates) |
-| Sources | 241 (0 uncited) |
+| Sources | 260 (0 uncited) |
 | Events | 75 (50 objects with events) |
 | Attribution entries linked to a person | 52 / 178 |
 | Work sources (0 / 1 / 2+) | 0 / 91 / 42 |
