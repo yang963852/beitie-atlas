@@ -26,6 +26,22 @@ relations:
     sourceRefs:
       - src-dpm-zhushangzuo
     state: reviewed
+  - from: fu-shan
+    to: wang-duo
+    type: critique
+    labelZh: 评王铎书法
+    labelEn: Judged Wang Duo’s calligraphy
+    sourceRefs:
+      - src-dpm-wangduo-article
+    state: reviewed
+  - from: wang-duo
+    to: mi-fu
+    type: model
+    labelZh: 行书取法米芾
+    labelEn: Took Mi Fu as his model in running script
+    sourceRefs:
+      - src-dpm-wangduo-article
+    state: reviewed
 ---
 
 # 人物关系

@@ -302,7 +302,9 @@
 - [游包山集](catalogue/you-baoshan-ji.md) · 1 件实物
 - [墨池堂选帖](catalogue/mochitang.md) · 1 件实物
 - [梅雪轩书晦翁不自弃文](catalogue/meixuexuan-buziqi.md) · 1 件实物
+- [行书送友诗轴](catalogue/wangduo-songyou-shi.md) · 1 件实物
 - [王铎行草书自书诗卷](catalogue/wangduo-zishu-shi.md) · 1 件实物
+- [赠张抱一草书诗卷](catalogue/wangduo-zhangbaoyi.md) · 1 件实物
 - [行书论书卷](catalogue/dong-lunshu.md) · 1 件实物
 - [送陈子龄会试诗](catalogue/song-chen-ziling.md) · 1 件实物
 - [楷书归去来兮辞页](catalogue/wen-guiqulai.md) · 1 件实物
@@ -311,6 +313,8 @@
 
 ### 清
 
+- [草书唐人诗卷](catalogue/wangduo-dufu-shi.md) · 1 件实物
+- [行书临汝帖轴](catalogue/wangduo-linru-tie.md) · 1 件实物
 - [三希堂法帖](catalogue/sanxitang-fatie.md) · 1 件实物
 - [林则徐游华山诗并序](catalogue/lin-zexu-huashan.md) · 1 件实物
 - [楷书诗轴](catalogue/deng-kaishu.md) · 1 件实物

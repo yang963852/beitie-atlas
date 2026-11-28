@@ -8,17 +8,17 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 
 | Measure | Value |
 | --- | --- |
-| Works | 158 (158 reviewed / 0 draft) |
-| Objects | 168 (168 reviewed / 0 draft) |
+| Works | 162 (162 reviewed / 0 draft) |
+| Objects | 172 (172 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
 | People pages | 59 |
 | Notes | 24 |
 | Places | 53 (38 with coordinates) |
-| Sources | 345 (0 uncited) |
+| Sources | 351 (0 uncited) |
 | Events | 123 (70 objects with events) |
-| Attribution entries linked to a person | 106 / 216 |
-| Work sources (0 / 1 / 2+) | 0 / 88 / 70 |
-| Reviewed works with one source | 88 |
+| Attribution entries linked to a person | 110 / 220 |
+| Work sources (0 / 1 / 2+) | 0 / 90 / 72 |
+| Reviewed works with one source | 90 |
 | Dates without source wording | 33 |
 
 ## Gaps
@@ -172,12 +172,16 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [游包山集](../knowledge/works/you-baoshan-ji.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [墨池堂选帖](../knowledge/works/mochitang.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [梅雪轩书晦翁不自弃文](../knowledge/works/meixuexuan-buziqi.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [行书送友诗轴](../knowledge/works/wangduo-songyou-shi.md) | Ming | reviewed | — | 1 | 2 | 1 | 1/1 | — |
 | [王铎行草书自书诗卷](../knowledge/works/wangduo-zishu-shi.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [赠张抱一草书诗卷](../knowledge/works/wangduo-zhangbaoyi.md) | Ming | reviewed | — | 1 | 2 | 1 | 1/1 | — |
 | [行书论书卷](../knowledge/works/dong-lunshu.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
 | [送陈子龄会试诗](../knowledge/works/song-chen-ziling.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [楷书归去来兮辞页](../knowledge/works/wen-guiqulai.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
 | [牡丹赋](../knowledge/works/zhu-mudan.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [三体杂书诗卷](../knowledge/works/zhu-santi.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
+| [草书唐人诗卷](../knowledge/works/wangduo-dufu-shi.md) | Qing | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [行书临汝帖轴](../knowledge/works/wangduo-linru-tie.md) | Qing | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [三希堂法帖](../knowledge/works/sanxitang-fatie.md) | Qing | reviewed | — | 0 | 3 | 1 | 1/1 | — |
 | [林则徐游华山诗并序](../knowledge/works/lin-zexu-huashan.md) | Qing | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [楷书诗轴](../knowledge/works/deng-kaishu.md) | Qing | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
