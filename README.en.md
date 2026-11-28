@@ -8,13 +8,13 @@ Which rubbing of the Yan Qinli Stele are we looking at when we copy it? Who was 
 
 ## What the site offers
 
-- **Start at the desk.** An open sheet of paper leads into the chronology; the plate on the desk opens the object record of the Shenlong copy of the Lanting Preface.
+- **Start at the desk.** An open sheet of paper leads into the [atlas of surviving works](https://yang963852.github.io/beitie-atlas/#/collections); the plate on the desk opens the object record of the Shenlong copy of the Lanting Preface.
 - **Read a work.** Begin with the [Yan Qinli Stele](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei): background, calligrapher and surviving witnesses are kept apart, and the original stone and the Republican rubbing carry separate histories.
-- **Follow the chronology.** Browse [every work](https://yang963852.github.io/beitie-atlas/#catalogue) by the period of the inscription, from the pre-Qin era to the present.
-- **Use the extant map.** Locate surviving witnesses by their present collection or in-situ site in the [extant map](https://yang963852.github.io/beitie-atlas/#/collections); places without reliable coordinates stay textual rather than guessed.
-- **Search the library.** Enter the [library](https://yang963852.github.io/beitie-atlas/#/library) by work, calligrapher, reading note or object record — for example [Yan Zhenqing](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing).
+- **Unroll the long scroll.** Browse [every work](https://yang963852.github.io/beitie-atlas/#catalogue) in the Chronology by the period of the inscription, from the pre-Qin era to the present.
+- **Use the atlas.** Locate surviving witnesses by their present collection or in-situ site in the [atlas of surviving works](https://yang963852.github.io/beitie-atlas/#/collections); places without reliable coordinates stay textual rather than guessed.
+- **Search the reading room.** Enter the [reading room](https://yang963852.github.io/beitie-atlas/#/library) by work, calligrapher, reading note or object record — for example [Yan Zhenqing](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing).
 
-**Current corpus** (`npm run knowledge:compile`, 2026-11-28): 133 works · 140 physical objects · 47 places · 240 sources · 75 events.
+**Current corpus**: the compiler counts works, physical objects, places, sources and events; the generated [knowledge status page](docs/knowledge-status.md) is the reference (`npm run knowledge:status`). This page no longer restates corpus counts, which drift with every content change.
 
 ## Three editorial rules
 
@@ -71,7 +71,7 @@ npm run dev
 
 ## Status and limitations
 
-- The site is public on GitHub Pages with the **1.2 edition** of the library: every entry has passed the release gate and editorial confirmation. Open questions and conflicting accounts stay in each record's 待考 and claims sections rather than being resolved by assertion. See the [release runbook](docs/release.md).
+- The site is public on GitHub Pages; the edition label follows the `version` in `package.json`, which the interface footer and the library colophon read from the same field. Every entry has passed the release gate and editorial confirmation. Open questions and conflicting accounts stay in each record's 待考 and claims sections rather than being resolved by assertion. See the [release runbook](docs/release.md).
 - The live basemap depends on the Tianditu network service; without a key, or when tiles are refused, the map shows a coordinate schematic. Observed access varies by network and must be tested locally; the project does not guarantee it.
 - Quotations, collection images and map services retain their own terms.
 
