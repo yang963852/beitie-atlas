@@ -1,7 +1,7 @@
 {
   "name": "beitie-atlas",
   "private": true,
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Between Steles — a learning library of Chinese calligraphy, its makers and surviving witnesses from antiquity to the present",
   "type": "module",
   "engines": {

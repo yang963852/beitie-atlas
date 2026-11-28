@@ -1,16 +1,14 @@
 # Changelog
 
-Current release: **v1.3.0 · 1.3 版**.
+Current release: **v1.4.0 · 1.4 版**.
 
-## Unreleased · 未发布
+## v1.4.0 · 1.4 版
 
-Changes merged to `main` after the v1.3.0 tag. No new version number or release date is set yet.
+The 1.4 edition puts the copying reader first. Eight sourced close-reading notes were added to the 颜勤礼碑、兰亭序、九成宫醴泉铭、张迁碑、乙瑛碑、石门铭、瘗鹤铭 and 郑文公碑 paths. All 55 person pages now carry a bilingual “可临之作 / Works to copy” entry, naming linked works or stating when none is linked. Work reading cards gain a collapsed copying entry that brings together the surviving witness, close-reading notes and an evidenced calligrapher link, while keeping unknown and last-known locations distinct.
 
-- The interface was reorganised into three sections: 编年 (Chronology) as a handscroll of works, 访碑 (Atlas) for surviving witnesses with a province filter, and 读帖 (Reading room) for the work and calligrapher library. The opening desk animation was smoothed, and the chronology handscroll brought to life. The edition label in the opening desk, record footer and library colophon now reads the `version` in `package.json` through one shared value instead of a hand-typed number.
-- The corpus gained Huang Tingjian with two Northern Song letters, and Zhang Jizhi, Ouyang Tong and three Wei epitaphs. Current totals are on the generated [status page](docs/knowledge-status.md).
-- Hand-written documentation was realigned to the current interface and release workflow: stale section names and the old edition label were removed or derived from `package.json`, hand-typed corpus counts were replaced by the generated status page, and the Pages prose now describes the release build the workflow actually publishes.
+The edition also completes 19 exact work-to-person attribution links, raising the connected total to 91 of 180 entries without changing any attribution judgement. Twelve work dates now preserve the cited source wording, and a documentation gate rejects hand-written current edition numbers and stale README corpus counts. The three-section interface—编年 (Chronology), 访碑 (Atlas) and 读帖 (Reading room)—is in place, with the opening desk and chronology handscroll refined and one shared edition value read from `package.json`.
 
-[Knowledge library](knowledge/README.md) · [Status report](docs/knowledge-status.md)
+The corpus gained Huang Tingjian with two Northern Song letters, and Zhang Jizhi, Ouyang Tong and three Wei epitaphs. Counts: 133 works, 140 physical witnesses, 55 people, 47 places, 299 sources, 96 events and 24 notes. [Knowledge library](knowledge/README.md) · [Status report](docs/knowledge-status.md)
 
 ## v1.3.0 · 1.3 版
 
