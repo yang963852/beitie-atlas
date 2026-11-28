@@ -76,9 +76,9 @@ export const FIELD_NAMES: Readonly<Record<string, readonly string[]>> = {
     'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases',
     'dynastyId', 'dynastySource',
   ],
-  // Notes share the person reader and add `people`, read directly by the compiler.
   notes: [
     'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases', 'people',
+    'category', 'period', 'order',
   ],
   places: [
     'schemaVersion', 'nameZh', 'nameEn', 'historicalName', 'kind', 'province',

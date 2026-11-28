@@ -16,7 +16,7 @@ Rhapsody on the Goddess of the Luo
 
 书体：行书
 
-延伸阅读：[赵孟頫](../people/zhao-mengfu.md)
+延伸阅读：[赵孟頫](../people/zhao-mengfu.md) · [07｜专题：元明——复古与性灵](../notes/essay-07-yuan-ming.md)
 
 <a name="witness-zhao-luoshen"></a>
 

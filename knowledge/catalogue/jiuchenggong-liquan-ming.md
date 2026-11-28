@@ -19,7 +19,7 @@ Sweet Spring at Jiucheng Palace
 
 书体：楷书
 
-延伸阅读：[欧阳询](../people/ouyang-xun.md)
+延伸阅读：[欧阳询](../people/ouyang-xun.md) · [05｜专题：隋唐——楷则与碑版](../notes/essay-05-sui-tang.md) · [10｜阅读路径：楷化——从钟繇到唐楷](../notes/path-02-regularization.md)
 
 作品待考与说明
 

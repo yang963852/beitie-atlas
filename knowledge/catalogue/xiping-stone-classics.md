@@ -18,6 +18,8 @@ Xiping Stone Classics
 
 书体：八分隶书
 
+延伸阅读：[蔡邕](../people/cai-yong.md)
+
 作品待考与说明
 
 - 日期为石经工程的范围，不据此给残石指定具体刻成年份。

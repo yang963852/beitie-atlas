@@ -16,6 +16,8 @@ Wufeng Inscription
 
 别名：鲁孝王泮池刻石、鲁孝王刻石
 
+延伸阅读：[02｜专题：秦汉——统一文字与隶书登场](../notes/essay-02-qin-han.md) · [09｜阅读路径：隶变——从青铜到汉碑](../notes/path-01-clerical-turn.md)
+
 <a name="stele-wufeng-inscription"></a>
 
 ## 五凤刻石（刻石）

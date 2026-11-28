@@ -18,7 +18,7 @@ Stone Drum Inscriptions
 
 书体：大篆
 
-延伸阅读：[石鼓文](../works/stone-drum-inscriptions.md)
+延伸阅读：[石鼓文](../works/stone-drum-inscriptions.md) · [01｜专题：先秦——青铜、石鼓与竹简](../notes/essay-01-pre-qin.md) · [09｜阅读路径：隶变——从青铜到汉碑](../notes/path-01-clerical-turn.md)
 
 作品待考与说明
 

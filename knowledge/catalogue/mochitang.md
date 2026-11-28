@@ -15,6 +15,8 @@ Mochitang Modelbook
 - 集字 · 章藻（有明确记载）  [出处 1](#ref-src-dpm-234595)
 - 刻字 · 章藻（有明确记载）  [出处 1](#ref-src-dpm-234595)
 
+延伸阅读：[07｜专题：元明——复古与性灵](../notes/essay-07-yuan-ming.md) · [13｜阅读路径：帖学——刻帖的谱系](../notes/path-05-modelbook.md)
+
 <a name="dpm-mochitang-026"></a>
 
 ## 《墨池堂选帖》（明拓本）

@@ -18,6 +18,8 @@ Epitaph of Zhang Xuan
 
 书体：楷书
 
+延伸阅读：[04｜专题：南北朝——碑、志与摩崖](../notes/essay-04-northern-southern.md)
+
 作品待考与说明
 
 - 志文行款有二十行与十二行两说，现存字数亦有出入，未据拓本复核。

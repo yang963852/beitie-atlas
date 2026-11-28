@@ -18,7 +18,7 @@ Stele of the Imperial Preceptor Dampa
 
 书体：楷书
 
-延伸阅读：[赵孟頫](../people/zhao-mengfu.md)
+延伸阅读：[赵孟頫](../people/zhao-mengfu.md) · [07｜专题：元明——复古与性灵](../notes/essay-07-yuan-ming.md)
 
 作品待考与说明
 

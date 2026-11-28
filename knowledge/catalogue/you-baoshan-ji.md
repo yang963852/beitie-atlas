@@ -20,7 +20,7 @@ Poems from the Baoshan Excursion
 
 书体：小楷
 
-延伸阅读：[王宠](../people/wang-chong.md)
+延伸阅读：[王宠](../people/wang-chong.md) · [07｜专题：元明——复古与性灵](../notes/essay-07-yuan-ming.md)
 
 作品待考与说明
 
