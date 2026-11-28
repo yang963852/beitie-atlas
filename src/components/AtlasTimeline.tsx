@@ -2,6 +2,7 @@ import { type MouseEvent, useEffect, useLayoutEffect, useMemo, useRef, useState 
 import { isReleaseBuild } from '../domain/build';
 import { getDataset, getObject, getPlace } from '../domain/data';
 import { findEntry, libraryEntries, matchesQuery, type LibraryEntry } from '../domain/library';
+import { knowledgeArticles } from '../domain/knowledge';
 import { DYNASTIES, findDynasty } from '../domain/dynasties';
 import { formatDate } from '../domain/dates';
 import { formatAttribution } from '../domain/attribution';
@@ -18,6 +19,7 @@ import { KnowledgeProse } from './KnowledgeProse';
 import { ProvenanceEvents } from './ProvenanceEvents';
 import { ClaimSection } from './ClaimSection';
 import { SourceList } from './SourceList';
+import { copyingNotesFor, copyingPeopleFor, WorkCopyingEntry } from './WorkCopyingEntry';
 import './atlas-timeline.css';
 
 const localMedia = import.meta.glob<string>('../assets/*.webp', { eager: true, query: '?url', import: 'default' });
@@ -162,6 +164,15 @@ function WorkFolio({ entry, close }: { entry: LibraryEntry; close: () => void })
         <button ref={closeRef} type="button" onClick={close} aria-label={zh ? '关闭阅读卡片' : 'Close reading card'}>×</button></div>
       <h2 id="folio-title">{title(entry,locale)}</h2>
       <p className="folio__byline">{byline(entry,locale,strings.attributionRoleShort)}</p>
+      <WorkCopyingEntry
+        objects={witnesses}
+        notes={copyingNotesFor(entry.id, knowledgeArticles)}
+        people={copyingPeopleFor(entry)}
+        onOpenObject={(objectId) => {
+          window.history.pushState({ fromFolio: entry.id }, '', '#/transmission/' + objectId);
+          window.dispatchEvent(new HashChangeEvent('hashchange'));
+        }}
+      />
       {dataset.media.filter(media => witnesses.some(object => object.id === media.objectId)).map(media => {
         const url = localMedia[media.assetPathOrUrl.replace(/^src\//, '../')];
         if (!url) return null;

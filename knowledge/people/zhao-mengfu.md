@@ -37,11 +37,13 @@ sources: [src-dpm-daba, src-catalogue-zhao-luoshen, src-tnm-sanmen, src-colbase-
 
 本库所收[《胆巴碑》](../works/daba-bei.md)、[《三门记》](../works/sanmen-ji.md)、[《洛神赋》](../works/zhao-luoshen.md)与[《赵子昂游天冠山诗》](../works/tianguanshan-poems.md)。故宫藏《胆巴碑》为纸本稿，纵三十三点六厘米，横五百六十三厘米（书心另有一百六十六厘米一说），两说并存。[故宫博物院，赵孟頫楷书帝师胆巴碑卷](https://www.dpm.org.cn/subject_zhaomengfu/achievement/245821.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《胆巴碑》](../works/daba-bei.md)为纸本稿、非刻石，[《三门记》](../works/sanmen-ji.md)为碑文原稿、非碑石，[《洛神赋》](../works/zhao-luoshen.md)为纸本行书墨迹，三者各依馆方著录分记。[《赵子昂游天冠山诗》](../works/tianguanshan-poems.md)在西安碑林为刻石，但馆方指出据以刻石的墨本真伪尚有异说、书家归属须存疑；石上的刻痕是真的，不能反过来证明墨本为真。此处不因同署赵名而抹平各件的差别。
+- [《胆巴碑》](../works/daba-bei.md)：赵孟頫奉敕自撰自书的纸本大楷稿，不是存世刻石。
+- [《三门记》](../works/sanmen-ji.md)：赵孟頫为苏州玄妙观重修三门誊写并篆额的楷书碑文稿，馆方称其取法李邕。
+- [《洛神赋》](../works/zhao-luoshen.md)：赵孟頫的行书《洛神赋》卷，款署子昂无年，馆方据书风判断约作于其五十岁前后。
+- [《赵子昂游天冠山诗》](../works/tianguanshan-poems.md)：旧题赵孟頫的游天冠山诗，馆方指出刻石墨本真伪与书家归属均有异说。
 
 ## English
 
@@ -67,8 +69,9 @@ The account above — studying Zhong You, the two Wangs, Li Yong, Emperor Gaozon
 
 The library holds the [Dampa Stele](../works/daba-bei.md), [Record of the Three Gates](../works/sanmen-ji.md), [Rhapsody on the Goddess of the Luo](../works/zhao-luoshen.md) and [Poems on Mount Tianguan](../works/tianguanshan-poems.md). The Palace Museum's Dampa copy is a draft on paper, 33.6 by 563 cm (the calligraphy alone given elsewhere as about 166 cm); both readings are kept. [Palace Museum, Zhao Mengfu's Dampa stele](https://www.dpm.org.cn/subject_zhaomengfu/achievement/245821.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. The [Dampa Stele](../works/daba-bei.md) is a draft on paper, not a carved stone; the [Three Gates](../works/sanmen-ji.md) is the draft of a stele text, not the stone; and the [Luoshen fu](../works/zhao-luoshen.md) is ink on paper in running script, each recorded as the museum states. The [Poems on Mount Tianguan](../works/tianguanshan-poems.md) is a carved stone at the Beilin, but the museum notes that the authenticity of the ink model from which it was cut is disputed and the attribution must be held in doubt: the cuts in the stone are real, which cannot in turn prove the model genuine. The works are not levelled by sharing one name.
+- [Stele of the Imperial Preceptor Dampa](../works/daba-bei.md): A paper draft in large regular script composed and written by Zhao Mengfu by imperial order, not a surviving carved stele.
+- [Record of the Three Gates of the Xuanmiao Abbey](../works/sanmen-ji.md): Zhao Mengfu’s regular-script draft for the Xuanmiao Abbey’s rebuilt three gates in Suzhou, with a seal-script heading and a manner the museum relates to Li Yong.
+- [Rhapsody on the Goddess of the Luo](../works/zhao-luoshen.md): Zhao Mengfu’s running-script Rhapsody on the Goddess of the Luo, signed Zi’ang without a date and judged by the museum from its style to be from around his fiftieth year.
+- [Poems on Mount Tianguan attributed to Zhao Mengfu](../works/tianguanshan-poems.md): Poems on an excursion to Mount Tianguan traditionally attributed to Zhao Mengfu, whose ink model and calligrapher the museum leaves disputed.

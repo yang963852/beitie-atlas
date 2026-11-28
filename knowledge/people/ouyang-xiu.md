@@ -27,12 +27,10 @@ sources: [src-dpm-ouyang-xiu-zhuai, src-nlc-jigulu]
 
 故宫著录《灼艾帖》卷，纸本册页，纵二十五厘米、横十八厘米，行楷书六行六十九字，馆方考释为欧阳修致学生焦千之的书信；卷后有苏轼、李东阳评语，《墨缘汇观》著录。另国家图书馆著录《集古录》十卷，责任者「(宋)欧阳修撰」，版本为清抄本，藏国家图书馆，善本书号 13257——此著录对象是清抄本，不是《集古录跋尾》墨迹卷。[故宫博物院，欧阳修行楷书灼艾帖卷](https://www.dpm.org.cn/collection/handwriting/234575.html) · [国家图书馆，集古录十卷](https://read.nlc.cn/allSearch/searchDetail?fid=411999022425&indexName=data_892&searchType=10024&showType=1)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依馆方著录，《灼艾帖》为纸本行楷墨迹，属墨迹一路；《集古录》十卷为国家图书馆著录的清抄本，是古籍而非书迹。抄本与墨迹分记，不以古籍著录当作书家手笔。
-
+本页尚未关联可供临写的作品页。
 ## English
 
 ### Life and identity
@@ -47,8 +45,6 @@ Scripts and teacher lineage remain open; the cited sources do not transcribe the
 
 The museum records the Zhuai ai tie, ink on paper in album form, 25 by 18 cm, running-regular script in six lines and sixty-nine characters, which the museum reads as a letter to his student Jiao Qianzhi, with judgements by Su Shi and Li Dongyang and a Motuan huiguan record. The National Library catalogues the Jigulu in ten juan, attributed to "Ouyang Xiu of Song," as a Qing manuscript, shelf number 13257 — a bibliographic record, not the autograph colophon scroll. [Palace Museum, Zhuai ai tie](https://www.dpm.org.cn/collection/handwriting/234575.html) · [National Library, Jigulu](https://read.nlc.cn/allSearch/searchDetail?fid=411999022425&indexName=data_892&searchType=10024&showType=1)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. By the museum, the Zhuai ai tie is an ink manuscript on paper in running-regular script, an ink witness; the Jigulu in ten juan is a Qing manuscript catalogued by the National Library, a book rather than a calligraphic work. The manuscript and the ink witness are recorded separately and the book is not written up as his hand.
+No work page is linked to this person yet.

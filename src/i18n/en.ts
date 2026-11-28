@@ -83,6 +83,11 @@ export const enStrings = {
   backgroundHeading: 'About this work',
   backgroundLanguageNote: 'Recorded in the language shown; no translation is generated.',
 
+  copyingEntryTitle: 'Before you copy this work',
+  copyingEntryObjects: 'Witness details',
+  copyingEntryNotes: 'Close readings',
+  copyingEntryPeople: 'Calligraphers',
+
   contributeAction: 'Add or correct information',
   contributeTitle: 'Submit information',
   contributeIntro:

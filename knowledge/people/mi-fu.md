@@ -35,11 +35,12 @@ sources: [src-catalogue-tiaoxi, src-dpm-231255, src-catalogue-shusu]
 
 本库所收[《苕溪诗卷》](../works/tiaoxi.md)、[《蜀素帖》](../works/shusu.md)与[《珊瑚帖》](../works/shanhu.md)。《苕溪诗卷》书于元祐三年（1088），米友仁跋称「先臣芾真迹」，为递藏链第一环；同年《蜀素帖》可对看。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《苕溪诗卷》](../works/tiaoxi.md)为纸本行书墨迹，卷末米友仁「鉴定恭跋」称其父真迹，是馆方著录中的鉴定链；[《珊瑚帖》](../works/shanhu.md)馆方称为米芾唯一的传世画迹，属墨迹一路。此处标记的是墨迹载体与馆方著录的鉴定链，不作真伪鉴定结论。
+- [《苕溪诗卷》](../works/tiaoxi.md)：米芾的行书诗卷，《石渠宝笈》初编著录，1964年由故宫博物院购入。
+- [《蜀素帖》](../works/shusu.md)：米芾1088年应林希之请在蜀素上书八首行书诗的纸本卷。
+- [《珊瑚帖》](../works/shanhu.md)：米芾谈收藏并画珊瑚笔架的行书信札，文字与小图相接。
 
 ## English
 
@@ -63,8 +64,8 @@ The account above — first taking the Two Wangs and Yan Zhenqing as models, the
 
 The library holds the [Tiaoxi Poems](../works/tiaoxi.md), [Poems on Shu Silk](../works/shusu.md) and [Coral Letter](../works/shanhu.md). The Tiaoxi Poems were written in 1088, and Mi Youren's colophon calling them "the true trace of my late father Fu" is the first link in the chain of transmission; the Poems on Shu Silk of the same year can be read against it.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. The [Tiaoxi Poems](../works/tiaoxi.md) are ink on paper in running script, with Mi Youren's "appraised and colophoned" note calling them his father's true trace, an appraisement recorded in the museum catalogue; the [Coral Letter](../works/shanhu.md) is called by the museum the only surviving painting by Mi Fu, an ink witness. These marks describe the ink carrier and the catalogued chain of appraisement, not an authenticity verdict of this library.
+- [Tiaoxi Poems](../works/tiaoxi.md): Mi Fu’s running-script poem scroll, recorded in the first Shiqu baoji and acquired by the Palace Museum in 1964.
+- [Poems on Shu Silk](../works/shusu.md): Mi Fu’s 1088 running-script paper scroll of eight poems written on Shu silk at Lin Xi’s request.
+- [Coral Letter](../works/shanhu.md): Mi Fu’s running-script letter about collecting, with a coral brush-rest drawn where the text meets the small image.

@@ -35,11 +35,10 @@ sources: [src-lnm-gushisitie, src-lnd-gushisitie]
 
 本库所收[《古诗四帖》](../works/gushi-sitie.md)纸本草书，一百八十八字，今藏辽宁省博物馆。作品归名几经改易：北宋初认作谢灵运书，明董其昌才指出是张旭，本库因此把作者写作“传张旭”。[辽宁省博物馆，姑苏繁华图、张旭草书四帖领衔](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-○ 本页 `objects` 为空。辽宁省博物馆的展品页只确立[《古诗四帖》](../works/gushi-sitie.md)的题名、传统归名与收藏，未说明鉴定依据，本库故写作“传张旭”；北宋误归谢灵运与明董其昌定名两说并存，不取其一为定论。馆方著录的纸本草书载体，不因归名改动而改变。
+- [《古诗四帖》](../works/gushi-sitie.md)：传为张旭所书的纸本草书长卷，写庾信、谢灵运诗，今藏辽宁省博物馆。
 
 ## English
 
@@ -63,8 +62,6 @@ The lineage quoted above from Lu Xie's Linchi jue and the story of the old man's
 
 The [Four Poems in Cursive Script](../works/gushi-sitie.md) held here is ink on paper in cursive, 188 characters, kept in the Liaoning Provincial Museum. Its attribution changed more than once: taken as Xie Lingyun's in the early Northern Song, named Zhang Xu only by Dong Qichang in the Ming, so this library records the author as "attributed to Zhang Xu." [Liaoning Provincial Museum, Zhang Xu's cursive scroll](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. The museum's exhibition page establishes only the title, the traditional attribution and the holding of the [Four Poems](../works/gushi-sitie.md) and sets out no evidence for the attribution, so the library writes "attributed to Zhang Xu." The early Song attribution to Xie Lingyun and Dong Qichang's Ming identification are kept side by side, neither preferred as settled. The paper-and-ink carrier recorded by the museum does not change with the attribution.
+- [Four Poems in Cursive Script](../works/gushi-sitie.md): A long cursive-script paper scroll traditionally attributed to Zhang Xu, carrying poems by Yu Xin and Xie Lingyun and now held by the Liaoning Provincial Museum.

@@ -16,7 +16,7 @@ Preface to the Orchid Pavilion
 
 书体：行书
 
-延伸阅读：[兰亭序](../works/lanting.md) · [冯承素](../people/feng-chengsu.md) · [王羲之](../people/wang-xizhi.md) · [03｜专题：魏晋——名家、信札与复制](../notes/essay-03-wei-jin.md) · [11｜阅读路径：行草——从信札到狂草](../notes/path-03-running-cursive.md) · [13｜阅读路径：帖学——刻帖的谱系](../notes/path-05-modelbook.md) · [14｜阅读路径：一作两命——原石与拓本](../notes/path-06-one-work-two-lives.md)
+延伸阅读：[兰亭序](../works/lanting.md) · [冯承素](../people/feng-chengsu.md) · [王羲之](../people/wang-xizhi.md) · [03｜专题：魏晋——名家、信札与复制](../notes/essay-03-wei-jin.md) · [从五个损字辨认定武肥本《兰亭序》](../notes/lanting-dingwu-damage.md) · [11｜阅读路径：行草——从信札到狂草](../notes/path-03-running-cursive.md) · [13｜阅读路径：帖学——刻帖的谱系](../notes/path-05-modelbook.md) · [14｜阅读路径：一作两命——原石与拓本](../notes/path-06-one-work-two-lives.md)
 
 <a name="dingwu-zhan"></a>
 

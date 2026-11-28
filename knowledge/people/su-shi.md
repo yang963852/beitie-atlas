@@ -37,11 +37,11 @@ sources: [src-catalogue-hanshi, src-dpm-231008, src-scwwj-hanshi]
 
 本库所收[《黄州寒食诗帖》](../works/hanshi.md)与[《治平帖》](../works/zhiping-tie.md)。前者书于元丰五年（1082），两首诗一百二十九字；后者纸本行书，馆方据卷后赵孟頫、文徵明、王穉登三跋定为熙宁年间京师所作。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《黄州寒食诗帖》](../works/hanshi.md)与[《治平帖》](../works/zhiping-tie.md)均为纸本行书墨迹；董其昌观款说《寒食帖》「已摹刻戏鸿堂帖中」，故另有刻帖一路的读法，与墨迹分开记。1951 年入藏前后递传与火痕，见上文，不因流传而改其载体。
+- [《黄州寒食诗帖》](../works/hanshi.md)：苏轼书《寒食雨二首》的行书纸本，卷后有黄庭坚跋。
+- [《治平帖》](../works/zhiping-tie.md)：苏轼写给治平史院主与徐大师的行书日常托付信，纸本，署八月十八日。
 
 ## English
 
@@ -65,10 +65,7 @@ The account above — drawing on Wang Sengqian, Li Yong, Xu Hao, Yan Zhenqing an
 
 The library holds the [Cold Food Poems](../works/hanshi.md) and the [Letter to the Zhipping Monastery](../works/zhiping-tie.md). The former was written in 1082, two poems of 129 characters; the latter is ink on paper in running script, dated by the museum from the three colophons to his years in the capital under the Xining reign.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. Both the [Cold Food Poems](../works/hanshi.md) and the [Letter to Zhipping](../works/zhiping-tie.md) are ink on paper in running script; Dong Qichang's inscription says the Cold Food Poems were "already carved into the Xihongtang modelbook," so a modelbook engraving is a separate reading from the ink witness, and they are kept apart. The transmission and the burn marks above do not change the carrier.
-
-He also left a letter in the Palace Museum, dated to the Xining years. The [Letter to the Zhipping Monastery](../works/zhiping-tie.md), ink on paper, 29.2 by 45.2 cm, is addressed to the head of the Zhipping cloister and to Master Xu and asks them to look after the graves at Shitou Bridge and Pengtou; it is signed “the eighteenth of the eighth month”. From the colophons of Zhao Mengfu, Wen Zhengming and Wang Zhideng the museum dates it to his years in the capital under the Xining reign, when he was in his thirties, and quotes Zhao’s phrase “the strokes have the elegance of a fine manner” for its early brushwork. The frontispiece carries a Ming portrait of Su Shi and a eulogy written by the monk Donggao Miaosheng; with the three colophons come the collectors’ seals of Song Luo and Zhang Ji. [Palace Museum, Su Shi’s letter to Zhipping](https://www.dpm.org.cn/collection/handwriting/231008.html)
+- [Cold Food Poems](../works/hanshi.md): A running-script paper scroll of Su Shi’s two Cold Food poems, followed by a colophon from Huang Tingjian.
+- [Letter to the Zhipping Monastery](../works/zhiping-tie.md): Su Shi’s running-script letter on paper to the Zhiping history-office master and Master Xu, dealing with everyday requests and dated only the eighteenth day of the eighth month.

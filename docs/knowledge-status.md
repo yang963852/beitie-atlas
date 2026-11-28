@@ -12,9 +12,9 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | Objects | 140 (140 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
 | People pages | 55 |
-| Notes | 16 |
+| Notes | 24 |
 | Places | 47 (38 with coordinates) |
-| Sources | 298 (0 uncited) |
+| Sources | 299 (0 uncited) |
 | Events | 96 (55 objects with events) |
 | Attribution entries linked to a person | 72 / 180 |
 | Work sources (0 / 1 / 2+) | 0 / 77 / 56 |

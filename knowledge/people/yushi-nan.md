@@ -35,11 +35,11 @@ sources: [src-beilin-kongzi-miaotang, src-shaanxi-wwz-kongzi, src-shm-runan]
 
 本库所收[《孔子庙堂碑》](../works/kongzi-miaotang-bei.md)与[《汝南公主墓志铭》](../works/runan-gongzhu-muzhi.md)。西安碑林记西庙堂重刻的尺寸、行数与刻工；陕西省文物志另记原石 629—630、重刻 961—964 与不同尺寸，两说并存，本库不改写成一种。[西安碑林博物馆，孔子庙堂碑](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2596)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依著录分层：[《孔子庙堂碑》](../works/kongzi-miaotang-bei.md)原石贞观间已毁，本库所收是北宋建隆至乾德间的西庙堂重刻，属重刻一路；[《汝南公主墓志铭》](../works/runan-gongzhu-muzhi.md)是纸本墨迹草稿，馆方称为他唯一接近真迹的墨迹，而「米临」一说两存，不写成定论。两件的载体与归名分记。
+- [《孔子庙堂碑》](../works/kongzi-miaotang-bei.md)：虞世南629至630年间书的楷书碑，原石早毁，今见北宋重刻的西庙堂本。
+- [《汝南公主墓志铭》](../works/runan-gongzhu-muzhi.md)：虞世南636年为汝南公主撰墓志的行书纸本草稿，因是草稿无款且后半残缺。
 
 ## English
 
@@ -61,8 +61,7 @@ The study under Zhiyong and the Two Wangs manner are noted above; the museum bio
 
 The library holds the [Stele of the Confucius Temple](../works/kongzi-miaotang-bei.md) and the [Epitaph for Princess Runan](../works/runan-gongzhu-muzhi.md). The Beilin Museum records the size, line count and cutter of the Western Temple recutting; a provincial heritage compilation gives the original as 629–630, the recut as 961–964, with different measurements. Both readings are kept and not reduced to one. [Xi'an Beilin Museum, Confucius Temple Stele](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2596)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. By the catalogues, the original stone of the [Confucius Temple Stele](../works/kongzi-miaotang-bei.md) was destroyed in the Zhenguan period and what is held here is the Northern Song Western Temple recutting, a recut witness; the [Epitaph for Princess Runan](../works/runan-gongzhu-muzhi.md) is an ink draft on paper, called by the museum the only manuscript of his that comes close to an autograph, while the Mi Fu attribution stays open. The carrier and the attribution of each are recorded separately.
+- [Stele of the Confucius Temple](../works/kongzi-miaotang-bei.md): A regular-script stele written by Yu Shinan around 629–630, whose original was soon destroyed and survives in the Northern Song recutting of the Western Temple version.
+- [Epitaph for Princess Runan](../works/runan-gongzhu-muzhi.md): Yu Shinan’s 636 running-script paper draft of Princess Runan’s epitaph, unsigned because it was a draft and incomplete at the end.

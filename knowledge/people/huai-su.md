@@ -27,11 +27,10 @@ sources: [src-beilin-huaishu-qianziwen, src-shm-kusun-tie]
 
 本库所收[《自叙帖》](../works/zixu.md)为台北故宫著录的墨迹卷；该馆数位典藏页本次多次无法打开，故本页不逐字引其内容，作品细节留在作品条目与待考中。另有上博《苦笋帖》绢本，纵二十五点一厘米、横十二厘米，全文十四字，馆方称为传世亲笔墨迹之一。[上海博物馆，草书苦笋帖卷](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/P00002749)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。《苦笋帖》馆方著录为绢本墨迹、传世亲笔墨迹之一，属墨迹一路；[《自叙帖》](../works/zixu.md)的馆方页本次不可达，其载体与归属不作新的断言，留待核对。碑林所刻《千字文》为明成化六年（1470）余子俊刻立，属刻石一路，与墨迹分记。
+- [《自叙帖》](../works/zixu.md)：怀素自述生平与书学经历的草书帖，作品页系于大历十二年（777）。
 
 ## English
 
@@ -47,8 +46,6 @@ The Beilin records his fame for wild cursive and the pairing with Zhang Xu, and 
 
 The [Zixu tie](../works/zixu.md) held here is the ink scroll catalogued by the National Palace Museum; its digital record could not be opened during this check, so this page does not quote it verbatim and leaves the details to the work record. The Shanghai Museum's Kusun tie is ink on silk, 25.1 by 12 cm, fourteen characters, called by the museum one of his surviving autograph ink traces. [Shanghai Museum, Kusun tie](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/P00002749)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The Kusun tie is catalogued as ink on silk and one of his surviving autograph ink traces, an ink witness; the museum page for the [Zixu tie](../works/zixu.md) was unreachable, so no new claim is made about its carrier or attribution, which stays open. The Beilin's Thousand Character Classic was cut in 1470 by Yu Zijun, a stone witness recorded apart from ink.
+- [Autobiography](../works/zixu.md): Huai Su’s cursive account of his life and study of calligraphy, dated by the work page to 777.

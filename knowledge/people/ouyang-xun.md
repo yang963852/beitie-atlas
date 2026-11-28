@@ -37,11 +37,14 @@ sources: [src-dpm-234567, src-dpm-yugong-song, src-beilin-huangfudan, src-baoji-
 
 本库所收四碑一帖：[《九成宫醴泉铭》](../works/jiuchenggong-liquan-ming.md)、[《皇甫诞碑》](../works/huangfu-dan-bei.md)、[《化度寺邕禅师舍利塔铭》](../works/huadu-si.md)、[《虞恭公碑》](../works/yugong-gong-bei.md)与[《张翰帖》](../works/zhanghan.md)。故宫记《虞恭公碑》立春碑刻于贞观十一年（637）十月、岑文本撰、篆额四行十六字，本库照录。[故宫博物院，宋拓虞恭公温彦博碑](https://www.dpm.org.cn/collection/impres/228414.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依著录分层：三碑书丹于石、[《化度寺邕禅师舍利塔铭》](../works/huadu-si.md)以拓本传世；[《张翰帖》](../works/zhanghan.md)故宫著录为纸本行书、唐人所摹，属摹本一路，不得当作亲笔。碑刻的原石与摹本的载体分记，不因同署欧阳询之名而合并。
+- [《九成宫醴泉铭》](../works/jiuchenggong-liquan-ming.md)：欧阳询书丹、魏徵撰铭的632年楷书碑，原石今存九成宫遗址但损泐过多。
+- [《皇甫诞碑》](../works/huangfu-dan-bei.md)：欧阳询为皇甫诞所书的楷书碑，刻石确年未详。
+- [《化度寺邕禅师舍利塔铭》](../works/huadu-si.md)：欧阳询所书的塔铭，吴湖帆曾藏其宋拓。
+- [《虞恭公碑》](../works/yugong-gong-bei.md)：欧阳询637年书的温彦博墓碑楷书，碑下半入宋断裂，最旧拓本仅存八百余字。
+- [《张翰帖》](../works/zhanghan.md)：欧阳询节录张翰弃官归乡故事的行书帖，今传本为唐人钩填。
 
 ## English
 
@@ -67,8 +70,10 @@ Scripts and teacher lineage remain open; the cited catalogues do not transcribe 
 
 The library holds four steles and one letter: the [Sweet Spring at Jiucheng Palace](../works/jiuchenggong-liquan-ming.md), [Huangfu Dan Stele](../works/huangfu-dan-bei.md), [Huadu Temple Stupa Inscription](../works/huadu-si.md), [Yugong Gong Stele](../works/yugong-gong-bei.md) and [Zhang Han letter](../works/zhanghan.md). The Palace Museum dates the Yugong Gong stone to the tenth month of 637, names Cen Wenben as composer and records a seal heading of four lines of sixteen characters; this is recorded as stated. [Palace Museum, Song rubbing of the Yugong Gong Stele](https://www.dpm.org.cn/collection/impres/228414.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. By the catalogues, three steles were written onto stone; the [Huadu Temple Stupa Inscription](../works/huadu-si.md) survives as rubbings; and the [Zhang Han letter](../works/zhanghan.md) is catalogued by the Palace Museum as ink on paper in running script, a Tang tracing — a copy, not an autograph. Original stones and the tracing are recorded by their separate carriers and not merged under one name.
+- [Sweet Spring at Jiucheng Palace](../works/jiuchenggong-liquan-ming.md): A 632 regular-script stele with text by Wei Zheng and calligraphy by Ouyang Xun, whose surviving stone at Jiucheng Palace is badly worn.
+- [Stele of Huangfu Dan](../works/huangfu-dan-bei.md): A regular-script stele written by Ouyang Xun for Huangfu Dan, with the carving’s exact year unrecorded.
+- [Huadu Temple Stupa Inscription](../works/huadu-si.md): A stupa inscription written by Ouyang Xun, whose Song rubbing was once collected by Wu Hufan.
+- [Stele of Duke Yugong](../works/yugong-gong-bei.md): Ouyang Xun’s 637 regular-script memorial stele for Wen Yanbo, broken across its lower half by the Song and preserving only about eight hundred characters in its earliest rubbing.
+- [Letter on Zhang Han](../works/zhanghan.md): Ouyang Xun’s running-script extract of Zhang Han’s resignation and return home, surviving in a Tang traced-and-filled copy.
