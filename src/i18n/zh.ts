@@ -77,6 +77,11 @@ export const zhStrings: Strings = {
   backgroundHeading: '作品背景',
   backgroundLanguageNote: '按记录语言显示，不做即时翻译。',
 
+  copyingEntryTitle: '临这件要知道什么',
+  copyingEntryObjects: '实物要点',
+  copyingEntryNotes: '细读笔记',
+  copyingEntryPeople: '书家',
+
   contributeAction: '补充或纠正这条记录',
   contributeTitle: '提交资料',
   contributeIntro:
