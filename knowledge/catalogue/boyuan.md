@@ -16,7 +16,7 @@ Letter to Boyuan
 
 书体：行书
 
-延伸阅读：[王珣](../people/wang-xun.md)
+延伸阅读：[王珣](../people/wang-xun.md) · [03｜专题：魏晋——名家、信札与复制](../notes/essay-03-wei-jin.md)
 
 <a name="witness-boyuan"></a>
 

@@ -18,6 +18,8 @@ Stele of the Longzang Temple
 
 书体：楷书
 
+延伸阅读：[05｜专题：隋唐——楷则与碑版](../notes/essay-05-sui-tang.md) · [10｜阅读路径：楷化——从钟繇到唐楷](../notes/path-02-regularization.md)
+
 作品待考与说明
 
 - 所读页面只给出一个通高（3.24 米），但与碑阳高度加 0.42 米碑额不相合；结构化高度暂不填写，也不取平均、不作推测。

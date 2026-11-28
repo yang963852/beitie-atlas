@@ -19,7 +19,7 @@ Thirteen Lines from the Goddess of the Luo
 
 书体：小楷
 
-延伸阅读：[王献之](../people/wang-xianzhi.md)
+延伸阅读：[王献之](../people/wang-xianzhi.md) · [03｜专题：魏晋——名家、信札与复制](../notes/essay-03-wei-jin.md) · [11｜阅读路径：行草——从信札到狂草](../notes/path-03-running-cursive.md)
 
 作品待考与说明
 

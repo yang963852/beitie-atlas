@@ -20,7 +20,7 @@ Fund-raising Notice for the Zhenjing Nunnery
 
 书体：行书
 
-延伸阅读：[杨维桢](../people/yang-weizhen.md)
+延伸阅读：[杨维桢](../people/yang-weizhen.md) · [07｜专题：元明——复古与性灵](../notes/essay-07-yuan-ming.md)
 
 作品待考与说明
 

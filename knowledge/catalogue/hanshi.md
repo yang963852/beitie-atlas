@@ -16,7 +16,7 @@ Cold Food Poems
 
 书体：行书
 
-延伸阅读：[苏轼](../people/su-shi.md)
+延伸阅读：[苏轼](../people/su-shi.md) · [06｜专题：宋代——刻帖、墨迹与士人书](../notes/essay-06-song.md) · [11｜阅读路径：行草——从信札到狂草](../notes/path-03-running-cursive.md)
 
 <a name="witness-hanshi"></a>
 

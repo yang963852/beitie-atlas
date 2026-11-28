@@ -20,6 +20,8 @@ Dedication for the Late Duke of Shiping
 
 书体：楷书（魏碑）
 
+延伸阅读：[04｜专题：南北朝——碑、志与摩崖](../notes/essay-04-northern-southern.md) · [10｜阅读路径：楷化——从钟繇到唐楷](../notes/path-02-regularization.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md)
+
 作品待考与说明
 
 - 未引石面测量。展览说明记龙门石窟研究院藏拓片长八十九、宽三十九厘米，那是纸幅，不是石面尺寸。

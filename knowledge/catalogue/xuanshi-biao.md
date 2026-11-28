@@ -19,7 +19,7 @@ Memorial of Declaration
 
 书体：小楷
 
-延伸阅读：[王羲之](../people/wang-xizhi.md) · [钟繇](../people/zhong-yao.md)
+延伸阅读：[王羲之](../people/wang-xizhi.md) · [钟繇](../people/zhong-yao.md) · [03｜专题：魏晋——名家、信札与复制](../notes/essay-03-wei-jin.md) · [10｜阅读路径：楷化——从钟繇到唐楷](../notes/path-02-regularization.md)
 
 作品待考与说明
 
