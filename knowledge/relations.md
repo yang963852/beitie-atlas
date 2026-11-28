@@ -18,6 +18,14 @@ relations:
     sourceRefs:
       - src-beilin-daoyin
     state: reviewed
+  - from: su-shi
+    to: huang-tingjian
+    type: teacher-student
+    labelZh: 问学于苏轼门下
+    labelEn: Studied under Su Shi
+    sourceRefs:
+      - src-dpm-zhushangzuo
+    state: reviewed
 ---
 
 # 人物关系

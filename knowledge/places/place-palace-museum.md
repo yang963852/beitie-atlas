@@ -4,6 +4,7 @@ nameZh: 故宫博物院
 nameEn: The Palace Museum
 historicalName: null
 kind: institution
+province: beijing
 coordinateLongitude: 116.39083333
 coordinateLatitude: 39.91555556
 coordinatePrecision: institution

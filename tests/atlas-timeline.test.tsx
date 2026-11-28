@@ -27,11 +27,59 @@ it('keeps the rubbing’s transmission separate from the original stone on a dir
   expect(within(page).queryByText(/在地下数米处发现此石/)).not.toBeInTheDocument();
 });
 
-it('opens the surviving-witness map directly with a witness type selector', () => {
+it('opens the extant map directly with a witness type selector', () => {
   visit('#/collections');
-  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent('传世实物地图');
+  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent('现存地图');
   expect(screen.getByRole('combobox', {name: '实物类型'})).toContainElement(screen.getByRole('option', {name: '拓本'}));
   expect(screen.getByRole('group', {name: '本图点位'})).toBeVisible();
+});
+
+it('filters surviving witnesses by province and lists their titles', () => {
+  visit('#/collections');
+  const provinces = screen.getByRole('group', { name: '按省份筛选' });
+  fireEvent.click(within(provinces).getByRole('button', { name: /^陕西/ }));
+
+  const panel = screen.getByRole('complementary', { name: '按省份浏览' });
+  expect(within(panel).getByRole('button', { name: /颜勤礼碑（原石）/ })).toBeVisible();
+  expect(within(panel).queryByRole('button', { name: /伯远帖/ })).not.toBeInTheDocument();
+
+  fireEvent.click(within(provinces).getByRole('button', { name: /^全部/ }));
+  expect(within(panel).queryByRole('button', { name: /颜勤礼碑（原石）/ })).not.toBeInTheDocument();
+});
+
+it('shows the coordinate caveat for a representative map point', () => {
+  visit('#/collections');
+  expect(screen.getByText(/以北海公园（维基数据 Q133650）作代表点/)).toBeVisible();
+});
+
+it('keeps a province place without coordinates readable and marks it not mapped', () => {
+  visit('#/collections');
+  const provinces = screen.getByRole('group', { name: '按省份筛选' });
+  fireEvent.click(within(provinces).getByRole('button', { name: /^陕西/ }));
+
+  const panel = screen.getByRole('complementary', { name: '按省份浏览' });
+  expect(within(panel).getByText('汉中市博物馆')).toBeVisible();
+  expect(within(panel).getByText('石门颂（摩崖）')).toBeVisible();
+  expect(within(panel).getByText('石门铭（摩崖）')).toBeVisible();
+  expect(within(panel).getAllByText('未上图').length).toBeGreaterThan(0);
+});
+
+it('restores the selected province after reading a witness', async () => {
+  visit('#/collections');
+  const provinces = screen.getByRole('group', { name: '按省份筛选' });
+  const shaanxi = within(provinces).getByRole('button', { name: /^陕西/ });
+  fireEvent.click(shaanxi);
+
+  const panel = screen.getByRole('complementary', { name: '按省份浏览' });
+  fireEvent.click(within(panel).getByRole('button', { name: /颜勤礼碑（原石）/ }));
+  await waitFor(() => expect(screen.queryByRole('group', { name: '按省份筛选' })).toBeNull());
+
+  window.history.back();
+  await waitFor(() => {
+    const restored = within(screen.getByRole('group', { name: '按省份筛选' }))
+      .getByRole('button', { name: /^陕西/ });
+    expect(restored).toHaveAttribute('aria-pressed', 'true');
+  });
 });
 
 it('restores the collection filter and open place after reading a witness', async () => {

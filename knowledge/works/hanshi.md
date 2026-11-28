@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 苏轼
     nameEn: Su Shi
+    person: su-shi
     certainty: documented
     sources:
       - src-catalogue-hanshi

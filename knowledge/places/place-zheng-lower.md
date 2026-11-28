@@ -4,6 +4,7 @@ nameZh: 莱州云峰山
 nameEn: Mount Yunfeng, Laizhou
 historicalName: null
 kind: historical-site
+province: shandong
 sources:
   - src-laizhou-yunfeng
   - src-yantai-zheng

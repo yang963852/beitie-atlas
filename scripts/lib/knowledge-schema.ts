@@ -7,6 +7,7 @@
  */
 
 import { parse } from 'yaml';
+import { PROVINCE_IDS } from '../../src/domain/provinces';
 import type {
   Attribution,
   Claim,
@@ -77,7 +78,8 @@ export const FIELD_NAMES: Readonly<Record<string, readonly string[]>> = {
     'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases', 'people',
   ],
   places: [
-    'schemaVersion', 'nameZh', 'nameEn', 'historicalName', 'kind', 'sources', 'notes', 'notesZh',
+    'schemaVersion', 'nameZh', 'nameEn', 'historicalName', 'kind', 'province',
+    'sources', 'notes', 'notesZh',
     'coordinateLongitude', 'coordinateLatitude', 'coordinatePrecision', 'coordinateMethod',
     'coordinateVerification', 'coordinateSources', 'coordinateNote', 'coordinateNoteZh',
   ],
@@ -637,6 +639,7 @@ export function readNote(recordInput: MarkdownRecord): {
 }
 
 const PLACE_KINDS = new Set(['institution', 'historical-site', 'district', 'city', 'region']);
+const PROVINCES = new Set<string>(PROVINCE_IDS);
 const PRECISIONS = new Set(['site', 'institution', 'city', 'region']);
 const METHODS = new Set(['official-publication', 'secondary-database', 'geocoder', 'field-survey']);
 const VERIFICATIONS = new Set(['verified', 'unverified']);
@@ -645,6 +648,10 @@ export function readPlace(recordInput: MarkdownRecord): Place {
   const f = recordInput.fields;
   const kind = text(f.kind, 'kind');
   if (!PLACE_KINDS.has(kind)) throw new Error('kind is invalid');
+  const province = optionalText(f.province, 'province');
+  if (province && !PROVINCES.has(province)) {
+    throw new Error('province must be one of: ' + PROVINCE_IDS.join(', '));
+  }
   let coordinates: Coordinates | null = null;
   const hasCoordinates = ['coordinateLongitude', 'coordinateLatitude', 'coordinatePrecision', 'coordinateMethod']
     .some((key) => f[key] != null);
@@ -677,6 +684,7 @@ export function readPlace(recordInput: MarkdownRecord): Place {
     names: { zh: text(f.nameZh, 'nameZh'), en: optionalText(f.nameEn, 'nameEn') ?? text(f.nameZh, 'nameZh') },
     historicalName: optionalText(f.historicalName, 'historicalName'),
     kind: kind as Place['kind'],
+    province: province as Place['province'],
     coordinates,
     sourceRefs: idList(f.sources, 'sources'),
     notes: stringList(f.notes, 'notes'),

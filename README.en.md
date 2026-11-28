@@ -11,10 +11,10 @@ Which rubbing of the Yan Qinli Stele are we looking at when we copy it? Who was 
 - **Start at the desk.** An open sheet of paper leads into the chronology; the plate on the desk opens the object record of the Shenlong copy of the Lanting Preface.
 - **Read a work.** Begin with the [Yan Qinli Stele](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei): background, calligrapher and surviving witnesses are kept apart, and the original stone and the Republican rubbing carry separate histories.
 - **Follow the chronology.** Browse [every work](https://yang963852.github.io/beitie-atlas/#catalogue) by the period of the inscription, from the pre-Qin era to the present.
-- **Use the collection map.** Locate witnesses by their present collection in the [collection map](https://yang963852.github.io/beitie-atlas/#/collections); places without reliable coordinates stay textual rather than guessed.
+- **Use the extant map.** Locate surviving witnesses by their present collection or in-situ site in the [extant map](https://yang963852.github.io/beitie-atlas/#/collections); places without reliable coordinates stay textual rather than guessed.
 - **Search the library.** Enter the [library](https://yang963852.github.io/beitie-atlas/#/library) by work, calligrapher, reading note or object record — for example [Yan Zhenqing](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing).
 
-**Current corpus** (`npm run knowledge:compile`, 2026-11-28): 131 works · 138 physical objects · 47 places · 207 sources · 75 events.
+**Current corpus** (`npm run knowledge:compile`, 2026-11-28): 133 works · 140 physical objects · 47 places · 240 sources · 75 events.
 
 ## Three editorial rules
 

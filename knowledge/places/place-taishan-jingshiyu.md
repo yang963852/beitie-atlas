@@ -4,6 +4,7 @@ nameZh: 泰山经石峪
 nameEn: Jingshi Valley, Mount Tai
 historicalName: 经石峪
 kind: historical-site
+province: shandong
 sources:
   - src-taian-jingshiyu
 notes:

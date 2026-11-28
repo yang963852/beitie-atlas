@@ -4,6 +4,7 @@ nameZh: 荆门市博物馆
 nameEn: Jingmen Museum
 historicalName: null
 kind: institution
+province: hubei
 sources:
   - src-jmm-guodian
 notes:

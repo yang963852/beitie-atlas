@@ -4,6 +4,7 @@ nameZh: 隋仁寿宫·唐九成宫遗址
 nameEn: Sui Renshou Palace–Tang Jiucheng Palace site
 historicalName: null
 kind: historical-site
+province: shaanxi
 sources: []
 notes:
   - In Linyou County, Baoji. The 九成宫醴泉铭 and 万年宫铭 stones stand within the protected site.

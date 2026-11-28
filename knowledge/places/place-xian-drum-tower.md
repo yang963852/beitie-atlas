@@ -4,6 +4,7 @@ nameZh: 西安鼓楼
 nameEn: Xi’an Drum Tower
 historicalName: null
 kind: historical-site
+province: shaanxi
 coordinateLongitude: 108.938931
 coordinateLatitude: 34.261789
 coordinatePrecision: site
