@@ -46,11 +46,14 @@ sources:
 
 本库所收有[《洛神赋十三行》](../works/luoshen-shisanhang.md)、[《中秋帖》](../works/zhongqiu.md)、[《万岁通天帖》](../works/wansui-tongtian-tie.md)、[《鸭头丸帖》](../works/yatouwan.md)与[《东山松帖》](../works/dongshansong.md)。馆方对这些作品有的是传本、有的是旧题、有的是刻石，各条分记，不合并成一件确定的手笔。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-◎ [《东山松帖》](../works/dongshansong.md)为墨迹页，馆方题名系于晋而未说明此页是否为摹本，这一点待考，不代馆方作判断。○ [《鸭头丸帖》](../works/yatouwan.md)为唐摹本，[《中秋帖》](../works/zhongqiu.md)旧题其书而故宫指出纸料用笔与晋人书迹有别、今多认为宋人临写，两说并存；[《洛神赋十三行》](../works/luoshen-shisanhang.md)所存为玉版刻石，[《万岁通天帖》](../works/wansui-tongtian-tie.md)卷中存其书翰而为唐摹。
+- [《洛神赋十三行》](../works/luoshen-shisanhang.md)：王献之《洛神赋》小楷，传世为南宋贾似道所刻玉版十三行，今藏首都博物馆。
+- [《中秋帖》](../works/zhongqiu.md)：旧题王献之的行草三行帖，故宫指出纸料用笔异于晋人书迹，今多认为宋人临写。
+- [《万岁通天帖》](../works/wansui-tongtian-tie.md)：697年弘文馆勾填的王氏一门书信卷，今存七人十通，藏辽宁省博物馆，不是王氏真迹。
+- [《鸭头丸帖》](../works/yatouwan.md)：王献之《鸭头丸帖》的纸本唐摹本，存部分宣和裱，有董其昌等跋。
+- [《东山松帖》](../works/dongshansong.md)：王献之的行草通信札断片，纸本有四字磨灭，馆方未说明是否摹本。
 
 ## English
 
@@ -70,8 +73,10 @@ Scripts and teacher lineage remain open; the cited catalogues do not state them 
 
 The library holds the [Thirteen Lines of the Nymph of the Luo River](../works/luoshen-shisanhang.md), [Mid-Autumn Letter](../works/zhongqiu.md), [Wan Sui Tong Tian scroll](../works/wansui-tongtian-tie.md), [Duck-Head Pill Letter](../works/yatouwan.md) and [Dongshan Pine leaf](../works/dongshansong.md). The museums catalogue these variously as transmitted copies, traditional attributions or stone engravings; each is kept as its own record rather than merged into one settled hand.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-◎ The [Dongshan Pine leaf](../works/dongshansong.md) is an ink leaf attributed by the museum to the Jin; the museum does not say whether the leaf is a copy, and that question stays open here. ○ The [Duck-Head Pill Letter](../works/yatouwan.md) is a Tang tracing copy. The [Mid-Autumn Letter](../works/zhongqiu.md) is traditionally his, but the Palace Museum notes that its paper and brushwork differ from Jin practice and it is now often read as a Song copy; both readings are kept. The [Thirteen Lines](../works/luoshen-shisanhang.md) survive as a jade-version stone engraving, and the [Wan Sui Tong Tian scroll](../works/wansui-tongtian-tie.md) keeps one of his letters in a Tang tracing copy.
+- [Thirteen Lines from the Goddess of the Luo](../works/luoshen-shisanhang.md): Wang Xianzhi’s small-regular-script Rhapsody on the Goddess of the Luo, surviving as the Jade-Version Thirteen Lines engraved for Jia Sidao in the Southern Song and now at the Capital Museum.
+- [Mid-Autumn Letter](../works/zhongqiu.md): A three-line running-cursive letter traditionally attributed to Wang Xianzhi, whose paper and brushwork differ from Jin practice and are now often read as a Song copy.
+- [Model Letters of the Wan Sui Tong Tian Year](../works/wansui-tongtian-tie.md): A scroll traced and ink-filled by the Hongwen Academy in 697, preserving ten letters by seven Wang-family hands at the Liaoning Provincial Museum rather than Wang autographs.
+- [Duck-Head Pill Letter](../works/yatouwan.md): A Tang tracing copy on paper of Wang Xianzhi’s Duck-Head Pill Letter, retaining part of its Xuanhe mounting and later colophons including Dong Qichang’s.
+- [Letter on the Dongshan Pines](../works/dongshansong.md): A paper fragment of a running-cursive letter attributed to Wang Xianzhi, with four characters effaced and its copy status left open by the museum.

@@ -27,11 +27,14 @@ sources: [src-dpm-wangyuan-shimen, src-cnr-shimen-ming]
 
 本库所收[《石门铭》](../works/shimen-ming.md)为北魏摩崖石刻，永平二年（509）刻于褒斜道（今属陕西汉中），纵二百四十四厘米、横三百零四厘米，二十八行、每行二十二字；王远书，武阿仁刻。刻工奉命将王远所撰表彰梁、秦二州刺史羊祉等人修复褒斜道阁道之文刻于石门崖壁，故名《石门铭》。[故宫博物院，徐悲鸿行书评刺轴（关键词「石门铭」条）](https://www.dpm.org.cn/collection/handwriting/230556.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《石门铭》](../works/shimen-ming.md)为摩崖原石一路，书迹刻于石。馆方页只记王远书、武阿仁刻与刻石年代，未对作者归属另作真伪判断；本页照录，不额外升级。
+- [《石门铭》](../works/shimen-ming.md)：王远书、武阿仁刻的509年北魏楷书摩崖，后凿移汉中市博物馆。
+
+### 本页依据
+
+本页依据：[故宫博物院《徐悲鸿行书评刺轴》页末关键词释义](https://www.dpm.org.cn/collection/handwriting/230556.html)与[央广网《感悟魏碑神品〈石门铭〉》](https://www.cnr.cn/hnfw/hnfwsh/20150723/t20150723_519292763.shtml)；前者不是王远专题传记，后者是文化报道而非馆方目录。
 
 ## English
 
@@ -47,8 +50,10 @@ Script remains open: the museum page says only that the Shimen ming's "letterfor
 
 The [Shimen ming](../works/shimen-ming.md) held here is a Northern Wei cliff inscription cut in 509 on the Baoxie road in present-day Hanzhong, Shaanxi: 244 by 304 cm, twenty-eight lines of twenty-two characters, written by Wang Yuan and cut by Wu Aren. The cutter was ordered to carve Wang Yuan's text praising the restoration of the Baoxie gallery road by Yang Zhi, prefect of Liang and Qin, and others, hence the name. [Palace Museum, note on the Shimen ming](https://www.dpm.org.cn/collection/handwriting/230556.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
+- [Shimen Inscription](../works/shimen-ming.md): A 509 Northern Wei regular-script cliff inscription written by Wang Yuan and cut by Wu Aren, later removed to the Hanzhong Museum.
 
-— This page has no `objects` entries. The [Shimen ming](../works/shimen-ming.md) is a cliff original, the writing cut into rock. The museum records the writer, the cutter and the date without a further authenticity judgement; recorded as stated, with nothing added.
+### Basis for this page
+
+This page relies on the [Palace Museum’s keyword note on the Shimen ming](https://www.dpm.org.cn/collection/handwriting/230556.html) and [China National Radio’s cultural feature on the inscription](https://www.cnr.cn/hnfw/hnfwsh/20150723/t20150723_519292763.shtml); the former is not a dedicated biography of Wang Yuan, and the latter is not an institutional catalogue.

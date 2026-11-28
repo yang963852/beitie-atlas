@@ -34,11 +34,14 @@ sources: [src-beilin-daoyin]
 
 本库所收[《道因法师碑》](../works/daoyin-fashi-bei.md)书于龙朔三年（663）十月，李俨撰文，通高三百一十二厘米，北宋移存西安碑林。碑林小传记他传世碑版仅二种，另一为《泉男生墓志》，本库未收。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《道因法师碑》](../works/daoyin-fashi-bei.md)为螭首龟趺、通高三百一十二厘米的碑石，北宋移存西安碑林，书迹刻于石，可据原石直接读。碑林条目未给碑的宽度、厚度与行字排列，这些字段留白，不代馆方补出。
+- [《道因法师碑》](../works/daoyin-fashi-bei.md)：欧阳通663年书的楷书碑，今存西安碑林，碑林称其得父法而险峻过之。
+
+### 本页依据
+
+本页依据：[西安碑林博物馆《道因法师碑》藏品页](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2598)及页末欧阳通小传；馆方未记碑的宽度、厚度与行字排列，本页留空。
 
 ## English
 
@@ -60,8 +63,10 @@ The account above of his regular script, "obtained his father's method and surpa
 
 The [Stele of the Dharma Master Daoyin](../works/daoyin-fashi-bei.md) held here was written in the tenth month of 663, with text by Li Yan; it stands 312 cm high and was moved to the Beilin in the Northern Song. The museum biography records only two of his steles, the other being the Epitaph of Quan Nansheng, which this library does not hold.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+- [Stele of the Dharma Master Daoyin](../works/daoyin-fashi-bei.md): A regular-script stele written by Ouyang Tong in 663 and now at the Xi’an Beilin, where the museum says his manner surpassed his father’s in steepness.
 
-— This page has no `objects` entries. The [Stele of the Dharma Master Daoyin](../works/daoyin-fashi-bei.md) is a stele with a chi-dragon head and tortoise base, 312 cm high, moved to the Beilin in the Northern Song; the writing is cut into stone and can be read from the original. The museum's entry gives no width, thickness or line arrangement, and those fields stay open here rather than being supplied.
+### Basis for this page
+
+This page relies on the [Xi’an Beilin Museum entry for the Stele of the Dharma Master Daoyin](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2598) and its attached biography; the museum gives no width, thickness or line arrangement for the stele, so those fields remain open.

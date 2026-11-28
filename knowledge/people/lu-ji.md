@@ -27,11 +27,14 @@ sources: [src-dpm-pingfu]
 
 本库所收[《平复帖》](../works/pingfu-tie.md)为纸本手卷，纵二十三点七厘米、横二十点六厘米，草隶书九行八十六字。故宫称它是「现存年代最早并真实可信的西晋名家法帖」，用秃笔写于麻纸之上，笔意婉转，风格平淡质朴；此帖宋代入宣和內府，1956 年由张氏夫妇捐献国家。[故宫博物院，陆机草隶书平复帖卷](https://www.dpm.org.cn/collection/handwriting/234553.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-◎ 本库所收[《平复帖》](../works/pingfu-tie.md)实物记录为纸本墨迹，馆方著录其递藏与入藏经过，属可据墨迹直接读的一路。「现存年代最早并真实可信」是故宫的著录判断，本页照引，不代为升级为定论。
+- [《平复帖》](../works/pingfu-tie.md)：陆机的草隶书信札，故宫称其为现存年代最早、真实可信的西晋名家法帖，秃笔书于麻纸。
+
+### 本页依据
+
+本页依据：[故宫博物院《陆机草隶书平复帖卷》藏品页](https://www.dpm.org.cn/collection/handwriting/234553.html)及所附陆机小传；作品说明记九行八十六字，另有八十四字之说，两说并存。
 
 ## English
 
@@ -47,8 +50,10 @@ The museum biography says he was "good at draft cursive," while the object recor
 
 The [Pingfu tie](../works/pingfu-tie.md) held here is ink on paper, a handscroll 23.7 by 20.6 cm, in cao-li script, nine lines and eighty-six characters. The museum calls it "the earliest surviving and credible masterwork of the Western Jin," written with a worn brush on hemp paper, its brushwork supple and its style plain and unadorned; it entered the Xuanhe palace collection in the Song and was given to the state by the Zhang family in 1956. [Palace Museum, Pingfu tie](https://www.dpm.org.cn/collection/handwriting/234553.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
+- [Letter on Recovery](../works/pingfu-tie.md): Lu Ji’s cursive-clerical letter, written with a worn brush on hemp paper and described by the Palace Museum as the earliest surviving credible Western Jin masterwork.
 
-◎ The [Pingfu tie](../works/pingfu-tie.md) recorded here is an ink manuscript on paper, with its transmission and accession catalogued by the museum, a witness readable directly from ink. "The earliest surviving and credible" is the Palace Museum's cataloguing judgement, quoted as such and not upgraded here into a verdict.
+### Basis for this page
+
+This page relies on the [Palace Museum catalogue of Lu Ji’s Pingfu tie](https://www.dpm.org.cn/collection/handwriting/234553.html) and its attached biography; the entry gives nine lines and eighty-six characters, while another account gives eighty-four, so both readings are kept.

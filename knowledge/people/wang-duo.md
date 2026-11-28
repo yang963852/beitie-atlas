@@ -37,11 +37,14 @@ sources: [src-dpm-wangduo]
 
 本库所收[《行草书自书诗卷》](../works/wangduo-zishu-shi.md)书于崇祯十二年（1639）正月，时年四十七，纸本，纵二十六点九厘米、横一百六十六厘米，书自作诗六首。款署「己卯正月弟王铎具草」，钤「王铎之印」「烟潭渔叟」。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《行草书自书诗卷》](../works/wangduo-zishu-shi.md)为纸本墨迹，款印俱在，馆方系于其四十七岁，属墨迹一路；但馆方著录记「本幅无藏印，亦未见著录」，早期流传不明，这一点保留待考。上款「君宣」与释文「群宣」一字之异未详孰是，两说并存，不代馆方定夺。
+- [《王铎行草书自书诗卷》](../works/wangduo-zishu-shi.md)：王铎1639年正月四十七岁写的六首自作诗行草纸本，今藏故宫博物院。
+
+### 本页依据
+
+本页依据：[故宫博物院《王铎行草书自书诗卷》藏品页](https://www.dpm.org.cn/collection/handwriting/228265.html)；依据包括释文、1639年款、时年四十七及「本幅无藏印，亦未见著录」，来源「简介」未逐字转录小传。
 
 ## English
 
@@ -63,8 +66,10 @@ The account above — studying Zhong Yao, the two Wangs, Yan Zhenqing and Mi Fu,
 
 The [Scroll of His Own Poems in Running-Cursive Script](../works/wangduo-zishu-shi.md) held here was written in the first month of 1639 at forty-seven: ink on paper, 26.9 by 166 cm, six of his own poems, signed "respectfully drafted by your younger brother Wang Duo, first month of jimao" with two seals.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+- [Scroll of Wang Duo’s Own Poems in Running-Cursive Script](../works/wangduo-zishu-shi.md): Wang Duo’s running-cursive paper scroll of six poems written at forty-seven in the first month of 1639, now at the Palace Museum.
 
-— This page has no `objects` entries. The [scroll of his own poems](../works/wangduo-zishu-shi.md) is an ink manuscript on paper with signature and seals intact, dated by the museum to his forty-seventh year, an ink witness; the museum record also notes "no collection seals on this face, nor any earlier catalogue entry," so its early transmission is unrecorded and stays open here. The addressee given as "Junxuan" in the description and "Qunxuan" in the transcription differ by one character; both readings are kept and not settled on his behalf.
+### Basis for this page
+
+This page relies on the [Palace Museum catalogue of Wang Duo’s poem scroll](https://www.dpm.org.cn/collection/handwriting/228265.html), specifically its transcription, 1639 date, age of forty-seven and note that the face has no collection seals or earlier catalogue record; the source’s brief introduction does not transcribe the museum biography verbatim.

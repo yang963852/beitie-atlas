@@ -35,11 +35,10 @@ sources: [src-catalogue-boyuan, src-gmw-erxi]
 
 本库所收[《伯远帖》](../works/boyuan.md)为宣和内府所藏王珣两件书迹之一，纸本行书，五行四十七字。乾隆十一年（1746）入内府，与《快雪时晴帖》《中秋帖》并贮三希堂；1951 年由王冶秋送交故宫博物院。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依故宫著录，此帖是原迹、能见使转用笔；同一页并记王羲之书作只以临本、摹本、刻本流传，无一件真迹，而《快雪时晴帖》馆方另条明说为唐摹本。三希并置而载体不同，此处照馆方所述分记，不因同贮一室而抹平差别。
+- [《伯远帖》](../works/boyuan.md)：东晋王珣的行书信札，曾入宋宣和御府与清内府。
 
 ## English
 
@@ -63,8 +62,6 @@ The Xuanhe shupu line quoted above, "for three generations his family was known 
 
 The [Letter to Boyuan](../works/boyuan.md) held here is one of two works by Wang Xun in the Xuanhe palace collection, ink on paper in running script, five lines and forty-seven characters. It entered the imperial collection in 1746 and was stored with the Kuaixue and Zhongqiu letters in the Hall of the Three Rarities; in 1951 it was delivered to the Palace Museum by Wang Yeqiu.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. According to the museum, this letter is the original, where the turns of the brush can be seen; the same page notes that Wang Xizhi's works survive only as copies and carvings with no autograph, and that the Kuaixue letter is described elsewhere as a Tang tracing. The three rarities were kept together but are of different kinds; they are recorded as the museum states them and not levelled by their shared display.
+- [Letter to Boyuan](../works/boyuan.md): A running-script letter by the Eastern Jin calligrapher Wang Xun, once held in the Song Xuanhe and Qing imperial collections.

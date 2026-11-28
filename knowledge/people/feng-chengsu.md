@@ -32,11 +32,14 @@ sources:
 
 本库所收的[《兰亭序》](../works/lanting.md)神龙本，卷后项元汴题记把摹写归于他。归名与神龙印的年代均在疑问之中，馆方与本项目都不把它当作定论。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-○ 本库所收神龙本《兰亭序》为唐摹本，馆方以卷首「神龙」印与题跋称名；摹写归名于冯承素出自项元汴题记，故宫博物院对这一归名及神龙印的年代均提出疑问。作品归属与实物制作年代分记，不因归名而把这一卷写成他的亲笔。
+- [《兰亭序》](../works/lanting.md)：王羲之353年序文，原迹不存，可对看唐摹神龙本与定武刻拓本。
+
+### 本页依据
+
+本页依据：[故宫博物院《冯承素行书摹兰亭序卷》藏品说明](https://www.dpm.org.cn/collection/handwriting/228279.html)；这是摹写归名有争议的作品条目，不含冯承素小传。
 
 ## English
 
@@ -54,8 +57,10 @@ Scripts and teacher lineage remain open; the cited catalogue does not address th
 
 The library holds the Shenlong copy of the [Orchid Pavilion Preface](../works/lanting.md), whose colophon by Xiang Yuanbian attributes the copying to him. Both the attribution and the date of the Shenlong seal are in question; neither the museum nor this project treats the attribution as settled.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+- [Preface to the Orchid Pavilion](../works/lanting.md): Wang Xizhi’s 353 preface, whose original is lost and which survives through the Tang Shenlong tracing and the Dingwu engraved rubbing.
 
-○ The Shenlong [Orchid Pavilion Preface](../works/lanting.md) held here is a Tang tracing copy, named by the museum after the "Shenlong" seal at the head of the scroll and its colophons. The attribution of the copying to Feng Chengsu comes from Xiang Yuanbian's colophon, and the Palace Museum questions both that attribution and the date of the seal. The work's attribution and the witness's production are recorded separately; the scroll is not written up as his own hand on the strength of the attribution.
+### Basis for this page
+
+This page relies on the [Palace Museum entry for the Shenlong copy of the Orchid Pavilion Preface](https://www.dpm.org.cn/collection/handwriting/228279.html), a work entry with a disputed attribution of the copying and no biography of Feng Chengsu.

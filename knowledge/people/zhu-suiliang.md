@@ -35,11 +35,11 @@ sources: [src-catalogue-yanta, src-beilin-tongzhou, src-thepaper-tongzhou]
 
 本库所收[《雁塔圣教序》](../works/yanta.md)为明拓，[《同州圣教序》](../works/tongzhou-shengjiao-xu.md)与《雁塔》同文而异石，龙朔三年（663）立于同州，1972 年移入碑林。两件同文，各记其石，不合并为一件。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《雁塔圣教序》](../works/yanta.md)与[《同州圣教序》](../works/tongzhou-shengjiao-xu.md)均为刻石一路，本库所收为拓本。顾炎武疑同州碑非褚遂良亲书、立碑时已卒五年，这一疑问至今无定论，两说并存；本库把它读作「同一文本的另一种刻法」，不写成第二件真迹。
+- [《雁塔圣教序》](../works/yanta.md)：褚遂良653年书的楷书《圣教序》，分两石嵌大雁塔左右龛，本库收拓本。
+- [《同州圣教序》](../works/tongzhou-shengjiao-xu.md)：褚遂良663年书的楷书碑，与《雁塔圣教序》同文异石，1972年移入西安碑林。
 
 ## English
 
@@ -61,8 +61,7 @@ The two phases of his regular script are noted above; Li Zonghan's "where it is 
 
 The [Wild Goose Pagoda preface](../works/yanta.md) held here is a Ming rubbing; the [Tongzhou recension](../works/tongzhou-shengjiao-xu.md) bears the same text on a different stone, erected in 663 at Tongzhou and moved to the Beilin in 1972. The two share a text but each has its own stone and are not merged into one.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. Both the [Wild Goose Pagoda preface](../works/yanta.md) and the [Tongzhou recension](../works/tongzhou-shengjiao-xu.md) are witnesses cut into stone, held here as rubbings. Gu Yanwu doubted that Chu wrote the Tongzhou stone, five years after his death; that question is still open and both readings are kept. The library reads it as another engraving of one text, not written up as a second autograph.
+- [Wild Goose Pagoda Preface](../works/yanta.md): Chu Suiliang’s 653 regular-script Sacred Teaching Preface, cut on two stones set in the Wild Goose Pagoda’s side niches and represented here by a rubbing.
+- [Tongzhou Recension of the Sacred Teaching Preface](../works/tongzhou-shengjiao-xu.md): A 663 regular-script stele written by Chu Suiliang with the same text as the Wild Goose Pagoda preface on a different stone, moved to the Xi’an Beilin in 1972.

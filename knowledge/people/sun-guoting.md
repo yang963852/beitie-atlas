@@ -27,11 +27,10 @@ sources: [src-dpm-shupu-songta, src-shlib-sun-guoting]
 
 本库所收[《书谱》](../works/shupu.md)为孙过庭垂拱三年（687）之作，上卷谈「运笔」，下卷已佚，为其代表作品；墨迹现藏台北故宫博物院，本库所据为故宫所藏宋拓，即北宋大观年间内府所刻《太清楼书谱》，原石早佚，此拓称「海内孤本」。[故宫博物院，宋拓孙过庭书谱](https://www.dpm.org.cn/collection/impres/234584.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。本库所收[《书谱》](../works/shupu.md)为宋拓本，属拓本一路；馆方称墨迹藏台北故宫，本库未收墨迹，故不据拓本写成亲笔。原石早佚、宋拓为孤本二事，分记于作品条目。
+- [《书谱》](../works/shupu.md)：孙过庭687年撰并书的草书《书谱》墨迹，上卷原藏清内府，今在台湾。
 
 ## English
 
@@ -47,8 +46,6 @@ The Palace Museum records that he was "skilled in regular, running and cursive s
 
 The [Shupu](../works/shupu.md) held here is his work of 687; the upper volume discusses brush movement, the lower is lost, and it is his representative work. The ink manuscript is in the National Palace Museum, Taipei; what this library holds is a Song rubbing in the Palace Museum, the Northern Song imperial Taqinglou edition whose stones are long lost, called "the only copy under heaven." [Palace Museum, Shupu](https://www.dpm.org.cn/collection/impres/234584.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The [Shupu](../works/shupu.md) held here is a Song rubbing, a rubbing witness; the museum says the ink manuscript is in Taipei and this library does not hold it, so the rubbing is not written up as an autograph. The loss of the stones and the uniqueness of the rubbing are recorded in the work entry.
+- [Treatise on Calligraphy](../works/shupu.md): Sun Guoting’s 687 cursive-script ink manuscript Treatise on Calligraphy, whose first scroll passed through the Qing imperial collection and is now in Taiwan.

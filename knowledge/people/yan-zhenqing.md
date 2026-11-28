@@ -33,11 +33,15 @@ sources: [src-beilin-duobaota, src-beilin-yan-qinli-object, src-hunan-wuxi, src-
 
 本库所收[《多宝塔感应碑》](../works/duobao-ta-bei.md)、[《颜勤礼碑》](../works/yan-qinli-bei.md)、[《大唐中兴颂》](../catalogue/datang-zhongxing-song.md)、[《祭侄文稿》](../catalogue/jizhi.md)、[《麻姑仙坛记》](../catalogue/magu.md)与[《颜氏家庙碑》](../catalogue/yan-jiamiao-bei.md)。湖南省政府记《大唐中兴颂》于 771 年刻于峿台崖壁、元结文、颜真卿书；碑林记《颜氏家庙碑》780 年立、李阳冰篆额、982 年重立。[湖南省政府，浯溪碑林](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [西安碑林博物馆，颜氏家庙碑](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2615)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依著录分层：[《多宝塔感应碑》](../works/duobao-ta-bei.md)、[《颜勤礼碑》](../works/yan-qinli-bei.md)原石藏西安碑林，[《大唐中兴颂》](../catalogue/datang-zhongxing-song.md)刻于浯溪崖壁，[《颜氏家庙碑》](../catalogue/yan-jiamiao-bei.md)有原石（982 年重立），均为刻于石的一路；[《祭侄文稿》](../catalogue/jizhi.md)为行书墨迹，馆方释文标出涂改处；[《麻姑仙坛记》](../catalogue/magu.md)北京故宫所藏为翻刻旧拓，属拓本一路。原石、墨迹与翻刻拓本分记，不因同出颜真卿而合并。
+- [《多宝塔感应碑》](../works/duobao-ta-bei.md)：颜真卿752年书的楷书碑，记楚金禅师筹建千福寺法华塔，今藏西安碑林。
+- [《颜勤礼碑》](../works/yan-qinli-bei.md)：颜真卿779年撰并书的颜勤礼碑，1922年出土，今藏西安碑林。
+- [《大唐中兴颂》](../works/datang-zhongxing-song.md)：颜真卿六十三岁书、刻于浯溪崖壁的楷书颂碑。
+- [《祭侄文稿》](../works/jizhi.md)：颜真卿的行书《祭侄文稿》卷，鲜于枢1284年在杭州重装此卷。
+- [《麻姑仙坛记》](../works/magu.md)：颜真卿771年游麻姑山所书的楷书，原碑南宋后期丢失，本库收翻刻旧拓。
+- [《颜氏家庙碑》](../works/yan-jiamiao-bei.md)：颜真卿780年为父颜惟贞立的楷书家庙碑，今藏西安碑林。
 
 ## English
 
@@ -59,8 +63,11 @@ Scripts and teacher lineage remain open; the cited catalogues do not address the
 
 The library holds the [Duobao Pagoda Stele](../works/duobao-ta-bei.md), [Stele of Yan Qinli](../works/yan-qinli-bei.md), [Eulogy of the Tang Restoration](../catalogue/datang-zhongxing-song.md), [Draft Requiem for a Nephew](../catalogue/jizhi.md), [Record of the Immortal Altar](../catalogue/magu.md) and [Stele of the Yan Family Shrine](../catalogue/yan-jiamiao-bei.md). The Hunan government records the Eulogy carved on the Wuxi cliff in 771, composed by Yuan Jie and written by Yan; the Beilin records the family shrine stele of 780 with a heading by Li Yangbing and re-erection in 982. [Hunan government, Wuxi account](https://hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html) · [Xi'an Beilin Museum, Yan family shrine stele](https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=2615)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. By the catalogues, the [Duobao Pagoda Stele](../works/duobao-ta-bei.md), [Stele of Yan Qinli](../works/yan-qinli-bei.md) and [Eulogy of the Tang Restoration](../catalogue/datang-zhongxing-song.md) are cut into stone, as is the [Yan family shrine stele](../catalogue/yan-jiamiao-bei.md) with its original stone re-erected in 982; the [Draft Requiem](../catalogue/jizhi.md) is a running-script ink manuscript whose cancellations are transcribed by the museum; and the Beijing Palace Museum's [Record of the Immortal Altar](../catalogue/magu.md) is an impression from a recarving. Original stone, ink and recarved rubbing are recorded separately and not merged under one name.
+- [Duobao Pagoda Stele](../works/duobao-ta-bei.md): A regular-script stele written by Yan Zhenqing in 752, recording Chu Jin’s building of the Fahua Pagoda at Qianfu Monastery and now held at the Xi’an Beilin.
+- [Stele of Yan Qinli](../works/yan-qinli-bei.md): A stele composed and written by Yan Zhenqing for Yan Qinli in 779, unearthed in 1922 and now at the Xi’an Beilin.
+- [Eulogy of the Tang Restoration](../works/datang-zhongxing-song.md): A regular-script eulogy written by Yan Zhenqing at sixty-three and cut into the Wuxi cliff.
+- [Draft Requiem for a Nephew](../works/jizhi.md): Yan Zhenqing’s running-script scroll Draft Requiem for a Nephew, remounted by Xianyu Shu at Hangzhou in 1284.
+- [Record of the Immortal Altar](../works/magu.md): Yan Zhenqing’s regular-script record written at Mount Magu in 771, whose original stele was lost in the late Southern Song and survives here in a later-carved old rubbing.
+- [Stele of the Yan Family Shrine](../works/yan-jiamiao-bei.md): A regular-script ancestral-temple stele erected by Yan Zhenqing for his father Yan Weizhen in 780, now at the Xi’an Beilin.
