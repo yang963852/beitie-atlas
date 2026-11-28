@@ -200,6 +200,7 @@ function writeArticle(root: string, kind: 'people' | 'notes', id: string, state:
     works: [] as string[],
     objects: [] as string[],
     sources: ['src-fixture'],
+    ...(kind === 'notes' ? { category: 'close-reading', period: 'tang', order: 1 } : {}),
   };
   writeAt(root, 'knowledge/' + kind + '/' + id + '.md',
     doc(fields, '# 测试\n\n## 中文\n\n测试正文。\n\n## English\n\nFixture text.\n\n' + refs));
