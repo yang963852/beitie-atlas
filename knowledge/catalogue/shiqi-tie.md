@@ -18,7 +18,7 @@ Seventeen-Day Letters
 
 书体：草书
 
-延伸阅读：[王羲之](../people/wang-xizhi.md)
+延伸阅读：[王羲之](../people/wang-xizhi.md) · [13｜阅读路径：帖学——刻帖的谱系](../notes/path-05-modelbook.md)
 
 作品待考与说明
 

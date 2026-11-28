@@ -22,6 +22,8 @@ Epitaph of Yuan Zhen
 
 书体：楷书
 
+延伸阅读：[04｜专题：南北朝——碑、志与摩崖](../notes/essay-04-northern-southern.md) · [10｜阅读路径：楷化——从钟繇到唐楷](../notes/path-02-regularization.md)
+
 作品待考与说明
 
 - 行款与字数，所引馆方页未记，本记录不填。

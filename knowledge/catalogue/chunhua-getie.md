@@ -14,6 +14,8 @@ Chunhua Modelbooks
 
 - 集字 · 王著（有明确记载）  [出处 1](#ref-src-dpm-261938)
 
+延伸阅读：[06｜专题：宋代——刻帖、墨迹与士人书](../notes/essay-06-song.md) · [13｜阅读路径：帖学——刻帖的谱系](../notes/path-05-modelbook.md)
+
 <a name="chunhua-maoqin-6"></a>
 
 ## 淳化阁帖（懋勤殿本卷六）

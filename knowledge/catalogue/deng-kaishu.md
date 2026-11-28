@@ -16,6 +16,8 @@ Poem in Regular Script
 
 书体：楷书
 
+延伸阅读：[08｜专题：清近代——碑学与日常书写](../notes/essay-08-qing-modern.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md)
+
 <a name="witness-deng-kaishu"></a>
 
 ## 邓石如《楷书诗轴》
