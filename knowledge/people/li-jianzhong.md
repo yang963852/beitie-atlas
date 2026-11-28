@@ -27,11 +27,13 @@ sources: [src-dpm-li-jianzhong]
 
 本库未为李建中关联作品档案。传世《土母帖》的台北故宫著录页当前无法打开，本库不据搜索摘要写成定论，此处只记馆方可打开页面所述。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空，本库未为他关联实物档案。馆方可打开页面只载其生平与书风，未对具体书迹作出鉴定；此处不作真伪判断，也不据旧题替他标 ◎。
+本页尚未关联可供临写的作品页。
+### 本页依据
+
+本页依据：[故宫博物院林逋《自书诗卷》页](https://www.dpm.org.cn/collection/handwriting/228219.html)「名词解释」中的「李建中」条；这是别件作品页中的释义，不是李建中作品著录或专题传记。
 
 ## English
 
@@ -47,8 +49,9 @@ Scripts and teacher lineage remain open; the cited catalogue does not transcribe
 
 The library holds no work record for Li Jianzhong. The National Palace Museum page for the transmitted Tumu tie is currently inaccessible, and this library does not write it up from search summaries; only the accessible museum account is recorded here.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
+No work page is linked to this person yet.
+### Basis for this page
 
-— This page has no `objects` entries and no object record is associated with him. The accessible museum page gives his life and script only, with no judgement on a specific witness; no authenticity verdict is made and no ◎ is assigned on the strength of an old title.
+This page relies on the [Palace Museum note on Li Jianzhong within its Lin Bu scroll entry](https://www.dpm.org.cn/collection/handwriting/228219.html), an explanatory note on another work rather than a Li Jianzhong object record or dedicated biography.

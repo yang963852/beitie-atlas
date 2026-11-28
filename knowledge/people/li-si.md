@@ -37,11 +37,12 @@ sources: [src-chnmuseum-langya, src-taian-dai-museum-site, src-beilin-yishan]
 
 本库所收秦刻石有[《琅琊刻石》](../works/langya-keshi.md)、[《泰山刻石》](../works/taishan-keshi.md)与[《峄山刻石》](../works/yishan-inscription.md)。三者都以“传”归于李斯，分别存原石残块、二世诏书残字与宋人摹刻，各有其年代与载体，不能合成一件秦人亲笔。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空，未为李斯关联实物档案。依馆方著录分层记：[《琅琊刻石》](../works/langya-keshi.md)现存残石为前 219 年原石的后半部并含前 209 年补刻，属刻于石的一路；[《泰山刻石》](../works/taishan-keshi.md)原石仅存二世诏书残字十字，始皇诏文今主要靠拓本流传；[《峄山刻石》](../works/yishan-inscription.md)是北宋淳化四年（993）郑文宝据徐铉摹本刻成的宋碑，不是秦石。三石的“传为”均是传统归名，本库不据以写成他的亲笔。
+- [《琅琊刻石》](../works/langya-keshi.md)：前219年刻、前209年补诏的秦代小篆残石，今存中国国家博物馆十三行八十七字。
+- [《泰山刻石》](../works/taishan-keshi.md)：秦始皇前219年泰山纪功小篆刻石，前209年加诏，今存岱庙二世诏书残字。
+- [《峄山刻石》](../works/yishan-inscription.md)：秦始皇前219年峄山纪功小篆，今存993年郑文宝据徐铉摹本重刻的长安本。
 
 ## English
 
@@ -67,8 +68,8 @@ Scripts and teacher lineage remain open; the cited catalogues do not address the
 
 The library holds the [Langya inscription](../works/langya-keshi.md), [Mount Tai inscription](../works/taishan-keshi.md) and [Mount Yi inscription](../works/yishan-inscription.md). All three are attributed to Li Si by tradition, and they survive respectively as a fragment of the original stone, ten characters of the Second Emperor's edict, and a Song recutting. Each has its own date and carrier; they cannot be merged into one Qin autograph.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries, so no object record is associated with Li Si. The museum catalogues distinguish the layers: the surviving block of the [Langya inscription](../works/langya-keshi.md) is the rear half of the 219 BCE original with the 209 BCE addition cut into stone; of the [Mount Tai inscription](../works/taishan-keshi.md) only ten damaged characters of the edict remain on stone, the First Emperor's text surviving mainly through rubbings; the [Mount Yi inscription](../works/yishan-inscription.md) is a Northern Song slab cut in 993 from Xu Xuan's tracing, not a Qin stone. The "traditionally attributed" wording on all three is a traditional attribution, not a basis for calling any of them his own hand.
+- [Langya Inscription](../works/langya-keshi.md): A remnant of a Qin seal-script inscription cut in 219 BCE with an added edict in 209 BCE, now preserving thirteen lines and eighty-seven characters at the National Museum of China.
+- [Mount Tai Inscription](../works/taishan-keshi.md): A Qin seal-script inscription recording the First Emperor’s Mount Tai visit in 219 BCE, with an added edict in 209 BCE and now only the Second Emperor’s ten fragmentary characters at the Dai Temple.
+- [Mount Yi Inscription](../works/yishan-inscription.md): A Qin seal-script record of the First Emperor’s 219 BCE visit to Mount Yi, surviving in Zheng Wenbao’s 993 Chang’an recutting after Xu Xuan’s copy.

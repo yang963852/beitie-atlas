@@ -34,11 +34,10 @@ sources:
 
 本库所收的[《祭侄文稿》](../works/jizhi.md)卷后存鲜于枢两跋。两跋都记从曹彦礼处得卷，年份作 1282 与 1283 两说，前文已并列存录；本页不据此补出交接地点或合并年份。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-◎ 本库所收[《祭侄文稿》](../works/jizhi.md)实物记录为墨迹本。鲜于枢两跋写在卷后，两跋所记得卷年份不同；把两跋归为同一次得卷是编辑推定，交接地点未详，这一点保留待考。本页所标 ◎ 指所收墨迹本的载体，不是对两跋归组的鉴定结论。
+- [《祭侄文稿》](../works/jizhi.md)：颜真卿的行书《祭侄文稿》卷，鲜于枢1284年在杭州重装此卷。
 
 ## English
 
@@ -56,8 +55,6 @@ Scripts and teacher lineage remain open; the cited catalogues do not address the
 
 The library holds the [Draft Requiem](../works/jizhi.md) with two colophons by Xianyu Shu at its end. Both say he received the scroll from Cao Yanli, with the years given as 1282 and 1283; both readings are kept above, and this page supplies neither a merged year nor a place of transfer.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-◎ The witness recorded for the [Draft Requiem](../works/jizhi.md) here is an ink manuscript. Xianyu Shu's two colophons are written after it and give different years for the acquisition; grouping the two as one event is an editorial inference, and the place of transfer is unrecorded, which stays open here. The ◎ marks the carrier of the ink manuscript, not a verdict on the grouping of the two colophons.
+- [Draft Requiem for a Nephew](../works/jizhi.md): Yan Zhenqing’s running-script scroll Draft Requiem for a Nephew, remounted by Xianyu Shu at Hangzhou in 1284.

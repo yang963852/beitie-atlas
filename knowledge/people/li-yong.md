@@ -27,11 +27,10 @@ sources: [src-dpm-lisixun-bei, src-gugong-lixiu-bei, src-csjypt-lushan, src-ylsy
 
 本库所收[《麓山寺碑》](../works/lushan-si-bei.md)为唐开元十八年（730）李邕撰书、黄仙鹤刻，碑通高四百一十厘米，正文纵二百七十一厘米、横一百四十三厘米，阳文篆额「麓山寺碑」四字；岳麓书院称其为「最能体现李邕成熟的行书风格的代表作」，因文辞、书法、刻工俱佳而有「北海三绝碑」之称。[岳麓书院，书院碑刻](https://ylsy.hnu.edu.cn/info/1011/9008.htm)。另据故宫著录，《云麾将军李思训碑》为李邕撰并书，行书三十三行、行七十字，篆额四行十二字，为其四十四岁所书。[故宫博物院，宋拓唐云麾将军李思训碑](https://www.dpm.org.cn/collection/impres/228408.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《麓山寺碑》](../works/lushan-si-bei.md)为刻于石的一路，原石在岳麓书院碑亭；《李思训碑》本库所据为宋拓，属拓本一路。原石与拓本分记，不以拓本代替原石，也不据旧题写成亲笔。
+- [《麓山寺碑》](../works/lushan-si-bei.md)：李邕730年叙麓山寺沿革的行书碑，文、书、刻素有「三绝」之称。
 
 ## English
 
@@ -47,8 +46,6 @@ The museum biography says he was "good at regular, running and cursive script," 
 
 The [Lushan Temple stele](../works/lushan-si-bei.md) held here was composed and written by Li Yong in 730, cut by Huang Xianhe; it stands 410 cm high, its text 271 by 143 cm, with a four-character seal heading. Yuelu Academy calls it "the work that best shows Li Yong's mature running script," known as the "three excellences" stele for text, calligraphy and cutting. [Yuelu Academy, stele inscriptions](https://ylsy.hnu.edu.cn/info/1011/9008.htm). The Palace Museum also records the Yunhui general Li Sixun stele as composed and written by Li Yong, running script in thirty-three lines of seventy characters with a four-line, twelve-character seal heading, written at forty-four. [Palace Museum, Li Sixun stele](https://www.dpm.org.cn/collection/impres/228408.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The [Lushan Temple stele](../works/lushan-si-bei.md) is a witness cut into stone, its original in the stele pavilion at Yuelu Academy; the Li Sixun stele is held here as a Song rubbing, a rubbing witness. Original and rubbing are recorded apart; the rubbing does not stand in for the stone, and an old title is not written up as an autograph.
+- [Stele of Lushan Temple](../works/lushan-si-bei.md): Li Yong’s 730 running-script stele recounting the history of Lushan Monastery, traditionally praised as three excellences of text, calligraphy and carving.

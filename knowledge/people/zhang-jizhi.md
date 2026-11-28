@@ -35,11 +35,14 @@ sources: [src-dpm-shuangsong]
 
 本库所收[《双松图歌》](../works/shuangsong-tuge.md)绢本行书，七十二行、一百四十四字，书杜甫诗，款署「张即之七十二岁写」。卷前苏轼古柏图，馆方注明非真迹，与本卷分开记。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《双松图歌》](../works/shuangsong-tuge.md)为绢本行书墨迹，款署与钤印俱在，属墨迹一路；卷前所题苏轼古柏图，馆方注明非真迹，是与本卷不同的另一件，不因同卷装裱而并入。此处只记载体与馆方所述，不作真伪鉴定结论。
+- [《双松图歌》](../works/shuangsong-tuge.md)：张即之1257年醉中写的杜甫诗行书绢本长卷，款署时年七十二。
+
+### 本页依据
+
+本页依据：[故宫博物院《张即之行书双松图歌卷》藏品页](https://www.dpm.org.cn/collection/handwriting/228481.html)及页末「张即之」小传；作品款署、钤印、1257年推定与传记资料同出此页。
 
 ## English
 
@@ -61,8 +64,10 @@ The account above — taking the Tang as his model, strict in structure and stee
 
 The [Song of the Twin Pines](../works/shuangsong-tuge.md) held here is silk in running script, seventy-two lines and 144 characters, carrying Du Fu's poem and signed "written by Zhang Jizhi at seventy-two." The frontispiece carries a painting of ancient cypresses attributed to Su Shi, which the museum states is not genuine, and it is recorded as a separate work.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+- [Song of the Twin Pines](../works/shuangsong-tuge.md): Zhang Jizhi’s 1257 running-script silk scroll of Du Fu’s poem, written while drunk and signed at the age of seventy-two.
 
-— This page has no `objects` entries. The [Song of the Twin Pines](../works/shuangsong-tuge.md) is an ink manuscript on silk in running script, with signature and seals intact, an ink witness; the cypress painting attributed to Su Shi on the same mounting is stated by the museum not to be genuine and is a separate piece, not merged into this scroll because of the shared mounting. Only the carrier and the museum's statement are recorded here, without an authenticity verdict.
+### Basis for this page
+
+This page relies on the [Palace Museum catalogue of Zhang Jizhi’s Song of the Twin Pines](https://www.dpm.org.cn/collection/handwriting/228481.html) and its attached biography; the signature, seals, proposed 1257 date and biographical material all come from that page.

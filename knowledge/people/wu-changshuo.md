@@ -27,11 +27,10 @@ sources: [src-xlys-wuchangshuo, src-dpm-wuchangshuo-bayan, src-shm-wuchangshuo-s
 
 本库所收[《吴昌硕临石鼓文轴》](../works/wuchangshuo-lin-shiguwen.md)为纸本篆书，款署乙卯（1915），时年七十一，临石鼓第三鼓「田车」篇；故宫另藏《篆书八言联》，集石鼓文，书于民国六年（1917），时年七十四；上博藏《石鼓文八言联》，款「七十六岁吴昌硕」。[故宫博物院，吴昌硕篆书八言联](https://www.dpm.org.cn/collection/handwriting/231408.html) · [上海博物馆，石鼓文八言联](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005001)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。本库所收[《临石鼓文轴》](../works/wuchangshuo-lin-shiguwen.md)为纸本篆书墨迹，款署与年岁俱在，属墨迹一路；故宫、上博所藏两联亦为纸本墨迹，各有年款。三件分记，不因同署吴昌硕而合并。
+- [《吴昌硕临石鼓文轴》](../works/wuchangshuo-lin-shiguwen.md)：吴昌硕1915年七十一岁临《石鼓文》第三鼓的篆书纸本，变横势为纵势。
 
 ## English
 
@@ -47,8 +46,6 @@ The seal society records that "his calligraphy began with Yan Zhenqing and later
 
 The [Wu Changshuo copy of the Stone Drums](../works/wuchangshuo-lin-shiguwen.md) held here is a seal-script scroll on paper, dated yimao (1915) at seventy-one, copying the third drum, "Tianche." The Palace Museum also holds an eight-character seal couplet gathered from the Stone Drums, written in 1917 at seventy-four; the Shanghai Museum's eight-character couplet is signed "Wu Changshuo at seventy-six." [Palace Museum, eight-character couplet](https://www.dpm.org.cn/collection/handwriting/231408.html) · [Shanghai Museum, Stone Drums couplet](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005001)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The [Stone Drums copy](../works/wuchangshuo-lin-shiguwen.md) is an ink manuscript in seal script on paper with signature and age, an ink witness; the couplets in the Palace and Shanghai museums are also ink on paper with dated signatures. The three are recorded apart and not merged by a shared name.
+- [Hanging Scroll after the Stone Drums](../works/wuchangshuo-lin-shiguwen.md): Wu Changshuo’s 1915 seal-script paper copy of the third Stone Drum text at seventy-one, turning its horizontal structure into a vertical one.
