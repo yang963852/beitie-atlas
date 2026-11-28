@@ -119,7 +119,10 @@
 ### 先秦
 
 - [大盂鼎](catalogue/dayu-ding.md) · 1 件实物
+- [虢季子白盘](catalogue/guojizibai-pan.md) · 1 件实物
+- [大克鼎](catalogue/dake-ding.md) · 1 件实物
 - [郭店楚简](catalogue/guodian-chujian.md) · 1 件实物
+- [何尊](catalogue/he-zun.md) · 1 件实物
 - [毛公鼎](catalogue/maogong-ding.md) · 1 件实物
 - [散氏盘](catalogue/san-shi-pan.md) · 1 件实物
 - [史墙盘](catalogue/shiqiang-pan.md) · 1 件实物
@@ -142,6 +145,7 @@
 ### 东汉
 
 - [居延新简·隧长焦永死驹劾状](catalogue/juyan-hanjian.md) · 1 件实物
+- [祀三公山碑](catalogue/sisangongshan-bei.md) · 1 件实物
 - [石门颂](catalogue/shimen-song.md) · 1 件实物
 - [乙瑛碑](catalogue/yiying-bei.md) · 1 件实物
 - [礼器碑](catalogue/liqi-bei.md) · 2 件实物
@@ -152,6 +156,7 @@
 - [熹平石经](catalogue/xiping-stone-classics.md) · 1 件实物
 - [曹全碑](catalogue/cao-quan-bei.md) · 1 件实物
 - [张迁碑](catalogue/zhangqian-bei.md) · 1 件实物
+- [袁安碑](catalogue/yuanan-bei.md) · 1 件实物
 
 ### 三国
 

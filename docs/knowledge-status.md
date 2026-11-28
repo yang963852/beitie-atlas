@@ -8,16 +8,16 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 
 | Measure | Value |
 | --- | --- |
-| Works | 141 (141 reviewed / 0 draft) |
-| Objects | 149 (149 reviewed / 0 draft) |
+| Works | 146 (146 reviewed / 0 draft) |
+| Objects | 154 (154 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
 | People pages | 59 |
 | Notes | 24 |
-| Places | 47 (38 with coordinates) |
-| Sources | 310 (0 uncited) |
-| Events | 104 (61 objects with events) |
-| Attribution entries linked to a person | 99 / 193 |
-| Work sources (0 / 1 / 2+) | 0 / 82 / 59 |
+| Places | 48 (38 with coordinates) |
+| Sources | 324 (0 uncited) |
+| Events | 119 (66 objects with events) |
+| Attribution entries linked to a person | 99 / 198 |
+| Work sources (0 / 1 / 2+) | 0 / 82 / 64 |
 | Reviewed works with one source | 82 |
 | Dates without source wording | 33 |
 
@@ -31,7 +31,10 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | Work | Period | Review | Guide | People | Sources | Objects | Places | Date gaps |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [大盂鼎](../knowledge/works/dayu-ding.md) | Pre-Qin | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [虢季子白盘](../knowledge/works/guojizibai-pan.md) | Pre-Qin | reviewed | — | 0 | 3 | 1 | 1/1 | — |
+| [大克鼎](../knowledge/works/dake-ding.md) | Pre-Qin | reviewed | — | 0 | 3 | 1 | 1/1 | — |
 | [郭店楚简](../knowledge/works/guodian-chujian.md) | Pre-Qin | reviewed | — | 0 | 1 | 1 | 0/1 | — |
+| [何尊](../knowledge/works/he-zun.md) | Pre-Qin | reviewed | — | 0 | 3 | 1 | 1/1 | — |
 | [毛公鼎](../knowledge/works/maogong-ding.md) | Pre-Qin | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [散氏盘](../knowledge/works/san-shi-pan.md) | Pre-Qin | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [史墙盘](../knowledge/works/shiqiang-pan.md) | Pre-Qin | reviewed | — | 0 | 2 | 1 | 1/1 | — |
@@ -45,6 +48,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [五凤刻石](../knowledge/works/wufeng-inscription.md) | Western Han | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [武威仪礼简](../knowledge/works/wuwei-yili-jian.md) | Western Han | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [居延新简·隧长焦永死驹劾状](../knowledge/works/juyan-hanjian.md) | Eastern Han | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [祀三公山碑](../knowledge/works/sisangongshan-bei.md) | Eastern Han | reviewed | — | 0 | 3 | 1 | 0/1 | — |
 | [石门颂](../knowledge/works/shimen-song.md) | Eastern Han | reviewed | reviewed | 0 | 2 | 1 | 0/1 | — |
 | [乙瑛碑](../knowledge/works/yiying-bei.md) | Eastern Han | reviewed | — | 0 | 2 | 1 | 1/1 | — |
 | [礼器碑](../knowledge/works/liqi-bei.md) | Eastern Han | reviewed | — | 1 | 2 | 2 | 2/2 | — |
@@ -55,6 +59,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [熹平石经](../knowledge/works/xiping-stone-classics.md) | Eastern Han | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [曹全碑](../knowledge/works/cao-quan-bei.md) | Eastern Han | reviewed | reviewed | 0 | 3 | 1 | 1/1 | — |
 | [张迁碑](../knowledge/works/zhangqian-bei.md) | Eastern Han | reviewed | reviewed | 0 | 2 | 1 | 1/1 | — |
+| [袁安碑](../knowledge/works/yuanan-bei.md) | Eastern Han | reviewed | — | 0 | 2 | 1 | 1/1 | — |
 | [贺捷表](../knowledge/works/hejie-biao.md) | Three Kingdoms | reviewed | — | 1 | 2 | 0 | — | — |
 | [荐季直表](../knowledge/works/jian-jizhi-biao.md) | Three Kingdoms | reviewed | — | 1 | 2 | 0 | — | — |
 | [天发神谶碑](../knowledge/works/tianfa-shenchen-bei.md) | Three Kingdoms | reviewed | — | 0 | 1 | 1 | 1/1 | — |
