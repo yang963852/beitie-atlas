@@ -2,9 +2,9 @@
 
 This file records formal editions. Merging a checked change to `main` deploys the site, but only the maintainer decides when that work becomes a formal edition. The live site may therefore include changes newer than the first version section below; the interface shows both the edition and the revision it was built from.
 
-## Unreleased · 未发布
+## v1.4.1 · 1.4.1 版
 
-Changes merged to `main` after the latest formal edition. The release owner moves them into the next edition; a contributor does not need to edit this file for every pull request.
+A release-integrity patch. It adds no corpus records and changes no public data format. The interface now shows the formal edition together with the build revision it was deployed from, so changes merged after an edition can be told apart from the tagged edition. Release metadata and formal tags are checked before publication, and the release manifest and downloadable library record the edition as `appVersion`. The eight works recorded under Unreleased are not part of this edition; they remain for the next minor edition.
 
 ### Added
 
@@ -15,6 +15,10 @@ Changes merged to `main` after the latest formal edition. The release owner move
 
 - The interface footer, reading-room colophon and build details show the build revision with the formal edition, so a continuously deployed page is not mistaken for the tagged edition.
 - The release runbook now defines semantic versioning, the continuous-deployment and formal-release split, the five release phases, and rollback rules.
+
+## Unreleased · 未发布
+
+Changes merged to `main` after v1.4.1. The release owner moves them into the next edition; a contributor does not need to edit this file for every pull request.
 
 ### Knowledge
 
