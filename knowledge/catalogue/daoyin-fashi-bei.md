@@ -23,7 +23,7 @@ Stele of the Dharma Master Daoyin
 
 书体：楷书
 
-延伸阅读：[欧阳通](../people/ouyang-tong.md)
+延伸阅读：[欧阳通](../people/ouyang-tong.md) · [05｜专题：隋唐——楷则与碑版](../notes/essay-05-sui-tang.md)
 
 作品待考与说明
 

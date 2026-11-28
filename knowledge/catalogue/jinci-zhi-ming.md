@@ -18,7 +18,7 @@ Inscription for the Jin Shrine
 
 书体：行书
 
-延伸阅读：[李世民](../people/li-shimin.md)
+延伸阅读：[李世民](../people/li-shimin.md) · [14｜阅读路径：一作两命——原石与拓本](../notes/path-06-one-work-two-lives.md)
 
 作品待考与说明
 

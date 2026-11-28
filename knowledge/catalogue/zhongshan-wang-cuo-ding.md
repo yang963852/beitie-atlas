@@ -18,6 +18,8 @@ Ding of King Cuo of Zhongshan
 
 书体：中山篆（金文）
 
+延伸阅读：[01｜专题：先秦——青铜、石鼓与竹简](../notes/essay-01-pre-qin.md)
+
 作品待考与说明
 
 - 铭文是铸是刻，学界尚无定论。

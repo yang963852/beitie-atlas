@@ -18,6 +18,8 @@ Zoumalou Wu slips, Jiahe field-tax records
 
 书体：吴简隶楷
 
+延伸阅读：[03｜专题：魏晋——名家、信札与复制](../notes/essay-03-wei-jin.md)
+
 作品待考与说明
 
 - 田家莂的总数，馆方页面未给出，本记录只记形制与内容。

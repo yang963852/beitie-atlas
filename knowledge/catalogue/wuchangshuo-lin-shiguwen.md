@@ -18,6 +18,8 @@ Hanging Scroll after the Stone Drums
 
 书体：篆书
 
+延伸阅读：[08｜专题：清近代——碑学与日常书写](../notes/essay-08-qing-modern.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md)
+
 作品待考与说明
 
 - 吴昌硕一生临石鼓甚多，此轴所据拓本的版本未详。

@@ -18,6 +18,8 @@ Stele of Zhang Menglong
 
 书体：正书
 
+延伸阅读：[04｜专题：南北朝——碑、志与摩崖](../notes/essay-04-northern-southern.md) · [10｜阅读路径：楷化——从钟繇到唐楷](../notes/path-02-regularization.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md) · [14｜阅读路径：一作两命——原石与拓本](../notes/path-06-one-work-two-lives.md)
+
 <a name="rubbing-zhang-menglong-bei"></a>
 
 ## 张猛龙碑（明拓本）

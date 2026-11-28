@@ -16,7 +16,7 @@ Draft Requiem for a Nephew
 
 书体：行书
 
-延伸阅读：[鲜于枢](../people/xianyu-shu.md) · [颜真卿](../people/yan-zhenqing.md)
+延伸阅读：[鲜于枢](../people/xianyu-shu.md) · [颜真卿](../people/yan-zhenqing.md) · [11｜阅读路径：行草——从信札到狂草](../notes/path-03-running-cursive.md)
 
 <a name="witness-jizhi"></a>
 
