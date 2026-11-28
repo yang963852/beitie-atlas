@@ -33,10 +33,12 @@
 - [李阳冰](people/li-yangbing.md)
 - [柳公权](people/liu-gongquan.md)
 - [米芾](people/mi-fu.md)
+- [欧阳通](people/ouyang-tong.md)
 - [欧阳询](people/ouyang-xun.md)
 - [沈尹默](people/shen-yinmo.md)
 - [苏轼](people/su-shi.md)
 - [王宠](people/wang-chong.md)
+- [王铎](people/wang-duo.md)
 - [王献之](people/wang-xianzhi.md)
 - [王羲之](people/wang-xizhi.md)
 - [王珣](people/wang-xun.md)
@@ -46,6 +48,7 @@
 - [杨凝式](people/yang-ningshi.md)
 - [杨维桢](people/yang-weizhen.md)
 - [虞世南](people/yushi-nan.md)
+- [张即之](people/zhang-jizhi.md)
 - [张旭](people/zhang-xu.md)
 - [赵孟頫](people/zhao-mengfu.md)
 - [赵朴初](people/zhao-puchu.md)
@@ -133,8 +136,11 @@
 ### 南北朝
 
 - [爨龙颜碑](catalogue/cuan-longyan-bei.md) · 1 件实物
+- [元桢墓志](catalogue/yuanzhen-muzhi.md) · 1 件实物
 - [始平公造像记](catalogue/shipinggong-zaoxiang-ji.md) · 1 件实物
+- [穆亮墓志](catalogue/muliang-muzhi.md) · 1 件实物
 - [石门铭](catalogue/shimen-ming.md) · 1 件实物
+- [司马悦墓志](catalogue/simayue-muzhi.md) · 1 件实物
 - [瘗鹤铭](catalogue/yi-he-ming.md) · 1 件实物
 - [张猛龙碑](catalogue/zhang-menglong-bei.md) · 2 件实物
 - [张玄墓志](catalogue/zhang-xuan-muzhi.md) · 1 件实物
@@ -156,6 +162,7 @@
 - [晋祠之铭并序](catalogue/jinci-zhi-ming.md) · 2 件实物
 - [温泉铭](catalogue/wen-quan-ming.md) · 1 件实物
 - [雁塔圣教序](catalogue/yanta.md) · 1 件实物
+- [道因法师碑](catalogue/daoyin-fashi-bei.md) · 1 件实物
 - [同州圣教序](catalogue/tongzhou-shengjiao-xu.md) · 1 件实物
 - [大唐三藏圣教序碑](catalogue/ji-wang-shengjiao-xu.md) · 1 件实物
 - [书谱](catalogue/shupu.md) · 1 件实物
@@ -205,6 +212,7 @@
 ### 南宋
 
 - [陆游自书诗卷](catalogue/lu-you-zishu-shi.md) · 1 件实物
+- [双松图歌](catalogue/shuangsong-tuge.md) · 1 件实物
 
 ### 元
 

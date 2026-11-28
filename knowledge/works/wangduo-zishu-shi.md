@@ -21,6 +21,7 @@ attribution:
   - role: calligrapher
     name: 王铎
     nameEn: Wang Duo
+    person: wang-duo
     certainty: documented
     sources:
       - src-dpm-wangduo
