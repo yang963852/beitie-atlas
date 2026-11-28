@@ -27,7 +27,7 @@
 @media (prefers-reduced-motion:reduce) { .desk *, .desk *::before { transition:none!important; animation:none!important; } }
 .desk__credit { position:absolute; z-index:2; bottom:14px; left:clamp(12px,3vw,48px); padding:.45rem .65rem; color:#38372e; background:#f8f2e3ed; font-size:.78rem; }
 
-.desk[data-entering="true"] :is(.desk__library,.desk__credit) {opacity:0;pointer-events:none;transition:opacity .3s;}
+.desk[data-entering="true"] :is(.desk__library,.desk__credit,.desk__intro) {opacity:0;pointer-events:none;transition:opacity .3s;}
 
 .desk {
   --sheet-x: 60%;
@@ -158,4 +158,81 @@
 
 .desk__words {
   color: var(--ink, #2a251e);
+}
+
+/* --------------------------------------------------------------------------
+   Project statement on the opening desk
+   A light paper slip: the WebGL scene, the practice sheet and the ink spread
+   stay untouched. It carries no controls, so clicks still reach the sheet.
+   -------------------------------------------------------------------------- */
+
+.desk__library {
+  justify-content: flex-end;
+  max-width: calc(100% - 24px);
+}
+
+.desk__intro {
+  position: absolute;
+  z-index: 2;
+  right: clamp(12px, 3vw, 48px);
+  bottom: 3.6rem;
+  width: min(22rem, 54vw);
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line, #d9ccb4);
+  border-bottom: 3px double var(--line, #d9ccb4);
+  background: rgba(250, 245, 230, 0.94);
+  color: var(--ink-2, #554b3d);
+  font: 0.82rem/1.7 var(--font-kai, 'KaiTi', serif);
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  box-shadow: 0 2px 10px -6px rgba(42, 33, 22, 0.4);
+}
+
+.desk__intro p {
+  margin: 0;
+}
+
+.desk__intro .desk__intro-lead {
+  color: var(--ink, #2a251e);
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.desk__intro .desk__intro-motto {
+  margin-top: 0.6rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--line, #d9ccb4);
+  color: var(--accent, #8f2f22);
+  font-weight: 600;
+}
+
+@media (max-aspect-ratio: 17/20) {
+  .desk__intro {
+    right: 12px;
+    bottom: 3.4rem;
+    width: min(20rem, calc(100% - 24px));
+    font-size: 0.78rem;
+  }
+
+  .desk__intro .desk__intro-lead {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-height: 560px) {
+  .desk__intro {
+    bottom: 3.1rem;
+    width: min(18rem, 46vw);
+    padding: 0.5rem 0.7rem;
+    font-size: 0.72rem;
+  }
+
+  .desk__intro .desk__intro-lead {
+    font-size: 0.82rem;
+  }
+
+  .desk__intro .desk__intro-motto {
+    margin-top: 0.3rem;
+    padding-top: 0.3rem;
+  }
 }

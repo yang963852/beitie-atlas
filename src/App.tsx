@@ -1,5 +1,6 @@
 import { Component, lazy, Suspense, useSyncExternalStore, type ErrorInfo, type ReactNode } from 'react';
 import { OpeningDesk } from './components/OpeningDesk';
+import { ProjectPage, type ProjectPageKind } from './components/ProjectPage';
 import { LocaleSwitch } from './components/LocaleSwitch';
 import { BUILD_STAMP } from './domain/version';
 import { LocaleProvider, useLocale, type Locale } from './i18n';
@@ -24,6 +25,13 @@ const isLibraryRoute = (hash: string) => /^#\/(?:library|work|person|note)(?:\/|
 
 function isTimelineRoute(hash: string): boolean {
   return hash === '#catalogue' || hash === '#/collections' || /^#\/(?:folio|transmission)\//.test(hash);
+}
+
+/** Static reading pages: they need no corpus chunk and survive a shared link. */
+function projectPageFromHash(hash: string): ProjectPageKind | null {
+  if (hash === '#/about') return 'about';
+  if (hash === '#/join') return 'join';
+  return null;
 }
 
 /**
@@ -108,6 +116,8 @@ function subscribeRoute(notify: () => void) {
 function Reader() {
   const { locale } = useLocale();
   const hash = useSyncExternalStore(subscribeRoute, () => window.location.hash);
+  const projectPage = projectPageFromHash(hash);
+  if (projectPage) return <ProjectPage page={projectPage} />;
   if (!hash || hash === '#') {
     function navigate(destination: string) {
       window.history.pushState(null,'',destination);

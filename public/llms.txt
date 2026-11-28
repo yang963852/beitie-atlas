@@ -1,28 +1,39 @@
 # 碑帖之间 / Between Steles
 
-> 一个开源的中国书法碑帖知识库：把一件作品（碑或帖）与它存世的实物分开记录，
-> 每一条馆藏、年代与流传断言都注明来源，未知的保持未知。
-> An open knowledge base of Chinese steles and model-letter rubbings, recording
-> each named work separately from its surviving physical copies, with a cited
-> source for every claim. Chinese is the authoring language; English is optional.
+> 一个由书法爱好者共同建设的开放共享书法知识项目，主要面向初学者与爱好者。
+> 以经典碑帖为起点，整理作品、书家、传世实物、历史流传、研究文献及临习经验，
+> 提供知识与学习引导，但不替代人与人之间的教育。人人为我，我为人人。
+> An open, collaborative knowledge project built by lovers of Chinese calligraphy,
+> primarily for beginners and enthusiasts. Starting from classical steles and
+> modelbooks, it draws together works, calligraphers, surviving objects, histories
+> of transmission, research and experience of copying. It offers knowledge and
+> guidance for learning, not a substitute for teaching between people.
+> Everyone contributes for the benefit of others, and everyone benefits from
+> what others share. Chinese is the authoring language; English is optional.
 
 ## 网站
 
-- [首页](https://yang963852.github.io/beitie-atlas/)：按时代、书体与学习门类浏览作品与实物。
+- [首页](https://yang963852.github.io/beitie-atlas/)：案头开场，进入访碑、编年与读帖。
+- [关于我们](https://yang963852.github.io/beitie-atlas/#/about)：项目由来、定位与理念简述。
+- [参与共建](https://yang963852.github.io/beitie-atlas/#/join)：普通爱好者可以做什么、现有投稿入口的实际能力。
 - [知识库](https://yang963852.github.io/beitie-atlas/#/library)：作品、书家、笔记与实物档案的检索入口。
 - [现存地图](https://yang963852.github.io/beitie-atlas/#/collections)：按今天的收藏地或原址查找现存实物；没有可靠坐标的地点只列文字，不猜位置。
 - [年代长河](https://yang963852.github.io/beitie-atlas/#catalogue)：按作品所属时代排序。
 
+## 项目理念
+
+- [中文权威文本](https://github.com/yang963852/beitie-atlas/blob/main/docs/PROJECT.md) · [English statement](https://github.com/yang963852/beitie-atlas/blob/main/docs/PROJECT.en.md)：完整理念只保存在这两份文件，其他页面只作简述并引用。
+
 ## 数据
 
 - [Markdown 知识库](https://github.com/yang963852/beitie-atlas/tree/main/knowledge)：作者源，唯一的人工编辑入口。`knowledge/works`、`objects`、`people`、`places`、`sources`、`notes` 各目录一类记录，`relations.md` 记录人物与作品之间带来源的关系。
-- [完整知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip)：与上述 Markdown 同构，可直接作为 Obsidian vault 打开。
+- [完整知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip)：与上述 Markdown 同构，可用任意 Markdown 编辑器打开。
 - 网站与地图读取的是编译产物 `data/index/knowledge-v1.json`，由 `npm run knowledge:compile` 从 Markdown 确定性生成，不在仓库里人工维护。
 - 记录中的未知值以 `null` 保留；来源访问日期不是实物核验日期；作品与实物之间不复制出处。
 
 ## 参与
 
-- [提交资料](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)：可以只用中文，不必写代码。
+- [提交资料](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)：可以只用中文，不必写代码。这是公开的 GitHub Issue，不是站内投稿后台；网站上的投稿面板只生成可复制的文字并预填该表单。
 - [贡献指南](https://github.com/yang963852/beitie-atlas/blob/main/CONTRIBUTING.md) · [中文投稿说明](https://github.com/yang963852/beitie-atlas/blob/main/docs/CONTRIBUTE.zh-CN.md)
 - [源码仓库](https://github.com/yang963852/beitie-atlas)
 

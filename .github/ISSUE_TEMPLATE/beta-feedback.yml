@@ -1,5 +1,5 @@
 name: 内测反馈 · Beta feedback
-description: 反馈阅读、查找、地图或网页操作中的问题。
+description: 反馈阅读、查找、导航、中英切换、地图或网页操作中的问题，也包括「关于」「共建」页。
 title: "[内测] "
 labels: ["beta-feedback"]
 body:
@@ -26,4 +26,4 @@ body:
     id: expected
     attributes:
       label: 原本希望怎样？（选填）
-      description: 也欢迎指出读不懂的一句、找不到的入口或希望保留的体验。
+      description: 也欢迎指出读不懂的一句、找不到的入口、切换语言后不通顺的译文，或希望保留的体验。
