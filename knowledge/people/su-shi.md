@@ -25,6 +25,24 @@ sources: [src-catalogue-hanshi, src-dpm-231008, src-scwwj-hanshi]
 
 后来的读者一代比一代说得重。董其昌的观款写：“余生平见东坡先生真迹，不下三十余卷，必以此为甲观，已摹刻戏鸿堂帖中。”乾隆十三年（1748）题跋说“东坡书豪宕秀逸，为颜杨以后一人……所谓无意于佳乃佳者”。卷子的命比字更曲折：1860 年圆明园火后流出，冯展云、萧维邦、裴景福、盛昱、完颜景贤、颜世清依次经手；1922 年颜世清以六万元售与日本菊池惺堂，次年关东大地震，菊池冒死把它从火里抢出，卷上至今留着烧痕；1948 年王世杰以三千二百美元购回，1987 年归台北故宫博物院。读这卷字，也是在读它怎样一次次从火里出来。[四川省文物局，从《黄州寒食帖》题跋印章考察其庋藏递传历史](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml)
 
+### 生平与身份
+
+上文所记生卒、字号、籍贯、科举、历官、贬谪与谥号沿用原文，出故宫所附小传；该小传的 locator 列有生卒、字号、籍贯、科举、历官、贬谪、谥号诸项，本库未转录其逐字内容，故不据此增添新的传记数值。[故宫博物院，苏轼行书治平帖卷](https://www.dpm.org.cn/collection/handwriting/231008.html)。据 `dynastySource`，本页把他系于北宋。
+
+### 书体与师承
+
+上文已记其「得力于王僧虔、李邕、徐浩、颜真卿、杨凝式而自成家数」，为故宫小传所载；黄庭坚跋中所点颜真卿、杨凝式、李建中，与馆方所记颜、杨重合，上文已说明。[故宫博物院，苏轼行书治平帖卷](https://www.dpm.org.cn/collection/handwriting/231008.html)
+
+### 代表作与本库关联
+
+本库所收[《黄州寒食诗帖》](../works/hanshi.md)与[《治平帖》](../works/zhiping-tie.md)。前者书于元丰五年（1082），两首诗一百二十九字；后者纸本行书，馆方据卷后赵孟頫、文徵明、王穉登三跋定为熙宁年间京师所作。
+
+### 书迹可靠性
+
+以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+
+— 本页 `objects` 为空。[《黄州寒食诗帖》](../works/hanshi.md)与[《治平帖》](../works/zhiping-tie.md)均为纸本行书墨迹；董其昌观款说《寒食帖》「已摹刻戏鸿堂帖中」，故另有刻帖一路的读法，与墨迹分开记。1951 年入藏前后递传与火痕，见上文，不因流传而改其载体。
+
 ## English
 
 Su Shi (1037–1101), courtesy name Zizhan, style name Dongpo Jushi, was a native of Meishan in modern Sichuan and the second son of Su Xun. He passed the examinations in 1057, served as a bureau director under the Xining reign and governed Mizhou, Xuzhou and Huzhou; for disagreeing with Wang Anshi’s reforms he memorialised the emperor and was banished to Huangzhou. Recalled in the Yuanyou years, he became a Hanlin academician, governed Hangzhou and Yingzhou, and rose to minister of rites; in 1097 factional strife sent him again to Huizhou and Danzhou, and on his pardon and return north he died at Changzhou and was given the posthumous name Wenzhong. The Palace Museum’s note says he “excelled at calligraphy, drawing on Wang Sengqian, Li Yong, Xu Hao, Yan Zhenqing and Yang Ningshi to form a manner of his own, his brush rich and steep, with the flavour of unspoilt spontaneity”, and among his surviving works it lists the Cold Food Poems. [Palace Museum, Su Shi’s letter to Zhipping, biography](https://www.dpm.org.cn/collection/handwriting/231008.html)
@@ -34,5 +52,23 @@ The [Cold Food Poems](../works/hanshi.md) were written at the Cold Food festival
 Half its weight was added by Huang Tingjian. Between the seventh and ninth months of 1100, on his way from Yibin to visit relatives at Qingshen, Huang was shown the scroll by Zhang Hao and wrote a colophon of nine lines and fifty-nine characters: “Dongpo’s poem resembles Li Taibai, except that Taibai may not have reached this far. The writing combines the intentions of Yan Lugong, Yang Shaoshi and Li Xitai; if Dongpo were to do it again, he might not match it. Should Dongpo see this some day, he will laugh at me for claiming supremacy where there is no Buddha.” The three names he cites — Yan Zhenqing, Yang Ningshi, Li Jianzhong — overlap exactly with the Yan and Yang in the museum’s list of Su’s models; and “if Dongpo were to do it again, he might not match it” says that this writing cannot be repeated, that it records a single passing state of mind and hand. This library also holds the [Letter on Leek Flowers](../works/jiuhua-tie.md), whose author, Yang Ningshi, is the very man Huang uses here as his measure. [Sichuan Cultural Relics Bureau, on the colophons and seals of the Cold Food Poems](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml)
 
 Later readers spoke ever more heavily. Dong Qichang’s inscription reads: “In my life I have seen no fewer than thirty-odd genuine works of Dongpo, and this must be the finest of them; I have already had it carved in the Xihongtang modelbook.” Qianlong’s colophon of 1748 says that “Dongpo’s writing is bold and free, the one man after Yan and Yang… the saying that one does not aim at excellence and so attains it.” The scroll’s fate is more twisted than its brush: it left the Yuanmingyuan after the fire of 1860 and passed through Feng Zhanyun, Xiao Weibang, Pei Jingfu, Sheng Yu, Wanyan Jingxian and Yan Shiqing; in 1922 Yan sold it to the Japanese collector Kikuchi Seido for sixty thousand yuan, and when the Great Kanto earthquake struck the next year Kikuchi pulled it from the flames at the risk of his life — the burn marks are still on the scroll; in 1948 Wang Shijie bought it back for 3,200 dollars, and in 1987 it entered the National Palace Museum in Taipei. To read the writing is also to read how it came out of the fire, again and again. [Sichuan Cultural Relics Bureau, on the colophons and seals of the Cold Food Poems](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml)
+
+### Life and identity
+
+The dates, courtesy name, native place, examination, offices, banishments and posthumous name above are kept from the museum's attached biography, whose locator lists those categories; the source kept here does not transcribe the biography verbatim, so no further biographical values are added. [Palace Museum, Su Shi's letter to Zhipping](https://www.dpm.org.cn/collection/handwriting/231008.html). By `dynastySource` this page places him in the Northern Song.
+
+### Scripts and models
+
+The account above — drawing on Wang Sengqian, Li Yong, Xu Hao, Yan Zhenqing and Yang Ningshi to form a manner of his own — is from the museum biography. The three names Huang Tingjian cites in his colophon, including Yan Zhenqing and Yang Ningshi, overlap with the museum's list, as noted above. [Palace Museum, Su Shi's letter to Zhipping](https://www.dpm.org.cn/collection/handwriting/231008.html)
+
+### Works in this library
+
+The library holds the [Cold Food Poems](../works/hanshi.md) and the [Letter to the Zhipping Monastery](../works/zhiping-tie.md). The former was written in 1082, two poems of 129 characters; the latter is ink on paper in running script, dated by the museum from the three colophons to his years in the capital under the Xining reign.
+
+### Reliability of the surviving trace
+
+The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+
+— This page has no `objects` entries. Both the [Cold Food Poems](../works/hanshi.md) and the [Letter to Zhipping](../works/zhiping-tie.md) are ink on paper in running script; Dong Qichang's inscription says the Cold Food Poems were "already carved into the Xihongtang modelbook," so a modelbook engraving is a separate reading from the ink witness, and they are kept apart. The transmission and the burn marks above do not change the carrier.
 
 He also left a letter in the Palace Museum, dated to the Xining years. The [Letter to the Zhipping Monastery](../works/zhiping-tie.md), ink on paper, 29.2 by 45.2 cm, is addressed to the head of the Zhipping cloister and to Master Xu and asks them to look after the graves at Shitou Bridge and Pengtou; it is signed “the eighteenth of the eighth month”. From the colophons of Zhao Mengfu, Wen Zhengming and Wang Zhideng the museum dates it to his years in the capital under the Xining reign, when he was in his thirties, and quotes Zhao’s phrase “the strokes have the elegance of a fine manner” for its early brushwork. The frontispiece carries a Ming portrait of Su Shi and a eulogy written by the monk Donggao Miaosheng; with the three colophons come the collectors’ seals of Song Luo and Zhang Ji. [Palace Museum, Su Shi’s letter to Zhipping](https://www.dpm.org.cn/collection/handwriting/231008.html)

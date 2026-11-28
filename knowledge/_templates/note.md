@@ -3,6 +3,9 @@ schemaVersion: 2
 titleZh: 读帖笔记题名
 titleEn: Reading note title
 state: draft
+category: close-reading
+period: tang
+order: 15
 works: []
 objects: []
 sources:

@@ -1,6 +1,8 @@
 ---
 schemaVersion: 2
 titleZh: "09｜阅读路径：隶变——从青铜到汉碑"
+category: path
+order: 9
 titleEn: "09 — Reading Path: The Clerical Turn — From Bronze to Han Stele"
 state: reviewed
 works:

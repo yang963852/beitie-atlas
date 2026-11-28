@@ -147,9 +147,9 @@ export function ObjectDetail({ object, onBack, onShowMap, onContribute, onJourne
           {object.review.state === 'draft' ? <span className="badge badge--draft">{strings.reviewDraft}</span> : null}
         </p>
 
-        <h2 id="detail-title" className="detail__title" lang="zh-Hans">
+        <h1 id="detail-title" className="detail__title" lang="zh-Hans">
           {object.titles.zh}
-        </h2>
+        </h1>
         <p className="detail__subtitle" lang="en">
           {object.titles.en}
         </p>

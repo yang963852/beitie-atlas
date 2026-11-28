@@ -1,8 +1,13 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { RootErrorBoundary } from '../src/components/RootErrorBoundary';
 
 import App from '../src/App';
+import { warmRoutes } from './warm-routes';
+
+beforeAll(async () => {
+  await warmRoutes(['timeline']);
+}, 120000);
 
 function Exploding(): never {
   throw new Error('corpus exploded');

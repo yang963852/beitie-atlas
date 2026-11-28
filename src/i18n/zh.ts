@@ -13,8 +13,6 @@ export const zhStrings: Strings = {
   taglineLead: '案头所临，',
   tagline: '如今藏在何处',
   enterCatalogue: '打开访碑图',
-  taglineDetail:
-    '从案头临习的碑帖出发，读历代书家与作品，循著录访原石、墨迹与拓本。',
   studyFilter: '按作品类别筛选',
   studyLabels: { all: '全部', bei: '碑', tie: '帖' },
   draftNotice: '此预览版包含仍待审核的记录。请以每条记录的引证为准。',
@@ -63,8 +61,6 @@ export const zhStrings: Strings = {
   provenanceIntro: '循著录与题跋，看这件实物曾在何人手中、何处停留。其间缺环，留待考证。',
   provenanceEmpty: '所引资料尚未记下这件实物的递藏经过。',
   eventPlaceUnknown: '地点未记载',
-  eventCertaintyLabel: '确定性',
-  eventSourcesLabel: '出处',
 
   notesHeading: '编辑说明与待补',
   /** Which record the following notes belong to; a physical object, its work, or its place. */
@@ -77,8 +73,6 @@ export const zhStrings: Strings = {
   sourcesControl: (count: number) => `出处（${count}）`,
   sourceAccessed: (date: string) => `查阅于 ${date}`,
   sourceLocator: '定位',
-  noSources: '暂无出处。',
-  editorialDetails: '编辑与坐标信息',
 
   backgroundHeading: '作品背景',
   backgroundLanguageNote: '按记录语言显示，不做即时翻译。',
@@ -145,14 +139,7 @@ export const zhStrings: Strings = {
     '底图未能加载，通常是密钥或域名白名单限制。点位、地点列表与全部资料仍可正常使用。',
   mapFitAll: '显示全部点位',
   mapDeveloperDetails: '开发者信息',
-  mapUnconfiguredDevNote:
-    '构建时没有提供天地图密钥，因此不请求地图，也不向服务商发送任何内容。配置步骤见 docs/map-setup.md。',
   mapFailureDevNote: (code: string, message: string) => `${code}：${message}`,
-  mapSetupTitle: '如何启用真实底图',
-  mapSetupBody: '在项目根目录的 .env.local 中写入天地图浏览器密钥，然后重新启动预览。构建时读取该密钥。',
-  mapSetupCode: 'VITE_TIANDITU_KEY=你的密钥',
-  mapSetupNote:
-    '写入后运行 npm run check:map-key 可先验证密钥。浏览器密钥会随页面一起公开，请在服务商控制台按域名与配额限制使用，不要当作私密凭据。',
   mapAttributionLabel: '地图服务',
   mapAttributionText:
     '天地图（国家地理信息公共服务平台）。按服务商条款展示，审图号由服务商标注。',
@@ -174,7 +161,6 @@ export const zhStrings: Strings = {
     'no-point': '无坐标记录',
   },
   locationsEmpty: '暂无已核实的点位。',
-  coordinateLabel: '坐标',
   coordinateDetails: '坐标与精度',
   precisionLabel: '精度',
   coordinateSourceLabel: '坐标来源',
@@ -258,7 +244,6 @@ export const zhStrings: Strings = {
     accession: '入藏',
     other: '其他',
   },
-  dynastyHeading: '朝代',
   dynastyUnknown: '朝代未记',
   dynastyFactLabel: '朝代',
   eventTypeLabels: {

@@ -19,6 +19,8 @@ Shimen Inscription
 
 书体：楷书
 
+延伸阅读：[王远](../people/wang-yuan.md)
+
 作品待考与说明
 
 - 所引页面没有实测尺寸，故不填写。
