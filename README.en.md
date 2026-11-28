@@ -71,7 +71,7 @@ npm run dev
 
 ## Status and limitations
 
-- The site is public on GitHub Pages; the edition label follows the `version` in `package.json`, which the interface footer and the library colophon read from the same field. Every entry has passed the release gate and editorial confirmation. Open questions and conflicting accounts stay in each record's 待考 and claims sections rather than being resolved by assertion. See the [release runbook](docs/release.md).
+- The site is public on GitHub Pages, and every checked merge to `main` is deployed, so the live content may be newer than the latest formal edition. The interface footer and the library colophon show the formal edition (the `version` in `package.json`) together with the current build revision. Every entry has passed the release gate and editorial confirmation. Open questions and conflicting accounts stay in each record's 待考 and claims sections rather than being resolved by assertion. See the [release runbook](docs/release.md) for editions, tags and rollback.
 - The live basemap depends on the Tianditu network service; without a key, or when tiles are refused, the map shows a coordinate schematic. Observed access varies by network and must be tested locally; the project does not guarantee it.
 - Quotations, collection images and map services retain their own terms.
 

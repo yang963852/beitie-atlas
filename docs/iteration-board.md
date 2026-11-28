@@ -1,6 +1,6 @@
 # Iteration board
 
-Updated: 2026-11-27. This board tracks the active milestone. Independent contributions are coordinated in GitHub Issues and pull requests.
+Updated: 2026-11-28. This board tracks the active milestone. Independent contributions are coordinated in GitHub Issues and pull requests.
 
 **Archived milestones:** 001–039 are in the annotated tag `archive-pre-hygiene-2026-11-25`; 040–051 and the completed plans, proposals and audit are in `archive-milestones-040-051-2026-11-26`. Agent-named coordination records are in `archive-agent-records-2026-11-27`. See [the archive index](archive.md).
 
@@ -13,12 +13,13 @@ Updated: 2026-11-27. This board tracks the active milestone. Independent contrib
 
 The owner decides merges; self-review is sufficient. Routine work needs only a PR with the change, checks and known gaps. CI green plus the owner's merge is the gate.
 
-A release updates `CHANGELOG.md`, tags `vX.Y.Z` and lets Pages publish. A release note is optional. The board is optional; if a task card or delivery report exists, `npm run check:docs` checks its row and links. A row state opens with `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted` or `Superseded`.
+A merge to `main` deploys the site. A formal release is a separate maintainer decision that updates `CHANGELOG.md` and the package version, tags the release merge commit and publishes a GitHub Release; [the release runbook](release.md) is the authority. A release note is optional. The board is optional; if a task card or delivery report exists, `npm run check:docs` checks its row and links. A row state opens with `Queued`, `In progress`, `Changes required`, `Delivered`, `Accepted` or `Superseded`.
 
 P1 blocks a release; P2 is fixed in the next pass; P3 is optional. Fix demonstrated risks first. Do not overwrite evidence from previous rounds; roll back by reverting the specific change.
 
 ## Decisions
 
+- 2026-11-28: Formal editions use SemVer 2.0.0 with `package.json` as the single author source. Continuous deployment and a formal release are separate: a release adds a CHANGELOG edition, an annotated tag and a GitHub Release. The interface shows the edition with the build revision, and `npm run check:version` / `npm run check:tag` verify the metadata. See [the release runbook](release.md).
 - 2026-11-27: Historical records that named a local agent moved to the annotated tag `archive-agent-records-2026-11-27`: tasks 052/053, delivery 052, the ontology pilot input and the original Duobao reading-note credit. `main` keeps the current guidance without those names; [the archive index](archive.md) gives the restore paths.
 - 2026-11-27: The compiled interface leaves version control. `data/index/knowledge-v1.json` is rebuilt by `npm run knowledge:build`, and the `dev`, `build`, `check`, `typecheck` and `test` entry points run that build themselves, so a fork no longer carries one generated file that conflicts on every content change. `knowledge/catalogue/` and `knowledge/README.md` stay tracked: they are the GitHub reading surface and the target of the repository's navigation links, and `check:knowledge` still fails on drift.
 - 2026-11-27: The public repository carries a tool-independent agent contract. `AGENTS.md` states the binding rules and the documents to read per task; it names no local agent, branch or machine path. Agent prompts, private skills and local workspace instructions live outside version control. This supersedes the 2026-11-25 long-lived per-agent branch decision: each task uses its own short-lived branch opened from current `main`, and concurrent tasks use separate clones or working trees.
