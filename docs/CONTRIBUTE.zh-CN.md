@@ -115,7 +115,7 @@ guideSources: []           # 正文全部外部事实的来源 id
 - 冲突并列，不取平均；结构化字段留空，冲突写进当段与 07。
 - 每句事实给链接或“作者《篇名》卷/页”；转引写“转引自”，不伪装成亲见原书。
 - `guidePeople`、`guideObjects`、`guideSources` 必须与正文实际引用一致，id 真实存在。
-- 审读前 `guideState: draft`；审读后由审读人确认再改 `guideState: reviewed`，实施者不能自审自批。
+- 审读前 `guideState: draft`；当前内部测试版由实施者自审后改 `guideState: reviewed`，维护者合并即编辑确认，不另设审批人。涉及书法实践判断的段落，未取得外部专业审读时在正文标 `> 待专业审读：`；取得后再删标记并在 PR 记名，不阻塞测试版发布。
 
 ## 下载完整知识库，改一篇再提 PR
 

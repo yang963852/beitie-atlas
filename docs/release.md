@@ -10,7 +10,7 @@ Task 002 introduced a strict release gate. This page records the formal release 
 | `npm run release` | Public interactive atlas | No, a draft or invalid record fails the build | `dist/` marked `release`, with `dist/release-manifest.json` |
 | `npm run check:release` | Review the gate without building | No | Nothing written; exit code only |
 
-`npm run check` runs the preview quality checks, including data and knowledge validation, document checks, tests and a preview build. CI gives technical evidence for the source PR. The owner decides merges; under the lightweight workflow, the owner's merge is the editorial approval. No separate sign-off is required.
+`npm run check` runs the preview quality checks, including data and knowledge validation, document checks, tests and a preview build. CI gives technical evidence for the source PR. The owner decides merges; under the lightweight workflow, the owner's merge is the editorial approval. No separate sign-off is required. While the site is an internal test edition, a record's `reviewed` state is the author's self-review, checked by the gate for sources and evidence; no reviewer name or review date is recorded, and none is invented. Professional review of practice-based judgements remains a content goal, marked in the text where it has not happened.
 
 ## Lightweight release
 
