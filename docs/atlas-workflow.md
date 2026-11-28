@@ -1,6 +1,6 @@
 # Atlas workflow
 
-GitHub is the canonical source and [GitHub Pages](https://yang963852.github.io/beitie-atlas/) is the sole website host. The Pages workflow publishes a labelled preview. Formal editorial approval is a separate decision from source merge.
+GitHub is the canonical source and [GitHub Pages](https://yang963852.github.io/beitie-atlas/) is the sole website host. Merging to `main` runs the release gate through the Pages workflow and publishes the checked build; under the lightweight workflow the maintainer's merge is the editorial approval.
 
 ## What counts as a source
 
@@ -40,10 +40,10 @@ When moving an existing narrative, compare its text, language, source links, sta
 
 The Chinese contribution guide carries the six source rules and the seven-part guide standard used by Chinese-language editors: [中文投稿与试读指南](CONTRIBUTE.zh-CN.md#来源六条硬规则).
 
-## GitHub Pages preview
+## GitHub Pages deployment
 
 1. In GitHub repository **Settings → Pages**, set the publishing source to **GitHub Actions**. [The Pages workflow](../.github/workflows/pages.yml) runs on changes to `main` or by manual dispatch from `main`.
-2. The workflow uses the host's project base path, runs keyless checks, then builds the labelled preview with the repository Actions secret `TIANDITU_BROWSER_KEY` when set. It publishes only `dist/` as an Actions artifact. The browser key is visible in the resulting bundle; restrict it to the authorized host and quota. Never commit the key or build output. The coordinate grid and location list remain usable without basemap tiles.
+2. The workflow uses the host's project base path and runs `npm run check` without a map key. It then runs `npm run release` with the repository Actions secret `TIANDITU_BROWSER_KEY` when set, verifies the `release` marker, the manifest counts and the downloadable library ZIP, and uploads only `dist/` as an Actions artifact. The browser key is visible in the resulting bundle; restrict it to the authorized host and quota. Never commit the key or build output. The coordinate grid and location list remain usable without basemap tiles.
 3. Verify the deployment's revision and URL, refresh an object permalink, and open a source from an object's timeline. Record the result and any mainland reachability gap. Do not report a queued or failed workflow as a public deployment.
 
 ## Formal atlas release
