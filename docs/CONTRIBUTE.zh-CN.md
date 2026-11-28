@@ -1,6 +1,63 @@
 # 中文投稿与试读指南
 
-[项目首页](../README.md) · [知识库目录](../knowledge/README.md) · [网站](https://yang963852.github.io/beitie-atlas/)
+[项目首页](../README.md) · [项目理念](PROJECT.md) · [知识库目录](../knowledge/README.md) · [网站](https://yang963852.github.io/beitie-atlas/)
+
+碑帖之间是一个由书法爱好者共同建设的、开放共享的书法知识项目，主要面向书法初学者与爱好者。我们提供知识与学习引导，但不替代人与人之间的教育。**人人为我，我为人人。** 完整理念见[项目理念](PROJECT.md)（[English](PROJECT.en.md)），本页只讲怎样参与。
+
+## 谁可以参与
+
+无论你刚刚开始临帖，还是已经临习多年，都可以参与。你不必是书法专家，不需要懂编程或人工智能，也不必为了贡献而改变自己的学习方式。临帖、阅读、讨论，本身就是建设碑帖之间的起点。
+
+## 你可以做些什么
+
+- 分享临帖中的观察、经验与疑问。
+- 补充经典碑帖、书家及相关历史知识。
+- 提供可靠的馆藏信息、图录、书籍与研究文献。
+- 分享访碑、观展过程中的发现。
+- 纠正知识库中的错误，提出阅读与学习建议。
+- 参与书法讨论，分享自己的理解与思考。
+- 利用项目的开放资源，自行开展学习、研究与文化活动。
+
+一条文献线索、一处文字勘误、一次真实的学习体会，都具有价值。我们尊重贡献者的署名、个人观点与原创表达，也希望所有事实性知识都能够追溯其来源。
+
+## 现有投稿入口能做什么
+
+网站是 GitHub Pages 上的**静态站点**，没有站内投稿后台、注册登录、在线论坛、积分排名或个人主页。
+
+- 实物记录里的「补充或纠正这条记录」：把你写的内容整理成一段可以阅读、可以复制的文字；点击「打开提交页」时用这段文字预填 GitHub 的公开投稿表单。页面本身**不保存、不发送**任何内容，也不会自动发布。你也可以只复制文字，自行决定在哪里使用。
+- [资料投稿表](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)：在 GitHub 上公开发布一条 Issue，可只用中文，一次写一件事。
+- [内测反馈表](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)：反馈阅读、导航、地图或网页操作中的问题。
+- 直接改 Markdown 或提 PR：在 GitHub 上修改作者源稿，把改动交给维护者审查。
+
+公开提交后，编辑会核对可打开的机构页面、政府页面或印刷图录，再决定是否收录；没有来源的回忆、碑帖应用截图只作线索。项目目前没有公开的专用联系邮箱或私信通道，请勿在公开 Issue 里填写隐私信息。
+
+## 如何参与
+
+1. **先用现有投稿入口**：按下面「只用浏览器提交资料」写一条，或在实物记录里使用「补充或纠正这条记录」生成文字。不会使用 GitHub 的朋友，可以先整理好自己的文字，请熟悉 GitHub 的朋友代为提交，或在已有的公开 Issue 中留言，由维护者在公开渠道协助整理。
+2. **想直接改稿**：按下面「直接编辑一篇文章」或「直接提 PR」操作，只改你要改的那一篇。
+3. **想先看看**：按[五分钟试读](#五分钟试读)走一遍，把读不懂的句子、找不到的入口告诉我们。
+
+不必为了贡献而改变自己的学习方式。**人人为我，我为人人。**
+
+## 只用浏览器提交资料
+
+1. 登录 GitHub，打开[资料投稿表](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)。题目写「作品或人物＋想补充的事」。
+2. 用自己的话写一件事。馆藏网页附链接和段落，书刊附作者、书名、版本、页码或图版。只知道线索时，在出处栏写「待查」，说清哪一点有疑问。读帖观察欢迎中文原稿，写明观察人、具体版本、哪一字或哪一行、别人怎样复看。
+3. 点 **Create** 提交，记下弹出的 Issue 编号。资料编辑在原帖认领，回帖附整理后的条目、PR 链接、待补证据或暂缓收录的理由。署名可用 GitHub 名或笔名。相冲突的著录保留各自出处，不要替编辑裁决。
+
+例如，故宫藏《颜勤礼碑》拓册的馆藏号为「新00045406」。如果要补制作年代，可以写「故宫藏品简介著录为民国拓本，具体拓年待考」，注明该页的对象名称、简介段和链接。把这条证据归给故宫这件拓册，原石另有自己的经历。[故宫藏品著录](https://www.dpm.org.cn/collection/impres/234175.html)
+
+## 五分钟试读
+
+1. 打开[网页知识库](https://yang963852.github.io/beitie-atlas/#/library)，找到[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)，从书家页进入[《颜勤礼碑》](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei)。刷新一次，看看能否回到同一条目。
+2. 打开作品下的一件实物，找它的持藏出处。换到另一件，对比实物名称、年代和记载。再回知识库，选择「书家」，搜「沈尹默」，查一条与他有关的人物关系及所附依据。
+3. 任选手机或电脑，试试键盘 Tab、浏览器返回或放大页面；也可以从首页或导航打开[关于我们](https://yang963852.github.io/beitie-atlas/#/about)与[参与共建](https://yang963852.github.io/beitie-atlas/#/join)，切换中英文，再刷新一次。遇到问题点[反馈问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)，写下出问题的网址、设备或浏览器、操作步骤、实际结果和预期。也欢迎告诉我们哪段叙述最难读。
+
+目前人物与作品专题按选题逐步增加，条目以馆方与印本著录为据；部分年代、藏址与当代临习使用情况仍待来源核实。真实底图依赖网络和地图服务；没有坐标的实物仍可查阅文字、来源和已知地点。各地网络能否打开须在当地实际测试。内容版次以仓库 `package.json` 的 `version` 为准。
+
+---
+
+以下为**技术流程**，普通爱好者不必阅读。
 
 ## 直接提 PR
 
@@ -13,7 +70,7 @@
 
 从[知识库](../knowledge/README.md)进入署名文章，点 GitHub 文件右上角的铅笔，修改正文或附上来源，再切到 **Preview** 检查。点 **Commit changes**，选择创建分支并提交 **Pull request**；首次参与时按 GitHub 提示创建自己的 Fork。在 PR 中写明改了哪一句、依据在哪里。若编辑的是标有「生成」的目录或实物资料，可在 PR 中修改对应的来源记录，并按下文更新生成页。只掌握线索时，也可以用资料投稿表附上该页链接。
 
-读帖观察欢迎中文原稿。请写明观察人、具体版本、哪一字或哪一行、别人怎样复看。第三方图片可给原始链接；申请收录图片时附作者、来源、许可和署名方式。保留相冲突的著录和各自出处。一般投稿只走一条路径即可。
+第三方图片可给原始链接；申请收录图片时附作者、来源、许可和署名方式。
 
 想新写一篇，可以在 [作品](../knowledge/works)、[书家](../knowledge/people)、[读帖笔记](../knowledge/notes)或[实物](../knowledge/objects)目录点 **Add file → Create new file**，用小写英文字母、数字与短横线起一个便于引用的文件名，以 `.md` 结尾。在本地检出中，`npm run contrib:new -- work yan-qinli-bei`（类型可为 `work`、`object`、`person`、`note`、`place`、`source`）会按模板建好文件并校验文件名；已存在的记录不会被覆盖。先复制对应的[中文模板](../knowledge/_templates/)，把 `schemaVersion: 2` 保留在顶部。作品与实物的日期、署名、出处和审核状态写在 YAML；背景、待考和导读写进正文。参考[现有作品](../knowledge/works/yan-qinli-bei.md)，正文用下列结构：
 
@@ -56,13 +113,14 @@ reviewNote: 还缺什么证据
 
 新建、改题或调整审核状态可能使知识总目需要更新。编辑可在同一投稿 PR 运行 `npm run knowledge:compile && npm run knowledge:generate` 并提交生成结果；如果投稿人使用 Fork，由编辑与投稿人协商分支更新或关联整理 PR。你可以始终只用浏览器。
 
-## 在 Obsidian 里编辑
+## 下载完整知识库，改一篇再提 PR
 
-把 `knowledge/` 文件夹作为仓库（Vault）打开，会加载随仓库提交的配置：属性类型按 schema v2 预设，模板文件夹指向 `_templates/`，阅读视图使用 `snippets/reading.css`。这些文件在 `knowledge/.obsidian/`，只含共享设置；个人的窗口布局、插件、主题与快捷键不会进入 git。
+[下载完整知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip)。压缩包随已检查的 `main` 生成，附源提交号、中文总目、作者 Markdown、生成目录、内部链接和权利说明。
 
-- 在属性面板里直接编辑扁平字段（`titleZh`、`dateStart`、`reviewState` 等），不要改回 v1 的嵌套写法；嵌套的 `date:`、`collection:` 会让构建失败。
-- 新建记录选对应模板，替换占位内容，文件名保持小写稳定 ID。
-- 提交前仍要运行 `npm run knowledge:compile && npm run knowledge:generate`；Obsidian 不会替你检查证据、引用和双语对齐。
+1. 解压，用任意 Markdown 编辑器打开。先读根目录的 `开始阅读.md`。
+2. 只改你要改的那一篇，例如 `knowledge/works/yan-qinli-bei.md`。文件名是稳定 ID，不要改名。
+3. 在自己的 GitHub Fork 中按原路径上传这个文件，向 `yang963852/beitie-atlas` 的 `main` 提 PR。
+4. 只提交你改动的源稿。`knowledge/catalogue/`、`knowledge/README.md` 和 `manifest.json` 是生成文件，由项目维护者重新生成。
 
 ## 来源六条硬规则
 
@@ -116,28 +174,3 @@ guideSources: []           # 正文全部外部事实的来源 id
 - 每句事实给链接或“作者《篇名》卷/页”；转引写“转引自”，不伪装成亲见原书。
 - `guidePeople`、`guideObjects`、`guideSources` 必须与正文实际引用一致，id 真实存在。
 - 审读前 `guideState: draft`；当前内部测试版由实施者自审后改 `guideState: reviewed`，维护者合并即编辑确认，不另设审批人。涉及书法实践判断的段落，未取得外部专业审读时在正文标 `> 待专业审读：`；取得后再删标记并在 PR 记名，不阻塞测试版发布。
-
-## 下载完整知识库，改一篇再提 PR
-
-[下载完整知识库 ZIP](https://yang963852.github.io/beitie-atlas/download/beitie-knowledge.zip)。压缩包随已检查的 `main` 生成，附源提交号、中文总目、作者 Markdown、生成目录、内部链接和权利说明。
-
-1. 解压，用 Obsidian 或任意 Markdown 编辑器打开。先读根目录的 `开始阅读.md`。
-2. 只改你要改的那一篇，例如 `knowledge/works/yan-qinli-bei.md`。文件名是稳定 ID，不要改名。
-3. 在自己的 GitHub Fork 中按原路径上传这个文件，向 `yang963852/beitie-atlas` 的 `main` 提 PR。
-4. 只提交你改动的源稿。`knowledge/catalogue/`、`knowledge/README.md` 和 `manifest.json` 是生成文件，由项目维护者重新生成。
-
-## 只用浏览器提交资料
-
-1. 登录 GitHub，打开[资料投稿表](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml)。题目写「作品或人物＋想补充的事」。
-2. 用自己的话写一件事。馆藏网页附链接和段落，书刊附作者、书名、版本、页码或图版。只知道线索时，在出处栏写「待查」，说清哪一点有疑问。
-3. 点 **Create** 提交，记下弹出的 Issue 编号。资料编辑在原帖认领，回帖附整理后的条目、PR 链接、待补证据或暂缓收录的理由。署名可用 GitHub 名或笔名。
-
-例如，故宫藏《颜勤礼碑》拓册的馆藏号为「新00045406」。如果要补制作年代，可以写「故宫藏品简介著录为民国拓本，具体拓年待考」，注明该页的对象名称、简介段和链接。把这条证据归给故宫这件拓册，原石另有自己的经历。[故宫藏品著录](https://www.dpm.org.cn/collection/impres/234175.html)
-
-## 五分钟试读
-
-1. 打开[网页知识库](https://yang963852.github.io/beitie-atlas/#/library)，找到[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)，从书家页进入[《颜勤礼碑》](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei)。刷新一次，看看能否回到同一条目。
-2. 打开作品下的一件实物，找它的持藏出处。换到另一件，对比实物名称、年代和记载。再回知识库，选择「书家」，搜「沈尹默」，查一条与他有关的人物关系及所附依据。
-3. 任选手机或电脑，试试键盘 Tab、浏览器返回或放大页面。遇到问题点[反馈问题](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml)，写下出问题的网址、设备或浏览器、操作步骤、实际结果和预期。也欢迎告诉我们哪段叙述最难读。
-
-目前人物与作品专题按选题逐步增加，条目以馆方与印本著录为据；部分年代、藏址与当代临习使用情况仍待来源核实。真实底图依赖网络和地图服务；没有坐标的实物仍可查阅文字、来源和已知地点。各地网络能否打开须在当地实际测试。内容版次以仓库 `package.json` 的 `version` 为准。
