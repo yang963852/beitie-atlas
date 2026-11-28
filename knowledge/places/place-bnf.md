@@ -17,8 +17,10 @@ coordinateNoteZh: 维基数据 P625 数值，指法国国家图书馆这一机�
 sources: []
 notes:
   - Holds the Dunhuang rubbing of the 温泉铭 as Pelliot chinois 4508.
+  - Holds the Dunhuang rubbing of the 柳公权书金刚经 as Pelliot chinois 4503.
 notesZh:
   - 藏敦煌本《温泉铭》残卷，编号 Pelliot chinois 4508。
+  - 藏敦煌本《柳公权书金刚经》拓本，编号 Pelliot chinois 4503。
 ---
 
 # 法国国家图书馆
