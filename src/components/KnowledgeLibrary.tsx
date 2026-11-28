@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState, type ReactNode } from 'react';
 import { useLocale } from '../i18n';
-import { knowledgeRelations, type KnowledgeKind } from '../domain/knowledge';
-import { findEntry, libraryEntries, libraryHref, linkedEntries, matchesQuery, type LibraryEntry } from '../domain/library';
+import { knowledgeRelations, type KnowledgeKind, type NoteCategory, type NotePeriod } from '../domain/knowledge';
+import { findEntry, libraryEntries, libraryHref, libraryNotes, linkedEntries, matchesQuery, noteDisplayTitle, noteExcerpt, type LibraryEntry } from '../domain/library';
 import { getDataset, getPlace } from '../domain/data';
 import { dynastyLabel } from '../domain/dynasties';
 import { formatAttribution } from '../domain/attribution';
@@ -25,8 +25,8 @@ const totals = {
   notes: libraryEntries.filter((entry) => entry.kind === 'notes').length,
 };
 const words = {
-  zh: { works: '作品', people: '书家', notes: '读帖笔记', title: '读帖', collection: '实物图录', library: '读帖', beta: EDITION_LABEL.zh, feedback: '反馈', contribute: '补充资料', github: '在 GitHub 阅读', download: '下载完整知识库（ZIP）', search: '搜索作品、书家或笔记', empty: '未找到相关条目。', clear: '清除搜索', objects: '传世实物', objectsHeading: '选择一件实物', selectedObject: '当前实物', objectMap: '在地图与完整记录中查看', noObjects: '本项目尚未收录可辨实物。', claims: '异说与意见', roles: '关联作品与角色', relations: '人物往来', sources: '参考出处', authored: '作品导读', none: '条目尚未收录', home: '返回读帖', unknownPlace: '收藏地待考' },
-  en: { works: 'Works', people: 'Calligraphers', notes: 'Reading notes', title: 'Reading room', collection: 'Object catalogue', library: 'Reading room', beta: EDITION_LABEL.en, feedback: 'Feedback', contribute: 'Suggest a source', github: 'Read on GitHub', download: 'Download the full library (ZIP)', search: 'Search works, people or notes', empty: 'No matching entries.', clear: 'Clear search', objects: 'Surviving witnesses', objectsHeading: 'Choose a witness', selectedObject: 'Selected witness', objectMap: 'Open the map and full record', noObjects: 'No identifiable witness is catalogued yet.', claims: 'Claims and opinions', roles: 'Works and roles', relations: 'Documented relationships', sources: 'Sources', authored: 'Reading guide', none: 'Entry unavailable', home: 'Back to the reading room', unknownPlace: 'Holding unknown' },
+  zh: { works: '作品', people: '书家', notes: '读帖笔记', title: '读帖', collection: '实物图录', library: '读帖', beta: EDITION_LABEL.zh, feedback: '反馈', contribute: '补充资料', github: '在 GitHub 阅读', download: '下载完整知识库（ZIP）', search: '搜索作品、书家或笔记', empty: '未找到相关条目。', clear: '清除搜索', objects: '传世实物', objectsHeading: '选择一件实物', objectsHint: '选择一件实物。每件实物只显示自己的履历。', selectedObject: '当前实物', objectMap: '在地图与完整记录中查看', noObjects: '本项目尚未收录可辨实物。', claims: '异说与意见', roles: '关联作品与角色', relations: '人物往来', sources: '参考出处', authored: '作品导读', none: '条目尚未收录', home: '返回读帖', unknownPlace: '收藏地待考' },
+  en: { works: 'Works', people: 'Calligraphers', notes: 'Reading notes', title: 'Reading room', collection: 'Object catalogue', library: 'Reading room', beta: EDITION_LABEL.en, feedback: 'Feedback', contribute: 'Suggest a source', github: 'Read on GitHub', download: 'Download the full library (ZIP)', search: 'Search works, people or notes', empty: 'No matching entries.', clear: 'Clear search', objects: 'Surviving witnesses', objectsHeading: 'Choose a witness', objectsHint: 'Choose a witness. Each witness keeps its own record.', selectedObject: 'Selected witness', objectMap: 'Open the map and full record', noObjects: 'No identifiable witness is catalogued yet.', claims: 'Claims and opinions', roles: 'Works and roles', relations: 'Documented relationships', sources: 'Sources', authored: 'Reading guide', none: 'Entry unavailable', home: 'Back to the reading room', unknownPlace: 'Holding unknown' },
 };
 function EntryLink({ entry }: { entry: LibraryEntry }) {
   const { locale } = useLocale();
@@ -36,12 +36,124 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
   return <section className="library-section"><h2>{title}</h2>{children}</section>;
 }
 
+const noteCategoryWords: Record<NoteCategory, { zh: string; en: string; descriptionZh: string; descriptionEn: string }> = {
+  topic: {
+    zh: '时代专题', en: 'Period topics',
+    descriptionZh: '从先秦到清近代，循时代认识代表作品。', descriptionEn: 'Meet representative works from pre-Qin to the modern era.',
+  },
+  path: {
+    zh: '阅读路径', en: 'Reading paths',
+    descriptionZh: '沿书体、碑帖与实物关系，串起一组作品。', descriptionEn: 'Follow scripts, modelbooks and material connections across works.',
+  },
+  'close-reading': {
+    zh: '单篇细读', en: 'Close readings',
+    descriptionZh: '从一处题额、字口或残笔进入具体作品。', descriptionEn: 'Enter a work through a heading, a stroke or a broken edge.',
+  },
+};
+
+const notePeriodWords: Record<NotePeriod, { zh: string; en: string }> = {
+  'pre-qin': { zh: '先秦', en: 'Pre-Qin' },
+  'qin-han': { zh: '秦汉', en: 'Qin and Han' },
+  'wei-jin': { zh: '魏晋', en: 'Wei and Jin' },
+  'northern-southern': { zh: '南北朝', en: 'Northern and Southern Dynasties' },
+  'sui-tang': { zh: '隋唐', en: 'Sui and Tang' },
+  song: { zh: '宋代', en: 'Song' },
+  'yuan-ming': { zh: '元明', en: 'Yuan and Ming' },
+  'qing-modern': { zh: '清近代', en: 'Qing and modern' },
+  tang: { zh: '唐', en: 'Tang' },
+};
+
+const noteCategories: NoteCategory[] = ['topic', 'path', 'close-reading'];
+
+function NoteIndex() {
+  const { locale, strings } = useLocale();
+  const zh = locale === 'zh';
+  const [query, setQuery] = useState('');
+  const [category, setCategory] = useState<NoteCategory | 'all'>('all');
+  const [period, setPeriod] = useState<NotePeriod | 'all'>('all');
+  const categoryNotes = libraryNotes.filter((entry) => category === 'all' || entry.guide?.category === category);
+  const periods = notePeriodsList.filter((value) => categoryNotes.some((entry) => entry.guide?.period === value));
+  const entries = categoryNotes.filter((entry) =>
+    (period === 'all' || entry.guide?.period === period) && matchesQuery(entry, query));
+  const activeCategory = category === 'all' ? null : noteCategoryWords[category];
+  const reset = () => { setQuery(''); setCategory('all'); setPeriod('all'); };
+  return <div className="notes-index">
+    <header className="library-head notes-head">
+      <p className="notes-eyebrow">{zh ? '沿时代读书，循问题读帖' : 'Read by period. Follow a question.'}</p>
+      <h1>{zh ? '读帖笔记' : 'Reading notes'}</h1>
+      <p className="library-lede">{zh
+        ? `${totals.notes} 篇笔记，分为时代专题、阅读路径与单篇细读。先选一条入口，再回到作品与实物。`
+        : `${totals.notes} notes across period topics, reading paths and close readings. Choose a way in, then return to the works and witnesses.`}</p>
+    </header>
+    <div className="note-categories" role="group" aria-label={zh ? '笔记分类' : 'Note categories'}>
+      {noteCategories.map((value) => {
+        const words = noteCategoryWords[value];
+        const count = libraryNotes.filter((entry) => entry.guide?.category === value).length;
+        return <button type="button" key={value} aria-pressed={category === value}
+          onClick={() => { setCategory(category === value ? 'all' : value); setPeriod('all'); }}>
+          <span className="note-category__name">{zh ? words.zh : words.en}</span>
+          <span className="note-category__count">{count}</span>
+          <span className="note-category__description">{zh ? words.descriptionZh : words.descriptionEn}</span>
+        </button>;
+      })}
+    </div>
+    <div className="notes-tools">
+      <label className="notes-search">
+        <span className="visually-hidden">{zh ? '搜索读帖笔记' : 'Search reading notes'}</span>
+        <input type="search" value={query} onChange={(event) => setQuery(event.target.value)}
+          placeholder={zh ? '搜索笔记、作品或书家' : 'Search notes, works or calligraphers'} />
+      </label>
+      <label className="notes-period">
+        <span>{zh ? '时代' : 'Period'}</span>
+        <select value={period} onChange={(event) => setPeriod(event.target.value as NotePeriod | 'all')}>
+          <option value="all">{zh ? '全部时代' : 'All periods'}</option>
+          {periods.map((value) => <option key={value} value={value}>{zh ? notePeriodWords[value].zh : notePeriodWords[value].en}</option>)}
+        </select>
+      </label>
+    </div>
+    <section className="notes-results" aria-labelledby="notes-results-title">
+      <div className="notes-results__head">
+        <h2 id="notes-results-title">{activeCategory ? (zh ? activeCategory.zh : activeCategory.en) : (zh ? '全部笔记' : 'All notes')}</h2>
+        <span role="status">{zh ? `${entries.length} 篇` : `${entries.length} ${entries.length === 1 ? 'note' : 'notes'}`}</span>
+      </div>
+      {(category !== 'all' || period !== 'all' || query) && <button type="button" className="notes-reset" onClick={reset}>
+        {zh ? '清除筛选' : 'Clear filters'}
+      </button>}
+      {entries.length ? <ul className="note-grid">
+        {entries.map((entry) => {
+          const guide = entry.guide!;
+          const words = noteCategoryWords[guide.category!];
+          const body = locale === 'en' && guide.en ? guide.en : guide.zh;
+          return <li key={entry.id}>
+            <article className="note-card">
+              <div className="note-card__tags">
+                <span>{zh ? words.zh : words.en}</span>
+                {guide.period && <span>{zh ? notePeriodWords[guide.period].zh : notePeriodWords[guide.period].en}</span>}
+                {guide.state === 'draft' && <span className="note-card__draft">{strings.reviewDraft}</span>}
+              </div>
+              <h3><a href={libraryHref(entry)}>{noteDisplayTitle(zh ? entry.titleZh : entry.titleEn || entry.titleZh)}</a></h3>
+              <p className="note-card__excerpt">{noteExcerpt(body, zh ? 96 : 150)}</p>
+              <p className="note-card__meta">{zh ? `涉及 ${guide.works.length} 篇作品` : `${guide.works.length} ${guide.works.length === 1 ? 'work' : 'works'}`}</p>
+            </article>
+          </li>;
+        })}
+      </ul> : <div className="notes-empty" role="status">
+        <p>{zh ? '没有符合条件的笔记。' : 'No notes match these filters.'}</p>
+        <button type="button" onClick={reset}>{zh ? '查看全部笔记' : 'View all notes'}</button>
+      </div>}
+    </section>
+  </div>;
+}
+
+const notePeriodsList = Object.keys(notePeriodWords) as NotePeriod[];
+
 function Index({ kind }: { kind: KnowledgeKind }) {
+  if (kind === 'notes') return <NoteIndex />;
   const { locale } = useLocale();
   const t = words[locale];
   const [query, setQuery] = useState('');
   const searching = Boolean(query.trim());
-  const entries = libraryEntries.filter((entry) => searching ? matchesQuery(entry, query) : entry.kind === kind);
+  const entries = libraryEntries.filter((entry) => entry.kind === kind && (!searching || matchesQuery(entry, query)));
   const groups = new Map<string, LibraryEntry[]>();
   for (const entry of entries) {
     const label = entry.kind === 'people' && entry.guide?.dynastyId
@@ -100,7 +212,7 @@ function Entry({ entry }: { entry: LibraryEntry }) {
   const personDynasty = entry.kind === 'people' ? entry.guide?.dynastyId : undefined;
   return <article>
     <header className="library-heading">
-      <p className="library-kicker">{personDynasty ? dynastyLabel(personDynasty, locale) + ' · ' : ''}{t[entry.kind]}{(work?.review.state ?? guide?.state) === 'draft' ? ' · ' + strings.reviewDraft : ''}</p>
+      <p className="library-kicker">{personDynasty ? dynastyLabel(personDynasty, locale) + ' · ' : ''}{entry.kind === 'notes' && guide?.category ? noteCategoryWords[guide.category][locale] + ' · ' : ''}{t[entry.kind]}{(work?.review.state ?? guide?.state) === 'draft' ? ' · ' + strings.reviewDraft : ''}</p>
       <h1>{locale === 'zh' ? entry.titleZh : entry.titleEn || entry.titleZh}</h1>
       {work && <p className="library-byline">{formatDate(work.compositionDate, locale)}
         {work.compositionDate.meaning ? ' · ' + strings.dateMeaningLabels[work.compositionDate.meaning] : ''}
@@ -129,7 +241,7 @@ function Entry({ entry }: { entry: LibraryEntry }) {
       </ul>
     </Section>}
     {objects.length > 0 && <Section title={objectHeading}>
-      <p className="section__meta">{t.objectsHeading}。{locale === 'zh' ? '每件实物只显示自己的履历。' : 'Each witness keeps its own record.'}</p>
+      <p className="section__meta">{t.objectsHint}</p>
       <div className="library-objects" role="group" aria-label={t.objectsHeading}>
         {objects.map((object) => <button type="button" key={object.id} aria-pressed={selectedObject?.id === object.id} onClick={() => setSelectedObjectId(object.id)}>
           <strong>{object.titles[locale]}</strong>

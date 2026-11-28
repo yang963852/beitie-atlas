@@ -4,22 +4,42 @@
  *   npm run check:reproducible
  *
  * Copies `knowledge/` into `.private/tmp/`, marks the copy read-only, compiles
- * it twice, and hashes the source files before and after. The two outputs must
- * be byte-identical and the source copy must be unchanged.
+ * it twice in separate Node processes, and hashes the source files before and
+ * after. The two outputs must be byte-identical and the source copy unchanged.
+ * A separate process catches module-level state, ordering and cache effects
+ * that two calls in one process would hide.
  */
 
+import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import {
   chmodSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync,
 } from 'node:fs';
 import { join, relative } from 'node:path';
-import { compileKnowledge, compiledText } from './lib/knowledge-compiler';
+import { pathToFileURL } from 'node:url';
 
 const root = process.cwd();
 const tempBase = join(root, '.private', 'tmp');
 mkdirSync(tempBase, { recursive: true });
 const work = mkdtempSync(join(tempBase, 'knowledge-repro-'));
 const copy = join(work, 'knowledge');
+const tsxCli = join(root, 'node_modules', 'tsx', 'dist', 'cli.mjs');
+const compilerUrl = pathToFileURL(join(root, 'scripts', 'lib', 'knowledge-compiler.ts')).href;
+
+/** Compiles the copied corpus in its own process and returns the exact bytes. */
+function compileInChild(): string {
+  const code = 'import { compileKnowledge, compiledText } from ' + JSON.stringify(compilerUrl)
+    + '; process.stdout.write(compiledText(compileKnowledge(' + JSON.stringify(work) + ')));';
+  const result = spawnSync(process.execPath, [tsxCli, '-e', code], {
+    cwd: root,
+    encoding: 'utf8',
+    maxBuffer: 128 * 1024 * 1024,
+  });
+  if (result.status !== 0) {
+    throw new Error('Child compilation exited with ' + result.status + ': ' + (result.stderr || ''));
+  }
+  return result.stdout;
+}
 
 function copyDirectory(from: string, to: string) {
   mkdirSync(to, { recursive: true });
@@ -58,8 +78,15 @@ try {
 }
 
 const before = snapshot(copy);
-const first = compiledText(compileKnowledge(work));
-const second = compiledText(compileKnowledge(work));
+let first = '';
+let second = '';
+try {
+  first = compileInChild();
+  second = compileInChild();
+} catch (error) {
+  console.error('Reproducibility check FAILED: ' + (error as Error).message);
+  process.exit(1);
+}
 const after = snapshot(copy);
 
 const problems: string[] = [];

@@ -1,7 +1,12 @@
 import { fireEvent, waitFor, render, screen, within } from '@testing-library/react';
-import { expect, it } from 'vitest';
+import { beforeAll, expect, it } from 'vitest';
 import App from '../src/App';
 import { libraryEntries } from '../src/domain/library';
+import { warmRoutes } from './warm-routes';
+
+beforeAll(async () => {
+  await warmRoutes(['timeline']);
+}, 120000);
 
 function visit(hash: string) {
   window.history.replaceState(null, '', hash);
@@ -17,6 +22,19 @@ it('includes guide-only works after the historic catalogue in source year order'
   ]);
   expect(cards.at(-2)).toHaveTextContent('甲种本大楷习字帖');
   expect(cards.at(-1)).toHaveTextContent('行书跋沈尹默论书札卷');
+});
+
+it('lays the focused slip on the reading desk and links to its folio', () => {
+  visit('#catalogue');
+  const desk = screen.getByRole('region', { name: '案头' });
+  const cards = Array.from(document.querySelectorAll<HTMLAnchorElement>('.atlas-card'));
+  expect(within(desk).getByRole('link')).toHaveAttribute('href', cards[0].getAttribute('href'));
+
+  const later = cards[30];
+  fireEvent.focus(later);
+  const link = within(desk).getByRole('link');
+  expect(link).toHaveAttribute('href', later.getAttribute('href'));
+  expect(link).toHaveTextContent(within(later).getByRole('heading', { level: 3 }).textContent!);
 });
 
 it('keeps the rubbing’s transmission separate from the original stone on a direct map link', () => {

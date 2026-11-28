@@ -1,7 +1,8 @@
 import { act, fireEvent, render, screen, within } from '@testing-library/react';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import App from '../src/App';
 import { getDataset } from '../src/domain/data';
+import { warmRoutes } from './warm-routes';
 
 const recordCount = getDataset().objects.length;
 
@@ -27,11 +28,15 @@ beforeEach(() => {
   window.localStorage.clear();
 });
 
+beforeAll(async () => {
+  await warmRoutes(['workspace', 'timeline']);
+}, 120000);
+
 describe('application shell', () => {
   it('waits for paper activation and the ink transition before entering the records', () => {
     renderApp(true);
-    const paper = screen.getByRole('link', { name: '打开访碑图' });
-    expect(paper.textContent).toBe('案头所临，如今藏在何处');
+    const paper = screen.getByRole('link', { name: /案头所临，如今藏在何处[\s\S]*打开访碑图/ });
+    expect(paper.querySelector('.desk__words')?.textContent).toBe('案头所临，如今藏在何处');
     expect(document.querySelector('.desk__ink')).toBeNull();
     vi.useFakeTimers();
     try {

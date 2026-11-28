@@ -16,6 +16,8 @@ Jijiu Zhang in Seal Script
 
 书体：篆书
 
+延伸阅读：[赵之谦](../people/zhao-zhiqian.md) · [08｜专题：清近代——碑学与日常书写](../notes/essay-08-qing-modern.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md)
+
 <a name="witness-zhao-jijiu"></a>
 
 ## 赵之谦《篆书急就章轴》

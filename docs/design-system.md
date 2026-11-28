@@ -34,7 +34,7 @@ Define reusable CSS variables and shared button/input states. Use Song serif for
 
 The whole product now shares one printed-catalogue language. Warm laid paper, Song serif body text, Kai captions, a vermilion seal accent and ruled catalogue shelves carry the book metaphor. The 读帖 library is the reference implementation; the 编年 handscroll, 访碑 map, reading card, transmission page, contribution form and opening desk inherit the same tokens. Decorative devices must stay functional: rules separate shelves and facts, numerals order entries, the seal marks identity, and the accent marks navigation and selection.
 
-The three entries — 访碑, 编年 and 读帖 — share one masthead and three-link section nav; only the content below the nav changes. The 编年 page is a handscroll: a dynasty ruler, a ruled paper band and compact paper slips on two banks; narrow layouts become a hanging scroll. The former WebGL river is retired. Names may be visually clamped to two lines on a slip, but the link text remains complete for assistive technology and the reading card carries the date and attribution. Calligraphers carry a sourced `dynastyId`; 读帖 groups them by that period and orders them by their earliest dated work inside it.
+The three entries — 访碑, 编年 and 读帖 — share one masthead and three-link section nav; only the content below the nav changes. The 编年 page is a handscroll: a dynasty ruler, a ruled paper band and compact paper slips on two banks; narrow layouts become a hanging scroll. The former WebGL river is retired. Names may be visually clamped to two lines on a slip, but the link text remains complete for assistive technology. A slip also carries a compact date, the credited hands and, only where the catalogue records a surviving original stele or cliff inscription, a vermilion 石 mark; the reading card carries the full date and attribution. The ruler follows the reader's position across the unrolled scroll, a red thread under the frame shows how far it has opened, and the reading desk below previews the last slip hovered or focused with its date, hands, catalogued witnesses and an open action. Narrow layouts hide the desk, because each slip already states its date and hand. Calligraphers carry a sourced `dynastyId`; 读帖 groups them by that period and orders them by their earliest dated work inside it.
 
 | Token | Value/use |
 | --- | --- |
@@ -58,6 +58,7 @@ The vermilion accent is not reused for decorative flourishes. Focus remains a vi
 - Draft and uncertainty notices remain concise and visible; visual simplification must not make tentative claims look certain.
 - Sources use a compact “Sources (N)” control near the supported claim. Preserve specific citations when expanded. Collapse repeated details, not the evidence itself.
 - User-facing map fallback: “Map unavailable. You can still explore the records.” Show Retry for recoverable failures. Owner setup instructions belong in the runbook.
+- Route loading: the opening desk is the first paint. Each route that reads the compiled corpus fetches it on demand, keeping the masthead, the language switch and the edition footer visible while it arrives. A chunk that fails to load states the failure and offers Reload instead of blanking the page.
 
 ## Layout and behavior
 

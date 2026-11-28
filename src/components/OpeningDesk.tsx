@@ -36,6 +36,14 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
     if (!element || !window.WebGL2RenderingContext || !window.IntersectionObserver) return;
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let disposed = false, visible = false, loading = false, failed = false;
+    // Warm the three chunk, decoded plates and painted surfaces while the
+    // poster is still on screen, so the approach starts without a load stall.
+    const warm = () => {
+      if (disposed || motion.matches) return;
+      void import('./classroom-scene').then(module => module.loadDeskAssets()).catch(() => {});
+    };
+    const idle = typeof window.requestIdleCallback === 'function';
+    const warmHandle = idle ? window.requestIdleCallback(warm, { timeout: 1500 }) : window.setTimeout(warm, 350);
     function release() {
       scene.current?.dispose(); scene.current = null;
       setPhase('poster');
@@ -47,11 +55,11 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
       loading = true;
       setPhase('approach');
       try {
-        const { createClassroom, loadDeskImages } = await import('./classroom-scene');
+        const { createClassroom, loadDeskAssets } = await import('./classroom-scene');
         if (disposed || motion.matches || !visible || entering.current) return;
-        const images = await loadDeskImages();
+        const assets = await loadDeskAssets();
         if (disposed || motion.matches || !visible || entering.current) return;
-        scene.current = createClassroom(element!, () => setPhase('desk'), images);
+        scene.current = createClassroom(element!, () => setPhase('desk'), assets);
       } catch { failed = true; release(); }
       finally { loading = false; }
     }
@@ -62,6 +70,7 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
     motion.addEventListener('change', update);
     return () => {
       disposed = true; observer.disconnect(); motion.removeEventListener('change', update);
+      if (idle) window.cancelIdleCallback(warmHandle); else window.clearTimeout(warmHandle);
       element.removeEventListener('webglcontextlost', lost);
       scene.current?.dispose(); scene.current = null;
     };
@@ -97,8 +106,9 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
         {locale === 'zh' ? '帖影 · 兰亭序神龙本（局部）' : 'Plate · Shenlong copy (detail)'}
       </a>
       <h1 id="opening-title">
-        <a className="desk__paper" href="#catalogue" onClick={open} aria-label={strings.enterCatalogue}>
+        <a className="desk__paper" href="#catalogue" onClick={open}>
           <span className="desk__words"><span>{strings.taglineLead}</span><span>{strings.tagline}</span></span>
+          <span className="visually-hidden">{strings.enterCatalogue}</span>
         </a>
       </h1>
       {origin && <>

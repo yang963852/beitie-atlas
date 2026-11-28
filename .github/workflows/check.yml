@@ -1,8 +1,9 @@
 name: Preview quality checks
 
 # Runs on every pull request and on task branches. This workflow checks; it does
-# not deploy and it does not approve publication of draft data. The strict gate
-# is `npm run check:release`, and publishing stays with the owner.
+# not deploy. The strict gate is `npm run check:release`, and publishing stays
+# with the owner: a rejected corpus fails this run instead of surfacing only in
+# the Pages workflow after the merge.
 
 on:
   pull_request:
@@ -49,8 +50,11 @@ jobs:
             git diff --check "$BASE_SHA" HEAD
           fi
       - run: npm run check
-      # Informational. The strict gate is expected to reject the draft corpus
-      # today, so its exit code is printed rather than used to fail the run.
-      - name: Report the strict release gate
+      # The strict gate fails this run. The corpus currently has no draft
+      # records, so `npm run check:release` passes today; a later draft or
+      # invalid record must block the pull request, not only the Pages release.
+      # `if: always()` keeps the gate report in the log after an earlier failure;
+      # that earlier failure already decides the job.
+      - name: Strict release gate
         if: always()
-        run: npm run check:release || echo "Release gate rejected the corpus (expected while records are drafts)."
+        run: npm run check:release

@@ -15,8 +15,6 @@ export const enStrings = {
   taglineLead: 'The work you practise from:',
   tagline: 'where is it kept today?',
   enterCatalogue: 'Open the atlas',
-  taglineDetail:
-    'Explore the calligraphy people practise, the people who wrote it, and the surviving stones, manuscripts and rubbings.',
   studyFilter: 'Filter by work category',
   studyLabels: { all: 'All', bei: 'Inscriptions', tie: 'Modelbooks' },
   draftNotice:
@@ -69,8 +67,6 @@ export const enStrings = {
   provenanceEmpty:
     'No custody events are recorded for this object. Its history is not inferred from a related object.',
   eventPlaceUnknown: 'Place not recorded',
-  eventCertaintyLabel: 'Certainty',
-  eventSourcesLabel: 'Sources',
 
   notesHeading: 'Editorial notes and gaps',
   /** Which record the following notes belong to; a physical object, its work, or its place. */
@@ -83,8 +79,6 @@ export const enStrings = {
   sourcesControl: (count: number) => `Sources (${count})`,
   sourceAccessed: (date: string) => `accessed ${date}`,
   sourceLocator: 'Locator',
-  noSources: 'No sources are attached.',
-  editorialDetails: 'Editorial and coordinate details',
 
   backgroundHeading: 'About this work',
   backgroundLanguageNote: 'Recorded in the language shown; no translation is generated.',
@@ -158,15 +152,7 @@ export const enStrings = {
     'The basemap did not load, usually a key or domain-whitelist restriction. Markers, the place list and every record still work.',
   mapFitAll: 'Show all points',
   mapDeveloperDetails: 'Developer details',
-  mapUnconfiguredDevNote:
-    'No Tianditu key was supplied at build time, so no map is requested and nothing is sent to the provider. Setup steps are in docs/map-setup.md.',
   mapFailureDevNote: (code: string, message: string) => `${code}: ${message}`,
-  mapSetupTitle: 'Turn on the base map',
-  mapSetupBody:
-    'Add your Tianditu browser key to .env.local in the project root, then restart the preview. The build reads the key at start-up.',
-  mapSetupCode: 'VITE_TIANDITU_KEY=your-key',
-  mapSetupNote:
-    'Run npm run check:map-key to verify the key first. A browser key ships inside the page bundle, so restrict it by domain and quota in the provider console. It is not a private credential.',
   mapAttributionLabel: 'Map provider',
   mapAttributionText:
     'Map service: 天地图 (National Platform for Common Geospatial Information Services). Displayed under the provider’s terms; the approval label is shown by the provider.',
@@ -188,7 +174,6 @@ export const enStrings = {
     'no-point': 'No coordinates recorded',
   },
   locationsEmpty: 'No object has a verified point yet.',
-  coordinateLabel: 'Coordinate',
   coordinateDetails: 'Coordinate and precision',
   precisionLabel: 'Precision',
   coordinateSourceLabel: 'Coordinate source',
@@ -272,7 +257,6 @@ export const enStrings = {
     accession: 'Accession',
     other: 'Other',
   },
-  dynastyHeading: 'Period',
   dynastyUnknown: 'Period not recorded',
   dynastyFactLabel: 'Period',
   eventTypeLabels: {
