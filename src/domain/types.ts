@@ -8,6 +8,8 @@
  * - Canonical coordinates are WGS84 longitude/latitude in decimal degrees.
  */
 
+import type { ProvinceId } from './provinces';
+
 export type ReviewState = 'draft' | 'reviewed';
 
 /**
@@ -318,6 +320,12 @@ export interface Place {
   names: BilingualTitle;
   historicalName: string | null;
   kind: PlaceKind;
+  /**
+   * Province-level shelf used by the extant map filter. This is a present-day
+   * administrative grouping, not a historical claim; null is allowed and shows
+   * as "province unknown" rather than being guessed.
+   */
+  province?: ProvinceId | null;
   coordinates: Coordinates | null;
   sourceRefs: string[];
   notes: string[];

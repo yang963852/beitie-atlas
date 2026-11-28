@@ -4,6 +4,7 @@ nameZh: 汉中市博物馆
 nameEn: Hanzhong Museum
 historicalName: null
 kind: institution
+province: shaanxi
 sources:
   - src-cssn-shaanxi-beike
 notes:

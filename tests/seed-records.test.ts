@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { isCurrentLocation } from '../src/domain/collection';
 import { getDataset } from '../src/domain/data';
 import { dynastyOrder } from '../src/domain/dynasties';
 
@@ -81,6 +82,17 @@ describe('seed records', () => {
     for (const place of dataset.places) {
       if (!place.coordinates) continue;
       expect(place.coordinates.sourceRefs.length).toBeGreaterThan(0);
+    }
+  });
+
+  it('files every surviving current collection under a province', () => {
+    for (const object of dataset.objects) {
+      if (object.survivalStatus !== 'surviving') continue;
+      if (!isCurrentLocation(object.currentCollection)) continue;
+      const placeId = object.currentCollection.placeId;
+      if (!placeId) continue;
+      const place = dataset.places.find((entry) => entry.id === placeId);
+      expect(place?.province, object.id).toBeTruthy();
     }
   });
 

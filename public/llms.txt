@@ -10,7 +10,7 @@
 
 - [首页](https://yang963852.github.io/beitie-atlas/)：按时代、书体与学习门类浏览作品与实物。
 - [知识库](https://yang963852.github.io/beitie-atlas/#/library)：作品、书家、笔记与实物档案的检索入口。
-- [馆藏地图](https://yang963852.github.io/beitie-atlas/#/collections)：按今天的收藏地查找实物；没有可靠坐标的地点只列文字，不猜位置。
+- [现存地图](https://yang963852.github.io/beitie-atlas/#/collections)：按今天的收藏地或原址查找现存实物；没有可靠坐标的地点只列文字，不猜位置。
 - [年代长河](https://yang963852.github.io/beitie-atlas/#catalogue)：按作品所属时代排序。
 
 ## 数据

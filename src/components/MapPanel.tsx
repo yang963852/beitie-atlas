@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { formatCoordinate } from '../domain/coordinates';
 import { getDataset, getPlace, objectsAtCurrentPlace, partitionByLocation } from '../domain/data';
 import type { ObjectRecord, Place } from '../domain/types';
-import { pickText } from '../domain/text';
+import { detectLang, pickText } from '../domain/text';
 import { useLocale } from '../i18n';
 import { mapIsConfigured } from '../map/config';
 import { watchTiles } from '../map/tiles';
@@ -365,6 +365,9 @@ export function MapPanel({
         <ul className="location-list">
           {placeRows.map(({ place, objects: list }) => {
             const coordinates = place.coordinates;
+            const coordinateNote = coordinates
+              ? pickText(locale, coordinates.noteZh, coordinates.note)
+              : null;
             return (
               <li key={place.id} className="location">
                 <p className="location__name">
@@ -397,6 +400,11 @@ export function MapPanel({
                   ) : null}
                   <span className="location__count">{strings.objectsAtPlace(list.length)}</span>
                 </p>
+                {coordinateNote ? (
+                  <p className="location__note" lang={detectLang(coordinateNote)}>
+                    {coordinateNote}
+                  </p>
+                ) : null}
                 <SourceList
                   ids={coordinates?.sourceRefs ?? place.sourceRefs}
                   label={strings.coordinateSourceLabel}
