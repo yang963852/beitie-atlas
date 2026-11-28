@@ -115,15 +115,15 @@ describe('reading notes index', () => {
   it('groups all notes into the three reading categories in editorial order', () => {
     window.history.replaceState(null, '', '#/library/notes');
     const { container } = render(<App />);
-    expect(container.querySelectorAll('.note-card')).toHaveLength(16);
+    expect(container.querySelectorAll('.note-card')).toHaveLength(24);
     const titles = Array.from(container.querySelectorAll('.note-card h3'), (heading) => heading.textContent);
     expect(titles.slice(0, 3)).toEqual(['先秦——青铜、石鼓与竹简', '秦汉——统一文字与隶书登场', '魏晋——名家、信札与复制']);
     expect(titles.slice(8, 10)).toEqual(['隶变——从青铜到汉碑', '楷化——从钟繇到唐楷']);
-    expect(titles.at(-1)).toBe('从一个「故」字读《颜勤礼碑》');
+    expect(titles.at(-1)).toBe('上、下碑分别读：郑文公碑的「高气逸」');
     expect(titles.every((title) => !/^\d+｜/.test(title ?? ''))).toBe(true);
     expect(screen.getByRole('button', { name: /时代专题/ })).toHaveTextContent('8');
     expect(screen.getByRole('button', { name: /阅读路径/ })).toHaveTextContent('6');
-    expect(screen.getByRole('button', { name: /单篇细读/ })).toHaveTextContent('2');
+    expect(screen.getByRole('button', { name: /单篇细读/ })).toHaveTextContent('10');
   });
 
   it('combines category and period filters and clears them from the empty state', () => {
@@ -137,7 +137,7 @@ describe('reading notes index', () => {
     fireEvent.change(screen.getByRole('searchbox'), { target: { value: '不存在的笔记' } });
     expect(screen.getByText('没有符合条件的笔记。')).toBeVisible();
     fireEvent.click(screen.getByRole('button', { name: '查看全部笔记' }));
-    expect(container.querySelectorAll('.note-card')).toHaveLength(16);
+    expect(container.querySelectorAll('.note-card')).toHaveLength(24);
     expect(screen.getByRole('searchbox')).toHaveValue('');
     expect(screen.getByRole('combobox')).toHaveValue('all');
   });
@@ -167,8 +167,8 @@ describe('reading notes index', () => {
     fireEvent.click(screen.getByRole('button', { name: 'EN' }));
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Reading notes');
     expect(screen.getByRole('link', { name: 'Pre-Qin — Bronzes, Stone Drums and Bamboo Slips' })).toBeVisible();
-    expect(screen.getByRole('button', { name: /Close readings/ })).toHaveTextContent('2');
-    expect(screen.getAllByText('1 work')).toHaveLength(2);
+    expect(screen.getByRole('button', { name: /Close readings/ })).toHaveTextContent('10');
+    expect(screen.getAllByText('1 work')).toHaveLength(10);
   });
 });
 
