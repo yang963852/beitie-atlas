@@ -18,7 +18,7 @@ Stele of Zhang Qian
 
 书体：隶书
 
-延伸阅读：[张迁碑](../works/zhangqian-bei.md) · [02｜专题：秦汉——统一文字与隶书登场](../notes/essay-02-qin-han.md) · [09｜阅读路径：隶变——从青铜到汉碑](../notes/path-01-clerical-turn.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md)
+延伸阅读：[张迁碑](../works/zhangqian-bei.md) · [02｜专题：秦汉——统一文字与隶书登场](../notes/essay-02-qin-han.md) · [09｜阅读路径：隶变——从青铜到汉碑](../notes/path-01-clerical-turn.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md) · [用「東裏潤色」四字辨认《张迁碑》明初拓](../notes/zhangqian-dongli.md)
 
 作品待考与说明
 
