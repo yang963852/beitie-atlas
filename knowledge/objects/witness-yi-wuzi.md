@@ -4,15 +4,15 @@ work: yi-wuzi
 objectType: ink-manuscript
 titleZh: 伊秉绶《隶书五字横幅》
 titleEn: Five Characters in Clerical Script
-dateKind: era
-dateStart: null
+dateKind: single
+dateStart: 1812
 dateMonth: null
-dateEnd: null
+dateEnd: 1812
 dateEndMonth: null
-dateEra: 清
-dateOriginal: null
+dateEra: null
+dateOriginal: 嘉慶壬申歲（清嘉庆十七年，1812年）
 dateCertainty: documented
-dateNote: null
+dateNote: 故宫藏品页据末识「嘉慶壬申歲」释为 1812 年；原记录无年代原文，故此前产生 DATE_WITHOUT_ORIGINAL 警告，今补齐。
 catalogNumber: null
 dimensionsRaw: 纵32厘米，横130.5厘米
 dimensionsNote: null

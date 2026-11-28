@@ -135,6 +135,7 @@
 
 ### 西汉
 
+- [帛书《老子》乙本](catalogue/mawangdui-laozi-yi.md) · 1 件实物
 - [北陛石](catalogue/beibi-stone.md) · 1 件实物
 - [五凤刻石](catalogue/wufeng-inscription.md) · 1 件实物
 - [武威仪礼简](catalogue/wuwei-yili-jian.md) · 1 件实物
@@ -142,14 +143,19 @@
 ### 东汉
 
 - [居延新简·隧长焦永死驹劾状](catalogue/juyan-hanjian.md) · 1 件实物
+- [鄐君开通褒斜道摩崖](catalogue/kaitong-baoxie-dao.md) · 1 件实物
 - [石门颂](catalogue/shimen-song.md) · 1 件实物
 - [乙瑛碑](catalogue/yiying-bei.md) · 1 件实物
 - [礼器碑](catalogue/liqi-bei.md) · 2 件实物
+- [西岳华山庙碑](catalogue/huashan-miao-bei.md) · 2 件实物
 - [鲜于璜碑](catalogue/xianyu-huang-bei.md) · 1 件实物
 - [衡方碑](catalogue/hengfang-bei.md) · 2 件实物
 - [史晨碑](catalogue/shichen-bei.md) · 1 件实物
 - [西狭颂](catalogue/xixia-song.md) · 1 件实物
+- [郙阁颂](catalogue/fuge-song.md) · 2 件实物
+- [杨淮表纪](catalogue/yanghuai-biaoji.md) · 2 件实物
 - [熹平石经](catalogue/xiping-stone-classics.md) · 1 件实物
+- [尹宙碑](catalogue/yinzhou-bei.md) · 1 件实物
 - [曹全碑](catalogue/cao-quan-bei.md) · 1 件实物
 - [张迁碑](catalogue/zhangqian-bei.md) · 1 件实物
 
@@ -220,6 +226,7 @@
 - [书谱](catalogue/shupu.md) · 1 件实物
 - [万岁通天帖](catalogue/wansui-tongtian-tie.md) · 1 件实物
 - [麓山寺碑](catalogue/lushan-si-bei.md) · 1 件实物
+- [大智禅师碑](catalogue/dazhi-chanshi-bei.md) · 1 件实物
 - [灵飞经](catalogue/lingfei-jing.md) · 1 件实物
 - [石台孝经](catalogue/shitai-xiaojing.md) · 1 件实物
 - [多宝塔感应碑](catalogue/duobao-ta-bei.md) · 1 件实物
@@ -295,10 +302,11 @@
 ### 清
 
 - [三希堂法帖](catalogue/sanxitang-fatie.md) · 1 件实物
+- [隶书五字横幅](catalogue/yi-wuzi.md) · 1 件实物
 - [林则徐游华山诗并序](catalogue/lin-zexu-huashan.md) · 1 件实物
 - [楷书诗轴](catalogue/deng-kaishu.md) · 1 件实物
+- [隶书新洲诗轴](catalogue/deng-xinzhou-shi.md) · 1 件实物
 - [草书孟浩然诗卷](catalogue/fu-menghaoran.md) · 1 件实物
-- [隶书五字横幅](catalogue/yi-wuzi.md) · 1 件实物
 - [篆书急就章轴](catalogue/zhao-jijiu.md) · 1 件实物
 
 ### 民国

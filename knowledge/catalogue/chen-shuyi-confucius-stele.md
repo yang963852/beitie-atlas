@@ -8,13 +8,22 @@ Chen Shuyi’s Confucius Temple Repair Stele
 
 **作品**　隋 · 隋大业七年（611年） · 碑
 
-馆方将此碑列入隋代藏石。碑题所记，是修孔庙一事。
+馆方将此碑列入隋代藏石。碑题所记，是修孔庙一事；陈列馆详页记碑文二十一行、行四十七字，仲孝俊撰文，并明言「碑隶书，结体方正，峻严方饬」。碑额为篆书，与正文书体不同。
 
-[出处 1](#ref-src-qufu-chen-shuyi)
+[出处 1](#ref-src-qufu-chen-shuyi)、[出处 2](#ref-src-qufu-chen-shuyi-detail)
 
-- 未署名 · 署名未详（不详） 所引条目未给出撰文者或书丹者。 [出处 1](#ref-src-qufu-chen-shuyi)
+- 撰文 · 仲孝俊（有明确记载） 陈列馆详页记「碑文21行，行47字，仲孝俊撰文」；原先所引的列表页未记撰文者。 [出处 2](#ref-src-qufu-chen-shuyi-detail)
+- 未署名 · 书丹者未详（不详） 陈列馆详页讨论碑末残字，但未记书丹者姓名。 [出处 2](#ref-src-qufu-chen-shuyi-detail)
 
 别名：隋孔子庙碑、隋陈明府修孔子庙碑
+
+书体：隶书
+
+作品待考与说明
+
+- 书体另有异说：详页所引清《集古求真》称此碑「似楷似隶，饶有意致」；与馆方正文「碑隶书」并列，不取其一。
+- 书丹者姓名，所核页面未记载；碑末残字的释读有「监上石」「□□书」两说，页面未作定论。
+- 英文标题为本项目为检索所拟，非来源所用题名。
 
 <a name="stele-chen-shuyi-confucius-stele"></a>
 
@@ -47,5 +56,9 @@ Chen Shuyi’s Confucius Temple Repair Stele, original stone
 <a name="ref-src-qufu-chen-shuyi"></a>
 
 1. 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery · [曹魏、北魏、东魏、北齐、隋碑刻：陈叔毅修孔子庙碑](<https://hwbk.qfwbw.cn/wei/>)。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
+
+<a name="ref-src-qufu-chen-shuyi-detail"></a>
+
+2. 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery · [隋•陈叔毅修孔子庙碑](<https://hwbk.qfwbw.cn/wei/2016-03-25/2827.html>)。定位：正文首段「隋大业七年（611年）刻……碑文21行，行47字，仲孝俊撰文」、第三段「碑隶书，结体方正，峻严方饬」及所引「似楷似隶，饶有意致」；末段记 1978 年移入东庑、1998 年移入西仓汉魏碑刻陈列馆。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/chen-shuyi-confucius-stele.md) · [返回知识总目](../README.md)

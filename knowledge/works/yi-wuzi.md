@@ -6,15 +6,15 @@ aliases: []
 studyCategory: tie
 dynastyId: qing
 dynastyQualifier: null
-dateKind: era
-dateStart: null
+dateKind: single
+dateStart: 1812
 dateMonth: null
-dateEnd: null
+dateEnd: 1812
 dateEndMonth: null
-dateEra: 清
-dateOriginal: 清嘉庆十七年（1812年）
+dateEra: null
+dateOriginal: 嘉慶壬申歲（清嘉庆十七年，1812年）
 dateCertainty: documented
-dateNote: null
+dateNote: 故宫藏品页记末识「嘉慶壬申歲」，并释为清嘉庆十七年（1812年）、作者时年六十。原记录只设朝代「清」而未记年份，今据馆方原文补全结构化年份。
 script: 隶书
 attribution:
   - role: calligrapher
