@@ -196,7 +196,7 @@ function pack(): void {
     '',
     '## 从下载到投稿',
     '',
-    '1. 解压后，用 Obsidian 或任意 Markdown 编辑器打开本文件夹。',
+    '1. 解压后，用任意 Markdown 编辑器打开本文件夹。',
     '2. 只改你要改的那一篇，例如 `knowledge/works/yan-qinli-bei.md`；文件名是稳定 ID，不要改名。',
     '3. 在自己的 GitHub Fork 中按原路径上传这个文件，向 `yang963852/beitie-atlas` 的 `main` 提 PR。',
     '4. 只提交你改动的源稿。`knowledge/catalogue/`、`knowledge/README.md` 与 `manifest.json` 是生成文件，不用手改；由项目维护者重新生成。',

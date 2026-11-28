@@ -1,5 +1,5 @@
 name: 网页任务 · Web change
-description: 为一项网页开发或修复明确读者目标和验收条件。
+description: 为一项网页开发或修复明确读者目标和验收条件；改动公众表达时须与 docs/PROJECT.md 的理念一致。
 title: "[Web] "
 labels: ["web"]
 body:

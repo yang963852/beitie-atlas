@@ -1,7 +1,7 @@
 ## 改了什么 / What changed
 
-写明改动和受益的读者。已有相关 Issue 时可附链接，引用他人投稿请注明作者。
-Describe the change and credit the original contributor. Link an Issue if relevant.
+写明改动和受益的读者。已有相关 Issue 时可附链接，引用他人投稿请注明作者。若改动项目介绍或参与说明，请确认与 docs/PROJECT.md / docs/PROJECT.en.md 一致，且中英成对。
+Describe the change and credit the original contributor. Link an Issue if relevant. For public-facing copy, keep it consistent with docs/PROJECT.md and docs/PROJECT.en.md and update both languages together.
 
 ## 怎样核对 / How to verify
 

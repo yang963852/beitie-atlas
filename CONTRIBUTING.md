@@ -1,24 +1,35 @@
 # Contributing to Between Steles
 
-[中文投稿与试读指南](docs/CONTRIBUTE.zh-CN.md) · [Knowledge library](knowledge/README.md) · [Member and agent setup](docs/START-HERE.md)
+[中文投稿与试读指南](docs/CONTRIBUTE.zh-CN.md) · [Project philosophy](docs/PROJECT.en.md) · [中文理念](docs/PROJECT.md) · [Knowledge library](knowledge/README.md) · [Member and agent setup](docs/START-HERE.md)
 
-Send a focused pull request directly to `yang963852/beitie-atlas:main` from your fork. An Issue is optional. The maintainer reviews when available; self-review is acceptable.
+## Why this project exists
+
+Between Steles is an open, shared knowledge project built by calligraphy enthusiasts for beginners and fellow learners. It offers knowledge and guidance for study, not a substitute for teaching between people. **人人为我，我为人人 — everyone contributes for the benefit of others, and everyone benefits from what others share.** Technology and AI serve human learning, expression and collaboration. The full, authoritative statement is kept in [docs/PROJECT.md](docs/PROJECT.md) and [docs/PROJECT.en.md](docs/PROJECT.en.md); this guide links to it rather than restating it.
+
+## Anyone can take part
+
+You do not need to be a calligraphy expert, a programmer or an AI user. Share what you notice while copying, a documented collection detail, a textual correction, a visit to a stele or exhibition, a reading suggestion, or your own understanding and questions. A single source lead, one correction or one honest learning note has value. Contributors keep their own name, views and wording; factual knowledge needs a traceable source. Contributors may also use the open resources for their own study, research, exchange and cultural activities.
 
 | Contribution | Start | Handoff |
 | --- | --- | --- |
-| Suggest a source, correction, teaching example or close reading | [Knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) or a browser edit to an authored Markdown file in the library | An editor links the submission and credit to the resulting PR or explains the open question in the Issue |
+| Share an observation, a source, a correction or a learning note | [Knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) or a browser edit to an authored Markdown file in the library | An editor links the submission and credit to the resulting PR or explains the open question in the Issue |
+| Report a reading, navigation or site problem | [Beta feedback](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) | Include the page, device or browser, steps, observed and expected behaviour |
+| Take part without a GitHub account | Prepare the text and ask someone who uses GitHub to submit it, or add it to an existing public issue | The maintainer helps organise what is shared in public; there is no private submission channel to promise |
 | Change the website | Claim a [web task](https://github.com/yang963852/beitie-atlas/issues/new?template=web-task.yml) when coordination is useful | Send a small PR with the reproduced reader path, checks and limitations |
-| Report a beta problem | [Beta feedback](https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml) | Include the page, device or browser, steps, observed and expected behaviour |
 
-Chinese-only submissions are welcome. Small, evidenced corrections may go straight to PR. The Issue number or PR preserves attribution. Citing a contribution in the resulting article also preserves the named author's credit for a reading or interpretation.
+**What the channels can actually do.** The site is a static GitHub Pages site. The "Add or correct information" panel on a record composes text the reader can read and copy, and opens a pre-filled GitHub issue when the reader chooses. Nothing is stored or posted by the page, and there is no in-site submission backend, account system or dedicated public contact address. GitHub Issues and pull requests are public; a submission becomes a public lead that an editor checks against an openable source before anything is added. Do not put private contact details in a public issue.
 
-## From assignment to merge
+Chinese-only submissions are welcome. Small, evidenced corrections may go straight to PR. The Issue number or PR preserves attribution. Citing a contribution in the resulting article also preserves the named author's credit for a reading or interpretation. Full reader-facing instructions are in the [Chinese guide](docs/CONTRIBUTE.zh-CN.md) and on the site's [Join in](https://yang963852.github.io/beitie-atlas/#/join) page.
+
+## The technical workflow, for those who need it
 
 1. The coordinator prioritizes Issues by reader impact and marks the track (`knowledge`, `web` or `beta-feedback`). Record a lead and scope when coordination is useful. Acceptance examples, reviewers and task cards are optional. Coordinate overlapping files. Independent tasks can proceed in parallel.
 2. Branch from current project `main`. External contributors push to their own fork (`origin`) and propose changes to the project (`upstream`). Invited contributors may use a project task branch. A browser edit can create the fork and PR directly. For local work see the [setup guide](docs/START-HERE.md).
 3. Put the change, sources or reproduction, checks run and remaining gaps in the PR. Link any Issue, including submissions incorporated by an editor. CI runs the quality check on PRs. For an ordinary contribution the PR is the delivery record. A release also updates `CHANGELOG.md` and gets a tag; task cards, board rows and delivery reports are optional.
 4. The editor checks identities, locators, uncertainties and rights. A technical review is optional. Describe an author's or their agent's own review as **self-review**; it is sufficient. Resolve blocking findings on the same PR. The owner decides the merge or explicitly delegates that PR. A contributor agent stops at the assigned handoff.
 5. Sync the local default branch with the project after merge. Pages builds and deploys from checked `main`. The owner's merge is the publication decision; a quick live smoke test is recommended. [Editorial workflow](docs/atlas-workflow.md) · [Release runbook](docs/release.md)
+
+Send a focused pull request directly to `yang963852/beitie-atlas:main` from your fork. An Issue is optional. The maintainer reviews when available; self-review is acceptable.
 
 ## Coordinator's queue
 

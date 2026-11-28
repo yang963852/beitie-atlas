@@ -2,7 +2,17 @@
 
 A learner wants to identify the work on their desk, distinguish its surviving versions and learn what to look at in the writing. Follow that reader from a work to a person, a witness and a source. The project covers historical and modern calligraphy. A claim about current teaching use needs evidence for that use.
 
-[中文资料与试读指南](CONTRIBUTE.zh-CN.md) · [Public site on Pages](https://yang963852.github.io/beitie-atlas/) · [Markdown knowledge library](../knowledge/README.md) · [Contribution guide](../CONTRIBUTING.md)
+[中文资料与试读指南](CONTRIBUTE.zh-CN.md) · [Public site on Pages](https://yang963852.github.io/beitie-atlas/) · [Markdown knowledge library](../knowledge/README.md) · [Contribution guide](../CONTRIBUTING.md) · [Project philosophy](PROJECT.md) / [English](PROJECT.en.md)
+
+## Who does what
+
+Between Steles is an open, shared knowledge project built by calligraphy enthusiasts for beginners and fellow learners. It offers knowledge and guidance, not a substitute for teaching between people; technology and AI serve human learning, expression and collaboration. The full statement lives only in [PROJECT.md](PROJECT.md) and [PROJECT.en.md](PROJECT.en.md).
+
+- **Readers and contributors** share observations from copying, documented sources, corrections, reading suggestions and their own reflections. They need no programming knowledge, no local clone and no AI tooling: a browser and a public GitHub Issue or pull request are enough. See the [Chinese guide](CONTRIBUTE.zh-CN.md) and the site's [Join in](https://yang963852.github.io/beitie-atlas/#/join) page. Contributors keep their own name, views and wording, and may use the open resources for their own study, research and cultural activities.
+- **The maintainer** prioritises work, settles scope, carries responsibility for building, managing and publishing, and decides merges and releases. A maintainer's merge is the publication decision.
+- **Agents and technical contributors** work within [the ten rules](../AGENTS.md): one bounded task, one short-lived branch, one pull request, and a stop at the handoff. They run the checks for the paths they changed and report what was not run. No assignment, skill or label grants repository access.
+
+The technical setup below is for the third group. An ordinary contributor can skip it entirely.
 
 ## What lives in `main`
 
@@ -20,6 +30,8 @@ For the owner or an agent preparing a technical decision, start with the [Chines
 
 | I am here to… | Read first | Hand off |
 | --- | --- | --- |
+| Understand what this project is for | [Project philosophy](PROJECT.md), [English](PROJECT.en.md) | A short introduction that links to the philosophy instead of restating it |
+| Share an observation, source, correction or learning note | [Chinese contribution guide](CONTRIBUTE.zh-CN.md), [Join in](https://yang963852.github.io/beitie-atlas/#/join) | One public Issue, or a note added to an existing public Issue; no local setup needed |
 | Suggest a source using only a browser | [Chinese knowledge form](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml) | A single Issue with source and locator, or an authored Markdown PR |
 | Edit a work, witness, person or reading note | [Editorial workflow](atlas-workflow.md), [Chinese templates](../knowledge/_templates/) | A narrow PR linking the subject, evidence, contributor and open questions |
 | Develop a web feature | [Engineering plan](engineering-plan.md), [design system](design-system.md), [data boundary](../src/domain/data.ts) | A reproducible reader path and check results in a PR |
