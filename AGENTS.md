@@ -2,6 +2,10 @@
 
 This file is the tool-independent contract for any agent or contributor working on this repository. It says what must not break, not how any particular assistant should think. Read the assigned Issue or [task brief](templates/task-brief.md), then the documents named for that kind of work.
 
+## Mission
+
+Between Steles is an open, shared knowledge project built by calligraphy enthusiasts, primarily for beginners and fellow learners. Starting from classical steles and modelbooks, it offers reliable knowledge and guidance for learning, and does not try to replace education between people. Technology and AI serve human learning, expression and collaboration. **人人为我，我为人人 — everyone contributes for the benefit of others, and everyone benefits from what others share.** The single authoritative statement lives in [docs/PROJECT.md](docs/PROJECT.md) and [docs/PROJECT.en.md](docs/PROJECT.en.md); other documents link to it rather than keeping another version.
+
 ## Ten rules
 
 1. Edit only the files in the assigned scope. If the task requires a file outside it, stop and report instead of widening the task.
@@ -19,6 +23,7 @@ This file is the tool-independent contract for any agent or contributor working 
 
 | Question | Read |
 | --- | --- |
+| What is this project for, and what does it not try to do? | [Project philosophy](docs/PROJECT.md), [English statement](docs/PROJECT.en.md) |
 | How do I contribute, and how is a change reviewed? | [CONTRIBUTING.md](CONTRIBUTING.md), [Chinese contribution guide](docs/CONTRIBUTE.zh-CN.md) |
 | How do I set up a clean clone? | [Member and agent handoff](docs/START-HERE.md) |
 | What may I claim about a work, a witness or a date? | [Editorial workflow](docs/atlas-workflow.md) |

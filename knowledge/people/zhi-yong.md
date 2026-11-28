@@ -6,7 +6,7 @@ dynastyId: sui
 dynastySource: src-dpm-zhiyong-qianziwen
 aliases: [永禅师]
 state: reviewed
-works: []
+works: [zhiyong-zhencao-qianziwen]
 objects: []
 sources: [src-dpm-zhiyong-qianziwen]
 ---
@@ -25,12 +25,12 @@ sources: [src-dpm-zhiyong-qianziwen]
 
 ### 代表作与本库关联
 
-故宫著录《真草千字文》有三种可靠本子：唐代流传日本的墨迹本、北宋大观三年（1109）薛嗣昌刻于西安的「关中本」、南宋《群玉堂帖》四十行残本；关中本凡八石、每石二十七行，原石今存西安碑林。馆方称三本风格一致。本库未为这些本子另建作品档案，此处只记馆方所述。[故宫博物院，宋拓隋智永真草千字文册](https://www.dpm.org.cn/collection/impres/228599.html)
+故宫著录《真草千字文》有三种可靠本子：唐代流传日本的墨迹本、北宋大观三年（1109）薛嗣昌刻于西安的「关中本」、南宋《群玉堂帖》四十行残本；关中本凡八石、每石二十七行，原石今存西安碑林。馆方称三本风格一致。本库已为 [《真草千字文》](../works/zhiyong-zhencao-qianziwen.md) 建档，墨迹本、关中本原石与故宫藏宋拓本册分别记录；此处只记馆方对三种本子的概述。[故宫博物院，宋拓隋智永真草千字文册](https://www.dpm.org.cn/collection/impres/228599.html)
 
 
 ### 可临之作
 
-本页尚未关联可供临写的作品页。
+本页已关联 [《真草千字文》](../works/zhiyong-zhencao-qianziwen.md)，其墨迹本、关中本拓本均传世。
 ### 本页依据
 
 本页依据：[故宫博物院《宋拓隋智永真草千字文册》藏品说明](https://www.dpm.org.cn/collection/impres/228599.html)与「名词解释」中智永小传；生卒不详，三种可靠版本按馆方所列保留。
@@ -47,11 +47,11 @@ The museum records that he inherited the family method and excelled at both curs
 
 ### Works in this library
 
-The museum names three reliable recensions of the Thousand Character Classic: a Tang ink manuscript transmitted to Japan, the "Guanzhong" version cut by Xue Sichang at Xi'an in 1109, and a forty-line fragment in the Song Qunyutang tie. The Guanzhong stones, eight in number with twenty-seven lines each, are kept at the Xi'an Beilin Museum. The museum says the three agree in style. This library holds no separate work record for them; only the museum's account is given here. [Palace Museum, Song rubbing of the Thousand Character Classic](https://www.dpm.org.cn/collection/impres/228599.html)
+The museum names three reliable recensions of the Thousand Character Classic: a Tang ink manuscript transmitted to Japan, the "Guanzhong" version cut by Xue Sichang at Xi'an in 1109, and a forty-line fragment in the Song Qunyutang tie. The Guanzhong stones, eight in number with twenty-seven lines each, are kept at the Xi'an Beilin Museum. The museum says the three agree in style. This library now records [the Thousand Character Classic](../works/zhiyong-zhencao-qianziwen.md) as a work, with the ink manuscript, the Guanzhong stones and the Palace Museum's Song rubbing catalogued separately; the museum's overview of the three recensions is kept here. [Palace Museum, Song rubbing of the Thousand Character Classic](https://www.dpm.org.cn/collection/impres/228599.html)
 
 ### Works to copy
 
-No work page is linked to this person yet.
+[The Thousand Character Classic](../works/zhiyong-zhencao-qianziwen.md) is linked to this page; both its ink manuscript and the Guanzhong rubbing survive.
 ### Basis for this page
 
 This page relies on the [Palace Museum catalogue of the Song rubbing of Zhiyong’s Thousand Character Classic](https://www.dpm.org.cn/collection/impres/228599.html) and its explanatory biography; his life dates remain unknown, and the three reliable recensions are kept as the museum lists them.
