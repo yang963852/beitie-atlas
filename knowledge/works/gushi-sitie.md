@@ -21,6 +21,7 @@ attribution:
   - role: calligrapher
     name: 张旭（传）
     nameEn: Zhang Xu (attributed)
+    person: zhang-xu
     certainty: disputed
     sources:
       - src-lnm-gushisitie

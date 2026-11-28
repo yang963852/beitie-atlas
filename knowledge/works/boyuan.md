@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 王珣
     nameEn: Wang Xun
+    person: wang-xun
     certainty: documented
     sources:
       - src-catalogue-boyuan
