@@ -6,7 +6,7 @@ dynastyId: yuan
 dynastySource: src-dpm-daba
 aliases: []
 state: reviewed
-works: [daba-bei, sanmen-ji, zhao-luoshen, tianguanshan-poems]
+works: [daba-bei, sanmen-ji, zhao-luoshen, tianguanshan-poems, zhao-miaoyansi]
 objects: []
 sources: [src-dpm-daba, src-catalogue-zhao-luoshen, src-tnm-sanmen, src-colbase-sanmen, src-beilin-tianguanshan]
 ---
