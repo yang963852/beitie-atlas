@@ -228,6 +228,17 @@ export function MapPanel({
           mounted into it: the SDK measures the container once and would keep
           loading tiles for a 210 px box after the panel grows. Only the
           unconfigured state uses the short geometry. */}
+      {/* Without a key the panel silently swapped to a schematic; a reader
+          could not tell whether the map had failed, was loading, or was never
+          enabled. Say which, and say that everything else still works. */}
+      {status === 'unconfigured' ? (
+        <div className="map__notice map__notice--explain">
+          <p>
+            <strong>{strings.mapUnavailableTitle}</strong>{' '}
+            <span>{strings.mapUnavailableBody}</span>
+          </p>
+        </div>
+      ) : null}
       <div className={status === 'unconfigured' ? 'map map--fallback' : 'map map--live'}>
         <div ref={containerRef} className="map__canvas" aria-hidden="true" />
         {/* Without tiles the provider canvas is a grid of broken images, which
@@ -332,6 +343,7 @@ export function MapPanel({
       {status === 'error' ? (
         <div className="map__caption" role="alert">
           <p>{strings.mapErrorTitle}</p>
+          <p>{strings.mapErrorBody}</p>
           <button type="button" className="button button--quiet" onClick={() => setAttempt((value) => value + 1)}>
             {strings.mapRetry}
           </button>
@@ -426,6 +438,10 @@ export function MapPanel({
             );
           })}
         </ul>
+
+        {placeRows.length === 0 && unmappedRows.length === 0 ? (
+          <p className="section__empty">{strings.locationsEmpty}</p>
+        ) : null}
 
         {unmappedRows.length > 0 ? (
           <>

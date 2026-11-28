@@ -2248,6 +2248,11 @@ html[lang='en'] .result::before {
   font-family: var(--font-kai);
 }
 
+/* The no-key explanation is prose, not a one-line warning: let it wrap. */
+.map__notice--explain p {
+  margin: 0;
+}
+
 .map-overview {
   background-color: #f4eedf;
   background-image:

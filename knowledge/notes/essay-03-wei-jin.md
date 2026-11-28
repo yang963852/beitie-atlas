@@ -2,6 +2,9 @@
 schemaVersion: 2
 titleZh: "03｜专题：魏晋——名家、信札与复制"
 titleEn: "03 — Topic: Wei and Jin — Masters, Letters and Copies"
+category: topic
+period: wei-jin
+order: 3
 state: reviewed
 works:
   - zoumalou-wujian

@@ -23,10 +23,46 @@ sources: [src-dpm-shuangsong]
 
 后人称他「以能书闻天下」，「大字古雅遒劲，细书尤俊健不凡」。馆方说这卷擘窠大字「神完气足，劲健雄肆，又时见险怪之态」，是晚年之笔。这一卷把「大字」的一面放到了近十二米的长卷上。[故宫博物院，张即之行书双松图歌卷](https://www.dpm.org.cn/collection/handwriting/228481.html)
 
-### English
+### 生平与身份
+
+上文所记生卒、字号、籍贯与职官沿用原文，出故宫所附小传；该小传逐字含生卒、字号、籍贯、职官、书宗与影响，本库照录。[故宫博物院，张即之行书双松图歌卷](https://www.dpm.org.cn/collection/handwriting/228481.html)。据 `dynastySource`，本页把他系于南宋。
+
+### 书体与师承
+
+上文已记其「书宗唐人，结体严谨，笔法险劲」，为故宫小传所载；卷为行书，馆方据自识「七十二岁」定为宝祐五年（1257）。[故宫博物院，张即之行书双松图歌卷](https://www.dpm.org.cn/collection/handwriting/228481.html)
+
+### 代表作与本库关联
+
+本库所收[《双松图歌》](../works/shuangsong-tuge.md)绢本行书，七十二行、一百四十四字，书杜甫诗，款署「张即之七十二岁写」。卷前苏轼古柏图，馆方注明非真迹，与本卷分开记。
+
+### 书迹可靠性
+
+以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+
+— 本页 `objects` 为空。[《双松图歌》](../works/shuangsong-tuge.md)为绢本行书墨迹，款署与钤印俱在，属墨迹一路；卷前所题苏轼古柏图，馆方注明非真迹，是与本卷不同的另一件，不因同卷装裱而并入。此处只记载体与馆方所述，不作真伪鉴定结论。
+
+## English
 
 Zhang Jizhi (1186–1266), courtesy name Wenfu, style name Chuliao, was a native of Hezhou in the Southern Song, in modern Anhui. He rose to director of the Court of the Imperial Granaries and was appointed to the Zhimi Pavilion. He was known for his writing, took the Tang as his model, built characters strictly and used a steep, forceful brush; his influence on the calligraphy of the day was considerable, and the Jin in the north imitated his manner. [Palace Museum, Zhang Jizhi’s Song of the Twin Pines, biography](https://www.dpm.org.cn/collection/handwriting/228481.html)
 
 In 1257, at the age of seventy-two, during unbroken rain and mould, he drank a little with a guest and wrote the [Song of the Twin Pines](../works/shuangsong-tuge.md) while drunk. The scroll is silk, 33.8 by 1,196 cm, running script in seventy-two lines and 144 characters, carrying Du Fu’s “Playful Song on the Twin Pines Painted by Wei Yan”. It is signed “written by Zhang Jizhi at seventy-two; the rain had been unbroken and mouldy, the locust trees danced green, I drank a little with a guest and wrote this in play while drunk”, with the seals “Zhang”, “Zhang shi” and “Jizhi”; the frontispiece carries a painting of ancient cypresses attributed to Su Shi, which the museum states is not genuine. [Palace Museum, Zhang Jizhi’s Song of the Twin Pines](https://www.dpm.org.cn/collection/handwriting/228481.html)
 
 Later readers said he “was known to the world for his ability to write”, that “his large characters are antique and robust, his small characters especially vigorous and uncommon”. The museum calls this scroll’s huge characters “full of spirit, strong and unrestrained, with a vein of the strange”, a work of his late years. This scroll puts the “large character” face onto a roll nearly twelve metres long. [Palace Museum, Zhang Jizhi’s Song of the Twin Pines](https://www.dpm.org.cn/collection/handwriting/228481.html)
+
+### Life and identity
+
+The dates, courtesy name, style name, native place and office above are kept from the museum's attached biography, which records them verbatim along with his models and influence. [Palace Museum, Zhang Jizhi's Song of the Twin Pines](https://www.dpm.org.cn/collection/handwriting/228481.html). By `dynastySource` this page places him in the Southern Song.
+
+### Scripts and models
+
+The account above — taking the Tang as his model, strict in structure and steep in brush — is from the museum biography. The scroll is in running script, dated by the museum from his self-inscription "at seventy-two" to 1257. [Palace Museum, Zhang Jizhi's Song of the Twin Pines](https://www.dpm.org.cn/collection/handwriting/228481.html)
+
+### Works in this library
+
+The [Song of the Twin Pines](../works/shuangsong-tuge.md) held here is silk in running script, seventy-two lines and 144 characters, carrying Du Fu's poem and signed "written by Zhang Jizhi at seventy-two." The frontispiece carries a painting of ancient cypresses attributed to Su Shi, which the museum states is not genuine, and it is recorded as a separate work.
+
+### Reliability of the surviving trace
+
+The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+
+— This page has no `objects` entries. The [Song of the Twin Pines](../works/shuangsong-tuge.md) is an ink manuscript on silk in running script, with signature and seals intact, an ink witness; the cypress painting attributed to Su Shi on the same mounting is stated by the museum not to be genuine and is a separate piece, not merged into this scroll because of the shared mounting. Only the carrier and the museum's statement are recorded here, without an authenticity verdict.

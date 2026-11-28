@@ -1,6 +1,9 @@
 ---
 schemaVersion: 2
 titleZh: "04｜专题：南北朝——碑、志与摩崖"
+category: topic
+period: northern-southern
+order: 4
 titleEn: "04 — Topic: Northern and Southern Dynasties — Steles, Epitaphs and Cliff Inscriptions"
 state: reviewed
 works:

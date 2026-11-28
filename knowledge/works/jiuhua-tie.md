@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 杨凝式
     nameEn: Yang Ningshi
+    person: yang-ningshi
     certainty: disputed
     sources:
       - src-wuxi-jiuhua

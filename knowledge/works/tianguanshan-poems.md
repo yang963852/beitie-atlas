@@ -20,6 +20,7 @@ attribution:
   - role: author-and-calligrapher
     name: 赵孟頫（传）
     nameEn: Zhao Mengfu (attributed)
+    person: zhao-mengfu
     certainty: disputed
     sources:
       - src-beilin-tianguanshan

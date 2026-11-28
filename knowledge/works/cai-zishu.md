@@ -20,6 +20,7 @@ attribution:
   - role: author-and-calligrapher
     name: 蔡襄
     nameEn: Cai Xiang
+    person: cai-xiang
     certainty: documented
     sources:
       - src-dpm-228526

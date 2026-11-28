@@ -23,6 +23,7 @@ attribution:
   - role: author-and-calligrapher
     name: 赵孟頫
     nameEn: Zhao Mengfu
+    person: zhao-mengfu
     certainty: documented
     sources:
       - src-dpm-daba

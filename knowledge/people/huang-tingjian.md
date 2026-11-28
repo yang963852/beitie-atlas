@@ -26,6 +26,24 @@ sources: [src-dpm-zhushangzuo, src-catalogue-songfeng, src-ezbwg-songfeng, src-e
 
 他与苏轼的往来，还有一卷跋可以为证。元符三年（1100），他从宜宾往青神探亲，张浩携苏轼[《黄州寒食诗帖》](../works/hanshi.md)来见，他写下九行五十九字的跋，说「东坡此诗似李太白，犹恐太白有未到处」，又说「试使东坡复为之，未必及此」。苏轼、黄庭坚、米芾、蔡襄后来并称「宋四家」；本库另有[苏轼](../people/su-shi.md)、[米芾](../people/mi-fu.md)、[蔡襄](../people/cai-xiang.md)三页，可以合看。[四川省文物局，从《黄州寒食帖》题跋印章考察其庋藏递传历史](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml) · [故宫博物院，苏轼行书治平帖卷·苏轼](https://www.dpm.org.cn/collection/handwriting/231008.html)
 
+### 生平与身份
+
+上文所记生卒、字号、籍贯、科举、历官、贬谪与「四学士」沿用原文，出故宫所附小传；该小传的 locator 列有这些类别，本库未转录其逐字内容，故不据此增添新的传记数值。[故宫博物院，黄庭坚草书诸上座帖卷](https://www.dpm.org.cn/collection/handwriting/228218.html)。据 `dynastySource`，本页把他系于北宋。
+
+### 书体与师承
+
+上文已记其楷书、草书面貌与《山谷自论》所述学草经过：初师周越、晚得苏才翁子美、又见张长史怀素高闲墨迹，此为故宫所引。[故宫博物院，黄庭坚草书诸上座帖卷](https://www.dpm.org.cn/collection/handwriting/228218.html)
+
+### 代表作与本库关联
+
+本库所收[《松风阁诗》](../works/songfeng.md)与[《诸上座帖》](../works/zhushangzuo-tie.md)。鄂州市博物馆记崇宁元年（1102）他罢太平州、改「管勾洪州玉隆观」、九月停樊口而写成《松风阁诗》；[《诸上座帖》](../works/zhushangzuo-tie.md)九十二行，今藏故宫。[鄂州市博物馆，苏门三绝展](https://ezbwg.com/ReadNews.asp?NewsId=1736)
+
+### 书迹可靠性
+
+以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+
+— 本页 `objects` 为空。[《松风阁诗》](../works/songfeng.md)为墨迹纸本，[《诸上座帖》](../works/zhushangzuo-tie.md)为纸本手卷草书、卷末另有一段大字行楷自识，均属墨迹一路。馆方著录的字数与鄂州日报一篇有 153 与 150 之异，本库不引具体字数，两说并存。
+
 ## English
 
 Huang Tingjian (1045–1105), courtesy name Luzhi, style names Shangu daoren and Fu weng, was a native of Fenning in Hongzhou, modern Xiushui in Jiangxi. He passed the examination in 1067 and served as a collator, then as an examining editor of the Shenzong Veritable Records, rising to diarist, assistant secretary and compiler of the national history. Under the Shaosheng reign the faction of Zhang Dun and Cai Bian accused the records of falsehood, and he was banished to the post of adjutant of Fuzhou and settled at Qianzhou; further exiles followed until he reached Yizhou, modern Yishan in Guangxi, where he died. With Zhang Lei, Chao Buzhi and Qin Guan he studied under Su Shi and was known as one of the Four Scholars. The Palace Museum’s note says he “was good at prose, stronger in poetry, and especially famed for calligraphy”; his regular script “opens in stance and is firm in stroke”, his cursive “winds and turns without fixed form”, and he is ranked among the four great calligraphers of the Northern Song. His Shangu ji survives. [Palace Museum, Huang Tingjian’s Discourse to the Venerable Ones, biography](https://www.dpm.org.cn/collection/handwriting/228218.html)
@@ -35,3 +53,21 @@ In 1102, the first year of Chongning, he was removed from his post at Taiping an
 In cursive he left the [Discourse to the Venerable Ones](../works/zhushangzuo-tie.md), a transcription for his friend Li Rendao of the recorded sayings of Wenyi, a Five Dynasties monk of Jinling: ninety-two lines, 33 by 729.5 cm, now in the Palace Museum. The museum says the scroll follows Huaisu’s wild cursive, with a “character method extraordinary, like a horse off the rein”, and that after the sayings Huang added a note of his own in large running-regular script, so one scroll holds two scripts and is a “late masterpiece”. The museum quotes his own account of learning cursive: at first he took Zhou Yue as his teacher and for twenty years “the vulgar air would not shake off”; late he saw the writing of Su Caiweng and Su Zimei and began to get the ancients’ intention; afterwards he saw the ink of Zhang Changshi, Huaisu and Gao Xian and “peeped into the wonder of brush method”. [Palace Museum, Huang Tingjian’s Discourse to the Venerable Ones](https://www.dpm.org.cn/collection/handwriting/228218.html)
 
 One colophon also marks his relation with Su Shi. In 1100, on his way from Yibin to visit relatives at Qingshen, he was shown Su Shi’s [Cold Food Poems](../works/hanshi.md) by Zhang Hao and wrote a colophon of nine lines and fifty-nine characters: “Dongpo’s poem resembles Li Taibai, except that Taibai may not have reached this far”; and “if Dongpo were to do it again, he might not match it.” Su Shi, Huang Tingjian, Mi Fu and Cai Xiang were later named the Four Masters of the Song; this library also holds pages for [Su Shi](../people/su-shi.md), [Mi Fu](../people/mi-fu.md) and [Cai Xiang](../people/cai-xiang.md). [Sichuan Cultural Relics Bureau, on the colophons and seals of the Cold Food Poems](https://wwj.sc.gov.cn/scwwj/mtgz/2020/7/8/77c7a0368c144c8dae63848f7f3c338c.shtml) · [Palace Museum, Su Shi’s letter to Zhipping, biography](https://www.dpm.org.cn/collection/handwriting/231008.html)
+
+### Life and identity
+
+The dates, courtesy name, native place, examination, offices, banishments and the "Four Scholars" above are kept from the museum's attached biography, whose locator lists those categories; the source here does not transcribe it verbatim, so no further biographical values are added. [Palace Museum, Huang Tingjian's Discourse to the Venerable Ones](https://www.dpm.org.cn/collection/handwriting/228218.html). By `dynastySource` this page places him in the Northern Song.
+
+### Scripts and models
+
+The account above of his regular and cursive script and the Shangu zilun passage on learning cursive — first Zhou Yue, later Su Caiweng and Su Zimei, then Zhang Changshi, Huaisu and Gao Xian — is quoted by the museum. [Palace Museum, Huang Tingjian's Discourse to the Venerable Ones](https://www.dpm.org.cn/collection/handwriting/228218.html)
+
+### Works in this library
+
+The library holds the [Poem on the Hall of Wind and Pines](../works/songfeng.md) and the [Discourse to the Venerable Ones](../works/zhushangzuo-tie.md). The Ezhou Municipal Museum records that in 1102 he was removed from Taiping, given the Yulong Abbey sinecure and wrote the poem after stopping at Fankou in the ninth month; the Discourse runs ninety-two lines and is now in the Palace Museum. [Ezhou Municipal Museum, the Su family exhibition](https://ezbwg.com/ReadNews.asp?NewsId=1736)
+
+### Reliability of the surviving trace
+
+The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+
+— This page has no `objects` entries. The [Poem on the Hall of Wind and Pines](../works/songfeng.md) is ink on paper, and the [Discourse to the Venerable Ones](../works/zhushangzuo-tie.md) is an ink handscroll in cursive with a large running-regular note of his own after the sayings, both ink witnesses. The museum record and an Ezhou Daily piece differ on the character count (153 against 150); this library cites no count and keeps both readings.

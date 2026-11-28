@@ -23,6 +23,7 @@ attribution:
   - role: author-and-calligrapher
     name: 虞世南
     nameEn: Yu Shinan
+    person: yushi-nan
     certainty: documented
     sources:
       - src-beilin-kongzi-miaotang
