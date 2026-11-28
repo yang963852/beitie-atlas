@@ -125,6 +125,7 @@ export function ResultsList({
                           href={`#/object/${object.id}`}
                           aria-current={selected ? 'true' : undefined}
                           onClick={(event) => {
+                            if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
                             event.preventDefault();
                             onSelect(object.id);
                           }}

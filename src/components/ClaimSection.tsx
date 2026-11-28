@@ -1,5 +1,6 @@
 import { useId } from 'react';
 import type { Claim } from '../domain/types';
+import { detectLang } from '../domain/text';
 import { useLocale } from '../i18n';
 import { SourceList } from './SourceList';
 
@@ -12,10 +13,11 @@ export function ClaimSection({ claims }: { claims?: Claim[] }) {
     <ul className="claims">
       {claims.map((claim) => {
         const note = locale === 'zh' ? claim.noteZh ?? claim.note : claim.note;
+        const attribution = [claim.voice, claim.locator].filter(Boolean).join(' · ');
         return <li key={claim.id}>
-          <p><strong>{claim.value}</strong> <span className="tag">{strings.claimKindLabels[claim.kind]}</span> <span className="tag">{strings.claimStanceLabels[claim.stance]}</span></p>
-          {(claim.voice || claim.locator) && <p className="section__meta">{[claim.voice, claim.locator].filter(Boolean).join(' · ')}</p>}
-          {note ? <p className="section__note">{note}</p> : null}
+          <p><strong lang={detectLang(claim.value)}>{claim.value}</strong> <span className="tag">{strings.claimKindLabels[claim.kind]}</span> <span className="tag">{strings.claimStanceLabels[claim.stance]}</span></p>
+          {attribution && <p className="section__meta" lang={detectLang(attribution)}>{attribution}</p>}
+          {note ? <p className="section__note" lang={detectLang(note)}>{note}</p> : null}
           <SourceList ids={claim.sourceRefs} compact />
         </li>;
       })}
