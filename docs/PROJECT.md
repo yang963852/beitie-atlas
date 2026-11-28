@@ -46,6 +46,4 @@
 
 ---
 
-这份理念不需要频繁修改，也不需要随着网站功能增加而不断扩写。
-
 相关入口：[中文 README](../README.md) · [English README](../README.en.md) · [中文投稿与试读指南](CONTRIBUTE.zh-CN.md) · [贡献指南](../CONTRIBUTING.md)
