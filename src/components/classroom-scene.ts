@@ -3,42 +3,65 @@ import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment
 import shenlongUrl from '../assets/shenlong-opening.webp';
 import grainUrl from '../assets/wood-grain.webp';
 import normalUrl from '../assets/wood-normal.webp';
-import { writingHand } from './classroom-hand';
 import { paperInk } from './paper-ink';
-import { deskTexture } from './classroom-textures';
+import { loadDeskSurfaces, type DeskSurfaces } from './classroom-textures';
 
-const ease = (n: number) => { const t = T.MathUtils.clamp(n, 0, 1); return t * t * (3 - 2 * t); };
+// Smootherstep: zero velocity and acceleration at both ends, so the camera
+// settles without the visible stop of a cubic ease.
+const ease = (n: number) => { const t = T.MathUtils.clamp(n, 0, 1); return t * t * t * (t * (t * 6 - 15) + 10); };
 
-export async function loadDeskImages() {
-  return Promise.all([shenlongUrl, grainUrl, normalUrl].map(async url => {
-    const image = new Image();
-    image.src = url;
-    await image.decode();
-    return image;
-  }));
+export type DeskAssets = { images: HTMLImageElement[]; surfaces: DeskSurfaces };
+
+let assetsPromise: Promise<DeskAssets> | null = null;
+
+// Decoded plates and painted surfaces are cached module-wide: the idle preload
+// and the scene build share one promise, so opening never waits on them twice.
+export function loadDeskAssets(): Promise<DeskAssets> {
+  if (!assetsPromise) {
+    assetsPromise = Promise.all([
+      Promise.all([shenlongUrl, grainUrl, normalUrl].map(async url => {
+        const image = new Image();
+        image.src = url;
+        await image.decode();
+        return image;
+      })),
+      loadDeskSurfaces(),
+    ]).then(([images, surfaces]) => ({ images, surfaces }))
+      .catch(error => { assetsPromise = null; throw error; });
+  }
+  return assetsPromise;
 }
 
-export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, images: HTMLImageElement[]) {
+export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, assets: DeskAssets) {
   const renderer = new T.WebGLRenderer({ canvas, antialias: true, powerPreference: 'low-power' });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 1.6));
   renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = T.PCFSoftShadowMap;
-  // A filmic curve keeps the warm paper highlights from clipping; the camera,
-  // geometry and animation are untouched.
+  renderer.shadowMap.type = T.PCFShadowMap;
+  // The room is static; only the brush moves. Bake the shadow map once and
+  // refresh it during the strike instead of re-rendering it every frame.
+  renderer.shadowMap.autoUpdate = false;
+  renderer.shadowMap.needsUpdate = true;
+  // A filmic curve keeps the warm paper highlights from clipping.
   renderer.toneMapping = T.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.02;
   const scene = new T.Scene();
   scene.background = new T.Color('#e8e0cc');
   scene.fog = new T.FogExp2('#e8e0cc', .072);
   const camera = new T.PerspectiveCamera(39, 1, .1, 100);
-  const [facsimile, grain, normal] = images.map(image => {
+  const [facsimile, grain, normal] = assets.images.map(image => {
     const texture = new T.Texture(image);
     texture.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
     texture.needsUpdate = true;
     return texture;
   });
   facsimile.colorSpace = grain.colorSpace = T.SRGBColorSpace;
-  const wool = deskTexture('felt'), fibre = deskTexture('paper');
+  const [wool, fibre] = [assets.surfaces.felt, assets.surfaces.paper].map(source => {
+    const texture = new T.Texture(source);
+    texture.colorSpace = T.SRGBColorSpace;
+    texture.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
+    texture.needsUpdate = true;
+    return texture;
+  });
   const textures = [facsimile, grain, normal, wool, fibre];
   const pigment = (color: string) => new T.MeshStandardMaterial({ color });
   const oak = new T.MeshStandardMaterial({map:grain, normalMap:normal, normalScale:new T.Vector2(.48,.48), roughness:.62});
@@ -121,7 +144,7 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
     box(sheets, paper, -.31 + i * .014, .059 + .01 * i, -.04, 4.26, .012, 2.86);
   }
   // Fine irregularities on the exposed edge of the top sheet catch grazing light.
-  const topSheet = new T.PlaneGeometry(4.26,2.86,180,100);
+  const topSheet = new T.PlaneGeometry(4.26,2.86,128,72);
   const edge = topSheet.attributes.position;
   for (let i=0; i<edge.count; i++) {
     const x=edge.getX(i), y=edge.getY(i);
@@ -193,9 +216,6 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   }
   shaft(.42, .14, .065, frame); shaft(1.20, 1.46, .054, bamboo); shaft(1.94, .1, .056, frame);
   for (const y of [.48, .51, 1.85]) shaft(y, .014, .057, ivory);
-  const hand = writingHand();
-  scene.add(hand);
-  const grip = new T.Vector3(), flyIn = new T.Vector3();
   const stain = paperInk(); scene.add(stain.mark);
   const rest = new T.Vector3(1.88, .325, .50);
   const contact = new T.Vector3(.42, .112, .39);
@@ -209,9 +229,9 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
   Object.assign(sun.shadow.camera, { left: -5, right: 5, top: 5, bottom: -5 });
   sun.shadow.mapSize.set(1024, 1024); sun.shadow.normalBias = .008;
   scene.add(sun);
-  let start = performance.now(), strike = 0, strikeIntro = 0, frameId = 0, ready = false;
+  let start = 0, strike = 0, strikeIntro = 0, frameId = 0, ready = false, warmed = false;
   let visible = true;
-  const duration = 2900;
+  const duration = 3200;
   const closeup = new T.Vector3();
   const textAnchor = new T.Vector3();
   function locateLettering() {
@@ -235,9 +255,13 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
     const travel = strike ? strikeIntro + (1 - strikeIntro) * ease(elapsed / .46) : ease((now - start) / duration);
     const height = cameraHeight();
     (scene.fog as T.FogExp2).density = T.MathUtils.lerp(.055, .009, travel);
-    camera.position.set(T.MathUtils.lerp(3.3, 0, travel), T.MathUtils.lerp(Math.max(9.5,height+2), height, travel), T.MathUtils.lerp(10.8, .72, travel));
+    camera.position.set(
+      T.MathUtils.lerp(3.3, 0, travel) + .42 * Math.sin(Math.PI * travel) * (1 - travel),
+      T.MathUtils.lerp(Math.max(9.5, height + 2), height, travel),
+      T.MathUtils.lerp(10.8, .72, travel));
     camera.lookAt(0, 0, T.MathUtils.lerp(-4, 0, travel));
     if (strike) {
+      renderer.shadowMap.needsUpdate = true;
       const approach = ease((elapsed - 1.29) / 1.32);
       camera.position.lerp(closeup.set(contact.x, .24, contact.z+.012), approach);
       camera.lookAt(contact.x*approach,contact.y*approach,T.MathUtils.lerp(-4*(1-travel),contact.z,approach));
@@ -247,12 +271,15 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
       brush.position.lerpVectors(rest,contact,carry);
       brush.position.y += .71*Math.sin(Math.PI*carry/2)*(1-lower) + .69*liftOff;
       brush.position.x += .12*liftOff;
+      // A hair of nib pressure while the wash blooms, released as the brush lifts.
+      brush.position.y -= .014*ease((elapsed-1.24)/.2)*(1-liftOff);
       brush.quaternion.slerpQuaternions(restRotation,writingRotation,carry);
-      hand.visible = true;
-      grip.set(0,.64,0).applyQuaternion(brush.quaternion).add(brush.position);
-      flyIn.set(2.7,1.20,1.05).multiplyScalar(1-ease(elapsed/.40));
-      hand.position.copy(grip).add(flyIn);
-      hand.rotation.set(-.07+.10*lower,.12-.24*carry,.12-.17*lower);
+    } else if (travel >= 1) {
+      // Idle breathing: a slow figure of drift keeps the room alive at ~30fps.
+      const t = now * .001;
+      camera.position.x += .05*Math.sin(t*.21);
+      camera.position.y += .035*Math.sin(t*.13+1.7);
+      camera.lookAt(0, 0, 0);
     }
     stain.age.value = Math.max(0,elapsed-1.24);
     stain.mark.visible = stain.age.value > 0;
@@ -260,7 +287,13 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
     if (!strike && travel >= 1) locateLettering();
     renderer.render(scene, camera);
     if (!ready && travel >= 1) { ready = true; onReady(); }
-    if (visible && (travel < 1 || (strike && elapsed < 2.95))) frameId = requestAnimationFrame(draw);
+    if (!visible) return;
+    if (strike) { if (elapsed < 2.95) frameId = requestAnimationFrame(draw); return; }
+    if (travel < 1) { frameId = requestAnimationFrame(draw); return; }
+    frameId = requestAnimationFrame(function idle(t) {
+      if (t - now >= 33) draw(t);
+      else frameId = requestAnimationFrame(idle);
+    });
   }
   function resize() {
     const {clientWidth: w, clientHeight: h} = canvas;
@@ -274,14 +307,27 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
     rest.copy(dish.position).add(new T.Vector3(-.05,.29,.40));
     contact.set(portrait ? .05 : .42, .112, portrait ? .72 : .39);
     if (!strike) brush.position.copy(rest);
-    renderer.setSize(w,h,false); draw(performance.now());
+    renderer.setSize(w,h,false);
+    if (warmed) { renderer.shadowMap.needsUpdate = true; draw(performance.now()); }
   }
   const observer = new ResizeObserver(resize);
   observer.observe(canvas); resize();
+  // Prewarm every shader before the first visible frame so the approach does
+  // not hitch on program compilation; the loop starts only once warm.
+  const warm = () => {
+    warmed = true;
+    renderer.shadowMap.needsUpdate = true;
+    if (!visible) return;
+    if (!start && !strike) start = performance.now();
+    draw(performance.now());
+  };
+  renderer.compileAsync(scene, camera).then(warm, warm);
   return {
-    visibility(value: boolean) { visible = value; if (value) draw(performance.now()); else cancelAnimationFrame(frameId); },
+    visibility(value: boolean) { visible = value; if (value) { if (warmed) draw(performance.now()); } else cancelAnimationFrame(frameId); },
     strike() {
-      strike = performance.now(); strikeIntro = ease((strike - start) / duration);
+      strike = performance.now();
+      if (!start) start = strike - duration;
+      strikeIntro = ease((strike - start) / duration);
       draw(strike);
       const endCamera = camera.clone();
       const height = cameraHeight();
@@ -289,7 +335,7 @@ export function createClassroom(canvas: HTMLCanvasElement, onReady: () => void, 
       const point = contact.clone().project(endCamera);
       return { x: (point.x+1)*50, y: (1-point.y)*50 };
     },
-    reset() { hand.visible = false; strike = 0; start = performance.now() - duration; brush.position.copy(rest); brush.quaternion.copy(restRotation); draw(performance.now()); },
+    reset() { strike = 0; start = performance.now() - duration; brush.position.copy(rest); brush.quaternion.copy(restRotation); renderer.shadowMap.needsUpdate = true; draw(performance.now()); },
     dispose() {
       observer.disconnect(); cancelAnimationFrame(frameId);
       const geometries = new Set<T.BufferGeometry>(), materials = new Set<T.Material>();
