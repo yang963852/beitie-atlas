@@ -29,6 +29,7 @@ objects:
   - yuanhuan-scroll
   - pingan-hero-fengju-scroll
   - xingrang-scroll
+  - npm-xingrang-scroll
   - shangyu-scroll
   - hanqie-scroll
   - leyilun-rubbing
@@ -39,6 +40,7 @@ sources:
   - src-npm-yuanhuan
   - src-npm-pingan-record
   - src-shm-xingrang
+  - src-npm-xingrang
   - src-shm-shangyu
   - src-tjbwg-hanqie
   - src-npm-leyilun
@@ -52,7 +54,7 @@ sources:
 
 《兰亭序》传统上归于王羲之。故宫博物院将神龙本列为唐摹本，并在同一页面讨论摹者与神龙印的年代。读这一页时，可把「王羲之其文」与「某位唐人摹写」分开记。
 
-本库另收其尺牍数种，皆以唐或唐代以前的摹本传世：《远宦帖》为双钩廓填，《平安何如奉橘三帖》的摹写年代尚有两说，《行穰帖》为唐代双钩摹本，《上虞帖》《寒切帖》馆方均定为唐摹本。小楷《乐毅论》《黄庭经》则只有宋拓刻本，所读不是墨迹。《宣示表》刻本多称出自他的临本，此说属传称。天津博物馆说其真迹早已毁佚，今日可见唯钩摹墨本与法帖拓本二种。
+本库另收其尺牍数种，多以唐或唐代以前的摹本传世：《远宦帖》为双钩廓填，《平安何如奉橘三帖》的摹写年代尚有两说，《行穰帖》有普林斯顿唐双钩摹本与台北故宫草书纸本两件独立记录，后者的制作方式与年代未定，《上虞帖》《寒切帖》馆方均定为唐摹本。小楷《乐毅论》《黄庭经》则只有宋拓刻本，所读不是墨迹。《宣示表》刻本多称出自他的临本，此说属传称。天津博物馆说其真迹早已毁佚，今日可见唯钩摹墨本与法帖拓本二种。
 
 ### 生平与身份
 
@@ -75,7 +77,7 @@ sources:
 - [《万岁通天帖》](../works/wansui-tongtian-tie.md)：697年弘文馆勾填的王氏一门书信卷，今存七人十通，藏辽宁省博物馆，不是王氏真迹。
 - [《远宦帖》](../works/yuanhuan.md)：王羲之致周抚的草书信札，存世本为双钩廓填，亦有《十七帖》刻本。
 - [《平安何如奉橘三帖》](../works/pingan-hero-fengju.md)：王羲之的一卷三札，馆方对摹写年代有「唐代以前」与「唐人双钩廓填」两说。
-- [《行穰帖》](../works/xingrang.md)：王羲之《行穰帖》的唐代双钩摹本，馆方认为存原信前半，今藏普林斯顿大学艺术博物馆。
+- [《行穰帖》](../works/xingrang.md)：普林斯顿本为唐代双钩摹本，馆方认为存原信前半；台北故宫另藏草书纸本，制作方式与年代未定。
 - [《上虞帖》](../works/shangyu.md)：王羲之《上虞帖》的硬黄纸本唐摹本，有徽宗签题与历代内府印记。
 - [《寒切帖》](../works/hanqie.md)：王羲之答两封来信的唐摹本草书纸本，五行五十一字，后有董其昌等跋。
 - [《乐毅论》](../works/leyilun.md)：王羲之小楷《乐毅论》，原墨迹不存，本库所读为宋拓《晋唐小楷》册。
@@ -86,11 +88,11 @@ sources:
 
 The Preface to the Orchid Pavilion is traditionally attributed to Wang Xizhi. The Palace Museum catalogues the Shenlong copy as a Tang manuscript copy and discusses both the copyist and the date of the Shenlong seal. Keep the author and the later copyist as separate claims.
 
-The library also holds several of his letters, all through Tang or pre-Tang tracing copies: the Yuanhuan Letter is a double-outline tracing, the period of the Three Letters Ping'an, Heru and Fengju is still given two ways, the Xingrang Letter is a Tang double-outline copy, and the Shangyu and Hanqie letters are both called Tang tracing copies by their museums. The small-script On Yue Yi and Yellow Court Classic survive only as Song rubbings, not ink. The engravings of the Memorial of Declaration are often said to reproduce his transcription, a traditional attribution. The Tianjin Museum states that his autographs were destroyed long ago, leaving traced ink copies and engraved modelbooks as what can be read today.
+The library also holds several of his letters, mostly through Tang or pre-Tang tracing copies: the Yuanhuan Letter is a double-outline tracing, the period of the Three Letters Ping'an, Heru and Fengju is still given two ways, and the Shangyu and Hanqie letters are both called Tang tracing copies by their museums. The Xingrang Letter has two separate records, a Tang double-outline copy at Princeton and a cursive paper scroll at the National Palace Museum in Taipei whose production method and date remain unknown. The small-script On Yue Yi and Yellow Court Classic survive only as Song rubbings, not ink. The engravings of the Memorial of Declaration are often said to reproduce his transcription, a traditional attribution. The Tianjin Museum states that his autographs were destroyed long ago, leaving traced ink copies and engraved modelbooks as what can be read today.
 
 ### Life and identity
 
-Dates, courtesy name and native place remain open: the sources listed for this page do not record them. The nine catalogued sources here are entries for individual works, none of them a biography of Wang Xizhi. The museum's English caption gives 321–379 while the Chinese page and the usual chronology differ; both readings are kept and neither is preferred here. [Tianjin Museum, Hanqie letter](https://www.tjbwg.cn/cn/collectionInfo.aspx?id=2384). By `dynastySource` this page places him in the Eastern Jin.
+Dates, courtesy name and native place remain open: the sources listed for this page do not record them. The ten catalogued sources here are entries for individual works, none of them a biography of Wang Xizhi. The museum's English caption gives 321–379 while the Chinese page and the usual chronology differ; both readings are kept and neither is preferred here. [Tianjin Museum, Hanqie letter](https://www.tjbwg.cn/cn/collectionInfo.aspx?id=2384). By `dynastySource` this page places him in the Eastern Jin.
 
 ### Scripts and models
 
@@ -108,7 +110,7 @@ The library holds the [Orchid Pavilion Preface](../works/lanting.md), [Letter of
 - [Model Letters of the Wan Sui Tong Tian Year](../works/wansui-tongtian-tie.md): A scroll traced and ink-filled by the Hongwen Academy in 697, preserving ten letters by seven Wang-family hands at the Liaoning Provincial Museum rather than Wang autographs.
 - [Letter from a Distant Post](../works/yuanhuan.md): Wang Xizhi’s cursive letter to Zhou Fu, surviving in a double-outline ink-filled copy and also in an engraved Seventeen Letters edition.
 - ["Three Letters: Ping'an, Heru and Fengju"](../works/pingan-hero-fengju.md): One scroll combining three letters by Wang Xizhi, whose catalogue and exhibition texts describe the tracing both as pre-Tang and as Tang double-outline filling.
-- [Xingrang Letter](../works/xingrang.md): A Tang double-outline tracing of Wang Xizhi’s Xingrang Letter, considered by the museum to preserve the first half of the original and now at the Princeton University Art Museum.
+- [Xingrang Letter](../works/xingrang.md): The Princeton copy is a Tang double-outline tracing thought to preserve the first half of the letter. The National Palace Museum in Taipei holds a separate cursive paper scroll of unknown production date and method.
 - [Shangyu Letter](../works/shangyu.md): A Tang tracing of Wang Xizhi’s Shangyu Letter on hardened yellow paper, bearing Huizong’s title slip and successive imperial-collection seals.
 - [Piercing Cold Letter](../works/hanqie.md): A Tang tracing copy on paper of Wang Xizhi’s cursive reply to two letters, in five lines and fifty-one characters with later colophons including Dong Qichang’s.
 - [On Yue Yi](../works/leyilun.md): Wang Xizhi’s small-regular-script On Yue Yi, whose ink original is lost and which is read here through a Song rubbing in the Jin-Tang Small Script album.

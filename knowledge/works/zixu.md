@@ -8,13 +8,14 @@ dynastyId: tang
 dynastyQualifier: null
 dateKind: single
 dateStart: 777
-dateMonth: null
+dateMonth: 10
 dateEnd: 777
-dateEndMonth: null
+dateEndMonth: 10
 dateEra: null
-dateOriginal: 唐代宗大曆十二年（777）
+dateOriginal: 唐代宗大曆十二年（777）冬十月廿有八日
 dateCertainty: documented
-dateNote: null
+dateMeaning: composition
+dateNote: 台北故宫创作时间字段与卷末自署「大曆丁巳」相合；丁巳为大历十二年。
 script: 草书
 attribution:
   - role: calligrapher
@@ -30,6 +31,31 @@ sources:
   - src-catalogue-zixu
   - src-qlwb-zixu
 reviewState: reviewed
+claims:
+  - id: claim-zixu-first-six-supplement
+    kind: scholarly-opinion
+    predicate: textual-supplement
+    value: 李东阳认为前六行为苏舜钦所补
+    voice: 李东阳（台北故宫藏题跋）
+    stance: supports
+    certainty: documented
+    sources:
+      - src-catalogue-zixu
+    locator: 弘治十一年九月三日李东阳跋
+    note: Li Dongyang calls the first six lines Su Shunqin’s supplement and regards the scroll as authentic; this is a colophon opinion, not the museum’s conservation finding.
+    noteZh: 李东阳称前六行为苏舜钦所补，并断此卷为真迹；这是题跋意见，不是馆方的保存现状鉴定。
+  - id: claim-zixu-first-six-uncertain
+    kind: scholarly-opinion
+    predicate: textual-supplement
+    value: 高士奇认为前六行纸色少异，但难以辨明是否补书
+    voice: 高士奇（台北故宫藏题跋）
+    stance: questions
+    certainty: documented
+    sources:
+      - src-catalogue-zixu
+    locator: 康熙癸丑十一月初八日高士奇跋
+    note: Gao Shiyi records the supplement tradition but says the difference in paper does not settle the question.
+    noteZh: 高士奇记补书之说，但认为纸色差异不足以辨明前六行是否补书。
 ---
 
 # 自叙帖
@@ -38,34 +64,30 @@ reviewState: reviewed
 
 ### 中文
 
-怀素（737—799），俗姓钱，字藏真，永州零陵（今湖南零陵）人。自幼出家，经禅之暇好笔翰，以狂草名世，史称“草圣”。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)
+台北故宫将《自叙帖》定为唐怀素草书手卷，创作时间记为大历十二年（777）；本幅纸本，纵二十八点三厘米、横七百五十五厘米。卷末自署「时大曆丁巳（西元七七七年）冬十月廿有八日」。正文自述怀素早年学书与西行访友，记颜真卿教以笔法，并录张谓、卢象、韦陟、戴叔伦、钱起等人赠诗及当时人的评语。[国立故宫博物院，唐怀素自叙帖卷](https://digitalarchive.npm.gov.tw/Collection/Detail/14901?dep=P)
 
-卷为纸本墨迹，据《齐鲁晚报》所记，纵二十八点三厘米、横七百五十五厘米，一百二十六行，六百九十八字。内容是自述学书经历，兼录颜真卿、张谓、戴叔伦等人赠诗：前半是自叙，后半是一卷时人评语的汇编。开篇“怀素家长沙，幼而事佛，经禅之暇，颇好笔翰”，说的就是他自己；卷末署“时大历丁巳冬十月廿有八日”，丁巳即大历十二年（777）。文章说它是怀素流传下来篇幅最长的作品，“人称‘天下第一草书’”。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)
+齐鲁晚报的二手报道导语并记776或777，所附释文末署却为大历丁巳（777）。这里保留该报道的内部差异；结构化日期依馆方创作时间字段与卷末自署，二者相合，不据导语另设制作年。[齐鲁晚报·齐鲁壹点，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)
 
-卷前有明李东阳篆书引首“藏真自叙”。全卷经南唐内府、宋苏舜钦、邵叶、吕辩，明徐谦斋、吴宽、文徵明、项元汴，清徐玉峰、安岐、清内府递藏，今藏台北故宫博物院。一串藏印从十世纪排到十八世纪，中间没有断代。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)
-
-打开全卷先找前六行。文章说“最初的六行，据说是由此帖收藏者苏舜钦（宋）所补写，与第七行以下的相比，确有天壤之别”。补书与原文的界线，是这一卷最实在的一处读点：先看这六行，再看第七行以后笔势怎样接上去。[齐鲁晚报，怀素《自叙帖》通篇酣畅淋漓](https://www.ql1d.com/general/11203193.html)
+前六行是否苏舜钦补书，卷后题跋保存了不同意见。弘治十一年（1498）李东阳据吴宽所记与《书谱》，称前六行为舜钦所补，并断此卷为真迹。康熙癸丑（1693）高士奇重述米芾《宝章待访录》的补书记载，却指出前六行纸色少异，「然亦莫辨其為補書」。文徵明跋也追述南唐内府、苏氏与明代徐氏收藏，并记其双钩入石之事。[国立故宫博物院，李东阳、高士奇、文徵明题跋](https://digitalarchive.npm.gov.tw/Collection/Detail/14901?dep=P)
 
 ### English
 
-Huaisu (737–799), whose secular surname was Qian and whose courtesy name was Zangzhen, was a native of Lingling in Yongzhou, modern Hunan. He left home as a boy, loved the brush in the intervals of meditation, and became famous for wild cursive; history calls him the “cursive sage”. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)
+The National Palace Museum catalogues the Autobiography as a Tang cursive handscroll by Huaisu, written in 777. Its paper painting section measures 28.3 by 755 cm. The colophon reads “the twenty-eighth day of the tenth month, winter, dingsi of the Dali era (777)”. The text recounts Huaisu’s early studies and journey to visit earlier masters, records Yan Zhenqing’s instruction in brushwork, and preserves poems and judgments by contemporaries including Zhang Wei, Lu Xiang, Wei Zhi, Dai Shulun and Qian Qi. [National Palace Museum, Autobiography](https://digitalarchive.npm.gov.tw/Collection/Detail/14901?dep=P)
 
-The scroll is ink on paper. The Qilu Evening News gives its size as 28.3 by 755 cm, in 126 lines and 698 characters. The text recounts his study of calligraphy and appends poems given to him by Yan Zhenqing, Zhang Wei, Dai Shulun and others: the first half is his own account, the second a gathering of contemporary praise. It opens “Huaisu’s home is in Changsha; as a boy I served the Buddha, and in the intervals of meditation I loved the brush”, and it closes “the twenty-eighth day of the tenth month, winter, dingsi of the Dali era” — dingsi being 777. The article calls it the longest work Huaisu left and notes that it is “known as the finest cursive under heaven”. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)
+A secondary Qilu Evening News report gives “776 or 777” in its introduction, while its transcribed colophon is dated dingsi of the Dali era (777). The internal discrepancy is retained here. The structured date follows the museum’s creation field and the scroll’s own colophon, which agree; the introduction is not used to create a second production year.[Qilu Evening News, “Huaisu’s Autobiography”](https://www.ql1d.com/general/11203193.html)
 
-The frontispiece is Li Dongyang’s seal-script “Zangzhen’s own account”. The scroll passed through the Southern Tang palace collection, then Su Shunqin, Shao Ye and Lü Bian in the Song; Xu Qianzhai, Wu Kuan, Wen Zhengming and Xiang Yuanbian in the Ming; and Xu Yufeng, An Qi and the Qing palace. It is now in the National Palace Museum, Taipei. The seals run from the tenth century to the eighteenth without a gap. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)
-
-Opening the scroll, look first for the first six lines. The article says they are “said to have been supplied by the Song collector Su Shunqin, and set beside the seventh line onward the difference is like heaven and earth”. That seam between supplement and original is the most concrete reading point in the scroll: see the six lines first, then watch how the movement picks up from the seventh. [Qilu Evening News, Huaisu’s Autobiography](https://www.ql1d.com/general/11203193.html)
+The colophons preserve different readings of the first six lines. In 1498 Li Dongyang, relying on Wu Kuan’s account and the Shupu, called them Su Shunqin’s supplement and judged the scroll authentic. In 1693 Gao Shiyi repeated the supplement tradition recorded in Mi Fu’s Baozhang daifang lu but observed that the slightly different paper still did not make the supplement certain. Wen Zhengming’s colophon also recounts the scroll’s passage through the Southern Tang palace, the Su family and the Ming Xu family, and records his tracing it into stone. [National Palace Museum, colophons by Li Dongyang, Gao Shiyi and Wen Zhengming](https://digitalarchive.npm.gov.tw/Collection/Detail/14901?dep=P)
 
 ## 待考
 
 ### 中文
 
-- 年代有 776 与 777 两说：文章开篇作“大历十一年或十二年（776或777年）”，而所录释文末署“大历丁巳”，丁巳为大历十二年。本库依自署系于 777，两说并记。
-- 前六行补书之说，文章作“据说”；补书者与补写时间均未见馆方著录。
-- 尺寸、行数、字数依报刊，未据馆方著录复核；此帖真伪历来有议，本条目未展开，待补可引来源。
+- 前六行是否苏舜钦补书，馆方题跋中存在不同判断；本库不把李东阳的真迹判断等同于馆方鉴定。
+- 真伪与传本关系仍有研究史可补；本条只据馆方释文、尺寸与题跋立据。
+- 入藏日期、现展厅及完整递藏年表未据馆方编年记录补齐。
 
 ### English
 
-- The date is given as either 776 or 777: the article opens with “the eleventh or twelfth year of Dali (776 or 777)”, while the transcription it prints ends “dingsi of Dali”, and dingsi is 777. This entry follows the colophon and dates the work to 777, recording both readings.
-- The supplement of the first six lines is introduced with “said to be”; neither the copyist nor the date of the supplement is recorded by the museum.
-- Dimensions, line count and character count come from the newspaper and have not been checked against the museum catalogue. The scroll’s authenticity has long been debated; this entry does not enter that debate and awaits citable sources.
+- Whether Su Shunqin supplied the first six lines remains disputed in the museum’s colophons; Li Dongyang’s authenticity judgment is not treated as the museum’s own attribution.
+- The authenticity debate and relationships among versions still require research; this record rests only on the museum’s fields, transcription and colophons.
+- The accession date, current gallery and fully dated ownership chronology have not been reconstructed from the museum’s records.
