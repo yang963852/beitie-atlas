@@ -8,13 +8,14 @@ Duobao Pagoda Stele
 
 **作品**　唐 · 唐天宝十一载（752年） · 碑
 
-天宝十一载（752），颜真卿为长安千福寺多宝塔书碑。塔以碑传，这方唐石今藏西安碑林。
+天宝十一载（752），颜真卿为长安千福寺多宝塔书碑。碑原在长安兴平坊千福寺内，宋时入藏西安碑林；碑文记楚金禅师感得多宝佛塔、率僧俗筹建千福寺法华塔之事。塔以碑传，这方唐石今藏西安碑林。
 
-[出处 1](#ref-src-beilin-duobaota)
+[出处 1](#ref-src-beilin-duobaota)、[出处 2](#ref-src-dpm-duobao-songta)
 
 - 撰文 · 岑勋（有明确记载）  [出处 1](#ref-src-beilin-duobaota)
 - 书丹 · 颜真卿（有明确记载）  [出处 1](#ref-src-beilin-duobaota)
-- 刻字 · 史华（有明确记载）  [出处 2](#ref-src-whysb-duobaota)、[出处 3](#ref-src-cupl-shitai)
+- 刻字 · 史华（有明确记载）  [出处 3](#ref-src-whysb-duobaota)、[出处 4](#ref-src-cupl-shitai)
+- 篆额 · 徐浩（有明确记载）  [出处 2](#ref-src-dpm-duobao-songta)
 
 书体：楷书
 
@@ -35,14 +36,14 @@ Duobao Pagoda Stele, original stone
 - 制作年代：唐天宝十一载（752年）
 - 著录编号：未记录
 - 尺寸：高285厘米，宽102厘米
-- 收藏机构：西安碑林博物馆　[出处 1](#ref-src-beilin-duobaota)
+- 收藏机构：西安碑林博物馆　[出处 1](#ref-src-beilin-duobaota)、[出处 2](#ref-src-dpm-duobao-songta)
 - 所引来源查阅于 2026-11-18
 
-馆方条目只记形制与碑文，未记载此石何时移入碑林。
+碑林条目只记形制与碑文；故宫博物院宋拓册说明另记碑于宋时入藏西安碑林，未系年。
 
 ### 递藏与流传
 
-- 1103年 · 迁移（有明确记载）　西安碑林博物馆记载，原碑于北宋崇宁二年移存碑林；搬运经过未见该条详述。 [出处 1](#ref-src-beilin-duobaota)
+- 1103年 · 迁移（有明确记载）　西安碑林博物馆记载，原碑于北宋崇宁二年移存碑林；搬运经过未见该条详述。 [出处 1](#ref-src-beilin-duobaota)、[出处 2](#ref-src-dpm-duobao-songta)
 
 ### 实物待考与说明
 
@@ -58,12 +59,16 @@ Duobao Pagoda Stele, original stone
 
 1. 西安碑林博物馆 Xi’an Beilin Museum · [国宝名碑 · 多宝塔感应碑](<https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=147>)。定位：Entry text: dimensions and the paragraph dating the transfer to 北宋崇宁二年。查阅于 2026-11-18。
 
+<a name="ref-src-dpm-duobao-songta"></a>
+
+2. 故宫博物院 · [〔宋拓唐颜真卿书多宝塔感应碑册〕](<https://www.dpm.org.cn/collection/impres/261924.html>)。定位：藏品说明：752 年立、岑勋撰、颜真卿书、徐浩隶额、史华刻、宋时入碑林。查阅于 2026-11-28。
+
 <a name="ref-src-whysb-duobaota"></a>
 
-2. 文化艺术报 · [〔唐〕颜真卿书《多宝塔感应碑》](<https://www.whysb.org/whysb/20210531/html/page_05_content_000.htm>)（2021-05-31）。查阅于 2026-11-18。
+3. 文化艺术报 · [〔唐〕颜真卿书《多宝塔感应碑》](<https://www.whysb.org/whysb/20210531/html/page_05_content_000.htm>)（2021-05-31）。查阅于 2026-11-18。
 
 <a name="ref-src-cupl-shitai"></a>
 
-3. 中国政法大学法律古籍整理研究所 · [「法度与气象：在碑刻中遇见盛唐」展品简介（六）](<https://flgj.cupl.edu.cn/info/1074/4178.htm>)。查阅于 2026-11-18。
+4. 中国政法大学法律古籍整理研究所 · [「法度与气象：在碑刻中遇见盛唐」展品简介（六）](<https://flgj.cupl.edu.cn/info/1074/4178.htm>)。查阅于 2026-11-18。
 
 [作品源稿](../../knowledge/works/duobao-ta-bei.md) · [返回知识总目](../README.md)

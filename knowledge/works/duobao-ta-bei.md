@@ -39,8 +39,17 @@ attribution:
       - src-cupl-shitai
     note: null
     noteZh: null
+  - role: title-writer
+    name: 徐浩
+    nameEn: Xu Hao
+    certainty: documented
+    sources:
+      - src-dpm-duobao-songta
+    note: null
+    noteZh: null
 sources:
   - src-beilin-duobaota
+  - src-dpm-duobao-songta
 reviewState: reviewed
 guideState: reviewed
 guidePeople:
@@ -58,11 +67,11 @@ guideSources:
 
 ### 中文
 
-天宝十一载（752），颜真卿为长安千福寺多宝塔书碑。塔以碑传，这方唐石今藏西安碑林。
+天宝十一载（752），颜真卿为长安千福寺多宝塔书碑。碑原在长安兴平坊千福寺内，宋时入藏西安碑林；碑文记楚金禅师感得多宝佛塔、率僧俗筹建千福寺法华塔之事。塔以碑传，这方唐石今藏西安碑林。
 
 ### English
 
-A Tang stele of 752 written by Yan Zhenqing, recording the Duobao Pagoda at the Qianfu Temple in Chang’an. Held at the Xi’an Beilin Museum.
+A Tang stele of 752 written by Yan Zhenqing, recording the Duobao Pagoda at the Qianfu Temple in Chang’an. The stone first stood in the Qianfu Temple in the Xingping ward of Chang’an and entered the Xi’an Beilin in the Song; its text tells how the monk Chujin saw the pagoda in a vision and led the building of the Fayu Pagoda. It is held at the Xi’an Beilin Museum.
 
 ## 待考
 

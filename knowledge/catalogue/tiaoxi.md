@@ -8,9 +8,9 @@ Tiaoxi Poems
 
 **作品**　北宋 · 元祐戊辰八月八日作 · 帖
 
-北宋米芾书《苕溪诗卷》。
+北宋米芾书《苕溪诗卷》。此卷纸本，清内府《石渠宝笈》初编著录并贮养心殿，民国时流出宫外，1964年由故宫博物院从荣宝斋收购。
 
-[出处 1](#ref-src-catalogue-tiaoxi)
+[出处 1](#ref-src-catalogue-tiaoxi)、[出处 2](#ref-src-dpm-tiaoxi-vr)
 
 - 书丹 · 米芾（有明确记载）  [出处 1](#ref-src-catalogue-tiaoxi)
 
@@ -29,12 +29,15 @@ Tiaoxi Poems
 - 制作年代：元祐戊辰八月八日作
 - 著录编号：新00155135
 - 尺寸：纵30.3厘米，横189.5厘米
-- 收藏机构：故宫博物院　[出处 1](#ref-src-catalogue-tiaoxi)
+- 收藏机构：故宫博物院　[出处 1](#ref-src-catalogue-tiaoxi)、[出处 2](#ref-src-dpm-tiaoxi-vr)
 - 所引来源查阅于 2026-11-18
 
 ### 递藏与流传
 
-所引资料尚未记下这件实物的递藏经过。
+- 年代不详 · 保管（有明确记载）　故宫博物院展页记，此卷先后经宋高宗、元鲜于枢、明陆完与项元汴、清梁清标收藏，未记各次转移年份。 [出处 2](#ref-src-dpm-tiaoxi-vr)
+- 清乾隆至嘉庆（仅记年号，年份未记） · 保管 · 养心殿（有明确记载）　同上页记，此卷入清乾隆、嘉庆内府，贮养心殿，《石渠宝笈》初编著录。 [出处 2](#ref-src-dpm-tiaoxi-vr)
+- 年代不详 · 迁移 · 出宫（有明确记载）　同上页记，民国时期此卷流出故宫。 [出处 2](#ref-src-dpm-tiaoxi-vr)
+- 一九六四年 · 入藏（有明确记载）　同上页记，一九六四年故宫博物院从荣宝斋收购此卷；入藏时残破，经拼接补笔、重新装裱后基本恢复旧貌。 [出处 2](#ref-src-dpm-tiaoxi-vr)
 
 ### 实物待考与说明
 
@@ -47,5 +50,9 @@ Tiaoxi Poems
 <a name="ref-src-catalogue-tiaoxi"></a>
 
 1. 故宫博物院 · [苕溪诗卷](<https://www.dpm.org.cn/collection/handwriting/228246.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
+
+<a name="ref-src-dpm-tiaoxi-vr"></a>
+
+2. 故宫博物院“石渠宝笈”专题展页（撰稿 张震） · [行书苕溪诗卷](<https://www.dpm.org.cn/vr/stone-moat/wyd_82.html>)。定位：藏品说明：尺寸、《石渠宝笈》初编贮养心殿、宋高宗至清内府递藏、民国出宫、1964 年自荣宝斋收购。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/tiaoxi.md) · [返回知识总目](../README.md)

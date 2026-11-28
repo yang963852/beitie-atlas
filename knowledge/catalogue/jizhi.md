@@ -8,9 +8,9 @@ Draft Requiem for a Nephew
 
 **作品**　唐 · 758年 · 帖
 
-唐颜真卿书《祭侄文稿》。
+唐颜真卿书《祭侄文稿》。此卷曾藏北宋宣和内府，《宣和书谱》著录内府所藏颜书二十八件，此其一；靖康之变后流出，辗转为越州石邦哲所得。至元二十一年（1284），鲜于枢在杭州重装此卷。
 
-[出处 1](#ref-src-catalogue-jizhi)
+[出处 1](#ref-src-catalogue-jizhi)、[出处 2](#ref-src-dpm-jizhi-xianyu)
 
 - 书丹 · 颜真卿（有明确记载）  [出处 1](#ref-src-catalogue-jizhi)
 
@@ -34,10 +34,14 @@ Draft Requiem for a Nephew
 
 ### 递藏与流传
 
-- 至元壬午 · 保管（有明确记载）　鲜于枢丙戌署款的跋记至元壬午（1282）从曹彦礼处得卷。 [出处 2](#ref-src-jizhi-colophon-bingxu)
-- 至元癸未 · 保管（有明确记载）　鲜于枢戊子署款的跋记至元癸未（1283）以古书向曹彦礼换得此卷。 [出处 3](#ref-src-jizhi-colophon-wuzi)
-- 1284年 · 见于记载（有明确记载）　鲜于枢题跋记，至元甲申（1284）在钱塘重装此卷。 [出处 1](#ref-src-catalogue-jizhi)
+- 至元壬午 · 保管（有明确记载）　鲜于枢丙戌署款的跋记至元壬午（1282）从曹彦礼处得卷。 [出处 3](#ref-src-jizhi-colophon-bingxu)
+- 至元癸未 · 保管（有明确记载）　鲜于枢戊子署款的跋记至元癸未（1283）以古书向曹彦礼换得此卷。 [出处 4](#ref-src-jizhi-colophon-wuzi)
+- 1284年 · 见于记载（有明确记载）　鲜于枢题跋记，至元甲申（1284）在钱塘重装此卷。 [出处 1](#ref-src-catalogue-jizhi)、[出处 2](#ref-src-dpm-jizhi-xianyu)
 - 1724年 · 见于记载（有明确记载）　王顼龄雍正二年题跋说，先在徐乾学处见卷，后在弟弟王鸿绪处再见，并记从子彤文将卷赠予自己。题跋年不是所有交接的年份。 [出处 1](#ref-src-catalogue-jizhi)
+- 年代不详 · 保管 · 宣和内府（有明确记载）　故宫博物院院刊论文记，此卷曾藏北宋宣和内府，《宣和书谱》著录内府颜书二十八件，此其一。 [出处 2](#ref-src-dpm-jizhi-xianyu)
+- 年代不详 · 迁移（有明确记载）　同上文记，靖康之变后此卷流出宣和内府。 [出处 2](#ref-src-dpm-jizhi-xianyu)
+- 年代不详 · 保管 · 越州（有明确记载）　同上文记，此卷流出后辗转为越州石邦哲所得。 [出处 2](#ref-src-dpm-jizhi-xianyu)
+- 辛丑 · 保管（有明确记载）　张晏跋称辛丑岁因到江浙，得此帖于鲜于家。 [出处 2](#ref-src-dpm-jizhi-xianyu)
 
 ### 实物待考与说明
 
@@ -51,12 +55,16 @@ Draft Requiem for a Nephew
 
 1. 國立故宮博物院 · [祭侄文稿](<https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P>)。定位：藏品题名；拖尾题跋中鲜于枢的两则题记与王顼龄雍正二年跋。查阅于 2026-11-18。
 
+<a name="ref-src-dpm-jizhi-xianyu"></a>
+
+2. 故宫博物院《故宫博物院院刊》2019年第12期 · [鲜于枢的书画收藏及其经济状况](<https://www.dpm.org.cn/journal/251498.html>)（2019-12）。定位：一、（一）1「颜真卿《祭侄文稿》（台北故宫博物院藏）」条；鲜于枢两跋与张晏跋引文。查阅于 2026-11-28。
+
 <a name="ref-src-jizhi-colophon-bingxu"></a>
 
-2. 國立故宮博物院 · [祭侄文稿 · 鲜于枢丙戌跋](<https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P>)。定位：拖尾鲜于枢丙戌署款跋；记至元壬午（1282）得卷于曹彦礼。查阅于 2026-11-18。
+3. 國立故宮博物院 · [祭侄文稿 · 鲜于枢丙戌跋](<https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P>)。定位：拖尾鲜于枢丙戌署款跋；记至元壬午（1282）得卷于曹彦礼。查阅于 2026-11-18。
 
 <a name="ref-src-jizhi-colophon-wuzi"></a>
 
-3. 國立故宮博物院 · [祭侄文稿 · 鲜于枢戊子跋](<https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P>)。定位：拖尾鲜于枢戊子署款跋；记至元癸未（1283）。查阅于 2026-11-18。
+4. 國立故宮博物院 · [祭侄文稿 · 鲜于枢戊子跋](<https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P>)。定位：拖尾鲜于枢戊子署款跋；记至元癸未（1283）。查阅于 2026-11-18。
 
 [作品源稿](../../knowledge/works/jizhi.md) · [返回知识总目](../README.md)

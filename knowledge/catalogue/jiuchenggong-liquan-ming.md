@@ -8,12 +8,12 @@ Sweet Spring at Jiucheng Palace
 
 **作品**　唐 · 唐贞观六年（632） · 碑
 
-魏徵在九成宫撰铭，颂辞中寄有规谏之意，欧阳询为之书丹。今日寻访此碑，仍可在九成宫遗址内见其原石的著录。
+魏徵在九成宫撰铭，颂辞中寄有规谏之意，欧阳询为之书丹。碑高2.44米、宽1.18米，楷书二十四行、行五十字，唐贞观六年（632）六月立于陕西麟游九成宫。原石今存，但经剜凿，损泐过多，已非原貌。今日寻访此碑，仍可在九成宫遗址内见其原石。
 
-[出处 1](#ref-src-baoji-jiuchenggong)
+[出处 1](#ref-src-baoji-jiuchenggong)、[出处 2](#ref-src-dpm-jiuchenggong-zhenyuan)
 
-- 撰文 · 魏徵（有明确记载）  [出处 1](#ref-src-baoji-jiuchenggong)
-- 书丹 · 欧阳询（有明确记载）  [出处 1](#ref-src-baoji-jiuchenggong)
+- 撰文 · 魏徵（有明确记载）  [出处 1](#ref-src-baoji-jiuchenggong)、[出处 2](#ref-src-dpm-jiuchenggong-zhenyuan)
+- 书丹 · 欧阳询（有明确记载）  [出处 1](#ref-src-baoji-jiuchenggong)、[出处 2](#ref-src-dpm-jiuchenggong-zhenyuan)
 
 别名：九成宫碑、醴泉铭
 
@@ -23,7 +23,9 @@ Sweet Spring at Jiucheng Palace
 
 作品待考与说明
 
-- 所引答复函未记碑石年代、尺寸与现状；撰书年份该页亦未载。
+- 答复函未给出尺寸、保存状况调查或单体保护级别；故宫博物院说明记原石经剜凿，损泐过多。
+- 未记录坐标：函中描述的是遗址范围，不是实测点位。
+- 函中没有说明此碑是否有碑亭遮蔽、是否可供参观。
 
 <a name="stele-jiuchenggong"></a>
 
@@ -35,15 +37,15 @@ Sweet Spring at Jiucheng Palace, original stone
 
 - 制作年代：唐贞观六年（632）
 - 著录编号：未记录
-- 尺寸：未记录
-- 原址保存：隋仁寿宫·唐九成宫遗址　[出处 1](#ref-src-baoji-jiuchenggong)
+- 尺寸：高2.44米，宽1.18米
+- 原址保存：隋仁寿宫·唐九成宫遗址　[出处 1](#ref-src-baoji-jiuchenggong)、[出处 2](#ref-src-dpm-jiuchenggong-zhenyuan)
 - 所引来源查阅于 2026-11-18
 
 文物局答复函将该碑列为遗址内现存的碑刻之一。
 
 ### 递藏与流传
 
-所引资料尚未记下这件实物的递藏经过。
+- 唐贞观六年（632）六月 · 刻石 · 陕西麟游九成宫（有明确记载）　故宫博物院说明记，此碑于唐贞观六年（632）六月立于陕西麟游九成宫。 [出处 2](#ref-src-dpm-jiuchenggong-zhenyuan)
 
 ### 实物待考与说明
 
@@ -59,5 +61,9 @@ Sweet Spring at Jiucheng Palace, original stone
 <a name="ref-src-baoji-jiuchenggong"></a>
 
 1. 宝鸡市文物局 Baoji Municipal Cultural Heritage Bureau · [对市十六届人民代表大会六次会议第216号建议的答复函](<https://wwj.baoji.gov.cn/col1892/col9955/202608/t20260821_1295837.html>)（2026-08-21）。定位：Section 一、基本情况: 九成宫醴泉铭碑 and 万年宫铭碑 surviving within the 隋仁寿宫·唐九成宫遗址。查阅于 2026-11-18。
+
+<a name="ref-src-dpm-jiuchenggong-zhenyuan"></a>
+
+2. 故宫博物院 · [宋拓九成宫醴泉铭册（镇院之宝说明）](<https://www.dpm.org.cn/Uploads/File/2019/12/06/u5de9cbf24e054.pdf>)。定位：说明文字首段及末行“北宋拓本”；另著录新00045736 朱翼盦旧藏拓本。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/jiuchenggong-liquan-ming.md) · [返回知识总目](../README.md)

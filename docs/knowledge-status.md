@@ -14,12 +14,12 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | People pages | 29 |
 | Notes | 16 |
 | Places | 47 (38 with coordinates) |
-| Sources | 241 (0 uncited) |
-| Events | 75 (50 objects with events) |
-| Attribution entries linked to a person | 52 / 178 |
-| Work sources (0 / 1 / 2+) | 0 / 91 / 42 |
-| Reviewed works with one source | 91 |
-| Dates without source wording | 44 |
+| Sources | 255 (0 uncited) |
+| Events | 96 (55 objects with events) |
+| Attribution entries linked to a person | 52 / 180 |
+| Work sources (0 / 1 / 2+) | 0 / 77 / 56 |
+| Reviewed works with one source | 77 |
+| Dates without source wording | 45 |
 
 ## Gaps
 
@@ -66,11 +66,11 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [兰亭序](../knowledge/works/lanting.md) | Eastern Jin | reviewed | reviewed | 2 | 2 | 2 | 1/1 | 4 |
 | [爨宝子碑](../knowledge/works/cuan-baozi-bei.md) | Eastern Jin | reviewed | reviewed | 0 | 3 | 1 | 1/1 | — |
 | [好太王碑](../knowledge/works/haotaiwang-bei.md) | Eastern Jin | reviewed | — | 0 | 2 | 1 | 1/1 | — |
-| [伯远帖](../knowledge/works/boyuan.md) | Eastern Jin | reviewed | — | 1 | 1 | 1 | 1/1 | 4 |
+| [伯远帖](../knowledge/works/boyuan.md) | Eastern Jin | reviewed | — | 1 | 2 | 1 | 1/1 | 4 |
 | [东山松帖](../knowledge/works/dongshansong.md) | Eastern Jin | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
 | [寒切帖](../knowledge/works/hanqie.md) | Eastern Jin | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
 | [黄庭经](../knowledge/works/huangting.md) | Eastern Jin | reviewed | — | 1 | 1 | 1 | 1/1 | — |
-| [快雪时晴帖](../knowledge/works/kuaixue.md) | Eastern Jin | reviewed | — | 1 | 1 | 1 | 1/1 | 3 |
+| [快雪时晴帖](../knowledge/works/kuaixue.md) | Eastern Jin | reviewed | — | 1 | 2 | 1 | 1/1 | 2 |
 | [乐毅论](../knowledge/works/leyilun.md) | Eastern Jin | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [平安何如奉橘三帖](../knowledge/works/pingan-hero-fengju.md) | Eastern Jin | reviewed | — | 1 | 4 | 1 | 1/1 | 1 |
 | [上虞帖](../knowledge/works/shangyu.md) | Eastern Jin | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
@@ -85,33 +85,33 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [石门铭](../knowledge/works/shimen-ming.md) | Northern and Southern Dynasties | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [司马悦墓志](../knowledge/works/simayue-muzhi.md) | Northern and Southern Dynasties | reviewed | — | 0 | 2 | 1 | 1/1 | — |
 | [瘗鹤铭](../knowledge/works/yi-he-ming.md) | Northern and Southern Dynasties | reviewed | — | 0 | 2 | 1 | 1/1 | — |
-| [张猛龙碑](../knowledge/works/zhang-menglong-bei.md) | Northern and Southern Dynasties | reviewed | — | 0 | 1 | 2 | 2/2 | — |
+| [张猛龙碑](../knowledge/works/zhang-menglong-bei.md) | Northern and Southern Dynasties | reviewed | — | 0 | 2 | 2 | 2/2 | — |
 | [张玄墓志](../knowledge/works/zhang-xuan-muzhi.md) | Northern and Southern Dynasties | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [泰山经石峪金刚经](../knowledge/works/jingshiyu-jingangjing.md) | Northern and Southern Dynasties | reviewed | — | 0 | 1 | 1 | 0/1 | — |
 | [郑文公碑](../knowledge/works/zheng-wengong.md) | Northern and Southern Dynasties | reviewed | — | 0 | 1 | 2 | 1/2 | — |
 | [龙藏寺碑](../knowledge/works/longzang-si-bei.md) | Sui | reviewed | — | 0 | 2 | 1 | 1/1 | — |
-| [董美人墓志](../knowledge/works/dong-meiren.md) | Sui | reviewed | — | 0 | 1 | 1 | 1/1 | 1 |
+| [董美人墓志](../knowledge/works/dong-meiren.md) | Sui | reviewed | — | 0 | 2 | 1 | 1/1 | 1 |
 | [陈叔毅修孔子庙碑](../knowledge/works/chen-shuyi-confucius-stele.md) | Sui | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [孔子庙堂碑](../knowledge/works/kongzi-miaotang-bei.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | — |
-| [九成宫醴泉铭](../knowledge/works/jiuchenggong-liquan-ming.md) | Tang | reviewed | — | 1 | 1 | 1 | 0/1 | — |
+| [九成宫醴泉铭](../knowledge/works/jiuchenggong-liquan-ming.md) | Tang | reviewed | — | 1 | 2 | 1 | 0/1 | — |
 | [汝南公主墓志铭](../knowledge/works/runan-gongzhu-muzhi.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [虞恭公碑](../knowledge/works/yugong-gong-bei.md) | Tang | reviewed | reviewed | 1 | 3 | 2 | 1/2 | — |
 | [晋祠之铭并序](../knowledge/works/jinci-zhi-ming.md) | Tang | reviewed | — | 1 | 1 | 2 | 1/1 | — |
 | [温泉铭](../knowledge/works/wen-quan-ming.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | — |
-| [雁塔圣教序](../knowledge/works/yanta.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
+| [雁塔圣教序](../knowledge/works/yanta.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | 1 |
 | [道因法师碑](../knowledge/works/daoyin-fashi-bei.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [同州圣教序](../knowledge/works/tongzhou-shengjiao-xu.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | — |
 | [大唐三藏圣教序碑](../knowledge/works/ji-wang-shengjiao-xu.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [书谱](../knowledge/works/shupu.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [书谱](../knowledge/works/shupu.md) | Tang | reviewed | — | 0 | 2 | 1 | 1/1 | — |
 | [万岁通天帖](../knowledge/works/wansui-tongtian-tie.md) | Tang | reviewed | reviewed | 2 | 3 | 1 | 1/1 | — |
 | [麓山寺碑](../knowledge/works/lushan-si-bei.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [灵飞经](../knowledge/works/lingfei-jing.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [石台孝经](../knowledge/works/shitai-xiaojing.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [多宝塔感应碑](../knowledge/works/duobao-ta-bei.md) | Tang | reviewed | reviewed | 1 | 1 | 1 | 1/1 | 1 |
-| [祭侄文稿](../knowledge/works/jizhi.md) | Tang | reviewed | — | 2 | 1 | 1 | 1/1 | 4 |
+| [多宝塔感应碑](../knowledge/works/duobao-ta-bei.md) | Tang | reviewed | reviewed | 1 | 2 | 1 | 1/1 | 1 |
+| [祭侄文稿](../knowledge/works/jizhi.md) | Tang | reviewed | — | 2 | 2 | 1 | 1/1 | 4 |
 | [三坟记](../knowledge/works/sanfen-ji.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | — |
 | [大唐中兴颂](../knowledge/works/datang-zhongxing-song.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | — |
-| [麻姑仙坛记](../knowledge/works/magu.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
+| [麻姑仙坛记](../knowledge/works/magu.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | 1 |
 | [自叙帖](../knowledge/works/zixu.md) | Tang | reviewed | — | 0 | 2 | 1 | 1/1 | — |
 | [颜勤礼碑](../knowledge/works/yan-qinli-bei.md) | Tang | reviewed | reviewed | 1 | 3 | 2 | 2/5 | — |
 | [颜氏家庙碑](../knowledge/works/yan-jiamiao-bei.md) | Tang | reviewed | — | 2 | 1 | 1 | 1/1 | — |
@@ -130,9 +130,9 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [韭花帖](../knowledge/works/jiuhua-tie.md) | Five Dynasties and Ten Kingdoms | reviewed | — | 1 | 2 | 1 | 1/1 | — |
 | [篆书千字文碑](../knowledge/works/mengying-thousand-character-stele.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [淳化阁帖](../knowledge/works/chunhua-getie.md) | Northern Song | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [黄州寒食诗帖](../knowledge/works/hanshi.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
-| [蜀素帖](../knowledge/works/shusu.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
-| [苕溪诗卷](../knowledge/works/tiaoxi.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
+| [黄州寒食诗帖](../knowledge/works/hanshi.md) | Northern Song | reviewed | — | 1 | 2 | 1 | 1/1 | 1 |
+| [蜀素帖](../knowledge/works/shusu.md) | Northern Song | reviewed | — | 1 | 2 | 1 | 1/1 | — |
+| [苕溪诗卷](../knowledge/works/tiaoxi.md) | Northern Song | reviewed | — | 1 | 2 | 1 | 1/1 | 1 |
 | [松风阁诗](../knowledge/works/songfeng.md) | Northern Song | reviewed | — | 1 | 4 | 1 | 1/1 | 1 |
 | [自书诗卷](../knowledge/works/cai-zishu.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [秾芳诗帖](../knowledge/works/nongfang-shitie.md) | Northern Song | reviewed | — | 0 | 2 | 1 | 1/1 | — |
@@ -145,7 +145,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [城南唱和诗卷](../knowledge/works/chengnan-changhe-shi.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [三门记](../knowledge/works/sanmen-ji.md) | Yuan | reviewed | reviewed | 1 | 2 | 1 | 1/1 | — |
 | [赵子昂游天冠山诗](../knowledge/works/tianguanshan-poems.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
-| [洛神赋](../knowledge/works/zhao-luoshen.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | 2 |
+| [洛神赋](../knowledge/works/zhao-luoshen.md) | Yuan | reviewed | — | 1 | 2 | 1 | 1/1 | 3 |
 | [真镜庵募缘疏卷](../knowledge/works/zhenjing-an-muyuan-shu.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [游包山集](../knowledge/works/you-baoshan-ji.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [墨池堂选帖](../knowledge/works/mochitang.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |

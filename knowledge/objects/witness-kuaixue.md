@@ -14,12 +14,15 @@ dateOriginal: null
 dateCertainty: unknown
 dateNote: null
 catalogNumber: 故書000141N000000000
+dimensionsRaw: 纵23厘米，横14.8厘米
+dimensionsNote: 国立故宫博物院精选赏析页记册页纸本尺寸。
 survival: surviving
 relationships: []
 collectionKind: collection-institution
 collectionPlace: place-taipei-palace
 collectionSources:
   - src-catalogue-kuaixue
+  - src-npm-kuaixue-selection
 collectionAccessedAt: 2026-11-18
 collectionAsOf: null
 collectionNote: null
@@ -45,21 +48,22 @@ events:
     certainty: documented
   - id: witness-kuaixue-qing-court
     type: custody
-    dateKind: era
-    dateStart: null
+    dateKind: single
+    dateStart: 1746
     dateMonth: null
-    dateEnd: null
+    dateEnd: 1746
     dateEndMonth: null
-    dateEra: 乾隆朝
-    dateOriginal: null
+    dateEra: null
+    dateOriginal: 乾隆十一年
     dateCertainty: documented
     dateNote: null
     place: null
-    placeWording: null
-    summary: This album copy was among the works kept by the Qianlong emperor in the Hall of the Three Rarities.
-    summaryZh: 此册页本曾为清高宗三希堂所藏。
+    placeWording: 三希堂
+    summary: In 1746 the Qianlong emperor grouped this copy with Wang Xianzhi’s Zhongqiu and Wang Xun’s Boyuan as the “Three Rarities” and kept them in the Hall of the Three Rarities.
+    summaryZh: 乾隆十一年（1746），清高宗将此本与王献之《中秋帖》、王珣《伯远帖》合称“三希”，藏于三希堂。
     sources:
       - src-npm-kuaixue-yuan
+      - src-npm-kuaixue-selection
     certainty: documented
 reviewState: reviewed
 ---

@@ -22,11 +22,30 @@ collectionKind: collection-institution
 collectionPlace: place-palace-museum
 collectionSources:
   - src-catalogue-zhao-luoshen
+  - src-dpm-zhao-luoshen-vr
 collectionAccessedAt: 2026-11-18
 collectionAsOf: null
 collectionNote: null
 collectionNoteZh: null
-events: []
+events:
+  - id: witness-zhao-luoshen-qing-court
+    type: custody
+    dateKind: era
+    dateStart: null
+    dateMonth: null
+    dateEnd: null
+    dateEndMonth: null
+    dateEra: 清
+    dateOriginal: null
+    dateCertainty: documented
+    dateNote: 来源未记具体年份。
+    place: null
+    placeWording: 御书房
+    summary: The Palace Museum exhibition note records that the scroll is listed in the first Shiqu baoji, was kept in the Imperial Study, and bears Qianlong, Jiaqing and Xuantong imperial seals.
+    summaryZh: 故宫博物院展页记，此卷经《石渠宝笈》初编著录，贮御书房，钤乾隆、嘉庆、宣统内府诸印。
+    sources:
+      - src-dpm-zhao-luoshen-vr
+    certainty: documented
 reviewState: reviewed
 ---
 

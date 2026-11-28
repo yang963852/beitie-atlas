@@ -8,9 +8,9 @@ Wild Goose Pagoda Preface
 
 **作品**　唐 · 653年 · 碑
 
-唐褚遂良书《雁塔圣教序》。本条收录慈恩寺圣教序拓本。
+唐褚遂良书《雁塔圣教序》。本条收录慈恩寺圣教序拓本。原碑永徽四年（653）刻，分两石刻，嵌于唐慈恩寺大雁塔南门左右龛内；左龛为唐太宗所撰序，右龛为太子李治所撰记，均由褚遂良书，万文韶刻石。碑高148厘米、宽69厘米；序碑楷书二十一行、行四十二字，记碑楷书二十行、行四十字。
 
-[出处 1](#ref-src-catalogue-yanta)
+[出处 1](#ref-src-catalogue-yanta)、[出处 2](#ref-src-shaanxi-dfz-yanta)
 
 - 书丹 · 褚遂良（有明确记载）  [出处 1](#ref-src-catalogue-yanta)
 
@@ -49,5 +49,9 @@ Wild Goose Pagoda Preface, rubbing
 <a name="ref-src-catalogue-yanta"></a>
 
 1. 故宫博物院 · [雁塔圣教序（慈恩寺圣教序拓本）](<https://www.dpm.org.cn/collection/impres/234134.html>)。定位：藏品题名及作品说明。查阅于 2026-11-19。
+
+<a name="ref-src-shaanxi-dfz-yanta"></a>
+
+2. 陕西省地方志办公室 · [雁塔圣教序碑](<https://dfz.shaanxi.gov.cn/zslm/sxsq/msgj/200611/t20061115_2620205.html>)（2006-11-15）。定位：条目正文：653 年刻、两石嵌大雁塔南门左右龛、尺寸、行款、万文韶刻。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/yanta.md) · [返回知识总目](../README.md)

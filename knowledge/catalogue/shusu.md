@@ -8,9 +8,9 @@ Poems on Shu Silk
 
 **作品**　北宋 · 北宋哲宗元祐三年（1088） · 帖
 
-北宋米芾书《蜀素帖》。
+北宋米芾书《蜀素帖》。此卷为米芾应林希之请，在蜀素上书诗八首；董其昌万历三十二年（1604）以所藏数件名迹与徽州古董商吴廷换得此卷，约1615年转入陈巘之手。
 
-[出处 1](#ref-src-catalogue-shusu)
+[出处 1](#ref-src-catalogue-shusu)、[出处 2](#ref-src-npm-dongqichang-shusu)
 
 - 书丹 · 米芾（有明确记载）  [出处 1](#ref-src-catalogue-shusu)
 
@@ -28,13 +28,14 @@ Poems on Shu Silk
 
 - 制作年代：北宋哲宗元祐三年（1088）
 - 著录编号：故書000071N000000000
-- 尺寸：未记录
-- 收藏机构：台北故宫博物院　[出处 1](#ref-src-catalogue-shusu)
+- 尺寸：纵27.6厘米，横270.8厘米
+- 收藏机构：台北故宫博物院　[出处 1](#ref-src-catalogue-shusu)、[出处 2](#ref-src-npm-dongqichang-shusu)
 - 所引来源查阅于 2026-11-18
 
 ### 递藏与流传
 
-所引资料尚未记下这件实物的递藏经过。
+- 萬曆甲辰年 · 保管（有明确记载）　国立故宫博物院特展页记，董其昌于万历甲辰年（1604）以所藏数件名迹与徽州古董商吴廷换得此卷。 [出处 2](#ref-src-npm-dongqichang-shusu)
+- 乙卯（1615）左右 · 保管（有明确记载）　同上页记，约1615年此卷转入董其昌好友陈巘之手。 [出处 2](#ref-src-npm-dongqichang-shusu)
 
 ### 实物待考与说明
 
@@ -47,5 +48,9 @@ Poems on Shu Silk
 <a name="ref-src-catalogue-shusu"></a>
 
 1. 國立故宮博物院 · [蜀素帖](<https://digitalarchive.npm.gov.tw/Collection/Detail/912?dep=P>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
+
+<a name="ref-src-npm-dongqichang-shusu"></a>
+
+2. 國立故宮博物院 · [妙合神離—董其昌書畫特展：藏─董其昌的书画收藏](<https://theme.npm.edu.tw/exh105/dongqichang/ch/page-3.html>)。定位：「宋 米芾 蜀素帖 卷」条：材质、尺寸、董其昌 1604 年与吴廷交换、约 1615 年转陈巘。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/shusu.md) · [返回知识总目](../README.md)

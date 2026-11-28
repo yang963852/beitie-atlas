@@ -8,9 +8,9 @@ Treatise on Calligraphy
 
 **作品**　唐 · 垂拱三年寫記 · 帖
 
-唐孙过庭书《书谱》。
+唐孙过庭撰并书《书谱》，草书，垂拱三年（687）成书。上卷墨迹原藏清内府，后归故宫博物院，今在台湾。
 
-[出处 1](#ref-src-catalogue-shupu)
+[出处 1](#ref-src-catalogue-shupu)、[出处 2](#ref-src-dpm-shupu-ketie)
 
 - 书丹 · 孙过庭（有明确记载）  [出处 1](#ref-src-catalogue-shupu)
 
@@ -27,13 +27,14 @@ Treatise on Calligraphy
 - 制作年代：垂拱三年寫記
 - 著录编号：故書000058N000000000
 - 尺寸：本幅 26.5 × 900.8 cm
-- 收藏机构：台北故宫博物院　[出处 1](#ref-src-catalogue-shupu)
+- 收藏机构：台北故宫博物院　[出处 1](#ref-src-catalogue-shupu)、[出处 2](#ref-src-dpm-shupu-ketie)
 - 所引来源查阅于 2026-11-18
 
 ### 递藏与流传
 
 - 北宋 · 见于记载（有明确记载）　台北故宫将隔水上的楷书题签归于宋徽宗。 [出处 1](#ref-src-catalogue-shupu)
 - 清 · 见于记载（有明确记载）　卷上可见梁清标、安岐等人的鉴藏印。《石渠宝笈初编》御书房卷著录此卷。 [出处 1](#ref-src-catalogue-shupu)
+- 年代不详 · 保管 · 清内府；台湾（有明确记载）　故宫博物院刊文记，《书谱》上卷墨迹原藏清内府，后归故宫博物院，今在台湾；未记年份。 [出处 2](#ref-src-dpm-shupu-ketie)
 
 ### 实物待考与说明
 
@@ -46,5 +47,9 @@ Treatise on Calligraphy
 <a name="ref-src-catalogue-shupu"></a>
 
 1. 國立故宮博物院 · [书谱](<https://digitalarchive.npm.gov.tw/Collection/Detail?dep=P&id=14900>)。定位：卷末自题、题跋、印记及收藏著录。查阅于 2026-11-19。
+
+<a name="ref-src-dpm-shupu-ketie"></a>
+
+2. 故宫博物院《紫禁城》第113期（施安昌） · [孙过庭《书谱》的宋代刻帖](<https://www.dpm.org.cn/impress/talk/208292.html>)。定位：正文首段：《书谱》为孙过庭撰并写；上卷墨迹原藏清内府，后归故宫博物院，现在台湾。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/shupu.md) · [返回知识总目](../README.md)
