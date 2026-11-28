@@ -16,7 +16,7 @@ Colophon to Shen Yinmo’s Writing on Calligraphy
 
 书体：行书
 
-延伸阅读：[行书跋沈尹默论书札卷](../works/zhao-puchu-shen-colophon.md) · [赵朴初](../people/zhao-puchu.md)
+延伸阅读：[行书跋沈尹默论书札卷](../works/zhao-puchu-shen-colophon.md) · [赵朴初](../people/zhao-puchu.md) · [08｜专题：清近代——碑学与日常书写](../notes/essay-08-qing-modern.md)
 
 <a name="witness-zhao-shen-colophon"></a>
 

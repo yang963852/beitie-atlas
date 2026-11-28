@@ -16,7 +16,7 @@ Poems on Shu Silk
 
 书体：行书
 
-延伸阅读：[米芾](../people/mi-fu.md)
+延伸阅读：[米芾](../people/mi-fu.md) · [06｜专题：宋代——刻帖、墨迹与士人书](../notes/essay-06-song.md)
 
 <a name="witness-shusu"></a>
 

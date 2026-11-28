@@ -18,7 +18,7 @@ Mount Tai Inscription
 
 书体：小篆
 
-延伸阅读：[李斯](../people/li-si.md)
+延伸阅读：[李斯](../people/li-si.md) · [02｜专题：秦汉——统一文字与隶书登场](../notes/essay-02-qin-han.md)
 
 作品待考与说明
 

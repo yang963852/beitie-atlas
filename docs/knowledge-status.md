@@ -12,7 +12,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | Objects | 140 (140 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
 | People pages | 29 |
-| Notes | 2 |
+| Notes | 16 |
 | Places | 47 (38 with coordinates) |
 | Sources | 241 (0 uncited) |
 | Events | 75 (50 objects with events) |
