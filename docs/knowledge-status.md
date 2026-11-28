@@ -14,7 +14,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | People pages | 29 |
 | Notes | 2 |
 | Places | 47 (38 with coordinates) |
-| Sources | 240 (0 uncited) |
+| Sources | 241 (0 uncited) |
 | Events | 75 (50 objects with events) |
 | Attribution entries linked to a person | 52 / 178 |
 | Work sources (0 / 1 / 2+) | 0 / 91 / 42 |

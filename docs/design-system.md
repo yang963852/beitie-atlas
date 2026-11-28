@@ -8,9 +8,9 @@ Write for a reader at the copying desk. Use concrete details from the inscriptio
 
 Show the artifact and its location first. Use strong hierarchy, consistent alignment, whitespace, and progressive disclosure. Keep search, selection, source access, and recovery discoverable. Do not equate simplicity with hiding necessary controls.
 
-The opening camera descends from a misty classroom to the copying desk. The question floats above the practice sheet. Clicking the scene or pressing Enter brings the brush from the ink dish to the paper. After contact, the camera moves closer to the spreading wash before revealing the work timeline. Desktop readers move from earlier to later works horizontally; narrow layouts follow the same sequence vertically. A work opens in a reading dialog. Its individual witnesses link to their own extant map and sourced transmission narrative. Reduced motion enters immediately. Shared links land on the corresponding record or journey. The camera, brush, hand and ink-spread timing are the scene's core; visual work stays in lighting, colour, texture and the surrounding page chrome.
+The opening camera descends from a misty classroom to the copying desk. The question floats above the practice sheet. Clicking the scene or pressing Enter brings the brush from the ink dish to the paper. After contact, the camera moves closer to the spreading wash before revealing the 访碑 atlas. Desktop readers move from earlier to later works horizontally in 编年; narrow layouts follow the same sequence vertically. A work opens in a reading dialog. Its individual witnesses link to their own extant map and sourced transmission narrative. Reduced motion enters immediately. Shared links land on the corresponding record or journey. The camera, brush, hand and ink-spread timing are the scene's core; visual work stays in lighting, colour, texture and the surrounding page chrome.
 
-The knowledge library remains the reference reading page. A work or person page leads with its title and authored text. Name the edition and observer for a close reading. Keep source, review state and a route back to the subject visible. Reading and following links must work when the subject has no map point, portrait or surviving witness. Present the beta edition label and a feedback route in the reading experience.
+The 读帖 library remains the reference reading page. A work or person page leads with its title and authored text. Name the edition and observer for a close reading. Keep source, review state and a route back to the subject visible. Reading and following links must work when the subject has no map point, portrait or surviving witness. Present the beta edition label and a feedback route in the reading experience.
 
 ## Starting tokens (project decisions)
 
@@ -32,15 +32,15 @@ Define reusable CSS variables and shared button/input states. Use Song serif for
 
 ## Reading-room palette (tasks 040–042)
 
-The whole product now shares one printed-catalogue language. Warm laid paper, Song serif body text, Kai captions, a vermilion seal accent and ruled catalogue shelves carry the book metaphor. The knowledge library is the reference implementation; the atlas, timeline, extant map, reading card, transmission page, contribution form and opening desk inherit the same tokens. Decorative devices must stay functional: rules separate shelves and facts, numerals order entries, the seal marks identity, and the accent marks navigation and selection.
+The whole product now shares one printed-catalogue language. Warm laid paper, Song serif body text, Kai captions, a vermilion seal accent and ruled catalogue shelves carry the book metaphor. The 读帖 library is the reference implementation; the 编年 handscroll, 访碑 map, reading card, transmission page, contribution form and opening desk inherit the same tokens. Decorative devices must stay functional: rules separate shelves and facts, numerals order entries, the seal marks identity, and the accent marks navigation and selection.
 
-The three catalogue entries — 知识库, 历史脉络 and 现存地图 — share one masthead and three-link section nav; only the content below the nav changes. The timeline presents compact paper slips that show only the work name, placed on two banks of a broad, continuously flowing classic-blue river with rolling wave crests and foam. The river keeps drifting while visible and stops under reduced motion; a CSS fallback drifts when WebGL is unavailable. Names may be visually clamped to two lines on a slip, but the link text remains complete for assistive technology and the reading card carries the date and attribution.
+The three entries — 访碑, 编年 and 读帖 — share one masthead and three-link section nav; only the content below the nav changes. The 编年 page is a handscroll: a dynasty ruler, a ruled paper band and compact paper slips on two banks; narrow layouts become a hanging scroll. The former WebGL river is retired. Names may be visually clamped to two lines on a slip, but the link text remains complete for assistive technology and the reading card carries the date and attribution. Calligraphers carry a sourced `dynastyId`; 读帖 groups them by that period and orders them by their earliest dated work inside it.
 
 | Token | Value/use |
 | --- | --- |
 | Reading paper | `#f4eddd` page, `#fcf8ee` lifted leaf |
 | Reading ink | `#2a251e`; secondary `#554b3d`, captions `#756a58` |
-| Seal accent | `#8f2f22`; active tab, section marks, timeline markers, map markers, selection |
+| Seal accent | `#8f2f22`; active tab, section marks, 编年 markers, map markers, selection |
 | Rules | `#e8decb` soft, `#d9ccb4`, `#c3b192` strong |
 | Reading measure | 38 rem prose column; 17–18 px body, line height 2.0 |
 | Paragraphs | 2 em first-line indent; Chinese justified, English left aligned |

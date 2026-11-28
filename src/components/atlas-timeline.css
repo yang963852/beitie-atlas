@@ -92,9 +92,6 @@
 .reader-sections {display:flex;gap:1.75rem;align-items:center;margin:0 clamp(1rem,5vw,5rem);border-bottom:1px solid var(--rule);}
 .reader-sections a {text-decoration:none;padding:.9rem 0 .65rem;font:1rem var(--book);}
 .reader-sections [aria-current] {border-bottom:2px solid #904534;color:#7e3729;}
-.river-reach {position:relative;isolation:isolate;}
-.ink-river {position:absolute;top:calc(50% + .95rem);left:0;right:0;height:7rem;transform:translateY(-50%);pointer-events:none;background:radial-gradient(130% 60% at 50% 50%,#0e355fb8 0%,#21578394 42%,#85b2cc4d 70%,transparent 78%);z-index:-1;}
-.ink-river:has(canvas) {background:none;}
 .atlas-rail {display:flex;overflow-x:auto;overflow-y:hidden;padding:.35rem .2rem .8rem;align-items:stretch;}
 .atlas-period {border:0;padding:0;}
 .atlas-period h2 {font:600 1.1rem var(--book);padding:0 0 .7rem;color:#695342;}
@@ -476,33 +473,6 @@
   font: 0.9rem/1.5 var(--book);
 }
 
-@media (max-width: 760px) {
-  .ink-river {
-    height: 5.6rem;
-  }
-}
-
-.ink-river {
-  background: radial-gradient(130% 60% at 50% 50%, rgba(14, 53, 95, 0.72) 0%, rgba(33, 87, 131, 0.58) 42%, rgba(133, 178, 204, 0.3) 70%, transparent 78%);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .ink-river:not(:has(canvas)) {
-    background-image:
-      repeating-linear-gradient(97deg, transparent 0 34px, rgba(240, 247, 250, 0.13) 36px 38px, transparent 40px 74px),
-      repeating-linear-gradient(84deg, transparent 0 52px, rgba(240, 247, 250, 0.07) 54px 55px, transparent 57px 108px),
-      radial-gradient(130% 60% at 50% 50%, rgba(14, 53, 95, 0.72) 0%, rgba(33, 87, 131, 0.58) 42%, rgba(133, 178, 204, 0.3) 70%, transparent 78%);
-    background-size: 300px 100%, 440px 100%, 100% 100%;
-    animation: river-drift 9s linear infinite;
-  }
-
-  @keyframes river-drift {
-    to {
-      background-position: 300px 0, 440px 0, 0 0;
-    }
-  }
-}
-
 .atlas-reader .map-overview {
   background-color: #f4eedf;
   background-image:
@@ -533,12 +503,6 @@
    ========================================================================== */
 
 @media (max-width: 760px) {
-  /* The river is the horizontal reading device; a vertical rail uses the
-     period rule instead, so the water would only cut across the sequence. */
-  .ink-river {
-    display: none;
-  }
-
   .atlas-rail {
     display: block;
     overflow: visible;
@@ -674,7 +638,7 @@
 }
 
 @media (min-width: 761px) {
-  .atlas-tools__jump {
+  .atlas-tools label.atlas-tools__jump {
     display: none;
   }
 
@@ -714,7 +678,7 @@
     display: none;
   }
 
-  .atlas-tools__jump {
+  .atlas-tools label.atlas-tools__jump {
     display: grid;
   }
 
