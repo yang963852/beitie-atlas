@@ -10,4 +10,4 @@ const knowledge = compiled as unknown as {
 
 export const knowledgeArticles = knowledge.articles;
 export const knowledgeRelations = knowledge.relations;
-export type { KnowledgeArticle, KnowledgeKind, KnowledgeRelation } from './knowledge-types';
+export type { KnowledgeArticle, KnowledgeKind, KnowledgeRelation, NoteCategory, NotePeriod } from './knowledge-types';

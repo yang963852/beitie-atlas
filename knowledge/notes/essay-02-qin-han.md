@@ -1,6 +1,9 @@
 ---
 schemaVersion: 2
 titleZh: "02｜专题：秦汉——统一文字与隶书登场"
+category: topic
+period: qin-han
+order: 2
 titleEn: "02 — Topic: Qin and Han — Standard Script and the Rise of Clerical Writing"
 state: reviewed
 works:

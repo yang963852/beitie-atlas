@@ -200,6 +200,7 @@ function writeArticle(root: string, kind: 'people' | 'notes', id: string, state:
     works: [] as string[],
     objects: [] as string[],
     sources: ['src-fixture'],
+    ...(kind === 'notes' ? { category: 'close-reading', period: 'tang', order: 1 } : {}),
   };
   writeAt(root, 'knowledge/' + kind + '/' + id + '.md',
     doc(fields, '# 测试\n\n## 中文\n\n测试正文。\n\n## English\n\nFixture text.\n\n' + refs));
@@ -321,6 +322,7 @@ describe('strict release gate', () => {
     void prefix;
   });
 
+  // Compiling the real corpus twice outlasts vitest's 5 s default under a parallel run.
   it('binds the real corpus to the gate: exactly the draft records are reported', () => {
     const root = process.cwd();
     const compiled = compileKnowledge(root).knowledge;
@@ -342,7 +344,7 @@ describe('strict release gate', () => {
 
     expect(flagged).toEqual(drafts);
     expect(report.ok).toBe(drafts.length === 0 && !report.errors.some(issue => issue.code === 'DRAFT_KNOWLEDGE_IN_RELEASE'));
-  });
+  }, 120_000);
 });
 
 describe('artifact verification', () => {

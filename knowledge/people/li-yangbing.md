@@ -25,6 +25,24 @@ sources: [src-beilin-sanfenji, src-hbrb-sanfenji, src-beilin-yanjiamiao]
 
 评价可以看三条。唐人概括他的篆书为“格峻”“力猛”“功备”，称为“铁线描”；宋朱长文《续书断》品第唐宋书家九十四人，神品只列三位：李阳冰、颜真卿、张旭；清康有为说《三坟记》“瘦劲取胜”。他与颜真卿并称“二绝”，当时颜书之碑多请他篆额，《颜氏家庙碑》正是这对组合的实例——碑阳颜楷、碑额李篆，一块石上两个“神品”，读的时候却要用两副眼睛。[河北日报，阳冰独步](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)
 
+### 生平与身份
+
+上文所记生卒、字号、籍贯与历官沿用原文，生卒为「约」数。本库来源未逐字转录其小传，故不据此增添新的传记数值。[河北日报，阳冰独步](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)。据 `dynastySource`，本页把他系于唐。
+
+### 书体与师承
+
+上文已记其篆法来自李斯、《上李大夫论古篆书》自述“志在古篆，殆三十年”。唐人所见的《峄山刻石》与今日碑林宋刻并非同一块石，本库[《峄山刻石》](../works/yishan-inscription.md)条目已记明，读时须分开。[河北日报，阳冰独步](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)
+
+### 代表作与本库关联
+
+本库所收[《三坟记》](../works/sanfen-ji.md)刻于大历二年（767），李季卿撰、李阳冰篆，全篇篆书出于他；[《颜氏家庙碑》](../works/yan-jiamiao-bei.md)（780）他只写碑额，正文为颜真卿楷书。两件中他书写的分量不同，上文已分记。[西安碑林博物馆，三坟记碑](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2611)
+
+### 书迹可靠性
+
+以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+
+— 本页 `objects` 为空。[《三坟记》](../works/sanfen-ji.md)的载体有两说：碑林记刻于大历二年、未提重刻，河北日报则说原石久佚、今存碑林者为宋时重刻且未记年份；本库在其条目把这一点留在待考，两说并存。[《颜氏家庙碑》](../works/yan-jiamiao-bei.md)的碑额在原石上，曾仆于郊野、北宋太平兴国七年（982）重立。一件隔宋人刀、一件直接落唐石，分记不以定论。
+
 ## English
 
 Li Yangbing (c. 721 – c. 785), courtesy name Shaowen, came from a family registered in Zhao commandery, present-day Zhao county in Hebei, later moved to Yunyang in Shaanxi, and was an elder kinsman of the poet Li Bai. He served as a county defender, magistrate of Jinyun and of Dangtu, and rose through the Directorate of Education, the Academy of Scholarly Worthies and the Directorate of Works to the post of secretary of the Secretariat, from which he was known as Director Li. He made his name in small seal script and was later called the first seal writer since Li Si; already in his own day people spoke of “Yangbing alone” and of him as “Cangjie reborn”. [Hebei Daily, Yangbing alone](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)
@@ -36,3 +54,21 @@ The two stones are not equally trustworthy either. The Beilin dates the Record o
 His seal method came from Li Si. In his letter to Li Dafu on ancient seal script he says that he gave himself to it for nearly thirty years, beginning with the Mount Yi inscription and going on to the Wu Jizha epitaph. There is a layer here that is easily missed: the Mount Yi that Tang readers saw and the Mount Yi in the Beilin today — cut in 993 by Zheng Wenbao from Xu Xuan’s tracing — are not the same stone, as this library’s [Mount Yi entry](../works/yishan-inscription.md) records. “Going back to Qin seal script” meant, for a Tang writer, a stone that still stood in his own time; for us it means a Song recutting. [Hebei Daily, Yangbing alone](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)
 
 Three judgements are worth keeping. The Tang summed up his seal script as “lofty in frame, fierce in force, complete in method”, and called it iron-wire drawing. Zhu Changwen’s Xu shutuan graded ninety-four calligraphers of the Tang and Song and placed only three in the divine class: Li Yangbing, Yan Zhenqing and Zhang Xu. Kang Youwei said the Record of the Three Graves “wins by leanness and strength”. He and Yan Zhenqing were known together as “the two excellences”, and Yan’s steles were usually headed by Li’s seal script; the Yan family shrine stele is exactly that pairing — Yan’s regular script on the face, Li’s seal on the heading, two “divine” hands on one stone, to be read with two different eyes. [Hebei Daily, Yangbing alone](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)
+
+### Life and identity
+
+The dates, courtesy name, native place and offices given above are kept, the dates being approximate. The sources here do not transcribe his biography, so no further biographical values are added. [Hebei Daily, Yangbing alone](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html). By `dynastySource` this page places him in the Tang.
+
+### Scripts and models
+
+The account above of his seal method deriving from Li Si and of his letter speaking of nearly thirty years spent on ancient seal script is kept. The Mount Yi that Tang readers saw and the Song recutting in the Beilin today are not the same stone, as the library's [Mount Yi entry](../works/yishan-inscription.md) records; they are kept apart here. [Hebei Daily, Yangbing alone](https://hbrb.hebnews.cn/pc/paper/c/201805/25/c70575.html)
+
+### Works in this library
+
+The [Record of the Three Graves](../works/sanfen-ji.md), carved in 767, was composed by Li Jiqing and written in seal script throughout by Li Yangbing; on the [Stele of the Yan Family Shrine](../works/yan-jiamiao-bei.md) of 780 he wrote only the heading, the body being Yan Zhenqing's regular script. The amount he wrote on each differs, as kept apart above. [Xi'an Beilin Museum, Record of the Three Graves](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2611)
+
+### Reliability of the surviving trace
+
+The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+
+— This page has no `objects` entries. The carrier of the [Record of the Three Graves](../works/sanfen-ji.md) has two readings: the Beilin dates it to 767 and mentions no recutting, while Hebei Daily reports the original long lost and the surviving stone a Song recutting of unrecorded year; the library leaves the point open in the work record, and both readings are kept. The heading of the [Yan family shrine stele](../works/yan-jiamiao-bei.md) is on the original stone, which fell and was re-erected in 982. One witness is seen through a Song knife, the other lies on Tang stone; they are recorded separately and not reduced to a verdict.

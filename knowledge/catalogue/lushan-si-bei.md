@@ -18,6 +18,8 @@ Stele of Lushan Temple
 
 书体：行书
 
+延伸阅读：[李邕](../people/li-yong.md)
+
 作品待考与说明
 
 - 页面只约略记存字「1000余字」，非精确统计。
