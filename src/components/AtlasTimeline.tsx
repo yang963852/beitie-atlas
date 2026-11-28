@@ -10,7 +10,6 @@ import { useLocale, type Locale } from '../i18n';
 import { zhStrings } from '../i18n/zh';
 import { enStrings } from '../i18n/en';
 import { buildMarkers } from '../map/markers';
-import { InkRiver } from './InkRiver';
 import { ReaderHeader } from './ReaderHeader';
 import { CollectionAtlas } from './CollectionAtlas';
 import { HistoryPoints } from './HistoryPoints';
@@ -63,6 +62,13 @@ function holding(object: ObjectRecord, locale: Locale) {
 function byline(entry: LibraryEntry, locale: Locale, labels: Parameters<typeof formatAttribution>[2]) {
   return entry.work ? formatAttribution(entry.work.attribution,locale,labels) :
     entry.guide?.people.map(id => findEntry('people',id)).filter((p): p is LibraryEntry => Boolean(p)).map(p => title(p,locale)).join(' · ');
+}
+function yearText(year: number) {
+  return year < 0 ? `前${-year}` : String(year);
+}
+function rangeText(dynasty: ReturnType<typeof period>) {
+  if (!dynasty) return '';
+  return `${yearText(dynasty.startYear)}–${dynasty.endYear == null ? '' : yearText(dynasty.endYear)}`;
 }
 
 function WorkFolio({ entry, close }: { entry: LibraryEntry; close: () => void }) {
@@ -162,6 +168,7 @@ export function AtlasTimeline({ hash }: { hash: string }) {
     const group = groups.get(key) ?? [];
     group.push(item); groups.set(key,group);
   }
+  const activePeriod = jump || groups.keys().next().value || '';
   useLayoutEffect(() => {
     if (hash === '#catalogue') {
       if (lastCard.current?.isConnected) lastCard.current.focus();
@@ -187,19 +194,28 @@ export function AtlasTimeline({ hash }: { hash: string }) {
   return <div className="atlas-reader">
   <ReaderHeader active={hash === '#/collections' ? 'collections' : 'catalogue'} />
   {hash === '#/collections' && <CollectionAtlas />}
-  <main ref={main} id="catalogue" tabIndex={-1} hidden={Boolean(object) || hash === '#/collections'} className="atlas-time">
-    <div className="atlas-time__intro"><div><h1>{zh ? '碑帖时间轴' : 'A chronology of calligraphy'}</h1>
-      <p>{zh ? '循年代展读作品，再随一件原石、拓本或墨迹，读它的流传。' : 'Read works in time, then follow a surviving stone, rubbing or manuscript.'}</p></div>
+  <main ref={main} id="chronology" tabIndex={-1} hidden={Boolean(object) || hash === '#/collections'} className="atlas-time">
+    <div className="atlas-time__intro"><div><h1>{zh ? '碑帖长卷' : 'The long scroll of steles and modelbooks'}</h1>
+      <p>{zh ? '循年代展开手卷，再随一件原石、拓本或墨迹，读它的流传。' : 'Unroll the works in time, then follow a surviving stone, rubbing or manuscript.'}</p></div>
     </div>
     <div className="atlas-toolbar"><span>{zh ? '收录作品' : 'Works'} <b>{ordered.length}</b></span>
-      <div className="atlas-tools"><label>{zh ? '跳至时代' : 'Jump to period'}<select value={jump} onChange={e => goPeriod(e.target.value)}>
+      <div className="atlas-tools"><label className="atlas-tools__jump">{zh ? '跳至时代' : 'Jump to period'}<select value={jump} onChange={e => goPeriod(e.target.value)}>
         <option value="">{zh ? '选择时代' : 'Select a period'}</option>
         {[...groups].map(([id,items]) => <option key={id} value={id}>{period(items[0])?.[locale] ?? strings.dynastyUnknown}</option>)}</select></label>
         <input type="search" aria-label={strings.searchLabel} placeholder={zh ? '搜索作品或书家' : 'Find a work or calligrapher'} value={query} onChange={e => {setQuery(e.target.value);setJump('');rail.current?.scrollTo?.({left:0});}} /></div>
     </div>
-    {(selected && !entry || objectId && !object) && <p role="status">{zh ? '未找到这条记录。可从时间轴重新选择。' : 'Record unavailable. Select a work from the timeline.'}</p>}
-    <div className="river-reach">{!!groups.size && hash === '#catalogue' && <InkRiver />}
-    <div className="atlas-rail" ref={rail} tabIndex={0} aria-label={zh ? '作品时间轴' : 'Works in chronological order'}>
+    {!!groups.size && <nav className="scroll-ruler" aria-label={zh ? '朝代标尺' : 'Period ruler'}>
+      {[...groups].map(([id,items]) => {
+        const dynasty = period(items[0]);
+        return <button key={id} type="button" className="scroll-ruler__period" aria-pressed={activePeriod === id} onClick={() => goPeriod(id)}>
+          <span>{dynasty?.[locale] ?? strings.dynastyUnknown}</span>
+          {dynasty ? <small>{rangeText(dynasty)}</small> : null}
+        </button>;
+      })}
+    </nav>}
+    {(selected && !entry || objectId && !object) && <p role="status">{zh ? '未找到这条记录。可从长卷重新选择。' : 'Record unavailable. Select a work from the scroll.'}</p>}
+    <div className="scroll-frame">
+    <div className="atlas-rail" ref={rail} tabIndex={0} aria-label={zh ? '作品长卷' : 'Works in chronological order'}>
       {[...groups].map(([id,items]) => <section id={'period-'+id} key={id} className="atlas-period">
         <h2>{period(items[0])?.[locale] ?? strings.dynastyUnknown}</h2>
         <ul>{items.map(item => <li key={item.id} data-bank={ordered.indexOf(item) % 2 ? 'lower' : 'upper'}>
@@ -207,7 +223,10 @@ export function AtlasTimeline({ hash }: { hash: string }) {
             <h3>{title(item,locale)}</h3>
           </a></li>)}</ul>
       </section>)}
-    </div></div>
+    </div>
+    <span className="scroll-frame__roll scroll-frame__roll--start" aria-hidden="true" />
+    <span className="scroll-frame__roll scroll-frame__roll--end" aria-hidden="true" />
+    </div>
     {!groups.size && <p role="status">{strings.noResults} <button onClick={() => setQuery('')}>{strings.clearSearch}</button></p>}
     {!!groups.size && <div className="atlas-controls"><span>{zh ? '由古及今' : 'Earlier to later'}</span>
       <button aria-label={zh ? '向前翻阅' : 'Scroll earlier'} onClick={() => rail.current?.scrollBy({left:-rail.current.clientWidth*.8})}>←</button>

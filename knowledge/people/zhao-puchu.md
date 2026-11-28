@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 赵朴初
 titleEn: Zhao Puchu
+dynastyId: prc
+dynastySource: src-shm-zhao-shen-colophon
 aliases: []
 state: reviewed
 works: [zhao-puchu-shen-colophon]

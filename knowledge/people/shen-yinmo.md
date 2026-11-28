@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 沈尹默
 titleEn: Shen Yinmo
+dynastyId: prc
+dynastySource: src-pku-shen-teaching
 aliases: []
 state: reviewed
 works: [shen-yinmo-dakai-jia]

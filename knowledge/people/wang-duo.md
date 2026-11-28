@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 王铎
 titleEn: Wang Duo
+dynastyId: qing
+dynastySource: src-dpm-wangduo
 aliases:
   - 觉斯
   - 嵩樵

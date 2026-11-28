@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 冯承素
 titleEn: Feng Chengsu
+dynastyId: tang
+dynastySource: src-catalogue-lanting
 aliases: []
 state: reviewed
 works:

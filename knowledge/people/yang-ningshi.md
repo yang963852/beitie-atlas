@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 杨凝式
 titleEn: Yang Ningshi
+dynastyId: five-dynasties
+dynastySource: src-wuxi-jiuhua
 aliases: []
 state: reviewed
 works: [jiuhua-tie]

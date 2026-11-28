@@ -254,9 +254,9 @@ function AppShell() {
       </header>
 
           <nav className="topnav" aria-label={strings.sectionsLabel}>
-            <a className="topnav__link" href="#/library">{locale === 'zh' ? '知识库' : 'Library'}</a>
-            <a className="topnav__link" href="#catalogue">{locale === 'zh' ? '历史脉络' : 'Chronology'}</a>
-            <a className="topnav__link" href="#/collections">{locale === 'zh' ? '现存地图' : 'Extant map'}</a>
+            <a className="topnav__link" href="#/collections">{locale === 'zh' ? '访碑' : 'Atlas'}</a>
+            <a className="topnav__link" href="#catalogue">{locale === 'zh' ? '编年' : 'Chronology'}</a>
+            <a className="topnav__link" href="#/library">{locale === 'zh' ? '读帖' : 'Reading room'}</a>
             <span className="topnav__sep" aria-hidden="true" />
             {sectionLink('results', strings.resultsHeading)}
             {sectionLink('map', strings.mapHeading)}
@@ -389,7 +389,7 @@ function AppShell() {
       /> : null}
 
       <footer className="footer">
-        <a href="#/library">{locale === 'zh' ? '作品与书家' : 'Works and calligraphers'}</a>
+        <a href="#/library">{locale === 'zh' ? '读帖' : 'Reading room'}</a>
         <span className="footer__note">{EDITION_LABEL[locale]}</span>
         {!isReleaseBuild && <a href="https://github.com/yang963852/beitie-atlas/issues/new?template=beta-feedback.yml">{locale === 'zh' ? '提交反馈' : 'Feedback'}</a>}
         {!isReleaseBuild && hasDraftRecords() ? <p className="footer__note">{strings.draftNotice}</p> : null}
@@ -430,8 +430,8 @@ function Reader() {
       window.dispatchEvent(new HashChangeEvent('hashchange'));
     }
     return <main>
-      <a className="skip-link" href="#catalogue">{locale === 'en' ? 'Skip to the timeline' : '直接进入时间轴'}</a>
-      <OpeningDesk enter={() => navigate('#catalogue')} openPlate={() => navigate('#/object/witness-lanting')} />
+      <a className="skip-link" href="#/collections">{locale === 'en' ? 'Skip to the atlas' : '直接进入访碑'}</a>
+      <OpeningDesk enter={() => navigate('#/collections')} openPlate={() => navigate('#/object/witness-lanting')} />
     </main>;
   }
   if (hash === '#catalogue' || hash === '#/collections' || /^#\/(?:folio|transmission)\//.test(hash)) return <AtlasTimeline hash={hash} />;

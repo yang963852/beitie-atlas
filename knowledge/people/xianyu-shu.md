@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 鲜于枢
 titleEn: Xianyu Shu
+dynastyId: yuan
+dynastySource: src-jizhi-colophon-bingxu
 aliases: []
 state: reviewed
 works:

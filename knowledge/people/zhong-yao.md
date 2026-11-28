@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 钟繇
 titleEn: Zhong Yao
+dynastyId: three-kingdoms
+dynastySource: src-zgbk-zhongyao
 aliases:
   - 钟太傅
   - 元常

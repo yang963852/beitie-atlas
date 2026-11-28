@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 王宠
 titleEn: Wang Chong
+dynastyId: ming
+dynastySource: src-dpm-wangchong
 aliases:
   - 王履吉
   - 雅宜山人

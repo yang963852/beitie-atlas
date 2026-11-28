@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { getDataset, groupObjectsByProvince, type ProvinceGroup, type ProvinceGroupKey } from '../domain/data';
 import { useLocale } from '../i18n';
 import { buildMarkers } from '../map/markers';
@@ -8,6 +8,7 @@ type Selection = ProvinceGroupKey | 'all';
 
 export function CollectionAtlas() {
   const { locale, strings } = useLocale();
+  const main = useRef<HTMLElement>(null);
   const [saved] = useState(() => window.history.state?.collectionAtlas);
   const [kind, setKind] = useState<string>(saved?.kind ?? '');
   const [province, setProvince] = useState<Selection>(saved?.province ?? 'all');
@@ -28,6 +29,10 @@ export function CollectionAtlas() {
   const objects = activeGroup ? activeGroup.objects : filteredByKind;
   const markers = useMemo(() => buildMarkers(data.places, objects, locale).markers, [data, objects, locale]);
 
+  useLayoutEffect(() => {
+    main.current?.focus({ preventScroll: true });
+  }, []);
+
   function labelFor(group: ProvinceGroup): string {
     if (group.key === 'unplaced') return strings.provinceUnplaced;
     if (group.key === 'unknown') return strings.provinceUnknown;
@@ -42,7 +47,7 @@ export function CollectionAtlas() {
     window.location.hash = '/transmission/' + id;
   }
 
-  return <main className="atlas-journey collection-atlas">
+  return <main ref={main} id="catalogue" tabIndex={-1} className="atlas-journey collection-atlas">
     <header className="collection-atlas__intro">
       <h1>{strings.collectionAtlasTitle}</h1>
       <p className="collection-atlas__lede">{strings.collectionAtlasLede}</p>

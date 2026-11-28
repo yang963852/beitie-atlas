@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 王珣
 titleEn: Wang Xun
+dynastyId: eastern-jin
+dynastySource: src-catalogue-boyuan
 aliases: []
 state: reviewed
 works: [boyuan]

@@ -87,7 +87,7 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
       <div className="desk__library">
         {!isReleaseBuild && <span>{EDITION_LABEL[locale]}</span>}
         <LocaleSwitch className="langswitch langswitch--desk" />
-        <a href="#/library"><span className="desk__seal" aria-hidden="true">碑</span>{locale === 'zh' ? '读作品与书家' : 'Read works and calligraphers'}</a>
+        <a href="#/library"><span className="desk__seal" aria-hidden="true">碑</span>{locale === 'zh' ? '读帖' : 'Reading room'}</a>
       </div>
       <a className="desk__credit" href="#/object/witness-lanting" onClick={event => {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;

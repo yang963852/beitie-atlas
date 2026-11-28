@@ -14,7 +14,7 @@ export const enStrings = {
   siteTitleEn: 'Between Steles',
   taglineLead: 'The work you practise from:',
   tagline: 'where is it kept today?',
-  enterCatalogue: 'Open the catalogue',
+  enterCatalogue: 'Open the atlas',
   taglineDetail:
     'Explore the calligraphy people practise, the people who wrote it, and the surviving stones, manuscripts and rubbings.',
   studyFilter: 'Filter by work category',
@@ -118,7 +118,7 @@ export const enStrings = {
   reviewDraft: 'Draft',
 
   mapHeading: 'Map',
-  collectionAtlasTitle: 'Extant map',
+  collectionAtlasTitle: 'Atlas of surviving works',
   collectionAtlasLede:
     'Locate surviving objects by their present collection or in-situ site. Choose a province to read the steles, rubbings and other witnesses held there.',
   collectionAtlasGapNote: 'Places without a citable coordinate stay textual; no position is guessed.',

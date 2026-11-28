@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 李世民
 titleEn: Li Shimin
+dynastyId: tang
+dynastySource: src-taiyuan-jinci
 aliases: []
 state: reviewed
 works: [jinci-zhi-ming, wen-quan-ming]

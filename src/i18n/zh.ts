@@ -12,7 +12,7 @@ export const zhStrings: Strings = {
   siteTitleEn: 'Between Steles',
   taglineLead: '案头所临，',
   tagline: '如今藏在何处',
-  enterCatalogue: '打开碑帖图录',
+  enterCatalogue: '打开访碑图',
   taglineDetail:
     '从案头临习的碑帖出发，读历代书家与作品，循著录访原石、墨迹与拓本。',
   studyFilter: '按作品类别筛选',
@@ -110,7 +110,7 @@ export const zhStrings: Strings = {
   reviewDraft: '草稿',
 
   mapHeading: '地图',
-  collectionAtlasTitle: '现存地图',
+  collectionAtlasTitle: '访碑',
   collectionAtlasLede:
     '按今天的收藏地或原址，查看现存实物所在的地点。选择省份，读该省现存的碑帖与其他实物。',
   collectionAtlasGapNote: '没有可引用坐标的地点只列文字，不猜位置。',

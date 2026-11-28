@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 蔡襄
 titleEn: Cai Xiang
+dynastyId: northern-song
+dynastySource: src-dpm-228526
 aliases: []
 state: reviewed
 works: [cai-zishu]

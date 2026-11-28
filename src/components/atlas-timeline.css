@@ -592,3 +592,159 @@
     width: 100%;
   }
 }
+
+/* ==========================================================================
+   Handscroll
+   The chronology is one paper scroll rather than a river: a dynasty ruler
+   above, a ruled paper band below, and the period names written vertically
+   on the left edge of each bank. Narrow screens turn it into a hanging
+   scroll; the ruler is replaced by the existing period select.
+   ========================================================================== */
+
+.scroll-ruler {
+  display: flex;
+  overflow-x: auto;
+  margin: 0 0 0.9rem;
+  border-block: 1px solid var(--rule);
+  background: var(--paper-lift);
+  scrollbar-color: var(--rule) transparent;
+}
+
+.scroll-ruler__period {
+  flex: none;
+  display: grid;
+  gap: 0.1rem;
+  min-height: 44px;
+  padding: 0.45rem 0.95rem;
+  border: 0;
+  border-right: 1px solid var(--rule-soft);
+  background: transparent;
+  color: var(--ink-3);
+  text-align: left;
+  cursor: pointer;
+}
+
+.scroll-ruler__period span {
+  font: 500 0.88rem/1.4 var(--book);
+  letter-spacing: 0.08em;
+}
+
+.scroll-ruler__period small {
+  color: var(--ink-3);
+  font: 0.68rem/1.4 var(--kai);
+}
+
+.scroll-ruler__period[aria-pressed='true'] {
+  background: var(--accent-wash);
+  color: var(--accent-deep);
+  box-shadow: inset 0 -2px var(--accent);
+}
+
+.scroll-frame {
+  position: relative;
+  border-block: 4px double var(--rule);
+  background: linear-gradient(180deg, #fbf5e7 0%, var(--paper-lift) 12%, var(--paper-lift) 88%, #f7efdf 100%);
+}
+
+.scroll-frame .atlas-rail {
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.scroll-frame__roll {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  width: 14px;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(90deg, rgba(42, 33, 22, 0.08) 0 2px, transparent 2px 5px),
+    linear-gradient(90deg, rgba(42, 33, 22, 0.14), transparent 72%);
+}
+
+.scroll-frame__roll--start {
+  left: 0;
+  border-right: 1px solid var(--rule);
+}
+
+.scroll-frame__roll--end {
+  right: 0;
+  transform: scaleX(-1);
+  border-right: 1px solid var(--rule);
+}
+
+@media (min-width: 761px) {
+  .atlas-tools__jump {
+    display: none;
+  }
+
+  .atlas-period {
+    display: grid;
+    grid-template-columns: 1.55rem minmax(0, 1fr);
+    align-items: stretch;
+    column-gap: 0.7rem;
+    padding: 0 1.1rem 0 0;
+  }
+
+  .atlas-period h2 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    display: block;
+    align-self: stretch;
+    margin: 0;
+    padding: 0 0.35rem 0 0;
+    border-right: 1px solid var(--rule-soft);
+    color: var(--ink-3);
+    font: 600 0.8rem/1.2 var(--kai);
+    letter-spacing: 0.22em;
+  }
+
+  .atlas-period h2::before,
+  .atlas-period h2::after {
+    display: none;
+  }
+
+  .atlas-period ul {
+    padding: 1.3rem 0.8rem 0.4rem 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .scroll-ruler {
+    display: none;
+  }
+
+  .atlas-tools__jump {
+    display: grid;
+  }
+
+  .scroll-frame {
+    border-block: 1px solid var(--rule);
+    background: transparent;
+  }
+
+  .scroll-frame .atlas-rail {
+    padding: 0.35rem 0 0 0.65rem;
+  }
+
+  .scroll-frame__roll {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-frame {
+    animation: scroll-unroll 700ms cubic-bezier(0.22, 0.61, 0.24, 1) both;
+  }
+
+  @keyframes scroll-unroll {
+    from {
+      clip-path: inset(0 100% 0 0);
+      opacity: 0.65;
+    }
+    to {
+      clip-path: inset(0);
+      opacity: 1;
+    }
+  }
+}

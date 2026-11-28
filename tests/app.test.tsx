@@ -30,7 +30,7 @@ beforeEach(() => {
 describe('application shell', () => {
   it('waits for paper activation and the ink transition before entering the records', () => {
     renderApp(true);
-    const paper = screen.getByRole('link', { name: '打开碑帖图录' });
+    const paper = screen.getByRole('link', { name: '打开访碑图' });
     expect(paper.textContent).toBe('案头所临，如今藏在何处');
     expect(document.querySelector('.desk__ink')).toBeNull();
     vi.useFakeTimers();
@@ -40,7 +40,7 @@ describe('application shell', () => {
       expect(window.location.hash).toBe('');
       act(() => vi.runAllTimers());
       expect(document.activeElement).toBe(document.getElementById('catalogue'));
-      expect(window.location.hash).toBe('#catalogue');
+      expect(window.location.hash).toBe('#/collections');
     } finally {
       vi.useRealTimers();
     }

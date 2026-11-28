@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 欧阳询
 titleEn: Ouyang Xun
+dynastyId: tang
+dynastySource: src-dpm-234567
 aliases: []
 state: reviewed
 works: [jiuchenggong-liquan-ming, huangfu-dan-bei, huadu-si, yugong-gong-bei, zhanghan]

@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 翁方纲
 titleEn: Weng Fanggang
+dynastyId: qing
+dynastySource: src-dpm-weng-fanggang
 aliases: []
 state: reviewed
 works:
@@ -10,6 +12,7 @@ objects:
   - stele-liqi
 sources:
   - src-dpm-234635
+  - src-dpm-weng-fanggang
 ---
 
 # 翁方纲
