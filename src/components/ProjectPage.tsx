@@ -1,5 +1,5 @@
 import { useLocale } from '../i18n';
-import { EDITION_LABEL } from '../domain/version';
+import { BUILD_STAMP } from '../domain/version';
 import { LocaleSwitch } from './LocaleSwitch';
 import './project-page.css';
 
@@ -281,7 +281,7 @@ export function ProjectPage({ page }: { page: ProjectPageKind }) {
       </main>
 
       <footer className="footer">
-        <span className="footer__note">{EDITION_LABEL[locale]}</span>
+        <span className="footer__note">{BUILD_STAMP[locale]}</span>
         <span className="footer__note"> · {copy.footerNote}</span>
         <span className="footer__note"> · <a href={`${REPO}/blob/main/docs/PROJECT.md`}>{locale === 'zh' ? '项目理念' : 'Project philosophy'}</a></span>
       </footer>
