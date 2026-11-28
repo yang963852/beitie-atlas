@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 文徵明
     nameEn: Wen Zhengming
+    person: wen-zhengming
     certainty: documented
     sources:
       - src-catalogue-wen-guiqulai

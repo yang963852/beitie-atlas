@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 祝允明
     nameEn: Zhu Yunming
+    person: zhu-yunming
     certainty: documented
     sources:
       - src-catalogue-zhu-santi

@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 伊秉绶
     nameEn: Yi Bingshou
+    person: yi-bingshou
     certainty: documented
     sources:
       - src-catalogue-yi-wuzi

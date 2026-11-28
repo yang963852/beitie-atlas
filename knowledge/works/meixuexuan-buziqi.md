@@ -20,6 +20,7 @@ attribution:
   - role: author
     name: 朱熹
     nameEn: Zhu Xi
+    person: zhu-xi
     certainty: documented
     sources:
       - src-beilin-meixuexuan

@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 董其昌
     nameEn: Dong Qichang
+    person: dong-qichang
     certainty: documented
     sources:
       - src-catalogue-dong-lunshu

@@ -66,6 +66,7 @@ attribution:
   - role: calligrapher
     name: 王僧虔
     nameEn: Wang Sengqian
+    person: wang-sengqian
     certainty: documented
     sources:
       - src-gmw-wansui

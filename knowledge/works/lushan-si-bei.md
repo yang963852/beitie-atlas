@@ -22,6 +22,7 @@ attribution:
   - role: author-and-calligrapher
     name: 李邕
     nameEn: Li Yong
+    person: li-yong
     certainty: documented
     sources:
       - src-csjypt-lushan

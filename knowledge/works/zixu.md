@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 怀素
     nameEn: Huaisu
+    person: huai-su
     certainty: documented
     sources:
       - src-catalogue-zixu
