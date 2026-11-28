@@ -18,6 +18,8 @@ Elegy for a Crane
 
 书体：楷书
 
+延伸阅读：[04｜专题：南北朝——碑、志与摩崖](../notes/essay-04-northern-southern.md)
+
 作品待考与说明
 
 - 所引来源列出王羲之、陶弘景、顾况、王瓒等候选作者，未作定论。

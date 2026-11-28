@@ -18,7 +18,7 @@ Letter to the Zhipping Monastery
 
 书体：行书
 
-延伸阅读：[苏轼](../people/su-shi.md)
+延伸阅读：[苏轼](../people/su-shi.md) · [06｜专题：宋代——刻帖、墨迹与士人书](../notes/essay-06-song.md)
 
 作品待考与说明
 

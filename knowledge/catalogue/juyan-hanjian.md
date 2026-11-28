@@ -18,6 +18,8 @@ Juyan document on the death of a post-station horse
 
 书体：章草
 
+延伸阅读：[09｜阅读路径：隶变——从青铜到汉碑](../notes/path-01-clerical-turn.md)
+
 作品待考与说明
 
 - 简主名有“焦永”与“侯永”两种录文，本记录题名不取其一。

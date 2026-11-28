@@ -22,7 +22,7 @@ Discourse to the Venerable Ones
 
 书体：草书
 
-延伸阅读：[黄庭坚](../people/huang-tingjian.md)
+延伸阅读：[黄庭坚](../people/huang-tingjian.md) · [06｜专题：宋代——刻帖、墨迹与士人书](../notes/essay-06-song.md) · [11｜阅读路径：行草——从信札到狂草](../notes/path-03-running-cursive.md)
 
 作品待考与说明
 
