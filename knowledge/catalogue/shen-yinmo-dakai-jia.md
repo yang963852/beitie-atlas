@@ -16,7 +16,7 @@ Large Regular-Script Copybook, Edition A
 
 书体：楷书
 
-延伸阅读：[甲种本大楷习字帖](../works/shen-yinmo-dakai-jia.md) · [沈尹默](../people/shen-yinmo.md)
+延伸阅读：[甲种本大楷习字帖](../works/shen-yinmo-dakai-jia.md) · [沈尹默](../people/shen-yinmo.md) · [08｜专题：清近代——碑学与日常书写](../notes/essay-08-qing-modern.md) · [13｜阅读路径：帖学——刻帖的谱系](../notes/path-05-modelbook.md)
 
 作品待考与说明
 

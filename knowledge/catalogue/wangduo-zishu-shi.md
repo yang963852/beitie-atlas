@@ -22,7 +22,7 @@ Scroll of Wang Duo’s Own Poems in Running-Cursive Script
 
 书体：行草
 
-延伸阅读：[王铎](../people/wang-duo.md)
+延伸阅读：[王铎](../people/wang-duo.md) · [07｜专题：元明——复古与性灵](../notes/essay-07-yuan-ming.md) · [11｜阅读路径：行草——从信札到狂草](../notes/path-03-running-cursive.md)
 
 作品待考与说明
 
