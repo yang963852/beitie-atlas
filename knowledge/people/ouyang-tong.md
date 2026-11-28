@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 欧阳通
 titleEn: Ouyang Tong
+dynastyId: tang
+dynastySource: src-beilin-daoyin
 aliases:
   - 小欧
 state: reviewed

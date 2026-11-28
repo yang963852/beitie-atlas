@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 张旭
 titleEn: Zhang Xu
+dynastyId: tang
+dynastySource: src-lnm-gushisitie
 aliases: []
 state: reviewed
 works: [gushi-sitie]

@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 褚遂良
 titleEn: Chu Suiliang
+dynastyId: tang
+dynastySource: src-beilin-tongzhou
 aliases:
   - 褚河南
   - 登善

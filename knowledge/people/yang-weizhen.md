@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 杨维桢
 titleEn: Yang Weizhen
+dynastyId: yuan
+dynastySource: src-shm-zhenjing
 aliases:
   - 杨维祯
   - 铁崖

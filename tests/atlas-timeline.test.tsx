@@ -19,6 +19,19 @@ it('includes guide-only works after the historic catalogue in source year order'
   expect(cards.at(-1)).toHaveTextContent('行书跋沈尹默论书札卷');
 });
 
+it('lays the focused slip on the reading desk and links to its folio', () => {
+  visit('#catalogue');
+  const desk = screen.getByRole('region', { name: '案头' });
+  const cards = Array.from(document.querySelectorAll<HTMLAnchorElement>('.atlas-card'));
+  expect(within(desk).getByRole('link')).toHaveAttribute('href', cards[0].getAttribute('href'));
+
+  const later = cards[30];
+  fireEvent.focus(later);
+  const link = within(desk).getByRole('link');
+  expect(link).toHaveAttribute('href', later.getAttribute('href'));
+  expect(link).toHaveTextContent(within(later).getByRole('heading', { level: 3 }).textContent!);
+});
+
 it('keeps the rubbing’s transmission separate from the original stone on a direct map link', () => {
   visit('#/transmission/dpm-rubbing-xin00045406');
   const page = screen.getByRole('main');
@@ -29,7 +42,7 @@ it('keeps the rubbing’s transmission separate from the original stone on a dir
 
 it('opens the extant map directly with a witness type selector', () => {
   visit('#/collections');
-  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent('现存地图');
+  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent('访碑');
   expect(screen.getByRole('combobox', {name: '实物类型'})).toContainElement(screen.getByRole('option', {name: '拓本'}));
   expect(screen.getByRole('group', {name: '本图点位'})).toBeVisible();
 });

@@ -7,6 +7,7 @@
  */
 
 import { parse } from 'yaml';
+import { isDynastyId } from '../../src/domain/dynasties';
 import { PROVINCE_IDS } from '../../src/domain/provinces';
 import type {
   Attribution,
@@ -16,6 +17,7 @@ import type {
   DateCertainty,
   DateKind,
   DateMeaning,
+  DynastyId,
   HistoricalDate,
   MediaItem,
   ObjectRecord,
@@ -72,6 +74,7 @@ export const FIELD_NAMES: Readonly<Record<string, readonly string[]>> = {
   ],
   people: [
     'schemaVersion', 'titleZh', 'titleEn', 'state', 'works', 'objects', 'sources', 'aliases',
+    'dynastyId', 'dynastySource',
   ],
   // Notes share the person reader and add `people`, read directly by the compiler.
   notes: [
@@ -605,11 +608,24 @@ export function readPerson(recordInput: MarkdownRecord): {
   objects: string[];
   sources: string[];
   aliases: string[];
+  dynastyId?: DynastyId;
+  dynastySource?: string;
   zh: string;
   en: string;
 } {
   const f = recordInput.fields;
   const body = articleLanguageSections(recordInput.body);
+  const sources = idList(f.sources, 'sources');
+  const dynastyValue = optionalText(f.dynastyId, 'dynastyId');
+  let dynastyId: DynastyId | undefined;
+  if (dynastyValue != null) {
+    if (!isDynastyId(dynastyValue)) throw new Error('Unknown dynastyId: ' + dynastyValue);
+    dynastyId = dynastyValue;
+  }
+  const dynastySource = optionalText(f.dynastySource, 'dynastySource') ?? undefined;
+  if (dynastySource && !sources.includes(dynastySource)) {
+    throw new Error('dynastySource must be listed in sources: ' + dynastySource);
+  }
   return {
     id: recordInput.id,
     titleZh: text(f.titleZh, 'titleZh'),
@@ -617,8 +633,10 @@ export function readPerson(recordInput: MarkdownRecord): {
     state: reviewState(f.state, 'state'),
     works: idList(f.works, 'works'),
     objects: idList(f.objects, 'objects'),
-    sources: idList(f.sources, 'sources'),
+    sources,
     aliases: stringList(f.aliases, 'aliases'),
+    dynastyId,
+    dynastySource,
     zh: body.zh,
     en: body.en,
   };

@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 苏轼
 titleEn: Su Shi
+dynastyId: northern-song
+dynastySource: src-catalogue-hanshi
 aliases: []
 state: reviewed
 works: [hanshi, zhiping-tie]

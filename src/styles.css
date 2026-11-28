@@ -847,6 +847,7 @@ a {
 
 .map-overview {
   position: absolute;
+  z-index: 1;
   inset: 0;
   background-color: var(--surface-sunken);
   background-image:
@@ -928,8 +929,15 @@ a {
   inset: 0;
 }
 
+/* A refused tile layer leaves broken tile images above the schematic. Hide the
+   provider canvas while the fallback is in charge; the coordinates stay usable. */
+.pane--map[data-map-tiles='blocked'] .map__canvas {
+  visibility: hidden;
+}
+
 .map__overlay {
   position: absolute;
+  z-index: 2;
   inset: 0;
   display: flex;
   flex-direction: column;
@@ -1027,6 +1035,7 @@ a {
 
 .place-card {
   position: absolute;
+  z-index: 2;
   left: 16px;
   bottom: 16px;
   width: min(320px, calc(100% - 32px));

@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 颜真卿
 titleEn: Yan Zhenqing
+dynastyId: tang
+dynastySource: src-beilin-duobaota
 aliases: []
 state: reviewed
 works: [duobao-ta-bei, yan-qinli-bei, datang-zhongxing-song, jizhi, magu, yan-jiamiao-bei]

@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 黄庭坚
 titleEn: Huang Tingjian
+dynastyId: northern-song
+dynastySource: src-dpm-zhushangzuo
 aliases:
   - 山谷道人
   - 涪翁

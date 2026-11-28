@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 王羲之
 titleEn: Wang Xizhi
+dynastyId: eastern-jin
+dynastySource: src-shm-xingrang
 aliases:
   - 王右军
 state: reviewed

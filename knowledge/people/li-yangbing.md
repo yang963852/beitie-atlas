@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 李阳冰
 titleEn: Li Yangbing
+dynastyId: tang
+dynastySource: src-beilin-sanfenji
 aliases: []
 state: reviewed
 works: [sanfen-ji, yan-jiamiao-bei]

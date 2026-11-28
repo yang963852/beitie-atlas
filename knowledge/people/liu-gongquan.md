@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 柳公权
 titleEn: Liu Gongquan
+dynastyId: tang
+dynastySource: src-dpm-231095
 aliases: []
 state: reviewed
 works: [xuanmi-ta-bei, shen-ce-jun-bei, huiyuan-guan-zhonglou-ming, mengzhao, guifeng]
