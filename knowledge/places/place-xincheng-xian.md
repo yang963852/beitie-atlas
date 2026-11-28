@@ -4,6 +4,7 @@ nameZh: 新城（西安）
 nameEn: Xincheng (Xi'an)
 historicalName: null
 kind: district
+province: shaanxi
 sources:
   - src-beilin-article-2007
 notes:

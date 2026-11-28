@@ -4,6 +4,7 @@ nameZh: 西安碑林博物馆
 nameEn: Xi'an Beilin Museum
 historicalName: null
 kind: institution
+province: shaanxi
 coordinateLongitude: 108.948333
 coordinateLatitude: 34.255
 coordinatePrecision: institution

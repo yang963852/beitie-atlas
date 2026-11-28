@@ -4,6 +4,7 @@ nameZh: 昭陵博物馆
 nameEn: Zhaoling Museum
 historicalName: null
 kind: institution
+province: shaanxi
 sources:
   - src-dpm-yugong-nansong
 notes:

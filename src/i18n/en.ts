@@ -118,6 +118,23 @@ export const enStrings = {
   reviewDraft: 'Draft',
 
   mapHeading: 'Map',
+  collectionAtlasTitle: 'Extant map',
+  collectionAtlasLede:
+    'Locate surviving objects by their present collection or in-situ site. Choose a province to read the steles, rubbings and other witnesses held there.',
+  collectionAtlasGapNote: 'Places without a citable coordinate stay textual; no position is guessed.',
+  collectionAtlasWitnesses: 'Surviving witnesses',
+  provincesHeading: 'Browse by province',
+  provincesHint:
+    'Choose a province to see its surviving objects. “Not mapped” marks a place without a citable coordinate.',
+  provincesFilterLabel: 'Filter by province',
+  provincesAll: 'All',
+  provinceCount: (count: number) => `${count} item${count === 1 ? '' : 's'}`,
+  provincePlaceCount: (count: number) => `${count} place${count === 1 ? '' : 's'}`,
+  provinceNotMapped: 'Not mapped',
+  provinceUnknown: 'Province unknown',
+  provinceUnplaced: 'Location unknown',
+  provinceUnplacedHint:
+    'These surviving objects have no current collection place, so they cannot be plotted by province.',
   mapOriginalsOnly: 'Surviving originals only',
   mapSubheading:
     'Explore the documented institutions and sites that hold these objects.',

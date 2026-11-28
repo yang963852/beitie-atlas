@@ -11,10 +11,10 @@
 - **从案头进入**：一张摊开的帖引你进入年代长河；桌上的帖影直达《兰亭序》神龙本的实物记录。
 - **读一件作品**：从[《颜勤礼碑》](https://yang963852.github.io/beitie-atlas/#/work/yan-qinli-bei)开始，背景、书家、传世实物分开呈现；原石与民国拓本各有履历，不互相顶替。
 - **看年代长河**：按作品所属时代浏览[全部作品](https://yang963852.github.io/beitie-atlas/#catalogue)，先秦至当代。
-- **查馆藏地图**：在[馆藏地图](https://yang963852.github.io/beitie-atlas/#/collections)按今天的收藏地找实物；没有可靠坐标的地点只列文字，不猜位置。
+- **查现存地图**：在[现存地图](https://yang963852.github.io/beitie-atlas/#/collections)按今天的收藏地或原址找现存实物；没有可靠坐标的地点只列文字，不猜位置。
 - **找书家与读帖笔记**：在[知识库](https://yang963852.github.io/beitie-atlas/#/library)按作品、书家、笔记或实物档案进入，例如[颜真卿](https://yang963852.github.io/beitie-atlas/#/person/yan-zhenqing)。
 
-**当前收录**（`npm run knowledge:compile`，2026-11-27）：126 部作品 · 133 件实物 · 46 处地点 · 201 条来源 · 75 条事件。
+**当前收录**（`npm run knowledge:compile`，2026-11-28）：131 部作品 · 138 件实物 · 47 处地点 · 207 条来源 · 75 条事件。
 
 ## 三条编辑原则
 
