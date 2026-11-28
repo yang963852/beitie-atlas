@@ -42,6 +42,42 @@ function git(args: string[]): string | null {
 }
 
 /**
+ * Lists the author files that belong in the archive. When git is available the
+ * list comes from `git ls-files`, so an untracked draft never enters a package
+ * that claims to describe a revision; without git it falls back to the working
+ * tree. Untracked files are returned separately so the caller can report them.
+ */
+export function packageKnowledgeFiles(rootDir: string): {
+  files: string[];
+  untracked: string[];
+  fromGit: boolean;
+} {
+  const tracked = spawnSync('git', ['ls-files', '-z', '--', 'knowledge'], { cwd: rootDir, encoding: 'utf8' });
+  if (tracked.status === 0 && typeof tracked.stdout === 'string') {
+    const untracked = spawnSync(
+      'git', ['ls-files', '-z', '--others', '--exclude-standard', '--', 'knowledge'],
+      { cwd: rootDir, encoding: 'utf8' },
+    );
+    return {
+      files: tracked.stdout.split('\0').filter(Boolean)
+        .filter((name) => !name.split('/').some((segment) => segment.startsWith('.')))
+        .sort(compareEntryNames),
+      untracked: untracked.status === 0 && typeof untracked.stdout === 'string'
+        ? untracked.stdout.split('\0').filter(Boolean).sort(compareEntryNames)
+        : [],
+      fromGit: true,
+    };
+  }
+  return {
+    files: walk(join(rootDir, 'knowledge'))
+      .map((path) => relative(rootDir, path).replace(/\\/g, '/'))
+      .sort(compareEntryNames),
+    untracked: [],
+    fromGit: false,
+  };
+}
+
+/**
  * Orders entry names by UTF-16 code unit. `localeCompare` consults the host ICU
  * data and default locale, so the same revision could emit different ZIP bytes
  * on different machines; a plain code-unit comparison is total, stable and
@@ -185,10 +221,13 @@ function pack(): void {
     note: 'Generated from knowledge/ by npm run knowledge:package. The catalogue and README are derived files.',
   };
 
+  const selection = packageKnowledgeFiles(root);
+  if (selection.untracked.length) {
+    console.warn('Not packaged because they are untracked: ' + selection.untracked.join(', '));
+  }
   const files = new Map<string, Buffer>();
-  for (const file of walk(join(root, 'knowledge'))) {
-    const name = relative(root, file).replace(/\\/g, '/');
-    files.set(name, readFileSync(file));
+  for (const name of selection.files) {
+    files.set(name, readFileSync(join(root, name)));
   }
   for (const file of ['LICENSE', 'NOTICE.md', 'docs/CONTRIBUTE.zh-CN.md']) {
     const path = join(root, file);

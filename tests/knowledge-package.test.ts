@@ -1,5 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import { buildZipArchive } from '../scripts/knowledge-package';
+import { spawnSync } from 'node:child_process';
+import { chmodSync, mkdirSync, mkdtempSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { afterEach, describe, expect, it } from 'vitest';
+import { buildZipArchive, packageKnowledgeFiles } from '../scripts/knowledge-package';
 
 /** Reads the entry names from the ZIP central directory, in stored order. */
 function entryNames(archive: Buffer): string[] {
@@ -52,5 +56,43 @@ describe('knowledge download package', () => {
     const forward = buildZipArchive(new Map(entries));
     const reversed = buildZipArchive(new Map([...entries].reverse()));
     expect(reversed.equals(forward)).toBe(true);
+  });
+});
+
+describe('author file selection', () => {
+  const created: string[] = [];
+
+  /** Git object files are read-only on Windows; make them writable before removal. */
+  function removeTree(dir: string): void {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const path = join(dir, entry.name);
+      if (entry.isDirectory()) removeTree(path);
+      else chmodSync(path, 0o666);
+    }
+    rmSync(dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
+  }
+
+  afterEach(() => {
+    while (created.length > 0) {
+      const root = created.pop();
+      if (root) removeTree(root);
+    }
+  });
+
+  it('packages tracked knowledge files and reports untracked ones', () => {
+    const root = mkdtempSync(join(tmpdir(), 'beitie-package-'));
+    created.push(root);
+    expect(spawnSync('git', ['init', '--quiet'], { cwd: root }).status).toBe(0);
+    mkdirSync(join(root, 'knowledge', 'works'), { recursive: true });
+    writeFileSync(join(root, 'knowledge', 'works', 'kept.md'), 'kept');
+    writeFileSync(join(root, 'knowledge', 'works', 'draft.md'), 'draft');
+    expect(spawnSync('git', ['add', '--', 'knowledge/works/kept.md'], { cwd: root }).status).toBe(0);
+
+    const selection = packageKnowledgeFiles(root);
+
+    expect(selection.fromGit).toBe(true);
+    expect(selection.files).toContain('knowledge/works/kept.md');
+    expect(selection.files).not.toContain('knowledge/works/draft.md');
+    expect(selection.untracked).toEqual(['knowledge/works/draft.md']);
   });
 });
