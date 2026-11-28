@@ -23,6 +23,24 @@ sources: [src-taiyuan-jinci, src-thepaper-wenquanming, src-shi-dunhuang-rubbings
 
 两年后的[《温泉铭》](../works/wen-quan-ming.md)（648）连石也没有了。今日所见是敦煌石室所出的一件唐拓，编号 P.4508，藏法国国家图书馆，报道称其为现存最早的拓本。故宫博物院施安昌曾把它与巴黎所藏另外三种碑刻古拓放在一起比对。所以这两件要分开读：晋祠铭读石与刻，温泉铭只能读纸与墨——唐初的拓墨技术，反倒靠一块已亡的碑保存下来。郭保平还说，太宗传世书作甚少，晋祠碑是他学王羲之的经典之作，碑中三十九个“之”字千姿百态。拿这句话去看温泉铭的拓本，可以比对同一手在同一时期的两副面貌。[澎湃新闻，法藏敦煌遗书资源回归](https://thepaper.cn/newsDetail_forward_2020736) · [施安昌，敦煌石室发现的四种碑刻古拓](https://www.dpm.org.cn/Uploads/pdf/1887/T00071_00.pdf)
 
+### 生平与身份
+
+本库现有来源未逐字转录唐太宗的生卒、字号与籍贯，此项待考；上文「李世民即唐太宗」沿用原文。太原市政府访谈记贞观二十年（646）立碑与碑文一千二百零三字，并称馆长把 984 年迁碑之说作为推测而非实证提出。[太原市人民政府，唐太宗唯一存世石碑](https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html)。据 `dynastySource`，本页把他系于唐。
+
+### 书体与师承
+
+上文已记两件均「御制御书」、以行书入碑。郭保平说晋祠碑是他学王羲之的经典之作；此为馆长所述，本库照录，不外推。[太原市人民政府，唐太宗唯一存世石碑](https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html)
+
+### 代表作与本库关联
+
+本库所收[《晋祠之铭并序》](../works/jinci-zhi-ming.md)刻于贞观二十年（646），原碑尚在晋祠；[《温泉铭》](../works/wen-quan-ming.md)书于 648，石已不存，所见为敦煌所出唐拓 P.4508。两件一件读石与刻，一件读纸与墨，上文已分记。
+
+### 书迹可靠性
+
+以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+
+— 本页 `objects` 为空。依著录分层：[《晋祠之铭并序》](../works/jinci-zhi-ming.md)是御制御书唯一存世的原碑，属刻于石的一路；[《温泉铭》](../works/wen-quan-ming.md)原石已亡，今日所见是敦煌石室所出唐拓 P.4508，藏法国国家图书馆，属拓本一路。报告中称其为现存最早拓本，本库照录；「行书入碑之始」的说法与《魏郑公碑》早三年的记载两存，不取其一。
+
 ## English
 
 Li Shimin is Emperor Taizong of the Tang. Both works in this library he composed and wrote himself, both are carved in running script, and one stone survives while the other survives only as a rubbing — which makes the two a good test of what “running script on a stele” actually means.
@@ -32,3 +50,21 @@ The [Inscription for the Jin Shrine](../works/jinci-zhi-ming.md) was carved in 6
 The pedigree of running script on stone has been rewritten by survival. Qian Yong of the Qing wrote that “carving a stele in running script begins with Taizong’s Jin Shrine inscription”. But Zhao Mingcheng’s Jinshi lu records a Stele for Duke Zheng of Wei, “composed and written in running script by Taizong, first month of the seventeenth year of Zhenguan” — three years earlier. That stone is gone. So the Jin Shrine inscription is usually counted as the beginning, when it is really the earliest that came down to us. Keep the two sentences apart: in stele history a “first” is often a “first surviving”. [Taiyuan municipal government, the emperor’s only surviving stele](https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html)
 
 Two years later the [Hot Spring Inscription](../works/wen-quan-ming.md) of 648 has lost even its stone. What survives is a Tang rubbing found in the Dunhuang cave library, numbered P.4508 and held at the Bibliothèque nationale de France, described in report as the earliest surviving rubbing. Shi Anchang of the Palace Museum compared it with three other early stele rubbings in Paris. So the two works must be read apart: at the Jin shrine, stone and carving; at the hot spring, only paper and ink — the rubbing technique of the early Tang preserved by a stele that no longer exists. Guo also notes that Taizong’s writing is scarce, that this stele is his classic study of Wang Xizhi, and that its thirty-nine instances of the character zhi are each different. Hold that against the Hot Spring rubbing and one hand can be compared with itself across two years. [The Paper, return of the Pelliot manuscripts](https://thepaper.cn/newsDetail_forward_2020736) · [Shi Anchang, four early stele rubbings from Dunhuang](https://www.dpm.org.cn/Uploads/pdf/1887/T00071_00.pdf)
+
+### Life and identity
+
+The sources listed here do not transcribe Taizong's dates, courtesy name or native place; those remain open. The "Li Shimin is Emperor Taizong" of the opening paragraph is kept. The Taiyuan government interview records the stele of 646 and its 1,203 characters, and presents the 984 relocation as the curator's likelihood rather than a documented fact. [Taiyuan municipal government, the emperor's only surviving stele](https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html). By `dynastySource` this page places him in the Tang.
+
+### Scripts and models
+
+Both works are noted above as composed and written by the emperor and carved in running script. Guo Baoping calls the Jin Shrine stele his classic study of Wang Xizhi; this is recorded as the curator's statement and not extended further. [Taiyuan municipal government, the emperor's only surviving stele](https://www.taiyuan.gov.cn/wbxx/20250414/30214870.html)
+
+### Works in this library
+
+The [Inscription for the Jin Shrine](../works/jinci-zhi-ming.md), carved in 646, survives as an original stele at the shrine; the [Hot Spring Inscription](../works/wen-quan-ming.md), written in 648, survives only as the Dunhuang Tang rubbing P.4508. One is read from stone and carving, the other from paper and ink, as kept apart above.
+
+### Reliability of the surviving trace
+
+The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+
+— This page has no `objects` entries. By the catalogues, the [Jin Shrine inscription](../works/jinci-zhi-ming.md) is the only surviving original stele composed and written by Taizong, a witness cut into stone; the [Hot Spring Inscription](../works/wen-quan-ming.md) has lost its stone and survives as the Dunhuang rubbing P.4508 at the Bibliothèque nationale de France, a rubbing rather than stone. The report calls it the earliest surviving rubbing, as recorded here. The claim that the Jin Shrine stele begins the practice of running script on stone is kept alongside Zhao Mingcheng's record of an earlier stele; neither is preferred.

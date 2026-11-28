@@ -1,7 +1,8 @@
 import { act, fireEvent, render, screen, within } from '@testing-library/react';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import App from '../src/App';
 import { getDataset } from '../src/domain/data';
+import { warmRoutes } from './warm-routes';
 
 const recordCount = getDataset().objects.length;
 
@@ -26,6 +27,10 @@ beforeEach(() => {
   window.history.replaceState(null, '', window.location.pathname);
   window.localStorage.clear();
 });
+
+beforeAll(async () => {
+  await warmRoutes(['workspace', 'timeline']);
+}, 120000);
 
 describe('application shell', () => {
   it('waits for paper activation and the ink transition before entering the records', () => {

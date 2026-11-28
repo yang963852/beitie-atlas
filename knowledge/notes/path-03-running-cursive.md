@@ -1,6 +1,8 @@
 ---
 schemaVersion: 2
 titleZh: "11｜阅读路径：行草——从信札到狂草"
+category: path
+order: 11
 titleEn: "11 — Reading Path: Running and Cursive — From Letter to Wild Cursive"
 state: reviewed
 works:

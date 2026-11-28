@@ -9,7 +9,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, posix } from 'node:path';
 import { formatReport, validateDataset, type ValidationIssue, type ValidationReport } from '../../src/domain/validate';
-import type { KnowledgeArticle, KnowledgeRelation } from '../../src/domain/knowledge-types';
+import { noteCategories, notePeriods, type KnowledgeArticle, type KnowledgeRelation } from '../../src/domain/knowledge-types';
 import type { Dataset, MediaItem } from '../../src/domain/types';
 import {
   AUTHOR_SCHEMA_VERSION,
@@ -20,6 +20,7 @@ import {
   assertFields,
   canonical,
   idList,
+  integer,
   readObject,
   readPerson,
   readPlace,
@@ -146,6 +147,9 @@ interface ArticleInput {
   timelineYear?: number;
   dynastyId?: KnowledgeArticle['dynastyId'];
   dynastySource?: string;
+  category?: KnowledgeArticle['category'];
+  period?: KnowledgeArticle['period'];
+  order?: number;
   people: string[];
   works: string[];
   objects: string[];
@@ -275,7 +279,8 @@ export function compileKnowledge(root: string = process.cwd(), options: { releas
       articleInputs.push({
         kind: 'notes', id: note.id, titleZh: note.titleZh, titleEn: note.titleEn,
         state: note.state, people: idList(input.fields.people, 'people'), works: note.works, objects: note.objects,
-        sources: note.sources, zh: note.zh, en: note.en, path: input.path,
+        sources: note.sources, category: note.category, period: note.period, order: note.order,
+        zh: note.zh, en: note.en, path: input.path,
       });
     } catch (error) {
       issues.push({ code: 'INVALID_NOTE_RECORD', path: input.path, message: (error as Error).message });
@@ -298,6 +303,9 @@ export function compileKnowledge(root: string = process.cwd(), options: { releas
       ...(input.timelineYear == null ? {} : { timelineYear: input.timelineYear }),
       ...(input.dynastyId == null ? {} : { dynastyId: input.dynastyId }),
       ...(input.dynastySource == null ? {} : { dynastySource: input.dynastySource }),
+      ...(input.category == null ? {} : { category: input.category }),
+      ...(input.period == null ? {} : { period: input.period }),
+      ...(input.order == null ? {} : { order: input.order }),
       state: input.state, people: input.people, works: input.works, objects: input.objects,
       sources: input.sources, zh: input.zh, en: input.en,
     });
@@ -440,8 +448,23 @@ export function compileKnowledge(root: string = process.cwd(), options: { releas
 }
 
 function readNoteRecord(input: MarkdownRecord) {
-  // Notes share the person article reader: title, state, references, bilingual body.
-  return readPerson(input);
+  const note = readPerson(input);
+  const category = text(input.fields.category, 'category');
+  if (!noteCategories.includes(category as NonNullable<KnowledgeArticle['category']>)) {
+    throw new Error('category must be one of: ' + noteCategories.join(', '));
+  }
+  const periodValue = input.fields.period == null ? null : text(input.fields.period, 'period');
+  if (periodValue != null && !notePeriods.includes(periodValue as NonNullable<KnowledgeArticle['period']>)) {
+    throw new Error('period must be one of: ' + notePeriods.join(', '));
+  }
+  const order = integer(input.fields.order, 'order');
+  if (order == null || order < 1) throw new Error('order must be a positive integer');
+  return {
+    ...note,
+    category: category as KnowledgeArticle['category'],
+    period: (periodValue as KnowledgeArticle['period']) ?? undefined,
+    order,
+  };
 }
 
 export function compiledText(result: CompileResult): string {

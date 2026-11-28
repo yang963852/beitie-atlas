@@ -1,6 +1,8 @@
 ---
 schemaVersion: 2
 titleZh: "13｜阅读路径：帖学——刻帖的谱系"
+category: path
+order: 13
 titleEn: "13 — Reading Path: Modelbook Genealogy — The Afterlife of the Copy"
 state: reviewed
 works:

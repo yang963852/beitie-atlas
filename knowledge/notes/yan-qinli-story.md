@@ -2,6 +2,9 @@
 schemaVersion: 2
 titleZh: 从一个「故」字读《颜勤礼碑》
 titleEn: Reading the Yan Qinli Stele through a single character
+category: close-reading
+period: tang
+order: 16
 state: reviewed
 works: [yan-qinli-bei]
 objects: [yan-qinli-original-stele, dpm-rubbing-xin00045406]
