@@ -6,7 +6,7 @@ dynastyId: qing
 dynastySource: src-dpm-deng-shiru-libo
 aliases: []
 state: reviewed
-works: [deng-kaishu]
+works: [deng-kaishu, deng-xinzhou-shi]
 objects: []
 sources: [src-dpm-deng-shiru-libo, src-shm-deng-qianggua]
 ---
@@ -25,12 +25,13 @@ sources: [src-dpm-deng-shiru-libo, src-shm-deng-qianggua]
 
 ### 代表作与本库关联
 
-本库所收[《楷书诗轴》](../works/deng-kaishu.md)为纸本墨迹；上博另藏《篆书谦卦轴》，书于乾隆四十六年（1781），时年三十九，洪福楣捐赠。[上海博物馆，清邓石如篆书谦卦轴](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005003)
+本库所收[《楷书诗轴》](../works/deng-kaishu.md)为纸本墨迹；故宫另藏[《隶书新洲诗》轴](../works/deng-xinzhou-shi.md)，纸本，纵 134.7 厘米、横 62.6 厘米，款署「完白山人邓石如初稿」，故宫记其隶书「以汉人为宗，汲取篆书笔意，再将魏碑方整厚重的特点融入隶书当中」。[故宫博物院，邓琰隶书新洲诗轴](https://www.dpm.org.cn/collection/handwriting/228210.html) 上博另藏《篆书谦卦轴》，书于乾隆四十六年（1781），时年三十九，洪福楣捐赠。[上海博物馆，清邓石如篆书谦卦轴](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005003)
 
 
 ### 可临之作
 
 - [《楷书诗轴》](../works/deng-kaishu.md)：清邓石如的楷书诗轴；作品页未记诗名与尺寸。
+- [《隶书新洲诗》轴](../works/deng-xinzhou-shi.md)：故宫藏隶书立轴；馆方未记具体书写年份，只标朝代并推为晚年所作。
 
 ## English
 
@@ -44,8 +45,9 @@ The Palace Museum records that he "wrote every script, most finely seal and cler
 
 ### Works in this library
 
-The [regular-script poem scroll](../works/deng-kaishu.md) held here is ink on paper; the Shanghai Museum also holds a seal-script Qian hexagram scroll written in 1781 at thirty-nine, a gift of Hong Fumei. [Shanghai Museum, Qian hexagram scroll](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005003)
+The [regular-script poem scroll](../works/deng-kaishu.md) held here is ink on paper; the Palace Museum also holds the [Xinzhou Poem in clerical script](../works/deng-xinzhou-shi.md), ink on paper, 134.7 by 62.6 cm, signed "a first draft by Deng Shiru, Wanbai shanren". The museum describes his clerical script as taking the Han as its ancestor while absorbing seal-script brushwork and the square weight of the Wei steles. [Palace Museum, Deng Yan's clerical-script Xinzhou poem](https://www.dpm.org.cn/collection/handwriting/228210.html) The Shanghai Museum holds a seal-script Qian hexagram scroll written in 1781 at thirty-nine, a gift of Hong Fumei. [Shanghai Museum, Qian hexagram scroll](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005003)
 
 ### Works to copy
 
 - [Poem in Regular Script](../works/deng-kaishu.md): A Qing regular-script poem hanging scroll by Deng Shiru; the work page records neither the poem’s title nor its measurements.
+- [Xinzhou Poem in Clerical Script](../works/deng-xinzhou-shi.md): A clerical-script hanging scroll in the Palace Museum; the museum gives no year, only the Qing dynasty and an inference that it is a late work.

@@ -8,15 +8,22 @@ Wufeng Inscription
 
 **作品**　西汉 · 西汉宣帝五凤二年（即公元前56年） · 碑
 
-石质为灰岩，刻辞中留有五凤二年的纪年，馆方据此著录。
+石质为灰岩，刻辞中留有五凤二年的纪年，馆方据此著录。陈列馆条目另记刻字在石的右半部、书体为隶书，并说此刻「隶中带篆」，对研究书体演变有价值。
 
-[出处 1](#ref-src-qufu-wufeng)
+[出处 1](#ref-src-qufu-wufeng)、[出处 2](#ref-src-qufu-wufeng-detail)
 
 - 未署名 · 署名未详（不详） 所引条目未给出撰文者或书丹者。 [出处 1](#ref-src-qufu-wufeng)
 
 别名：鲁孝王泮池刻石、鲁孝王刻石
 
+书体：隶书
+
 延伸阅读：[02｜专题：秦汉——统一文字与隶书登场](../notes/essay-02-qin-han.md) · [09｜阅读路径：隶变——从青铜到汉碑](../notes/path-01-clerical-turn.md)
+
+作品待考与说明
+
+- 书体曾有异说：该条目所引王澍《竹云题跋》记朱彝尊以为是「篆文」，王澍则断言「断然是隶不是篆」；馆方正文作隶书，异说并存。
+- 英文标题为本项目为检索所拟，非来源所用题名。
 
 <a name="stele-wufeng-inscription"></a>
 
@@ -49,5 +56,9 @@ Wufeng Inscription, inscribed stone
 <a name="ref-src-qufu-wufeng"></a>
 
 1. 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery · [西汉刻石：五凤刻石](<https://hwbk.qfwbw.cn/xihan/>)。定位：Named collection entry and its descriptive text。查阅于 2026-11-18。
+
+<a name="ref-src-qufu-wufeng-detail"></a>
+
+2. 曲阜汉魏碑刻陈列馆 Han and Wei Stele Gallery · [西汉•五凤刻石（鲁孝王泮池刻石、鲁孝王刻石）](<https://hwbk.qfwbw.cn/xihan/2016-12-23/3268.html>)。定位：正文第二段「刻字位于该石右半部，隶书」与「刻石字体醇古……隶中带篆」，及阮元《山左金石志》引文「五凤二年六月立，隶书」；末段记 1978 年移入孔庙东庑、1998 年移入曲阜汉魏碑刻陈列馆。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/wufeng-inscription.md) · [返回知识总目](../README.md)

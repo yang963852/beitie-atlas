@@ -6,7 +6,7 @@
 
 Five Characters in Clerical Script
 
-**作品**　清 · 清嘉庆十七年（1812年） · 帖
+**作品**　清 · 嘉慶壬申歲（清嘉庆十七年，1812年） · 帖
 
 清伊秉绶书《隶书五字横幅》。
 
@@ -26,7 +26,7 @@ Five Characters in Clerical Script
 
 墨迹 · 存世
 
-- 制作年代：清（仅记年号，年份未记）
+- 制作年代：嘉慶壬申歲（清嘉庆十七年，1812年）
 - 著录编号：未记录
 - 尺寸：纵32厘米，横130.5厘米
 - 收藏机构：故宫博物院　[出处 1](#ref-src-catalogue-yi-wuzi)
@@ -46,6 +46,6 @@ Five Characters in Clerical Script
 
 <a name="ref-src-catalogue-yi-wuzi"></a>
 
-1. 故宫博物院 · [隶书五字横幅](<https://www.dpm.org.cn/collection/handwriting/228281.html>)。定位：藏品题名及作品说明。查阅于 2026-11-18。
+1. 故宫博物院 · [隶书五字横幅](<https://www.dpm.org.cn/collection/handwriting/228281.html>)。定位：藏品说明首段（清、伊秉绶书、纸本、纵32厘米横130.5厘米）与「末识……嘉慶壬申歲」段、「嘉庆壬申为清嘉庆十七年（1812年），作者时年60岁」句。查阅于 2026-11-18。
 
 [作品源稿](../../knowledge/works/yi-wuzi.md) · [返回知识总目](../README.md)
