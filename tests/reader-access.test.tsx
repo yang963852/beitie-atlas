@@ -1,6 +1,7 @@
 import { act, fireEvent, render, screen, within } from '@testing-library/react';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import App from '../src/App';
+import { warmRoutes } from './warm-routes';
 
 /**
  * Reader-facing access defects found by an external evaluation: links that
@@ -13,6 +14,12 @@ import App from '../src/App';
 function resultsList() {
   return screen.getByRole('list', { name: /记录/ });
 }
+
+/** The workspace and library routes are lazy after the entry-bundle split;
+ * warm them once so each assertion below still runs against a mounted view. */
+beforeAll(async () => {
+  await warmRoutes(['workspace', 'library']);
+}, 120000);
 
 beforeEach(() => {
   localStorage.clear();
