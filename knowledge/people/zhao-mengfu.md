@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 赵孟頫
 titleEn: Zhao Mengfu
+dynastyId: yuan
+dynastySource: src-dpm-daba
 aliases: []
 state: reviewed
 works: [daba-bei, sanmen-ji, zhao-luoshen, tianguanshan-poems]

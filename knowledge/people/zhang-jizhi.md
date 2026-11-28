@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 张即之
 titleEn: Zhang Jizhi
+dynastyId: southern-song
+dynastySource: src-dpm-shuangsong
 aliases:
   - 温夫
   - 樗寮

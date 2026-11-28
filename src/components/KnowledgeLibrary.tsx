@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState, type ReactNode } from 'react';
 import { useLocale } from '../i18n';
 import { knowledgeRelations, type KnowledgeKind } from '../domain/knowledge';
-import { findEntry, featuredGuideEntries, guideWorkCount, libraryEntries, libraryHref, linkedEntries, matchesQuery, type LibraryEntry } from '../domain/library';
+import { findEntry, libraryEntries, libraryHref, linkedEntries, matchesQuery, type LibraryEntry } from '../domain/library';
 import { getDataset, getPlace } from '../domain/data';
 import { dynastyLabel } from '../domain/dynasties';
 import { formatAttribution } from '../domain/attribution';
@@ -25,8 +25,8 @@ const totals = {
   notes: libraryEntries.filter((entry) => entry.kind === 'notes').length,
 };
 const words = {
-  zh: { works: '作品', people: '书家', notes: '读帖笔记', title: '作品与书家', collection: '实物图录', library: '知识库', beta: EDITION_LABEL.zh, feedback: '反馈', contribute: '补充资料', github: '在 GitHub 阅读', download: '下载完整知识库（ZIP）', search: '搜索作品、书家或笔记', empty: '未找到相关条目。', clear: '清除搜索', objects: '传世实物', objectsHeading: '选择一件实物', selectedObject: '当前实物', objectMap: '在地图与完整记录中查看', noObjects: '本项目尚未收录可辨实物。', claims: '异说与意见', roles: '关联作品与角色', relations: '人物往来', sources: '参考出处', authored: '作品导读', none: '条目尚未收录', home: '返回知识目录', unknownPlace: '收藏地待考' },
-  en: { works: 'Works', people: 'Calligraphers', notes: 'Reading notes', title: 'Works and calligraphers', collection: 'Object catalogue', library: 'Library', beta: EDITION_LABEL.en, feedback: 'Feedback', contribute: 'Suggest a source', github: 'Read on GitHub', download: 'Download the full library (ZIP)', search: 'Search works, people or notes', empty: 'No matching entries.', clear: 'Clear search', objects: 'Surviving witnesses', objectsHeading: 'Choose a witness', selectedObject: 'Selected witness', objectMap: 'Open the map and full record', noObjects: 'No identifiable witness is catalogued yet.', claims: 'Claims and opinions', roles: 'Works and roles', relations: 'Documented relationships', sources: 'Sources', authored: 'Reading guide', none: 'Entry unavailable', home: 'Back to the library', unknownPlace: 'Holding unknown' },
+  zh: { works: '作品', people: '书家', notes: '读帖笔记', title: '读帖', collection: '实物图录', library: '读帖', beta: EDITION_LABEL.zh, feedback: '反馈', contribute: '补充资料', github: '在 GitHub 阅读', download: '下载完整知识库（ZIP）', search: '搜索作品、书家或笔记', empty: '未找到相关条目。', clear: '清除搜索', objects: '传世实物', objectsHeading: '选择一件实物', selectedObject: '当前实物', objectMap: '在地图与完整记录中查看', noObjects: '本项目尚未收录可辨实物。', claims: '异说与意见', roles: '关联作品与角色', relations: '人物往来', sources: '参考出处', authored: '作品导读', none: '条目尚未收录', home: '返回读帖', unknownPlace: '收藏地待考' },
+  en: { works: 'Works', people: 'Calligraphers', notes: 'Reading notes', title: 'Reading room', collection: 'Object catalogue', library: 'Reading room', beta: EDITION_LABEL.en, feedback: 'Feedback', contribute: 'Suggest a source', github: 'Read on GitHub', download: 'Download the full library (ZIP)', search: 'Search works, people or notes', empty: 'No matching entries.', clear: 'Clear search', objects: 'Surviving witnesses', objectsHeading: 'Choose a witness', selectedObject: 'Selected witness', objectMap: 'Open the map and full record', noObjects: 'No identifiable witness is catalogued yet.', claims: 'Claims and opinions', roles: 'Works and roles', relations: 'Documented relationships', sources: 'Sources', authored: 'Reading guide', none: 'Entry unavailable', home: 'Back to the reading room', unknownPlace: 'Holding unknown' },
 };
 function EntryLink({ entry }: { entry: LibraryEntry }) {
   const { locale } = useLocale();
@@ -44,13 +44,15 @@ function Index({ kind }: { kind: KnowledgeKind }) {
   const entries = libraryEntries.filter((entry) => searching ? matchesQuery(entry, query) : entry.kind === kind);
   const groups = new Map<string, LibraryEntry[]>();
   for (const entry of entries) {
-    const label = entry.work && !searching ? dynastyLabel(entry.work.dynastyId, locale) : t[entry.kind];
+    const label = entry.kind === 'people' && entry.guide?.dynastyId
+      ? dynastyLabel(entry.guide.dynastyId, locale)
+      : entry.work && !searching
+        ? dynastyLabel(entry.work.dynastyId, locale)
+        : t[entry.kind];
     const group = groups.get(label) ?? [];
     group.push(entry);
     groups.set(label, group);
   }
-  const features = featuredGuideEntries();
-  const guideCount = guideWorkCount();
   return <>
     <header className="library-head">
       <h1>{kind === 'works' ? t.title : t[kind]}</h1>
@@ -58,10 +60,6 @@ function Index({ kind }: { kind: KnowledgeKind }) {
         ? `共 ${totals.works} 部作品 · ${totals.people} 位书家 · ${totals.notes} 篇读帖笔记${kind === 'works' ? '，依时代编次' : ''}`
         : `${totals.works} works · ${totals.people} calligraphers · ${totals.notes} reading notes${kind === 'works' ? ', arranged by period' : ''}`}</p>
     </header>
-    {kind === 'works' && !query && features.length > 0 && <section className="library-feature" aria-label={t.authored}>
-      <span>{t.authored} · {guideCount}</span>
-      {features.map((entry) => <EntryLink key={entry.id} entry={entry} />)}
-    </section>}
     <div className="library-tools">
       <nav aria-label={t.library}>{tabs.map((tab) => <a key={tab} href={tabHref(tab)} aria-current={tab === kind ? 'page' : undefined}>{t[tab]}</a>)}</nav>
       <input type="search" aria-label={t.search} placeholder={t.search} value={query} onChange={(event) => setQuery(event.target.value)} />
@@ -99,9 +97,10 @@ function Entry({ entry }: { entry: LibraryEntry }) {
     ? getDataset().objects.filter((object) => (object.attribution ?? []).some((credit) => credit.personId === entry.id))
     : [];
   const selectedPlace = selectedObject && selectedObject.currentCollection.locationKind !== 'unknown' ? getPlace(selectedObject.currentCollection.placeId) : undefined;
+  const personDynasty = entry.kind === 'people' ? entry.guide?.dynastyId : undefined;
   return <article>
     <header className="library-heading">
-      <p className="library-kicker">{t[entry.kind]}{(work?.review.state ?? guide?.state) === 'draft' ? ' · ' + strings.reviewDraft : ''}</p>
+      <p className="library-kicker">{personDynasty ? dynastyLabel(personDynasty, locale) + ' · ' : ''}{t[entry.kind]}{(work?.review.state ?? guide?.state) === 'draft' ? ' · ' + strings.reviewDraft : ''}</p>
       <h1>{locale === 'zh' ? entry.titleZh : entry.titleEn || entry.titleZh}</h1>
       {work && <p className="library-byline">{formatDate(work.compositionDate, locale)}
         {work.compositionDate.meaning ? ' · ' + strings.dateMeaningLabels[work.compositionDate.meaning] : ''}

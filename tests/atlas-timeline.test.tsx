@@ -29,7 +29,7 @@ it('keeps the rubbing’s transmission separate from the original stone on a dir
 
 it('opens the extant map directly with a witness type selector', () => {
   visit('#/collections');
-  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent('现存地图');
+  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent('访碑');
   expect(screen.getByRole('combobox', {name: '实物类型'})).toContainElement(screen.getByRole('option', {name: '拓本'}));
   expect(screen.getByRole('group', {name: '本图点位'})).toBeVisible();
 });

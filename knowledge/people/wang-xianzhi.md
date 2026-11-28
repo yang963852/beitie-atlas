@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 王献之
 titleEn: Wang Xianzhi
+dynastyId: eastern-jin
+dynastySource: src-dpm-dongshansong
 aliases:
   - 王大令
   - 子敬

@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 虞世南
 titleEn: Yu Shinan
+dynastyId: tang
+dynastySource: src-shm-runan
 aliases:
   - 虞永兴
   - 伯施

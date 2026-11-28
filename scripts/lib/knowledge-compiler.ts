@@ -144,6 +144,8 @@ interface ArticleInput {
   titleEn: string;
   state: KnowledgeArticle['state'];
   timelineYear?: number;
+  dynastyId?: KnowledgeArticle['dynastyId'];
+  dynastySource?: string;
   people: string[];
   works: string[];
   objects: string[];
@@ -259,7 +261,8 @@ export function compileKnowledge(root: string = process.cwd(), options: { releas
       const person = readPerson(input);
       articleInputs.push({
         kind: 'people', id: person.id, titleZh: person.titleZh, titleEn: person.titleEn,
-        state: person.state, people: [], works: person.works, objects: person.objects,
+        state: person.state, dynastyId: person.dynastyId, dynastySource: person.dynastySource,
+        people: [], works: person.works, objects: person.objects,
         sources: person.sources, zh: person.zh, en: person.en, path: input.path,
       });
     } catch (error) {
@@ -293,6 +296,8 @@ export function compileKnowledge(root: string = process.cwd(), options: { releas
     articles.push({
       kind: input.kind, id: input.id, titleZh: input.titleZh, titleEn: input.titleEn,
       ...(input.timelineYear == null ? {} : { timelineYear: input.timelineYear }),
+      ...(input.dynastyId == null ? {} : { dynastyId: input.dynastyId }),
+      ...(input.dynastySource == null ? {} : { dynastySource: input.dynastySource }),
       state: input.state, people: input.people, works: input.works, objects: input.objects,
       sources: input.sources, zh: input.zh, en: input.en,
     });

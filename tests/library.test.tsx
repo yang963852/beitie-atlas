@@ -2,7 +2,6 @@ import { readFileSync } from 'node:fs';
 import { act, fireEvent, render, screen, within } from '@testing-library/react';
 import { beforeEach, describe, expect, it } from 'vitest';
 import App from '../src/App';
-import { featuredGuideEntries, guideWorkCount } from '../src/domain/library';
 
 const { version } = JSON.parse(readFileSync('package.json', 'utf8')) as { version: string };
 
@@ -108,21 +107,12 @@ it('names the current edition on the library page', () => {
   expect(colophon?.textContent).toContain(version);
 });
 
-describe('featured reading guides', () => {
-  it('lists works with a guide in the curated order and skips works without one', () => {
-    const entries = featuredGuideEntries();
-    expect(entries.length).toBeGreaterThanOrEqual(2);
-    expect(entries.every((entry) => entry.guide)).toBe(true);
-    expect(entries[0].id).toBe('yan-qinli-bei');
-    expect(entries.map((entry) => entry.id)).toContain('duobao-ta-bei');
-    expect(new Set(entries.map((entry) => entry.id)).size).toBe(entries.length);
-    expect(guideWorkCount()).toBeGreaterThanOrEqual(entries.length);
-  });
-
-  it('surfaces the guides on the library page', () => {
-    render(<App />);
-    const feature = screen.getByRole('region', { name: /作品导读/ });
-    expect(within(feature).getByRole('link', { name: '颜勤礼碑' })).toHaveAttribute('href', '#/work/yan-qinli-bei');
-    expect(within(feature).getByRole('link', { name: '多宝塔感应碑' })).toHaveAttribute('href', '#/work/duobao-ta-bei');
-  });
+it('groups calligraphers by their recorded dynasty', () => {
+  window.history.replaceState(null, '', '#/library/people');
+  render(<App />);
+  const tang = Array.from(document.querySelectorAll('.library-shelf')).find(
+    (shelf) => shelf.querySelector('h2')?.textContent?.startsWith('唐'),
+  ) as HTMLElement | undefined;
+  expect(tang).toBeTruthy();
+  expect(within(tang!).getByRole('link', { name: '颜真卿' })).toBeInTheDocument();
 });

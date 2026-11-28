@@ -1,4 +1,4 @@
-import type { ReviewState } from './types';
+import type { DynastyId, ReviewState } from './types';
 
 export const knowledgeKinds = ['works', 'people', 'notes'] as const;
 export type KnowledgeKind = (typeof knowledgeKinds)[number];
@@ -9,6 +9,10 @@ export interface KnowledgeArticle {
   titleZh: string;
   titleEn: string;
   timelineYear?: number;
+  /** The conventional period of a calligrapher, for the library reading order. */
+  dynastyId?: DynastyId;
+  /** The person source that states that period. */
+  dynastySource?: string;
   state: ReviewState;
   people: string[];
   works: string[];

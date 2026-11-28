@@ -4,6 +4,8 @@ titleZh: 姓名
 titleEn: Name
 aliases: []
 state: draft
+dynastyId: tang
+dynastySource: src-example
 works: []
 objects: []
 sources:
@@ -14,8 +16,8 @@ sources:
 
 ## 中文
 
-只写这位书家在这部作品中做了什么；生卒、师承或身份未消歧时留待核对。
+只写这位书家在这部作品中做了什么；生卒、师承或身份未消歧时留待核对。`dynastyId` 按通行朝代填写，`dynastySource` 必须是 `sources` 中能说明该朝代的一项。
 
 ## English
 
-State what this person did on the recorded work. Leave dates, teachers or identity open until a source settles them.
+State what this person did on the recorded work. Leave dates, teachers or identity open until a source settles them. Set `dynastyId` to the conventional period and point `dynastySource` at the source in `sources` that states it.

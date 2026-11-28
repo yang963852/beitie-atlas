@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 李斯
 titleEn: Li Si
+dynastyId: qin
+dynastySource: src-chnmuseum-langya
 aliases: []
 state: reviewed
 works: [langya-keshi, taishan-keshi, yishan-inscription]

@@ -2,6 +2,8 @@
 schemaVersion: 2
 titleZh: 米芾
 titleEn: Mi Fu
+dynastyId: northern-song
+dynastySource: src-catalogue-tiaoxi
 aliases: []
 state: reviewed
 works: [tiaoxi, shusu, shanhu]
