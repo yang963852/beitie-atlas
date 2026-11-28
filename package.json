@@ -21,7 +21,7 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "check:data": "tsx scripts/check-data.ts",
-    "check:docs": "node scripts/check-board.mjs",
+    "check:docs": "node scripts/check-board.mjs && node scripts/check-docs.mjs",
     "knowledge:compile": "tsx scripts/knowledge-compile.ts",
     "knowledge:generate": "tsx scripts/knowledge-catalogue.ts",
     "knowledge:migrate": "tsx scripts/knowledge-migrate.ts",
