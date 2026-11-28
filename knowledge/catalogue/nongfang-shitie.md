@@ -18,6 +18,8 @@ Poem on Fragrant Blossoms
 
 书体：瘦金书
 
+延伸阅读：[赵佶](../people/zhao-ji.md)
+
 作品待考与说明
 
 - 帖无年款，写作年份待考。
