@@ -14,7 +14,7 @@ Stele of Yan Qinli
 
 - 撰文并书丹 · 颜真卿（有明确记载）  [出处 1](#ref-src-dpm-yan-qinli-rubbing)、[出处 3](#ref-src-beilin-yan-qinli-object)
 
-延伸阅读：[颜勤礼碑](../works/yan-qinli-bei.md) · [颜真卿](../people/yan-zhenqing.md) · [05｜专题：隋唐——楷则与碑版](../notes/essay-05-sui-tang.md) · [10｜阅读路径：楷化——从钟繇到唐楷](../notes/path-02-regularization.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md) · [14｜阅读路径：一作两命——原石与拓本](../notes/path-06-one-work-two-lives.md) · [从一个「故」字读《颜勤礼碑》](../notes/yan-qinli-story.md)
+延伸阅读：[颜勤礼碑](../works/yan-qinli-bei.md) · [颜真卿](../people/yan-zhenqing.md) · [05｜专题：隋唐——楷则与碑版](../notes/essay-05-sui-tang.md) · [10｜阅读路径：楷化——从钟繇到唐楷](../notes/path-02-regularization.md) · [12｜阅读路径：碑学——清人如何重读石刻](../notes/path-04-stele-studies.md) · [14｜阅读路径：一作两命——原石与拓本](../notes/path-06-one-work-two-lives.md) · [绕过「故」字，从三面行款读《颜勤礼碑》](../notes/yan-qinli-faces.md) · [从一个「故」字读《颜勤礼碑》](../notes/yan-qinli-story.md)
 
 作品待考与说明
 
