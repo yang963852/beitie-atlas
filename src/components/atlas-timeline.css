@@ -606,6 +606,7 @@
 
 .scroll-frame {
   position: relative;
+  overflow: hidden;
   border-block: 4px double var(--rule);
   background: linear-gradient(180deg, #fbf5e7 0%, var(--paper-lift) 12%, var(--paper-lift) 88%, #f7efdf 100%);
 }
@@ -652,7 +653,7 @@
 
   .atlas-period h2 {
     writing-mode: vertical-rl;
-    text-orientation: upright;
+    text-orientation: mixed;
     display: block;
     align-self: stretch;
     margin: 0;
@@ -710,5 +711,324 @@
       clip-path: inset(0);
       opacity: 1;
     }
+  }
+}
+
+/* ==========================================================================
+   A living handscroll
+   The slips carry a compact date, the credited hands and, where the catalogue
+   records a surviving original stone, a vermilion 石 mark. The ruler follows
+   the reader across the scroll; a red thread under the frame shows how far the
+   scroll has been unrolled; the reading desk below keeps the last slip read.
+   ========================================================================== */
+
+.atlas-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 7.4rem;
+  padding: 0.5rem 0.8rem 0.55rem;
+  gap: 0.12rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.atlas-card:hover,
+.atlas-card:focus-visible {
+  transform: translateY(-2px);
+}
+
+.atlas-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.atlas-card__date {
+  min-width: 0;
+  overflow: hidden;
+  color: #765841;
+  font: 0.72rem/1.5 var(--kai);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.atlas-card__stone {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 1px;
+  background: var(--accent);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  color: #faf3e3;
+  font: 600 0.66rem/1 var(--kai);
+}
+
+.atlas-card h3 {
+  margin: 0.1rem 0 0.2rem;
+  font-size: clamp(0.98rem, 1.25vw, 1.18rem);
+  line-height: 1.35;
+}
+
+.atlas-card__hand {
+  margin-top: auto;
+  overflow: hidden;
+  color: var(--muted);
+  font: 0.7rem/1.45 var(--kai);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.atlas-card[data-on-desk='true'] {
+  border-left-color: var(--accent);
+  background: #fffdf6;
+}
+
+.atlas-card[data-on-desk='true'] h3 {
+  color: var(--accent-deep);
+}
+
+@media (min-width: 761px) {
+  .scroll-ruler__period {
+    position: relative;
+    transition: background-color 0.16s ease, color 0.16s ease;
+  }
+
+  .scroll-ruler__period::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0.95rem;
+    width: 1px;
+    height: 6px;
+    background: var(--rule);
+    pointer-events: none;
+  }
+
+  .scroll-ruler__period[aria-pressed='true']::before {
+    left: 0.9rem;
+    width: 2px;
+    height: 10px;
+    background: var(--accent);
+  }
+}
+
+.scroll-frame__progress {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(var(--scroll-progress, 0));
+  transform-origin: left;
+  pointer-events: none;
+}
+
+.reading-desk {
+  margin-top: 1.25rem;
+}
+
+.reading-desk__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin-bottom: 0.45rem;
+}
+
+.reading-desk__head h2 {
+  margin: 0;
+  color: var(--ink-3);
+  font: 600 0.86rem/1.4 var(--book);
+  letter-spacing: 0.28em;
+}
+
+.reading-desk__head p {
+  margin: 0;
+  color: var(--muted);
+  font: 0.76rem/1.5 var(--kai);
+  letter-spacing: 0.04em;
+}
+
+.reading-desk__index {
+  margin-left: auto;
+  color: var(--muted);
+  font: 0.76rem/1.4 var(--kai);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.reading-desk__leaf {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.2rem 1.05rem;
+  border: 1px solid var(--rule);
+  border-left: 3px double var(--rule);
+  background: var(--paper-lift);
+  box-shadow: 0 6px 16px -14px rgba(60, 45, 30, 0.5);
+}
+
+.reading-desk__seal {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 2px;
+  background: var(--accent);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  color: #f9f1df;
+  font: 600 1.05rem/1 var(--kai);
+}
+
+.reading-desk__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.reading-desk__meta {
+  margin: 0 0 0.2rem;
+  overflow: hidden;
+  color: #765841;
+  font: 0.78rem/1.5 var(--kai);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.reading-desk__body h3 {
+  margin: 0 0 0.25rem;
+  overflow: hidden;
+  font: 600 clamp(1.45rem, 2.3vw, 2rem)/1.3 var(--book);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.reading-desk__body h3 a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.reading-desk__title {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.reading-desk__body h3 a:hover {
+  color: var(--accent);
+}
+
+.reading-desk__open {
+  flex: none;
+  color: var(--accent);
+  font: 500 0.78rem/1.4 var(--kai);
+  letter-spacing: 0.12em;
+}
+
+.reading-desk__byline {
+  margin: 0;
+  overflow: hidden;
+  color: var(--ink-2);
+  font: 0.82rem/1.6 var(--kai);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.reading-desk__witness {
+  margin: 0.55rem 0 0;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--rule-soft);
+  overflow: hidden;
+  color: var(--muted);
+  font: 0.76rem/1.5 var(--kai);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .atlas-card {
+    animation: slip-settle 320ms ease-out backwards;
+  }
+
+  @keyframes slip-settle {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlas-card:hover,
+  .atlas-card:focus-visible {
+    transform: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .atlas-period ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .atlas-period li {
+    min-width: 0;
+  }
+
+  .atlas-card,
+  .atlas-card__top,
+  .atlas-card h3,
+  .atlas-card__hand {
+    min-width: 0;
+  }
+
+  .atlas-card {
+    height: auto;
+    min-height: 5.8rem;
+    padding: 0.7rem 0.95rem;
+  }
+
+  .atlas-card h3 {
+    margin: 0.15rem 0 0.15rem;
+    font-size: 1.35rem;
+  }
+
+  .atlas-card__date {
+    font-size: 0.76rem;
+  }
+
+  .atlas-card__hand {
+    font-size: 0.74rem;
+  }
+
+  .atlas-card[data-on-desk='true'] {
+    border-left-color: var(--rule);
+    background: var(--paper-lift);
+  }
+
+  .atlas-card[data-on-desk='true'] h3 {
+    color: var(--ink);
+  }
+
+  .scroll-frame__progress,
+  .reading-desk {
+    display: none;
   }
 }
