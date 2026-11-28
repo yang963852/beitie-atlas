@@ -27,6 +27,24 @@ sources: [src-dpm-231095, src-dpm-259370, src-beilin-xuanmita, src-ccdy-shence, 
 
 还有一块石，他只写了碑额。[《圭峰定慧禅师碑》](../works/guifeng.md)立于大中九年（855），裴休撰文并书丹，柳公权篆额，邵建初刻石。与玄秘塔并看，相隔十四年，同一组人合作了两次，角色却换了：玄秘塔是裴休撰、柳书丹，圭峰碑是裴休自书、柳篆额。碑额是另一套笔法，篆书与楷书不能互证。故宫所藏明拓中，“同中书”的“同”字尚未损坏，一字完缺即可辨本。[故宫博物院，圭峰定慧禅师碑](https://www.dpm.org.cn/collection/impres/234182.html)
 
+### 生平与身份
+
+上文所记生卒、字号、籍贯与历官沿用原文，但故宫三条来源的「简介」未逐字转录小传，故不据此增添新的传记数值。[故宫博物院，柳公权行书蒙诏帖卷](https://www.dpm.org.cn/collection/handwriting/231095.html)。据 `dynastySource`，本页把他系于唐。
+
+### 书体与师承
+
+上文已记其「师颜真卿、欧阳询而能参化其神理，自成一局」与「颜筋柳骨」并称，此为故宫小传所载；「用笔在心，心正则笔正」的笔谏亦见该小传。[故宫博物院，柳公权行书蒙诏帖卷](https://www.dpm.org.cn/collection/handwriting/231095.html)
+
+### 代表作与本库关联
+
+本库所收[《玄秘塔碑》](../works/xuanmi-ta-bei.md)、[《神策军碑》](../works/shen-ce-jun-bei.md)、[《迴元观钟楼铭》](../works/huiyuan-guan-zhonglou-ming.md)、[《蒙诏帖》](../works/mengzhao.md)与[《圭峰定慧禅师碑》](../works/guifeng.md)。中国文化报记《神策军碑》会昌三年（843）刻、崔铉撰、二十七开、原石佚仅存上册，1965 年归藏；碑林记《迴元观钟楼铭》开成元年（836）刻、1986 年出土。[中国文化报，宋拓《神策军碑》](https://nepaper.ccdy.cn/html/2012-06/22/content_74528.htm) · [西安碑林博物馆，迴元观钟楼铭](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2581)
+
+### 书迹可靠性
+
+以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+
+— 本页 `objects` 为空。依著录分层：[《玄秘塔碑》](../works/xuanmi-ta-bei.md)原石今在西安碑林，故宫另藏明初拓册；[《迴元观钟楼铭》](../works/huiyuan-guan-zhonglou-ming.md)为 1986 年出土的原石，无宋以来翻刻；[《神策军碑》](../works/shen-ce-jun-bei.md)原石已佚，今日所见只是一卷宋装的上册拓本；[《蒙诏帖》](../works/mengzhao.md)旧题柳公权而故宫定为非柳书，归名不成立。[《圭峰定慧禅师碑》](../works/guifeng.md)为他篆额、裴休书丹，篆书与楷书分记。原石、拓本、非柳书各归其类，不因旧题而合并。
+
 ## English
 
 Liu Gongquan (778–865), courtesy name Chengxuan, was a native of Huayuan in the capital prefecture, present-day Yaoxian in Shaanxi. He passed the metropolitan examination in the early Yuanhe years and served as Secretariat drafter, remonstrance official and guest of the crown prince before rising to Junior Preceptor of the Heir Apparent, from which he was known as Young Preceptor Liu, and was enfeoffed as Duke of Hedong. The Palace Museum’s short biography says he “studied Yan Zhenqing and Ouyang Xun and transformed their spirit, forming a manner of his own”, and pairs him with Yan as “Yan’s sinew, Liu’s bone”. It also records that when Emperor Muzong asked him about brush method, he answered that the brush lies in the mind, and when the mind is upright the brush is upright — a double sense that spoke of writing and of remonstrance at once. That sentence is as good an entrance as any: what he writes is bone, not posture. [Palace Museum, Liu Gongquan’s Mengzhao letter, biography of Liu Gongquan](https://www.dpm.org.cn/collection/handwriting/231095.html)
@@ -40,3 +58,21 @@ Earlier than either stele, this slab was the last to be read. The [Huiyuan Abbey
 Only one sheet of ink survives, and it will not hold. The [Mengzhao letter](../works/mengzhao.md) is ink on paper, running script, 26.8 by 57.4 cm, long attributed to Liu and judged by the Palace Museum not to be his. The argument runs two ways. In wording, “sent out to serve in the Hanlin” does not fit the titles of a Tang officeholder, and the Hanlin letter preserved in the Southern Song Lanting xu tie reads more naturally; this scroll may be a Song writer’s expansion of its sense. In brushwork, the first four lines are still vigorous, the later lines thin and loosely built, and the final “quan” of his signature falls apart as a character — far from the “supple, firm and strong” manner of Liu. What this scroll teaches is not Liu Gongquan but how an old attribution is taken apart: a title that does not fit and a hand that does not hold steady. With both in place, the name cannot stand. [Palace Museum, Liu Gongquan’s Mengzhao letter](https://www.dpm.org.cn/collection/handwriting/231095.html)
 
 On one stone he wrote only the heading. The [Guifeng Chan Master Stele](../works/guifeng.md) was erected in 855, composed and written by Pei Xiu, with its seal-script heading by Liu and the cutting by Shao Jianchu. Set beside the Xuanmi stele, fourteen years apart, the same group worked twice with the roles exchanged: at Xuanmi, Pei composed and Liu wrote; at Guifeng, Pei wrote his own text and Liu supplied only the heading. A heading is another script altogether, and seal cannot vouch for regular. In the Palace Museum’s Ming rubbing the “tong” of “tong zhongshu” is still intact, and the soundness of a single character is enough to tell one impression from another. [Palace Museum, Guifeng stele](https://www.dpm.org.cn/collection/impres/234182.html)
+
+### Life and identity
+
+The dates, courtesy name, native place and offices given above are kept; the "brief introductions" in the listed Palace Museum sources do not transcribe the biography verbatim, so no further biographical values are added. [Palace Museum, Liu Gongquan's Mengzhao letter](https://www.dpm.org.cn/collection/handwriting/231095.html). By `dynastySource` this page places him in the Tang.
+
+### Scripts and models
+
+The account above of his studying Yan Zhenqing and Ouyang Xun, the pairing "Yan's sinew, Liu's bone," and the remonstrance about the upright brush are from the museum biography. [Palace Museum, Liu Gongquan's Mengzhao letter](https://www.dpm.org.cn/collection/handwriting/231095.html)
+
+### Works in this library
+
+The library holds the [Xuanmi Pagoda Stele](../works/xuanmi-ta-bei.md), [Shence Army Stele](../works/shen-ce-jun-bei.md), [Huiyuan Abbey Bell Tower Inscription](../works/huiyuan-guan-zhonglou-ming.md), [Mengzhao letter](../works/mengzhao.md) and [Guifeng Chan Master Stele](../works/guifeng.md). China Culture Daily records the Shence stele carved in 843, composed by Cui Xuan, twenty-seven openings, the stone lost and only the upper volume surviving, returned in 1965; the Beilin dates the Huiyuan inscription to 836 and its discovery to 1986. [China Culture Daily, Song rubbing of the Shence stele](https://nepaper.ccdy.cn/html/2012-06/22/content_74528.htm) · [Xi'an Beilin Museum, Huiyuan inscription](https://beilin-museum.com/index.php?m=home&c=View&a=index&aid=2581)
+
+### Reliability of the surviving trace
+
+The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
+
+— This page has no `objects` entries. By the catalogues, the [Xuanmi stele](../works/xuanmi-ta-bei.md) survives as an original stone at the Beilin with a separate early Ming rubbing album; the [Huiyuan inscription](../works/huiyuan-guan-zhonglou-ming.md) is an original stone found in 1986 with no Song recarving; the [Shence Army Stele](../works/shen-ce-jun-bei.md) has lost its stone and survives only as a Song-mounted upper-volume rubbing; the [Mengzhao letter](../works/mengzhao.md) is long attributed to Liu but judged by the Palace Museum not to be his, so the attribution does not stand; and on the [Guifeng stele](../works/guifeng.md) he wrote only the seal heading while Pei Xiu wrote the text. Original stones, rubbings and a non-Liu attribution are kept in separate classes and not merged under an old title.
