@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: null
 dateEndMonth: null
 dateEra: 东晋
-dateOriginal: null
+dateOriginal: 晋，王献之书
 dateCertainty: documented
 dateNote: 馆方题名系于晋，帖无款署，亦无年款。
 script: 行草

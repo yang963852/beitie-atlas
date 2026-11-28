@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: 597
 dateEndMonth: null
 dateEra: null
-dateOriginal: null
+dateOriginal: 隋开皇十七年（597年）
 dateCertainty: documented
 dateNote: null
 script: 楷书

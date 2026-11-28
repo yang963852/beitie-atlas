@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: null
 dateEndMonth: null
 dateEra: 清
-dateOriginal: null
+dateOriginal: 清，赵之谦书
 dateCertainty: documented
 dateNote: null
 script: 篆书
