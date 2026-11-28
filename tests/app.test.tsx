@@ -30,8 +30,8 @@ beforeEach(() => {
 describe('application shell', () => {
   it('waits for paper activation and the ink transition before entering the records', () => {
     renderApp(true);
-    const paper = screen.getByRole('link', { name: '打开访碑图' });
-    expect(paper.textContent).toBe('案头所临，如今藏在何处');
+    const paper = screen.getByRole('link', { name: /案头所临，如今藏在何处[\s\S]*打开访碑图/ });
+    expect(paper.querySelector('.desk__words')?.textContent).toBe('案头所临，如今藏在何处');
     expect(document.querySelector('.desk__ink')).toBeNull();
     vi.useFakeTimers();
     try {

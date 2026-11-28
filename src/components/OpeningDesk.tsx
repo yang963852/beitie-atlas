@@ -106,8 +106,9 @@ export function OpeningDesk({ enter, openPlate }: { enter: () => void; openPlate
         {locale === 'zh' ? '帖影 · 兰亭序神龙本（局部）' : 'Plate · Shenlong copy (detail)'}
       </a>
       <h1 id="opening-title">
-        <a className="desk__paper" href="#catalogue" onClick={open} aria-label={strings.enterCatalogue}>
+        <a className="desk__paper" href="#catalogue" onClick={open}>
           <span className="desk__words"><span>{strings.taglineLead}</span><span>{strings.tagline}</span></span>
+          <span className="visually-hidden">{strings.enterCatalogue}</span>
         </a>
       </h1>
       {origin && <>
