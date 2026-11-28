@@ -8,17 +8,17 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 
 | Measure | Value |
 | --- | --- |
-| Works | 126 (126 reviewed / 0 draft) |
-| Objects | 133 (133 reviewed / 0 draft) |
+| Works | 131 (131 reviewed / 0 draft) |
+| Objects | 138 (138 reviewed / 0 draft) |
 | Guides | 14 (14 reviewed / 0 draft) |
-| People pages | 25 |
+| People pages | 28 |
 | Notes | 2 |
-| Places | 46 (6 with coordinates) |
-| Sources | 201 (0 uncited) |
+| Places | 47 (6 with coordinates) |
+| Sources | 207 (0 uncited) |
 | Events | 75 (50 objects with events) |
-| Attribution entries linked to a person | 45 / 170 |
-| Work sources (0 / 1 / 2+) | 0 / 85 / 41 |
-| Reviewed works with one source | 85 |
+| Attribution entries linked to a person | 48 / 176 |
+| Work sources (0 / 1 / 2+) | 0 / 89 / 42 |
+| Reviewed works with one source | 89 |
 | Dates without source wording | 44 |
 
 ## Gaps
@@ -79,8 +79,11 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [远宦帖](../knowledge/works/yuanhuan.md) | Eastern Jin | reviewed | — | 1 | 2 | 1 | 0/1 | 1 |
 | [中秋帖](../knowledge/works/zhongqiu.md) | Eastern Jin | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [爨龙颜碑](../knowledge/works/cuan-longyan-bei.md) | Northern and Southern Dynasties | reviewed | — | 0 | 2 | 1 | 0/1 | — |
+| [元桢墓志](../knowledge/works/yuanzhen-muzhi.md) | Northern and Southern Dynasties | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [始平公造像记](../knowledge/works/shipinggong-zaoxiang-ji.md) | Northern and Southern Dynasties | reviewed | — | 0 | 2 | 1 | 0/1 | — |
+| [穆亮墓志](../knowledge/works/muliang-muzhi.md) | Northern and Southern Dynasties | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [石门铭](../knowledge/works/shimen-ming.md) | Northern and Southern Dynasties | reviewed | — | 0 | 2 | 1 | 0/1 | — |
+| [司马悦墓志](../knowledge/works/simayue-muzhi.md) | Northern and Southern Dynasties | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [瘗鹤铭](../knowledge/works/yi-he-ming.md) | Northern and Southern Dynasties | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [张猛龙碑](../knowledge/works/zhang-menglong-bei.md) | Northern and Southern Dynasties | reviewed | — | 0 | 1 | 2 | 1/2 | — |
 | [张玄墓志](../knowledge/works/zhang-xuan-muzhi.md) | Northern and Southern Dynasties | reviewed | — | 0 | 1 | 1 | 0/1 | — |
@@ -96,6 +99,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [晋祠之铭并序](../knowledge/works/jinci-zhi-ming.md) | Tang | reviewed | — | 1 | 1 | 2 | 1/1 | — |
 | [温泉铭](../knowledge/works/wen-quan-ming.md) | Tang | reviewed | — | 1 | 2 | 1 | 0/1 | — |
 | [雁塔圣教序](../knowledge/works/yanta.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | 1 |
+| [道因法师碑](../knowledge/works/daoyin-fashi-bei.md) | Tang | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [同州圣教序](../knowledge/works/tongzhou-shengjiao-xu.md) | Tang | reviewed | — | 1 | 2 | 1 | 1/1 | — |
 | [大唐三藏圣教序碑](../knowledge/works/ji-wang-shengjiao-xu.md) | Tang | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [书谱](../knowledge/works/shupu.md) | Tang | reviewed | — | 0 | 1 | 1 | 0/1 | — |
@@ -134,6 +138,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [秾芳诗帖](../knowledge/works/nongfang-shitie.md) | Northern Song | reviewed | — | 0 | 2 | 1 | 0/1 | — |
 | [珊瑚帖](../knowledge/works/shanhu.md) | Northern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [陆游自书诗卷](../knowledge/works/lu-you-zishu-shi.md) | Southern Song | reviewed | — | 0 | 1 | 1 | 0/1 | — |
+| [双松图歌](../knowledge/works/shuangsong-tuge.md) | Southern Song | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [胆巴碑](../knowledge/works/daba-bei.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [城南唱和诗卷](../knowledge/works/chengnan-changhe-shi.md) | Yuan | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [三门记](../knowledge/works/sanmen-ji.md) | Yuan | reviewed | reviewed | 1 | 2 | 1 | 0/1 | — |
@@ -143,7 +148,7 @@ Generated from `data/index/knowledge-v1.json` and the validator warnings. Edit t
 | [游包山集](../knowledge/works/you-baoshan-ji.md) | Ming | reviewed | — | 1 | 1 | 1 | 0/1 | — |
 | [墨池堂选帖](../knowledge/works/mochitang.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
 | [梅雪轩书晦翁不自弃文](../knowledge/works/meixuexuan-buziqi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
-| [王铎行草书自书诗卷](../knowledge/works/wangduo-zishu-shi.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | — |
+| [王铎行草书自书诗卷](../knowledge/works/wangduo-zishu-shi.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [行书论书卷](../knowledge/works/dong-lunshu.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |
 | [送陈子龄会试诗](../knowledge/works/song-chen-ziling.md) | Ming | reviewed | — | 1 | 1 | 1 | 1/1 | — |
 | [楷书归去来兮辞页](../knowledge/works/wen-guiqulai.md) | Ming | reviewed | — | 0 | 1 | 1 | 1/1 | 2 |

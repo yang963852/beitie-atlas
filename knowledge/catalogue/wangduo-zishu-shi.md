@@ -22,6 +22,8 @@ Scroll of Wang Duo’s Own Poems in Running-Cursive Script
 
 书体：行草
 
+延伸阅读：[王铎](../people/wang-duo.md)
+
 作品待考与说明
 
 - 本幅无藏印，亦未见著录，早期流传不明。

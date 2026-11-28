@@ -25,8 +25,8 @@ describe('knowledge authoring format', () => {
 
   it('reports a clean compiled corpus and keeps stable work/object counts', () => {
     expect(compiled.issues).toEqual([]);
-    expect(compiled.knowledge.counts.works).toBe(126);
-    expect(compiled.knowledge.counts.objects).toBe(133);
+    expect(compiled.knowledge.counts.works).toBe(131);
+    expect(compiled.knowledge.counts.objects).toBe(138);
   });
 
   it('generates catalogue pages with witness anchors and source links', () => {

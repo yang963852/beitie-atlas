@@ -10,6 +10,14 @@ relations:
       - src-shm-zhao-shen-colophon
       - src-xiling-shen-chronology
     state: reviewed
+  - from: ouyang-xun
+    to: ouyang-tong
+    type: father-son
+    labelZh: 父子
+    labelEn: Father and son
+    sourceRefs:
+      - src-beilin-daoyin
+    state: reviewed
 ---
 
 # 人物关系
