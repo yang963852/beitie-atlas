@@ -185,6 +185,8 @@ export const zhStrings: Strings = {
   footerNote:
     '年代、坐标与收藏信息都是来源的陈述，不是实时事实。中国大陆的公网访问尚未测试。',
   buildInfoLabel: '构建与数据检查',
+  buildInfoEdition: (version: string, revision: string, date: string) =>
+    `正式版次 ${version}。本次部署构建自 ${revision || '未记录修订'}（${date || '未记录日期'}），可能包含该版次之后的更新。`,
   buildInfoOk: (objects: number, events: number, warnings: number) =>
     `本地检查通过：${objects} 条实物记录，${events} 条有出处的历史事件${
       warnings > 0 ? `，${warnings} 条校验警告` : ''

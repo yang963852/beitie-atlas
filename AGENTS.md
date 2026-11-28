@@ -81,8 +81,10 @@ Do not read the whole repository for a bounded change. Read the matching row, th
 - `main` is the published branch. Branch from current `main`, open one pull request per task, and let the maintainer decide the merge. Delete the branch after merge.
 - The maintainer is the reviewer. `npm run check` green plus the maintainer's merge is the gate. Self-review is sufficient.
 - Apply the evidence checklist in [the atlas workflow](docs/atlas-workflow.md) to additions and coordinate changes. Sort the left column by the represented inscription's period, then date. Keep the production date of each copy visible in its own detail.
+- The `version` in `package.json` is the only author source of the product edition; `package-lock.json` follows it through npm. Do not type the edition into components, manifests or docs. The compiled interface's `beitie-knowledge/1` is a data format version, not the product edition.
+- Merging a checked change to `main` deploys through the Pages workflow. That is continuous deployment, not a formal edition: it needs no tag and no GitHub Release.
+- A formal release is the maintainer's decision. It updates the version and lockfile, records the edition in `CHANGELOG.md`, tags the release merge commit with an annotated `vX.Y.Z`, publishes a GitHub Release from that tag, and verifies the deployment. An agent prepares and checks the candidate, then stops before merge, tag and release. Never move, delete or reuse a published tag; fix a bad edition with a new patch. [Release runbook](docs/release.md)
 - GitHub Pages is the sole website host. [The Pages workflow](.github/workflows/pages.yml) publishes checked `main`; `npm run release` and the release manifest remain the automated data gate for a public build.
-- Publish when the maintainer says so. Merging to `main` deploys through the Pages workflow. A release updates `CHANGELOG.md`, tags `vX.Y.Z`, and keeps the automated gate; a quick live smoke test is recommended.
 - Keep `dist/`, `build/`, local environment files, map keys and deployment credentials out of the source remote.
 - Every image, quotation and map tile keeps its own rights. The repository licence does not relicense third-party material; see [NOTICE.md](NOTICE.md).
 

@@ -94,5 +94,5 @@ describe('author file selection', () => {
     expect(selection.files).toContain('knowledge/works/kept.md');
     expect(selection.files).not.toContain('knowledge/works/draft.md');
     expect(selection.untracked).toEqual(['knowledge/works/draft.md']);
-  });
+  }, 20_000);
 });

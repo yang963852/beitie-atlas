@@ -1,7 +1,7 @@
 {
   "name": "beitie-atlas",
   "private": true,
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Between Steles — a learning library of Chinese calligraphy, its makers and surviving witnesses from antiquity to the present",
   "type": "module",
   "engines": {
@@ -32,11 +32,13 @@
     "check:status": "tsx scripts/knowledge-status.ts --check",
     "check:interface": "tsx scripts/knowledge-compile.ts --check",
     "check:isolation": "tsx scripts/check-isolation.ts",
+    "check:version": "tsx scripts/check-version.ts",
+    "check:tag": "tsx scripts/check-version.ts --tag",
     "check:reproducible": "tsx scripts/check-reproducible.ts",
     "knowledge:package": "tsx scripts/knowledge-package.ts",
     "check:map-key": "tsx scripts/check-map-key.ts",
     "test": "vitest run",
-    "check": "npm run check:interface && npm run typecheck && npm run check:data && npm run check:knowledge && npm run check:status && npm run check:isolation && npm run check:reproducible && npm run check:docs && npm run test && npm run knowledge:package && vite build"
+    "check": "npm run check:interface && npm run typecheck && npm run check:data && npm run check:knowledge && npm run check:status && npm run check:isolation && npm run check:reproducible && npm run check:version && npm run check:docs && npm run test && npm run knowledge:package && vite build"
   },
   "dependencies": {
     "react": "19.3.1",

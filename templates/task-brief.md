@@ -15,4 +15,6 @@ Use this in a coordinated Issue. A small PR may state the applicable items in it
 
 **Web example.** From `#/person/yan-zhenqing`, reach `#/work/yan-qinli-bei`, refresh and follow a return link with the keyboard. Keep the links readable without a map key. Record the result in a PR for the coordinator.
 
+**Release example.** Prepare the edition the maintainer has authorised without publishing it. Update `package.json`, `package-lock.json` and `CHANGELOG.md`, run `npm run check`, `npm run check:release`, `npm run check:version` and `npm run release`, and open one release PR. Do not merge, tag or create a GitHub Release; stop and report the commands run and any unverified step.
+
 > 请先读仓库的 AGENTS.md、docs/START-HERE.md 和分配的 Issue。用中文简述读者要得到什么、哪些文件或条目在范围内、什么算做完（可选）。完成本任务，列出所用出处或实际测试结果、还存在的问题和下一位接手人。按任务单提交，不替发起人决定合并或出版。

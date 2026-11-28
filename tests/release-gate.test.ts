@@ -211,6 +211,7 @@ function writeFixture(root: string, data = fixture()): void {
     mkdirSync(join(root, 'knowledge', kind), { recursive: true });
   }
   mkdirSync(join(root, 'data'), { recursive: true });
+  writeAt(root, 'package.json', JSON.stringify({ name: 'beitie-release-fixture', version: '1.0.0' }, null, 2) + '\n');
   writeWork(root, data);
   writeObject(root, data);
   writeAt(root, 'knowledge/places/' + data.place.id + '.md', doc({
@@ -362,8 +363,9 @@ describe('artifact verification', () => {
     writeFixture(root);
     const report = runReleaseGate(root);
     writeArtifact(root, releaseHtml);
-    writeReleaseManifest(root, report, 'fixture-revision');
+    const manifest = writeReleaseManifest(root, report, 'fixture-revision');
 
+    expect(manifest.appVersion).toBe('1.0.0');
     const check = verifyReleaseArtifact(root, report.counts);
     expect(check.problems).toEqual([]);
     expect(check.ok).toBe(true);
@@ -395,6 +397,24 @@ describe('artifact verification', () => {
     expect(check.ok).toBe(false);
     expect(check.problems.join(' ')).toContain('counts do not match');
     expect(verifyReleaseArtifact(root, { ...report.counts, peopleArticles: 1 }).problems.join(' ')).toContain('peopleArticles');
+  });
+
+  it('rejects a manifest whose edition does not match package.json', () => {
+    const root = tempRoot();
+    writeFixture(root);
+    const report = runReleaseGate(root);
+    writeArtifact(root, releaseHtml);
+    writeReleaseManifest(root, report, null);
+    writeFileSync(
+      join(root, 'package.json'),
+      JSON.stringify({ name: 'beitie-release-fixture', version: '2.0.0' }),
+    );
+
+    const check = verifyReleaseArtifact(root, report.counts);
+
+    expect(check.ok).toBe(false);
+    expect(check.problems.join(' ')).toContain('edition 1.0.0');
+    expect(check.problems.join(' ')).toContain('2.0.0');
   });
 
   it('removes a previous output so a failed release cannot reuse it', () => {

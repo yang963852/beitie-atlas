@@ -198,6 +198,8 @@ export const enStrings = {
   footerNote:
     'Dates, coordinates, and collections are source claims, not live facts. Mainland public-network access has not been tested.',
   buildInfoLabel: 'Build and data checks',
+  buildInfoEdition: (version: string, revision: string, date: string) =>
+    `Formal edition ${version}. This deployment was built from ${revision || 'an unrecorded revision'} on ${date || 'an unrecorded date'} and may include changes after that edition.`,
   buildInfoOk: (objects: number, events: number, warnings: number) =>
     `Local checks passed: ${objects} object records, ${events} sourced events${
       warnings > 0 ? `, ${warnings} validator warnings` : ''

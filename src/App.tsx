@@ -1,7 +1,7 @@
 import { Component, lazy, Suspense, useSyncExternalStore, type ErrorInfo, type ReactNode } from 'react';
 import { OpeningDesk } from './components/OpeningDesk';
 import { LocaleSwitch } from './components/LocaleSwitch';
-import { EDITION_LABEL } from './domain/version';
+import { BUILD_STAMP } from './domain/version';
 import { LocaleProvider, useLocale, type Locale } from './i18n';
 
 /**
@@ -53,7 +53,7 @@ function RouteFallback() {
         </p>
       </main>
       <footer className="footer">
-        <span className="footer__note">{EDITION_LABEL[locale]}</span>
+        <span className="footer__note">{BUILD_STAMP[locale]}</span>
       </footer>
     </div>
   );

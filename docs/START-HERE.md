@@ -24,7 +24,7 @@ For the owner or an agent preparing a technical decision, start with the [Chines
 | Edit a work, witness, person or reading note | [Editorial workflow](atlas-workflow.md), [Chinese templates](../knowledge/_templates/) | A narrow PR linking the subject, evidence, contributor and open questions |
 | Develop a web feature | [Engineering plan](engineering-plan.md), [design system](design-system.md), [data boundary](../src/domain/data.ts) | A reproducible reader path and check results in a PR |
 | Review a contribution | [Project rules](../AGENTS.md), the Issue or PR and its evidence | Findings, optionally; the owner decides the merge |
-| Coordinate priorities or release | [Open Issues and PRs](../CONTRIBUTING.md#coordinators-queue), [milestone board](iteration-board.md), [release runbook](release.md) | Scope, merge decision and release tag |
+| Coordinate priorities or release | [Open Issues and PRs](../CONTRIBUTING.md#coordinators-queue), [milestone board](iteration-board.md), [release runbook](release.md) | Scope, merge decision and release authorisation |
 
 Each assignment supplies a reader outcome, subject or files, base revision, evidence and a stopping point; an acceptance example is optional. Copy the [bounded task brief](../templates/task-brief.md). GitHub handles repository permissions. A task description provides workflow guidance; no repository access is granted by an assignment.
 
@@ -58,11 +58,11 @@ Run `npm run check` again after implementation. Push the checked branch to the c
 | Catalogue index and GitHub reading copies | Generated from `knowledge/`; never hand-edit `knowledge/catalogue/` or `knowledge/README.md` | `npm run knowledge:generate` and commit the generated diff |
 | Website and navigation | `src/App.tsx`, `src/components/`, `src/styles.css`, `src/i18n/`; import only the compiled interface | Exercise entry, link refresh, keyboard, narrow screen and 200% zoom |
 | Compiler, interface or validation | `scripts/lib/knowledge-*.ts`, `src/domain/`, the generated `data/index/knowledge-v1.json` | Run `npm run check:data`, `npm run check:interface`, `npm run check:isolation`, `npm run check:reproducible` |
-| Formal publication | `scripts/release.ts`, [release runbook](release.md) | Verify all reviewed inputs, the release marker, the manifest and a live smoke test |
+| Formal publication | `scripts/release.ts`, [release runbook](release.md) | Verify the version, lockfile, CHANGELOG, tag and artifact; only the maintainer tags and publishes |
 
 The website reads `data/index/knowledge-v1.json`; it does not import author Markdown. That file is generated on demand and is not in version control, so a fresh clone builds it before `dev`, `build` or `check`. The download package is generated at build time from `knowledge/` and served at `/download/beitie-knowledge.zip`. The pre-rebuild JSON corpus and its migration tools are retired; their records are in the archive tags listed in [the archive index](archive.md).
 
-The public edition follows the `version` in `package.json` and is built and deployed through `npm run release`. The Pages workflow verifies the release marker, the manifest counts and the downloadable library ZIP. Deployment evidence for the earlier 1.1 release is recorded in delivery 051 in the `archive-milestones-040-051-2026-11-26` tag.
+Merging a checked change to `main` deploys the site continuously. A formal edition is a separate maintainer decision: it follows the `version` in `package.json`, records the edition in `CHANGELOG.md`, tags the release merge commit and publishes a GitHub Release. The interface footer shows the formal edition together with the current build revision, so the live site may be newer than the last edition. The Pages workflow verifies the release marker, the manifest edition and counts, and the downloadable library ZIP. Deployment evidence for the earlier 1.1 release is recorded in delivery 051 in the `archive-milestones-040-051-2026-11-26` tag. [Release runbook](release.md)
 
 ## Reusing this repository
 
