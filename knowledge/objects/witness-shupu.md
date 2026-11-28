@@ -3,7 +3,7 @@ schemaVersion: 2
 work: shupu
 objectType: ink-manuscript
 titleZh: 孙过庭《书谱》
-titleEn: Treatise on Calligraphy
+titleEn: Essay on Calligraphy
 dateKind: single
 dateStart: 687
 dateMonth: null
@@ -14,8 +14,8 @@ dateOriginal: 垂拱三年寫記
 dateCertainty: documented
 dateNote: null
 catalogNumber: 故書000058N000000000
-dimensionsRaw: 本幅 26.5 × 900.8 cm
-dimensionsNote: null
+dimensionsRaw: 本幅26.5x900.8公分；隔水二26.6x10.1公分；隔水一27.1x13.8公分
+dimensionsNote: 本幅为纸，两处隔水为绫；尺寸依馆方各部位分记。
 survival: surviving
 relationships: []
 collectionKind: collection-institution
@@ -23,10 +23,10 @@ collectionPlace: place-taipei-palace
 collectionSources:
   - src-catalogue-shupu
   - src-dpm-shupu-ketie
-collectionAccessedAt: 2026-11-18
+collectionAccessedAt: 2026-11-28
 collectionAsOf: null
-collectionNote: null
-collectionNoteZh: null
+collectionNote: 文物统一编号故書000058N000000000；作品号故書00005800000。馆方未记入藏日期。
+collectionNoteZh: 文物统一编号故書000058N000000000；作品号故書00005800000。馆方未记入藏日期。
 events:
   - id: ev-witness-shupu-1
     type: documented
@@ -91,8 +91,12 @@ reviewState: reviewed
 
 ### 中文
 
-- 卷首写“书谱卷上”，隔水上的题签却写“序下”。临卷时，可以分别看孙过庭的草书与后人题签的楷书。
+- 宋徽宗题签作「序下」，与卷首「书谱卷上」不同；馆方未解释二者关系。
+- 正文自称六篇两卷，下卷是否另有传世墨迹待考。
+- 展厅与入藏日期待考。
 
 ### English
 
-- The manuscript opens with “upper scroll”, while the label on the mounting reads “lower preface”. Compare Sun’s cursive hand with the later regular-script label.
+- The label attributed to Huizong says “lower preface”, unlike the manuscript’s “upper scroll”; the museum does not explain the difference.
+- Sun describes six chapters in two juan; whether ink of the lower scroll survives elsewhere remains open.
+- The current gallery and accession date have not been verified.

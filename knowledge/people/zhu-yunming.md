@@ -6,8 +6,8 @@ dynastyId: ming
 dynastySource: src-shm-zhu-yunming
 aliases: [枝山, 枝指生]
 state: reviewed
-works: []
-objects: []
+works: [zhu-mudan]
+objects: [zhu-mudan-scroll]
 sources: [src-shm-zhu-yunming, src-shm-zhu-mudan]
 ---
 
@@ -25,12 +25,12 @@ sources: [src-shm-zhu-yunming, src-shm-zhu-mudan]
 
 ### 代表作与本库关联
 
-上海博物馆著录多件：草书《秋日闲居诗》扇页（金笺，纵十八点八、横五十二厘米）、草书《贾至早朝诗》轴（纸本，吴门派，杨瓞緜等捐赠）、草书《牡丹赋》卷（纸本，纵三十点八、横九百二十五点五厘米，戚叔玉 1980 年捐赠）。本库未另建这些作品档案，此处只记馆方所述。[上海博物馆，草书贾至早朝诗轴](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00166290) · [上海博物馆，草书牡丹赋卷](https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/CI00000459)
+上海博物馆著录多件：草书《秋日闲居诗》扇页（金笺，纵十八点八、横五十二厘米）、草书《贾至早朝诗》轴（纸本，吴门派，杨瓞緜等捐赠）、草书《牡丹赋》卷（纸本，纵三十点八、横九百二十五点五厘米，戚叔玉 1980 年捐赠）。本库已为[《牡丹赋》](../works/zhu-mudan.md)建立作品与实物记录；书写年份、赋文作者与正式馆藏号仍不详，其余两件暂未另建作品档案。[上海博物馆，草书贾至早朝诗轴](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00166290) · [上海博物馆，草书牡丹赋卷](https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/CI00000459)
 
 
 ### 可临之作
 
-本页尚未关联可供临写的作品页。
+- [《牡丹赋》](../works/zhu-mudan.md)：上海博物馆所藏祝允明草书纸本卷，纵30.8厘米、横925.5厘米；具体书写年份不详。
 ## English
 
 ### Life and identity
@@ -43,8 +43,8 @@ The museum records that he excelled at writing in every script, especially wild 
 
 ### Works in this library
 
-The Shanghai Museum records several works: a cursive fan leaf of Poems on Leisure in Autumn (gold paper, 18.8 by 52 cm), a cursive scroll of Jia Zhi's poem at dawn (paper, Wu school, gift of Yang Diemian and others), and a cursive scroll of the Peony Fu (paper, 30.8 by 925.5 cm, gift of Qi Shuyu in 1980). This library holds no separate work records; only the museum's accounts are given. [Shanghai Museum, Jia Zhi poem](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00166290) · [Shanghai Museum, Peony Fu](https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/CI00000459)
+The Shanghai Museum records several works: a cursive fan leaf of Poems on Leisure in Autumn (gold paper, 18.8 by 52 cm), a cursive scroll of Jia Zhi's poem at dawn (paper, Wu school, gift of Yang Diemian and others), and a cursive scroll of the Peony Fu (paper, 30.8 by 925.5 cm, gift of Qi Shuyu in 1980). The library now has separate work and object records for the [*Peony Rhapsody*](../works/zhu-mudan.md); its writing year, the rhapsody author and its formal accession number remain unknown. The other two works do not yet have separate records here. [Shanghai Museum, Jia Zhi poem](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00166290) · [Shanghai Museum, Peony Fu](https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/CI00000459)
 
 ### Works to copy
 
-No work page is linked to this person yet.
+- [*Peony Rhapsody*](../works/zhu-mudan.md): Zhu Yunming’s cursive paper scroll in the Shanghai Museum, 30.8 cm high and 925.5 cm long; the precise writing year is unknown.
