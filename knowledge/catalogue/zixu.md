@@ -22,7 +22,7 @@ Autobiography
 
 书体：草书
 
-延伸阅读：[11｜阅读路径：行草——从信札到狂草](../notes/path-03-running-cursive.md)
+延伸阅读：[怀素](../people/huai-su.md) · [11｜阅读路径：行草——从信札到狂草](../notes/path-03-running-cursive.md)
 
 作品待考与说明
 
