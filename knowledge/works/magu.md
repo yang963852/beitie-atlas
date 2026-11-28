@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: 771
 dateEndMonth: null
 dateEra: null
-dateOriginal: null
+dateOriginal: 唐大历六年（公元771年）
 dateCertainty: documented
 dateNote: null
 script: 楷书

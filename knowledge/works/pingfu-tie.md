@@ -22,6 +22,7 @@ attribution:
   - role: author-and-calligrapher
     name: 陆机
     nameEn: Lu Ji
+    person: lu-ji
     certainty: documented
     sources:
       - src-dpm-pingfu

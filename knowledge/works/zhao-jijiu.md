@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: null
 dateEndMonth: null
 dateEra: 清
-dateOriginal: null
+dateOriginal: 清，赵之谦书
 dateCertainty: documented
 dateNote: null
 script: 篆书
@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 赵之谦
     nameEn: Zhao Zhiqian
+    person: zhao-zhiqian
     certainty: documented
     sources:
       - src-catalogue-zhao-jijiu

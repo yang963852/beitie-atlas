@@ -66,11 +66,21 @@ sources:
 
 本库所收有[《兰亭序》](../works/lanting.md)、[《快雪时晴帖》](../works/kuaixue.md)、[《十七帖》](../works/shiqi-tie.md)、[《万岁通天帖》](../works/wansui-tongtian-tie.md)、[《远宦帖》](../works/yuanhuan.md)、[《平安何如奉橘三帖》](../works/pingan-hero-fengju.md)、[《行穰帖》](../works/xingrang.md)、[《上虞帖》](../works/shangyu.md)、[《寒切帖》](../works/hanqie.md)、[《乐毅论》](../works/leyilun.md)、[《黄庭经》](../works/huangting.md)与[《宣示表》](../works/xuanshi-biao.md)。馆方把这些分别著录为摹本、拓本或传称的临本；这里只说本库收了什么，不把某一件当作他亲笔的定本。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-○ 本库所收王羲之诸件皆为摹本或拓本：神龙本《兰亭序》为唐摹，[《远宦帖》](../works/yuanhuan.md)为双钩廓填，[《平安何如奉橘三帖》](../works/pingan-hero-fengju.md)的摹写年代两说并存，[《行穰帖》](../works/xingrang.md)为唐双钩摹本，[《上虞帖》](../works/shangyu.md)与[《寒切帖》](../works/hanqie.md)馆方定为唐摹本，[《乐毅论》](../works/leyilun.md)、[《黄庭经》](../works/huangting.md)只有宋拓刻本。[《宣示表》](../works/xuanshi-biao.md)刻本多称据其临本摹刻，此说属传称。天津博物馆说其真迹早已毁佚。[天津博物馆，寒切帖](https://www.tjbwg.cn/cn/collectionInfo.aspx?id=2384)
+- [《兰亭序》](../works/lanting.md)：王羲之353年序文，原迹不存，可对看唐摹神龙本与定武刻拓本。
+- [《快雪时晴帖》](../works/kuaixue.md)：王羲之的行书信札传世本，一般认为是唐代精摹本，与王献之《中秋帖》、王珣《伯远帖》合称三希。
+- [《十七帖》](../works/shiqi-tie.md)：王羲之致周抚的一组草书信札，原墨迹已佚，今以刻本流传。
+- [《万岁通天帖》](../works/wansui-tongtian-tie.md)：697年弘文馆勾填的王氏一门书信卷，今存七人十通，藏辽宁省博物馆，不是王氏真迹。
+- [《远宦帖》](../works/yuanhuan.md)：王羲之致周抚的草书信札，存世本为双钩廓填，亦有《十七帖》刻本。
+- [《平安何如奉橘三帖》](../works/pingan-hero-fengju.md)：王羲之的一卷三札，馆方对摹写年代有「唐代以前」与「唐人双钩廓填」两说。
+- [《行穰帖》](../works/xingrang.md)：王羲之《行穰帖》的唐代双钩摹本，馆方认为存原信前半，今藏普林斯顿大学艺术博物馆。
+- [《上虞帖》](../works/shangyu.md)：王羲之《上虞帖》的硬黄纸本唐摹本，有徽宗签题与历代内府印记。
+- [《寒切帖》](../works/hanqie.md)：王羲之答两封来信的唐摹本草书纸本，五行五十一字，后有董其昌等跋。
+- [《乐毅论》](../works/leyilun.md)：王羲之小楷《乐毅论》，原墨迹不存，本库所读为宋拓《晋唐小楷》册。
+- [《黄庭经》](../works/huangting.md)：王羲之小楷《黄庭经》，本库所读为宋拓《晋唐小楷》册，不是墨迹。
+- [《宣示表》](../works/xuanshi-biao.md)：钟繇请魏文帝接受孙权归附的小楷奏文，真迹早佚，传世刻本一般被认为据王羲之临本摹刻。
 
 ## English
 
@@ -90,8 +100,17 @@ Scripts and teacher lineage remain open; the cited catalogues do not address the
 
 The library holds the [Orchid Pavilion Preface](../works/lanting.md), [Letter of Clear Snow](../works/kuaixue.md), [Seventeen Letters](../works/shiqi-tie.md), [Wan Sui Tong Tian scroll](../works/wansui-tongtian-tie.md), [Yuanhuan Letter](../works/yuanhuan.md), [Three Letters Ping'an, Heru and Fengju](../works/pingan-hero-fengju.md), [Xingrang Letter](../works/xingrang.md), [Shangyu Letter](../works/shangyu.md), [Hanqie Letter](../works/hanqie.md), [On Yue Yi](../works/leyilun.md), [Yellow Court Classic](../works/huangting.md) and [Memorial of Declaration](../works/xuanshi-biao.md). The museums catalogue these as tracing copies, rubbings or traditionally attributed transcriptions; this page states only what the library holds and does not treat any one of them as a settled autograph.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-○ Everything collected here for Wang Xizhi is a tracing copy or a rubbing: the Shenlong Orchid Pavilion is a Tang copy, the [Yuanhuan Letter](../works/yuanhuan.md) a double-outline tracing, the [Three Letters](../works/pingan-hero-fengju.md) of two datings, the [Xingrang Letter](../works/xingrang.md) a Tang double-outline copy, [Shangyu](../works/shangyu.md) and [Hanqie](../works/hanqie.md) both called Tang tracing copies, and [On Yue Yi](../works/leyilun.md) and [Yellow Court Classic](../works/huangting.md) known only through Song rubbings. The [Memorial of Declaration](../works/xuanshi-biao.md) engravings are traditionally said to reproduce his transcription, a traditional attribution. The Tianjin Museum states that his autographs were destroyed long ago. [Tianjin Museum, Hanqie letter](https://www.tjbwg.cn/cn/collectionInfo.aspx?id=2384)
+- [Preface to the Orchid Pavilion](../works/lanting.md): Wang Xizhi’s 353 preface, whose original is lost and which survives through the Tang Shenlong tracing and the Dingwu engraved rubbing.
+- [Clearing after Snow](../works/kuaixue.md): A surviving copy of Wang Xizhi’s running-script letter generally considered a fine Tang tracing, grouped with Wang Xianzhi’s Mid-Autumn Letter and Wang Xun’s Boyuan Letter as the Three Rarities.
+- [Seventeen-Day Letters](../works/shiqi-tie.md): A group of cursive letters by Wang Xizhi to Zhou Fu, whose ink original is lost and which survives through engraved editions.
+- [Model Letters of the Wan Sui Tong Tian Year](../works/wansui-tongtian-tie.md): A scroll traced and ink-filled by the Hongwen Academy in 697, preserving ten letters by seven Wang-family hands at the Liaoning Provincial Museum rather than Wang autographs.
+- [Letter from a Distant Post](../works/yuanhuan.md): Wang Xizhi’s cursive letter to Zhou Fu, surviving in a double-outline ink-filled copy and also in an engraved Seventeen Letters edition.
+- ["Three Letters: Ping'an, Heru and Fengju"](../works/pingan-hero-fengju.md): One scroll combining three letters by Wang Xizhi, whose catalogue and exhibition texts describe the tracing both as pre-Tang and as Tang double-outline filling.
+- [Xingrang Letter](../works/xingrang.md): A Tang double-outline tracing of Wang Xizhi’s Xingrang Letter, considered by the museum to preserve the first half of the original and now at the Princeton University Art Museum.
+- [Shangyu Letter](../works/shangyu.md): A Tang tracing of Wang Xizhi’s Shangyu Letter on hardened yellow paper, bearing Huizong’s title slip and successive imperial-collection seals.
+- [Piercing Cold Letter](../works/hanqie.md): A Tang tracing copy on paper of Wang Xizhi’s cursive reply to two letters, in five lines and fifty-one characters with later colophons including Dong Qichang’s.
+- [On Yue Yi](../works/leyilun.md): Wang Xizhi’s small-regular-script On Yue Yi, whose ink original is lost and which is read here through a Song rubbing in the Jin-Tang Small Script album.
+- [Yellow Court Classic](../works/huangting.md): Wang Xizhi’s small-regular-script Yellow Court Classic, read here through a Song rubbing in the Jin-Tang Small Script album rather than an ink manuscript.
+- [Memorial of Declaration](../works/xuanshi-biao.md): Zhong Yao’s small-regular-script memorial asking Cao Pi to accept Sun Quan’s submission, whose lost original is generally said to survive through engravings after Wang Xizhi’s transcription.

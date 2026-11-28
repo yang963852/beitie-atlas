@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: null
 dateEndMonth: null
 dateEra: 明
-dateOriginal: null
+dateOriginal: 明正德五年（1510年）
 dateCertainty: documented
 dateNote: null
 script: null
@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 祝允明
     nameEn: Zhu Yunming
+    person: zhu-yunming
     certainty: documented
     sources:
       - src-catalogue-zhu-santi

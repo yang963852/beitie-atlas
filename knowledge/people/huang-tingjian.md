@@ -38,11 +38,11 @@ sources: [src-dpm-zhushangzuo, src-catalogue-songfeng, src-ezbwg-songfeng, src-e
 
 本库所收[《松风阁诗》](../works/songfeng.md)与[《诸上座帖》](../works/zhushangzuo-tie.md)。鄂州市博物馆记崇宁元年（1102）他罢太平州、改「管勾洪州玉隆观」、九月停樊口而写成《松风阁诗》；[《诸上座帖》](../works/zhushangzuo-tie.md)九十二行，今藏故宫。[鄂州市博物馆，苏门三绝展](https://ezbwg.com/ReadNews.asp?NewsId=1736)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《松风阁诗》](../works/songfeng.md)为墨迹纸本，[《诸上座帖》](../works/zhushangzuo-tie.md)为纸本手卷草书、卷末另有一段大字行楷自识，均属墨迹一路。馆方著录的字数与鄂州日报一篇有 153 与 150 之异，本库不引具体字数，两说并存。
+- [《松风阁诗》](../works/songfeng.md)：黄庭坚1102年九月在武昌写的七言行书诗，纸本墨迹今藏台北故宫。
+- [《诸上座帖》](../works/zhushangzuo-tie.md)：黄庭坚为李任道录写文益《语录》的九十二行草书纸本，署「山谷老人书」。
 
 ## English
 
@@ -66,8 +66,7 @@ The account above of his regular and cursive script and the Shangu zilun passage
 
 The library holds the [Poem on the Hall of Wind and Pines](../works/songfeng.md) and the [Discourse to the Venerable Ones](../works/zhushangzuo-tie.md). The Ezhou Municipal Museum records that in 1102 he was removed from Taiping, given the Yulong Abbey sinecure and wrote the poem after stopping at Fankou in the ninth month; the Discourse runs ninety-two lines and is now in the Palace Museum. [Ezhou Municipal Museum, the Su family exhibition](https://ezbwg.com/ReadNews.asp?NewsId=1736)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. The [Poem on the Hall of Wind and Pines](../works/songfeng.md) is ink on paper, and the [Discourse to the Venerable Ones](../works/zhushangzuo-tie.md) is an ink handscroll in cursive with a large running-regular note of his own after the sayings, both ink witnesses. The museum record and an Ezhou Daily piece differ on the character count (153 against 150); this library cites no count and keeps both readings.
+- [Poem on the Hall of Wind and Pines](../works/songfeng.md): Huang Tingjian’s seven-character running-script poem written at Wuchang in the ninth month of 1102, an ink manuscript on paper now at the National Palace Museum in Taipei.
+- [Discourse to the Venerable Ones](../works/zhushangzuo-tie.md): Huang Tingjian’s ninety-two-line cursive paper scroll of Wen Yi’s recorded sayings copied for Li Rendao and signed Valley Old Man writes.

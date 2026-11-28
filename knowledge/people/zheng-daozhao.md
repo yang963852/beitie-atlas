@@ -27,11 +27,10 @@ sources: [src-ytdsy-zhengdaozhao, src-laizhou-yunfeng, src-yantai-zheng]
 
 本库所收[《郑文公碑》](../works/zheng-wengong.md)即郑文公上碑与下碑，刻于天柱、云峰二山，碑文颂扬其父才智功德；其题刻分布于云峰山摩崖二十处、城东大基山十五处、天柱山八处。云峰山北魏刻石二十三处，1988 年由国务院公布为全国重点文物保护单位，隶属莱州市博物馆管理。[烟台市委党史研究院，魏碑体鼻祖郑道昭](https://dsyjy.yantai.gov.cn/art/2010/11/15/art_1324_377720.html) · [莱州市人民政府，云峰山摩崖石刻保护工作情况](https://www.laizhou.gov.cn/art/2021/11/12/art_23203_2932809.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《郑文公碑》](../works/zheng-wengong.md)为摩崖原石一路，书迹刻于石，可据原石直接读；云峰山刻石的保护级别与归属见莱州市政府通报。本页不据拓本或复制品写成亲笔，原石与拓本分记。
+- [《郑文公碑》](../works/zheng-wengong.md)：郑道昭为父记功的北魏摩崖刻石，上碑在平度天柱山、下碑在莱州云峰山。
 
 ## English
 
@@ -47,8 +46,6 @@ The Yantai government page calls him "the ancestor of the stele style," records 
 
 The [Zheng Wen Gong stele](../works/zheng-wengong.md) held here is the upper and lower steles carved on Mount Tianzhu and Mount Yunfeng, praising his father's wisdom and merit; his inscriptions are distributed across twenty cliff sites on Yunfeng, fifteen on Daji and eight on Tianzhu. Twenty-three Northern Wei carvings on Yunfeng were declared a national key cultural relic in 1988 and are managed by the Laizhou Museum. [Yantai Party History Institute, Zheng Daozhao](https://dsyjy.yantai.gov.cn/art/2010/11/15/art_1324_377720.html) · [Laizhou government, conservation of the Yunfeng cliff carvings](https://www.laizhou.gov.cn/art/2021/11/12/art_23203_2932809.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The [Zheng Wen Gong stele](../works/zheng-wengong.md) is a cliff original, the writing cut into stone and readable from the rock; its protection status and custody are recorded in the Laizhou government notice. No rubbing or reproduction is written up as an autograph; original and rubbing are kept apart.
+- [Inscriptions for Duke Wen of Zheng](../works/zheng-wengong.md): Northern Wei cliff inscriptions by Zheng Daozhao recording his father’s deeds, with the upper stele at Tianshu Mountain in Pingdu and the lower at Yunfeng Mountain in Laizhou.

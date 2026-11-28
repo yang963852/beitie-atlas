@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: null
 dateEndMonth: null
 dateEra: 清
-dateOriginal: null
+dateOriginal: 清，邓石如书
 dateCertainty: documented
 dateNote: null
 script: 楷书
@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 邓石如
     nameEn: Deng Shiru
+    person: deng-shiru
     certainty: documented
     sources:
       - src-catalogue-deng-kaishu

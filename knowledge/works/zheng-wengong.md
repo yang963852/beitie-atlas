@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 郑道昭
     nameEn: Zheng Daozhao
+    person: zheng-daozhao
     certainty: documented
     sources:
       - src-yantai-zheng

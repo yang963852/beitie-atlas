@@ -36,11 +36,11 @@ sources: [src-dpm-wangchong, src-shm-baoshan]
 
 本库所收[《游包山集》](../works/you-baoshan-ji.md)与[《送陈子龄会试诗页》](../works/song-chen-ziling.md)。上海博物馆记 1520 年游包山、1526 年补庵索书、1527 年抄录二十二首，文嘉称「天才妙绝」；另有二十五首之说，未据原卷核对，两说并存。[上海博物馆，历代书法馆换展](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/I00004231)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《送陈子龄会试诗页》](../works/song-chen-ziling.md)为纸本楷书墨迹，馆方按风格定为晚年之笔；[《游包山集》](../works/you-baoshan-ji.md)为纸本小楷墨迹，馆方以此卷属王宠，刘九庵疑非其手，两说并存。墨迹载体不抹去归名争议，字数据馆方所记分列不合并。
+- [《游包山集》](../works/you-baoshan-ji.md)：王宠1527年小楷抄录八年前游包山所作二十二首诗的纸本。
+- [《送陈子龄会试诗》](../works/song-chen-ziling.md)：王宠为门人陈子龄赴会试所作三首诗的楷书册页。
 
 ## English
 
@@ -62,8 +62,7 @@ The account above of his small regular script taking models from the Jin and Tan
 
 The library holds the [Baoshan excursion album](../works/you-baoshan-ji.md) and the [poem leaf for Chen Ziling](../works/song-chen-ziling.md). The Shanghai Museum records the excursion of 1520, the request to copy in 1526 and the transcription of twenty-two poems in 1527, praised by Wen Jia as "genius beyond compare"; a twenty-five-poem reading also exists and has not been checked against the original, so both are kept. [Shanghai Museum, rotation of the calligraphy gallery](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/I00004231)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. The [poem leaf for Chen Ziling](../works/song-chen-ziling.md) is ink on paper in regular script, dated by style by the museum to his late years; the [Baoshan excursion album](../works/you-baoshan-ji.md) is ink on paper in small regular script, attributed to Wang Chong by the museum, while Liu Jiuan doubted the hand, and both readings are kept. The ink carrier does not erase the dispute over attribution, and the character counts are recorded as the museums state them without merging.
+- [Poems from the Baoshan Excursion](../works/you-baoshan-ji.md): A 1527 small-regular-script paper work in which Wang Chong copied twenty-two poems written on his Bao Mountain excursion eight years earlier.
+- [Poems for Chen Ziling on Leaving for the Examination](../works/song-chen-ziling.md): A regular-script album leaf of three poems Wang Chong wrote for his student Chen Ziling before the metropolitan examination.

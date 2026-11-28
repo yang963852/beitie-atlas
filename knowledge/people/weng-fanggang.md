@@ -33,11 +33,10 @@ sources:
 
 本库所收的[《礼器碑》](../works/liqi-bei.md)条目引翁方纲说碑文由七人书写。这一说法以有出处的学术意见存录，本项目不据此生成七名确定书家。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-◎ 本库所收[《礼器碑》](../works/liqi-bei.md)的实物记录为原石，东汉永寿二年（156）立，今藏曲阜汉魏碑刻陈列馆，书迹刻于石，可据原石直接读。翁方纲「七人书写」之说在该实物记录中以中立立场存录，是学术意见而非定论；本页只记碑的载体，不把七人写成确定书家。
+- [《礼器碑》](../works/liqi-bei.md)：东汉156年隶书碑，记韩敕修孔庙、铸礼器，原石藏曲阜汉魏碑刻陈列馆。
 
 ## English
 
@@ -55,8 +54,6 @@ Scripts and teacher lineage remain open; the cited catalogues do not address the
 
 The library's record for the [Liqi Stele](../works/liqi-bei.md) cites Weng Fanggang's view that seven people wrote the inscription. The view is kept as a sourced scholarly opinion, and the project does not turn it into seven established calligraphers.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-◎ The witness recorded for the [Liqi Stele](../works/liqi-bei.md) here is the original stone, erected in 156 and now kept at the Han-Wei stele exhibition hall in Qufu; the writing is cut into stone and can be read from the original. Weng Fanggang's view that seven people wrote it is kept with a neutral stance in that object record as a scholarly opinion, not a settled conclusion; this page records the carrier of the stele only and does not write the seven as established calligraphers.
+- [Stele of the Ritual Vessels](../works/liqi-bei.md): A 156 clerical-script stele recording Han Chi’s repair of the Confucius Temple and casting of ritual vessels, with its stone at the Han-Wei Stele Hall in Qufu.

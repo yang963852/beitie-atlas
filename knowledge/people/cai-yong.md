@@ -27,11 +27,10 @@ sources: [src-dpm-xiping-shijing, src-chnmuseum-xiping, src-chnmus-xiping-shijin
 
 本库所收[《熹平石经》](../works/xiping-stone-classics.md)刻于汉熹平四年（175），内容包括《诗》《书》《礼》《易》《春秋》五经，并《公羊》《论语》二传；国博记光和六年（183）刻成四十六碑。故宫引《后汉书·蔡邕传》「邕乃自书丹于碑，使工镌刻立于太学门外」，残石今分藏河南洛阳博物馆、偃师商城博物馆、陕西西安碑林博物馆等处。[故宫博物院，熹平石经残石](https://www.dpm.org.cn/collection/impres/231915.html) · [中国国家博物馆，「熹平石经」残石](https://www.chnmuseum.cn/zp/zpml/kgfjp/202008/t20200824_247256.shtml)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。石经为原石残块一路，但故宫的表述是「传为蔡邕所书」，国博只说「蔡邕等人以隶书写定」，并未把书丹一事写成确证。本库照馆方措辞记作传统归属，不写成蔡邕亲笔。
+- [《熹平石经》](../works/xiping-stone-classics.md)：东汉朝廷校定经文后立于洛阳太学的八分隶书残石，本库只收国博目录所见残石。
 
 ## English
 
@@ -47,8 +46,6 @@ The museums agree that the classics are in clerical script: the Palace Museum ca
 
 The [Xiping stone classics](../works/xiping-stone-classics.md) held here were cut in 175 and cover the Poetry, Documents, Rites, Changes and Spring and Autumn Annals together with the Gongyang and Analects commentaries; the National Museum records forty-six steles completed in 183. The Palace Museum quotes the Hou Hanshu biography: "Cai Yong then wrote the text in red on the stones and had craftsmen carve them, setting them up outside the Imperial Academy." Surviving fragments are held in Luoyang Museum, the Yanshi Shangcheng Museum and the Xi'an Beilin Museum. [Palace Museum, Xiping fragment](https://www.dpm.org.cn/collection/impres/231915.html) · [National Museum of China, Xiping fragment](https://www.chnmuseum.cn/zp/zpml/kgfjp/202008/t20200824_247256.shtml)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The classics are a witness in surviving original stone, but the Palace Museum's wording is "traditionally attributed to Cai Yong" and the National Museum says only that "Cai Yong and others wrote them in clerical script," not that his hand is established. The traditional attribution is recorded as such and not written up as his autograph.
+- [Xiping Stone Classics](../works/xiping-stone-classics.md): Fragments of the eight-part clerical-script Xiping Stone Classics erected at the Luoyang Imperial Academy after court collation, represented here only by fragments in the National Museum’s catalogue.

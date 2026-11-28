@@ -27,11 +27,13 @@ sources: [src-dpm-lu-you-huadu]
 
 故宫著录《怀成都十韵诗》卷，纸本行草书，纵三十四点六厘米、横八十二点四厘米，为陆游晚年为友人手录旧作七言古诗，写其五十岁左右在成都做官时的生活；格调豪放跌宕，书风瘦硬通神。卷后有明陆釴、谢铎、程敏政、王鏊、周经、杨循古、沈周题跋，钤乾隆、嘉庆、宣统内府诸玺，《石渠宝笈》著录。本库未另建该作品档案，此处只记馆方所述。[故宫博物院，陆游行草书怀成都十韵诗卷](https://www.dpm.org.cn/collection/handwriting/231256.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依馆方著录，《怀成都十韵诗》卷为纸本行草墨迹，有题跋、内府玺印与《石渠宝笈》著录，属墨迹一路。名单中另提的《自书诗卷》未找到可打开的馆方著录，本库不与本卷等同，留待核对。
+本页尚未关联可供临写的作品页。
+### 本页依据
+
+本页依据：[故宫博物院《陆游行草书怀成都十韵诗卷》藏品页](https://www.dpm.org.cn/collection/handwriting/231256.html)及陆游小传；所据作品是《怀成都十韵诗》卷，不与《自书诗卷》等同。
 
 ## English
 
@@ -47,8 +49,9 @@ Scripts and teacher lineage remain open; the cited catalogue does not transcribe
 
 The museum records the scroll of Ten Rhymes on Missing Chengdu, ink on paper in running-cursive script, 34.6 by 82.4 cm, a late-life copy of an old seven-character poem written for a friend about his years in Chengdu around fifty. It carries colophons by seven Ming writers, imperial seals of three Qing reigns and a Shiqu baoji record. This library holds no separate work record; only the museum's account is given. [Palace Museum, Lu You's poem scroll](https://www.dpm.org.cn/collection/handwriting/231256.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
+No work page is linked to this person yet.
+### Basis for this page
 
-— This page has no `objects` entries. By the museum, the poem scroll is an ink manuscript on paper in running-cursive script with colophons, imperial seals and a Shiqu baoji record, an ink witness. A work called Zishu shi mentioned in the candidate list has no accessible museum record here and is not equated with this scroll; it stays open.
+This page relies on the [Palace Museum catalogue of Lu You’s Ten Rhymes on Missing Chengdu](https://www.dpm.org.cn/collection/handwriting/231256.html) and its attached biography; the work is that scroll and is not equated with a work called Zishu shi.

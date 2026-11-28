@@ -35,11 +35,12 @@ sources: [src-dpm-xuanshi, src-zgbk-zhongyao, src-hnssfjxh-zhongyao]
 
 本库所收有[《宣示表》](../works/xuanshi-biao.md)、[《荐季直表》](../works/jian-jizhi-biao.md)与[《贺捷表》](../works/hejie-biao.md)。河南省书法家协会的文章记《荐季直表》书于黄初二年（221）、《贺捷表》书于建安二十四年（219）；这些书写年份与刻本所据的底本分记，不混为一谈。[河南省书法家协会，钟繇](https://www.hnssfjxh.com/content/?781.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依著录：没有一件真迹留下来，《荐季直表》的墨迹本毁于民国年间只剩影印，今日能读的都是刻帖；本库[《宣示表》](../works/xuanshi-biao.md)是一册宋拓，刻本多称据王羲之临本摹刻，这一条仍是传称，不写成定论。故宫的研究文章亦不把所论的《锺王楷帖》当作真迹。[故宫博物院，谈《石渠宝笈·续编》中的《锺王楷帖》](https://img.dpm.org.cn/Uploads/File/2023/11/14/u6553200bb65a8.pdf)
+- [《宣示表》](../works/xuanshi-biao.md)：钟繇请魏文帝接受孙权归附的小楷奏文，真迹早佚，传世刻本一般被认为据王羲之临本摹刻。
+- [《荐季直表》](../works/jian-jizhi-biao.md)：旧说钟繇221年荐季直的小楷表，墨迹已毁，今见影印与刻帖。
+- [《贺捷表》](../works/hejie-biao.md)：旧说钟繇219年所上的小楷贺表，传世有郁冈斋帖本。
 
 ## English
 
@@ -61,8 +62,8 @@ The account above of his study under Cao Xi, Cai Yong and Liu Desheng, and of hi
 
 The library holds the [Memorial of Declaration](../works/xuanshi-biao.md), [Memorial Recommending Ji Zhi](../works/jian-jizhi-biao.md) and [Memorial of Victory](../works/hejie-biao.md). A Henan Provincial Calligraphers' Association article dates the Ji Zhi memorial to 221 and the Victory memorial to 219; these writing years are kept apart from the witnesses on which the engravings depend. [Henan Provincial Calligraphers' Association, Zhong Yao](https://www.hnssfjxh.com/content/?781.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries. No autograph survives: the ink copy of the Ji Zhi memorial was destroyed in the Republican period and only reproductions remain, so what can be read today are engravings. The [Memorial of Declaration](../works/xuanshi-biao.md) here is a Song rubbing, generally said to reproduce a Wang Xizhi transcription — a traditional attribution, not written up as settled. The Palace Museum's research article likewise does not treat the album it discusses as an autograph. [Palace Museum, on the Zhong and Wang models](https://img.dpm.org.cn/Uploads/File/2023/11/14/u6553200bb65a8.pdf)
+- [Memorial of Declaration](../works/xuanshi-biao.md): Zhong Yao’s small-regular-script memorial asking Cao Pi to accept Sun Quan’s submission, whose lost original is generally said to survive through engravings after Wang Xizhi’s transcription.
+- [Memorial Recommending Ji Zhi](../works/jian-jizhi-biao.md): A small-regular-script memorial traditionally dated to Zhong Yao’s recommendation of Ji Zhi in 221, whose ink original is lost and survives through reproductions and engravings.
+- [Memorial of Victory](../works/hejie-biao.md): A small-regular-script memorial traditionally said to have been presented by Zhong Yao in 219, surviving in the Yugangzhai modelbook.

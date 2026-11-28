@@ -21,6 +21,7 @@ attribution:
   - role: calligrapher
     name: 吴昌硕
     nameEn: Wu Changshuo
+    person: wu-changshuo
     certainty: documented
     sources:
       - src-dpm-wuchangshuo

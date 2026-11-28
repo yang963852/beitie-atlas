@@ -27,11 +27,10 @@ sources: [src-catalogue-zhao-jijiu, src-shm-zhaozhiqian-siti]
 
 本库所收[《篆书急就章轴》](../works/zhao-jijiu.md)纸本，纵一百一十二点四厘米、横四十六点四厘米，释文为《急就篇》句，末识「史游急就篇，益斋仁兄正。赵之谦」；馆方记「本幅无藏印。具体创作年代不详，但从书风推测当属赵氏晚年书作」。[故宫博物院，赵之谦篆书急就章轴](https://www.dpm.org.cn/collection/handwriting/228366.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《篆书急就章轴》](../works/zhao-jijiu.md)为纸本墨迹，款识在、无藏印，创作年代馆方只能据书风推测，此点待考；上博《四体书屏》署同治八年（1869），为另一件墨迹。两件分记，不因同署赵之谦而合并，也不把推测年代写成确证。
+- [《篆书急就章轴》](../works/zhao-jijiu.md)：清赵之谦的篆书《急就章》轴；作品页未记尺寸与藏地。
 
 ## English
 
@@ -47,8 +46,6 @@ The Palace Museum records that his writing "began with Yan Zhenqing, then turned
 
 The [seal-script Jijiu zhang scroll](../works/zhao-jijiu.md) held here is ink on paper, 112.4 by 46.4 cm, with text from the Jijiu pian and the inscription "Jijiu pian by Shi You, for the correction of brother Yizhai, Zhao Zhiqian"; the museum notes "no collection seals on this piece; the date is unknown, but the style suggests a late work." [Palace Museum, Jijiu zhang](https://www.dpm.org.cn/collection/handwriting/228366.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The [Jijiu zhang scroll](../works/zhao-jijiu.md) is an ink manuscript on paper with an inscription but no seals, its date only inferred from style by the museum, which stays open; the Shanghai Museum's four-script screen is dated 1869, another ink witness. The two are recorded apart, and the inferred date is not written up as certain.
+- [Jijiu Zhang in Seal Script](../works/zhao-jijiu.md): A Qing seal-script hanging scroll of the Jijiu Zhang by Zhao Zhiqian; the work page records neither its measurements nor its current holding.

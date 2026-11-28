@@ -27,11 +27,10 @@ sources: [src-catalogue-yi-wuzi, src-szmus-yi-bingshou, src-thu-yi-bingshou]
 
 本库所收[《隶书五字横幅》](../works/yi-wuzi.md)纸本，纵三十二厘米、横一百三十点五厘米，隶书「华屿读书堂」，末识「简田十六先生雅属并正，秉绶。嘉庆壬申岁」；嘉庆壬申为嘉庆十七年（1812），时年六十，为晚年所书。[故宫博物院，伊秉绶隶书五字横幅](https://www.dpm.org.cn/collection/handwriting/228281.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。[《隶书五字横幅》](../works/yi-wuzi.md)为纸本墨迹，款识纪年与钤印俱在，属墨迹一路；深圳博物馆所藏四字横幅亦为纸本墨迹，为去世当年所书。两件分记，不因同署伊秉绶而合并。
+- [《隶书五字横幅》](../works/yi-wuzi.md)：清伊秉绶的隶书五字横幅；作品页未记释文与尺寸。
 
 ## English
 
@@ -47,8 +46,6 @@ The Palace Museum records that he "wrote regular and running script, and was mos
 
 The [five-character clerical banner](../works/yi-wuzi.md) held here is ink on paper, 32 by 130.5 cm, reading "Huayu reading hall," inscribed to Mr. Jiantian and dated the renshen year of Jiaqing (1812), when he was sixty, a late work. [Palace Museum, five-character banner](https://www.dpm.org.cn/collection/handwriting/228281.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The [five-character banner](../works/yi-wuzi.md) is an ink manuscript on paper with a dated inscription and seals, an ink witness; the Shenzhen Museum's four-character banner is also ink on paper, written in the year of his death. The two are recorded apart and not merged by a shared name.
+- [Five Characters in Clerical Script](../works/yi-wuzi.md): A Qing clerical-script five-character horizontal scroll by Yi Bingshou; the work page records neither its inscription nor its measurements.

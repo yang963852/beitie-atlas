@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: null
 dateEndMonth: null
 dateEra: 元
-dateOriginal: null
+dateOriginal: 元，赵孟頫书
 dateCertainty: documented
 dateNote: null
 script: 行书

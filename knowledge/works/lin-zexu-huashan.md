@@ -20,6 +20,7 @@ attribution:
   - role: author-and-calligrapher
     name: 林则徐
     nameEn: Lin Zexu
+    person: lin-zexu
     certainty: documented
     sources:
       - src-beilin-lin-zexu

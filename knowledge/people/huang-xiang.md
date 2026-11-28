@@ -27,12 +27,10 @@ sources: [src-dpm-tianfa-shenchen, src-shm-jijiu-zhang]
 
 故宫著录《天发神谶碑》立于吴天玺元年（276），相传为皇象书而无确据，原石嘉庆十年（1805）毁于火，所藏为北宋拓本。上海博物馆著录「松江本」《急就章》相传为皇象书，明正统四年（1439）杨政据北宋叶梦得刻本重刻，碑石今在松江博物馆。两件的归名均为相传，本库照馆方所述留余地。[故宫博物院，宋拓三国天发神谶碑](https://www.dpm.org.cn/collection/impres/234552.html) · [上海博物馆，三国皇象章草急就章册](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005325)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-○ 本页 `objects` 为空。《天发神谶碑》原石已毁，故宫所藏为北宋拓本；《急就章》松江本为明正统四年重刻的碑石，所读为刻帖拓本一路。两者均属拓本而非亲笔；原石毁佚与重刻年代分记，归名「相传」不写成定论。
-
+本页尚未关联可供临写的作品页。
 ## English
 
 ### Life and identity
@@ -47,8 +45,6 @@ The Palace Museum records that he studied from an early age under the Eastern Ha
 
 The Tianfa shenchen stele was set up in 276; the museum says it is traditionally attributed to Huang Xiang but without firm evidence, that the stone was destroyed by fire in 1805, and that its holding is a Northern Song rubbing. The Shanghai Museum records the "Songjiang" Jijiu zhang as traditionally attributed to Huang Xiang, recut in 1439 by Yang Zheng from a Northern Song carving by Ye Mengde, with the stone now at the Songjiang Museum. Both attributions are traditional and are kept as such. [Palace Museum, Tianfa shenchen stele](https://www.dpm.org.cn/collection/impres/234552.html) · [Shanghai Museum, Jijiu zhang](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005325)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-○ This page has no `objects` entries. The original stone of the Tianfa shenchen stele was destroyed and the Palace Museum holds a Northern Song rubbing; the Songjiang Jijiu zhang is a stele recut in 1439, so what is read is a modelbook rubbing. Both are rubbing witnesses rather than autographs; the loss of the original and the recutting date are recorded separately, and the "traditionally attributed" wording is not written up as settled.
+No work page is linked to this person yet.

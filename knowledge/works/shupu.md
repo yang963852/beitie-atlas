@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 孙过庭
     nameEn: Sun Guoting
+    person: sun-guoting
     certainty: documented
     sources:
       - src-catalogue-shupu

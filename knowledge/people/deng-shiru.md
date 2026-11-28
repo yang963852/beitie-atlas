@@ -27,11 +27,10 @@ sources: [src-dpm-deng-shiru-libo, src-shm-deng-qianggua]
 
 本库所收[《楷书诗轴》](../works/deng-kaishu.md)为纸本墨迹；上博另藏《篆书谦卦轴》，书于乾隆四十六年（1781），时年三十九，洪福楣捐赠。[上海博物馆，清邓石如篆书谦卦轴](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005003)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。本库所收[《楷书诗轴》](../works/deng-kaishu.md)为纸本墨迹，馆方著录「无藏印，未见著录」，属墨迹一路；上博《篆书谦卦轴》亦为纸本墨迹，来源为捐赠。两件分记，不因同署邓石如而合并。
+- [《楷书诗轴》](../works/deng-kaishu.md)：清邓石如的楷书诗轴；作品页未记诗名与尺寸。
 
 ## English
 
@@ -47,8 +46,6 @@ The Palace Museum records that he "wrote every script, most finely seal and cler
 
 The [regular-script poem scroll](../works/deng-kaishu.md) held here is ink on paper; the Shanghai Museum also holds a seal-script Qian hexagram scroll written in 1781 at thirty-nine, a gift of Hong Fumei. [Shanghai Museum, Qian hexagram scroll](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005003)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
-
-— This page has no `objects` entries. The [regular-script poem scroll](../works/deng-kaishu.md) is an ink manuscript on paper, catalogued with "no collection seals and no recorded catalogue entry," an ink witness; the Shanghai Museum scroll is also ink on paper, a gift. The two are recorded apart and not merged by a shared name.
+- [Poem in Regular Script](../works/deng-kaishu.md): A Qing regular-script poem hanging scroll by Deng Shiru; the work page records neither the poem’s title nor its measurements.

@@ -21,6 +21,7 @@ attribution:
   - role: calligrapher
     name: 赵佶
     nameEn: Zhao Ji, Emperor Huizong
+    person: zhao-ji
     certainty: documented
     sources:
       - src-npm-nongfang

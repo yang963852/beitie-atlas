@@ -31,11 +31,10 @@ sources: [src-shm-zhao-shen-colophon, src-xiling-shen-chronology]
 
 本库所收的[《行书跋沈尹默论书札卷》](../works/zhao-puchu-shen-colophon.md)是赵朴初接沈尹默论书札而写的题跋，作于 1976 年。馆方分别量出两段尺寸；1965 年两人因《兰亭序》真伪之议唱和，见上文所引年表。
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有 29 份书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空，本库未为此人关联实物档案，故无可据 `objectType` 分级的载体；上文题跋的年代与尺寸均出自上海博物馆著录，1976 年属赵朴初题跋而非沈尹默原札。此处不作真伪判断，也不因题跋墨迹而替他标 ◎。
+- [《行书跋沈尹默论书札卷》](../works/zhao-puchu-shen-colophon.md)：赵朴初1976年题在沈尹默《论书札》后的行书跋，沈氏原札年月待考。
 
 ## English
 
@@ -55,8 +54,6 @@ Scripts and teacher lineage remain open; the cited catalogues do not address the
 
 The library holds the [Running-script colophon on Shen Yinmo's letter on calligraphy](../works/zhao-puchu-shen-colophon.md), written after Shen's text and dated 1976. The museum gives separate measurements for the two contributions, and the 1965 exchange on the authenticity of the Lanting Preface is noted above from the chronology.
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. None of the 29 person pages in this library is marked ✗.
-
-— This page has no `objects` entries, so the library associates no object record with him and there is no `objectType` from which to grade a witness. The date and measurements above come from the Shanghai Museum catalogue entry; 1976 belongs to Zhao's colophon, not to Shen's original letter. No authenticity verdict is made here, and no ◎ is assigned on the strength of the colophon's ink.
+- [Colophon to Shen Yinmo’s Writing on Calligraphy](../works/zhao-puchu-shen-colophon.md): Zhao Puchu’s 1976 running-script colophon after Shen Yinmo’s letter on calligraphy, whose own writing date remains unverified.

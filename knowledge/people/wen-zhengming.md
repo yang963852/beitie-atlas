@@ -27,11 +27,13 @@ sources: [src-dpm-wen-guiqulai]
 
 故宫著录《归去来兮辞》页，纸本楷书，纵十三点七厘米、横十六点一厘米，款署「辛亥九月十一日，横塘舟中书。徵明。时年八十又二」，馆方定辛亥为嘉靖三十年（1551）、时年八十二。此页与赵孟頫、邓文原等作同入《元明人书册》，清代安岐曾藏并收入《墨缘汇观》。本库未另建该作品档案，此处只记馆方所述。[故宫博物院，文徵明楷书归去来兮辞页](https://www.dpm.org.cn/collection/handwriting/230983.html)
 
-### 书迹可靠性
 
-以下标注仅就本库所收实物与馆方著录而言，是对存世载体的层级说明，不是真伪鉴定结论；◎ 本库有馆方著录为墨迹或原石的一路，○ 本库所见为摹本、拓本或刻帖，✗ 传说人物或后世伪托。本库现有书家档案均不标 ✗。
+### 可临之作
 
-— 本页 `objects` 为空。依馆方著录，《归去来兮辞》页为纸本楷书墨迹，有款署纪年、钤印与《墨缘汇观》著录，属墨迹一路。此处只记载体与馆方所述，不作真伪鉴定结论。
+本页尚未关联可供临写的作品页。
+### 本页依据
+
+本页依据：[故宫博物院《文徵明楷书归去来兮辞页》藏品页](https://www.dpm.org.cn/collection/handwriting/230983.html)及所附文徵明小传；依据是一件1551年专辑叶与同页传记，不是专题传记。
 
 ## English
 
@@ -47,8 +49,9 @@ The study under Li Yingzhen and the brush deriving from the Yellow Court Classic
 
 The museum records the leaf of the Return Home in regular script, ink on paper, 13.7 by 16.1 cm, signed "on the eleventh day of the ninth month of the xinhai year, written in a boat at Hengtan, Zhengming, aged eighty-two"; the museum dates xinhai to 1551. The leaf entered the Yuan-Ming album with works by Zhao Mengfu and Deng Wenyuan and was collected by An Qi, who recorded it in the Motuan huiguan. This library holds no separate work record; only the museum's account is given. [Palace Museum, Wen Zhengming's Return Home leaf](https://www.dpm.org.cn/collection/handwriting/230983.html)
 
-### Reliability of the surviving trace
+### Works to copy
 
-The marks below describe only the witnesses collected here and their museum cataloguing; they are a note on the kind of survival, not a verdict on authenticity. ◎ ink or stone recorded by a museum, ○ tracing copies, rubbings or modelbook engravings, ✗ legendary figures or later attributions. No person page in this library is marked ✗.
+No work page is linked to this person yet.
+### Basis for this page
 
-— This page has no `objects` entries. By the museum, the Return Home leaf is an ink manuscript on paper in regular script with a dated signature, seals and a Motuan huiguan record, an ink witness. Only the carrier and the museum's statements are recorded here, without an authenticity verdict.
+This page relies on the [Palace Museum catalogue of Wen Zhengming’s Return Home leaf](https://www.dpm.org.cn/collection/handwriting/230983.html) and its attached biography; the evidence is one 1551 album leaf and the biography on that catalogue page, not a dedicated biography.

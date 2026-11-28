@@ -12,7 +12,7 @@ dateMonth: null
 dateEnd: null
 dateEndMonth: null
 dateEra: 清
-dateOriginal: null
+dateOriginal: 清嘉庆十七年（1812年）
 dateCertainty: documented
 dateNote: null
 script: 隶书
@@ -20,6 +20,7 @@ attribution:
   - role: calligrapher
     name: 伊秉绶
     nameEn: Yi Bingshou
+    person: yi-bingshou
     certainty: documented
     sources:
       - src-catalogue-yi-wuzi

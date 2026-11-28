@@ -21,6 +21,7 @@ attribution:
   - role: calligrapher
     name: 陆游
     nameEn: Lu You
+    person: lu-you
     certainty: documented
     sources:
       - src-lnm-luyou
