@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { currentPlaceId, isCurrentLocationKind } from '../src/domain/collection';
-import { objectsAtCurrentPlace, partitionByLocation } from '../src/domain/data';
+import { groupObjectsByProvince, objectsAtCurrentPlace, partitionByLocation } from '../src/domain/data';
 import type { ObjectRecord, Place } from '../src/domain/types';
 import { buildMarkers } from '../src/map/markers';
 import { MapLoadError, toMapFailure } from '../src/map/tianditu';
@@ -121,6 +121,34 @@ describe('marker building', () => {
     expect(partition.unknown.map((entry) => entry.id)).toEqual(['unknown']);
     expect(partition.currentWithoutPoint.map((entry) => entry.id)).toEqual(['no-place']);
     expect(objectsAtCurrentPlace(objects, 'place-a').map((entry) => entry.id)).toEqual(['current']);
+  });
+});
+
+describe('province grouping', () => {
+  function provincePlace(id: string, province: Place['province']): Place {
+    return { ...place(id, true), province };
+  }
+
+  it('groups current objects by province and keeps unplaced records separate', () => {
+    const places = [
+      provincePlace('place-shaanxi-a', 'shaanxi'),
+      provincePlace('place-beijing-a', 'beijing'),
+      { ...place('place-no-province', true), province: null },
+    ];
+    const objects = [
+      object('o-shaanxi', 'place-shaanxi-a'),
+      object('o-beijing', 'place-beijing-a'),
+      object('o-unplaced', 'place-shaanxi-a', 'last-known'),
+      object('o-unknown', 'place-no-province'),
+    ];
+
+    const groups = groupObjectsByProvince(objects, places);
+
+    expect(groups.map((group) => group.key)).toEqual(['beijing', 'shaanxi', 'unknown', 'unplaced']);
+    expect(groups.find((group) => group.key === 'shaanxi')?.objects.map((entry) => entry.id)).toEqual(['o-shaanxi']);
+    expect(groups.find((group) => group.key === 'beijing')?.places[0]?.place.id).toBe('place-beijing-a');
+    expect(groups.find((group) => group.key === 'unknown')?.objects.map((entry) => entry.id)).toEqual(['o-unknown']);
+    expect(groups.find((group) => group.key === 'unplaced')?.objects.map((entry) => entry.id)).toEqual(['o-unplaced']);
   });
 });
 

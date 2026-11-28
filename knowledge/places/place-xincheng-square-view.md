@@ -4,6 +4,7 @@ nameZh: 新城广场取景处
 nameEn: Xincheng Square viewpoint
 historicalName: null
 kind: district
+province: shaanxi
 coordinateLongitude: 108.949565
 coordinateLatitude: 34.265393
 coordinatePrecision: site

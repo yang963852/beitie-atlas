@@ -9,6 +9,7 @@
  */
 
 import { DYNASTIES, isDynastyId, yearInDynasty } from './dynasties';
+import { PROVINCE_IDS } from './provinces';
 import type { Dataset } from './types';
 
 export interface ValidationIssue {
@@ -53,6 +54,7 @@ const LOCATION_KINDS = new Set([
   'unknown',
 ]);
 const PLACE_KINDS = new Set(['institution', 'historical-site', 'district', 'city', 'region']);
+const PROVINCES = new Set<string>(PROVINCE_IDS);
 const PRECISIONS = new Set(['site', 'institution', 'city', 'region']);
 const METHODS = new Set(['official-publication', 'secondary-database', 'geocoder', 'field-survey']);
 const VERIFICATIONS = new Set(['verified', 'unverified']);
@@ -376,6 +378,15 @@ export function validateDataset(raw: unknown, options: { releaseMode?: boolean; 
     const names = entry.names;
     if (!isRecord(names) || !isNonEmptyString(names.zh) || !isNonEmptyString(names.en)) {
       error('MISSING_FIELD', `${path}.names`, 'Place needs zh and en names.');
+    }
+    if (entry.province !== undefined && entry.province !== null) {
+      if (!isNonEmptyString(entry.province) || !PROVINCES.has(entry.province)) {
+        error(
+          'INVALID_PROVINCE',
+          `${path}.province`,
+          `Unknown province "${String(entry.province)}"; use one of the ids in src/domain/provinces.ts.`,
+        );
+      }
     }
     checkSourceRefs(entry.sourceRefs, `${path}.sourceRefs`, false);
     checkNotes(entry.notes, entry.notesZh, `${path}.notes`);

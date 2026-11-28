@@ -11,6 +11,7 @@ import compiledFile from '../../data/index/knowledge-v1.json';
 import { currentPlaceId, isCurrentLocation } from './collection';
 import { isReleaseBuild } from './build';
 import { type Dynasty, dynastyOrder, findDynasty } from './dynasties';
+import { findProvince, type Province, type ProvinceId } from './provinces';
 import type { Dataset, MediaItem, ObjectRecord, ObjectType, Place, Source, Work } from './types';
 import { validateDataset, type ValidationReport } from './validate';
 import { knowledgeArticles, knowledgeRelations } from './knowledge';
@@ -214,6 +215,109 @@ export function groupCurrentLocationsByPlace(objects: ObjectRecord[]): Map<strin
     list.push(object);
     groups.set(placeId, list);
   }
+  return groups;
+}
+
+export type ProvinceGroupKey = ProvinceId | 'unknown' | 'unplaced';
+
+export interface ProvincePlaceGroup {
+  place: Place;
+  objects: ObjectRecord[];
+}
+
+export interface ProvinceGroup {
+  key: ProvinceGroupKey;
+  province: Province | null;
+  objects: ObjectRecord[];
+  places: ProvincePlaceGroup[];
+}
+
+/**
+ * Groups current-collection objects into province shelves for the extant map.
+ *
+ * A `last-known` or `unknown` assertion is not a present-day place, so it never
+ * joins a province shelf; it is kept in the final `unplaced` group. A current
+ * place whose province is missing stays readable in `unknown` rather than being
+ * silently dropped. Group order follows the controlled province table, not the
+ * data's arrival order.
+ */
+export function groupObjectsByProvince(
+  objects: ObjectRecord[],
+  places: Place[],
+): ProvinceGroup[] {
+  const placesById = new Map(places.map((place) => [place.id, place]));
+  const known = new Map<ProvinceId, {
+    province: Province;
+    objects: ObjectRecord[];
+    places: Map<string, ObjectRecord[]>;
+  }>();
+  const unknownObjects: ObjectRecord[] = [];
+  const unknownPlaces = new Map<string, ObjectRecord[]>();
+  const unplaced: ObjectRecord[] = [];
+
+  for (const object of objects) {
+    const placeId = currentPlaceId(object);
+    if (!placeId) {
+      unplaced.push(object);
+      continue;
+    }
+    const place = placesById.get(placeId);
+    if (!place) {
+      // A broken corpus is reported by the validator; keep the record visible
+      // rather than hiding it behind an unresolvable place id.
+      unplaced.push(object);
+      continue;
+    }
+
+    const province = findProvince(place.province);
+    if (!province) {
+      unknownObjects.push(object);
+      const list = unknownPlaces.get(place.id) ?? [];
+      list.push(object);
+      unknownPlaces.set(place.id, list);
+      continue;
+    }
+
+    let group = known.get(province.id);
+    if (!group) {
+      group = { province, objects: [], places: new Map() };
+      known.set(province.id, group);
+    }
+    group.objects.push(object);
+    const list = group.places.get(place.id) ?? [];
+    list.push(object);
+    group.places.set(place.id, list);
+  }
+
+  const byPlaceName = (a: ProvincePlaceGroup, b: ProvincePlaceGroup) =>
+    a.place.names.zh.localeCompare(b.place.names.zh, 'zh-Hans');
+
+  const groups: ProvinceGroup[] = [...known.values()]
+    .sort((a, b) => a.province.order - b.province.order)
+    .map((group) => ({
+      key: group.province.id,
+      province: group.province,
+      objects: group.objects,
+      places: [...group.places.entries()]
+        .map(([placeId, list]) => ({ place: placesById.get(placeId)!, objects: list }))
+        .sort(byPlaceName),
+    }));
+
+  if (unknownObjects.length > 0) {
+    groups.push({
+      key: 'unknown',
+      province: null,
+      objects: unknownObjects,
+      places: [...unknownPlaces.entries()]
+        .map(([placeId, list]) => ({ place: placesById.get(placeId)!, objects: list }))
+        .sort(byPlaceName),
+    });
+  }
+
+  if (unplaced.length > 0) {
+    groups.push({ key: 'unplaced', province: null, objects: unplaced, places: [] });
+  }
+
   return groups;
 }
 

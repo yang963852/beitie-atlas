@@ -1190,6 +1190,13 @@ a {
   font-size: 12.5px;
 }
 
+.location__note {
+  margin: 4px 0 0;
+  color: var(--ink-3);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .location__count {
   margin-left: auto;
   color: var(--ink-4);
@@ -2380,9 +2387,15 @@ html[lang='en'] .result::before {
   font: 0.72rem/1.5 var(--font-reading);
 }
 
-.location__meta {
+.location__meta,
+.location__note {
   color: var(--ink-2);
   font-family: var(--font-kai);
+}
+
+.location__note {
+  font-size: 0.78rem;
+  line-height: 1.7;
 }
 
 .map__caption {

@@ -43,6 +43,17 @@ describe('author frontmatter field list', () => {
     expect(() => compileKnowledge(root)).toThrow(/knowledge\/_templates\/place\.md/);
   });
 
+  it('rejects an unregistered province id', () => {
+    const root = tempRoot();
+    writeRecord(root, 'places', 'demo-place', 'schemaVersion: 2\nnameZh: 示例\nkind: institution\nprovince: atlantis');
+    const result = compileKnowledge(root);
+    expect(
+      result.issues.some(
+        (issue) => issue.code === 'INVALID_PLACE_RECORD' && /province must be one of/.test(issue.message),
+      ),
+    ).toBe(true);
+  });
+
   it('reports a stray key on a relationship entry as a validation issue', () => {
     const root = tempRoot();
     mkdirSync(join(root, 'knowledge'), { recursive: true });

@@ -4,6 +4,7 @@ nameZh: 西安碑林
 nameEn: Xi'an Beilin
 historicalName: null
 kind: institution
+province: shaanxi
 sources:
   - src-beilin-article-2007
 notes:
