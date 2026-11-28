@@ -6,7 +6,7 @@ dynastyId: tang
 dynastySource: src-beilin-duobaota
 aliases: []
 state: reviewed
-works: [duobao-ta-bei, yan-qinli-bei, datang-zhongxing-song, jizhi, magu, yan-jiamiao-bei]
+works: [duobao-ta-bei, yan-qinli-bei, datang-zhongxing-song, jizhi, magu, yan-jiamiao-bei, dongfangshuo-huazan, zishu-gaoshen]
 objects: []
 sources: [src-beilin-duobaota, src-beilin-yan-qinli-object, src-hunan-wuxi, src-catalogue-jizhi, src-catalogue-magu, src-beilin-yanjiamiao]
 ---
