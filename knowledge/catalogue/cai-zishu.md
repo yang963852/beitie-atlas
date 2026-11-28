@@ -16,7 +16,7 @@ Scroll of Poems in the Author’s Hand
 
 书体：行书
 
-延伸阅读：[蔡襄](../people/cai-xiang.md)
+延伸阅读：[蔡襄](../people/cai-xiang.md) · [06｜专题：宋代——刻帖、墨迹与士人书](../notes/essay-06-song.md)
 
 <a name="dpm-cai-zishu-026"></a>
 

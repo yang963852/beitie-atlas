@@ -18,7 +18,7 @@ Stele of Cuan Baozi
 
 书体：隶书向楷书过渡
 
-延伸阅读：[爨宝子碑](../works/cuan-baozi-bei.md)
+延伸阅读：[爨宝子碑](../works/cuan-baozi-bei.md) · [04｜专题：南北朝——碑、志与摩崖](../notes/essay-04-northern-southern.md)
 
 作品待考与说明
 

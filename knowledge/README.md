@@ -58,6 +58,20 @@
 ## 考证与读帖笔记
 
 - [读《多宝塔碑》时，先找碑额上的“塔”](notes/duobao-reading.md)
+- [01｜专题：先秦——青铜、石鼓与竹简](notes/essay-01-pre-qin.md)
+- [02｜专题：秦汉——统一文字与隶书登场](notes/essay-02-qin-han.md)
+- [03｜专题：魏晋——名家、信札与复制](notes/essay-03-wei-jin.md)
+- [04｜专题：南北朝——碑、志与摩崖](notes/essay-04-northern-southern.md)
+- [05｜专题：隋唐——楷则与碑版](notes/essay-05-sui-tang.md)
+- [06｜专题：宋代——刻帖、墨迹与士人书](notes/essay-06-song.md)
+- [07｜专题：元明——复古与性灵](notes/essay-07-yuan-ming.md)
+- [08｜专题：清近代——碑学与日常书写](notes/essay-08-qing-modern.md)
+- [09｜阅读路径：隶变——从青铜到汉碑](notes/path-01-clerical-turn.md)
+- [10｜阅读路径：楷化——从钟繇到唐楷](notes/path-02-regularization.md)
+- [11｜阅读路径：行草——从信札到狂草](notes/path-03-running-cursive.md)
+- [12｜阅读路径：碑学——清人如何重读石刻](notes/path-04-stele-studies.md)
+- [13｜阅读路径：帖学——刻帖的谱系](notes/path-05-modelbook.md)
+- [14｜阅读路径：一作两命——原石与拓本](notes/path-06-one-work-two-lives.md)
 - [从一个「故」字读《颜勤礼碑》](notes/yan-qinli-story.md)
 
 ## 作品与实物档案
