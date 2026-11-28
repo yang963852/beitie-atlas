@@ -39,11 +39,11 @@ reviewState: reviewed
 
 ### 中文
 
-《古诗四帖》为纸本草书长卷，写庾信《步虚词》二首与谢灵运诗赞二首，今藏辽宁省博物馆，传为张旭所书。全卷连绵而下，字形大小错落而行气不断，是唐代狂草走向成熟的代表，也是学习草书时体会速度、提按与字势关系的经典范本。
+《古诗四帖》为纸本草书长卷，写庾信《步虚词》二首与谢灵运诗赞二首，今藏辽宁省博物馆，传为张旭所书。馆方展览将它列在「草圣典范」单元；辽宁日报另记北宋曾误归谢灵运、明代董其昌为此卷定名。[辽宁省博物馆，特展展品清单](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337) · [辽宁日报，《古诗四帖》解读](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)
 
 ### English
 
-Four Poems is a paper handscroll in cursive script, carrying two of Yu Xin’s “Pacing the Void” poems and two verse appreciations by Xie Lingyun. It is now in the Liaoning Provincial Museum and is attributed to Zhang Xu. The writing runs on without a break, characters varying in size while the column holds together. It represents the maturing of Tang wild cursive and is a standard model for learning speed, pressure and momentum in cursive.
+Four Poems is a paper handscroll in cursive script, carrying two of Yu Xin’s “Pacing the Void” poems and two verse appreciations by Xie Lingyun. It is now in the Liaoning Provincial Museum and is attributed to Zhang Xu. The museum places it in the exhibition section “Models of the Cursive Sage”; the Liaoning Daily records that it was once misattributed to Xie Lingyun in the Northern Song and was given its present title by Dong Qichang in the Ming. [Liaoning Provincial Museum, exhibition checklist](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337) · [Liaoning Daily, interpretation of Four Poems](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)
 
 ## 待考
 

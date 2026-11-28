@@ -171,6 +171,14 @@ function pack(): void {
     'knowledge', 'docs/CONTRIBUTE.zh-CN.md', 'LICENSE', 'NOTICE.md'], { cwd: root, encoding: 'utf8' });
   const revision = sourceState.status === 0 && !sourceState.stdout.trim() ? git(['rev-parse', 'HEAD']) : null;
   const revisionDate = revision ? git(['show', '-s', '--format=%cs', 'HEAD']) : null;
+  const packageManifest = JSON.parse(
+    readFileSync(join(root, 'package.json'), 'utf8'),
+  ) as { version?: unknown };
+  if (typeof packageManifest.version !== 'string' || packageManifest.version.trim() === '') {
+    console.error('package.json has no string version; refusing to package.');
+    process.exit(1);
+  }
+  const appVersion = packageManifest.version;
 
   const compiled = compileKnowledge(root);
   if (compiled.issues.length) {
@@ -192,7 +200,7 @@ function pack(): void {
   const readme = [
     '# 碑帖之间 · 独立知识库',
     '',
-    '源版本见 manifest.json。未提交的本地资料包不标注提交号。中文总目位于 knowledge/README.md。',
+    '产品版次与源版本见 manifest.json。未提交的本地资料包不标注提交号。中文总目位于 knowledge/README.md。',
     '',
     '## 从下载到投稿',
     '',
@@ -214,6 +222,7 @@ function pack(): void {
 
   const manifest = {
     formatVersion: 'beitie-knowledge/1',
+    appVersion,
     schemaVersion: 1,
     sourceRevision: revision,
     sourceDate: revisionDate,

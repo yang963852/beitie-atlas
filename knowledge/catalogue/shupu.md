@@ -4,33 +4,43 @@
 
 [返回知识总目](../README.md) · [提交勘误](https://github.com/yang963852/beitie-atlas/issues/new?template=knowledge.yml&title=%E3%80%90%E8%B5%84%E6%96%99%E5%8B%98%E8%AF%AF%E3%80%91%E4%B9%A6%E8%B0%B1%20%C2%B7%20shupu)
 
-Treatise on Calligraphy
+Essay on Calligraphy
 
-**作品**　唐 · 垂拱三年寫記 · 帖
+**作品**　唐 · 垂拱三年（西元六八七年）寫記 · 帖
 
-唐孙过庭撰并书《书谱》，草书，垂拱三年（687）成书。上卷墨迹原藏清内府，后归故宫博物院，今在台湾。
+《书谱》为孙过庭撰并书的草书论书长卷。台北故宫记创作时间为垂拱三年（687），现存释文开篇作「书谱卷上。吴郡孙过庭撰」，末尾署「垂拱三年（西元六八七年）写记」。正文自述「今撰为六篇，分成两卷」，并讨论真、草兼通，点画与使转，以及「五合」「五乖」等作书条件。本幅纸本，纵二十六点五厘米、横九百点八厘米。故宫博物院宋拓页称下卷已佚；台北故宫此页只记正文分六篇两卷，未就是否另有传世下卷墨迹作说明，两种记述并列。[国立故宫博物院，唐孙过庭书谱卷](https://digitalarchive.npm.gov.tw/Collection/Detail?dep=P&id=14900) · [故宫博物院，宋拓孙过庭书谱](https://www.dpm.org.cn/collection/impres/234584.html)
 
-[出处 1](#ref-src-catalogue-shupu)、[出处 2](#ref-src-dpm-shupu-ketie)
+隔水一有馆方归于宋徽宗的楷书题签「唐孙过庭书谱序下」，与卷首所写「书谱卷上」不同。故宫博物院《紫禁城》刊文记，上卷墨迹原藏清内府，后归故宫博物院，今在台湾；台北故宫另在本幅记梁清标、安岐等鉴藏印及《石渠宝笈初编》著录。[国立故宫博物院，书谱题签与印记](https://digitalarchive.npm.gov.tw/Collection/Detail?dep=P&id=14900) · [故宫博物院《紫禁城》第113期，施安昌文](https://www.dpm.org.cn/impress/talk/208292.html)
 
-- 书丹 · 孙过庭（有明确记载）  [出处 1](#ref-src-catalogue-shupu)
+[出处 1](#ref-src-catalogue-shupu)、[出处 2](#ref-src-dpm-shupu-ketie)、[出处 3](#ref-src-dpm-shupu-songta)
+
+- 撰文并书丹 · 孙过庭（有明确记载）  [出处 1](#ref-src-catalogue-shupu)
 
 书体：草书
 
 延伸阅读：[孙过庭](../people/sun-guoting.md)
 
+作品待考与说明
+
+- 正文自称六篇两卷，现存墨迹以「书谱卷上」起；故宫宋拓页称下卷已佚，台北故宫页未说明是否另有传世下卷墨迹，两种记述不合并。
+- 宋徽宗题签作「序下」，与卷首「卷上」的关系未获馆方解释。
+- 清宫至台北的具体交接年份及入藏日期，所引页面未记。
+
 <a name="witness-shupu"></a>
 
 ## 孙过庭《书谱》
 
-Treatise on Calligraphy
+Essay on Calligraphy
 
 墨迹 · 存世
 
 - 制作年代：垂拱三年寫記
 - 著录编号：故書000058N000000000
-- 尺寸：本幅 26.5 × 900.8 cm
+- 尺寸：本幅26.5x900.8公分；隔水二26.6x10.1公分；隔水一27.1x13.8公分
 - 收藏机构：台北故宫博物院　[出处 1](#ref-src-catalogue-shupu)、[出处 2](#ref-src-dpm-shupu-ketie)
-- 所引来源查阅于 2026-11-18
+- 所引来源查阅于 2026-11-28
+
+文物统一编号故書000058N000000000；作品号故書00005800000。馆方未记入藏日期。
 
 ### 递藏与流传
 
@@ -40,7 +50,9 @@ Treatise on Calligraphy
 
 ### 实物待考与说明
 
-- 卷首写“书谱卷上”，隔水上的题签却写“序下”。临卷时，可以分别看孙过庭的草书与后人题签的楷书。
+- 宋徽宗题签作「序下」，与卷首「书谱卷上」不同；馆方未解释二者关系。
+- 正文自称六篇两卷，下卷是否另有传世墨迹待考。
+- 展厅与入藏日期待考。
 
 [在图鉴中查看这件实物](https://yang963852.github.io/beitie-atlas/#/object/witness-shupu) · [实物源稿](../../knowledge/objects/witness-shupu.md)
 
@@ -48,10 +60,14 @@ Treatise on Calligraphy
 
 <a name="ref-src-catalogue-shupu"></a>
 
-1. 國立故宮博物院 · [书谱](<https://digitalarchive.npm.gov.tw/Collection/Detail?dep=P&id=14900>)。定位：卷末自题、题跋、印记及收藏著录。查阅于 2026-11-19。
+1. 國立故宮博物院 · [书谱](<https://digitalarchive.npm.gov.tw/Collection/Detail?dep=P&id=14900>)。定位：基本資料（文物統一編號、作品號、作者、書體、創作時間、釋文）；典藏尺寸；質地；題跋資料（宋徽宗題籤）；印記資料.。查阅于 2026-11-28。
 
 <a name="ref-src-dpm-shupu-ketie"></a>
 
 2. 故宫博物院《紫禁城》第113期（施安昌） · [孙过庭《书谱》的宋代刻帖](<https://www.dpm.org.cn/impress/talk/208292.html>)。定位：正文首段：《书谱》为孙过庭撰并写；上卷墨迹原藏清内府，后归故宫博物院，现在台湾。查阅于 2026-11-28。
+
+<a name="ref-src-dpm-shupu-songta"></a>
+
+3. 故宫博物院 The Palace Museum · [宋拓孙过庭书谱](<https://www.dpm.org.cn/collection/impres/234584.html>)。定位：文物号 新00166130；藏品著录与页末人物释义：字虔礼、富阳（今浙江）人一说江苏人、官率府录事参军、工正行草、生卒年不详、活动于唐初；《书谱》垂拱三年（687）作、墨迹藏台北故宫、此本为宋拓孤本.。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/shupu.md) · [返回知识总目](../README.md)

@@ -8,18 +8,22 @@ Duck-Head Pill Letter
 
 **作品**　东晋 · 东晋（仅记年号，年份未记） · 帖
 
-唐摹本，纸本。经北宋宣和内府收藏，现存部分宣和裱。晚明为吴廷族兄吴希元所藏，董其昌与王肯堂因此得观并题跋。馆方以「外拓」用笔与连绵相属的「一笔书」说明王献之在父书之外的变革。
+唐摹本。上海博物馆新藏品页把「工艺」标为行书，简介又称其代表王献之的草书成就；旧数字展页则记纸本，新藏品页记丝绢，书体表述与材质两说均并存，不静默合并。此卷经北宋宣和内府收藏，现存部分宣和裱。晚明为吴廷族兄吴希元所藏，董其昌与王肯堂因此得观并题跋。馆方以「外拓」用笔与连绵相属的「一笔书」说明王献之在父书之外的变革。
 
-[出处 1](#ref-src-shm-yatouwan)
+[出处 1](#ref-src-shm-yatouwan)、[出处 2](#ref-src-shm-yatouwan-catalogue)
 
-- 书丹 · 王献之（有明确记载） 归属指原信，馆方定存世一本为唐摹本。 [出处 1](#ref-src-shm-yatouwan)
+- 书丹 · 王献之（有明确记载） 归属指原信，馆方定存世一本为唐摹本。新藏品页将工艺标为行书，简介又谈其草书成就，两种书体表述并存。 [出处 1](#ref-src-shm-yatouwan)、[出处 2](#ref-src-shm-yatouwan-catalogue)
+
+书体：行书
 
 延伸阅读：[王献之](../people/wang-xianzhi.md)
 
 作品待考与说明
 
-- 馆方页面未标书体、行数与字数，本记录不填。
-- 藏品号与完整题跋次序未见于此页。
+- 新藏品页将工艺标为行书，简介又以草书成就评之；作品字段采用前者的明确分类，两种表述并存。
+- 旧展页记纸本，新藏品页记丝绢；所读页面未解释材质差异。
+- 藏品号、行数与字数未见明确字段；新页 URL 中的 CI00000376 只作页面记录标识，不充作藏品号。
+- 完整题跋次序未见于此页。
 
 <a name="yatouwan-scroll"></a>
 
@@ -32,8 +36,8 @@ Duck-Head Pill Letter, Tang tracing copy
 - 制作年代：唐摹本
 - 著录编号：未记录
 - 尺寸：纵26.1厘米，横26.9厘米
-- 收藏机构：上海博物馆　[出处 1](#ref-src-shm-yatouwan)
-- 所引来源查阅于 2026-11-25
+- 收藏机构：上海博物馆　[出处 1](#ref-src-shm-yatouwan)、[出处 2](#ref-src-shm-yatouwan-catalogue)
+- 所引来源查阅于 2026-11-28
 
 馆方条目记藏上海博物馆，并记现存部分宣和裱，未给藏品号。
 
@@ -45,6 +49,7 @@ Duck-Head Pill Letter, Tang tracing copy
 ### 实物待考与说明
 
 - 藏品号未见于所引页面。
+- 上博旧展页记纸本，新藏品页记丝绢；材质差异未获解释。
 - 宣和裱现存部分的具体范围未记。
 - 董其昌、王肯堂题跋的书写年份与全文未录。
 
@@ -55,5 +60,9 @@ Duck-Head Pill Letter, Tang tracing copy
 <a name="ref-src-shm-yatouwan"></a>
 
 1. 上海博物館 Shanghai Museum · [鴨頭丸帖卷](<https://www.shanghaimuseum.net/museum/dongqichang/detail_2.html?id=5>)。定位：展品說明，記紙本、尺寸、唐摹本與宣和裱。查阅于 2026-11-25。
+
+<a name="ref-src-shm-yatouwan-catalogue"></a>
+
+2. 上海博物馆 Shanghai Museum · [东晋 王献之 行书鸭头丸帖卷](<https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00000376>)。定位：原名、时代、尺寸、材质、作者、工艺与简介；记「工艺：行书」「材质：丝绢」「为唐摹本」。查阅于 2026-11-28。
 
 [作品源稿](../../knowledge/works/yatouwan.md) · [返回知识总目](../README.md)

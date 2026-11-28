@@ -23,6 +23,7 @@ objects:
 sources:
   - src-dpm-dongshansong
   - src-shm-yatouwan
+  - src-shm-yatouwan-catalogue
   - src-dpm-228204
 ---
 
@@ -40,7 +41,7 @@ sources:
 
 ### 书体与师承
 
-书体与师承待考——本库现有著录未逐字写明。上海博物馆记《鸭头丸帖》为唐摹本、存部分宣和裱，不曾论及他的师承。[上海博物馆，鸭头丸帖](https://www.shanghaimuseum.net/museum/dongqichang/detail_2.html?id=5)
+书体与师承待考——本库现有著录未逐字写明。上海博物馆旧页记《鸭头丸帖》为唐摹本、存部分宣和裱；新藏品页把工艺标为行书，简介又称其代表草书成就，但两页均未论其师承。[上海博物馆，鸭头丸帖旧展页](https://www.shanghaimuseum.net/museum/dongqichang/detail_2.html?id=5) · [上海博物馆，鸭头丸帖藏品页](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00000376)
 
 ### 代表作与本库关联
 
@@ -52,7 +53,7 @@ sources:
 - [《洛神赋十三行》](../works/luoshen-shisanhang.md)：王献之《洛神赋》小楷，传世为南宋贾似道所刻玉版十三行，今藏首都博物馆。
 - [《中秋帖》](../works/zhongqiu.md)：旧题王献之的行草三行帖，故宫指出纸料用笔异于晋人书迹，今多认为宋人临写。
 - [《万岁通天帖》](../works/wansui-tongtian-tie.md)：697年弘文馆勾填的王氏一门书信卷，今存七人十通，藏辽宁省博物馆，不是王氏真迹。
-- [《鸭头丸帖》](../works/yatouwan.md)：王献之《鸭头丸帖》的纸本唐摹本，存部分宣和裱，有董其昌等跋。
+- [《鸭头丸帖》](../works/yatouwan.md)：王献之《鸭头丸帖》的唐摹本，馆方工艺字段标为行书；旧展页记纸本，新藏品页记丝绢，两说并存。
 - [《东山松帖》](../works/dongshansong.md)：王献之的行草通信札断片，纸本有四字磨灭，馆方未说明是否摹本。
 
 ## English
@@ -67,7 +68,7 @@ The dates, courtesy name and family already given above are kept; the sources li
 
 ### Scripts and models
 
-Scripts and teacher lineage remain open; the cited catalogues do not state them in transcribed text. The Shanghai Museum records the Duck-Head Pill Letter as a Tang tracing copy with part of its Xuanhe mounting, without discussing his teachers. [Shanghai Museum, Duck-Head Pill Letter](https://www.shanghaimuseum.net/museum/dongqichang/detail_2.html?id=5)
+Scripts and teacher lineage remain open; the cited catalogues do not state them in transcribed text. The older Shanghai Museum page records the Duck-Head Pill Letter as a Tang tracing copy with part of its Xuanhe mounting. The newer collection page classifies its technique as running script while its introduction describes it as an achievement in cursive script. Neither page discusses his teachers. [Shanghai Museum, older Duck-Head Pill Letter page](https://www.shanghaimuseum.net/museum/dongqichang/detail_2.html?id=5) · [Shanghai Museum, Duck-Head Pill Letter collection record](https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00000376)
 
 ### Works in this library
 
@@ -78,5 +79,5 @@ The library holds the [Thirteen Lines of the Nymph of the Luo River](../works/lu
 - [Thirteen Lines from the Goddess of the Luo](../works/luoshen-shisanhang.md): Wang Xianzhi’s small-regular-script Rhapsody on the Goddess of the Luo, surviving as the Jade-Version Thirteen Lines engraved for Jia Sidao in the Southern Song and now at the Capital Museum.
 - [Mid-Autumn Letter](../works/zhongqiu.md): A three-line running-cursive letter traditionally attributed to Wang Xianzhi, whose paper and brushwork differ from Jin practice and are now often read as a Song copy.
 - [Model Letters of the Wan Sui Tong Tian Year](../works/wansui-tongtian-tie.md): A scroll traced and ink-filled by the Hongwen Academy in 697, preserving ten letters by seven Wang-family hands at the Liaoning Provincial Museum rather than Wang autographs.
-- [Duck-Head Pill Letter](../works/yatouwan.md): A Tang tracing copy on paper of Wang Xianzhi’s Duck-Head Pill Letter, retaining part of its Xuanhe mounting and later colophons including Dong Qichang’s.
+- [Duck-Head Pill Letter](../works/yatouwan.md): A Tang tracing copy whose catalogue craft field is running script. The older exhibition page says paper and the newer collection record says silk; both readings are kept.
 - [Letter on the Dongshan Pines](../works/dongshansong.md): A paper fragment of a running-cursive letter attributed to Wang Xianzhi, with four characters effaced and its copy status left open by the museum.

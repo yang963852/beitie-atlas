@@ -8,7 +8,7 @@ Four Poems in Cursive Script
 
 **作品**　唐 · 唐 · 帖
 
-《古诗四帖》为纸本草书长卷，写庾信《步虚词》二首与谢灵运诗赞二首，今藏辽宁省博物馆，传为张旭所书。全卷连绵而下，字形大小错落而行气不断，是唐代狂草走向成熟的代表，也是学习草书时体会速度、提按与字势关系的经典范本。
+《古诗四帖》为纸本草书长卷，写庾信《步虚词》二首与谢灵运诗赞二首，今藏辽宁省博物馆，传为张旭所书。馆方展览将它列在「草圣典范」单元；辽宁日报另记北宋曾误归谢灵运、明代董其昌为此卷定名。[辽宁省博物馆，特展展品清单](https://www.lnmuseum.com.cn/?ikv8pl=i5lvgj#/about/detail?pageType=2&id=87818482398619689513702517337) · [辽宁日报，《古诗四帖》解读](https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/11/content_51177.html)
 
 [出处 1](#ref-src-lnm-gushisitie)、[出处 2](#ref-src-lnd-gushisitie)
 

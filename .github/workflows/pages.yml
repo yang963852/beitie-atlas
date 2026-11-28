@@ -38,18 +38,21 @@ jobs:
         env:
           VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
           VITE_TIANDITU_KEY: ${{ secrets.TIANDITU_BROWSER_KEY }}
-      - name: Verify the release marker and manifest
+      - name: Verify the release marker, edition and manifest
         run: |
           grep -F 'name="beitie-build-mode" content="release"' dist/index.html
-          node -e "const m=require('./dist/release-manifest.json'); if(m.mode!=='release'||m.releaseMode!==true) { console.error('not a release manifest'); process.exit(1); } console.log('release manifest counts', JSON.stringify(m.counts));"
+          node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync('package.json','utf8')); const m=JSON.parse(fs.readFileSync('dist/release-manifest.json','utf8')); if(m.mode!=='release'||m.releaseMode!==true) { console.error('not a release manifest'); process.exit(1); } if(m.appVersion!==p.version) { console.error('manifest edition '+m.appVersion+' does not match package.json '+p.version); process.exit(1); } console.log('release edition', m.appVersion, 'counts', JSON.stringify(m.counts));"
       - name: Verify the downloadable author library
         run: |
           python3 - <<'PY'
           import json, os, zipfile
+          with open('package.json', encoding='utf-8') as package:
+              version = json.load(package)['version']
           with zipfile.ZipFile('dist/download/beitie-knowledge.zip') as library:
               assert library.testzip() is None
               manifest = json.loads(library.read('manifest.json'))
               assert manifest['sourceRevision'] == os.environ['GITHUB_SHA']
+              assert manifest['appVersion'] == version
               assert 'knowledge/README.md' in library.namelist()
           PY
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0

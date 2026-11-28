@@ -8,4 +8,7 @@ Describe the change and credit the original contributor. Link an Issue if releva
 资料改动请附出处和具体页码或段落；网页改动请写操作步骤。列出做过的检查和待核实之处。
 For research, cite the source and passage. For website changes, give the reader path. List checks run and open questions.
 
+发布准备 PR 请写明目标版本、CHANGELOG 范围，并确认未创建 tag 或 GitHub Release。
+For a release-preparation PR, state the target version, the CHANGELOG range, and confirm that no tag or GitHub Release was created.
+
 主要审查人和维护人 / Primary reviewer and maintainer: @yang963852

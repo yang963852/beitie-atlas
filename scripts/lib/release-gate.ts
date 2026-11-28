@@ -10,6 +10,7 @@ import { existsSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'no
 import { join } from 'node:path';
 import type { ValidationReport } from '../../src/domain/validate';
 import { compileKnowledge } from './knowledge-compiler';
+import { readPackageVersion } from './release-meta';
 
 export const OUTPUT_DIR = 'dist';
 export const MANIFEST_FILE = 'release-manifest.json';
@@ -19,6 +20,7 @@ export interface ReleaseManifest {
   formatVersion: 1;
   mode: 'release';
   releaseMode: true;
+  appVersion: string;
   generatedAt: string;
   node: string;
   sourceRevision: string | null;
@@ -60,6 +62,7 @@ export function writeReleaseManifest(
     formatVersion: 1,
     mode: 'release',
     releaseMode: true,
+    appVersion: readPackageVersion(root),
     generatedAt: new Date().toISOString(),
     node: process.version,
     sourceRevision,
@@ -111,6 +114,18 @@ export function verifyReleaseArtifact(
       const manifest = JSON.parse(readFileSync(manifestFile, 'utf8')) as Partial<ReleaseManifest>;
       if (manifest.mode !== 'release' || manifest.releaseMode !== true) {
         problems.push('The release manifest does not describe a release build.');
+      }
+      let packageVersion: string | null = null;
+      try {
+        packageVersion = readPackageVersion(root);
+      } catch (error) {
+        problems.push(`package.json cannot be read for version verification: ${(error as Error).message}`);
+      }
+      if (packageVersion && manifest.appVersion !== packageVersion) {
+        problems.push(
+          `The release manifest records edition ${manifest.appVersion ?? 'missing'}, `
+          + `but package.json says ${packageVersion}.`,
+        );
       }
       const countKeys = Object.keys(expectedCounts) as Array<keyof CorpusReport['counts']>;
       const mismatched = countKeys.filter(
